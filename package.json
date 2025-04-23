@@ -1,0 +1,21 @@
+{
+  "name": "aoc-parser",
+  "version": "1.0.0",
+  "main": "/src/main.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "parser": "node ./src/main.js",
+    "parser-stats": "node ./src/tools/parse-stats.js",
+    "parser-rewards": "node ./src/tools/generateRewardTableId.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "pg": "^8.14.0",
+    "ssh2": "^1.16.0",
+    "tunnel-ssh": "^5.2.0"
+  }
+}

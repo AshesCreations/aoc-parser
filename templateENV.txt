@@ -1,0 +1,23 @@
+#Local Files
+GAME_FILES_PATH = ""
+
+# SSH Tunnel Configuration
+SSH_HOST= 
+SSH_PORT= 7822
+SSH_USER= 
+SSH_PASSWORD= 
+# SSH_PRIVATE_KEY_PATH=/path/to/your/private/key  # Uncomment if using key authentication
+
+# Database Configuration
+DATABASE_USER = ""
+DATABASE_HOST = "127.0.0.1"
+DATABASE_NAME = ""
+DATABASE_PASSWORD = ""
+DATABASE_PORT = 5432
+
+# Connection mode: 'ssh' for SSH tunnel, 'local' for direct connection
+CONNECTION_MODE=ssh
+
+# For local connections
+LOCAL_DB_HOST=localhost
+LOCAL_DB_PORT=5432
