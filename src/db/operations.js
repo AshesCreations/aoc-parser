@@ -5,44 +5,43 @@
 import { pool } from "./config.js";
 
 /**
- * Function to save an item recipe to the PostgreSQL database
+ * Function to save an item recipe to the MySQL database
  * @param {Object} item - Item object to save
  * @returns {Promise} - Promise that resolves when the item is saved
  */
 async function saveItemRecipeToDatabase(item) {
-  const client = await pool.connect();
+  const client = await pool.getConnection();
   try {
-    // Use the pg module's native array support with type casting
     const query = `
       INSERT INTO "DatabaseItemRecipes" (
         id, name, description, type, tag, icon, "rarityMin", "rarityMax", level, "statsId",
         "learnableRecipeIds", "rewardId", layout, "typeDescription"
       ) VALUES (
-        $1, $2, $3::text[], $4, $5::text[], $6, $7, $8, $9, $10, $11, $12::text[], $13, $14
-      ) ON CONFLICT (id) DO UPDATE SET
-        name = $2, description = $3::text[], type = $4, tag = $5::text[], icon = $6, 
-        "rarityMin" = $7, "rarityMax" = $8, level = $9, "statsId" = $10,
-        "learnableRecipeIds" = $11, "rewardId" = $12::text[], layout = $13, "typeDescription" = $14
+        ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+      ) ON DUPLICATE KEY UPDATE
+        name = ?, description = ?, type = ?, tag = ?, icon = ?, 
+        "rarityMin" = ?, "rarityMax" = ?, level = ?, "statsId" = ?,
+        "learnableRecipeIds" = ?, "rewardId" = ?, layout = ?, "typeDescription" = ?
     `;
 
     const values = [
       item.id,
       item.name,
-      item.description || [],
+      JSON.stringify(item.description || []),
       item.type,
-      item.tag || [],
+      JSON.stringify(item.tag || []),
       item.icon,
       item.rarityMin,
       item.rarityMax,
       item.level,
       item.statsId,
       item.learnableRecipeIds,
-      item.rewardId || [],
+      JSON.stringify(item.rewardId || []),
       item.layout || "itemRecipe",
       item.typeDescription || "",
     ];
 
-    await client.query(query, values);
+    await client.execute(query, values);
   } catch (error) {
     console.error(`Error saving item to database: ${error.message}`);
     throw error;
@@ -52,28 +51,28 @@ async function saveItemRecipeToDatabase(item) {
 }
 
 /**
- * Function to save stat data to the PostgreSQL database
+ * Function to save stat data to the MySQL database
  * @param {Object} statData - Stat data object to save
  * @returns {Promise} - Promise that resolves when the stat data is saved
  */
 async function saveStatToDatabase(statData) {
-  const client = await pool.connect();
+  const client = await pool.getConnection();
   try {
     // Insert into DatabaseStats table
     const query = `
       INSERT INTO "DatabaseStats" (
         id, common, uncommon, rare, heroic, epic, legendary, artifact, durability
       ) VALUES (
-        $1, $2::jsonb, $3::jsonb, $4::jsonb, $5::jsonb, $6::jsonb, $7::jsonb, $8::jsonb, $9::jsonb
-      ) ON CONFLICT (id) DO UPDATE SET
-        common = $2::jsonb,
-        uncommon = $3::jsonb,
-        rare = $4::jsonb,
-        heroic = $5::jsonb,
-        epic = $6::jsonb,
-        legendary = $7::jsonb,
-        artifact = $8::jsonb,
-        durability = $9::jsonb
+        ?, ?, ?, ?, ?, ?, ?, ?, ?
+      ) ON DUPLICATE KEY UPDATE
+        common = ?,
+        uncommon = ?,
+        rare = ?,
+        heroic = ?,
+        epic = ?,
+        legendary = ?,
+        artifact = ?,
+        durability = ?
     `;
 
     // Convert each rarity object to JSON string
@@ -89,7 +88,7 @@ async function saveStatToDatabase(statData) {
       JSON.stringify(statData.durability || {}),
     ];
 
-    await client.query(query, values);
+    await client.execute(query, values);
   } catch (error) {
     console.error(`Error saving stat data to database: ${error.message}`);
     throw error;
@@ -99,22 +98,22 @@ async function saveStatToDatabase(statData) {
 }
 
 /**
- * Function to save set bonus data to the PostgreSQL database
+ * Function to save set bonus data to the MySQL database
  * @param {Object} setBonusData - Set bonus data object to save
  * @returns {Promise} - Promise that resolves when the set bonus data is saved
  */
 async function saveSetBonusToDatabase(setBonusData) {
-  const client = await pool.connect();
+  const client = await pool.getConnection();
   try {
     // Insert into DatabaseSetBonuses table
     const query = `
       INSERT INTO "DatabaseSetBonuses" (
         id, name, "setEffects"
       ) VALUES (
-        $1, $2, $3::jsonb
-      ) ON CONFLICT (id) DO UPDATE SET
-        name = $2,
-        "setEffects" = $3::jsonb
+        ?, ?, ?
+      ) ON DUPLICATE KEY UPDATE
+        name = ?,
+        "setEffects" = ?
     `;
 
     // Convert setEffects array to JSON string
@@ -124,7 +123,7 @@ async function saveSetBonusToDatabase(setBonusData) {
       JSON.stringify(setBonusData.setEffects || []),
     ];
 
-    await client.query(query, values);
+    await client.execute(query, values);
   } catch (error) {
     console.error(`Error saving set bonus data to database: ${error.message}`);
     throw error;
@@ -134,22 +133,22 @@ async function saveSetBonusToDatabase(setBonusData) {
 }
 
 /**
- * Function to save enchantment definition data to the PostgreSQL database
+ * Function to save enchantment definition data to the MySQL database
  * @param {Object} enchantmentDefData - Enchantment definition data object to save
  * @returns {Promise} - Promise that resolves when the enchantment definition data is saved
  */
 async function saveEnchantmentDefToDatabase(enchantmentDefData) {
-  const client = await pool.connect();
+  const client = await pool.getConnection();
   try {
     // Insert into DatabaseEnchantmentDef table
     const query = `
       INSERT INTO "DatabaseEnchantmentDef" (
         id, name, levels
       ) VALUES (
-        $1, $2, $3::text[]
-      ) ON CONFLICT (id) DO UPDATE SET
-        name = $2,
-        levels = $3::text[]
+        ?, ?, ?
+      ) ON DUPLICATE KEY UPDATE
+        name = ?,
+        levels = ?
     `;
 
     const values = [
@@ -158,7 +157,7 @@ async function saveEnchantmentDefToDatabase(enchantmentDefData) {
       enchantmentDefData.levels || [],
     ];
 
-    await client.query(query, values);
+    await client.execute(query, values);
   } catch (error) {
     console.error(
       `Error saving enchantment definition data to database: ${error.message}`
@@ -170,29 +169,29 @@ async function saveEnchantmentDefToDatabase(enchantmentDefData) {
 }
 
 /**
- * Function to save enchantment level data to the PostgreSQL database
+ * Function to save enchantment level data to the MySQL database
  * @param {Object} enchantmentLevelData - Enchantment level data object to save
  * @returns {Promise} - Promise that resolves when the enchantment level data is saved
  */
 async function saveEnchantmentLevelToDatabase(enchantmentLevelData) {
-  const client = await pool.connect();
+  const client = await pool.getConnection();
   try {
     // Insert into DatabaseEnchantmentLevel table
     const query = `
       INSERT INTO "DatabaseEnchantmentLevel" (
         id, name, "primary", core, cost, success, failure, loss, "all", "break"
       ) VALUES (
-        $1, $2, $3, $4, $5, $6, $7, $8, $9, $10
-      ) ON CONFLICT (id) DO UPDATE SET
-        name = $2,
-        "primary" = $3,
-        core = $4,
-        cost = $5,
-        success = $6,
-        failure = $7,
-        loss = $8,
-        "all" = $9,
-        "break" = $10
+        ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+      ) ON DUPLICATE KEY UPDATE
+        name = ?,
+        "primary" = ?,
+        core = ?,
+        cost = ?,
+        success = ?,
+        failure = ?,
+        loss = ?,
+        "all" = ?,
+        "break" = ?
     `;
 
     const values = [
@@ -208,7 +207,7 @@ async function saveEnchantmentLevelToDatabase(enchantmentLevelData) {
       enchantmentLevelData.break,
     ];
 
-    await client.query(query, values);
+    await client.execute(query, values);
   } catch (error) {
     console.error(
       `Error saving enchantment level data to database: ${error.message}`
@@ -220,26 +219,26 @@ async function saveEnchantmentLevelToDatabase(enchantmentLevelData) {
 }
 
 /**
- * Function to save an recipe to the PostgreSQL database
+ * Function to save an recipe to the MySQL database
  * @param {Object} item - Item object to save
  * @returns {Promise} - Promise that resolves when the item is saved
  */
 async function saveRecipeToDatabase(item) {
-  const client = await pool.connect();
+  const client = await pool.getConnection();
   try {
-    // Use the pg module's native array support with type casting
+    // Values are stored as JSON strings for MySQL
     const query = `
       INSERT INTO "DatabaseRecipes" (
         id, name, profession, certification, learnable, "overrideName", overrides, tags,
         fuel, "baseDuration", "rewardId", "primaryResourceCosts", "generalResourceCost",
         "qualityFormula", "craftingCurrencyCostId", "rewardItem", layout
       ) VALUES (
-        $1, $2, $3, $4, $5, $6, $7::jsonb, $8::text[], $9, $10, $11, $12::jsonb, $13::jsonb, $14, $15, $16::text[], $17
-      ) ON CONFLICT (id) DO UPDATE SET
-        name = $2, profession = $3, certification = $4, learnable = $5, "overrideName" = $6,
-        overrides = $7, tags = $8, fuel= $9, "baseDuration" = $10, "rewardId" = $11, "primaryResourceCosts" = $12,
-        "generalResourceCost" = $13, "qualityFormula" = $14, "craftingCurrencyCostId" = $15, "rewardItem" = $16,
-        layout = $17
+        ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+      ) ON DUPLICATE KEY UPDATE
+        name = ?, profession = ?, certification = ?, learnable = ?, "overrideName" = ?,
+        overrides = ?, tags = ?, fuel= ?, "baseDuration" = ?, "rewardId" = ?, "primaryResourceCosts" = ?,
+        "generalResourceCost" = ?, "qualityFormula" = ?, "craftingCurrencyCostId" = ?, "rewardItem" = ?,
+        layout = ?
     `;
 
     const values = [
@@ -250,7 +249,7 @@ async function saveRecipeToDatabase(item) {
       item.learnable,
       item.overrideName,
       JSON.stringify(item.overrides || []),
-      item.tags || [],
+      JSON.stringify(item.tags || []),
       item.fuel,
       item.baseDuration,
       item.rewardId,
@@ -258,11 +257,11 @@ async function saveRecipeToDatabase(item) {
       JSON.stringify(item.generalResourceCost || []),
       item.qualityFormula,
       item.craftingCurrencyCostId,
-      item.rewardItem || [],
+      JSON.stringify(item.rewardItem || []),
       item.layout || "recipe",
     ];
 
-    await client.query(query, values);
+    await client.execute(query, values);
   } catch (error) {
     console.error(`Error saving recipe to database: ${error.message}`);
     throw error;
@@ -281,17 +280,16 @@ async function batchFindItemRecipes(itemIds) {
     return {};
   }
 
-  const client = await pool.connect();
+  const client = await pool.getConnection();
   try {
-    // Use a LATERAL JOIN with unnest to properly expand arrays
     const query = `
-      SELECT r.id, u.item_id
-      FROM "DatabaseItemRecipes" r
-      CROSS JOIN LATERAL unnest(r."rewardId") AS u(item_id)
-      WHERE u.item_id = ANY($1)
+      SELECT r.id, jt.item_id
+      FROM \`DatabaseItemRecipes\` r
+      JOIN JSON_TABLE(r.rewardId, '$[*]' COLUMNS(item_id VARCHAR(255) PATH '$')) as jt
+      WHERE jt.item_id IN (?)
     `;
 
-    const result = await client.query(query, [itemIds]);
+    const [rows] = await client.execute(query, [itemIds]);
 
     // Create a map of itemId -> recipeIds
     const recipeMap = {};
@@ -302,7 +300,7 @@ async function batchFindItemRecipes(itemIds) {
     });
 
     // Populate the map with the results
-    result.rows.forEach((row) => {
+    rows.forEach((row) => {
       if (row.item_id && recipeMap[row.item_id]) {
         recipeMap[row.item_id].push(row.id);
       }
@@ -326,32 +324,32 @@ async function batchSaveEquipmentToDatabase(items) {
     return;
   }
 
-  const client = await pool.connect();
+  const client = await pool.getConnection();
   try {
     // Begin transaction
-    await client.query("BEGIN");
+    await client.execute("BEGIN");
 
     // Prepare the query
     const query = `
       INSERT INTO "DatabaseEquipment" (
         id, name, "typeDescription", description, type, subtype, tag, icon, "rarityMin", "rarityMax", 
         "statsId", level, grade, "itemRecipeId", layout
-      ) VALUES ($1, $2, $3, $4::text[], $5, $6, $7::text[], $8, $9, $10, $11, $12, $13, $14::text[], $15)
-      ON CONFLICT (id) DO UPDATE SET
-        name = EXCLUDED.name,
-        "typeDescription" = EXCLUDED."typeDescription",
-        description = EXCLUDED.description,
-        type = EXCLUDED.type,
-        subtype = EXCLUDED.subtype,
-        tag = EXCLUDED.tag,
-        icon = EXCLUDED.icon,
-        "rarityMin" = EXCLUDED."rarityMin",
-        "rarityMax" = EXCLUDED."rarityMax",
-        "statsId" = EXCLUDED."statsId",
-        level = EXCLUDED.level,
-        grade = EXCLUDED.grade,
-        "itemRecipeId" = EXCLUDED."itemRecipeId",
-        layout = EXCLUDED.layout
+      ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+      ON DUPLICATE KEY UPDATE
+        name = VALUES(name),
+        "typeDescription" = VALUES("typeDescription"),
+        description = VALUES(description),
+        type = VALUES(type),
+        subtype = VALUES(subtype),
+        tag = VALUES(tag),
+        icon = VALUES(icon),
+        "rarityMin" = VALUES("rarityMin"),
+        "rarityMax" = VALUES("rarityMax"),
+        "statsId" = VALUES("statsId"),
+        level = VALUES(level),
+        grade = VALUES(grade),
+        "itemRecipeId" = VALUES("itemRecipeId"),
+        layout = VALUES(layout)
     `;
 
     // Create an array of promises for all insert operations
@@ -363,20 +361,20 @@ async function batchSaveEquipmentToDatabase(items) {
           item.id,
           item.name,
           item.typeDescription,
-          item.description || [],
+          JSON.stringify(item.description || []),
           item.type,
           item.subType,
-          item.tag || [],
+          JSON.stringify(item.tag || []),
           item.icon,
           item.rarityMin,
           item.rarityMax,
           item.statsId,
           item.level,
           item.grade,
-          item.itemRecipeId || [],
+          JSON.stringify(item.itemRecipeId || []),
           item.layout || "equipment",
         ];
-        return client.query(query, values);
+        return client.execute(query, values);
       });
 
       // Execute all queries in this batch
@@ -384,12 +382,12 @@ async function batchSaveEquipmentToDatabase(items) {
     }
 
     // Commit the transaction
-    await client.query("COMMIT");
+    await client.execute("COMMIT");
 
     console.log(`Successfully saved ${items.length} items in batch operation`);
   } catch (error) {
     // Rollback in case of error
-    await client.query("ROLLBACK");
+    await client.execute("ROLLBACK");
     console.error(`Error in batch save operation: ${error.message}`);
     throw error;
   } finally {
@@ -406,10 +404,10 @@ async function batchSaveGearToDatabase(items) {
     return;
   }
 
-  const client = await pool.connect();
+  const client = await pool.getConnection();
   try {
     // Begin transaction
-    await client.query("BEGIN");
+    await client.execute("BEGIN");
 
     // Prepare the query
     const query = `
@@ -417,27 +415,27 @@ async function batchSaveGearToDatabase(items) {
         id, name, "typeDescription", description, type, subtype, tag, icon, "rarityMin", "rarityMax", 
         slots, "statsId", "setBonusIds", level, grade, "enchantmentId", "deconstructionRecipeId",
         "itemRecipeId", layout
-      ) VALUES ($1, $2, $3, $4::text[], $5, $6, $7::text[], $8, $9, $10, $11::text[], $12, $13::text[], $14, $15,
-        $16, $17, $18::text[], $19)
-      ON CONFLICT (id) DO UPDATE SET
-        name = EXCLUDED.name,
-        "typeDescription" = EXCLUDED."typeDescription",
-        description = EXCLUDED.description,
-        type = EXCLUDED.type,
-        subtype = EXCLUDED.subtype,
-        tag = EXCLUDED.tag,
-        icon = EXCLUDED.icon,
-        "rarityMin" = EXCLUDED."rarityMin",
-        "rarityMax" = EXCLUDED."rarityMax",
-        slots = EXCLUDED.slots,
-        "statsId" = EXCLUDED."statsId",
-        "setBonusIds" = EXCLUDED."setBonusIds",
-        level = EXCLUDED.level,
-        grade = EXCLUDED.grade,
-        "enchantmentId" = EXCLUDED."enchantmentId",
-        "deconstructionRecipeId" = EXCLUDED."deconstructionRecipeId",
-        "itemRecipeId" = EXCLUDED."itemRecipeId",
-        layout = EXCLUDED.layout
+      ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,
+        ?, ?, ?, ?)
+      ON DUPLICATE KEY UPDATE
+        name = VALUES(name),
+        "typeDescription" = VALUES("typeDescription"),
+        description = VALUES(description),
+        type = VALUES(type),
+        subtype = VALUES(subtype),
+        tag = VALUES(tag),
+        icon = VALUES(icon),
+        "rarityMin" = VALUES("rarityMin"),
+        "rarityMax" = VALUES("rarityMax"),
+        slots = VALUES(slots),
+        "statsId" = VALUES("statsId"),
+        "setBonusIds" = VALUES("setBonusIds"),
+        level = VALUES(level),
+        grade = VALUES(grade),
+        "enchantmentId" = VALUES("enchantmentId"),
+        "deconstructionRecipeId" = VALUES("deconstructionRecipeId"),
+        "itemRecipeId" = VALUES("itemRecipeId"),
+        layout = VALUES(layout)
     `;
 
     // Create an array of promises for all insert operations
@@ -449,24 +447,24 @@ async function batchSaveGearToDatabase(items) {
           item.id,
           item.name,
           item.typeDescription,
-          item.description || [],
+          JSON.stringify(item.description || []),
           item.type,
           item.subType,
-          item.tag || [],
+          JSON.stringify(item.tag || []),
           item.icon,
           item.rarityMin,
           item.rarityMax,
-          item.slots || [],
+          JSON.stringify(item.slots || []),
           item.statsId,
-          item.setBonusIds || [],
+          JSON.stringify(item.setBonusIds || []),
           item.level,
           item.grade,
           item.enchantmentId,
           item.deconstructionRecipeId,
-          item.itemRecipeId || [],
+          JSON.stringify(item.itemRecipeId || []),
           item.layout || "gear",
         ];
-        return client.query(query, values);
+        return client.execute(query, values);
       });
 
       // Execute all queries in this batch
@@ -474,12 +472,12 @@ async function batchSaveGearToDatabase(items) {
     }
 
     // Commit the transaction
-    await client.query("COMMIT");
+    await client.execute("COMMIT");
 
     console.log(`Successfully saved ${items.length} items in batch operation`);
   } catch (error) {
     // Rollback in case of error
-    await client.query("ROLLBACK");
+    await client.execute("ROLLBACK");
     console.error(`Error in batch save operation: ${error.message}`);
     throw error;
   } finally {
@@ -497,17 +495,16 @@ async function batchFindRecipes(itemIds) {
     return {};
   }
 
-  const client = await pool.connect();
+  const client = await pool.getConnection();
   try {
-    // Use a LATERAL JOIN with unnest to properly expand arrays
     const query = `
-      SELECT r.id, u.item_id
-      FROM "DatabaseRecipes" r
-      CROSS JOIN LATERAL unnest(r."rewardItem") AS u(item_id)
-      WHERE u.item_id = ANY($1)
+      SELECT r.id, jt.item_id
+      FROM \`DatabaseRecipes\` r
+      JOIN JSON_TABLE(r.rewardItem, '$[*]' COLUMNS(item_id VARCHAR(255) PATH '$')) as jt
+      WHERE jt.item_id IN (?)
     `;
 
-    const result = await client.query(query, [itemIds]);
+    const [rows] = await client.execute(query, [itemIds]);
 
     // Create a map of itemId -> recipeIds
     const recipeMap = {};
@@ -518,7 +515,7 @@ async function batchFindRecipes(itemIds) {
     });
 
     // Populate the map with the results
-    result.rows.forEach((row) => {
+    rows.forEach((row) => {
       if (row.item_id && recipeMap[row.item_id]) {
         recipeMap[row.item_id].push(row.id);
       }
@@ -542,10 +539,10 @@ async function batchSaveItemsToDatabase(items) {
     return;
   }
 
-  const client = await pool.connect();
+  const client = await pool.getConnection();
   try {
     // Begin transaction
-    await client.query("BEGIN");
+    await client.execute("BEGIN");
 
     // Prepare the query
     const query = `
@@ -553,21 +550,21 @@ async function batchSaveItemsToDatabase(items) {
         id, name, description, type, tag, icon, "rarityMin", "rarityMax", level, "statsId",
         "itemRecipeId", "recipeId", layout, "typeDescription"
       ) VALUES (
-        $1, $2, $3::text[], $4, $5::text[], $6, $7, $8, $9, $10, $11::text[], $12::text[], $13, $14
-      ) ON CONFLICT (id) DO UPDATE SET
-        name = EXCLUDED.name,
-        description = EXCLUDED.description,
-        type = EXCLUDED.type,
-        tag = EXCLUDED.tag,
-        icon = EXCLUDED.icon,
-        "rarityMin" = EXCLUDED."rarityMin",
-        "rarityMax" = EXCLUDED."rarityMax",
-        level = EXCLUDED.level,
-        "statsId" = EXCLUDED."statsId",
-        "itemRecipeId" = EXCLUDED."itemRecipeId",
-        "recipeId" = EXCLUDED."recipeId",
-        layout = EXCLUDED.layout,
-        "typeDescription" = EXCLUDED."typeDescription"
+        ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+      ) ON DUPLICATE KEY UPDATE
+        name = VALUES(name),
+        description = VALUES(description),
+        type = VALUES(type),
+        tag = VALUES(tag),
+        icon = VALUES(icon),
+        "rarityMin" = VALUES("rarityMin"),
+        "rarityMax" = VALUES("rarityMax"),
+        level = VALUES(level),
+        "statsId" = VALUES("statsId"),
+        "itemRecipeId" = VALUES("itemRecipeId"),
+        "recipeId" = VALUES("recipeId"),
+        layout = VALUES(layout),
+        "typeDescription" = VALUES("typeDescription")
     `;
 
     // Create an array of promises for all insert operations
@@ -578,20 +575,20 @@ async function batchSaveItemsToDatabase(items) {
         const values = [
           item.id,
           item.name,
-          item.description || [],
+          JSON.stringify(item.description || []),
           item.type,
-          item.tag || [],
+          JSON.stringify(item.tag || []),
           item.icon,
           item.rarityMin,
           item.rarityMax,
           item.level,
           item.statsId,
-          item.itemRecipeId || [],
-          item.recipeId || [],
+          JSON.stringify(item.itemRecipeId || []),
+          JSON.stringify(item.recipeId || []),
           item.layout || "item",
           item.typeDescription || "",
         ];
-        return client.query(query, values);
+        return client.execute(query, values);
       });
 
       // Execute all queries in this batch
@@ -599,12 +596,12 @@ async function batchSaveItemsToDatabase(items) {
     }
 
     // Commit the transaction
-    await client.query("COMMIT");
+    await client.execute("COMMIT");
 
     console.log(`Successfully saved ${items.length} items in batch operation`);
   } catch (error) {
     // Rollback in case of error
-    await client.query("ROLLBACK");
+    await client.execute("ROLLBACK");
     console.error(`Error in batch save operation: ${error.message}`);
     throw error;
   } finally {

@@ -2,7 +2,7 @@
 
 - node.js
 - FModel
-- postgresql database access
+- MySQL database access
 
 # Instructions
 
