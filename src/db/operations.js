@@ -38,14 +38,14 @@ async function saveItemRecipeToDatabase(item) {
       item.id,
       item.name,
       JSON.stringify(item.description || []),
-      item.type,
+      item.type ?? null,
       JSON.stringify(item.tag || []),
-      item.icon,
-      item.rarityMin,
-      item.rarityMax,
-      item.level,
-      item.statsId,
-      item.learnableRecipeIds,
+      item.icon ?? null,
+      item.rarityMin ?? null,
+      item.rarityMax ?? null,
+      item.level ?? null,
+      item.statsId ?? null,
+      item.learnableRecipeIds ?? null,
       JSON.stringify(item.rewardId || []),
       item.layout || "itemRecipe",
       item.typeDescription || "",
@@ -87,7 +87,7 @@ async function saveStatToDatabase(statData) {
 
     // Convert each rarity object to JSON string
     const values = [
-      statData.id,
+      statData.id ?? null,
       JSON.stringify(statData.common || {}),
       JSON.stringify(statData.uncommon || {}),
       JSON.stringify(statData.rare || {}),
@@ -128,8 +128,8 @@ async function saveSetBonusToDatabase(setBonusData) {
 
     // Convert setEffects array to JSON string
     const values = [
-      setBonusData.id,
-      setBonusData.name,
+      setBonusData.id ?? null,
+      setBonusData.name ?? null,
       JSON.stringify(setBonusData.setEffects || []),
     ];
 
@@ -162,8 +162,8 @@ async function saveEnchantmentDefToDatabase(enchantmentDefData) {
     `;
 
     const values = [
-      enchantmentDefData.id,
-      enchantmentDefData.name,
+      enchantmentDefData.id ?? null,
+      enchantmentDefData.name ?? null,
       enchantmentDefData.levels || [],
     ];
 
@@ -205,16 +205,16 @@ async function saveEnchantmentLevelToDatabase(enchantmentLevelData) {
     `;
 
     const values = [
-      enchantmentLevelData.id,
-      enchantmentLevelData.name,
-      enchantmentLevelData.primary,
-      enchantmentLevelData.core,
-      enchantmentLevelData.cost,
-      enchantmentLevelData.success,
-      enchantmentLevelData.failure,
-      enchantmentLevelData.loss,
-      enchantmentLevelData.all,
-      enchantmentLevelData.break,
+      enchantmentLevelData.id ?? null,
+      enchantmentLevelData.name ?? null,
+      enchantmentLevelData.primary ?? null,
+      enchantmentLevelData.core ?? null,
+      enchantmentLevelData.cost ?? null,
+      enchantmentLevelData.success ?? null,
+      enchantmentLevelData.failure ?? null,
+      enchantmentLevelData.loss ?? null,
+      enchantmentLevelData.all ?? null,
+      enchantmentLevelData.break ?? null,
     ];
 
     await client.execute(query, values);
@@ -264,21 +264,21 @@ async function saveRecipeToDatabase(item) {
     `;
 
     const values = [
-      item.id,
-      item.name,
-      item.profession,
-      item.certification,
-      item.learnable,
-      item.overrideName,
+      item.id ?? null,
+      item.name ?? null,
+      item.profession ?? null,
+      item.certification ?? null,
+      item.learnable ?? null,
+      item.overrideName ?? null,
       JSON.stringify(item.overrides || []),
       JSON.stringify(item.tags || []),
-      item.fuel,
-      item.baseDuration,
-      item.rewardId,
+      item.fuel ?? null,
+      item.baseDuration ?? null,
+      item.rewardId ?? null,
       JSON.stringify(item.primaryResourceCosts || []),
       JSON.stringify(item.generalResourceCost || []),
-      item.qualityFormula,
-      item.craftingCurrencyCostId,
+      item.qualityFormula ?? null,
+      item.craftingCurrencyCostId ?? null,
       JSON.stringify(item.rewardItem || []),
       item.layout || "recipe",
     ];
@@ -380,19 +380,19 @@ async function batchSaveEquipmentToDatabase(items) {
       const batch = items.slice(i, i + batchSize);
       const promises = batch.map((item) => {
         const values = [
-          item.id,
-          item.name,
-          item.typeDescription,
+          item.id ?? null,
+          item.name ?? null,
+          item.typeDescription ?? null,
           JSON.stringify(item.description || []),
-          item.type,
-          item.subType,
+          item.type ?? null,
+          item.subType ?? null,
           JSON.stringify(item.tag || []),
-          item.icon,
-          item.rarityMin,
-          item.rarityMax,
-          item.statsId,
-          item.level,
-          item.grade,
+          item.icon ?? null,
+          item.rarityMin ?? null,
+          item.rarityMax ?? null,
+          item.statsId ?? null,
+          item.level ?? null,
+          item.grade ?? null,
           JSON.stringify(item.itemRecipeId || []),
           item.layout || "equipment",
         ];
@@ -466,23 +466,23 @@ async function batchSaveGearToDatabase(items) {
       const batch = items.slice(i, i + batchSize);
       const promises = batch.map((item) => {
         const values = [
-          item.id,
-          item.name,
-          item.typeDescription,
+          item.id ?? null,
+          item.name ?? null,
+          item.typeDescription ?? null,
           JSON.stringify(item.description || []),
-          item.type,
-          item.subType,
+          item.type ?? null,
+          item.subType ?? null,
           JSON.stringify(item.tag || []),
-          item.icon,
-          item.rarityMin,
-          item.rarityMax,
+          item.icon ?? null,
+          item.rarityMin ?? null,
+          item.rarityMax ?? null,
           JSON.stringify(item.slots || []),
-          item.statsId,
+          item.statsId ?? null,
           JSON.stringify(item.setBonusIds || []),
-          item.level,
-          item.grade,
-          item.enchantmentId,
-          item.deconstructionRecipeId,
+          item.level ?? null,
+          item.grade ?? null,
+          item.enchantmentId ?? null,
+          item.deconstructionRecipeId ?? null,
           JSON.stringify(item.itemRecipeId || []),
           item.layout || "gear",
         ];
@@ -595,16 +595,16 @@ async function batchSaveItemsToDatabase(items) {
       const batch = items.slice(i, i + batchSize);
       const promises = batch.map((item) => {
         const values = [
-          item.id,
-          item.name,
+          item.id ?? null,
+          item.name ?? null,
           JSON.stringify(item.description || []),
-          item.type,
+          item.type ?? null,
           JSON.stringify(item.tag || []),
-          item.icon,
-          item.rarityMin,
-          item.rarityMax,
-          item.level,
-          item.statsId,
+          item.icon ?? null,
+          item.rarityMin ?? null,
+          item.rarityMax ?? null,
+          item.level ?? null,
+          item.statsId ?? null,
           JSON.stringify(item.itemRecipeId || []),
           JSON.stringify(item.recipeId || []),
           item.layout || "item",
