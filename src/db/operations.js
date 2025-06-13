@@ -349,7 +349,7 @@ async function batchSaveEquipmentToDatabase(items) {
   const client = await pool.getConnection();
   try {
     // Begin transaction
-    await client.execute("BEGIN");
+    await client.query("BEGIN");
 
     // Prepare the query
     const query = `
@@ -404,12 +404,12 @@ async function batchSaveEquipmentToDatabase(items) {
     }
 
     // Commit the transaction
-    await client.execute("COMMIT");
+    await client.query("COMMIT");
 
     console.log(`Successfully saved ${items.length} items in batch operation`);
   } catch (error) {
     // Rollback in case of error
-    await client.execute("ROLLBACK");
+    await client.query("ROLLBACK");
     console.error(`Error in batch save operation: ${error.message}`);
     throw error;
   } finally {
@@ -429,7 +429,7 @@ async function batchSaveGearToDatabase(items) {
   const client = await pool.getConnection();
   try {
     // Begin transaction
-    await client.execute("BEGIN");
+    await client.query("BEGIN");
 
     // Prepare the query
     const query = `
@@ -494,12 +494,12 @@ async function batchSaveGearToDatabase(items) {
     }
 
     // Commit the transaction
-    await client.execute("COMMIT");
+    await client.query("COMMIT");
 
     console.log(`Successfully saved ${items.length} items in batch operation`);
   } catch (error) {
     // Rollback in case of error
-    await client.execute("ROLLBACK");
+    await client.query("ROLLBACK");
     console.error(`Error in batch save operation: ${error.message}`);
     throw error;
   } finally {
@@ -564,7 +564,7 @@ async function batchSaveItemsToDatabase(items) {
   const client = await pool.getConnection();
   try {
     // Begin transaction
-    await client.execute("BEGIN");
+    await client.query("BEGIN");
 
     // Prepare the query
     const query = `
@@ -618,12 +618,12 @@ async function batchSaveItemsToDatabase(items) {
     }
 
     // Commit the transaction
-    await client.execute("COMMIT");
+    await client.query("COMMIT");
 
     console.log(`Successfully saved ${items.length} items in batch operation`);
   } catch (error) {
     // Rollback in case of error
-    await client.execute("ROLLBACK");
+    await client.query("ROLLBACK");
     console.error(`Error in batch save operation: ${error.message}`);
     throw error;
   } finally {
