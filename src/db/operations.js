@@ -13,15 +13,25 @@ async function saveItemRecipeToDatabase(item) {
   const client = await pool.getConnection();
   try {
     const query = `
-      INSERT INTO "DatabaseItemRecipes" (
-        id, name, description, type, tag, icon, "rarityMin", "rarityMax", level, "statsId",
-        "learnableRecipeIds", "rewardId", layout, "typeDescription"
+      INSERT INTO \`DatabaseItemRecipes\` (
+        id, name, description, type, tag, icon, \`rarityMin\`, \`rarityMax\`, level, \`statsId\`,
+        \`learnableRecipeIds\`, \`rewardId\`, layout, \`typeDescription\`
       ) VALUES (
         ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
       ) ON DUPLICATE KEY UPDATE
-        name = ?, description = ?, type = ?, tag = ?, icon = ?, 
-        "rarityMin" = ?, "rarityMax" = ?, level = ?, "statsId" = ?,
-        "learnableRecipeIds" = ?, "rewardId" = ?, layout = ?, "typeDescription" = ?
+        name = VALUES(name),
+        description = VALUES(description),
+        type = VALUES(type),
+        tag = VALUES(tag),
+        icon = VALUES(icon),
+        \`rarityMin\` = VALUES(\`rarityMin\`),
+        \`rarityMax\` = VALUES(\`rarityMax\`),
+        level = VALUES(level),
+        \`statsId\` = VALUES(\`statsId\`),
+        \`learnableRecipeIds\` = VALUES(\`learnableRecipeIds\`),
+        \`rewardId\` = VALUES(\`rewardId\`),
+        layout = VALUES(layout),
+        \`typeDescription\` = VALUES(\`typeDescription\`)
     `;
 
     const values = [
@@ -60,19 +70,19 @@ async function saveStatToDatabase(statData) {
   try {
     // Insert into DatabaseStats table
     const query = `
-      INSERT INTO "DatabaseStats" (
+      INSERT INTO \`DatabaseStats\` (
         id, common, uncommon, rare, heroic, epic, legendary, artifact, durability
       ) VALUES (
         ?, ?, ?, ?, ?, ?, ?, ?, ?
       ) ON DUPLICATE KEY UPDATE
-        common = ?,
-        uncommon = ?,
-        rare = ?,
-        heroic = ?,
-        epic = ?,
-        legendary = ?,
-        artifact = ?,
-        durability = ?
+        common = VALUES(common),
+        uncommon = VALUES(uncommon),
+        rare = VALUES(rare),
+        heroic = VALUES(heroic),
+        epic = VALUES(epic),
+        legendary = VALUES(legendary),
+        artifact = VALUES(artifact),
+        durability = VALUES(durability)
     `;
 
     // Convert each rarity object to JSON string
@@ -107,13 +117,13 @@ async function saveSetBonusToDatabase(setBonusData) {
   try {
     // Insert into DatabaseSetBonuses table
     const query = `
-      INSERT INTO "DatabaseSetBonuses" (
-        id, name, "setEffects"
+      INSERT INTO \`DatabaseSetBonuses\` (
+        id, name, \`setEffects\`
       ) VALUES (
         ?, ?, ?
       ) ON DUPLICATE KEY UPDATE
-        name = ?,
-        "setEffects" = ?
+        name = VALUES(name),
+        \`setEffects\` = VALUES(\`setEffects\`)
     `;
 
     // Convert setEffects array to JSON string
@@ -142,13 +152,13 @@ async function saveEnchantmentDefToDatabase(enchantmentDefData) {
   try {
     // Insert into DatabaseEnchantmentDef table
     const query = `
-      INSERT INTO "DatabaseEnchantmentDef" (
+      INSERT INTO \`DatabaseEnchantmentDef\` (
         id, name, levels
       ) VALUES (
         ?, ?, ?
       ) ON DUPLICATE KEY UPDATE
-        name = ?,
-        levels = ?
+        name = VALUES(name),
+        levels = VALUES(levels)
     `;
 
     const values = [
@@ -178,20 +188,20 @@ async function saveEnchantmentLevelToDatabase(enchantmentLevelData) {
   try {
     // Insert into DatabaseEnchantmentLevel table
     const query = `
-      INSERT INTO "DatabaseEnchantmentLevel" (
-        id, name, "primary", core, cost, success, failure, loss, "all", "break"
+      INSERT INTO \`DatabaseEnchantmentLevel\` (
+        id, name, \`primary\`, core, cost, success, failure, loss, \`all\`, \`break\`
       ) VALUES (
         ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
       ) ON DUPLICATE KEY UPDATE
-        name = ?,
-        "primary" = ?,
-        core = ?,
-        cost = ?,
-        success = ?,
-        failure = ?,
-        loss = ?,
-        "all" = ?,
-        "break" = ?
+        name = VALUES(name),
+        \`primary\` = VALUES(\`primary\`),
+        core = VALUES(core),
+        cost = VALUES(cost),
+        success = VALUES(success),
+        failure = VALUES(failure),
+        loss = VALUES(loss),
+        \`all\` = VALUES(\`all\`),
+        \`break\` = VALUES(\`break\`)
     `;
 
     const values = [
@@ -228,17 +238,29 @@ async function saveRecipeToDatabase(item) {
   try {
     // Values are stored as JSON strings for MySQL
     const query = `
-      INSERT INTO "DatabaseRecipes" (
-        id, name, profession, certification, learnable, "overrideName", overrides, tags,
-        fuel, "baseDuration", "rewardId", "primaryResourceCosts", "generalResourceCost",
-        "qualityFormula", "craftingCurrencyCostId", "rewardItem", layout
+      INSERT INTO \`DatabaseRecipes\` (
+        id, name, profession, certification, learnable, \`overrideName\`, overrides, tags,
+        fuel, \`baseDuration\`, \`rewardId\`, \`primaryResourceCosts\`, \`generalResourceCost\`,
+        \`qualityFormula\`, \`craftingCurrencyCostId\`, \`rewardItem\`, layout
       ) VALUES (
         ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
       ) ON DUPLICATE KEY UPDATE
-        name = ?, profession = ?, certification = ?, learnable = ?, "overrideName" = ?,
-        overrides = ?, tags = ?, fuel= ?, "baseDuration" = ?, "rewardId" = ?, "primaryResourceCosts" = ?,
-        "generalResourceCost" = ?, "qualityFormula" = ?, "craftingCurrencyCostId" = ?, "rewardItem" = ?,
-        layout = ?
+        name = VALUES(name),
+        profession = VALUES(profession),
+        certification = VALUES(certification),
+        learnable = VALUES(learnable),
+        \`overrideName\` = VALUES(\`overrideName\`),
+        overrides = VALUES(overrides),
+        tags = VALUES(tags),
+        fuel = VALUES(fuel),
+        \`baseDuration\` = VALUES(\`baseDuration\`),
+        \`rewardId\` = VALUES(\`rewardId\`),
+        \`primaryResourceCosts\` = VALUES(\`primaryResourceCosts\`),
+        \`generalResourceCost\` = VALUES(\`generalResourceCost\`),
+        \`qualityFormula\` = VALUES(\`qualityFormula\`),
+        \`craftingCurrencyCostId\` = VALUES(\`craftingCurrencyCostId\`),
+        \`rewardItem\` = VALUES(\`rewardItem\`),
+        layout = VALUES(layout)
     `;
 
     const values = [
@@ -331,24 +353,24 @@ async function batchSaveEquipmentToDatabase(items) {
 
     // Prepare the query
     const query = `
-      INSERT INTO "DatabaseEquipment" (
-        id, name, "typeDescription", description, type, subtype, tag, icon, "rarityMin", "rarityMax", 
-        "statsId", level, grade, "itemRecipeId", layout
+      INSERT INTO \`DatabaseEquipment\` (
+        id, name, \`typeDescription\`, description, type, subtype, tag, icon, \`rarityMin\`, \`rarityMax\`,
+        \`statsId\`, level, grade, \`itemRecipeId\`, layout
       ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
       ON DUPLICATE KEY UPDATE
         name = VALUES(name),
-        "typeDescription" = VALUES("typeDescription"),
+        \`typeDescription\` = VALUES(\`typeDescription\`),
         description = VALUES(description),
         type = VALUES(type),
         subtype = VALUES(subtype),
         tag = VALUES(tag),
         icon = VALUES(icon),
-        "rarityMin" = VALUES("rarityMin"),
-        "rarityMax" = VALUES("rarityMax"),
-        "statsId" = VALUES("statsId"),
+        \`rarityMin\` = VALUES(\`rarityMin\`),
+        \`rarityMax\` = VALUES(\`rarityMax\`),
+        \`statsId\` = VALUES(\`statsId\`),
         level = VALUES(level),
         grade = VALUES(grade),
-        "itemRecipeId" = VALUES("itemRecipeId"),
+        \`itemRecipeId\` = VALUES(\`itemRecipeId\`),
         layout = VALUES(layout)
     `;
 
@@ -411,30 +433,30 @@ async function batchSaveGearToDatabase(items) {
 
     // Prepare the query
     const query = `
-      INSERT INTO "DatabaseGear" (
-        id, name, "typeDescription", description, type, subtype, tag, icon, "rarityMin", "rarityMax", 
-        slots, "statsId", "setBonusIds", level, grade, "enchantmentId", "deconstructionRecipeId",
-        "itemRecipeId", layout
+      INSERT INTO \`DatabaseGear\` (
+        id, name, \`typeDescription\`, description, type, subtype, tag, icon, \`rarityMin\`, \`rarityMax\`,
+        slots, \`statsId\`, \`setBonusIds\`, level, grade, \`enchantmentId\`, \`deconstructionRecipeId\`,
+        \`itemRecipeId\`, layout
       ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,
         ?, ?, ?, ?)
       ON DUPLICATE KEY UPDATE
         name = VALUES(name),
-        "typeDescription" = VALUES("typeDescription"),
+        \`typeDescription\` = VALUES(\`typeDescription\`),
         description = VALUES(description),
         type = VALUES(type),
         subtype = VALUES(subtype),
         tag = VALUES(tag),
         icon = VALUES(icon),
-        "rarityMin" = VALUES("rarityMin"),
-        "rarityMax" = VALUES("rarityMax"),
+        \`rarityMin\` = VALUES(\`rarityMin\`),
+        \`rarityMax\` = VALUES(\`rarityMax\`),
         slots = VALUES(slots),
-        "statsId" = VALUES("statsId"),
-        "setBonusIds" = VALUES("setBonusIds"),
+        \`statsId\` = VALUES(\`statsId\`),
+        \`setBonusIds\` = VALUES(\`setBonusIds\`),
         level = VALUES(level),
         grade = VALUES(grade),
-        "enchantmentId" = VALUES("enchantmentId"),
-        "deconstructionRecipeId" = VALUES("deconstructionRecipeId"),
-        "itemRecipeId" = VALUES("itemRecipeId"),
+        \`enchantmentId\` = VALUES(\`enchantmentId\`),
+        \`deconstructionRecipeId\` = VALUES(\`deconstructionRecipeId\`),
+        \`itemRecipeId\` = VALUES(\`itemRecipeId\`),
         layout = VALUES(layout)
     `;
 
@@ -546,9 +568,9 @@ async function batchSaveItemsToDatabase(items) {
 
     // Prepare the query
     const query = `
-      INSERT INTO "DatabaseItems" (
-        id, name, description, type, tag, icon, "rarityMin", "rarityMax", level, "statsId",
-        "itemRecipeId", "recipeId", layout, "typeDescription"
+      INSERT INTO \`DatabaseItems\` (
+        id, name, description, type, tag, icon, \`rarityMin\`, \`rarityMax\`, level, \`statsId\`,
+        \`itemRecipeId\`, \`recipeId\`, layout, \`typeDescription\`
       ) VALUES (
         ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
       ) ON DUPLICATE KEY UPDATE
@@ -557,14 +579,14 @@ async function batchSaveItemsToDatabase(items) {
         type = VALUES(type),
         tag = VALUES(tag),
         icon = VALUES(icon),
-        "rarityMin" = VALUES("rarityMin"),
-        "rarityMax" = VALUES("rarityMax"),
+        \`rarityMin\` = VALUES(\`rarityMin\`),
+        \`rarityMax\` = VALUES(\`rarityMax\`),
         level = VALUES(level),
-        "statsId" = VALUES("statsId"),
-        "itemRecipeId" = VALUES("itemRecipeId"),
-        "recipeId" = VALUES("recipeId"),
+        \`statsId\` = VALUES(\`statsId\`),
+        \`itemRecipeId\` = VALUES(\`itemRecipeId\`),
+        \`recipeId\` = VALUES(\`recipeId\`),
         layout = VALUES(layout),
-        "typeDescription" = VALUES("typeDescription")
+        \`typeDescription\` = VALUES(\`typeDescription\`)
     `;
 
     // Create an array of promises for all insert operations
