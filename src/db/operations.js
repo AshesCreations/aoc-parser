@@ -229,7 +229,7 @@ async function saveEnchantmentLevelToDatabase(enchantmentLevelData) {
 }
 
 /**
- * Function to save an recipe to the MySQL database
+ * Function to save a recipe to the MySQL database
  * @param {Object} item - Item object to save
  * @returns {Promise} - Promise that resolves when the item is saved
  */
