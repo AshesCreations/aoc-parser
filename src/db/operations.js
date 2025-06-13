@@ -19,9 +19,19 @@ async function saveItemRecipeToDatabase(item) {
       ) VALUES (
         ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
       ) ON DUPLICATE KEY UPDATE
-        name = ?, description = ?, type = ?, tag = ?, icon = ?,
-        \`rarityMin\` = ?, \`rarityMax\` = ?, level = ?, \`statsId\` = ?,
-        \`learnableRecipeIds\` = ?, \`rewardId\` = ?, layout = ?, \`typeDescription\` = ?
+        name = VALUES(name),
+        description = VALUES(description),
+        type = VALUES(type),
+        tag = VALUES(tag),
+        icon = VALUES(icon),
+        \`rarityMin\` = VALUES(\`rarityMin\`),
+        \`rarityMax\` = VALUES(\`rarityMax\`),
+        level = VALUES(level),
+        \`statsId\` = VALUES(\`statsId\`),
+        \`learnableRecipeIds\` = VALUES(\`learnableRecipeIds\`),
+        \`rewardId\` = VALUES(\`rewardId\`),
+        layout = VALUES(layout),
+        \`typeDescription\` = VALUES(\`typeDescription\`)
     `;
 
     const values = [
@@ -65,14 +75,14 @@ async function saveStatToDatabase(statData) {
       ) VALUES (
         ?, ?, ?, ?, ?, ?, ?, ?, ?
       ) ON DUPLICATE KEY UPDATE
-        common = ?,
-        uncommon = ?,
-        rare = ?,
-        heroic = ?,
-        epic = ?,
-        legendary = ?,
-        artifact = ?,
-        durability = ?
+        common = VALUES(common),
+        uncommon = VALUES(uncommon),
+        rare = VALUES(rare),
+        heroic = VALUES(heroic),
+        epic = VALUES(epic),
+        legendary = VALUES(legendary),
+        artifact = VALUES(artifact),
+        durability = VALUES(durability)
     `;
 
     // Convert each rarity object to JSON string
@@ -112,8 +122,8 @@ async function saveSetBonusToDatabase(setBonusData) {
       ) VALUES (
         ?, ?, ?
       ) ON DUPLICATE KEY UPDATE
-        name = ?,
-        \`setEffects\` = ?
+        name = VALUES(name),
+        \`setEffects\` = VALUES(\`setEffects\`)
     `;
 
     // Convert setEffects array to JSON string
@@ -147,8 +157,8 @@ async function saveEnchantmentDefToDatabase(enchantmentDefData) {
       ) VALUES (
         ?, ?, ?
       ) ON DUPLICATE KEY UPDATE
-        name = ?,
-        levels = ?
+        name = VALUES(name),
+        levels = VALUES(levels)
     `;
 
     const values = [
@@ -183,15 +193,15 @@ async function saveEnchantmentLevelToDatabase(enchantmentLevelData) {
       ) VALUES (
         ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
       ) ON DUPLICATE KEY UPDATE
-        name = ?,
-        \`primary\` = ?,
-        core = ?,
-        cost = ?,
-        success = ?,
-        failure = ?,
-        loss = ?,
-        \`all\` = ?,
-        \`break\` = ?
+        name = VALUES(name),
+        \`primary\` = VALUES(\`primary\`),
+        core = VALUES(core),
+        cost = VALUES(cost),
+        success = VALUES(success),
+        failure = VALUES(failure),
+        loss = VALUES(loss),
+        \`all\` = VALUES(\`all\`),
+        \`break\` = VALUES(\`break\`)
     `;
 
     const values = [
@@ -235,10 +245,22 @@ async function saveRecipeToDatabase(item) {
       ) VALUES (
         ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
       ) ON DUPLICATE KEY UPDATE
-        name = ?, profession = ?, certification = ?, learnable = ?, \`overrideName\` = ?,
-        overrides = ?, tags = ?, fuel= ?, \`baseDuration\` = ?, \`rewardId\` = ?, \`primaryResourceCosts\` = ?,
-        \`generalResourceCost\` = ?, \`qualityFormula\` = ?, \`craftingCurrencyCostId\` = ?, \`rewardItem\` = ?,
-        layout = ?
+        name = VALUES(name),
+        profession = VALUES(profession),
+        certification = VALUES(certification),
+        learnable = VALUES(learnable),
+        \`overrideName\` = VALUES(\`overrideName\`),
+        overrides = VALUES(overrides),
+        tags = VALUES(tags),
+        fuel = VALUES(fuel),
+        \`baseDuration\` = VALUES(\`baseDuration\`),
+        \`rewardId\` = VALUES(\`rewardId\`),
+        \`primaryResourceCosts\` = VALUES(\`primaryResourceCosts\`),
+        \`generalResourceCost\` = VALUES(\`generalResourceCost\`),
+        \`qualityFormula\` = VALUES(\`qualityFormula\`),
+        \`craftingCurrencyCostId\` = VALUES(\`craftingCurrencyCostId\`),
+        \`rewardItem\` = VALUES(\`rewardItem\`),
+        layout = VALUES(layout)
     `;
 
     const values = [
