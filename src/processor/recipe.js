@@ -49,7 +49,7 @@ async function processRecipeFiles(
             learnable: jsonData.learnable,
             overrideName: extractLastQuotedValue(jsonData.overrideName),
             overrides: [],
-            tags: jsonData.categoryTag?.tagName.split(".") || "",
+            tags: jsonData.categoryTag?.tagName?.split(".") || [],
             fuel: jsonData.fuel,
             baseDuration: jsonData.baseDuration,
             rewardId: jsonData.rewardId?.guid || "",
