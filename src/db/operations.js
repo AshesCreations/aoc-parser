@@ -330,11 +330,9 @@ async function batchFindItemRecipes(itemIds) {
   const client = await pool.getConnection();
   try {
     const query = `
-      SELECT ir.id AS recipe_item_id, jt.item_id
-      FROM \`DatabaseRecipes\` dr
-      JOIN JSON_TABLE(dr.rewardItem, '$[*]' COLUMNS(item_id VARCHAR(255) PATH '$')) AS jt ON TRUE
-      JOIN \`DatabaseItemRecipes\` ir ON ir.learnableRecipeIds = dr.id
-      WHERE jt.item_id IN (?)
+      SELECT id AS recipe_item_id, learnableRecipeIds AS item_id
+      FROM \`DatabaseItemRecipes\`
+      WHERE learnableRecipeIds IN (?)
     `;
 
     const [rows] = await client.execute(query, [itemIds]);
