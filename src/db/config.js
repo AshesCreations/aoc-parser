@@ -52,6 +52,9 @@ export async function initDatabase() {
         lastModified TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
       )
     `);
+    await conn.query(
+      "ALTER TABLE `DatabaseItems` ADD COLUMN IF NOT EXISTS `lastModified` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP"
+    );
 
     await conn.query(`
       CREATE TABLE IF NOT EXISTS DatabaseItemRecipes (
@@ -72,6 +75,9 @@ export async function initDatabase() {
         lastModified TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
       )
     `);
+    await conn.query(
+      "ALTER TABLE `DatabaseItemRecipes` ADD COLUMN IF NOT EXISTS `lastModified` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP"
+    );
     await conn.query(`
       CREATE TABLE IF NOT EXISTS DatabaseStats (
         id VARCHAR(255) PRIMARY KEY,
@@ -143,6 +149,9 @@ export async function initDatabase() {
         lastModified TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
       )
     `);
+    await conn.query(
+      "ALTER TABLE `DatabaseRecipes` ADD COLUMN IF NOT EXISTS `lastModified` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP"
+    );
 
     await conn.query(`
       CREATE TABLE IF NOT EXISTS DatabaseEquipment (
@@ -164,6 +173,9 @@ export async function initDatabase() {
         lastModified TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
       )
     `);
+    await conn.query(
+      "ALTER TABLE `DatabaseEquipment` ADD COLUMN IF NOT EXISTS `lastModified` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP"
+    );
 
     await conn.query(`
       CREATE TABLE IF NOT EXISTS DatabaseGear (
@@ -189,6 +201,9 @@ export async function initDatabase() {
         lastModified TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
       )
     `);
+    await conn.query(
+      "ALTER TABLE `DatabaseGear` ADD COLUMN IF NOT EXISTS `lastModified` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP"
+    );
 
     console.log("Database tables initialized");
   } finally {
