@@ -5,11 +5,15 @@
 import { pool } from "./config.js";
 
 async function ensureLastModifiedColumn(client, table) {
-  const query = `ALTER TABLE \`${table}\` ADD COLUMN IF NOT EXISTS \`lastModified\` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP`;
   try {
-    await client.query(query);
+    const checkQuery = `SHOW COLUMNS FROM \`${table}\` LIKE 'lastModified'`;
+    const [rows] = await client.query(checkQuery);
+    if (rows.length === 0) {
+      const alterQuery = `ALTER TABLE \`${table}\` ADD COLUMN \`lastModified\` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP`;
+      await client.query(alterQuery);
+    }
   } catch (err) {
-    // Ignore if permissions prevent alteration
+    // Ignore errors, e.g., insufficient permissions
   }
 }
 
@@ -79,6 +83,7 @@ async function saveItemRecipeToDatabase(item) {
 async function saveStatToDatabase(statData) {
   const client = await pool.getConnection();
   try {
+    await ensureLastModifiedColumn(client, 'DatabaseStats');
     // Insert into DatabaseStats table
     const query = `
       INSERT INTO \`DatabaseStats\` (
@@ -93,7 +98,8 @@ async function saveStatToDatabase(statData) {
         epic = VALUES(epic),
         legendary = VALUES(legendary),
         artifact = VALUES(artifact),
-        durability = VALUES(durability)
+        durability = VALUES(durability),
+        lastModified = CURRENT_TIMESTAMP
     `;
 
     // Convert each rarity object to JSON string

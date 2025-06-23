@@ -88,7 +88,8 @@ export async function initDatabase() {
         epic JSON,
         legendary JSON,
         artifact JSON,
-        durability JSON
+        durability JSON,
+        lastModified TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
       )
     `);
 
@@ -96,7 +97,8 @@ export async function initDatabase() {
       CREATE TABLE IF NOT EXISTS DatabaseSetBonuses (
         id VARCHAR(255) PRIMARY KEY,
         name TEXT,
-        setEffects JSON
+        setEffects JSON,
+        lastModified TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
       )
     `);
 
@@ -104,7 +106,8 @@ export async function initDatabase() {
       CREATE TABLE IF NOT EXISTS DatabaseEnchantmentDef (
         id VARCHAR(255) PRIMARY KEY,
         name TEXT,
-        levels JSON
+        levels JSON,
+        lastModified TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
       )
     `);
 
@@ -119,7 +122,8 @@ export async function initDatabase() {
         failure DOUBLE,
         loss DOUBLE,
         \`all\` DOUBLE,
-        \`break\` DOUBLE
+        \`break\` DOUBLE,
+        lastModified TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
       )
     `);
 
