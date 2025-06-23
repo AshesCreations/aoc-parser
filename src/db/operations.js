@@ -60,7 +60,7 @@ async function saveItemRecipeToDatabase(item) {
       item.rarityMax ?? null,
       item.level ?? null,
       item.statsId ?? null,
-      item.learnableRecipeIds ?? null,
+      JSON.stringify(item.learnableRecipeIds || []),
       JSON.stringify(item.rewardId || []),
       item.layout || "itemRecipe",
       item.typeDescription || "",
@@ -330,9 +330,10 @@ async function batchFindItemRecipes(itemIds) {
   const client = await pool.getConnection();
   try {
     const query = `
-      SELECT id AS recipe_item_id, learnableRecipeIds AS item_id
-      FROM \`DatabaseItemRecipes\`
-      WHERE learnableRecipeIds IN (?)
+      SELECT r.id, jt.item_id
+      FROM \`DatabaseItemRecipes\` r
+      JOIN JSON_TABLE(CAST(r.learnableRecipeIds AS JSON), '$[*]' COLUMNS(item_id VARCHAR(255) PATH '$')) as jt
+      WHERE jt.item_id IN (?)
     `;
 
     const [rows] = await client.execute(query, [itemIds]);
