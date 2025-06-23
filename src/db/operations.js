@@ -4,6 +4,15 @@
 
 import { pool } from "./config.js";
 
+async function ensureLastModifiedColumn(client, table) {
+  const query = `ALTER TABLE \`${table}\` ADD COLUMN IF NOT EXISTS \`lastModified\` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP`;
+  try {
+    await client.query(query);
+  } catch (err) {
+    // Ignore if permissions prevent alteration
+  }
+}
+
 /**
  * Function to save an item recipe to the MySQL database
  * @param {Object} item - Item object to save
@@ -12,6 +21,7 @@ import { pool } from "./config.js";
 async function saveItemRecipeToDatabase(item) {
   const client = await pool.getConnection();
   try {
+    await ensureLastModifiedColumn(client, 'DatabaseItemRecipes');
     const query = `
       INSERT INTO \`DatabaseItemRecipes\` (
         id, name, description, type, tag, icon, \`rarityMin\`, \`rarityMax\`, level, \`statsId\`,
@@ -31,7 +41,8 @@ async function saveItemRecipeToDatabase(item) {
         \`learnableRecipeIds\` = VALUES(\`learnableRecipeIds\`),
         \`rewardId\` = VALUES(\`rewardId\`),
         layout = VALUES(layout),
-        \`typeDescription\` = VALUES(\`typeDescription\`)
+        \`typeDescription\` = VALUES(\`typeDescription\`),
+        lastModified = CURRENT_TIMESTAMP
     `;
 
     const values = [
@@ -115,6 +126,7 @@ async function saveStatToDatabase(statData) {
 async function saveSetBonusToDatabase(setBonusData) {
   const client = await pool.getConnection();
   try {
+    await ensureLastModifiedColumn(client, 'DatabaseSetBonuses');
     // Insert into DatabaseSetBonuses table
     const query = `
       INSERT INTO \`DatabaseSetBonuses\` (
@@ -123,7 +135,8 @@ async function saveSetBonusToDatabase(setBonusData) {
         ?, ?, ?
       ) ON DUPLICATE KEY UPDATE
         name = VALUES(name),
-        \`setEffects\` = VALUES(\`setEffects\`)
+        \`setEffects\` = VALUES(\`setEffects\`),
+        lastModified = CURRENT_TIMESTAMP
     `;
 
     // Convert setEffects array to JSON string
@@ -150,6 +163,7 @@ async function saveSetBonusToDatabase(setBonusData) {
 async function saveEnchantmentDefToDatabase(enchantmentDefData) {
   const client = await pool.getConnection();
   try {
+    await ensureLastModifiedColumn(client, 'DatabaseEnchantmentDef');
     // Insert into DatabaseEnchantmentDef table
     const query = `
       INSERT INTO \`DatabaseEnchantmentDef\` (
@@ -158,7 +172,8 @@ async function saveEnchantmentDefToDatabase(enchantmentDefData) {
         ?, ?, ?
       ) ON DUPLICATE KEY UPDATE
         name = VALUES(name),
-        levels = VALUES(levels)
+        levels = VALUES(levels),
+        lastModified = CURRENT_TIMESTAMP
     `;
 
     const values = [
@@ -186,6 +201,7 @@ async function saveEnchantmentDefToDatabase(enchantmentDefData) {
 async function saveEnchantmentLevelToDatabase(enchantmentLevelData) {
   const client = await pool.getConnection();
   try {
+    await ensureLastModifiedColumn(client, 'DatabaseEnchantmentLevel');
     // Insert into DatabaseEnchantmentLevel table
     const query = `
       INSERT INTO \`DatabaseEnchantmentLevel\` (
@@ -201,7 +217,8 @@ async function saveEnchantmentLevelToDatabase(enchantmentLevelData) {
         failure = VALUES(failure),
         loss = VALUES(loss),
         \`all\` = VALUES(\`all\`),
-        \`break\` = VALUES(\`break\`)
+        \`break\` = VALUES(\`break\`),
+        lastModified = CURRENT_TIMESTAMP
     `;
 
     const values = [
@@ -236,6 +253,7 @@ async function saveEnchantmentLevelToDatabase(enchantmentLevelData) {
 async function saveRecipeToDatabase(item) {
   const client = await pool.getConnection();
   try {
+    await ensureLastModifiedColumn(client, 'DatabaseRecipes');
     // Values are stored as JSON strings for MySQL
     const query = `
       INSERT INTO \`DatabaseRecipes\` (
@@ -260,7 +278,8 @@ async function saveRecipeToDatabase(item) {
         \`qualityFormula\` = VALUES(\`qualityFormula\`),
         \`craftingCurrencyCostId\` = VALUES(\`craftingCurrencyCostId\`),
         \`rewardItem\` = VALUES(\`rewardItem\`),
-        layout = VALUES(layout)
+        layout = VALUES(layout),
+        lastModified = CURRENT_TIMESTAMP
     `;
 
     const values = [
@@ -305,9 +324,10 @@ async function batchFindItemRecipes(itemIds) {
   const client = await pool.getConnection();
   try {
     const query = `
-      SELECT r.id, jt.item_id
-      FROM \`DatabaseItemRecipes\` r
-      JOIN JSON_TABLE(r.rewardId, '$[*]' COLUMNS(item_id VARCHAR(255) PATH '$')) as jt
+      SELECT ir.id AS recipe_item_id, jt.item_id
+      FROM \`DatabaseRecipes\` dr
+      JOIN JSON_TABLE(dr.rewardItem, '$[*]' COLUMNS(item_id VARCHAR(255) PATH '$')) AS jt ON TRUE
+      JOIN \`DatabaseItemRecipes\` ir ON ir.learnableRecipeIds = dr.id
       WHERE jt.item_id IN (?)
     `;
 
@@ -324,7 +344,7 @@ async function batchFindItemRecipes(itemIds) {
     // Populate the map with the results
     rows.forEach((row) => {
       if (row.item_id && recipeMap[row.item_id]) {
-        recipeMap[row.item_id].push(row.id);
+        recipeMap[row.item_id].push(row.recipe_item_id);
       }
     });
 
@@ -348,6 +368,7 @@ async function batchSaveEquipmentToDatabase(items) {
 
   const client = await pool.getConnection();
   try {
+    await ensureLastModifiedColumn(client, 'DatabaseEquipment');
     // Begin transaction
     await client.query("BEGIN");
 
@@ -371,7 +392,8 @@ async function batchSaveEquipmentToDatabase(items) {
         level = VALUES(level),
         grade = VALUES(grade),
         \`itemRecipeId\` = VALUES(\`itemRecipeId\`),
-        layout = VALUES(layout)
+        layout = VALUES(layout),
+        lastModified = CURRENT_TIMESTAMP
     `;
 
     // Create an array of promises for all insert operations
@@ -428,6 +450,7 @@ async function batchSaveGearToDatabase(items) {
 
   const client = await pool.getConnection();
   try {
+    await ensureLastModifiedColumn(client, 'DatabaseGear');
     // Begin transaction
     await client.query("BEGIN");
 
@@ -457,7 +480,8 @@ async function batchSaveGearToDatabase(items) {
         \`enchantmentId\` = VALUES(\`enchantmentId\`),
         \`deconstructionRecipeId\` = VALUES(\`deconstructionRecipeId\`),
         \`itemRecipeId\` = VALUES(\`itemRecipeId\`),
-        layout = VALUES(layout)
+        layout = VALUES(layout),
+        lastModified = CURRENT_TIMESTAMP
     `;
 
     // Create an array of promises for all insert operations
@@ -563,6 +587,7 @@ async function batchSaveItemsToDatabase(items) {
 
   const client = await pool.getConnection();
   try {
+    await ensureLastModifiedColumn(client, 'DatabaseItems');
     // Begin transaction
     await client.query("BEGIN");
 
@@ -586,7 +611,8 @@ async function batchSaveItemsToDatabase(items) {
         \`itemRecipeId\` = VALUES(\`itemRecipeId\`),
         \`recipeId\` = VALUES(\`recipeId\`),
         layout = VALUES(layout),
-        \`typeDescription\` = VALUES(\`typeDescription\`)
+        \`typeDescription\` = VALUES(\`typeDescription\`),
+        lastModified = CURRENT_TIMESTAMP
     `;
 
     // Create an array of promises for all insert operations
