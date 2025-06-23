@@ -48,7 +48,8 @@ export async function initDatabase() {
         level INT,
         statsId TEXT,
         itemRecipeId JSON,
-        recipeId JSON
+        recipeId JSON,
+        lastModified TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
       )
     `);
 
@@ -67,7 +68,8 @@ export async function initDatabase() {
         level INT,
         statsId TEXT,
         learnableRecipeIds TEXT,
-        rewardId JSON
+        rewardId JSON,
+        lastModified TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
       )
     `);
     await conn.query(`
@@ -80,7 +82,8 @@ export async function initDatabase() {
         epic JSON,
         legendary JSON,
         artifact JSON,
-        durability JSON
+        durability JSON,
+        lastModified TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
       )
     `);
 
@@ -88,7 +91,8 @@ export async function initDatabase() {
       CREATE TABLE IF NOT EXISTS DatabaseSetBonuses (
         id VARCHAR(255) PRIMARY KEY,
         name TEXT,
-        setEffects JSON
+        setEffects JSON,
+        lastModified TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
       )
     `);
 
@@ -96,7 +100,8 @@ export async function initDatabase() {
       CREATE TABLE IF NOT EXISTS DatabaseEnchantmentDef (
         id VARCHAR(255) PRIMARY KEY,
         name TEXT,
-        levels JSON
+        levels JSON,
+        lastModified TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
       )
     `);
 
@@ -111,7 +116,8 @@ export async function initDatabase() {
         failure DOUBLE,
         loss DOUBLE,
         \`all\` DOUBLE,
-        \`break\` DOUBLE
+        \`break\` DOUBLE,
+        lastModified TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
       )
     `);
 
@@ -133,7 +139,8 @@ export async function initDatabase() {
         generalResourceCost JSON,
         qualityFormula TEXT,
         craftingCurrencyCostId TEXT,
-        rewardItem JSON
+        rewardItem JSON,
+        lastModified TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
       )
     `);
 
@@ -153,7 +160,8 @@ export async function initDatabase() {
         statsId TEXT,
         level INT,
         grade TEXT,
-        itemRecipeId JSON
+        itemRecipeId JSON,
+        lastModified TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
       )
     `);
 
@@ -177,7 +185,8 @@ export async function initDatabase() {
         grade TEXT,
         enchantmentId TEXT,
         deconstructionRecipeId TEXT,
-        itemRecipeId JSON
+        itemRecipeId JSON,
+        lastModified TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
       )
     `);
 
