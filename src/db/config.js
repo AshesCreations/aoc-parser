@@ -6,6 +6,17 @@ dotenv.config();
 
 import mysql from "mysql2/promise";
 
+async function ensureLastModifiedColumn(conn, table) {
+  const [rows] = await conn.query(
+    `SHOW COLUMNS FROM \`${table}\` LIKE 'lastModified'`
+  );
+  if (rows.length === 0) {
+    await conn.query(
+      `ALTER TABLE \`${table}\` ADD COLUMN \`lastModified\` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP`
+    );
+  }
+}
+
 let pool = null;
 
 export async function setupConnection() {
@@ -49,9 +60,10 @@ export async function initDatabase() {
         statsId TEXT,
         itemRecipeId JSON,
         recipeId JSON,
-        lastModified TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+      lastModified TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
       )
     `);
+    await ensureLastModifiedColumn(conn, 'DatabaseItems');
 
     await conn.query(`
       CREATE TABLE IF NOT EXISTS DatabaseItemRecipes (
@@ -69,9 +81,10 @@ export async function initDatabase() {
         statsId TEXT,
         learnableRecipeIds TEXT,
         rewardId JSON,
-        lastModified TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+      lastModified TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
       )
     `);
+    await ensureLastModifiedColumn(conn, 'DatabaseItemRecipes');
     await conn.query(`
       CREATE TABLE IF NOT EXISTS DatabaseStats (
         id VARCHAR(255) PRIMARY KEY,
@@ -83,27 +96,30 @@ export async function initDatabase() {
         legendary JSON,
         artifact JSON,
         durability JSON,
-        lastModified TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+      lastModified TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
       )
     `);
+    await ensureLastModifiedColumn(conn, 'DatabaseStats');
 
     await conn.query(`
       CREATE TABLE IF NOT EXISTS DatabaseSetBonuses (
         id VARCHAR(255) PRIMARY KEY,
         name TEXT,
         setEffects JSON,
-        lastModified TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+      lastModified TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
       )
     `);
+    await ensureLastModifiedColumn(conn, 'DatabaseSetBonuses');
 
     await conn.query(`
       CREATE TABLE IF NOT EXISTS DatabaseEnchantmentDef (
         id VARCHAR(255) PRIMARY KEY,
         name TEXT,
         levels JSON,
-        lastModified TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+      lastModified TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
       )
     `);
+    await ensureLastModifiedColumn(conn, 'DatabaseEnchantmentDef');
 
     await conn.query(`
       CREATE TABLE IF NOT EXISTS DatabaseEnchantmentLevel (
@@ -117,9 +133,10 @@ export async function initDatabase() {
         loss DOUBLE,
         \`all\` DOUBLE,
         \`break\` DOUBLE,
-        lastModified TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+      lastModified TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
       )
     `);
+    await ensureLastModifiedColumn(conn, 'DatabaseEnchantmentLevel');
 
     await conn.query(`
       CREATE TABLE IF NOT EXISTS DatabaseRecipes (
@@ -140,9 +157,10 @@ export async function initDatabase() {
         qualityFormula TEXT,
         craftingCurrencyCostId TEXT,
         rewardItem JSON,
-        lastModified TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+      lastModified TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
       )
     `);
+    await ensureLastModifiedColumn(conn, 'DatabaseRecipes');
 
     await conn.query(`
       CREATE TABLE IF NOT EXISTS DatabaseEquipment (
@@ -161,9 +179,10 @@ export async function initDatabase() {
         level INT,
         grade TEXT,
         itemRecipeId JSON,
-        lastModified TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+      lastModified TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
       )
     `);
+    await ensureLastModifiedColumn(conn, 'DatabaseEquipment');
 
     await conn.query(`
       CREATE TABLE IF NOT EXISTS DatabaseGear (
@@ -186,9 +205,10 @@ export async function initDatabase() {
         enchantmentId TEXT,
         deconstructionRecipeId TEXT,
         itemRecipeId JSON,
-        lastModified TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+      lastModified TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
       )
     `);
+    await ensureLastModifiedColumn(conn, 'DatabaseGear');
 
     console.log("Database tables initialized");
   } finally {
