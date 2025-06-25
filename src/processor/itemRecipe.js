@@ -93,13 +93,18 @@ async function processItemRecipeFiles(
         // TODO: log undefined icons
         // TODO: Add code for multiple learnable Recipes Ids and rewards
 
-        if (item.learnableRecipeIds !== "0" && item.learnableRecipeIds) {
+        if (
+          Array.isArray(item.learnableRecipeIds) &&
+          item.learnableRecipeIds.length > 0 &&
+          item.learnableRecipeIds[0] !== "0"
+        ) {
           const rewardData = getJson(
             directoryData,
             "/Crafting/CraftingRecipeDef",
             `CraftingRecipeDef_${item.learnableRecipeIds}.json`
           );
-          let id = rewardId[rewardData.rewardId.guid];
+          const rewardGuid = rewardData?.rewardId?.guid;
+          let id = rewardGuid ? rewardId[rewardGuid] : undefined;
           // Check reward for errors
           // TODO: Log error to file
           if (!id) {
