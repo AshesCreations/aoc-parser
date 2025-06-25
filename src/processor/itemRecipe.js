@@ -83,7 +83,10 @@ async function processItemRecipeFiles(
           rarityMax: jsonData.rarityMax,
           level: jsonData.level,
           statsId: jsonData.statBlockId?.guid,
-          learnableRecipeIds: jsonData.learnableRecipeIds?.[0]?.guid,
+          learnableRecipeIds: extractValues(
+            jsonData.learnableRecipeIds,
+            "guid"
+          ),
           rewardId: [],
         };
 
