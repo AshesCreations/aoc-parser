@@ -332,7 +332,10 @@ async function batchFindItemRecipes(itemIds) {
     const query = `
       SELECT r.id, jt.item_id
       FROM \`DatabaseItemRecipes\` r
-      JOIN JSON_TABLE(CAST(r.learnableRecipeIds AS JSON), '$[*]' COLUMNS(item_id VARCHAR(255) PATH '$')) as jt
+      JOIN JSON_TABLE(
+        COALESCE(r.learnableRecipeIds, '[]'),
+        '$[*]' COLUMNS(item_id VARCHAR(255) PATH '$')
+      ) as jt
       WHERE jt.item_id IN (?)
     `;
 
