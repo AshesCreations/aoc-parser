@@ -352,7 +352,7 @@ async function batchFindItemRecipes(itemIds) {
     // Populate the map with the results
     rows.forEach((row) => {
       if (row.item_id && recipeMap[row.item_id]) {
-        recipeMap[row.item_id].push(row.id);
+        recipeMap[row.item_id].push(row.recipe_item_id);
       }
     });
 
