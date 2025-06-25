@@ -100,8 +100,8 @@ function filterByTypes(filePath, allowedTypes) {
  * @throws {Error} - Throws an error if the request fails.
  */
 function getJson(baseFilePath, subFolders, jsonName) {
+  const filePath = path.join(baseFilePath, subFolders, jsonName);
   try {
-    const filePath = path.join(baseFilePath, subFolders, jsonName);
     const data = fs.readFileSync(filePath, "utf8");
     const jsonData = JSON.parse(data);
     return jsonData;
