@@ -185,7 +185,7 @@ async function saveEnchantmentDefToDatabase(enchantmentDefData) {
     const values = [
       enchantmentDefData.id ?? null,
       enchantmentDefData.name ?? null,
-      enchantmentDefData.levels || [],
+      JSON.stringify(enchantmentDefData.levels || []),
     ];
 
     await client.execute(query, values);
