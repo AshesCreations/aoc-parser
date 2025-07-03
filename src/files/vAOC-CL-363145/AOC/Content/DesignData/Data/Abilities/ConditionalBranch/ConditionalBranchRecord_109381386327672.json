@@ -1,0 +1,29 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 4,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0,
+		"fishingEvents": 0
+	},
+	"bEvaluateOnTick": false,
+	"branchTrigger":
+	{
+		"expression": "(RecordNameIs(GetHitRecord(GetHitEvent()), \"Tank_Grapple_Hit\") && GetEffectCount(GetHitTargetByIndex(GetHitEvent(), 0), $#30316002:6064631680720502784$) == 0) "
+	},
+	"bPredictedOnAutonomousClient": false,
+	"animBranchId":
+	{
+		"guid": "109381398648441",
+		"typeId": "30316010",
+		"name": "None"
+	},
+	"bOnlyBranchWithValidTarget": false,
+	"bOnRootMotionCollision": false,
+	"guid": "109381386327672",
+	"name": "Tank_Grapple",
+	"typeId": "30316009"
+}

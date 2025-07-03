@@ -1,0 +1,184 @@
+{
+	"eventTags": [],
+	"applicableTargets": 2,
+	"applicableLifeStates": 1,
+	"applicationRequirements":
+	{
+		"expression": ""
+	},
+	"bCapHits": false,
+	"maxTargetsPerHit":
+	{
+		"expression": ""
+	},
+	"bLimitHitsPerTarget": false,
+	"maxHitsPerTarget":
+	{
+		"expression": ""
+	},
+	"bLimitHitsGlobally": false,
+	"maxHitsGlobally":
+	{
+		"expression": ""
+	},
+	"hitFloatingText": "",
+	"applyEffects": [
+		{
+			"stackCount":
+			{
+				"expression": ""
+			},
+			"effectId":
+			{
+				"guid": "108397041964684",
+				"typeId": "30316002",
+				"name": "NPC_Bleed_DoT_Effect"
+			},
+			"effect":
+			{
+				"guid": "108397041964684",
+				"typeId": "30316002",
+				"name": "NPC_Bleed_DoT_Effect"
+			}
+		}
+	],
+	"effectsAppliedToSelf": [],
+	"lingeringZonesIds": [],
+	"projectilesToSpawn": [],
+	"projectilesToFire": [],
+	"reactionsIds": [],
+	"progressModifierIds": [],
+	"maxNumEffectsToRemove": 0,
+	"effectRemovalFilter":
+	{
+		"expression": ""
+	},
+	"effectsToRemoveIds": [],
+	"bRemoveAsDispel": false,
+	"bOverrideDefaultMissRate": false,
+	"missRate":
+	{
+		"expression": ""
+	},
+	"bOverrideDefaultBlockRate": false,
+	"blockRate":
+	{
+		"expression": ""
+	},
+	"bOverrideDefaultCritRate": false,
+	"critRate":
+	{
+		"expression": ""
+	},
+	"statModsIds": [
+		{
+			"guid": "108397015684744",
+			"typeId": "3031600201",
+			"name": "NPC_HeavyAttack_Physical_Damage"
+		}
+	],
+	"bonusCrowdControlDamageIds": [],
+	"onHitFXId":
+	{
+		"guid": "108402519922313",
+		"typeId": "30316008",
+		"name": "NPC_Generic_Hit"
+	},
+	"onActivateFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"activateFxAtTarget": false,
+	"postHitPauseFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"onBlockFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"hitPauseFrames": 0,
+	"hitPauseMovement": false,
+	"scriptOnActivate": "None",
+	"scriptOnHit": "None",
+	"networkType": "NET_ServerVerify",
+	"modifyCooldownsIds": [],
+	"bAppliesImpulse": false,
+	"bApplyImpulseAsVelocityChange": true,
+	"impulseOriginTransform":
+	{
+		"originLocation": "Target",
+		"originLocationSocket": "None",
+		"originOrientation": "Target",
+		"originOrientationSocket": "None",
+		"originScale": "World",
+		"bUseRelativeLocationExpression": false,
+		"relativeLocation":
+		{
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"relativeLocationExpression":
+		{
+			"expression": ""
+		},
+		"bUseRelativeRotationExpression": false,
+		"relativeRotation":
+		{
+			"pitch": 0,
+			"yaw": 0,
+			"roll": 0
+		},
+		"relativeRotationExpression":
+		{
+			"expression": ""
+		},
+		"bUseRelativeScaleExpression": false,
+		"relativeScale":
+		{
+			"x": 1,
+			"y": 1,
+			"z": 1
+		},
+		"relativeScaleExpression":
+		{
+			"expression": ""
+		}
+	},
+	"impulseMagnitude":
+	{
+		"expression": ""
+	},
+	"impulseDirection":
+	{
+		"x": 1,
+		"y": 0
+	},
+	"impulseAngle":
+	{
+		"expression": ""
+	},
+	"impulseRotationBehavior": "Unaffected",
+	"recursiveHit": [],
+	"inputTerms": [],
+	"bOverrideDefaultThreatToTarget": false,
+	"threatToTarget":
+	{
+		"expression": ""
+	},
+	"bOverrideDefaultObservedThreat": false,
+	"observedThreat":
+	{
+		"expression": ""
+	},
+	"guid": "108402263152257",
+	"name": "NPC_Bandit_Melee_Hamstring_ABL_3_Dmg",
+	"typeId": "30316005"
+}

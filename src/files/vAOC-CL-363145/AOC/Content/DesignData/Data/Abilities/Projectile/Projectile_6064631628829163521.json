@@ -1,0 +1,157 @@
+{
+	"projectileClass": "/Game/DesignAssets/ClassAbilities/RNG/Projectiles/Ranger_ThunderingShot_Projectile_BP.Ranger_ThunderingShot_Projectile_BP_C",
+	"projectileFXId":
+	{
+		"guid": "6064629977722001623",
+		"typeId": "30316008",
+		"name": "Snipe_WeaponTrail"
+	},
+	"projectileEndFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"bDeactivateProjectileFXOnFire": false,
+	"fireFXId":
+	{
+		"guid": "6064631125816713024",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"impactFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"range": 15000,
+	"lifeTime": 2,
+	"bPersistBetweenAbilities": false,
+	"speed": 4000,
+	"attachType": "AttachedSource",
+	"attachSocket": "ArrowSocketR",
+	"bUseAttachSocketForOriginLocation": true,
+	"bUseAttachSocketForOriginOrientation": true,
+	"spawnTransform":
+	{
+		"originLocation": "Source",
+		"originLocationSocket": "None",
+		"originOrientation": "OriginControlRotation",
+		"originOrientationSocket": "None",
+		"originScale": "Source",
+		"bUseRelativeLocationExpression": false,
+		"relativeLocation":
+		{
+			"x": 50,
+			"y": 0,
+			"z": 0
+		},
+		"relativeLocationExpression":
+		{
+			"expression": ""
+		},
+		"bUseRelativeRotationExpression": false,
+		"relativeRotation":
+		{
+			"pitch": 0,
+			"yaw": 0,
+			"roll": 0
+		},
+		"relativeRotationExpression":
+		{
+			"expression": ""
+		},
+		"bUseRelativeScaleExpression": false,
+		"relativeScale":
+		{
+			"x": 1,
+			"y": 1,
+			"z": 1
+		},
+		"relativeScaleExpression":
+		{
+			"expression": ""
+		}
+	},
+	"bSpecifyFireRotation": true,
+	"fireTransform":
+	{
+		"originLocation": "Source",
+		"originLocationSocket": "ArrowSocketR",
+		"originOrientation": "OriginControlRotation",
+		"originOrientationSocket": "ArrowSocketR",
+		"originScale": "Source",
+		"bUseRelativeLocationExpression": false,
+		"relativeLocation":
+		{
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"relativeLocationExpression":
+		{
+			"expression": ""
+		},
+		"bUseRelativeRotationExpression": false,
+		"relativeRotation":
+		{
+			"pitch": 30,
+			"yaw": 0,
+			"roll": 0
+		},
+		"relativeRotationExpression":
+		{
+			"expression": ""
+		},
+		"bUseRelativeScaleExpression": false,
+		"relativeScale":
+		{
+			"x": 1,
+			"y": 1,
+			"z": 1
+		},
+		"relativeScaleExpression":
+		{
+			"expression": ""
+		}
+	},
+	"fireRotationConeAngle": 5,
+	"fadeOutDuration": 2,
+	"bAttachOnDestroy": false,
+	"hitsIds": [
+		{
+			"guid": "6064631629468926291",
+			"typeId": "30316005",
+			"name": "Ranger_PiercingShot_HuntOfTheBadger"
+		}
+	],
+	"bUseSphereCollision": false,
+	"sphereCollisionRadius": 150,
+	"bUseSeparateCollisionRadiusForDynamicObjects": false,
+	"dynamicObjectSphereCollisionRadius": 32,
+	"maxProjectileHits": 1,
+	"projectileHitInterval": 0,
+	"bIgnoreNonTarget": true,
+	"bIgnoreWorldObjects": true,
+	"chainHitCount": 0,
+	"chainRadius": 0,
+	"bChainClosestTarget": false,
+	"projectileType": "PROJECTILE_Homing",
+	"bMaySpawnWithoutTarget": false,
+	"bAimedWithControlRotation": false,
+	"desiredAngularSpeed": 360,
+	"targetOffset":
+	{
+		"x": 0,
+		"y": 0,
+		"z": -25
+	},
+	"homingSocketName": "None",
+	"bFavorHighArc": true,
+	"arcingGravityScale": 10,
+	"bFollowGround": false,
+	"guid": "6064631628829163521",
+	"name": "Bandit_Aerialist_LightningShot_Projectile",
+	"typeId": "30316006"
+}

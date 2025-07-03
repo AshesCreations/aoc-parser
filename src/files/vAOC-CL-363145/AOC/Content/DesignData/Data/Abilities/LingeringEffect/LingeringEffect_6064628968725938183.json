@@ -1,0 +1,89 @@
+{
+	"lingeringEffectClass": "/Script/GameSystemsPlugin.AoCAbilityLingeringEffect",
+	"attachType": "None",
+	"attachSocketName": "None",
+	"bUseAttachSocketForOriginLocation": false,
+	"bUseAttachSocketForOriginOrientation": false,
+	"spawnTransform":
+	{
+		"originLocation": "Instigator",
+		"originLocationSocket": "None",
+		"originOrientation": "Instigator",
+		"originOrientationSocket": "None",
+		"originScale": "World",
+		"relativeLocation":
+		{
+			"x": 1250,
+			"y": 450,
+			"z": 0
+		},
+		"relativeRotation":
+		{
+			"pitch": 0,
+			"yaw": 0,
+			"roll": 0
+		},
+		"relativeScale":
+		{
+			"x": 1,
+			"y": 1,
+			"z": 1
+		}
+	},
+	"deactivateFXTimeBeforeDestroy": 3,
+	"lifeTime": 5,
+	"expireAfterAppliedHits":
+	{
+		"expression": "1"
+	},
+	"expireIfExpressionTrue":
+	{
+		"expression": ""
+	},
+	"bUseGlobalTickRate": true,
+	"tickRate": 0,
+	"startTimeOffset": 0,
+	"endTimeOffset": 0,
+	"lingeringHitTargetingInfoId":
+	{
+		"guid": "6064628968520679425",
+		"typeId": "30316011",
+		"name": "None"
+	},
+	"initialHitsIds": [],
+	"lingeringHitsIds": [],
+	"endHitsIds": [
+		{
+			"guid": "6064628990770282496",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"onBeginOverlapHitsIds": [
+		{
+			"guid": "6064629228827770880",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"bNoHitOnFirstTick": false,
+	"speed": 0,
+	"bLockPitch": false,
+	"delayType": "DELAY_Time",
+	"delayTime": 0,
+	"delayTargetId":
+	{
+		"guid": "0",
+		"typeId": "30316011",
+		"name": "None"
+	},
+	"lingeringFXId":
+	{
+		"guid": "6064629342952232772",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"guid": "6064628968725938183",
+	"name": "Mage_ConeOfCold_Lingering6",
+	"typeId": "30316007"
+}

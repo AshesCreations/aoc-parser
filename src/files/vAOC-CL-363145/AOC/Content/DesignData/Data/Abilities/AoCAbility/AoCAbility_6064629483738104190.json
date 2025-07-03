@@ -1,0 +1,299 @@
+{
+	"abilityTags": [
+		{
+			"tagName": "ability.special"
+		}
+	],
+	"abilityIcon": "None",
+	"abilityConditionalIcons": [],
+	"bOverrideRangeInTooltip": false,
+	"customTooltipRange":
+	{
+		"expression": ""
+	},
+	"bOverrideProgressBarClass": false,
+	"progressBarClass": "None",
+	"progressBarSortScore":
+	{
+		"expression": ""
+	},
+	"hasProc":
+	{
+		"expression": ""
+	},
+	"animMontages": [
+		{
+			"abilityDirection": "NONE",
+			"animExpression":
+			{
+				"expression": ""
+			},
+			"startSectionName": "None",
+			"bOverrideSequenceResetTime": false,
+			"sequenceResetTime": 0,
+			"abilityAnimationSoftPaths": [
+				"/Game/DesignAssets/Population/NPC/Monster/Plantoid/Mycellion/AbilityMontages/Mycellion_MushroomMissile.Mycellion_MushroomMissile"
+			],
+			"targetingKey": 0,
+			"hitKeys": []
+		}
+	],
+	"activationRequirements":
+	{
+		"expression": ""
+	},
+	"weaponRequirement": "NoRequirement",
+	"bDisableDuringCooldown": false,
+	"cooldown":
+	{
+		"expression": ""
+	},
+	"sharedCooldownTag": "None",
+	"cooldownCharges":
+	{
+		"expression": ""
+	},
+	"bOverrideInitialCooldownCharges": false,
+	"initialCooldownChargesOverride":
+	{
+		"expression": ""
+	},
+	"suppressCooldownInUI":
+	{
+		"expression": ""
+	},
+	"bDeferAbilityTrigger": false,
+	"bMayNotBeUsedSimultaneously": false,
+	"bStopsAutoAttack": false,
+	"costs": [],
+	"hitsIds":
+	{
+		"1":
+		{
+			"guid": "6064629484485739690",
+			"typeId": "30316005",
+			"name": "None"
+		},
+		"2":
+		{
+			"guid": "6064629733676154880",
+			"typeId": "30316005",
+			"name": "None"
+		},
+		"3":
+		{
+			"guid": "6064630519380772770",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	},
+	"effectsIds":
+	{
+		"2":
+		{
+			"guid": "6064629506549743623",
+			"typeId": "30316002",
+			"name": "None"
+		}
+	},
+	"projectilesIds":
+	{
+	},
+	"lingeringEffectsIds":
+	{
+	},
+	"abilityFXIds":
+	{
+		"2":
+		{
+			"guid": "6064629456001763847",
+			"typeId": "30316008",
+			"name": "None"
+		},
+		"3":
+		{
+			"guid": "6064629919236096577",
+			"typeId": "30316008",
+			"name": "None"
+		},
+		"4":
+		{
+			"guid": "6064630327377291391",
+			"typeId": "30316008",
+			"name": "None"
+		}
+	},
+	"animBranchesIds":
+	{
+		"1":
+		{
+			"guid": "6064629489373676785",
+			"typeId": "30316010",
+			"name": "None"
+		}
+	},
+	"conditionalBranchesIds":
+	{
+		"1":
+		{
+			"guid": "6064629489347593456",
+			"typeId": "30316009",
+			"name": "None"
+		}
+	},
+	"reactionsIds":
+	{
+	},
+	"targetingRecordsIds":
+	{
+		"1":
+		{
+			"guid": "6064629484002541814",
+			"typeId": "30316011",
+			"name": "None"
+		},
+		"2":
+		{
+			"guid": "6064630519387719587",
+			"typeId": "30316011",
+			"name": "None"
+		}
+	},
+	"progressDisruptionRecordsIds":
+	{
+	},
+	"comboInputs": [],
+	"bExactInput": false,
+	"bufferPriority": 0,
+	"bUsableFromHotbar": true,
+	"abilityActivationInput": "UserConfigurable",
+	"bIsAOEClickedAbility": false,
+	"targetActivationRequirement": "Always",
+	"applicableTargets": 2,
+	"applicableLifeStates": 1,
+	"applicableCasterLifeStates": 1,
+	"bNeverCancelAbility": false,
+	"bUseTargetingRecord": false,
+	"targetingRecordId":
+	{
+		"guid": "0",
+		"typeId": "30316011",
+		"name": "None"
+	},
+	"bCheckTargetValidity": true,
+	"bPerformLoSCheck": true,
+	"bPerformConeCheck": true,
+	"angleCenter": 0,
+	"distanceCenter": 0,
+	"validAngle": 360,
+	"validDistance": 5000,
+	"angleCenterExp":
+	{
+		"expression": "0.0"
+	},
+	"distanceCenterExp":
+	{
+		"expression": "0.0"
+	},
+	"validAngleExp":
+	{
+		"expression": "360.0"
+	},
+	"validDistanceExp":
+	{
+		"expression": "5000.0"
+	},
+	"speedMultiplierSource": "SPEED_AttackSpeed",
+	"bHoldAnimation": false,
+	"maximumHoldTime": 0,
+	"bMayCancelHoldAtAnyTime": true,
+	"cancelHoldSections": [],
+	"onCancelHoldBranchKey": 0,
+	"bOverrideHeldBehavior": false,
+	"heldAbilityBehavior": "Naive",
+	"bForceAnimCancel": false,
+	"bAllowRotation": true,
+	"pitchMode": "None",
+	"minPitch": 0,
+	"maxPitch": 0,
+	"bUsableInAir": false,
+	"bUsableWhileSwimming": false,
+	"bOmnidirectional": false,
+	"bOrientWithInterpOnStart": false,
+	"onStartInterpConstRate": 0,
+	"bOrientWithInterpOnEnd": false,
+	"onEndInterpConstRate": 0,
+	"bQuickCancelFromAllAbilities": false,
+	"quickCancelFromAbilitiesIds": [],
+	"cancelSectionName": "None",
+	"bRequiresAnimCancel": false,
+	"cancelFromAbilitiesIds": [],
+	"cancelFromTagQuery":
+	{
+		"tokenStreamVersion": 0,
+		"tagDictionary": [],
+		"queryTokenStream": [],
+		"userDescription": "",
+		"autoDescription": ""
+	},
+	"scriptOnActivate": "None",
+	"areaTemplateFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"areaTemplateMaterial": "None",
+	"areaTemplateRotationRate": 0,
+	"areaTargetRadius": 0,
+	"areaTargetRange": 0,
+	"bShouldFaceClickedTarget": false,
+	"bResetSequenceAfterTime": false,
+	"sequenceResetTime": 0,
+	"abilityName": "Mushroom Missile",
+	"abilityDescription": "",
+	"bAllowMovement": true,
+	"bPROTOTYPERotateRootMotion": false,
+	"rootMotionFreezeBehavior": "PauseOnContact",
+	"rootMotionFreezeDistance": 0,
+	"rootMotionFreezeRadiusScale": 2,
+	"rootMotionIgnoreNonTarget": false,
+	"bVisualizeSweepCollision": false,
+	"canBreakEffects":
+	{
+		"expression": ""
+	},
+	"effectsToBreak":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"actionModeAbilityId":
+	{
+		"guid": "0",
+		"typeId": "30316001",
+		"name": "None"
+	},
+	"aBTestingAbilitiesIds": [],
+	"animCancelsIds":
+	{
+	},
+	"modifyCooldownsIds":
+	{
+	},
+	"aLSAbilityId":
+	{
+		"guid": "0",
+		"typeId": "30316001",
+		"name": "None"
+	},
+	"inputTerms": [],
+	"dynamicCastDuration":
+	{
+		"expression": ""
+	},
+	"bNeverCull": false,
+	"guid": "6064629483738104190",
+	"name": "Mycellion_MushroomMissile",
+	"typeId": "30316001"
+}

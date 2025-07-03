@@ -1,0 +1,29 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 0,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0,
+		"fishingEvents": 0,
+		"statEvents": 0
+	},
+	"bEvaluateOnTick": true,
+	"branchTrigger":
+	{
+		"expression": "GetEquipmentDurabilityInSlot(GetOwnerGuid(),EEquipSlot::FishingRod) <= 0.0 || IsGatheringDisabled()"
+	},
+	"bPredictedOnAutonomousClient": false,
+	"animBranchId":
+	{
+		"guid": "6064632592397828096",
+		"typeId": "30316010",
+		"name": "None"
+	},
+	"bOnlyBranchWithValidTarget": false,
+	"guid": "6064632586822877223",
+	"name": "Economy_Fishing_Durability_Cancel",
+	"typeId": "30316009"
+}

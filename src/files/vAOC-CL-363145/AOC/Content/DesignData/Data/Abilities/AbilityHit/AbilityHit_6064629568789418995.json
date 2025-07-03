@@ -1,0 +1,154 @@
+{
+	"eventTags": [
+		{
+			"tagName": "Element.Physical"
+		}
+	],
+	"applicableTargets": 2,
+	"applicableLifeStates": 1,
+	"applicationRequirements":
+	{
+		"expression": ""
+	},
+	"bCapHits": false,
+	"maxTargetsPerHit":
+	{
+		"expression": "1"
+	},
+	"bLimitHitsPerTarget": true,
+	"maxHitsPerTarget":
+	{
+		"expression": "1"
+	},
+	"bLimitHitsGlobally": true,
+	"maxHitsGlobally":
+	{
+		"expression": "1"
+	},
+	"hitFloatingText": "",
+	"appliedEffectsIds": [],
+	"effectsAppliedToSelf": [],
+	"lingeringZonesIds": [],
+	"projectilesToSpawn": [],
+	"projectilesToFire": [],
+	"reactionsIds": [],
+	"progressModifierIds": [],
+	"maxNumEffectsToRemove": 0,
+	"effectRemovalFilter":
+	{
+		"expression": ""
+	},
+	"effectsToRemoveIds": [],
+	"bRemoveAsDispel": false,
+	"bOverrideDefaultMissRate": false,
+	"missRate":
+	{
+		"expression": ""
+	},
+	"bOverrideDefaultBlockRate": false,
+	"blockRate":
+	{
+		"expression": ""
+	},
+	"bOverrideDefaultCritRate": false,
+	"critRate":
+	{
+		"expression": ""
+	},
+	"statModsIds": [
+		{
+			"guid": "6064629528413208577",
+			"typeId": "3031600201",
+			"name": "None"
+		}
+	],
+	"bonusCrowdControlDamageIds": [],
+	"onHitFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"onActivateFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"activateFxAtTarget": false,
+	"postHitPauseFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"onBlockFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"hitPauseFrames": 0,
+	"hitPauseMovement": false,
+	"scriptOnActivate": "None",
+	"scriptOnHit": "None",
+	"networkType": "NET_ServerVerify",
+	"modifyCooldownsIds": [],
+	"bAppliesImpulse": true,
+	"bApplyImpulseAsVelocityChange": true,
+	"impulseOriginTransform":
+	{
+		"originLocation": "Owner",
+		"originLocationSocket": "None",
+		"originOrientation": "Owner",
+		"originOrientationSocket": "None",
+		"originScale": "World",
+		"relativeLocation":
+		{
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"relativeRotation":
+		{
+			"pitch": 0,
+			"yaw": 0,
+			"roll": 0
+		},
+		"relativeScale":
+		{
+			"x": 1,
+			"y": 1,
+			"z": 1
+		}
+	},
+	"impulseMagnitude":
+	{
+		"expression": "1000"
+	},
+	"impulseDirection":
+	{
+		"x": 0,
+		"y": -1
+	},
+	"impulseAngle":
+	{
+		"expression": "45"
+	},
+	"impulseRotationBehavior": "Unaffected",
+	"recursiveHit": [],
+	"inputTerms": [],
+	"bOverrideDefaultThreatToTarget": false,
+	"threatToTarget":
+	{
+		"expression": ""
+	},
+	"bOverrideDefaultObservedThreat": false,
+	"observedThreat":
+	{
+		"expression": ""
+	},
+	"guid": "6064629568789418995",
+	"name": "Tank_Charge_Hit_Left",
+	"typeId": "30316005"
+}

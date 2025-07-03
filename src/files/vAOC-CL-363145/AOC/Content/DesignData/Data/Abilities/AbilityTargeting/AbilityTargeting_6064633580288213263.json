@@ -1,0 +1,119 @@
+{
+	"sorting": [],
+	"contextualTargets": [],
+	"hurtBoxInfo":
+	{
+		"bCenterBlockTargetOnHurtbox": false,
+		"targetingVolumes": [
+			{
+				"id": "SHAPE_Point",
+				"location":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"rotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"bDebugShowOutline": false,
+				"bDebugShowInGame": false,
+				"originMesh": "ORIGIN_Character",
+				"origin": "OFFSET_Hit",
+				"bShapeIsHollow": false,
+				"bShowHitPointForHollowHits": false,
+				"bTriggerAtOrigin": false,
+				"boneName": "None",
+				"sphereRadius": 24,
+				"sphereRadiusExpr":
+				{
+					"expression": "24.0"
+				},
+				"innerSphereRadius": 12,
+				"innerSphereRadiusExpr":
+				{
+					"expression": ""
+				},
+				"bUsePlayerOnlyOctree": false,
+				"boxExtent":
+				{
+					"x": 24,
+					"y": 24,
+					"z": 24
+				},
+				"boxExtentExpr":
+				{
+					"expression": "Vector(24.0, 24.0, 24.0)"
+				},
+				"capsuleHalfHeight": 50,
+				"capsuleHalfHeightExpr":
+				{
+					"expression": "50.0"
+				},
+				"capsuleRadius": 15,
+				"capsuleRadiusExpr":
+				{
+					"expression": "15.0"
+				},
+				"innerCapsuleHalfHeight": 50,
+				"innerCapsuleHalfHeightExpr":
+				{
+					"expression": ""
+				},
+				"innerCapsuleRadius": 7.5,
+				"innerCapsuleRadiusExpr":
+				{
+					"expression": ""
+				},
+				"angle": 90,
+				"angleExpr":
+				{
+					"expression": "90.0"
+				},
+				"minHeight": 0,
+				"minHeightExpr":
+				{
+					"expression": "0.0"
+				},
+				"maxHeight": 24,
+				"maxHeightExpr":
+				{
+					"expression": "24.0"
+				},
+				"animationKeys": [],
+				"bAlignToGround": true,
+				"traceHeight": 1000,
+				"traceHeightExpr":
+				{
+					"expression": "1000.0"
+				},
+				"traceDepth": 1000,
+				"traceDepthExpr":
+				{
+					"expression": "1000.0"
+				},
+				"bIgnoreIfGroundNotFound": true,
+				"bEnableLOSCheck": true
+			}
+		]
+	},
+	"lockOnInfo":
+	{
+		"targetDiscoveryBehavior": "PrefersActiveTargets",
+		"bCheckTargetValidity": false,
+		"bUseAoETargetingLocation": false,
+		"bPerformLoSCheck": true,
+		"bPerformConeCheck": true,
+		"angleCenter": 0,
+		"distanceCenter": 0,
+		"validAngle": 180,
+		"validDistance": 3000,
+		"bTargetInitialLocation": true
+	},
+	"guid": "6064633580288213263",
+	"name": "Automata_Overseer_EnergyNet_Targeting_GroundTrace",
+	"typeId": "30316011"
+}

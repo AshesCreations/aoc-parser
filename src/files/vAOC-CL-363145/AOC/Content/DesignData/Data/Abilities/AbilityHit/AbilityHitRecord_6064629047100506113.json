@@ -1,0 +1,214 @@
+{
+	"eventTags": [
+		{
+			"tagName": "Element.Physical.Pierce"
+		}
+	],
+	"applicableTargets": 2,
+	"applicableLifeStates": 1,
+	"applicationRequirements":
+	{
+		"expression": ""
+	},
+	"bCapHits": false,
+	"maxTargetsPerHit":
+	{
+		"expression": ""
+	},
+	"bLimitHitsPerTarget": false,
+	"maxHitsPerTarget":
+	{
+		"expression": ""
+	},
+	"bLimitHitsGlobally": false,
+	"maxHitsGlobally":
+	{
+		"expression": ""
+	},
+	"hitFloatingText": "",
+	"applyEffects": [
+		{
+			"stackCount":
+			{
+				"expression": ""
+			},
+			"effectId":
+			{
+				"guid": "6064629047769825286",
+				"typeId": "30316002",
+				"name": "None"
+			}
+		},
+		{
+			"stackCount":
+			{
+				"expression": ""
+			},
+			"effectId":
+			{
+				"guid": "6064629099384340480",
+				"typeId": "30316002",
+				"name": "None"
+			}
+		}
+	],
+	"effectsAppliedToSelf": [],
+	"lingeringZonesIds": [],
+	"projectilesToSpawn": [],
+	"projectilesToFire": [],
+	"reactionsIds": [],
+	"progressModifierIds": [],
+	"maxNumEffectsToRemove": 0,
+	"effectRemovalFilter":
+	{
+		"expression": ""
+	},
+	"effectsToRemoveIds": [],
+	"bRemoveAsDispel": false,
+	"bOverrideDefaultMissRate": false,
+	"missRate":
+	{
+		"expression": ""
+	},
+	"bOverrideDefaultBlockRate": false,
+	"blockRate":
+	{
+		"expression": ""
+	},
+	"bOverrideDefaultCritRate": false,
+	"critRate":
+	{
+		"expression": ""
+	},
+	"statModsIds": [
+		{
+			"guid": "6064629047232692227",
+			"typeId": "3031600201",
+			"name": "None"
+		}
+	],
+	"bonusCrowdControlDamageIds": [],
+	"bTriggersImpactFX": false,
+	"bOverrideImpactDecalSize": false,
+	"impactDecalSizeOverride":
+	{
+		"x": 10,
+		"y": 10,
+		"z": 10
+	},
+	"bOverrideImpactDecalLifetime": false,
+	"impactDecalLifetimeOverride": 3,
+	"onHitFXId":
+	{
+		"guid": "6064629047963746311",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"onActivateFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"activateFxAtTarget": false,
+	"postHitPauseFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"onBlockFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"hitPauseFrames": 0,
+	"hitPauseMovement": false,
+	"scriptOnActivate": "None",
+	"scriptOnHit": "None",
+	"networkType": "NET_ServerVerify",
+	"modifyCooldownsIds": [],
+	"bAppliesImpulse": false,
+	"bApplyImpulseAsVelocityChange": true,
+	"impulseOriginTransform":
+	{
+		"originLocation": "Target",
+		"originLocationSocket": "None",
+		"originOrientation": "Target",
+		"originOrientationSocket": "None",
+		"originScale": "World",
+		"bUseRelativeLocationExpression": false,
+		"relativeLocation":
+		{
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"relativeLocationExpression":
+		{
+			"expression": ""
+		},
+		"bUseRelativeRotationExpression": false,
+		"relativeRotation":
+		{
+			"pitch": 0,
+			"yaw": 0,
+			"roll": 0
+		},
+		"relativeRotationExpression":
+		{
+			"expression": ""
+		},
+		"bUseRelativeScaleExpression": false,
+		"relativeScale":
+		{
+			"x": 1,
+			"y": 1,
+			"z": 1
+		},
+		"relativeScaleExpression":
+		{
+			"expression": ""
+		}
+	},
+	"impulseMagnitude":
+	{
+		"expression": ""
+	},
+	"impulseDirection":
+	{
+		"x": 1,
+		"y": 0
+	},
+	"impulseAngle":
+	{
+		"expression": ""
+	},
+	"impulseRotationBehavior": "Unaffected",
+	"recursiveHit": [],
+	"inputTerms": [],
+	"bOverrideDefaultThreatToTarget": false,
+	"threatToTarget":
+	{
+		"expression": ""
+	},
+	"bOverrideDefaultObservedThreat": false,
+	"observedThreat":
+	{
+		"expression": ""
+	},
+	"maxNumLingeringZonesToRemove": 0,
+	"lingeringZoneRemovalType": "None",
+	"lingeringZoneRemovalFilter":
+	{
+		"expression": ""
+	},
+	"lingeringZoneToRemoveIds": [],
+	"actionResponsesIds": [],
+	"bShareThreats": false,
+	"bShareThreatValues": false,
+	"guid": "6064629047100506113",
+	"name": "Mage_Stalagmite_Hit",
+	"typeId": "30316005"
+}

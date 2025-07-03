@@ -1,0 +1,320 @@
+{
+	"abilityTags": [
+		{
+			"tagName": "ability.special"
+		}
+	],
+	"abilityIcon": "/Game/UI/Icons/Archetypes/Rogue/TUI_AbilityIcon_Stab2.TUI_AbilityIcon_Stab2",
+	"abilityConditionalIcons": [
+		{
+			"abilityIcon": "/Game/UI/Icons/Archetypes/Rogue/TUI_AbilityIcon_Backstab.TUI_AbilityIcon_Backstab",
+			"useIconCondition":
+			{
+				"expression": "EvalFormula($#10516612381411113:6064632744723089195$) > 0.0"
+			}
+		},
+		{
+			"abilityIcon": "/Game/UI/Icons/Archetypes/Rogue/TUI_AbilityIcon_Stab2.TUI_AbilityIcon_Stab2",
+			"useIconCondition":
+			{
+				"expression": "true"
+			}
+		}
+	],
+	"bOverrideRangeInTooltip": false,
+	"customTooltipRange":
+	{
+		"expression": ""
+	},
+	"bOverrideProgressBarClass": false,
+	"progressBarClass": "None",
+	"progressBarSortScore":
+	{
+		"expression": ""
+	},
+	"hasProc":
+	{
+		"expression": ""
+	},
+	"hasAbilitySynergy":
+	{
+		"expression": ""
+	},
+	"hasStatusEffectSynergy":
+	{
+		"expression": ""
+	},
+	"animMontages": [
+		{
+			"abilityDirection": "NONE",
+			"animExpression":
+			{
+				"expression": "EvalFormula($#10516612381411113:6064632744723089195$) > 0.0"
+			},
+			"startSectionName": "None",
+			"bOverrideSequenceResetTime": false,
+			"sequenceResetTime": 0,
+			"abilityAnimationSoftPaths": [
+				"/Game/DesignAssets/Population/NPC/PCRaces/Bandits/BanditMelee/Bandit_Rogue/AbilityMontages/Bandit_Rogue_Backstab.Bandit_Rogue_Backstab"
+			],
+			"targetingKey": 0,
+			"hitKeys": []
+		},
+		{
+			"abilityDirection": "NONE",
+			"animExpression":
+			{
+				"expression": "true"
+			},
+			"startSectionName": "None",
+			"bOverrideSequenceResetTime": false,
+			"sequenceResetTime": 0,
+			"abilityAnimationSoftPaths": [
+				"/Game/DesignAssets/Population/NPC/PCRaces/Bandits/BanditMelee/Bandit_Rogue/AbilityMontages/Bandit_Rogue_Stab.Bandit_Rogue_Stab"
+			],
+			"targetingKey": 0,
+			"hitKeys": []
+		}
+	],
+	"activationRequirements":
+	{
+		"expression": ""
+	},
+	"weaponRequirement": "NoRequirement",
+	"bRequiresStealthActivation": false,
+	"bDisableDuringCooldown": false,
+	"cooldown":
+	{
+		"expression": ""
+	},
+	"sharedCooldownTag": "None",
+	"cooldownCharges":
+	{
+		"expression": ""
+	},
+	"bOverrideInitialCooldownCharges": false,
+	"initialCooldownChargesOverride":
+	{
+		"expression": ""
+	},
+	"bPersistCooldown": false,
+	"suppressCooldownInUI":
+	{
+		"expression": ""
+	},
+	"bDeferAbilityTrigger": true,
+	"bMayNotBeUsedSimultaneously": false,
+	"bStopsAutoAttack": false,
+	"costs": [],
+	"hitsIds":
+	{
+		"1":
+		{
+			"guid": "6064633148132622447",
+			"typeId": "30316005",
+			"name": "None"
+		},
+		"2":
+		{
+			"guid": "6064633152883785766",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	},
+	"effectsIds":
+	{
+	},
+	"projectilesIds":
+	{
+	},
+	"lingeringEffectsIds":
+	{
+	},
+	"abilityFXIds":
+	{
+		"1":
+		{
+			"guid": "6064632989171843863",
+			"typeId": "30316008",
+			"name": "None"
+		},
+		"2":
+		{
+			"guid": "6064633063719377452",
+			"typeId": "30316008",
+			"name": "None"
+		},
+		"3":
+		{
+			"guid": "6064633063810015261",
+			"typeId": "30316008",
+			"name": "None"
+		},
+		"4":
+		{
+			"guid": "6064633073614848000",
+			"typeId": "30316008",
+			"name": "None"
+		}
+	},
+	"animBranchesIds":
+	{
+	},
+	"conditionalBranchesIds":
+	{
+	},
+	"reactionsIds":
+	{
+	},
+	"targetingRecordsIds":
+	{
+		"1":
+		{
+			"guid": "6064630876683370512",
+			"typeId": "30316011",
+			"name": "None"
+		}
+	},
+	"progressDisruptionRecordsIds":
+	{
+	},
+	"comboInputs": [],
+	"bExactInput": false,
+	"bufferPriority": 0,
+	"bUsableFromHotbar": true,
+	"abilityActivationInput": "UserConfigurable",
+	"bMayEscCancel": true,
+	"bIsAOEClickedAbility": false,
+	"targetActivationRequirement": "Never",
+	"applicableTargets": 2,
+	"applicableTypes": 0,
+	"applicableLifeStates": 1,
+	"applicableCasterLifeStates": 1,
+	"bNeverCancelAbility": false,
+	"bUseTargetingRecord": false,
+	"targetingRecordId":
+	{
+		"guid": "0",
+		"typeId": "30316011",
+		"name": "None"
+	},
+	"bCheckTargetValidity": false,
+	"bPerformLoSCheck": false,
+	"bPerformConeCheck": false,
+	"angleCenter": 0,
+	"distanceCenter": 0,
+	"validAngle": 0,
+	"validDistance": 0,
+	"angleCenterExp":
+	{
+		"expression": "0.0"
+	},
+	"distanceCenterExp":
+	{
+		"expression": "0.0"
+	},
+	"validAngleExp":
+	{
+		"expression": "150.0"
+	},
+	"validDistanceExp":
+	{
+		"expression": "400.0"
+	},
+	"speedMultiplierSource": "SPEED_AttackSpeed",
+	"bHoldAnimation": false,
+	"maximumHoldTime": 0,
+	"bMayCancelHoldAtAnyTime": true,
+	"cancelHoldSections": [],
+	"onCancelHoldBranchKey": 0,
+	"bOverrideHeldBehavior": false,
+	"heldAbilityBehavior": "Naive",
+	"bForceAnimCancel": false,
+	"bAllowRotation": true,
+	"pitchMode": "None",
+	"minPitch": 0,
+	"maxPitch": 0,
+	"bUsableInAir": true,
+	"bUsableWhileSwimming": true,
+	"bOmnidirectional": false,
+	"bOrientWithInterpOnStart": false,
+	"onStartInterpConstRate": 0,
+	"bOrientWithInterpOnEnd": false,
+	"onEndInterpConstRate": 0,
+	"bQuickCancelFromAllAbilities": false,
+	"quickCancelFromAbilitiesIds": [],
+	"cancelSectionName": "None",
+	"bRequiresAnimCancel": false,
+	"cancelFromAbilitiesIds": [],
+	"cancelFromTagQuery":
+	{
+		"tokenStreamVersion": 0,
+		"tagDictionary": [],
+		"queryTokenStream": [],
+		"userDescription": "",
+		"autoDescription": ""
+	},
+	"scriptOnActivate": "None",
+	"areaTemplateFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"areaTemplateMaterial": "None",
+	"areaTemplateRotationRate": 0,
+	"areaTargetRadius": 0,
+	"areaTargetRange": 0,
+	"bShouldFaceClickedTarget": false,
+	"bPerformIsWalkableCheck": true,
+	"bResetSequenceAfterTime": false,
+	"sequenceResetTime": 0,
+	"bForceComboBreak": true,
+	"abilityName": "NSLOCTEXT(\"[1909495A4C2095068D406C9D33F90055]\", \"D237AE694E3D1B15E2AB4FAE23EC03D1\", \"Stab\")",
+	"abilityDescription": "",
+	"bAllowMovement": true,
+	"bPROTOTYPERotateRootMotion": false,
+	"rootMotionFreezeBehavior": "StopOnContact",
+	"rootMotionFreezeDistance": 0,
+	"rootMotionFreezeRadiusScale": 1,
+	"rootMotionIgnoreNonTarget": false,
+	"bVisualizeSweepCollision": false,
+	"canBreakEffects":
+	{
+		"expression": ""
+	},
+	"effectsToBreak":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"actionModeAbilityId":
+	{
+		"guid": "0",
+		"typeId": "30316001",
+		"name": "None"
+	},
+	"aBTestingAbilitiesIds": [],
+	"animCancelsIds":
+	{
+	},
+	"modifyCooldownsIds":
+	{
+	},
+	"aLSAbilityId":
+	{
+		"guid": "0",
+		"typeId": "30316001",
+		"name": "None"
+	},
+	"inputTerms": [],
+	"dynamicCastDuration":
+	{
+		"expression": ""
+	},
+	"bNeverCull": false,
+	"networkingMaxSpeed": 0,
+	"guid": "6064633148097429613",
+	"name": "Bandit_Rogue_Stab",
+	"typeId": "30316001"
+}

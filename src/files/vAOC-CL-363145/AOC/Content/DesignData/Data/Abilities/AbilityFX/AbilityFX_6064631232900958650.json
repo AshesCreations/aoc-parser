@@ -1,0 +1,901 @@
+{
+	"audioFX": [
+		{
+			"akAudioEvent": "/Game/WwiseAudio/Events/Main/Weapons/Attacks/Wand/WEP_Wand_Generic_Projectile_Loop_Start.WEP_Wand_Generic_Projectile_Loop_Start",
+			"weaponSwitch": "None",
+			"audioPlayType": "TYPE_AttachedSource",
+			"audioDopplerType": "TYPE_Precise",
+			"attachLocationType": "KeepRelativeOffset",
+			"attachSocketName": "None",
+			"attachPosition":
+			{
+				"x": 0,
+				"y": 0,
+				"z": 0
+			},
+			"bFireOnlyOnce": true,
+			"bIsClientOnly": false,
+			"bDeferred": true
+		}
+	],
+	"audioExitFX": [
+		{
+			"akAudioEvent": "/Game/WwiseAudio/Events/Main/Weapons/Attacks/Wand/WEP_Wand_Generic_Projectile_Loop_Stop.WEP_Wand_Generic_Projectile_Loop_Stop",
+			"weaponSwitch": "None",
+			"audioPlayType": "TYPE_AttachedSource",
+			"audioDopplerType": "TYPE_Precise",
+			"attachLocationType": "KeepRelativeOffset",
+			"attachSocketName": "None",
+			"attachPosition":
+			{
+				"x": 0,
+				"y": 0,
+				"z": 0
+			},
+			"bFireOnlyOnce": true,
+			"bIsClientOnly": false,
+			"bDeferred": false
+		}
+	],
+	"cameraFX":
+	{
+		"bUseNativeCameraShake": false,
+		"shakeClassPath": "None",
+		"shakeIntensitySoft":
+		{
+			"externalCurve": "None",
+			"editorCurveData":
+			{
+				"keys": [],
+				"defaultValue": 3.4028234663852886e+38,
+				"preInfinityExtrap": "RCCE_Constant",
+				"postInfinityExtrap": "RCCE_Constant",
+				"keyHandlesToIndices":
+				{
+				}
+			}
+		},
+		"shakeMultiplier":
+		{
+			"expression": ""
+		},
+		"fOVZoomSoft":
+		{
+			"externalCurve": "None",
+			"editorCurveData":
+			{
+				"keys": [],
+				"defaultValue": 3.4028234663852886e+38,
+				"preInfinityExtrap": "RCCE_Constant",
+				"postInfinityExtrap": "RCCE_Constant",
+				"keyHandlesToIndices":
+				{
+				}
+			}
+		},
+		"fOVMultiplier":
+		{
+			"expression": ""
+		},
+		"chromaticAberrationIntensitySoft":
+		{
+			"externalCurve": "None",
+			"editorCurveData":
+			{
+				"keys": [],
+				"defaultValue": 3.4028234663852886e+38,
+				"preInfinityExtrap": "RCCE_Constant",
+				"postInfinityExtrap": "RCCE_Constant",
+				"keyHandlesToIndices":
+				{
+				}
+			}
+		},
+		"chromaticAberrationMultiplier":
+		{
+			"expression": ""
+		},
+		"radialBlurScaleSoft":
+		{
+			"externalCurve": "None",
+			"editorCurveData":
+			{
+				"keys": [],
+				"defaultValue": 3.4028234663852886e+38,
+				"preInfinityExtrap": "RCCE_Constant",
+				"postInfinityExtrap": "RCCE_Constant",
+				"keyHandlesToIndices":
+				{
+				}
+			}
+		},
+		"radialBlurMultiplier":
+		{
+			"expression": ""
+		},
+		"bShouldFalloffIntensity": false,
+		"intensityFalloff":
+		{
+			"externalCurve": "None",
+			"editorCurveData":
+			{
+				"keys": [],
+				"defaultValue": 3.4028234663852886e+38,
+				"preInfinityExtrap": "RCCE_Constant",
+				"postInfinityExtrap": "RCCE_Constant",
+				"keyHandlesToIndices":
+				{
+				}
+			}
+		},
+		"playLocationOffset":
+		{
+			"x": 0,
+			"y": 0,
+			"z": 0
+		}
+	},
+	"materialFX": [],
+	"particleFX": [
+		{
+			"enabled":
+			{
+				"expression": "GetEffectCount(GetOwner(),$#30316002:6064629093014044673$) <= 0 && \r\nGetEffectCount(GetOwner(),$#30316002:6064629105627627534$) <= 0 && \r\nGetEffectCount(GetOwner(),$#30316002:6064629105628151824$) <= 0 && \r\nGetEffectCount(GetOwner(),$#30316002:6064629105628020751$) <= 0 &&\r\nGetEffectCount(GetOwner(),$#30316002:6064632264379138879$) <= 0 &&\r\nGetEffectCount(GetOwner(),$#30316002:6064632264985876290$) <= 0 &&\r\nGetEffectCount(GetOwner(),$#30316002:6064632266198941696$) <= 0 && \r\nGetEffectCount(GetOwner(),$#30316002:6064632266234724356$) <= 0 &&\r\nGetEffectCount(GetOwner(),$#30316002:6064632266251960328$) <= 0 &&\r\nGetEffectCount(GetOwner(),$#30316002:6064632266264608780$) <= 0 &&\r\nGetEffectCount(GetOwner(),$#30316002:6064629761725113743$) <= 0 &&\r\nGetEffectCount(GetOwner(),$#30316002:6064629784867475789$) <= 0 &&\r\nGetEffectCount(GetOwner(),$#30316002:6064629784579180497$) <= 0 &&\r\nGetEffectCount(GetOwner(),$#30316002:109195969386108$) <= 0 &&\r\nGetEffectCount(GetOwner(),$#30316002:6064631212173492744$) <= 0 &&\r\nGetEffectCount(GetOwner(),$#30316002:6064630831382003720$) <= 0 &&\r\nGetEffectCount(GetOwner(),$#30316002:6064631071916883969$) <= 0 &&\r\nGetEffectCount(GetOwner(),$#30316002:6064630958653642007$) <= 0 &&\r\nGetEffectCount(GetOwner(),$#30316002:6064631006744216277$) <= 0"
+			},
+			"niagaraSystemSoft": "/Game/Effects/FX_PCs/Mage/Particles/ElementalEmpowerment/Arcane/FX_Arcane_Wand.FX_Arcane_Wand",
+			"lifeTime": 0,
+			"bCastVolumetricTranslucentShadow": false,
+			"attachType": "AttachedSource",
+			"originMesh": "Character",
+			"attachSocketName": "None",
+			"bUseAttachSocketForOriginLocation": true,
+			"bUseAttachSocketForOriginOrientation": true,
+			"transform":
+			{
+				"originLocation": "Source",
+				"originLocationSocket": "None",
+				"originOrientation": "Source",
+				"originOrientationSocket": "None",
+				"originScale": "World",
+				"bUseRelativeLocationExpression": false,
+				"relativeLocation":
+				{
+					"x": 50,
+					"y": 0,
+					"z": 0
+				},
+				"relativeLocationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeRotationExpression": false,
+				"relativeRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"relativeRotationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeScaleExpression": false,
+				"relativeScale":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				},
+				"relativeScaleExpression":
+				{
+					"expression": ""
+				}
+			},
+			"bVisibleToSceneCaptureOnly": false,
+			"bAllowScalability": true,
+			"bUseLocalRemoteDynamicSystem": false
+		},
+		{
+			"enabled":
+			{
+				"expression": "GetEffectCount(GetOwner(),$#30316002:6064629093014044673$) > 0 || \r\nGetEffectCount(GetOwner(),$#30316002:6064632264379138879$) > 0 || \r\nGetEffectCount(GetOwner(),$#30316002:6064632264985876290$) > 0"
+			},
+			"niagaraSystemSoft": "/Game/Effects/FX_PCs/Mage/Particles/ElementalEmpowerment/Fire/NS_Fire_Wand_Projectiles.NS_Fire_Wand_Projectiles",
+			"lifeTime": 0,
+			"bCastVolumetricTranslucentShadow": false,
+			"attachType": "AttachedSource",
+			"originMesh": "Character",
+			"attachSocketName": "None",
+			"bUseAttachSocketForOriginLocation": true,
+			"bUseAttachSocketForOriginOrientation": true,
+			"transform":
+			{
+				"originLocation": "Source",
+				"originLocationSocket": "None",
+				"originOrientation": "Source",
+				"originOrientationSocket": "None",
+				"originScale": "World",
+				"bUseRelativeLocationExpression": false,
+				"relativeLocation":
+				{
+					"x": 50,
+					"y": 0,
+					"z": 0
+				},
+				"relativeLocationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeRotationExpression": false,
+				"relativeRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"relativeRotationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeScaleExpression": false,
+				"relativeScale":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				},
+				"relativeScaleExpression":
+				{
+					"expression": ""
+				}
+			},
+			"bVisibleToSceneCaptureOnly": false,
+			"bAllowScalability": true,
+			"bUseLocalRemoteDynamicSystem": false
+		},
+		{
+			"enabled":
+			{
+				"expression": "GetEffectCount(GetOwner(),$#30316002:6064629105627627534$) > 0 || \r\nGetEffectCount(GetOwner(),$#30316002:6064632266198941696$) > 0 || \r\nGetEffectCount(GetOwner(),$#30316002:6064632266234724356$) > 0"
+			},
+			"niagaraSystemSoft": "/Game/Effects/FX_PCs/Mage/Particles/ElementalEmpowerment/Lightning/NS_LightningWand_Projectile.NS_LightningWand_Projectile",
+			"lifeTime": 0,
+			"bCastVolumetricTranslucentShadow": false,
+			"attachType": "AttachedSource",
+			"originMesh": "Character",
+			"attachSocketName": "None",
+			"bUseAttachSocketForOriginLocation": true,
+			"bUseAttachSocketForOriginOrientation": true,
+			"transform":
+			{
+				"originLocation": "Source",
+				"originLocationSocket": "None",
+				"originOrientation": "Source",
+				"originOrientationSocket": "None",
+				"originScale": "World",
+				"bUseRelativeLocationExpression": false,
+				"relativeLocation":
+				{
+					"x": 50,
+					"y": 0,
+					"z": 0
+				},
+				"relativeLocationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeRotationExpression": false,
+				"relativeRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"relativeRotationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeScaleExpression": false,
+				"relativeScale":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				},
+				"relativeScaleExpression":
+				{
+					"expression": ""
+				}
+			},
+			"bVisibleToSceneCaptureOnly": false,
+			"bAllowScalability": true,
+			"bUseLocalRemoteDynamicSystem": false
+		},
+		{
+			"enabled":
+			{
+				"expression": " GetEffectCount(GetOwner(),$#30316002:6064629105628020751$) > 0 || \r\nGetEffectCount(GetOwner(),$#30316002:6064632266251960328$) > 0 || \r\nGetEffectCount(GetOwner(),$#30316002:6064632266264608780$) > 0"
+			},
+			"niagaraSystemSoft": "/Game/Effects/FX_PCs/Mage/Particles/ElementalEmpowerment/Ice/NS_IceWand_Projectiles.NS_IceWand_Projectiles",
+			"lifeTime": 0,
+			"bCastVolumetricTranslucentShadow": false,
+			"attachType": "AttachedSource",
+			"originMesh": "Character",
+			"attachSocketName": "None",
+			"bUseAttachSocketForOriginLocation": true,
+			"bUseAttachSocketForOriginOrientation": true,
+			"transform":
+			{
+				"originLocation": "Source",
+				"originLocationSocket": "None",
+				"originOrientation": "Source",
+				"originOrientationSocket": "None",
+				"originScale": "World",
+				"bUseRelativeLocationExpression": false,
+				"relativeLocation":
+				{
+					"x": 50,
+					"y": 0,
+					"z": 0
+				},
+				"relativeLocationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeRotationExpression": false,
+				"relativeRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"relativeRotationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeScaleExpression": false,
+				"relativeScale":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				},
+				"relativeScaleExpression":
+				{
+					"expression": ""
+				}
+			},
+			"bVisibleToSceneCaptureOnly": false,
+			"bAllowScalability": true,
+			"bUseLocalRemoteDynamicSystem": false
+		},
+		{
+			"enabled":
+			{
+				"expression": "GetEffectCount(GetOwner(),$#30316002:6064629761725113743$) > 0"
+			},
+			"niagaraSystemSoft": "/Game/Effects/FX_Weapons/Ranger_EnhanceArmament/NS_Wand_ProjectileBarbed.NS_Wand_ProjectileBarbed",
+			"lifeTime": 0,
+			"bCastVolumetricTranslucentShadow": false,
+			"attachType": "AttachedSource",
+			"originMesh": "Character",
+			"attachSocketName": "None",
+			"bUseAttachSocketForOriginLocation": true,
+			"bUseAttachSocketForOriginOrientation": true,
+			"transform":
+			{
+				"originLocation": "Source",
+				"originLocationSocket": "None",
+				"originOrientation": "Source",
+				"originOrientationSocket": "None",
+				"originScale": "World",
+				"bUseRelativeLocationExpression": false,
+				"relativeLocation":
+				{
+					"x": 50,
+					"y": 0,
+					"z": 0
+				},
+				"relativeLocationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeRotationExpression": false,
+				"relativeRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"relativeRotationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeScaleExpression": false,
+				"relativeScale":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				},
+				"relativeScaleExpression":
+				{
+					"expression": ""
+				}
+			},
+			"bVisibleToSceneCaptureOnly": false,
+			"bAllowScalability": true,
+			"bUseLocalRemoteDynamicSystem": false
+		},
+		{
+			"enabled":
+			{
+				"expression": "GetEffectCount(GetOwner(),$#30316002:6064629784867475789$) > 0"
+			},
+			"niagaraSystemSoft": "/Game/Effects/FX_Weapons/Ranger_EnhanceArmament/NS_Wand_ProjectileConcussive.NS_Wand_ProjectileConcussive",
+			"lifeTime": 0,
+			"bCastVolumetricTranslucentShadow": false,
+			"attachType": "AttachedSource",
+			"originMesh": "Character",
+			"attachSocketName": "None",
+			"bUseAttachSocketForOriginLocation": true,
+			"bUseAttachSocketForOriginOrientation": true,
+			"transform":
+			{
+				"originLocation": "Source",
+				"originLocationSocket": "None",
+				"originOrientation": "Source",
+				"originOrientationSocket": "None",
+				"originScale": "World",
+				"bUseRelativeLocationExpression": false,
+				"relativeLocation":
+				{
+					"x": 50,
+					"y": 0,
+					"z": 0
+				},
+				"relativeLocationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeRotationExpression": false,
+				"relativeRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"relativeRotationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeScaleExpression": false,
+				"relativeScale":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				},
+				"relativeScaleExpression":
+				{
+					"expression": ""
+				}
+			},
+			"bVisibleToSceneCaptureOnly": false,
+			"bAllowScalability": true,
+			"bUseLocalRemoteDynamicSystem": false
+		},
+		{
+			"enabled":
+			{
+				"expression": "GetEffectCount(GetOwner(),$#30316002:6064629784579180497$) > 0"
+			},
+			"niagaraSystemSoft": "/Game/Effects/FX_Weapons/Ranger_EnhanceArmament/NS_Wand_ProjectileWeighted.NS_Wand_ProjectileWeighted",
+			"lifeTime": 0,
+			"bCastVolumetricTranslucentShadow": false,
+			"attachType": "AttachedSource",
+			"originMesh": "Character",
+			"attachSocketName": "None",
+			"bUseAttachSocketForOriginLocation": true,
+			"bUseAttachSocketForOriginOrientation": true,
+			"transform":
+			{
+				"originLocation": "Source",
+				"originLocationSocket": "None",
+				"originOrientation": "Source",
+				"originOrientationSocket": "None",
+				"originScale": "World",
+				"bUseRelativeLocationExpression": false,
+				"relativeLocation":
+				{
+					"x": 50,
+					"y": 0,
+					"z": 0
+				},
+				"relativeLocationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeRotationExpression": false,
+				"relativeRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"relativeRotationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeScaleExpression": false,
+				"relativeScale":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				},
+				"relativeScaleExpression":
+				{
+					"expression": ""
+				}
+			},
+			"bVisibleToSceneCaptureOnly": false,
+			"bAllowScalability": true,
+			"bUseLocalRemoteDynamicSystem": false
+		},
+		{
+			"enabled":
+			{
+				"expression": "GetEffectCount(GetOwner(),$#30316002:109195969386108$) > 0"
+			},
+			"niagaraSystemSoft": "/Game/Effects/FX_Weapons/Cleric_BlessWeapon/NS_Wand_ProjectileBlessed.NS_Wand_ProjectileBlessed",
+			"lifeTime": 0,
+			"bCastVolumetricTranslucentShadow": false,
+			"attachType": "AttachedSource",
+			"originMesh": "Character",
+			"attachSocketName": "None",
+			"bUseAttachSocketForOriginLocation": true,
+			"bUseAttachSocketForOriginOrientation": true,
+			"transform":
+			{
+				"originLocation": "Source",
+				"originLocationSocket": "None",
+				"originOrientation": "Source",
+				"originOrientationSocket": "None",
+				"originScale": "World",
+				"bUseRelativeLocationExpression": false,
+				"relativeLocation":
+				{
+					"x": 50,
+					"y": 0,
+					"z": 0
+				},
+				"relativeLocationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeRotationExpression": false,
+				"relativeRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"relativeRotationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeScaleExpression": false,
+				"relativeScale":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				},
+				"relativeScaleExpression":
+				{
+					"expression": ""
+				}
+			},
+			"bVisibleToSceneCaptureOnly": false,
+			"bAllowScalability": true,
+			"bUseLocalRemoteDynamicSystem": false
+		},
+		{
+			"enabled":
+			{
+				"expression": "GetEffectCount(GetOwner(),$#30316002:6064631212173492744$) > 0"
+			},
+			"niagaraSystemSoft": "/Game/Effects/FX_Weapons/Bard_ResonantWeapon/NS_Wand_ProjectileCathartic.NS_Wand_ProjectileCathartic",
+			"lifeTime": 0,
+			"bCastVolumetricTranslucentShadow": false,
+			"attachType": "AttachedSource",
+			"originMesh": "Character",
+			"attachSocketName": "None",
+			"bUseAttachSocketForOriginLocation": true,
+			"bUseAttachSocketForOriginOrientation": true,
+			"transform":
+			{
+				"originLocation": "Source",
+				"originLocationSocket": "None",
+				"originOrientation": "Source",
+				"originOrientationSocket": "None",
+				"originScale": "World",
+				"bUseRelativeLocationExpression": false,
+				"relativeLocation":
+				{
+					"x": 50,
+					"y": 0,
+					"z": 0
+				},
+				"relativeLocationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeRotationExpression": false,
+				"relativeRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"relativeRotationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeScaleExpression": false,
+				"relativeScale":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				},
+				"relativeScaleExpression":
+				{
+					"expression": ""
+				}
+			},
+			"bVisibleToSceneCaptureOnly": false,
+			"bAllowScalability": true,
+			"bUseLocalRemoteDynamicSystem": false
+		},
+		{
+			"enabled":
+			{
+				"expression": "GetEffectCount(GetOwner(),$#30316002:6064630831382003720$) > 0"
+			},
+			"niagaraSystemSoft": "/Game/Effects/FX_Weapons/Bard_ResonantWeapon/NS_Wand_ProjectileCheerful.NS_Wand_ProjectileCheerful",
+			"lifeTime": 0,
+			"bCastVolumetricTranslucentShadow": false,
+			"attachType": "AttachedSource",
+			"originMesh": "Character",
+			"attachSocketName": "None",
+			"bUseAttachSocketForOriginLocation": true,
+			"bUseAttachSocketForOriginOrientation": true,
+			"transform":
+			{
+				"originLocation": "Source",
+				"originLocationSocket": "None",
+				"originOrientation": "Source",
+				"originOrientationSocket": "None",
+				"originScale": "World",
+				"bUseRelativeLocationExpression": false,
+				"relativeLocation":
+				{
+					"x": 50,
+					"y": 0,
+					"z": 0
+				},
+				"relativeLocationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeRotationExpression": false,
+				"relativeRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"relativeRotationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeScaleExpression": false,
+				"relativeScale":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				},
+				"relativeScaleExpression":
+				{
+					"expression": ""
+				}
+			},
+			"bVisibleToSceneCaptureOnly": false,
+			"bAllowScalability": true,
+			"bUseLocalRemoteDynamicSystem": false
+		},
+		{
+			"enabled":
+			{
+				"expression": "GetEffectCount(GetOwner(),$#30316002:6064631071916883969$) > 0"
+			},
+			"niagaraSystemSoft": "/Game/Effects/FX_Weapons/Bard_ResonantWeapon/NS_Wand_ProjectileEpic.NS_Wand_ProjectileEpic",
+			"lifeTime": 0,
+			"bCastVolumetricTranslucentShadow": false,
+			"attachType": "AttachedSource",
+			"originMesh": "Character",
+			"attachSocketName": "None",
+			"bUseAttachSocketForOriginLocation": true,
+			"bUseAttachSocketForOriginOrientation": true,
+			"transform":
+			{
+				"originLocation": "Source",
+				"originLocationSocket": "None",
+				"originOrientation": "Source",
+				"originOrientationSocket": "None",
+				"originScale": "World",
+				"bUseRelativeLocationExpression": false,
+				"relativeLocation":
+				{
+					"x": 50,
+					"y": 0,
+					"z": 0
+				},
+				"relativeLocationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeRotationExpression": false,
+				"relativeRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"relativeRotationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeScaleExpression": false,
+				"relativeScale":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				},
+				"relativeScaleExpression":
+				{
+					"expression": ""
+				}
+			},
+			"bVisibleToSceneCaptureOnly": false,
+			"bAllowScalability": true,
+			"bUseLocalRemoteDynamicSystem": false
+		},
+		{
+			"enabled":
+			{
+				"expression": "GetEffectCount(GetOwner(),$#30316002:6064630958653642007$) > 0"
+			},
+			"niagaraSystemSoft": "/Game/Effects/FX_Weapons/Bard_ResonantWeapon/NS_Wand_ProjectileMenacing.NS_Wand_ProjectileMenacing",
+			"lifeTime": 0,
+			"bCastVolumetricTranslucentShadow": false,
+			"attachType": "AttachedSource",
+			"originMesh": "Character",
+			"attachSocketName": "None",
+			"bUseAttachSocketForOriginLocation": true,
+			"bUseAttachSocketForOriginOrientation": true,
+			"transform":
+			{
+				"originLocation": "Source",
+				"originLocationSocket": "None",
+				"originOrientation": "Source",
+				"originOrientationSocket": "None",
+				"originScale": "World",
+				"bUseRelativeLocationExpression": false,
+				"relativeLocation":
+				{
+					"x": 50,
+					"y": 0,
+					"z": 0
+				},
+				"relativeLocationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeRotationExpression": false,
+				"relativeRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"relativeRotationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeScaleExpression": false,
+				"relativeScale":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				},
+				"relativeScaleExpression":
+				{
+					"expression": ""
+				}
+			},
+			"bVisibleToSceneCaptureOnly": false,
+			"bAllowScalability": true,
+			"bUseLocalRemoteDynamicSystem": false
+		},
+		{
+			"enabled":
+			{
+				"expression": "GetEffectCount(GetOwner(),$#30316002:6064631006744216277$) > 0"
+			},
+			"niagaraSystemSoft": "/Game/Effects/FX_Weapons/Bard_ResonantWeapon/NS_Wand_ProjectilePensive.NS_Wand_ProjectilePensive",
+			"lifeTime": 0,
+			"bCastVolumetricTranslucentShadow": false,
+			"attachType": "AttachedSource",
+			"originMesh": "Character",
+			"attachSocketName": "None",
+			"bUseAttachSocketForOriginLocation": true,
+			"bUseAttachSocketForOriginOrientation": true,
+			"transform":
+			{
+				"originLocation": "Source",
+				"originLocationSocket": "None",
+				"originOrientation": "Source",
+				"originOrientationSocket": "None",
+				"originScale": "World",
+				"bUseRelativeLocationExpression": false,
+				"relativeLocation":
+				{
+					"x": 50,
+					"y": 0,
+					"z": 0
+				},
+				"relativeLocationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeRotationExpression": false,
+				"relativeRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"relativeRotationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeScaleExpression": false,
+				"relativeScale":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				},
+				"relativeScaleExpression":
+				{
+					"expression": ""
+				}
+			},
+			"bVisibleToSceneCaptureOnly": false,
+			"bAllowScalability": true,
+			"bUseLocalRemoteDynamicSystem": false
+		}
+	],
+	"niagaraParameters": [],
+	"tickNiagaraParameters": [],
+	"abilityEventNiagaraParams": [],
+	"guid": "6064631232900958650",
+	"name": "Weapon_Wand_ProjectileFX_Empowered",
+	"typeId": "30316008"
+}

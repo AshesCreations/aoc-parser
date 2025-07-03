@@ -1,0 +1,37 @@
+{
+	"animMontages": [
+		{
+			"abilityDirection": "NONE",
+			"animExpression":
+			{
+				"expression": "// Wand Hit 6 proc\r\n// set random data\r\nconst randomNumber = RandDoubleRange(0.0,1.0);\r\nconst randomTarget = 0.5;\r\nconst randomHit = randomNumber <= randomTarget;\r\n\r\n// check relevant skill purchase data\r\nconst hit6proc = GetSkillPurchased(GetInstigator(), $#30316003:6064630408247771149$, $#981011333:6064630408091729924$);\r\n\r\n\r\n// **all combo possibilities must be explicitly declared or a misfire will occur**\r\n\r\n// random must be hit to trigger\r\nrandomHit &&\r\n\r\n\r\nhit6proc && IsComboButtonPressed(EComboButtons::BUTTON_Attack1)"
+			},
+			"startSectionName": "Default",
+			"bOverrideSequenceResetTime": false,
+			"sequenceResetTime": 0,
+			"abilityAnimationSoftPaths": [
+				"/Game/Characters/Animations/RNG_WND/WeaponCombo/WeaponCombo_Wnd_02_Beam2.WeaponCombo_Wnd_02_Beam2"
+			],
+			"targetingKey": 0,
+			"hitKeys": []
+		},
+		{
+			"abilityDirection": "NONE",
+			"animExpression":
+			{
+				"expression": "const hit6 = GetSkillPurchased(GetInstigator(), $#30316003:6064630408247771149$, $#981011333:6064630408091926534$);\r\n\r\nhit6 && IsComboButtonPressed(EComboButtons::BUTTON_Attack1)"
+			},
+			"startSectionName": "start",
+			"bOverrideSequenceResetTime": false,
+			"sequenceResetTime": 0,
+			"abilityAnimationSoftPaths": [
+				"/Game/Characters/Animations/RNG_WND/WeaponCombo/WeaponCombo_RngWnd_C_06.WeaponCombo_RngWnd_C_06"
+			],
+			"targetingKey": 0,
+			"hitKeys": []
+		}
+	],
+	"guid": "6064631387271334549",
+	"name": "Wand_Beam_Branch_Hit5",
+	"typeId": "30316010"
+}

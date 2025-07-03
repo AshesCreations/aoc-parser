@@ -1,0 +1,1183 @@
+{
+	"audioFX": [
+		{
+			"akAudioEvent": "/Game/WwiseAudio/Events/Main/Weapons/Impacts/WEP_Impact.WEP_Impact",
+			"weaponSwitch": "/Game/WwiseAudio/Switches/GameSwitches/WeaponType/WeaponType-DaggerDW.WeaponType-DaggerDW",
+			"audioPlayType": "TYPE_AttachedTarget",
+			"audioDopplerType": "TYPE_None",
+			"attachLocationType": "KeepRelativeOffset",
+			"attachSocketName": "None",
+			"attachPosition":
+			{
+				"x": 0,
+				"y": 0,
+				"z": 0
+			},
+			"bFireOnlyOnce": true,
+			"bIsClientOnly": false,
+			"bDeferred": false
+		}
+	],
+	"audioExitFX": [],
+	"cameraFX":
+	{
+		"bUseNativeCameraShake": false,
+		"shakeClassPath": "None",
+		"shakeIntensitySoft":
+		{
+			"externalCurve": "None",
+			"editorCurveData":
+			{
+				"keys": [
+					{
+						"interpMode": "RCIM_Cubic",
+						"tangentMode": "RCTM_User",
+						"tangentWeightMode": "RCTWM_WeightedNone",
+						"time": 0,
+						"value": 0,
+						"arriveTangent": 0,
+						"arriveTangentWeight": 0,
+						"leaveTangent": 0,
+						"leaveTangentWeight": 0
+					},
+					{
+						"interpMode": "RCIM_Cubic",
+						"tangentMode": "RCTM_User",
+						"tangentWeightMode": "RCTWM_WeightedNone",
+						"time": 0.0099999997764825821,
+						"value": 0.25,
+						"arriveTangent": 0,
+						"arriveTangentWeight": 0,
+						"leaveTangent": 0,
+						"leaveTangentWeight": 0
+					},
+					{
+						"interpMode": "RCIM_Cubic",
+						"tangentMode": "RCTM_User",
+						"tangentWeightMode": "RCTWM_WeightedNone",
+						"time": 0.10000000149011612,
+						"value": 0,
+						"arriveTangent": 0,
+						"arriveTangentWeight": 0,
+						"leaveTangent": 0,
+						"leaveTangentWeight": 0
+					}
+				],
+				"defaultValue": 3.4028234663852886e+38,
+				"preInfinityExtrap": "RCCE_Constant",
+				"postInfinityExtrap": "RCCE_Constant",
+				"keyHandlesToIndices":
+				{
+				}
+			}
+		},
+		"shakeMultiplier":
+		{
+			"expression": ""
+		},
+		"fOVZoomSoft":
+		{
+			"externalCurve": "None",
+			"editorCurveData":
+			{
+				"keys": [],
+				"defaultValue": 3.4028234663852886e+38,
+				"preInfinityExtrap": "RCCE_Constant",
+				"postInfinityExtrap": "RCCE_Constant",
+				"keyHandlesToIndices":
+				{
+				}
+			}
+		},
+		"fOVMultiplier":
+		{
+			"expression": ""
+		},
+		"chromaticAberrationIntensitySoft":
+		{
+			"externalCurve": "None",
+			"editorCurveData":
+			{
+				"keys": [
+					{
+						"interpMode": "RCIM_Cubic",
+						"tangentMode": "RCTM_User",
+						"tangentWeightMode": "RCTWM_WeightedNone",
+						"time": 0,
+						"value": 0,
+						"arriveTangent": 0,
+						"arriveTangentWeight": 0,
+						"leaveTangent": 0,
+						"leaveTangentWeight": 0
+					},
+					{
+						"interpMode": "RCIM_Cubic",
+						"tangentMode": "RCTM_User",
+						"tangentWeightMode": "RCTWM_WeightedNone",
+						"time": 0.0099999997764825821,
+						"value": 0.5,
+						"arriveTangent": 0,
+						"arriveTangentWeight": 0,
+						"leaveTangent": 0,
+						"leaveTangentWeight": 0
+					},
+					{
+						"interpMode": "RCIM_Cubic",
+						"tangentMode": "RCTM_User",
+						"tangentWeightMode": "RCTWM_WeightedNone",
+						"time": 0.10000000149011612,
+						"value": 0,
+						"arriveTangent": 0,
+						"arriveTangentWeight": 0,
+						"leaveTangent": 0,
+						"leaveTangentWeight": 0
+					}
+				],
+				"defaultValue": 3.4028234663852886e+38,
+				"preInfinityExtrap": "RCCE_Constant",
+				"postInfinityExtrap": "RCCE_Constant",
+				"keyHandlesToIndices":
+				{
+				}
+			}
+		},
+		"chromaticAberrationMultiplier":
+		{
+			"expression": ""
+		},
+		"radialBlurScaleSoft":
+		{
+			"externalCurve": "None",
+			"editorCurveData":
+			{
+				"keys": [],
+				"defaultValue": 3.4028234663852886e+38,
+				"preInfinityExtrap": "RCCE_Constant",
+				"postInfinityExtrap": "RCCE_Constant",
+				"keyHandlesToIndices":
+				{
+				}
+			}
+		},
+		"radialBlurMultiplier":
+		{
+			"expression": ""
+		},
+		"bShouldFalloffIntensity": false,
+		"intensityFalloff":
+		{
+			"externalCurve": "None",
+			"editorCurveData":
+			{
+				"keys": [],
+				"defaultValue": 3.4028234663852886e+38,
+				"preInfinityExtrap": "RCCE_Constant",
+				"postInfinityExtrap": "RCCE_Constant",
+				"keyHandlesToIndices":
+				{
+				}
+			}
+		},
+		"playLocationOffset":
+		{
+			"x": 0,
+			"y": 0,
+			"z": 0
+		}
+	},
+	"materialFX": [],
+	"particleFX": [
+		{
+			"enabled":
+			{
+				"expression": ""
+			},
+			"niagaraSystemSoft": "/Game/Effects/FX_Weapons/Weapon_BasicAttacks/NS_1HEdgedWeapon_BasicAttackImpact.NS_1HEdgedWeapon_BasicAttackImpact",
+			"lifeTime": 0,
+			"bCastVolumetricTranslucentShadow": false,
+			"attachType": "AttachedTarget",
+			"originMesh": "Character",
+			"attachSocketName": "FX_Chest",
+			"bUseAttachSocketForOriginLocation": true,
+			"bUseAttachSocketForOriginOrientation": true,
+			"transform":
+			{
+				"originLocation": "Target",
+				"originLocationSocket": "FX_Chest",
+				"originOrientation": "World",
+				"originOrientationSocket": "None",
+				"originScale": "World",
+				"bUseRelativeLocationExpression": false,
+				"relativeLocation":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"relativeLocationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeRotationExpression": false,
+				"relativeRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"relativeRotationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeScaleExpression": false,
+				"relativeScale":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				},
+				"relativeScaleExpression":
+				{
+					"expression": ""
+				}
+			},
+			"bVisibleToSceneCaptureOnly": false,
+			"bAllowScalability": true,
+			"bUseLocalRemoteDynamicSystem": false
+		},
+		{
+			"enabled":
+			{
+				"expression": "GetEffectCount(GetOwner(),$#30316002:6064629093014044673$) > 0 || \r\nGetEffectCount(GetOwner(),$#30316002:6064632264379138879$) > 0 || \r\nGetEffectCount(GetOwner(),$#30316002:6064632264985876290$) > 0"
+			},
+			"niagaraSystemSoft": "/Game/Effects/FX_PCs/Mage/Particles/ElementalEmpowerment/Weapon_EEMeleeAttacks/NS_PhysicalWeapon_EEFireImpact.NS_PhysicalWeapon_EEFireImpact",
+			"lifeTime": 0,
+			"bCastVolumetricTranslucentShadow": false,
+			"attachType": "AttachedTarget",
+			"originMesh": "Character",
+			"attachSocketName": "FX_Chest",
+			"bUseAttachSocketForOriginLocation": true,
+			"bUseAttachSocketForOriginOrientation": true,
+			"transform":
+			{
+				"originLocation": "Target",
+				"originLocationSocket": "FX_Chest",
+				"originOrientation": "World",
+				"originOrientationSocket": "None",
+				"originScale": "World",
+				"bUseRelativeLocationExpression": false,
+				"relativeLocation":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"relativeLocationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeRotationExpression": false,
+				"relativeRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"relativeRotationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeScaleExpression": false,
+				"relativeScale":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				},
+				"relativeScaleExpression":
+				{
+					"expression": ""
+				}
+			},
+			"bVisibleToSceneCaptureOnly": false,
+			"bAllowScalability": true,
+			"bUseLocalRemoteDynamicSystem": false
+		},
+		{
+			"enabled":
+			{
+				"expression": "GetEffectCount(GetOwner(),$#30316002:6064629105627627534$) > 0 || \r\nGetEffectCount(GetOwner(),$#30316002:6064632266198941696$) > 0 || \r\nGetEffectCount(GetOwner(),$#30316002:6064632266234724356$) > 0"
+			},
+			"niagaraSystemSoft": "/Game/Effects/FX_PCs/Mage/Particles/ElementalEmpowerment/Weapon_EEMeleeAttacks/NS_PhysicalWeapon_EELightningImpact.NS_PhysicalWeapon_EELightningImpact",
+			"lifeTime": 0,
+			"bCastVolumetricTranslucentShadow": false,
+			"attachType": "AttachedTarget",
+			"originMesh": "Character",
+			"attachSocketName": "FX_Chest",
+			"bUseAttachSocketForOriginLocation": true,
+			"bUseAttachSocketForOriginOrientation": true,
+			"transform":
+			{
+				"originLocation": "Target",
+				"originLocationSocket": "FX_Chest",
+				"originOrientation": "World",
+				"originOrientationSocket": "None",
+				"originScale": "World",
+				"bUseRelativeLocationExpression": false,
+				"relativeLocation":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"relativeLocationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeRotationExpression": false,
+				"relativeRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"relativeRotationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeScaleExpression": false,
+				"relativeScale":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				},
+				"relativeScaleExpression":
+				{
+					"expression": ""
+				}
+			},
+			"bVisibleToSceneCaptureOnly": false,
+			"bAllowScalability": true,
+			"bUseLocalRemoteDynamicSystem": false
+		},
+		{
+			"enabled":
+			{
+				"expression": "GetEffectCount(GetOwner(),$#30316002:6064629105628020751$) > 0 || \r\nGetEffectCount(GetOwner(),$#30316002:6064632266251960328$) > 0 || \r\nGetEffectCount(GetOwner(),$#30316002:6064632266264608780$) > 0"
+			},
+			"niagaraSystemSoft": "/Game/Effects/FX_PCs/Mage/Particles/ElementalEmpowerment/Weapon_EEMeleeAttacks/NS_PhysicalWeapon_EEIceImpact.NS_PhysicalWeapon_EEIceImpact",
+			"lifeTime": 0,
+			"bCastVolumetricTranslucentShadow": false,
+			"attachType": "AttachedTarget",
+			"originMesh": "Character",
+			"attachSocketName": "FX_Chest",
+			"bUseAttachSocketForOriginLocation": true,
+			"bUseAttachSocketForOriginOrientation": true,
+			"transform":
+			{
+				"originLocation": "Target",
+				"originLocationSocket": "FX_Chest",
+				"originOrientation": "World",
+				"originOrientationSocket": "None",
+				"originScale": "World",
+				"bUseRelativeLocationExpression": false,
+				"relativeLocation":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"relativeLocationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeRotationExpression": false,
+				"relativeRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"relativeRotationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeScaleExpression": false,
+				"relativeScale":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				},
+				"relativeScaleExpression":
+				{
+					"expression": ""
+				}
+			},
+			"bVisibleToSceneCaptureOnly": false,
+			"bAllowScalability": true,
+			"bUseLocalRemoteDynamicSystem": false
+		},
+		{
+			"enabled":
+			{
+				"expression": "GetEffectCount(GetOwner(),$#30316002:6064629761725113743$) > 0"
+			},
+			"niagaraSystemSoft": "/Game/Effects/FX_PCs/Ranger/Particles/Imbue_Ammo/NS_RangerImbue_BarbedImpact.NS_RangerImbue_BarbedImpact",
+			"lifeTime": 0,
+			"bCastVolumetricTranslucentShadow": false,
+			"attachType": "AttachedTarget",
+			"originMesh": "Character",
+			"attachSocketName": "FX_Chest",
+			"bUseAttachSocketForOriginLocation": true,
+			"bUseAttachSocketForOriginOrientation": true,
+			"transform":
+			{
+				"originLocation": "Target",
+				"originLocationSocket": "FX_Chest",
+				"originOrientation": "World",
+				"originOrientationSocket": "None",
+				"originScale": "World",
+				"bUseRelativeLocationExpression": false,
+				"relativeLocation":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"relativeLocationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeRotationExpression": false,
+				"relativeRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"relativeRotationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeScaleExpression": false,
+				"relativeScale":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				},
+				"relativeScaleExpression":
+				{
+					"expression": ""
+				}
+			},
+			"bVisibleToSceneCaptureOnly": false,
+			"bAllowScalability": true,
+			"bUseLocalRemoteDynamicSystem": false
+		},
+		{
+			"enabled":
+			{
+				"expression": "GetEffectCount(GetOwner(),$#30316002:6064629784867475789$) > 0"
+			},
+			"niagaraSystemSoft": "/Game/Effects/FX_PCs/Ranger/Particles/Imbue_Ammo/NS_RangerImbue_ConcussiveImpact.NS_RangerImbue_ConcussiveImpact",
+			"lifeTime": 0,
+			"bCastVolumetricTranslucentShadow": false,
+			"attachType": "AttachedTarget",
+			"originMesh": "Character",
+			"attachSocketName": "FX_Chest",
+			"bUseAttachSocketForOriginLocation": true,
+			"bUseAttachSocketForOriginOrientation": true,
+			"transform":
+			{
+				"originLocation": "Target",
+				"originLocationSocket": "FX_Chest",
+				"originOrientation": "World",
+				"originOrientationSocket": "None",
+				"originScale": "World",
+				"bUseRelativeLocationExpression": false,
+				"relativeLocation":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"relativeLocationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeRotationExpression": false,
+				"relativeRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"relativeRotationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeScaleExpression": false,
+				"relativeScale":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				},
+				"relativeScaleExpression":
+				{
+					"expression": ""
+				}
+			},
+			"bVisibleToSceneCaptureOnly": false,
+			"bAllowScalability": true,
+			"bUseLocalRemoteDynamicSystem": false
+		},
+		{
+			"enabled":
+			{
+				"expression": "GetEffectCount(GetOwner(),$#30316002:6064629784579180497$) > 0"
+			},
+			"niagaraSystemSoft": "/Game/Effects/FX_PCs/Ranger/Particles/Imbue_Ammo/NS_RangerImbue_WeightedImpact.NS_RangerImbue_WeightedImpact",
+			"lifeTime": 0,
+			"bCastVolumetricTranslucentShadow": false,
+			"attachType": "AttachedTarget",
+			"originMesh": "Character",
+			"attachSocketName": "FX_Chest",
+			"bUseAttachSocketForOriginLocation": true,
+			"bUseAttachSocketForOriginOrientation": true,
+			"transform":
+			{
+				"originLocation": "Target",
+				"originLocationSocket": "FX_Chest",
+				"originOrientation": "World",
+				"originOrientationSocket": "None",
+				"originScale": "World",
+				"bUseRelativeLocationExpression": false,
+				"relativeLocation":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"relativeLocationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeRotationExpression": false,
+				"relativeRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"relativeRotationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeScaleExpression": false,
+				"relativeScale":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				},
+				"relativeScaleExpression":
+				{
+					"expression": ""
+				}
+			},
+			"bVisibleToSceneCaptureOnly": false,
+			"bAllowScalability": true,
+			"bUseLocalRemoteDynamicSystem": false
+		},
+		{
+			"enabled":
+			{
+				"expression": "GetEffectCount(GetOwner(),$#30316002:109195969386108$) > 0"
+			},
+			"niagaraSystemSoft": "/Game/Effects/FX_Weapons/Cleric_BlessWeapon/NS_BlessedAttackImpact.NS_BlessedAttackImpact",
+			"lifeTime": 0,
+			"bCastVolumetricTranslucentShadow": false,
+			"attachType": "AttachedTarget",
+			"originMesh": "Character",
+			"attachSocketName": "FX_Chest",
+			"bUseAttachSocketForOriginLocation": true,
+			"bUseAttachSocketForOriginOrientation": true,
+			"transform":
+			{
+				"originLocation": "Target",
+				"originLocationSocket": "FX_Chest",
+				"originOrientation": "World",
+				"originOrientationSocket": "None",
+				"originScale": "World",
+				"bUseRelativeLocationExpression": false,
+				"relativeLocation":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"relativeLocationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeRotationExpression": false,
+				"relativeRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"relativeRotationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeScaleExpression": false,
+				"relativeScale":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				},
+				"relativeScaleExpression":
+				{
+					"expression": ""
+				}
+			},
+			"bVisibleToSceneCaptureOnly": false,
+			"bAllowScalability": true,
+			"bUseLocalRemoteDynamicSystem": false
+		},
+		{
+			"enabled":
+			{
+				"expression": "GetEffectCount(GetOwner(),$#30316002:6064631212173492744$) > 0"
+			},
+			"niagaraSystemSoft": "/Game/Effects/FX_Weapons/Bard_ResonantWeapon/NS_CatharticAttackImpact.NS_CatharticAttackImpact",
+			"lifeTime": 0,
+			"bCastVolumetricTranslucentShadow": false,
+			"attachType": "AttachedTarget",
+			"originMesh": "Character",
+			"attachSocketName": "FX_Chest",
+			"bUseAttachSocketForOriginLocation": true,
+			"bUseAttachSocketForOriginOrientation": true,
+			"transform":
+			{
+				"originLocation": "Target",
+				"originLocationSocket": "FX_Chest",
+				"originOrientation": "World",
+				"originOrientationSocket": "None",
+				"originScale": "World",
+				"bUseRelativeLocationExpression": false,
+				"relativeLocation":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"relativeLocationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeRotationExpression": false,
+				"relativeRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"relativeRotationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeScaleExpression": false,
+				"relativeScale":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				},
+				"relativeScaleExpression":
+				{
+					"expression": ""
+				}
+			},
+			"bVisibleToSceneCaptureOnly": false,
+			"bAllowScalability": true,
+			"bUseLocalRemoteDynamicSystem": false
+		},
+		{
+			"enabled":
+			{
+				"expression": "GetEffectCount(GetOwner(),$#30316002:6064630831382003720$) > 0"
+			},
+			"niagaraSystemSoft": "/Game/Effects/FX_Weapons/Bard_ResonantWeapon/NS_CheerfulAttackImpact.NS_CheerfulAttackImpact",
+			"lifeTime": 0,
+			"bCastVolumetricTranslucentShadow": false,
+			"attachType": "AttachedTarget",
+			"originMesh": "Character",
+			"attachSocketName": "FX_Chest",
+			"bUseAttachSocketForOriginLocation": true,
+			"bUseAttachSocketForOriginOrientation": true,
+			"transform":
+			{
+				"originLocation": "Target",
+				"originLocationSocket": "FX_Chest",
+				"originOrientation": "World",
+				"originOrientationSocket": "None",
+				"originScale": "World",
+				"bUseRelativeLocationExpression": false,
+				"relativeLocation":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"relativeLocationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeRotationExpression": false,
+				"relativeRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"relativeRotationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeScaleExpression": false,
+				"relativeScale":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				},
+				"relativeScaleExpression":
+				{
+					"expression": ""
+				}
+			},
+			"bVisibleToSceneCaptureOnly": false,
+			"bAllowScalability": true,
+			"bUseLocalRemoteDynamicSystem": false
+		},
+		{
+			"enabled":
+			{
+				"expression": "GetEffectCount(GetOwner(),$#30316002:6064631071916883969$) > 0"
+			},
+			"niagaraSystemSoft": "/Game/Effects/FX_Weapons/Bard_ResonantWeapon/NS_EpicAttackImpact.NS_EpicAttackImpact",
+			"lifeTime": 0,
+			"bCastVolumetricTranslucentShadow": false,
+			"attachType": "AttachedTarget",
+			"originMesh": "Character",
+			"attachSocketName": "FX_Chest",
+			"bUseAttachSocketForOriginLocation": true,
+			"bUseAttachSocketForOriginOrientation": true,
+			"transform":
+			{
+				"originLocation": "Target",
+				"originLocationSocket": "FX_Chest",
+				"originOrientation": "World",
+				"originOrientationSocket": "None",
+				"originScale": "World",
+				"bUseRelativeLocationExpression": false,
+				"relativeLocation":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"relativeLocationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeRotationExpression": false,
+				"relativeRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"relativeRotationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeScaleExpression": false,
+				"relativeScale":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				},
+				"relativeScaleExpression":
+				{
+					"expression": ""
+				}
+			},
+			"bVisibleToSceneCaptureOnly": false,
+			"bAllowScalability": true,
+			"bUseLocalRemoteDynamicSystem": false
+		},
+		{
+			"enabled":
+			{
+				"expression": "GetEffectCount(GetOwner(),$#30316002:6064630958653642007$) > 0"
+			},
+			"niagaraSystemSoft": "/Game/Effects/FX_Weapons/Bard_ResonantWeapon/NS_MenacingAttackImpact.NS_MenacingAttackImpact",
+			"lifeTime": 0,
+			"bCastVolumetricTranslucentShadow": false,
+			"attachType": "AttachedTarget",
+			"originMesh": "Character",
+			"attachSocketName": "FX_Chest",
+			"bUseAttachSocketForOriginLocation": true,
+			"bUseAttachSocketForOriginOrientation": true,
+			"transform":
+			{
+				"originLocation": "Target",
+				"originLocationSocket": "FX_Chest",
+				"originOrientation": "World",
+				"originOrientationSocket": "None",
+				"originScale": "World",
+				"bUseRelativeLocationExpression": false,
+				"relativeLocation":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"relativeLocationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeRotationExpression": false,
+				"relativeRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"relativeRotationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeScaleExpression": false,
+				"relativeScale":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				},
+				"relativeScaleExpression":
+				{
+					"expression": ""
+				}
+			},
+			"bVisibleToSceneCaptureOnly": false,
+			"bAllowScalability": true,
+			"bUseLocalRemoteDynamicSystem": false
+		},
+		{
+			"enabled":
+			{
+				"expression": "GetEffectCount(GetOwner(),$#30316002:6064631006744216277$) > 0"
+			},
+			"niagaraSystemSoft": "/Game/Effects/FX_Weapons/Bard_ResonantWeapon/NS_PensiveAttackImpact.NS_PensiveAttackImpact",
+			"lifeTime": 0,
+			"bCastVolumetricTranslucentShadow": false,
+			"attachType": "AttachedTarget",
+			"originMesh": "Character",
+			"attachSocketName": "FX_Chest",
+			"bUseAttachSocketForOriginLocation": true,
+			"bUseAttachSocketForOriginOrientation": true,
+			"transform":
+			{
+				"originLocation": "Target",
+				"originLocationSocket": "FX_Chest",
+				"originOrientation": "World",
+				"originOrientationSocket": "None",
+				"originScale": "World",
+				"bUseRelativeLocationExpression": false,
+				"relativeLocation":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"relativeLocationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeRotationExpression": false,
+				"relativeRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"relativeRotationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeScaleExpression": false,
+				"relativeScale":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				},
+				"relativeScaleExpression":
+				{
+					"expression": ""
+				}
+			},
+			"bVisibleToSceneCaptureOnly": false,
+			"bAllowScalability": true,
+			"bUseLocalRemoteDynamicSystem": false
+		},
+		{
+			"enabled":
+			{
+				"expression": "EvalFormula($#10516612381411113:6064633504238011788$) > 0.0 &&\r\nGetEffectCount(GetOwner(),$#30316002:6064632773671546711$) > 0"
+			},
+			"niagaraSystemSoft": "/Game/Effects/FX_Weapons/Rogue_Poisons/NS_PoisonChilling_Impact.NS_PoisonChilling_Impact",
+			"lifeTime": 0,
+			"bCastVolumetricTranslucentShadow": false,
+			"attachType": "AttachedTarget",
+			"originMesh": "Character",
+			"attachSocketName": "FX_Chest",
+			"bUseAttachSocketForOriginLocation": true,
+			"bUseAttachSocketForOriginOrientation": true,
+			"transform":
+			{
+				"originLocation": "Target",
+				"originLocationSocket": "FX_Chest",
+				"originOrientation": "World",
+				"originOrientationSocket": "None",
+				"originScale": "World",
+				"bUseRelativeLocationExpression": false,
+				"relativeLocation":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"relativeLocationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeRotationExpression": false,
+				"relativeRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"relativeRotationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeScaleExpression": false,
+				"relativeScale":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				},
+				"relativeScaleExpression":
+				{
+					"expression": ""
+				}
+			},
+			"bVisibleToSceneCaptureOnly": false,
+			"bAllowScalability": true,
+			"bUseLocalRemoteDynamicSystem": false
+		},
+		{
+			"enabled":
+			{
+				"expression": "EvalFormula($#10516612381411113:6064633504238011788$) > 0.0 &&\r\nGetEffectCount(GetOwner(),$#30316002:6064632916157605255$) > 0"
+			},
+			"niagaraSystemSoft": "/Game/Effects/FX_Weapons/Rogue_Poisons/NS_PoisonDraining_Impact.NS_PoisonDraining_Impact",
+			"lifeTime": 0,
+			"bCastVolumetricTranslucentShadow": false,
+			"attachType": "AttachedTarget",
+			"originMesh": "Character",
+			"attachSocketName": "FX_Chest",
+			"bUseAttachSocketForOriginLocation": true,
+			"bUseAttachSocketForOriginOrientation": true,
+			"transform":
+			{
+				"originLocation": "Target",
+				"originLocationSocket": "FX_Chest",
+				"originOrientation": "World",
+				"originOrientationSocket": "None",
+				"originScale": "World",
+				"bUseRelativeLocationExpression": false,
+				"relativeLocation":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"relativeLocationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeRotationExpression": false,
+				"relativeRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"relativeRotationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeScaleExpression": false,
+				"relativeScale":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				},
+				"relativeScaleExpression":
+				{
+					"expression": ""
+				}
+			},
+			"bVisibleToSceneCaptureOnly": false,
+			"bAllowScalability": true,
+			"bUseLocalRemoteDynamicSystem": false
+		},
+		{
+			"enabled":
+			{
+				"expression": "EvalFormula($#10516612381411113:6064633504238011788$) > 0.0 &&\r\nGetEffectCount(GetOwner(),$#30316002:6064632695145760958$) > 0"
+			},
+			"niagaraSystemSoft": "/Game/Effects/FX_Weapons/Rogue_Poisons/NS_PoisonWithering_Impact.NS_PoisonWithering_Impact",
+			"lifeTime": 0,
+			"bCastVolumetricTranslucentShadow": false,
+			"attachType": "AttachedTarget",
+			"originMesh": "Character",
+			"attachSocketName": "FX_Chest",
+			"bUseAttachSocketForOriginLocation": true,
+			"bUseAttachSocketForOriginOrientation": true,
+			"transform":
+			{
+				"originLocation": "Target",
+				"originLocationSocket": "FX_Chest",
+				"originOrientation": "World",
+				"originOrientationSocket": "None",
+				"originScale": "World",
+				"bUseRelativeLocationExpression": false,
+				"relativeLocation":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"relativeLocationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeRotationExpression": false,
+				"relativeRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"relativeRotationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeScaleExpression": false,
+				"relativeScale":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				},
+				"relativeScaleExpression":
+				{
+					"expression": ""
+				}
+			},
+			"bVisibleToSceneCaptureOnly": false,
+			"bAllowScalability": true,
+			"bUseLocalRemoteDynamicSystem": false
+		},
+		{
+			"enabled":
+			{
+				"expression": "EvalFormula($#10516612381411113:6064633504238011788$) > 0.0 &&\r\nGetEffectCount(GetOwner(),$#30316002:6064632943084444166$) > 0"
+			},
+			"niagaraSystemSoft": "/Game/Effects/FX_Weapons/Rogue_Poisons/NS_PoisonWounding_Impact.NS_PoisonWounding_Impact",
+			"lifeTime": 0,
+			"bCastVolumetricTranslucentShadow": false,
+			"attachType": "AttachedTarget",
+			"originMesh": "Character",
+			"attachSocketName": "FX_Chest",
+			"bUseAttachSocketForOriginLocation": true,
+			"bUseAttachSocketForOriginOrientation": true,
+			"transform":
+			{
+				"originLocation": "Target",
+				"originLocationSocket": "FX_Chest",
+				"originOrientation": "World",
+				"originOrientationSocket": "None",
+				"originScale": "World",
+				"bUseRelativeLocationExpression": false,
+				"relativeLocation":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"relativeLocationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeRotationExpression": false,
+				"relativeRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"relativeRotationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeScaleExpression": false,
+				"relativeScale":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				},
+				"relativeScaleExpression":
+				{
+					"expression": ""
+				}
+			},
+			"bVisibleToSceneCaptureOnly": false,
+			"bAllowScalability": true,
+			"bUseLocalRemoteDynamicSystem": false
+		}
+	],
+	"niagaraParameters": [],
+	"tickNiagaraParameters": [],
+	"abilityEventNiagaraParams": [],
+	"guid": "6064632738960834560",
+	"name": "Weapon_DW_Daggers_SlashImpact",
+	"typeId": "30316008"
+}

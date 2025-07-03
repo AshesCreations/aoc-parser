@@ -1,0 +1,157 @@
+{
+	"projectileClass": "/Script/GameSystemsPlugin.AoCAbilityProjectile",
+	"projectileFXId":
+	{
+		"guid": "6064633650592093262",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"projectileEndFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"bDeactivateProjectileFXOnFire": false,
+	"fireFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"impactFXId":
+	{
+		"guid": "6064633656047763689",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"range": 10000,
+	"lifeTime": 10,
+	"bPersistBetweenAbilities": false,
+	"speed": 1500,
+	"attachType": "AttachedSource",
+	"attachSocket": "None",
+	"bUseAttachSocketForOriginLocation": false,
+	"bUseAttachSocketForOriginOrientation": false,
+	"spawnTransform":
+	{
+		"originLocation": "Instigator",
+		"originLocationSocket": "wrist_L",
+		"originOrientation": "SourceToOrigin",
+		"originOrientationSocket": "None",
+		"originScale": "Source",
+		"bUseRelativeLocationExpression": false,
+		"relativeLocation":
+		{
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"relativeLocationExpression":
+		{
+			"expression": ""
+		},
+		"bUseRelativeRotationExpression": false,
+		"relativeRotation":
+		{
+			"pitch": 0,
+			"yaw": 0,
+			"roll": 0
+		},
+		"relativeRotationExpression":
+		{
+			"expression": ""
+		},
+		"bUseRelativeScaleExpression": false,
+		"relativeScale":
+		{
+			"x": 1,
+			"y": 1,
+			"z": 1
+		},
+		"relativeScaleExpression":
+		{
+			"expression": ""
+		}
+	},
+	"bSpecifyFireRotation": true,
+	"fireTransform":
+	{
+		"originLocation": "HitLocation",
+		"originLocationSocket": "None",
+		"originOrientation": "InstigatorToOrigin",
+		"originOrientationSocket": "None",
+		"originScale": "Source",
+		"bUseRelativeLocationExpression": false,
+		"relativeLocation":
+		{
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"relativeLocationExpression":
+		{
+			"expression": ""
+		},
+		"bUseRelativeRotationExpression": false,
+		"relativeRotation":
+		{
+			"pitch": 55,
+			"yaw": 0,
+			"roll": 0
+		},
+		"relativeRotationExpression":
+		{
+			"expression": ""
+		},
+		"bUseRelativeScaleExpression": false,
+		"relativeScale":
+		{
+			"x": 1,
+			"y": 1,
+			"z": 1
+		},
+		"relativeScaleExpression":
+		{
+			"expression": ""
+		}
+	},
+	"fireRotationConeAngle": 0,
+	"fadeOutDuration": 1,
+	"bAttachOnDestroy": false,
+	"hitsIds": [
+		{
+			"guid": "6064633588809728408",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"bUseSphereCollision": false,
+	"sphereCollisionRadius": 4,
+	"bUseSeparateCollisionRadiusForDynamicObjects": false,
+	"dynamicObjectSphereCollisionRadius": 32,
+	"maxProjectileHits": 1,
+	"projectileHitInterval": 0,
+	"bIgnoreNonTarget": false,
+	"bIgnoreWorldObjects": false,
+	"chainHitCount": 0,
+	"chainRadius": 0,
+	"bChainClosestTarget": false,
+	"projectileType": "PROJECTILE_HomingArcing",
+	"bMaySpawnWithoutTarget": true,
+	"bAimedWithControlRotation": false,
+	"desiredAngularSpeed": 0,
+	"targetOffset":
+	{
+		"x": 140,
+		"y": 150,
+		"z": -96
+	},
+	"homingSocketName": "None",
+	"bFavorHighArc": true,
+	"arcingGravityScale": 1.5,
+	"bFollowGround": false,
+	"guid": "6064633589556051998",
+	"name": "Automata_Overseer_ArcaneTorrent_Projectile3",
+	"typeId": "30316006"
+}

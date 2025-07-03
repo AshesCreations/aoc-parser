@@ -1,0 +1,141 @@
+{
+	"eventTags": [],
+	"applicableTargets": 1,
+	"applicableLifeStates": 1,
+	"applicationRequirements":
+	{
+		"expression": ""
+	},
+	"bCapHits": false,
+	"maxTargetsPerHit":
+	{
+		"expression": ""
+	},
+	"bLimitHitsPerTarget": false,
+	"maxHitsPerTarget":
+	{
+		"expression": ""
+	},
+	"bLimitHitsGlobally": false,
+	"maxHitsGlobally":
+	{
+		"expression": ""
+	},
+	"hitFloatingText": "",
+	"appliedEffectsIds": [],
+	"effectsAppliedToSelf": [],
+	"lingeringZonesIds": [],
+	"reactionsIds": [],
+	"maxNumEffectsToRemove": 0,
+	"effectRemovalFilter":
+	{
+		"expression": ""
+	},
+	"effectsToRemoveIds": [],
+	"bRemoveAsDispel": false,
+	"critBehavior": "Physical",
+	"bonusCritRate":
+	{
+		"expression": ""
+	},
+	"evasionBehavior": "Physical",
+	"bonusAccuracy":
+	{
+		"expression": ""
+	},
+	"statModsIds": [],
+	"bonusCrowdControlDamageIds": [],
+	"onHitFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"onActivateFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"postHitPauseFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"onBlockFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"hitPauseFrames": 0,
+	"hitPauseMovement": false,
+	"scriptOnActivate": "None",
+	"scriptOnHit": "None",
+	"networkType": "NET_ServerVerify",
+	"modifyCooldownsIds": [],
+	"bAppliesImpulse": true,
+	"bApplyImpulseAsVelocityChange": true,
+	"impulseOriginTransform":
+	{
+		"originLocation": "Target",
+		"originLocationSocket": "None",
+		"originOrientation": "Target",
+		"originOrientationSocket": "None",
+		"originScale": "World",
+		"relativeLocation":
+		{
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"relativeRotation":
+		{
+			"pitch": 0,
+			"yaw": 0,
+			"roll": 0
+		},
+		"relativeScale":
+		{
+			"x": 1,
+			"y": 1,
+			"z": 1
+		}
+	},
+	"impulseMagnitude":
+	{
+		"expression": "500.0"
+	},
+	"impulseDirection":
+	{
+		"x": 1,
+		"y": 0
+	},
+	"impulseAngle":
+	{
+		"expression": "90"
+	},
+	"impulseRotationBehavior": "Unaffected",
+	"recursiveHitsIds": [],
+	"recursiveTargetId":
+	{
+		"guid": "0",
+		"typeId": "30316011",
+		"name": "None"
+	},
+	"inputTerms": [],
+	"bOverrideDefaultThreatToTarget": false,
+	"threatToTarget":
+	{
+		"expression": ""
+	},
+	"bOverrideDefaultObservedThreat": false,
+	"observedThreat":
+	{
+		"expression": ""
+	},
+	"guid": "6064629173300625410",
+	"name": "Mage_Levitate_ImpulseHit",
+	"typeId": "30316005"
+}

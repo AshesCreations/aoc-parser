@@ -1,0 +1,37 @@
+{
+	"animMontages": [
+		{
+			"abilityDirection": "NONE",
+			"animExpression":
+			{
+				"expression": "!GetSkillPurchased(GetInstigator(), $#30316003:107813788866168$, $#981011333:6064630497390428160$)"
+			},
+			"startSectionName": "Exit10",
+			"bOverrideSequenceResetTime": false,
+			"sequenceResetTime": 0,
+			"abilityAnimationSoftPaths": [
+				"/Game/Characters/Animations/00_ABLT/Fighter/ABLT_Whirlwind_Notify_Montage.ABLT_Whirlwind_Notify_Montage"
+			],
+			"targetingKey": 0,
+			"hitKeys": []
+		},
+		{
+			"abilityDirection": "NONE",
+			"animExpression":
+			{
+				"expression": "GetSkillPurchased(GetInstigator(), $#30316003:107813788866168$, $#981011333:6064630497390428160$)"
+			},
+			"startSectionName": "None",
+			"bOverrideSequenceResetTime": false,
+			"sequenceResetTime": 0,
+			"abilityAnimationSoftPaths": [
+				"/Game/Characters/Animations/00_ABLT/Fighter/ABLT_WhirlwindClimactic_Notify_Montage.ABLT_WhirlwindClimactic_Notify_Montage"
+			],
+			"targetingKey": 0,
+			"hitKeys": []
+		}
+	],
+	"guid": "6064631075802122649",
+	"name": "Fighter_Whirlwind",
+	"typeId": "30316010"
+}

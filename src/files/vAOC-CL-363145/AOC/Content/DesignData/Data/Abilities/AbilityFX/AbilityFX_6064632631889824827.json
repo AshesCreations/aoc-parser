@@ -1,0 +1,204 @@
+{
+	"audioFX": [],
+	"audioExitFX": [],
+	"cameraFX":
+	{
+		"bUseNativeCameraShake": false,
+		"shakeClassPath": "None",
+		"shakeIntensitySoft":
+		{
+			"externalCurve": "None",
+			"editorCurveData":
+			{
+				"keys": [],
+				"defaultValue": 3.4028234663852886e+38,
+				"preInfinityExtrap": "RCCE_Constant",
+				"postInfinityExtrap": "RCCE_Constant",
+				"keyHandlesToIndices":
+				{
+				}
+			}
+		},
+		"shakeMultiplier":
+		{
+			"expression": ""
+		},
+		"fOVZoomSoft":
+		{
+			"externalCurve": "None",
+			"editorCurveData":
+			{
+				"keys": [],
+				"defaultValue": 3.4028234663852886e+38,
+				"preInfinityExtrap": "RCCE_Constant",
+				"postInfinityExtrap": "RCCE_Constant",
+				"keyHandlesToIndices":
+				{
+				}
+			}
+		},
+		"fOVMultiplier":
+		{
+			"expression": ""
+		},
+		"chromaticAberrationIntensitySoft":
+		{
+			"externalCurve": "None",
+			"editorCurveData":
+			{
+				"keys": [],
+				"defaultValue": 3.4028234663852886e+38,
+				"preInfinityExtrap": "RCCE_Constant",
+				"postInfinityExtrap": "RCCE_Constant",
+				"keyHandlesToIndices":
+				{
+				}
+			}
+		},
+		"chromaticAberrationMultiplier":
+		{
+			"expression": ""
+		},
+		"radialBlurScaleSoft":
+		{
+			"externalCurve": "None",
+			"editorCurveData":
+			{
+				"keys": [],
+				"defaultValue": 3.4028234663852886e+38,
+				"preInfinityExtrap": "RCCE_Constant",
+				"postInfinityExtrap": "RCCE_Constant",
+				"keyHandlesToIndices":
+				{
+				}
+			}
+		},
+		"radialBlurMultiplier":
+		{
+			"expression": ""
+		},
+		"bShouldFalloffIntensity": false,
+		"intensityFalloff":
+		{
+			"externalCurve": "None",
+			"editorCurveData":
+			{
+				"keys": [],
+				"defaultValue": 3.4028234663852886e+38,
+				"preInfinityExtrap": "RCCE_Constant",
+				"postInfinityExtrap": "RCCE_Constant",
+				"keyHandlesToIndices":
+				{
+				}
+			}
+		},
+		"playLocationOffset":
+		{
+			"x": 0,
+			"y": 0,
+			"z": 0
+		}
+	},
+	"materialFX": [],
+	"particleFX": [
+		{
+			"enabled":
+			{
+				"expression": ""
+			},
+			"niagaraSystemSoft": "/Game/Effects/FX_NPCs/Flame_Elemental/NS_FlameLElementalPunch_Trail.NS_FlameLElementalPunch_Trail",
+			"lifeTime": 0,
+			"bCastVolumetricTranslucentShadow": false,
+			"attachType": "AttachedSource",
+			"originMesh": "Character",
+			"attachSocketName": "None",
+			"bUseAttachSocketForOriginLocation": true,
+			"bUseAttachSocketForOriginOrientation": true,
+			"transform":
+			{
+				"originLocation": "Owner",
+				"originLocationSocket": "None",
+				"originOrientation": "Owner",
+				"originOrientationSocket": "None",
+				"originScale": "Owner",
+				"bUseRelativeLocationExpression": false,
+				"relativeLocation":
+				{
+					"x": 70,
+					"y": 0,
+					"z": 110
+				},
+				"relativeLocationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeRotationExpression": false,
+				"relativeRotation":
+				{
+					"pitch": 25,
+					"yaw": -60,
+					"roll": 25
+				},
+				"relativeRotationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeScaleExpression": false,
+				"relativeScale":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				},
+				"relativeScaleExpression":
+				{
+					"expression": ""
+				}
+			},
+			"bVisibleToSceneCaptureOnly": false,
+			"bAllowScalability": true,
+			"bUseLocalRemoteDynamicSystem": false
+		}
+	],
+	"niagaraParameters": [
+		{
+			"parameterName": "FireColor",
+			"parameterType": "LinearColor",
+			"expressionParam":
+			{
+				"expression": ""
+			},
+			"quatParam":
+			{
+				"x": 0,
+				"y": 0,
+				"z": 0,
+				"w": 1
+			},
+			"vec2Param":
+			{
+				"x": 0,
+				"y": 0
+			},
+			"vec4Param":
+			{
+				"x": 0,
+				"y": 0,
+				"z": 0,
+				"w": 0
+			},
+			"linearColorParam":
+			{
+				"r": 3,
+				"g": 8,
+				"b": 10,
+				"a": 1
+			}
+		}
+	],
+	"tickNiagaraParameters": [],
+	"abilityEventNiagaraParams": [],
+	"guid": "6064632631889824827",
+	"name": "AbilityFX_SpiritfireFlamePunch_Trail_L",
+	"typeId": "30316008"
+}

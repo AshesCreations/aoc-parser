@@ -1,0 +1,52 @@
+{
+	"teleportTarget": "Source",
+	"teleportScript": "/Game/DesignAssets/Combat/TeleportScripts/BP_TeleportBehindScript.BP_TeleportBehindScript_C",
+	"transform":
+	{
+		"originLocation": "Source",
+		"originLocationSocket": "None",
+		"originOrientation": "Source",
+		"originOrientationSocket": "None",
+		"originScale": "World",
+		"bUseRelativeLocationExpression": true,
+		"relativeLocation":
+		{
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"relativeLocationExpression":
+		{
+			"expression": "Vector(-GetCapsuleRadius(GetSource(), true) - GetCapsuleRadius(GetInstigator(), true), 0.0, 0.0)"
+		},
+		"bUseRelativeRotationExpression": false,
+		"relativeRotation":
+		{
+			"pitch": 0,
+			"yaw": 0,
+			"roll": 0
+		},
+		"relativeRotationExpression":
+		{
+			"expression": ""
+		},
+		"bUseRelativeScaleExpression": false,
+		"relativeScale":
+		{
+			"x": 1,
+			"y": 1,
+			"z": 1
+		},
+		"relativeScaleExpression":
+		{
+			"expression": ""
+		}
+	},
+	"transformOrigin": "Character",
+	"toleranceRadius": 100,
+	"verticalTolerance": 200,
+	"bRequireGround": true,
+	"guid": "6064633085726294018",
+	"name": "Test_BehindSource",
+	"typeId": "3031600216"
+}

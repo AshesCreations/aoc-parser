@@ -1,0 +1,37 @@
+{
+	"animMontages": [
+		{
+			"abilityDirection": "NONE",
+			"animExpression":
+			{
+				"expression": "const Climactic = GetSkillPurchased(GetInstigator(), $#30316003:107813788866168$, $#981011333:6064630497390428160$);\r\nconst Overdrive = GetSkillPurchased(GetInstigator(), $#30316003:107813788866168$, $#981011333:6064630497868842032$);\r\nconst Momentum = GetStat(GetInstigator(), $#10516612381411111:6064629959589298751$);\r\n!Climactic && (!Overdrive || Momentum <= 10.0)"
+			},
+			"startSectionName": "Exit10",
+			"bOverrideSequenceResetTime": false,
+			"sequenceResetTime": 0,
+			"abilityAnimationSoftPaths": [
+				"/Game/Characters/Animations/00_ABLT/Fighter/ABLT_Whirlwind_Notify_Montage.ABLT_Whirlwind_Notify_Montage"
+			],
+			"targetingKey": 0,
+			"hitKeys": []
+		},
+		{
+			"abilityDirection": "NONE",
+			"animExpression":
+			{
+				"expression": "const Climactic = GetSkillPurchased(GetInstigator(), $#30316003:107813788866168$, $#981011333:6064630497390428160$);\r\nconst Overdrive = GetSkillPurchased(GetInstigator(), $#30316003:107813788866168$, $#981011333:6064630497868842032$);\r\nconst Momentum = GetStat(GetInstigator(), $#10516612381411111:6064629959589298751$);\r\nClimactic && (!Overdrive || Momentum <= 10.0)"
+			},
+			"startSectionName": "None",
+			"bOverrideSequenceResetTime": false,
+			"sequenceResetTime": 0,
+			"abilityAnimationSoftPaths": [
+				"/Game/Characters/Animations/00_ABLT/Fighter/ABLT_WhirlwindClimactic_Notify_Montage.ABLT_WhirlwindClimactic_Notify_Montage"
+			],
+			"targetingKey": 0,
+			"hitKeys": []
+		}
+	],
+	"guid": "109341261125250",
+	"name": "Fighter_Whirlwind_End",
+	"typeId": "30316010"
+}

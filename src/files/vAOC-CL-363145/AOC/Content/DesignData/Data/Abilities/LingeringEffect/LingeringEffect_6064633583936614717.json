@@ -1,0 +1,112 @@
+{
+	"lingeringEffectClass": "/Script/GameSystemsPlugin.AoCAbilityLingeringEffect",
+	"attachType": "None",
+	"attachSocketName": "None",
+	"bUseAttachSocketForOriginLocation": false,
+	"bUseAttachSocketForOriginOrientation": false,
+	"spawnTransform":
+	{
+		"originLocation": "HitLocation",
+		"originLocationSocket": "None",
+		"originOrientation": "SourceToOrigin",
+		"originOrientationSocket": "None",
+		"originScale": "World",
+		"bUseRelativeLocationExpression": false,
+		"relativeLocation":
+		{
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"relativeLocationExpression":
+		{
+			"expression": ""
+		},
+		"bUseRelativeRotationExpression": false,
+		"relativeRotation":
+		{
+			"pitch": 0,
+			"yaw": 0,
+			"roll": 0
+		},
+		"relativeRotationExpression":
+		{
+			"expression": ""
+		},
+		"bUseRelativeScaleExpression": false,
+		"relativeScale":
+		{
+			"x": 1,
+			"y": 1,
+			"z": 1
+		},
+		"relativeScaleExpression":
+		{
+			"expression": ""
+		}
+	},
+	"deactivateFXTimeBeforeDestroy": 0,
+	"lifeTime": 13,
+	"expireAfterAppliedHits":
+	{
+		"expression": ""
+	},
+	"expireIfExpressionTrue":
+	{
+		"expression": ""
+	},
+	"bUseGlobalTickRate": true,
+	"tickRate": 1,
+	"startTimeOffset": 0,
+	"endTimeOffset": 0,
+	"lingeringHitTargetingInfoId":
+	{
+		"guid": "6064633583939432801",
+		"typeId": "30316011",
+		"name": "None"
+	},
+	"initialHitsIds": [],
+	"lingeringHitsIds": [
+		{
+			"guid": "6064633736488344035",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"endHitsIds": [],
+	"onBeginOverlapHitsIds": [
+		{
+			"guid": "6064633588475376923",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"onEndOverlapHitsIds": [],
+	"bNoHitOnFirstTick": false,
+	"speed": 0,
+	"bLockPitch": false,
+	"delayType": "DELAY_Time",
+	"delayTime": 0,
+	"delayTargetId":
+	{
+		"guid": "0",
+		"typeId": "30316011",
+		"name": "None"
+	},
+	"numberOfCharges": 1,
+	"lingeringFXId":
+	{
+		"guid": "6064633589754509905",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"delayedTrackingActivationFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"guid": "6064633583936614717",
+	"name": "Summoner_Void",
+	"typeId": "30316007"
+}

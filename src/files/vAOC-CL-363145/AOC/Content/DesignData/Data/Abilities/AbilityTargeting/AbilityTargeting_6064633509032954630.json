@@ -1,0 +1,49 @@
+{
+	"sorting": [
+		{
+			"method": "Score",
+			"filter":
+			{
+				"expression": "GetTarget() == GetInstigator()"
+			},
+			"score":
+			{
+				"expression": ""
+			}
+		}
+	],
+	"contextualTargets": [
+		{
+			"contextualTarget": "Owner",
+			"bCheckTargetValidity": false,
+			"bUseAoETargetingLocation": false,
+			"bPerformLoSCheck": true,
+			"bPerformConeCheck": true,
+			"angleCenter": 0,
+			"distanceCenter": 0,
+			"validAngle": 0,
+			"validDistance": 0
+		}
+	],
+	"hurtBoxInfo":
+	{
+		"bCenterBlockTargetOnHurtbox": false,
+		"targetingVolumes": []
+	},
+	"lockOnInfo":
+	{
+		"targetDiscoveryBehavior": "PrefersActiveTargets",
+		"bCheckTargetValidity": false,
+		"bUseAoETargetingLocation": false,
+		"bPerformLoSCheck": true,
+		"bPerformConeCheck": true,
+		"angleCenter": 0,
+		"distanceCenter": 0,
+		"validAngle": 0,
+		"validDistance": 0,
+		"bTargetInitialLocation": false
+	},
+	"guid": "6064633509032954630",
+	"name": "ForceSelf_Targeting",
+	"typeId": "30316011"
+}

@@ -1,0 +1,28 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 2,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 2,
+		"fishingEvents": 0
+	},
+	"bEvaluateOnTick": false,
+	"branchTrigger":
+	{
+		"expression": "IsMoving(GetOwner()) ||\r\n(GetStatModValue(GetHitEvent(), $#10516612381411111:108986352686712$) < 0.0 \r\n&& GetRecordTypeId(GetHitSourceRecord(GetHitEvent())) != GetReactionTypeId()\r\n&& GetRecordTypeId(GetHitSourceRecord(GetHitEvent())) != GetEffectTypeId())"
+	},
+	"bPredictedOnAutonomousClient": false,
+	"animBranchId":
+	{
+		"guid": "6064630564784570567",
+		"typeId": "30316010",
+		"name": "None"
+	},
+	"bOnlyBranchWithValidTarget": false,
+	"guid": "6064630564779917510",
+	"name": "Consumable_Food_CancelOnMoveOrDamage",
+	"typeId": "30316009"
+}

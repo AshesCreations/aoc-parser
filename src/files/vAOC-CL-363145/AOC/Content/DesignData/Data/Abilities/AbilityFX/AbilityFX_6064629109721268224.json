@@ -1,0 +1,159 @@
+{
+	"bAlwaysPlayInRadius": false,
+	"playRadius": 0,
+	"audioFX": [],
+	"audioExitFX": [],
+	"cameraFX":
+	{
+		"shakeIntensitySoft":
+		{
+			"externalCurve": "None",
+			"editorCurveData":
+			{
+				"keys": [],
+				"defaultValue": 3.4028234663852886e+38,
+				"preInfinityExtrap": "RCCE_Constant",
+				"postInfinityExtrap": "RCCE_Constant",
+				"keyHandlesToIndices":
+				{
+				}
+			}
+		},
+		"shakeMultiplier":
+		{
+			"expression": ""
+		},
+		"fOVZoomSoft":
+		{
+			"externalCurve": "None",
+			"editorCurveData":
+			{
+				"keys": [],
+				"defaultValue": 3.4028234663852886e+38,
+				"preInfinityExtrap": "RCCE_Constant",
+				"postInfinityExtrap": "RCCE_Constant",
+				"keyHandlesToIndices":
+				{
+				}
+			}
+		},
+		"fOVMultiplier":
+		{
+			"expression": ""
+		},
+		"chromaticAberrationIntensitySoft":
+		{
+			"externalCurve": "None",
+			"editorCurveData":
+			{
+				"keys": [],
+				"defaultValue": 3.4028234663852886e+38,
+				"preInfinityExtrap": "RCCE_Constant",
+				"postInfinityExtrap": "RCCE_Constant",
+				"keyHandlesToIndices":
+				{
+				}
+			}
+		},
+		"chromaticAberrationMultiplier":
+		{
+			"expression": ""
+		},
+		"radialBlurScaleSoft":
+		{
+			"externalCurve": "None",
+			"editorCurveData":
+			{
+				"keys": [],
+				"defaultValue": 3.4028234663852886e+38,
+				"preInfinityExtrap": "RCCE_Constant",
+				"postInfinityExtrap": "RCCE_Constant",
+				"keyHandlesToIndices":
+				{
+				}
+			}
+		},
+		"radialBlurMultiplier":
+		{
+			"expression": ""
+		}
+	},
+	"particleFX": [
+		{
+			"niagaraSystemSoft": "None",
+			"lifeTime": 0,
+			"bCastVolumetricTranslucentShadow": false,
+			"attachType": "None",
+			"attachSocketName": "hand_r",
+			"bUseAttachSocketForOriginLocation": true,
+			"bUseAttachSocketForOriginOrientation": true,
+			"transform":
+			{
+				"originLocation": "Source",
+				"originLocationSocket": "None",
+				"originOrientation": "ZUpXNormal",
+				"originOrientationSocket": "None",
+				"originScale": "World",
+				"relativeLocation":
+				{
+					"x": 0,
+					"y": 0,
+					"z": -50
+				},
+				"relativeRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"relativeScale":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				}
+			},
+			"bVisibleToSceneCaptureOnly": false
+		},
+		{
+			"niagaraSystemSoft": "/Game/Effects/FX_Utils/NiagaraSystems/FX_CoreSystems/NS_C_RT_RadialForce.NS_C_RT_RadialForce",
+			"lifeTime": 0,
+			"bCastVolumetricTranslucentShadow": false,
+			"attachType": "None",
+			"attachSocketName": "ball_r",
+			"bUseAttachSocketForOriginLocation": true,
+			"bUseAttachSocketForOriginOrientation": true,
+			"transform":
+			{
+				"originLocation": "Source",
+				"originLocationSocket": "None",
+				"originOrientation": "ZUpXNormal",
+				"originOrientationSocket": "None",
+				"originScale": "World",
+				"relativeLocation":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"relativeRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"relativeScale":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				}
+			},
+			"bVisibleToSceneCaptureOnly": true
+		}
+	],
+	"niagaraParameters": [],
+	"guid": "6064629109721268224",
+	"name": "CyclopsShaman_StompFrenzyHammerR",
+	"typeId": "30316008"
+}

@@ -1,0 +1,22 @@
+{
+	"targetCooldownAbility": [
+		{
+			"expression": "GetAbilityRecordByName(\"Cleric_Mend\")"
+		}
+	],
+	"deltaSeconds":
+	{
+		"expression": "10 - GetRemainingAbilityCooldown(GetAbilityRecordByName(\"Cleric_Mend\"))"
+	},
+	"deltaCharges":
+	{
+		"expression": ""
+	},
+	"shouldTriggerCooldown":
+	{
+		"expression": ""
+	},
+	"guid": "6064629410554970112",
+	"name": "Cleric_Mend_Cooldown",
+	"typeId": "3031600207"
+}

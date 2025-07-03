@@ -1,0 +1,148 @@
+{
+	"audioFX": [],
+	"audioExitFX": [],
+	"cameraFX":
+	{
+		"shakeIntensitySoft":
+		{
+			"externalCurve": "None",
+			"editorCurveData":
+			{
+				"keys": [],
+				"defaultValue": 3.4028234663852886e+38,
+				"preInfinityExtrap": "RCCE_Constant",
+				"postInfinityExtrap": "RCCE_Constant",
+				"keyHandlesToIndices":
+				{
+				}
+			}
+		},
+		"shakeMultiplier":
+		{
+			"expression": ""
+		},
+		"fOVZoomSoft":
+		{
+			"externalCurve": "None",
+			"editorCurveData":
+			{
+				"keys": [],
+				"defaultValue": 3.4028234663852886e+38,
+				"preInfinityExtrap": "RCCE_Constant",
+				"postInfinityExtrap": "RCCE_Constant",
+				"keyHandlesToIndices":
+				{
+				}
+			}
+		},
+		"fOVMultiplier":
+		{
+			"expression": ""
+		},
+		"chromaticAberrationIntensitySoft":
+		{
+			"externalCurve": "None",
+			"editorCurveData":
+			{
+				"keys": [],
+				"defaultValue": 3.4028234663852886e+38,
+				"preInfinityExtrap": "RCCE_Constant",
+				"postInfinityExtrap": "RCCE_Constant",
+				"keyHandlesToIndices":
+				{
+				}
+			}
+		},
+		"chromaticAberrationMultiplier":
+		{
+			"expression": ""
+		},
+		"radialBlurScaleSoft":
+		{
+			"externalCurve": "None",
+			"editorCurveData":
+			{
+				"keys": [],
+				"defaultValue": 3.4028234663852886e+38,
+				"preInfinityExtrap": "RCCE_Constant",
+				"postInfinityExtrap": "RCCE_Constant",
+				"keyHandlesToIndices":
+				{
+				}
+			}
+		},
+		"radialBlurMultiplier":
+		{
+			"expression": ""
+		},
+		"bShouldFalloffIntensity": false,
+		"intensityFalloff":
+		{
+			"externalCurve": "None",
+			"editorCurveData":
+			{
+				"keys": [],
+				"defaultValue": 3.4028234663852886e+38,
+				"preInfinityExtrap": "RCCE_Constant",
+				"postInfinityExtrap": "RCCE_Constant",
+				"keyHandlesToIndices":
+				{
+				}
+			}
+		},
+		"playLocationOffset":
+		{
+			"x": 0,
+			"y": 0,
+			"z": 0
+		}
+	},
+	"particleFX": [
+		{
+			"enabled":
+			{
+				"expression": ""
+			},
+			"niagaraSystemSoft": "/Game/Effects/FX_NPCs/SKeletons/Skeleton_Warrior_AxeSwing/Particles/FX_SkeletonW_AxeSwing.FX_SkeletonW_AxeSwing",
+			"lifeTime": 0,
+			"bCastVolumetricTranslucentShadow": false,
+			"attachType": "AttachedOwner",
+			"attachSocketName": "None",
+			"bUseAttachSocketForOriginLocation": true,
+			"bUseAttachSocketForOriginOrientation": true,
+			"transform":
+			{
+				"originLocation": "Owner",
+				"originLocationSocket": "None",
+				"originOrientation": "Owner",
+				"originOrientationSocket": "None",
+				"originScale": "World",
+				"relativeLocation":
+				{
+					"x": 12,
+					"y": 0,
+					"z": 100
+				},
+				"relativeRotation":
+				{
+					"pitch": 20,
+					"yaw": 0,
+					"roll": -110
+				},
+				"relativeScale":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				}
+			},
+			"bVisibleToSceneCaptureOnly": false
+		}
+	],
+	"niagaraParameters": [],
+	"tickNiagaraParameters": [],
+	"abilityEventNiagaraParams": [],
+	"guid": "6064630004838171919",
+	"name": "SkeletonW_AxeSwing02_FX",
+	"typeId": "30316008"
+}

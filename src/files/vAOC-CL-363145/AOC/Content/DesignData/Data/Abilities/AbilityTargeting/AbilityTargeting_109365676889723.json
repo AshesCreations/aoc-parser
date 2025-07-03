@@ -1,0 +1,100 @@
+{
+	"sorting": [],
+	"contextualTargets": [],
+	"hurtBoxInfo":
+	{
+		"bCenterBlockTargetOnHurtbox": false,
+		"targetingVolumes": [
+			{
+				"id": "SHAPE_Sphere",
+				"location":
+				{
+					"x": 0,
+					"y": -300,
+					"z": 0
+				},
+				"rotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"bDebugShowOutline": true,
+				"bDebugShowInGame": false,
+				"originMesh": "ORIGIN_Character",
+				"origin": "OFFSET_Mesh",
+				"bTriggerAtOrigin": false,
+				"boneName": "None",
+				"sphereRadius": 150,
+				"sphereRadiusExpr":
+				{
+					"expression": "150.0"
+				},
+				"boxExtent":
+				{
+					"x": 24,
+					"y": 24,
+					"z": 24
+				},
+				"boxExtentExpr":
+				{
+					"expression": "Vector(24.0, 24.0, 24.0)"
+				},
+				"capsuleHalfHeight": 50,
+				"capsuleHalfHeightExpr":
+				{
+					"expression": "50.0"
+				},
+				"capsuleRadius": 15,
+				"capsuleRadiusExpr":
+				{
+					"expression": "15.0"
+				},
+				"angle": 90,
+				"angleExpr":
+				{
+					"expression": "90.0"
+				},
+				"minHeight": 0,
+				"minHeightExpr":
+				{
+					"expression": "0.0"
+				},
+				"maxHeight": 24,
+				"maxHeightExpr":
+				{
+					"expression": "24.0"
+				},
+				"animationKeys": [],
+				"bAlignToGround": false,
+				"traceHeight": 600,
+				"traceHeightExpr":
+				{
+					"expression": "600.0"
+				},
+				"traceDepth": 600,
+				"traceDepthExpr":
+				{
+					"expression": "600.0"
+				},
+				"bIgnoreIfGroundNotFound": true
+			}
+		]
+	},
+	"lockOnInfo":
+	{
+		"targetDiscoveryBehavior": "None",
+		"bCheckTargetValidity": false,
+		"bUseAoETargetingLocation": false,
+		"bPerformLoSCheck": true,
+		"bPerformConeCheck": true,
+		"angleCenter": 0,
+		"distanceCenter": 0,
+		"validAngle": 0,
+		"validDistance": 0,
+		"bTargetInitialLocation": false
+	},
+	"guid": "109365676889723",
+	"name": "BanditMage_EruptEarth_Targeting_E",
+	"typeId": "30316011"
+}

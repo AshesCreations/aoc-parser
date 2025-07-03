@@ -1,0 +1,481 @@
+{
+	"abilityTags": [
+		{
+			"tagName": "ability.Archetype"
+		}
+	],
+	"abilityIcon": "/Game/UI/Icons/Archetypes/Rogue/TUI_AbilityIcon_Doublestrike.TUI_AbilityIcon_Doublestrike",
+	"abilityConditionalIcons": [
+		{
+			"abilityIcon": "/Game/UI/Icons/Archetypes/Rogue/TUI_AbilityIcon_Backstab.TUI_AbilityIcon_Backstab",
+			"useIconCondition":
+			{
+				"expression": "GetEffectCount(GetOwner(), $#30316002:6064632756809898616$) > 0\r\n&& EvalFormula($#10516612381411113:6064632744723089195$) > 0.0"
+			}
+		},
+		{
+			"abilityIcon": "/Game/UI/Icons/Archetypes/Rogue/TUI_AbilityIcon_Stab2.TUI_AbilityIcon_Stab2",
+			"useIconCondition":
+			{
+				"expression": "GetEffectCount(GetOwner(), $#30316002:6064632756809898616$) > 0"
+			}
+		},
+		{
+			"abilityIcon": "/Game/UI/Icons/Archetypes/Rogue/TUI_AbilityIcon_LacerateA.TUI_AbilityIcon_LacerateA",
+			"useIconCondition":
+			{
+				"expression": "GetEffectCount(GetOwner(), $#30316002:6064632756866456521$) > 0\r\n&& GetEffectCount(GetOwner(), $#30316002:6064632660379712165$) > 0"
+			}
+		},
+		{
+			"abilityIcon": "/Game/UI/Icons/Archetypes/Rogue/TUI_AbilityIcon_Lacerate.TUI_AbilityIcon_Lacerate",
+			"useIconCondition":
+			{
+				"expression": "GetEffectCount(GetOwner(), $#30316002:6064632756866456521$) > 0"
+			}
+		},
+		{
+			"abilityIcon": "/Game/UI/Icons/Archetypes/Rogue/TUI_AbilityIcon_Thump.TUI_AbilityIcon_Thump",
+			"useIconCondition":
+			{
+				"expression": "GetEffectCount(GetOwner(), $#30316002:6064632909970801510$) > 0"
+			}
+		},
+		{
+			"abilityIcon": "/Game/UI/Icons/Archetypes/Rogue/TUI_AbilityIcon_Doublestrike.TUI_AbilityIcon_Doublestrike",
+			"useIconCondition":
+			{
+				"expression": "true"
+			}
+		}
+	],
+	"bOverrideRangeInTooltip": false,
+	"customTooltipRange":
+	{
+		"expression": ""
+	},
+	"bOverrideProgressBarClass": false,
+	"progressBarClass": "None",
+	"progressBarSortScore":
+	{
+		"expression": ""
+	},
+	"hasProc":
+	{
+		"expression": "GetEffectCount(GetInstigator(), $#30316002:6064632909970801510$) > 0\r\n&& GetEffectCount(GetInstigator(), $#30316002:6064632660379712165$) > 0"
+	},
+	"hasAbilitySynergy":
+	{
+		"expression": "(GetEffectCount(GetInstigator(), $#30316002:6064632756866456521$) > 0\r\n|| GetEffectCount(GetInstigator(), $#30316002:6064632756809898616$) > 0)\r\n&& GetEffectCount(GetInstigator(), $#30316002:6064632660379712165$) > 0"
+	},
+	"hasStatusEffectSynergy":
+	{
+		"expression": "GetEffectCount(GetInstigator(), $#30316002:6064632756866456521$) > 0\r\n&& GetEffectCount(GetTarget(), $#30316002:6064629761775576467$) > 0"
+	},
+	"animMontages": [
+		{
+			"abilityDirection": "NONE",
+			"animExpression":
+			{
+				"expression": "GetEffectCount(GetInstigator(), $#30316002:6064632756809898616$) > 0\r\n&& EvalFormula($#10516612381411113:6064632744723089195$) > 0.0"
+			},
+			"startSectionName": "None",
+			"bOverrideSequenceResetTime": false,
+			"sequenceResetTime": 0,
+			"abilityAnimationSoftPaths": [
+				"/Game/Characters/Animations/00_ABLT/Rogue/ABLT_Rogue_Backstab.ABLT_Rogue_Backstab"
+			],
+			"targetingKey": 0,
+			"hitKeys": []
+		},
+		{
+			"abilityDirection": "NONE",
+			"animExpression":
+			{
+				"expression": "GetEffectCount(GetInstigator(), $#30316002:6064632756809898616$) > 0"
+			},
+			"startSectionName": "None",
+			"bOverrideSequenceResetTime": false,
+			"sequenceResetTime": 0,
+			"abilityAnimationSoftPaths": [
+				"/Game/Characters/Animations/00_ABLT/Rogue/ABLT_Rogue_Stab.ABLT_Rogue_Stab"
+			],
+			"targetingKey": 0,
+			"hitKeys": []
+		},
+		{
+			"abilityDirection": "NONE",
+			"animExpression":
+			{
+				"expression": "GetEffectCount(GetInstigator(), $#30316002:6064632756866456521$) > 0\r\n&& GetEffectCount(GetInstigator(), $#30316002:6064632660379712165$) == 0"
+			},
+			"startSectionName": "None",
+			"bOverrideSequenceResetTime": false,
+			"sequenceResetTime": 0,
+			"abilityAnimationSoftPaths": [
+				"/Game/Characters/Animations/00_ABLT/Rogue/ABLT_Rogue_Lacerate.ABLT_Rogue_Lacerate"
+			],
+			"targetingKey": 0,
+			"hitKeys": []
+		},
+		{
+			"abilityDirection": "NONE",
+			"animExpression":
+			{
+				"expression": "GetEffectCount(GetInstigator(), $#30316002:6064632756866456521$) > 0\r\n&& GetEffectCount(GetInstigator(), $#30316002:6064632660379712165$) > 0"
+			},
+			"startSectionName": "None",
+			"bOverrideSequenceResetTime": false,
+			"sequenceResetTime": 0,
+			"abilityAnimationSoftPaths": [
+				"/Game/Characters/Animations/00_ABLT/Rogue/ABLT_Rogue_Lacerate_AOE.ABLT_Rogue_Lacerate_AOE"
+			],
+			"targetingKey": 0,
+			"hitKeys": []
+		},
+		{
+			"abilityDirection": "NONE",
+			"animExpression":
+			{
+				"expression": "GetEffectCount(GetInstigator(), $#30316002:6064632909970801510$) > 0"
+			},
+			"startSectionName": "None",
+			"bOverrideSequenceResetTime": false,
+			"sequenceResetTime": 0,
+			"abilityAnimationSoftPaths": [
+				"/Game/Characters/Animations/00_ABLT/Rogue/ABLT_Rogue_Thump.ABLT_Rogue_Thump"
+			],
+			"targetingKey": 0,
+			"hitKeys": []
+		}
+	],
+	"activationRequirements":
+	{
+		"expression": "const lacerate = GetEffectCount(GetInstigator(), $#30316002:6064632756866456521$) == 1;\r\nlacerate && GetEffectCount(GetInstigator(), $#30316002:6064632660379712165$) > 0\r\n|| IsApplicableTarget(GetTarget(), EAffectedTarget::TARGET_Enemy)"
+	},
+	"weaponRequirement": "RequiresMelee",
+	"bRequiresStealthActivation": false,
+	"bDisableDuringCooldown": false,
+	"cooldown":
+	{
+		"expression": "const stab = GetEffectCount(GetInstigator(), $#30316002:6064632756809898616$) > 0;\r\nconst lacerate = GetEffectCount(GetInstigator(), $#30316002:6064632756866456521$) > 0;\r\nvar cd = 20;\r\nif (stab || lacerate){\r\n    const ruthless = EvalFormula($#10516612381411113:6064632989646922760$) > 0.0;\r\n    if (ruthless){\r\n        set cd = 0;\r\n    }\r\n}\r\ncd"
+	},
+	"sharedCooldownTag": "None",
+	"cooldownCharges":
+	{
+		"expression": ""
+	},
+	"bOverrideInitialCooldownCharges": false,
+	"initialCooldownChargesOverride":
+	{
+		"expression": ""
+	},
+	"bPersistCooldown": false,
+	"suppressCooldownInUI":
+	{
+		"expression": ""
+	},
+	"bDeferAbilityTrigger": true,
+	"bMayNotBeUsedSimultaneously": false,
+	"bStopsAutoAttack": false,
+	"costs": [
+		{
+			"enabled":
+			{
+				"expression": ""
+			},
+			"statCosts": [
+				{
+					"stat":
+					{
+						"guid": "109183576135288",
+						"typeId": "10516612381411111",
+						"name": "None"
+					},
+					"value":
+					{
+						"expression": "10 * EvalFormula($#10516612381411113:6064631874856222777$)"
+					}
+				}
+			],
+			"effectCosts": [],
+			"chargeCost":
+			{
+				"expression": "1"
+			},
+			"bTriggersCooldown": true
+		}
+	],
+	"hitsIds":
+	{
+		"1":
+		{
+			"guid": "6064632942907035225",
+			"typeId": "30316005",
+			"name": "None"
+		},
+		"2":
+		{
+			"guid": "6064632660722727695",
+			"typeId": "30316005",
+			"name": "None"
+		},
+		"3":
+		{
+			"guid": "6064632695091758785",
+			"typeId": "30316005",
+			"name": "None"
+		},
+		"4":
+		{
+			"guid": "6064632705861688443",
+			"typeId": "30316005",
+			"name": "None"
+		},
+		"5":
+		{
+			"guid": "6064632700514676992",
+			"typeId": "30316005",
+			"name": "None"
+		},
+		"6":
+		{
+			"guid": "6064632700601973516",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	},
+	"effectsIds":
+	{
+		"1":
+		{
+			"guid": "6064632660379712165",
+			"typeId": "30316002",
+			"name": "None"
+		}
+	},
+	"projectilesIds":
+	{
+	},
+	"lingeringEffectsIds":
+	{
+	},
+	"abilityFXIds":
+	{
+		"1":
+		{
+			"guid": "6064632989171843863",
+			"typeId": "30316008",
+			"name": "None"
+		},
+		"2":
+		{
+			"guid": "6064633063719377452",
+			"typeId": "30316008",
+			"name": "None"
+		},
+		"3":
+		{
+			"guid": "6064633063810015261",
+			"typeId": "30316008",
+			"name": "None"
+		},
+		"4":
+		{
+			"guid": "6064633073614848000",
+			"typeId": "30316008",
+			"name": "None"
+		},
+		"5":
+		{
+			"guid": "6064630423138146060",
+			"typeId": "30316008",
+			"name": "None"
+		},
+		"6":
+		{
+			"guid": "6064633180928542406",
+			"typeId": "30316008",
+			"name": "None"
+		},
+		"7":
+		{
+			"guid": "6064633209283943905",
+			"typeId": "30316008",
+			"name": "None"
+		},
+		"8":
+		{
+			"guid": "6064633215862834245",
+			"typeId": "30316008",
+			"name": "None"
+		}
+	},
+	"animBranchesIds":
+	{
+	},
+	"conditionalBranchesIds":
+	{
+	},
+	"reactionsIds":
+	{
+	},
+	"targetingRecordsIds":
+	{
+		"1":
+		{
+			"guid": "6064629958760009461",
+			"typeId": "30316011",
+			"name": "None"
+		},
+		"2":
+		{
+			"guid": "109246619145850",
+			"typeId": "30316011",
+			"name": "None"
+		}
+	},
+	"progressDisruptionRecordsIds":
+	{
+	},
+	"comboInputs": [],
+	"bExactInput": false,
+	"bufferPriority": 0,
+	"bUsableFromHotbar": true,
+	"abilityActivationInput": "UserConfigurable",
+	"bMayEscCancel": true,
+	"bIsAOEClickedAbility": false,
+	"targetActivationRequirement": "Never",
+	"applicableTargets": 2,
+	"applicableTypes": 0,
+	"applicableLifeStates": 1,
+	"applicableCasterLifeStates": 1,
+	"bNeverCancelAbility": false,
+	"bUseTargetingRecord": false,
+	"targetingRecordId":
+	{
+		"guid": "0",
+		"typeId": "30316011",
+		"name": "None"
+	},
+	"bCheckTargetValidity": true,
+	"bPerformLoSCheck": true,
+	"bPerformConeCheck": true,
+	"angleCenter": 0,
+	"distanceCenter": 0,
+	"validAngle": 0,
+	"validDistance": 0,
+	"angleCenterExp":
+	{
+		"expression": "0.0"
+	},
+	"distanceCenterExp":
+	{
+		"expression": "0.0"
+	},
+	"validAngleExp":
+	{
+		"expression": "360.0"
+	},
+	"validDistanceExp":
+	{
+		"expression": "400.0"
+	},
+	"speedMultiplierSource": "SPEED_AttackSpeed",
+	"bHoldAnimation": false,
+	"maximumHoldTime": 0,
+	"bMayCancelHoldAtAnyTime": true,
+	"cancelHoldSections": [],
+	"onCancelHoldBranchKey": 0,
+	"bOverrideHeldBehavior": false,
+	"heldAbilityBehavior": "Naive",
+	"bForceAnimCancel": false,
+	"bAllowRotation": true,
+	"pitchMode": "None",
+	"minPitch": 0,
+	"maxPitch": 0,
+	"bUsableInAir": true,
+	"bUsableWhileSwimming": true,
+	"bUsableWhileMounted": false,
+	"bOmnidirectional": false,
+	"bOrientWithInterpOnStart": false,
+	"onStartInterpConstRate": 0,
+	"bOrientWithInterpOnEnd": false,
+	"onEndInterpConstRate": 0,
+	"bQuickCancelFromAllAbilities": false,
+	"quickCancelFromAbilitiesIds": [],
+	"cancelSectionName": "None",
+	"bRequiresAnimCancel": false,
+	"cancelFromAbilitiesIds": [],
+	"cancelFromTagQuery":
+	{
+		"tokenStreamVersion": 0,
+		"tagDictionary": [],
+		"queryTokenStream": [],
+		"userDescription": "",
+		"autoDescription": ""
+	},
+	"scriptOnActivate": "None",
+	"areaTemplateFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"areaTemplateMaterial": "None",
+	"areaTemplateRotationRate": 0,
+	"areaTargetRadius": 0,
+	"areaTargetRange": 0,
+	"bShouldFaceClickedTarget": false,
+	"bPerformIsWalkableCheck": true,
+	"bResetSequenceAfterTime": false,
+	"sequenceResetTime": 0,
+	"bForceComboBreak": true,
+	"abilityName": "NSLOCTEXT(\"[1909495A4C2095068D406C9D33F90055]\", \"EC0B7CEA43C5D768051268A35C1986B3\", \"Doublestrike\")",
+	"abilityDescription": "NSLOCTEXT(\"[1909495A4C2095068D406C9D33F90055]\", \"1FBB29BD4FE028223855C3B1A7E16D48\", \"Strike again with the last used melee ability from this list:\\r\\n-Stab\\r\\n-Lacerate\\r\\n-Thump\")",
+	"bAllowMovement": true,
+	"bPROTOTYPERotateRootMotion": false,
+	"rootMotionFreezeBehavior": "StopOnContact",
+	"rootMotionFreezeDistance": 0,
+	"rootMotionFreezeRadiusScale": 1,
+	"rootMotionIgnoreNonTarget": false,
+	"bVisualizeSweepCollision": false,
+	"canBreakEffects":
+	{
+		"expression": ""
+	},
+	"effectsToBreak":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"actionModeAbilityId":
+	{
+		"guid": "0",
+		"typeId": "30316001",
+		"name": "None"
+	},
+	"aBTestingAbilitiesIds": [],
+	"animCancelsIds":
+	{
+	},
+	"modifyCooldownsIds":
+	{
+	},
+	"aLSAbilityId":
+	{
+		"guid": "0",
+		"typeId": "30316001",
+		"name": "None"
+	},
+	"inputTerms": [],
+	"dynamicCastDuration":
+	{
+		"expression": ""
+	},
+	"bNeverCull": false,
+	"networkingMaxSpeed": 0,
+	"guid": "6064632756795284087",
+	"name": "Rogue_Doublestrike",
+	"typeId": "30316001"
+}

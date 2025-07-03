@@ -1,0 +1,29 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 0,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0,
+		"fishingEvents": 0
+	},
+	"bEvaluateOnTick": true,
+	"branchTrigger":
+	{
+		"expression": "//GetStat(GetInstigator(), $Stat:Mana$) <\r\n//GetStat(GetInstigator(), $Stat:MaxMana$) * 0.01\r\nfalse"
+	},
+	"bPredictedOnAutonomousClient": false,
+	"animBranchId":
+	{
+		"guid": "6064630956158878579",
+		"typeId": "30316010",
+		"name": "None"
+	},
+	"bOnlyBranchWithValidTarget": false,
+	"bOnRootMotionCollision": false,
+	"guid": "6064630956158026610",
+	"name": "Bard_Music_Off",
+	"typeId": "30316009"
+}

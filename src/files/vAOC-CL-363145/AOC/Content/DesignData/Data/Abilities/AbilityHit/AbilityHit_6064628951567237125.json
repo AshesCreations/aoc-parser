@@ -1,0 +1,139 @@
+{
+	"applicableTargets": 0,
+	"applicableLifeStates": 1,
+	"applicationRequirements":
+	{
+		"expression": "GetAbilityProgressRatio() >= 1.0"
+	},
+	"bCapHits": false,
+	"maxTargetsPerHit":
+	{
+		"expression": ""
+	},
+	"bLimitHitsPerTarget": false,
+	"maxHitsPerTarget":
+	{
+		"expression": ""
+	},
+	"bLimitHitsGlobally": false,
+	"maxHitsGlobally":
+	{
+		"expression": ""
+	},
+	"hitFloatingText": "",
+	"appliedEffectsIds": [],
+	"effectsAppliedToSelf": [],
+	"lingeringZonesIds": [
+		{
+			"guid": "6064628951560945666",
+			"typeId": "30316007",
+			"name": "None"
+		}
+	],
+	"reactionsIds": [],
+	"maxNumEffectsToRemove": 0,
+	"effectRemovalFilter":
+	{
+		"expression": ""
+	},
+	"effectsToRemoveIds": [],
+	"bRemoveAsDispel": false,
+	"critBehavior": "Physical",
+	"bonusCritRate":
+	{
+		"expression": ""
+	},
+	"evasionBehavior": "Physical",
+	"bonusAccuracy":
+	{
+		"expression": ""
+	},
+	"statModsIds": [],
+	"bonusCrowdControlDamageIds": [],
+	"onHitFXId":
+	{
+		"guid": "6064628946609635329",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"onActivateFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"postHitPauseFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"onBlockFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"hitPauseFrames": 0,
+	"hitPauseMovement": false,
+	"scriptOnActivate": "None",
+	"scriptOnHit": "None",
+	"networkType": "NET_ServerVerify",
+	"modifyCooldownsIds": [],
+	"bAppliesImpulse": false,
+	"bApplyImpulseAsVelocityChange": true,
+	"impulseOriginLocation": "Source",
+	"impulseOriginOrientation": "OriginToTargetZ",
+	"impulseOriginLocationOffset":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"impulseOriginOrientationOffset":
+	{
+		"pitch": 0,
+		"yaw": 0,
+		"roll": 0
+	},
+	"impulseMagnitude":
+	{
+		"expression": ""
+	},
+	"impulseDirection":
+	{
+		"x": 1,
+		"y": 0
+	},
+	"impulseAngle":
+	{
+		"expression": ""
+	},
+	"impulseRotationBehavior": "Unaffected",
+	"recursiveHitsIds": [],
+	"recursiveTargetId":
+	{
+		"guid": "0",
+		"typeId": "30316011",
+		"name": "None"
+	},
+	"inputTerms": [],
+	"inputs": [],
+	"bOverrideDefaultThreatToTarget": false,
+	"threatToTarget":
+	{
+		"expression": ""
+	},
+	"threatToTargetInputTerms": [],
+	"threatToTargetInputs": [],
+	"bOverrideDefaultObservedThreat": false,
+	"observedThreat":
+	{
+		"expression": ""
+	},
+	"observedThreatInputTerms": [],
+	"observedThreatInputs": [],
+	"guid": "6064628951567237125",
+	"name": "Mage_Hoarfrost_SpawnZone3",
+	"typeId": "30316005"
+}

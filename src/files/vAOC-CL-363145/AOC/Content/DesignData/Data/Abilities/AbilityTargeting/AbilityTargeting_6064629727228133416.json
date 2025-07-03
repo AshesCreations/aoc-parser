@@ -1,0 +1,248 @@
+{
+	"sorting": [],
+	"contextualTargets": [],
+	"hurtBoxInfo":
+	{
+		"bCenterBlockTargetOnHurtbox": true,
+		"targetingVolumes": [
+			{
+				"id": "SHAPE_Box",
+				"location":
+				{
+					"x": -175,
+					"y": 350,
+					"z": 350
+				},
+				"rotation":
+				{
+					"pitch": 0,
+					"yaw": 25,
+					"roll": -90
+				},
+				"bDebugShowOutline": false,
+				"bDebugShowInGame": false,
+				"originMesh": "ORIGIN_Character",
+				"origin": "OFFSET_AoE",
+				"bTriggerAtOrigin": true,
+				"boneName": "None",
+				"sphereRadius": 1,
+				"sphereRadiusExpr":
+				{
+					"expression": "1.0"
+				},
+				"boxExtent":
+				{
+					"x": 400,
+					"y": 250,
+					"z": 300
+				},
+				"boxExtentExpr":
+				{
+					"expression": "Vector(400.0, 250.0, 300.0)"
+				},
+				"capsuleHalfHeight": 50,
+				"capsuleHalfHeightExpr":
+				{
+					"expression": "50.0"
+				},
+				"capsuleRadius": 15,
+				"capsuleRadiusExpr":
+				{
+					"expression": "15.0"
+				},
+				"angle": 90,
+				"angleExpr":
+				{
+					"expression": "90.0"
+				},
+				"minHeight": 0,
+				"minHeightExpr":
+				{
+					"expression": "0.0"
+				},
+				"maxHeight": 24,
+				"maxHeightExpr":
+				{
+					"expression": "24.0"
+				},
+				"animationKeys": [],
+				"bAlignToGround": false,
+				"traceHeight": 600,
+				"traceHeightExpr":
+				{
+					"expression": "600.0"
+				},
+				"traceDepth": 600,
+				"traceDepthExpr":
+				{
+					"expression": "600.0"
+				},
+				"bIgnoreIfGroundNotFound": true
+			},
+			{
+				"id": "SHAPE_Box",
+				"location":
+				{
+					"x": -125,
+					"y": 0,
+					"z": 350
+				},
+				"rotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -90
+				},
+				"bDebugShowOutline": true,
+				"bDebugShowInGame": true,
+				"originMesh": "ORIGIN_Character",
+				"origin": "OFFSET_AoE",
+				"bTriggerAtOrigin": true,
+				"boneName": "None",
+				"sphereRadius": 1,
+				"sphereRadiusExpr":
+				{
+					"expression": "1.0"
+				},
+				"boxExtent":
+				{
+					"x": 400,
+					"y": 500,
+					"z": 400
+				},
+				"boxExtentExpr":
+				{
+					"expression": "Vector(400.0, 500.0, 400.0)"
+				},
+				"capsuleHalfHeight": 50,
+				"capsuleHalfHeightExpr":
+				{
+					"expression": "50.0"
+				},
+				"capsuleRadius": 15,
+				"capsuleRadiusExpr":
+				{
+					"expression": "15.0"
+				},
+				"angle": 90,
+				"angleExpr":
+				{
+					"expression": "90.0"
+				},
+				"minHeight": 0,
+				"minHeightExpr":
+				{
+					"expression": "0.0"
+				},
+				"maxHeight": 24,
+				"maxHeightExpr":
+				{
+					"expression": "24.0"
+				},
+				"animationKeys": [],
+				"bAlignToGround": false,
+				"traceHeight": 600,
+				"traceHeightExpr":
+				{
+					"expression": "600.0"
+				},
+				"traceDepth": 600,
+				"traceDepthExpr":
+				{
+					"expression": "600.0"
+				},
+				"bIgnoreIfGroundNotFound": true
+			},
+			{
+				"id": "SHAPE_Box",
+				"location":
+				{
+					"x": -175,
+					"y": -350,
+					"z": 350
+				},
+				"rotation":
+				{
+					"pitch": 0,
+					"yaw": -25,
+					"roll": -90
+				},
+				"bDebugShowOutline": true,
+				"bDebugShowInGame": true,
+				"originMesh": "ORIGIN_Character",
+				"origin": "OFFSET_AoE",
+				"bTriggerAtOrigin": true,
+				"boneName": "None",
+				"sphereRadius": 1,
+				"sphereRadiusExpr":
+				{
+					"expression": "1.0"
+				},
+				"boxExtent":
+				{
+					"x": 400,
+					"y": 250,
+					"z": 300
+				},
+				"boxExtentExpr":
+				{
+					"expression": "Vector(400.0, 250.0, 300.0)"
+				},
+				"capsuleHalfHeight": 50,
+				"capsuleHalfHeightExpr":
+				{
+					"expression": "50.0"
+				},
+				"capsuleRadius": 15,
+				"capsuleRadiusExpr":
+				{
+					"expression": "15.0"
+				},
+				"angle": 90,
+				"angleExpr":
+				{
+					"expression": "90.0"
+				},
+				"minHeight": 0,
+				"minHeightExpr":
+				{
+					"expression": "0.0"
+				},
+				"maxHeight": 24,
+				"maxHeightExpr":
+				{
+					"expression": "24.0"
+				},
+				"animationKeys": [],
+				"bAlignToGround": false,
+				"traceHeight": 600,
+				"traceHeightExpr":
+				{
+					"expression": "600.0"
+				},
+				"traceDepth": 600,
+				"traceDepthExpr":
+				{
+					"expression": "600.0"
+				},
+				"bIgnoreIfGroundNotFound": true
+			}
+		]
+	},
+	"lockOnInfo":
+	{
+		"targetDiscoveryBehavior": "None",
+		"bCheckTargetValidity": false,
+		"bUseAoETargetingLocation": false,
+		"bPerformLoSCheck": true,
+		"bPerformConeCheck": true,
+		"angleCenter": 0,
+		"distanceCenter": 0,
+		"validAngle": 0,
+		"validDistance": 0,
+		"bTargetInitialLocation": false
+	},
+	"guid": "6064629727228133416",
+	"name": "Tank_Wall_Persistent",
+	"typeId": "30316011"
+}

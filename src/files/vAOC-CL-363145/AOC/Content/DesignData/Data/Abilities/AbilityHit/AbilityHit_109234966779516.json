@@ -1,0 +1,169 @@
+{
+	"eventTags": [
+		{
+			"tagName": "Element.Physical"
+		}
+	],
+	"applicableTargets": 2,
+	"applicableLifeStates": 1,
+	"applicationRequirements":
+	{
+		"expression": ""
+	},
+	"bCapHits": false,
+	"maxTargetsPerHit":
+	{
+		"expression": ""
+	},
+	"bLimitHitsPerTarget": false,
+	"maxHitsPerTarget":
+	{
+		"expression": ""
+	},
+	"bLimitHitsGlobally": false,
+	"maxHitsGlobally":
+	{
+		"expression": ""
+	},
+	"hitFloatingText": "",
+	"appliedEffectsIds": [],
+	"effectsAppliedToSelf": [],
+	"lingeringZonesIds": [],
+	"projectilesToSpawn": [],
+	"projectilesToFire": [],
+	"reactionsIds": [],
+	"progressModifierIds": [],
+	"maxNumEffectsToRemove": 0,
+	"effectRemovalFilter":
+	{
+		"expression": ""
+	},
+	"effectsToRemoveIds": [],
+	"bRemoveAsDispel": false,
+	"bOverrideDefaultMissRate": false,
+	"missRate":
+	{
+		"expression": ""
+	},
+	"bOverrideDefaultBlockRate": false,
+	"blockRate":
+	{
+		"expression": ""
+	},
+	"bOverrideDefaultCritRate": false,
+	"critRate":
+	{
+		"expression": ""
+	},
+	"statModsIds": [
+		{
+			"guid": "109234969204349",
+			"typeId": "3031600201",
+			"name": "GraveyardGolem_Swing_Damage"
+		}
+	],
+	"bonusCrowdControlDamageIds": [],
+	"onHitFXId":
+	{
+		"guid": "109234971301502",
+		"typeId": "30316008",
+		"name": "GraveyardGolem_SwingImpact"
+	},
+	"onActivateFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"activateFxAtTarget": false,
+	"postHitPauseFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"onBlockFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"hitPauseFrames": 0,
+	"hitPauseMovement": false,
+	"scriptOnActivate": "None",
+	"scriptOnHit": "None",
+	"networkType": "NET_ServerVerify",
+	"modifyCooldownsIds": [],
+	"bAppliesImpulse": false,
+	"bApplyImpulseAsVelocityChange": true,
+	"impulseOriginTransform":
+	{
+		"originLocation": "Target",
+		"originLocationSocket": "None",
+		"originOrientation": "Target",
+		"originOrientationSocket": "None",
+		"originScale": "World",
+		"relativeLocation":
+		{
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"relativeRotation":
+		{
+			"pitch": 0,
+			"yaw": 0,
+			"roll": 0
+		},
+		"relativeScale":
+		{
+			"x": 1,
+			"y": 1,
+			"z": 1
+		}
+	},
+	"impulseMagnitude":
+	{
+		"expression": ""
+	},
+	"impulseDirection":
+	{
+		"x": 1,
+		"y": 0
+	},
+	"impulseAngle":
+	{
+		"expression": ""
+	},
+	"impulseRotationBehavior": "Unaffected",
+	"recursiveHit": [
+		{
+			"hit":
+			{
+				"guid": "6064629822710415360",
+				"typeId": "30316005",
+				"name": "None"
+			},
+			"targeting":
+			{
+				"guid": "109234973333119",
+				"typeId": "30316011",
+				"name": "None"
+			}
+		}
+	],
+	"inputTerms": [],
+	"bOverrideDefaultThreatToTarget": false,
+	"threatToTarget":
+	{
+		"expression": ""
+	},
+	"bOverrideDefaultObservedThreat": false,
+	"observedThreat":
+	{
+		"expression": ""
+	},
+	"guid": "109234966779516",
+	"name": "GraveyardGolem_Swing_Hit",
+	"typeId": "30316005"
+}

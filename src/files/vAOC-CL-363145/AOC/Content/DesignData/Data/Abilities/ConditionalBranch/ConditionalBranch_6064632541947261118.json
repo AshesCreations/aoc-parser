@@ -1,0 +1,28 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 0,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 2,
+		"fishingEvents": 0
+	},
+	"bEvaluateOnTick": false,
+	"branchTrigger":
+	{
+		"expression": "IsMoving(GetOwner())"
+	},
+	"bPredictedOnAutonomousClient": false,
+	"animBranchId":
+	{
+		"guid": "6064632541938938045",
+		"typeId": "30316010",
+		"name": "None"
+	},
+	"bOnlyBranchWithValidTarget": false,
+	"guid": "6064632541947261118",
+	"name": "Ancients_Leader_LightningOrbs_Cancel",
+	"typeId": "30316009"
+}

@@ -1,0 +1,23 @@
+{
+	"targetCooldownAbility": [
+		{
+			"expression": "$#30316001:6064631448597301220$"
+		}
+	],
+	"bUseAbilityCost": false,
+	"deltaSeconds":
+	{
+		"expression": ""
+	},
+	"deltaCharges":
+	{
+		"expression": "var charges = 0;\r\nif(GetSkillPurchased(GetInstigator(), $#30316003:107281647359609$, $#981011333:6064631472132521994$)){\r\n    set charges = SelectInt(GetRemainingAbilityCharges($#30316001:6064631448597301220$) < 3, 1, 0);\r\n}\r\ncharges"
+	},
+	"shouldTriggerCooldown":
+	{
+		"expression": "false"
+	},
+	"guid": "6064632784976937259",
+	"name": "Mage_EE_FireballCombo",
+	"typeId": "3031600207"
+}

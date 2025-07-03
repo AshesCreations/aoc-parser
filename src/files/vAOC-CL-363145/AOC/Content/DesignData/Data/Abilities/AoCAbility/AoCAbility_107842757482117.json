@@ -1,0 +1,280 @@
+{
+	"abilityTags": [
+		{
+			"tagName": "gameplay.abilities"
+		}
+	],
+	"abilityIcon": "/Game/UI_Kit/Textures/icons/HUD_Equipment_Icons/1h_Axe_A.1h_Axe_A",
+	"abilityConditionalIcons": [],
+	"bOverrideRangeInTooltip": false,
+	"customTooltipRange":
+	{
+		"expression": ""
+	},
+	"bOverrideProgressBarClass": false,
+	"progressBarClass": "None",
+	"progressBarSortScore":
+	{
+		"expression": ""
+	},
+	"animMontages": [
+		{
+			"abilityDirection": "NONE",
+			"animExpression":
+			{
+				"expression": ""
+			},
+			"startSectionName": "None",
+			"bOverrideSequenceResetTime": false,
+			"sequenceResetTime": 0,
+			"abilityAnimationSoftPaths": [
+				"/Game/Characters/Animations/00_ABLT/Prototype/Fighter/ABLT_AxeThrow_Notify_Montage_Test.ABLT_AxeThrow_Notify_Montage_Test"
+			],
+			"targetingKey": 0,
+			"hitKeys": []
+		}
+	],
+	"activationRequirements":
+	{
+		"expression": ""
+	},
+	"bDisableDuringCooldown": false,
+	"cooldown":
+	{
+		"expression": "8"
+	},
+	"sharedCooldownTag": "None",
+	"cooldownCharges":
+	{
+		"expression": "3"
+	},
+	"bOverrideInitialCooldownCharges": false,
+	"initialCooldownChargesOverride":
+	{
+		"expression": ""
+	},
+	"suppressCooldownInUI":
+	{
+		"expression": ""
+	},
+	"bDeferAbilityTrigger": true,
+	"bMayNotBeUsedSimultaneously": false,
+	"bStopsAutoAttack": false,
+	"costs": [
+		{
+			"enabled":
+			{
+				"expression": ""
+			},
+			"statCosts": [],
+			"effectCosts": [],
+			"chargeCost":
+			{
+				"expression": "1"
+			},
+			"bTriggersCooldown": true
+		}
+	],
+	"hitsIds":
+	{
+		"1":
+		{
+			"guid": "107842796541575",
+			"typeId": "30316005",
+			"name": "None"
+		},
+		"2":
+		{
+			"guid": "108046579291774",
+			"typeId": "30316005",
+			"name": "None"
+		},
+		"3":
+		{
+			"guid": "108085851084414",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	},
+	"effectsIds":
+	{
+		"1":
+		{
+			"guid": "107842809648776",
+			"typeId": "30316002",
+			"name": "Prototype_Fighter_Axethrow_Mana"
+		},
+		"2":
+		{
+			"guid": "107842826491530",
+			"typeId": "30316002",
+			"name": "None"
+		}
+	},
+	"projectilesIds":
+	{
+		"1":
+		{
+			"guid": "107842781468294",
+			"typeId": "30316006",
+			"name": "None"
+		}
+	},
+	"lingeringEffectsIds":
+	{
+	},
+	"abilityFXIds":
+	{
+		"1":
+		{
+			"guid": "107859668326008",
+			"typeId": "30316008",
+			"name": "None"
+		}
+	},
+	"animBranchesIds":
+	{
+	},
+	"conditionalBranchesIds":
+	{
+	},
+	"reactionsIds":
+	{
+		"1":
+		{
+			"guid": "108046501566077",
+			"typeId": "3031600202",
+			"name": "None"
+		}
+	},
+	"targetingRecordsIds":
+	{
+	},
+	"progressDisruptionRecordsIds":
+	{
+	},
+	"comboInputs": [],
+	"bExactInput": false,
+	"bufferPriority": 0,
+	"bUsableFromHotbar": true,
+	"abilityActivationInput": "UserConfigurable",
+	"bIsAOEClickedAbility": false,
+	"targetActivationRequirement": "Always",
+	"applicableTargets": 2,
+	"applicableLifeStates": 1,
+	"applicableCasterLifeStates": 1,
+	"bUseTargetingRecord": false,
+	"targetingRecordId":
+	{
+		"guid": "0",
+		"typeId": "30316011",
+		"name": "None"
+	},
+	"bCheckTargetValidity": true,
+	"bPerformLoSCheck": true,
+	"bPerformConeCheck": true,
+	"angleCenter": 0,
+	"distanceCenter": 0,
+	"validAngle": 90,
+	"validDistance": 1500,
+	"angleCenterExp":
+	{
+		"expression": "0.0"
+	},
+	"distanceCenterExp":
+	{
+		"expression": "0.0"
+	},
+	"validAngleExp":
+	{
+		"expression": "90.0"
+	},
+	"validDistanceExp":
+	{
+		"expression": "1500.0"
+	},
+	"speedMultiplierSource": "SPEED_AttackSpeed",
+	"bHoldAnimation": false,
+	"maximumHoldTime": 0,
+	"bMayCancelHoldAtAnyTime": true,
+	"cancelHoldSections": [],
+	"onCancelHoldBranchKey": 0,
+	"bOverrideHeldBehavior": false,
+	"heldAbilityBehavior": "Naive",
+	"bForceAnimCancel": false,
+	"bAllowRotation": true,
+	"pitchMode": "None",
+	"minPitch": 0,
+	"maxPitch": 0,
+	"bUsableInAir": true,
+	"bUsableWhileSwimming": false,
+	"bOmnidirectional": false,
+	"bOrientWithInterpOnStart": false,
+	"onStartInterpConstRate": 0,
+	"bOrientWithInterpOnEnd": false,
+	"onEndInterpConstRate": 0,
+	"bQuickCancelFromAllAbilities": false,
+	"quickCancelFromAbilitiesIds": [],
+	"cancelSectionName": "None",
+	"bRequiresAnimCancel": false,
+	"cancelFromAbilitiesIds": [],
+	"cancelFromTagQuery":
+	{
+		"tokenStreamVersion": 0,
+		"tagDictionary": [],
+		"queryTokenStream": [],
+		"userDescription": "",
+		"autoDescription": ""
+	},
+	"scriptOnActivate": "None",
+	"areaTemplateFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"areaTemplateMaterial": "None",
+	"areaTemplateRotationRate": 0,
+	"areaTargetRadius": 0,
+	"areaTargetRange": 0,
+	"bResetSequenceAfterTime": false,
+	"sequenceResetTime": 0,
+	"abilityName": "Axe Throw",
+	"abilityDescription": "Throw an axe at a target. Each hit returns mana and generates a surge stack on you for 5 seconds. Your next damaging hit consumes all surge stacks and deals additional damage per stack consumed.",
+	"bAllowMovement": true,
+	"bPROTOTYPERotateRootMotion": false,
+	"rootMotionFreezeBehavior": "None",
+	"rootMotionFreezeDistance": 0,
+	"rootMotionFreezeRadiusScale": 1,
+	"rootMotionIgnoreNonTarget": false,
+	"bVisualizeSweepCollision": false,
+	"cCBreaksId":
+	{
+		"guid": "0",
+		"typeId": "3031600213",
+		"name": "None"
+	},
+	"actionModeAbilityId":
+	{
+		"guid": "0",
+		"typeId": "30316001",
+		"name": "None"
+	},
+	"aBTestingAbilitiesIds": [],
+	"animCancelsIds":
+	{
+	},
+	"modifyCooldownsIds":
+	{
+	},
+	"aLSAbilityId":
+	{
+		"guid": "0",
+		"typeId": "30316001",
+		"name": "None"
+	},
+	"inputTerms": [],
+	"guid": "107842757482117",
+	"name": "Prototype_Fighter_Axethrow",
+	"typeId": "30316001"
+}

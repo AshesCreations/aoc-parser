@@ -1,0 +1,252 @@
+{
+	"eventTags": [
+		{
+			"tagName": "ability.weaponcombo"
+		}
+	],
+	"applicableTargets": 2,
+	"applicableLifeStates": 1,
+	"applicationRequirements":
+	{
+		"expression": "const t1 = GetSkillPurchased(GetInstigator(), $#30316003:6064630408247771149$, $#981011333:6064631455687931796$);\r\nconst t2 = GetSkillPurchased(GetInstigator(), $#30316003:6064630408247771149$, $#981011333:6064631455687669640$);\r\nconst t3 = GetSkillPurchased(GetInstigator(), $#30316003:6064630408247771149$, $#981011333:6064631455687341932$);\r\nrandDouble() <= 0.10 + selectfloat(t1,0.05,0.0) + selectfloat(t2,0.05,0.0) + selectfloat(t3,0.05,0.0) "
+	},
+	"bCapHits": false,
+	"maxTargetsPerHit":
+	{
+		"expression": ""
+	},
+	"bLimitHitsPerTarget": false,
+	"maxHitsPerTarget":
+	{
+		"expression": ""
+	},
+	"bLimitHitsGlobally": false,
+	"maxHitsGlobally":
+	{
+		"expression": ""
+	},
+	"hitFloatingText": "",
+	"applyEffects": [
+		{
+			"stackCount":
+			{
+				"expression": "SelectInt(GetSkillPurchased(GetInstigator(), $#30316003:6064630408247771149$, $#981011333:6064631238789497100$),1,0)"
+			},
+			"effectId":
+			{
+				"guid": "6064628906763288577",
+				"typeId": "30316002",
+				"name": "None"
+			}
+		},
+		{
+			"stackCount":
+			{
+				"expression": "SelectInt(GetSkillPurchased(GetInstigator(), $#30316003:6064630408247771149$, $#981011333:6064631238789300490$),1,0)"
+			},
+			"effectId":
+			{
+				"guid": "6064628906043703296",
+				"typeId": "30316002",
+				"name": "None"
+			}
+		}
+	],
+	"modifyEffectsIds": [],
+	"effectsAppliedToSelf": [],
+	"lingeringZonesIds": [],
+	"projectilesToSpawn": [],
+	"projectilesToFire": [],
+	"reactionsIds": [],
+	"progressModifierIds": [],
+	"resurrectId":
+	{
+		"guid": "0",
+		"typeId": "30316114",
+		"name": "None"
+	},
+	"maxNumEffectsToRemove": 0,
+	"effectRemovalFilter":
+	{
+		"expression": ""
+	},
+	"effectsToRemoveIds": [],
+	"bRemoveAsDispel": false,
+	"canInterrupt":
+	{
+		"expression": ""
+	},
+	"interruptFilter":
+	{
+		"expression": ""
+	},
+	"bOverrideDefaultMissRate": false,
+	"missRate":
+	{
+		"expression": ""
+	},
+	"bOverrideDefaultBlockRate": false,
+	"blockRate":
+	{
+		"expression": ""
+	},
+	"bOverrideDefaultCritRate": false,
+	"critRate":
+	{
+		"expression": ""
+	},
+	"statModsIds": [],
+	"bonusCrowdControlDamageIds": [],
+	"bTriggersImpactFX": false,
+	"bOverrideImpactDecalSize": false,
+	"impactDecalSizeOverride":
+	{
+		"x": 10,
+		"y": 10,
+		"z": 10
+	},
+	"bOverrideImpactDecalLifetime": false,
+	"impactDecalLifetimeOverride": 3,
+	"onHitFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "Quickshot_Impact"
+	},
+	"onActivateFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"activateFxAtTarget": false,
+	"postHitPauseFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"onBlockFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"hitPauseFrames": 0,
+	"hitPauseMovement": false,
+	"scriptOnActivate": "None",
+	"scriptOnHit": "None",
+	"networkType": "NET_ServerVerify",
+	"modifyCooldownsIds": [],
+	"bAppliesImpulse": false,
+	"bApplyImpulseAsVelocityChange": true,
+	"impulseOriginTransform":
+	{
+		"originLocation": "Target",
+		"originLocationSocket": "None",
+		"originOrientation": "Target",
+		"originOrientationSocket": "None",
+		"originScale": "World",
+		"bUseRelativeLocationExpression": false,
+		"relativeLocation":
+		{
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"relativeLocationExpression":
+		{
+			"expression": ""
+		},
+		"bUseRelativeRotationExpression": false,
+		"relativeRotation":
+		{
+			"pitch": 0,
+			"yaw": 0,
+			"roll": 0
+		},
+		"relativeRotationExpression":
+		{
+			"expression": ""
+		},
+		"bUseRelativeScaleExpression": false,
+		"relativeScale":
+		{
+			"x": 1,
+			"y": 1,
+			"z": 1
+		},
+		"relativeScaleExpression":
+		{
+			"expression": ""
+		}
+	},
+	"impulseMagnitude":
+	{
+		"expression": ""
+	},
+	"impulseDirection":
+	{
+		"x": 1,
+		"y": 0
+	},
+	"impulseAngle":
+	{
+		"expression": ""
+	},
+	"impulseRotationBehavior": "Unaffected",
+	"recursiveHit": [
+		{
+			"hit":
+			{
+				"guid": "6064631448385358259",
+				"typeId": "30316005",
+				"name": "None"
+			},
+			"targeting":
+			{
+				"guid": "109262721537656",
+				"typeId": "30316011",
+				"name": "None"
+			}
+		},
+		{
+			"hit":
+			{
+				"guid": "6064631456351847477",
+				"typeId": "30316005",
+				"name": "None"
+			},
+			"targeting":
+			{
+				"guid": "6064628968549646338",
+				"typeId": "30316011",
+				"name": "None"
+			}
+		}
+	],
+	"inputTerms": [],
+	"bOverrideDefaultThreatToTarget": false,
+	"threatToTarget":
+	{
+		"expression": ""
+	},
+	"bOverrideDefaultObservedThreat": false,
+	"observedThreat":
+	{
+		"expression": ""
+	},
+	"maxNumLingeringZonesToRemove": 0,
+	"lingeringZoneRemovalType": "None",
+	"lingeringZoneRemovalFilter":
+	{
+		"expression": ""
+	},
+	"lingeringZoneToRemoveIds": [],
+	"actionResponsesIds": [],
+	"bShareThreats": false,
+	"bShareThreatValues": false,
+	"guid": "6064631238802080015",
+	"name": "Weapon_Wand_ProcHit_2",
+	"typeId": "30316005"
+}

@@ -1,0 +1,29 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 0,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0,
+		"fishingEvents": 0
+	},
+	"bEvaluateOnTick": true,
+	"branchTrigger":
+	{
+		"expression": "GetAbilityHitCount(GetSource(), $#30316005:6064629664433438729$) > 0"
+	},
+	"bPredictedOnAutonomousClient": false,
+	"animBranchId":
+	{
+		"guid": "6064629664438419467",
+		"typeId": "30316010",
+		"name": "None"
+	},
+	"bOnlyBranchWithValidTarget": false,
+	"bOnRootMotionCollision": false,
+	"guid": "6064629681088495626",
+	"name": "Goblin_HeadbuttSuccess_ConditionalBranch",
+	"typeId": "30316009"
+}

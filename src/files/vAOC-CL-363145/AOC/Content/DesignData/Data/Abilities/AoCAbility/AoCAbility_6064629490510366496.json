@@ -1,0 +1,351 @@
+{
+	"abilityTags": [
+		{
+			"tagName": "ability.Archetype"
+		}
+	],
+	"abilityIcon": "/Game/UI/Icons/Archetypes/Tank/Abilities/TUI_IconTank_Charge.TUI_IconTank_Charge",
+	"abilityConditionalIcons": [],
+	"bOverrideRangeInTooltip": false,
+	"customTooltipRange":
+	{
+		"expression": ""
+	},
+	"bOverrideProgressBarClass": false,
+	"progressBarClass": "None",
+	"progressBarSortScore":
+	{
+		"expression": ""
+	},
+	"hasProc":
+	{
+		"expression": ""
+	},
+	"animMontages": [
+		{
+			"abilityDirection": "NONE",
+			"animExpression":
+			{
+				"expression": ""
+			},
+			"startSectionName": "None",
+			"bOverrideSequenceResetTime": false,
+			"sequenceResetTime": 0,
+			"abilityAnimationSoftPaths": [
+				"/Game/Characters/Animations/00_ABLT/Tank/CM_M_ABLT_Charge_Proxy_Montage_2.CM_M_ABLT_Charge_Proxy_Montage_2"
+			],
+			"targetingKey": 0,
+			"hitKeys": []
+		}
+	],
+	"activationRequirements":
+	{
+		"expression": ""
+	},
+	"weaponRequirement": "NoRequirement",
+	"bDisableDuringCooldown": false,
+	"cooldown":
+	{
+		"expression": "30"
+	},
+	"sharedCooldownTag": "None",
+	"cooldownCharges":
+	{
+		"expression": "1"
+	},
+	"bOverrideInitialCooldownCharges": false,
+	"initialCooldownChargesOverride":
+	{
+		"expression": ""
+	},
+	"suppressCooldownInUI":
+	{
+		"expression": ""
+	},
+	"bDeferAbilityTrigger": false,
+	"bMayNotBeUsedSimultaneously": false,
+	"bStopsAutoAttack": false,
+	"costs": [
+		{
+			"enabled":
+			{
+				"expression": ""
+			},
+			"statCosts": [
+				{
+					"stat":
+					{
+						"guid": "109183576135288",
+						"typeId": "10516612381411111",
+						"name": "None"
+					},
+					"value":
+					{
+						"expression": "10 * EvalFormula($#10516612381411113:6064631874856222777$)"
+					}
+				}
+			],
+			"effectCosts": [],
+			"chargeCost":
+			{
+				"expression": "1"
+			},
+			"bTriggersCooldown": true
+		}
+	],
+	"hitsIds":
+	{
+		"1":
+		{
+			"guid": "6064629528408489984",
+			"typeId": "30316005",
+			"name": "None"
+		},
+		"2":
+		{
+			"guid": "6064629529085918419",
+			"typeId": "30316005",
+			"name": "None"
+		},
+		"3":
+		{
+			"guid": "6064631108907173913",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	},
+	"effectsIds":
+	{
+	},
+	"projectilesIds":
+	{
+	},
+	"lingeringEffectsIds":
+	{
+	},
+	"abilityFXIds":
+	{
+		"3":
+		{
+			"guid": "6064629545361671179",
+			"typeId": "30316008",
+			"name": "None"
+		},
+		"4":
+		{
+			"guid": "6064629546663151219",
+			"typeId": "30316008",
+			"name": "None"
+		},
+		"5":
+		{
+			"guid": "6064629546774169682",
+			"typeId": "30316008",
+			"name": "None"
+		},
+		"6":
+		{
+			"guid": "6064629569251431457",
+			"typeId": "30316008",
+			"name": "None"
+		},
+		"7":
+		{
+			"guid": "6064630882591367273",
+			"typeId": "30316008",
+			"name": "None"
+		},
+		"8":
+		{
+			"guid": "6064630888096046953",
+			"typeId": "30316008",
+			"name": "None"
+		}
+	},
+	"animBranchesIds":
+	{
+		"1":
+		{
+			"guid": "6064630379297651464",
+			"typeId": "30316010",
+			"name": "None"
+		}
+	},
+	"conditionalBranchesIds":
+	{
+		"1":
+		{
+			"guid": "6064629490576754495",
+			"typeId": "30316009",
+			"name": "None"
+		}
+	},
+	"reactionsIds":
+	{
+	},
+	"targetingRecordsIds":
+	{
+		"1":
+		{
+			"guid": "6064629528418516994",
+			"typeId": "30316011",
+			"name": "None"
+		},
+		"2":
+		{
+			"guid": "6064628968549646338",
+			"typeId": "30316011",
+			"name": "None"
+		}
+	},
+	"progressDisruptionRecordsIds":
+	{
+	},
+	"comboInputs": [],
+	"bExactInput": false,
+	"bufferPriority": 2,
+	"bUsableFromHotbar": true,
+	"abilityActivationInput": "Single",
+	"bIsAOEClickedAbility": false,
+	"targetActivationRequirement": "Never",
+	"applicableTargets": 1,
+	"applicableLifeStates": 1,
+	"applicableInstigatorLifeState": 1,
+	"applicableCasterLifeStates": 1,
+	"bNeverCancelAbility": false,
+	"bUseTargetingRecord": false,
+	"targetingRecordId":
+	{
+		"guid": "0",
+		"typeId": "30316011",
+		"name": "None"
+	},
+	"bCheckTargetValidity": true,
+	"bPerformLoSCheck": true,
+	"bPerformConeCheck": true,
+	"angleCenter": 0,
+	"distanceCenter": 0,
+	"validAngle": 0,
+	"validDistance": 0,
+	"angleCenterExp":
+	{
+		"expression": "0.0"
+	},
+	"distanceCenterExp":
+	{
+		"expression": "0.0"
+	},
+	"validAngleExp":
+	{
+		"expression": "0.0"
+	},
+	"validDistanceExp":
+	{
+		"expression": "0.0"
+	},
+	"speedMultiplierSource": "SPEED_Movespeed",
+	"bHoldAnimation": true,
+	"maximumHoldTime": 1.25,
+	"bMayCancelHoldAtAnyTime": true,
+	"cancelHoldSections": [
+		{
+			"sectionName": "CancelWindow",
+			"timing": "AfterStart",
+			"branchKey": -1
+		}
+	],
+	"onCancelHoldBranchKey": 1,
+	"bOverrideHeldBehavior": true,
+	"heldAbilityBehavior": "Toggle",
+	"bForceAnimCancel": false,
+	"bAllowRotation": true,
+	"pitchMode": "None",
+	"minPitch": 0,
+	"maxPitch": 0,
+	"bUsableInAir": true,
+	"bUsableWhileSwimming": true,
+	"bOmnidirectional": false,
+	"bOrientWithInterpOnStart": false,
+	"onStartInterpConstRate": 0,
+	"bOrientWithInterpOnEnd": false,
+	"onEndInterpConstRate": 0,
+	"bQuickCancelFromAllAbilities": false,
+	"quickCancelFromAbilitiesIds": [],
+	"cancelSectionName": "None",
+	"bRequiresAnimCancel": false,
+	"cancelFromAbilitiesIds": [],
+	"cancelFromTagQuery":
+	{
+		"tokenStreamVersion": 0,
+		"tagDictionary": [],
+		"queryTokenStream": [],
+		"userDescription": "",
+		"autoDescription": ""
+	},
+	"scriptOnActivate": "None",
+	"areaTemplateFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"areaTemplateMaterial": "None",
+	"areaTemplateRotationRate": 0,
+	"areaTargetRadius": 0,
+	"areaTargetRange": 0,
+	"bShouldFaceClickedTarget": false,
+	"bResetSequenceAfterTime": false,
+	"sequenceResetTime": 0,
+	"abilityName": "Charge",
+	"abilityDescription": "Channeled Ability: Charge forward in the direction you are facing. Enemies you collide with take $hit1$ damage and become $effect:Status_Staggered$.\r\n\r\nCharge will be canceled if another ability is activated or if the Charge key is pressed again.",
+	"bAllowMovement": true,
+	"bPROTOTYPERotateRootMotion": false,
+	"rootMotionFreezeBehavior": "StopOnContact",
+	"rootMotionFreezeDistance": 0,
+	"rootMotionFreezeRadiusScale": 1,
+	"rootMotionIgnoreNonTarget": false,
+	"bVisualizeSweepCollision": false,
+	"canBreakEffects":
+	{
+		"expression": ""
+	},
+	"effectsToBreak":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"actionModeAbilityId":
+	{
+		"guid": "0",
+		"typeId": "30316001",
+		"name": "None"
+	},
+	"aBTestingAbilitiesIds": [],
+	"animCancelsIds":
+	{
+		"1":
+		{
+			"guid": "6064629013833842688",
+			"typeId": "12352236",
+			"name": "None"
+		}
+	},
+	"modifyCooldownsIds":
+	{
+	},
+	"aLSAbilityId":
+	{
+		"guid": "0",
+		"typeId": "30316001",
+		"name": "None"
+	},
+	"inputTerms": [],
+	"dynamicCastDuration":
+	{
+		"expression": ""
+	},
+	"bNeverCull": false,
+	"guid": "6064629490510366496",
+	"name": "Tank_Charge",
+	"typeId": "30316001"
+}

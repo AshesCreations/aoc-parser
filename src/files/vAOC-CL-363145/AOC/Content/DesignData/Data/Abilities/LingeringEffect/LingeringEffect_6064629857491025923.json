@@ -1,0 +1,124 @@
+{
+	"lingeringEffectClass": "/Script/GameSystemsPlugin.AoCAbilityLingeringEffect",
+	"attachType": "None",
+	"attachSocketName": "None",
+	"bUseAttachSocketForOriginLocation": false,
+	"bUseAttachSocketForOriginOrientation": false,
+	"spawnTransform":
+	{
+		"originLocation": "Owner",
+		"originLocationSocket": "None",
+		"originOrientation": "SourceToOrigin",
+		"originOrientationSocket": "None",
+		"originScale": "World",
+		"bUseRelativeLocationExpression": false,
+		"relativeLocation":
+		{
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"relativeLocationExpression":
+		{
+			"expression": ""
+		},
+		"bUseRelativeRotationExpression": false,
+		"relativeRotation":
+		{
+			"pitch": 0,
+			"yaw": 0,
+			"roll": 0
+		},
+		"relativeRotationExpression":
+		{
+			"expression": ""
+		},
+		"bUseRelativeScaleExpression": false,
+		"relativeScale":
+		{
+			"x": 1,
+			"y": 1,
+			"z": 1
+		},
+		"relativeScaleExpression":
+		{
+			"expression": ""
+		}
+	},
+	"deactivateFXTimeBeforeDestroy": 3,
+	"lifeTime": 10,
+	"expireAfterAppliedHits":
+	{
+		"expression": ""
+	},
+	"expireIfExpressionTrue":
+	{
+		"expression": ""
+	},
+	"bUseGlobalTickRate": true,
+	"tickRate": 1,
+	"startTimeOffset": 0,
+	"endTimeOffset": 0,
+	"lingeringHitTargetingInfoId":
+	{
+		"guid": "6064629857504133124",
+		"typeId": "30316011",
+		"name": "None"
+	},
+	"initialHitsIds": [
+		{
+			"guid": "6064629858090680513",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"lingeringHitsIds": [
+		{
+			"guid": "6064629858090680513",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"endHitsIds": [],
+	"onBeginOverlapHitsIds": [
+		{
+			"guid": "6064631860989132800",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"onEndOverlapHitsIds": [
+		{
+			"guid": "6064631861001977857",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"bNoHitOnFirstTick": true,
+	"speed": 0,
+	"bLockPitch": false,
+	"delayType": "DELAY_Time",
+	"delayTime": 0,
+	"delayTargetId":
+	{
+		"guid": "0",
+		"typeId": "30316011",
+		"name": "None"
+	},
+	"numberOfCharges": 1,
+	"lingeringFXId":
+	{
+		"guid": "108249685579384",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"delayedTrackingActivationFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"guid": "6064629857491025923",
+	"name": "GraveyardGolem_GraveDustCloud_LingeringEffect",
+	"typeId": "30316007"
+}

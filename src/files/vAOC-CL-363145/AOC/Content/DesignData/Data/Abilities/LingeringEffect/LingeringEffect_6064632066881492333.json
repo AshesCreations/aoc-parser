@@ -1,0 +1,106 @@
+{
+	"lingeringEffectClass": "/Script/GameSystemsPlugin.AoCAbilityLingeringEffect",
+	"attachType": "None",
+	"attachSocketName": "None",
+	"bUseAttachSocketForOriginLocation": false,
+	"bUseAttachSocketForOriginOrientation": false,
+	"spawnTransform":
+	{
+		"originLocation": "HitLocation",
+		"originLocationSocket": "None",
+		"originOrientation": "InstigatorToOrigin",
+		"originOrientationSocket": "None",
+		"originScale": "World",
+		"bUseRelativeLocationExpression": false,
+		"relativeLocation":
+		{
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"relativeLocationExpression":
+		{
+			"expression": ""
+		},
+		"bUseRelativeRotationExpression": false,
+		"relativeRotation":
+		{
+			"pitch": 0,
+			"yaw": 0,
+			"roll": 0
+		},
+		"relativeRotationExpression":
+		{
+			"expression": ""
+		},
+		"bUseRelativeScaleExpression": false,
+		"relativeScale":
+		{
+			"x": 1,
+			"y": 1,
+			"z": 1
+		},
+		"relativeScaleExpression":
+		{
+			"expression": ""
+		}
+	},
+	"deactivateFXTimeBeforeDestroy": 0.5,
+	"lifeTime": 15,
+	"expireAfterAppliedHits":
+	{
+		"expression": "1"
+	},
+	"expireIfExpressionTrue":
+	{
+		"expression": ""
+	},
+	"bUseGlobalTickRate": true,
+	"tickRate": 1,
+	"startTimeOffset": 0.5,
+	"endTimeOffset": 0,
+	"lingeringHitTargetingInfoId":
+	{
+		"guid": "6064632066882803054",
+		"typeId": "30316011",
+		"name": "None"
+	},
+	"initialHitsIds": [],
+	"lingeringHitsIds": [],
+	"endHitsIds": [],
+	"onBeginOverlapHitsIds": [
+		{
+			"guid": "6064632070754680755",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"onEndOverlapHitsIds": [],
+	"bNoHitOnFirstTick": false,
+	"speed": 0,
+	"bLockPitch": false,
+	"delayType": "DELAY_Time",
+	"delayTime": 0,
+	"delayTargetId":
+	{
+		"guid": "0",
+		"typeId": "30316011",
+		"name": "None"
+	},
+	"numberOfCharges": 1,
+	"lingeringFXId":
+	{
+		"guid": "6064632066886276463",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"delayedTrackingActivationFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"guid": "6064632066881492333",
+	"name": "Bard_Saga_Panth_Linger_1",
+	"typeId": "30316007"
+}

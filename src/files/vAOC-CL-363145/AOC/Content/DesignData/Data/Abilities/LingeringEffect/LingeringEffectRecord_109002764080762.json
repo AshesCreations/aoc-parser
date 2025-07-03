@@ -1,0 +1,58 @@
+{
+	"lingeringEffectClass": "/Script/GameSystemsPlugin.AoCAbilityLingeringEffect",
+	"radius": 400,
+	"lifeTime": 7,
+	"tickRate": 1,
+	"startTimeOffset": 0,
+	"endTimeOffset": 0,
+	"initialHitTargetingInfoId":
+	{
+		"guid": "109002778957435",
+		"typeId": "30316011",
+		"name": "NPC_Minotaur_WarPriest_HealingCircle_LingeringEffect_Targeting"
+	},
+	"initialHitsIds": [
+		{
+			"guid": "109003156248192",
+			"typeId": "30316005",
+			"name": "Minotaur_WarPriest_HealingCircle_Lingering_InitialHit"
+		}
+	],
+	"lingeringHitTargetingInfoId":
+	{
+		"guid": "109002778957435",
+		"typeId": "30316011",
+		"name": "NPC_Minotaur_WarPriest_HealingCircle_LingeringEffect_Targeting"
+	},
+	"lingeringHitsIds": [
+		{
+			"guid": "109003035596412",
+			"typeId": "30316005",
+			"name": "Minotaur_WarPriest_HealingCircle_Lingering_TickHit"
+		}
+	],
+	"endHitTargetingInfoId":
+	{
+		"guid": "0",
+		"typeId": "30316011",
+		"name": "None"
+	},
+	"endHitsIds": [],
+	"onBeginOverlapHitInfoId":
+	{
+		"guid": "0",
+		"typeId": "30316011",
+		"name": "None"
+	},
+	"onBeginOverlapHitsIds": [],
+	"bNoHitOnFirstTick": true,
+	"lingeringFXId":
+	{
+		"guid": "109003122955903",
+		"typeId": "30316008",
+		"name": "Minotaur_WarPriest_HealingCircle_LingeringFX"
+	},
+	"guid": "109002764080762",
+	"name": "Minotaur_WarPriest_HealingCircle_LingeringZone",
+	"typeId": "30316007"
+}

@@ -1,0 +1,157 @@
+{
+	"projectileClass": "/Game/Characters/Animations/RNG_BOW/New_RNG_BOW/WeaponCombo_Longbow_01_Projectile_BP.WeaponCombo_Longbow_01_Projectile_BP_C",
+	"projectileFXId":
+	{
+		"guid": "6064630493310108794",
+		"typeId": "30316008",
+		"name": "WeaponCombo_Shortbow_Projectile_FX"
+	},
+	"projectileEndFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"bDeactivateProjectileFXOnFire": false,
+	"fireFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"impactFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"range": 10000,
+	"lifeTime": 10,
+	"bPersistBetweenAbilities": true,
+	"speed": 6000,
+	"attachType": "AttachedInstigator",
+	"attachSocket": "ArrowSocketR",
+	"bUseAttachSocketForOriginLocation": true,
+	"bUseAttachSocketForOriginOrientation": true,
+	"spawnTransform":
+	{
+		"originLocation": "Instigator",
+		"originLocationSocket": "ArrowSocketR",
+		"originOrientation": "Instigator",
+		"originOrientationSocket": "FXSocketMid",
+		"originScale": "Instigator",
+		"bUseRelativeLocationExpression": false,
+		"relativeLocation":
+		{
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"relativeLocationExpression":
+		{
+			"expression": ""
+		},
+		"bUseRelativeRotationExpression": false,
+		"relativeRotation":
+		{
+			"pitch": 0,
+			"yaw": 180,
+			"roll": 0
+		},
+		"relativeRotationExpression":
+		{
+			"expression": ""
+		},
+		"bUseRelativeScaleExpression": false,
+		"relativeScale":
+		{
+			"x": 1,
+			"y": 1,
+			"z": 1
+		},
+		"relativeScaleExpression":
+		{
+			"expression": ""
+		}
+	},
+	"bSpecifyFireRotation": false,
+	"fireTransform":
+	{
+		"originLocation": "Instigator",
+		"originLocationSocket": "ArrowSocketR",
+		"originOrientation": "Instigator",
+		"originOrientationSocket": "ArrowSocketR",
+		"originScale": "Instigator",
+		"bUseRelativeLocationExpression": false,
+		"relativeLocation":
+		{
+			"x": 150,
+			"y": 0,
+			"z": 0
+		},
+		"relativeLocationExpression":
+		{
+			"expression": ""
+		},
+		"bUseRelativeRotationExpression": false,
+		"relativeRotation":
+		{
+			"pitch": 0,
+			"yaw": 0,
+			"roll": 0
+		},
+		"relativeRotationExpression":
+		{
+			"expression": ""
+		},
+		"bUseRelativeScaleExpression": false,
+		"relativeScale":
+		{
+			"x": 1,
+			"y": 1,
+			"z": 1
+		},
+		"relativeScaleExpression":
+		{
+			"expression": ""
+		}
+	},
+	"fireRotationConeAngle": 5,
+	"fadeOutDuration": 2,
+	"bAttachOnDestroy": true,
+	"hitsIds": [
+		{
+			"guid": "6064630493360738177",
+			"typeId": "30316005",
+			"name": "WeaponCombo_Shortbow_03"
+		}
+	],
+	"bUseSphereCollision": false,
+	"sphereCollisionRadius": 32,
+	"bUseSeparateCollisionRadiusForDynamicObjects": false,
+	"dynamicObjectSphereCollisionRadius": 32,
+	"maxProjectileHits": 1,
+	"projectileHitInterval": 0,
+	"bIgnoreNonTarget": true,
+	"bIgnoreWorldObjects": true,
+	"chainHitCount": 0,
+	"chainRadius": 0,
+	"bChainClosestTarget": false,
+	"projectileType": "PROJECTILE_Homing",
+	"bMaySpawnWithoutTarget": true,
+	"bAimedWithControlRotation": false,
+	"desiredAngularSpeed": 3000,
+	"targetOffset":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"homingSocketName": "FX_Chest",
+	"bFavorHighArc": false,
+	"arcingGravityScale": 1,
+	"bFollowGround": false,
+	"guid": "6064630493302113401",
+	"name": "Shortbow_ArrowProc_Projectile",
+	"typeId": "30316006"
+}

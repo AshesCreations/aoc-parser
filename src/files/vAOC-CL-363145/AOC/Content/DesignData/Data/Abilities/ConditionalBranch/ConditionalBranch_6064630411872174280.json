@@ -1,0 +1,29 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 0,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0,
+		"fishingEvents": 0
+	},
+	"bEvaluateOnTick": true,
+	"branchTrigger":
+	{
+		"expression": "GetEffectCount(GetOwner(),$#30316002:6064630411864047814$) >= 3"
+	},
+	"bPredictedOnAutonomousClient": false,
+	"animBranchId":
+	{
+		"guid": "6064630411870404807",
+		"typeId": "30316010",
+		"name": "None"
+	},
+	"bOnlyBranchWithValidTarget": false,
+	"bOnRootMotionCollision": false,
+	"guid": "6064630411872174280",
+	"name": "Rabid_LaunchJaw_ClampedBite_ConditionalBranch",
+	"typeId": "30316009"
+}

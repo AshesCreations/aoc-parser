@@ -1,0 +1,157 @@
+{
+	"projectileClass": "/Game/DesignAssets/ClassAbilities/RNG/Projectiles/Ranger_Scattershot_Projectile_BP.Ranger_Scattershot_Projectile_BP_C",
+	"projectileFXId":
+	{
+		"guid": "6064630598279890509",
+		"typeId": "30316008",
+		"name": "Snipe_WeaponTrail"
+	},
+	"projectileEndFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"bDeactivateProjectileFXOnFire": false,
+	"fireFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"impactFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"range": 3500,
+	"lifeTime": 5,
+	"bPersistBetweenAbilities": false,
+	"speed": 7000,
+	"attachType": "AttachedSource",
+	"attachSocket": "ArrowSocketR",
+	"bUseAttachSocketForOriginLocation": true,
+	"bUseAttachSocketForOriginOrientation": true,
+	"spawnTransform":
+	{
+		"originLocation": "Source",
+		"originLocationSocket": "None",
+		"originOrientation": "OriginControlRotation",
+		"originOrientationSocket": "None",
+		"originScale": "Source",
+		"bUseRelativeLocationExpression": false,
+		"relativeLocation":
+		{
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"relativeLocationExpression":
+		{
+			"expression": "const X = 0.0;\r\nconst Y = 0.0;\r\nconst Z = 200 + 20 * GetAbilityProgressRatio();\r\n\r\nVector(X, Y, Z)"
+		},
+		"bUseRelativeRotationExpression": false,
+		"relativeRotation":
+		{
+			"pitch": 0,
+			"yaw": 0,
+			"roll": 0
+		},
+		"relativeRotationExpression":
+		{
+			"expression": ""
+		},
+		"bUseRelativeScaleExpression": false,
+		"relativeScale":
+		{
+			"x": 1,
+			"y": 1,
+			"z": 1
+		},
+		"relativeScaleExpression":
+		{
+			"expression": ""
+		}
+	},
+	"bSpecifyFireRotation": true,
+	"fireTransform":
+	{
+		"originLocation": "Source",
+		"originLocationSocket": "None",
+		"originOrientation": "Source",
+		"originOrientationSocket": "None",
+		"originScale": "Source",
+		"bUseRelativeLocationExpression": false,
+		"relativeLocation":
+		{
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"relativeLocationExpression":
+		{
+			"expression": "const X = 0.0;\r\nconst Y = 0.0;\r\nconst Z = 50 * GetAbilityProgressRatio();\r\n\r\nVector(X, Y, Z)"
+		},
+		"bUseRelativeRotationExpression": false,
+		"relativeRotation":
+		{
+			"pitch": 0,
+			"yaw": 0,
+			"roll": 0
+		},
+		"relativeRotationExpression":
+		{
+			"expression": "const Roll = 0.0;\r\nconst Pitch = 0.0;\r\nconst Yaw = 0.0 + (1 * (1.0 - GetAbilityProgressRatio()));\r\n\r\nRotator(Roll, Pitch, Yaw)"
+		},
+		"bUseRelativeScaleExpression": false,
+		"relativeScale":
+		{
+			"x": 1,
+			"y": 1,
+			"z": 1
+		},
+		"relativeScaleExpression":
+		{
+			"expression": ""
+		}
+	},
+	"fireRotationConeAngle": 0,
+	"fadeOutDuration": 2,
+	"bAttachOnDestroy": true,
+	"hitsIds": [
+		{
+			"guid": "6064630600050803109",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"bUseSphereCollision": true,
+	"sphereCollisionRadius": 150,
+	"bUseSeparateCollisionRadiusForDynamicObjects": true,
+	"dynamicObjectSphereCollisionRadius": 150,
+	"maxProjectileHits": 99,
+	"projectileHitInterval": 0,
+	"bIgnoreNonTarget": false,
+	"bIgnoreWorldObjects": true,
+	"chainHitCount": 0,
+	"chainRadius": 0,
+	"bChainClosestTarget": false,
+	"projectileType": "PROJECTILE_Straight",
+	"bMaySpawnWithoutTarget": false,
+	"bAimedWithControlRotation": false,
+	"desiredAngularSpeed": 0,
+	"targetOffset":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"homingSocketName": "None",
+	"bFavorHighArc": false,
+	"arcingGravityScale": 1,
+	"bFollowGround": true,
+	"guid": "6064630599886897152",
+	"name": "Ranger_Scattershot_Full_Charge",
+	"typeId": "30316006"
+}

@@ -1,0 +1,234 @@
+{
+	"eventTags": [
+		{
+			"tagName": "Element.Physical"
+		}
+	],
+	"applicableTargets": 2,
+	"applicableLifeStates": 1,
+	"applicationRequirements":
+	{
+		"expression": ""
+	},
+	"bCapHits": false,
+	"maxTargetsPerHit":
+	{
+		"expression": "1"
+	},
+	"bLimitHitsPerTarget": false,
+	"maxHitsPerTarget":
+	{
+		"expression": "1"
+	},
+	"bLimitHitsGlobally": false,
+	"maxHitsGlobally":
+	{
+		"expression": "1"
+	},
+	"hitFloatingText": "",
+	"applyEffects": [],
+	"effectsAppliedToSelf": [],
+	"lingeringZonesIds": [],
+	"projectilesToSpawn": [],
+	"projectilesToFire": [],
+	"reactionsIds": [],
+	"progressModifierIds": [],
+	"resurrectId":
+	{
+		"guid": "0",
+		"typeId": "30316114",
+		"name": "None"
+	},
+	"maxNumEffectsToRemove": 0,
+	"effectRemovalFilter":
+	{
+		"expression": ""
+	},
+	"effectsToRemoveIds": [],
+	"bRemoveAsDispel": false,
+	"bOverrideDefaultMissRate": false,
+	"missRate":
+	{
+		"expression": ""
+	},
+	"bOverrideDefaultBlockRate": false,
+	"blockRate":
+	{
+		"expression": ""
+	},
+	"bOverrideDefaultCritRate": false,
+	"critRate":
+	{
+		"expression": ""
+	},
+	"statModsIds": [
+		{
+			"guid": "6064629535566987264",
+			"typeId": "3031600201",
+			"name": "None"
+		}
+	],
+	"bonusCrowdControlDamageIds": [],
+	"bTriggersImpactFX": false,
+	"bOverrideImpactDecalSize": false,
+	"impactDecalSizeOverride":
+	{
+		"x": 10,
+		"y": 10,
+		"z": 10
+	},
+	"bOverrideImpactDecalLifetime": false,
+	"impactDecalLifetimeOverride": 3,
+	"onHitFXId":
+	{
+		"guid": "6064628792953667584",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"onActivateFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"activateFxAtTarget": false,
+	"postHitPauseFXId":
+	{
+		"guid": "6064628861087580160",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"onBlockFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"hitPauseFrames": 2,
+	"hitPauseMovement": false,
+	"scriptOnActivate": "None",
+	"scriptOnHit": "None",
+	"networkType": "NET_ServerVerify",
+	"modifyCooldownsIds": [],
+	"bAppliesImpulse": false,
+	"bApplyImpulseAsVelocityChange": true,
+	"impulseOriginTransform":
+	{
+		"originLocation": "Target",
+		"originLocationSocket": "None",
+		"originOrientation": "Target",
+		"originOrientationSocket": "None",
+		"originScale": "World",
+		"bUseRelativeLocationExpression": false,
+		"relativeLocation":
+		{
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"relativeLocationExpression":
+		{
+			"expression": ""
+		},
+		"bUseRelativeRotationExpression": false,
+		"relativeRotation":
+		{
+			"pitch": 0,
+			"yaw": 0,
+			"roll": 0
+		},
+		"relativeRotationExpression":
+		{
+			"expression": ""
+		},
+		"bUseRelativeScaleExpression": false,
+		"relativeScale":
+		{
+			"x": 1,
+			"y": 1,
+			"z": 1
+		},
+		"relativeScaleExpression":
+		{
+			"expression": ""
+		}
+	},
+	"impulseMagnitude":
+	{
+		"expression": "1000"
+	},
+	"impulseDirection":
+	{
+		"x": 0,
+		"y": 0
+	},
+	"impulseAngle":
+	{
+		"expression": "30.0"
+	},
+	"impulseRotationBehavior": "Unaffected",
+	"recursiveHit": [],
+	"inputTerms": [
+		{
+			"termId":
+			{
+				"guid": "6064628991072403459",
+				"typeId": "10516612381411115",
+				"name": "None"
+			},
+			"value":
+			{
+				"expression": "3.0"
+			},
+			"bOptional": false,
+			"bKeepBeyondScope": false,
+			"filter":
+			{
+				"expression": ""
+			},
+			"mergeRuleOverride": "Merge_Default"
+		},
+		{
+			"termId":
+			{
+				"guid": "6064629248780337173",
+				"typeId": "10516612381411115",
+				"name": "None"
+			},
+			"value":
+			{
+				"expression": "const punishing = GetSkillPurchased(GetInstigator(), $#30316003:107281874310830$, $#981011333:6064630690530066978$);\r\nconst tripped = GetEffectCount(GetTarget(), $#30316002:109122787956344$) > 0;\r\nconst snared = GetEffectCountByTag(GetTarget(), \"Debuff.Snared\") > 0;\r\n\r\nSelectFloat(punishing && (tripped || snared), 100.0, 0.0)"
+			},
+			"bOptional": false,
+			"bKeepBeyondScope": false,
+			"filter":
+			{
+				"expression": ""
+			},
+			"mergeRuleOverride": "Merge_Default"
+		}
+	],
+	"bOverrideDefaultThreatToTarget": false,
+	"threatToTarget":
+	{
+		"expression": ""
+	},
+	"bOverrideDefaultObservedThreat": false,
+	"observedThreat":
+	{
+		"expression": ""
+	},
+	"maxNumLingeringZonesToRemove": 0,
+	"lingeringZoneRemovalType": "None",
+	"lingeringZoneRemovalFilter":
+	{
+		"expression": ""
+	},
+	"lingeringZoneToRemoveIds": [],
+	"actionResponsesIds": [],
+	"bShareThreats": false,
+	"bShareThreatValues": false,
+	"guid": "6064629535549906165",
+	"name": "Tank_Pulverize_Hit_AOE",
+	"typeId": "30316005"
+}

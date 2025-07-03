@@ -1,0 +1,411 @@
+{
+	"abilityTags": [
+		{
+			"tagName": "ability.Archetype"
+		}
+	],
+	"abilityIcon": "/Game/UI/ArtKits/UI_Prototype_Toolkit/Prototype_Iconography/TUI_AbilityIcon_Snipe.TUI_AbilityIcon_Snipe",
+	"abilityConditionalIcons": [],
+	"bOverrideRangeInTooltip": false,
+	"customTooltipRange":
+	{
+		"expression": ""
+	},
+	"bOverrideProgressBarClass": false,
+	"progressBarClass": "None",
+	"progressBarSortScore":
+	{
+		"expression": ""
+	},
+	"hasProc":
+	{
+		"expression": "GetEffectCount(GetInstigator(), $#30316002:6064629999133397775$) > 0 ||\r\nGetEffectCount(GetActiveTarget(GetOwner(), ETargetingIntention::Harm), $#30316002:6064629761775576467$) > 0"
+	},
+	"animMontages": [
+		{
+			"abilityDirection": "NONE",
+			"animExpression":
+			{
+				"expression": ""
+			},
+			"startSectionName": "None",
+			"bOverrideSequenceResetTime": false,
+			"sequenceResetTime": 0,
+			"abilityAnimationSoftPaths": [
+				"/Game/Characters/Animations/00_ABLT/Ranger/ABLT_Snipe_V2_Notify_Montage.ABLT_Snipe_V2_Notify_Montage"
+			],
+			"targetingKey": 0,
+			"hitKeys": []
+		}
+	],
+	"activationRequirements":
+	{
+		"expression": ""
+	},
+	"weaponRequirement": "RequiresRanged",
+	"bDisableDuringCooldown": false,
+	"cooldown":
+	{
+		"expression": "20"
+	},
+	"sharedCooldownTag": "None",
+	"cooldownCharges":
+	{
+		"expression": ""
+	},
+	"bOverrideInitialCooldownCharges": false,
+	"initialCooldownChargesOverride":
+	{
+		"expression": ""
+	},
+	"suppressCooldownInUI":
+	{
+		"expression": "GetEffectCount(GetInstigator(),$#30316002:6064629999133397775$) > 0"
+	},
+	"bDeferAbilityTrigger": true,
+	"bMayNotBeUsedSimultaneously": false,
+	"bStopsAutoAttack": false,
+	"costs": [
+		{
+			"enabled":
+			{
+				"expression": "GetEffectCount(GetInstigator(),$#30316002:6064629999133397775$) == 0 \r\n"
+			},
+			"statCosts": [
+				{
+					"stat":
+					{
+						"guid": "109183576135288",
+						"typeId": "10516612381411111",
+						"name": "None"
+					},
+					"value":
+					{
+						"expression": "30 * EvalFormula($#10516612381411113:6064631874856222777$)"
+					}
+				}
+			],
+			"effectCosts": [],
+			"chargeCost":
+			{
+				"expression": "1"
+			},
+			"bTriggersCooldown": true
+		},
+		{
+			"enabled":
+			{
+				"expression": "GetEffectCount(GetInstigator(),$#30316002:6064629999133397775$) > 0"
+			},
+			"statCosts": [],
+			"effectCosts": [
+				{
+					"effectFilter":
+					{
+						"expression": "GetEffect() == $#30316002:6064629999133397775$"
+					},
+					"num":
+					{
+						"expression": "1"
+					}
+				}
+			],
+			"chargeCost":
+			{
+				"expression": "0"
+			},
+			"bTriggersCooldown": false
+		}
+	],
+	"hitsIds":
+	{
+		"1":
+		{
+			"guid": "6064630378240147457",
+			"typeId": "30316005",
+			"name": "None"
+		},
+		"2":
+		{
+			"guid": "6064630656666108144",
+			"typeId": "30316005",
+			"name": "None"
+		},
+		"3":
+		{
+			"guid": "6064631330663497728",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	},
+	"effectsIds":
+	{
+		"1":
+		{
+			"guid": "6064630651244576988",
+			"typeId": "30316002",
+			"name": "None"
+		}
+	},
+	"projectilesIds":
+	{
+		"8":
+		{
+			"guid": "6064630440244019208",
+			"typeId": "30316006",
+			"name": "None"
+		}
+	},
+	"lingeringEffectsIds":
+	{
+	},
+	"abilityFXIds":
+	{
+		"1":
+		{
+			"guid": "6064630412947948830",
+			"typeId": "30316008",
+			"name": "None"
+		},
+		"2":
+		{
+			"guid": "6064630413243057584",
+			"typeId": "30316008",
+			"name": "None"
+		},
+		"5":
+		{
+			"guid": "6064630440240283655",
+			"typeId": "30316008",
+			"name": "None"
+		},
+		"6":
+		{
+			"guid": "109035814868600",
+			"typeId": "30316008",
+			"name": "None"
+		},
+		"7":
+		{
+			"guid": "6064630452486088223",
+			"typeId": "30316008",
+			"name": "None"
+		},
+		"8":
+		{
+			"guid": "6064630492792816478",
+			"typeId": "30316008",
+			"name": "None"
+		},
+		"9":
+		{
+			"guid": "6064630690585903120",
+			"typeId": "30316008",
+			"name": "None"
+		},
+		"10":
+		{
+			"guid": "6064631471454759212",
+			"typeId": "30316008",
+			"name": "None"
+		},
+		"12":
+		{
+			"guid": "6064630962438733829",
+			"typeId": "30316008",
+			"name": "None"
+		}
+	},
+	"animBranchesIds":
+	{
+		"1":
+		{
+			"guid": "109341260994175",
+			"typeId": "30316010",
+			"name": "None"
+		}
+	},
+	"conditionalBranchesIds":
+	{
+	},
+	"reactionsIds":
+	{
+		"1":
+		{
+			"guid": "6064630394352632887",
+			"typeId": "3031600202",
+			"name": "None"
+		}
+	},
+	"targetingRecordsIds":
+	{
+		"3":
+		{
+			"guid": "108957587494520",
+			"typeId": "30316011",
+			"name": "None"
+		},
+		"1":
+		{
+			"guid": "6064628968549646338",
+			"typeId": "30316011",
+			"name": "None"
+		}
+	},
+	"progressDisruptionRecordsIds":
+	{
+	},
+	"comboInputs": [],
+	"bExactInput": false,
+	"bufferPriority": 0,
+	"bUsableFromHotbar": true,
+	"abilityActivationInput": "UserConfigurable",
+	"bIsAOEClickedAbility": false,
+	"targetActivationRequirement": "Always",
+	"applicableTargets": 2,
+	"applicableLifeStates": 1,
+	"applicableInstigatorLifeState": 1,
+	"applicableCasterLifeStates": 1,
+	"bNeverCancelAbility": false,
+	"bUseTargetingRecord": false,
+	"targetingRecordId":
+	{
+		"guid": "0",
+		"typeId": "30316011",
+		"name": "None"
+	},
+	"bCheckTargetValidity": true,
+	"bPerformLoSCheck": true,
+	"bPerformConeCheck": true,
+	"angleCenter": 0,
+	"distanceCenter": 0,
+	"validAngle": 135,
+	"validDistance": 3500,
+	"angleCenterExp":
+	{
+		"expression": "0.0"
+	},
+	"distanceCenterExp":
+	{
+		"expression": "0.0"
+	},
+	"validAngleExp":
+	{
+		"expression": "135.0"
+	},
+	"validDistanceExp":
+	{
+		"expression": "3500.0"
+	},
+	"speedMultiplierSource": "SPEED_AttackSpeed",
+	"bHoldAnimation": false,
+	"maximumHoldTime": 0,
+	"bMayCancelHoldAtAnyTime": false,
+	"cancelHoldSections": [],
+	"onCancelHoldBranchKey": -1,
+	"bOverrideHeldBehavior": false,
+	"heldAbilityBehavior": "Naive",
+	"bForceAnimCancel": false,
+	"bAllowRotation": true,
+	"pitchMode": "None",
+	"minPitch": 0,
+	"maxPitch": 0,
+	"bUsableInAir": true,
+	"bUsableWhileSwimming": true,
+	"bOmnidirectional": false,
+	"bOrientWithInterpOnStart": false,
+	"onStartInterpConstRate": 0,
+	"bOrientWithInterpOnEnd": false,
+	"onEndInterpConstRate": 0,
+	"bQuickCancelFromAllAbilities": false,
+	"quickCancelFromAbilitiesIds": [],
+	"cancelSectionName": "None",
+	"bRequiresAnimCancel": false,
+	"cancelFromAbilitiesIds": [],
+	"cancelFromTagQuery":
+	{
+		"tokenStreamVersion": 0,
+		"tagDictionary": [],
+		"queryTokenStream": [],
+		"userDescription": "",
+		"autoDescription": ""
+	},
+	"scriptOnActivate": "None",
+	"areaTemplateFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"areaTemplateMaterial": "None",
+	"areaTemplateRotationRate": 0,
+	"areaTargetRadius": 0,
+	"areaTargetRange": 0,
+	"bShouldFaceClickedTarget": false,
+	"bResetSequenceAfterTime": false,
+	"sequenceResetTime": 0,
+	"abilityName": "Snipe",
+	"abilityDescription": "Deal $hit1$ and apply $effect:Status_Shaken$ to target enemy. \r\n\r\nIf the target is $effect:Status_Bleeding.hide$, 1 stack is consumed and that target becomes $effect:Status_Hemorrhage$.",
+	"bAllowMovement": true,
+	"bPROTOTYPERotateRootMotion": false,
+	"rootMotionFreezeBehavior": "StopOnContact",
+	"rootMotionFreezeDistance": 0,
+	"rootMotionFreezeRadiusScale": 1,
+	"rootMotionIgnoreNonTarget": false,
+	"bVisualizeSweepCollision": false,
+	"canBreakEffects":
+	{
+		"expression": ""
+	},
+	"effectsToBreak":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"actionModeAbilityId":
+	{
+		"guid": "0",
+		"typeId": "30316001",
+		"name": "None"
+	},
+	"aBTestingAbilitiesIds": [],
+	"animCancelsIds":
+	{
+		"2":
+		{
+			"guid": "6064629013833842688",
+			"typeId": "12352236",
+			"name": "None"
+		},
+		"3":
+		{
+			"guid": "6064630056674212466",
+			"typeId": "12352236",
+			"name": "None"
+		}
+	},
+	"modifyCooldownsIds":
+	{
+		"1":
+		{
+			"guid": "6064630394304397638",
+			"typeId": "3031600207",
+			"name": "None"
+		}
+	},
+	"aLSAbilityId":
+	{
+		"guid": "0",
+		"typeId": "30316001",
+		"name": "None"
+	},
+	"inputTerms": [],
+	"dynamicCastDuration":
+	{
+		"expression": ""
+	},
+	"bNeverCull": false,
+	"guid": "6064630377875374080",
+	"name": "Ranger_Snipe",
+	"typeId": "30316001"
+}

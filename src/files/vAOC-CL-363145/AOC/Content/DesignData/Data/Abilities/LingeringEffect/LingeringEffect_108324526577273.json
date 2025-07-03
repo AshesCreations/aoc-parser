@@ -1,0 +1,52 @@
+{
+	"lingeringEffectClass": "/Script/GameSystemsPlugin.AoCAbilityLingeringEffect",
+	"radius": 450,
+	"lifeTime": 5.5,
+	"tickRate": 1,
+	"startTimeOffset": 0,
+	"endTimeOffset": 0,
+	"initialHitTargetingInfoId":
+	{
+		"guid": "0",
+		"typeId": "30316011",
+		"name": "None"
+	},
+	"initialHitsIds": [],
+	"lingeringHitTargetingInfoId":
+	{
+		"guid": "108873384285816",
+		"typeId": "30316011",
+		"name": "Test_LingeringZoneDamageTargeting"
+	},
+	"lingeringHitsIds": [
+		{
+			"guid": "108324224128633",
+			"typeId": "30316005",
+			"name": "Test_Damage"
+		}
+	],
+	"endHitTargetingInfoId":
+	{
+		"guid": "0",
+		"typeId": "30316011",
+		"name": "None"
+	},
+	"endHitsIds": [],
+	"onBeginOverlapHitInfoId":
+	{
+		"guid": "0",
+		"typeId": "30316011",
+		"name": "None"
+	},
+	"onBeginOverlapHitsIds": [],
+	"bNoHitOnFirstTick": true,
+	"lingeringFXId":
+	{
+		"guid": "109365175867001",
+		"typeId": "30316008",
+		"name": "Test_LingeringzoneDamage"
+	},
+	"guid": "108324526577273",
+	"name": "Test_LingeringZoneDamage",
+	"typeId": "30316007"
+}

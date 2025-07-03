@@ -1,0 +1,149 @@
+{
+	"projectileClass": "/Game/Characters/Animations/RNG_BOW/New_RNG_BOW/WeaponCombo_Longbow_01_Projectile_BP.WeaponCombo_Longbow_01_Projectile_BP_C",
+	"projectileFXId":
+	{
+		"guid": "108985139353208",
+		"typeId": "30316008",
+		"name": "WeaponCombo_Longbow_Projectile_FX"
+	},
+	"impactFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"range": 5000,
+	"lifeTime": 10,
+	"bPersistBetweenAbilities": false,
+	"speed": 12000,
+	"attachType": "AttachedSource",
+	"attachSocket": "ArrowSocketR",
+	"bUseAttachSocketForOriginLocation": true,
+	"bUseAttachSocketForOriginOrientation": true,
+	"spawnTransform":
+	{
+		"originLocation": "Source",
+		"originLocationSocket": "None",
+		"originOrientation": "Source",
+		"originOrientationSocket": "None",
+		"originScale": "Source",
+		"bUseRelativeLocationExpression": false,
+		"relativeLocation":
+		{
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"relativeLocationExpression":
+		{
+			"expression": ""
+		},
+		"bUseRelativeRotationExpression": false,
+		"relativeRotation":
+		{
+			"pitch": 0,
+			"yaw": 0,
+			"roll": 0
+		},
+		"relativeRotationExpression":
+		{
+			"expression": ""
+		},
+		"bUseRelativeScaleExpression": false,
+		"relativeScale":
+		{
+			"x": 1,
+			"y": 1,
+			"z": 1
+		},
+		"relativeScaleExpression":
+		{
+			"expression": ""
+		}
+	},
+	"bSpecifyFireRotation": false,
+	"fireTransform":
+	{
+		"originLocation": "Source",
+		"originLocationSocket": "None",
+		"originOrientation": "Source",
+		"originOrientationSocket": "None",
+		"originScale": "Source",
+		"bUseRelativeLocationExpression": false,
+		"relativeLocation":
+		{
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"relativeLocationExpression":
+		{
+			"expression": ""
+		},
+		"bUseRelativeRotationExpression": false,
+		"relativeRotation":
+		{
+			"pitch": 0,
+			"yaw": 0,
+			"roll": 0
+		},
+		"relativeRotationExpression":
+		{
+			"expression": ""
+		},
+		"bUseRelativeScaleExpression": false,
+		"relativeScale":
+		{
+			"x": 1,
+			"y": 1,
+			"z": 1
+		},
+		"relativeScaleExpression":
+		{
+			"expression": ""
+		}
+	},
+	"fireRotationConeAngle": 0,
+	"fadeOutDuration": 2,
+	"bAttachOnDestroy": true,
+	"hitsIds": [
+		{
+			"guid": "109308998669946",
+			"typeId": "30316005",
+			"name": "Test_WeaponCombo_Longbow_01_Lingering"
+		}
+	],
+	"bUseSphereCollision": true,
+	"sphereCollisionRadius": 16,
+	"bUseSeparateCollisionRadiusForDynamicObjects": false,
+	"dynamicObjectSphereCollisionRadius": 32,
+	"maxProjectileHits": 1,
+	"projectileHitInterval": 0,
+	"bIgnoreNonTarget": false,
+	"bIgnoreWorldObjects": false,
+	"chainHitCount": 0,
+	"chainRadius": 0,
+	"bChainClosestTarget": false,
+	"projectileType": "PROJECTILE_HomingArcing",
+	"bMaySpawnWithoutTarget": true,
+	"bAimedWithControlRotation": false,
+	"bLimitAngularSpeed": false,
+	"desiredAngularSpeed": 0,
+	"targetOffset":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"homingSocketName": "None",
+	"homingBoneName": "None",
+	"bFavorHighArc": true,
+	"arcingGravityScale": 1,
+	"arcCurve": "None",
+	"predictionAccuracy": 1,
+	"arcHeightModifier": 500,
+	"bFollowGround": false,
+	"guid": "109303845377657",
+	"name": "Test_LingeringZoneProjectile",
+	"typeId": "30316006"
+}

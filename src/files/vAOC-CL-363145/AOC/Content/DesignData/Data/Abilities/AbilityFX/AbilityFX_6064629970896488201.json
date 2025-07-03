@@ -1,0 +1,249 @@
+{
+	"audioFX": [],
+	"audioExitFX": [],
+	"cameraFX":
+	{
+		"bUseNativeCameraShake": false,
+		"shakeClassPath": "None",
+		"shakeIntensitySoft":
+		{
+			"externalCurve": "None",
+			"editorCurveData":
+			{
+				"keys": [],
+				"defaultValue": 3.4028234663852886e+38,
+				"preInfinityExtrap": "RCCE_Constant",
+				"postInfinityExtrap": "RCCE_Constant",
+				"keyHandlesToIndices":
+				{
+				}
+			}
+		},
+		"shakeMultiplier":
+		{
+			"expression": ""
+		},
+		"fOVZoomSoft":
+		{
+			"externalCurve": "None",
+			"editorCurveData":
+			{
+				"keys": [],
+				"defaultValue": 3.4028234663852886e+38,
+				"preInfinityExtrap": "RCCE_Constant",
+				"postInfinityExtrap": "RCCE_Constant",
+				"keyHandlesToIndices":
+				{
+				}
+			}
+		},
+		"fOVMultiplier":
+		{
+			"expression": ""
+		},
+		"chromaticAberrationIntensitySoft":
+		{
+			"externalCurve": "None",
+			"editorCurveData":
+			{
+				"keys": [],
+				"defaultValue": 3.4028234663852886e+38,
+				"preInfinityExtrap": "RCCE_Constant",
+				"postInfinityExtrap": "RCCE_Constant",
+				"keyHandlesToIndices":
+				{
+				}
+			}
+		},
+		"chromaticAberrationMultiplier":
+		{
+			"expression": ""
+		},
+		"radialBlurScaleSoft":
+		{
+			"externalCurve": "None",
+			"editorCurveData":
+			{
+				"keys": [
+					{
+						"interpMode": "RCIM_Cubic",
+						"tangentMode": "RCTM_User",
+						"tangentWeightMode": "RCTWM_WeightedNone",
+						"time": 0.20000000298023224,
+						"value": 0,
+						"arriveTangent": 13.333332061767578,
+						"arriveTangentWeight": 0,
+						"leaveTangent": 13.333333969116211,
+						"leaveTangentWeight": 0
+					},
+					{
+						"interpMode": "RCIM_Cubic",
+						"tangentMode": "RCTM_Auto",
+						"tangentWeightMode": "RCTWM_WeightedNone",
+						"time": 0.34999999403953552,
+						"value": 4,
+						"arriveTangent": 0,
+						"arriveTangentWeight": 0,
+						"leaveTangent": 0,
+						"leaveTangentWeight": 0
+					},
+					{
+						"interpMode": "RCIM_Cubic",
+						"tangentMode": "RCTM_User",
+						"tangentWeightMode": "RCTWM_WeightedNone",
+						"time": 0.69999998807907104,
+						"value": 0,
+						"arriveTangent": -6.8333325386047363,
+						"arriveTangentWeight": 0,
+						"leaveTangent": -6.8333339691162109,
+						"leaveTangentWeight": 0
+					}
+				],
+				"defaultValue": 3.4028234663852886e+38,
+				"preInfinityExtrap": "RCCE_Constant",
+				"postInfinityExtrap": "RCCE_Constant",
+				"keyHandlesToIndices":
+				{
+				}
+			}
+		},
+		"radialBlurMultiplier":
+		{
+			"expression": ""
+		},
+		"bShouldFalloffIntensity": false,
+		"intensityFalloff":
+		{
+			"externalCurve": "None",
+			"editorCurveData":
+			{
+				"keys": [],
+				"defaultValue": 3.4028234663852886e+38,
+				"preInfinityExtrap": "RCCE_Constant",
+				"postInfinityExtrap": "RCCE_Constant",
+				"keyHandlesToIndices":
+				{
+				}
+			}
+		},
+		"playLocationOffset":
+		{
+			"x": 0,
+			"y": 0,
+			"z": 0
+		}
+	},
+	"materialFX": [
+		{
+			"enabled":
+			{
+				"expression": ""
+			},
+			"target": "Owner",
+			"mesh": "Character",
+			"materialSoft": "/Game/Effects/FX_PCs/Fighter/Materials/M_FIghter_BloodFusion_TeleGraph.M_FIghter_BloodFusion_TeleGraph",
+			"lifeTime": 0
+		}
+	],
+	"particleFX": [
+		{
+			"enabled":
+			{
+				"expression": ""
+			},
+			"niagaraSystemSoft": "/Game/Effects/FX_PCs/Fighter/Particles/Blood_Fusion/NS_Fighter_BloodFusion_Cast.NS_Fighter_BloodFusion_Cast",
+			"lifeTime": 5,
+			"bCastVolumetricTranslucentShadow": false,
+			"attachType": "AttachedTarget",
+			"originMesh": "Character",
+			"attachSocketName": "FX_Chest",
+			"bUseAttachSocketForOriginLocation": true,
+			"bUseAttachSocketForOriginOrientation": true,
+			"transform":
+			{
+				"originLocation": "Owner",
+				"originLocationSocket": "FX_Chest",
+				"originOrientation": "Owner",
+				"originOrientationSocket": "None",
+				"originScale": "World",
+				"bUseRelativeLocationExpression": false,
+				"relativeLocation":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"relativeLocationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeRotationExpression": false,
+				"relativeRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"relativeRotationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeScaleExpression": false,
+				"relativeScale":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				},
+				"relativeScaleExpression":
+				{
+					"expression": ""
+				}
+			},
+			"bVisibleToSceneCaptureOnly": false,
+			"bAllowScalability": true,
+			"bUseLocalRemoteDynamicSystem": true
+		}
+	],
+	"niagaraParameters": [
+		{
+			"parameterName": "BloodPlagueProc",
+			"parameterType": "Int",
+			"expressionParam":
+			{
+				"expression": "1"
+			},
+			"quatParam":
+			{
+				"x": 0,
+				"y": 0,
+				"z": 0,
+				"w": 1
+			},
+			"vec2Param":
+			{
+				"x": 0,
+				"y": 0
+			},
+			"vec4Param":
+			{
+				"x": 0,
+				"y": 0,
+				"z": 0,
+				"w": 0
+			},
+			"linearColorParam":
+			{
+				"r": 0,
+				"g": 0,
+				"b": 0,
+				"a": 1
+			}
+		}
+	],
+	"tickNiagaraParameters": [],
+	"abilityEventNiagaraParams": [],
+	"guid": "6064629970896488201",
+	"name": "Fighter_BloodFusion_FX",
+	"typeId": "30316008"
+}

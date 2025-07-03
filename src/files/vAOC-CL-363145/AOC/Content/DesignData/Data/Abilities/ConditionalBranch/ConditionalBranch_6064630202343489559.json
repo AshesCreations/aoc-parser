@@ -1,0 +1,29 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 0,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 2,
+		"fishingEvents": 0
+	},
+	"bEvaluateOnTick": false,
+	"branchTrigger":
+	{
+		"expression": "GetDistanceBetween(GetOwner(),GetTarget()) < 200."
+	},
+	"bPredictedOnAutonomousClient": false,
+	"animBranchId":
+	{
+		"guid": "6064630202239746070",
+		"typeId": "30316010",
+		"name": "None"
+	},
+	"bOnlyBranchWithValidTarget": false,
+	"bOnRootMotionCollision": false,
+	"guid": "6064630202343489559",
+	"name": "Raptor_Leap_Fall",
+	"typeId": "30316009"
+}

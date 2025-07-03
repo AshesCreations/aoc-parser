@@ -1,0 +1,126 @@
+{
+	"applicableTargets": 1,
+	"applicableLifeStates": 1,
+	"applicationRequirements":
+	{
+		"expression": ""
+	},
+	"bCapHits": false,
+	"maxTargetsPerHit":
+	{
+		"expression": "1"
+	},
+	"bLimitHitsPerTarget": false,
+	"maxHitsPerTarget":
+	{
+		"expression": "1"
+	},
+	"bLimitHitsGlobally": false,
+	"maxHitsGlobally":
+	{
+		"expression": "1"
+	},
+	"appliedEffectsIds": [],
+	"effectsAppliedToSelf": [
+		{
+			"onHitBehavior": "ApplyForEachHit",
+			"effect":
+			{
+				"guid": "109190028809848",
+				"typeId": "30316002",
+				"name": "Cleric_Conviction"
+			},
+			"maxNumApplications": 1
+		}
+	],
+	"lingeringZonesIds": [],
+	"reactionsIds": [],
+	"maxNumEffectsToRemove": 0,
+	"effectRemovalFilter":
+	{
+		"expression": ""
+	},
+	"effectsToRemoveIds": [],
+	"bRemoveAsDispel": false,
+	"critBehavior": "Physical",
+	"bonusCritRate":
+	{
+		"expression": ""
+	},
+	"evasionBehavior": "Physical",
+	"bonusAccuracy":
+	{
+		"expression": ""
+	},
+	"threatMultiplier":
+	{
+		"expression": ""
+	},
+	"statModsIds": [],
+	"bonusCrowdControlDamageIds": [],
+	"onHitFXId":
+	{
+		"guid": "109201143322232",
+		"typeId": "30316008",
+		"name": "Cleric_Conviction_HitFX"
+	},
+	"onActivateFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"onBlockFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"hitPauseFrames": 0,
+	"hitPauseMovement": false,
+	"scriptOnActivate": "None",
+	"scriptOnHit": "None",
+	"networkType": "NET_ServerVerify",
+	"modifyCooldownsIds": [],
+	"bAppliesImpulse": false,
+	"bApplyImpulseAsVelocityChange": true,
+	"impulseOriginLocation": "Source",
+	"impulseOriginOrientation": "OriginToTargetZ",
+	"impulseOriginLocationOffset":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"impulseOriginOrientationOffset":
+	{
+		"pitch": 0,
+		"yaw": 0,
+		"roll": 0
+	},
+	"impulseMagnitude":
+	{
+		"expression": ""
+	},
+	"impulseDirection":
+	{
+		"x": 1,
+		"y": 0
+	},
+	"impulseAngle":
+	{
+		"expression": ""
+	},
+	"impulseRotationBehavior": "Unaffected",
+	"recursiveHitsIds": [],
+	"recursiveTargetId":
+	{
+		"guid": "0",
+		"typeId": "30316011",
+		"name": "None"
+	},
+	"inputs": [],
+	"guid": "109353122027128",
+	"name": "Cleric_Conviction_Hit_ChainsOfRestraint",
+	"typeId": "30316005"
+}

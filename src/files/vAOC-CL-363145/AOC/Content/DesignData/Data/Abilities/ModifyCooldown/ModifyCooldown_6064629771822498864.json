@@ -1,0 +1,23 @@
+{
+	"targetCooldownAbility": [
+		{
+			"expression": "GetAbilityRecordByName(\"Ranger_Disengage\")"
+		}
+	],
+	"bUseAbilityCost": false,
+	"deltaSeconds":
+	{
+		"expression": "-GetRemainingAbilityCooldown($#30316001:6064629739446014827$)"
+	},
+	"deltaCharges":
+	{
+		"expression": ""
+	},
+	"shouldTriggerCooldown":
+	{
+		"expression": ""
+	},
+	"guid": "6064629771822498864",
+	"name": "Ranger_Disengage_ResetHit",
+	"typeId": "3031600207"
+}

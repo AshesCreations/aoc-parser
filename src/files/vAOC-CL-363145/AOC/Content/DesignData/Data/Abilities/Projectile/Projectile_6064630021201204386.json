@@ -1,0 +1,143 @@
+{
+	"projectileClass": "/Game/DesignAssets/ClassAbilities/RNG/Projectiles/Ranger_Scattershot_Projectile_BP_2.Ranger_Scattershot_Projectile_BP_2_C",
+	"projectileFXId":
+	{
+		"guid": "6064630055584402866",
+		"typeId": "30316008",
+		"name": "Snipe_WeaponTrail"
+	},
+	"impactFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"range": 2500,
+	"lifeTime": 10,
+	"bPersistBetweenAbilities": false,
+	"speed": 6000,
+	"attachType": "AttachedSource",
+	"attachSocket": "ArrowSocketR",
+	"bUseAttachSocketForOriginLocation": true,
+	"bUseAttachSocketForOriginOrientation": true,
+	"spawnTransform":
+	{
+		"originLocation": "Source",
+		"originLocationSocket": "None",
+		"originOrientation": "Source",
+		"originOrientationSocket": "None",
+		"originScale": "Source",
+		"bUseRelativeLocationExpression": false,
+		"relativeLocation":
+		{
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"relativeLocationExpression":
+		{
+			"expression": ""
+		},
+		"bUseRelativeRotationExpression": false,
+		"relativeRotation":
+		{
+			"pitch": 0,
+			"yaw": 0,
+			"roll": 0
+		},
+		"relativeRotationExpression":
+		{
+			"expression": ""
+		},
+		"bUseRelativeScaleExpression": false,
+		"relativeScale":
+		{
+			"x": 1,
+			"y": 1,
+			"z": 1
+		},
+		"relativeScaleExpression":
+		{
+			"expression": ""
+		}
+	},
+	"bSpecifyFireRotation": true,
+	"fireTransform":
+	{
+		"originLocation": "Owner",
+		"originLocationSocket": "None",
+		"originOrientation": "Owner",
+		"originOrientationSocket": "None",
+		"originScale": "Owner",
+		"bUseRelativeLocationExpression": false,
+		"relativeLocation":
+		{
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"relativeLocationExpression":
+		{
+			"expression": ""
+		},
+		"bUseRelativeRotationExpression": true,
+		"relativeRotation":
+		{
+			"pitch": 15,
+			"yaw": 15,
+			"roll": 0
+		},
+		"relativeRotationExpression":
+		{
+			"expression": "const Roll = 0.0;\r\nconst Pitch = 0.0;\r\nconst Yaw = 5.0 * (1.0 - GetAbilityProgressRatio());\r\n\r\nRotator(Roll, Pitch, Yaw)"
+		},
+		"bUseRelativeScaleExpression": false,
+		"relativeScale":
+		{
+			"x": 1,
+			"y": 1,
+			"z": 1
+		},
+		"relativeScaleExpression":
+		{
+			"expression": ""
+		}
+	},
+	"fireRotationConeAngle": 0,
+	"fadeOutDuration": 3,
+	"bAttachOnDestroy": false,
+	"hitsIds": [],
+	"bUseSphereCollision": true,
+	"sphereCollisionRadius": 1,
+	"bUseSeparateCollisionRadiusForDynamicObjects": true,
+	"dynamicObjectSphereCollisionRadius": 75,
+	"maxProjectileHits": 99,
+	"projectileHitInterval": 0,
+	"bIgnoreNonTarget": false,
+	"bIgnoreWorldObjects": true,
+	"chainHitCount": 0,
+	"chainRadius": 0,
+	"bChainClosestTarget": false,
+	"projectileType": "PROJECTILE_Straight",
+	"bMaySpawnWithoutTarget": true,
+	"bAimedWithControlRotation": true,
+	"bLimitAngularSpeed": true,
+	"desiredAngularSpeed": 500,
+	"targetOffset":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"homingSocketName": "None",
+	"homingBoneName": "None",
+	"bFavorHighArc": false,
+	"arcingGravityScale": 1,
+	"arcCurve": "/Game/DesignAssets/Tests/KeenanTest/Test_Arc.Test_Arc",
+	"predictionAccuracy": 3,
+	"arcHeightModifier": 100,
+	"bFollowGround": false,
+	"guid": "6064630021201204386",
+	"name": "Ranger_Scattershot_Type2_Middle_5",
+	"typeId": "30316006"
+}

@@ -1,0 +1,151 @@
+{
+	"projectileClass": "/Game/Effects/FX_Harvestables/Fishing/Fishing_Projectile.Fishing_Projectile_C",
+	"projectileFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "WeaponCombo_Longbow_Projectile_FX"
+	},
+	"projectileEndFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"bDeactivateProjectileFXOnFire": false,
+	"fireFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"impactFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"range": 15000,
+	"lifeTime": 10,
+	"bPersistBetweenAbilities": false,
+	"speed": 3500,
+	"attachType": "AttachedSource",
+	"attachSocket": "WeaponSocketR",
+	"bUseAttachSocketForOriginLocation": true,
+	"bUseAttachSocketForOriginOrientation": true,
+	"spawnTransform":
+	{
+		"originLocation": "Source",
+		"originLocationSocket": "None",
+		"originOrientation": "Source",
+		"originOrientationSocket": "None",
+		"originScale": "Source",
+		"bUseRelativeLocationExpression": false,
+		"relativeLocation":
+		{
+			"x": 0,
+			"y": 150,
+			"z": -40
+		},
+		"relativeLocationExpression":
+		{
+			"expression": ""
+		},
+		"bUseRelativeRotationExpression": false,
+		"relativeRotation":
+		{
+			"pitch": 45,
+			"yaw": 0,
+			"roll": 45
+		},
+		"relativeRotationExpression":
+		{
+			"expression": ""
+		},
+		"bUseRelativeScaleExpression": false,
+		"relativeScale":
+		{
+			"x": 1,
+			"y": 1,
+			"z": 1
+		},
+		"relativeScaleExpression":
+		{
+			"expression": ""
+		}
+	},
+	"bSpecifyFireRotation": true,
+	"fireTransform":
+	{
+		"originLocation": "Owner",
+		"originLocationSocket": "None",
+		"originOrientation": "Owner",
+		"originOrientationSocket": "None",
+		"originScale": "Owner",
+		"bUseRelativeLocationExpression": false,
+		"relativeLocation":
+		{
+			"x": -40,
+			"y": 150,
+			"z": 0
+		},
+		"relativeLocationExpression":
+		{
+			"expression": ""
+		},
+		"bUseRelativeRotationExpression": false,
+		"relativeRotation":
+		{
+			"pitch": 20,
+			"yaw": 0,
+			"roll": 0
+		},
+		"relativeRotationExpression":
+		{
+			"expression": ""
+		},
+		"bUseRelativeScaleExpression": false,
+		"relativeScale":
+		{
+			"x": 1,
+			"y": 1,
+			"z": 1
+		},
+		"relativeScaleExpression":
+		{
+			"expression": ""
+		}
+	},
+	"fireRotationConeAngle": 0,
+	"fadeOutDuration": 10,
+	"bAttachOnDestroy": false,
+	"hitsIds": [],
+	"bUseSphereCollision": true,
+	"sphereCollisionRadius": 16,
+	"bUseSeparateCollisionRadiusForDynamicObjects": true,
+	"dynamicObjectSphereCollisionRadius": 32,
+	"maxProjectileHits": 999,
+	"projectileHitInterval": 0,
+	"bIgnoreNonTarget": false,
+	"bIgnoreWorldObjects": false,
+	"chainHitCount": 0,
+	"chainRadius": 0,
+	"bChainClosestTarget": false,
+	"projectileType": "PROJECTILE_Arcing",
+	"bMaySpawnWithoutTarget": true,
+	"bAimedWithControlRotation": false,
+	"desiredAngularSpeed": 450,
+	"targetOffset":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"homingSocketName": "None",
+	"bFavorHighArc": true,
+	"arcingGravityScale": 15,
+	"bFollowGround": false,
+	"guid": "6064632071475822592",
+	"name": "Fishing_Projectile",
+	"typeId": "30316006"
+}

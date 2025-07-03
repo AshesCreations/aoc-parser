@@ -1,0 +1,106 @@
+{
+	"lingeringEffectClass": "/Script/GameSystemsPlugin.AoCAbilityLingeringEffect",
+	"attachType": "None",
+	"attachSocketName": "None",
+	"bUseAttachSocketForOriginLocation": false,
+	"bUseAttachSocketForOriginOrientation": false,
+	"spawnTransform":
+	{
+		"originLocation": "Owner",
+		"originLocationSocket": "None",
+		"originOrientation": "Owner",
+		"originOrientationSocket": "None",
+		"originScale": "World",
+		"bUseRelativeLocationExpression": false,
+		"relativeLocation":
+		{
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"relativeLocationExpression":
+		{
+			"expression": ""
+		},
+		"bUseRelativeRotationExpression": false,
+		"relativeRotation":
+		{
+			"pitch": 0,
+			"yaw": 0,
+			"roll": 0
+		},
+		"relativeRotationExpression":
+		{
+			"expression": ""
+		},
+		"bUseRelativeScaleExpression": false,
+		"relativeScale":
+		{
+			"x": 1,
+			"y": 1,
+			"z": 1
+		},
+		"relativeScaleExpression":
+		{
+			"expression": ""
+		}
+	},
+	"deactivateFXTimeBeforeDestroy": 0,
+	"lifeTime": 10,
+	"expireAfterAppliedHits":
+	{
+		"expression": "1000000"
+	},
+	"expireIfExpressionTrue":
+	{
+		"expression": ""
+	},
+	"bUseGlobalTickRate": true,
+	"tickRate": 1,
+	"startTimeOffset": 0,
+	"endTimeOffset": 0,
+	"lingeringHitTargetingInfoId":
+	{
+		"guid": "6064629093685133314",
+		"typeId": "30316011",
+		"name": "None"
+	},
+	"initialHitsIds": [],
+	"lingeringHitsIds": [],
+	"endHitsIds": [],
+	"onBeginOverlapHitsIds": [
+		{
+			"guid": "6064629093690376195",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"onEndOverlapHitsIds": [],
+	"bNoHitOnFirstTick": false,
+	"speed": 0,
+	"bLockPitch": false,
+	"delayType": "DELAY_Time",
+	"delayTime": 0,
+	"delayTargetId":
+	{
+		"guid": "0",
+		"typeId": "30316011",
+		"name": "None"
+	},
+	"numberOfCharges": 1,
+	"lingeringFXId":
+	{
+		"guid": "6064629093741101062",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"delayedTrackingActivationFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"guid": "6064629093318393862",
+	"name": "Mage_ArcaneCircle_Linger",
+	"typeId": "30316007"
+}

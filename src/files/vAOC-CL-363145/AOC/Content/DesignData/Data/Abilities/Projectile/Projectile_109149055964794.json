@@ -1,0 +1,149 @@
+{
+	"projectileClass": "/Game/AutomatedTests/Bots/Kamehameha_Projectile.Kamehameha_Projectile_C",
+	"projectileFXId":
+	{
+		"guid": "107133462402743",
+		"typeId": "30316008",
+		"name": "Mage_Fireball_Projectile_Hit_HitFX"
+	},
+	"impactFXId":
+	{
+		"guid": "107133462402743",
+		"typeId": "30316008",
+		"name": "Mage_Fireball_Projectile_Hit_HitFX"
+	},
+	"range": 50000,
+	"lifeTime": 100,
+	"bPersistBetweenAbilities": false,
+	"speed": 1000,
+	"attachType": "AttachedSource",
+	"attachSocket": "ArrowSocketR",
+	"bUseAttachSocketForOriginLocation": true,
+	"bUseAttachSocketForOriginOrientation": true,
+	"spawnTransform":
+	{
+		"originLocation": "Source",
+		"originLocationSocket": "None",
+		"originOrientation": "Source",
+		"originOrientationSocket": "None",
+		"originScale": "Source",
+		"bUseRelativeLocationExpression": false,
+		"relativeLocation":
+		{
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"relativeLocationExpression":
+		{
+			"expression": ""
+		},
+		"bUseRelativeRotationExpression": false,
+		"relativeRotation":
+		{
+			"pitch": 0,
+			"yaw": 0,
+			"roll": 0
+		},
+		"relativeRotationExpression":
+		{
+			"expression": ""
+		},
+		"bUseRelativeScaleExpression": false,
+		"relativeScale":
+		{
+			"x": 1,
+			"y": 1,
+			"z": 1
+		},
+		"relativeScaleExpression":
+		{
+			"expression": ""
+		}
+	},
+	"bSpecifyFireRotation": false,
+	"fireTransform":
+	{
+		"originLocation": "Source",
+		"originLocationSocket": "None",
+		"originOrientation": "Source",
+		"originOrientationSocket": "None",
+		"originScale": "Source",
+		"bUseRelativeLocationExpression": false,
+		"relativeLocation":
+		{
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"relativeLocationExpression":
+		{
+			"expression": ""
+		},
+		"bUseRelativeRotationExpression": false,
+		"relativeRotation":
+		{
+			"pitch": 0,
+			"yaw": 0,
+			"roll": 0
+		},
+		"relativeRotationExpression":
+		{
+			"expression": ""
+		},
+		"bUseRelativeScaleExpression": false,
+		"relativeScale":
+		{
+			"x": 1,
+			"y": 1,
+			"z": 1
+		},
+		"relativeScaleExpression":
+		{
+			"expression": ""
+		}
+	},
+	"fireRotationConeAngle": 0,
+	"fadeOutDuration": 2,
+	"bAttachOnDestroy": true,
+	"hitsIds": [
+		{
+			"guid": "109149036435065",
+			"typeId": "30316005",
+			"name": "Kamehameha_Hit"
+		}
+	],
+	"bUseSphereCollision": true,
+	"sphereCollisionRadius": 16,
+	"bUseSeparateCollisionRadiusForDynamicObjects": false,
+	"dynamicObjectSphereCollisionRadius": 32,
+	"maxProjectileHits": 1,
+	"projectileHitInterval": 0,
+	"bIgnoreNonTarget": true,
+	"bIgnoreWorldObjects": true,
+	"chainHitCount": 0,
+	"chainRadius": 0,
+	"bChainClosestTarget": false,
+	"projectileType": "PROJECTILE_Homing",
+	"bMaySpawnWithoutTarget": false,
+	"bAimedWithControlRotation": true,
+	"bLimitAngularSpeed": false,
+	"desiredAngularSpeed": 0,
+	"targetOffset":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"homingSocketName": "None",
+	"homingBoneName": "None",
+	"bFavorHighArc": false,
+	"arcingGravityScale": 1,
+	"arcCurve": "None",
+	"predictionAccuracy": 1,
+	"arcHeightModifier": 1,
+	"bFollowGround": false,
+	"guid": "109149055964794",
+	"name": "Kamehameha_Projectile",
+	"typeId": "30316006"
+}

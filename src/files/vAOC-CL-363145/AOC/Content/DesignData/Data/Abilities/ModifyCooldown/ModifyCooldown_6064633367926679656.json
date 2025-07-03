@@ -1,0 +1,23 @@
+{
+	"targetCooldownAbility": [
+		{
+			"expression": "$#30316001:6064632660345830052$"
+		}
+	],
+	"bUseAbilityCost": false,
+	"deltaSeconds":
+	{
+		"expression": "const r = GetRemainingAbilityCooldown($#30316001:6064632660345830052$);\r\nMax(0.0, 3.0-r)"
+	},
+	"deltaCharges":
+	{
+		"expression": ""
+	},
+	"shouldTriggerCooldown":
+	{
+		"expression": ""
+	},
+	"guid": "6064633367926679656",
+	"name": "Rogue_Stealth_CastCancel",
+	"typeId": "3031600207"
+}

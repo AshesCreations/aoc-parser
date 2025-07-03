@@ -1,0 +1,560 @@
+{
+	"abilityTags": [
+		{
+			"tagName": "ability.weaponcombo"
+		},
+		{
+			"tagName": "ability.Melee"
+		}
+	],
+	"abilityIcon": "/Game/UI/Icons/Abilities/Weapons/WeaponCombo/TUI_Icon_WeaponCombo_Greatsword_01.TUI_Icon_WeaponCombo_Greatsword_01",
+	"abilityConditionalIcons": [
+		{
+			"abilityIcon": "/Game/UI/Icons/Abilities/Weapons/WeaponCombo/TUI_Icon_WeaponCombo_Greatsword_01.TUI_Icon_WeaponCombo_Greatsword_01",
+			"useIconCondition":
+			{
+				"expression": "// Hit 1 (Combo Count 0)\r\n// **all combo possibilities must be explicitly declared or a misfire will occur**\r\n\r\n// Declare initial combo count\r\nvar comboCount = 3;\r\n\r\n// If the player has the Extended Finisher Skill, increase combo count by 1\r\nif(EvalFormula($#10516612381411113:6064632710016204801$) == 1.0)\r\n{\r\nset comboCount = comboCount + 1;\r\n}\r\n\r\n// Determine the current combo step relative to the maximum eligible combo count\r\nGetAbilityComboCount() % comboCount == 0"
+			}
+		},
+		{
+			"abilityIcon": "/Game/UI/Icons/Abilities/Weapons/WeaponCombo/TUI_Icon_WeaponCombo_Greatsword_02.TUI_Icon_WeaponCombo_Greatsword_02",
+			"useIconCondition":
+			{
+				"expression": "// Hit 2 (Combo Count 1)\r\n// **all combo possibilities must be explicitly declared or a misfire will occur**\r\n\r\n// Declare initial combo count\r\nvar comboCount = 3;\r\n\r\n// If the player has the Extended Finisher Skill, increase combo count by 1\r\nif(EvalFormula($#10516612381411113:6064632710016204801$) == 1.0)\r\n{\r\nset comboCount = comboCount + 1;\r\n}\r\n\r\n// Determine the current combo step relative to the maximum eligible combo count\r\nGetAbilityComboCount() % comboCount == 1"
+			}
+		},
+		{
+			"abilityIcon": "/Game/UI/Icons/Abilities/Weapons/WeaponCombo/TUI_Icon_WeaponCombo_Greatsword_03.TUI_Icon_WeaponCombo_Greatsword_03",
+			"useIconCondition":
+			{
+				"expression": "// Hit 3 Proc (Combo Count 2) -- Deadly Finisher\r\n// **all combo possibilities must be explicitly declared or a misfire will occur**\r\n\r\n// Declare initial combo count\r\nvar comboCount = 3;\r\n\r\n// If the player has the Extended Finisher Skill, increase combo count by 1\r\nif(EvalFormula($#10516612381411113:6064632710016204801$) == 1.0)\r\n{\r\nset comboCount = comboCount + 1;\r\n}\r\n\r\n// Check to see if player has the Finisher skill to fire a proc hit, and that a proc does occur, otherwise this resolves false\r\nEvalFormula($#10516612381411113:6064632710016925698$) == 1.0 &&\r\nEvalFormula($#10516612381411113:6064632710129975299$) == 1.0 &&\r\n\r\n// Determine the current combo step relative to the maximum eligible combo count\r\nGetAbilityComboCount() % comboCount == 2"
+			}
+		},
+		{
+			"abilityIcon": "/Game/UI/Icons/Abilities/Weapons/WeaponCombo/TUI_Icon_WeaponCombo_Greatsword_03.TUI_Icon_WeaponCombo_Greatsword_03",
+			"useIconCondition":
+			{
+				"expression": "// Hit 3 (Combo Count 2)\r\n// **all combo possibilities must be explicitly declared or a misfire will occur**\r\n\r\n// Declare initial combo count\r\nvar comboCount = 3;\r\n\r\n// If the player has the Extended Finisher Skill, increase combo count by 1\r\nif(EvalFormula($#10516612381411113:6064632710016204801$) == 1.0)\r\n{\r\nset comboCount = comboCount + 1;\r\n}\r\n\r\n// Determine the current combo step relative to the maximum eligible combo count\r\nGetAbilityComboCount() % comboCount == 2"
+			}
+		},
+		{
+			"abilityIcon": "/Game/UI/Icons/Abilities/Weapons/WeaponCombo/TUI_Icon_WeaponCombo_Greatsword_04.TUI_Icon_WeaponCombo_Greatsword_04",
+			"useIconCondition":
+			{
+				"expression": "// Hit 4 Proc (Combo Count 3) -- Deadly Extended Finisher\r\n// **all combo possibilities must be explicitly declared or a misfire will occur**\r\n\r\n// Declare initial combo count. As this is an Extended Finisher, Combo Count should be +1 to previous counts.\r\nvar comboCount = 4;\r\n\r\n// Check to see if player has the Finisher skill to fire a proc hit, and that a proc does occur, otherwise this resolves false\r\nEvalFormula($#10516612381411113:6064632710016204801$) == 1.0 &&\r\nEvalFormula($#10516612381411113:6064632704790298788$) == 1.0 &&\r\n\r\n// Determine the current combo step relative to the maximum eligible combo count\r\nGetAbilityComboCount() % comboCount == 3"
+			}
+		},
+		{
+			"abilityIcon": "/Game/UI/Icons/Abilities/Weapons/WeaponCombo/TUI_Icon_WeaponCombo_Greatsword_04.TUI_Icon_WeaponCombo_Greatsword_04",
+			"useIconCondition":
+			{
+				"expression": "// Hit 4 (Combo Count 3) -- Extended Finisher\r\n// **all combo possibilities must be explicitly declared or a misfire will occur**\r\n\r\n// Declare initial combo count. As this is an Extended Finisher, Combo Count should be +1 to previous counts.\r\nvar comboCount = 4;\r\n\r\n// Determine the current combo step relative to the maximum eligible combo count\r\nGetAbilityComboCount() % comboCount == 3"
+			}
+		}
+	],
+	"bOverrideRangeInTooltip": false,
+	"customTooltipRange":
+	{
+		"expression": ""
+	},
+	"bOverrideProgressBarClass": false,
+	"progressBarClass": "None",
+	"progressBarSortScore":
+	{
+		"expression": ""
+	},
+	"hasProc":
+	{
+		"expression": ""
+	},
+	"hasAbilitySynergy":
+	{
+		"expression": ""
+	},
+	"hasStatusEffectSynergy":
+	{
+		"expression": ""
+	},
+	"animMontages": [
+		{
+			"abilityDirection": "NONE",
+			"animExpression":
+			{
+				"expression": "// Hit 1 (Combo Count 0)\r\n// **all combo possibilities must be explicitly declared or a misfire will occur**\r\n\r\n// Declare initial combo count\r\nvar comboCount = 3;\r\n\r\n// If the player has the Extended Finisher Skill, increase combo count by 1\r\nif(EvalFormula($#10516612381411113:6064632710016204801$) == 1.0)\r\n{\r\nset comboCount = comboCount + 1;\r\n}\r\n\r\n// Determine the current combo step relative to the maximum eligible combo count\r\nGetAbilityComboCount() % comboCount == 0"
+			},
+			"startSectionName": "None",
+			"bOverrideSequenceResetTime": false,
+			"sequenceResetTime": 0,
+			"abilityAnimationSoftPaths": [
+				"/Game/Characters/Animations/2H_SWD/WeaponCombo/CM_M_2H_SWD_WeaponCombo_01_Montage.CM_M_2H_SWD_WeaponCombo_01_Montage"
+			],
+			"targetingKey": 0,
+			"hitKeys": []
+		},
+		{
+			"abilityDirection": "NONE",
+			"animExpression":
+			{
+				"expression": "// Hit 2 (Combo Count 1)\r\n// **all combo possibilities must be explicitly declared or a misfire will occur**\r\n\r\n// Declare initial combo count\r\nvar comboCount = 3;\r\n\r\n// If the player has the Extended Finisher Skill, increase combo count by 1\r\nif(EvalFormula($#10516612381411113:6064632710016204801$) == 1.0)\r\n{\r\nset comboCount = comboCount + 1;\r\n}\r\n\r\n// Determine the current combo step relative to the maximum eligible combo count\r\nGetAbilityComboCount() % comboCount == 1"
+			},
+			"startSectionName": "None",
+			"bOverrideSequenceResetTime": false,
+			"sequenceResetTime": 0,
+			"abilityAnimationSoftPaths": [
+				"/Game/Characters/Animations/2H_SWD/WeaponCombo/CM_M_2H_SWD_WeaponCombo_02_Montage.CM_M_2H_SWD_WeaponCombo_02_Montage"
+			],
+			"targetingKey": 0,
+			"hitKeys": []
+		},
+		{
+			"abilityDirection": "NONE",
+			"animExpression":
+			{
+				"expression": "// Hit 3 Proc (Combo Count 2) -- Deadly Finisher\r\n// **all combo possibilities must be explicitly declared or a misfire will occur**\r\n\r\n// Declare initial combo count\r\nvar comboCount = 3;\r\n\r\n// If the player has the Extended Finisher Skill, increase combo count by 1\r\nif(EvalFormula($#10516612381411113:6064632710016204801$) == 1.0)\r\n{\r\nset comboCount = comboCount + 1;\r\n}\r\n\r\n// Check to see if player has the Finisher skill to fire a proc hit, and that a proc does occur, otherwise this resolves false\r\nEvalFormula($#10516612381411113:6064632710016925698$) == 1.0 &&\r\nEvalFormula($#10516612381411113:6064632710129975299$) == 1.0 &&\r\n\r\n// Determine the current combo step relative to the maximum eligible combo count\r\nGetAbilityComboCount() % comboCount == 2"
+			},
+			"startSectionName": "None",
+			"bOverrideSequenceResetTime": false,
+			"sequenceResetTime": 0,
+			"abilityAnimationSoftPaths": [
+				"/Game/Characters/Animations/2H_SWD/WeaponCombo/CM_M_2H_SWD_WeaponCombo_03_Proc_Montage.CM_M_2H_SWD_WeaponCombo_03_Proc_Montage"
+			],
+			"targetingKey": 0,
+			"hitKeys": []
+		},
+		{
+			"abilityDirection": "NONE",
+			"animExpression":
+			{
+				"expression": "// Hit 3 (Combo Count 2)\r\n// **all combo possibilities must be explicitly declared or a misfire will occur**\r\n\r\n// Declare initial combo count\r\nvar comboCount = 3;\r\n\r\n// If the player has the Extended Finisher Skill, increase combo count by 1\r\nif(EvalFormula($#10516612381411113:6064632710016204801$) == 1.0)\r\n{\r\nset comboCount = comboCount + 1;\r\n}\r\n\r\n// Determine the current combo step relative to the maximum eligible combo count\r\nGetAbilityComboCount() % comboCount == 2"
+			},
+			"startSectionName": "None",
+			"bOverrideSequenceResetTime": false,
+			"sequenceResetTime": 0,
+			"abilityAnimationSoftPaths": [
+				"/Game/Characters/Animations/2H_SWD/WeaponCombo/CM_M_2H_SWD_WeaponCombo_03_Montage.CM_M_2H_SWD_WeaponCombo_03_Montage"
+			],
+			"targetingKey": 0,
+			"hitKeys": []
+		},
+		{
+			"abilityDirection": "NONE",
+			"animExpression":
+			{
+				"expression": "// Hit 4 Proc (Combo Count 3) -- Deadly Extended Finisher\r\n// **all combo possibilities must be explicitly declared or a misfire will occur**\r\n\r\n// Declare initial combo count. As this is an Extended Finisher, Combo Count should be +1 to previous counts.\r\nvar comboCount = 4;\r\n\r\n// Check to see if player has the Finisher skill to fire a proc hit, and that a proc does occur, otherwise this resolves false\r\nEvalFormula($#10516612381411113:6064632710016204801$) == 1.0 &&\r\nEvalFormula($#10516612381411113:6064632704790298788$) == 1.0 &&\r\n\r\n// Determine the current combo step relative to the maximum eligible combo count\r\nGetAbilityComboCount() % comboCount == 3"
+			},
+			"startSectionName": "None",
+			"bOverrideSequenceResetTime": false,
+			"sequenceResetTime": 0,
+			"abilityAnimationSoftPaths": [
+				"/Game/Characters/Animations/2H_SWD/WeaponCombo/CM_M_2H_SWD_WeaponCombo_04_Proc_Montage.CM_M_2H_SWD_WeaponCombo_04_Proc_Montage"
+			],
+			"targetingKey": 0,
+			"hitKeys": []
+		},
+		{
+			"abilityDirection": "NONE",
+			"animExpression":
+			{
+				"expression": "// Hit 4 (Combo Count 3) -- Extended Finisher\r\n// **all combo possibilities must be explicitly declared or a misfire will occur**\r\n\r\n// Declare initial combo count. As this is an Extended Finisher, Combo Count should be +1 to previous counts.\r\nvar comboCount = 4;\r\n\r\n// Determine the current combo step relative to the maximum eligible combo count\r\nGetAbilityComboCount() % comboCount == 3"
+			},
+			"startSectionName": "None",
+			"bOverrideSequenceResetTime": false,
+			"sequenceResetTime": 0,
+			"abilityAnimationSoftPaths": [
+				"/Game/Characters/Animations/2H_SWD/WeaponCombo/CM_M_2H_SWD_WeaponCombo_04_Montage.CM_M_2H_SWD_WeaponCombo_04_Montage"
+			],
+			"targetingKey": 0,
+			"hitKeys": []
+		}
+	],
+	"activationRequirements":
+	{
+		"expression": ""
+	},
+	"weaponRequirement": "RequiresMelee",
+	"bRequiresStealthActivation": false,
+	"bDisableDuringCooldown": false,
+	"cooldown":
+	{
+		"expression": "0"
+	},
+	"sharedCooldownTag": "GCD_Prototype",
+	"cooldownCharges":
+	{
+		"expression": ""
+	},
+	"bOverrideInitialCooldownCharges": false,
+	"initialCooldownChargesOverride":
+	{
+		"expression": ""
+	},
+	"bPersistCooldown": false,
+	"suppressCooldownInUI":
+	{
+		"expression": ""
+	},
+	"bDeferAbilityTrigger": false,
+	"bMayNotBeUsedSimultaneously": false,
+	"bStopsAutoAttack": false,
+	"costs": [],
+	"hitsIds":
+	{
+		"0":
+		{
+			"guid": "108435806049912",
+			"typeId": "30316005",
+			"name": "None"
+		},
+		"1":
+		{
+			"guid": "108470469678712",
+			"typeId": "30316005",
+			"name": "None"
+		},
+		"2":
+		{
+			"guid": "108471206958712",
+			"typeId": "30316005",
+			"name": "None"
+		},
+		"3":
+		{
+			"guid": "6064630396806891078",
+			"typeId": "30316005",
+			"name": "None"
+		},
+		"4":
+		{
+			"guid": "6064630409130083142",
+			"typeId": "30316005",
+			"name": "None"
+		},
+		"5":
+		{
+			"guid": "6064630531876782523",
+			"typeId": "30316005",
+			"name": "None"
+		},
+		"6":
+		{
+			"guid": "6064631211384836179",
+			"typeId": "30316005",
+			"name": "None"
+		},
+		"7":
+		{
+			"guid": "6064631211390406740",
+			"typeId": "30316005",
+			"name": "None"
+		},
+		"8":
+		{
+			"guid": "6064631211394338901",
+			"typeId": "30316005",
+			"name": "None"
+		},
+		"9":
+		{
+			"guid": "6064631211398533206",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	},
+	"effectsIds":
+	{
+		"1":
+		{
+			"guid": "6064628583615561729",
+			"typeId": "30316002",
+			"name": "None"
+		},
+		"2":
+		{
+			"guid": "6064628583684374531",
+			"typeId": "30316002",
+			"name": "None"
+		},
+		"3":
+		{
+			"guid": "6064630415070212917",
+			"typeId": "30316002",
+			"name": "None"
+		},
+		"4":
+		{
+			"guid": "6064630565579262387",
+			"typeId": "30316002",
+			"name": "None"
+		}
+	},
+	"projectilesIds":
+	{
+	},
+	"lingeringEffectsIds":
+	{
+	},
+	"abilityFXIds":
+	{
+		"1":
+		{
+			"guid": "6064632281234538496",
+			"typeId": "30316008",
+			"name": "None"
+		},
+		"2":
+		{
+			"guid": "6064632281260621826",
+			"typeId": "30316008",
+			"name": "None"
+		},
+		"3":
+		{
+			"guid": "6064632281261080579",
+			"typeId": "30316008",
+			"name": "None"
+		},
+		"4":
+		{
+			"guid": "6064632281262260228",
+			"typeId": "30316008",
+			"name": "None"
+		},
+		"5":
+		{
+			"guid": "6064632281262850053",
+			"typeId": "30316008",
+			"name": "None"
+		},
+		"6":
+		{
+			"guid": "6064632281263243270",
+			"typeId": "30316008",
+			"name": "None"
+		},
+		"7":
+		{
+			"guid": "6064632281263702023",
+			"typeId": "30316008",
+			"name": "None"
+		},
+		"8":
+		{
+			"guid": "6064632281264160776",
+			"typeId": "30316008",
+			"name": "None"
+		},
+		"9":
+		{
+			"guid": "6064632281264488457",
+			"typeId": "30316008",
+			"name": "None"
+		},
+		"10":
+		{
+			"guid": "6064632281264947210",
+			"typeId": "30316008",
+			"name": "None"
+		}
+	},
+	"animBranchesIds":
+	{
+	},
+	"conditionalBranchesIds":
+	{
+	},
+	"reactionsIds":
+	{
+		"1":
+		{
+			"guid": "6064630565600233908",
+			"typeId": "3031600202",
+			"name": "None"
+		}
+	},
+	"targetingRecordsIds":
+	{
+		"1":
+		{
+			"guid": "108888849012344",
+			"typeId": "30316011",
+			"name": "None"
+		},
+		"2":
+		{
+			"guid": "108888865330809",
+			"typeId": "30316011",
+			"name": "None"
+		},
+		"3":
+		{
+			"guid": "108888868017786",
+			"typeId": "30316011",
+			"name": "None"
+		},
+		"4":
+		{
+			"guid": "108888869721723",
+			"typeId": "30316011",
+			"name": "None"
+		},
+		"5":
+		{
+			"guid": "108888870246012",
+			"typeId": "30316011",
+			"name": "None"
+		}
+	},
+	"progressDisruptionRecordsIds":
+	{
+	},
+	"comboInputs": [
+		"BUTTON_Attack1"
+	],
+	"bExactInput": false,
+	"bufferPriority": -1,
+	"bUsableFromHotbar": true,
+	"abilityActivationInput": "UserConfigurable",
+	"bMayEscCancel": true,
+	"bIsAOEClickedAbility": false,
+	"targetActivationRequirement": "Never",
+	"applicableTargets": 2,
+	"applicableTypes": 0,
+	"applicableLifeStates": 1,
+	"applicableCasterLifeStates": 1,
+	"bNeverCancelAbility": false,
+	"bUseTargetingRecord": true,
+	"targetingRecordId":
+	{
+		"guid": "108888849012344",
+		"typeId": "30316011",
+		"name": "None"
+	},
+	"bCheckTargetValidity": true,
+	"bPerformLoSCheck": true,
+	"bPerformConeCheck": false,
+	"angleCenter": 0,
+	"distanceCenter": 0,
+	"validAngle": 0,
+	"validDistance": 0,
+	"angleCenterExp":
+	{
+		"expression": "0.0"
+	},
+	"distanceCenterExp":
+	{
+		"expression": "0.0"
+	},
+	"validAngleExp":
+	{
+		"expression": "0.0"
+	},
+	"validDistanceExp":
+	{
+		"expression": "0.0"
+	},
+	"speedMultiplierSource": "SPEED_AttackSpeed",
+	"bHoldAnimation": false,
+	"maximumHoldTime": 0,
+	"bMayCancelHoldAtAnyTime": true,
+	"cancelHoldSections": [],
+	"onCancelHoldBranchKey": 0,
+	"bOverrideHeldBehavior": false,
+	"heldAbilityBehavior": "Naive",
+	"bForceAnimCancel": false,
+	"bAllowRotation": true,
+	"pitchMode": "None",
+	"minPitch": 0,
+	"maxPitch": 0,
+	"bUsableInAir": true,
+	"bUsableWhileSwimming": true,
+	"bUsableWhileMounted": false,
+	"bOmnidirectional": false,
+	"bOrientWithInterpOnStart": false,
+	"onStartInterpConstRate": 0,
+	"bOrientWithInterpOnEnd": true,
+	"onEndInterpConstRate": 240,
+	"bQuickCancelFromAllAbilities": false,
+	"quickCancelFromAbilitiesIds": [],
+	"cancelSectionName": "None",
+	"bRequiresAnimCancel": false,
+	"cancelFromAbilitiesIds": [],
+	"cancelFromTagQuery":
+	{
+		"tokenStreamVersion": 0,
+		"tagDictionary": [],
+		"queryTokenStream": [],
+		"userDescription": "",
+		"autoDescription": ""
+	},
+	"scriptOnActivate": "None",
+	"areaTemplateFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"areaTemplateMaterial": "None",
+	"areaTemplateRotationRate": 0,
+	"areaTargetRadius": 0,
+	"areaTargetRange": 0,
+	"bShouldFaceClickedTarget": false,
+	"bPerformIsWalkableCheck": true,
+	"bMayTargetWater": false,
+	"bResetSequenceAfterTime": true,
+	"sequenceResetTime": 2,
+	"bForceComboBreak": false,
+	"abilityName": "NSLOCTEXT(\"[1909495A4C2095068D406C9D33F90055]\", \"715E367B4561630D0B937A972DCA1E12\", \"Greatsword Combo Attack\")",
+	"abilityDescription": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"F1BEC6F9456F1D4FFFCC818B27F53A5A\", \"Swing your greatsword in front of you in a series of attacks.  \\r\\n\\r\\n1. Hit 1 - $hit0.max$\\r\\n2. Hit 2 - $hit1.max$\\r\\n3. {Effect:Weapon_Description_Finisher} - \\r\\n\\t\\t$hit2.max$ \\r\\n\\t\\t$hit3.max$\\r\\n\\t\\t{formula:WeaponCombo_FinisherProcEligible:{formula:Weapon_SkillTree_DeadlyFinisherProcChance.%} chance to instead trigger a {effect:Weapon_Description_DeadlyFinisher} -\\r\\n\\t\\t\\t\\t\\t\\t{hit4.max}\\r\\n\\t\\t\\t\\t\\t\\t{hit5.max}\\r\\n\\t\\t\\t\\t\\t\\t{skill:ActiveWeapon:Weapon_Finisher_Bleed:Applies {effect:Status_Bleeding} to struck targets}{skill:ActiveWeapon:Weapon_Finisher_Snare:Applies {effect:Status_Snared} to struck targets}{skill:ActiveWeapon:Weapon_Finisher_Wound:Applies {effect:Status_Wounded} to struck targets}{skill:ActiveWeapon:Weapon_Finisher_Daze:Applies {effect:Status_Dazed} to struck targets}{skill:ActiveWeapon:Weapon_Finisher_Stagger:Applies {effect:Status_Staggered} to struck targets}{skill:ActiveWeapon:Weapon_Finisher_Burning:Applies {effect:Status_Burning} to struck targets}{skill:ActiveWeapon:Weapon_Finisher_Chilled:Applies {effect:Status_Chilled} to struck targets}{skill:ActiveWeapon:Weapon_Finisher_Volatile:Applies {effect:Status_Volatile} to struck targets}{skill:ActiveWeapon:Weapon_Proc_SwordmastersSwiftness:\\r\\n\\t\\t\\t\\t\\t\\tTriggers {effect:Weapon_Proc_SwordmastersSwiftness_ComboTooltipReference}}{!skill:ActiveWeapon:Weapon_Passive_Concussion_FinisherMod:{skill:ActiveWeapon:Weapon_Passive_Concussion:\\r\\n\\t\\t\\t\\t\\t\\tTriggers {effect:Weapon_Passive_Concussion_ComboTooltipReference}}}{skill:ActiveWeapon:Weapon_Proc_RefreshingFollowthrough:\\r\\n\\t\\tTriggers {effect:Weapon_Proc_RefreshingFollowthrough}}{skill:ActiveWeapon:Weapon_Proc_Ward:\\r\\n\\t\\tTriggers {effect:Weapon_Proc_Ward}}{skill:ActiveWeapon:Weapon_Passive_Capstone_RhythmicSwings:\\r\\n\\t\\tTriggers {effect:Weapon_Passive_Capstone_RhythmicSwings}}{skill:ActiveWeapon:Weapon_Passive_Capstone_InnerFire:\\r\\n\\t\\tTriggers {effect:Weapon_Passive_Capstone_InnerFire}}{skill:ActiveWeapon:Weapon_Passive_Concussion_FinisherMod:\\r\\n\\t\\tTriggers {effect:Weapon_Passive_Concussion_ComboTooltipReference}}}{formula:WeaponCombo_ExtendedFinisherProcEligible:\\r\\n4. {Effect:Weapon_Description_ExtendedFinisher} - \\r\\n\\t\\t{hit6.max}\\r\\n\\t\\t{hit7.max}\\r\\n\\t\\t{formula:WeaponCombo_ExtendedFinisherProcEligible:{formula:Weapon_SkillTree_DeadlyExtendedFinisherProcChance.%} chance to instead trigger a {effect:Weapon_Description_DeadlyExtendedFinisher} -\\r\\n\\t\\t\\t\\t\\t\\t{hit8.max}\\r\\n\\t\\t\\t\\t\\t\\t{hit9.max}\\r\\n\\t\\t\\t\\t\\t\\t{skill:ActiveWeapon:Weapon_ExtendedFinisher_Bleed:Applies {effect:Status_Bleeding} to struck targets}{skill:ActiveWeapon:Weapon_ExtendedFinisher_Snare:Applies {effect:Status_Snared} to struck targets}{skill:ActiveWeapon:Weapon_ExtendedFinisher_Wound:Applies {effect:Status_Wounded} to struck targets}{skill:ActiveWeapon:Weapon_ExtendedFinisher_Daze:Applies {effect:Status_Dazed} to struck targets}{skill:ActiveWeapon:Weapon_ExtendedFinisher_Stagger:Applies {effect:Status_Staggered} to struck targets}{skill:ActiveWeapon:Weapon_ExtendedFinisher_Echo:Triggers {effect:Weapon_ExtendedFinisher_Proc_Echo}}{skill:ActiveWeapon:Weapon_ExtendedFinisher_PerfectTiming:Triggers {effect:Weapon_Proc_PerfectTiming}}{skill:ActiveWeapon:Weapon_Proc_SwordmastersSwiftness:\\r\\n\\t\\t\\t\\t\\t\\tTriggers {effect:Weapon_Proc_SwordmastersSwiftness_ComboTooltipReference}}{!skill:ActiveWeapon:Weapon_Passive_Concussion_ExtendedFinisherMod:{skill:ActiveWeapon:Weapon_Passive_Concussion:\\r\\n\\t\\t\\t\\t\\t\\tTriggers {effect:Weapon_Passive_Concussion_ComboTooltipReference}}}{skill:ActiveWeapon:Weapon_Proc_RefreshingFollowthrough:\\r\\n\\t\\tTriggers {effect:Weapon_Proc_RefreshingFollowthrough}}{skill:ActiveWeapon:Weapon_Proc_Ward:\\r\\n\\t\\tTriggers {effect:Weapon_Proc_Ward}}{skill:ActiveWeapon:Weapon_Passive_Capstone_RhythmicSwings:\\r\\n\\t\\tTriggers {effect:Weapon_Passive_Capstone_RhythmicSwings}}{skill:ActiveWeapon:Weapon_Passive_Capstone_InnerFire:\\r\\n\\t\\tTriggers {effect:Weapon_Passive_Capstone_InnerFire}}{skill:ActiveWeapon:Weapon_Passive_Concussion_ExtendedFinisherMod:\\r\\n\\t\\tTriggers {effect:Weapon_Passive_Concussion_ComboTooltipReference}}}}\")",
+	"bAllowMovement": true,
+	"bPROTOTYPERotateRootMotion": true,
+	"rootMotionFreezeBehavior": "StopOnContact",
+	"rootMotionFreezeDistance": 0,
+	"rootMotionFreezeRadiusScale": 1,
+	"rootMotionIgnoreNonTarget": false,
+	"bVisualizeSweepCollision": false,
+	"canBreakEffects":
+	{
+		"expression": ""
+	},
+	"effectsToBreak":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"actionModeAbilityId":
+	{
+		"guid": "0",
+		"typeId": "30316001",
+		"name": "None"
+	},
+	"aBTestingAbilitiesIds": [],
+	"animCancelsIds":
+	{
+		"1":
+		{
+			"guid": "6064628951682514945",
+			"typeId": "12352236",
+			"name": "None"
+		}
+	},
+	"modifyCooldownsIds":
+	{
+	},
+	"aLSAbilityId":
+	{
+		"guid": "0",
+		"typeId": "30316001",
+		"name": "None"
+	},
+	"inputTerms": [],
+	"dynamicCastDuration":
+	{
+		"expression": ""
+	},
+	"bNeverCull": false,
+	"networkingMaxSpeed": 0,
+	"bInteruptChannelOnAbilityEnd": false,
+	"guid": "6064630480735371270",
+	"name": "WeaponCombo_Melee_2H_Sword",
+	"typeId": "30316001"
+}

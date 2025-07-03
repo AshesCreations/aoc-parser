@@ -1,0 +1,144 @@
+{
+	"projectileClass": "/Script/GameSystemsPlugin.AoCAbilityProjectile",
+	"projectileFXId":
+	{
+		"guid": "109189078210168",
+		"typeId": "30316008",
+		"name": "AirStrike_WeaponTrail"
+	},
+	"impactFXId":
+	{
+		"guid": "108967948473976",
+		"typeId": "30316008",
+		"name": "AirStrike_Impact"
+	},
+	"range": 10000,
+	"lifeTime": 10,
+	"bPersistBetweenAbilities": false,
+	"speed": 4000,
+	"attachType": "AttachedSource",
+	"attachSocket": "None",
+	"bUseAttachSocketForOriginLocation": true,
+	"bUseAttachSocketForOriginOrientation": true,
+	"spawnTransform":
+	{
+		"originLocation": "Source",
+		"originLocationSocket": "None",
+		"originOrientation": "Source",
+		"originOrientationSocket": "None",
+		"originScale": "Source",
+		"bUseRelativeLocationExpression": false,
+		"relativeLocation":
+		{
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"relativeLocationExpression":
+		{
+			"expression": ""
+		},
+		"bUseRelativeRotationExpression": false,
+		"relativeRotation":
+		{
+			"pitch": -50,
+			"yaw": 0,
+			"roll": 0
+		},
+		"relativeRotationExpression":
+		{
+			"expression": ""
+		},
+		"bUseRelativeScaleExpression": false,
+		"relativeScale":
+		{
+			"x": 1,
+			"y": 1,
+			"z": 1
+		},
+		"relativeScaleExpression":
+		{
+			"expression": ""
+		}
+	},
+	"bSpecifyFireRotation": true,
+	"fireTransform":
+	{
+		"originLocation": "Source",
+		"originLocationSocket": "None",
+		"originOrientation": "Source",
+		"originOrientationSocket": "None",
+		"originScale": "Source",
+		"bUseRelativeLocationExpression": false,
+		"relativeLocation":
+		{
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"relativeLocationExpression":
+		{
+			"expression": ""
+		},
+		"bUseRelativeRotationExpression": false,
+		"relativeRotation":
+		{
+			"pitch": -50,
+			"yaw": 0,
+			"roll": 0
+		},
+		"relativeRotationExpression":
+		{
+			"expression": ""
+		},
+		"bUseRelativeScaleExpression": false,
+		"relativeScale":
+		{
+			"x": 1,
+			"y": 1,
+			"z": 1
+		},
+		"relativeScaleExpression":
+		{
+			"expression": ""
+		}
+	},
+	"fireRotationConeAngle": 0,
+	"fadeOutDuration": 0.20000000298023224,
+	"bAttachOnDestroy": true,
+	"hitsIds": [
+		{
+			"guid": "108889629283960",
+			"typeId": "30316005",
+			"name": "AirStrikeConcept_Hit"
+		}
+	],
+	"bUseSphereCollision": true,
+	"sphereCollisionRadius": 16,
+	"bUseSeparateCollisionRadiusForDynamicObjects": false,
+	"dynamicObjectSphereCollisionRadius": 32,
+	"maxProjectileHits": 1,
+	"projectileHitInterval": 0,
+	"bIgnoreNonTarget": false,
+	"bIgnoreWorldObjects": false,
+	"chainHitCount": 0,
+	"chainRadius": 0,
+	"bChainClosestTarget": false,
+	"projectileType": "PROJECTILE_Straight",
+	"bMaySpawnWithoutTarget": false,
+	"bAimedWithControlRotation": false,
+	"desiredAngularSpeed": 0,
+	"targetOffset":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"homingSocketName": "None",
+	"bFavorHighArc": false,
+	"arcingGravityScale": 1,
+	"bFollowGround": false,
+	"guid": "108962565412473",
+	"name": "Ranger_AirStrike_3",
+	"typeId": "30316006"
+}

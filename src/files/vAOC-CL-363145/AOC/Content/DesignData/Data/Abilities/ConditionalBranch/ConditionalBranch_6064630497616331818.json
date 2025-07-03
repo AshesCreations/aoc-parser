@@ -1,0 +1,29 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 0,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0,
+		"fishingEvents": 0
+	},
+	"bEvaluateOnTick": true,
+	"branchTrigger":
+	{
+		"expression": "!GetSkillPurchased(GetInstigator(), $#30316003:107813788866168$, $#981011333:6064630497868842032$)\r\n||GetStat(GetInstigator(), $#10516612381411111:6064629959589298751$) == 0.0"
+	},
+	"bPredictedOnAutonomousClient": false,
+	"animBranchId":
+	{
+		"guid": "6064630497618494507",
+		"typeId": "30316010",
+		"name": "None"
+	},
+	"bOnlyBranchWithValidTarget": false,
+	"bOnRootMotionCollision": false,
+	"guid": "6064630497616331818",
+	"name": "Fighter_Passive_Whirlwind_Overdrive",
+	"typeId": "30316009"
+}

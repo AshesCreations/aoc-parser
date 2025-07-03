@@ -1,0 +1,298 @@
+{
+	"eventTags": [
+		{
+			"tagName": "Element.Physical.Pierce"
+		},
+		{
+			"tagName": "ability.weaponcombo"
+		},
+		{
+			"tagName": "ComboStep.End"
+		},
+		{
+			"tagName": "ComboStep.End2"
+		},
+		{
+			"tagName": "ComboStep.ProcHit"
+		},
+		{
+			"tagName": "ability.Ranged"
+		}
+	],
+	"bShouldUseItemTags": true,
+	"applicableTargets": 2,
+	"applicableTypes": 0,
+	"applicableLifeStates": 1,
+	"applicationRequirements":
+	{
+		"expression": ""
+	},
+	"bCapHits": false,
+	"maxTargetsPerHit":
+	{
+		"expression": ""
+	},
+	"bLimitHitsPerTarget": false,
+	"maxHitsPerTarget":
+	{
+		"expression": ""
+	},
+	"bLimitHitsGlobally": false,
+	"maxHitsGlobally":
+	{
+		"expression": ""
+	},
+	"hitFloatingText": "",
+	"hitDelay":
+	{
+		"expression": ""
+	},
+	"applyEffects": [
+		{
+			"stackCount":
+			{
+				"expression": ""
+			},
+			"effectId":
+			{
+				"guid": "109122465715835",
+				"typeId": "30316002",
+				"name": "None"
+			},
+			"effectApplicationRequirement":
+			{
+				"expression": "GetSkillPurchased(GetInstigator(),$#30316003:6064630408328774114$, $#981011333:6064631726974502125$)"
+			},
+			"effectDuration":
+			{
+				"expression": "const base = CalcEffectDuration(GetEffectRecordByName(\"Status_Staggered\"));\r\nconst dur1 = SelectInt(GetSkillPurchased(GetInstigator(),$#30316003:6064630408328774114$, $#981011333:6064631726878557398$), 1, 0);\r\nconst dur2 = SelectInt(GetSkillPurchased(GetInstigator(),$#30316003:6064630408328774114$, $#981011333:6064631726878622935$), 1, 0);\r\nconst dur3 = SelectInt(GetSkillPurchased(GetInstigator(),$#30316003:6064630408328774114$, $#981011333:6064631726878819544$), 1, 0);\r\n\r\nbase * (1 + 0.25 * dur1 + 0.2 * dur2 + 0.15 * dur3)"
+			}
+		},
+		{
+			"stackCount":
+			{
+				"expression": "2"
+			},
+			"effectId":
+			{
+				"guid": "6064629959492501599",
+				"typeId": "30316002",
+				"name": "None"
+			},
+			"effectApplicationRequirement":
+			{
+				"expression": "GetSkillPurchased(GetInstigator(),$#30316003:6064630408328774114$, $#981011333:6064631726968603882$)"
+			},
+			"effectDuration":
+			{
+				"expression": "const base = CalcEffectDuration(GetEffectRecordByName(\"Status_Wounded\"));\r\nconst dur1 = SelectInt(GetSkillPurchased(GetInstigator(),$#30316003:6064630408328774114$, $#981011333:6064631726878557398$), 1, 0);\r\nconst dur2 = SelectInt(GetSkillPurchased(GetInstigator(),$#30316003:6064630408328774114$, $#981011333:6064631726878622935$), 1, 0);\r\nconst dur3 = SelectInt(GetSkillPurchased(GetInstigator(),$#30316003:6064630408328774114$, $#981011333:6064631726878819544$), 1, 0);\r\n\r\nbase * (1 + 0.25 * dur1 + 0.2 * dur2 + 0.15 * dur3)"
+			}
+		}
+	],
+	"modifyEffectsIds": [],
+	"effectsAppliedToSelf": [],
+	"lingeringZonesIds": [],
+	"projectilesToSpawn": [],
+	"projectilesToFire": [],
+	"reactionsIds": [],
+	"progressModifierIds": [],
+	"resurrectId":
+	{
+		"guid": "0",
+		"typeId": "30316114",
+		"name": "None"
+	},
+	"maxNumEffectsToRemove": 0,
+	"effectRemovalFilter":
+	{
+		"expression": ""
+	},
+	"effectsToRemoveIds": [],
+	"bRemoveAsDispel": false,
+	"canInterrupt":
+	{
+		"expression": ""
+	},
+	"interruptFilter":
+	{
+		"expression": ""
+	},
+	"bForceRollMiss": false,
+	"bForceCantMiss": false,
+	"bOverrideDefaultMissRate": false,
+	"missRate":
+	{
+		"expression": ""
+	},
+	"bForceRollBlock": false,
+	"bForceCantBlock": false,
+	"bOverrideDefaultBlockRate": false,
+	"blockRate":
+	{
+		"expression": ""
+	},
+	"bForceRollCrit": false,
+	"bForceCantCrit": false,
+	"bOverrideDefaultCritRate": false,
+	"critRate":
+	{
+		"expression": ""
+	},
+	"statModsIds": [
+		{
+			"guid": "6064630559732007712",
+			"typeId": "3031600201",
+			"name": "WeaponCombo_Longbow_03"
+		}
+	],
+	"bonusCrowdControlDamageIds": [],
+	"bTriggersImpactFX": false,
+	"bOverrideImpactDecalSize": false,
+	"impactDecalSizeOverride":
+	{
+		"x": 10,
+		"y": 10,
+		"z": 10
+	},
+	"bOverrideImpactDecalLifetime": false,
+	"impactDecalLifetimeOverride": 3,
+	"onHitFXId":
+	{
+		"guid": "6064632264822858865",
+		"typeId": "30316008",
+		"name": "WeaponCombo_Longbow_HitFX"
+	},
+	"bNeverCull": false,
+	"onActivateFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"activateFxAtTarget": false,
+	"postHitPauseFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"onBlockFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"hitPauseFrames": 0,
+	"hitPauseMovement": false,
+	"scriptOnActivate": "None",
+	"scriptOnHit": "None",
+	"networkType": "NET_ServerVerify",
+	"bOverrideDefaultThirdPartyHitDistance": false,
+	"thirdPartyHitDistanceOverride": 10000,
+	"modifyCooldownsIds": [],
+	"bAppliesImpulse": false,
+	"bApplyImpulseAsVelocityChange": true,
+	"impulseOriginTransform":
+	{
+		"originLocation": "Target",
+		"originLocationSocket": "None",
+		"originOrientation": "Target",
+		"originOrientationSocket": "None",
+		"originScale": "World",
+		"bUseRelativeLocationExpression": false,
+		"relativeLocation":
+		{
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"relativeLocationExpression":
+		{
+			"expression": ""
+		},
+		"bUseRelativeRotationExpression": false,
+		"relativeRotation":
+		{
+			"pitch": 0,
+			"yaw": 0,
+			"roll": 0
+		},
+		"relativeRotationExpression":
+		{
+			"expression": ""
+		},
+		"bUseRelativeScaleExpression": false,
+		"relativeScale":
+		{
+			"x": 1,
+			"y": 1,
+			"z": 1
+		},
+		"relativeScaleExpression":
+		{
+			"expression": ""
+		}
+	},
+	"impulseMagnitude":
+	{
+		"expression": ""
+	},
+	"impulseDirection":
+	{
+		"x": 1,
+		"y": 0
+	},
+	"impulseAngle":
+	{
+		"expression": ""
+	},
+	"impulseRotationBehavior": "Unaffected",
+	"recursiveHit": [
+		{
+			"hit":
+			{
+				"guid": "6064631743065361010",
+				"typeId": "30316005",
+				"name": "None"
+			},
+			"targeting":
+			{
+				"guid": "6064628968549646338",
+				"typeId": "30316011",
+				"name": "None"
+			}
+		}
+	],
+	"inputTerms": [],
+	"bOverrideDefaultThreatToTarget": false,
+	"threatToTarget":
+	{
+		"expression": ""
+	},
+	"bOverrideDefaultObservedThreat": false,
+	"observedThreat":
+	{
+		"expression": ""
+	},
+	"maxNumLingeringZonesToRemove": 0,
+	"lingeringZoneRemovalType": "None",
+	"lingeringZoneRemovalFilter":
+	{
+		"expression": ""
+	},
+	"lingeringZoneToRemoveIds": [],
+	"actionResponsesIds": [],
+	"bShareThreats": false,
+	"bShareThreatValues": false,
+	"bCopyHate": false,
+	"bDisableHitReact": false,
+	"teleportId":
+	{
+		"guid": "0",
+		"typeId": "3031600216",
+		"name": "None"
+	},
+	"guid": "6064630634083844188",
+	"name": "WeaponCombo_Longbow_04+_Proc",
+	"typeId": "30316005"
+}

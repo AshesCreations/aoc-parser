@@ -1,0 +1,29 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 0,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0,
+		"fishingEvents": 0
+	},
+	"bEvaluateOnTick": true,
+	"branchTrigger":
+	{
+		"expression": "GetAbilityHeldTime() > 1.5"
+	},
+	"bPredictedOnAutonomousClient": true,
+	"animBranchId":
+	{
+		"guid": "6064629964822547177",
+		"typeId": "30316010",
+		"name": "None"
+	},
+	"bOnlyBranchWithValidTarget": false,
+	"bOnRootMotionCollision": false,
+	"guid": "6064629965368852698",
+	"name": "Ranger_Barrage",
+	"typeId": "30316009"
+}

@@ -1,0 +1,84 @@
+{
+	"lingeringEffectClass": "/Script/GameSystemsPlugin.AoCAbilityLingeringEffect",
+	"attachType": "AttachedOwner",
+	"attachSocketName": "root",
+	"bUseAttachSocketForOriginLocation": true,
+	"bUseAttachSocketForOriginOrientation": true,
+	"spawnTransform":
+	{
+		"originLocation": "Owner",
+		"originLocationSocket": "None",
+		"originOrientation": "SourceToOrigin",
+		"originOrientationSocket": "None",
+		"originScale": "World",
+		"relativeLocation":
+		{
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"relativeRotation":
+		{
+			"pitch": 0,
+			"yaw": 0,
+			"roll": 0
+		},
+		"relativeScale":
+		{
+			"x": 1,
+			"y": 1,
+			"z": 1
+		}
+	},
+	"deactivateFXTimeBeforeDestroy": 3,
+	"lifeTime": 5,
+	"expireAfterAppliedHits":
+	{
+		"expression": ""
+	},
+	"expireIfExpressionTrue":
+	{
+		"expression": ""
+	},
+	"bUseGlobalTickRate": true,
+	"tickRate": 5,
+	"startTimeOffset": 0,
+	"endTimeOffset": 0,
+	"lingeringHitTargetingInfoId":
+	{
+		"guid": "6064629524067125195",
+		"typeId": "30316011",
+		"name": "None"
+	},
+	"initialHitsIds": [],
+	"lingeringHitsIds": [],
+	"endHitsIds": [],
+	"onBeginOverlapHitsIds": [
+		{
+			"guid": "6064628973390331905",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"onEndOverlapHitsIds": [],
+	"bNoHitOnFirstTick": false,
+	"speed": 0,
+	"bLockPitch": false,
+	"delayType": "DELAY_Time",
+	"delayTime": 0,
+	"delayTargetId":
+	{
+		"guid": "0",
+		"typeId": "30316011",
+		"name": "None"
+	},
+	"lingeringFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"guid": "6064629524081674189",
+	"name": "CyclopsShaman_TotemChargeHit_LingeringEffect_Left",
+	"typeId": "30316007"
+}

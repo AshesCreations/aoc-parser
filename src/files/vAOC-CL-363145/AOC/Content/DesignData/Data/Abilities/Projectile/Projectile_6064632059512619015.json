@@ -1,0 +1,157 @@
+{
+	"projectileClass": "/Script/GameSystemsPlugin.AoCAbilityProjectile",
+	"projectileFXId":
+	{
+		"guid": "6064630401502347264",
+		"typeId": "30316008",
+		"name": "Minotaur_Shaman_Watershot_ProjectileFX"
+	},
+	"projectileEndFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"bDeactivateProjectileFXOnFire": false,
+	"fireFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"impactFXId":
+	{
+		"guid": "6064629647351155755",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"range": 5000,
+	"lifeTime": 10,
+	"bPersistBetweenAbilities": false,
+	"speed": 6000,
+	"attachType": "AttachedSource",
+	"attachSocket": "FX_hand_rSocket",
+	"bUseAttachSocketForOriginLocation": true,
+	"bUseAttachSocketForOriginOrientation": true,
+	"spawnTransform":
+	{
+		"originLocation": "Source",
+		"originLocationSocket": "FX_hand_rSocket",
+		"originOrientation": "Source",
+		"originOrientationSocket": "FX_hand_rSocket",
+		"originScale": "World",
+		"bUseRelativeLocationExpression": false,
+		"relativeLocation":
+		{
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"relativeLocationExpression":
+		{
+			"expression": ""
+		},
+		"bUseRelativeRotationExpression": false,
+		"relativeRotation":
+		{
+			"pitch": 0,
+			"yaw": 90,
+			"roll": 90
+		},
+		"relativeRotationExpression":
+		{
+			"expression": ""
+		},
+		"bUseRelativeScaleExpression": false,
+		"relativeScale":
+		{
+			"x": 1,
+			"y": 1,
+			"z": 1
+		},
+		"relativeScaleExpression":
+		{
+			"expression": ""
+		}
+	},
+	"bSpecifyFireRotation": false,
+	"fireTransform":
+	{
+		"originLocation": "Source",
+		"originLocationSocket": "hand_weapon_rSocket",
+		"originOrientation": "Source",
+		"originOrientationSocket": "hand_weapon_rSocket",
+		"originScale": "World",
+		"bUseRelativeLocationExpression": false,
+		"relativeLocation":
+		{
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"relativeLocationExpression":
+		{
+			"expression": ""
+		},
+		"bUseRelativeRotationExpression": false,
+		"relativeRotation":
+		{
+			"pitch": 0,
+			"yaw": 0,
+			"roll": 0
+		},
+		"relativeRotationExpression":
+		{
+			"expression": ""
+		},
+		"bUseRelativeScaleExpression": false,
+		"relativeScale":
+		{
+			"x": 1,
+			"y": 1,
+			"z": 1
+		},
+		"relativeScaleExpression":
+		{
+			"expression": ""
+		}
+	},
+	"fireRotationConeAngle": 0,
+	"fadeOutDuration": 0,
+	"bAttachOnDestroy": true,
+	"hitsIds": [
+		{
+			"guid": "6064632059482275844",
+			"typeId": "30316005",
+			"name": "BanditMage_Jolt_Hit"
+		}
+	],
+	"bUseSphereCollision": true,
+	"sphereCollisionRadius": 50,
+	"bUseSeparateCollisionRadiusForDynamicObjects": false,
+	"dynamicObjectSphereCollisionRadius": 32,
+	"maxProjectileHits": 1,
+	"projectileHitInterval": 0,
+	"bIgnoreNonTarget": true,
+	"bIgnoreWorldObjects": true,
+	"chainHitCount": 0,
+	"chainRadius": 0,
+	"bChainClosestTarget": false,
+	"projectileType": "PROJECTILE_Homing",
+	"bMaySpawnWithoutTarget": false,
+	"bAimedWithControlRotation": false,
+	"desiredAngularSpeed": 2160,
+	"targetOffset":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"homingSocketName": "None",
+	"bFavorHighArc": false,
+	"arcingGravityScale": 1,
+	"bFollowGround": false,
+	"guid": "6064632059512619015",
+	"name": "Minotaur_Hunter_SpearThrow_Projectile",
+	"typeId": "30316006"
+}

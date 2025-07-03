@@ -1,0 +1,106 @@
+{
+	"lingeringEffectClass": "/Script/GameSystemsPlugin.AoCAbilityLingeringEffect",
+	"attachType": "None",
+	"attachSocketName": "None",
+	"bUseAttachSocketForOriginLocation": false,
+	"bUseAttachSocketForOriginOrientation": false,
+	"spawnTransform":
+	{
+		"originLocation": "Target",
+		"originLocationSocket": "root",
+		"originOrientation": "SourceToOrigin",
+		"originOrientationSocket": "None",
+		"originScale": "World",
+		"bUseRelativeLocationExpression": true,
+		"relativeLocation":
+		{
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"relativeLocationExpression":
+		{
+			"expression": "Vector(RandDoubleRange(-900.0,900.0),RandDoubleRange(-900.0,900.0),0.0)"
+		},
+		"bUseRelativeRotationExpression": false,
+		"relativeRotation":
+		{
+			"pitch": 0,
+			"yaw": 0,
+			"roll": 0
+		},
+		"relativeRotationExpression":
+		{
+			"expression": ""
+		},
+		"bUseRelativeScaleExpression": false,
+		"relativeScale":
+		{
+			"x": 1,
+			"y": 1,
+			"z": 1
+		},
+		"relativeScaleExpression":
+		{
+			"expression": ""
+		}
+	},
+	"deactivateFXTimeBeforeDestroy": 0.10000000149011612,
+	"lifeTime": 2,
+	"expireAfterAppliedHits":
+	{
+		"expression": ""
+	},
+	"expireIfExpressionTrue":
+	{
+		"expression": ""
+	},
+	"bUseGlobalTickRate": true,
+	"tickRate": 1,
+	"startTimeOffset": 0,
+	"endTimeOffset": 0,
+	"lingeringHitTargetingInfoId":
+	{
+		"guid": "6064633290979344584",
+		"typeId": "30316011",
+		"name": "None"
+	},
+	"initialHitsIds": [],
+	"lingeringHitsIds": [],
+	"endHitsIds": [
+		{
+			"guid": "6064633290981900489",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"onBeginOverlapHitsIds": [],
+	"onEndOverlapHitsIds": [],
+	"bNoHitOnFirstTick": true,
+	"speed": 0,
+	"bLockPitch": false,
+	"delayType": "DELAY_Time",
+	"delayTime": 0,
+	"delayTargetId":
+	{
+		"guid": "0",
+		"typeId": "30316011",
+		"name": "None"
+	},
+	"numberOfCharges": 1,
+	"lingeringFXId":
+	{
+		"guid": "6064632665157861753",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"delayedTrackingActivationFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"guid": "6064633290972856519",
+	"name": "MagmaGolem_RockfallSlam_Rockfall_Lingering",
+	"typeId": "30316007"
+}

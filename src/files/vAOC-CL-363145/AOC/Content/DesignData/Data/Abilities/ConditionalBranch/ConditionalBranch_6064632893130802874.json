@@ -1,0 +1,28 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 2,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0,
+		"fishingEvents": 0
+	},
+	"bEvaluateOnTick": false,
+	"branchTrigger":
+	{
+		"expression": "GetStatModValue(GetHitEvent(), $#10516612381411111:108986352686712$) < 0.0 \r\n&& GetRecordTypeId(GetHitSourceRecord(GetHitEvent())) != GetReactionTypeId()\r\n&& GetRecordTypeId(GetHitSourceRecord(GetHitEvent())) != GetEffectTypeId()"
+	},
+	"bPredictedOnAutonomousClient": false,
+	"animBranchId":
+	{
+		"guid": "6064632893131327170",
+		"typeId": "30316010",
+		"name": "None"
+	},
+	"bOnlyBranchWithValidTarget": false,
+	"guid": "6064632893130802874",
+	"name": "Rogue_Rope_CancelOnDamage",
+	"typeId": "30316009"
+}

@@ -1,0 +1,29 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 4,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0,
+		"fishingEvents": 0,
+		"statEvents": 0
+	},
+	"bEvaluateOnTick": false,
+	"branchTrigger":
+	{
+		"expression": "(RecordNameIs(GetHitRecord(GetHitEvent()), \"Spider_Giant_BloodFeast_Hit\") && \r\n(GetNumTargets(GetHitEvent()) == 0 || HitFlagsContains(GetHitFlags(GetHitEvent()), EHitFlag::Miss)))"
+	},
+	"bPredictedOnAutonomousClient": false,
+	"animBranchId":
+	{
+		"guid": "6064633265380720914",
+		"typeId": "30316010",
+		"name": "None"
+	},
+	"bOnlyBranchWithValidTarget": false,
+	"guid": "6064633265354899729",
+	"name": "Spider_Giant_BloodFeast_ConditionalBranch",
+	"typeId": "30316009"
+}

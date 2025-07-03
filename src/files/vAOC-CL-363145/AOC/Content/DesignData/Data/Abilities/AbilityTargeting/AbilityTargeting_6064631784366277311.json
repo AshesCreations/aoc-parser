@@ -1,0 +1,130 @@
+{
+	"sorting": [
+		{
+			"method": "Distance",
+			"filter":
+			{
+				"expression": "\r\n\r\nGetSelectedTarget()\r\n"
+			},
+			"score":
+			{
+				"expression": ""
+			}
+		}
+	],
+	"contextualTargets": [],
+	"hurtBoxInfo":
+	{
+		"bCenterBlockTargetOnHurtbox": false,
+		"targetingVolumes": [
+			{
+				"id": "SHAPE_OctreeSphere",
+				"location":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"rotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"bDebugShowOutline": false,
+				"bDebugShowInGame": false,
+				"originMesh": "ORIGIN_Character",
+				"origin": "OFFSET_Mesh",
+				"bShapeIsHollow": false,
+				"bShowHitPointForHollowHits": false,
+				"bTriggerAtOrigin": false,
+				"boneName": "None",
+				"sphereRadius": 3500,
+				"sphereRadiusExpr":
+				{
+					"expression": "3500.0"
+				},
+				"innerSphereRadius": 12,
+				"innerSphereRadiusExpr":
+				{
+					"expression": ""
+				},
+				"bUsePlayerOnlyOctree": true,
+				"boxExtent":
+				{
+					"x": 250,
+					"y": 250,
+					"z": 250
+				},
+				"boxExtentExpr":
+				{
+					"expression": "Vector(250.0, 250.0, 250.0)"
+				},
+				"capsuleHalfHeight": 50,
+				"capsuleHalfHeightExpr":
+				{
+					"expression": "50.0"
+				},
+				"capsuleRadius": 15,
+				"capsuleRadiusExpr":
+				{
+					"expression": "15.0"
+				},
+				"innerCapsuleHalfHeight": 50,
+				"innerCapsuleHalfHeightExpr":
+				{
+					"expression": ""
+				},
+				"innerCapsuleRadius": 7.5,
+				"innerCapsuleRadiusExpr":
+				{
+					"expression": ""
+				},
+				"angle": 90,
+				"angleExpr":
+				{
+					"expression": "90.0"
+				},
+				"minHeight": 0,
+				"minHeightExpr":
+				{
+					"expression": "0.0"
+				},
+				"maxHeight": 24,
+				"maxHeightExpr":
+				{
+					"expression": "24.0"
+				},
+				"animationKeys": [],
+				"bAlignToGround": false,
+				"traceHeight": 600,
+				"traceHeightExpr":
+				{
+					"expression": "600.0"
+				},
+				"traceDepth": 600,
+				"traceDepthExpr":
+				{
+					"expression": "600.0"
+				},
+				"bIgnoreIfGroundNotFound": true
+			}
+		]
+	},
+	"lockOnInfo":
+	{
+		"targetDiscoveryBehavior": "None",
+		"bCheckTargetValidity": false,
+		"bUseAoETargetingLocation": false,
+		"bPerformLoSCheck": true,
+		"bPerformConeCheck": true,
+		"angleCenter": 0,
+		"distanceCenter": 0,
+		"validAngle": 360,
+		"validDistance": 500,
+		"bTargetInitialLocation": false
+	},
+	"guid": "6064631784366277311",
+	"name": "Weapon_Proc_Aura",
+	"typeId": "30316011"
+}

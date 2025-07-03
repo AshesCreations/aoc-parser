@@ -1,0 +1,157 @@
+{
+	"projectileClass": "/Script/GameSystemsPlugin.AoCAbilityProjectile",
+	"projectileFXId":
+	{
+		"guid": "6064631755795996200",
+		"typeId": "30316008",
+		"name": "WeaponCombo_Longbow_Projectile_FX"
+	},
+	"projectileEndFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"bDeactivateProjectileFXOnFire": false,
+	"fireFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "WeaponCombo_Longbow_Projectile_FX"
+	},
+	"impactFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"range": 10000,
+	"lifeTime": 10,
+	"bPersistBetweenAbilities": false,
+	"speed": 8500,
+	"attachType": "AttachedInstigator",
+	"attachSocket": "Anim_Root",
+	"bUseAttachSocketForOriginLocation": true,
+	"bUseAttachSocketForOriginOrientation": true,
+	"spawnTransform":
+	{
+		"originLocation": "Instigator",
+		"originLocationSocket": "Anim_Root",
+		"originOrientation": "Instigator",
+		"originOrientationSocket": "Anim_Root",
+		"originScale": "World",
+		"bUseRelativeLocationExpression": false,
+		"relativeLocation":
+		{
+			"x": 200,
+			"y": 0,
+			"z": 130
+		},
+		"relativeLocationExpression":
+		{
+			"expression": ""
+		},
+		"bUseRelativeRotationExpression": false,
+		"relativeRotation":
+		{
+			"pitch": 0,
+			"yaw": 0,
+			"roll": 0
+		},
+		"relativeRotationExpression":
+		{
+			"expression": ""
+		},
+		"bUseRelativeScaleExpression": false,
+		"relativeScale":
+		{
+			"x": 1,
+			"y": 1,
+			"z": 1
+		},
+		"relativeScaleExpression":
+		{
+			"expression": ""
+		}
+	},
+	"bSpecifyFireRotation": true,
+	"fireTransform":
+	{
+		"originLocation": "Instigator",
+		"originLocationSocket": "Anim_Root",
+		"originOrientation": "Instigator",
+		"originOrientationSocket": "Anim_Root",
+		"originScale": "World",
+		"bUseRelativeLocationExpression": false,
+		"relativeLocation":
+		{
+			"x": 200,
+			"y": 0,
+			"z": 130
+		},
+		"relativeLocationExpression":
+		{
+			"expression": ""
+		},
+		"bUseRelativeRotationExpression": false,
+		"relativeRotation":
+		{
+			"pitch": 0,
+			"yaw": -5,
+			"roll": 0
+		},
+		"relativeRotationExpression":
+		{
+			"expression": ""
+		},
+		"bUseRelativeScaleExpression": false,
+		"relativeScale":
+		{
+			"x": 1,
+			"y": 1,
+			"z": 1
+		},
+		"relativeScaleExpression":
+		{
+			"expression": ""
+		}
+	},
+	"fireRotationConeAngle": 0,
+	"fadeOutDuration": 2,
+	"bAttachOnDestroy": true,
+	"hitsIds": [
+		{
+			"guid": "6064631835638825700",
+			"typeId": "30316005",
+			"name": "Ranger_QuickShot"
+		}
+	],
+	"bUseSphereCollision": true,
+	"sphereCollisionRadius": 16,
+	"bUseSeparateCollisionRadiusForDynamicObjects": false,
+	"dynamicObjectSphereCollisionRadius": 32,
+	"maxProjectileHits": 1,
+	"projectileHitInterval": 0,
+	"bIgnoreNonTarget": true,
+	"bIgnoreWorldObjects": true,
+	"chainHitCount": 0,
+	"chainRadius": 0,
+	"bChainClosestTarget": false,
+	"projectileType": "PROJECTILE_Homing",
+	"bMaySpawnWithoutTarget": true,
+	"bAimedWithControlRotation": false,
+	"desiredAngularSpeed": 100,
+	"targetOffset":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"homingSocketName": "FX_Chest",
+	"bFavorHighArc": true,
+	"arcingGravityScale": 1,
+	"bFollowGround": false,
+	"guid": "6064631835628077792",
+	"name": "Weapon_Book_Projectile_4_2",
+	"typeId": "30316006"
+}

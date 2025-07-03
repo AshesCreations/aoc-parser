@@ -1,0 +1,118 @@
+{
+	"sorting": [],
+	"contextualTargets": [],
+	"hurtBoxInfo":
+	{
+		"bCenterBlockTargetOnHurtbox": false,
+		"targetingVolumes": [
+			{
+				"id": "SHAPE_Box",
+				"location":
+				{
+					"x": 50,
+					"y": 0,
+					"z": 100
+				},
+				"rotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"bDebugShowOutline": false,
+				"bDebugShowInGame": true,
+				"originMesh": "ORIGIN_Character",
+				"origin": "OFFSET_Mesh",
+				"bShapeIsHollow": false,
+				"bShowHitPointForHollowHits": false,
+				"bTriggerAtOrigin": false,
+				"boneName": "jaw",
+				"sphereRadius": 200,
+				"sphereRadiusExpr":
+				{
+					"expression": "200.0"
+				},
+				"innerSphereRadius": 12,
+				"innerSphereRadiusExpr":
+				{
+					"expression": ""
+				},
+				"bUsePlayerOnlyOctree": false,
+				"boxExtent":
+				{
+					"x": 300,
+					"y": 200,
+					"z": 50
+				},
+				"boxExtentExpr":
+				{
+					"expression": ""
+				},
+				"capsuleHalfHeight": 500,
+				"capsuleHalfHeightExpr":
+				{
+					"expression": "500\r\n"
+				},
+				"capsuleRadius": 150,
+				"capsuleRadiusExpr":
+				{
+					"expression": "150.0"
+				},
+				"innerCapsuleHalfHeight": 50,
+				"innerCapsuleHalfHeightExpr":
+				{
+					"expression": ""
+				},
+				"innerCapsuleRadius": 7.5,
+				"innerCapsuleRadiusExpr":
+				{
+					"expression": ""
+				},
+				"angle": 20,
+				"angleExpr":
+				{
+					"expression": "20.0"
+				},
+				"minHeight": 0,
+				"minHeightExpr":
+				{
+					"expression": "0.0"
+				},
+				"maxHeight": 1100,
+				"maxHeightExpr":
+				{
+					"expression": ""
+				},
+				"animationKeys": [],
+				"bAlignToGround": false,
+				"traceHeight": 600,
+				"traceHeightExpr":
+				{
+					"expression": "600.0"
+				},
+				"traceDepth": 600,
+				"traceDepthExpr":
+				{
+					"expression": "600.0"
+				},
+				"bIgnoreIfGroundNotFound": true
+			}
+		]
+	},
+	"lockOnInfo":
+	{
+		"targetDiscoveryBehavior": "None",
+		"bCheckTargetValidity": false,
+		"bUseAoETargetingLocation": false,
+		"bPerformLoSCheck": true,
+		"bPerformConeCheck": true,
+		"angleCenter": 0,
+		"distanceCenter": 0,
+		"validAngle": 0,
+		"validDistance": 600,
+		"bTargetInitialLocation": false
+	},
+	"guid": "6064633017454364186",
+	"name": "MagmaGolem_BellowSmasher_ForgeFire",
+	"typeId": "30316011"
+}

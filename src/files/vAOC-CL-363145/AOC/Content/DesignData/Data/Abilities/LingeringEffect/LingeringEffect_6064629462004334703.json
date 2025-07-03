@@ -1,0 +1,101 @@
+{
+	"lingeringEffectClass": "/Game/Effects/FX_PCs/Tank/BPs/BP_Tank_AncestralBolas_Arena.BP_Tank_AncestralBolas_Arena_C",
+	"attachType": "None",
+	"attachSocketName": "None",
+	"bUseAttachSocketForOriginLocation": false,
+	"bUseAttachSocketForOriginOrientation": false,
+	"spawnTransform":
+	{
+		"originLocation": "HitLocation",
+		"originLocationSocket": "None",
+		"originOrientation": "InstigatorToOrigin",
+		"originOrientationSocket": "None",
+		"originScale": "World",
+		"relativeLocation":
+		{
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"relativeRotation":
+		{
+			"pitch": 0,
+			"yaw": 0,
+			"roll": 0
+		},
+		"relativeScale":
+		{
+			"x": 1,
+			"y": 1,
+			"z": 1
+		}
+	},
+	"deactivateFXTimeBeforeDestroy": 0,
+	"lifeTime": 9,
+	"expireAfterAppliedHits":
+	{
+		"expression": "1000000"
+	},
+	"expireIfExpressionTrue":
+	{
+		"expression": ""
+	},
+	"bUseGlobalTickRate": true,
+	"tickRate": 1,
+	"startTimeOffset": 0,
+	"endTimeOffset": 0,
+	"lingeringHitTargetingInfoId":
+	{
+		"guid": "6064629602039438863",
+		"typeId": "30316011",
+		"name": "None"
+	},
+	"initialHitsIds": [],
+	"lingeringHitsIds": [
+		{
+			"guid": "6064629698241364743",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"endHitsIds": [],
+	"onBeginOverlapHitsIds": [
+		{
+			"guid": "6064629602110223043",
+			"typeId": "30316005",
+			"name": "None"
+		},
+		{
+			"guid": "6064629601908490816",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"onEndOverlapHitsIds": [
+		{
+			"guid": "6064629601908490816",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"bNoHitOnFirstTick": true,
+	"speed": 0,
+	"bLockPitch": false,
+	"delayType": "DELAY_Time",
+	"delayTime": 0,
+	"delayTargetId":
+	{
+		"guid": "0",
+		"typeId": "30316011",
+		"name": "None"
+	},
+	"lingeringFXId":
+	{
+		"guid": "6064629462534063052",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"guid": "6064629462004334703",
+	"name": "Tank_AncestralBolas",
+	"typeId": "30316007"
+}

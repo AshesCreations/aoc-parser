@@ -1,0 +1,342 @@
+{
+	"bAlwaysPlayInRadius": false,
+	"playRadius": 0,
+	"audioFX": [],
+	"audioExitFX": [],
+	"cameraFX":
+	{
+		"shakeIntensitySoft":
+		{
+			"externalCurve": "None",
+			"editorCurveData":
+			{
+				"keys": [],
+				"defaultValue": 3.4028234663852886e+38,
+				"preInfinityExtrap": "RCCE_Constant",
+				"postInfinityExtrap": "RCCE_Constant",
+				"keyHandlesToIndices":
+				{
+				}
+			}
+		},
+		"shakeMultiplier":
+		{
+			"expression": ""
+		},
+		"fOVZoomSoft":
+		{
+			"externalCurve": "None",
+			"editorCurveData":
+			{
+				"keys": [],
+				"defaultValue": 3.4028234663852886e+38,
+				"preInfinityExtrap": "RCCE_Constant",
+				"postInfinityExtrap": "RCCE_Constant",
+				"keyHandlesToIndices":
+				{
+				}
+			}
+		},
+		"fOVMultiplier":
+		{
+			"expression": ""
+		},
+		"chromaticAberrationIntensitySoft":
+		{
+			"externalCurve": "None",
+			"editorCurveData":
+			{
+				"keys": [],
+				"defaultValue": 3.4028234663852886e+38,
+				"preInfinityExtrap": "RCCE_Constant",
+				"postInfinityExtrap": "RCCE_Constant",
+				"keyHandlesToIndices":
+				{
+				}
+			}
+		},
+		"chromaticAberrationMultiplier":
+		{
+			"expression": ""
+		},
+		"radialBlurScaleSoft":
+		{
+			"externalCurve": "None",
+			"editorCurveData":
+			{
+				"keys": [],
+				"defaultValue": 3.4028234663852886e+38,
+				"preInfinityExtrap": "RCCE_Constant",
+				"postInfinityExtrap": "RCCE_Constant",
+				"keyHandlesToIndices":
+				{
+				}
+			}
+		},
+		"radialBlurMultiplier":
+		{
+			"expression": ""
+		}
+	},
+	"particleFX": [
+		{
+			"enabled":
+			{
+				"expression": ""
+			},
+			"niagaraSystemSoft": "/Game/Effects/FX_PCs/Mage/ChainLightning/NS_Ci_ChainLightning.NS_Ci_ChainLightning",
+			"lifeTime": 2,
+			"bCastVolumetricTranslucentShadow": false,
+			"attachType": "AttachedSource",
+			"attachSocketName": "none",
+			"bUseAttachSocketForOriginLocation": true,
+			"bUseAttachSocketForOriginOrientation": true,
+			"transform":
+			{
+				"originLocation": "Source",
+				"originLocationSocket": "WeaponSocketR",
+				"originOrientation": "Source",
+				"originOrientationSocket": "None",
+				"originScale": "World",
+				"relativeLocation":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"relativeRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"relativeScale":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				}
+			},
+			"bVisibleToSceneCaptureOnly": false
+		}
+	],
+	"niagaraParameters": [
+		{
+			"parameterName": "TargetMesh",
+			"parameterType": "SkeletalMesh",
+			"expressionParam":
+			{
+				"expression": "GetTarget()"
+			},
+			"quatParam":
+			{
+				"x": 0,
+				"y": 0,
+				"z": 0,
+				"w": 1
+			},
+			"vec2Param":
+			{
+				"x": 0,
+				"y": 0
+			},
+			"vec4Param":
+			{
+				"x": 0,
+				"y": 0,
+				"z": 0,
+				"w": 0
+			},
+			"linearColorParam":
+			{
+				"r": 0,
+				"g": 0,
+				"b": 0,
+				"a": 1
+			}
+		}
+	],
+	"abilityEventNiagaraParams": [
+		{
+			"trigger":
+			{
+				"expression": "GetInstigator() == GetOwner() &&\r\nRecordNameIs(GetHitRecord(GetHitEvent()), \"Mage_ChainLightning_AOE\")"
+			},
+			"niagaraParams": [
+				{
+					"parameterName": "Target1",
+					"parameterType": "SkeletalMesh",
+					"expressionParam":
+					{
+						"expression": "GetHitTargetByIndex(GetHitEvent(), 0)"
+					},
+					"quatParam":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0,
+						"w": 1
+					},
+					"vec2Param":
+					{
+						"x": 0,
+						"y": 0
+					},
+					"vec4Param":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0,
+						"w": 0
+					},
+					"linearColorParam":
+					{
+						"r": 0,
+						"g": 0,
+						"b": 0,
+						"a": 1
+					}
+				},
+				{
+					"parameterName": "Target2",
+					"parameterType": "SkeletalMesh",
+					"expressionParam":
+					{
+						"expression": "GetHitTargetByIndex(GetHitEvent(), 1)"
+					},
+					"quatParam":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0,
+						"w": 1
+					},
+					"vec2Param":
+					{
+						"x": 0,
+						"y": 0
+					},
+					"vec4Param":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0,
+						"w": 0
+					},
+					"linearColorParam":
+					{
+						"r": 0,
+						"g": 0,
+						"b": 0,
+						"a": 1
+					}
+				},
+				{
+					"parameterName": "Target3",
+					"parameterType": "SkeletalMesh",
+					"expressionParam":
+					{
+						"expression": "GetHitTargetByIndex(GetHitEvent(), 2)"
+					},
+					"quatParam":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0,
+						"w": 1
+					},
+					"vec2Param":
+					{
+						"x": 0,
+						"y": 0
+					},
+					"vec4Param":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0,
+						"w": 0
+					},
+					"linearColorParam":
+					{
+						"r": 0,
+						"g": 0,
+						"b": 0,
+						"a": 1
+					}
+				},
+				{
+					"parameterName": "Target4",
+					"parameterType": "SkeletalMesh",
+					"expressionParam":
+					{
+						"expression": "GetHitTargetByIndex(GetHitEvent(), 3)"
+					},
+					"quatParam":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0,
+						"w": 1
+					},
+					"vec2Param":
+					{
+						"x": 0,
+						"y": 0
+					},
+					"vec4Param":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0,
+						"w": 0
+					},
+					"linearColorParam":
+					{
+						"r": 0,
+						"g": 0,
+						"b": 0,
+						"a": 1
+					}
+				},
+				{
+					"parameterName": "Target5",
+					"parameterType": "SkeletalMesh",
+					"expressionParam":
+					{
+						"expression": "GetHitTargetByIndex(GetHitEvent(), 4)"
+					},
+					"quatParam":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0,
+						"w": 1
+					},
+					"vec2Param":
+					{
+						"x": 0,
+						"y": 0
+					},
+					"vec4Param":
+					{
+						"x": 0,
+						"y": 0,
+						"z": 0,
+						"w": 0
+					},
+					"linearColorParam":
+					{
+						"r": 0,
+						"g": 0,
+						"b": 0,
+						"a": 1
+					}
+				}
+			]
+		}
+	],
+	"guid": "6064629190136627200",
+	"name": "LightningBolt (Copy)",
+	"typeId": "30316008"
+}

@@ -1,0 +1,100 @@
+{
+	"applicableTargets": 5,
+	"statusCondition": 0,
+	"appliedEffectsIds": [],
+	"effectsAppliedToSelf": [],
+	"reactionsIds": [],
+	"maxNumEffectsToRemove": 0,
+	"effectRemovalFilter":
+	{
+		"expression": ""
+	},
+	"effectsToRemoveIds": [],
+	"bRemoveAsDispel": false,
+	"critBehavior": "Magical",
+	"bonusCritRate":
+	{
+		"expression": ""
+	},
+	"evasionBehavior": "Magical",
+	"bonusAccuracy":
+	{
+		"expression": ""
+	},
+	"threatMultiplier":
+	{
+		"expression": ""
+	},
+	"statModsIds": [
+		{
+			"guid": "108251303663226",
+			"typeId": "3031600201",
+			"name": "Prototype_BloodMage_Life_Transfer_Heal"
+		}
+	],
+	"bonusCrowdControlDamageIds": [],
+	"onHitFXId":
+	{
+		"guid": "108271700498040",
+		"typeId": "30316008",
+		"name": "AbilityFX_Prototype_BloodMage_Life_Transfer"
+	},
+	"onBlockFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"hitPauseFrames": 0,
+	"hitPauseMovement": false,
+	"scriptOnActivate": "None",
+	"scriptOnHit": "None",
+	"networkType": "NET_ServerVerify",
+	"modifyCooldownsIds": [],
+	"bAppliesImpulse": false,
+	"bApplyImpulseAsVelocityChange": true,
+	"impulseOriginLocation": "Source",
+	"impulseOriginOrientation": "OriginToTargetZ",
+	"impulseOriginLocationOffset":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"impulseOriginOrientationOffset":
+	{
+		"pitch": 0,
+		"yaw": 0,
+		"roll": 0
+	},
+	"impulseMagnitude":
+	{
+		"expression": ""
+	},
+	"impulseDirection":
+	{
+		"x": 1,
+		"y": 0
+	},
+	"impulseAngle":
+	{
+		"expression": ""
+	},
+	"impulseRotationBehavior": "Unaffected",
+	"recursiveHitId":
+	{
+		"guid": "0",
+		"typeId": "30316005",
+		"name": "None"
+	},
+	"recursiveTargetId":
+	{
+		"guid": "0",
+		"typeId": "30316011",
+		"name": "None"
+	},
+	"inputs": [],
+	"guid": "108251290097273",
+	"name": "Prototype_BloodMage_Life_Transfer",
+	"typeId": "30316005"
+}

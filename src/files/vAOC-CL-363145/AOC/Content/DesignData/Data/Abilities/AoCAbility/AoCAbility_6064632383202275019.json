@@ -1,0 +1,430 @@
+{
+	"abilityTags": [
+		{
+			"tagName": "ability.dodge"
+		}
+	],
+	"abilityIcon": "/Game/UI/Widgets/HUD/ActionBars/Textures/TUI_Icon_ActionFrame_Dodge.TUI_Icon_ActionFrame_Dodge",
+	"abilityConditionalIcons": [],
+	"bOverrideRangeInTooltip": false,
+	"customTooltipRange":
+	{
+		"expression": ""
+	},
+	"bOverrideProgressBarClass": false,
+	"progressBarClass": "None",
+	"progressBarSortScore":
+	{
+		"expression": ""
+	},
+	"hasProc":
+	{
+		"expression": ""
+	},
+	"hasAbilitySynergy":
+	{
+		"expression": ""
+	},
+	"hasStatusEffectSynergy":
+	{
+		"expression": ""
+	},
+	"animMontages": [
+		{
+			"abilityDirection": "DIR_FORWARD",
+			"animExpression":
+			{
+				"expression": "IsComboButtonPressed(EComboButtons::BUTTON_Forward) &&\r\n!GetSkillPurchased(GetOwner(), $#30316003:6064631673604472832$, $#981011333:6064631708883943524$)"
+			},
+			"startSectionName": "None",
+			"bOverrideSequenceResetTime": false,
+			"sequenceResetTime": 0,
+			"abilityAnimationSoftPaths": [
+				"/Game/Characters/Animations/00_ABLT/CM_M_BASE_DodgeFwd_Notify_Montage_ALS.CM_M_BASE_DodgeFwd_Notify_Montage_ALS"
+			],
+			"targetingKey": 0,
+			"hitKeys": []
+		},
+		{
+			"abilityDirection": "DIR_LEFT",
+			"animExpression":
+			{
+				"expression": "IsComboButtonPressed(EComboButtons::BUTTON_Left) &&\r\n!GetSkillPurchased(GetOwner(), $#30316003:6064631673604472832$, $#981011333:6064631708883943524$)"
+			},
+			"startSectionName": "None",
+			"bOverrideSequenceResetTime": false,
+			"sequenceResetTime": 0,
+			"abilityAnimationSoftPaths": [
+				"/Game/Characters/Animations/00_ABLT/CM_M_BASE_DodgeLeft_Notify_Montage_ALS.CM_M_BASE_DodgeLeft_Notify_Montage_ALS"
+			],
+			"targetingKey": 0,
+			"hitKeys": []
+		},
+		{
+			"abilityDirection": "DIR_RIGHT",
+			"animExpression":
+			{
+				"expression": "IsComboButtonPressed(EComboButtons::BUTTON_Right) &&\r\n!GetSkillPurchased(GetOwner(), $#30316003:6064631673604472832$, $#981011333:6064631708883943524$)"
+			},
+			"startSectionName": "None",
+			"bOverrideSequenceResetTime": false,
+			"sequenceResetTime": 0,
+			"abilityAnimationSoftPaths": [
+				"/Game/Characters/Animations/00_ABLT/CM_M_BASE_DodgeRight_Notify_Montage_ALS.CM_M_BASE_DodgeRight_Notify_Montage_ALS"
+			],
+			"targetingKey": 0,
+			"hitKeys": []
+		},
+		{
+			"abilityDirection": "DIR_BACKWARD",
+			"animExpression":
+			{
+				"expression": "IsComboButtonPressed(EComboButtons::BUTTON_Backward) &&\r\n!GetSkillPurchased(GetOwner(), $#30316003:6064631673604472832$, $#981011333:6064631708883943524$)"
+			},
+			"startSectionName": "None",
+			"bOverrideSequenceResetTime": false,
+			"sequenceResetTime": 0,
+			"abilityAnimationSoftPaths": [
+				"/Game/Characters/Animations/00_ABLT/CM_M_BASE_DodgeBack_Notify_Montage_ALS.CM_M_BASE_DodgeBack_Notify_Montage_ALS"
+			],
+			"targetingKey": 0,
+			"hitKeys": []
+		},
+		{
+			"abilityDirection": "DIR_BACKWARD",
+			"animExpression":
+			{
+				"expression": "!isanymovementkeypressed() &&\r\n!GetSkillPurchased(GetOwner(), $#30316003:6064631673604472832$, $#981011333:6064631708883943524$)"
+			},
+			"startSectionName": "None",
+			"bOverrideSequenceResetTime": false,
+			"sequenceResetTime": 0,
+			"abilityAnimationSoftPaths": [
+				"/Game/Characters/Animations/00_ABLT/CM_M_BASE_DodgeBackNoInput_Notify_Montage_ALS.CM_M_BASE_DodgeBackNoInput_Notify_Montage_ALS"
+			],
+			"targetingKey": 0,
+			"hitKeys": []
+		},
+		{
+			"abilityDirection": "DIR_FORWARD",
+			"animExpression":
+			{
+				"expression": "IsComboButtonPressed(EComboButtons::BUTTON_Forward) &&\r\nGetSkillPurchased(GetInstigator(), $#30316003:6064631673604472832$, $#981011333:6064631708883943524$)"
+			},
+			"startSectionName": "None",
+			"bOverrideSequenceResetTime": false,
+			"sequenceResetTime": 0,
+			"abilityAnimationSoftPaths": [
+				"/Game/Characters/Animations/00_ABLT/CM_M_BASE_DodgeFwdSuper_Notify_Montage_ALS.CM_M_BASE_DodgeFwdSuper_Notify_Montage_ALS"
+			],
+			"targetingKey": 0,
+			"hitKeys": []
+		},
+		{
+			"abilityDirection": "DIR_LEFT",
+			"animExpression":
+			{
+				"expression": "IsComboButtonPressed(EComboButtons::BUTTON_Left) &&\r\nGetSkillPurchased(GetOwner(), $#30316003:6064631673604472832$, $#981011333:6064631708883943524$)"
+			},
+			"startSectionName": "None",
+			"bOverrideSequenceResetTime": false,
+			"sequenceResetTime": 0,
+			"abilityAnimationSoftPaths": [
+				"/Game/Characters/Animations/00_ABLT/CM_M_BASE_DodgeLeft_Super_Notify_Montage_ALS.CM_M_BASE_DodgeLeft_Super_Notify_Montage_ALS"
+			],
+			"targetingKey": 0,
+			"hitKeys": []
+		},
+		{
+			"abilityDirection": "DIR_RIGHT",
+			"animExpression":
+			{
+				"expression": "IsComboButtonPressed(EComboButtons::BUTTON_Right) &&\r\nGetSkillPurchased(GetOwner(), $#30316003:6064631673604472832$, $#981011333:6064631708883943524$)"
+			},
+			"startSectionName": "None",
+			"bOverrideSequenceResetTime": false,
+			"sequenceResetTime": 0,
+			"abilityAnimationSoftPaths": [
+				"/Game/Characters/Animations/00_ABLT/CM_M_BASE_DodgeRight_Super_Notify_Montage_ALS.CM_M_BASE_DodgeRight_Super_Notify_Montage_ALS"
+			],
+			"targetingKey": 0,
+			"hitKeys": []
+		},
+		{
+			"abilityDirection": "DIR_BACKWARD",
+			"animExpression":
+			{
+				"expression": "IsComboButtonPressed(EComboButtons::BUTTON_Backward) &&\r\nGetSkillPurchased(GetOwner(), $#30316003:6064631673604472832$, $#981011333:6064631708883943524$)"
+			},
+			"startSectionName": "None",
+			"bOverrideSequenceResetTime": false,
+			"sequenceResetTime": 0,
+			"abilityAnimationSoftPaths": [
+				"/Game/Characters/Animations/00_ABLT/CM_M_BASE_DodgeBack_Super_Notify_Montage_ALS.CM_M_BASE_DodgeBack_Super_Notify_Montage_ALS"
+			],
+			"targetingKey": 0,
+			"hitKeys": []
+		},
+		{
+			"abilityDirection": "DIR_BACKWARD",
+			"animExpression":
+			{
+				"expression": "!isanymovementkeypressed() &&\r\nGetSkillPurchased(GetOwner(), $#30316003:6064631673604472832$, $#981011333:6064631708883943524$)"
+			},
+			"startSectionName": "None",
+			"bOverrideSequenceResetTime": false,
+			"sequenceResetTime": 0,
+			"abilityAnimationSoftPaths": [
+				"/Game/Characters/Animations/00_ABLT/CM_M_BASE_DodgeBackNoInput_Super_Notify_Montage_ALS.CM_M_BASE_DodgeBackNoInput_Super_Notify_Montage_ALS"
+			],
+			"targetingKey": 0,
+			"hitKeys": []
+		}
+	],
+	"activationRequirements":
+	{
+		"expression": ""
+	},
+	"weaponRequirement": "NoRequirement",
+	"bDisableDuringCooldown": false,
+	"cooldown":
+	{
+		"expression": "0"
+	},
+	"sharedCooldownTag": "None",
+	"cooldownCharges":
+	{
+		"expression": ""
+	},
+	"bOverrideInitialCooldownCharges": false,
+	"initialCooldownChargesOverride":
+	{
+		"expression": ""
+	},
+	"bPersistCooldown": false,
+	"suppressCooldownInUI":
+	{
+		"expression": ""
+	},
+	"bDeferAbilityTrigger": false,
+	"bMayNotBeUsedSimultaneously": false,
+	"bStopsAutoAttack": false,
+	"costs": [
+		{
+			"enabled":
+			{
+				"expression": ""
+			},
+			"statCosts": [
+				{
+					"stat":
+					{
+						"guid": "6064629575339934476",
+						"typeId": "10516612381411111",
+						"name": "None"
+					},
+					"value":
+					{
+						"expression": "50"
+					}
+				}
+			],
+			"effectCosts": [],
+			"chargeCost":
+			{
+				"expression": "0"
+			},
+			"bTriggersCooldown": false
+		}
+	],
+	"hitsIds":
+	{
+	},
+	"effectsIds":
+	{
+		"1":
+		{
+			"guid": "106223481149050",
+			"typeId": "30316002",
+			"name": "None"
+		}
+	},
+	"projectilesIds":
+	{
+	},
+	"lingeringEffectsIds":
+	{
+	},
+	"abilityFXIds":
+	{
+	},
+	"animBranchesIds":
+	{
+	},
+	"conditionalBranchesIds":
+	{
+	},
+	"reactionsIds":
+	{
+	},
+	"targetingRecordsIds":
+	{
+	},
+	"progressDisruptionRecordsIds":
+	{
+	},
+	"comboInputs": [],
+	"bExactInput": false,
+	"bufferPriority": -999,
+	"bUsableFromHotbar": true,
+	"abilityActivationInput": "UserConfigurable",
+	"bIsAOEClickedAbility": false,
+	"targetActivationRequirement": "Never",
+	"applicableTargets": 0,
+	"applicableTypes": 0,
+	"applicableLifeStates": 1,
+	"applicableInstigatorLifeState": 1,
+	"applicableCasterLifeStates": 1,
+	"bNeverCancelAbility": false,
+	"bUseTargetingRecord": false,
+	"targetingRecordId":
+	{
+		"guid": "0",
+		"typeId": "30316011",
+		"name": "None"
+	},
+	"bCheckTargetValidity": true,
+	"bPerformLoSCheck": true,
+	"bPerformConeCheck": true,
+	"angleCenter": 0,
+	"distanceCenter": 0,
+	"validAngle": 0,
+	"validDistance": 0,
+	"angleCenterExp":
+	{
+		"expression": "0.0"
+	},
+	"distanceCenterExp":
+	{
+		"expression": "0.0"
+	},
+	"validAngleExp":
+	{
+		"expression": "0.0"
+	},
+	"validDistanceExp":
+	{
+		"expression": "0.0"
+	},
+	"speedMultiplierSource": "NONE",
+	"bHoldAnimation": false,
+	"maximumHoldTime": 0,
+	"bMayCancelHoldAtAnyTime": true,
+	"cancelHoldSections": [],
+	"onCancelHoldBranchKey": 0,
+	"bOverrideHeldBehavior": false,
+	"heldAbilityBehavior": "Naive",
+	"bForceAnimCancel": true,
+	"bAllowRotation": false,
+	"pitchMode": "None",
+	"minPitch": 0,
+	"maxPitch": 0,
+	"bUsableInAir": true,
+	"bUsableWhileSwimming": true,
+	"bOmnidirectional": true,
+	"bOrientWithInterpOnStart": true,
+	"onStartInterpConstRate": 360,
+	"bOrientWithInterpOnEnd": true,
+	"onEndInterpConstRate": 360,
+	"bQuickCancelFromAllAbilities": false,
+	"quickCancelFromAbilitiesIds": [],
+	"cancelSectionName": "None",
+	"bRequiresAnimCancel": false,
+	"cancelFromAbilitiesIds": [],
+	"cancelFromTagQuery":
+	{
+		"tokenStreamVersion": 0,
+		"tagDictionary": [],
+		"queryTokenStream": [],
+		"userDescription": "",
+		"autoDescription": ""
+	},
+	"scriptOnActivate": "None",
+	"areaTemplateFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"areaTemplateMaterial": "None",
+	"areaTemplateRotationRate": 0,
+	"areaTargetRadius": 0,
+	"areaTargetRange": 0,
+	"bShouldFaceClickedTarget": false,
+	"bResetSequenceAfterTime": false,
+	"sequenceResetTime": 0,
+	"abilityName": "Dodge",
+	"abilityDescription": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"7CCD85234A7AF0FB95DACCBC5C3287EB\", \"Exert your stamina to dodge out of harm\\'s way, increasing your evasion by $effect1:statmod0.%.nostat$ for 0.5 seconds.\\r\\n{skill:Universal:General_Stamina_Dodge_Recuperation:Restores {statmod:General_Stamina_Dodge_Recuperation} if incoming damage is successfully dodged.}\\r\\n{skill:Universal:General_Stamina_Dodge_EvasiveManeuver:After dodging, gain {effect:General_Stamina_Dodge_EvasiveManeuver}.}\")",
+	"bAllowMovement": true,
+	"bPROTOTYPERotateRootMotion": false,
+	"rootMotionFreezeBehavior": "None",
+	"rootMotionFreezeDistance": 0,
+	"rootMotionFreezeRadiusScale": 1,
+	"rootMotionIgnoreNonTarget": false,
+	"bVisualizeSweepCollision": false,
+	"canBreakEffects":
+	{
+		"expression": ""
+	},
+	"effectsToBreak":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"actionModeAbilityId":
+	{
+		"guid": "0",
+		"typeId": "30316001",
+		"name": "None"
+	},
+	"aBTestingAbilitiesIds": [
+		{
+			"guid": "6064630045400965294",
+			"typeId": "30316001",
+			"name": "None"
+		}
+	],
+	"animCancelsIds":
+	{
+		"1":
+		{
+			"guid": "6064629013833842688",
+			"typeId": "12352236",
+			"name": "None"
+		},
+		"2":
+		{
+			"guid": "108136702498425",
+			"typeId": "12352236",
+			"name": "None"
+		}
+	},
+	"modifyCooldownsIds":
+	{
+	},
+	"aLSAbilityId":
+	{
+		"guid": "0",
+		"typeId": "30316001",
+		"name": "None"
+	},
+	"inputTerms": [],
+	"dynamicCastDuration":
+	{
+		"expression": ""
+	},
+	"bNeverCull": false,
+	"guid": "6064632383202275019",
+	"name": "General_Dodge_Old",
+	"typeId": "30316001"
+}

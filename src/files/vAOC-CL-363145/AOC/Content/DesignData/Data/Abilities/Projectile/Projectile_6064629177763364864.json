@@ -1,0 +1,116 @@
+{
+	"projectileClass": "/Game/Effects/FX_PCs/Mage/RingOfEarth/RingOfEarth_Projectile.RingOfEarth_Projectile_C",
+	"projectileFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "WeaponCombo_Longbow_Projectile_FX"
+	},
+	"impactFXId":
+	{
+		"guid": "6064629109839101952",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"range": 10000,
+	"lifeTime": 10,
+	"bPersistBetweenAbilities": true,
+	"speed": 5000,
+	"attachType": "AttachedSource",
+	"attachSocket": "None",
+	"bUseAttachSocketForOriginLocation": true,
+	"bUseAttachSocketForOriginOrientation": false,
+	"spawnTransform":
+	{
+		"originLocation": "Source",
+		"originLocationSocket": "None",
+		"originOrientation": "Source",
+		"originOrientationSocket": "None",
+		"originScale": "Source",
+		"relativeLocation":
+		{
+			"x": -121,
+			"y": 88,
+			"z": 98
+		},
+		"relativeRotation":
+		{
+			"pitch": 90,
+			"yaw": 0,
+			"roll": 0
+		},
+		"relativeScale":
+		{
+			"x": 1,
+			"y": 1,
+			"z": 1
+		}
+	},
+	"bSpecifyFireRotation": false,
+	"fireTransform":
+	{
+		"originLocation": "Source",
+		"originLocationSocket": "None",
+		"originOrientation": "Source",
+		"originOrientationSocket": "Root",
+		"originScale": "Source",
+		"relativeLocation":
+		{
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"relativeRotation":
+		{
+			"pitch": 0,
+			"yaw": 0,
+			"roll": 0
+		},
+		"relativeScale":
+		{
+			"x": 1,
+			"y": 1,
+			"z": 1
+		}
+	},
+	"fireRotationConeAngle": 0,
+	"fadeOutDuration": 0,
+	"bAttachOnDestroy": true,
+	"hitsIds": [
+		{
+			"guid": "6064629149571940358",
+			"typeId": "30316005",
+			"name": "Ranger_QuickShot"
+		}
+	],
+	"bUseSphereCollision": true,
+	"sphereCollisionRadius": 16,
+	"maxProjectileHits": 1,
+	"projectileHitInterval": 0,
+	"bIgnoreNonTarget": true,
+	"bIgnoreWorldObjects": true,
+	"chainHitCount": 0,
+	"chainRadius": 0,
+	"bChainClosestTarget": false,
+	"projectileType": "PROJECTILE_Homing",
+	"bMaySpawnWithoutTarget": false,
+	"bAimedWithControlRotation": false,
+	"bLimitAngularSpeed": false,
+	"desiredAngularSpeed": 1750,
+	"targetOffset":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"homingSocketName": "None",
+	"homingBoneName": "None",
+	"bFavorHighArc": true,
+	"arcingGravityScale": 1,
+	"arcCurve": "None",
+	"predictionAccuracy": 1,
+	"arcHeightModifier": 1,
+	"guid": "6064629177763364864",
+	"name": "Mage_RingOfEarth_Projectile3",
+	"typeId": "30316006"
+}

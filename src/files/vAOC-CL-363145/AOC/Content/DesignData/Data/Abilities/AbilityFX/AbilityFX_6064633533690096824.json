@@ -1,0 +1,278 @@
+{
+	"audioFX": [
+		{
+			"akAudioEvent": "/Game/WwiseAudio/Events/Main/NPC/GiantRockElemental/NPC_GiantRockElemental_Impact.NPC_GiantRockElemental_Impact",
+			"weaponSwitch": "None",
+			"audioPlayType": "TYPE_AttachedTarget",
+			"audioDopplerType": "TYPE_None",
+			"attachLocationType": "KeepRelativeOffset",
+			"attachSocketName": "None",
+			"attachPosition":
+			{
+				"x": 0,
+				"y": 0,
+				"z": 0
+			},
+			"bFireOnlyOnce": true,
+			"bIsClientOnly": false,
+			"bDeferred": false
+		}
+	],
+	"audioExitFX": [],
+	"cameraFX":
+	{
+		"bUseNativeCameraShake": false,
+		"shakeClassPath": "None",
+		"shakeIntensitySoft":
+		{
+			"externalCurve": "None",
+			"editorCurveData":
+			{
+				"keys": [
+					{
+						"interpMode": "RCIM_Linear",
+						"tangentMode": "RCTM_Auto",
+						"tangentWeightMode": "RCTWM_WeightedNone",
+						"time": 0,
+						"value": 2,
+						"arriveTangent": 0,
+						"arriveTangentWeight": 0,
+						"leaveTangent": 0,
+						"leaveTangentWeight": 0
+					},
+					{
+						"interpMode": "RCIM_Linear",
+						"tangentMode": "RCTM_Auto",
+						"tangentWeightMode": "RCTWM_WeightedNone",
+						"time": 0.18799909949302673,
+						"value": 0.14127799868583679,
+						"arriveTangent": 0,
+						"arriveTangentWeight": 0,
+						"leaveTangent": 0,
+						"leaveTangentWeight": 0
+					},
+					{
+						"interpMode": "RCIM_Linear",
+						"tangentMode": "RCTM_Auto",
+						"tangentWeightMode": "RCTWM_WeightedNone",
+						"time": 0.5,
+						"value": 0,
+						"arriveTangent": 0,
+						"arriveTangentWeight": 0,
+						"leaveTangent": 0,
+						"leaveTangentWeight": 0
+					}
+				],
+				"defaultValue": 3.4028234663852886e+38,
+				"preInfinityExtrap": "RCCE_Constant",
+				"postInfinityExtrap": "RCCE_Constant",
+				"keyHandlesToIndices":
+				{
+				}
+			}
+		},
+		"shakeMultiplier":
+		{
+			"expression": ""
+		},
+		"fOVZoomSoft":
+		{
+			"externalCurve": "None",
+			"editorCurveData":
+			{
+				"keys": [
+					{
+						"interpMode": "RCIM_Linear",
+						"tangentMode": "RCTM_Auto",
+						"tangentWeightMode": "RCTWM_WeightedNone",
+						"time": 0,
+						"value": 2,
+						"arriveTangent": 0,
+						"arriveTangentWeight": 0,
+						"leaveTangent": 0,
+						"leaveTangentWeight": 0
+					},
+					{
+						"interpMode": "RCIM_Linear",
+						"tangentMode": "RCTM_Auto",
+						"tangentWeightMode": "RCTWM_WeightedNone",
+						"time": 0.5274391770362854,
+						"value": 0.50122106075286865,
+						"arriveTangent": 0,
+						"arriveTangentWeight": 0,
+						"leaveTangent": 0,
+						"leaveTangentWeight": 0
+					},
+					{
+						"interpMode": "RCIM_Linear",
+						"tangentMode": "RCTM_Auto",
+						"tangentWeightMode": "RCTWM_WeightedNone",
+						"time": 1.7030621767044067,
+						"value": 0,
+						"arriveTangent": 0,
+						"arriveTangentWeight": 0,
+						"leaveTangent": 0,
+						"leaveTangentWeight": 0
+					}
+				],
+				"defaultValue": 3.4028234663852886e+38,
+				"preInfinityExtrap": "RCCE_Constant",
+				"postInfinityExtrap": "RCCE_Constant",
+				"keyHandlesToIndices":
+				{
+				}
+			}
+		},
+		"fOVMultiplier":
+		{
+			"expression": ""
+		},
+		"chromaticAberrationIntensitySoft":
+		{
+			"externalCurve": "None",
+			"editorCurveData":
+			{
+				"keys": [
+					{
+						"interpMode": "RCIM_Linear",
+						"tangentMode": "RCTM_Auto",
+						"tangentWeightMode": "RCTWM_WeightedNone",
+						"time": 0,
+						"value": 1,
+						"arriveTangent": 0,
+						"arriveTangentWeight": 0,
+						"leaveTangent": 0,
+						"leaveTangentWeight": 0
+					},
+					{
+						"interpMode": "RCIM_Linear",
+						"tangentMode": "RCTM_Auto",
+						"tangentWeightMode": "RCTWM_WeightedNone",
+						"time": 1,
+						"value": 0,
+						"arriveTangent": 0,
+						"arriveTangentWeight": 0,
+						"leaveTangent": 0,
+						"leaveTangentWeight": 0
+					}
+				],
+				"defaultValue": 3.4028234663852886e+38,
+				"preInfinityExtrap": "RCCE_Constant",
+				"postInfinityExtrap": "RCCE_Constant",
+				"keyHandlesToIndices":
+				{
+				}
+			}
+		},
+		"chromaticAberrationMultiplier":
+		{
+			"expression": ""
+		},
+		"radialBlurScaleSoft":
+		{
+			"externalCurve": "None",
+			"editorCurveData":
+			{
+				"keys": [],
+				"defaultValue": 3.4028234663852886e+38,
+				"preInfinityExtrap": "RCCE_Constant",
+				"postInfinityExtrap": "RCCE_Constant",
+				"keyHandlesToIndices":
+				{
+				}
+			}
+		},
+		"radialBlurMultiplier":
+		{
+			"expression": ""
+		},
+		"bShouldFalloffIntensity": false,
+		"intensityFalloff":
+		{
+			"externalCurve": "None",
+			"editorCurveData":
+			{
+				"keys": [],
+				"defaultValue": 3.4028234663852886e+38,
+				"preInfinityExtrap": "RCCE_Constant",
+				"postInfinityExtrap": "RCCE_Constant",
+				"keyHandlesToIndices":
+				{
+				}
+			}
+		},
+		"playLocationOffset":
+		{
+			"x": 0,
+			"y": 0,
+			"z": 0
+		}
+	},
+	"materialFX": [],
+	"particleFX": [
+		{
+			"enabled":
+			{
+				"expression": ""
+			},
+			"niagaraSystemSoft": "/Game/Effects/FX_NPCs/RockElemental/Giant_RockElemental/NS_GiantRockElemental_RollingRumble_Hit.NS_GiantRockElemental_RollingRumble_Hit",
+			"lifeTime": 5,
+			"bCastVolumetricTranslucentShadow": false,
+			"attachType": "AttachedTarget",
+			"originMesh": "Character",
+			"attachSocketName": "FX_Chest",
+			"bUseAttachSocketForOriginLocation": true,
+			"bUseAttachSocketForOriginOrientation": true,
+			"transform":
+			{
+				"originLocation": "Target",
+				"originLocationSocket": "None",
+				"originOrientation": "Target",
+				"originOrientationSocket": "None",
+				"originScale": "World",
+				"bUseRelativeLocationExpression": false,
+				"relativeLocation":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"relativeLocationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeRotationExpression": false,
+				"relativeRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"relativeRotationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeScaleExpression": false,
+				"relativeScale":
+				{
+					"x": 3,
+					"y": 3,
+					"z": 3
+				},
+				"relativeScaleExpression":
+				{
+					"expression": ""
+				}
+			},
+			"bVisibleToSceneCaptureOnly": false,
+			"bAllowScalability": true,
+			"bUseLocalRemoteDynamicSystem": false
+		}
+	],
+	"niagaraParameters": [],
+	"tickNiagaraParameters": [],
+	"abilityEventNiagaraParams": [],
+	"guid": "6064633533690096824",
+	"name": "RockElemental_Giant_RollingRumble_Hit_FX",
+	"typeId": "30316008"
+}

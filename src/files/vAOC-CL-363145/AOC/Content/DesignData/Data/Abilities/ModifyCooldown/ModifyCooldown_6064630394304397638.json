@@ -1,0 +1,23 @@
+{
+	"targetCooldownAbility": [
+		{
+			"expression": "GetAbilityRecordByName(\"Ranger_Dash\")"
+		}
+	],
+	"bUseAbilityCost": false,
+	"deltaSeconds":
+	{
+		"expression": ""
+	},
+	"deltaCharges":
+	{
+		"expression": "SelectInt(GetRemainingAbilityCharges(GetAbilityRecordByName(\"Ranger_Dash\")) <= 0, 1, 0)"
+	},
+	"shouldTriggerCooldown":
+	{
+		"expression": ""
+	},
+	"guid": "6064630394304397638",
+	"name": "Ranger_Dash_Charge",
+	"typeId": "3031600207"
+}

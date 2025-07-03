@@ -1,0 +1,236 @@
+{
+	"bAlwaysPlayInRadius": false,
+	"playRadius": 0,
+	"audioFX": [],
+	"audioExitFX": [],
+	"cameraFX":
+	{
+		"shakeIntensitySoft":
+		{
+			"externalCurve": "None",
+			"editorCurveData":
+			{
+				"keys": [
+					{
+						"interpMode": "RCIM_Cubic",
+						"tangentMode": "RCTM_User",
+						"tangentWeightMode": "RCTWM_WeightedNone",
+						"time": 0,
+						"value": 0,
+						"arriveTangent": 0,
+						"arriveTangentWeight": 0,
+						"leaveTangent": 0,
+						"leaveTangentWeight": 0
+					},
+					{
+						"interpMode": "RCIM_Cubic",
+						"tangentMode": "RCTM_User",
+						"tangentWeightMode": "RCTWM_WeightedNone",
+						"time": 0.0099999997764825821,
+						"value": 0.10000000149011612,
+						"arriveTangent": 0,
+						"arriveTangentWeight": 0,
+						"leaveTangent": 0,
+						"leaveTangentWeight": 0
+					},
+					{
+						"interpMode": "RCIM_Cubic",
+						"tangentMode": "RCTM_User",
+						"tangentWeightMode": "RCTWM_WeightedNone",
+						"time": 0.10000000149011612,
+						"value": 0,
+						"arriveTangent": 0,
+						"arriveTangentWeight": 0,
+						"leaveTangent": 0,
+						"leaveTangentWeight": 0
+					}
+				],
+				"defaultValue": 3.4028234663852886e+38,
+				"preInfinityExtrap": "RCCE_Constant",
+				"postInfinityExtrap": "RCCE_Constant",
+				"keyHandlesToIndices":
+				{
+				}
+			}
+		},
+		"shakeMultiplier":
+		{
+			"expression": ""
+		},
+		"fOVZoomSoft":
+		{
+			"externalCurve": "None",
+			"editorCurveData":
+			{
+				"keys": [],
+				"defaultValue": 3.4028234663852886e+38,
+				"preInfinityExtrap": "RCCE_Constant",
+				"postInfinityExtrap": "RCCE_Constant",
+				"keyHandlesToIndices":
+				{
+				}
+			}
+		},
+		"fOVMultiplier":
+		{
+			"expression": ""
+		},
+		"chromaticAberrationIntensitySoft":
+		{
+			"externalCurve": "None",
+			"editorCurveData":
+			{
+				"keys": [
+					{
+						"interpMode": "RCIM_Cubic",
+						"tangentMode": "RCTM_User",
+						"tangentWeightMode": "RCTWM_WeightedNone",
+						"time": 0,
+						"value": 0,
+						"arriveTangent": 0,
+						"arriveTangentWeight": 0,
+						"leaveTangent": 0,
+						"leaveTangentWeight": 0
+					},
+					{
+						"interpMode": "RCIM_Cubic",
+						"tangentMode": "RCTM_User",
+						"tangentWeightMode": "RCTWM_WeightedNone",
+						"time": 0.0099999997764825821,
+						"value": 0.25,
+						"arriveTangent": 0,
+						"arriveTangentWeight": 0,
+						"leaveTangent": 0,
+						"leaveTangentWeight": 0
+					},
+					{
+						"interpMode": "RCIM_Cubic",
+						"tangentMode": "RCTM_User",
+						"tangentWeightMode": "RCTWM_WeightedNone",
+						"time": 0.10000000149011612,
+						"value": 0,
+						"arriveTangent": 0,
+						"arriveTangentWeight": 0,
+						"leaveTangent": 0,
+						"leaveTangentWeight": 0
+					}
+				],
+				"defaultValue": 3.4028234663852886e+38,
+				"preInfinityExtrap": "RCCE_Constant",
+				"postInfinityExtrap": "RCCE_Constant",
+				"keyHandlesToIndices":
+				{
+				}
+			}
+		},
+		"chromaticAberrationMultiplier":
+		{
+			"expression": ""
+		},
+		"radialBlurScaleSoft":
+		{
+			"externalCurve": "None",
+			"editorCurveData":
+			{
+				"keys": [],
+				"defaultValue": 3.4028234663852886e+38,
+				"preInfinityExtrap": "RCCE_Constant",
+				"postInfinityExtrap": "RCCE_Constant",
+				"keyHandlesToIndices":
+				{
+				}
+			}
+		},
+		"radialBlurMultiplier":
+		{
+			"expression": ""
+		}
+	},
+	"particleFX": [
+		{
+			"enabled":
+			{
+				"expression": ""
+			},
+			"niagaraSystemSoft": "/Game/Effects/FX_PCs/WeaponMaster/Particles/FX_Parry_Impact.FX_Parry_Impact",
+			"lifeTime": 2,
+			"bCastVolumetricTranslucentShadow": false,
+			"attachType": "AttachedTarget",
+			"attachSocketName": "FireSocket",
+			"bUseAttachSocketForOriginLocation": true,
+			"bUseAttachSocketForOriginOrientation": true,
+			"transform":
+			{
+				"originLocation": "HitLocation",
+				"originLocationSocket": "None",
+				"originOrientation": "ZUpXNormal",
+				"originOrientationSocket": "None",
+				"originScale": "World",
+				"relativeLocation":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"relativeRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"relativeScale":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				}
+			},
+			"bVisibleToSceneCaptureOnly": false
+		},
+		{
+			"enabled":
+			{
+				"expression": ""
+			},
+			"niagaraSystemSoft": "/Game/Effects/FX_PCs/WeaponMaster/Particles/FX_Parry_Impact.FX_Parry_Impact",
+			"lifeTime": 2,
+			"bCastVolumetricTranslucentShadow": false,
+			"attachType": "AttachedTarget",
+			"attachSocketName": "FireSocket",
+			"bUseAttachSocketForOriginLocation": true,
+			"bUseAttachSocketForOriginOrientation": true,
+			"transform":
+			{
+				"originLocation": "HitLocation",
+				"originLocationSocket": "None",
+				"originOrientation": "ZUpXNormal",
+				"originOrientationSocket": "None",
+				"originScale": "World",
+				"relativeLocation":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"relativeRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"relativeScale":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				}
+			},
+			"bVisibleToSceneCaptureOnly": false
+		}
+	],
+	"niagaraParameters": [],
+	"abilityEventNiagaraParams": [],
+	"guid": "109207310325368",
+	"name": "WeaponCombo_Melee_Medium_2h_Sword",
+	"typeId": "30316008"
+}

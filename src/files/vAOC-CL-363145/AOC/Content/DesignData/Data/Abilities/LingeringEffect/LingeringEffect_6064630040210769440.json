@@ -1,0 +1,112 @@
+{
+	"lingeringEffectClass": "/Script/GameSystemsPlugin.AoCAbilityLingeringEffect",
+	"attachType": "None",
+	"attachSocketName": "None",
+	"bUseAttachSocketForOriginLocation": false,
+	"bUseAttachSocketForOriginOrientation": false,
+	"spawnTransform":
+	{
+		"originLocation": "HitLocation",
+		"originLocationSocket": "None",
+		"originOrientation": "SourceToOrigin",
+		"originOrientationSocket": "None",
+		"originScale": "World",
+		"bUseRelativeLocationExpression": false,
+		"relativeLocation":
+		{
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"relativeLocationExpression":
+		{
+			"expression": ""
+		},
+		"bUseRelativeRotationExpression": false,
+		"relativeRotation":
+		{
+			"pitch": 0,
+			"yaw": 0,
+			"roll": 0
+		},
+		"relativeRotationExpression":
+		{
+			"expression": ""
+		},
+		"bUseRelativeScaleExpression": false,
+		"relativeScale":
+		{
+			"x": 1,
+			"y": 1,
+			"z": 1
+		},
+		"relativeScaleExpression":
+		{
+			"expression": ""
+		}
+	},
+	"deactivateFXTimeBeforeDestroy": 3,
+	"lifeTime": 4,
+	"expireAfterAppliedHits":
+	{
+		"expression": ""
+	},
+	"expireIfExpressionTrue":
+	{
+		"expression": ""
+	},
+	"bUseGlobalTickRate": true,
+	"tickRate": 0.5,
+	"startTimeOffset": 0,
+	"endTimeOffset": 0,
+	"lingeringHitTargetingInfoId":
+	{
+		"guid": "6064630040243930657",
+		"typeId": "30316011",
+		"name": "Zombie_PlagueVomit_LingeringHit_Targeting"
+	},
+	"initialHitsIds": [
+		{
+			"guid": "6064630040247469602",
+			"typeId": "30316005",
+			"name": "Zombie_PlagueVomit_InitialHit"
+		}
+	],
+	"lingeringHitsIds": [
+		{
+			"guid": "6064630040247469602",
+			"typeId": "30316005",
+			"name": "Zombie_PlagueVomit_DotHit"
+		}
+	],
+	"endHitsIds": [],
+	"onBeginOverlapHitsIds": [],
+	"onEndOverlapHitsIds": [],
+	"bNoHitOnFirstTick": true,
+	"speed": 0,
+	"bLockPitch": false,
+	"delayType": "DELAY_Time",
+	"delayTime": 0,
+	"delayTargetId":
+	{
+		"guid": "0",
+		"typeId": "30316011",
+		"name": "None"
+	},
+	"numberOfCharges": 1,
+	"lingeringFXId":
+	{
+		"guid": "6064630209029557778",
+		"typeId": "30316008",
+		"name": "Zombie_PlagueVomit_LingeringFX"
+	},
+	"delayedTrackingActivationFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"guid": "6064630040210769440",
+	"name": "Mycellion_Digest_Prezone",
+	"typeId": "30316007"
+}

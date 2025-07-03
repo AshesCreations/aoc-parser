@@ -1,0 +1,64 @@
+{
+	"sorting": [],
+	"contextualTargets": [],
+	"hurtBoxInfo":
+	{
+		"bCenterBlockTargetOnHurtbox": false,
+		"targetingVolumes": [
+			{
+				"id": "SHAPE_Box",
+				"location":
+				{
+					"x": 85,
+					"y": 0,
+					"z": 70
+				},
+				"rotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"bDebugShowOutline": true,
+				"bDebugShowInGame": false,
+				"originMesh": "ORIGIN_Character",
+				"origin": "OFFSET_Mesh",
+				"bTriggerAtOrigin": false,
+				"boneName": "None",
+				"sphereRadius": 24,
+				"boxExtent":
+				{
+					"x": 120,
+					"y": 50,
+					"z": 70
+				},
+				"capsuleHalfHeight": 50,
+				"capsuleRadius": 15,
+				"angle": 60,
+				"minHeight": 0,
+				"maxHeight": 500,
+				"animationKeys": [],
+				"bAlignToGround": false,
+				"traceHeight": 600,
+				"traceDepth": 600,
+				"bIgnoreIfGroundNotFound": true
+			}
+		]
+	},
+	"lockOnInfo":
+	{
+		"targetDiscoveryBehavior": "None",
+		"bCheckTargetValidity": false,
+		"bUseAoETargetingLocation": false,
+		"bPerformLoSCheck": true,
+		"bPerformConeCheck": true,
+		"angleCenter": 0,
+		"distanceCenter": 0,
+		"validAngle": 360,
+		"validDistance": 1000,
+		"bTargetInitialLocation": false
+	},
+	"guid": "6064631567752956053",
+	"name": "TerrorBird_Charge_Target",
+	"typeId": "30316011"
+}

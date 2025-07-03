@@ -1,0 +1,52 @@
+{
+	"animMontages": [
+		{
+			"abilityDirection": "NONE",
+			"animExpression":
+			{
+				"expression": "GetBlackboardInt(GetOwner(),\"Body Rolling Exit Mode\") == 1"
+			},
+			"startSectionName": "Rolling Exit",
+			"bOverrideSequenceResetTime": false,
+			"sequenceResetTime": 0,
+			"abilityAnimationSoftPaths": [
+				"/Game/DesignAssets/Population/NPC/Beast/Tortoise/AbilityMontages/Tortoise_BodyRolling.Tortoise_BodyRolling"
+			],
+			"targetingKey": 0,
+			"hitKeys": []
+		},
+		{
+			"abilityDirection": "NONE",
+			"animExpression":
+			{
+				"expression": "GetBlackboardInt(GetOwner(),\"Body Rolling Exit Mode\") == 2"
+			},
+			"startSectionName": "Immobolized Loop",
+			"bOverrideSequenceResetTime": false,
+			"sequenceResetTime": 0,
+			"abilityAnimationSoftPaths": [
+				"/Game/DesignAssets/Population/NPC/Beast/Tortoise/AbilityMontages/Tortoise_Immobilzed.Tortoise_Immobilzed"
+			],
+			"targetingKey": 0,
+			"hitKeys": []
+		},
+		{
+			"abilityDirection": "NONE",
+			"animExpression":
+			{
+				"expression": "GetBlackboardInt(GetOwner(),\"Body Rolling Exit Mode\") == 3"
+			},
+			"startSectionName": "Immobolized Exit",
+			"bOverrideSequenceResetTime": false,
+			"sequenceResetTime": 0,
+			"abilityAnimationSoftPaths": [
+				"/Game/DesignAssets/Population/NPC/Beast/Tortoise/AbilityMontages/Tortoise_Immobilzed.Tortoise_Immobilzed"
+			],
+			"targetingKey": 0,
+			"hitKeys": []
+		}
+	],
+	"guid": "6064632241668096000",
+	"name": "Tortoise_BodyRolling_Exit",
+	"typeId": "30316010"
+}

@@ -1,0 +1,28 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 4,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0,
+		"fishingEvents": 0
+	},
+	"branchTrigger":
+	{
+		"expression": "RecordNameIs(GetHitRecord(GetHitEvent()), \"Bear_RavageGrab_Hit\") && \r\n(GetNumTargets(GetHitEvent()) == 0 || HitFlagsContains(GetHitFlags(GetHitEvent()), EHitFlag::Miss))"
+	},
+	"bPredictedOnAutonomousClient": false,
+	"animBranchId":
+	{
+		"guid": "6064629580291571761",
+		"typeId": "30316010",
+		"name": "None"
+	},
+	"bOnlyBranchWithValidTarget": false,
+	"bOnRootMotionCollision": false,
+	"guid": "6064629580255133743",
+	"name": "Bear_Ravage_ConditionalBranch",
+	"typeId": "30316009"
+}

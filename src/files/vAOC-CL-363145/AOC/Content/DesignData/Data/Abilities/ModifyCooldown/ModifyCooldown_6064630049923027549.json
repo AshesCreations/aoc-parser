@@ -1,0 +1,26 @@
+{
+	"targetCooldownAbility": [
+		{
+			"expression": "GetAbilityRecordByName(\"Fighter_Overpower\")"
+		},
+		{
+			"expression": "GetAbilityRecordByName(\"Fighter_BrutalCleave\")"
+		}
+	],
+	"bUseAbilityCost": false,
+	"deltaSeconds":
+	{
+		"expression": "-100"
+	},
+	"deltaCharges":
+	{
+		"expression": ""
+	},
+	"shouldTriggerCooldown":
+	{
+		"expression": ""
+	},
+	"guid": "6064630049923027549",
+	"name": "Fighter_Passive_Overpower-BrutalCleave_CDReset",
+	"typeId": "3031600207"
+}

@@ -1,0 +1,23 @@
+{
+	"targetCooldownAbility": [
+		{
+			"expression": "$#30316001:106149103425144$"
+		}
+	],
+	"bUseAbilityCost": false,
+	"deltaSeconds":
+	{
+		"expression": "var delta = 0.;\r\nif(GetSkillPurchased(GetInstigator(), $#30316003:107281647359609$, $#981011333:6064629093979586561$)){\r\n    set delta = -GetRemainingAbilityCooldown($#30316001:106149103425144$);\r\n}\r\ndelta"
+	},
+	"deltaCharges":
+	{
+		"expression": ""
+	},
+	"shouldTriggerCooldown":
+	{
+		"expression": "false"
+	},
+	"guid": "6064631250646663385",
+	"name": "Mage_EE_Fireball",
+	"typeId": "3031600207"
+}

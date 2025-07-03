@@ -1,0 +1,718 @@
+{
+	"musicStartEvent": "/Game/WwiseAudio/Events/Main/Music/Music/Music_Start.Music_Start",
+	"musicStopEvent": "/Game/WwiseAudio/Events/Main/Music/Music/Music_Stop.Music_Stop",
+	"musicLobbyEnter":
+	{
+		"akAssetList": [
+			"/Game/WwiseAudio/States/MusicStates/MusicState/MusicState-Menu.MusicState-Menu"
+		],
+		"conditionalAkAssetLists": [],
+		"rtpcExpressions": []
+	},
+	"musicLobbyExit":
+	{
+		"akAssetList": [],
+		"conditionalAkAssetLists": [],
+		"rtpcExpressions": []
+	},
+	"musicLoadingScreenEnter":
+	{
+		"akAssetList": [],
+		"conditionalAkAssetLists": [],
+		"rtpcExpressions": []
+	},
+	"musicLoadingScreenExit":
+	{
+		"akAssetList": [],
+		"conditionalAkAssetLists": [],
+		"rtpcExpressions": []
+	},
+	"musicGameEnter":
+	{
+		"akAssetList": [
+			"/Game/WwiseAudio/States/MusicStates/MusicState/MusicState-Explore.MusicState-Explore"
+		],
+		"conditionalAkAssetLists": [],
+		"rtpcExpressions": []
+	},
+	"musicGameExit":
+	{
+		"akAssetList": [],
+		"conditionalAkAssetLists": [],
+		"rtpcExpressions": []
+	},
+	"musicPOIEnter":
+	{
+		"akAssetList": [],
+		"conditionalAkAssetLists": [],
+		"rtpcExpressions": []
+	},
+	"musicPOIExit":
+	{
+		"akAssetList": [],
+		"conditionalAkAssetLists": [],
+		"rtpcExpressions": []
+	},
+	"musicIdleTime": 5,
+	"musicAlertDistance": 3000,
+	"musicRankedCombatTimeout": 60,
+	"musicIdleEnter":
+	{
+		"akAssetList": [],
+		"conditionalAkAssetLists": [],
+		"rtpcExpressions": [
+			{
+				"rtpc": "/Game/WwiseAudio/Game_Parameters/GameParams/Music/MusicLayer1.MusicLayer1",
+				"rtpcValue":
+				{
+					"expression": "100"
+				}
+			},
+			{
+				"rtpc": "/Game/WwiseAudio/Game_Parameters/GameParams/Music/MusicLayer2.MusicLayer2",
+				"rtpcValue":
+				{
+					"expression": "0"
+				}
+			},
+			{
+				"rtpc": "/Game/WwiseAudio/Game_Parameters/GameParams/Music/MusicLayer3.MusicLayer3",
+				"rtpcValue":
+				{
+					"expression": "0"
+				}
+			},
+			{
+				"rtpc": "/Game/WwiseAudio/Game_Parameters/GameParams/Music/MusicLayer4.MusicLayer4",
+				"rtpcValue":
+				{
+					"expression": "0"
+				}
+			}
+		]
+	},
+	"musicIdleExit":
+	{
+		"akAssetList": [],
+		"conditionalAkAssetLists": [],
+		"rtpcExpressions": []
+	},
+	"musicTravelEnter":
+	{
+		"akAssetList": [],
+		"conditionalAkAssetLists": [],
+		"rtpcExpressions": [
+			{
+				"rtpc": "/Game/WwiseAudio/Game_Parameters/GameParams/Music/MusicLayer1.MusicLayer1",
+				"rtpcValue":
+				{
+					"expression": "100"
+				}
+			},
+			{
+				"rtpc": "/Game/WwiseAudio/Game_Parameters/GameParams/Music/MusicLayer2.MusicLayer2",
+				"rtpcValue":
+				{
+					"expression": "100"
+				}
+			},
+			{
+				"rtpc": "/Game/WwiseAudio/Game_Parameters/GameParams/Music/MusicLayer3.MusicLayer3",
+				"rtpcValue":
+				{
+					"expression": "0"
+				}
+			},
+			{
+				"rtpc": "/Game/WwiseAudio/Game_Parameters/GameParams/Music/MusicLayer4.MusicLayer4",
+				"rtpcValue":
+				{
+					"expression": "0"
+				}
+			}
+		]
+	},
+	"musicTravelExit":
+	{
+		"akAssetList": [],
+		"conditionalAkAssetLists": [],
+		"rtpcExpressions": []
+	},
+	"musicAlertEnter":
+	{
+		"akAssetList": [],
+		"conditionalAkAssetLists": [],
+		"rtpcExpressions": [
+			{
+				"rtpc": "/Game/WwiseAudio/Game_Parameters/GameParams/Music/MusicLayer1.MusicLayer1",
+				"rtpcValue":
+				{
+					"expression": "0"
+				}
+			},
+			{
+				"rtpc": "/Game/WwiseAudio/Game_Parameters/GameParams/Music/MusicLayer2.MusicLayer2",
+				"rtpcValue":
+				{
+					"expression": "0"
+				}
+			},
+			{
+				"rtpc": "/Game/WwiseAudio/Game_Parameters/GameParams/Music/MusicLayer3.MusicLayer3",
+				"rtpcValue":
+				{
+					"expression": "100"
+				}
+			},
+			{
+				"rtpc": "/Game/WwiseAudio/Game_Parameters/GameParams/Music/MusicLayer4.MusicLayer4",
+				"rtpcValue":
+				{
+					"expression": "0"
+				}
+			}
+		]
+	},
+	"musicAlertExit":
+	{
+		"akAssetList": [],
+		"conditionalAkAssetLists": [],
+		"rtpcExpressions": []
+	},
+	"musicDeathEnter":
+	{
+		"akAssetList": [
+			"/Game/WwiseAudio/States/MusicStates/MusicState/MusicState-Death.MusicState-Death"
+		],
+		"conditionalAkAssetLists": [],
+		"rtpcExpressions": []
+	},
+	"musicDeathExit":
+	{
+		"akAssetList": [],
+		"conditionalAkAssetLists": [],
+		"rtpcExpressions": []
+	},
+	"musicExploreEnter":
+	{
+		"akAssetList": [
+			"/Game/WwiseAudio/States/MusicStates/MusicState/MusicState-Explore.MusicState-Explore"
+		],
+		"conditionalAkAssetLists": [],
+		"rtpcExpressions": []
+	},
+	"musicExploreExit":
+	{
+		"akAssetList": [],
+		"conditionalAkAssetLists": [],
+		"rtpcExpressions": []
+	},
+	"musicCombatEnter":
+	{
+		"akAssetList": [
+			"/Game/WwiseAudio/Switches/MusicSwitches/MusicCombatChallenge/MusicCombatChallenge-Normal.MusicCombatChallenge-Normal"
+		],
+		"conditionalAkAssetLists": [],
+		"rtpcExpressions": [
+			{
+				"rtpc": "/Game/WwiseAudio/Game_Parameters/GameParams/Music/MusicLayer1.MusicLayer1",
+				"rtpcValue":
+				{
+					"expression": "0"
+				}
+			},
+			{
+				"rtpc": "/Game/WwiseAudio/Game_Parameters/GameParams/Music/MusicLayer2.MusicLayer2",
+				"rtpcValue":
+				{
+					"expression": "0"
+				}
+			},
+			{
+				"rtpc": "/Game/WwiseAudio/Game_Parameters/GameParams/Music/MusicLayer3.MusicLayer3",
+				"rtpcValue":
+				{
+					"expression": "0"
+				}
+			},
+			{
+				"rtpc": "/Game/WwiseAudio/Game_Parameters/GameParams/Music/MusicLayer4.MusicLayer4",
+				"rtpcValue":
+				{
+					"expression": "100"
+				}
+			}
+		]
+	},
+	"musicCombatExit":
+	{
+		"akAssetList": [
+			"/Game/WwiseAudio/Switches/MusicSwitches/MusicCombatChallenge/MusicCombatChallenge-Normal.MusicCombatChallenge-Normal"
+		],
+		"conditionalAkAssetLists": [],
+		"rtpcExpressions": []
+	},
+	"musicCombatEliteEnter":
+	{
+		"akAssetList": [
+			"/Game/WwiseAudio/Switches/MusicSwitches/MusicCombatChallenge/MusicCombatChallenge-Elite.MusicCombatChallenge-Elite"
+		],
+		"conditionalAkAssetLists": [],
+		"rtpcExpressions": []
+	},
+	"musicCombatEliteExit":
+	{
+		"akAssetList": [
+			"/Game/WwiseAudio/Switches/MusicSwitches/MusicCombatChallenge/MusicCombatChallenge-Normal.MusicCombatChallenge-Normal"
+		],
+		"conditionalAkAssetLists": [],
+		"rtpcExpressions": []
+	},
+	"musicCombatBossEnter":
+	{
+		"akAssetList": [
+			"/Game/WwiseAudio/States/MusicStates/MusicState/MusicState-Combat.MusicState-Combat"
+		],
+		"conditionalAkAssetLists": [],
+		"rtpcExpressions": []
+	},
+	"musicCombatBossExit":
+	{
+		"akAssetList": [
+			"/Game/WwiseAudio/Switches/MusicSwitches/MusicCombatIntensity/MusicCombatIntensity-Outro.MusicCombatIntensity-Outro"
+		],
+		"conditionalAkAssetLists": [],
+		"rtpcExpressions": []
+	},
+	"musicNodeEnter":
+	{
+		"akAssetList": [
+			"/Game/WwiseAudio/States/MusicStates/MusicState/MusicState-Node.MusicState-Node"
+		],
+		"conditionalAkAssetLists": [],
+		"rtpcExpressions": []
+	},
+	"musicNodeExit":
+	{
+		"akAssetList": [],
+		"conditionalAkAssetLists": [],
+		"rtpcExpressions": []
+	},
+	"musicSiegeInactiveEnter":
+	{
+		"akAssetList": [
+			"None"
+		],
+		"conditionalAkAssetLists": [],
+		"rtpcExpressions": [
+			{
+				"rtpc": "/Game/WwiseAudio/Game_Parameters/GameParams/Nodes/NodeSiege.NodeSiege",
+				"rtpcValue":
+				{
+					"expression": "0"
+				}
+			}
+		]
+	},
+	"musicSiegeInactiveExit":
+	{
+		"akAssetList": [],
+		"conditionalAkAssetLists": [],
+		"rtpcExpressions": []
+	},
+	"musicSiegeDeclareEnter":
+	{
+		"akAssetList": [
+			"None"
+		],
+		"conditionalAkAssetLists": [],
+		"rtpcExpressions": [
+			{
+				"rtpc": "/Game/WwiseAudio/Game_Parameters/GameParams/Nodes/NodeSiege.NodeSiege",
+				"rtpcValue":
+				{
+					"expression": "1"
+				}
+			}
+		]
+	},
+	"musicSiegeDeclareExit":
+	{
+		"akAssetList": [],
+		"conditionalAkAssetLists": [],
+		"rtpcExpressions": []
+	},
+	"musicSiegePrepareEnter":
+	{
+		"akAssetList": [
+			"None"
+		],
+		"conditionalAkAssetLists": [],
+		"rtpcExpressions": [
+			{
+				"rtpc": "/Game/WwiseAudio/Game_Parameters/GameParams/Nodes/NodeSiege.NodeSiege",
+				"rtpcValue":
+				{
+					"expression": "1"
+				}
+			}
+		]
+	},
+	"musicSiegePrepareExit":
+	{
+		"akAssetList": [],
+		"conditionalAkAssetLists": [],
+		"rtpcExpressions": []
+	},
+	"musicSiegeActiveEnter":
+	{
+		"akAssetList": [
+			"None"
+		],
+		"conditionalAkAssetLists": [],
+		"rtpcExpressions": [
+			{
+				"rtpc": "/Game/WwiseAudio/Game_Parameters/GameParams/Nodes/NodeSiege.NodeSiege",
+				"rtpcValue":
+				{
+					"expression": "2"
+				}
+			}
+		]
+	},
+	"musicSiegeActiveExit":
+	{
+		"akAssetList": [],
+		"conditionalAkAssetLists": [],
+		"rtpcExpressions": []
+	},
+	"musicSiegeVictory":
+	{
+		"akAssetList": [],
+		"conditionalAkAssetLists": [],
+		"rtpcExpressions": [
+			{
+				"rtpc": "/Game/WwiseAudio/Game_Parameters/GameParams/Nodes/NodeSiege.NodeSiege",
+				"rtpcValue":
+				{
+					"expression": "3"
+				}
+			}
+		]
+	},
+	"musicSiegeLoss":
+	{
+		"akAssetList": [],
+		"conditionalAkAssetLists": [],
+		"rtpcExpressions": [
+			{
+				"rtpc": "/Game/WwiseAudio/Game_Parameters/GameParams/Nodes/NodeSiege.NodeSiege",
+				"rtpcValue":
+				{
+					"expression": "4"
+				}
+			}
+		]
+	},
+	"musicSiegePillageEnter":
+	{
+		"akAssetList": [
+			"None"
+		],
+		"conditionalAkAssetLists": [],
+		"rtpcExpressions": [
+			{
+				"rtpc": "/Game/WwiseAudio/Game_Parameters/GameParams/Nodes/NodeSiege.NodeSiege",
+				"rtpcValue":
+				{
+					"expression": "5"
+				}
+			}
+		]
+	},
+	"musicSiegePillageExit":
+	{
+		"akAssetList": [],
+		"conditionalAkAssetLists": [],
+		"rtpcExpressions": []
+	},
+	"musicSiegeRubbleEnter":
+	{
+		"akAssetList": [
+			"None"
+		],
+		"conditionalAkAssetLists": [],
+		"rtpcExpressions": [
+			{
+				"rtpc": "/Game/WwiseAudio/Game_Parameters/GameParams/Nodes/NodeSiege.NodeSiege",
+				"rtpcValue":
+				{
+					"expression": "6"
+				}
+			}
+		]
+	},
+	"musicSiegeRubbleExit":
+	{
+		"akAssetList": [],
+		"conditionalAkAssetLists": [],
+		"rtpcExpressions": []
+	},
+	"musicCulture":
+	{
+		"kaelar":
+		{
+			"akAssetList": [
+				"None"
+			],
+			"conditionalAkAssetLists": [],
+			"rtpcExpressions": [
+				{
+					"rtpc": "/Game/WwiseAudio/Game_Parameters/GameParams/Nodes/NodeCulture.NodeCulture",
+					"rtpcValue":
+					{
+						"expression": "0"
+					}
+				}
+			]
+		},
+		"vaelune":
+		{
+			"akAssetList": [],
+			"conditionalAkAssetLists": [],
+			"rtpcExpressions": [
+				{
+					"rtpc": "None",
+					"rtpcValue":
+					{
+						"expression": "1"
+					}
+				}
+			]
+		},
+		"vek":
+		{
+			"akAssetList": [],
+			"conditionalAkAssetLists": [],
+			"rtpcExpressions": [
+				{
+					"rtpc": "None",
+					"rtpcValue":
+					{
+						"expression": "2"
+					}
+				}
+			]
+		},
+		"renkai":
+		{
+			"akAssetList": [],
+			"conditionalAkAssetLists": [],
+			"rtpcExpressions": [
+				{
+					"rtpc": "None",
+					"rtpcValue":
+					{
+						"expression": "3"
+					}
+				}
+			]
+		},
+		"empyrean":
+		{
+			"akAssetList": [],
+			"conditionalAkAssetLists": [],
+			"rtpcExpressions": [
+				{
+					"rtpc": "None",
+					"rtpcValue":
+					{
+						"expression": "4"
+					}
+				}
+			]
+		},
+		"pyrai":
+		{
+			"akAssetList": [],
+			"conditionalAkAssetLists": [],
+			"rtpcExpressions": [
+				{
+					"rtpc": "None",
+					"rtpcValue":
+					{
+						"expression": "5"
+					}
+				}
+			]
+		},
+		"dunir":
+		{
+			"akAssetList": [],
+			"conditionalAkAssetLists": [],
+			"rtpcExpressions": [
+				{
+					"rtpc": "None",
+					"rtpcValue":
+					{
+						"expression": "6"
+					}
+				}
+			]
+		},
+		"nikua":
+		{
+			"akAssetList": [],
+			"conditionalAkAssetLists": [],
+			"rtpcExpressions": [
+				{
+					"rtpc": "None",
+					"rtpcValue":
+					{
+						"expression": "7"
+					}
+				}
+			]
+		},
+		"tulnar":
+		{
+			"akAssetList": [],
+			"conditionalAkAssetLists": [],
+			"rtpcExpressions": [
+				{
+					"rtpc": "None",
+					"rtpcValue":
+					{
+						"expression": "8"
+					}
+				}
+			]
+		}
+	},
+	"musicNodeLevel":
+	{
+	},
+	"musicIntensity": [
+		{
+			"akAssetList": [],
+			"conditionalAkAssetLists": [],
+			"rtpcExpressions": [
+				{
+					"rtpc": "/Game/WwiseAudio/Game_Parameters/GameParams/Music/MusicCombatIntensity.MusicCombatIntensity",
+					"rtpcValue":
+					{
+						"expression": "0"
+					}
+				}
+			]
+		},
+		{
+			"akAssetList": [
+				"/Game/WwiseAudio/Switches/MusicSwitches/MusicCombatIntensity/MusicCombatIntensity-Intro.MusicCombatIntensity-Intro",
+				"/Game/WwiseAudio/States/MusicStates/MusicCombatOutro/MusicCombatOutro-Loss.MusicCombatOutro-Loss"
+			],
+			"conditionalAkAssetLists": [],
+			"rtpcExpressions": [
+				{
+					"rtpc": "/Game/WwiseAudio/Game_Parameters/GameParams/Music/MusicCombatIntensity.MusicCombatIntensity",
+					"rtpcValue":
+					{
+						"expression": "1"
+					}
+				}
+			]
+		},
+		{
+			"akAssetList": [
+				"/Game/WwiseAudio/Switches/MusicSwitches/MusicCombatIntensity/MusicCombatIntensity-Phase1.MusicCombatIntensity-Phase1",
+				"/Game/WwiseAudio/States/MusicStates/MusicCombatOutro/MusicCombatOutro-Loss.MusicCombatOutro-Loss"
+			],
+			"conditionalAkAssetLists": [],
+			"rtpcExpressions": [
+				{
+					"rtpc": "/Game/WwiseAudio/Game_Parameters/GameParams/Music/MusicCombatIntensity.MusicCombatIntensity",
+					"rtpcValue":
+					{
+						"expression": "2"
+					}
+				}
+			]
+		},
+		{
+			"akAssetList": [
+				"/Game/WwiseAudio/Switches/MusicSwitches/MusicCombatIntensity/MusicCombatIntensity-Phase2.MusicCombatIntensity-Phase2",
+				"/Game/WwiseAudio/States/MusicStates/MusicCombatOutro/MusicCombatOutro-Loss.MusicCombatOutro-Loss"
+			],
+			"conditionalAkAssetLists": [],
+			"rtpcExpressions": [
+				{
+					"rtpc": "/Game/WwiseAudio/Game_Parameters/GameParams/Music/MusicCombatIntensity.MusicCombatIntensity",
+					"rtpcValue":
+					{
+						"expression": "3"
+					}
+				}
+			]
+		},
+		{
+			"akAssetList": [
+				"/Game/WwiseAudio/Switches/MusicSwitches/MusicCombatIntensity/MusicCombatIntensity-Phase3.MusicCombatIntensity-Phase3",
+				"/Game/WwiseAudio/States/MusicStates/MusicCombatOutro/MusicCombatOutro-Loss.MusicCombatOutro-Loss"
+			],
+			"conditionalAkAssetLists": [],
+			"rtpcExpressions": [
+				{
+					"rtpc": "/Game/WwiseAudio/Game_Parameters/GameParams/Music/MusicCombatIntensity.MusicCombatIntensity",
+					"rtpcValue":
+					{
+						"expression": "4"
+					}
+				}
+			]
+		},
+		{
+			"akAssetList": [
+				"/Game/WwiseAudio/Switches/MusicSwitches/MusicCombatIntensity/MusicCombatIntensity-Phase4.MusicCombatIntensity-Phase4",
+				"/Game/WwiseAudio/States/MusicStates/MusicCombatOutro/MusicCombatOutro-Loss.MusicCombatOutro-Loss"
+			],
+			"conditionalAkAssetLists": [],
+			"rtpcExpressions": [
+				{
+					"rtpc": "/Game/WwiseAudio/Game_Parameters/GameParams/Music/MusicCombatIntensity.MusicCombatIntensity",
+					"rtpcValue":
+					{
+						"expression": "5"
+					}
+				}
+			]
+		},
+		{
+			"akAssetList": [
+				"/Game/WwiseAudio/States/MusicStates/MusicCombatOutro/MusicCombatOutro-Win.MusicCombatOutro-Win",
+				"/Game/WwiseAudio/Switches/MusicSwitches/MusicCombatIntensity/MusicCombatIntensity-Outro.MusicCombatIntensity-Outro"
+			],
+			"conditionalAkAssetLists": [],
+			"rtpcExpressions": []
+		}
+	],
+	"musicPlaybackRateRTPC": "/Game/WwiseAudio/Game_Parameters/GameParams/Music/PlaybackRate.PlaybackRate",
+	"musicBiomeIntroPlay":
+	{
+		"akAssetList": [
+			"/Game/WwiseAudio/Switches/MusicSwitches/MusicGameIntro/MusicGameIntro-Play.MusicGameIntro-Play"
+		],
+		"conditionalAkAssetLists": [],
+		"rtpcExpressions": []
+	},
+	"musicBiomeIntroSkip":
+	{
+		"akAssetList": [
+			"/Game/WwiseAudio/Switches/MusicSwitches/MusicGameIntro/MusicGameIntro-Skip.MusicGameIntro-Skip"
+		],
+		"conditionalAkAssetLists": [],
+		"rtpcExpressions": []
+	},
+	"guid": "6064630677622620160",
+	"name": "GameMusic",
+	"typeId": "919101"
+}

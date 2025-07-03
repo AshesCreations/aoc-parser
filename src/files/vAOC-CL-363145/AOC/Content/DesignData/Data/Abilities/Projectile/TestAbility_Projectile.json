@@ -1,0 +1,132 @@
+{
+	"projectileClass": "/Script/GameSystemsPlugin.AoCAbilityProjectile",
+	"projectileFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"impactFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"range": 10000,
+	"lifeTime": 5,
+	"bPersistBetweenAbilities": false,
+	"speed": 0,
+	"attachType": "AttachedSource",
+	"attachSocket": "None",
+	"bUseAttachSocketForOriginLocation": true,
+	"bUseAttachSocketForOriginOrientation": true,
+	"spawnTransform":
+	{
+		"originLocation": "Source",
+		"originLocationSocket": "None",
+		"originOrientation": "Source",
+		"originOrientationSocket": "None",
+		"originScale": "Source",
+		"relativeLocation":
+		{
+			"x": -90.402076721191406,
+			"y": 0,
+			"z": 244.51449584960938
+		},
+		"relativeRotation":
+		{
+			"pitch": 0,
+			"yaw": 0,
+			"roll": 0
+		},
+		"relativeScale":
+		{
+			"x": 1,
+			"y": 1,
+			"z": 1
+		}
+	},
+	"spawnOrigin": "Actor",
+	"spawnSocket": "None",
+	"bUseSocketRotation": true,
+	"bAttachOnSpawn": true,
+	"spawnOffset":
+	{
+		"x": -90.402076721191406,
+		"y": 0,
+		"z": 146.51449584960938
+	},
+	"spawnRotation":
+	{
+		"pitch": 0,
+		"yaw": 0,
+		"roll": 0
+	},
+	"bSpecifyFireRotation": false,
+	"fireRotation":
+	{
+		"pitch": 0,
+		"yaw": 0,
+		"roll": 0
+	},
+	"fireTransform":
+	{
+		"originLocation": "Source",
+		"originLocationSocket": "None",
+		"originOrientation": "Source",
+		"originOrientationSocket": "None",
+		"originScale": "Source",
+		"relativeLocation":
+		{
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"relativeRotation":
+		{
+			"pitch": 0,
+			"yaw": 0,
+			"roll": 0
+		},
+		"relativeScale":
+		{
+			"x": 1,
+			"y": 1,
+			"z": 1
+		}
+	},
+	"fireRotationConeAngle": 0,
+	"fadeOutDuration": 0,
+	"bAttachOnDestroy": true,
+	"hitsIds": [],
+	"bUseSphereCollision": false,
+	"sphereCollisionRadius": 16,
+	"maxProjectileHits": 1,
+	"projectileHitInterval": 0,
+	"bIgnoreNonTarget": false,
+	"bIgnoreWorldObjects": false,
+	"chainHitCount": 0,
+	"chainRadius": 0,
+	"bChainClosestTarget": true,
+	"projectileType": "PROJECTILE_Homing",
+	"bMaySpawnWithoutTarget": false,
+	"bAimedWithControlRotation": false,
+	"bLimitAngularSpeed": false,
+	"desiredAngularSpeed": 0,
+	"targetOffset":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"homingSocketName": "None",
+	"homingBoneName": "None",
+	"bFavorHighArc": false,
+	"arcingGravityScale": 1,
+	"arcCurve": "None",
+	"predictionAccuracy": 1,
+	"arcHeightModifier": 1,
+	"guid": "107060947015289",
+	"name": "TestAbility_Projectile",
+	"typeId": "30316006"
+}

@@ -1,0 +1,865 @@
+{
+	"audioFX": [],
+	"audioExitFX": [],
+	"cameraFX":
+	{
+		"bUseNativeCameraShake": false,
+		"shakeClassPath": "None",
+		"shakeIntensitySoft":
+		{
+			"externalCurve": "None",
+			"editorCurveData":
+			{
+				"keys": [],
+				"defaultValue": 3.4028234663852886e+38,
+				"preInfinityExtrap": "RCCE_Constant",
+				"postInfinityExtrap": "RCCE_Constant",
+				"keyHandlesToIndices":
+				{
+				}
+			}
+		},
+		"shakeMultiplier":
+		{
+			"expression": ""
+		},
+		"fOVZoomSoft":
+		{
+			"externalCurve": "None",
+			"editorCurveData":
+			{
+				"keys": [],
+				"defaultValue": 3.4028234663852886e+38,
+				"preInfinityExtrap": "RCCE_Constant",
+				"postInfinityExtrap": "RCCE_Constant",
+				"keyHandlesToIndices":
+				{
+				}
+			}
+		},
+		"fOVMultiplier":
+		{
+			"expression": ""
+		},
+		"chromaticAberrationIntensitySoft":
+		{
+			"externalCurve": "None",
+			"editorCurveData":
+			{
+				"keys": [],
+				"defaultValue": 3.4028234663852886e+38,
+				"preInfinityExtrap": "RCCE_Constant",
+				"postInfinityExtrap": "RCCE_Constant",
+				"keyHandlesToIndices":
+				{
+				}
+			}
+		},
+		"chromaticAberrationMultiplier":
+		{
+			"expression": ""
+		},
+		"radialBlurScaleSoft":
+		{
+			"externalCurve": "None",
+			"editorCurveData":
+			{
+				"keys": [],
+				"defaultValue": 3.4028234663852886e+38,
+				"preInfinityExtrap": "RCCE_Constant",
+				"postInfinityExtrap": "RCCE_Constant",
+				"keyHandlesToIndices":
+				{
+				}
+			}
+		},
+		"radialBlurMultiplier":
+		{
+			"expression": ""
+		},
+		"bShouldFalloffIntensity": false,
+		"intensityFalloff":
+		{
+			"externalCurve": "None",
+			"editorCurveData":
+			{
+				"keys": [],
+				"defaultValue": 3.4028234663852886e+38,
+				"preInfinityExtrap": "RCCE_Constant",
+				"postInfinityExtrap": "RCCE_Constant",
+				"keyHandlesToIndices":
+				{
+				}
+			}
+		},
+		"playLocationOffset":
+		{
+			"x": 0,
+			"y": 0,
+			"z": 0
+		}
+	},
+	"materialFX": [],
+	"particleFX": [
+		{
+			"enabled":
+			{
+				"expression": "GetEffectCount(GetOwner(),$#30316002:6064629093014044673$) <= 0 &&\r\nGetEffectCount(GetOwner(),$#30316002:6064629105627627534$) <= 0 &&\r\nGetEffectCount(GetOwner(),$#30316002:6064629105628151824$) <= 0 &&\r\nGetEffectCount(GetOwner(),$#30316002:6064629105628020751$) <= 0 && \r\nGetEffectCount(GetOwner(),$#30316002:6064629761725113743$) <= 0 && \r\nGetEffectCount(GetOwner(),$#30316002:6064629784867475789$) <= 0 && \r\nGetEffectCount(GetOwner(),$#30316002:6064629784579180497$) <= 0 &&\r\nGetEffectCount(GetOwner(),$#30316002:109195969386108$) <= 0 &&\r\nGetEffectCount(GetOwner(),$#30316002:6064631212173492744$) <= 0 &&\r\nGetEffectCount(GetOwner(),$#30316002:6064630831382003720$) <= 0 &&\r\nGetEffectCount(GetOwner(),$#30316002:6064631071916883969$) <= 0 &&\r\nGetEffectCount(GetOwner(),$#30316002:6064630958653642007$) <= 0 &&\r\nGetEffectCount(GetOwner(),$#30316002:6064631006744216277$) <= 0"
+			},
+			"niagaraSystemSoft": "/Game/Effects/FX_PCs/Mage/Particles/ElementalEmpowerment/Spellbook/Arcane/NS_Book_ArcaneCoreCharge.NS_Book_ArcaneCoreCharge",
+			"lifeTime": 0,
+			"bCastVolumetricTranslucentShadow": false,
+			"attachType": "AttachedInstigator",
+			"originMesh": "MainHand",
+			"attachSocketName": "FX_BookSpine",
+			"bUseAttachSocketForOriginLocation": true,
+			"bUseAttachSocketForOriginOrientation": true,
+			"transform":
+			{
+				"originLocation": "Instigator",
+				"originLocationSocket": "FX_BookSpine",
+				"originOrientation": "Instigator",
+				"originOrientationSocket": "FX_BookSpine",
+				"originScale": "World",
+				"bUseRelativeLocationExpression": false,
+				"relativeLocation":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"relativeLocationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeRotationExpression": false,
+				"relativeRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"relativeRotationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeScaleExpression": false,
+				"relativeScale":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				},
+				"relativeScaleExpression":
+				{
+					"expression": ""
+				}
+			},
+			"bVisibleToSceneCaptureOnly": false,
+			"bAllowScalability": true,
+			"bUseLocalRemoteDynamicSystem": false
+		},
+		{
+			"enabled":
+			{
+				"expression": "GetEffectCount(GetOwner(),$#30316002:6064629093014044673$) > 0 || \r\nGetEffectCount(GetOwner(),$#30316002:6064632264379138879$) > 0 || \r\nGetEffectCount(GetOwner(),$#30316002:6064632264985876290$) > 0"
+			},
+			"niagaraSystemSoft": "/Game/Effects/FX_PCs/Mage/Particles/ElementalEmpowerment/Spellbook/Fire/NS_Book_FireCoreCharge.NS_Book_FireCoreCharge",
+			"lifeTime": 0,
+			"bCastVolumetricTranslucentShadow": false,
+			"attachType": "AttachedInstigator",
+			"originMesh": "MainHand",
+			"attachSocketName": "FX_BookSpine",
+			"bUseAttachSocketForOriginLocation": true,
+			"bUseAttachSocketForOriginOrientation": true,
+			"transform":
+			{
+				"originLocation": "Instigator",
+				"originLocationSocket": "FX_BookSpine",
+				"originOrientation": "Instigator",
+				"originOrientationSocket": "FX_BookSpine",
+				"originScale": "World",
+				"bUseRelativeLocationExpression": false,
+				"relativeLocation":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"relativeLocationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeRotationExpression": false,
+				"relativeRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"relativeRotationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeScaleExpression": false,
+				"relativeScale":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				},
+				"relativeScaleExpression":
+				{
+					"expression": ""
+				}
+			},
+			"bVisibleToSceneCaptureOnly": false,
+			"bAllowScalability": true,
+			"bUseLocalRemoteDynamicSystem": false
+		},
+		{
+			"enabled":
+			{
+				"expression": "GetEffectCount(GetOwner(),$#30316002:6064629105627627534$) > 0 || \r\nGetEffectCount(GetOwner(),$#30316002:6064632266198941696$) > 0 || \r\nGetEffectCount(GetOwner(),$#30316002:6064632266234724356$) > 0"
+			},
+			"niagaraSystemSoft": "/Game/Effects/FX_PCs/Mage/Particles/ElementalEmpowerment/Spellbook/Lightning/NS_Book_LightningCoreCharge.NS_Book_LightningCoreCharge",
+			"lifeTime": 0,
+			"bCastVolumetricTranslucentShadow": false,
+			"attachType": "AttachedInstigator",
+			"originMesh": "MainHand",
+			"attachSocketName": "FX_BookSpine",
+			"bUseAttachSocketForOriginLocation": true,
+			"bUseAttachSocketForOriginOrientation": true,
+			"transform":
+			{
+				"originLocation": "Instigator",
+				"originLocationSocket": "FX_BookSpine",
+				"originOrientation": "Instigator",
+				"originOrientationSocket": "FX_BookSpine",
+				"originScale": "World",
+				"bUseRelativeLocationExpression": false,
+				"relativeLocation":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"relativeLocationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeRotationExpression": false,
+				"relativeRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"relativeRotationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeScaleExpression": false,
+				"relativeScale":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				},
+				"relativeScaleExpression":
+				{
+					"expression": ""
+				}
+			},
+			"bVisibleToSceneCaptureOnly": false,
+			"bAllowScalability": true,
+			"bUseLocalRemoteDynamicSystem": false
+		},
+		{
+			"enabled":
+			{
+				"expression": "GetEffectCount(GetOwner(),$#30316002:6064629105628020751$) > 0 || \r\nGetEffectCount(GetOwner(),$#30316002:6064632266251960328$) > 0 || \r\nGetEffectCount(GetOwner(),$#30316002:6064632266264608780$) > 0"
+			},
+			"niagaraSystemSoft": "/Game/Effects/FX_PCs/Mage/Particles/ElementalEmpowerment/Spellbook/Ice/NS_Book_IceCoreCharge.NS_Book_IceCoreCharge",
+			"lifeTime": 0,
+			"bCastVolumetricTranslucentShadow": false,
+			"attachType": "AttachedInstigator",
+			"originMesh": "MainHand",
+			"attachSocketName": "FX_BookSpine",
+			"bUseAttachSocketForOriginLocation": true,
+			"bUseAttachSocketForOriginOrientation": true,
+			"transform":
+			{
+				"originLocation": "Instigator",
+				"originLocationSocket": "FX_BookSpine",
+				"originOrientation": "Instigator",
+				"originOrientationSocket": "FX_BookSpine",
+				"originScale": "World",
+				"bUseRelativeLocationExpression": false,
+				"relativeLocation":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"relativeLocationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeRotationExpression": false,
+				"relativeRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"relativeRotationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeScaleExpression": false,
+				"relativeScale":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				},
+				"relativeScaleExpression":
+				{
+					"expression": ""
+				}
+			},
+			"bVisibleToSceneCaptureOnly": false,
+			"bAllowScalability": true,
+			"bUseLocalRemoteDynamicSystem": false
+		},
+		{
+			"enabled":
+			{
+				"expression": "GetEffectCount(GetOwner(),$#30316002:6064629761725113743$) > 0"
+			},
+			"niagaraSystemSoft": "/Game/Effects/FX_PCs/Mage/Particles/ElementalEmpowerment/Spellbook/Barbed/NS_Book_BarbedCoreCharge.NS_Book_BarbedCoreCharge",
+			"lifeTime": 0,
+			"bCastVolumetricTranslucentShadow": false,
+			"attachType": "AttachedInstigator",
+			"originMesh": "MainHand",
+			"attachSocketName": "FX_BookSpine",
+			"bUseAttachSocketForOriginLocation": true,
+			"bUseAttachSocketForOriginOrientation": true,
+			"transform":
+			{
+				"originLocation": "Instigator",
+				"originLocationSocket": "FX_BookSpine",
+				"originOrientation": "Instigator",
+				"originOrientationSocket": "FX_BookSpine",
+				"originScale": "World",
+				"bUseRelativeLocationExpression": false,
+				"relativeLocation":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"relativeLocationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeRotationExpression": false,
+				"relativeRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"relativeRotationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeScaleExpression": false,
+				"relativeScale":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				},
+				"relativeScaleExpression":
+				{
+					"expression": ""
+				}
+			},
+			"bVisibleToSceneCaptureOnly": false,
+			"bAllowScalability": true,
+			"bUseLocalRemoteDynamicSystem": false
+		},
+		{
+			"enabled":
+			{
+				"expression": "GetEffectCount(GetOwner(),$#30316002:6064629784867475789$) > 0"
+			},
+			"niagaraSystemSoft": "/Game/Effects/FX_PCs/Mage/Particles/ElementalEmpowerment/Spellbook/Concussive/NS_Book_ConcussiveCoreCharge.NS_Book_ConcussiveCoreCharge",
+			"lifeTime": 0,
+			"bCastVolumetricTranslucentShadow": false,
+			"attachType": "AttachedInstigator",
+			"originMesh": "MainHand",
+			"attachSocketName": "FX_BookSpine",
+			"bUseAttachSocketForOriginLocation": true,
+			"bUseAttachSocketForOriginOrientation": true,
+			"transform":
+			{
+				"originLocation": "Instigator",
+				"originLocationSocket": "FX_BookSpine",
+				"originOrientation": "Instigator",
+				"originOrientationSocket": "FX_BookSpine",
+				"originScale": "World",
+				"bUseRelativeLocationExpression": false,
+				"relativeLocation":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"relativeLocationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeRotationExpression": false,
+				"relativeRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"relativeRotationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeScaleExpression": false,
+				"relativeScale":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				},
+				"relativeScaleExpression":
+				{
+					"expression": ""
+				}
+			},
+			"bVisibleToSceneCaptureOnly": false,
+			"bAllowScalability": true,
+			"bUseLocalRemoteDynamicSystem": false
+		},
+		{
+			"enabled":
+			{
+				"expression": "GetEffectCount(GetOwner(),$#30316002:6064629784579180497$) > 0"
+			},
+			"niagaraSystemSoft": "/Game/Effects/FX_PCs/Mage/Particles/ElementalEmpowerment/Spellbook/Weighted/NS_Book_WeightedCoreCharge.NS_Book_WeightedCoreCharge",
+			"lifeTime": 0,
+			"bCastVolumetricTranslucentShadow": false,
+			"attachType": "AttachedInstigator",
+			"originMesh": "MainHand",
+			"attachSocketName": "FX_BookSpine",
+			"bUseAttachSocketForOriginLocation": true,
+			"bUseAttachSocketForOriginOrientation": true,
+			"transform":
+			{
+				"originLocation": "Instigator",
+				"originLocationSocket": "FX_BookSpine",
+				"originOrientation": "Instigator",
+				"originOrientationSocket": "FX_BookSpine",
+				"originScale": "World",
+				"bUseRelativeLocationExpression": false,
+				"relativeLocation":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"relativeLocationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeRotationExpression": false,
+				"relativeRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"relativeRotationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeScaleExpression": false,
+				"relativeScale":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				},
+				"relativeScaleExpression":
+				{
+					"expression": ""
+				}
+			},
+			"bVisibleToSceneCaptureOnly": false,
+			"bAllowScalability": true,
+			"bUseLocalRemoteDynamicSystem": false
+		},
+		{
+			"enabled":
+			{
+				"expression": "GetEffectCount(GetOwner(),$#30316002:109195969386108$) > 0"
+			},
+			"niagaraSystemSoft": "/Game/Effects/FX_PCs/Mage/Particles/ElementalEmpowerment/Spellbook/Blessed/NS_Book_BlessedCoreCharge.NS_Book_BlessedCoreCharge",
+			"lifeTime": 0,
+			"bCastVolumetricTranslucentShadow": false,
+			"attachType": "AttachedInstigator",
+			"originMesh": "MainHand",
+			"attachSocketName": "FX_BookSpine",
+			"bUseAttachSocketForOriginLocation": true,
+			"bUseAttachSocketForOriginOrientation": true,
+			"transform":
+			{
+				"originLocation": "Instigator",
+				"originLocationSocket": "FX_BookSpine",
+				"originOrientation": "Instigator",
+				"originOrientationSocket": "FX_BookSpine",
+				"originScale": "World",
+				"bUseRelativeLocationExpression": false,
+				"relativeLocation":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"relativeLocationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeRotationExpression": false,
+				"relativeRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"relativeRotationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeScaleExpression": false,
+				"relativeScale":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				},
+				"relativeScaleExpression":
+				{
+					"expression": ""
+				}
+			},
+			"bVisibleToSceneCaptureOnly": false,
+			"bAllowScalability": true,
+			"bUseLocalRemoteDynamicSystem": false
+		},
+		{
+			"enabled":
+			{
+				"expression": "GetEffectCount(GetOwner(),$#30316002:6064631212173492744$) > 0"
+			},
+			"niagaraSystemSoft": "/Game/Effects/FX_PCs/Mage/Particles/ElementalEmpowerment/Spellbook/Cathartic/NS_Book_CatharticCoreCharge.NS_Book_CatharticCoreCharge",
+			"lifeTime": 0,
+			"bCastVolumetricTranslucentShadow": false,
+			"attachType": "AttachedInstigator",
+			"originMesh": "MainHand",
+			"attachSocketName": "FX_BookSpine",
+			"bUseAttachSocketForOriginLocation": true,
+			"bUseAttachSocketForOriginOrientation": true,
+			"transform":
+			{
+				"originLocation": "Instigator",
+				"originLocationSocket": "FX_BookSpine",
+				"originOrientation": "Instigator",
+				"originOrientationSocket": "FX_BookSpine",
+				"originScale": "World",
+				"bUseRelativeLocationExpression": false,
+				"relativeLocation":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"relativeLocationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeRotationExpression": false,
+				"relativeRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"relativeRotationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeScaleExpression": false,
+				"relativeScale":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				},
+				"relativeScaleExpression":
+				{
+					"expression": ""
+				}
+			},
+			"bVisibleToSceneCaptureOnly": false,
+			"bAllowScalability": true,
+			"bUseLocalRemoteDynamicSystem": false
+		},
+		{
+			"enabled":
+			{
+				"expression": "GetEffectCount(GetOwner(),$#30316002:6064630831382003720$) > 0"
+			},
+			"niagaraSystemSoft": "/Game/Effects/FX_PCs/Mage/Particles/ElementalEmpowerment/Spellbook/Cheerful/NS_Book_CheerfulCoreCharge.NS_Book_CheerfulCoreCharge",
+			"lifeTime": 0,
+			"bCastVolumetricTranslucentShadow": false,
+			"attachType": "AttachedInstigator",
+			"originMesh": "MainHand",
+			"attachSocketName": "FX_BookSpine",
+			"bUseAttachSocketForOriginLocation": true,
+			"bUseAttachSocketForOriginOrientation": true,
+			"transform":
+			{
+				"originLocation": "Instigator",
+				"originLocationSocket": "FX_BookSpine",
+				"originOrientation": "Instigator",
+				"originOrientationSocket": "FX_BookSpine",
+				"originScale": "World",
+				"bUseRelativeLocationExpression": false,
+				"relativeLocation":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"relativeLocationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeRotationExpression": false,
+				"relativeRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"relativeRotationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeScaleExpression": false,
+				"relativeScale":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				},
+				"relativeScaleExpression":
+				{
+					"expression": ""
+				}
+			},
+			"bVisibleToSceneCaptureOnly": false,
+			"bAllowScalability": true,
+			"bUseLocalRemoteDynamicSystem": false
+		},
+		{
+			"enabled":
+			{
+				"expression": "GetEffectCount(GetOwner(),$#30316002:6064631071916883969$) > 0"
+			},
+			"niagaraSystemSoft": "/Game/Effects/FX_PCs/Mage/Particles/ElementalEmpowerment/Spellbook/Epic/NS_Book_EpicCoreCharge.NS_Book_EpicCoreCharge",
+			"lifeTime": 0,
+			"bCastVolumetricTranslucentShadow": false,
+			"attachType": "AttachedInstigator",
+			"originMesh": "MainHand",
+			"attachSocketName": "FX_BookSpine",
+			"bUseAttachSocketForOriginLocation": true,
+			"bUseAttachSocketForOriginOrientation": true,
+			"transform":
+			{
+				"originLocation": "Instigator",
+				"originLocationSocket": "FX_BookSpine",
+				"originOrientation": "Instigator",
+				"originOrientationSocket": "FX_BookSpine",
+				"originScale": "World",
+				"bUseRelativeLocationExpression": false,
+				"relativeLocation":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"relativeLocationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeRotationExpression": false,
+				"relativeRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"relativeRotationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeScaleExpression": false,
+				"relativeScale":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				},
+				"relativeScaleExpression":
+				{
+					"expression": ""
+				}
+			},
+			"bVisibleToSceneCaptureOnly": false,
+			"bAllowScalability": true,
+			"bUseLocalRemoteDynamicSystem": false
+		},
+		{
+			"enabled":
+			{
+				"expression": "GetEffectCount(GetOwner(),$#30316002:6064630958653642007$) > 0"
+			},
+			"niagaraSystemSoft": "/Game/Effects/FX_PCs/Mage/Particles/ElementalEmpowerment/Spellbook/Menacing/NS_Book_MenacingCoreCharge.NS_Book_MenacingCoreCharge",
+			"lifeTime": 0,
+			"bCastVolumetricTranslucentShadow": false,
+			"attachType": "AttachedInstigator",
+			"originMesh": "MainHand",
+			"attachSocketName": "FX_BookSpine",
+			"bUseAttachSocketForOriginLocation": true,
+			"bUseAttachSocketForOriginOrientation": true,
+			"transform":
+			{
+				"originLocation": "Instigator",
+				"originLocationSocket": "FX_BookSpine",
+				"originOrientation": "Instigator",
+				"originOrientationSocket": "FX_BookSpine",
+				"originScale": "World",
+				"bUseRelativeLocationExpression": false,
+				"relativeLocation":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"relativeLocationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeRotationExpression": false,
+				"relativeRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"relativeRotationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeScaleExpression": false,
+				"relativeScale":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				},
+				"relativeScaleExpression":
+				{
+					"expression": ""
+				}
+			},
+			"bVisibleToSceneCaptureOnly": false,
+			"bAllowScalability": true,
+			"bUseLocalRemoteDynamicSystem": false
+		},
+		{
+			"enabled":
+			{
+				"expression": "GetEffectCount(GetOwner(),$#30316002:6064631006744216277$) > 0"
+			},
+			"niagaraSystemSoft": "/Game/Effects/FX_PCs/Mage/Particles/ElementalEmpowerment/Spellbook/Pensive/NS_Book_PensiveCoreCharge.NS_Book_PensiveCoreCharge",
+			"lifeTime": 0,
+			"bCastVolumetricTranslucentShadow": false,
+			"attachType": "AttachedInstigator",
+			"originMesh": "MainHand",
+			"attachSocketName": "FX_BookSpine",
+			"bUseAttachSocketForOriginLocation": true,
+			"bUseAttachSocketForOriginOrientation": true,
+			"transform":
+			{
+				"originLocation": "Instigator",
+				"originLocationSocket": "FX_BookSpine",
+				"originOrientation": "Instigator",
+				"originOrientationSocket": "FX_BookSpine",
+				"originScale": "World",
+				"bUseRelativeLocationExpression": false,
+				"relativeLocation":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"relativeLocationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeRotationExpression": false,
+				"relativeRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"relativeRotationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeScaleExpression": false,
+				"relativeScale":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				},
+				"relativeScaleExpression":
+				{
+					"expression": ""
+				}
+			},
+			"bVisibleToSceneCaptureOnly": false,
+			"bAllowScalability": true,
+			"bUseLocalRemoteDynamicSystem": false
+		}
+	],
+	"niagaraParameters": [],
+	"tickNiagaraParameters": [],
+	"abilityEventNiagaraParams": [],
+	"guid": "6064631884082709979",
+	"name": "Book_CoreCharging_FX",
+	"typeId": "30316008"
+}

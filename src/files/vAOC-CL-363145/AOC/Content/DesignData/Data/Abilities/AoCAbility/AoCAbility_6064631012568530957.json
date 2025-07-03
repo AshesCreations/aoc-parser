@@ -1,0 +1,475 @@
+{
+	"abilityTags": [
+		{
+			"tagName": "ability.weaponcombo"
+		},
+		{
+			"tagName": "ability.Ranged"
+		}
+	],
+	"abilityIcon": "/Game/UI_Kit/Textures/icons/HUD_Equipment_Icons/Rng_Wand_A.Rng_Wand_A",
+	"abilityConditionalIcons": [],
+	"bOverrideRangeInTooltip": false,
+	"customTooltipRange":
+	{
+		"expression": ""
+	},
+	"bOverrideProgressBarClass": false,
+	"progressBarClass": "None",
+	"progressBarSortScore":
+	{
+		"expression": ""
+	},
+	"hasProc":
+	{
+		"expression": ""
+	},
+	"hasAbilitySynergy":
+	{
+		"expression": ""
+	},
+	"hasStatusEffectSynergy":
+	{
+		"expression": ""
+	},
+	"animMontages": [
+		{
+			"abilityDirection": "NONE",
+			"animExpression":
+			{
+				"expression": "const lvl2Passive = GetEffectCount(GetOwner(), $#30316002:6064630408076394497$) > 0;\r\nconst lvl3Passive = GetEffectCount(GetOwner(), $#30316002:6064630408076525570$) > 0;\r\nconst finisher = GetEffectCount(GetOwner(), $#30316002:6064630408076263424$) > 0;\r\n\r\nconst correctHit = \r\n\r\n((GetAbilityComboCount() % 3 == 0) && (lvl2Passive == false && lvl3Passive == false)) || \r\n((GetAbilityComboCount() % 4 == 0) && (lvl2Passive == true && lvl3Passive == false))  || \r\n((GetAbilityComboCount() % 5 == 0) && (lvl3Passive == true && finisher == false)) ||\r\n((GetAbilityComboCount() % 6 == 0) && (finisher == true));\r\n\r\ncorrectHit == true"
+			},
+			"startSectionName": "None",
+			"bOverrideSequenceResetTime": false,
+			"sequenceResetTime": 0,
+			"abilityAnimationSoftPaths": [
+				"/Game/Characters/Animations/RNG_WND/WeaponCombo/WeaponCombo_RngWnd_C_01.WeaponCombo_RngWnd_C_01"
+			],
+			"targetingKey": 0,
+			"hitKeys": []
+		},
+		{
+			"abilityDirection": "NONE",
+			"animExpression":
+			{
+				"expression": "const lvl2Passive = GetEffectCount(GetOwner(), $#30316002:6064630408076394497$) > 0;\r\nconst lvl3Passive = GetEffectCount(GetOwner(), $#30316002:6064630408076525570$) > 0;\r\nconst finisher = GetEffectCount(GetOwner(), $#30316002:6064630408076263424$) > 0;\r\n\r\nconst correctHit = \r\n\r\n((GetAbilityComboCount() % 3 == 1) && (lvl2Passive == false && lvl3Passive == false)) || \r\n((GetAbilityComboCount() % 4 == 1) && (lvl2Passive == true && lvl3Passive == false))  || \r\n((GetAbilityComboCount() % 5 == 1) && (lvl3Passive == true && finisher == false))   || \r\n((GetAbilityComboCount() % 6 == 1) && (finisher == true));\r\n\r\ncorrectHit == true"
+			},
+			"startSectionName": "None",
+			"bOverrideSequenceResetTime": false,
+			"sequenceResetTime": 0,
+			"abilityAnimationSoftPaths": [
+				"/Game/Characters/Animations/RNG_WND/WeaponCombo/WeaponCombo_RngWnd_C_02.WeaponCombo_RngWnd_C_02"
+			],
+			"targetingKey": 0,
+			"hitKeys": []
+		},
+		{
+			"abilityDirection": "NONE",
+			"animExpression":
+			{
+				"expression": "const lvl2Passive = GetEffectCount(GetOwner(), $#30316002:6064630408076394497$) > 0;\r\nconst lvl3Passive = GetEffectCount(GetOwner(), $#30316002:6064630408076525570$) > 0;\r\nconst finisher = GetEffectCount(GetOwner(), $#30316002:6064630408076263424$) > 0;\r\n\r\nconst correctHit = \r\n\r\n((GetAbilityComboCount() % 3 == 2) && (lvl2Passive == false && lvl3Passive == false)) || \r\n((GetAbilityComboCount() % 4 == 2) && (lvl2Passive == true && lvl3Passive == false))  || \r\n((GetAbilityComboCount() % 5 == 2) && (lvl3Passive == true && finisher == false))   || \r\n((GetAbilityComboCount() % 6 == 2) && (finisher == true));\r\n\r\ncorrectHit == true"
+			},
+			"startSectionName": "None",
+			"bOverrideSequenceResetTime": false,
+			"sequenceResetTime": 0,
+			"abilityAnimationSoftPaths": [
+				"/Game/Characters/Animations/RNG_WND/WeaponCombo/WeaponCombo_RngWnd_C_03.WeaponCombo_RngWnd_C_03"
+			],
+			"targetingKey": 0,
+			"hitKeys": []
+		},
+		{
+			"abilityDirection": "NONE",
+			"animExpression":
+			{
+				"expression": "const lvl2Passive = GetEffectCount(GetOwner(), $#30316002:6064630408076394497$) > 0;\r\nconst lvl3Passive = GetEffectCount(GetOwner(), $#30316002:6064630408076525570$) > 0;\r\nconst finisher = GetEffectCount(GetOwner(), $#30316002:6064630408076263424$) > 0;\r\n\r\nconst correctHit = \r\n\r\n((GetAbilityComboCount() % 4 == 3) && (lvl2Passive == true && lvl3Passive == false))  || \r\n((GetAbilityComboCount() % 5 == 3) && (lvl3Passive == true && finisher == false))   || \r\n((GetAbilityComboCount() % 6 == 3) && (finisher == true));\r\n\r\ncorrectHit == true"
+			},
+			"startSectionName": "None",
+			"bOverrideSequenceResetTime": false,
+			"sequenceResetTime": 0,
+			"abilityAnimationSoftPaths": [
+				"/Game/Characters/Animations/RNG_WND/WeaponCombo/WeaponCombo_RngWnd_C_04.WeaponCombo_RngWnd_C_04"
+			],
+			"targetingKey": 0,
+			"hitKeys": []
+		},
+		{
+			"abilityDirection": "NONE",
+			"animExpression":
+			{
+				"expression": "const lvl2Passive = GetEffectCount(GetOwner(), $#30316002:6064630408076394497$) > 0;\r\nconst lvl3Passive = GetEffectCount(GetOwner(), $#30316002:6064630408076525570$) > 0;\r\nconst finisher = GetEffectCount(GetOwner(), $#30316002:6064630408076263424$) > 0;\r\n\r\nconst correctHit = \r\n\r\n((GetAbilityComboCount() % 5 == 4) && (lvl3Passive == true && finisher == false))   || \r\n((GetAbilityComboCount() % 6 == 4) && (finisher == true));\r\n\r\ncorrectHit == true"
+			},
+			"startSectionName": "None",
+			"bOverrideSequenceResetTime": false,
+			"sequenceResetTime": 0,
+			"abilityAnimationSoftPaths": [
+				"/Game/Characters/Animations/RNG_WND/WeaponCombo/WeaponCombo_RngWnd_C_05.WeaponCombo_RngWnd_C_05"
+			],
+			"targetingKey": 0,
+			"hitKeys": []
+		},
+		{
+			"abilityDirection": "NONE",
+			"animExpression":
+			{
+				"expression": "const lvl2Passive = GetEffectCount(GetOwner(), $#30316002:6064630408076394497$) > 0;\r\nconst lvl3Passive = GetEffectCount(GetOwner(), $#30316002:6064630408076525570$) > 0;\r\nconst finisher = GetEffectCount(GetOwner(), $#30316002:6064630408076263424$) > 0;\r\n\r\nconst correctHit = \r\n \r\n((GetAbilityComboCount() % 6 == 5) && (finisher == true));\r\n\r\ncorrectHit == true"
+			},
+			"startSectionName": "None",
+			"bOverrideSequenceResetTime": false,
+			"sequenceResetTime": 0,
+			"abilityAnimationSoftPaths": [
+				"/Game/Characters/Animations/RNG_WND/WeaponCombo/WeaponCombo_RngWnd_C_06.WeaponCombo_RngWnd_C_06"
+			],
+			"targetingKey": 0,
+			"hitKeys": []
+		}
+	],
+	"activationRequirements":
+	{
+		"expression": ""
+	},
+	"weaponRequirement": "RequiresRanged",
+	"bRequiresStealthActivation": false,
+	"bDisableDuringCooldown": false,
+	"cooldown":
+	{
+		"expression": "0.000000"
+	},
+	"sharedCooldownTag": "None",
+	"cooldownCharges":
+	{
+		"expression": ""
+	},
+	"bOverrideInitialCooldownCharges": false,
+	"initialCooldownChargesOverride":
+	{
+		"expression": ""
+	},
+	"bPersistCooldown": false,
+	"suppressCooldownInUI":
+	{
+		"expression": ""
+	},
+	"bDeferAbilityTrigger": false,
+	"bMayNotBeUsedSimultaneously": false,
+	"bStopsAutoAttack": false,
+	"costs": [],
+	"hitsIds":
+	{
+		"1":
+		{
+			"guid": "6064629301725628939",
+			"typeId": "30316005",
+			"name": "None"
+		},
+		"3":
+		{
+			"guid": "6064629500191835957",
+			"typeId": "30316005",
+			"name": "None"
+		},
+		"4":
+		{
+			"guid": "6064630409016771625",
+			"typeId": "30316005",
+			"name": "None"
+		},
+		"5":
+		{
+			"guid": "6064630409017623594",
+			"typeId": "30316005",
+			"name": "None"
+		},
+		"6":
+		{
+			"guid": "6064630409017754667",
+			"typeId": "30316005",
+			"name": "None"
+		},
+		"7":
+		{
+			"guid": "6064630409017885740",
+			"typeId": "30316005",
+			"name": "None"
+		},
+		"8":
+		{
+			"guid": "6064630409018082349",
+			"typeId": "30316005",
+			"name": "None"
+		},
+		"9":
+		{
+			"guid": "6064630409018410030",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	},
+	"effectsIds":
+	{
+		"1":
+		{
+			"guid": "6064630415311517601",
+			"typeId": "30316002",
+			"name": "None"
+		},
+		"2":
+		{
+			"guid": "6064630415383869938",
+			"typeId": "30316002",
+			"name": "None"
+		}
+	},
+	"projectilesIds":
+	{
+		"1":
+		{
+			"guid": "6064629291234230347",
+			"typeId": "30316006",
+			"name": "None"
+		},
+		"2":
+		{
+			"guid": "6064629291236458572",
+			"typeId": "30316006",
+			"name": "None"
+		},
+		"3":
+		{
+			"guid": "6064629291236851789",
+			"typeId": "30316006",
+			"name": "None"
+		},
+		"4":
+		{
+			"guid": "6064629291237245006",
+			"typeId": "30316006",
+			"name": "None"
+		},
+		"5":
+		{
+			"guid": "6064629291237441615",
+			"typeId": "30316006",
+			"name": "None"
+		},
+		"6":
+		{
+			"guid": "6064629291237638224",
+			"typeId": "30316006",
+			"name": "None"
+		},
+		"7":
+		{
+			"guid": "6064629291237834833",
+			"typeId": "30316006",
+			"name": "None"
+		},
+		"8":
+		{
+			"guid": "6064629364300979978",
+			"typeId": "30316006",
+			"name": "None"
+		}
+	},
+	"lingeringEffectsIds":
+	{
+	},
+	"abilityFXIds":
+	{
+		"4":
+		{
+			"guid": "6064629301747583502",
+			"typeId": "30316008",
+			"name": "None"
+		},
+		"6":
+		{
+			"guid": "6064629302469020167",
+			"typeId": "30316008",
+			"name": "None"
+		},
+		"7":
+		{
+			"guid": "6064629377535323341",
+			"typeId": "30316008",
+			"name": "None"
+		}
+	},
+	"animBranchesIds":
+	{
+	},
+	"conditionalBranchesIds":
+	{
+	},
+	"reactionsIds":
+	{
+	},
+	"targetingRecordsIds":
+	{
+		"1":
+		{
+			"guid": "109262721537656",
+			"typeId": "30316011",
+			"name": "None"
+		}
+	},
+	"progressDisruptionRecordsIds":
+	{
+	},
+	"comboInputs": [
+		"BUTTON_Attack1"
+	],
+	"bExactInput": false,
+	"bufferPriority": -1,
+	"bUsableFromHotbar": false,
+	"abilityActivationInput": "UserConfigurable",
+	"bMayEscCancel": true,
+	"bIsAOEClickedAbility": false,
+	"targetActivationRequirement": "Always",
+	"applicableTargets": 2,
+	"applicableTypes": 0,
+	"applicableLifeStates": 1,
+	"applicableCasterLifeStates": 1,
+	"bNeverCancelAbility": false,
+	"bUseTargetingRecord": false,
+	"targetingRecordId":
+	{
+		"guid": "0",
+		"typeId": "30316011",
+		"name": "None"
+	},
+	"bCheckTargetValidity": true,
+	"bPerformLoSCheck": true,
+	"bPerformConeCheck": true,
+	"angleCenter": 0,
+	"distanceCenter": 0,
+	"validAngle": 180,
+	"validDistance": 3000,
+	"angleCenterExp":
+	{
+		"expression": "0.0"
+	},
+	"distanceCenterExp":
+	{
+		"expression": "0.0"
+	},
+	"validAngleExp":
+	{
+		"expression": "180.0"
+	},
+	"validDistanceExp":
+	{
+		"expression": "3000.0"
+	},
+	"speedMultiplierSource": "SPEED_AttackSpeed",
+	"bHoldAnimation": false,
+	"maximumHoldTime": 0,
+	"bMayCancelHoldAtAnyTime": true,
+	"cancelHoldSections": [],
+	"onCancelHoldBranchKey": 0,
+	"bOverrideHeldBehavior": false,
+	"heldAbilityBehavior": "Naive",
+	"bForceAnimCancel": false,
+	"bAllowRotation": true,
+	"pitchMode": "None",
+	"minPitch": 0,
+	"maxPitch": 0,
+	"bUsableInAir": true,
+	"bUsableWhileSwimming": true,
+	"bUsableWhileMounted": false,
+	"bOmnidirectional": false,
+	"bOrientWithInterpOnStart": false,
+	"onStartInterpConstRate": 0,
+	"bOrientWithInterpOnEnd": false,
+	"onEndInterpConstRate": 0,
+	"bQuickCancelFromAllAbilities": false,
+	"quickCancelFromAbilitiesIds": [],
+	"cancelSectionName": "None",
+	"bRequiresAnimCancel": false,
+	"cancelFromAbilitiesIds": [],
+	"cancelFromTagQuery":
+	{
+		"tokenStreamVersion": 0,
+		"tagDictionary": [],
+		"queryTokenStream": [],
+		"userDescription": "",
+		"autoDescription": ""
+	},
+	"scriptOnActivate": "None",
+	"areaTemplateFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"areaTemplateMaterial": "None",
+	"areaTemplateRotationRate": 0,
+	"areaTargetRadius": 0,
+	"areaTargetRange": 0,
+	"bShouldFaceClickedTarget": false,
+	"bPerformIsWalkableCheck": true,
+	"bMayTargetWater": false,
+	"bResetSequenceAfterTime": true,
+	"sequenceResetTime": 2,
+	"bForceComboBreak": false,
+	"abilityName": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"8373C3794283C4F8EF4052B50DB85753\", \"Attack\")",
+	"abilityDescription": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"941146B841F20A043811199047422371\", \"Attack\")",
+	"bAllowMovement": true,
+	"bPROTOTYPERotateRootMotion": false,
+	"rootMotionFreezeBehavior": "StopOnContact",
+	"rootMotionFreezeDistance": 0,
+	"rootMotionFreezeRadiusScale": 1,
+	"rootMotionIgnoreNonTarget": false,
+	"bVisualizeSweepCollision": false,
+	"canBreakEffects":
+	{
+		"expression": ""
+	},
+	"effectsToBreak":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"actionModeAbilityId":
+	{
+		"guid": "0",
+		"typeId": "30316001",
+		"name": "WeaponCombo_RngWnd_Action"
+	},
+	"aBTestingAbilitiesIds": [],
+	"animCancelsIds":
+	{
+		"1":
+		{
+			"guid": "6064628951682514945",
+			"typeId": "12352236",
+			"name": "None"
+		}
+	},
+	"modifyCooldownsIds":
+	{
+		"1":
+		{
+			"guid": "6064630394304397638",
+			"typeId": "3031600207",
+			"name": "None"
+		}
+	},
+	"aLSAbilityId":
+	{
+		"guid": "0",
+		"typeId": "30316001",
+		"name": "None"
+	},
+	"inputTerms": [],
+	"dynamicCastDuration":
+	{
+		"expression": ""
+	},
+	"bNeverCull": false,
+	"networkingMaxSpeed": 0,
+	"bInteruptChannelOnAbilityEnd": false,
+	"guid": "6064631012568530957",
+	"name": "WeaponCombo_Ranged_Spellstaff",
+	"typeId": "30316001"
+}

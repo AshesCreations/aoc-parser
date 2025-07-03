@@ -1,0 +1,91 @@
+{
+	"lingeringEffectClass": "/Script/GameSystemsPlugin.AoCAbilityLingeringEffect",
+	"attachType": "None",
+	"attachSocketName": "None",
+	"bUseAttachSocketForOriginLocation": false,
+	"bUseAttachSocketForOriginOrientation": false,
+	"spawnTransform":
+	{
+		"originLocation": "Owner",
+		"originLocationSocket": "None",
+		"originOrientation": "OriginControlRotation",
+		"originOrientationSocket": "None",
+		"originScale": "World",
+		"relativeLocation":
+		{
+			"x": 300,
+			"y": 300,
+			"z": -72
+		},
+		"relativeRotation":
+		{
+			"pitch": 0,
+			"yaw": -90,
+			"roll": 0
+		},
+		"relativeScale":
+		{
+			"x": 1,
+			"y": 1,
+			"z": 1
+		}
+	},
+	"deactivateFXTimeBeforeDestroy": 0.10000000149011612,
+	"lifeTime": 2.5,
+	"expireAfterAppliedHits":
+	{
+		"expression": ""
+	},
+	"bUseGlobalTickRate": true,
+	"tickRate": 0.5,
+	"startTimeOffset": 0,
+	"endTimeOffset": 0,
+	"lingeringHitTargetingInfoId":
+	{
+		"guid": "6064629047764385802",
+		"typeId": "30316011",
+		"name": "None"
+	},
+	"initialHitsIds": [
+		{
+			"guid": "6064629047777820684",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"lingeringHitsIds": [
+		{
+			"guid": "6064629047777820684",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"endHitsIds": [],
+	"onBeginOverlapHitsIds": [
+		{
+			"guid": "6064629047777820684",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"bNoHitOnFirstTick": true,
+	"speed": 0,
+	"bLockPitch": false,
+	"delayType": "DELAY_Time",
+	"delayTime": 0,
+	"delayTargetId":
+	{
+		"guid": "0",
+		"typeId": "30316011",
+		"name": "None"
+	},
+	"lingeringFXId":
+	{
+		"guid": "6064628673221558295",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"guid": "6064629047769825291",
+	"name": "AshenHaunt_WhirlingThrow_LingeringEffect",
+	"typeId": "30316007"
+}

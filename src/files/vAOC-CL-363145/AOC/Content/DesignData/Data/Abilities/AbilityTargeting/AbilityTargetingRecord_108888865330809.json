@@ -1,0 +1,100 @@
+{
+	"sorting": [],
+	"contextualTargets": [],
+	"hurtBoxInfo":
+	{
+		"bCenterBlockTargetOnHurtbox": false,
+		"targetingVolumes": [
+			{
+				"id": "SHAPE_Box",
+				"location":
+				{
+					"x": 180,
+					"y": 0,
+					"z": 160
+				},
+				"rotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"bDebugShowOutline": false,
+				"bDebugShowInGame": false,
+				"originMesh": "ORIGIN_Character",
+				"origin": "OFFSET_Mesh",
+				"bTriggerAtOrigin": false,
+				"boneName": "None",
+				"sphereRadius": 24,
+				"sphereRadiusExpr":
+				{
+					"expression": "24.0"
+				},
+				"boxExtent":
+				{
+					"x": 200,
+					"y": 240,
+					"z": 180
+				},
+				"boxExtentExpr":
+				{
+					"expression": "Vector(200.0, 240.0, 180.0)"
+				},
+				"capsuleHalfHeight": 50,
+				"capsuleHalfHeightExpr":
+				{
+					"expression": "50.0"
+				},
+				"capsuleRadius": 15,
+				"capsuleRadiusExpr":
+				{
+					"expression": "15.0"
+				},
+				"angle": 90,
+				"angleExpr":
+				{
+					"expression": "90.0"
+				},
+				"minHeight": 0,
+				"minHeightExpr":
+				{
+					"expression": "0.0"
+				},
+				"maxHeight": 24,
+				"maxHeightExpr":
+				{
+					"expression": "24.0"
+				},
+				"animationKeys": [],
+				"bAlignToGround": false,
+				"traceHeight": 600,
+				"traceHeightExpr":
+				{
+					"expression": "600.0"
+				},
+				"traceDepth": 600,
+				"traceDepthExpr":
+				{
+					"expression": "600.0"
+				},
+				"bIgnoreIfGroundNotFound": true
+			}
+		]
+	},
+	"lockOnInfo":
+	{
+		"targetDiscoveryBehavior": "None",
+		"bCheckTargetValidity": false,
+		"bUseAoETargetingLocation": false,
+		"bPerformLoSCheck": true,
+		"bPerformConeCheck": true,
+		"angleCenter": 0,
+		"distanceCenter": 0,
+		"validAngle": 0,
+		"validDistance": 0,
+		"bTargetInitialLocation": false
+	},
+	"guid": "108888865330809",
+	"name": "WeaponCombo_Melee_Sword_2H_Heavy_02",
+	"typeId": "30316011"
+}

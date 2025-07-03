@@ -1,0 +1,29 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 2,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 2,
+		"fishingEvents": 0
+	},
+	"bEvaluateOnTick": false,
+	"branchTrigger":
+	{
+		"expression": "IsMoving(GetOwner()) ||\r\n(GetStatModValue(GetHitEvent(), GetOwner(), $#10516612381411111:108986352686712$) < 0.0 && \r\nGetRecordTypeId(GetHitSourceRecord(GetHitEvent())) != GetReactionTypeId() && \r\nGetRecordTypeId(GetHitSourceRecord(GetHitEvent())) != GetEffectTypeId())"
+	},
+	"bPredictedOnAutonomousClient": true,
+	"animBranchId":
+	{
+		"guid": "109394239313536",
+		"typeId": "30316010",
+		"name": "None"
+	},
+	"bOnlyBranchWithValidTarget": false,
+	"bOnRootMotionCollision": false,
+	"guid": "109394217490046",
+	"name": "General_Rest_Cancel",
+	"typeId": "30316009"
+}

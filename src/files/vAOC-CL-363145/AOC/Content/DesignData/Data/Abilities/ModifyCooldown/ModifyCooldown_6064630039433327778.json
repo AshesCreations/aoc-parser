@@ -1,0 +1,65 @@
+{
+	"targetCooldownAbility": [
+		{
+			"expression": "GetAbilityRecordByName(\"Fighter_OverPower\")"
+		},
+		{
+			"expression": "GetAbilityRecordByName(\"Fighter_BrutalCleave\")"
+		},
+		{
+			"expression": "GetAbilityRecordByName(\"Fighter_BattleCry\")"
+		},
+		{
+			"expression": "GetAbilityRecordByName(\"Fighter_Blitz\")"
+		},
+		{
+			"expression": "GetAbilityRecordByName(\"Fighter_Cataclysm\")"
+		},
+		{
+			"expression": "GetAbilityRecordByName(\"Fighter_CripplingBlow\")"
+		},
+		{
+			"expression": "GetAbilityRecordByName(\"Fighter_LeapStrike\")"
+		},
+		{
+			"expression": "GetAbilityRecordByName(\"Fighter_LungingAssault\")"
+		},
+		{
+			"expression": "GetAbilityRecordByName(\"Fighter_LethalBlow\")"
+		},
+		{
+			"expression": "GetAbilityRecordByName(\"Fighter_Maim\")"
+		},
+		{
+			"expression": "GetAbilityRecordByName(\"Fighter_Rupture\")"
+		},
+		{
+			"expression": "GetAbilityRecordByName(\"Fighter_Whirlwind\")"
+		},
+		{
+			"expression": "GetAbilityRecordByName(\"Fighter_Wallop\")"
+		},
+		{
+			"expression": "GetAbilityRecordByName(\"Fighter_Knockout\")"
+		},
+		{
+			"expression": "GetAbilityRecordByName(\"Fighter_BloodFusion\")"
+		}
+	],
+	"bUseAbilityCost": false,
+	"deltaSeconds":
+	{
+		"expression": "-(GetStat(GetSource(), $#10516612381411111:6064629959589298751$)/4)"
+	},
+	"deltaCharges":
+	{
+		"expression": ""
+	},
+	"shouldTriggerCooldown":
+	{
+		"expression": ""
+	},
+	"guid": "6064630039433327778",
+	"name": "Fighter_Passive_Berserk_Reinvigorating",
+	"typeId": "3031600207"
+}

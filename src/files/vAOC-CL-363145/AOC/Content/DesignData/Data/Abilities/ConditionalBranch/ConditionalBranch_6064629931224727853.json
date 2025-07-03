@@ -1,0 +1,29 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 0,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0,
+		"fishingEvents": 0
+	},
+	"bEvaluateOnTick": true,
+	"branchTrigger":
+	{
+		"expression": "IsMoving(GetOwner()) ||\r\nGetStatModValue(GetHitEvent(), GetOwner(), $#10516612381411111:108986352686712$) < 0.0"
+	},
+	"bPredictedOnAutonomousClient": true,
+	"animBranchId":
+	{
+		"guid": "6064629931227873582",
+		"typeId": "30316010",
+		"name": "None"
+	},
+	"bOnlyBranchWithValidTarget": false,
+	"bOnRootMotionCollision": false,
+	"guid": "6064629931224727853",
+	"name": "Emote_Kneel_Cancel",
+	"typeId": "30316009"
+}

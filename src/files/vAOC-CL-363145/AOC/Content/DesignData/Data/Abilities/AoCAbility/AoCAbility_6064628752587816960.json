@@ -1,0 +1,632 @@
+{
+	"abilityTags": [
+		{
+			"tagName": "ability.weaponcombo"
+		}
+	],
+	"abilityIcon": "/Game/UI_Kit/Textures/icons/HUD_Equipment_Icons/1h_Mace_A.1h_Mace_A",
+	"abilityConditionalIcons": [],
+	"bOverrideRangeInTooltip": false,
+	"customTooltipRange":
+	{
+		"expression": ""
+	},
+	"bOverrideProgressBarClass": false,
+	"progressBarClass": "None",
+	"progressBarSortScore":
+	{
+		"expression": ""
+	},
+	"hasProc":
+	{
+		"expression": ""
+	},
+	"hasAbilitySynergy":
+	{
+		"expression": ""
+	},
+	"hasStatusEffectSynergy":
+	{
+		"expression": ""
+	},
+	"animMontages": [
+		{
+			"abilityDirection": "DIR_FORWARD",
+			"animExpression":
+			{
+				"expression": "GetAbilityComboCount() % 4 == 0 && IsComboButtonPressed(EComboButtons::BUTTON_Forward)"
+			},
+			"startSectionName": "None",
+			"bOverrideSequenceResetTime": false,
+			"sequenceResetTime": 0,
+			"abilityAnimationSoftPaths": [
+				"/Game/Characters/Animations/1H_MCE/CM_M_1H_MCE_Fwd_01_v2_Montage.CM_M_1H_MCE_Fwd_01_v2_Montage"
+			],
+			"targetingKey": 0,
+			"hitKeys": []
+		},
+		{
+			"abilityDirection": "DIR_FORWARD",
+			"animExpression":
+			{
+				"expression": "GetAbilityComboCount() % 4 == 1 && IsComboButtonPressed(EComboButtons::BUTTON_Forward)"
+			},
+			"startSectionName": "None",
+			"bOverrideSequenceResetTime": false,
+			"sequenceResetTime": 0,
+			"abilityAnimationSoftPaths": [
+				"/Game/Characters/Animations/1H_MCE/CM_M_1H_MCE_Fwd_02_v2_Montage.CM_M_1H_MCE_Fwd_02_v2_Montage"
+			],
+			"targetingKey": 0,
+			"hitKeys": []
+		},
+		{
+			"abilityDirection": "DIR_FORWARD",
+			"animExpression":
+			{
+				"expression": "GetAbilityComboCount() % 4 == 2 && IsComboButtonPressed(EComboButtons::BUTTON_Forward)"
+			},
+			"startSectionName": "None",
+			"bOverrideSequenceResetTime": false,
+			"sequenceResetTime": 0,
+			"abilityAnimationSoftPaths": [
+				"/Game/Characters/Animations/1H_MCE/CM_M_1H_MCE_Fwd_03_v2_Montage.CM_M_1H_MCE_Fwd_03_v2_Montage"
+			],
+			"targetingKey": 0,
+			"hitKeys": []
+		},
+		{
+			"abilityDirection": "DIR_FORWARD",
+			"animExpression":
+			{
+				"expression": "GetAbilityComboCount() % 4 == 3 && IsComboButtonPressed(EComboButtons::BUTTON_Forward)"
+			},
+			"startSectionName": "None",
+			"bOverrideSequenceResetTime": false,
+			"sequenceResetTime": 0,
+			"abilityAnimationSoftPaths": [
+				"/Game/Characters/Animations/1H_MCE/CM_M_1H_MCE_Fwd_04_v2_Montage.CM_M_1H_MCE_Fwd_04_v2_Montage"
+			],
+			"targetingKey": 0,
+			"hitKeys": []
+		},
+		{
+			"abilityDirection": "DIR_BACKWARD",
+			"animExpression":
+			{
+				"expression": "GetAbilityComboCount() % 4 == 0 && IsComboButtonPressed(EComboButtons::BUTTON_Backward)"
+			},
+			"startSectionName": "None",
+			"bOverrideSequenceResetTime": false,
+			"sequenceResetTime": 0,
+			"abilityAnimationSoftPaths": [
+				"/Game/Characters/Animations/1H_MCE/CM_M_1H_MCE_Bwd_01_v2_Montage.CM_M_1H_MCE_Bwd_01_v2_Montage"
+			],
+			"targetingKey": 0,
+			"hitKeys": []
+		},
+		{
+			"abilityDirection": "DIR_BACKWARD",
+			"animExpression":
+			{
+				"expression": "GetAbilityComboCount() % 4 == 1 && IsComboButtonPressed(EComboButtons::BUTTON_Backward)"
+			},
+			"startSectionName": "None",
+			"bOverrideSequenceResetTime": false,
+			"sequenceResetTime": 0,
+			"abilityAnimationSoftPaths": [
+				"/Game/Characters/Animations/1H_MCE/CM_M_1H_MCE_Bwd_02_v2_Montage.CM_M_1H_MCE_Bwd_02_v2_Montage"
+			],
+			"targetingKey": 0,
+			"hitKeys": []
+		},
+		{
+			"abilityDirection": "DIR_BACKWARD",
+			"animExpression":
+			{
+				"expression": "GetAbilityComboCount() % 4 == 2 && IsComboButtonPressed(EComboButtons::BUTTON_Backward)"
+			},
+			"startSectionName": "None",
+			"bOverrideSequenceResetTime": false,
+			"sequenceResetTime": 0,
+			"abilityAnimationSoftPaths": [
+				"/Game/Characters/Animations/1H_MCE/CM_M_1H_MCE_Bwd_03_v2_Montage.CM_M_1H_MCE_Bwd_03_v2_Montage"
+			],
+			"targetingKey": 0,
+			"hitKeys": []
+		},
+		{
+			"abilityDirection": "DIR_BACKWARD",
+			"animExpression":
+			{
+				"expression": "GetAbilityComboCount() % 4 == 3 && IsComboButtonPressed(EComboButtons::BUTTON_Backward)"
+			},
+			"startSectionName": "None",
+			"bOverrideSequenceResetTime": false,
+			"sequenceResetTime": 0,
+			"abilityAnimationSoftPaths": [
+				"/Game/Characters/Animations/1H_MCE/CM_M_1H_MCE_Bwd_04_v2_Montage.CM_M_1H_MCE_Bwd_04_v2_Montage"
+			],
+			"targetingKey": 0,
+			"hitKeys": []
+		},
+		{
+			"abilityDirection": "DIR_LEFT",
+			"animExpression":
+			{
+				"expression": "GetAbilityComboCount() % 4 == 0 && IsComboButtonPressed(EComboButtons::BUTTON_Left)"
+			},
+			"startSectionName": "None",
+			"bOverrideSequenceResetTime": false,
+			"sequenceResetTime": 0,
+			"abilityAnimationSoftPaths": [
+				"/Game/Characters/Animations/1H_MCE/CM_M_1H_MCE_Left_01_v2_Montage.CM_M_1H_MCE_Left_01_v2_Montage"
+			],
+			"targetingKey": 0,
+			"hitKeys": []
+		},
+		{
+			"abilityDirection": "DIR_LEFT",
+			"animExpression":
+			{
+				"expression": "GetAbilityComboCount() % 4 == 1 && IsComboButtonPressed(EComboButtons::BUTTON_Left)"
+			},
+			"startSectionName": "None",
+			"bOverrideSequenceResetTime": false,
+			"sequenceResetTime": 0,
+			"abilityAnimationSoftPaths": [
+				"/Game/Characters/Animations/1H_MCE/CM_M_1H_MCE_Left_02_v2_Montage.CM_M_1H_MCE_Left_02_v2_Montage"
+			],
+			"targetingKey": 0,
+			"hitKeys": []
+		},
+		{
+			"abilityDirection": "DIR_LEFT",
+			"animExpression":
+			{
+				"expression": "GetAbilityComboCount() % 4 == 2 && IsComboButtonPressed(EComboButtons::BUTTON_Left)"
+			},
+			"startSectionName": "None",
+			"bOverrideSequenceResetTime": false,
+			"sequenceResetTime": 0,
+			"abilityAnimationSoftPaths": [
+				"/Game/Characters/Animations/1H_MCE/CM_M_1H_MCE_Left_03_v2_Montage.CM_M_1H_MCE_Left_03_v2_Montage"
+			],
+			"targetingKey": 0,
+			"hitKeys": []
+		},
+		{
+			"abilityDirection": "DIR_LEFT",
+			"animExpression":
+			{
+				"expression": "GetAbilityComboCount() % 4 == 3 && IsComboButtonPressed(EComboButtons::BUTTON_Left)"
+			},
+			"startSectionName": "None",
+			"bOverrideSequenceResetTime": false,
+			"sequenceResetTime": 0,
+			"abilityAnimationSoftPaths": [
+				"/Game/Characters/Animations/1H_MCE/CM_M_1H_MCE_Left_04_v2_Montage.CM_M_1H_MCE_Left_04_v2_Montage"
+			],
+			"targetingKey": 0,
+			"hitKeys": []
+		},
+		{
+			"abilityDirection": "DIR_RIGHT",
+			"animExpression":
+			{
+				"expression": "GetAbilityComboCount() % 4 == 0 && IsComboButtonPressed(EComboButtons::BUTTON_Right)"
+			},
+			"startSectionName": "None",
+			"bOverrideSequenceResetTime": false,
+			"sequenceResetTime": 0,
+			"abilityAnimationSoftPaths": [
+				"/Game/Characters/Animations/1H_MCE/CM_M_1H_MCE_Right_01_v2_Montage.CM_M_1H_MCE_Right_01_v2_Montage"
+			],
+			"targetingKey": 0,
+			"hitKeys": []
+		},
+		{
+			"abilityDirection": "DIR_RIGHT",
+			"animExpression":
+			{
+				"expression": "GetAbilityComboCount() % 4 == 1 && IsComboButtonPressed(EComboButtons::BUTTON_Right)"
+			},
+			"startSectionName": "None",
+			"bOverrideSequenceResetTime": false,
+			"sequenceResetTime": 0,
+			"abilityAnimationSoftPaths": [
+				"/Game/Characters/Animations/1H_MCE/CM_M_1H_MCE_Right_02_v2_Montage.CM_M_1H_MCE_Right_02_v2_Montage"
+			],
+			"targetingKey": 0,
+			"hitKeys": []
+		},
+		{
+			"abilityDirection": "DIR_RIGHT",
+			"animExpression":
+			{
+				"expression": "GetAbilityComboCount() % 4 == 2 && IsComboButtonPressed(EComboButtons::BUTTON_Right)"
+			},
+			"startSectionName": "None",
+			"bOverrideSequenceResetTime": false,
+			"sequenceResetTime": 0,
+			"abilityAnimationSoftPaths": [
+				"/Game/Characters/Animations/1H_MCE/CM_M_1H_MCE_Right_03_v2_Montage.CM_M_1H_MCE_Right_03_v2_Montage"
+			],
+			"targetingKey": 0,
+			"hitKeys": []
+		},
+		{
+			"abilityDirection": "DIR_RIGHT",
+			"animExpression":
+			{
+				"expression": "GetAbilityComboCount() % 4 == 3 && IsComboButtonPressed(EComboButtons::BUTTON_Right)"
+			},
+			"startSectionName": "None",
+			"bOverrideSequenceResetTime": false,
+			"sequenceResetTime": 0,
+			"abilityAnimationSoftPaths": [
+				"/Game/Characters/Animations/1H_MCE/CM_M_1H_MCE_Right_04_v2_Montage.CM_M_1H_MCE_Right_04_v2_Montage"
+			],
+			"targetingKey": 0,
+			"hitKeys": []
+		},
+		{
+			"abilityDirection": "NONE",
+			"animExpression":
+			{
+				"expression": "GetAbilityComboCount() % 4 == 0 && !isanymovementkeypressed()"
+			},
+			"startSectionName": "None",
+			"bOverrideSequenceResetTime": false,
+			"sequenceResetTime": 0,
+			"abilityAnimationSoftPaths": [
+				"/Game/Characters/Animations/1H_MCE/CM_M_1H_MCE_InPlace_01_v2_Montage.CM_M_1H_MCE_InPlace_01_v2_Montage"
+			],
+			"targetingKey": 0,
+			"hitKeys": []
+		},
+		{
+			"abilityDirection": "NONE",
+			"animExpression":
+			{
+				"expression": "GetAbilityComboCount() % 4 == 1 && !isanymovementkeypressed()"
+			},
+			"startSectionName": "None",
+			"bOverrideSequenceResetTime": false,
+			"sequenceResetTime": 0,
+			"abilityAnimationSoftPaths": [
+				"/Game/Characters/Animations/1H_MCE/CM_M_1H_MCE_InPlace_02_v2_Montage.CM_M_1H_MCE_InPlace_02_v2_Montage"
+			],
+			"targetingKey": 0,
+			"hitKeys": []
+		},
+		{
+			"abilityDirection": "NONE",
+			"animExpression":
+			{
+				"expression": "GetAbilityComboCount() % 4 == 2 && !isanymovementkeypressed()"
+			},
+			"startSectionName": "None",
+			"bOverrideSequenceResetTime": false,
+			"sequenceResetTime": 0,
+			"abilityAnimationSoftPaths": [
+				"/Game/Characters/Animations/1H_MCE/CM_M_1H_MCE_InPlace_03_v2_Montage.CM_M_1H_MCE_InPlace_03_v2_Montage"
+			],
+			"targetingKey": 0,
+			"hitKeys": []
+		},
+		{
+			"abilityDirection": "NONE",
+			"animExpression":
+			{
+				"expression": "GetAbilityComboCount() % 4 == 3 && !isanymovementkeypressed()"
+			},
+			"startSectionName": "None",
+			"bOverrideSequenceResetTime": false,
+			"sequenceResetTime": 0,
+			"abilityAnimationSoftPaths": [
+				"/Game/Characters/Animations/1H_MCE/CM_M_1H_MCE_InPlace_04_v2_Montage.CM_M_1H_MCE_InPlace_04_v2_Montage"
+			],
+			"targetingKey": 0,
+			"hitKeys": []
+		}
+	],
+	"activationRequirements":
+	{
+		"expression": ""
+	},
+	"weaponRequirement": "NoRequirement",
+	"bDisableDuringCooldown": false,
+	"cooldown":
+	{
+		"expression": "0"
+	},
+	"sharedCooldownTag": "GCD_Prototype",
+	"cooldownCharges":
+	{
+		"expression": ""
+	},
+	"bOverrideInitialCooldownCharges": false,
+	"initialCooldownChargesOverride":
+	{
+		"expression": ""
+	},
+	"bPersistCooldown": false,
+	"suppressCooldownInUI":
+	{
+		"expression": ""
+	},
+	"bDeferAbilityTrigger": false,
+	"bMayNotBeUsedSimultaneously": false,
+	"bStopsAutoAttack": false,
+	"costs": [],
+	"hitsIds":
+	{
+		"1":
+		{
+			"guid": "109246593586809",
+			"typeId": "30316005",
+			"name": "None"
+		},
+		"2":
+		{
+			"guid": "109246654142079",
+			"typeId": "30316005",
+			"name": "None"
+		},
+		"3":
+		{
+			"guid": "109246980118146",
+			"typeId": "30316005",
+			"name": "None"
+		},
+		"4":
+		{
+			"guid": "6064628752605773825",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	},
+	"effectsIds":
+	{
+	},
+	"projectilesIds":
+	{
+	},
+	"lingeringEffectsIds":
+	{
+	},
+	"abilityFXIds":
+	{
+		"1":
+		{
+			"guid": "109349137045112",
+			"typeId": "30316008",
+			"name": "None"
+		},
+		"3":
+		{
+			"guid": "109433365026424",
+			"typeId": "30316008",
+			"name": "None"
+		},
+		"4":
+		{
+			"guid": "109433913235064",
+			"typeId": "30316008",
+			"name": "None"
+		},
+		"5":
+		{
+			"guid": "109433915725433",
+			"typeId": "30316008",
+			"name": "None"
+		},
+		"9":
+		{
+			"guid": "6064628831755501568",
+			"typeId": "30316008",
+			"name": "None"
+		},
+		"12":
+		{
+			"guid": "109162461615736",
+			"typeId": "30316008",
+			"name": "None"
+		},
+		"13":
+		{
+			"guid": "6064628861651189760",
+			"typeId": "30316008",
+			"name": "None"
+		},
+		"16":
+		{
+			"guid": "6064628861651517443",
+			"typeId": "30316008",
+			"name": "None"
+		}
+	},
+	"animBranchesIds":
+	{
+	},
+	"conditionalBranchesIds":
+	{
+	},
+	"reactionsIds":
+	{
+	},
+	"targetingRecordsIds":
+	{
+		"1":
+		{
+			"guid": "109246619145850",
+			"typeId": "30316011",
+			"name": "None"
+		},
+		"2":
+		{
+			"guid": "109246655649408",
+			"typeId": "30316011",
+			"name": "None"
+		},
+		"3":
+		{
+			"guid": "109246981953155",
+			"typeId": "30316011",
+			"name": "None"
+		},
+		"4":
+		{
+			"guid": "109246991193733",
+			"typeId": "30316011",
+			"name": "None"
+		}
+	},
+	"progressDisruptionRecordsIds":
+	{
+	},
+	"comboInputs": [
+		"BUTTON_Attack1"
+	],
+	"bExactInput": false,
+	"bufferPriority": -1,
+	"bUsableFromHotbar": true,
+	"abilityActivationInput": "UserConfigurable",
+	"bIsAOEClickedAbility": false,
+	"targetActivationRequirement": "Never",
+	"applicableTargets": 0,
+	"applicableLifeStates": 1,
+	"applicableInstigatorLifeState": 1,
+	"applicableCasterLifeStates": 1,
+	"bNeverCancelAbility": false,
+	"bUseTargetingRecord": false,
+	"targetingRecordId":
+	{
+		"guid": "0",
+		"typeId": "30316011",
+		"name": "None"
+	},
+	"bCheckTargetValidity": true,
+	"bPerformLoSCheck": true,
+	"bPerformConeCheck": true,
+	"angleCenter": 0,
+	"distanceCenter": 0,
+	"validAngle": 0,
+	"validDistance": 0,
+	"angleCenterExp":
+	{
+		"expression": "0.0"
+	},
+	"distanceCenterExp":
+	{
+		"expression": "0.0"
+	},
+	"validAngleExp":
+	{
+		"expression": "0.0"
+	},
+	"validDistanceExp":
+	{
+		"expression": "0.0"
+	},
+	"speedMultiplierSource": "SPEED_AttackSpeed",
+	"bHoldAnimation": false,
+	"maximumHoldTime": 0,
+	"bMayCancelHoldAtAnyTime": true,
+	"cancelHoldSections": [],
+	"onCancelHoldBranchKey": 0,
+	"bOverrideHeldBehavior": false,
+	"heldAbilityBehavior": "Naive",
+	"bForceAnimCancel": false,
+	"bAllowRotation": true,
+	"pitchMode": "None",
+	"minPitch": 0,
+	"maxPitch": 0,
+	"bUsableInAir": false,
+	"bUsableWhileSwimming": false,
+	"bOmnidirectional": true,
+	"bOrientWithInterpOnStart": true,
+	"onStartInterpConstRate": 240,
+	"bOrientWithInterpOnEnd": false,
+	"onEndInterpConstRate": 240,
+	"bQuickCancelFromAllAbilities": false,
+	"quickCancelFromAbilitiesIds": [],
+	"cancelSectionName": "None",
+	"bRequiresAnimCancel": false,
+	"cancelFromAbilitiesIds": [],
+	"cancelFromTagQuery":
+	{
+		"tokenStreamVersion": 0,
+		"tagDictionary": [],
+		"queryTokenStream": [],
+		"userDescription": "",
+		"autoDescription": ""
+	},
+	"scriptOnActivate": "None",
+	"areaTemplateFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"areaTemplateMaterial": "None",
+	"areaTemplateRotationRate": 0,
+	"areaTargetRadius": 0,
+	"areaTargetRange": 0,
+	"bShouldFaceClickedTarget": false,
+	"bResetSequenceAfterTime": true,
+	"sequenceResetTime": 1,
+	"abilityName": "Attack",
+	"abilityDescription": "",
+	"bAllowMovement": true,
+	"bPROTOTYPERotateRootMotion": true,
+	"rootMotionFreezeBehavior": "StopOnContact",
+	"rootMotionFreezeDistance": 0,
+	"rootMotionFreezeRadiusScale": 1,
+	"rootMotionIgnoreNonTarget": false,
+	"bVisualizeSweepCollision": false,
+	"canBreakEffects":
+	{
+		"expression": ""
+	},
+	"effectsToBreak":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"actionModeAbilityId":
+	{
+		"guid": "0",
+		"typeId": "30316001",
+		"name": "None"
+	},
+	"aBTestingAbilitiesIds": [],
+	"animCancelsIds":
+	{
+		"1":
+		{
+			"guid": "6064628951682514945",
+			"typeId": "12352236",
+			"name": "None"
+		}
+	},
+	"modifyCooldownsIds":
+	{
+	},
+	"aLSAbilityId":
+	{
+		"guid": "0",
+		"typeId": "30316001",
+		"name": "None"
+	},
+	"inputTerms": [],
+	"dynamicCastDuration":
+	{
+		"expression": ""
+	},
+	"bNeverCull": false,
+	"guid": "6064628752587816960",
+	"name": "Old-WeaponCombo_Melee_Mace_1H_Medium",
+	"typeId": "30316001"
+}

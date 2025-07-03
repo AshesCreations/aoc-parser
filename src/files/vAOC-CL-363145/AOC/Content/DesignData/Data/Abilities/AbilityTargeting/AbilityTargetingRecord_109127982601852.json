@@ -1,0 +1,100 @@
+{
+	"sorting": [],
+	"contextualTargets": [],
+	"hurtBoxInfo":
+	{
+		"bCenterBlockTargetOnHurtbox": false,
+		"targetingVolumes": [
+			{
+				"id": "SHAPE_Capsule",
+				"location":
+				{
+					"x": 150,
+					"y": 0,
+					"z": 0
+				},
+				"rotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"bDebugShowOutline": true,
+				"bDebugShowInGame": true,
+				"originMesh": "ORIGIN_Character",
+				"origin": "OFFSET_Mesh",
+				"bTriggerAtOrigin": false,
+				"boneName": "None",
+				"sphereRadius": 250,
+				"sphereRadiusExpr":
+				{
+					"expression": "250.0"
+				},
+				"boxExtent":
+				{
+					"x": 24,
+					"y": 24,
+					"z": 24
+				},
+				"boxExtentExpr":
+				{
+					"expression": "Vector(24.0, 24.0, 24.0)"
+				},
+				"capsuleHalfHeight": 350,
+				"capsuleHalfHeightExpr":
+				{
+					"expression": "350.0"
+				},
+				"capsuleRadius": 250,
+				"capsuleRadiusExpr":
+				{
+					"expression": "250.0"
+				},
+				"angle": 90,
+				"angleExpr":
+				{
+					"expression": "90.0"
+				},
+				"minHeight": 0,
+				"minHeightExpr":
+				{
+					"expression": "0.0"
+				},
+				"maxHeight": 24,
+				"maxHeightExpr":
+				{
+					"expression": "24.0"
+				},
+				"animationKeys": [],
+				"bAlignToGround": false,
+				"traceHeight": 600,
+				"traceHeightExpr":
+				{
+					"expression": "600.0"
+				},
+				"traceDepth": 600,
+				"traceDepthExpr":
+				{
+					"expression": "600.0"
+				},
+				"bIgnoreIfGroundNotFound": true
+			}
+		]
+	},
+	"lockOnInfo":
+	{
+		"targetDiscoveryBehavior": "None",
+		"bCheckTargetValidity": false,
+		"bUseAoETargetingLocation": false,
+		"bPerformLoSCheck": true,
+		"bPerformConeCheck": true,
+		"angleCenter": 0,
+		"distanceCenter": 0,
+		"validAngle": 0,
+		"validDistance": 0,
+		"bTargetInitialLocation": false
+	},
+	"guid": "109127982601852",
+	"name": "Tank_TremoringBellow_Stomp",
+	"typeId": "30316011"
+}

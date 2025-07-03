@@ -1,0 +1,119 @@
+{
+	"sorting": [],
+	"contextualTargets": [],
+	"hurtBoxInfo":
+	{
+		"bCenterBlockTargetOnHurtbox": false,
+		"targetingVolumes": [
+			{
+				"id": "SHAPE_Sphere",
+				"location":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"rotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"bDebugShowOutline": true,
+				"bDebugShowInGame": true,
+				"originMesh": "ORIGIN_Character",
+				"origin": "OFFSET_Mesh",
+				"bShapeIsHollow": false,
+				"bShowHitPointForHollowHits": false,
+				"bTriggerAtOrigin": false,
+				"boneName": "None",
+				"sphereRadius": 350,
+				"sphereRadiusExpr":
+				{
+					"expression": ""
+				},
+				"innerSphereRadius": 12,
+				"innerSphereRadiusExpr":
+				{
+					"expression": ""
+				},
+				"bUsePlayerOnlyOctree": false,
+				"boxExtent":
+				{
+					"x": 200,
+					"y": 50,
+					"z": 100
+				},
+				"boxExtentExpr":
+				{
+					"expression": "Vector(200.0, 50.0, 100.0)"
+				},
+				"capsuleHalfHeight": 50,
+				"capsuleHalfHeightExpr":
+				{
+					"expression": "50.0"
+				},
+				"capsuleRadius": 15,
+				"capsuleRadiusExpr":
+				{
+					"expression": "15.0"
+				},
+				"innerCapsuleHalfHeight": 50,
+				"innerCapsuleHalfHeightExpr":
+				{
+					"expression": ""
+				},
+				"innerCapsuleRadius": 7.5,
+				"innerCapsuleRadiusExpr":
+				{
+					"expression": ""
+				},
+				"angle": 90,
+				"angleExpr":
+				{
+					"expression": "90.0"
+				},
+				"minHeight": 0,
+				"minHeightExpr":
+				{
+					"expression": "0.0"
+				},
+				"maxHeight": 24,
+				"maxHeightExpr":
+				{
+					"expression": "24.0"
+				},
+				"animationKeys": [],
+				"bAlignToGround": false,
+				"traceHeight": 600,
+				"traceHeightExpr":
+				{
+					"expression": "600.0"
+				},
+				"traceDepth": 600,
+				"traceDepthExpr":
+				{
+					"expression": "600.0"
+				},
+				"bIgnoreIfGroundNotFound": true,
+				"bEnableLOSCheck": true
+			}
+		]
+	},
+	"lockOnInfo":
+	{
+		"targetDiscoveryBehavior": "None",
+		"bCheckTargetValidity": false,
+		"bUseAoETargetingLocation": false,
+		"bPerformLoSCheck": true,
+		"bPerformConeCheck": true,
+		"angleCenter": 0,
+		"distanceCenter": 0,
+		"validAngle": 120,
+		"validDistance": 300,
+		"bTargetInitialLocation": true
+	},
+	"guid": "6064633374279729360",
+	"name": "Gorilla_Leap_Targeting",
+	"typeId": "30316011"
+}

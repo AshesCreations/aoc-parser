@@ -1,0 +1,138 @@
+{
+	"projectileClass": "/Game/Characters/Animations/RNG_WND/RNG_WND_NewAbilitySystem/WeaponCombo_RngWnd_Projectile_Action.WeaponCombo_RngWnd_Projectile_Action_C",
+	"projectileFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"impactFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"range": 2500,
+	"lifeTime": 10,
+	"bPersistBetweenAbilities": false,
+	"speed": 2000,
+	"attachType": "AttachedSource",
+	"attachSocket": "None",
+	"bUseAttachSocketForOriginLocation": true,
+	"bUseAttachSocketForOriginOrientation": true,
+	"spawnTransform":
+	{
+		"originLocation": "Source",
+		"originLocationSocket": "None",
+		"originOrientation": "Source",
+		"originOrientationSocket": "None",
+		"originScale": "Source",
+		"relativeLocation":
+		{
+			"x": 0,
+			"y": 0,
+			"z": 98
+		},
+		"relativeRotation":
+		{
+			"pitch": 0,
+			"yaw": 0,
+			"roll": 0
+		},
+		"relativeScale":
+		{
+			"x": 1,
+			"y": 1,
+			"z": 1
+		}
+	},
+	"spawnOrigin": "Actor",
+	"spawnSocket": "None",
+	"bUseSocketRotation": true,
+	"bAttachOnSpawn": true,
+	"spawnOffset":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"spawnRotation":
+	{
+		"pitch": 0,
+		"yaw": 0,
+		"roll": 0
+	},
+	"bSpecifyFireRotation": false,
+	"fireRotation":
+	{
+		"pitch": 0,
+		"yaw": 0,
+		"roll": 0
+	},
+	"fireTransform":
+	{
+		"originLocation": "Source",
+		"originLocationSocket": "None",
+		"originOrientation": "Source",
+		"originOrientationSocket": "None",
+		"originScale": "Source",
+		"relativeLocation":
+		{
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"relativeRotation":
+		{
+			"pitch": 0,
+			"yaw": 0,
+			"roll": 0
+		},
+		"relativeScale":
+		{
+			"x": 1,
+			"y": 1,
+			"z": 1
+		}
+	},
+	"fireRotationConeAngle": 0,
+	"fadeOutDuration": 3,
+	"bAttachOnDestroy": true,
+	"hitsIds": [
+		{
+			"guid": "107060948457124",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"bUseSphereCollision": false,
+	"sphereCollisionRadius": 16,
+	"maxProjectileHits": 1,
+	"projectileHitInterval": 0,
+	"bIgnoreNonTarget": false,
+	"bIgnoreWorldObjects": false,
+	"chainHitCount": 0,
+	"chainRadius": 0,
+	"bChainClosestTarget": true,
+	"projectileType": "PROJECTILE_Straight",
+	"bMaySpawnWithoutTarget": false,
+	"bAimedWithControlRotation": false,
+	"bLimitAngularSpeed": false,
+	"desiredAngularSpeed": 0,
+	"targetOffset":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"homingSocketName": "None",
+	"homingBoneName": "None",
+	"bFavorHighArc": false,
+	"arcingGravityScale": 1,
+	"arcCurve": "None",
+	"predictionAccuracy": 1,
+	"arcHeightModifier": 1,
+	"guid": "107060950292204",
+	"name": "WeaponCombo_RngWnd_Action_Alternative1_Projectile",
+	"typeId": "30316006"
+}

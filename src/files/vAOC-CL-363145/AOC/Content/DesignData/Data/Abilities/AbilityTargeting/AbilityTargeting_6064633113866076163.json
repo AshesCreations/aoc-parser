@@ -1,0 +1,158 @@
+{
+	"sorting": [],
+	"contextualTargets": [],
+	"hurtBoxInfo":
+	{
+		"bCenterBlockTargetOnHurtbox": false,
+		"targetingVolumes": [
+			{
+				"id": "SHAPE_Cone",
+				"location":
+				{
+					"x": -1000,
+					"y": 0,
+					"z": 2000
+				},
+				"rotation":
+				{
+					"pitch": -40,
+					"yaw": 0,
+					"roll": 0
+				},
+				"bDebugShowOutline": true,
+				"bDebugShowInGame": false,
+				"originMesh": "ORIGIN_Character",
+				"origin": "OFFSET_Mesh",
+				"bShapeIsHollow": false,
+				"bShowHitPointForHollowHits": false,
+				"bTriggerAtOrigin": false,
+				"boneName": "None",
+				"sphereRadius": 500,
+				"sphereRadiusExpr":
+				{
+					"expression": ""
+				},
+				"innerSphereRadius": 12,
+				"innerSphereRadiusExpr":
+				{
+					"expression": ""
+				},
+				"bUsePlayerOnlyOctree": false,
+				"boxExtent":
+				{
+					"x": 50,
+					"y": 200,
+					"z": 400
+				},
+				"boxExtentExpr":
+				{
+					"expression": ""
+				},
+				"capsuleHalfHeight": 500,
+				"capsuleHalfHeightExpr":
+				{
+					"expression": ""
+				},
+				"capsuleRadius": 100,
+				"capsuleRadiusExpr":
+				{
+					"expression": ""
+				},
+				"innerCapsuleHalfHeight": 50,
+				"innerCapsuleHalfHeightExpr":
+				{
+					"expression": ""
+				},
+				"innerCapsuleRadius": 7.5,
+				"innerCapsuleRadiusExpr":
+				{
+					"expression": ""
+				},
+				"angle": 40,
+				"angleExpr":
+				{
+					"expression": ""
+				},
+				"minHeight": 1000,
+				"minHeightExpr":
+				{
+					"expression": ""
+				},
+				"maxHeight": 7000,
+				"maxHeightExpr":
+				{
+					"expression": ""
+				},
+				"animationKeys": [
+					{
+						"bAddLocationKey": false,
+						"location":
+						{
+							"x": 800,
+							"y": 0,
+							"z": 0
+						},
+						"bAddRotationKey": false,
+						"rotation":
+						{
+							"pitch": 0,
+							"yaw": 0,
+							"roll": 0
+						},
+						"bAddBoxExtentKey": false,
+						"boxExtent":
+						{
+							"x": 0,
+							"y": 0,
+							"z": 0
+						},
+						"bAddSphereRadiusKey": false,
+						"sphereRadius": 0,
+						"innerSphereRadius": 0,
+						"bAddCapsuleHalfHeightKey": false,
+						"capsuleHalfHeight": 0,
+						"innerCapsuleHalfHeight": 0,
+						"bAddCapsuleRadiusKey": false,
+						"capsuleRadius": 0,
+						"innerCapsuleRadius": 0,
+						"bAddAngleKey": false,
+						"angle": 0,
+						"bAddMinHeightKey": false,
+						"minHeight": 0,
+						"bAddMaxHeightKey": false,
+						"maxHeight": 0,
+						"normalizedPercentToOccurAt": 1
+					}
+				],
+				"bAlignToGround": false,
+				"traceHeight": 600,
+				"traceHeightExpr":
+				{
+					"expression": ""
+				},
+				"traceDepth": 600,
+				"traceDepthExpr":
+				{
+					"expression": ""
+				},
+				"bIgnoreIfGroundNotFound": true
+			}
+		]
+	},
+	"lockOnInfo":
+	{
+		"targetDiscoveryBehavior": "None",
+		"bCheckTargetValidity": false,
+		"bUseAoETargetingLocation": false,
+		"bPerformLoSCheck": true,
+		"bPerformConeCheck": true,
+		"angleCenter": 0,
+		"distanceCenter": 100,
+		"validAngle": 20,
+		"validDistance": 280,
+		"bTargetInitialLocation": false
+	},
+	"guid": "6064633113866076163",
+	"name": "Sklarisha_ParasiteSpray_Targeting",
+	"typeId": "30316011"
+}

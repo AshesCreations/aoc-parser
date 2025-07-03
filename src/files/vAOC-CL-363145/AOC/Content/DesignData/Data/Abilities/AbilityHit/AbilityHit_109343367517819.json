@@ -1,0 +1,127 @@
+{
+	"applicableTargets": 30,
+	"applicableLifeStates": 1,
+	"applicationRequirements":
+	{
+		"expression": ""
+	},
+	"bCapHits": true,
+	"maxTargetsPerHit":
+	{
+		"expression": "1"
+	},
+	"bLimitHitsPerTarget": true,
+	"maxHitsPerTarget":
+	{
+		"expression": "1"
+	},
+	"bLimitHitsGlobally": false,
+	"maxHitsGlobally":
+	{
+		"expression": ""
+	},
+	"appliedEffectsIds": [],
+	"effectsAppliedToSelf": [],
+	"lingeringZonesIds": [],
+	"reactionsIds": [],
+	"maxNumEffectsToRemove": 0,
+	"effectRemovalFilter":
+	{
+		"expression": ""
+	},
+	"effectsToRemoveIds": [],
+	"bRemoveAsDispel": false,
+	"critBehavior": "Physical",
+	"bonusCritRate":
+	{
+		"expression": ""
+	},
+	"evasionBehavior": "Physical",
+	"bonusAccuracy":
+	{
+		"expression": ""
+	},
+	"threatMultiplier":
+	{
+		"expression": ""
+	},
+	"statModsIds": [
+		{
+			"guid": "109343459923582",
+			"typeId": "3031600201",
+			"name": "Test_ChainAbility"
+		}
+	],
+	"bonusCrowdControlDamageIds": [],
+	"onHitFXId":
+	{
+		"guid": "109343433512573",
+		"typeId": "30316008",
+		"name": "Test_ChainAbility_Chain"
+	},
+	"onActivateFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"onBlockFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"hitPauseFrames": 0,
+	"hitPauseMovement": false,
+	"scriptOnActivate": "None",
+	"scriptOnHit": "None",
+	"networkType": "NET_ServerVerify",
+	"modifyCooldownsIds": [],
+	"bAppliesImpulse": false,
+	"bApplyImpulseAsVelocityChange": true,
+	"impulseOriginLocation": "Source",
+	"impulseOriginOrientation": "OriginToTargetZ",
+	"impulseOriginLocationOffset":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"impulseOriginOrientationOffset":
+	{
+		"pitch": 0,
+		"yaw": 0,
+		"roll": 0
+	},
+	"impulseMagnitude":
+	{
+		"expression": ""
+	},
+	"impulseDirection":
+	{
+		"x": 1,
+		"y": 0
+	},
+	"impulseAngle":
+	{
+		"expression": ""
+	},
+	"impulseRotationBehavior": "Unaffected",
+	"recursiveHitsIds": [
+		{
+			"guid": "109343367517819",
+			"typeId": "30316005",
+			"name": "Test_AbilityBeam_Chain"
+		}
+	],
+	"recursiveTargetId":
+	{
+		"guid": "109343421257340",
+		"typeId": "30316011",
+		"name": "Test_ChainAbility_Chain"
+	},
+	"inputs": [],
+	"guid": "109343367517819",
+	"name": "Test_ChainAbility_Chain",
+	"typeId": "30316005"
+}

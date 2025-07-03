@@ -1,0 +1,23 @@
+{
+	"targetCooldownAbility": [
+		{
+			"expression": "$#30316001:6064632660345830052$"
+		}
+	],
+	"bUseAbilityCost": false,
+	"deltaSeconds":
+	{
+		"expression": "const r = GetRemainingAbilityCooldown($#30316001:6064632660345830052$);\r\nconst base = SelectFloat(GetEffectCount(GetInstigator(), $#30316002:6064632785479143744$) > 0, 3.0, 10.0);\r\nMax(0.0, base-r)"
+	},
+	"deltaCharges":
+	{
+		"expression": ""
+	},
+	"shouldTriggerCooldown":
+	{
+		"expression": ""
+	},
+	"guid": "6064632978438423298",
+	"name": "Rogue_Stealth_LeaveEarly",
+	"typeId": "3031600207"
+}

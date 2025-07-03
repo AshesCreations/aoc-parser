@@ -1,0 +1,100 @@
+{
+	"sorting": [],
+	"contextualTargets": [],
+	"hurtBoxInfo":
+	{
+		"bCenterBlockTargetOnHurtbox": false,
+		"targetingVolumes": [
+			{
+				"id": "SHAPE_Box",
+				"location":
+				{
+					"x": 300,
+					"y": 0,
+					"z": 100
+				},
+				"rotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"bDebugShowOutline": false,
+				"bDebugShowInGame": false,
+				"originMesh": "ORIGIN_Character",
+				"origin": "OFFSET_Mesh",
+				"bTriggerAtOrigin": false,
+				"boneName": "None",
+				"sphereRadius": 300,
+				"sphereRadiusExpr":
+				{
+					"expression": "300.0"
+				},
+				"boxExtent":
+				{
+					"x": 300,
+					"y": 400,
+					"z": 100
+				},
+				"boxExtentExpr":
+				{
+					"expression": "Vector(300.0, 400.0, 100.0)"
+				},
+				"capsuleHalfHeight": 50,
+				"capsuleHalfHeightExpr":
+				{
+					"expression": "50.0"
+				},
+				"capsuleRadius": 15,
+				"capsuleRadiusExpr":
+				{
+					"expression": "15.0"
+				},
+				"angle": 160,
+				"angleExpr":
+				{
+					"expression": "160.0"
+				},
+				"minHeight": 0,
+				"minHeightExpr":
+				{
+					"expression": "0.0"
+				},
+				"maxHeight": 400,
+				"maxHeightExpr":
+				{
+					"expression": "400.0"
+				},
+				"animationKeys": [],
+				"bAlignToGround": false,
+				"traceHeight": 600,
+				"traceHeightExpr":
+				{
+					"expression": "600.0"
+				},
+				"traceDepth": 600,
+				"traceDepthExpr":
+				{
+					"expression": "600.0"
+				},
+				"bIgnoreIfGroundNotFound": true
+			}
+		]
+	},
+	"lockOnInfo":
+	{
+		"targetDiscoveryBehavior": "OnlyLockedTargets",
+		"bCheckTargetValidity": true,
+		"bUseAoETargetingLocation": false,
+		"bPerformLoSCheck": true,
+		"bPerformConeCheck": true,
+		"angleCenter": 0,
+		"distanceCenter": 0,
+		"validAngle": 0,
+		"validDistance": 200,
+		"bTargetInitialLocation": false
+	},
+	"guid": "109235025696392",
+	"name": "GraveyardGolem_Bellow_Targeting",
+	"typeId": "30316011"
+}

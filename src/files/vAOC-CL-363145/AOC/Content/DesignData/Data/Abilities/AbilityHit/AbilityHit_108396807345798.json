@@ -1,0 +1,100 @@
+{
+	"applicableTargets": 2,
+	"statusCondition": 0,
+	"appliedEffectsIds": [],
+	"effectsAppliedToSelf": [],
+	"reactionsIds": [],
+	"maxNumEffectsToRemove": 0,
+	"effectRemovalFilter":
+	{
+		"expression": ""
+	},
+	"effectsToRemoveIds": [],
+	"bRemoveAsDispel": false,
+	"critBehavior": "Physical",
+	"bonusCritRate":
+	{
+		"expression": ""
+	},
+	"evasionBehavior": "Physical",
+	"bonusAccuracy":
+	{
+		"expression": ""
+	},
+	"threatMultiplier":
+	{
+		"expression": ""
+	},
+	"statModsIds": [
+		{
+			"guid": "108397015684744",
+			"typeId": "3031600201",
+			"name": "NPC_HeavyAttack_Physical_Damage"
+		}
+	],
+	"bonusCrowdControlDamageIds": [],
+	"onHitFXId":
+	{
+		"guid": "108396793714308",
+		"typeId": "30316008",
+		"name": "NPC_Wolf_ShatterClaw_ABL_3_HitFX"
+	},
+	"onBlockFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"hitPauseFrames": 0,
+	"hitPauseMovement": false,
+	"scriptOnActivate": "None",
+	"scriptOnHit": "None",
+	"networkType": "NET_ServerVerify",
+	"modifyCooldownsIds": [],
+	"bAppliesImpulse": false,
+	"bApplyImpulseAsVelocityChange": true,
+	"impulseOriginLocation": "Source",
+	"impulseOriginOrientation": "OriginToTargetZ",
+	"impulseOriginLocationOffset":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"impulseOriginOrientationOffset":
+	{
+		"pitch": 0,
+		"yaw": 0,
+		"roll": 0
+	},
+	"impulseMagnitude":
+	{
+		"expression": ""
+	},
+	"impulseDirection":
+	{
+		"x": 1,
+		"y": 0
+	},
+	"impulseAngle":
+	{
+		"expression": ""
+	},
+	"impulseRotationBehavior": "Unaffected",
+	"recursiveHitId":
+	{
+		"guid": "0",
+		"typeId": "30316005",
+		"name": "None"
+	},
+	"recursiveTargetId":
+	{
+		"guid": "0",
+		"typeId": "30316011",
+		"name": "None"
+	},
+	"inputs": [],
+	"guid": "108396807345798",
+	"name": "NPC_Wolf_Shatterclaw_ABL_3_Dmg",
+	"typeId": "30316005"
+}

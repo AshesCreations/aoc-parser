@@ -1,0 +1,105 @@
+{
+	"eventTags": [
+		{
+			"tagName": "Element.Healing"
+		}
+	],
+	"applicableTargets": 5,
+	"statusCondition": 0,
+	"appliedEffectsIds": [],
+	"effectsAppliedToSelf": [],
+	"reactionsIds": [],
+	"maxNumEffectsToRemove": 0,
+	"effectRemovalFilter":
+	{
+		"expression": ""
+	},
+	"effectsToRemoveIds": [],
+	"bRemoveAsDispel": false,
+	"critBehavior": "Physical",
+	"bonusCritRate":
+	{
+		"expression": ""
+	},
+	"evasionBehavior": "Physical",
+	"bonusAccuracy":
+	{
+		"expression": ""
+	},
+	"threatMultiplier":
+	{
+		"expression": ""
+	},
+	"statModsIds": [
+		{
+			"guid": "107847680284280",
+			"typeId": "3031600201",
+			"name": "NPCTest_Goblin_Heal_HealMod"
+		}
+	],
+	"bonusCrowdControlDamageIds": [],
+	"onHitFXId":
+	{
+		"guid": "107848471959162",
+		"typeId": "30316008",
+		"name": "NPCTest_Goblin_Heal_FX"
+	},
+	"onBlockFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"hitPauseFrames": 0,
+	"hitPauseMovement": false,
+	"scriptOnActivate": "None",
+	"scriptOnHit": "None",
+	"networkType": "NET_ServerVerify",
+	"modifyCooldownsIds": [],
+	"bAppliesImpulse": false,
+	"bApplyImpulseAsVelocityChange": true,
+	"impulseOriginLocation": "Source",
+	"impulseOriginOrientation": "OriginToTargetZ",
+	"impulseOriginLocationOffset":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"impulseOriginOrientationOffset":
+	{
+		"pitch": 0,
+		"yaw": 0,
+		"roll": 0
+	},
+	"impulseMagnitude":
+	{
+		"expression": ""
+	},
+	"impulseDirection":
+	{
+		"x": 1,
+		"y": 0
+	},
+	"impulseAngle":
+	{
+		"expression": ""
+	},
+	"impulseRotationBehavior": "Unaffected",
+	"recursiveHitId":
+	{
+		"guid": "0",
+		"typeId": "30316005",
+		"name": "None"
+	},
+	"recursiveTargetId":
+	{
+		"guid": "0",
+		"typeId": "30316011",
+		"name": "None"
+	},
+	"inputs": [],
+	"guid": "107848603031163",
+	"name": "NPCTest_Goblin_Heal_Hit",
+	"typeId": "30316005"
+}

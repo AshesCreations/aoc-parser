@@ -1,0 +1,49 @@
+{
+	"sorting": [
+		{
+			"method": "Score",
+			"filter":
+			{
+				"expression": "GetEffectInstigator()"
+			},
+			"score":
+			{
+				"expression": ""
+			}
+		}
+	],
+	"contextualTargets": [
+		{
+			"contextualTarget": "Instigator",
+			"bCheckTargetValidity": false,
+			"bUseAoETargetingLocation": false,
+			"bPerformLoSCheck": true,
+			"bPerformConeCheck": true,
+			"angleCenter": 0,
+			"distanceCenter": 0,
+			"validAngle": 0,
+			"validDistance": 0
+		}
+	],
+	"hurtBoxInfo":
+	{
+		"bCenterBlockTargetOnHurtbox": false,
+		"targetingVolumes": []
+	},
+	"lockOnInfo":
+	{
+		"targetDiscoveryBehavior": "None",
+		"bCheckTargetValidity": false,
+		"bUseAoETargetingLocation": false,
+		"bPerformLoSCheck": true,
+		"bPerformConeCheck": true,
+		"angleCenter": 0,
+		"distanceCenter": 0,
+		"validAngle": 0,
+		"validDistance": 0,
+		"bTargetInitialLocation": false
+	},
+	"guid": "6064633017736944185",
+	"name": "Target_Instigator",
+	"typeId": "30316011"
+}

@@ -1,0 +1,13 @@
+{
+	"disruptionTrigger":
+	{
+		"expression": "GetStatModValue(GetHitEvent(), GetOwner(), $#10516612381411111:108986352686712$) < 0.0\r\n&& GetRecordTypeId(GetHitSourceRecord(GetHitEvent())) != GetReactionTypeId()\r\n&& GetRecordTypeId(GetHitSourceRecord(GetHitEvent())) != GetEffectTypeId()"
+	},
+	"disruptionSeconds":
+	{
+		"expression": "0 * Exp(-0.5 * GetProgressDisruptionSeconds())"
+	},
+	"guid": "109308950107768",
+	"name": "DefaultDisruption",
+	"typeId": "30316113"
+}

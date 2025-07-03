@@ -1,0 +1,29 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 0,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0,
+		"fishingEvents": 0,
+		"statEvents": 0
+	},
+	"bEvaluateOnTick": true,
+	"branchTrigger":
+	{
+		"expression": "GetRemainingAbilityCharges($#30316001:6064633102252354119$) == 0 || GetStat(GetInstigator(), $#10516612381411111:109183576135288$) < 5 * EvalFormula($#10516612381411113:6064631874856222777$)"
+	},
+	"bPredictedOnAutonomousClient": false,
+	"animBranchId":
+	{
+		"guid": "6064633102303537979",
+		"typeId": "30316010",
+		"name": "None"
+	},
+	"bOnlyBranchWithValidTarget": false,
+	"guid": "6064633102296329018",
+	"name": "Ranger_Salvo",
+	"typeId": "30316009"
+}

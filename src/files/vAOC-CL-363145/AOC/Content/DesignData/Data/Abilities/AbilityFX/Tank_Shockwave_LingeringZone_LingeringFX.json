@@ -1,0 +1,142 @@
+{
+	"bAlwaysPlayInRadius": false,
+	"playRadius": 0,
+	"audioFX": [
+		{
+			"akAudioHitEvent": "None",
+			"audioToPlaySoft": "None",
+			"bIsLooped": true,
+			"loopDuration": 5.5,
+			"fadeInTime": 0,
+			"fadeInCurve": "Linear",
+			"fadeOutTime": 0.5,
+			"fadeOutCurve": "Linear",
+			"volumeMultiplier": 1,
+			"pitchMultiplier": 1,
+			"startTime": 0,
+			"audioPlayType": "TYPE_Location",
+			"attachLocationType": "KeepRelativeOffset",
+			"attachSocketName": "None",
+			"attachPosition":
+			{
+				"x": 0,
+				"y": 0,
+				"z": 0
+			},
+			"soundAttenuationOverrideSoft": "None",
+			"soundConcurrencyOverrideSoft": "None",
+			"bIsClientOnly": false
+		}
+	],
+	"cameraFX":
+	{
+		"shakeIntensitySoft":
+		{
+			"externalCurve": "None",
+			"editorCurveData":
+			{
+				"keys": [],
+				"defaultValue": 3.4028234663852886e+38,
+				"preInfinityExtrap": "RCCE_Constant",
+				"postInfinityExtrap": "RCCE_Constant",
+				"keyHandlesToIndices":
+				{
+				}
+			}
+		},
+		"fOVZoomSoft":
+		{
+			"externalCurve": "None",
+			"editorCurveData":
+			{
+				"keys": [],
+				"defaultValue": 3.4028234663852886e+38,
+				"preInfinityExtrap": "RCCE_Constant",
+				"postInfinityExtrap": "RCCE_Constant",
+				"keyHandlesToIndices":
+				{
+				}
+			}
+		},
+		"chromaticAberrationIntensitySoft":
+		{
+			"externalCurve": "None",
+			"editorCurveData":
+			{
+				"keys": [],
+				"defaultValue": 3.4028234663852886e+38,
+				"preInfinityExtrap": "RCCE_Constant",
+				"postInfinityExtrap": "RCCE_Constant",
+				"keyHandlesToIndices":
+				{
+				}
+			}
+		},
+		"radialBlurScaleSoft":
+		{
+			"externalCurve": "None",
+			"editorCurveData":
+			{
+				"keys": [],
+				"defaultValue": 3.4028234663852886e+38,
+				"preInfinityExtrap": "RCCE_Constant",
+				"postInfinityExtrap": "RCCE_Constant",
+				"keyHandlesToIndices":
+				{
+				}
+			}
+		}
+	},
+	"particleFX": [],
+	"decals": [
+		{
+			"decalMaterialSoft": "/Game/Effects/FX_PCs/Tank/Materials/M_Tank_Wall_Decal_04_Dim.M_Tank_Wall_Decal_04_Dim",
+			"attachType": "None",
+			"attachSocketName": "FXSocketMid",
+			"frameOrigin": "Source",
+			"bUseAttachSocketForFrameOrigin": true,
+			"frameOriginSocket": "None",
+			"frameOrientation": "Source",
+			"bUseAttachSocketForFrameOrientation": true,
+			"frameOrientationSocket": "None",
+			"locationOffset":
+			{
+				"x": 250,
+				"y": 0,
+				"z": 0
+			},
+			"rotationOffset":
+			{
+				"pitch": 90,
+				"yaw": 0,
+				"roll": 0
+			},
+			"decalSize":
+			{
+				"x": 375,
+				"y": 375,
+				"z": 375
+			},
+			"lifeTime": 5,
+			"fadeIn":
+			{
+				"fadeDelay": 0.34999999403953552,
+				"duration": 0.15000000596046448
+			},
+			"fadeOut":
+			{
+				"fadeDelay": 5,
+				"duration": 0.5
+			},
+			"sizeLerpOverDistance":
+			{
+				"sizeMin": 100,
+				"sizeMax": 100,
+				"distance": 1
+			}
+		}
+	],
+	"guid": "107133471905836",
+	"name": "Tank_Shockwave_LingeringZone_LingeringFX",
+	"typeId": "30316008"
+}

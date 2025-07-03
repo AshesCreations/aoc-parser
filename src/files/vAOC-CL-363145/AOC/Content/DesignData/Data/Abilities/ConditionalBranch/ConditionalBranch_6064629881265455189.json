@@ -1,0 +1,28 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 4,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0,
+		"fishingEvents": 0
+	},
+	"branchTrigger":
+	{
+		"expression": "(RecordNameIs(GetHitRecord(GetHitEvent()), \"BanditCaptain_Stun_Hit\") && \r\n(GetNumTargets(GetHitEvent()) == 0 || HitFlagsContains(GetHitFlags(GetHitEvent()), EHitFlag::Miss)))"
+	},
+	"bPredictedOnAutonomousClient": false,
+	"animBranchId":
+	{
+		"guid": "6064629881037193496",
+		"typeId": "30316010",
+		"name": "None"
+	},
+	"bOnlyBranchWithValidTarget": false,
+	"bOnRootMotionCollision": true,
+	"guid": "6064629881265455189",
+	"name": "BanditCaptain_BashAndSlash_SlamMissed",
+	"typeId": "30316009"
+}

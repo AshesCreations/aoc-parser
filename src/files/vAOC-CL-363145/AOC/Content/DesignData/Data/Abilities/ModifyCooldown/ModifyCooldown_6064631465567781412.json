@@ -1,0 +1,23 @@
+{
+	"targetCooldownAbility": [
+		{
+			"expression": "GetAbilityRecordByName(\"Ranger_Barrage\")"
+		}
+	],
+	"bUseAbilityCost": false,
+	"deltaSeconds":
+	{
+		"expression": "const bleed = SelectInt(GetEffectCount(GetSource(), $#30316002:6064629761775576467$) > 0 && GetEffectCount(GetSource(), $#30316002:6064631330737029696$) == 0, 1, 0);\r\nconst hemo = SelectInt(GetEffectCount(GetSource(), $#30316002:6064631330737029696$) > 0, 1, 0);\r\n- 0.1 * bleed - 0.2 * hemo"
+	},
+	"deltaCharges":
+	{
+		"expression": ""
+	},
+	"shouldTriggerCooldown":
+	{
+		"expression": ""
+	},
+	"guid": "6064631465567781412",
+	"name": "Ranger_Barrage_CDR",
+	"typeId": "3031600207"
+}

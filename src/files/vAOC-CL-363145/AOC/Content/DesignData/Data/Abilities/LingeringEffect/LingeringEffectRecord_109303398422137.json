@@ -1,0 +1,58 @@
+{
+	"lingeringEffectClass": "/Script/GameSystemsPlugin.AoCAbilityLingeringEffect",
+	"radius": 500,
+	"lifeTime": 10,
+	"tickRate": 1,
+	"startTimeOffset": 0,
+	"endTimeOffset": 0,
+	"initialHitTargetingInfoId":
+	{
+		"guid": "0",
+		"typeId": "30316011",
+		"name": "None"
+	},
+	"initialHitsIds": [],
+	"lingeringHitTargetingInfoId":
+	{
+		"guid": "109303448884858",
+		"typeId": "30316011",
+		"name": "Ranger_SleepTrap_Target"
+	},
+	"lingeringHitsIds": [
+		{
+			"guid": "109303528576635",
+			"typeId": "30316005",
+			"name": "Ranger_SleepTrap_Apply"
+		}
+	],
+	"endHitTargetingInfoId":
+	{
+		"guid": "0",
+		"typeId": "30316011",
+		"name": "None"
+	},
+	"endHitsIds": [],
+	"onBeginOverlapHitInfoId":
+	{
+		"guid": "109303448884858",
+		"typeId": "30316011",
+		"name": "Ranger_SleepTrap_Target"
+	},
+	"onBeginOverlapHitsIds": [
+		{
+			"guid": "109303528576635",
+			"typeId": "30316005",
+			"name": "Ranger_SleepTrap_Apply"
+		}
+	],
+	"bNoHitOnFirstTick": false,
+	"lingeringFXId":
+	{
+		"guid": "109003122955903",
+		"typeId": "30316008",
+		"name": "Minotaur_WarPriest_HealingCircle_LingeringFX"
+	},
+	"guid": "109303398422137",
+	"name": "Ranger_SleepTrap_Linger",
+	"typeId": "30316007"
+}

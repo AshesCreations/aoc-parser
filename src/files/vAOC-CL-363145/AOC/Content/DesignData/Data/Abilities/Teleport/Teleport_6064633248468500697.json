@@ -1,0 +1,52 @@
+{
+	"teleportTarget": "Target",
+	"teleportScript": "/Game/DesignAssets/Combat/TeleportScripts/BP_ShadowStepTeleportScript.BP_ShadowStepTeleportScript_C",
+	"transform":
+	{
+		"originLocation": "Target",
+		"originLocationSocket": "None",
+		"originOrientation": "TargetZ",
+		"originOrientationSocket": "None",
+		"originScale": "World",
+		"bUseRelativeLocationExpression": true,
+		"relativeLocation":
+		{
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"relativeLocationExpression":
+		{
+			"expression": "Vector(-GetCapsuleRadius(GetTarget(), true) - GetCapsuleRadius(GetInstigator(), true) - 100.0, 0.0, 0.0)"
+		},
+		"bUseRelativeRotationExpression": false,
+		"relativeRotation":
+		{
+			"pitch": 0,
+			"yaw": 0,
+			"roll": 0
+		},
+		"relativeRotationExpression":
+		{
+			"expression": ""
+		},
+		"bUseRelativeScaleExpression": false,
+		"relativeScale":
+		{
+			"x": 1,
+			"y": 1,
+			"z": 1
+		},
+		"relativeScaleExpression":
+		{
+			"expression": ""
+		}
+	},
+	"transformOrigin": "Character",
+	"toleranceRadius": 100,
+	"verticalTolerance": 200,
+	"bRequireGround": true,
+	"guid": "6064633248468500697",
+	"name": "Rogue_Shadowstep_TeleportBehind",
+	"typeId": "3031600216"
+}

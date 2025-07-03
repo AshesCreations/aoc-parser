@@ -1,0 +1,23 @@
+{
+	"targetCooldownAbility": [
+		{
+			"expression": "GetAbilityRecordByName(\"Mage_LightningStrike\")"
+		}
+	],
+	"bUseAbilityCost": false,
+	"deltaSeconds":
+	{
+		"expression": "-GetRemainingAbilityCooldown($#30316001:6064628894041374720$)"
+	},
+	"deltaCharges":
+	{
+		"expression": ""
+	},
+	"shouldTriggerCooldown":
+	{
+		"expression": ""
+	},
+	"guid": "6064631250646794458",
+	"name": "Mage_EE_LightningStrike",
+	"typeId": "3031600207"
+}

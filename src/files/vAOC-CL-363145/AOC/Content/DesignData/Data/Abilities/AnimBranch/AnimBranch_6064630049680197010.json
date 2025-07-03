@@ -1,0 +1,37 @@
+{
+	"animMontages": [
+		{
+			"abilityDirection": "NONE",
+			"animExpression":
+			{
+				"expression": "IsComboButtonPressed(EComboButtons::BUTTON_Forward)"
+			},
+			"startSectionName": "fire",
+			"bOverrideSequenceResetTime": false,
+			"sequenceResetTime": 0,
+			"abilityAnimationSoftPaths": [
+				"None"
+			],
+			"targetingKey": 0,
+			"hitKeys": []
+		},
+		{
+			"abilityDirection": "NONE",
+			"animExpression":
+			{
+				"expression": "!IsComboButtonPressed(EComboButtons::BUTTON_Forward)"
+			},
+			"startSectionName": "fire",
+			"bOverrideSequenceResetTime": false,
+			"sequenceResetTime": 0,
+			"abilityAnimationSoftPaths": [
+				"/Game/Characters/Animations/00_ABLT/Ranger/ABLT_Scattershot_Notify_Montage.ABLT_Scattershot_Notify_Montage"
+			],
+			"targetingKey": 0,
+			"hitKeys": []
+		}
+	],
+	"guid": "6064630049680197010",
+	"name": "Ranger_ScatterShot_Animbranch_Fwd",
+	"typeId": "30316010"
+}
