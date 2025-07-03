@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"E328453B465E74CB3D13188818B2B519\", \"(q1 grant)\")",
+	"nextNodeId":
+	{
+		"guid": "108832404166290",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0004_BloodStillDue\", \"MAP_0004_BloodStillDue_01\")&&\r\nIsStoryArcQuestAvailable(GetPlayer(), \"MAQ_0004_01_SeepingScarlet\")&&\r\n!IsOnStoryArcQuest(GetPlayer(), \"MAQ_0004_01_SeepingScarlet\")"
+	},
+	"guid": "108832417404567",
+	"name": "MADD_0004_Orren_8",
+	"typeId": "1091110027"
+}

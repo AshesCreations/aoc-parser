@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"D3F63CA5490C4902F4CCB385261DB90C\", \"Quest Interim\")",
+	"nextNodeId":
+	{
+		"guid": "6064628633932136471",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsOnStoryArcQuest(GetPlayer(), \"SAQ_0006_LionHold_Tank_Ruin3\")&&GetStoryArcQuestFlag(GetPlayer(),\"SAQ_0006_LionHold_Tank_Ruin3\",\"Tank3Report1\")"
+	},
+	"guid": "6064628633929908246",
+	"name": "0006_P0_Fighter_Captive1_16",
+	"typeId": "1091110027"
+}

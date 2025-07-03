@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"A2F38E104A0FAFD71FB6058B8A0442FF\", \"I\\'m looking for a necklace.\")",
+	"nextNodeId":
+	{
+		"guid": "6064629058986704929",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0002_CCC_CollectorOfCursedCurios\",\"MAP_0002_CCC_Phase02\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0002_MOM_MotherOfMaidens\",\"AskedTheAntiquitor\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0002_MOM_MotherOfMaidens\",\"SpokeToPeddler\")"
+	},
+	"guid": "6064629058989391909",
+	"name": "MADD_0002_MOM_VaelAlaric_7",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"F140D99C41FEBA2207BA848867CA570D\", \"(q2 grant)\")",
+	"nextNodeId":
+	{
+		"guid": "108837996353186",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0004_BloodStillDue\", \"MAP_0004_BloodStillDue_02\")&&\r\nIsStoryArcQuestAvailable(GetPlayer(), \"MAQ_0004_03_AccursedLegacy\")&&\r\n!IsOnStoryArcQuest(GetPlayer(), \"MAQ_0004_03_AccursedLegacy\")"
+	},
+	"guid": "108837988685471",
+	"name": "MADD_0004_Orren_70",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,23 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"8BF72BF8429616592C5E2FA2360411A8\", \"(Toss in the bear bones)\")",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064628832863387810",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0007_PriestessAndThePiper\",\"MAP_0007_PriestessAndThePiper_Phase03\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0007_EDD_ExaltedDenizensAndDuzakh\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_EDD_ExaltedDenizensAndDuzakh\",\"KilledMossbacks\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_EDD_ExaltedDenizensAndDuzakh\",\"BonesOfMossbacks\")"
+	},
+	"guid": "6064628833151156460",
+	"name": "MADD_0007_EDD_BoneCauldron_Phase03_6",
+	"typeId": "1091110027"
+}

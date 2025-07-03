@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"34E718E8425DB41857ADCDA13973DF13\", \"Can I help?\")",
+	"nextNodeId":
+	{
+		"guid": "6064629019472494656",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0002_CCC_CollectorOfCursedCurios\",\"MAP_0002_CCC_Phase01\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0002_TSS_TheSpindleSpider\",\"FoundEndlessChest\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0002_TSS_TheSpindleSpider\",\"MetIBynn\")"
+	},
+	"guid": "6064629019472429119",
+	"name": "MADD_0002_TSS_TrollIBynn_4",
+	"typeId": "1091110027"
+}

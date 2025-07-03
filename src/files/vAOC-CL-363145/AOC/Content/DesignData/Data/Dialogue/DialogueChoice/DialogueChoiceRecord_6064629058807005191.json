@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"DD9620DA44C1DD0BE1DF129A640CF7A0\", \"Mother of Maidens?\")",
+	"nextNodeId":
+	{
+		"guid": "6064629058805760004",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0002_CCC_CollectorOfCursedCurios\",\"MAP_0002_CCC_Phase02\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0002_MOM_MotherOfMaidens\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0002_MOM_MotherOfMaidens\",\"AskedTheAntiquitor\")"
+	},
+	"guid": "6064629058807005191",
+	"name": "MADD_0002_MOM_TheAntiquitor_6",
+	"typeId": "1091110027"
+}

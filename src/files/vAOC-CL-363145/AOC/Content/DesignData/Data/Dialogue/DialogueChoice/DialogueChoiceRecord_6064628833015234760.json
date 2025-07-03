@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"52FA4E394B0EA161993B678F58BCE088\", \"I seek the lost children of Winstead.\")",
+	"nextNodeId":
+	{
+		"guid": "6064628833018052809",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0007_PriestessAndThePiper\",\"MAP_0007_PriestessAndThePiper_Phase03\")&&\r\nIsOnStoryArcQuest(GetPlayer(), \"MAQ_0007_EDD_ExaltedDenizensAndDuzakh\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_EDD_ExaltedDenizensAndDuzakh\",\"SpokeToBonekeeper\")"
+	},
+	"guid": "6064628833015234760",
+	"name": "MADD_0007_EDD_Bonekeeper_Phase03_4",
+	"typeId": "1091110027"
+}

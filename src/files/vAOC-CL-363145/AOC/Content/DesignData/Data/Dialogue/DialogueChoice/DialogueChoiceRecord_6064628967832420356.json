@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"99037D3741D59642DE7643A74AD47BA8\", \"quest but no flag\")",
+	"nextNodeId":
+	{
+		"guid": "6064628967832420359",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsOnStoryArcQuest(GetPlayer(),\"MA_0010_TheGreenBattle\")&&!GetStoryArcQuestFlag(GetPlayer(),\"MA_0010_TheGreenBattle\",\"HasArrows\")"
+	},
+	"guid": "6064628967832420356",
+	"name": "MADD_0010_GB_KaelarArcher_2",
+	"typeId": "1091110027"
+}

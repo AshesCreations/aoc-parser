@@ -1,0 +1,23 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"EACC40774068CA2C36320D88C3967B1C\", \"What are you after?\")",
+	"nextNodeId":
+	{
+		"guid": "109071176324754",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "109071538542289",
+			"typeId": "1091110030",
+			"name": "MAAR_0005_SAD_RemoveItem_JailorKey"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "IsOnStoryArcQuest(GetPlayer(),\"MAQ_0005_SeekAndDestroy\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005_SeekAndDestroy\",\"SpokeToHawk\")"
+	},
+	"guid": "109071181436568",
+	"name": "MADD_0005_SAD_Hawk_9",
+	"typeId": "1091110027"
+}

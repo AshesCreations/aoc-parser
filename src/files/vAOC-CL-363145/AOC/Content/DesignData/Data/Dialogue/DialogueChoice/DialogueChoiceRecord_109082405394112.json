@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"D78885B3427EE1650662B189FFC43814\", \"Examine this book.\")",
+	"nextNodeId":
+	{
+		"guid": "109082400544444",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsOnStoryArcQuest(GetPlayer(),\"MAQ_0005_EyesOfAvenmoor\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005_EyesOfAvenmoor\",\"SpokeToBooksmith\")"
+	},
+	"guid": "109082405394112",
+	"name": "MADD_0005_EOA_Booksmith_Alexor_7",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"8813ADF849BE1473DE491F8C6D5BD88C\", \"Here is the deed.\")",
+	"nextNodeId":
+	{
+		"guid": "6064628951602561096",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0012_COD_CurseOfDaragal\",\"MAP_0012_COD_Phase02\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0012_WBB_WhatBlightsBelow\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0012_WBB_WhatBlightsBelow\",\"KilledReaperOfDuAirre\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0012_WBB_WhatBlightsBelow\",\"BrokeTheAltar\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0012_WBB_WhatBlightsBelow\",\"PouredBlightKiller\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0012_WBB_WhatBlightsBelow\",\"TellLordKivan\")"
+	},
+	"guid": "6064628951633690707",
+	"name": "MADD_0012_RWS_LordKivan_22",
+	"typeId": "1091110027"
+}

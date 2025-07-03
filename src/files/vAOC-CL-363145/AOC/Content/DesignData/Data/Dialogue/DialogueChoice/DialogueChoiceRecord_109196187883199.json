@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"647253BE4F79944655571EAB4626ED50\", \"No sign of him, but the undead were unruly!\")",
+	"nextNodeId":
+	{
+		"guid": "109196188669633",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "GetStoryArcQuestFlag(GetPlayer(),\"SAQ_0006_LionHold_Cleric_Ruin4\",\"Cleric4_1\")&&!GetStoryArcQuestFlag(GetPlayer(),\"SAQ_0006_LionHold_Cleric_Ruin4\",\"Cleric4_2\")"
+	},
+	"guid": "109196187883199",
+	"name": "0006_P0_Cleric2_156",
+	"typeId": "1091110027"
+}

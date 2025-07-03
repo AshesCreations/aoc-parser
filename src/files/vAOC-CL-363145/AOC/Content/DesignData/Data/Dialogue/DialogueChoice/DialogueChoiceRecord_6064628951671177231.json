@@ -1,0 +1,17 @@
+{
+	"choiceText": "LOCTABLE(\"/Game/StringTables/DialogueResponses.DialogueResponses\", \"DR_0009a_ZephyrBeckoning_Blandan_29\")",
+	"nextNodeId":
+	{
+		"guid": "6064628950957817885",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "!IsOnStoryArcQuest(GetPlayer(), \"SAQ_0009a_ZB_Dust2Dust\") && IsStoryArcQuestAvailable(GetPlayer(), \"SAQ_0009a_ZB_Dust2Dust\")"
+	},
+	"guid": "6064628951671177231",
+	"name": "0009a_ZephyrBeckoning_Blandan_74",
+	"typeId": "1091110027"
+}

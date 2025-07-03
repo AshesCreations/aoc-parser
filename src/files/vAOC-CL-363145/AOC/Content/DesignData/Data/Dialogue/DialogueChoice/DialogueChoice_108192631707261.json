@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"8B53354F40131ADEE94492B34BEEFC32\", \"(Internal)\")",
+	"nextNodeId":
+	{
+		"guid": "108192578754170",
+		"typeId": "1091110028",
+		"name": "Gavin_P1_ChoseGrayshore"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "GetStoryArcVariable(\"SA_0001_Riverlands_Prototype\",\"Q2_GavinGrayshore\")>=\r\nGetStoryArcVariable(\"SA_0001_Riverlands_Prototype\",\"Q2_GavinVigilant\")"
+	},
+	"guid": "108192631707261",
+	"name": "DC_Gavin_P1_EvalGrayshore",
+	"typeId": "1091110027"
+}

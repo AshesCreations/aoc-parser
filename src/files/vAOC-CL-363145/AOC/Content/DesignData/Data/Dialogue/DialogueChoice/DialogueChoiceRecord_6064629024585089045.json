@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"F972229A49084380883CD9BCBBAF41E7\", \"(Give the Idols)\")",
+	"nextNodeId":
+	{
+		"guid": "6064629024643022870",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0002_CCC_CollectorOfCursedCurios\",\"MAP_0002_CCC_Phase01\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0002_TTI_TheTauroxianIdols\",\"FoundIdolOfKrux\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0002_TTI_TheTauroxianIdols\",\"FoundIdolOfUbok\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0002_TTI_TheTauroxianIdols\",\"FoundIdolOfOzok\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0002_TTI_TheTauroxianIdols\",\"GaveIdols\")\r\n"
+	},
+	"guid": "6064629024585089045",
+	"name": "MADD_0002_TSS_TheAntiquitor_30",
+	"typeId": "1091110027"
+}

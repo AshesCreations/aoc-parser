@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"34591C4A4B294A3BCBDBB88DDE069502\", \"The Stone Head.\")",
+	"nextNodeId":
+	{
+		"guid": "6064629126874005540",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MIA_0003_ROW_RelicOfWar\",\"MAP_0003_ROW_Phase01\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0003_HWR_HeadWillRoll\",\"FoundTheHead\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0003_HWR_HeadWillRoll\",\"SpokeToCrum\")"
+	},
+	"guid": "6064629126877085740",
+	"name": "MIDD_0003_HWR_CrumVatta_11",
+	"typeId": "1091110027"
+}

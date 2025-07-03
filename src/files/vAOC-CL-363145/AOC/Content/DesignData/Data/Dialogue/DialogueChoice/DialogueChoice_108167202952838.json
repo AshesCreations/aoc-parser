@@ -1,0 +1,23 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"83A002CB4401EC508288B9B6CA96F5C8\", \"I snuck a peek at the ledger on the table near Harriet. I don\\'t think Greyshore coin flows as free as they claim it does.\")",
+	"nextNodeId":
+	{
+		"guid": "108167242077833",
+		"typeId": "1091110028",
+		"name": "GavinQuestPhase0_Node2a"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "108167762892456",
+			"typeId": "1091110030",
+			"name": "AR_0001_Q2_O1_ReportFoundLedger"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "GetStoryArcQuestFlag(GetPlayer(),\"SAQ_0001_Q2_IntroductionsInOrder\",\"FoundLedger\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"SAQ_0001_Q2_IntroductionsInOrder\",\"ReportedLedger\")"
+	},
+	"guid": "108167202952838",
+	"name": "DC_Gavin_Node2_ReportLedger",
+	"typeId": "1091110027"
+}

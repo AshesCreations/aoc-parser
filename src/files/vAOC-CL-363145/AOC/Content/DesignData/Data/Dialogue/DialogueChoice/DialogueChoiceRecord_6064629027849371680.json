@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"F7AB77EE4F0EA628ECC52CA4628F8BBF\", \"I think it was undead.\")",
+	"nextNodeId":
+	{
+		"guid": "6064629027849371690",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "(GetStoryArcQuestFlag(GetPlayer(), \"MAQ_0008_MassacreAtBolenStead\", \"FoundValuables\")&&(\r\nGetStoryArcQuestFlag(GetPlayer(), \"MAQ_0008_MassacreAtBolenStead\", \"FoundTracks\")||\r\nGetStoryArcQuestFlag(GetPlayer(), \"MAQ_0008_MassacreAtBolenStead\", \"FoundBlood\")))\r\n&&\r\n!GetStoryArcQuestFlag(GetPlayer(), \"MAQ_0008_MassacreAtBolenStead\", \"InvestigationComplete\")"
+	},
+	"guid": "6064629027849371680",
+	"name": "DDR_0008_ArynsJournal_12",
+	"typeId": "1091110027"
+}

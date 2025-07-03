@@ -1,0 +1,23 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"77C6D785442EE33DAE298AA32829D2DE\", \"I bring the quill!\")",
+	"nextNodeId":
+	{
+		"guid": "109082482988771",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "109082666751744",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005_EyesOfAvenmoor\",\"GotTheQuill\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005_EyesOfAvenmoor\",\"GaveQuillAntiquitor\")"
+	},
+	"guid": "109082481546978",
+	"name": "MADD_0005_The_Antiquitor_29",
+	"typeId": "1091110027"
+}

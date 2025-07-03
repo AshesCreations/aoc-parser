@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"EC30A8524ACD32C5A9BC86AEC76C29E6\", \"Is the prison caravan ready?\")",
+	"nextNodeId":
+	{
+		"guid": "109007769196170",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0005_EnemyWithin\",\"MAP_0005_Phase02\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MA_0005_RoadWarrior\")&& \r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005_RoadWarrior\",\"PrisonWagonGone\")"
+	},
+	"guid": "109007767164553",
+	"name": "MADD_0005_Stormrazer_34",
+	"typeId": "1091110027"
+}

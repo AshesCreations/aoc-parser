@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"40DD9D44453FFCC4DD0FB9847A15CA5C\", \"Here are the components.\")",
+	"nextNodeId":
+	{
+		"guid": "6064628951369187351",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0012_COD_CurseOfDaragal\",\"MAP_0012_COD_Phase02\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0012_WBB_WhatBlightsBelow\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0012_WBB_WhatBlightsBelow\",\"GotTharibloomPetals\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0012_WBB_WhatBlightsBelow\",\"GotBogSpit\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0012_WBB_WhatBlightsBelow\",\"GotGraveRoses\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0012_WBB_WhatBlightsBelow\",\"GiveDeedRecipe\")"
+	},
+	"guid": "6064628951372857380",
+	"name": "MADD_0012_WBB_Sodbottom_20",
+	"typeId": "1091110027"
+}

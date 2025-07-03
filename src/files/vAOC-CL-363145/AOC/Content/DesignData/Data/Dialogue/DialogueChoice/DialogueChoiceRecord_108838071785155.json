@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"C838FF7B452AB86DC26583A06D0F2E94\", \"I did it! I saw the corrupted essence leave Laria\\'s body, but the curse remains.\")",
+	"nextNodeId":
+	{
+		"guid": "108838066083515",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "GetStoryArcQuestFlag(GetPlayer(), \"MAQ_0004_03_AccursedLegacy\", \"RitualPerformed\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(), \"MAQ_0004_03_AccursedLegacy\", \"RitualTI\")"
+	},
+	"guid": "108838071785155",
+	"name": "MADD_0004_Orren_106",
+	"typeId": "1091110027"
+}

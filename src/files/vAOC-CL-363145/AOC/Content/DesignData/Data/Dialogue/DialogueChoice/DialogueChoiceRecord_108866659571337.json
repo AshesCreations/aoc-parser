@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"E509121B496060484574BABBA546373A\", \"There\\'s more.\")",
+	"nextNodeId":
+	{
+		"guid": "108866168444547",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "GetStoryArcQuestFlag(GetPlayer(), \"MAQ_0004_04_UnquietDead\", \"TabletFound\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(), \"MAQ_0004_04_UnquietDead\", \"TabletTI\")"
+	},
+	"guid": "108866659571337",
+	"name": "MAD_0004_Tricia_55",
+	"typeId": "1091110027"
+}

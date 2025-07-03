@@ -1,0 +1,74 @@
+{
+	"displayName": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"6BA29FC345AEEE3D9C8657BB553B8992\", \"Master Crafted Tools\")",
+	"commodityRecipeMaterialRequirementIds": [
+		{
+			"guid": "6064633607143882863",
+			"typeId": "33229888",
+			"name": "None"
+		},
+		{
+			"guid": "6064633607153975416",
+			"typeId": "33229888",
+			"name": "None"
+		}
+	],
+	"minQuantityProduced":
+	{
+		"expression": "5"
+	},
+	"maxQuantityProduced":
+	{
+		"expression": "50"
+	},
+	"minCost":
+	{
+		"expression": "30000"
+	},
+	"maxCost":
+	{
+		"expression": "150000"
+	},
+	"minTimeDurationDays":
+	{
+		"expression": "3"
+	},
+	"maxTimeDurationDays":
+	{
+		"expression": "8"
+	},
+	"rewardTypeId":
+	{
+		"guid": "6064629297329602586",
+		"typeId": "1091110040",
+		"name": "None"
+	},
+	"minReward":
+	{
+		"expression": "1"
+	},
+	"maxReward":
+	{
+		"expression": "10"
+	},
+	"minLimitContribution":
+	{
+		"expression": "10"
+	},
+	"maxLimitContribution":
+	{
+		"expression": "100"
+	},
+	"contributionLimitGrowthCurveId":
+	{
+		"guid": "6064631918894317568",
+		"typeId": "1091110055",
+		"name": "None"
+	},
+	"availabilityPredicate":
+	{
+		"expression": "GetNodeBiome() == EBiomeType::Jungle"
+	},
+	"guid": "6064633611069292731",
+	"name": "Commodity_JUN_Tools_T3_1",
+	"typeId": "33229833"
+}

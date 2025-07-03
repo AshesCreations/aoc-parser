@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"85A3B1B94D99826CF880919EA72775D4\", \"Ok. I was just looking for some information.\")",
+	"nextNodeId":
+	{
+		"guid": "6064628814798716930",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0007_PriestessAndThePiper\",\"MAP_0007_PriestessAndThePiper_Phase01\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0007_TOF_TaleOfTallfoot\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_TOF_TaleOfTallfoot\",\"ThePoetWasLocal\")"
+	},
+	"guid": "6064628814801600522",
+	"name": "MADD_0007_TOF_Thespian_12",
+	"typeId": "1091110027"
+}

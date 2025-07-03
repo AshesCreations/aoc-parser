@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"4907DB5B41858006C6AA2A90E7B3F508\", \"(Fill the keg with legs)\")",
+	"nextNodeId":
+	{
+		"guid": "6064628826555023491",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0007_PriestessAndThePiper\",\"MAP_0007_PriestessAndThePiper_Phase02\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0007_HHH_HostHoistHeist\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_HHH_HostHoistHeist\",\"GotMiniKeg\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_HHH_HostHoistHeist\",\"GaveMiniKeg\")"
+	},
+	"guid": "6064628826551287938",
+	"name": "MADD_0007_HHH_ChefAnton_18",
+	"typeId": "1091110027"
+}

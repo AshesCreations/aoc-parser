@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"29ECF2AF4410330CCDBC24B5B9C2A629\", \"The coffer was empty, save this gem.\")",
+	"nextNodeId":
+	{
+		"guid": "6064628826083229719",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0007_PriestessAndThePiper\",\"MAP_0007_PriestessAndThePiper_Phase02\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0007_HHH_HostHoistHeist\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_HHH_HostHoistHeist\",\"PlacedCoffer\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_HHH_HostHoistHeist\",\"ReportedToPiper\")"
+	},
+	"guid": "6064628826325844020",
+	"name": "MADD_0007_HHH_ThePiper_Phase02_31",
+	"typeId": "1091110027"
+}

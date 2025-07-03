@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"6C1A6ED8496F9E99C582779C240363E0\", \"Skutt Silvertoof is dead.\")",
+	"nextNodeId":
+	{
+		"guid": "6064628928546537527",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0012_COD_CurseOfDaragal\",\"MAP_0012_COD_Phase02\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0012_STD_SilverToothedDevil\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0012_STD_SilverToothedDevil\",\"KilledBloodspiller01\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0012_STD_SilverToothedDevil\",\"KilledBloodspiller02\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0012_STD_SilverToothedDevil\",\"KilledBloodspiller03\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0012_STD_SilverToothedDevil\",\"KilledBloodspiller04\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0012_STD_SilverToothedDevil\",\"KilledSkutt\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0012_STD_SilverToothedDevil\",\"ReturnToSodbottom\")"
+	},
+	"guid": "6064628928545685558",
+	"name": "MADD_0012_TOW_WunSodbottom_21",
+	"typeId": "1091110027"
+}

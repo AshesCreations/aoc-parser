@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"7E1AFDD04AE7B6F0ABD9D8ACCE13B427\", \"Reporting for duty!\")",
+	"nextNodeId":
+	{
+		"guid": "109008413415040",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0005_EnemyWithin\",\"MAP_0005_Phase01\")&&\r\n!IsOnStoryArcQuest(GetPlayer(),\"MAQ_0005_BridgeTooFar\")&&\r\n!IsOnStoryArcQuest(GetPlayer(),\"MAQ_0005_PayYourDues\")&&\r\n!IsOnStoryArcQuest(GetPlayer(),\"MAQ_0005_RunToTheHills\")"
+	},
+	"guid": "109008323696251",
+	"name": "MADD_0005_EudoxiaAvenmoor_27",
+	"typeId": "1091110027"
+}

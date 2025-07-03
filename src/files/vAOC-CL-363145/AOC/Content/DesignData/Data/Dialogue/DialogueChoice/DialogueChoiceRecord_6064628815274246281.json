@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"23E382844C8F1D3EDA3ECDB8A3F616F0\", \"The case is closed.\")",
+	"nextNodeId":
+	{
+		"guid": "6064628815276540042",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0007_PriestessAndThePiper\",\"MAP_0007_PriestessAndThePiper_Phase02\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0007_GUM_GoneUnMorrow\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_GUM_GoneUnMorrow\",\"SearchedAlishasBody\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_GUM_GoneUnMorrow\",\"ReturnEvidence\")"
+	},
+	"guid": "6064628815274246281",
+	"name": "MADD_0007_GUM_Dial_Constable_11",
+	"typeId": "1091110027"
+}

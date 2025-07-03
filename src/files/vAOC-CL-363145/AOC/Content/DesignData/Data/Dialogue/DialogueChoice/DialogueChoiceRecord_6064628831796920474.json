@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"782F0D6740F0E3A2C0CFD6AB7E7A5BAB\", \"i has no quest\")",
+	"nextNodeId":
+	{
+		"guid": "6064628831824838812",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcQuestAvailable(GetPlayer(), \"MA_0010_TheCursedHilt\")&&GetStoryArcQuestFlag(GetPlayer(),\"MA_0010_MakingEnemiesAlongTheWay\",\"MysticCheckIn\")"
+	},
+	"guid": "6064628831796920474",
+	"name": "MA_0010_CH_EleanorMillstead_22",
+	"typeId": "1091110027"
+}

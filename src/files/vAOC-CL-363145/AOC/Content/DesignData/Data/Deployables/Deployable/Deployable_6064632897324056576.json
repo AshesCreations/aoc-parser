@@ -1,0 +1,139 @@
+{
+	"deployableType": "CaravanUnstuck",
+	"gatherableToReplaceDeployableId":
+	{
+		"guid": "0",
+		"typeId": "133376",
+		"name": "None"
+	},
+	"deployablePlacementRestrictionType": "None",
+	"nodeRadiusSize": 50000,
+	"bRequireLandscape": false,
+	"landscapeSweepRadius": 25,
+	"bUsePlacementExpression": false,
+	"bConfirmDeployment": false,
+	"confirmDeploymentText": "",
+	"additionalPlacementValidationExpression":
+	{
+		"expression": ""
+	},
+	"deployableAsset": "/Game/DesignAssets/Node/BP_Caravan_Deployable.BP_Caravan_Deployable",
+	"constructTimeSeconds": 0,
+	"lifespanSeconds":
+	{
+		"expression": ""
+	},
+	"traceChannel": "ECC_Vehicle",
+	"bShouldSnapToFloor": true,
+	"bUseMouseToPlace": true,
+	"placementCylinderRadius": 3500,
+	"placementCylinderHeight": 2000,
+	"bShouldRotateAroundBoundsCenter": true,
+	"placementRotationSnappingIncrements": 360,
+	"deployableBoundaryType": "DEPLOY_ActorBounds",
+	"customOverrideDimensions":
+	{
+		"x": 10,
+		"y": 10,
+		"z": 10
+	},
+	"verticalPenetrationStart": 90,
+	"verticalPenetrationEnd": 125,
+	"boundsOffset": 0,
+	"boundsUpperScalar":
+	{
+		"x": 3.5,
+		"y": 2,
+		"z": 0.5
+	},
+	"boundsLowerScalar":
+	{
+		"x": 1,
+		"y": 1,
+		"z": 1
+	},
+	"placementFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"deployableLimits": [],
+	"deployableDistanceOffset": 100,
+	"surveyPylonDataId":
+	{
+		"guid": "0",
+		"typeId": "1948199294",
+		"name": "None"
+	},
+	"cooldownSkillId":
+	{
+		"guid": "0",
+		"typeId": "30316001",
+		"name": "None"
+	},
+	"rotationOffset":
+	{
+		"pitch": 0,
+		"yaw": 0,
+		"roll": 0
+	},
+	"raftGroundSweepExtent":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"raftWaterSweepExtent":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"raftWaterSweepStartOffset":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"raftWaterSweepEndOffset":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"trailerGroundSweepExtent":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"trailerClearAreaSweepExtent":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"trailerNoWaterAreaSweepExtent":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"trailerGroundSweepStartOffset":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"trailerGroundSweepEndOffset":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"skipItemRequirementForDeploy": false,
+	"guid": "6064632897324056576",
+	"name": "Caravan_Unstuck",
+	"typeId": "3031600215"
+}

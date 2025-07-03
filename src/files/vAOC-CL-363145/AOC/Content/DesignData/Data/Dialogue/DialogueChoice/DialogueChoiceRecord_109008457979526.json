@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"7465C089458A1BA933413D9F24DAF217\", \"I bring the dues.\")",
+	"nextNodeId":
+	{
+		"guid": "109008460600967",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005_PayYourDues\",\"ReturnedToFishmonger01\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005_PayYourDues\",\"ReturnToAvenmoor\")"
+	},
+	"guid": "109008457979526",
+	"name": "MADD_0005_EudoxiaAvenmoor_38",
+	"typeId": "1091110027"
+}

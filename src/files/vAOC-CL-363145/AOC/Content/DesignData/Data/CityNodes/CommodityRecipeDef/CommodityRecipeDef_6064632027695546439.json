@@ -1,0 +1,74 @@
+{
+	"displayName": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"686597E4437D6D3B673A028B90A64AB7\", \"Magic Necklaces\")",
+	"commodityRecipeMaterialRequirementIds": [
+		{
+			"guid": "6064631981069565982",
+			"typeId": "33229888",
+			"name": "None"
+		},
+		{
+			"guid": "6064632026002096139",
+			"typeId": "33229888",
+			"name": "None"
+		}
+	],
+	"minQuantityProduced":
+	{
+		"expression": "5"
+	},
+	"maxQuantityProduced":
+	{
+		"expression": "50"
+	},
+	"minCost":
+	{
+		"expression": "30000"
+	},
+	"maxCost":
+	{
+		"expression": "150000"
+	},
+	"minTimeDurationDays":
+	{
+		"expression": "3"
+	},
+	"maxTimeDurationDays":
+	{
+		"expression": "8"
+	},
+	"rewardTypeId":
+	{
+		"guid": "6064629297329602586",
+		"typeId": "1091110040",
+		"name": "None"
+	},
+	"minReward":
+	{
+		"expression": "1"
+	},
+	"maxReward":
+	{
+		"expression": "10"
+	},
+	"minLimitContribution":
+	{
+		"expression": "10"
+	},
+	"maxLimitContribution":
+	{
+		"expression": "100"
+	},
+	"contributionLimitGrowthCurveId":
+	{
+		"guid": "6064631918894317568",
+		"typeId": "1091110055",
+		"name": "None"
+	},
+	"availabilityPredicate":
+	{
+		"expression": "GetNodeBiome() == EBiomeType::Riverlands"
+	},
+	"guid": "6064632027695546439",
+	"name": "Commodity_RVR_Jewelry_T3_2",
+	"typeId": "33229833"
+}

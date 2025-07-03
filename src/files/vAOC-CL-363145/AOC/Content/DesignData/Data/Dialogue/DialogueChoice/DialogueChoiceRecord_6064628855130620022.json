@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"A77C52E8452611D1D05140B66978BAB8\", \"Who is the Priestess?\")",
+	"nextNodeId":
+	{
+		"guid": "6064628855129833589",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0007_PriestessAndThePiper\",\"MAP_0007_PriestessAndThePiper_Phase03\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0007_BOB_BonekeeperOrBurglar\")"
+	},
+	"guid": "6064628855130620022",
+	"name": "MADD_0007_KTC_ThePiper_Phase03_28",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,23 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"4B4FD1B940DDE2FAD390D2997CF07447\", \"Did you know that there\\'s a gang recruiting your people?\")",
+	"nextNodeId":
+	{
+		"guid": "109196115859128",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064628633832849427",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "GetStoryArcQuestFlag(GetPlayer(),\"SAQ_0006_LionHold_Tank_Ruin3\",\"TankCaptiveClue2\")&&!GetStoryArcQuestFlag(GetPlayer(),\"SAQ_0006_LionHold_Tank_Ruin3\",\"Tank3Report2\")"
+	},
+	"guid": "109189613246084",
+	"name": "0006_P0_Tank2_77",
+	"typeId": "1091110027"
+}

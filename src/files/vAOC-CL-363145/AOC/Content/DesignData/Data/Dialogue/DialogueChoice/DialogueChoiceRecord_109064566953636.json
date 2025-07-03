@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"CC9D336545E7E22693843BA8413A49B0\", \"I\\'m here for your trade dues.\")",
+	"nextNodeId":
+	{
+		"guid": "109064568133285",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005_PayYourDues\",\"KilledTimberclaw\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005_PayYourDues\",\"SpokeToRancher\")"
+	},
+	"guid": "109064566953636",
+	"name": "MADD_0005_WranglerColbin_4",
+	"typeId": "1091110027"
+}

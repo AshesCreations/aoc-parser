@@ -1,0 +1,24 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"AD5704B64EF1FCC81E50E68775FDC43D\", \"Here is Lyndra\\'s Cursed Vase.\")",
+	"nextNodeId":
+	{
+		"guid": "108437055428221",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "0",
+			"typeId": "1091110030",
+			"name": "MA_0002_RemoveLyndraBloomVase"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0002_BeautifulBloom\",\"HaveCursedVase\")"
+	},
+	"choiceType": "Default",
+	"guid": "108437056411262",
+	"name": "MADD_0002_Antiquitor_23",
+	"typeId": "1091110027"
+}

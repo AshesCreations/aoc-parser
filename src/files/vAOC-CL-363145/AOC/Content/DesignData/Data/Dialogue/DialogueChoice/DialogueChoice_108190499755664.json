@@ -1,0 +1,23 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"97B93AC449106C97CE7BCBA7C1F16CEC\", \"I managed to free a few settlers from some cages out in the woods.\")",
+	"nextNodeId":
+	{
+		"guid": "108190459909772",
+		"typeId": "1091110028",
+		"name": "Harriet_Phase0_SettlersRescued"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "108190376023685",
+			"typeId": "1091110030",
+			"name": "AR_0001_Q1_03_ReportRescueSettlers"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "GetStoryArcQuestFlag(GetPlayer(),\"SAQ_0001_Q1_SecuringSupplies\",\"SettlersRescued\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"SAQ_0001_Q1_SecuringSupplies\",\"ReportedSettlersRescued\")"
+	},
+	"guid": "108190499755664",
+	"name": "DC_Harriet_P0_ReportSettlersRescued",
+	"typeId": "1091110027"
+}

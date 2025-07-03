@@ -1,0 +1,23 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"FBD3DE88496B38AB55E69C8F2CC1F9EA\", \"It looked like a Grayshore caravan was hit just outside the camp. They\\'ve got a real need for seasoned fighters.\")",
+	"nextNodeId":
+	{
+		"guid": "108167242077833",
+		"typeId": "1091110028",
+		"name": "GavinQuestPhase0_Node2a"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "108167754176166",
+			"typeId": "1091110030",
+			"name": "AR_0001_Q2_O1_ReportFindBrokenCaravan"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "GetStoryArcQuestFlag(GetPlayer(),\"SAQ_0001_Q2_IntroductionsInOrder\",\"FoundCaravan\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"SAQ_0001_Q2_IntroductionsInOrder\",\"ReportedBrokenCaravan\")"
+	},
+	"guid": "108167328519820",
+	"name": "DC_Gavin_Node2_ReportBrokenCaravan",
+	"typeId": "1091110027"
+}

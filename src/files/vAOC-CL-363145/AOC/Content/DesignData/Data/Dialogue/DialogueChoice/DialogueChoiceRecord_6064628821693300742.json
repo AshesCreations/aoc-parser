@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"D7D3ADE54C7B325A578334A238AA8D13\", \"(Play a tune)\")",
+	"nextNodeId":
+	{
+		"guid": "6064628821709225992",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0007_PriestessAndThePiper\",\"MAP_0007_PriestessAndThePiper_Phase01\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0007_TWK_TheWhistlingKey\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_TWK_TheWhistlingKey\",\"ExaminedTheKey\")"
+	},
+	"guid": "6064628821693300742",
+	"name": "MADD_0007_BAL_ITM_WhistlingKey_7",
+	"typeId": "1091110027"
+}

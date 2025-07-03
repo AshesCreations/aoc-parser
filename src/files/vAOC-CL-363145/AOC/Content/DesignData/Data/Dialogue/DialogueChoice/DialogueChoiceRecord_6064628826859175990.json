@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"4F380E2A4AE395B3701DF3BEEC830565\", \"i has no flag. What do?\")",
+	"nextNodeId":
+	{
+		"guid": "6064628826859175994",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsOnStoryArcQuest(GetPlayer(),\"MA_0010_MakingEnemiesAlongTheWay\")&&!GetStoryArcQuestFlag(GetPlayer(),\"MA_0010_MakingEnemiesAlongTheWay\",\"ScoutCheckIn\")"
+	},
+	"guid": "6064628826859175990",
+	"name": "MA_0010_MEAW_LiamGarth_3",
+	"typeId": "1091110027"
+}

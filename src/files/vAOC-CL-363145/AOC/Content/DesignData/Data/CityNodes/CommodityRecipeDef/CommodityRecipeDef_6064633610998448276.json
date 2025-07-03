@@ -1,0 +1,74 @@
+{
+	"displayName": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"A4930A594FFB3467D01181A291A04F00\", \"Chronicles\")",
+	"commodityRecipeMaterialRequirementIds": [
+		{
+			"guid": "6064633607156990075",
+			"typeId": "33229888",
+			"name": "None"
+		},
+		{
+			"guid": "6064633607147159666",
+			"typeId": "33229888",
+			"name": "None"
+		}
+	],
+	"minQuantityProduced":
+	{
+		"expression": "5"
+	},
+	"maxQuantityProduced":
+	{
+		"expression": "50"
+	},
+	"minCost":
+	{
+		"expression": "30000"
+	},
+	"maxCost":
+	{
+		"expression": "150000"
+	},
+	"minTimeDurationDays":
+	{
+		"expression": "3"
+	},
+	"maxTimeDurationDays":
+	{
+		"expression": "8"
+	},
+	"rewardTypeId":
+	{
+		"guid": "6064629297329602586",
+		"typeId": "1091110040",
+		"name": "None"
+	},
+	"minReward":
+	{
+		"expression": "1"
+	},
+	"maxReward":
+	{
+		"expression": "10"
+	},
+	"minLimitContribution":
+	{
+		"expression": "10"
+	},
+	"maxLimitContribution":
+	{
+		"expression": "100"
+	},
+	"contributionLimitGrowthCurveId":
+	{
+		"guid": "6064631918894317568",
+		"typeId": "1091110055",
+		"name": "None"
+	},
+	"availabilityPredicate":
+	{
+		"expression": "GetNodeBiome() == EBiomeType::Jungle"
+	},
+	"guid": "6064633610998448276",
+	"name": "Commodity_JUN_Books_T3_1",
+	"typeId": "33229833"
+}

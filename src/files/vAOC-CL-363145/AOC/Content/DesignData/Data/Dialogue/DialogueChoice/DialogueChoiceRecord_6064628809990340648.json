@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"17D6BDAA410893D80D7232B3C49DB3D1\", \"i has no flag. What do?\")",
+	"nextNodeId":
+	{
+		"guid": "6064628809990340652",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsOnStoryArcQuest(GetPlayer(),\"MA_0010_WhatTheVillageNeeds\")&&!GetStoryArcQuestFlag(GetPlayer(), \"MA_0010_WhatTheVillageNeeds\", \"SallyCheckIn\")"
+	},
+	"guid": "6064628809990340648",
+	"name": "MA_0010_WVN_FarmerWalton_3",
+	"typeId": "1091110027"
+}

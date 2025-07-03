@@ -1,0 +1,24 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"EFF150144F0FC82DCBB18E9FF139CDB4\", \"Here is the Cursed Mangler Skull.\")",
+	"nextNodeId":
+	{
+		"guid": "108437060212353",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "0",
+			"typeId": "1091110030",
+			"name": "MA_0002_GaveAntiquitorManglerSkull"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0002_ChampionMostFeared\",\"KilledTheMangler\")"
+	},
+	"choiceType": "Default",
+	"guid": "108437060015744",
+	"name": "MADD_0002_Antiquitor_25",
+	"typeId": "1091110027"
+}

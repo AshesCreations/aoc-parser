@@ -1,0 +1,54 @@
+{
+	"triggerStatus": "Dead",
+	"materialPropertyName": "Dissolve_Scalar",
+	"activationCurve":
+	{
+		"externalCurve": "None",
+		"editorCurveData":
+		{
+			"keys": [
+				{
+					"interpMode": "RCIM_Cubic",
+					"tangentMode": "RCTM_Break",
+					"tangentWeightMode": "RCTWM_WeightedNone",
+					"time": 0.0013351067900657654,
+					"value": -0.0060000419616699219,
+					"arriveTangent": 3.9771971702575684,
+					"arriveTangentWeight": 0,
+					"leaveTangent": 7.2960834503173828,
+					"leaveTangentWeight": 0
+				},
+				{
+					"interpMode": "RCIM_Cubic",
+					"tangentMode": "RCTM_Break",
+					"tangentWeightMode": "RCTWM_WeightedNone",
+					"time": 0.34999999403953552,
+					"value": 1.1100280284881592,
+					"arriveTangent": 0.78214907646179199,
+					"arriveTangentWeight": 0,
+					"leaveTangent": 0,
+					"leaveTangentWeight": 0
+				}
+			],
+			"defaultValue": 3.4028234663852886e+38,
+			"preInfinityExtrap": "RCCE_Constant",
+			"postInfinityExtrap": "RCCE_Constant",
+			"keyHandlesToIndices":
+			{
+			}
+		}
+	},
+	"particleSystemId":
+	{
+		"guid": "107614990653048",
+		"typeId": "812368",
+		"name": "Death"
+	},
+	"particleSystemActivationThreshold": 0,
+	"bUseSilhouetteMesh": false,
+	"silhouetteMaterial": "None",
+	"materialParams": [],
+	"guid": "107615248668281",
+	"name": "Death",
+	"typeId": "812367"
+}

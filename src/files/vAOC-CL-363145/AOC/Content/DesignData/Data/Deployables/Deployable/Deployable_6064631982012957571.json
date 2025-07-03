@@ -1,0 +1,136 @@
+{
+	"deployableType": "SurveyingPylon",
+	"gatherableToReplaceDeployableId":
+	{
+		"guid": "0",
+		"typeId": "133376",
+		"name": "None"
+	},
+	"deployablePlacementRestrictionType": "None",
+	"nodeRadiusSize": 50000,
+	"bUsePlacementExpression": false,
+	"bConfirmDeployment": true,
+	"confirmDeploymentText": "NSLOCTEXT(\"[E4D20BA648F08F07691FD6BAA26EEB4A]\", \"27A3CDB94A2B4D1435296C982CC607E2\", \"Use Survey Pylon at this location and begin survey of the local area?\")",
+	"additionalPlacementValidationExpression":
+	{
+		"expression": ""
+	},
+	"deployableAsset": "/Game/DesignAssets/Artisanship/Survey/Pylon_Base.Pylon_Base",
+	"constructTimeSeconds": 0,
+	"lifespanSeconds":
+	{
+		"expression": "0"
+	},
+	"traceChannel": "ECC_Vehicle",
+	"bShouldSnapToFloor": true,
+	"bUseMouseToPlace": true,
+	"placementCylinderRadius": 1000,
+	"placementCylinderHeight": 800,
+	"bShouldRotateAroundBoundsCenter": true,
+	"placementRotationSnappingIncrements": 360,
+	"deployableBoundaryType": "DEPLOY_ActorBounds",
+	"customOverrideDimensions":
+	{
+		"x": 10,
+		"y": 10,
+		"z": 10
+	},
+	"verticalPenetrationStart": 10,
+	"verticalPenetrationEnd": 100,
+	"boundsOffset": 0,
+	"boundsUpperScalar":
+	{
+		"x": 1,
+		"y": 1,
+		"z": 1
+	},
+	"boundsLowerScalar":
+	{
+		"x": 1,
+		"y": 1,
+		"z": 1
+	},
+	"placementFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"deployableLimits": [],
+	"deployableDistanceOffset": 500,
+	"surveyPylonDataId":
+	{
+		"guid": "6064631981966689137",
+		"typeId": "1948199294",
+		"name": "None"
+	},
+	"cooldownSkillId":
+	{
+		"guid": "6064631981996114811",
+		"typeId": "30316001",
+		"name": "None"
+	},
+	"rotationOffset":
+	{
+		"pitch": 0,
+		"yaw": 0,
+		"roll": 0
+	},
+	"raftGroundSweepExtent":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"raftWaterSweepExtent":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"raftWaterSweepStartOffset":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"raftWaterSweepEndOffset":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"trailerGroundSweepExtent":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"trailerClearAreaSweepExtent":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"trailerNoWaterAreaSweepExtent":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"trailerGroundSweepStartOffset":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"trailerGroundSweepEndOffset":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"guid": "6064631982012957571",
+	"name": "Survey_Hunting_T1",
+	"typeId": "3031600215"
+}

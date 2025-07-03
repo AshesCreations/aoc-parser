@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"47DA59E9479334BC555B969DDA9F4440\", \"I found you!\")",
+	"nextNodeId":
+	{
+		"guid": "109144372434575",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsOnStoryArcQuest(GetPlayer(),\"MAQ_0005_AthenaeumOfRapha\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005_AthenaeumOfRapha\",\"FoundBooksmith\")"
+	},
+	"guid": "109144353822350",
+	"name": "MADD_0005_EOA_Booksmith_Alexor_46",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"F9F309684DE379560F8586A5DC8AD796\", \"(bear turn in)\")",
+	"nextNodeId":
+	{
+		"guid": "6064629027016999210",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"SA_0008_HarrowerMoon\", \"MAP_0008_HarrowerMoon_02\")&&\r\nIsOnStoryArcQuest(GetPlayer(), \"MAQ_0008_ItsJustABear\")"
+	},
+	"guid": "6064629027016999179",
+	"name": "DDR_0008_CaptainRodrigar_6",
+	"typeId": "1091110027"
+}

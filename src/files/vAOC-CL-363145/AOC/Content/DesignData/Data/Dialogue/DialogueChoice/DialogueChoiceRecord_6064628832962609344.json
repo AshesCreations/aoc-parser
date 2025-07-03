@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"CD7D64574C60184DE5FBE6B7F696373E\", \"I return with news.\")",
+	"nextNodeId":
+	{
+		"guid": "6064628832933707958",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0007_PriestessAndThePiper\",\"MAP_0007_PriestessAndThePiper_Phase03\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_EDD_ExaltedDenizensAndDuzakh\",\"FoundEDDBones\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_EDD_ExaltedDenizensAndDuzakh\",\"ReturnedTheEDDBones\")"
+	},
+	"guid": "6064628832962609344",
+	"name": "MADD_0007_EDD_TheConstable_25",
+	"typeId": "1091110027"
+}

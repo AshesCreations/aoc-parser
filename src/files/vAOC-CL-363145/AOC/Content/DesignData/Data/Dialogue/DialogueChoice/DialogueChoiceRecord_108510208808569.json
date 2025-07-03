@@ -1,0 +1,23 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"A735A5DA43D369D4CCF1C0BE76222A49\", \"You were right, that guy was shady!\")",
+	"nextNodeId":
+	{
+		"guid": "108515276576376",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "108510186460792",
+			"typeId": "1091110030",
+			"name": "AR_SA_0003_Q2_FinishStoryArcQuest2"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "GetStoryArcQuestFlag(GetPlayer(),\"SAQ_0003_RoadsideVendor2_q2_Investigate\",\"Investigate_q2\")"
+	},
+	"guid": "108510208808569",
+	"name": "DialogueDef_0003_q2_Herald2_20",
+	"typeId": "1091110027"
+}

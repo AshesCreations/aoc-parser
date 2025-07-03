@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"CCCE695D42D22593E342D381358768BB\", \"I think it is a curse.\")",
+	"nextNodeId":
+	{
+		"guid": "6064628946302730331",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0012_COD_CurseOfDaragal\",\"MAP_0012_COD_Phase02\")&&\r\n!IsOnStoryArcQuest(GetPlayer(),\"MAQ_0012_RWS_ReadWhatIsSown\")"
+	},
+	"guid": "6064628946304696417",
+	"name": "MADD_0012_RWS_LordKivan_9",
+	"typeId": "1091110027"
+}

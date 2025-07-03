@@ -1,0 +1,23 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"766FC85E4C99E43619387191B41B64AB\", \"I fear no merchant! I\\'m on the job.\")",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "108488299140745",
+			"typeId": "1091110030",
+			"name": "AR_SA_0003_Q2_GiveStoryArcQuest2"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "(!IsOnStoryArcQuest(GetPlayer(), \"SAQ_0003_RoadsideVendor2_q2_Investigate\"))"
+	},
+	"guid": "108470896252543",
+	"name": "DialogueDef_0003_q2_Herald2_8",
+	"typeId": "1091110027"
+}

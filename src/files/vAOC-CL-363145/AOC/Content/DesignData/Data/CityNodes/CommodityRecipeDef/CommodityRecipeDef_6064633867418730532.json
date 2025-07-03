@@ -1,0 +1,74 @@
+{
+	"displayName": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"6338695F4F4922494CB81892B2DA71D5\", \"Rare Fruits\")",
+	"commodityRecipeMaterialRequirementIds": [
+		{
+			"guid": "6064633867574378511",
+			"typeId": "33229888",
+			"name": "None"
+		},
+		{
+			"guid": "6064633867591811098",
+			"typeId": "33229888",
+			"name": "None"
+		}
+	],
+	"minQuantityProduced":
+	{
+		"expression": "5"
+	},
+	"maxQuantityProduced":
+	{
+		"expression": "50"
+	},
+	"minCost":
+	{
+		"expression": "30000"
+	},
+	"maxCost":
+	{
+		"expression": "150000"
+	},
+	"minTimeDurationDays":
+	{
+		"expression": "3"
+	},
+	"maxTimeDurationDays":
+	{
+		"expression": "8"
+	},
+	"rewardTypeId":
+	{
+		"guid": "6064629297329602586",
+		"typeId": "1091110040",
+		"name": "None"
+	},
+	"minReward":
+	{
+		"expression": "1"
+	},
+	"maxReward":
+	{
+		"expression": "10"
+	},
+	"minLimitContribution":
+	{
+		"expression": "10"
+	},
+	"maxLimitContribution":
+	{
+		"expression": "100"
+	},
+	"contributionLimitGrowthCurveId":
+	{
+		"guid": "6064631918894317568",
+		"typeId": "1091110055",
+		"name": "None"
+	},
+	"availabilityPredicate":
+	{
+		"expression": "GetNodeBiome() == EBiomeType::TabletopMountains"
+	},
+	"guid": "6064633867418730532",
+	"name": "Commodity_ANV_Food_T3_2",
+	"typeId": "33229833"
+}

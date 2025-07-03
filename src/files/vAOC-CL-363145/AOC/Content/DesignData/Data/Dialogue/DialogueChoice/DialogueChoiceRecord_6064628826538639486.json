@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"87AFAEBE4ADA91927FA7669DBCACA71B\", \"I\\'ve got the legs!\")",
+	"nextNodeId":
+	{
+		"guid": "6064628826540867711",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0007_PriestessAndThePiper\",\"MAP_0007_PriestessAndThePiper_Phase02\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0007_HHH_HostHoistHeist\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_HHH_HostHoistHeist\",\"KilledDredgehorn\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_HHH_HostHoistHeist\",\"GaveDredgehorns\")"
+	},
+	"guid": "6064628826538639486",
+	"name": "MADD_0007_HHH_ChefAnton_14",
+	"typeId": "1091110027"
+}

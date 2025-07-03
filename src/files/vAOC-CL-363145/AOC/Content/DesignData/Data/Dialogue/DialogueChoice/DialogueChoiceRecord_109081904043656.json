@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"F66A590A4CF4F95F3CB7AEA4D71360F5\", \"Open\")",
+	"nextNodeId":
+	{
+		"guid": "109081904502409",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0005_EnemyWithin\",\"MAP_0005_Phase02\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005_EyesOfAvenmoor\",\"GaveQuillAntiquitor\")\r\n||\r\n!IsStoryArcQuestAvailable(GetPlayer(),\"MAQ_0005_EyesOfAvenmoor\")"
+	},
+	"guid": "109081904043656",
+	"name": "MADD_0005_EOA_Examine_AvenmoorBook_7",
+	"typeId": "1091110027"
+}

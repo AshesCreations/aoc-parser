@@ -1,0 +1,18 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"CCA64A9841511D2E84FF3E890B696286\", \"Greetings.\")",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "GetStoryArcQuestFlag(GetPlayer(),\"SAQ_0002_01_DormantPower\",\"ExploredMainGate\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"SAQ_0002_01_DormantPower\",\"ExploredThrone\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"SAQ_0002_DormantPower\",\"ExploredLibrary\")"
+	},
+	"choiceType": "Default",
+	"guid": "108334430967442",
+	"name": "SAD_7thComm",
+	"typeId": "1091110027"
+}

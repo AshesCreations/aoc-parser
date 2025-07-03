@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"9A44AE2443F96044140639B7384E7BEE\", \"(Stick the gem in it.)\")",
+	"nextNodeId":
+	{
+		"guid": "109149993981601",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005_AthenaeumOfRapha\",\"KillHauntOfRapha\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005_AthenaeumOfRapha\",\"GainedKnowledge\")"
+	},
+	"guid": "109149999290022",
+	"name": "MADD_0005_AOR_ArcaneArt_9",
+	"typeId": "1091110027"
+}

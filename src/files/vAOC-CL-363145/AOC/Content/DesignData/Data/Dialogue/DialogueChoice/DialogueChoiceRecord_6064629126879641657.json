@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"B4CF69184873ADEE018C95BA284E9247\", \"I hear rumbling!\")",
+	"nextNodeId":
+	{
+		"guid": "6064629126876626986",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MIA_0003_ROW_RelicOfWar\",\"MAP_0003_ROW_Phase01\")&&\r\n!IsStoryArcQuestAvailable(GetPlayer(),\"MAQ_0003_HWR_HeadWillRoll\")&&\r\n!IsOnStoryArcQuest(GetPlayer (),\"MAQ_0003_TGS_TheGreenScarab\")\r\n"
+	},
+	"guid": "6064629126879641657",
+	"name": "MIDD_0003_HWR_CrumVatta_24",
+	"typeId": "1091110027"
+}

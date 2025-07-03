@@ -1,0 +1,24 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"E2EC606F421D5933BAFD1D83775FEA2E\", \"The Cursed Statue has been returned.\")",
+	"nextNodeId":
+	{
+		"guid": "108437068011140",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "0",
+			"typeId": "1091110030",
+			"name": "MA_0002_GaveAntiquitorCursedStatue"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0002_AThousandSuns\",\"HaveCursedStatue\")"
+	},
+	"choiceType": "Default",
+	"guid": "108437066897027",
+	"name": "MADD_0002_Antiquitor_28",
+	"typeId": "1091110027"
+}

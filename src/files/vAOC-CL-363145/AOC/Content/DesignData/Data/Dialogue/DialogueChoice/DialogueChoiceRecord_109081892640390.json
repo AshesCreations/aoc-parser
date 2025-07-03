@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"6E94E00A484FDF317C248CACA26CB6AC\", \"Open\")",
+	"nextNodeId":
+	{
+		"guid": "109081891657348",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0005_EnemyWithin\",\"MAP_0005_Phase02\")&&\r\n!IsOnStoryArcQuest(GetPlayer(),\"MAQ_0005_EyesOfAvenmoor\")&&\r\nIsStoryArcQuestAvailable(GetPlayer(),\"MAQ_0005_EyesOfAvenmoor\")"
+	},
+	"guid": "109081892640390",
+	"name": "MADD_0005_EOA_Examine_AvenmoorBook_5",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,125 @@
+{
+	"professionId":
+	{
+		"guid": "108752746993279",
+		"typeId": "8125613373123",
+		"name": "None"
+	},
+	"certificationLevelId":
+	{
+		"guid": "108906342012538",
+		"typeId": "455189666431",
+		"name": "None"
+	},
+	"learnable": true,
+	"overrideName": "",
+	"overrideIcon": "None",
+	"categoryTag":
+	{
+		"tagName": "Item.Consumable.Scroll"
+	},
+	"difficulty": 0,
+	"defaultQuality": 0,
+	"fuel": 0,
+	"fuelTags":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"bUseOverrides": false,
+	"overrides": [],
+	"nodeLevel": "Wilderness",
+	"levelingTemplateId":
+	{
+		"guid": "0",
+		"typeId": "4565416516154",
+		"name": "None"
+	},
+	"baseDuration": 2,
+	"durationFormula":
+	{
+		"expression": ""
+	},
+	"qualityFormula":
+	{
+		"expression": "GetCraftingRecipeQuality() + EvalFormula($#10516612381411113:6064630356607631443$)"
+	},
+	"quantityFormula":
+	{
+		"expression": ""
+	},
+	"rewardId":
+	{
+		"guid": "6064632204453740732",
+		"typeId": "1091110040",
+		"name": "None"
+	},
+	"itemDestination": "Inventory",
+	"primaryResourceCosts": [],
+	"generalResourceCost": [
+		{
+			"item":
+			{
+				"guid": "6064631793401987077",
+				"typeId": "1091110003",
+				"name": "None"
+			},
+			"quantity": 1,
+			"bConsumeInCrafting": true
+		},
+		{
+			"item":
+			{
+				"guid": "6064632203704795151",
+				"typeId": "1091110003",
+				"name": "None"
+			},
+			"quantity": 10,
+			"bConsumeInCrafting": true
+		},
+		{
+			"item":
+			{
+				"guid": "6064631799367204871",
+				"typeId": "1091110003",
+				"name": "None"
+			},
+			"quantity": 1,
+			"bConsumeInCrafting": true
+		},
+		{
+			"item":
+			{
+				"guid": "6064630417661034533",
+				"typeId": "1091110003",
+				"name": "None"
+			},
+			"quantity": 1,
+			"bConsumeInCrafting": true
+		}
+	],
+	"craftingCurrencyCostId":
+	{
+		"guid": "6064631154783551495",
+		"typeId": "9565237358",
+		"name": "None"
+	},
+	"subRecipesIds": [],
+	"skillTreeSpecializationId":
+	{
+		"guid": "0",
+		"typeId": "30316003",
+		"name": "None"
+	},
+	"bCanFastCraft": true,
+	"bCanGameplayLayer": true,
+	"weaponsmithingInfoId":
+	{
+		"guid": "0",
+		"typeId": "1636976253",
+		"name": "None"
+	},
+	"guid": "6064632204453740731",
+	"name": "Scribe_T3_Scroll_WeaponsmithingXP",
+	"typeId": "163697"
+}

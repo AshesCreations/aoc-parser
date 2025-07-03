@@ -1,0 +1,23 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"DFB24A734BC1D088218CE6B9DF530061\", \"The man at the Portal gate said to come here.\")",
+	"nextNodeId":
+	{
+		"guid": "109116955842239",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "109382075635320",
+			"typeId": "1091110030",
+			"name": "AR_0006_Quest_AllIntro_Cleric_AdvanceObj"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "GetPrimaryArchetype(GetPlayer())==ECharacterClass::Cleric"
+	},
+	"guid": "109303591360132",
+	"name": "0006_P0_Cleric_66",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"80124B4445A1703733E0F29A10077224\", \"(Give the four phylacteries)\")",
+	"nextNodeId":
+	{
+		"guid": "6064628854753329201",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0007_PriestessAndThePiper\",\"MAP_0007_PriestessAndThePiper_Phase03\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0007_BOB_BonekeeperOrBurglar\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_BOB_BonekeeperOrBurglar\",\"GotPhylactery01\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_BOB_BonekeeperOrBurglar\",\"GotPhylactery02\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_BOB_BonekeeperOrBurglar\",\"GotPhylactery03\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_BOB_BonekeeperOrBurglar\",\"GotPhylactery04\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_BOB_BonekeeperOrBurglar\",\"GaveFourPhylacteries\")"
+	},
+	"guid": "6064628854752215088",
+	"name": "MADD_0007_EDD_Bonekeeper_Phase03_49",
+	"typeId": "1091110027"
+}

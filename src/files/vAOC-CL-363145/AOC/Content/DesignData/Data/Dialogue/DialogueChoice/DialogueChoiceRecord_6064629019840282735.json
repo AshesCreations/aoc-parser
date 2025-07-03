@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"66A9B48F44FC6B7A7FC7C6989F937876\", \"Comes to places yesterday.\")",
+	"nextNodeId":
+	{
+		"guid": "6064629019403943970",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0002_CCC_CollectorOfCursedCurios\",\"MAP_0002_CCC_Phase01\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0002_TSS_TheSpindleSpider\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0002_TSS_TheSpindleSpider\",\"MetTheAntiquitor\")&&\r\n!IsOnStoryArcQuest(GetPlayer(),\"MAQ_0002_TTI_TheTauroxianIdols\")"
+	},
+	"guid": "6064629019840282735",
+	"name": "MADD_0002_TSS_TheAntiquitor_21",
+	"typeId": "1091110027"
+}

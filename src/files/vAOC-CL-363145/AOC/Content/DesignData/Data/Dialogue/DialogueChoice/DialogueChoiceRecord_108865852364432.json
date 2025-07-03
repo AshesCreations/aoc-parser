@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"3754FDDD4CE8182F080D279CD991C874\", \"There\\'s more.\")",
+	"nextNodeId":
+	{
+		"guid": "108865834407556",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "GetStoryArcQuestFlag(GetPlayer(), \"MAQ_0004_02_SunkCost\", \"LostGoodsRecovered\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(), \"MAQ_0004_02_SunkCost\", \"LostGoodsTI\")"
+	},
+	"guid": "108865852364432",
+	"name": "MAD_0004_Tricia_37",
+	"typeId": "1091110027"
+}

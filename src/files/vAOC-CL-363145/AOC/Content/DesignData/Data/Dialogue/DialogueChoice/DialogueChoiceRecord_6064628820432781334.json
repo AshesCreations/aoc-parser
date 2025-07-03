@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"BB720BCC444D36B87499B39D942A98E7\", \"(Flip the coin)\")",
+	"nextNodeId":
+	{
+		"guid": "6064628820432912407",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0007_PriestessAndThePiper\",\"MAP_0007_PriestessAndThePiper_Phase01\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0007_TWK_TheWhistlingKey\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_TWK_TheWhistlingKey\",\"KilledCoinHoarder\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_TWK_TheWhistlingKey\",\"ShowedCoin\")"
+	},
+	"guid": "6064628820432781334",
+	"name": "MADD_0007_TheBeggar_24",
+	"typeId": "1091110027"
+}

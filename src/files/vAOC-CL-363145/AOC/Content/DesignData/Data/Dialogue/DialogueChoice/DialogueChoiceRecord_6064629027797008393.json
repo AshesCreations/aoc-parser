@@ -1,0 +1,28 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"E3C6BD4E443317388DC4FD9D6CD6CC22\", \"He dead\")",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064629025758445614",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064629025796784192",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "GetStoryArcQuestFlag(GetPlayer(), \"MAQ_0008_TheHomesteadUnharrowed\", \"MonsterKilled\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(), \"MAQ_0008_TheHomesteadUnharrowed\", \"MonsterKilledTI\")"
+	},
+	"guid": "6064629027797008393",
+	"name": "DDR_0008_CaptainRodrigar_96",
+	"typeId": "1091110027"
+}

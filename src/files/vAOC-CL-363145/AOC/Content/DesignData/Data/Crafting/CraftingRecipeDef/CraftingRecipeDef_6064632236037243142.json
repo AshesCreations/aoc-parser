@@ -1,0 +1,114 @@
+{
+	"professionId":
+	{
+		"guid": "108752746993277",
+		"typeId": "8125613373123",
+		"name": "None"
+	},
+	"certificationLevelId":
+	{
+		"guid": "108906339653240",
+		"typeId": "455189666431",
+		"name": "None"
+	},
+	"learnable": true,
+	"overrideName": "",
+	"categoryTag":
+	{
+		"tagName": "Slot.Shirt"
+	},
+	"difficulty": 0,
+	"defaultQuality": 0,
+	"fuel": 0,
+	"fuelTags":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"bUseOverrides": false,
+	"overrides": [],
+	"nodeLevel": "Wilderness",
+	"levelingTemplateId":
+	{
+		"guid": "0",
+		"typeId": "4565416516154",
+		"name": "None"
+	},
+	"baseDuration": 2,
+	"durationFormula":
+	{
+		"expression": ""
+	},
+	"qualityFormula":
+	{
+		"expression": "GetCraftingRecipeQuality() + EvalFormula($#10516612381411113:6064630356607565905$)"
+	},
+	"quantityFormula":
+	{
+		"expression": ""
+	},
+	"rewardId":
+	{
+		"guid": "6064632236037243143",
+		"typeId": "1091110040",
+		"name": "None"
+	},
+	"itemDestination": "Inventory",
+	"primaryResourceCosts": [],
+	"generalResourceCost": [
+		{
+			"item":
+			{
+				"guid": "6064630417662279814",
+				"typeId": "1091110003",
+				"name": "None"
+			},
+			"quantity": 10,
+			"bConsumeInCrafting": true
+		},
+		{
+			"item":
+			{
+				"guid": "6064630417661821030",
+				"typeId": "1091110003",
+				"name": "None"
+			},
+			"quantity": 1,
+			"bConsumeInCrafting": true
+		},
+		{
+			"item":
+			{
+				"guid": "6064630417662017657",
+				"typeId": "1091110003",
+				"name": "None"
+			},
+			"quantity": 1,
+			"bConsumeInCrafting": true
+		}
+	],
+	"craftingCurrencyCostId":
+	{
+		"guid": "6064631154666045441",
+		"typeId": "9565237358",
+		"name": "None"
+	},
+	"subRecipesIds": [],
+	"skillTreeSpecializationId":
+	{
+		"guid": "0",
+		"typeId": "30316003",
+		"name": "None"
+	},
+	"bCanFastCraft": true,
+	"bCanGameplayLayer": true,
+	"weaponsmithingInfoId":
+	{
+		"guid": "0",
+		"typeId": "1636976253",
+		"name": "None"
+	},
+	"guid": "6064632236037243142",
+	"name": "Tailoring_T1_Artisan_Weaving_Shirt",
+	"typeId": "163697"
+}

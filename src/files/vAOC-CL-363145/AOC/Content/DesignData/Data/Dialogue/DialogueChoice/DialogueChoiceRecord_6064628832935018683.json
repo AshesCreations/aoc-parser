@@ -1,0 +1,23 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"EBA716BF416DBBF2C9728D9940ED242F\", \"I\\'m afraid these bones are all that remain.\")",
+	"nextNodeId":
+	{
+		"guid": "6064628832959398076",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064628832894976168",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0007_PriestessAndThePiper\",\"MAP_0007_PriestessAndThePiper_Phase03\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0007_EDD_ExaltedDenizensAndDuzakh\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_EDD_ExaltedDenizensAndDuzakh\",\"FoundEDDBones\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_EDD_ExaltedDenizensAndDuzakh\",\"ReturnedTheEDDBones\")"
+	},
+	"guid": "6064628832935018683",
+	"name": "MADD_0007_EDD_TheConstable_20",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"8E9C44F5422477D5EF2D24A8A106BC9D\", \"\\\"The Tauroxian Idols\\\"\")",
+	"nextNodeId":
+	{
+		"guid": "6064629024499761153",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0002_CCC_CollectorOfCursedCurios\",\"MAP_0002_CCC_Phase01\")&&\r\n!IsStoryArcQuestAvailable(GetPlayer(),\"MAQ_0002_TSS_TheSpindleSpider\")&&\r\nIsStoryArcQuestAvailable(GetPlayer(),\"MAQ_0002_TTI_TheTauroxianIdols\")"
+	},
+	"guid": "6064629024474398720",
+	"name": "MADD_0002_TSS_VuulVodex_16",
+	"typeId": "1091110027"
+}

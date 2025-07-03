@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"04A3D86546375DBE49BAD19179DCD854\", \"That is enough!\")",
+	"nextNodeId":
+	{
+		"guid": "6064628833035092183",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0007_PriestessAndThePiper\",\"MAP_0007_PriestessAndThePiper_Phase03\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0007_EDD_ExaltedDenizensAndDuzakh\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_EDD_ExaltedDenizensAndDuzakh\",\"BonesOfCryptRobbers\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_EDD_ExaltedDenizensAndDuzakh\",\"ToldBonesInPot\")\r\n"
+	},
+	"guid": "6064628833035485400",
+	"name": "MADD_0007_EDD_Bonekeeper_Phase03_20",
+	"typeId": "1091110027"
+}

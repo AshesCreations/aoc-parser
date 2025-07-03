@@ -1,0 +1,59 @@
+{
+	"displayName": "NSLOCTEXT(\"[E4D20BA648F08F07691FD6BAA26EEB4A]\", \"1E49F53040DA1371A1EDFCB2520BAE4A\", \"Lumber Milling - Apprentice\")",
+	"windowIcon": "/Game/UI/Icons/Window_Icons/TUI_WindowIcon_Woodmilling.TUI_WindowIcon_Woodmilling",
+	"visualDefIds": [
+		{
+			"guid": "6064632234599841825",
+			"typeId": "199977",
+			"name": "Lumbermilling_T2_Saw_0_6064632234599841825"
+		},
+		{
+			"guid": "6064632234599841827",
+			"typeId": "199977",
+			"name": "Lumbermilling_T1_Debarker_0_6064632234599841827"
+		},
+		{
+			"guid": "6064632234599841829",
+			"typeId": "199977",
+			"name": "Lumbermilling_T1_Sawhorse_6064632234599841829"
+		}
+	],
+	"type": "Processing",
+	"bIndividual": true,
+	"queueSize": 2,
+	"minimumBatchQuantityFormula":
+	{
+		"expression": "1"
+	},
+	"maximumBatchQuantityFormula":
+	{
+		"expression": "250"
+	},
+	"simulateneousJobNum": 1,
+	"processingStationType": "Debarker",
+	"craftingRecipeSetsId":
+	{
+		"guid": "6064630610236145824",
+		"typeId": "263421",
+		"name": "None"
+	},
+	"taxTag":
+	{
+		"tagName": "NodeTax.ArtisanTax.WoodshopBaseTax.ServiceTax.LumberMillServiceTax"
+	},
+	"interactionTypeId":
+	{
+		"guid": "108352069064312",
+		"typeId": "1091110031",
+		"name": "None"
+	},
+	"maxCertificationTierId":
+	{
+		"guid": "108906340767353",
+		"typeId": "455189666431",
+		"name": "None"
+	},
+	"guid": "6064630554030374945",
+	"name": "ProcessingStation_Lumbermilling_T2",
+	"typeId": "199976"
+}

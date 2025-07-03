@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"227B9A1C4DD3536731113C8CF7A648DE\", \"(q4 grant)\")",
+	"nextNodeId":
+	{
+		"guid": "108866034882168",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0004_BloodStillDue\", \"MAP_0004_BloodStillDue_02\")&&\r\nIsStoryArcQuestAvailable(GetPlayer(), \"MAQ_0004_04_UnquietDead\")&&\r\n!IsOnStoryArcQuest(GetPlayer(), \"MAQ_0004_04_UnquietDead\")"
+	},
+	"guid": "108838114842320",
+	"name": "MAD_0004_Tricia_6",
+	"typeId": "1091110027"
+}

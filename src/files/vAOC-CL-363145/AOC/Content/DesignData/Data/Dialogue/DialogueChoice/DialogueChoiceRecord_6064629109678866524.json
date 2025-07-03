@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"CBAA51C8458A5F3BF9791EB4572C4D3A\", \"Kruja\")",
+	"nextNodeId":
+	{
+		"guid": "6064629109677817945",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MIA_0003_ROW_RelicOfWar\",\"MAP_0003_ROW_Phase01\")&&\r\nIsOnStoryArcQuest(GetPlayer (),\"MAQ_0003_TGS_TheGreenScarab\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0003_TGS_TheGreenScarab\",\"EnteredTavern\")"
+	},
+	"guid": "6064629109678866524",
+	"name": "MIDD_0003_TGS_TavernBouncer_6",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"ED3083CC49EDF50A255921B404D064EA\", \"You\\'ve got your bones.\")",
+	"nextNodeId":
+	{
+		"guid": "6064628833028604112",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0007_PriestessAndThePiper\",\"MAP_0007_PriestessAndThePiper_Phase03\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_EDD_ExaltedDenizensAndDuzakh\",\"BonesGoblinLunatics\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_EDD_ExaltedDenizensAndDuzakh\",\"BonesOfMossbacks\")"
+	},
+	"guid": "6064628833024803023",
+	"name": "MADD_0007_EDD_Bonekeeper_Phase03_11",
+	"typeId": "1091110027"
+}

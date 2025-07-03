@@ -1,0 +1,102 @@
+{
+	"professionId":
+	{
+		"guid": "108752756954758",
+		"typeId": "8125613373123",
+		"name": "None"
+	},
+	"certificationLevelId":
+	{
+		"guid": "108906342012538",
+		"typeId": "455189666431",
+		"name": "None"
+	},
+	"learnable": false,
+	"overrideName": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"17C4C0394C8614FE41FFB4A6421764AC\", \"Train Shatter Claw\")",
+	"categoryTag":
+	{
+		"tagName": "Item.Mount.Ground"
+	},
+	"difficulty": 0,
+	"defaultQuality": 0,
+	"fuel": 100,
+	"fuelTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "Item.Fuel"
+			}
+		],
+		"parentTags": [
+			{
+				"tagName": "item"
+			}
+		]
+	},
+	"bUseOverrides": false,
+	"overrides": [],
+	"nodeLevel": "Wilderness",
+	"levelingTemplateId":
+	{
+		"guid": "0",
+		"typeId": "4565416516154",
+		"name": "None"
+	},
+	"baseDuration": 1800,
+	"durationFormula":
+	{
+		"expression": "GetCraftingRecipeBaseDuration() * EvalFormula($#10516612381411113:6064630356797423743$)"
+	},
+	"qualityFormula":
+	{
+		"expression": "EvalFormula($#10516612381411113:6064630356745125996$)"
+	},
+	"quantityFormula":
+	{
+		"expression": ""
+	},
+	"rewardId":
+	{
+		"guid": "6064631748098850830",
+		"typeId": "1091110040",
+		"name": "None"
+	},
+	"itemDestination": "Inventory",
+	"primaryResourceCosts": [],
+	"generalResourceCost": [
+		{
+			"item":
+			{
+				"guid": "6064631885143146506",
+				"typeId": "1091110003",
+				"name": "None"
+			},
+			"quantity": 1,
+			"bConsumeInCrafting": true
+		}
+	],
+	"craftingCurrencyCostId":
+	{
+		"guid": "6064631154785452040",
+		"typeId": "9565237358",
+		"name": "None"
+	},
+	"subRecipesIds": [],
+	"skillTreeSpecializationId":
+	{
+		"guid": "0",
+		"typeId": "30316003",
+		"name": "None"
+	},
+	"bCanFastCraft": true,
+	"bCanGameplayLayer": false,
+	"weaponsmithingInfoId":
+	{
+		"guid": "0",
+		"typeId": "1636976253",
+		"name": "None"
+	},
+	"guid": "6064631748187979811",
+	"name": "AnimalHusbandry_T3_Train_ShatterClaw",
+	"typeId": "163697"
+}

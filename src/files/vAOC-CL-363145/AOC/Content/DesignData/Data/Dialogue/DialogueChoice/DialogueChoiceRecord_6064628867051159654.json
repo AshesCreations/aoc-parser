@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"AE4B5A5944296073EDC40C83C0DD3D60\", \"We\\'re all doomed.\")",
+	"nextNodeId":
+	{
+		"guid": "6064628867049390177",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0007_PriestessAndThePiper\",\"MAP_0007_PriestessAndThePiper_Phase04\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_BOB_BattleOfBloom\",\"SpokeToPiper\")"
+	},
+	"guid": "6064628867051159654",
+	"name": "MADD_0007_Phase04_ThePiper_8",
+	"typeId": "1091110027"
+}

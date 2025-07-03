@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"051EBEED45DB4B5B8FC5248F7412995E\", \"I killed the minotaurs.\")",
+	"nextNodeId":
+	{
+		"guid": "6064629109411545155",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MIA_0003_ROW_RelicOfWar\",\"MAP_0003_ROW_Phase01\")&&\r\n!IsOnStoryArcQuest(GetPlayer(),\"MAQ_0003_HWR_HeadWillRoll\")&&\r\n!IsOnStoryArcQuest(GetPlayer(),\"MAQ_0003_TGS_TheGreenScarab\")"
+	},
+	"guid": "6064629109412462661",
+	"name": "MIDD_0003_TGS_DyingTraveller_5",
+	"typeId": "1091110027"
+}

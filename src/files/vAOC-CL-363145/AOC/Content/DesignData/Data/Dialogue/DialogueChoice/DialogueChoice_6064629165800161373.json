@@ -1,0 +1,28 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"ECDDE7D64DA89019CCC22E999BCD516A\", \"Of course.\")",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064629165784039427",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064630639562784770",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcQuestAvailable(GetPlayer(), \"MAQ_0015_P1_ReciteTheWords\")&&\r\n!IsOnStoryArcQuest(GetPlayer(), \"MAQ_0015_P1_ReciteTheWords\")"
+	},
+	"guid": "6064629165800161373",
+	"name": "MADD_0015_Dory_82",
+	"typeId": "1091110027"
+}

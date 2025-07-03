@@ -1,0 +1,24 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"E89D65E3417D2E163209629927BF573D\", \"Here is Helea\\'s Cursed Chest.\")",
+	"nextNodeId":
+	{
+		"guid": "108437049202298",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "0",
+			"typeId": "1091110030",
+			"name": "MA_0002_GaveCursedChest"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0002_GlintAndGorge\",\"HaveCursedChest\")"
+	},
+	"choiceType": "Default",
+	"guid": "108437032425081",
+	"name": "MADD_0002_Antiquitor_18",
+	"typeId": "1091110027"
+}

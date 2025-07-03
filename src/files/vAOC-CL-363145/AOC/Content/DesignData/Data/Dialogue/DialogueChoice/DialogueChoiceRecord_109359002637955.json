@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"69A32B5E4E0F56D34F05EBA918D548A4\", \"Is it time to for war?\")",
+	"nextNodeId":
+	{
+		"guid": "109354352793224",
+		"typeId": "1091110028",
+		"name": "MADD_0005_Stormrazer_Phase03_04_5"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0005_EnemyWithin\",\"MAP_0005_Phase04\")&&\r\n!IsOnStoryArcQuest(GetPlayer(),\"MAQ_0005_HeadoftheHighwaymen\")"
+	},
+	"guid": "109359002637955",
+	"name": "MADD_0005_Stormrazer_Phase03_04_31",
+	"typeId": "1091110027"
+}

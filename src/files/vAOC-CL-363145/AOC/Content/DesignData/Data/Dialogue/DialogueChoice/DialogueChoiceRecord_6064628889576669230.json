@@ -1,0 +1,17 @@
+{
+	"choiceText": "LOCTABLE(\"/Game/StringTables/DialogueResponses.DialogueResponses\", \"DR_0009a_ZephyrBeckoning_Blandan_16\")",
+	"nextNodeId":
+	{
+		"guid": "6064628889576669237",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "!IsOnStoryArcQuest(GetPlayer(), \"SAQ_0009a_ZB_LowSpirits\")&&IsStoryArcQuestAvailable(GetPlayer(), \"SAQ_0009a_ZB_LowSpirits\")"
+	},
+	"guid": "6064628889576669230",
+	"name": "0009a_ZephyrBeckoning_Blandan_16",
+	"typeId": "1091110027"
+}

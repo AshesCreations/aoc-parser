@@ -1,0 +1,74 @@
+{
+	"triggerStatus": "Camo",
+	"materialPropertyName": "CloakedAmount",
+	"activationCurve":
+	{
+		"externalCurve": "None",
+		"editorCurveData":
+		{
+			"keys": [],
+			"defaultValue": 3.4028234663852886e+38,
+			"preInfinityExtrap": "RCCE_Constant",
+			"postInfinityExtrap": "RCCE_Constant",
+			"keyHandlesToIndices":
+			{
+			}
+		}
+	},
+	"scalarProperties":
+	{
+	},
+	"vectorProperties":
+	{
+	},
+	"particleSystemId":
+	{
+		"guid": "0",
+		"typeId": "812368",
+		"name": "None"
+	},
+	"particleSystemActivationThreshold": 0.5,
+	"bUseSilhouetteMesh": true,
+	"silhouetteMaterial": "/Game/Characters/Materials/Master/Unmerged/M_UnmergedCloaked.M_UnmergedCloaked",
+	"materialParams": [
+		{
+			"materialParameter": "GlowAmount",
+			"valueExpression":
+			{
+				"expression": "const HasEffectFromParty = HasEffectAppliedByRelation(GetSource(), GetTarget(), EAffectedTarget::TARGET_Party, $#30316002:6064633187168420568$);\r\nconst HasEffectFromSelf = HasEffectAppliedByRelation(GetSource(), GetTarget(), EAffectedTarget::TARGET_Self, $#30316002:6064633187168420568$);\r\nvar Ret = 0.0;\r\nif (HasEffectFromParty || HasEffectFromSelf)\r\n{\r\n    set Ret = 1.0;\r\n}\r\nRet"
+			},
+			"bApplyToMergedMesh": false,
+			"interpolationSpeed": 0
+		},
+		{
+			"materialParameter": "Opacity",
+			"valueExpression":
+			{
+				"expression": "const HasEffectFromParty = HasEffectAppliedByRelation(GetSource(), GetTarget(), EAffectedTarget::TARGET_Party, $#30316002:6064633187168420568$);\r\nconst HasEffectFromSelf = HasEffectAppliedByRelation(GetSource(), GetTarget(), EAffectedTarget::TARGET_Self, $#30316002:6064633187168420568$);\r\nvar Ret = 0.0;\r\nif (HasEffectFromParty || HasEffectFromSelf)\r\n{\r\n    set Ret = 0.2;\r\n}\r\nRet"
+			},
+			"bApplyToMergedMesh": false,
+			"interpolationSpeed": 0
+		},
+		{
+			"materialParameter": "Refraction",
+			"valueExpression":
+			{
+				"expression": "const maxDist = 2000.0;\r\nconst dist = GetDistanceBetween(GetSource(), GetTarget());\r\nconst mod = 1 - Clamp((dist / maxDist), 0.0, 1.0);\r\nvar Ret = Lerp(1.0, 1.05, mod);\r\nif (GetSource() == GetTarget())\r\n{\r\n  set Ret = 1.02;\r\n}\r\nRet"
+			},
+			"bApplyToMergedMesh": false,
+			"interpolationSpeed": 0
+		},
+		{
+			"materialParameter": "CloakedAmount",
+			"valueExpression":
+			{
+				"expression": "const CamoCount = GetEffectCount(GetTarget(), $#30316002:6064630841868877827$);\r\nvar Ret = 0.0;\r\nif (CamoCount > 0)\r\n{\r\n  const elapsedTime = GetEffectElapsedTime(GetTarget(), $#30316002:6064630841868877827$);\r\n  const cloakOverTime = EvalCurve($#10516612381411114:6064630927180890310$, elapsedTime);\r\n  const maxDist = 3000.0;\r\n  const dist = GetDistanceBetween(GetSource(), GetTarget());\r\n  const mod = Clamp((dist / maxDist), 0.0, 1.0);\r\n  set Ret = EvalCurve($#10516612381411114:6064630888362344448$, dist) * cloakOverTime;\r\n  if (GetSource() == GetTarget())\r\n  {\r\n    set Ret = cloakOverTime * 0.9;\r\n  }\r\n}\r\nRet "
+			},
+			"bApplyToMergedMesh": true,
+			"interpolationSpeed": 0
+		}
+	],
+	"guid": "6064630870833233920",
+	"name": "Camo_NoLongerUsed",
+	"typeId": "812367"
+}

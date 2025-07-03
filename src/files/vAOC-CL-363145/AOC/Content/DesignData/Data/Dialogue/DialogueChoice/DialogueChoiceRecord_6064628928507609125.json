@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"22B4F1A145EF65622EF208962901C16B\", \"What are you talking about.\")",
+	"nextNodeId":
+	{
+		"guid": "6064628928512327718",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0012_COD_CurseOfDaragal\",\"MAP_0012_COD_Phase01\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0012_TOW_TheOnlyWun\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0012_TOW_TheOnlyWun\",\"KillSilvertoothRaiders\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0012_TOW_TheOnlyWun\",\"MeetSodbottom\")"
+	},
+	"guid": "6064628928507609125",
+	"name": "MADD_0012_TOW_WunSodbottom_4",
+	"typeId": "1091110027"
+}

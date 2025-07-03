@@ -1,0 +1,28 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"56808F714ABD9B6BD54AC2BCE1D883A1\", \"OK\")",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "109127190992528",
+			"typeId": "1091110030",
+			"name": "AR_0006_Quest_AllIntro_Ranger"
+		},
+		{
+			"guid": "6064628735711182849",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "GetPrimaryArchetype(GetPlayer())==ECharacterClass::Ranger"
+	},
+	"guid": "109286836426366",
+	"name": "0006_P0_AllIntro_126",
+	"typeId": "1091110027"
+}

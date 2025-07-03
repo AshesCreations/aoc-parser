@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"2B57E4C54AADF8A8F03232BB97B39C2D\", \"Mission accomplished!\")",
+	"nextNodeId":
+	{
+		"guid": "109359053428366",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0005_EnemyWithin\",\"MAP_0005_Phase03\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005_PrepareForBattle\",\"KilledSentries\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005_PrepareForBattle\",\"PoisonedWardogs\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005_PrepareForBattle\",\"DisarmedTraps\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005_PrepareForBattle\",\"ReturnedToBase\")"
+	},
+	"guid": "109354466432661",
+	"name": "MADD_0005_Stormrazer_Phase03_04_18",
+	"typeId": "1091110027"
+}

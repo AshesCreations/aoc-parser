@@ -1,0 +1,23 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"89AC72144ABB171C1515A69027966362\", \"(Blow)\")",
+	"nextNodeId":
+	{
+		"guid": "6064628821654962179",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064628816192012570",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0007_PriestessAndThePiper\",\"MAP_0007_PriestessAndThePiper_Phase01\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0007_BAL_BeggarAndLocks\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_BAL_BeggarAndLocks\",\"OpenedRustyBox\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_BAL_BeggarAndLocks\",\"ExaminedWhistleKey\")"
+	},
+	"guid": "6064628821652996098",
+	"name": "MADD_0007_BAL_ITM_WhistlingKey_4",
+	"typeId": "1091110027"
+}

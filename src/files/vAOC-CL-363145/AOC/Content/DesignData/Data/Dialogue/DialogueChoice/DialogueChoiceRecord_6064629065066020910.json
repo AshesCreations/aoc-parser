@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"A294127C4FA64767FCE62DA05F642D58\", \"I met the other you.\")",
+	"nextNodeId":
+	{
+		"guid": "6064629065065103404",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0002_CCC_CollectorOfCursedCurios\",\"MAP_0002_CCC_Phase03\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0002_TDC_TheDivineCarnage\",\"HaveIncantraLyDraeb\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0002_TDC_TheDivineCarnage\",\"HaveIncantraKerBar\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0002_TDC_TheDivineCarnage\",\"HaveIncantraTyrKis\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0002_TDC_TheDivineCarnage\",\"ToldAntiquitors\")"
+	},
+	"guid": "6064629065066020910",
+	"name": "MADD_0002_TDC_TheAntiquitor_19",
+	"typeId": "1091110027"
+}

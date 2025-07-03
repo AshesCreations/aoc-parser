@@ -1,0 +1,23 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"0280843B49AE935A90158B928499173B\", \"(Examine the Lock)\")",
+	"nextNodeId":
+	{
+		"guid": "6064628821188870183",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064628816172613909",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0007_PriestessAndThePiper\",\"MAP_0007_PriestessAndThePiper_Phase01\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0007_BAL_BeggarAndLocks\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_BAL_BeggarAndLocks\",\"ExaminedRustyBox\")"
+	},
+	"guid": "6064628821189263401",
+	"name": "MADD_0007_BAL_ITM_RustyStrongbox_5",
+	"typeId": "1091110027"
+}

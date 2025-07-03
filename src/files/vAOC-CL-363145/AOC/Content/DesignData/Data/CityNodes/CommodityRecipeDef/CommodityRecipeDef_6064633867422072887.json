@@ -1,0 +1,74 @@
+{
+	"displayName": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"40103571422284AA5AD02292D6D245F4\", \"Barrels of Beer\")",
+	"commodityRecipeMaterialRequirementIds": [
+		{
+			"guid": "6064633867597840420",
+			"typeId": "33229888",
+			"name": "None"
+		},
+		{
+			"guid": "6064633867596791841",
+			"typeId": "33229888",
+			"name": "None"
+		}
+	],
+	"minQuantityProduced":
+	{
+		"expression": "50"
+	},
+	"maxQuantityProduced":
+	{
+		"expression": "1500"
+	},
+	"minCost":
+	{
+		"expression": "10000"
+	},
+	"maxCost":
+	{
+		"expression": "50000"
+	},
+	"minTimeDurationDays":
+	{
+		"expression": "3"
+	},
+	"maxTimeDurationDays":
+	{
+		"expression": "8"
+	},
+	"rewardTypeId":
+	{
+		"guid": "6064629297329602586",
+		"typeId": "1091110040",
+		"name": "None"
+	},
+	"minReward":
+	{
+		"expression": "1"
+	},
+	"maxReward":
+	{
+		"expression": "10"
+	},
+	"minLimitContribution":
+	{
+		"expression": "10"
+	},
+	"maxLimitContribution":
+	{
+		"expression": "100"
+	},
+	"contributionLimitGrowthCurveId":
+	{
+		"guid": "6064631918894317568",
+		"typeId": "1091110055",
+		"name": "None"
+	},
+	"availabilityPredicate":
+	{
+		"expression": "GetNodeBiome() == EBiomeType::TabletopMountains"
+	},
+	"guid": "6064633867422072887",
+	"name": "Commodity_ANV_Spirits_T1_1",
+	"typeId": "33229833"
+}

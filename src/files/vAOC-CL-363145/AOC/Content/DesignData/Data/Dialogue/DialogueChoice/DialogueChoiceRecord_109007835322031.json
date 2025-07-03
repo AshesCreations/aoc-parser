@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"4028AD2C4C2121A2FC640399F02D0246\", \"Greetings, Field Marshal.\")",
+	"nextNodeId":
+	{
+		"guid": "109007834797742",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0005_EnemyWithin\",\"MAP_0005_Phase03\")&&\r\nIsStoryArcQuestAvailable(GetPlayer(),\"MAQ_0005_HeadOfTheHighwayman\")"
+	},
+	"guid": "109007835322031",
+	"name": "MADD_0005_Stormrazer_72",
+	"typeId": "1091110027"
+}

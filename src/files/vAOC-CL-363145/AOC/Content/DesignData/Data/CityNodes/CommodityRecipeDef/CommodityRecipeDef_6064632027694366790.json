@@ -1,0 +1,74 @@
+{
+	"displayName": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"16318DBB40741F67494F9991EE0BFE8A\", \"Silver Necklaces\")",
+	"commodityRecipeMaterialRequirementIds": [
+		{
+			"guid": "6064629297539842104",
+			"typeId": "33229888",
+			"name": "None"
+		},
+		{
+			"guid": "6064629297540497475",
+			"typeId": "33229888",
+			"name": "None"
+		}
+	],
+	"minQuantityProduced":
+	{
+		"expression": "10"
+	},
+	"maxQuantityProduced":
+	{
+		"expression": "300"
+	},
+	"minCost":
+	{
+		"expression": "20000"
+	},
+	"maxCost":
+	{
+		"expression": "100000"
+	},
+	"minTimeDurationDays":
+	{
+		"expression": "3"
+	},
+	"maxTimeDurationDays":
+	{
+		"expression": "8"
+	},
+	"rewardTypeId":
+	{
+		"guid": "6064629297329602586",
+		"typeId": "1091110040",
+		"name": "None"
+	},
+	"minReward":
+	{
+		"expression": "1"
+	},
+	"maxReward":
+	{
+		"expression": "10"
+	},
+	"minLimitContribution":
+	{
+		"expression": "10"
+	},
+	"maxLimitContribution":
+	{
+		"expression": "100"
+	},
+	"contributionLimitGrowthCurveId":
+	{
+		"guid": "6064631918894317568",
+		"typeId": "1091110055",
+		"name": "None"
+	},
+	"availabilityPredicate":
+	{
+		"expression": "GetNodeBiome() == EBiomeType::Riverlands"
+	},
+	"guid": "6064632027694366790",
+	"name": "Commodity_RVR_Jewelry_T2_2",
+	"typeId": "33229833"
+}

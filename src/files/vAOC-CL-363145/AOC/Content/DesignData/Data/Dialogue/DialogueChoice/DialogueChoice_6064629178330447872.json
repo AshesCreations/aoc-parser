@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"C130C83B4D816E4917EEF69F2AF1048B\", \"I have Scourge!\")",
+	"nextNodeId":
+	{
+		"guid": "6064629132391415919",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0003_RRR_RelicRaiderRivalry\",\"SpokeToSirKane\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0003_RRR_RelicRaiderRivalry\",\"GiveScourge\")"
+	},
+	"guid": "6064629178330447872",
+	"name": "MIDD_0003_RRR_SirKane_29",
+	"typeId": "1091110027"
+}

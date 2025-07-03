@@ -1,0 +1,23 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"EA08DB9C4A9CC41C9D60BBA745D08AA2\", \"I burned what bodies I could find.\")",
+	"nextNodeId":
+	{
+		"guid": "108865847711373",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "108872901023368",
+			"typeId": "1091110030",
+			"name": "AR_0004_BurnBodiesTI"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "GetStoryArcQuestFlag(GetPlayer(), \"MAQ_0004_02_SunkCost\", \"BodiesBurnt\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(), \"MAQ_0004_02_SunkCost\", \"BodiesBurnedTI\")"
+	},
+	"guid": "108865837946503",
+	"name": "MAD_0004_Tricia_28",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,23 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"B3DDC8F84D8C567E84626ABB95374E3B\", \"(Complete Quest) I burned a number of the blockades set up along the road. It should be clear enough, now.\")",
+	"nextNodeId":
+	{
+		"guid": "108190511552145",
+		"typeId": "1091110028",
+		"name": "Harriet_Phase0_QuestCompleter"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "108190371370628",
+			"typeId": "1091110030",
+			"name": "AR_0001_Q1_01_ReportDismantledBlockades"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "GetStoryArcQuestFlag(GetPlayer(),\"SAQ_0001_Q1_SecuringSupplies\",\"BlockadesDismantled\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"SAQ_0001_Q1_SecuringSupplies\",\"ReportedBanditBlockades\")"
+	},
+	"guid": "108190515025554",
+	"name": "DC_Harriet_P0_ReportBanditBlockades",
+	"typeId": "1091110027"
+}

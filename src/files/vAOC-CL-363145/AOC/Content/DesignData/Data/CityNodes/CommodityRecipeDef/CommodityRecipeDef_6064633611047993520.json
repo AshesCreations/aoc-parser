@@ -1,0 +1,74 @@
+{
+	"displayName": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"465AEC634875BDD1EE58BB81317B5DC3\", \"Stone Columns\")",
+	"commodityRecipeMaterialRequirementIds": [
+		{
+			"guid": "6064633607152926839",
+			"typeId": "33229888",
+			"name": "None"
+		},
+		{
+			"guid": "6064633607156072570",
+			"typeId": "33229888",
+			"name": "None"
+		}
+	],
+	"minQuantityProduced":
+	{
+		"expression": "10"
+	},
+	"maxQuantityProduced":
+	{
+		"expression": "300"
+	},
+	"minCost":
+	{
+		"expression": "20000"
+	},
+	"maxCost":
+	{
+		"expression": "100000"
+	},
+	"minTimeDurationDays":
+	{
+		"expression": "3"
+	},
+	"maxTimeDurationDays":
+	{
+		"expression": "8"
+	},
+	"rewardTypeId":
+	{
+		"guid": "6064629297329602586",
+		"typeId": "1091110040",
+		"name": "None"
+	},
+	"minReward":
+	{
+		"expression": "1"
+	},
+	"maxReward":
+	{
+		"expression": "10"
+	},
+	"minLimitContribution":
+	{
+		"expression": "10"
+	},
+	"maxLimitContribution":
+	{
+		"expression": "100"
+	},
+	"contributionLimitGrowthCurveId":
+	{
+		"guid": "6064631918894317568",
+		"typeId": "1091110055",
+		"name": "None"
+	},
+	"availabilityPredicate":
+	{
+		"expression": "GetNodeBiome() == EBiomeType::Jungle"
+	},
+	"guid": "6064633611047993520",
+	"name": "Commodity_JUN_Materials_T2_1",
+	"typeId": "33229833"
+}

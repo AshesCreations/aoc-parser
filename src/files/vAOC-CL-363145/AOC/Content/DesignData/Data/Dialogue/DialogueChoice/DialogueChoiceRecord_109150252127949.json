@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"B4A63DCF43C8D2484DDB49B4A3729D7B\", \"The Athenaeum was a gem.\")",
+	"nextNodeId":
+	{
+		"guid": "109150230959800",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005_AthenaeumOfRapha\",\"GainedKnowledge\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005_AthenaeumOfRapha\",\"SpokeToAvenmoor\")"
+	},
+	"guid": "109150252127949",
+	"name": "MADD_0005_P3_Eudoxia_24",
+	"typeId": "1091110027"
+}

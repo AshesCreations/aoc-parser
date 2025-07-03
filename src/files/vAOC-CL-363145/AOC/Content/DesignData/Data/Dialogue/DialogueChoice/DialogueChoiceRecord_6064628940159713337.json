@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"C84CB34D45347CA8D93D749B7ADF4B6F\", \"I seek duatite.\")",
+	"nextNodeId":
+	{
+		"guid": "6064628940156960819",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0012_COD_CurseOfDaragal\",\"MAP_0012_COD_Phase02\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0012_TPH_ThePrimeHarvester\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0012_TPH_ThePrimeHarvester\",\"ReadAncientImpacts\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0012_TPH_ThePrimeHarvester\",\"SpokeToAvington\")"
+	},
+	"guid": "6064628940159713337",
+	"name": "MADD_0012_TPH_DoctorAvington_9",
+	"typeId": "1091110027"
+}

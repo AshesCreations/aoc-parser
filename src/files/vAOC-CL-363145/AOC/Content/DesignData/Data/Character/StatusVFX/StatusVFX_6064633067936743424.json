@@ -1,0 +1,74 @@
+{
+	"triggerStatus": "Stealth",
+	"materialPropertyName": "CloakedAmount",
+	"activationCurve":
+	{
+		"externalCurve": "None",
+		"editorCurveData":
+		{
+			"keys": [],
+			"defaultValue": 3.4028234663852886e+38,
+			"preInfinityExtrap": "RCCE_Constant",
+			"postInfinityExtrap": "RCCE_Constant",
+			"keyHandlesToIndices":
+			{
+			}
+		}
+	},
+	"scalarProperties":
+	{
+	},
+	"vectorProperties":
+	{
+	},
+	"particleSystemId":
+	{
+		"guid": "0",
+		"typeId": "812368",
+		"name": "None"
+	},
+	"particleSystemActivationThreshold": 0.5,
+	"bUseSilhouetteMesh": true,
+	"silhouetteMaterial": "/Game/Characters/Materials/Master/Unmerged/M_UnmergedCloaked.M_UnmergedCloaked",
+	"materialParams": [
+		{
+			"materialParameter": "GlowAmount",
+			"valueExpression":
+			{
+				"expression": "//const HasEffectFromParty = HasEffectAppliedByRelation(GetSource(), GetTarget(), EAffectedTarget::TARGET_Party, $Effect:Mage_ArcaneEye_Reveal$);\r\n//const HasEffectFromSelf = HasEffectAppliedByRelation(GetSource(), GetTarget(), EAffectedTarget::TARGET_Self, $Effect:Mage_ArcaneEye_Reveal$);\r\n//var Ret = 0.0;\r\n//if (HasEffectFromParty || HasEffectFromSelf)\r\n//{\r\n//    set Ret = 1.0;\r\n//}\r\n//Ret\r\n0.0"
+			},
+			"bApplyToMergedMesh": false,
+			"interpolationSpeed": 0
+		},
+		{
+			"materialParameter": "Opacity",
+			"valueExpression":
+			{
+				"expression": "//const HasEffectFromParty = HasEffectAppliedByRelation(GetSource(), GetTarget(), EAffectedTarget::TARGET_Party, $Effect:Mage_ArcaneEye_Reveal$);\r\n//const HasEffectFromSelf = HasEffectAppliedByRelation(GetSource(), GetTarget(), EAffectedTarget::TARGET_Self, $Effect:Mage_ArcaneEye_Reveal$);\r\n//var Ret = 0.0;\r\n//if (HasEffectFromParty || HasEffectFromSelf)\r\n//{\r\n//    set Ret = 0.2;\r\n//}\r\n//Ret\r\n0.0"
+			},
+			"bApplyToMergedMesh": false,
+			"interpolationSpeed": 0
+		},
+		{
+			"materialParameter": "Refraction",
+			"valueExpression":
+			{
+				"expression": "//const maxDist = 2000.0;\r\n//const dist = GetDistanceBetween(GetSource(), GetTarget());\r\n//const mod = 1 - Clamp((dist / maxDist), 0.0, 1.0);\r\n//var Ret = Lerp(1.0, 1.05, mod);\r\n//if (GetSource() == GetTarget())\r\n//{\r\n//  set Ret = 1.02;\r\n//}\r\n//Ret\r\n\r\nconst IsMoving = IsMoving(GetTarget());\r\nvar Result = 1.0;\r\nvar Perception = GetStealthPerceptionState(GetTarget(), GetSource());\r\nif (Perception == EStealthPerceptionState::Detected)\r\n{\r\n  set Result = SelectFloat(IsMoving, 1.02, 1.005);\r\n}\r\nelse if (Perception == EStealthPerceptionState::Revealed)\r\n{\r\n  set Result = 1.0;\r\n}\r\nResult"
+			},
+			"bApplyToMergedMesh": false,
+			"interpolationSpeed": 0
+		},
+		{
+			"materialParameter": "CloakedAmount",
+			"valueExpression":
+			{
+				"expression": "const IsMoving = IsMoving(GetTarget());\r\nvar Result = 1.0;\r\nvar Perception = GetStealthPerceptionState(GetTarget(), GetSource());\r\nif (Perception == EStealthPerceptionState::Detected)\r\n{\r\n  set Result = SelectFloat(IsMoving, 0.9, 0.99);\r\n}\r\nelse if (Perception == EStealthPerceptionState::Revealed)\r\n{\r\n  const base = 0.65;\r\n  set Result = base;\r\n}\r\nResult"
+			},
+			"bApplyToMergedMesh": true,
+			"interpolationSpeed": 3
+		}
+	],
+	"guid": "6064633067936743424",
+	"name": "Stealth",
+	"typeId": "812367"
+}

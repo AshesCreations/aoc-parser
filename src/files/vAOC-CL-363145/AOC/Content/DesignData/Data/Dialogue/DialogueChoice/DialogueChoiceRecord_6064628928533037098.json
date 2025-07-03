@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"DA946F4049325CED65316B857EAD9446\", \"They burn bright.\")",
+	"nextNodeId":
+	{
+		"guid": "6064628928532447273",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0012_COD_CurseOfDaragal\",\"MAP_0012_COD_Phase01\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0012_TOW_TheOnlyWun\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0012_TOW_TheOnlyWun\",\"LitSodbottomWards\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0012_TOW_TheOnlyWun\",\"ReportToSodbottom\")"
+	},
+	"guid": "6064628928533037098",
+	"name": "MADD_0012_TOW_WunSodbottom_9",
+	"typeId": "1091110027"
+}

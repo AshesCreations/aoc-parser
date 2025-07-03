@@ -1,0 +1,166 @@
+{
+	"playerFacingName": "NSLOCTEXT(\"\", \"9022DA1E45095801FCC8CEB3CB6482CD\", \"Brass Caravan\")",
+	"designerNotes": "",
+	"vehicleClass": "/Game/CaravanBPs/Caravan_Base.Caravan_Base",
+	"vehicleIcon": "None",
+	"associatedEventId":
+	{
+		"guid": "0",
+		"typeId": "23095125",
+		"name": "None"
+	},
+	"deployableItemId":
+	{
+		"guid": "6064629998234370055",
+		"typeId": "1091110003",
+		"name": "None"
+	},
+	"turnInDelay":
+	{
+		"duration": "11000"
+	},
+	"turnInCountdownToastId":
+	{
+		"guid": "6064630355592544370",
+		"typeId": "949952112328",
+		"name": "None"
+	},
+	"shouldFadeOnTurnIn": true,
+	"fadeStartDelay":
+	{
+		"duration": "5000"
+	},
+	"fadeDuration":
+	{
+		"duration": "3000"
+	},
+	"wreckageDuration":
+	{
+		"duration": "600000"
+	},
+	"componentEquipSlots": [
+		"Chassis",
+		"Carriage",
+		"Wheels",
+		"Harness",
+		"BeastOfBurden",
+		"Armor",
+		"Utility_1",
+		"Utility_2",
+		"Utility_3",
+		"Utility_4",
+		"Utility_5"
+	],
+	"baseComponentsIds": [
+		{
+			"guid": "6064633493403074567",
+			"typeId": "1091110003",
+			"name": "None"
+		},
+		{
+			"guid": "6064630417663000762",
+			"typeId": "1091110003",
+			"name": "None"
+		},
+		{
+			"guid": "6064630694106234882",
+			"typeId": "1091110003",
+			"name": "None"
+		},
+		{
+			"guid": "6064630417663131843",
+			"typeId": "1091110003",
+			"name": "None"
+		},
+		{
+			"guid": "6064630417662541980",
+			"typeId": "1091110003",
+			"name": "None"
+		},
+		{
+			"guid": "6064630417662869679",
+			"typeId": "1091110003",
+			"name": "None"
+		},
+		{
+			"guid": "6064630417663656161",
+			"typeId": "1091110003",
+			"name": "None"
+		},
+		{
+			"guid": "6064630417663656162",
+			"typeId": "1091110003",
+			"name": "None"
+		}
+	],
+	"animInstanceClass": "/Game/ENV/Races/World_Props/Caravans/BoxCar_001/Meshes/Caravan01/Caravan01_AnimBP.Caravan01_AnimBP_C",
+	"purchaseCostId":
+	{
+		"guid": "6064630452574355456",
+		"typeId": "3145314713",
+		"name": "None"
+	},
+	"launchFeeId":
+	{
+		"guid": "6064632757057355776",
+		"typeId": "3145314713",
+		"name": "None"
+	},
+	"waterModeAppearance":
+	{
+		"skeletalMesh":
+		{
+			"kaelar":
+			{
+				"paths": [
+					"/Game/Vehicle/Caravans/HuKaelar/Raft/SK_Caravan_Hukaelar_Raft_V1.SK_Caravan_Hukaelar_Raft_V1"
+				]
+			}
+		},
+		"animationClass": "/Game/Vehicle/Caravans/Caravan_Raft_AnimBP.Caravan_Raft_AnimBP_C",
+		"bSkipMeshMerge": true,
+		"offsetLocation":
+		{
+			"x": 0,
+			"y": 0,
+			"z": -50
+		}
+	},
+	"waterModePlayerAnimation": "/Game/Vehicle/Caravans/PC_Master_CaravanRaft_AnimBP.PC_Master_CaravanRaft_AnimBP_C",
+	"constructionMeshToWaterRecordId":
+	{
+		"guid": "6064630807643357186",
+		"typeId": "1012298006",
+		"name": "None"
+	},
+	"constructionMeshToGroundRecordId":
+	{
+		"guid": "6064630870739845121",
+		"typeId": "1012298006",
+		"name": "None"
+	},
+	"constructionModeAppearance":
+	{
+		"skeletalMesh":
+		{
+			"kaelar":
+			{
+				"paths": [
+					"/Game/Vehicle/Caravans/HuKaelar/Raft/Mergedmeshes/dockmerged2.dockmerged2"
+				]
+			}
+		},
+		"animationClass": "None",
+		"bSkipMeshMerge": true,
+		"offsetLocation":
+		{
+			"x": 0,
+			"y": 0,
+			"z": 0
+		}
+	},
+	"constructionTimerCompletedAnimMontages": [],
+	"guid": "6064630134611640341",
+	"name": "Caravan_Brass",
+	"typeId": "1012298004"
+}

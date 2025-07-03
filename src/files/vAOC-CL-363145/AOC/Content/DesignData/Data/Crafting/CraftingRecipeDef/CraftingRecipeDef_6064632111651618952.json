@@ -1,0 +1,172 @@
+{
+	"professionId":
+	{
+		"guid": "108752757020295",
+		"typeId": "8125613373123",
+		"name": "None"
+	},
+	"certificationLevelId":
+	{
+		"guid": "108906342012538",
+		"typeId": "455189666431",
+		"name": "None"
+	},
+	"learnable": true,
+	"overrideName": "",
+	"overrideIcon": "None",
+	"categoryTag":
+	{
+		"tagName": "Item.Consumable.Elixir"
+	},
+	"difficulty": 0,
+	"defaultQuality": 0,
+	"fuel": 1,
+	"fuelTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "Item.Fuel"
+			}
+		],
+		"parentTags": [
+			{
+				"tagName": "item"
+			}
+		]
+	},
+	"bUseOverrides": true,
+	"overrides": [
+		{
+			"quantity": 1,
+			"duration": 60,
+			"fuel": 1
+		},
+		{
+			"quantity": 5,
+			"duration": 300,
+			"fuel": 5
+		},
+		{
+			"quantity": 10,
+			"duration": 600,
+			"fuel": 10
+		},
+		{
+			"quantity": 25,
+			"duration": 1500,
+			"fuel": 25
+		},
+		{
+			"quantity": 50,
+			"duration": 3000,
+			"fuel": 50
+		},
+		{
+			"quantity": 100,
+			"duration": 6000,
+			"fuel": 100
+		},
+		{
+			"quantity": 250,
+			"duration": 15000,
+			"fuel": 250
+		}
+	],
+	"nodeLevel": "Wilderness",
+	"levelingTemplateId":
+	{
+		"guid": "0",
+		"typeId": "4565416516154",
+		"name": "None"
+	},
+	"baseDuration": 60,
+	"durationFormula":
+	{
+		"expression": "GetCraftingRecipeBaseDuration() * EvalFormula($#10516612381411113:6064630356789362807$)"
+	},
+	"qualityFormula":
+	{
+		"expression": "EvalFormula($#10516612381411113:6064630356745125997$)"
+	},
+	"quantityFormula":
+	{
+		"expression": "EvalFormula($#10516612381411113:6064630356493074497$)"
+	},
+	"rewardId":
+	{
+		"guid": "6064632111185789006",
+		"typeId": "1091110040",
+		"name": "None"
+	},
+	"itemDestination": "Inventory",
+	"primaryResourceCosts": [
+		{
+			"rarity": "Common",
+			"item":
+			{
+				"guid": "6064630417665818958",
+				"typeId": "1091110003",
+				"name": "None"
+			},
+			"quantity": 1,
+			"bConsumeInCrafting": true
+		},
+		{
+			"rarity": "Common",
+			"item":
+			{
+				"guid": "6064630417665753417",
+				"typeId": "1091110003",
+				"name": "None"
+			},
+			"quantity": 1,
+			"bConsumeInCrafting": true
+		}
+	],
+	"generalResourceCost": [
+		{
+			"item":
+			{
+				"guid": "6064632105674932233",
+				"typeId": "1091110003",
+				"name": "None"
+			},
+			"quantity": 2,
+			"bConsumeInCrafting": true
+		},
+		{
+			"item":
+			{
+				"guid": "6064632105716875277",
+				"typeId": "1091110003",
+				"name": "None"
+			},
+			"quantity": 1,
+			"bConsumeInCrafting": true
+		}
+	],
+	"craftingCurrencyCostId":
+	{
+		"guid": "6064631154780471302",
+		"typeId": "9565237358",
+		"name": "None"
+	},
+	"subRecipesIds": [],
+	"skillTreeSpecializationId":
+	{
+		"guid": "0",
+		"typeId": "30316003",
+		"name": "None"
+	},
+	"bCanFastCraft": true,
+	"bCanGameplayLayer": false,
+	"weaponsmithingInfoId":
+	{
+		"guid": "0",
+		"typeId": "1636976253",
+		"name": "None"
+	},
+	"guid": "6064632111651618952",
+	"name": "Alchemy_T3_Elixir_Crafting_XP",
+	"typeId": "163697"
+}

@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"73F5EB5F40D22380955562A12FC7BB4A\", \"i has no flag. What do?\")",
+	"nextNodeId":
+	{
+		"guid": "6064628831901712547",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsOnStoryArcQuest(GetPlayer(),\"MA_0010_MakingEnemiesAlongTheWay\")&&!GetStoryArcQuestFlag(GetPlayer(),\"MA_0010_MakingEnemiesAlongTheWay\",\"MysticCheckIn\")"
+	},
+	"guid": "6064628827794899073",
+	"name": "MA_0010_CH_EleanorMillstead_3",
+	"typeId": "1091110027"
+}

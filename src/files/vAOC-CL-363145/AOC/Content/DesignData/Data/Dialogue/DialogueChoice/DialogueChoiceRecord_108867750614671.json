@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"8915FF0840C5EE058BDE07A4BEA387F6\", \"There\\'s more.\")",
+	"nextNodeId":
+	{
+		"guid": "108866168444547",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "GetStoryArcQuestFlag(GetPlayer(), \"MAQ_0004_04_UnquietDead\", \"UndeadThinned\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(), \"MAQ_0004_04_UnquietDead\", \"DrownedDeadTI\")"
+	},
+	"guid": "108867750614671",
+	"name": "MAD_0004_Tricia_61",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"355D983E4DCB45115C568996819FDEAB\", \"Quest 3 Offer\")",
+	"nextNodeId":
+	{
+		"guid": "109222987454103",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsOnStoryArcQuest(GetPlayer(), \"SAQ_0006_LionHold_Ranger2\")&&GetStoryArcQuestFlag(GetPlayer(),\"SAQ_0006_LionHold_Ranger2\",\"LampsLit\")"
+	},
+	"guid": "109222987454082",
+	"name": "0006_P0_Ranger2_7",
+	"typeId": "1091110027"
+}

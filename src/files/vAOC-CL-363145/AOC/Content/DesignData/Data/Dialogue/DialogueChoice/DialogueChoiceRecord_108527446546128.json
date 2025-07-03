@@ -1,0 +1,24 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"B09565FE427A9F9092226899741FAEE8\", \"Here are your final components.\")",
+	"nextNodeId":
+	{
+		"guid": "108527446218447",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "0",
+			"typeId": "1091110030",
+			"name": "MA_0002_SP_GavePartsToWarden"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "GetStoryArcQuestFlag(GetPlayer(),\"MA_0002_SP_GoblinGod\",\"CraftProphecy\")\r\n"
+	},
+	"choiceType": "Default",
+	"guid": "108527446546128",
+	"name": "MADD_0002_SP_WardenRiwana_15",
+	"typeId": "1091110027"
+}

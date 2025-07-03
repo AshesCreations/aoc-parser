@@ -1,0 +1,74 @@
+{
+	"displayName": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"3F13FC1E4D553EA4459239BF795F5605\", \"Heavy Mail Armor\")",
+	"commodityRecipeMaterialRequirementIds": [
+		{
+			"guid": "6064632026002096139",
+			"typeId": "33229888",
+			"name": "None"
+		},
+		{
+			"guid": "6064632026440663071",
+			"typeId": "33229888",
+			"name": "None"
+		}
+	],
+	"minQuantityProduced":
+	{
+		"expression": "5"
+	},
+	"maxQuantityProduced":
+	{
+		"expression": "50"
+	},
+	"minCost":
+	{
+		"expression": "30000"
+	},
+	"maxCost":
+	{
+		"expression": "150000"
+	},
+	"minTimeDurationDays":
+	{
+		"expression": "3"
+	},
+	"maxTimeDurationDays":
+	{
+		"expression": "8"
+	},
+	"rewardTypeId":
+	{
+		"guid": "6064629297329602586",
+		"typeId": "1091110040",
+		"name": "None"
+	},
+	"minReward":
+	{
+		"expression": "1"
+	},
+	"maxReward":
+	{
+		"expression": "10"
+	},
+	"minLimitContribution":
+	{
+		"expression": "10"
+	},
+	"maxLimitContribution":
+	{
+		"expression": "100"
+	},
+	"contributionLimitGrowthCurveId":
+	{
+		"guid": "6064631918894317568",
+		"typeId": "1091110055",
+		"name": "None"
+	},
+	"availabilityPredicate":
+	{
+		"expression": "GetNodeBiome() == EBiomeType::Riverlands"
+	},
+	"guid": "6064632026312867858",
+	"name": "Commodity_RVR_Armor_T3_2",
+	"typeId": "33229833"
+}

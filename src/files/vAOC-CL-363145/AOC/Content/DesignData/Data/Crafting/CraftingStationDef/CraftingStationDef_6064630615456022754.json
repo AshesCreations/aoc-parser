@@ -1,0 +1,69 @@
+{
+	"displayName": "NSLOCTEXT(\"[E4D20BA648F08F07691FD6BAA26EEB4A]\", \"2D5454094CC3AFE668BDB686795FA9BC\", \"Lumber Milling - Journeyman\")",
+	"windowIcon": "/Game/UI/Icons/Window_Icons/TUI_WindowIcon_Woodmilling.TUI_WindowIcon_Woodmilling",
+	"visualDefIds": [
+		{
+			"guid": "6064632234599841825",
+			"typeId": "199977",
+			"name": "Lumbermilling_T2_Saw_0_6064632234599841825"
+		},
+		{
+			"guid": "6064632234599841826",
+			"typeId": "199977",
+			"name": "Lumbermilling_T3_Kiln_0_6064632234599841826"
+		},
+		{
+			"guid": "6064632234599841827",
+			"typeId": "199977",
+			"name": "Lumbermilling_T1_Debarker_0_6064632234599841827"
+		},
+		{
+			"guid": "6064632234599841828",
+			"typeId": "199977",
+			"name": "Lumbermilling_T3_Firewood_0_6064632234599841828"
+		},
+		{
+			"guid": "6064632234599841829",
+			"typeId": "199977",
+			"name": "Lumbermilling_T1_Sawhorse_6064632234599841829"
+		}
+	],
+	"type": "Processing",
+	"bIndividual": true,
+	"queueSize": 3,
+	"minimumBatchQuantityFormula":
+	{
+		"expression": "1"
+	},
+	"maximumBatchQuantityFormula":
+	{
+		"expression": "250"
+	},
+	"simulateneousJobNum": 1,
+	"processingStationType": "Debarker",
+	"craftingRecipeSetsId":
+	{
+		"guid": "6064630610236670113",
+		"typeId": "263421",
+		"name": "None"
+	},
+	"taxTag":
+	{
+		"tagName": "NodeTax.ArtisanTax.WoodshopBaseTax.ServiceTax.LumberMillServiceTax"
+	},
+	"interactionTypeId":
+	{
+		"guid": "108352069064312",
+		"typeId": "1091110031",
+		"name": "None"
+	},
+	"maxCertificationTierId":
+	{
+		"guid": "108906342012538",
+		"typeId": "455189666431",
+		"name": "None"
+	},
+	"guid": "6064630615456022754",
+	"name": "ProcessingStation_Lumbermilling_T3",
+	"typeId": "199976"
+}

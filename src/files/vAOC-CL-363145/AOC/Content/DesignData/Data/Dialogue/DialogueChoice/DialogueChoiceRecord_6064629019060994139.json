@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"51D41C2B4B7CBD9A22476DB4A3E09F90\", \"Nobles Arc\")",
+	"nextNodeId":
+	{
+		"guid": "6064628990406295556",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "true && (GetStoryArcVariable(\"MA_0010_TheGreenBattle\", \"NobleArc\") >= GetStoryArcVariable(\"MA_0010_TheGreenBattle\", \"MagesArc\"))"
+	},
+	"guid": "6064629019060994139",
+	"name": "MADD_0010_CoC_WillardTugsby_75",
+	"typeId": "1091110027"
+}

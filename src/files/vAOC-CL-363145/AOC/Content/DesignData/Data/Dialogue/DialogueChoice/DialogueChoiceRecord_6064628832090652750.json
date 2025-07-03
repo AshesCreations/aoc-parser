@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"A80B8DFA420FB8F61949738EBE450C8F\", \"(Read the Inscription)\")",
+	"nextNodeId":
+	{
+		"guid": "6064628832090849359",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0007_PriestessAndThePiper\",\"MAP_0007_PriestessAndThePiper_Phase01\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0007_LOR_LegionOfTheRose\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_LOR_LegionOfTheRose\",\"LearnedFeatOfJinn\")"
+	},
+	"guid": "6064628832090652750",
+	"name": "MADD_0007_LOR_Statue_SirJinn_4",
+	"typeId": "1091110027"
+}

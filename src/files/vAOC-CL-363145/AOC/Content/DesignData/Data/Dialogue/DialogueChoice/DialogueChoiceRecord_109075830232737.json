@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"51BE553747BD294C81514494A5C0A48D\", \"Mission accomplished!\")",
+	"nextNodeId":
+	{
+		"guid": "109075843864226",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsOnStoryArcQuest(GetPlayer(),\"MAQ_0005_SeekAndDestroy\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005_SeekAndDestroy\",\"KillSpyBloodshed\")"
+	},
+	"guid": "109075830232737",
+	"name": "MADD_0005_Stormrazer_99",
+	"typeId": "1091110027"
+}

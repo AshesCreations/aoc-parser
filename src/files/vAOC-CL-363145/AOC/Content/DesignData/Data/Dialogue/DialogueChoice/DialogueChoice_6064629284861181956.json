@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"D9A62D9541072B3B5DD8A6B6AC8F717A\", \"(Search Names)\")",
+	"nextNodeId":
+	{
+		"guid": "6064629284862951429",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MIA_0016_LOL_LastOfLyneth\",\"MIP_0016_LOL_Phase01\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MIQ_0016_BRP_BloodRavenPlague\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MIQ_0016_BRP_BloodRavenPlague\",\"ReadLoversNote\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MIQ_0016_BRP_BloodRavenPlague\",\"ExaminedTree\")"
+	},
+	"guid": "6064629284861181956",
+	"name": "MIDD_0016_BRP_LothariasTree_4",
+	"typeId": "1091110027"
+}

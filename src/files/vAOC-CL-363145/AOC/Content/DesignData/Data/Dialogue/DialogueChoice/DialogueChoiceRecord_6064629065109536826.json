@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"E8408F1D48D4432F874EA19A8857B287\", \"Come down your web of agony.\")",
+	"nextNodeId":
+	{
+		"guid": "6064629065108291636",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0002_CCC_CollectorOfCursedCurios\",\"MAP_0002_CCC_Phase03\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0002_TDC_TheDivineCarnage\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0002_TDC_TheDivineCarnage\",\"AskAntiquitor\")"
+	},
+	"guid": "6064629065109536826",
+	"name": "MADD_0002_TDC_AntiquitorII_9",
+	"typeId": "1091110027"
+}

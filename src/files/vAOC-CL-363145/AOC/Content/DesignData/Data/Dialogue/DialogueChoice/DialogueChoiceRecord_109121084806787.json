@@ -1,0 +1,23 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"D8F7C6F84768122D5759F19F4E6055D9\", \"Decode the note from the branding site.\")",
+	"nextNodeId":
+	{
+		"guid": "109121084413569",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "109121114166918",
+			"typeId": "1091110030",
+			"name": "MAAR_0005_RTH_AdvObj_DecodeSecretNote"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005_RunToTheHills\",\"FoundSecretNote\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005_RunToTheHills\",\"DecodedNote\")"
+	},
+	"guid": "109121084806787",
+	"name": "MADD_0005_RTH_Exam_MusicPodium_5",
+	"typeId": "1091110027"
+}

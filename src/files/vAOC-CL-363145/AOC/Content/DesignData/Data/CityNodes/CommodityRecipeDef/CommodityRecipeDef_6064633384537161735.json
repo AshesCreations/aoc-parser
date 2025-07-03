@@ -1,0 +1,74 @@
+{
+	"displayName": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"D3D8B6C24EC4ECF8F8AF4D9164DEE51A\", \"Alchemic Concentration\")",
+	"commodityRecipeMaterialRequirementIds": [
+		{
+			"guid": "6064633385586393224",
+			"typeId": "33229888",
+			"name": "None"
+		},
+		{
+			"guid": "6064633611142562008",
+			"typeId": "33229888",
+			"name": "None"
+		}
+	],
+	"minQuantityProduced":
+	{
+		"expression": "10"
+	},
+	"maxQuantityProduced":
+	{
+		"expression": "300"
+	},
+	"minCost":
+	{
+		"expression": "20000"
+	},
+	"maxCost":
+	{
+		"expression": "100000"
+	},
+	"minTimeDurationDays":
+	{
+		"expression": "3"
+	},
+	"maxTimeDurationDays":
+	{
+		"expression": "8"
+	},
+	"rewardTypeId":
+	{
+		"guid": "6064629297329602586",
+		"typeId": "1091110040",
+		"name": "None"
+	},
+	"minReward":
+	{
+		"expression": "1"
+	},
+	"maxReward":
+	{
+		"expression": "10"
+	},
+	"minLimitContribution":
+	{
+		"expression": "10"
+	},
+	"maxLimitContribution":
+	{
+		"expression": "100"
+	},
+	"contributionLimitGrowthCurveId":
+	{
+		"guid": "6064631918894317568",
+		"typeId": "1091110055",
+		"name": "None"
+	},
+	"availabilityPredicate":
+	{
+		"expression": "GetNodeBiome() == EBiomeType::Desert || \r\nGetNodeBiome() == EBiomeType::Highlands  "
+	},
+	"guid": "6064633384537161735",
+	"name": "Commodity_SAN_Alchemy_T2_1",
+	"typeId": "33229833"
+}

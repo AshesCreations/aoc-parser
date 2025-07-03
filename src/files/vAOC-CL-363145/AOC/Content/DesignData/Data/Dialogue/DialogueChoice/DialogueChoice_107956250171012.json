@@ -1,0 +1,29 @@
+{
+	"choiceText": "Advance objective 2",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "107956252333701",
+			"typeId": "1091110030",
+			"name": "StartLevelStoryArcQuest1AdvanceObjective2"
+		}
+	],
+	"requirementId":
+	{
+		"guid": "0",
+		"typeId": "1091110032",
+		"name": "None"
+	},
+	"availabilityPredicate":
+	{
+		"expression": "IsOnStoryArcQuest(GetPlayer(), \"StartArcQuest1\")"
+	},
+	"guid": "107956250171012",
+	"name": "StartLevelStoryArcQuest1CompleteObjective2",
+	"typeId": "1091110027"
+}

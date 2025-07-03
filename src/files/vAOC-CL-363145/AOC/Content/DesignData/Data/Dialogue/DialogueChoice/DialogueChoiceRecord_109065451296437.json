@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"69CCBDA747064A83DBBB53BB3512295F\", \"Hello, old friend.\")",
+	"nextNodeId":
+	{
+		"guid": "109065450903220",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsOnStoryArcQuest(GetPlayer(),\"MAQ_0005_RunToTheHills\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005_RunToTheHills\",\"InterrogateElora\")"
+	},
+	"guid": "109065451296437",
+	"name": "MADD_0005_FishmongerElora_16",
+	"typeId": "1091110027"
+}

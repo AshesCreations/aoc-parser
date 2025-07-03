@@ -1,0 +1,23 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"AAAAF1CC4C6142FD144BE38A47606CFC\", \"Paisley Owens--a Strider here--seems like a dedicated sort. You could do a lot of good working with others like her.\")",
+	"nextNodeId":
+	{
+		"guid": "108167242077833",
+		"typeId": "1091110028",
+		"name": "GavinQuestPhase0_Node2a"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "108167748474533",
+			"typeId": "1091110030",
+			"name": "AR_0001_Q2_O1_ReportAskedAboutStriders"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "GetStoryArcQuestFlag(GetPlayer(),\"SAQ_0001_Q2_IntroductionsInOrder\",\"TalkedToPaisley\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"SAQ_0001_Q2_IntroductionsInOrder\",\"ReportedAskedAboutStriders\")"
+	},
+	"guid": "108167308465803",
+	"name": "DC_Gavin_Node2_ReportPaisley",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,28 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"7A049A214CD5F42697A5099AF5EA250A\", \"OK\")",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "109127193679505",
+			"typeId": "1091110030",
+			"name": "AR_0006_Quest_AllIntro_Cleric"
+		},
+		{
+			"guid": "6064628735728680965",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "GetPrimaryArchetype(GetPlayer())==ECharacterClass::Cleric"
+	},
+	"guid": "109286836491903",
+	"name": "0006_P0_AllIntro_127",
+	"typeId": "1091110027"
+}

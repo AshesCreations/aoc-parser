@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"40F700D644CCC83491352ABDFC229C73\", \"(q1 turn in)\")",
+	"nextNodeId":
+	{
+		"guid": "6064629027849371678",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"SA_0008_HarrowerMoon\", \"MAP_0008_HarrowerMoon_01\")&&\r\nIsOnStoryArcQuest(GetPlayer(), \"MAQ_0008_MassacreAtBolenStead\")"
+	},
+	"guid": "6064629027849371670",
+	"name": "DDR_0008_ArynsJournal_2",
+	"typeId": "1091110027"
+}

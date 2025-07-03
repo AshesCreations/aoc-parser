@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"0C9E03B448E51705F4533DA28AC41A4E\", \"On IntroQ - not ready\")",
+	"nextNodeId":
+	{
+		"guid": "109303588935297",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsOnStoryArcQuest(GetPlayer(), \"SAQ_0006_AllIntro_Cleric\")&&!GetStoryArcQuestFlag(GetPlayer(),\"SAQ_0006_AllIntro_Cleric\",\"PortalIntroDone\")"
+	},
+	"guid": "109303483946622",
+	"name": "0006_P0_Cleric_60",
+	"typeId": "1091110027"
+}

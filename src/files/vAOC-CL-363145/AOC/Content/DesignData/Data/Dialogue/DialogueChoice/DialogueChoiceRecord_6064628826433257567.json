@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"88E4641B445B72026F751B8C90810D09\", \"One more, that\\'s it!\")",
+	"nextNodeId":
+	{
+		"guid": "6064628826433847392",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0007_PriestessAndThePiper\",\"MAP_0007_PriestessAndThePiper_Phase02\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0007_HHH_HostHoistHeist\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_HHH_HostHoistHeist\",\"DrinkDjinnGin03\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_HHH_HostHoistHeist\",\"DrinkDjinnGin04\")"
+	},
+	"guid": "6064628826433257567",
+	"name": "MADD_0007_HHH_BaronKelnair_30",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"3E6B23A94DA4B5B872D4A8A1CEC8405A\", \"(Look on the back)\")",
+	"nextNodeId":
+	{
+		"guid": "6064628951673339989",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0012_COD_CurseOfDaragal\",\"MAP_0012_COD_Phase02\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0012_WBB_WhatBlightsBelow\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0012_WBB_WhatBlightsBelow\",\"DecipheredTheDeed\")"
+	},
+	"guid": "6064628951666917460",
+	"name": "MADD_0012_TPG_BloodDeed_7",
+	"typeId": "1091110027"
+}

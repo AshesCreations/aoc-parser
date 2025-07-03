@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"87DD549049E34D3AC99F1E95441E1475\", \"I have the pages.\")",
+	"nextNodeId":
+	{
+		"guid": "6064628946303713374",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0012_COD_CurseOfDaragal\",\"MAP_0012_COD_Phase02\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0012_RWS_ReadWhatIsSown\",\"ReadRodDiary\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0012_RWS_ReadWhatIsSown\",\"FoundDiaryPage11\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0012_RWS_ReadWhatIsSown\",\"FoundDiaryPage12\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0012_RWS_ReadWhatIsSown\",\"FoundDiaryPage13\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0012_RWS_ReadWhatIsSown\",\"FoundDiaryPage14\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0012_RWS_ReadWhatIsSown\",\"FoundDiaryPage15\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0012_RWS_ReadWhatIsSown\",\"FoundDiaryPage16\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0012_RWS_ReadWhatIsSown\",\"FoundDiaryPage17\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0012_RWS_ReadWhatIsSown\",\"FoundDiaryPage18\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0012_RWS_ReadWhatIsSown\",\"FoundDiaryPage19\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0012_RWS_ReadWhatIsSown\",\"TakePagesKivan\")"
+	},
+	"guid": "6064628946306334824",
+	"name": "MADD_0012_RWS_LordKivan_16",
+	"typeId": "1091110027"
+}

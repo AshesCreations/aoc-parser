@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"63E0321546A167391598AA9EF7FFD65E\", \"(Read the Inscription)\")",
+	"nextNodeId":
+	{
+		"guid": "6064628832079642697",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0007_PriestessAndThePiper\",\"MAP_0007_PriestessAndThePiper_Phase01\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0007_LOR_LegionOfTheRose\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_LOR_LegionOfTheRose\",\"LearnedFeatOfNoll\")"
+	},
+	"guid": "6064628832079315016",
+	"name": "MADD_0007_LOR_Statue_SirNoll_4",
+	"typeId": "1091110027"
+}

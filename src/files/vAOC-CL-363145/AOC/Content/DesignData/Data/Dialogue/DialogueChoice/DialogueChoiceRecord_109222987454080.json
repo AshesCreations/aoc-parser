@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"A06CD3434B5AEB7FE80E58B093A5020F\", \"Intro - q1 adv - q2 offer\")",
+	"nextNodeId":
+	{
+		"guid": "109222987454086",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsOnStoryArcQuest(GetPlayer(), \"SAQ_0006_LionHold_Ranger1\")&&!GetStoryArcQuestFlag(GetPlayer(),\"SAQ_0006_LionHold_Ranger1\",\"RangerHalson\")"
+	},
+	"guid": "109222987454080",
+	"name": "0006_P0_Ranger2_5",
+	"typeId": "1091110027"
+}

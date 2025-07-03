@@ -1,0 +1,23 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"D986680249EE70700DF753ACDCDED4A0\", \"(Blow the Whistling Key)\")",
+	"nextNodeId":
+	{
+		"guid": "6064629896863088643",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064628820491829283",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0007_PriestessAndThePiper\",\"MAP_0007_PriestessAndThePiper_Phase01\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0007_TWK_TheWhistlingKey\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_TWK_TheWhistlingKey\",\"AskedMinstrel\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_TWK_TheWhistlingKey\",\"ExaminedCoin\")"
+	},
+	"guid": "6064628821794947101",
+	"name": "MADD_0007_TWK_KeylessChest_4",
+	"typeId": "1091110027"
+}

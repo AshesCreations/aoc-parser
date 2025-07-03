@@ -1,0 +1,155 @@
+{
+	"deployableType": "Standard",
+	"deployablePlacementRestrictionType": "EventTracker",
+	"radiusSize": 100000,
+	"bRequireLandscape": false,
+	"landscapeSweepRadius": 25,
+	"requiredWaterDepth": 500,
+	"eventTrackerId":
+	{
+		"guid": "6064632717385951487",
+		"typeId": "23095133",
+		"name": "None"
+	},
+	"bUsePlacementExpression": false,
+	"bConfirmDeployment": false,
+	"confirmDeploymentText": "",
+	"additionalPlacementValidationExpression":
+	{
+		"expression": ""
+	},
+	"bIsPlaceableOnWater": false,
+	"deployableAsset": "/Game/DesignAssets/Node/BP_Ballista_Stationary_Deployable.BP_Ballista_Stationary_Deployable",
+	"constructTimeSeconds": 0,
+	"lifespanSeconds":
+	{
+		"expression": "120"
+	},
+	"traceChannel": "ECC_Vehicle",
+	"bShouldSnapToFloor": true,
+	"bUseMouseToPlace": true,
+	"placementCylinderRadius": 1000,
+	"placementCylinderHeight": 800,
+	"bShouldRotateAroundBoundsCenter": true,
+	"placementRotationSnappingIncrements": 15,
+	"deployableBoundaryType": "DEPLOY_ActorBounds",
+	"customOverrideDimensions":
+	{
+		"x": 10,
+		"y": 10,
+		"z": 10
+	},
+	"verticalPenetrationStart": 87,
+	"verticalPenetrationEnd": 638,
+	"bDoesHaveFoundation": false,
+	"boundsFoundationHeight": 5,
+	"boundsOffset": -85,
+	"boundsUpperScalar":
+	{
+		"x": 0.5,
+		"y": 0.5,
+		"z": 0.5
+	},
+	"boundsLowerScalar":
+	{
+		"x": 1,
+		"y": 1,
+		"z": 1
+	},
+	"boundsFoundationScalar":
+	{
+		"x": 1,
+		"y": 1,
+		"z": 1
+	},
+	"placementFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"deployableLimits": [],
+	"deployableDistanceOffset": 500,
+	"surveyPylonDataId":
+	{
+		"guid": "0",
+		"typeId": "1948199294",
+		"name": "None"
+	},
+	"cooldownSkillId":
+	{
+		"guid": "0",
+		"typeId": "30316001",
+		"name": "None"
+	},
+	"deployAbilityId":
+	{
+		"guid": "6064633747277152256",
+		"typeId": "30316001",
+		"name": "None"
+	},
+	"rotationOffset":
+	{
+		"pitch": 0,
+		"yaw": 0,
+		"roll": 0
+	},
+	"raftGroundSweepExtent":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"raftWaterSweepExtent":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"raftWaterSweepStartOffset":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"raftWaterSweepEndOffset":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"trailerGroundSweepExtent":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"trailerClearAreaSweepExtent":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"trailerNoWaterAreaSweepExtent":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"trailerGroundSweepStartOffset":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"trailerGroundSweepEndOffset":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"skipItemRequirementForDeploy": false,
+	"guid": "6064633657190907907",
+	"name": "Siege_Ballista_Stationary",
+	"typeId": "3031600215"
+}

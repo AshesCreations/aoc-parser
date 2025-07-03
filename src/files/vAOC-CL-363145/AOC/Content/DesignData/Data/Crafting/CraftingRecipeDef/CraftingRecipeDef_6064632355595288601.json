@@ -1,0 +1,109 @@
+{
+	"professionId":
+	{
+		"guid": "108752757020295",
+		"typeId": "8125613373123",
+		"name": "None"
+	},
+	"certificationLevelId":
+	{
+		"guid": "108906339653240",
+		"typeId": "455189666431",
+		"name": "None"
+	},
+	"learnable": false,
+	"overrideName": "",
+	"overrideIcon": "None",
+	"categoryTag":
+	{
+		"tagName": "Item.Resource.Processed.Powder"
+	},
+	"difficulty": 0,
+	"defaultQuality": 0,
+	"fuel": 0,
+	"fuelTags":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"bUseOverrides": true,
+	"overrides": [
+		{
+			"quantity": 1,
+			"duration": 15,
+			"fuel": 0
+		}
+	],
+	"nodeLevel": "Wilderness",
+	"levelingTemplateId":
+	{
+		"guid": "0",
+		"typeId": "4565416516154",
+		"name": "None"
+	},
+	"baseDuration": 15,
+	"durationFormula":
+	{
+		"expression": "GetCraftingRecipeBaseDuration() * EvalFormula($#10516612381411113:6064630356789362807$)"
+	},
+	"qualityFormula":
+	{
+		"expression": "EvalFormula($#10516612381411113:6064630356745125997$)"
+	},
+	"quantityFormula":
+	{
+		"expression": "EvalFormula($#10516612381411113:6064630356493074497$)"
+	},
+	"minimumQuantityFormula":
+	{
+		"expression": ""
+	},
+	"maximumQuantityFormula":
+	{
+		"expression": "5"
+	},
+	"rewardId":
+	{
+		"guid": "6064632355598434330",
+		"typeId": "1091110040",
+		"name": "None"
+	},
+	"itemDestination": "Inventory",
+	"primaryResourceCosts": [],
+	"generalResourceCost": [
+		{
+			"item":
+			{
+				"guid": "6064632355246178305",
+				"typeId": "1091110003",
+				"name": "None"
+			},
+			"quantity": 1,
+			"bConsumeInCrafting": true
+		}
+	],
+	"craftingCurrencyCostId":
+	{
+		"guid": "0",
+		"typeId": "9565237358",
+		"name": "None"
+	},
+	"subRecipesIds": [],
+	"skillTreeSpecializationId":
+	{
+		"guid": "0",
+		"typeId": "30316003",
+		"name": "None"
+	},
+	"bCanFastCraft": true,
+	"bCanGameplayLayer": false,
+	"weaponsmithingInfoId":
+	{
+		"guid": "0",
+		"typeId": "1636976253",
+		"name": "None"
+	},
+	"guid": "6064632355595288601",
+	"name": "Alchemy_T1_Powder_Snowdrop_FTUE",
+	"typeId": "163697"
+}

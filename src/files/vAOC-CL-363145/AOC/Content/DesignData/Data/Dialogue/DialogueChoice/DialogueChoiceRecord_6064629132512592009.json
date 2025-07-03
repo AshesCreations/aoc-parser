@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"4B142CDC4E387804A5E995BF93904074\", \"(Place the Medal of Faith)\")",
+	"nextNodeId":
+	{
+		"guid": "6064629132510888070",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MIA_0003_ROW_RelicOfWar\",\"MAP_0003_ROW_Phase02\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0003_RRR_RelicRaiderRivalry\",\"SpokeToSirKane\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0003_RRR_RelicRaiderRivalry\",\"SpokeToDaela\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0003_RRR_RelicRaiderRivalry\",\"GotMedalOfDefense\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0003_RRR_RelicRaiderRivalry\",\"GotMedalOfIntellect\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0003_RRR_RelicRaiderRivalry\",\"GotMedalOfEquitation\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0003_RRR_RelicRaiderRivalry\",\"GotMedalOfFaith\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0003_RRR_RelicRaiderRivalry\",\"PlaceMedalOfFaith\")"
+	},
+	"guid": "6064629132512592009",
+	"name": "MIDD_0003_RRR_Statue_LordFrances_6",
+	"typeId": "1091110027"
+}

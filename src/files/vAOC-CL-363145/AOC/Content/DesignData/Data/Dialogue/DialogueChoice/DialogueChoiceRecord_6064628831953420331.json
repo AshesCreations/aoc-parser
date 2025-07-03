@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"36E3EAE64CA4A19130BD01B9F0F459A4\", \"What is the Legion of the Rose?\")",
+	"nextNodeId":
+	{
+		"guid": "6064628831952896040",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0007_PriestessAndThePiper\",\"MAP_0007_PriestessAndThePiper_Phase01\")&&\r\n!IsOnStoryArcQuest(GetPlayer(), \"MAQ_0007_LOR_LegionOfTheRose\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_LOR_LegionOfTheRose\",\"MAO_0007_LOR_ReadFeatOfVaal\")"
+	},
+	"guid": "6064628831953420331",
+	"name": "MADD_0007_LOR_HonoraryPraetor_6",
+	"typeId": "1091110027"
+}

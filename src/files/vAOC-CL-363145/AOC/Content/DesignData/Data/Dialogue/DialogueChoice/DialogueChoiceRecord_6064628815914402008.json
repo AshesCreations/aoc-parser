@@ -1,0 +1,23 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"A09ECC3C4B79E4361DBCAB80D6860B1B\", \"(Examine closer)\")",
+	"nextNodeId":
+	{
+		"guid": "6064628860403056641",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064628815779463360",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0007_PriestessAndThePiper\",\"MAP_0007_PriestessAndThePiper_Phase02\")&&\r\n!IsOnStoryArcQuest(GetPlayer(),\"MAQ_0007_BTP_BoneToPick\")"
+	},
+	"guid": "6064628815914402008",
+	"name": "MADD_0007_BTP_ITM_FingerboneNecklace_5",
+	"typeId": "1091110027"
+}

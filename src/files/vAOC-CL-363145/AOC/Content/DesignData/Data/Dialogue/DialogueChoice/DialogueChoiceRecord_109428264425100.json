@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"938815424978A41C48F71BA478C7F7BD\", \"I\\'m a bit lost, do you have any advice?\")",
+	"nextNodeId":
+	{
+		"guid": "109234112648854",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "(GetPrimaryArchetype(GetPlayer())==ECharacterClass::Ranger) && !IsOnStoryArcQuest(GetPlayer(), \"SAQ_0006_LionHold_Ranger1\") && !IsOnStoryArcQuest(GetPlayer(), \"SAQ_0006_LionHold_Ranger2\") && !IsOnStoryArcQuest(GetPlayer(), \"SAQ_0006_LionHold_Ranger3\") &&\r\n!IsOnStoryArcQuest(GetPlayer(), \"SAQ_0006_LionHold_Ranger4\")"
+	},
+	"guid": "109428264425100",
+	"name": "0006_P0_Ranger_89",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,103 @@
+{
+	"professionId":
+	{
+		"guid": "108752756954758",
+		"typeId": "8125613373123",
+		"name": "None"
+	},
+	"certificationLevelId":
+	{
+		"guid": "108906342012538",
+		"typeId": "455189666431",
+		"name": "None"
+	},
+	"learnable": false,
+	"overrideName": "NSLOCTEXT(\"[1909495A4C2095068D406C9D33F90055]\", \"E1E8A7E14A3C30B18AE1338113A02BBB\", \"Train Bonestrider\")",
+	"overrideIcon": "None",
+	"categoryTag":
+	{
+		"tagName": "Item.Mount.Ground"
+	},
+	"difficulty": 0,
+	"defaultQuality": 0,
+	"fuel": 100,
+	"fuelTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "Item.Fuel"
+			}
+		],
+		"parentTags": [
+			{
+				"tagName": "item"
+			}
+		]
+	},
+	"bUseOverrides": false,
+	"overrides": [],
+	"nodeLevel": "Wilderness",
+	"levelingTemplateId":
+	{
+		"guid": "0",
+		"typeId": "4565416516154",
+		"name": "None"
+	},
+	"baseDuration": 1800,
+	"durationFormula":
+	{
+		"expression": "GetCraftingRecipeBaseDuration() * EvalFormula($Formula:Artisan_Processing_AnimalHusbandry_Time$)"
+	},
+	"qualityFormula":
+	{
+		"expression": "EvalFormula($Formula:Artisan_Processing_AnimalHusbandry_Rarity$)"
+	},
+	"quantityFormula":
+	{
+		"expression": "EvalFormula($Formula:Artisan_Processing_AnimalHusbandry_Quantity$)"
+	},
+	"rewardId":
+	{
+		"guid": "6064632994545795097",
+		"typeId": "1091110040",
+		"name": "None"
+	},
+	"itemDestination": "Inventory",
+	"primaryResourceCosts": [],
+	"generalResourceCost": [
+		{
+			"item":
+			{
+				"guid": "6064632937134751748",
+				"typeId": "1091110003",
+				"name": "None"
+			},
+			"quantity": 1,
+			"bConsumeInCrafting": true
+		}
+	],
+	"craftingCurrencyCostId":
+	{
+		"guid": "6064631154785452040",
+		"typeId": "9565237358",
+		"name": "None"
+	},
+	"subRecipesIds": [],
+	"skillTreeSpecializationId":
+	{
+		"guid": "0",
+		"typeId": "30316003",
+		"name": "None"
+	},
+	"bCanFastCraft": true,
+	"bCanGameplayLayer": true,
+	"weaponsmithingInfoId":
+	{
+		"guid": "0",
+		"typeId": "1636976253",
+		"name": "None"
+	},
+	"guid": "6064632994545795096",
+	"name": "AnimalHusbandry_T3_Train_Bonestrider ",
+	"typeId": "163697"
+}

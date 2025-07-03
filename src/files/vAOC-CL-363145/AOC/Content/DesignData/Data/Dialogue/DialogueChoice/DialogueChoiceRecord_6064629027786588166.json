@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"F242E3DB49975BF7AFD822A7D2123AA9\", \"(undead turn in)\")",
+	"nextNodeId":
+	{
+		"guid": "6064629027782066179",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"SA_0008_HarrowerMoon\", \"MAP_0008_HarrowerMoon_02\")&&\r\nIsOnStoryArcQuest(GetPlayer(), \"MAQ_0008_AGrimUndertaking\")"
+	},
+	"guid": "6064629027786588166",
+	"name": "DDR_0008_CaptainRodrigar_93",
+	"typeId": "1091110027"
+}

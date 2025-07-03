@@ -1,0 +1,29 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"47439358419A80D42BACE5BE585CB55C\", \"Grab the loch of hair.\")",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "0",
+			"typeId": "1091110030",
+			"name": "MA_0002_SP_BB_Acquire_LastBreath"
+		},
+		{
+			"guid": "0",
+			"typeId": "1091110030",
+			"name": "MA_0002_SP_BB_GetItem_LastBreath"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0002_SP_BubblingBrew\",\"MA_0002_SP_BubblingBrew_Phase01\")"
+	},
+	"choiceType": "Default",
+	"guid": "108838054942328",
+	"name": "MADD_0002_HeleasChest_11",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"8209D9C849F5C47DDFBBC2A8A5F0E1E5\", \"Quest 2 *busy*\")",
+	"nextNodeId":
+	{
+		"guid": "109166995396248",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsOnStoryArcQuest(GetPlayer(), \"SAQ_0006_Lionhold_Cleric_Ruin2\")&&!CanCompleteQuest(GetPlayer(), \"SAQ_0006_LionHold_Cleric_Ruin2\")"
+	},
+	"guid": "109166993233559",
+	"name": "0006_P0_Cleric2_44",
+	"typeId": "1091110027"
+}

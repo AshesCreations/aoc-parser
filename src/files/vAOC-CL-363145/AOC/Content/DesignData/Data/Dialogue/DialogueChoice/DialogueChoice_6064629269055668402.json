@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"CF98D3924550F73C6748909491E6081D\", \"I had to kill your friends.\")",
+	"nextNodeId":
+	{
+		"guid": "6064629269056848051",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MIA_0016_LOL_LastOfLyneth\",\"MIP_0016_LOL_Phase01\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MIQ_0016_BRP_BloodRavenPlague\",\"KilledHenrik\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MIQ_0016_BRP_BloodRavenPlague\",\"KilledMarys\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MIQ_0016_BRP_BloodRavenPlague\",\"KilledLarsBaur\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MIQ_0016_BRP_BloodRavenPlague\",\"KilledZombies\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MIQ_0016_BRP_BloodRavenPlague\",\"KilledBowenAlden\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MIQ_0016_BRP_BloodRavenPlague\",\"KilledBowenWenda\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MIQ_0016_BRP_BloodRavenPlague\",\"KilledBowenBrenin\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MIQ_0016_BRP_BloodRavenPlague\",\"KilledBowenShay\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MIQ_0016_BRP_BloodRavenPlague\",\"ReportBack\")"
+	},
+	"guid": "6064629269055668402",
+	"name": "MIDD_0016_BRP_PrimeHealerEnid_20",
+	"typeId": "1091110027"
+}

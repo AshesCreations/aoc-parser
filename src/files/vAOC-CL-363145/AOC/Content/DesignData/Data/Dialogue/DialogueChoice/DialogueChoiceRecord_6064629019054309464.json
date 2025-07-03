@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"2B217B2F46633A8C049CF8A999692F66\", \"Noble Arc\")",
+	"nextNodeId":
+	{
+		"guid": "6064629013361262633",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "true && (GetStoryArcVariable(\"MA_0010_TheGreenBattle\", \"NobleArc\") >= GetStoryArcVariable(\"MA_0010_TheGreenBattle\", \"MagesArc\"))"
+	},
+	"guid": "6064629019054309464",
+	"name": "MADD_0010_GB_DorothiLanster_121",
+	"typeId": "1091110027"
+}

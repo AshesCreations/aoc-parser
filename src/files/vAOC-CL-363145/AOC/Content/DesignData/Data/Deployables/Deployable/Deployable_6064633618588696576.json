@@ -1,0 +1,143 @@
+{
+	"deployableType": "Standard",
+	"deployablePlacementRestrictionType": "None",
+	"radiusSize": 50000,
+	"bRequireLandscape": false,
+	"landscapeSweepRadius": 25,
+	"requiredWaterDepth": 500,
+	"bUsePlacementExpression": false,
+	"bConfirmDeployment": false,
+	"confirmDeploymentText": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"11786D154B621F76E56DD0B88CB79A0E\", \"TEST_Deployable_Foundation\")",
+	"additionalPlacementValidationExpression":
+	{
+		"expression": ""
+	},
+	"bIsPlaceableOnWater": false,
+	"deployableAsset": "/Game/DesignAssets/Tests/Deployables/TEST_BP_Deployable_Foundation.TEST_BP_Deployable_Foundation",
+	"constructTimeSeconds": 0,
+	"lifespanSeconds":
+	{
+		"expression": "180"
+	},
+	"traceChannel": "ECC_WorldStatic",
+	"bShouldSnapToFloor": true,
+	"bUseMouseToPlace": true,
+	"placementCylinderRadius": 1000,
+	"placementCylinderHeight": 1000,
+	"bShouldRotateAroundBoundsCenter": true,
+	"placementRotationSnappingIncrements": 22,
+	"deployableBoundaryType": "DEPLOY_ActorBounds",
+	"customOverrideDimensions":
+	{
+		"x": 100,
+		"y": 100,
+		"z": 1000
+	},
+	"verticalPenetrationStart": 82,
+	"verticalPenetrationEnd": 100,
+	"bDoesHaveFoundation": true,
+	"boundsFoundationHeight": 100,
+	"boundsOffset": 10,
+	"boundsUpperScalar":
+	{
+		"x": 1,
+		"y": 1,
+		"z": 1
+	},
+	"boundsLowerScalar":
+	{
+		"x": 1,
+		"y": 1,
+		"z": 1
+	},
+	"boundsFoundationScalar":
+	{
+		"x": 1,
+		"y": 1,
+		"z": 1
+	},
+	"placementFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"deployableLimits": [],
+	"deployableDistanceOffset": 100,
+	"surveyPylonDataId":
+	{
+		"guid": "0",
+		"typeId": "1948199294",
+		"name": "None"
+	},
+	"cooldownSkillId":
+	{
+		"guid": "0",
+		"typeId": "30316001",
+		"name": "None"
+	},
+	"rotationOffset":
+	{
+		"pitch": 0,
+		"yaw": 0,
+		"roll": 0
+	},
+	"raftGroundSweepExtent":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"raftWaterSweepExtent":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"raftWaterSweepStartOffset":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"raftWaterSweepEndOffset":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"trailerGroundSweepExtent":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"trailerClearAreaSweepExtent":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"trailerNoWaterAreaSweepExtent":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"trailerGroundSweepStartOffset":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"trailerGroundSweepEndOffset":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"skipItemRequirementForDeploy": false,
+	"guid": "6064633618588696576",
+	"name": "TEST_Deployable_Foundation",
+	"typeId": "3031600215"
+}

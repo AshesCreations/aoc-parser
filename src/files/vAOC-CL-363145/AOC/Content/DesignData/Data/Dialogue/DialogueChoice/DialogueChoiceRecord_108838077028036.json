@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"5FB1225D4CE1DD3C29C05E8B5973B7C3\", \"No, but I brought you the slab.\")",
+	"nextNodeId":
+	{
+		"guid": "108838066607804",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "GetStoryArcQuestFlag(GetPlayer(), \"MAQ_0004_03_AccursedLegacy\", \"TabletFound\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(), \"MAQ_0004_04_UnquietDead\", \"TabletTI\")&&\r\n(!IsStoryArcQuestAvailable(GetPlayer(), \"MAQ_0004_04_UnquietDead\")&&\r\n!IsOnStoryArcQuest(GetPlayer(), \"MAQ_0004_04_UnquietDead\"))"
+	},
+	"guid": "108838077028036",
+	"name": "MADD_0004_Orren_107",
+	"typeId": "1091110027"
+}

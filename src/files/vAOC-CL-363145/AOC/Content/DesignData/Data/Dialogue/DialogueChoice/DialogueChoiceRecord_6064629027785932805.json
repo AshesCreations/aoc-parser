@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"AF3BA2134A4A14E1149893A77796DA82\", \"(bandit turn in)\")",
+	"nextNodeId":
+	{
+		"guid": "6064629027780493313",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"SA_0008_HarrowerMoon\", \"MAP_0008_HarrowerMoon_02\")&&\r\nIsOnStoryArcQuest(GetPlayer(), \"MAQ_0008_BlameTheBandits\")"
+	},
+	"guid": "6064629027785932805",
+	"name": "DDR_0008_CaptainRodrigar_92",
+	"typeId": "1091110027"
+}

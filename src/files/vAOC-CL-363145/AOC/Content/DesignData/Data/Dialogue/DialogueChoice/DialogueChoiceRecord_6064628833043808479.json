@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"7B02270F47272B5D4F488B9EF0FA7192\", \"I have their bones.\")",
+	"nextNodeId":
+	{
+		"guid": "6064628833043153118",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0007_PriestessAndThePiper\",\"MAP_0007_PriestessAndThePiper_Phase03\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0007_EDD_ExaltedDenizensAndDuzakh\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_EDD_ExaltedDenizensAndDuzakh\",\"FoundEDDBones\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_EDD_ExaltedDenizensAndDuzakh\",\"ReturnedTheEDDBones\")\r\n"
+	},
+	"guid": "6064628833043808479",
+	"name": "MADD_0007_EDD_Bonekeeper_Phase03_27",
+	"typeId": "1091110027"
+}

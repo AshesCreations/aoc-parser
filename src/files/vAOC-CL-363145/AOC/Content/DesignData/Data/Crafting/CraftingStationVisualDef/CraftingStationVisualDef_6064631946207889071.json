@@ -1,0 +1,106 @@
+{
+	"relativeTransform":
+	{
+		"rotation":
+		{
+			"x": 0,
+			"y": -0,
+			"z": 0,
+			"w": 1
+		},
+		"translation":
+		{
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"scale3D":
+		{
+			"x": 1,
+			"y": 1,
+			"z": 1
+		}
+	},
+	"staticMesh": "None",
+	"idleFX": [],
+	"busyFX": [
+		{
+			"enabled":
+			{
+				"expression": ""
+			},
+			"niagaraSystemSoft": "/Game/Effects/FX_Crafting/Alchemy_Journeyman_Station/NS_AlchemyStation_T3.NS_AlchemyStation_T3",
+			"lifeTime": 0,
+			"bCastVolumetricTranslucentShadow": false,
+			"attachType": "AttachedTarget",
+			"originMesh": "Character",
+			"attachSocketName": "None",
+			"bUseAttachSocketForOriginLocation": true,
+			"bUseAttachSocketForOriginOrientation": true,
+			"transform":
+			{
+				"originLocation": "Target",
+				"originLocationSocket": "None",
+				"originOrientation": "Target",
+				"originOrientationSocket": "None",
+				"originScale": "World",
+				"bUseRelativeLocationExpression": false,
+				"relativeLocation":
+				{
+					"x": 0,
+					"y": -9.0321619999999996,
+					"z": 0
+				},
+				"relativeLocationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeRotationExpression": false,
+				"relativeRotation":
+				{
+					"pitch": 0,
+					"yaw": 90,
+					"roll": 0
+				},
+				"relativeRotationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeScaleExpression": false,
+				"relativeScale":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				},
+				"relativeScaleExpression":
+				{
+					"expression": ""
+				}
+			},
+			"bVisibleToSceneCaptureOnly": false,
+			"bAllowScalability": true,
+			"bUseLocalRemoteDynamicSystem": false
+		}
+	],
+	"niagaraParams": [],
+	"skeletalMesh": "None",
+	"bCustomAppearance": false,
+	"appearanceId":
+	{
+		"guid": "0",
+		"typeId": "812360",
+		"name": "None"
+	},
+	"race": "cCount",
+	"gender": "cCount",
+	"idleAnimation": "None",
+	"idleAudioEventStart": "None",
+	"idleAudioEventStop": "None",
+	"busyAnimation": "None",
+	"busyAudioEventStart": "/Game/WwiseAudio/Events/Main/Professions/Processing/Alchemy/PROF_ALCH_JOUR_Start.PROF_ALCH_JOUR_Start",
+	"busyAudioEventStop": "/Game/WwiseAudio/Events/Main/Professions/Processing/Alchemy/PROF_ALCH_JOUR_Stop.PROF_ALCH_JOUR_Stop",
+	"guid": "6064631946207889071",
+	"name": "Alchemy_T3_Station_VFX",
+	"typeId": "199977"
+}

@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"4C3AA4124B14546EABB0D78F7DC9D661\", \"i has no flag. What do?\")",
+	"nextNodeId":
+	{
+		"guid": "6064628822357704778",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsOnStoryArcQuest(GetPlayer(),\"MA_0010_AConcertedStrike\")&&!GetStoryArcQuestFlag(GetPlayer(), \"MA_0010_AConcertedStrike\", \"InitialReport\")"
+	},
+	"guid": "6064628822357704774",
+	"name": "MA_0010_CS_KillianJames_3",
+	"typeId": "1091110027"
+}

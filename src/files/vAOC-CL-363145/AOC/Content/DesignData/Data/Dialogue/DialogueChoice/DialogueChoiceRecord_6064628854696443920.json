@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"8A2339D14CF8AE450FB1EB9B8041AB6E\", \"What haunts?\")",
+	"nextNodeId":
+	{
+		"guid": "6064628854693953547",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0007_PriestessAndThePiper\",\"MAP_0007_PriestessAndThePiper_Phase01\")&&\r\n!IsOnStoryArcQuest(GetPlayer(),\"MAQ_0007_BOB_BonekeeperOrBurglar\")||\r\n!IsOnStoryArcQuest(GetPlayer(),\"MAQ_0007_KTC_KeyToTheCitadel\")"
+	},
+	"guid": "6064628854696443920",
+	"name": "MADD_0007_KTC_ThePiper_Phase03_8",
+	"typeId": "1091110027"
+}

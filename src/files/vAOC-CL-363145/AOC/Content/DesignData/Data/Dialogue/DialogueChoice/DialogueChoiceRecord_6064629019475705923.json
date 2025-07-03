@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"F5F6C777483D226F85AAC8BCA06196D2\", \"The Grinners are goners.\")",
+	"nextNodeId":
+	{
+		"guid": "6064629019475771460",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0002_CCC_CollectorOfCursedCurios\",\"MAP_0002_CCC_Phase01\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0002_TSS_TheSpindleSpider\",\"KilledGrinners\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0002_TSS_TheSpindleSpider\",\"ReturnToIBynn\")"
+	},
+	"guid": "6064629019475705923",
+	"name": "MADD_0002_TSS_TrollIBynn_8",
+	"typeId": "1091110027"
+}

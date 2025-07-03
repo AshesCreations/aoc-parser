@@ -1,0 +1,29 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"9EFC76074E4252C73A5C73B4390435C3\", \"I\\'ve brought you Melayna\\'s Staff\")",
+	"nextNodeId":
+	{
+		"guid": "108437073909382",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "0",
+			"typeId": "1091110030",
+			"name": "MA_0002_GaveAntiquitorCursedStaff"
+		},
+		{
+			"guid": "0",
+			"typeId": "1091110030",
+			"name": "MA_0002_CompleteQuest_PowerOfThee"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0002_PowerOfThee\",\"HaveCursedStaff\")"
+	},
+	"choiceType": "Default",
+	"guid": "108437074564743",
+	"name": "MADD_0002_Antiquitor_32",
+	"typeId": "1091110027"
+}

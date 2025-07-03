@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"CB2A6B4942BC8AC6E60BD5AFBFDA48FC\", \"What curse?\")",
+	"nextNodeId":
+	{
+		"guid": "6064628951367876627",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0012_COD_CurseOfDaragal\",\"MAP_0012_COD_Phase02\")&&\r\n!IsOnStoryArcQuest(GetPlayer(),\"MAQ_0012_TPH_ThePrimeHarvester\")&&\r\n!IsOnStoryArcQuest(GetPlayer(),\"MAQ_0012_RWS_ReadWhatIsSown\")&&\r\n!IsOnStoryArcQuest(GetPlayer(),\"MAQ_0012_WBB_WhatBlightsBelow\")"
+	},
+	"guid": "6064628951370498075",
+	"name": "MADD_0012_WBB_Sodbottom_11",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,23 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"4480561D4B2EC2B4C80E209AFF7E9C70\", \"Is Currently on Quest. Advance all objectives!\")",
+	"nextNodeId":
+	{
+		"guid": "107915451782778",
+		"typeId": "1091110028",
+		"name": "AimiTestDialogueNode1"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "108198206002809",
+			"typeId": "1091110030",
+			"name": "Advance_Aimi_Test_ArcQuest_0BJ1"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "IsOnStoryArcQuest(GetPlayer(), \"Aimi_Test_ArcQuest\")"
+	},
+	"guid": "108198194796152",
+	"name": "Aimi_DialogueChoice_TestStoryArcVars_5",
+	"typeId": "1091110027"
+}

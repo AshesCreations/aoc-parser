@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"4A90FAEC4037DB23075AB49EE901FF69\", \"(q2 grant)\")",
+	"nextNodeId":
+	{
+		"guid": "6064629027085812042",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"SA_0008_HarrowerMoon\", \"MAP_0008_HarrowerMoon_02\")&&\r\nIsStoryArcQuestAvailable(GetPlayer(), \"MAQ_0008_ItsJustABear\")&&\r\n!IsOnStoryArcQuest(GetPlayer(), \"MAQ_0008_ItsJustABear\")&&\r\nIsStoryArcQuestAvailable(GetPlayer(), \"MAQ_0008_TheHomesteadUnharrowed\")&&\r\n!IsOnStoryArcQuest(GetPlayer(), \"MAQ_0008_TheHomesteadUnharrowed\")&&\r\nIsStoryArcQuestAvailable(GetPlayer(), \"MAQ_0008_BlameTheBandits\")&&\r\n!IsOnStoryArcQuest(GetPlayer(), \"MAQ_0008_BlameTheBandits\")&&\r\nIsStoryArcQuestAvailable(GetPlayer(), \"MAQ_0008_AGrimUndertaking\")&&\r\n!IsOnStoryArcQuest(GetPlayer(), \"MAQ_0008_AGrimUndertaking\")&&\r\nIsStoryArcQuestAvailable(GetPlayer(), \"MAQ_0008_SavageryMetWithSavagery\")&&\r\n!IsOnStoryArcQuest(GetPlayer(), \"MAQ_0008_SavageryMetWithSavagery\")"
+	},
+	"guid": "6064629027016999178",
+	"name": "DDR_0008_CaptainRodrigar_5",
+	"typeId": "1091110027"
+}

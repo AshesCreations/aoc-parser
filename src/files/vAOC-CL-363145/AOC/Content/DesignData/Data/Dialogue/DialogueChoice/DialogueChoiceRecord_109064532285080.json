@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"4E816C7942C64D6DBBFC46B4EE3027DA\", \"I\\'m here for your trade dues.\")",
+	"nextNodeId":
+	{
+		"guid": "109064533399193",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsOnStoryArcQuest(GetPlayer(),\"MAQ_0005_PayYourDues\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005_PayYourDues\",\"SpeakToTheLumberjack\")"
+	},
+	"guid": "109064532285080",
+	"name": "MADD_0005_LumberjackAxel_4",
+	"typeId": "1091110027"
+}

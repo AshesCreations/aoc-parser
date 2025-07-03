@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"B4E71FCC4FCE3C1C44249EBBB35A621F\", \"I think it was goblins\")",
+	"nextNodeId":
+	{
+		"guid": "6064629027849371698",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "(GetStoryArcQuestFlag(GetPlayer(), \"MAQ_0008_MassacreAtBolenStead\", \"FoundValuables\")||\r\nGetStoryArcQuestFlag(GetPlayer(), \"MAQ_0008_MassacreAtBolenStead\", \"FoundBones\"))\r\n&&\r\n!GetStoryArcQuestFlag(GetPlayer(), \"MAQ_0008_MassacreAtBolenStead\", \"InvestigationComplete\")"
+	},
+	"guid": "6064629027904487509",
+	"name": "DDR_0008_ArynsJournal_65",
+	"typeId": "1091110027"
+}

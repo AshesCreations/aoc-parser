@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"CB9BD9CA47DECD6A584B06896C0AB677\", \"(Show Whistle Key)\")",
+	"nextNodeId":
+	{
+		"guid": "6064628820423737357",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0007_PriestessAndThePiper\",\"MAP_0007_PriestessAndThePiper_Phase01\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0007_BAL_BeggarAndLocks\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_BAL_BeggarAndLocks\",\"OpenedRustyBox\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_BAL_BeggarAndLocks\",\"ShowedTheKey\")"
+	},
+	"guid": "6064628820423475212",
+	"name": "MADD_0007_TheBeggar_14",
+	"typeId": "1091110027"
+}

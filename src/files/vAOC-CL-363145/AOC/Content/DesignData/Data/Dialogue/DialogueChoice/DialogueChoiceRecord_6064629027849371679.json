@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"2B13758C43827A724A08BBA136D31A63\", \"I think it was bandits.\")",
+	"nextNodeId":
+	{
+		"guid": "6064629027849371681",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "(GetStoryArcQuestFlag(GetPlayer(), \"MAQ_0008_MassacreAtBolenStead\", \"FoundArrows\")||\r\nGetStoryArcQuestFlag(GetPlayer(), \"MAQ_0008_MassacreAtBolenStead\", \"FoundTracks\"))\r\n&&\r\n!GetStoryArcQuestFlag(GetPlayer(), \"MAQ_0008_MassacreAtBolenStead\", \"InvestigationComplete\")"
+	},
+	"guid": "6064629027849371679",
+	"name": "DDR_0008_ArynsJournal_11",
+	"typeId": "1091110027"
+}

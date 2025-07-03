@@ -1,0 +1,37 @@
+{
+	"deployableType": "Standard",
+	"deployablePlacementRestrictionType": "None",
+	"nodeRadiusSize": 50000,
+	"bUsePlacementExpression": false,
+	"additionalPlacementValidationExpression":
+	{
+		"expression": ""
+	},
+	"deployableAsset": "/Game/DesignAssets/Node/BP_Deployable_Freehold_2.BP_Deployable_Freehold_2",
+	"constructTimeSeconds": 1,
+	"lifespanSeconds":
+	{
+		"expression": "3600"
+	},
+	"bShouldSnapToFloor": true,
+	"deployableBoundaryType": "DEPLOY_ActorBounds",
+	"customOverrideDimensions":
+	{
+		"x": 1,
+		"y": 1,
+		"z": 1
+	},
+	"verticalPenetrationStart": 20,
+	"verticalPenetrationEnd": 100,
+	"placementFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"deployableLimits": [],
+	"deployableDistanceOffset": 5000,
+	"guid": "6064630815203852288",
+	"name": "Freehold_Deployable",
+	"typeId": "3031600215"
+}

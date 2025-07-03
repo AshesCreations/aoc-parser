@@ -1,0 +1,28 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"9955D36F4FA2A60D438EE8A05545E0B2\", \"Yee\")",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064629025757265965",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064629025794949183",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "GetStoryArcQuestFlag(GetPlayer(), \"MAQ_0008_SavageryMetWithSavagery\", \"GoblinsKilled\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(), \"MAQ_0008_SavageryMetWithSavagery\", \"GoblinsKilledTI\")"
+	},
+	"guid": "6064629027817586703",
+	"name": "DDR_0008_CaptainRodrigar_102",
+	"typeId": "1091110027"
+}

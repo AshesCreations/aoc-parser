@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"6621136B45D95B00F553929A1681ECE9\", \"On Quest\")",
+	"nextNodeId":
+	{
+		"guid": "109235644552848",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsOnStoryArcQuest(GetPlayer(), \"SAQ_0006_LionHold_Cleric_Ruin2\") && !GetStoryArcQuestFlag(GetPlayer(),\"SAQ_0006_LionHold_Cleric_Ruin2\",\"ClericChat3\")"
+	},
+	"guid": "109235644552845",
+	"name": "0006_P0_Cleric_Response3_3",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"8A8569564D9E5C06F0A68EA8BDC94060\", \"I\\'m here for your trade dues.\")",
+	"nextNodeId":
+	{
+		"guid": "109064635045557",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005_PayYourDues\",\"ReportedToWrangler\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005_PayYourDues\",\"SpokeToFishmonger01\")"
+	},
+	"guid": "109064630130356",
+	"name": "MADD_0005_FishmongerElora_4",
+	"typeId": "1091110027"
+}

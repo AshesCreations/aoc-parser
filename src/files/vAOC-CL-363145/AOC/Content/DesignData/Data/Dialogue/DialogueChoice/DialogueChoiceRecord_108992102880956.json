@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"F293B3C843C41CD56213C0BF944D1E46\", \"Reporting for duty!\")",
+	"nextNodeId":
+	{
+		"guid": "108992108648125",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsOnStoryArcQuest(GetPlayer(),\"MAQ_0005_BridgeTooFar\")&& \r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005_BridgeTooFar\",\"ReportToAvenmoor\")"
+	},
+	"guid": "108992102880956",
+	"name": "MADD_0005_EudoxiaAvenmoor_4",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,23 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"A9722BBC469F559C9F330EA4D940B8C7\", \"T\")",
+	"nextNodeId":
+	{
+		"guid": "109320394069702",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "109127346247334",
+			"typeId": "1091110030",
+			"name": "AR_0006_Quest_AllIntro_Tank_AdvanceObj"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "GetPrimaryArchetype(GetPlayer())==ECharacterClass::Fighter&&IsOnStoryArcQuest(GetPlayer(), \"SAQ_0006_AllIntro_Fighter\")"
+	},
+	"guid": "109319806211763",
+	"name": "0006_P0_Ranger_41",
+	"typeId": "1091110027"
+}

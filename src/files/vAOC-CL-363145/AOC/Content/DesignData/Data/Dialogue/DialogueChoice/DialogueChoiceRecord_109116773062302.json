@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"531DAAEF4F79299D79313ABC23DC2258\", \"No Quest Phase 1,2,4,5\")",
+	"nextNodeId":
+	{
+		"guid": "109195873834663",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "(IsStoryArcInPhase(\"SA_0006_RuinsofAela\", \"SAP_0006_RoA_1\" )) || (IsStoryArcInPhase(\"SA_0006_RuinsofAela\", \"SAP_0006_RoA_2\" )) || (IsStoryArcInPhase(\"SA_0006_RuinsofAela\", \"SAP_0006_RoA_4\" )) || (IsStoryArcInPhase(\"SA_0006_RuinsofAela\", \"SAP_0006_RoA_5\" )) && (GetPrimaryArchetype(GetPlayer())!=ECharacterClass::Fighter)"
+	},
+	"guid": "109116773062302",
+	"name": "0006_P0_Tank2_20",
+	"typeId": "1091110027"
+}

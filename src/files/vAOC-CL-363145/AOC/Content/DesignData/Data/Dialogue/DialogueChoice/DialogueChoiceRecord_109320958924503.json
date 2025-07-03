@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"1C3828FC45A99428EFFD47BE1979EAE9\", \"Is there some way I can help out here?\")",
+	"nextNodeId":
+	{
+		"guid": "6064628754221236224",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "GetPrimaryArchetype(GetPlayer())==ECharacterClass::Ranger && IsOnStoryArcQuest(GetPlayer(), \"SAQ_0006_AllIntro_Liar\")"
+	},
+	"guid": "109320958924503",
+	"name": "0006_P0_Ranger_77",
+	"typeId": "1091110027"
+}

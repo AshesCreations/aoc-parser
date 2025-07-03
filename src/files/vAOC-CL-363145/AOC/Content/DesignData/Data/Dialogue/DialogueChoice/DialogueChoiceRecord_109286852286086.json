@@ -1,0 +1,33 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"6BACD9FE4428FC1B6B54D78F23B6B329\", \"I was a minister.\")",
+	"nextNodeId":
+	{
+		"guid": "109105422489242",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "109127193679505",
+			"typeId": "1091110030",
+			"name": "AR_0006_Quest_AllIntro_Cleric"
+		},
+		{
+			"guid": "109127349524136",
+			"typeId": "1091110030",
+			"name": "AR_0006_Quest_AllIntro_Cleric_AdvanceObj"
+		},
+		{
+			"guid": "6064628735728680965",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "GetPrimaryArchetype(GetPlayer())==ECharacterClass::Cleric"
+	},
+	"guid": "109286852286086",
+	"name": "0006_P0_AllIntro_134",
+	"typeId": "1091110027"
+}

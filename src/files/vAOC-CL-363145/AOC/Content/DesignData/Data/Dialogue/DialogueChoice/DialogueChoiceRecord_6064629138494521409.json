@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"616AAD0D400224DA801957A84D0110AF\", \"What\\'s wrong?\")",
+	"nextNodeId":
+	{
+		"guid": "6064629138497404994",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MIA_0003_ROW_RelicOfWar\",\"MAP_0003_ROW_Phase03\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0003_TRR_TheRelicRevealed\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0003_TRR_TheRelicRevealed\",\"SpokeToDaela\")"
+	},
+	"guid": "6064629138494521409",
+	"name": "MIDD_0003_TRR_DaelaKav_4",
+	"typeId": "1091110027"
+}

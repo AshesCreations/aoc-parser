@@ -1,0 +1,24 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"8F91C9694ED0C00643A8FCBBC92C3D69\", \"What are you doing here?\")",
+	"nextNodeId":
+	{
+		"guid": "108527401457348",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "0",
+			"typeId": "1091110030",
+			"name": "MA_0002_FoundTarysStatue"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "IsOnStoryArcQuest(GetPlayer(),\"MAQ_0002_AThousandSuns\")"
+	},
+	"choiceType": "Default",
+	"guid": "108527402768070",
+	"name": "MADD_0002_SP_WardenRiwana_5",
+	"typeId": "1091110027"
+}

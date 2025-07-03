@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"4B07C53D479D2E8515B2438794216033\", \"(Get the chest)\")",
+	"nextNodeId":
+	{
+		"guid": "6064629019444838453",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0002_CCC_CollectorOfCursedCurios\",\"MAP_0002_CCC_Phase01\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0002_TSS_TheSpindleSpider\",\"MetTheAntiquitor\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0002_TSS_TheSpindleSpider\",\"ReturnToIBynn\")"
+	},
+	"guid": "6064629019448901687",
+	"name": "MADD_0002_TSS_TheEndlessChest_5",
+	"typeId": "1091110027"
+}

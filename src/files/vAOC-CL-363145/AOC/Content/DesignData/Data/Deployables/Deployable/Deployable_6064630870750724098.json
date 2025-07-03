@@ -1,0 +1,144 @@
+{
+	"deployableType": "CaravanWaterTransformation",
+	"gatherableToReplaceDeployableId":
+	{
+		"guid": "0",
+		"typeId": "133376",
+		"name": "None"
+	},
+	"deployablePlacementRestrictionType": "None",
+	"radiusSize": 50000,
+	"bRequireLandscape": true,
+	"landscapeSweepRadius": 25,
+	"bUsePlacementExpression": false,
+	"bConfirmDeployment": false,
+	"confirmDeploymentText": "",
+	"additionalPlacementValidationExpression":
+	{
+		"expression": "0"
+	},
+	"deployableAsset": "/Game/DesignAssets/Node/BP_Deployable_Caravan_Transformation.BP_Deployable_Caravan_Transformation",
+	"constructTimeSeconds": 10,
+	"lifespanSeconds":
+	{
+		"expression": "10"
+	},
+	"traceChannel": "ECC_Vehicle",
+	"bShouldSnapToFloor": true,
+	"bUseMouseToPlace": true,
+	"placementCylinderRadius": 1000,
+	"placementCylinderHeight": 800,
+	"bShouldRotateAroundBoundsCenter": true,
+	"placementRotationSnappingIncrements": 72,
+	"deployableBoundaryType": "DEPLOY_ActorBounds",
+	"customOverrideDimensions":
+	{
+		"x": 2000,
+		"y": 800,
+		"z": 850
+	},
+	"verticalPenetrationStart": 60,
+	"verticalPenetrationEnd": 100,
+	"boundsOffset": 0,
+	"boundsUpperScalar":
+	{
+		"x": 0.5,
+		"y": 0.5,
+		"z": 0.5
+	},
+	"boundsLowerScalar":
+	{
+		"x": 1,
+		"y": 1,
+		"z": 1
+	},
+	"placementFXId":
+	{
+		"guid": "6064630836836958238",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"deployableLimits": [
+		{
+			"limitType": "Player",
+			"limitCount": 1
+		}
+	],
+	"deployableDistanceOffset": -85,
+	"surveyPylonDataId":
+	{
+		"guid": "0",
+		"typeId": "1948199294",
+		"name": "None"
+	},
+	"cooldownSkillId":
+	{
+		"guid": "0",
+		"typeId": "30316001",
+		"name": "None"
+	},
+	"rotationOffset":
+	{
+		"pitch": 0,
+		"yaw": 0,
+		"roll": 0
+	},
+	"raftGroundSweepExtent":
+	{
+		"x": 300,
+		"y": 1400,
+		"z": 200
+	},
+	"raftWaterSweepExtent":
+	{
+		"x": 500,
+		"y": 1100,
+		"z": 400
+	},
+	"raftWaterSweepStartOffset":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 100
+	},
+	"raftWaterSweepEndOffset":
+	{
+		"x": 0,
+		"y": 0,
+		"z": -100
+	},
+	"trailerGroundSweepExtent":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"trailerClearAreaSweepExtent":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"trailerNoWaterAreaSweepExtent":
+	{
+		"x": 300,
+		"y": 500,
+		"z": 200
+	},
+	"trailerGroundSweepStartOffset":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"trailerGroundSweepEndOffset":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"skipItemRequirementForDeploy": false,
+	"guid": "6064630870750724098",
+	"name": "Caravan_To_Water",
+	"typeId": "3031600215"
+}

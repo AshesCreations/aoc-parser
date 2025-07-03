@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"11A3DD834647ED4AEDF732A6BBF9769F\", \"(Unlock the box)\")",
+	"nextNodeId":
+	{
+		"guid": "6064628821189853227",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0007_PriestessAndThePiper\",\"MAP_0007_PriestessAndThePiper_Phase01\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0007_BAL_BeggarAndLocks\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_BAL_BeggarAndLocks\",\"GotCaptainsKey\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_BAL_BeggarAndLocks\",\"OpenedRustyBox\")"
+	},
+	"guid": "6064628821189787690",
+	"name": "MADD_0007_BAL_ITM_RustyStrongbox_6",
+	"typeId": "1091110027"
+}

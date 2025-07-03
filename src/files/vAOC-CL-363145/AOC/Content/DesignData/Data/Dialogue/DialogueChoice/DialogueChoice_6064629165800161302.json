@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"9E1A966D4744F950394D07BBEB5E2DB5\", \"(q2 turn in)\")",
+	"nextNodeId":
+	{
+		"guid": "6064629165800161372",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0015_PilgrimsProblem\", \"MAP_0015_PilgrimsProblem_P1\")&&IsStoryArcQuestAvailable(GetPlayer(), \"MAQ_0015_P1_ReciteTheWords\")\r\n"
+	},
+	"guid": "6064629165800161302",
+	"name": "MADD_0015_Dory_11",
+	"typeId": "1091110027"
+}

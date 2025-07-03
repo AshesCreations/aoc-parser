@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"D12261E94EE7AC3E255D6D82A26DF166\", \"The Prime Harvester is real\")",
+	"nextNodeId":
+	{
+		"guid": "6064628940030935062",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0012_COD_CurseOfDaragal\",\"MAP_0012_COD_Phase02\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0012_TPH_ThePrimeHarvester\",\"GaveDuatite\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0012_TPH_ThePrimeHarvester\",\"TalkToDoomsayer\")"
+	},
+	"guid": "6064628940033949727",
+	"name": "MADD_0012_TPH_TheDoomsayer_14",
+	"typeId": "1091110027"
+}

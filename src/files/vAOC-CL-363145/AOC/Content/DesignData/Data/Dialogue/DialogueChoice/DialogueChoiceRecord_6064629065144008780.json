@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"B0269A804A27081D3B17BDA345B2B1E4\", \"Tutek is dead.\")",
+	"nextNodeId":
+	{
+		"guid": "6064629065156198477",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0002_CCC_CollectorOfCursedCurios\",\"MAP_0002_CCC_Phase03\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0002_TDC_TheDivineCarnage\",\"HaveIncantraLyDraeb\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0002_TDC_TheDivineCarnage\",\"HaveIncantraKerBar\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0002_TDC_TheDivineCarnage\",\"HaveIncantraTyrKis\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0002_TDC_TheDivineCarnage\",\"ToldAntiquitors\")"
+	},
+	"guid": "6064629065144008780",
+	"name": "MADD_0002_TDC_AntiquitorII_27",
+	"typeId": "1091110027"
+}

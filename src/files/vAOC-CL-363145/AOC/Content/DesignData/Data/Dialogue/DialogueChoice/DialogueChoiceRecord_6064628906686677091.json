@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"275293C44B19BF22935F81A3F17E1F2D\", \"The estate stands in disrepair\")",
+	"nextNodeId":
+	{
+		"guid": "6064628906684186714",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0012_COD_CurseOfDaragal\",\"MAP_0012_COD_Phase01\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0012_TPG_TheProdigalGrandson\",\"ReadBloodDeed\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0012_TPG_TheProdigalGrandson\",\"ReturnToKivan\")"
+	},
+	"guid": "6064628906686677091",
+	"name": "MADD_0012_TPG_LordKivanDaragal_17",
+	"typeId": "1091110027"
+}

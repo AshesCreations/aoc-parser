@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"403982DA4FC84462BADA339BE777B1CB\", \"I need the deed.\")",
+	"nextNodeId":
+	{
+		"guid": "6064628951601250374",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0012_COD_CurseOfDaragal\",\"MAP_0012_COD_Phase02\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0012_WBB_WhatBlightsBelow\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0012_WBB_WhatBlightsBelow\",\"GotTheDeed\")"
+	},
+	"guid": "6064628951633625170",
+	"name": "MADD_0012_RWS_LordKivan_21",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,33 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"789CFCF148E0B80C2921A5B7A316FA49\", \"(Insert the deed)\")",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064628951548624955",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064628951550459964",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064628951404904493",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0012_COD_CurseOfDaragal\",\"MAP_0012_COD_Phase02\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0012_WBB_WhatBlightsBelow\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0012_WBB_WhatBlightsBelow\",\"GotTheDeed\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0012_WBB_WhatBlightsBelow\",\"DecipheredTheDeed\")"
+	},
+	"guid": "6064628951741431898",
+	"name": "MADD_0012_WBB_TheCipher_4",
+	"typeId": "1091110027"
+}

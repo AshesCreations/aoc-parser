@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"DE635BB648D3D3D9705462881FE2138D\", \"(Study)\")",
+	"nextNodeId":
+	{
+		"guid": "6064628662726819902",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0007_PriestessAndThePiper\",\"MAP_0007_PriestessAndThePiper_Phase01\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0007_TOT_TaleOfATotem\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_TOT_TaleOfATotem\",\"GobGlyphWitchWatches\")"
+	},
+	"guid": "6064628662727802944",
+	"name": "MADD_0007_TOT_Exam_GoblinGlyph_WitchWatches_5",
+	"typeId": "1091110027"
+}

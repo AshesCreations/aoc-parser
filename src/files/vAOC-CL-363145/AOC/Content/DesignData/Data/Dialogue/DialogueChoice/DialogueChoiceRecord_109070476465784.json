@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"B73B3608425D615A0DBD21B7E5A679E8\", \"I bring news of betrayal.\")",
+	"nextNodeId":
+	{
+		"guid": "109070496323193",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005_RunToTheHills\",\"DecodedNote\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005_RunToTheHills\",\"ToldStormrazerTruth\")"
+	},
+	"guid": "109070476465784",
+	"name": "MADD_0005_Stormrazer_75",
+	"typeId": "1091110027"
+}

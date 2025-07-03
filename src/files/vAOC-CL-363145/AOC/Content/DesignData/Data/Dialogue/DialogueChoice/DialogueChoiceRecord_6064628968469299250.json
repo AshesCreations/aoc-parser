@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"99037D3741D59642DE7643A74AD47BA8\", \"quest but no flag\")",
+	"nextNodeId":
+	{
+		"guid": "6064628968469299254",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsOnStoryArcQuest(GetPlayer(),\"MA_0010_TheGreenBattle\")&&!GetStoryArcQuestFlag(GetPlayer(),\"MA_0010_TheGreenBattle\",\"HasFeed\")"
+	},
+	"guid": "6064628968469299250",
+	"name": "MADD_0010_GB_FeedHorses_2",
+	"typeId": "1091110027"
+}

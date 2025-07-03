@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"99130F07415493E3E328409D78D376B8\", \"What are you doing here?\")",
+	"nextNodeId":
+	{
+		"guid": "6064629132375031902",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MIA_0003_ROW_RelicOfWar\",\"MAP_0003_ROW_Phase02\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0003_RRR_RelicRaiderRivalry\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0003_RRR_RelicRaiderRivalry\",\"SpokeToSirKane\")"
+	},
+	"guid": "6064629132373852253",
+	"name": "MIDD_0003_RRR_SirKane_4",
+	"typeId": "1091110027"
+}

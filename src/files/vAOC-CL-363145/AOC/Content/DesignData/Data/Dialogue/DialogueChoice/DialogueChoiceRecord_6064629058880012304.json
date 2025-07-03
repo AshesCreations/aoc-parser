@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"9CAD4999403BDF69A1F203B13065D91B\", \"(Give Necklace)\")",
+	"nextNodeId":
+	{
+		"guid": "6064629058878046220",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0002_CCC_CollectorOfCursedCurios\",\"MAP_0002_CCC_Phase02\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0002_MOM_MotherOfMaidens\",\"GrabbedTheNecklace\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0002_MOM_MotherOfMaidens\",\"GaveNecklace\")"
+	},
+	"guid": "6064629058880012304",
+	"name": "MADD_0002_MOM_TheAntiquitor_15",
+	"typeId": "1091110027"
+}

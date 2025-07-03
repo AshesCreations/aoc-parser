@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"D1796E85448E459BCF359E9A36A47AEE\", \"I think it was a bear.\")",
+	"nextNodeId":
+	{
+		"guid": "6064629027849371696",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "(GetStoryArcQuestFlag(GetPlayer(), \"MAQ_0008_MassacreAtBolenStead\", \"FoundUnusualTracks\")||\r\nGetStoryArcQuestFlag(GetPlayer(), \"MAQ_0008_MassacreAtBolenStead\", \"FoundBones\"))\r\n&&\r\n!GetStoryArcQuestFlag(GetPlayer(), \"MAQ_0008_MassacreAtBolenStead\", \"InvestigationComplete\")"
+	},
+	"guid": "6064629027895443540",
+	"name": "DDR_0008_ArynsJournal_64",
+	"typeId": "1091110027"
+}

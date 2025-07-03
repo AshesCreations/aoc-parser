@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"2CA89194412DC064A52FA8807A5F2B9F\", \"Is Grayshore paying for anything at the moment?\")",
+	"nextNodeId":
+	{
+		"guid": "108190412134024",
+		"typeId": "1091110028",
+		"name": "Harriet_Phase0_OfferQuest"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcQuestAvailable(GetPlayer(), \"SAQ_0001_Q1_SecuringSupplies\")&&\r\n!IsOnStoryArcQuest(GetPlayer(), \"SAQ_0001_Q1_SecuringSupplies\")"
+	},
+	"guid": "108190419211913",
+	"name": "DC_Harriet_P0_AskAboutQuest",
+	"typeId": "1091110027"
+}

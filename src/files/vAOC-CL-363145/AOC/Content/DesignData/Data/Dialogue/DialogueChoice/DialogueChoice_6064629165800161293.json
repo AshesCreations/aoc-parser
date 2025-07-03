@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"E623B35F4305E95B79005D868D82FFA1\", \"I can see that. How were you injured?\")",
+	"nextNodeId":
+	{
+		"guid": "6064629165800161304",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcQuestAvailable(GetPlayer(), \"MAQ_0015_P0_RecoveringReagents\")&&\r\n!IsOnStoryArcQuest(GetPlayer(), \"MAQ_0015_P0_RecoveringReagents\")"
+	},
+	"guid": "6064629165800161293",
+	"name": "MADD_0015_Dory_2",
+	"typeId": "1091110027"
+}

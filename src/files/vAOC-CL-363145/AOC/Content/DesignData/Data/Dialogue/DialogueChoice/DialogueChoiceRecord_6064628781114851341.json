@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"4979693842DE2C7224D5DF9898911C65\", \"IS CITIZEN OF NPC NODE\")",
+	"nextNodeId":
+	{
+		"guid": "6064628940746260480",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "Node_GetActorCityNode(GetPlayer()) == Node_GetActorCityNode(GetInteractionTarget())"
+	},
+	"guid": "6064628781114851341",
+	"name": "DD_ServiceNPC_Administrator_3",
+	"typeId": "1091110027"
+}

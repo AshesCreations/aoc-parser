@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"4C4EC38444756902AF4BB4A8C4953ED8\", \"(q1 turn in)\")",
+	"nextNodeId":
+	{
+		"guid": "108837890578040",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0004_BloodStillDue\", \"MAP_0004_BloodStillDue_01\")&&\r\nIsOnStoryArcQuest(GetPlayer(), \"MAQ_0004_01_SeepingScarlet\")"
+	},
+	"guid": "108837891298937",
+	"name": "MADD_0004_Orren_32",
+	"typeId": "1091110027"
+}

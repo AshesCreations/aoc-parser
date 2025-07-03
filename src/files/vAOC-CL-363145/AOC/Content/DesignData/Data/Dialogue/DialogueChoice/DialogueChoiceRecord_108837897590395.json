@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"11BB047641C096D514587E90C1E3C7F2\", \"I found this at the core of a mist cloud.\")",
+	"nextNodeId":
+	{
+		"guid": "108837907158654",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "GetStoryArcQuestFlag(GetPlayer(), \"MAQ_0004_01_SeepingScarlet\", \"FoundCorruptedCore\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(), \"MAQ_0004_01_SeepingScarlet\", \"CorruptedCoreTI\")"
+	},
+	"guid": "108837897590395",
+	"name": "MADD_0004_Orren_34",
+	"typeId": "1091110027"
+}

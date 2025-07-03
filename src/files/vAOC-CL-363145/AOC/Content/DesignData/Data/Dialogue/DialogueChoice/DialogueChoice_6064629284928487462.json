@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"912492B5431B38E8C394749029F7204F\", \"(Examine Parchment)\")",
+	"nextNodeId":
+	{
+		"guid": "6064629284928880679",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MIA_0016_LOL_LastOfLyneth\",\"MIP_0016_LOL_Phase01\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MIQ_0016_BRP_BloodRavenPlague\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MIQ_0016_BRP_BloodRavenPlague\",\"KilledLarsBaur\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MIQ_0016_BRP_BloodRavenPlague\",\"FoundMap\")"
+	},
+	"guid": "6064629284928487462",
+	"name": "MIDD_0016_BRP_BaurDresser_4",
+	"typeId": "1091110027"
+}

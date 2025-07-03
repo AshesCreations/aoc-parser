@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"A2309A2A4FA75DF97E21139881919227\", \"(Study)\")",
+	"nextNodeId":
+	{
+		"guid": "6064628662702112824",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0007_PriestessAndThePiper\",\"MAP_0007_PriestessAndThePiper_Phase01\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0007_TOT_TaleOfATotem\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_TOT_TaleOfATotem\",\"GobGlyphWitchAwake\")"
+	},
+	"guid": "6064628662703226938",
+	"name": "MADD_0007_TOT_Exam_GoblinGlyph_WitchWakes_5",
+	"typeId": "1091110027"
+}

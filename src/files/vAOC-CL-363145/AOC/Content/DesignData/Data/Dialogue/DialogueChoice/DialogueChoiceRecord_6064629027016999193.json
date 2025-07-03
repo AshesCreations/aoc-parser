@@ -1,0 +1,33 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"AA6BE08C4341C44B4C6D12B62CD439F0\", \"I\\'ve conducted an investigation on behalf of Ayrn Quail. You can review my findings in their journal here.\")",
+	"nextNodeId":
+	{
+		"guid": "6064629027016999196",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064629025751695402",
+			"typeId": "1091110030",
+			"name": "AR_0004_LostGoodTI"
+		},
+		{
+			"guid": "6064629025983561829",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064629025788461115",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "GetStoryArcQuestFlag(GetPlayer(), \"MAQ_0008_MassacreAtBolenStead\", \"InvestigationComplete\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(), \"MAQ_0008_MassacreAtBolenStead\", \"ReportTI\")"
+	},
+	"guid": "6064629027016999193",
+	"name": "DDR_0008_CaptainRodrigar_20",
+	"typeId": "1091110027"
+}

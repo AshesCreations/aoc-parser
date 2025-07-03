@@ -1,0 +1,23 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"A9A1DD434E74E32A5DFF9BA0D8007D90\", \"I cleared out the shrine.\")",
+	"nextNodeId":
+	{
+		"guid": "6064629165800161335",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064629165789413382",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "GetStoryArcQuestFlag(GetPlayer(), \"MAQ_0015_P0_SanctifyTheShrine\", \"GoblinsKilled\")&&\r\nGetStoryArcQuestFlag(GetPlayer(), \"MAQ_0015_P0_SanctifyTheShrine\", \"Overgrowth Removed\")&&\r\nIsOnStoryArcQuest(GetPlayer(), \"MAQ_0015_P0_SanctifyTheShrine\")"
+	},
+	"guid": "6064629166622834690",
+	"name": "MADD_0015_Dory_119",
+	"typeId": "1091110027"
+}

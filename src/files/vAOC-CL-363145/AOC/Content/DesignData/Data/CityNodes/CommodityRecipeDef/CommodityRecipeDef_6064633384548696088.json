@@ -1,0 +1,74 @@
+{
+	"displayName": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"EF6F4A8544419908B6B45EBD942432EF\", \"Papers\")",
+	"commodityRecipeMaterialRequirementIds": [
+		{
+			"guid": "6064633385742172161",
+			"typeId": "33229888",
+			"name": "None"
+		},
+		{
+			"guid": "6064633611119558857",
+			"typeId": "33229888",
+			"name": "None"
+		}
+	],
+	"minQuantityProduced":
+	{
+		"expression": "50"
+	},
+	"maxQuantityProduced":
+	{
+		"expression": "1500"
+	},
+	"minCost":
+	{
+		"expression": "10000"
+	},
+	"maxCost":
+	{
+		"expression": "50000"
+	},
+	"minTimeDurationDays":
+	{
+		"expression": "3"
+	},
+	"maxTimeDurationDays":
+	{
+		"expression": "8"
+	},
+	"rewardTypeId":
+	{
+		"guid": "6064629297329602586",
+		"typeId": "1091110040",
+		"name": "None"
+	},
+	"minReward":
+	{
+		"expression": "1"
+	},
+	"maxReward":
+	{
+		"expression": "10"
+	},
+	"minLimitContribution":
+	{
+		"expression": "10"
+	},
+	"maxLimitContribution":
+	{
+		"expression": "100"
+	},
+	"contributionLimitGrowthCurveId":
+	{
+		"guid": "6064631918894317568",
+		"typeId": "1091110055",
+		"name": "None"
+	},
+	"availabilityPredicate":
+	{
+		"expression": "GetNodeBiome() == EBiomeType::Desert || \r\nGetNodeBiome() == EBiomeType::Highlands  "
+	},
+	"guid": "6064633384548696088",
+	"name": "Commodity_SAN_Books_T1_2",
+	"typeId": "33229833"
+}

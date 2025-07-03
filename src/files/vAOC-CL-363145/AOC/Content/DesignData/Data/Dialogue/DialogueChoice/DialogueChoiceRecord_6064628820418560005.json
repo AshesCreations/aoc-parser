@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"7E80ACF74D1F2B6C694983BA43F71815\", \"(Give 1 Glint)\")",
+	"nextNodeId":
+	{
+		"guid": "6064628820417511425",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0007_PriestessAndThePiper\",\"MAP_0007_PriestessAndThePiper_Phase01\")&&\r\n!IsOnStoryArcQuest(GetPlayer(),\"MAQ_0007_BAL_BeggarAndLocks\")&&\r\n!IsOnStoryArcQuest(GetPlayer(),\"MAQ_0007_TWK_TheWhistlingKey\")"
+	},
+	"guid": "6064628820418560005",
+	"name": "MADD_0007_TheBeggar_7",
+	"typeId": "1091110027"
+}

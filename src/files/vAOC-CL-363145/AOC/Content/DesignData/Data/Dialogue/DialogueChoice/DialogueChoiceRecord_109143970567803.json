@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"2C71913748927BCCBE7687A7AEB21AED\", \"Tell me about this map.\")",
+	"nextNodeId":
+	{
+		"guid": "109143969388152",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsOnStoryArcQuest(GetPlayer(),\"MAQ_0005_ElfFriend\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005_ElfFriend\",\"UnlockedPyrianChest\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005_ElfFriend\",\"FoundThanalas\")"
+	},
+	"guid": "109143970567803",
+	"name": "MADD_0005_EOA_Booksmith_Alexor_30",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"7C1F11C740DC3F70F10448B574C176B8\", \"I am victorious!\")",
+	"nextNodeId":
+	{
+		"guid": "6064628831957549106",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0007_PriestessAndThePiper\",\"MAP_0007_PriestessAndThePiper_Phase01\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_LOR_LegionOfTheRose\",\"FeatCrushSlabs\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_LOR_LegionOfTheRose\",\"KillMoonstalker\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_LOR_LegionOfTheRose\",\"ReaperRiddle06\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_LOR_LegionOfTheRose\",\"FeatGotEyeOfKarratas\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_LOR_LegionOfTheRose\",\"ReportedAllFeats\")"
+	},
+	"guid": "6064628831956631600",
+	"name": "MADD_0007_LOR_HonoraryPraetor_11",
+	"typeId": "1091110027"
+}

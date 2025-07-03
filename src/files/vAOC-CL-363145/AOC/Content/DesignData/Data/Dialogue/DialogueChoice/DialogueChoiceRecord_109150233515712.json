@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"4327FC8041DBC14D00F76C84A8BE9DFE\", \"You\\'re back!\")",
+	"nextNodeId":
+	{
+		"guid": "109184681531075",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005_AthenaeumOfRapha\",\"FoundBooksmith\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005_AthenaeumOfRapha\",\"AvenmoorReturned\")"
+	},
+	"guid": "109150233515712",
+	"name": "MADD_0005_P3_Eudoxia_11",
+	"typeId": "1091110027"
+}

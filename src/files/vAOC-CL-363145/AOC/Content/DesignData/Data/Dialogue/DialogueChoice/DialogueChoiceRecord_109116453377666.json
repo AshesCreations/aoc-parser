@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"5A84F55D4C06D09C59705CB62C0949B3\", \"Quest 1 offer\")",
+	"nextNodeId":
+	{
+		"guid": "109116454098565",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsOnStoryArcQuest(GetPlayer(), \"SAQ_0006_LionHold_Cleric_Ruin1\")&&!CanCompleteQuest(GetPlayer(), \"SAQ_0006_LionHold_Cleric_Ruin1\")"
+	},
+	"guid": "109116453377666",
+	"name": "0006_P0_Cleric2_29",
+	"typeId": "1091110027"
+}

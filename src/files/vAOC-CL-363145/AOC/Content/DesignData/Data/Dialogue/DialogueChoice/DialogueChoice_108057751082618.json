@@ -1,0 +1,23 @@
+{
+	"choiceText": "{PlayerRace} {PlayerName}",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "108073364444793",
+			"typeId": "1091110030",
+			"name": "StartLevelStoryArcAdvancePhase1"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"StartLevelArc\", \"StartLevelPhaseOne\")"
+	},
+	"guid": "108057751082618",
+	"name": "StartLevelStoryArcAdvancePhase1",
+	"typeId": "1091110027"
+}

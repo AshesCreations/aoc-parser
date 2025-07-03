@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"A9FDC20445CDB85F08A54BA20DD9B450\", \"I\\'m looking for work.\")",
+	"nextNodeId":
+	{
+		"guid": "109324917036685",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsOnStoryArcQuest(GetPlayer(), \"SAQ_0006_AllIntro_Cleric\")&&!CanCompleteQuest(GetPlayer(), \"SAQ_0006_AllIntro_Cleric\")||IsOnStoryArcQuest(GetPlayer(), \"SAQ_0006_AllIntro_Ranger\")&&!CanCompleteQuest(GetPlayer(), \"SAQ_0006_AllIntro_Ranger\")||IsOnStoryArcQuest(GetPlayer(), \"SAQ_0006_AllIntro_Tank\")&&!CanCompleteQuest(GetPlayer(), \"SAQ_0006_AllIntro_Tank\")"
+	},
+	"guid": "109324896917119",
+	"name": "0006_P0_Information_76",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"926D831B4A6EA86C48575B81868FD17A\", \"(Lift the Chest)\")",
+	"nextNodeId":
+	{
+		"guid": "6064629019448115254",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0002_CCC_CollectorOfCursedCurios\",\"MAP_0002_CCC_Phase01\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0002_TSS_TheSpindleSpider\",\"ReturnToIBynn\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0002_TSS_TheSpindleSpider\",\"TransportedChest\")"
+	},
+	"guid": "6064629019448967224",
+	"name": "MADD_0002_TSS_TheEndlessChest_6",
+	"typeId": "1091110027"
+}

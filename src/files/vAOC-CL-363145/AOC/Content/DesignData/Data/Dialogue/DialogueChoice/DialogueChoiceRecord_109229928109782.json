@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"8B678FEB4475CB5209BD56867186E25D\", \"The Field Marshal sent me.\")",
+	"nextNodeId":
+	{
+		"guid": "109229926340306",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsOnStoryArcQuest(GetPlayer(),\"MAQ_0005_PrepareForBattle\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005_PrepareForBattle\",\"SpokeToMott\")"
+	},
+	"guid": "109229928109782",
+	"name": "MADD_0005_PFB_EdrikMott_7",
+	"typeId": "1091110027"
+}

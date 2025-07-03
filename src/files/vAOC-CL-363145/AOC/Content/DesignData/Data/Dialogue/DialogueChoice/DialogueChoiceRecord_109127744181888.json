@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"2BA8B0504B61B91312BF47A2A200A5AF\", \"Anything on Thanalas?\")",
+	"nextNodeId":
+	{
+		"guid": "109127747655297",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsOnStoryArcQuest(GetPlayer(),\"MAQ_0005_ElfFriend\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005_ElfFriend\",\"SpokeToBooksmith\")"
+	},
+	"guid": "109127744181888",
+	"name": "MADD_0005_EOA_Booksmith_Alexor_14",
+	"typeId": "1091110027"
+}

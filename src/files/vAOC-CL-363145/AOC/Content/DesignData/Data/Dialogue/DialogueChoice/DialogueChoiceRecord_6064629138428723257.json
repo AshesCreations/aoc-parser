@@ -1,0 +1,23 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"5C3F0DD540226C8D4C4B5A93BDF23F8A\", \"I bring you the true Scourge\")",
+	"nextNodeId":
+	{
+		"guid": "6064629138429706298",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064629138441109566",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MIA_0003_ROW_RelicOfWar\",\"MAP_0003_ROW_Phase03\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0003_TRR_TheRelicRevealed\",\"PlacedMedalOfDefense\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0003_TRR_TheRelicRevealed\",\"PlacedMedalOfFaith\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0003_TRR_TheRelicRevealed\",\"PlacedMedalOfIntellect\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0003_TRR_TheRelicRevealed\",\"PlacedMedalOfEquitation\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0003_TRR_TheRelicRevealed\",\"KilledPrinceScourge\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0003_TRR_TheRelicRevealed\",\"GaveScourge\")"
+	},
+	"guid": "6064629138428723257",
+	"name": "MIDD_0003_TRR_SirKaneDarkmoor_14",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,23 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"ACFC7FF94D306CAD75CDC1B569B00B6D\", \"A number of Striders were murdered just outside of town. I\\'m worried about what might happen to the people in this town if the Striders can\\'t protect them.\")",
+	"nextNodeId":
+	{
+		"guid": "108167242077833",
+		"typeId": "1091110028",
+		"name": "GavinQuestPhase0_Node2a"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "108167758829223",
+			"typeId": "1091110030",
+			"name": "AR_0001_Q2_O1_ReportFindSlainVigilants"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "GetStoryArcQuestFlag(GetPlayer(),\"SAQ_0001_Q2_IntroductionsInOrder\",\"FoundSlainVigilants\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"SAQ_0001_Q2_IntroductionsInOrder\",\"ReportedSlainVigilants\")"
+	},
+	"guid": "108167339464333",
+	"name": "DC_Gavin_Node2_ReportSlainStriders",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,23 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"F3D807E144BAFB606435CBBF01CC8497\", \"There\\'s more.\")",
+	"nextNodeId":
+	{
+		"guid": "108837890578040",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "108872895125124",
+			"typeId": "1091110030",
+			"name": "AR_0004_CorruptedCoreTI"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "GetStoryArcQuestFlag(GetPlayer(), \"MAQ_0004_01_SeepingScarlet\", \"JournalFound\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(), \"MAQ_0004_01_SeepingScarlet\", \"JournalTI\")"
+	},
+	"guid": "108837936518799",
+	"name": "MADD_0004_Orren_54",
+	"typeId": "1091110027"
+}

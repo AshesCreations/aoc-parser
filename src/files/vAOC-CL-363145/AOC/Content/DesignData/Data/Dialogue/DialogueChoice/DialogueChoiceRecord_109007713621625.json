@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"DD9A599C4C5819959E6CFC8AD70BB1FE\", \"New Dawn, Field Marshal.\")",
+	"nextNodeId":
+	{
+		"guid": "109007712900728",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0005_EnemyWithin\",\"MAP_0005_Phase02\")&&\r\n!IsOnStoryArcQuest(GetPlayer(),\"MAQ_0005_ElfFriend\")&&\r\n!IsOnStoryArcQuest(GetPlayer(),\"MAQ_0005_EyesOfAvenmoor\")&&\r\n!IsOnStoryArcQuest(GetPlayer(),\"MAQ_0005_SeekAndDestroy\")&&\r\n!IsOnStoryArcQuest(GetPlayer(),\"MAQ_0005_RoadWarrior\")"
+	},
+	"guid": "109007713621625",
+	"name": "MADD_0005_Stormrazer_18",
+	"typeId": "1091110027"
+}

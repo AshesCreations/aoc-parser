@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"B6A81A684A0CFE613F8FCD993CC44EDA\", \"A found a journal with your family name on it.\")",
+	"nextNodeId":
+	{
+		"guid": "108837907420799",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "GetStoryArcQuestFlag(GetPlayer(), \"MAQ_0004_01_SeepingScarlet\", \"JournalFound\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(), \"MAQ_0004_01_SeepingScarlet\", \"JournalTI\")"
+	},
+	"guid": "108837901784700",
+	"name": "MADD_0004_Orren_35",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"AB7F5C1A4E5D260391E82E83039CC60C\", \"Can you look at this book?\")",
+	"nextNodeId":
+	{
+		"guid": "109082436916936",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005_EyesOfAvenmoor\",\"SpokeToBooksmith\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005_EyesOfAvenmoor\",\"SpokeToAntiquitor\")"
+	},
+	"guid": "109082440193745",
+	"name": "MADD_0005_The_Antiquitor_12",
+	"typeId": "1091110027"
+}

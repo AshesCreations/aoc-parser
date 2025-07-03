@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"3B0BB806408B0757CB2CDAB492809A5D\", \"I was hoping to help.\")",
+	"nextNodeId":
+	{
+		"guid": "108991856203414",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0005_EnemyWithin\",\"MAP_0005_Phase01\")&&\r\n!IsOnStoryArcQuest(GetPlayer(),\"MAQ_0005_BridgeTooFar\")&&\r\n!IsOnStoryArcQuest(GetPlayer(),\"MAQ_0005_PayYourDues\")&&\r\n!IsOnStoryArcQuest(GetPlayer(),\"MAQ_0005_RunToTheHills\")"
+	},
+	"guid": "108991854368405",
+	"name": "MADD_0005_Stormrazer_4",
+	"typeId": "1091110027"
+}

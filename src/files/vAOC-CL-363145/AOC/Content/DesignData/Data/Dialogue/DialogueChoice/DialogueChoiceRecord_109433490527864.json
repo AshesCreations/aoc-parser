@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"CCF9F9C2437582CA1A38D4BDDF7E006E\", \"Cleric Safe\")",
+	"nextNodeId":
+	{
+		"guid": "109434071045771",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "GetPrimaryArchetype(GetPlayer())==ECharacterClass::Cleric&&!IsOnStoryArcQuest(GetPlayer(), \"SAQ_0006_AllIntro_Cleric\")&&!IsOnStoryArcQuest(GetPlayer(), \"SAQ_0006_LionHold_Cleric1\")&&!IsOnStoryArcQuest(GetPlayer(), \"SAQ_0006_LionHold_Cleric2\")&&!IsOnStoryArcQuest(GetPlayer(), \"SAQ_0006_LionHold_Cleric3\")&&!IsOnStoryArcQuest(GetPlayer(), \"SAQ_0006_LionHold_Cleric4\")"
+	},
+	"guid": "109433490527864",
+	"name": "0006_P0_Cleric_81",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,23 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"9AA12BFC4F9F63807A849AA611B718E1\", \"(Continue Quest High)\")",
+	"nextNodeId":
+	{
+		"guid": "108167452382872",
+		"typeId": "1091110028",
+		"name": "GavinQuestPhase0_Node3HighAch"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "108167772460713",
+			"typeId": "1091110030",
+			"name": "AR_0001_Q2_O1_CompleteIntrosInOrder"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "GetStoryArcQuestFlag(GetPlayer(),\"SAQ_0001_Q2_IntroductionsInOrder\",\"ReportedAskedAboutGrayshore\")||\r\nGetStoryArcQuestFlag(GetPlayer(),\"SAQ_0001_Q2_IntroductionsInOrder\",\"ReportedAskedAboutStriders\")||\r\nGetStoryArcQuestFlag(GetPlayer(),\"SAQ_0001_Q2_IntroductionsInOrder\",\"ReportedBrokenCaravan\")||\r\nGetStoryArcQuestFlag(GetPlayer(),\"SAQ_0001_Q2_IntroductionsInOrder\",\"ReportedSlainVigilants\")||\r\nGetStoryArcQuestFlag(GetPlayer(),\"SAQ_0001_Q2_IntroductionsInOrder\",\"ReportedLedger\")"
+	},
+	"guid": "108167441766039",
+	"name": "DC_Gavin_Node3Splitter_HighAch",
+	"typeId": "1091110027"
+}

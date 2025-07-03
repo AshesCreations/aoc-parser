@@ -1,0 +1,23 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"55A74EC94B20F07141BD6AAEE4CC9872\", \"I found this tablet. It appears to be some kind of spell.\")",
+	"nextNodeId":
+	{
+		"guid": "108866661930634",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "108872911574668",
+			"typeId": "1091110030",
+			"name": "AR_0004_FindForbiddenSpellTabletTricia"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "GetStoryArcQuestFlag(GetPlayer(), \"MAQ_0004_04_UnquietDead\", \"TabletFound\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(), \"MAQ_0004_04_UnquietDead\", \"TabletTI\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(), \"MAQ_0004_03_AccursedLegacy\", \"RitualPerformed\")"
+	},
+	"guid": "108866663044748",
+	"name": "MAD_0004_Tricia_58",
+	"typeId": "1091110027"
+}

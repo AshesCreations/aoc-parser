@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"315B0970474E9BBD679BA4B98730DDC0\", \"Quest 2 *busy*\")",
+	"nextNodeId":
+	{
+		"guid": "109222987454100",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsOnStoryArcQuest(GetPlayer(), \"SAQ_0006_LionHold_Ranger2\")&&!CanCompleteQuest(GetPlayer(), \"SAQ_0006_LionHold_Ranger2\")"
+	},
+	"guid": "109222987454081",
+	"name": "0006_P0_Ranger2_6",
+	"typeId": "1091110027"
+}

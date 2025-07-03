@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"4A47E586488FF5118B9B6DBAFBFB5B8D\", \"I\\'ll find your daughter.\")",
+	"nextNodeId":
+	{
+		"guid": "6064628815461154975",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0007_PriestessAndThePiper\",\"MAP_0007_PriestessAndThePiper_Phase02\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0007_GUM_GoneUnMorrow\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_GUM_GoneUnMorrow\",\"MetAnellaUnMorrow\")"
+	},
+	"guid": "6064628815457812638",
+	"name": "MADD_0007_GUM_Dial_Anella_4",
+	"typeId": "1091110027"
+}

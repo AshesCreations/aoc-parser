@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"9C58585745917D032C248AA9D5AA64EE\", \"The Aela Riverlands\")",
+	"nextNodeId":
+	{
+		"guid": "6064628940134613037",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0012_COD_CurseOfDaragal\",\"MAP_0012_COD_Phase02\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0012_TPH_ThePrimeHarvester\",\"ReadOldBook\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0012_TPH_ThePrimeHarvester\",\"ReadAncientImpacts\")"
+	},
+	"guid": "6064628940135399471",
+	"name": "MADD_0012_TPH_BookAncientImpacts_5",
+	"typeId": "1091110027"
+}

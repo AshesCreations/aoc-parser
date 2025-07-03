@@ -1,0 +1,28 @@
+{
+	"baseDuesRequiredId":
+	{
+		"guid": "6064631941188419586",
+		"typeId": "3145314713",
+		"name": "None"
+	},
+	"lateFee": 5,
+	"bAllowPartialFulfillment": false,
+	"overduePeriodDays": 5,
+	"frequencyDuesPaidWeeks": 2,
+	"dueDayOfTheWeek": "Thursday",
+	"citizenshipRankImpact":
+	{
+		"expression": "\r\n//CitizenMod Tooltip: A multiplier to the amount of dues a citizen\r\n//needs to pay based on their citizenship rank\r\nvar CitizenMod = 1.0; \r\n\r\n//Threshold Tooltip: Every x citizens increase the multiplier by 1\r\nvar Threshold = 25.0; \r\n\r\n//if math is less than 1 make it a mod of 1\r\nif(Node_GetCitizenshipRank(GetNodeRecord(), GetPlayerGuid())/Threshold < 1.0)\r\n{set CitizenMod = 1.0;}\r\n\r\n//if math is more than 1, do the math\r\nif(Node_GetCitizenshipRank(GetNodeRecord(), GetPlayerGuid())/Threshold > 1.0)\r\n{set CitizenMod = (Node_GetCitizenshipRank(GetNodeRecord(), GetPlayerGuid())/Threshold);}\r\n\r\nCitizenMod"
+	},
+	"levelImpact":
+	{
+		"expression": "//FOR SOME REASON THIS EVALUATES TWICE AND I HATE MYSELF FOR DOING THIS \r\n\r\n\r\n//CitizenMod Tooltip: A multiplier to the amount of dues a citizen\r\n//needs to pay based on their player level\r\nvar LevelMod = 1.0; \r\n\r\n//Threshold Tooltip: Every x player levels increase the multiplier by 1\r\nvar Threshold = 5.0; \r\n\r\n//If math is less than 1, make it a mod of 1\r\nif(Node_GetPlayerLevel(GetNodeRecord(), GetPlayerGuid())/Threshold < 1.0)\r\n{set LevelMod = 1.0;}\r\n\r\n//If math is more than 1, do the math\r\nif(Node_GetPlayerLevel(GetNodeRecord(), GetPlayerGuid())/Threshold  > 1.0)\r\n{set LevelMod = (Node_GetPlayerLevel(GetNodeRecord(), GetPlayerGuid())/Threshold);}\r\n\r\nLevelMod"
+	},
+	"nonPropertyOwnerImpact":
+	{
+		"expression": "1"
+	},
+	"guid": "6064629641571467265",
+	"name": "CitizenshipDuesDef_Test",
+	"typeId": "89796913"
+}

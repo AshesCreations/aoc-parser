@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"A6206F3B4D9C230CE1EAF8B37FDEDF7E\", \"\\\"The Endless Chest\\\"\")",
+	"nextNodeId":
+	{
+		"guid": "6064629053708894260",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0002_CCC_CollectorOfCursedCurios\",\"MAP_0002_CCC_Phase02\")&&\r\n!IsStoryArcQuestAvailable(GetPlayer(),\"MAQ_0002_TSS_TheSpindleSpider\")"
+	},
+	"guid": "6064629053707714611",
+	"name": "MADD_0002_MOM_VuulVodex_8",
+	"typeId": "1091110027"
+}

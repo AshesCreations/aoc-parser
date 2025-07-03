@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"DA637C4A4C44616B88FC1ABDA15B0892\", \"I\\'ve got the key.\")",
+	"nextNodeId":
+	{
+		"guid": "6064628854700048410",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0007_PriestessAndThePiper\",\"MAP_0007_PriestessAndThePiper_Phase03\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0007_KTC_KeyToTheCitadel\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_KTC_KeyToTheCitadel\",\"KilledFortuneHunter\")"
+	},
+	"guid": "6064628854699982873",
+	"name": "MADD_0007_KTC_ThePiper_Phase03_17",
+	"typeId": "1091110027"
+}

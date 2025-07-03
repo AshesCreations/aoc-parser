@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"30E7569B472F15A0ACB04BB0A4E6FC0D\", \"What about the hills?\")",
+	"nextNodeId":
+	{
+		"guid": "109359051069062",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0005_EnemyWithin\",\"MAP_0005_Phase03\")&&\r\n!IsOnStoryArcQuest(GetPlayer(),\"MAQ_0005_PrepareForBattle\")"
+	},
+	"guid": "109354344404615",
+	"name": "MADD_0005_Stormrazer_Phase03_04_4",
+	"typeId": "1091110027"
+}

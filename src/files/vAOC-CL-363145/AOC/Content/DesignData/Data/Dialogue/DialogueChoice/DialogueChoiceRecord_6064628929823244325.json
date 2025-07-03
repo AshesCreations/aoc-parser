@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"7932B2B54C9ACFF1112B04BCF8E48125\", \"oil the stones\")",
+	"nextNodeId":
+	{
+		"guid": "6064629105123917855",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "!IsStoryArcQuestAvailable(GetPlayer(),\"MA_0010_TheForgemastersInterview\")\r\n&& IsStoryArcQuestAvailable(GetPlayer(),\"MA_0010_WeOilTheStones\")\r\n&&!IsOnStoryArcQuest(GetPlayer(),\"MA_0010_WeOilTheStones\")"
+	},
+	"guid": "6064628929823244325",
+	"name": "MA_0010_FI_Forgemaster_33",
+	"typeId": "1091110027"
+}

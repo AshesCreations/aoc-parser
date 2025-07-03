@@ -1,0 +1,23 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"1404A43E499817CCB4C476B212C4BDBE\", \"I found people that were being held prisoner!\")",
+	"nextNodeId":
+	{
+		"guid": "109195986884274",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064628633830227986",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "GetStoryArcQuestFlag(GetPlayer(),\"SAQ_0006_LionHold_Tank_Ruin3\",\"TankCaptiveClue1\")&&!GetStoryArcQuestFlag(GetPlayer(),\"SAQ_0006_LionHold_Tank_Ruin3\",\"Tank3Report1\")"
+	},
+	"guid": "109189613180547",
+	"name": "0006_P0_Tank2_76",
+	"typeId": "1091110027"
+}

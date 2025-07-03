@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"6462A8364F1356A8B190CBB16E347387\", \"(Quest Available)\")",
+	"nextNodeId":
+	{
+		"guid": "108198659380856",
+		"typeId": "1091110028",
+		"name": "Gavin_Phase_0_GreetingNode"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcQuestAvailable(GetPlayer(), \"SAQ_0001_Q2_IntroductionsInOrder\")&&\r\n!IsOnStoryArcQuest(GetPlayer(), \"SAQ_0001_Q2_IntroductionsInOrder\")"
+	},
+	"guid": "108167088854657",
+	"name": "DC_Gavin_QuestStarter",
+	"typeId": "1091110027"
+}

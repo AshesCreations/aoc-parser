@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"2095C1574C370DE98A786FA985EBB4C9\", \"I heard you sing Kruja.\")",
+	"nextNodeId":
+	{
+		"guid": "6064629109851619442",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MIA_0003_ROW_RelicOfWar\",\"MAP_0003_ROW_Phase01\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0003_TGS_TheGreenScarab\",\"EnteredTavern\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0003_TGS_TheGreenScarab\",\"AskedMinstrel\")"
+	},
+	"guid": "6064629109852602485",
+	"name": "MIDD_0003_TGS_DaelaKav_6",
+	"typeId": "1091110027"
+}

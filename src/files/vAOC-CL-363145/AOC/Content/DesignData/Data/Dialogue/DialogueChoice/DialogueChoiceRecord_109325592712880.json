@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"DE1350814C9C0B143265298CA0B6808E\", \"Q1-ready\")",
+	"nextNodeId":
+	{
+		"guid": "109325596907189",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsOnStoryArcQuest(GetPlayer(), \"SAQ_0006_AllIntro_Tank\")&&GetStoryArcQuestFlag(GetPlayer(),\"SAQ_0006_AllIntro_Tank\",\"PortalIntroDone\")"
+	},
+	"guid": "109325592712880",
+	"name": "0006_P0_Tank_40",
+	"typeId": "1091110027"
+}

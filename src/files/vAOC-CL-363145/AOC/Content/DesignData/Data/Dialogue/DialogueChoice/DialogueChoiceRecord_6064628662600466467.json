@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"B0E44F824E355E51BF5285B5B681727B\", \"What\\'s a gobologist?\")",
+	"nextNodeId":
+	{
+		"guid": "6064628662587424793",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0007_PriestessAndThePiper\",\"MAP_0007_PriestessAndThePiper_Phase01\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0007_TOT_TaleOfATotem\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_TOT_TaleOfATotem\",\"ShowedProffTotem\")"
+	},
+	"guid": "6064628662600466467",
+	"name": "MADD_0007_TOT_ProfessorHughes_13",
+	"typeId": "1091110027"
+}

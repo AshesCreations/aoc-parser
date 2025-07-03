@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"E419051E4A649E88B961AFA8D2F4D7FF\", \"About those bandits. . .\")",
+	"nextNodeId":
+	{
+		"guid": "108190442083978",
+		"typeId": "1091110028",
+		"name": "Harriet_Phase0_InitialQuestTurnIn"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "GetStoryArcQuestFlag(GetPlayer(),\"SAQ_0001_Q1_SecuringSupplies\",\"SuppliesSecured\")||\r\nGetStoryArcQuestFlag(GetPlayer(),\"SAQ_0001_Q1_SecuringSupplies\",\"SettlersRescued\")||\r\nGetStoryArcQuestFlag(GetPlayer(),\"SAQ_0001_Q1_SecuringSupplies\",\"BlockadesDismantled\")"
+	},
+	"guid": "108190396339847",
+	"name": "DC_Harriet_P0_QuestCont",
+	"typeId": "1091110027"
+}

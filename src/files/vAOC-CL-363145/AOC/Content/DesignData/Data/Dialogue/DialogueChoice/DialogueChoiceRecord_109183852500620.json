@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"EEC3524D41C5AEA1FFF69682C4F04520\", \"Tank3 - incomplete\")",
+	"nextNodeId":
+	{
+		"guid": "109354762458756",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsOnStoryArcQuest(GetPlayer(), \"SAQ_0006_LionHold_Tank_Ruin3\")&&!CanCompleteQuest(GetPlayer(), \"SAQ_0006_LionHold_Tank_Ruin3\")"
+	},
+	"guid": "109183852500620",
+	"name": "0006_P0_Tank2_60",
+	"typeId": "1091110027"
+}

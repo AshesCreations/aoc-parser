@@ -1,0 +1,23 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"805388AB45F8F2864E3A5E88569F81FA\", \"Unlock the chest.\")",
+	"nextNodeId":
+	{
+		"guid": "109127819875983",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "109285862495869",
+			"typeId": "1091110030",
+			"name": "MAAR_0005_EF_GiveItem_ThanalasMap"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005_ElfFriend\",\"HaveZanisianKey\")"
+	},
+	"guid": "109127821776529",
+	"name": "MADD_0005_EF_PyrianChest_5",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,23 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"4B91856B46C9D807E3102DB36A801FAC\", \"Harriet Pritcher organizes the Grayshore Transporters around here. She claims she\\'s got a line on quite a lot of coin.\")",
+	"nextNodeId":
+	{
+		"guid": "108167242077833",
+		"typeId": "1091110028",
+		"name": "GavinQuestPhase0_Node2a"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "108167744149156",
+			"typeId": "1091110030",
+			"name": "AR_0001_Q2_O1_ReportAskedAboutGrayshore"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "GetStoryArcQuestFlag(GetPlayer(),\"SAQ_0001_Q2_IntroductionsInOrder\",\"TalkedToHarriet\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"SAQ_0001_Q2_IntroductionsInOrder\",\"ReportedAskedAboutGrayshore\")"
+	},
+	"guid": "108167215208071",
+	"name": "DC_Gavin_Node2_ReportHarriet",
+	"typeId": "1091110027"
+}

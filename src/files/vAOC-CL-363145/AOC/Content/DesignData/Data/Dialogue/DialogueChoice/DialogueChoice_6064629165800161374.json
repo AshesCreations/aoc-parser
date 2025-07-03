@@ -1,0 +1,23 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"A44CE94E49E4EEE6565B0394F99FCDB9\", \"I\\'ve delivered the bundle.\")",
+	"nextNodeId":
+	{
+		"guid": "6064629165800161368",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064629165790920711",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "IsOnStoryArcQuest(GetPlayer(),\"MAQ_0015_P1_ReciteTheWords\")&&GetStoryArcQuestFlag(GetPlayer(), \"MAQ_0015_P1_ReciteTheWords\", \"DeliveredBundle\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(), \"MAQ_0015_P1_ReciteTheWords\", \"RitualDone\")"
+	},
+	"guid": "6064629165800161374",
+	"name": "MADD_0015_Dory_83",
+	"typeId": "1091110027"
+}

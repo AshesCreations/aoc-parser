@@ -1,0 +1,28 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"20992CB44D99B34413470AB928799503\", \"OK\")",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "109127185946255",
+			"typeId": "1091110030",
+			"name": "AR_0006_Quest_AllIntro_Tank"
+		},
+		{
+			"guid": "109382259922552",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "GetPrimaryArchetype(GetPlayer())==ECharacterClass::Fighter"
+	},
+	"guid": "109201781970705",
+	"name": "0006_P0_AllIntro_53",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,23 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"D54D742A44B088EB827510B6D8AD9310\", \"I\\'ve recovered some of the lost goods.\")",
+	"nextNodeId":
+	{
+		"guid": "108865842009737",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "108872898074246",
+			"typeId": "1091110030",
+			"name": "AR_0004_LostGoodTI"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "GetStoryArcQuestFlag(GetPlayer(), \"MAQ_0004_02_SunkCost\", \"LostGoodsRecovered\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(), \"MAQ_0004_02_SunkCost\", \"LostGoodsTI\")"
+	},
+	"guid": "108865835783814",
+	"name": "MAD_0004_Tricia_27",
+	"typeId": "1091110027"
+}

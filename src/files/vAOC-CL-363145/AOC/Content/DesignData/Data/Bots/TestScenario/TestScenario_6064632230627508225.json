@@ -1,0 +1,44 @@
+{
+	"spawnAreaId":
+	{
+		"guid": "108872815302266",
+		"typeId": "130316003",
+		"name": "DefaultSpawn"
+	},
+	"botConfigId":
+	{
+		"guid": "6064631346935496706",
+		"typeId": "130316004",
+		"name": "MurderBotConfig"
+	},
+	"botBehaviorId":
+	{
+		"guid": "6064630893070450690",
+		"typeId": "130316002",
+		"name": "MurderBotBehavior"
+	},
+	"statCaptureId":
+	{
+		"guid": "0",
+		"typeId": "130316005",
+		"name": "None"
+	},
+	"isFullyAutonomous": true,
+	"description": "PvP Encounter that lasts one hour then the bots will all shutdown",
+	"botFollowPathId":
+	{
+		"guid": "0",
+		"typeId": "130316007",
+		"name": "None"
+	},
+	"bNeedsMinimumBotsToStart": false,
+	"numberOfClientsToStart": 0,
+	"prepTimeOutInSeconds": 0,
+	"prepTimeoutHandler": "CancelTestScenario",
+	"bBotsCanJoinWhileActive": true,
+	"bOnlyOneInstanceAllowed": true,
+	"scenarioTimeInSeconds": 3600,
+	"guid": "6064632230627508225",
+	"name": "TS_Any_PvPBot_AnyClass_PlayTestApproved_1Hour",
+	"typeId": "130316006"
+}

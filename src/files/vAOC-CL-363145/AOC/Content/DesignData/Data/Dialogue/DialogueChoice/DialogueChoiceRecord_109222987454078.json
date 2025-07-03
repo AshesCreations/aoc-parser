@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"717DD9E24D3016B89B9BFE97CE154DD8\", \"Phase 1,2,4,5\")",
+	"nextNodeId":
+	{
+		"guid": "109222987454116",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "(IsStoryArcInPhase(\"SA_0006_RuinsofAela\", \"SAP_0006_RoA_1\" )) || (IsStoryArcInPhase(\"SA_0006_RuinsofAela\", \"SAP_0006_RoA_2\" )) || (IsStoryArcInPhase(\"SA_0006_RuinsofAela\", \"SAP_0006_RoA_4\" )) || (IsStoryArcInPhase(\"SA_0006_RuinsofAela\", \"SAP_0006_RoA_5\" )) && (GetPrimaryArchetype(GetPlayer())!=ECharacterClass::Ranger)"
+	},
+	"guid": "109222987454078",
+	"name": "0006_P0_Ranger2_3",
+	"typeId": "1091110027"
+}

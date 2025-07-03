@@ -1,0 +1,23 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"7C4C49BC4CE1A7A7797C419EC02C1E32\", \"I\\'ve got the reagents you asked for.\")",
+	"nextNodeId":
+	{
+		"guid": "6064629165800161321",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064629165788168197",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "GetStoryArcQuestFlag(GetPlayer(), \"MAQ_0015_P0_RecoveringReagents\", \"FlowersCollected\")&&\r\nGetStoryArcQuestFlag(GetPlayer(), \"MAQ_0015_P0_RecoveringReagents\", \"BeastsKilled\")&&\r\nIsOnStoryArcQuest(GetPlayer(), \"MAQ_0015_P0_RecoveringReagents\")"
+	},
+	"guid": "6064629166602518529",
+	"name": "MADD_0015_Dory_118",
+	"typeId": "1091110027"
+}

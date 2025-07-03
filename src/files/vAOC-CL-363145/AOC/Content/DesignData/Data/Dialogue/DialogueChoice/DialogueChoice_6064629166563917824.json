@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"2FA0662A4667316429F635A1D14AC80B\", \"Can I do anything for you?\")",
+	"nextNodeId":
+	{
+		"guid": "6064629165800161347",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcQuestAvailable(GetPlayer(), \"MAQ_0015_P0_SanctifyTheShrine\")&&\r\n!IsOnStoryArcQuest(GetPlayer(), \"MAQ_0015_P0_SanctifyTheShrine\")"
+	},
+	"guid": "6064629166563917824",
+	"name": "MADD_0015_Dory_117",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,1022 @@
+{
+	"globalTaxTable":
+	{
+		"(TagName=\"NodeTax\")":
+		{
+			"taxDetails":
+			{
+				"guid": "6064632157081894912",
+				"typeId": "89796911",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "true"
+			}
+		},
+		"(TagName=\"NodeTax.ArtisanTax\")":
+		{
+			"taxDetails":
+			{
+				"guid": "6064632157081894912",
+				"typeId": "89796911",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "true"
+			}
+		},
+		"(TagName=\"NodeTax.ArtisanTax.AgriculturalSupplyBaseTax\")":
+		{
+			"taxDetails":
+			{
+				"guid": "6064632157081894912",
+				"typeId": "89796911",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "Node_NumOfServiceBuilding(GetNodeRecord(), $#7823463:6064629467050412038$) > 0"
+			}
+		},
+		"(TagName=\"NodeTax.ArtisanTax.AgriculturalSupplyBaseTax.SalesTax\")":
+		{
+			"taxDetails":
+			{
+				"guid": "6064632157081894912",
+				"typeId": "89796911",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "Node_NumOfServiceBuilding(GetNodeRecord(), $#7823463:6064629467050412038$) > 0"
+			}
+		},
+		"(TagName=\"NodeTax.ArtisanTax.AgriculturalSupplyBaseTax.ServiceTax\")":
+		{
+			"taxDetails":
+			{
+				"guid": "6064632157081894912",
+				"typeId": "89796911",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "Node_NumOfServiceBuilding(GetNodeRecord(), $#7823463:6064629467050412038$) > 0"
+			}
+		},
+		"(TagName=\"NodeTax.ArtisanTax.AgriculturalSupplyBaseTax.ServiceTax.AnimalHusbandryServiceTax\")":
+		{
+			"taxDetails":
+			{
+				"guid": "6064632157081894912",
+				"typeId": "89796911",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "Node_NumOfServiceBuildingExpansion(GetNodeRecord(), $#7823461:6064631874323808273$) > 0"
+			}
+		},
+		"(TagName=\"NodeTax.ArtisanTax.AgriculturalSupplyBaseTax.ServiceTax.FarmingServiceTax\")":
+		{
+			"taxDetails":
+			{
+				"guid": "6064632157081894912",
+				"typeId": "89796911",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "Node_NumOfServiceBuildingExpansion(GetNodeRecord(), $#7823461:6064631874200469515$) > 0"
+			}
+		},
+		"(TagName=\"NodeTax.ArtisanTax.AgriculturalSupplyBaseTax.ServiceTax.HerbalistServiceTax\")":
+		{
+			"taxDetails":
+			{
+				"guid": "6064632157081894912",
+				"typeId": "89796911",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "Node_NumOfServiceBuildingExpansion(GetNodeRecord(), $#7823461:6064631874110750724$) > 0"
+			}
+		},
+		"(TagName=\"NodeTax.ArtisanTax.CookhouseBaseTax\")":
+		{
+			"taxDetails":
+			{
+				"guid": "6064632157081894912",
+				"typeId": "89796911",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "Node_NumOfServiceBuilding(GetNodeRecord(), $#7823463:6064629467051722759$) > 0"
+			}
+		},
+		"(TagName=\"NodeTax.ArtisanTax.CookhouseBaseTax.SalesTax\")":
+		{
+			"taxDetails":
+			{
+				"guid": "6064632157081894912",
+				"typeId": "89796911",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "Node_NumOfServiceBuilding(GetNodeRecord(), $#7823463:6064629467051722759$) > 0"
+			}
+		},
+		"(TagName=\"NodeTax.ArtisanTax.CookhouseBaseTax.ServiceTax\")":
+		{
+			"taxDetails":
+			{
+				"guid": "6064632157081894912",
+				"typeId": "89796911",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "Node_NumOfServiceBuilding(GetNodeRecord(), $#7823463:6064629467051722759$) > 0"
+			}
+		},
+		"(TagName=\"NodeTax.ArtisanTax.CookhouseBaseTax.ServiceTax.ChefsWorkshopServiceTax\")":
+		{
+			"taxDetails":
+			{
+				"guid": "6064632157081894912",
+				"typeId": "89796911",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "Node_NumOfServiceBuildingExpansion(GetNodeRecord(), $#7823461:6064631873800634382$) > 0"
+			}
+		},
+		"(TagName=\"NodeTax.ArtisanTax.CookhouseBaseTax.ServiceTax.FishingSupplyServiceTax\")":
+		{
+			"taxDetails":
+			{
+				"guid": "6064632157081894912",
+				"typeId": "89796911",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "Node_NumOfServiceBuildingExpansion(GetNodeRecord(), $#7823461:6064631873888387098$) > 0"
+			}
+		},
+		"(TagName=\"NodeTax.ArtisanTax.CookhouseBaseTax.ServiceTax.HuntingSupplyServiceTax\")":
+		{
+			"taxDetails":
+			{
+				"guid": "6064632157081894912",
+				"typeId": "89796911",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "Node_NumOfServiceBuildingExpansion(GetNodeRecord(), $#7823461:6064631873822785555$) > 0"
+			}
+		},
+		"(TagName=\"NodeTax.ArtisanTax.HideworksBaseTax\")":
+		{
+			"taxDetails":
+			{
+				"guid": "6064632157081894912",
+				"typeId": "89796911",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "Node_NumOfServiceBuilding(GetNodeRecord(), $#7823463:6064629467052967944$) > 0"
+			}
+		},
+		"(TagName=\"NodeTax.ArtisanTax.HideworksBaseTax.SalesTax\")":
+		{
+			"taxDetails":
+			{
+				"guid": "6064632157081894912",
+				"typeId": "89796911",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "Node_NumOfServiceBuilding(GetNodeRecord(), $#7823463:6064629467052967944$) > 0"
+			}
+		},
+		"(TagName=\"NodeTax.ArtisanTax.HideworksBaseTax.ServiceTax\")":
+		{
+			"taxDetails":
+			{
+				"guid": "6064632157081894912",
+				"typeId": "89796911",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "Node_NumOfServiceBuilding(GetNodeRecord(), $#7823463:6064629467052967944$) > 0"
+			}
+		},
+		"(TagName=\"NodeTax.ArtisanTax.HideworksBaseTax.ServiceTax.LeatherworkingServiceTax\")":
+		{
+			"taxDetails":
+			{
+				"guid": "6064632157081894912",
+				"typeId": "89796911",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "Node_NumOfServiceBuildingExpansion(GetNodeRecord(), $#7823461:6064631874618851358$) > 0"
+			}
+		},
+		"(TagName=\"NodeTax.ArtisanTax.HideworksBaseTax.ServiceTax.TannerServiceTax\")":
+		{
+			"taxDetails":
+			{
+				"guid": "6064632157081894912",
+				"typeId": "89796911",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "Node_NumOfServiceBuildingExpansion(GetNodeRecord(), $#7823461:6064631874556002328$) > 0"
+			}
+		},
+		"(TagName=\"NodeTax.ArtisanTax.LaboratoryBaseTax\")":
+		{
+			"taxDetails":
+			{
+				"guid": "6064632157081894912",
+				"typeId": "89796911",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "Node_NumOfServiceBuilding(GetNodeRecord(), $#7823463:6064629467054278665$) > 0"
+			}
+		},
+		"(TagName=\"NodeTax.ArtisanTax.LaboratoryBaseTax.SalesTax\")":
+		{
+			"taxDetails":
+			{
+				"guid": "6064632157081894912",
+				"typeId": "89796911",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "Node_NumOfServiceBuilding(GetNodeRecord(), $#7823463:6064629467054278665$) > 0"
+			}
+		},
+		"(TagName=\"NodeTax.ArtisanTax.LaboratoryBaseTax.ServiceTax\")":
+		{
+			"taxDetails":
+			{
+				"guid": "6064632157081894912",
+				"typeId": "89796911",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "Node_NumOfServiceBuilding(GetNodeRecord(), $#7823463:6064629467054278665$) > 0"
+			}
+		},
+		"(TagName=\"NodeTax.ArtisanTax.LaboratoryBaseTax.ServiceTax.AlchemistServiceTax\")":
+		{
+			"taxDetails":
+			{
+				"guid": "6064632157081894912",
+				"typeId": "89796911",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "Node_NumOfServiceBuildingExpansion(GetNodeRecord(), $#7823461:6064631873915322400$) > 0"
+			}
+		},
+		"(TagName=\"NodeTax.ArtisanTax.LaboratoryBaseTax.ServiceTax.ArcaneServiceTax\")":
+		{
+			"taxDetails":
+			{
+				"guid": "6064632157081894912",
+				"typeId": "89796911",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "Node_NumOfServiceBuildingExpansion(GetNodeRecord(), $#7823461:6064631874036760619$) > 0"
+			}
+		},
+		"(TagName=\"NodeTax.ArtisanTax.LaboratoryBaseTax.ServiceTax.ScribeServiceTax\")":
+		{
+			"taxDetails":
+			{
+				"guid": "6064632157081894912",
+				"typeId": "89796911",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "Node_NumOfServiceBuildingExpansion(GetNodeRecord(), $#7823461:6064631873998946341$) > 0"
+			}
+		},
+		"(TagName=\"NodeTax.ArtisanTax.SmithyBaseTax\")":
+		{
+			"taxDetails":
+			{
+				"guid": "6064632157081894912",
+				"typeId": "89796911",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "Node_NumOfServiceBuilding(GetNodeRecord(), $#7823463:109008358102674$) > 0"
+			}
+		},
+		"(TagName=\"NodeTax.ArtisanTax.SmithyBaseTax.SalesTax\")":
+		{
+			"taxDetails":
+			{
+				"guid": "6064632157081894912",
+				"typeId": "89796911",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "Node_NumOfServiceBuilding(GetNodeRecord(), $#7823463:109008358102674$) > 0"
+			}
+		},
+		"(TagName=\"NodeTax.ArtisanTax.SmithyBaseTax.ServiceTax\")":
+		{
+			"taxDetails":
+			{
+				"guid": "6064632157081894912",
+				"typeId": "89796911",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "Node_NumOfServiceBuilding(GetNodeRecord(), $#7823463:109008358102674$) > 0"
+			}
+		},
+		"(TagName=\"NodeTax.ArtisanTax.SmithyBaseTax.ServiceTax.ArmorsmithServiceTax\")":
+		{
+			"taxDetails":
+			{
+				"guid": "6064632157081894912",
+				"typeId": "89796911",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "Node_NumOfServiceBuildingExpansion(GetNodeRecord(), $#7823461:6064628974059782157$) > 0"
+			}
+		},
+		"(TagName=\"NodeTax.ArtisanTax.SmithyBaseTax.ServiceTax.MetalworkingServiceTax\")":
+		{
+			"taxDetails":
+			{
+				"guid": "6064632157081894912",
+				"typeId": "89796911",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "Node_NumOfServiceBuildingExpansion(GetNodeRecord(), $#7823461:109003759507081$) > 0"
+			}
+		},
+		"(TagName=\"NodeTax.ArtisanTax.SmithyBaseTax.ServiceTax.WeaponsmithServiceTax\")":
+		{
+			"taxDetails":
+			{
+				"guid": "6064632157081894912",
+				"typeId": "89796911",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "Node_NumOfServiceBuildingExpansion(GetNodeRecord(), $#7823461:109003759507080$) > 0"
+			}
+		},
+		"(TagName=\"NodeTax.ArtisanTax.StoneworksBaseTax\")":
+		{
+			"taxDetails":
+			{
+				"guid": "6064632157081894912",
+				"typeId": "89796911",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "Node_NumOfServiceBuilding(GetNodeRecord(), $#7823463:6064629467058210828$) > 0"
+			}
+		},
+		"(TagName=\"NodeTax.ArtisanTax.StoneworksBaseTax.SalesTax\")":
+		{
+			"taxDetails":
+			{
+				"guid": "6064632157081894912",
+				"typeId": "89796911",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "Node_NumOfServiceBuilding(GetNodeRecord(), $#7823463:6064629467058210828$) > 0"
+			}
+		},
+		"(TagName=\"NodeTax.ArtisanTax.StoneworksBaseTax.ServiceTax\")":
+		{
+			"taxDetails":
+			{
+				"guid": "6064632157081894912",
+				"typeId": "89796911",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "Node_NumOfServiceBuilding(GetNodeRecord(), $#7823463:6064629467058210828$) > 0"
+			}
+		},
+		"(TagName=\"NodeTax.ArtisanTax.StoneworksBaseTax.ServiceTax.JewelersServiceTax\")":
+		{
+			"taxDetails":
+			{
+				"guid": "6064632157081894912",
+				"typeId": "89796911",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "Node_NumOfServiceBuildingExpansion(GetNodeRecord(), $#7823461:6064631861839986700$) > 0"
+			}
+		},
+		"(TagName=\"NodeTax.ArtisanTax.StoneworksBaseTax.ServiceTax.QuarryServiceTax\")":
+		{
+			"taxDetails":
+			{
+				"guid": "6064632157081894912",
+				"typeId": "89796911",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "Node_NumOfServiceBuildingExpansion(GetNodeRecord(), $#7823461:6064631861787492358$) > 0"
+			}
+		},
+		"(TagName=\"NodeTax.ArtisanTax.StoneworksBaseTax.ServiceTax.StoneMasonServiceTax\")":
+		{
+			"taxDetails":
+			{
+				"guid": "6064632157081894912",
+				"typeId": "89796911",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "Node_NumOfServiceBuildingExpansion(GetNodeRecord(), $#7823461:6064631861819539465$) > 0"
+			}
+		},
+		"(TagName=\"NodeTax.ArtisanTax.TextileMillBaseTax\")":
+		{
+			"taxDetails":
+			{
+				"guid": "6064632157081894912",
+				"typeId": "89796911",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "Node_NumOfServiceBuilding(GetNodeRecord(), $#7823463:6064629467062077455$) > 0"
+			}
+		},
+		"(TagName=\"NodeTax.ArtisanTax.TextileMillBaseTax.SalesTax\")":
+		{
+			"taxDetails":
+			{
+				"guid": "6064632157081894912",
+				"typeId": "89796911",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "Node_NumOfServiceBuilding(GetNodeRecord(), $#7823463:6064629467062077455$) > 0"
+			}
+		},
+		"(TagName=\"NodeTax.ArtisanTax.TextileMillBaseTax.ServiceTax\")":
+		{
+			"taxDetails":
+			{
+				"guid": "6064632157081894912",
+				"typeId": "89796911",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "Node_NumOfServiceBuilding(GetNodeRecord(), $#7823463:6064629467062077455$) > 0"
+			}
+		},
+		"(TagName=\"NodeTax.ArtisanTax.TextileMillBaseTax.ServiceTax.TailorStorefrontServiceTax\")":
+		{
+			"taxDetails":
+			{
+				"guid": "6064632157081894912",
+				"typeId": "89796911",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "Node_NumOfServiceBuildingExpansion(GetNodeRecord(), $#7823461:6064631862974545928$) > 0"
+			}
+		},
+		"(TagName=\"NodeTax.ArtisanTax.TextileMillBaseTax.ServiceTax.WeavingShopServiceTax\")":
+		{
+			"taxDetails":
+			{
+				"guid": "6064632157081894912",
+				"typeId": "89796911",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "Node_NumOfServiceBuildingExpansion(GetNodeRecord(), $#7823461:6064631862950952965$) > 0"
+			}
+		},
+		"(TagName=\"NodeTax.ArtisanTax.WoodshopBaseTax\")":
+		{
+			"taxDetails":
+			{
+				"guid": "6064632157081894912",
+				"typeId": "89796911",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "Node_NumOfServiceBuilding(GetNodeRecord(), $#7823463:6064629467066009618$) > 0"
+			}
+		},
+		"(TagName=\"NodeTax.ArtisanTax.WoodshopBaseTax.SalesTax\")":
+		{
+			"taxDetails":
+			{
+				"guid": "6064632157081894912",
+				"typeId": "89796911",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "Node_NumOfServiceBuilding(GetNodeRecord(), $#7823463:6064629467066009618$) > 0"
+			}
+		},
+		"(TagName=\"NodeTax.ArtisanTax.WoodshopBaseTax.ServiceTax\")":
+		{
+			"taxDetails":
+			{
+				"guid": "6064632157081894912",
+				"typeId": "89796911",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "Node_NumOfServiceBuilding(GetNodeRecord(), $#7823463:6064629467066009618$) > 0"
+			}
+		},
+		"(TagName=\"NodeTax.ArtisanTax.WoodshopBaseTax.ServiceTax.CarpentryServiceTax\")":
+		{
+			"taxDetails":
+			{
+				"guid": "6064632157081894912",
+				"typeId": "89796911",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "Node_NumOfServiceBuildingExpansion(GetNodeRecord(), $#7823461:6064631874188673084$) > 0"
+			}
+		},
+		"(TagName=\"NodeTax.ArtisanTax.WoodshopBaseTax.ServiceTax.LumberJackingServiceTax\")":
+		{
+			"taxDetails":
+			{
+				"guid": "6064632157081894912",
+				"typeId": "89796911",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "Node_NumOfServiceBuildingExpansion(GetNodeRecord(), $#7823461:6064631874132967473$) > 0"
+			}
+		},
+		"(TagName=\"NodeTax.ArtisanTax.WoodshopBaseTax.ServiceTax.LumberMillServiceTax\")":
+		{
+			"taxDetails":
+			{
+				"guid": "6064632157081894912",
+				"typeId": "89796911",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "Node_NumOfServiceBuildingExpansion(GetNodeRecord(), $#7823461:6064631874165014583$) > 0"
+			}
+		},
+		"(TagName=\"NodeTax.GoodsTax\")":
+		{
+			"taxDetails":
+			{
+				"guid": "6064632157081894912",
+				"typeId": "89796911",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "true"
+			}
+		},
+		"(TagName=\"NodeTax.GoodsTax.MarketplaceTax\")":
+		{
+			"taxDetails":
+			{
+				"guid": "6064632157081894912",
+				"typeId": "89796911",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "Node_NumOfServiceBuilding(GetNodeRecord(), $#7823463:6064629020143452179$) > 0"
+			}
+		},
+		"(TagName=\"NodeTax.GoodsTax.MarketplaceTax.BlackMarketTax\")":
+		{
+			"taxDetails":
+			{
+				"guid": "6064632157081894912",
+				"typeId": "89796911",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "Node_NumOfServiceBuildingExpansion(GetNodeRecord(), $#7823461:6064629902623047707$) > 0"
+			}
+		},
+		"(TagName=\"NodeTax.GoodsTax.MarketplaceTax.LuxuryGoodsTax\")":
+		{
+			"taxDetails":
+			{
+				"guid": "6064632157081894912",
+				"typeId": "89796911",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "Node_NumOfServiceBuildingExpansion(GetNodeRecord(), $#7823461:6064629902613741593$) > 0"
+			}
+		},
+		"(TagName=\"NodeTax.GoodsTax.UprgadeStorageTax\")":
+		{
+			"taxDetails":
+			{
+				"guid": "6064632157081894912",
+				"typeId": "89796911",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "Node_NumOfServiceBuilding(GetNodeRecord(), $#7823463:109263318767269$) > 0"
+			}
+		},
+		"(TagName=\"NodeTax.TradeTax\")":
+		{
+			"taxDetails":
+			{
+				"guid": "6064632157081894912",
+				"typeId": "89796911",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "true"
+			}
+		},
+		"(TagName=\"NodeTax.TradeTax.CaravansaryTax\")":
+		{
+			"taxDetails":
+			{
+				"guid": "6064632157081894912",
+				"typeId": "89796911",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "Node_NumOfServiceBuilding(GetNodeRecord(), $#7823463:109143839823480$) > 0"
+			}
+		},
+		"(TagName=\"NodeTax.TradeTax.HuntingLodgeTax\")":
+		{
+			"taxDetails":
+			{
+				"guid": "6064632157081894912",
+				"typeId": "89796911",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "Node_NumOfServiceBuilding(GetNodeRecord(), $#7823463:6064629020148826132$) > 0"
+			}
+		},
+		"(TagName=\"NodeTax.ArtisanTax.AgriculturalSupplyBaseTax.SalesTax.AnimalHusbandrySalesTax\")":
+		{
+			"taxDetails":
+			{
+				"guid": "6064632157081894912",
+				"typeId": "89796911",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "Node_NumOfServiceBuildingExpansion(GetNodeRecord(), $#7823461:6064631874323808273$) > 0"
+			}
+		},
+		"(TagName=\"NodeTax.ArtisanTax.AgriculturalSupplyBaseTax.SalesTax.FarmingSalesTax\")":
+		{
+			"taxDetails":
+			{
+				"guid": "6064632157081894912",
+				"typeId": "89796911",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "Node_NumOfServiceBuildingExpansion(GetNodeRecord(), $#7823461:6064631874200469515$) > 0"
+			}
+		},
+		"(TagName=\"NodeTax.ArtisanTax.AgriculturalSupplyBaseTax.SalesTax.HerbalistServiceTax\")":
+		{
+			"taxDetails":
+			{
+				"guid": "6064632157081894912",
+				"typeId": "89796911",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "Node_NumOfServiceBuildingExpansion(GetNodeRecord(), $#7823461:6064631874110750724$) > 0"
+			}
+		},
+		"(TagName=\"NodeTax.ArtisanTax.CookhouseBaseTax.SalesTax.ChefsWorkshopSalesTax\")":
+		{
+			"taxDetails":
+			{
+				"guid": "6064632157081894912",
+				"typeId": "89796911",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "Node_NumOfServiceBuildingExpansion(GetNodeRecord(), $#7823461:6064631873800634382$) > 0"
+			}
+		},
+		"(TagName=\"NodeTax.ArtisanTax.CookhouseBaseTax.SalesTax.FishingSupplySalesTax\")":
+		{
+			"taxDetails":
+			{
+				"guid": "6064632157081894912",
+				"typeId": "89796911",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "Node_NumOfServiceBuildingExpansion(GetNodeRecord(), $#7823461:6064631873888387098$) > 0"
+			}
+		},
+		"(TagName=\"NodeTax.ArtisanTax.CookhouseBaseTax.SalesTax.HuntingSupplySalesTax\")":
+		{
+			"taxDetails":
+			{
+				"guid": "6064632157081894912",
+				"typeId": "89796911",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "Node_NumOfServiceBuildingExpansion(GetNodeRecord(), $#7823461:6064631873822785555$) > 0"
+			}
+		},
+		"(TagName=\"NodeTax.ArtisanTax.HideworksBaseTax.SalesTax.LeatherworkingSalesTax\")":
+		{
+			"taxDetails":
+			{
+				"guid": "6064632157081894912",
+				"typeId": "89796911",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "Node_NumOfServiceBuildingExpansion(GetNodeRecord(), $#7823461:6064631874618851358$) > 0"
+			}
+		},
+		"(TagName=\"NodeTax.ArtisanTax.HideworksBaseTax.SalesTax.TannerSalesTax\")":
+		{
+			"taxDetails":
+			{
+				"guid": "6064632157081894912",
+				"typeId": "89796911",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "Node_NumOfServiceBuildingExpansion(GetNodeRecord(), $#7823461:6064631874556002328$) > 0"
+			}
+		},
+		"(TagName=\"NodeTax.ArtisanTax.LaboratoryBaseTax.SalesTax.AlchemistSalesTax\")":
+		{
+			"taxDetails":
+			{
+				"guid": "6064632157081894912",
+				"typeId": "89796911",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "Node_NumOfServiceBuildingExpansion(GetNodeRecord(), $#7823461:6064631873915322400$) > 0"
+			}
+		},
+		"(TagName=\"NodeTax.ArtisanTax.LaboratoryBaseTax.SalesTax.ArcaneSalesTax\")":
+		{
+			"taxDetails":
+			{
+				"guid": "6064632157081894912",
+				"typeId": "89796911",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "Node_NumOfServiceBuildingExpansion(GetNodeRecord(), $#7823461:6064631874036760619$) > 0"
+			}
+		},
+		"(TagName=\"NodeTax.ArtisanTax.LaboratoryBaseTax.SalesTax.ScribeSalesTax\")":
+		{
+			"taxDetails":
+			{
+				"guid": "6064632157081894912",
+				"typeId": "89796911",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "Node_NumOfServiceBuildingExpansion(GetNodeRecord(), $#7823461:6064631873998946341$) > 0"
+			}
+		},
+		"(TagName=\"NodeTax.ArtisanTax.SmithyBaseTax.SalesTax.ArmorsmithSalesTax\")":
+		{
+			"taxDetails":
+			{
+				"guid": "6064632157081894912",
+				"typeId": "89796911",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "Node_NumOfServiceBuildingExpansion(GetNodeRecord(), $#7823461:6064628974059782157$) > 0"
+			}
+		},
+		"(TagName=\"NodeTax.ArtisanTax.SmithyBaseTax.SalesTax.MetalworkingSalesTax\")":
+		{
+			"taxDetails":
+			{
+				"guid": "6064632157081894912",
+				"typeId": "89796911",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "Node_NumOfServiceBuildingExpansion(GetNodeRecord(), $#7823461:109003759507081$) > 0"
+			}
+		},
+		"(TagName=\"NodeTax.ArtisanTax.SmithyBaseTax.SalesTax.WeaponsmithSalesTax\")":
+		{
+			"taxDetails":
+			{
+				"guid": "6064632157081894912",
+				"typeId": "89796911",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "Node_NumOfServiceBuildingExpansion(GetNodeRecord(), $#7823461:109003759507080$) > 0"
+			}
+		},
+		"(TagName=\"NodeTax.ArtisanTax.StoneworksBaseTax.SalesTax.JewelersSalesTax\")":
+		{
+			"taxDetails":
+			{
+				"guid": "6064632157081894912",
+				"typeId": "89796911",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "Node_NumOfServiceBuildingExpansion(GetNodeRecord(), $#7823461:6064631861839986700$) > 0"
+			}
+		},
+		"(TagName=\"NodeTax.ArtisanTax.StoneworksBaseTax.SalesTax.QuarrySalesTax\")":
+		{
+			"taxDetails":
+			{
+				"guid": "6064632157081894912",
+				"typeId": "89796911",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "Node_NumOfServiceBuildingExpansion(GetNodeRecord(), $#7823461:6064631861787492358$) > 0"
+			}
+		},
+		"(TagName=\"NodeTax.ArtisanTax.StoneworksBaseTax.SalesTax.StoneMasonSalesTax\")":
+		{
+			"taxDetails":
+			{
+				"guid": "6064632157081894912",
+				"typeId": "89796911",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "Node_NumOfServiceBuildingExpansion(GetNodeRecord(), $#7823461:6064631861819539465$) > 0"
+			}
+		},
+		"(TagName=\"NodeTax.ArtisanTax.TextileMillBaseTax.SalesTax.TailorStorefrontSalesTax\")":
+		{
+			"taxDetails":
+			{
+				"guid": "6064632157081894912",
+				"typeId": "89796911",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "Node_NumOfServiceBuildingExpansion(GetNodeRecord(), $#7823461:6064631862974545928$) > 0"
+			}
+		},
+		"(TagName=\"NodeTax.ArtisanTax.TextileMillBaseTax.SalesTax.WeavingShopSalesTaxs\")":
+		{
+			"taxDetails":
+			{
+				"guid": "6064632157081894912",
+				"typeId": "89796911",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "Node_NumOfServiceBuildingExpansion(GetNodeRecord(), $#7823461:6064631862950952965$) > 0"
+			}
+		},
+		"(TagName=\"NodeTax.ArtisanTax.WoodshopBaseTax.SalesTax.CarpentrySalesTax\")":
+		{
+			"taxDetails":
+			{
+				"guid": "6064632157081894912",
+				"typeId": "89796911",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "Node_NumOfServiceBuildingExpansion(GetNodeRecord(), $#7823461:6064631874188673084$) > 0"
+			}
+		},
+		"(TagName=\"NodeTax.ArtisanTax.WoodshopBaseTax.SalesTax.LumberJackingSalesTax\")":
+		{
+			"taxDetails":
+			{
+				"guid": "6064632157081894912",
+				"typeId": "89796911",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "Node_NumOfServiceBuildingExpansion(GetNodeRecord(), $#7823461:6064631874132967473$) > 0"
+			}
+		},
+		"(TagName=\"NodeTax.ArtisanTax.WoodshopBaseTax.SalesTax.LumberMillSalesTax\")":
+		{
+			"taxDetails":
+			{
+				"guid": "6064632157081894912",
+				"typeId": "89796911",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "Node_NumOfServiceBuildingExpansion(GetNodeRecord(), $#7823461:6064631874165014583$) > 0"
+			}
+		}
+	},
+	"guid": "6064632161568489473",
+	"name": "DefaultGlobalTaxTable",
+	"typeId": "89796912"
+}

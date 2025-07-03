@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"B5E06AC2466540891320BB9656551F27\", \"I think the Piper is to blame.\")",
+	"nextNodeId":
+	{
+		"guid": "6064628867129868405",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0007_PriestessAndThePiper\",\"MAP_0007_PriestessAndThePiper_Phase04\")&&\r\n!IsOnStoryArcQuest(GetPlayer(),\"MAQ_0007_PAS_PainAndSuffering\")\r\n"
+	},
+	"guid": "6064628867130982522",
+	"name": "MADD_0007_Phase04_TheBonekeeper_8",
+	"typeId": "1091110027"
+}

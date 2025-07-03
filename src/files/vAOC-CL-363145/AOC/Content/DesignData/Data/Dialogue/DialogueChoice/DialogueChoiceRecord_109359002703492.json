@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"6AEADC294AEF015E393C48A6787F42E3\", \"Orrik Blackwood is no more.\")",
+	"nextNodeId":
+	{
+		"guid": "109354466104980",
+		"typeId": "1091110028",
+		"name": "MADD_0005_Stormrazer_Phase03_04_17"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0005_EnemyWithin\",\"MAP_0005_Phase04\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005_HeadoftheHighwaymen\",\"KilledOrrik\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005_HeadoftheHighwaymen\",\"WarIsOver\")"
+	},
+	"guid": "109359002703492",
+	"name": "MADD_0005_Stormrazer_Phase03_04_32",
+	"typeId": "1091110027"
+}

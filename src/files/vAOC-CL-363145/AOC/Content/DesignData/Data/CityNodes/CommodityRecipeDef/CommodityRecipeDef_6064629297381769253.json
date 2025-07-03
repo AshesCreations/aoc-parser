@@ -1,0 +1,74 @@
+{
+	"displayName": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"9FEAA07744B8B4E61BF1F39534AD91D6\", \"Alchemic Tincture\")",
+	"commodityRecipeMaterialRequirementIds": [
+		{
+			"guid": "6064631982055948343",
+			"typeId": "33229888",
+			"name": "None"
+		},
+		{
+			"guid": "6064631981076971552",
+			"typeId": "33229888",
+			"name": "None"
+		}
+	],
+	"minQuantityProduced":
+	{
+		"expression": "50"
+	},
+	"maxQuantityProduced":
+	{
+		"expression": "1500"
+	},
+	"minCost":
+	{
+		"expression": "10000"
+	},
+	"maxCost":
+	{
+		"expression": "50000"
+	},
+	"minTimeDurationDays":
+	{
+		"expression": "3"
+	},
+	"maxTimeDurationDays":
+	{
+		"expression": "8"
+	},
+	"rewardTypeId":
+	{
+		"guid": "6064629297329602586",
+		"typeId": "1091110040",
+		"name": "None"
+	},
+	"minReward":
+	{
+		"expression": "1"
+	},
+	"maxReward":
+	{
+		"expression": "10"
+	},
+	"minLimitContribution":
+	{
+		"expression": "10"
+	},
+	"maxLimitContribution":
+	{
+		"expression": "100"
+	},
+	"contributionLimitGrowthCurveId":
+	{
+		"guid": "6064631918894317568",
+		"typeId": "1091110055",
+		"name": "None"
+	},
+	"availabilityPredicate":
+	{
+		"expression": "GetNodeBiome() == EBiomeType::Riverlands"
+	},
+	"guid": "6064629297381769253",
+	"name": "Commodity_RVR_Alchemy_T1_1",
+	"typeId": "33229833"
+}

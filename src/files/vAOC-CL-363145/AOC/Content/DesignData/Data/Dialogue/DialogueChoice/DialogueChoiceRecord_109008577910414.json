@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"CA7E129C40E57A056ABE7FB783DF31FA\", \"Reporting for duty!\")",
+	"nextNodeId":
+	{
+		"guid": "109008578238095",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0005_EnemyWithin\",\"MAP_0005_Phase01\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0005_RunToTheHills\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005_RunToTheHills\",\"InterrogateElora\")"
+	},
+	"guid": "109008577910414",
+	"name": "MADD_0005_EudoxiaAvenmoor_46",
+	"typeId": "1091110027"
+}

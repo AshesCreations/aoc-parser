@@ -1,0 +1,33 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"7948011443E43F9DC4FD4E85847115D4\", \"I worked with the Town guard.\")",
+	"nextNodeId":
+	{
+		"guid": "109105423341212",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "109127185946255",
+			"typeId": "1091110030",
+			"name": "AR_0006_Quest_AllIntro_Tank"
+		},
+		{
+			"guid": "109127346247334",
+			"typeId": "1091110030",
+			"name": "AR_0006_Quest_AllIntro_Tank_AdvanceObj"
+		},
+		{
+			"guid": "109382259922552",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "GetPrimaryArchetype(GetPlayer())==ECharacterClass::Fighter"
+	},
+	"guid": "109286851892868",
+	"name": "0006_P0_AllIntro_132",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"D8EDDD12428C07830C24F0BE2EB9D00A\", \"(Examine the statue)\")",
+	"nextNodeId":
+	{
+		"guid": "6064629126824591383",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "!IsOnStoryArcQuest(GetPlayer(),\"MAQ_0003_HWR_HeadWillRoll\")&&\r\n!IsOnStoryArcQuest(GetPlayer (),\"MAQ_0003_TGS_TheGreenScarab\")"
+	},
+	"guid": "6064629149442375680",
+	"name": "MIDD_0003_TGS_StatuePlaque_26",
+	"typeId": "1091110027"
+}

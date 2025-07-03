@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"9E65DBCA4A50E16DC8EC2998CDB14E8B\", \"Good to see you!\")",
+	"nextNodeId":
+	{
+		"guid": "109359808796315",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0005_EnemyWithin\",\"MAP_0005_Phase04\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0005_HeadoftheHighwaymen\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005_HeadoftheHighwaymen\",\"SealIsSet\")\r\n"
+	},
+	"guid": "109359808403098",
+	"name": "MADD_0005_EOA_Booksmith_Alexor_76",
+	"typeId": "1091110027"
+}

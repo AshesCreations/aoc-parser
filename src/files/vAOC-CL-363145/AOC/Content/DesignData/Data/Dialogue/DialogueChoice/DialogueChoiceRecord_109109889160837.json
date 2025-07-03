@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"B3BCD8C949F884DD8A8BB9BA8E672720\", \"I\\'ve returned, Captain.\")",
+	"nextNodeId":
+	{
+		"guid": "109008615069339",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005_RunToTheHills\",\"DecodedNote\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005_RunToTheHills\",\"TurnedInNote\")"
+	},
+	"guid": "109109889160837",
+	"name": "MADD_0005_EudoxiaAvenmoor_82",
+	"typeId": "1091110027"
+}

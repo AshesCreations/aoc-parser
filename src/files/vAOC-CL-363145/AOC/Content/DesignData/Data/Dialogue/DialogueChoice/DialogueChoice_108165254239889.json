@@ -1,0 +1,23 @@
+{
+	"choiceText": "(BEGIN STORY ARC)",
+	"nextNodeId":
+	{
+		"guid": "108198659380856",
+		"typeId": "1091110028",
+		"name": "Gavin_Phase_0_GreetingNode"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "108165273704082",
+			"typeId": "1091110030",
+			"name": "BeginNarrativePrototypeStoryArc"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "!IsStoryArcInPhase(\"SA_0001_Riverlands_Prototype\", \"SAP_0001_RiverlandsPrototype_P0\")&&\r\n!IsStoryArcInPhase(\"SA_0001_Riverlands_Prototype\", \"SAP_0001_RiverlandsPrototype_P1\")&&\r\n!IsStoryArcInPhase(\"SA_0001_Riverlands_Prototype\", \"SAP_0001_RiverlandsPrototype_P2\")&&\r\n!IsStoryArcInPhase(\"SA_0001_Riverlands_Prototype\", \"SAP_0001_RiverlandsPrototype_P3\")"
+	},
+	"guid": "108165254239889",
+	"name": "DC_GavinArcStart",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,23 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"8252694249C2EBDA257B4683C4ECC3AE\", \"FALSE\")",
+	"nextNodeId":
+	{
+		"guid": "6064628940780404754",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064628973683015680",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "Node_IsPlayerMayorCandidate(GetPlayer(), Node_GetActorCityNode(GetInteractionTarget())) == false"
+	},
+	"guid": "6064628940779487249",
+	"name": "DD_ServiceNPC_Administrator_82",
+	"typeId": "1091110027"
+}

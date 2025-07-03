@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"A1484A2842E82594BB88A68C868B47A1\", \"(q1 grant)\")",
+	"nextNodeId":
+	{
+		"guid": "6064629026835857602",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"SA_0008_HarrowerMoon\", \"MAP_0008_HarrowerMoon_01\")&&\r\nIsStoryArcQuestAvailable(GetPlayer(), \"MAQ_0008_MassacreAtBolenStead\")&&\r\n!IsOnStoryArcQuest(GetPlayer(), \"MAQ_0008_MassacreAtBolenStead\")"
+	},
+	"guid": "6064629026835857597",
+	"name": "DDR_0008_ArynQuail_3",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,28 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"24B8884A4E67719DC905A3BEF84F212A\", \"I killed the bear\")",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064629025755824172",
+			"typeId": "1091110030",
+			"name": "AR_0004_DestroyDrownedDeadInCarphinTI"
+		},
+		{
+			"guid": "6064629025793900606",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "GetStoryArcQuestFlag(GetPlayer(), \"MAQ_0008_ItsJustABear\", \"BearKilled\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(), \"MAQ_0008_ItsJustABear\", \"BearKilledTI\")"
+	},
+	"guid": "6064629027016999211",
+	"name": "DDR_0008_CaptainRodrigar_38",
+	"typeId": "1091110027"
+}

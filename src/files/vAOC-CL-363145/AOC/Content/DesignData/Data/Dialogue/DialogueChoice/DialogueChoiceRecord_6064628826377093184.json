@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"4C6DD81242E7B191F170CFB347A28274\", \"Do you know Baron Kelnair?\")",
+	"nextNodeId":
+	{
+		"guid": "6064628826376568894",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0007_PriestessAndThePiper\",\"MAP_0007_PriestessAndThePiper_Phase02\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0007_HHH_HostHoistHeist\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_HHH_HostHoistHeist\",\"MetBarMaid\")"
+	},
+	"guid": "6064628826377093184",
+	"name": "MADD_0007_HHH_BarMaid_5",
+	"typeId": "1091110027"
+}

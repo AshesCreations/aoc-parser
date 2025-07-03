@@ -1,0 +1,17 @@
+{
+	"choiceText": "LOCTABLE(\"/Game/StringTables/DialogueResponses.DialogueResponses\", \"DR_0009a_ZephyrBeckoning_Tarief_35\")",
+	"nextNodeId":
+	{
+		"guid": "6064629070447050768",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "!IsOnStoryArcQuest(GetPlayer(), \"SAQ_0009a_ZB_Memorial2\")&&IsStoryArcQuestAvailable(GetPlayer(), \"SAQ_0009a_ZB_Memorial2\")"
+	},
+	"guid": "6064628889390415891",
+	"name": "0009a_ZephyrBeckoning_Tarief_28",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"701C86104EE77CD78936CEB96DB587CD\", \"Have Intro Q Ready\")",
+	"nextNodeId":
+	{
+		"guid": "109309282244251",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsOnStoryArcQuest(GetPlayer(), \"SAQ_0006_AllIntro_Ranger\")&&GetStoryArcQuestFlag(GetPlayer(),\"SAQ_0006_AllIntro_Ranger\",\"PortalIntroDone\")"
+	},
+	"guid": "109308863862420",
+	"name": "0006_P0_Ranger_19",
+	"typeId": "1091110027"
+}

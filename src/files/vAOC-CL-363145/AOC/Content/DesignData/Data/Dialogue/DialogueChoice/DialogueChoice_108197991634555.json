@@ -1,0 +1,23 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"DDC070FA400F24D01E0F7FAB650C797F\", \"Is in Test Phase, GRANT QUEST!\")",
+	"nextNodeId":
+	{
+		"guid": "107915451782778",
+		"typeId": "1091110028",
+		"name": "AimiTestDialogueNode1"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "108198021650045",
+			"typeId": "1091110030",
+			"name": "Grant_Aimi_Test_ArcQuest"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"Aimi_TestLevel_Arc\", \"Test_Aimi_Begin_P0\")"
+	},
+	"guid": "108197991634555",
+	"name": "Aimi_DialogueChoice_TestStoryArcVars_3",
+	"typeId": "1091110027"
+}

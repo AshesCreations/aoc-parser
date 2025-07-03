@@ -1,0 +1,23 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"9BCBC20D471BB7A2B2CED3B742FE4E08\", \"Can Complete Quest. COMPLETE!\")",
+	"nextNodeId":
+	{
+		"guid": "107915451782778",
+		"typeId": "1091110028",
+		"name": "AimiTestDialogueNode1"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "108198059464318",
+			"typeId": "1091110030",
+			"name": "Complete_Aimi_Test_ArcQuest"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "CanCompleteQuest(GetPlayer(), \"Aimi_Test_ArcQuest\")"
+	},
+	"guid": "108198002185852",
+	"name": "Aimi_DialogueChoice_TestStoryArcVars_4",
+	"typeId": "1091110027"
+}

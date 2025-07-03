@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"A0F73D624688BB1F786A2896B2A28BA6\", \"I have complete the bouquet!\")",
+	"nextNodeId":
+	{
+		"guid": "6064628827510472928",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0007_PriestessAndThePiper\",\"MAP_0007_PriestessAndThePiper_Phase01\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_GBH_GreatBloomfestHunt\",\"GotFlowerAriochsShield\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_GBH_GreatBloomfestHunt\",\"GotFlowerElizabethRose\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_GBH_GreatBloomfestHunt\",\"GotFlowerCyclopsEye\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_GBH_GreatBloomfestHunt\",\"GotFlowerValkyrieSpear\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_GBH_GreatBloomfestHunt\",\"GotFlowerHarbingerDhala\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_GBH_GreatBloomfestHunt\",\"GotFlowerLynethLily\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_GBH_GreatBloomfestHunt\",\"GotFlowerPortalOrchid\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_GBH_GreatBloomfestHunt\",\"GotFlowerBarrataMane\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_GBH_GreatBloomfestHunt\",\"GotFlowerCarphinFlare\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_GBH_GreatBloomfestHunt\",\"GotFlowerBogWolfsbane\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_GBH_GreatBloomfestHunt\",\"GotFlowerRiverlandTulip\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_GBH_GreatBloomfestHunt\",\"GotFlowerScionsTrumpet\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_GBH_GreatBloomfestHunt\",\"GiveBloomfestBouquet\")"
+	},
+	"guid": "6064628827509293279",
+	"name": "MADD_0007_GBH_KeeperOfTheCrown_11",
+	"typeId": "1091110027"
+}

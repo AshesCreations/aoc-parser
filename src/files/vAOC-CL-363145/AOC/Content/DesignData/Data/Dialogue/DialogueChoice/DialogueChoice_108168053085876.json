@@ -1,0 +1,23 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"189AC37646F1327FDFAF42AC0F529E35\", \"You must be a Strider.\")",
+	"nextNodeId":
+	{
+		"guid": "108168029951666",
+		"typeId": "1091110028",
+		"name": "Harriet_GavinSupportNode"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "108167693293213",
+			"typeId": "1091110030",
+			"name": "AR_0001_Q2_O1_AskedAboutStriders"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "IsOnStoryArcQuest(GetPlayer(),\"SAQ_0001_Q2_IntroductionsInOrder\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"SAQ_0001_Q2_IntroductionsInOrder\",\"TalkedToPaisley\")"
+	},
+	"guid": "108168053085876",
+	"name": "DC_Paisley_ToGavinSupportNode",
+	"typeId": "1091110027"
+}

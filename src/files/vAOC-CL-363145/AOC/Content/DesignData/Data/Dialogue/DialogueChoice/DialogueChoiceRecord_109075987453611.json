@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"A61546E042775BCBCE55CDB3DB7C1134\", \"Reporting for duty!\")",
+	"nextNodeId":
+	{
+		"guid": "109075989550764",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0005_EnemyWithin\",\"MAP_0005_Phase02\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005_SeekAndDestroy\",\"ReportSpiesDead\")&&\r\n!IsOnStoryArcQuest(GetPlayer(),\"MAQ_0005_RoadWarrior\")"
+	},
+	"guid": "109075987453611",
+	"name": "MADD_0005_Stormrazer_109",
+	"typeId": "1091110027"
+}

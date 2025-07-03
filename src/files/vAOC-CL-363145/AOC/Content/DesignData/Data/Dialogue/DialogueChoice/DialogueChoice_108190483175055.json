@@ -1,0 +1,23 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"48228DD64218FC213F05F38ECB8C86DE\", \"I found a cache of crates with Grayshore insignia on it. It\\'s here, just outside of town.\")",
+	"nextNodeId":
+	{
+		"guid": "108190455387787",
+		"typeId": "1091110028",
+		"name": "Harriet_Phase0_SuppliesSecured"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "108190380349062",
+			"typeId": "1091110030",
+			"name": "AR_0001_Q1_04_ReportSecureSupplies"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "GetStoryArcQuestFlag(GetPlayer(),\"SAQ_0001_Q1_SecuringSupplies\",\"SuppliesSecured\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"SAQ_0001_Q1_SecuringSupplies\",\"ReportedSuppliesSecured\")"
+	},
+	"guid": "108190483175055",
+	"name": "DC_Harriet_P0_ReportStolenSupplies",
+	"typeId": "1091110027"
+}
