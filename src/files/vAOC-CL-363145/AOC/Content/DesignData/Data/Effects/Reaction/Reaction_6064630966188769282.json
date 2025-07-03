@@ -1,0 +1,31 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 0,
+		"effectEvents": 0,
+		"abilityEvents": 4,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "true"
+	},
+	"bEvaluateApplyingHit": false,
+	"instigator": "Owner",
+	"targetsBitmask": 1,
+	"reactHitsIds": [
+		{
+			"guid": "6064630966195781635",
+			"typeId": "30316005",
+			"name": "Test_ThornsReaction"
+		}
+	],
+	"instigatorProcLimit": 0,
+	"globalProcLimit": 0,
+	"procReactOnApply": false,
+	"guid": "6064630966188769282",
+	"name": "Test_AbilityConsumedReaction",
+	"typeId": "3031600202"
+}

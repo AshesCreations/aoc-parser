@@ -1,0 +1,12 @@
+{
+	"equation":
+	{
+		"expression": "var mod = 1.0;\r\nconst starRating = GetNPCEliteRank(GetOwner());\r\n\r\nif(DoesNPCContainTag(\"npc.stature.rareSpawn\")){\r\n    if(starRating < 1){\r\n        set mod = 1.5;\r\n    }\r\n    else if(starRating == 1){\r\n        set mod = 2.0;\r\n    }\r\n    else if(starRating == 2){\r\n        set mod = 2.5;\r\n    }\r\n    else if(starRating == 3){\r\n        set mod = 3.0;\r\n    }\r\n    else if(starRating == 4){\r\n        set mod = 3.5;\r\n    }\r\n}\r\n\r\nmod"
+	},
+	"constraints":
+	{
+	},
+	"guid": "6064633532763799553",
+	"name": "RareSpawn_Reward_Mod",
+	"typeId": "10516612381411112"
+}

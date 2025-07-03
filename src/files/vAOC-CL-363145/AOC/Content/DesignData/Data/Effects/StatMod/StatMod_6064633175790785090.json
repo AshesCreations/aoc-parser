@@ -1,0 +1,22 @@
+{
+	"statRefId":
+	{
+		"guid": "6064633175093543338",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"value":
+	{
+		"expression": "10.0 * \r\n(GetStatModValue(GetHitEvent(), $#10516612381411111:108986352686712$)\r\n/ GetStat(GetInstigator(), $#10516612381411111:109343399171797$)) / \r\nGetNumTargets(GetHitEvent()) "
+	},
+	"bUseShieldAbsorb": false,
+	"shieldAbsorbPercentage":
+	{
+		"expression": ""
+	},
+	"bShowFloatingText": true,
+	"valueInputTerms": [],
+	"guid": "6064633175790785090",
+	"name": "Ranger_Focus_Cost",
+	"typeId": "3031600201"
+}

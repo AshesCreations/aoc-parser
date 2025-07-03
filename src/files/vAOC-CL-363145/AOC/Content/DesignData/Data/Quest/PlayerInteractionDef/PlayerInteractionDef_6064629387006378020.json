@@ -1,0 +1,61 @@
+{
+	"completionResponsesIds": [
+		{
+			"guid": "6064629386970791964",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064629386919346187",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"channelDuration": 0,
+	"activePredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MIA_0015_TPT_ThePhantomTower\",\"MIP_0015_TPT_Phase04\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MIQ_0015_AOF_AnOldFriend\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MIQ_0015_AOF_AnOldFriend\",\"GotBookAppliedMagic\")"
+	},
+	"cuePredicate":
+	{
+		"expression": ""
+	},
+	"deleteOnCompletion": false,
+	"singleUse": false,
+	"alwaysShowUIPrompt": true,
+	"cancelChannelIfActivePredicateEverFails": true,
+	"channelModifierType": "NONE",
+	"rewardTableId":
+	{
+		"guid": "0",
+		"typeId": "1091110008",
+		"name": "None"
+	},
+	"startEffect": "None",
+	"endEffect": "None",
+	"failEffect": "None",
+	"successEffect": "/Game/Effects/FX_PCs/Guardian/Particles/FX_Intercept.FX_Intercept",
+	"cueEffect": "None",
+	"startSound": "None",
+	"endSound": "None",
+	"failSound": "None",
+	"successSound": "None",
+	"cueSound": "None",
+	"interactAnimTag": "None",
+	"deletionDelay": 0,
+	"activeCueEnabled": true,
+	"activeCueIgnoresActivePredicate": false,
+	"facePlayer": false,
+	"allowInCombat": true,
+	"spawnAtBottomCapsule": false,
+	"channelAnimation": "/Game/Characters/Animations/RNG_ORB/All_Rng_Orb_Gather_M_Montage.All_Rng_Orb_Gather_M_Montage",
+	"interactRadius": 300,
+	"interactTolerance": 30,
+	"busyTime": 0.89999997615814209,
+	"clientBusyTime": 1,
+	"channelStartResponseIds": [],
+	"failResponsesIds": [],
+	"guid": "6064629387006378020",
+	"name": "MIPI_0015_AOF_OBJ_Book_AppliedMagic",
+	"typeId": "1091110031"
+}

@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"E874B1BA4927A83C08F8E4989F19A2E4\", \"How so?\")",
+	"nextNodeId":
+	{
+		"guid": "6064630650290178168",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "!IsOnStoryArcQuest(GetPlayer(),\"SAQ_0009_GH_DemonsPitchfork\")&&!GetStoryArcQuestFlag(GetPlayer(),\"SAQ_0009_GH_DemonsPitchfork\",\"0009_Farmhand\")"
+	},
+	"guid": "6064630650258524183",
+	"name": "SA_0009_BriarmoorFarmhands_15",
+	"typeId": "1091110027"
+}

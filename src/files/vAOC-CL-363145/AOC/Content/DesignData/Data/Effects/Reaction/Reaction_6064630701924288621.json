@@ -1,0 +1,31 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 4,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "GetRecordTypeId(GetHitSourceRecord(GetHitEvent())) != GetReactionTypeId() &&\r\nGetStatModValue(GetHitEvent(), $#10516612381411111:108986352686712$) < 0.0 && HitHasTag(GetHitEvent(), \"Ability.weaponcombo\")"
+	},
+	"bEvaluateApplyingHit": false,
+	"instigator": "Instigator",
+	"targetsBitmask": 2,
+	"reactHitsIds": [
+		{
+			"guid": "109196170385023",
+			"typeId": "30316005",
+			"name": "Cleric_DivineWeapon_Hit3_Drain"
+		}
+	],
+	"instigatorProcLimit": 0,
+	"globalProcLimit": 0,
+	"procReactOnApply": false,
+	"guid": "6064630701924288621",
+	"name": "Cleric_BlessWeapon_Reaction_Mana_Bountiful",
+	"typeId": "3031600202"
+}

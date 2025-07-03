@@ -1,0 +1,28 @@
+{
+	"choiceText": "",
+	"nextNodeId":
+	{
+		"guid": "6064631561308143660",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064631584606454542",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "Player_HasCommission (GetPlayer(), \"SQ_33_GhostIsle\") && Player_ObjectiveStateEquals(GetPlayer(), \"NarrativeObjective_SQ_0030_GhostIsle_Obj2_Kill\", EObjectiveState::Complete)"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064631561249816599",
+	"name": "SQ_34_Tul_3",
+	"typeId": "1091110027"
+}

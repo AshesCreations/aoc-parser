@@ -1,0 +1,18 @@
+{
+	"choiceText": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"63A250FA4D04B181823D83AB03CA8703\", \"(Is New Mayor On FTUE Quest Final Step)\")",
+	"nextNodeId":
+	{
+		"guid": "6064632155599667269",
+		"typeId": "1091110028",
+		"name": "DD_ServiceNPC_NodeAdministrator_126"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "const interactNode = Node_GetActorCityNode(GetInteractionTarget());\r\nNode_IsPlayerMayorCurrentNode(GetPlayer(), interactNode) &&\r\nPlayer_HasCommission(GetPlayer(), \"CSQ_0158_FTUE_WithMayoralPowerComesMayoralResponsibility\") &&\r\nPlayer_ObjectiveStateEquals(GetPlayer(), \"CSQ_NO_0158_FTUE_WithMayoralPowerComesMayoralResponsibility_ReturnToAdmin\", EObjectiveState::Active)"
+	},
+	"choiceType": "Default",
+	"guid": "6064632155596652612",
+	"name": "DD_ServiceNPC_NodeAdministrator_108_Choice_5",
+	"typeId": "1091110027"
+}

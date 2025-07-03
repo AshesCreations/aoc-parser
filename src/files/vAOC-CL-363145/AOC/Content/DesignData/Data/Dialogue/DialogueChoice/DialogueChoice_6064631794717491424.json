@@ -1,0 +1,18 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"2A816B914CC34F2D55EFA6B48FE68834\", \"Not Has Quest\")",
+	"nextNodeId":
+	{
+		"guid": "6064631804735717376",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "!Player_HasCommission(GetPlayer(),\"CSQ_0033_TwilightDuty\") &&\r\n!Player_HasCompletedCommission(GetPlayer(),\"CSQ_0033_TwilightDuty\")"
+	},
+	"choiceType": "Default",
+	"guid": "6064631794717491424",
+	"name": "CSQ_0033_TwilightDuty_WatchmanBram_DLG_14",
+	"typeId": "1091110027"
+}

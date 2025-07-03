@@ -1,0 +1,91 @@
+{
+	"narrativeType": "Commission",
+	"taskId":
+	{
+		"guid": "6064632512818446344",
+		"typeId": "1095125186",
+		"name": "None"
+	},
+	"completionParameters":
+	{
+		"objectiveType": "Kill",
+		"nPCTaskIconOverrideId":
+		{
+			"guid": "0",
+			"typeId": "949952112329",
+			"name": "None"
+		},
+		"bAllowSatisfactionToRegress": false,
+		"completionQuantity": 10,
+		"tagQuery":
+		{
+			"tokenStreamVersion": 0,
+			"tagDictionary": [
+				{
+					"tagName": "character.avian.gryphon"
+				}
+			],
+			"queryTokenStream": [ 0, 1, 2, 1, 0 ],
+			"userDescription": "",
+			"autoDescription": " ALL( character.avian.gryphon )"
+		},
+		"professionFilterIds": [],
+		"gatherableFilterIds": [],
+		"collectionFilterId":
+		{
+			"guid": "0",
+			"typeId": "1091110041",
+			"name": "None"
+		},
+		"subObjectivesIds": [],
+		"bLimitToDisplayLocation": false,
+		"goToAreaLocation": [],
+		"populationSetIds": [],
+		"populationInstanceIds": [],
+		"notifyType": "None"
+	},
+	"objectiveText": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"CF8DC8EB415388F77AA40E8B86142FB0\", \"Hunt Gryphons near the river\")",
+	"objectiveCountText": "",
+	"initiallyHidden": false,
+	"advanceWhileHidden": true,
+	"revealOnComplete": true,
+	"completionRewardsIds": [],
+	"minimumRequirement": true,
+	"completionFlags": [],
+	"instanceCompletionResult": [],
+	"enabledPredicate":
+	{
+		"expression": ""
+	},
+	"completionActionsIds": [],
+	"objectivesToCompleteUponCompletionIds": [],
+	"objectivesToRevealUponCompletionIds": [],
+	"allowOverAchievement": false,
+	"overAchievementCountText": "",
+	"maximumAdditionalCompletions": 2,
+	"multipleCompletionExperienceMultiplier": 0.30000001192092896,
+	"multipleCompletionGoldMultiplier": 0.30000001192092896,
+	"multipleCompletionVariableMultiplier": 0.30000001192092896,
+	"displayLocation": [
+		{
+			"location":
+			{
+				"x": -861700,
+				"y": 368870,
+				"z": 13182
+			},
+			"radius": 20000,
+			"map_DisplayType": "ICON_AND_RADIUS",
+			"map_IconVisual":
+			{
+				"guid": "6064631884936970240",
+				"typeId": "949952112329",
+				"name": "None"
+			},
+			"map_DisplayName": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"6660ED374C194B08A41D94B157E79E61\", \"Hunt Gryphons near the river\")"
+		}
+	],
+	"guid": "6064632512816545799",
+	"name": "NarrativeObjective_MCOM_RVR_Halcyon_Kill_Gryphons",
+	"typeId": "1091110420"
+}

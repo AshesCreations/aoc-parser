@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"53D064134024BF768BD144BB08FB9F37\", \"I found the supplies you were after.\")",
+	"nextNodeId":
+	{
+		"guid": "6064630444047401054",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "GetStoryArcQuestFlag(GetPlayer(), \"SAQ_0023_P1_Q1_HalfTheBattle\", \"AhvenCheckedOn\")&&\r\nGetStoryArcQuestFlag(GetPlayer(), \"SAQ_0023_P1_Q1_HalfTheBattle\", \"SuppliesScouted\")&&\r\nIsOnStoryArcQuest(GetPlayer(), \"SAQ_0023_P1_Q1_HalfTheBattle\")"
+	},
+	"guid": "6064630444041371741",
+	"name": "DD_0023_CaptainEudoxiaAvenmoor_24",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,14 @@
+{
+	"trigger":
+	{
+		"expression": "GetStatModValue(GetHitInProgress(), GetTarget(), $#10516612381411111:108986352686712$) < 0.0 &&\r\n!HitFlagsContains(GetHitFlags(GetHitInProgress()), EHitFlag::Redirect)"
+	},
+	"target": "RedirectInstigator",
+	"ratio":
+	{
+		"expression": "0.2"
+	},
+	"guid": "6064628826593165312",
+	"name": "Tank_Aegis",
+	"typeId": "3031600209"
+}

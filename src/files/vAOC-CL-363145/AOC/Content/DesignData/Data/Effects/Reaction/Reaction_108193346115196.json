@@ -1,0 +1,27 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 4,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "GetRecordTypeId(GetHitSourceRecord(GetHitEvent())) != GetReactionTypeId() && GetInstigator() != GetOwner() &&\r\nGetStatModValue(GetHitEvent(), $#10516612381411111:108986352686712$) < 0.0"
+	},
+	"bEvaluateApplyingHit": false,
+	"instigator": "HitSource",
+	"targetsBitmask": 2,
+	"reactHitsIds": [
+		{
+			"guid": "108193384257149",
+			"typeId": "30316005",
+			"name": "AbilityHit_Guardian_Intercept_2"
+		}
+	],
+	"guid": "108193346115196",
+	"name": "Reaction_Intercept",
+	"typeId": "3031600202"
+}

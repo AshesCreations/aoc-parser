@@ -1,0 +1,85 @@
+{
+	"narrativeType": "Commission",
+	"completionParameters":
+	{
+		"objectiveType": "Kill",
+		"nPCTaskIconOverrideId":
+		{
+			"guid": "0",
+			"typeId": "949952112329",
+			"name": "None"
+		},
+		"bAllowSatisfactionToRegress": false,
+		"completionQuantity": 15,
+		"tagQuery":
+		{
+			"tokenStreamVersion": 0,
+			"tagDictionary": [
+				{
+					"tagName": "character.vermin.scorpion"
+				}
+			],
+			"queryTokenStream": [ 0, 1, 1, 1, 0 ],
+			"userDescription": "",
+			"autoDescription": " ANY( character.vermin.scorpion )"
+		},
+		"professionFilterIds": [],
+		"gatherableFilterIds": [],
+		"collectionFilterId":
+		{
+			"guid": "0",
+			"typeId": "1091110041",
+			"name": "None"
+		},
+		"subObjectivesIds": [],
+		"bLimitToDisplayLocation": true,
+		"goToAreaLocation": [],
+		"populationSetIds": [],
+		"populationInstanceIds": [],
+		"notifyType": "None"
+	},
+	"objectiveText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"B4C85BC046614E5C494B978F680A4DE5\", \"Locate and defeat scorpions in the Sandsquall Desert\")",
+	"objectiveCountText": "NSLOCTEXT(\"\", \"443586DA4C31A57E7DD877802F1F8F15\", \"Giant Spiders Slain\")",
+	"initiallyHidden": false,
+	"advanceWhileHidden": true,
+	"revealOnComplete": true,
+	"completionRewardsIds": [],
+	"minimumRequirement": true,
+	"completionFlags": [],
+	"instanceCompletionResult": [],
+	"enabledPredicate":
+	{
+		"expression": ""
+	},
+	"completionActionsIds": [],
+	"objectivesToCompleteUponCompletionIds": [],
+	"objectivesToRevealUponCompletionIds": [],
+	"allowOverAchievement": false,
+	"overAchievementCountText": "",
+	"maximumAdditionalCompletions": 2,
+	"multipleCompletionExperienceMultiplier": 0.30000001192092896,
+	"multipleCompletionGoldMultiplier": 0.30000001192092896,
+	"multipleCompletionVariableMultiplier": 0.30000001192092896,
+	"displayLocation": [
+		{
+			"location":
+			{
+				"x": -518427.88641099998,
+				"y": 773784.96752499999,
+				"z": 13444.098421999999
+			},
+			"radius": 25000,
+			"map_DisplayType": "RADIUS",
+			"map_IconVisual":
+			{
+				"guid": "0",
+				"typeId": "949952112329",
+				"name": "None"
+			},
+			"map_DisplayName": ""
+		}
+	],
+	"guid": "6064632959771017239",
+	"name": "NarrativeObjective_COM_SAN_Kill_Scorpion_Uncommon",
+	"typeId": "1091110420"
+}

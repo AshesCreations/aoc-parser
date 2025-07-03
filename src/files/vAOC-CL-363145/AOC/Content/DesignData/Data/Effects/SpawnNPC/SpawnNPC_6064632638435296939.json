@@ -1,0 +1,43 @@
+{
+	"populationSetId":
+	{
+		"guid": "6064630271532686734",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"actorToSpawn": "/Game/DesignAssets/Population/NPC/Monster/Undead/Zombie/Zombie_Blood/Zombie_Blood.Zombie_Blood_C",
+	"bPersistAfterInstigatorsDeath": false,
+	"spawnLocationType": "LOC_LocalOffset",
+	"location":
+	{
+		"x": 0,
+		"y": 200,
+		"z": 0
+	},
+	"bSpawnFacingInstigatorsRotation": true,
+	"rotation":
+	{
+		"pitch": 0,
+		"yaw": 0,
+		"roll": 0
+	},
+	"triggerType": 0,
+	"spawnRadius": 0,
+	"spawnExtent": 1000,
+	"trackSpawnedNpcOnInstigator": true,
+	"targetSpawnLocationContext":
+	{
+		"expression": "GetLocation(GetInstigatorThatSpawnedNpc()) + GetActorRight(GetInstigatorThatSpawnedNpc()) * 200."
+	},
+	"spawnExpressions": [],
+	"spawnedCharacterLevelOffset": 0,
+	"bSpecifyAbsoluteLevel": false,
+	"addThreatsFromCreator": true,
+	"copyThreatValuesFromCreator": false,
+	"blackboardKeysToSet":
+	{
+	},
+	"guid": "6064632638435296939",
+	"name": "BloodCultist_Miniboss_SummonBloodZombie3",
+	"typeId": "3031600204"
+}

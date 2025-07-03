@@ -1,0 +1,30 @@
+{
+	"expression":
+	{
+		"expression": "Event_GetIntVar(\"CaravanIndex\") < 3"
+	},
+	"maxActivationCount": 1,
+	"objectivesIds": [
+		{
+			"guid": "109201656206973",
+			"typeId": "23095130",
+			"name": "None"
+		}
+	],
+	"triggersIds": [
+		{
+			"guid": "109127951341230",
+			"typeId": "23095135",
+			"name": "Event_PE_0003_BeyondCityLimits_Stage2_Transition_Trigger"
+		}
+	],
+	"flowEditorNodeLocation":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"guid": "109190401250940",
+	"name": "Event_PE_0003_BeyondCityLimits_Stage_ReturnCaravan",
+	"typeId": "23095129"
+}

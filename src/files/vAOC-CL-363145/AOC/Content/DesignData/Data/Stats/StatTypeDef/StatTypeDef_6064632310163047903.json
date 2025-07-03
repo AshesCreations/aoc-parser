@@ -1,0 +1,55 @@
+{
+	"displayName": "NSLOCTEXT(\"[1909495A4C2095068D406C9D33F90055]\", \"243672AF49BE59C2E442BFA4F47C02DC\", \"Backwards Water Speed\")",
+	"description": "NSLOCTEXT(\"[1909495A4C2095068D406C9D33F90055]\", \"450514BD4151046D58A239B8C80FBEAF\", \"The base speed of the caravan while moving backwards in water\")",
+	"bHidden": false,
+	"gameplayType": "Type_Combat",
+	"bHasWaterfallStatsUI": false,
+	"waterfallStatsUIIds": [],
+	"bDisplayAsPercentage": false,
+	"statType": "Type_Float",
+	"bClampStatFinalValue": false,
+	"bMultiplyStatMods": false,
+	"bMultiplyCompliment": false,
+	"base":
+	{
+		"expression": "0.5 * GetStat(GetOwner(), $#10516612381411111:6064632310145418717$)"
+	},
+	"waterfallStatsBaseIds": [
+		{
+			"guid": "6064632310145418717",
+			"typeId": "10516612381411111",
+			"name": "None"
+		}
+	],
+	"valueMin":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMinIds": [],
+	"valueMax":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMaxIds": [],
+	"regenRate":
+	{
+		"expression": ""
+	},
+	"waterfallStatsRegenIds": [],
+	"bRegenWhileDead": false,
+	"onSpawn": "Reset_None",
+	"onDeath": "Reset_None",
+	"onRevive": "Reset_None",
+	"bPersistValue": false,
+	"replication": 0,
+	"shieldStatId":
+	{
+		"guid": "0",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"grantedEffects": [],
+	"guid": "6064632310163047903",
+	"name": "Caravan_MoveSpeedWaterBackwards",
+	"typeId": "10516612381411111"
+}

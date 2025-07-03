@@ -1,0 +1,18 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"68B8515444A9571CF80691B0E3995459\", \"Offer Bloody Raven\\'s Eye\")",
+	"nextNodeId":
+	{
+		"guid": "6064631710202201147",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "Player_HasItem(GetPlayer(), \"SQ_ITM_0035_QuestInit_RavenEye\") && !Player_HasCompletedCommission(GetPlayer(), \"SQ_35_TBH\") && !Player_HasCommission (GetPlayer(), \"SQ_35_TBH\")"
+	},
+	"choiceType": "Default",
+	"guid": "6064631710201873466",
+	"name": "SQ_30_FAS_Raaqir_77",
+	"typeId": "1091110027"
+}

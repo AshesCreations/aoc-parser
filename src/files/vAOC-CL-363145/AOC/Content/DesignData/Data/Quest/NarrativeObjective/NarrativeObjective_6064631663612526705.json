@@ -1,0 +1,91 @@
+{
+	"narrativeType": "Commission",
+	"taskId":
+	{
+		"guid": "6064630910673747972",
+		"typeId": "1095125186",
+		"name": "None"
+	},
+	"completionParameters":
+	{
+		"objectiveType": "Kill",
+		"nPCTaskIconOverrideId":
+		{
+			"guid": "0",
+			"typeId": "949952112329",
+			"name": "None"
+		},
+		"bAllowSatisfactionToRegress": false,
+		"completionQuantity": 1,
+		"tagQuery":
+		{
+			"tokenStreamVersion": 0,
+			"tagDictionary": [
+				{
+					"tagName": "Quest.Named_RVR_BoughWarden"
+				}
+			],
+			"queryTokenStream": [ 0, 1, 1, 1, 0 ],
+			"userDescription": "",
+			"autoDescription": " ANY( Quest.Named_RVR_BoughWarden )"
+		},
+		"professionFilterIds": [],
+		"gatherableFilterIds": [],
+		"collectionFilterId":
+		{
+			"guid": "0",
+			"typeId": "1091110041",
+			"name": "None"
+		},
+		"subObjectivesIds": [],
+		"bLimitToDisplayLocation": false,
+		"goToAreaLocation": [],
+		"populationSetIds": [],
+		"populationInstanceIds": [],
+		"notifyType": "None"
+	},
+	"objectiveText": "NSLOCTEXT(\"\", \"49589F384F44C0FC421A82831A563CD2\", \"Seek and slay The Bough Warden.\")",
+	"objectiveCountText": "NSLOCTEXT(\"\", \"7F5CD5664DC54D1759CA98A4294015B4\", \"The Bough Warden is Destroyed\")",
+	"initiallyHidden": false,
+	"advanceWhileHidden": true,
+	"revealOnComplete": true,
+	"completionRewardsIds": [],
+	"minimumRequirement": true,
+	"completionFlags": [],
+	"instanceCompletionResult": [],
+	"enabledPredicate":
+	{
+		"expression": ""
+	},
+	"completionActionsIds": [],
+	"objectivesToCompleteUponCompletionIds": [],
+	"objectivesToRevealUponCompletionIds": [],
+	"allowOverAchievement": false,
+	"overAchievementCountText": "",
+	"maximumAdditionalCompletions": 2,
+	"multipleCompletionExperienceMultiplier": 0.30000001192092896,
+	"multipleCompletionGoldMultiplier": 0.30000001192092896,
+	"multipleCompletionVariableMultiplier": 0.30000001192092896,
+	"displayLocation": [
+		{
+			"location":
+			{
+				"x": -549740.894233,
+				"y": 649005.79007400002,
+				"z": 19331.323976
+			},
+			"radius": 30,
+			"map_DisplayType": "ICON",
+			"map_IconVisual":
+			{
+				"guid": "6064630988798951424",
+				"typeId": "949952112329",
+				"name": "None"
+			},
+			"map_DisplayName": "NSLOCTEXT(\"\", \"725F99B146170E51F4CC2C9DF3FBF504\", \"Oakenbane Keep\")"
+		}
+	],
+	"guid": "6064631663612526705",
+	"name": "NarrativeObjective_TID_RVR_Bounty_BoughWarden_Objective",
+	"typeId": "1091110420"
+}

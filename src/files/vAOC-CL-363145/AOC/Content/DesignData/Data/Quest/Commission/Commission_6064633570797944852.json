@@ -1,0 +1,104 @@
+{
+	"commissionType": "Generic",
+	"commissionGameplayTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "Quest.Commission.Artisan.Gathering.Herbalism"
+			},
+			{
+				"tagName": "Quest.Commission.Tier.T3"
+			},
+			{
+				"tagName": "Biome.Jungle"
+			}
+		],
+		"parentTags": [
+			{
+				"tagName": "Quest.Commission.Artisan.Gathering"
+			},
+			{
+				"tagName": "Quest.Commission.Artisan"
+			},
+			{
+				"tagName": "Quest.Commission"
+			},
+			{
+				"tagName": "Quest"
+			},
+			{
+				"tagName": "Quest.Commission.Tier"
+			},
+			{
+				"tagName": "Biome"
+			}
+		]
+	},
+	"preRequisiteQuestsIds": [],
+	"autoFailTimer": -1,
+	"bRepeatable": false,
+	"mainObjectiveType": "Collect",
+	"commissionSection": 2,
+	"biomeOrigin": "FloodPlains",
+	"bFromDynamicContent": false,
+	"availabilityExpression":
+	{
+		"expression": ""
+	},
+	"bDisabled": true,
+	"level": 21,
+	"commissionRarity": "Common",
+	"objectivesIds": [
+		{
+			"guid": "6064633570798731285",
+			"typeId": "1091110420",
+			"name": "None"
+		}
+	],
+	"allowMultipleCompletion": false,
+	"commissionName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"B3EE41314D9AF550415612B48B123587\", \"Tiptoe Around\")",
+	"flavorText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"BFAEC4A048E3AD8E3C90C0B70B431DCD\", \"Thick, bulbous, and shockingly pungent, the ?Giant?s Toe? is a root prized for poultices and pranks. Handle with gloves. Hidden within the Jundark, these resources pulse with corruption and danger, their nature twisted by the Void.\")",
+	"mainObjectiveText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"2E7A21C94B2E023E178DA4A869426AFF\", \"Harvest Giant\\'s Toe from mossy banks and corrupted glades in the Jundark\")",
+	"rewardTablesIds": [
+		{
+			"guid": "6064632139939905608",
+			"typeId": "1091110040",
+			"name": "None"
+		}
+	],
+	"calloutName": "",
+	"calloutDescription": "",
+	"bCanProgressWhileInRaid": false,
+	"expiration":
+	{
+		"duration": "0"
+	},
+	"cooldown":
+	{
+		"duration": "0"
+	},
+	"moneyCost": "0",
+	"resourceCost": [],
+	"mayoralCompletionCount": 0,
+	"rewardId":
+	{
+		"guid": "0",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"bNodeTargeted": false,
+	"targetRewardId":
+	{
+		"guid": "0",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"questItemListIds": [],
+	"storedGraph":
+	{
+		"nodes": []
+	},
+	"guid": "6064633570797944852",
+	"name": "COM_JUN_Gather_Raw_Plant_GiantsToe_DISABLED",
+	"typeId": "280002"
+}

@@ -1,0 +1,164 @@
+{
+	"effectCategory": "EFFECT_Hidden",
+	"effectTags": [],
+	"effectName": "Chill",
+	"effectDescription": "Reduce ice mitigation. ",
+	"effectIcon": "/Game/UI/Icons/Archetypes/Mage/TUI_AbilityIcon_FrostBolt.TUI_AbilityIcon_FrostBolt",
+	"effectFloatingText": "",
+	"bDispellable": false,
+	"bSignificant": false,
+	"scriptOnApply": "None",
+	"scriptOnExpire": "None",
+	"bSetUnkillable": false,
+	"bGrantsPVPOptInProtection": false,
+	"effectFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"applicationRequirements":
+	{
+		"expression": ""
+	},
+	"bOverrideDefaultResistRate": false,
+	"resistRate":
+	{
+		"expression": ""
+	},
+	"bInfiniteDuration": false,
+	"effectDuration":
+	{
+		"expression": "1"
+	},
+	"bNumStacksLostOnDurationElapse": false,
+	"numStacksLostOnDurationElapse":
+	{
+		"expression": "1"
+	},
+	"bPersistsThroughDeath": false,
+	"bPersistsRelog": false,
+	"effectGroupId":
+	{
+		"guid": "0",
+		"typeId": "30316004",
+		"name": "None"
+	},
+	"effectStackType": "STACK_StackInPlace",
+	"bCompareSourceWhenStacking": false,
+	"collateStacksInUI": false,
+	"globalStackLimit": 20,
+	"inPlaceStackLimit":
+	{
+		"expression": "20"
+	},
+	"stackDurationRefresh": "STACK_AlwaysRefresh",
+	"extensionAmount":
+	{
+		"expression": ""
+	},
+	"extendedMaximum": 50,
+	"scriptOnMaxStacks": "None",
+	"bLimitStacksFromInstigator": false,
+	"instigatorStackLimit":
+	{
+		"expression": ""
+	},
+	"tickTimer": 0,
+	"bIgnoreInitialTick": false,
+	"scriptOnTick": "None",
+	"bRecalculateHitOnTick": false,
+	"preApplyHitsIds": [],
+	"applyHitsIds": [],
+	"tickHitsIds": [],
+	"consumeHitsIds": [],
+	"removeHitsIds": [],
+	"expireHitsIds": [],
+	"endHitsIds": [],
+	"statModsIds": [],
+	"spawnNPCsIds": [
+		{
+			"guid": "6064630990290616591",
+			"typeId": "3031600204",
+			"name": "None"
+		},
+		{
+			"guid": "6064631029821669873",
+			"typeId": "3031600204",
+			"name": "None"
+		},
+		{
+			"guid": "6064631029841330674",
+			"typeId": "3031600204",
+			"name": "None"
+		},
+		{
+			"guid": "6064631029841723891",
+			"typeId": "3031600204",
+			"name": "None"
+		},
+		{
+			"guid": "6064631029847687668",
+			"typeId": "3031600204",
+			"name": "None"
+		},
+		{
+			"guid": "6064631029874426357",
+			"typeId": "3031600204",
+			"name": "None"
+		},
+		{
+			"guid": "6064631029874819574",
+			"typeId": "3031600204",
+			"name": "None"
+		},
+		{
+			"guid": "6064631029875737079",
+			"typeId": "3031600204",
+			"name": "None"
+		}
+	],
+	"spawnLingeringZonesIds": [],
+	"redirectsIds": [],
+	"reactionsIds": [],
+	"crowdControlId":
+	{
+		"guid": "0",
+		"typeId": "3031600206",
+		"name": "None"
+	},
+	"resistancesIds": [],
+	"fragilityDefinitionsIds": [],
+	"hitModsIds": [],
+	"addAlignmentsIds": [],
+	"removeAlignmentsIds": [],
+	"bApplyScale": false,
+	"scaleAmount":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"scaleTime": 0,
+	"statusVFX": "None",
+	"supressClickTargeting":
+	{
+		"expression": ""
+	},
+	"supressTabAndSoftTargeting":
+	{
+		"expression": ""
+	},
+	"supressNameplate":
+	{
+		"expression": ""
+	},
+	"bSlowFall": false,
+	"bNeverCull": false,
+	"addedAkEvents": [],
+	"removedAkEvents": [],
+	"akSwitchValues": [],
+	"guid": "6064630990420836628",
+	"name": "ElderDragon_Ice_IceStorm",
+	"typeId": "30316002"
+}

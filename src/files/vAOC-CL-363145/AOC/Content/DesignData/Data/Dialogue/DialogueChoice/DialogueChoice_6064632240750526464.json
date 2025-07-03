@@ -1,0 +1,21 @@
+{
+	"choiceText": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"5F3EED364D510C36F195A69BBC4B0369\", \"There are at least two buy orders active!\")",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "Node_GetNumBuyOrders($#1323521343:6064628934942261248$) >= 2"
+	},
+	"narrativeRequirementsIds": [],
+	"choiceType": "Default",
+	"guid": "6064632240750526464",
+	"name": "Node_GetNumBuyOrders",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"281B239F40E253822D3B6B93E3FC75CE\", \"q1, but No Q2\")",
+	"nextNodeId":
+	{
+		"guid": "6064630123538284556",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "!IsStoryArcQuestAvailable(GetPlayer(),\"SAQ_0022_p1q1_Handbill\")\r\n&&IsStoryArcQuestAvailable(GetPlayer(),\"SAQ_0022_p1q2_BestLaidPlans\")&&!IsOnStoryArcQuest(GetPlayer(), \"SAQ_0022_p1q2_BestLaidPlans\")\r\n"
+	},
+	"guid": "6064630123533303818",
+	"name": "0022_Seph_Kev_36",
+	"typeId": "1091110027"
+}

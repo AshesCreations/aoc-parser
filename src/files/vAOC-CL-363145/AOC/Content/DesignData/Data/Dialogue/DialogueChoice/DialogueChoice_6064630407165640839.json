@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"5AAA16514217C1FA4FCB2EB7325E92B7\", \"Uulorian has been defeated.\")",
+	"nextNodeId":
+	{
+		"guid": "6064630407166951560",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0005A_FGG_ForGreaterGlory\",\"MAP_0005A_FGG_Phase03\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0005A_BLO_BlindingLightsOfOzu\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005A_BLO_BlindingLightsOfOzu\",\"KilledOzu\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005A_BLO_BlindingLightsOfOzu\",\"ReturnEudoxia\")\r\n"
+	},
+	"guid": "6064630407165640839",
+	"name": "MADD_0005A_BLO_EudoxiaAvenmoor_Phase03_14",
+	"typeId": "1091110027"
+}

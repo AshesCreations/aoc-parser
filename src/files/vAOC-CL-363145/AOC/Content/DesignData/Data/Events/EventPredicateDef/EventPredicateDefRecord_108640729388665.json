@@ -1,0 +1,37 @@
+{
+	"expression":
+	{
+		"expression": "(Event_GetActiveStageIndex() == 2 && Event_GetNumParticipants() == 0)"
+	},
+	"triggersIds": [
+		{
+			"guid": "108639583164024",
+			"typeId": "23095135",
+			"name": "ETD_0003_Q2_AdvanceToP4"
+		},
+		{
+			"guid": "108492693198456",
+			"typeId": "23095135",
+			"name": "EventTrigger_0003_Q2_Debug2"
+		},
+		{
+			"guid": "108640744855162",
+			"typeId": "23095135",
+			"name": "EventTriggerDefRecord_108640744855162"
+		}
+	],
+	"bIsObjective": false,
+	"objectiveText": "",
+	"progressType": "IntType",
+	"displayType": 0,
+	"completionValue": 0,
+	"flowEditorNodeLocation":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"guid": "108640729388665",
+	"name": "EPD_0003_2_TImerCount_TransitionToP4_EndFail",
+	"typeId": "23095129"
+}

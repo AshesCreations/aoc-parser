@@ -1,0 +1,129 @@
+{
+	"eventName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"A03D885E46E7B5FD5C4518B19EC385D6\", \"Belly of the Beast\")",
+	"gameplayTags":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"activationPredicatesIds": [
+		{
+			"guid": "6064633379796221973",
+			"typeId": "23095129",
+			"name": "None"
+		}
+	],
+	"minChallengeRating": 0,
+	"maxChallengeRating": 30,
+	"eventLevel": 24,
+	"eventType": 33,
+	"locationId":
+	{
+		"guid": "6064633379787243521",
+		"typeId": "5127371160",
+		"name": "None"
+	},
+	"desiredTimeSlot": "0001.01.01-00.00.00",
+	"frequency": 24,
+	"priority": 1,
+	"rewardTableId":
+	{
+		"guid": "6064631430955597824",
+		"typeId": "1091110040",
+		"name": "None"
+	},
+	"rewardPopulationSetId":
+	{
+		"guid": "6064631432554414080",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"startStageId":
+	{
+		"guid": "6064633379787243531",
+		"typeId": "23095131",
+		"name": "None"
+	},
+	"stagesIds": [
+		{
+			"guid": "6064633379787243522",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064633379787243528",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064633379787243531",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064633379866607647",
+			"typeId": "23095131",
+			"name": "None"
+		}
+	],
+	"interactVolumesIds": [],
+	"alignmentsIds": [],
+	"mapDisplayType": "Biome",
+	"mapEventIcon": "/Game/UI/Icons/Map/TUI_Icon_Map_Event_Active.TUI_Icon_Map_Event_Active",
+	"bDisplayOnTracker": true,
+	"notificationRadius": 50000,
+	"mapRadiusMinumum": 1000,
+	"cooldownTimer": 7200,
+	"bDisabled": false,
+	"maxInstanceCount": 1,
+	"requiredMapName": "Verra_World_Master",
+	"comments": [
+		{
+			"commentGuid": "6064631386327220252",
+			"comment": "This Event Begins when nearby player activity reaches 10",
+			"location":
+			{
+				"x": 959.00665184586001,
+				"y": 366.06808072286071,
+				"z": 0
+			},
+			"size":
+			{
+				"x": 2076.9797693490982,
+				"y": 1099.4646097421646,
+				"z": 0
+			},
+			"color":
+			{
+				"r": 0.10999999940395355,
+				"g": 0.059999998658895493,
+				"b": 1,
+				"a": 0.5
+			}
+		}
+	],
+	"bIsTemplate": false,
+	"flowNodes": [
+		{
+			"flowType": "EventEntry",
+			"graphLocation":
+			{
+				"x": 1282.1466055850367,
+				"y": 163.54026628816652
+			},
+			"id": 0
+		},
+		{
+			"flowType": "EventExit",
+			"graphLocation":
+			{
+				"x": 2691.999783337119,
+				"y": 650.6595730900525
+			},
+			"id": 1
+		}
+	],
+	"bSkipCrashRecovery": false,
+	"guid": "6064633379787243520",
+	"name": "EVT_TUR_0007_BellyBeast",
+	"typeId": "23095125"
+}

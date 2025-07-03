@@ -1,0 +1,98 @@
+{
+	"designNotes": "",
+	"levelDefinitionId":
+	{
+		"guid": "6064629126799097877",
+		"typeId": "9227326",
+		"name": "None"
+	},
+	"playerFacingName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"919C9AC643BECD9E4B3FEA9A279FD0F3\", \"Southern Turquoise Sea Harbor\")",
+	"zoiType": "CannotOwn",
+	"startingAreaGameplayTag":
+	{
+		"tagName": "None"
+	},
+	"cityNodeId":
+	{
+		"guid": "6064633254012715016",
+		"typeId": "1323521343",
+		"name": "None"
+	},
+	"adjacentZonesOfInfluenceIds": [
+		{
+			"guid": "6064633253929811971",
+			"typeId": "9127326",
+			"name": "None"
+		}
+	],
+	"corruptionRulesEnabled": true,
+	"bAllowPVPOptInProtection": false,
+	"alignmentsAssignedUponEnteringIds": [],
+	"zoiEnvironmentType": "Harbor",
+	"editorColor":
+	{
+		"x": 1,
+		"y": 0.29999999999999999,
+		"z": 0.5
+	},
+	"zOIRewardTables": [
+		{
+			"inclusionExpression":
+			{
+				"expression": "!DoesNPCContainTag(\"NoRewards\")"
+			},
+			"rewardTableId":
+			{
+				"guid": "6064632271552381720",
+				"typeId": "1091110040",
+				"name": "None"
+			}
+		},
+		{
+			"inclusionExpression":
+			{
+				"expression": "DoesNPCContainTag(\"character.humanoid\")"
+			},
+			"rewardTableId":
+			{
+				"guid": "6064633391378137089",
+				"typeId": "1091110040",
+				"name": "None"
+			}
+		},
+		{
+			"inclusionExpression":
+			{
+				"expression": "!DoesNPCContainTag(\"NoRewards\")"
+			},
+			"rewardTableId":
+			{
+				"guid": "6064633313653948416",
+				"typeId": "1091110040",
+				"name": "None"
+			}
+		}
+	],
+	"economicRegionTableId":
+	{
+		"guid": "6064633459707215948",
+		"typeId": "98738382",
+		"name": "None"
+	},
+	"bHideExperienceEvents": true,
+	"biome": "Tropics",
+	"biomeGatherableTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "TurquoiseSea"
+			}
+		],
+		"parentTags": []
+	},
+	"freeholdEstatesIds": [],
+	"actorEffects": [],
+	"guid": "6064633253931122693",
+	"name": "Verra_TUR_HARBOR_Southern",
+	"typeId": "9127326"
+}

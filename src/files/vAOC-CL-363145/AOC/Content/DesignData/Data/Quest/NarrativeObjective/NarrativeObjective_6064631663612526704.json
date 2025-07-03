@@ -1,0 +1,91 @@
+{
+	"narrativeType": "Commission",
+	"taskId":
+	{
+		"guid": "6064631006803329033",
+		"typeId": "1095125186",
+		"name": "None"
+	},
+	"completionParameters":
+	{
+		"objectiveType": "Kill",
+		"nPCTaskIconOverrideId":
+		{
+			"guid": "0",
+			"typeId": "949952112329",
+			"name": "None"
+		},
+		"bAllowSatisfactionToRegress": false,
+		"completionQuantity": 4,
+		"tagQuery":
+		{
+			"tokenStreamVersion": 0,
+			"tagDictionary": [
+				{
+					"tagName": "Quest.CSQ_0017_FoulRunes"
+				}
+			],
+			"queryTokenStream": [ 0, 1, 1, 1, 0 ],
+			"userDescription": "",
+			"autoDescription": " ANY( Quest.CSQ_0017_FoulRunes )"
+		},
+		"professionFilterIds": [],
+		"gatherableFilterIds": [],
+		"collectionFilterId":
+		{
+			"guid": "0",
+			"typeId": "1091110041",
+			"name": "None"
+		},
+		"subObjectivesIds": [],
+		"bLimitToDisplayLocation": false,
+		"goToAreaLocation": [],
+		"populationSetIds": [],
+		"populationInstanceIds": [],
+		"notifyType": "None"
+	},
+	"objectiveText": "NSLOCTEXT(\"\", \"840CA43E4184B23C383D739D09CE0686\", \"Destroy the Runes of Sacrifice around the Foul Grog.\")",
+	"objectiveCountText": "NSLOCTEXT(\"\", \"1031A943440F407EEBAC7488563E085A\", \"Destroyed A Foul Rune\")",
+	"initiallyHidden": false,
+	"advanceWhileHidden": true,
+	"revealOnComplete": true,
+	"completionRewardsIds": [],
+	"minimumRequirement": true,
+	"completionFlags": [],
+	"instanceCompletionResult": [],
+	"enabledPredicate":
+	{
+		"expression": ""
+	},
+	"completionActionsIds": [],
+	"objectivesToCompleteUponCompletionIds": [],
+	"objectivesToRevealUponCompletionIds": [],
+	"allowOverAchievement": false,
+	"overAchievementCountText": "",
+	"maximumAdditionalCompletions": 2,
+	"multipleCompletionExperienceMultiplier": 0.30000001192092896,
+	"multipleCompletionGoldMultiplier": 0.30000001192092896,
+	"multipleCompletionVariableMultiplier": 0.30000001192092896,
+	"displayLocation": [
+		{
+			"location":
+			{
+				"x": -684117.53736299998,
+				"y": 456393.34861799999,
+				"z": 17412.980349000001
+			},
+			"radius": 5000,
+			"map_DisplayType": "ICON",
+			"map_IconVisual":
+			{
+				"guid": "6064630990211645445",
+				"typeId": "949952112329",
+				"name": "None"
+			},
+			"map_DisplayName": "NSLOCTEXT(\"\", \"3A8DF3AA437C57EFB8F0C4B150229BF8\", \"The Foul Grog\")"
+		}
+	],
+	"guid": "6064631663612526704",
+	"name": "NarrativeObjective_TID_COM_RVR_Kill_Destroy_FoulRunes_Objective",
+	"typeId": "1091110420"
+}

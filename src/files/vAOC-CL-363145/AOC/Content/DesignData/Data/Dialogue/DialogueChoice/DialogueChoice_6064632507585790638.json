@@ -1,0 +1,22 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"2668CACE41C34EF194ACAD9DF2CDEC02\", \"About those inscriptions...\")",
+	"nextNodeId":
+	{
+		"guid": "6064632507504722601",
+		"typeId": "1091110028",
+		"name": "DD_SQ_0011_HistorianQatakijal_11"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "Player_HasCompletedCommission(GetPlayer(), \"SQ_0011_AncientEpitaphs\") &&\r\n!Player_HasCompletedCommission(GetPlayer(), \"SQ_0012_InTranslation\") &&\r\n!Player_HasCommission(GetPlayer(), \"SQ_0012_InTranslation\")"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064632507585790638",
+	"name": "DD_SQ_0011_HistorianQatakijal_12_Choice_1",
+	"typeId": "1091110027"
+}

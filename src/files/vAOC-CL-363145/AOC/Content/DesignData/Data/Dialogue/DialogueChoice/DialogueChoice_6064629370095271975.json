@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"51A83AE948A2820C0FF203A17C6E43A4\", \"during Q1\")",
+	"nextNodeId":
+	{
+		"guid": "6064629370587971666",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsOnStoryArcQuest(GetPlayer(),\"SAQ_0008_DescentToTheBackwaters\")&&!GetStoryArcQuestFlag(GetPlayer(),\"SAQ_0008_DescentToTheBackwaters\",\"HasTradesman\")"
+	},
+	"guid": "6064629370095271975",
+	"name": "MADD_0008_DescentToTheBackwaters_2",
+	"typeId": "1091110027"
+}

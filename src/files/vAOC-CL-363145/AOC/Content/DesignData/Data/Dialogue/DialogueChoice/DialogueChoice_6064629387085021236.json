@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"06489C3D42F418183A68CFBA80856E35\", \"[EMERGENCY ENTRY]\")",
+	"nextNodeId":
+	{
+		"guid": "6064629387088691254",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MIA_0015_TPT_ThePhantomTower\",\"MIP_0015_TPT_Phase04\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MIQ_0015_AOF_AnOldFriend\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MIQ_0015_AOF_AnOldFriend\",\"OpenedSafe\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MIQ_0015_AOF_AnOldFriend\",\"AskedCodex\")"
+	},
+	"guid": "6064629387085021236",
+	"name": "MIDD_0015_AOF_ClockworkCodex_4",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,97 @@
+{
+	"commissionType": "Generic",
+	"commissionGameplayTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "Biome.Riverlands"
+			},
+			{
+				"tagName": "Quest.Commission.Tier.T1"
+			},
+			{
+				"tagName": "Quest.Commission.Adventure.Goto"
+			}
+		],
+		"parentTags": [
+			{
+				"tagName": "Biome"
+			},
+			{
+				"tagName": "Quest.Commission.Tier"
+			},
+			{
+				"tagName": "Quest.Commission"
+			},
+			{
+				"tagName": "Quest"
+			},
+			{
+				"tagName": "Quest.Commission.Adventure"
+			}
+		]
+	},
+	"preRequisiteQuestsIds": [],
+	"autoFailTimer": -1,
+	"bRepeatable": false,
+	"mainObjectiveType": "Interact",
+	"commissionSection": 1,
+	"biomeOrigin": "FloodPlains",
+	"bFromDynamicContent": false,
+	"availabilityExpression":
+	{
+		"expression": "0"
+	},
+	"bDisabled": true,
+	"level": 5,
+	"commissionRarity": "Uncommon",
+	"objectivesIds": [
+		{
+			"guid": "6064631663612526730",
+			"typeId": "1091110420",
+			"name": "None"
+		}
+	],
+	"allowMultipleCompletion": false,
+	"commissionName": "NSLOCTEXT(\"\", \"23223C0049F102EE45C9CC8A6E22EB05\", \"Snuff the Ritual Fires\")",
+	"flavorText": "NSLOCTEXT(\"\", \"FA3EA21E45A3C02DFEE5729192B8A898\", \"At night, goblins cackle across the ruins of Korra\\'loch chanting their dark rituals. Go there and extinguish their ritual flames.\")",
+	"mainObjectiveText": "NSLOCTEXT(\"\", \"64F8808847E1497921AF96AC725AD16B\", \"Snuff Ritual Fires\")",
+	"rewardTablesIds": [
+		{
+			"guid": "6064631828174340098",
+			"typeId": "1091110040",
+			"name": "None"
+		}
+	],
+	"calloutName": "",
+	"calloutDescription": "",
+	"bCanProgressWhileInRaid": false,
+	"expiration":
+	{
+		"duration": "0"
+	},
+	"cooldown":
+	{
+		"duration": "0"
+	},
+	"moneyCost": "0",
+	"resourceCost": [],
+	"mayoralCompletionCount": 0,
+	"rewardId":
+	{
+		"guid": "0",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"bNodeTargeted": false,
+	"targetRewardId":
+	{
+		"guid": "0",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"questItemListIds": [],
+	"guid": "6064631092485882239",
+	"name": "COM_RVR_Interact_SnuffGoblinFires",
+	"typeId": "280002"
+}

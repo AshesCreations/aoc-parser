@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"7E2411314C884F353261CCA6DB111EF1\", \"I\\'m hunting Timberclaw.\")",
+	"nextNodeId":
+	{
+		"guid": "6064630333412540476",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0005A_FGG_ForGreaterGlory\",\"MAP_0005A_FGG_Phase01\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0005A_TIG_TroubleInGrazeland\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005A_TIG_TroubleInGrazeland\",\"SpeakLumberjack\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005A_TIG_TroubleInGrazeland\",\"SpeakToBoone\")\r\n"
+	},
+	"guid": "6064630333409525819",
+	"name": "MADD_0005A_TIG_NPC_BearskinBoone_4",
+	"typeId": "1091110027"
+}

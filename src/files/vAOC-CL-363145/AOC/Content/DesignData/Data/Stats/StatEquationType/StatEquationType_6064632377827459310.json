@@ -1,0 +1,12 @@
+{
+	"equation":
+	{
+		"expression": "const ttk = 19;\r\nconst eventLevel = GetTerm($#10516612381411115:6064632377864749302$);\r\nconst XpPerKill = EvalCurve($#10516612381411114:6064630639394422811$, eventLevel);\r\n\r\nRound(XpPerKill / ttk * 60 * GetTerm($#10516612381411115:6064632236972834819$) * 1.3)"
+	},
+	"constraints":
+	{
+	},
+	"guid": "6064632377827459310",
+	"name": "Narrative_XP_WithLevel",
+	"typeId": "10516612381411112"
+}

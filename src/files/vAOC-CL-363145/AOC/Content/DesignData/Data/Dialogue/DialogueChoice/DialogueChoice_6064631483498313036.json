@@ -1,0 +1,24 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"16C78D434350AA22BA621A871A9D052C\", \"Sounds like a good plan\")",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064631188543832084",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "!Player_HasCompletedCommission(GetPlayer(),\"CSQ_RVR_TLC_0030_09_GreenScarabTavern\")&&\r\n!Player_HasCommission(GetPlayer(),\"CSQ_RVR_TLC_0030_09_GreenScarabTavern\")"
+	},
+	"choiceType": "StoryArc",
+	"guid": "6064631483498313036",
+	"name": "ED_RVR_M903_LarcenersPact_FactionA_Boss_Dlg_24",
+	"typeId": "1091110027"
+}

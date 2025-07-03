@@ -1,0 +1,22 @@
+{
+	"statRefId":
+	{
+		"guid": "6064631663405498419",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"value":
+	{
+		"expression": "var mod = 1.0;\r\nif(GetSkillPurchased(GetInstigator(), $#30316003:6064629885900499588$, $#981011333:6064631075066283077$)){\r\n    set mod = Lerp(1.0,1.5,GetAbilityProgressRatio(\"SongGroup\"));\r\n}\r\nif(GetEffectCount(GetInstigator(), $#30316002:6064632972485066752$) > 0){\r\n    set mod = mod * 2.0;\r\n}\r\nmod"
+	},
+	"bUseShieldAbsorb": false,
+	"shieldAbsorbPercentage":
+	{
+		"expression": ""
+	},
+	"bShowFloatingText": true,
+	"valueInputTerms": [],
+	"guid": "6064632428907536618",
+	"name": "Bard_Music_Epic_StamRegen",
+	"typeId": "3031600201"
+}

@@ -1,0 +1,70 @@
+{
+	"bIsHumanoid": true,
+	"appearanceType": "/Script/GameSystemsPlugin.NPCAppearanceComponent",
+	"bRandomizeCustomization": true,
+	"customizationPresetId":
+	{
+		"guid": "0",
+		"typeId": "8512355578663",
+		"name": "None"
+	},
+	"customizationSeed": 0,
+	"outfitWeightCurve":
+	{
+		"externalCurve": "None",
+		"editorCurveData":
+		{
+			"keys": [
+				{
+					"interpMode": "RCIM_Linear",
+					"tangentMode": "RCTM_Auto",
+					"tangentWeightMode": "RCTWM_WeightedNone",
+					"time": -0.00074937939643859863,
+					"value": 1.100092887878418,
+					"arriveTangent": 0,
+					"arriveTangentWeight": 0,
+					"leaveTangent": 0,
+					"leaveTangentWeight": 0
+				},
+				{
+					"interpMode": "RCIM_Linear",
+					"tangentMode": "RCTM_Auto",
+					"tangentWeightMode": "RCTWM_WeightedNone",
+					"time": 1.7899094820022583,
+					"value": 0.53063726425170898,
+					"arriveTangent": 0,
+					"arriveTangentWeight": 0,
+					"leaveTangent": 0,
+					"leaveTangentWeight": 0
+				}
+			],
+			"defaultValue": 3.4028234663852886e+38,
+			"preInfinityExtrap": "RCCE_Constant",
+			"postInfinityExtrap": "RCCE_Constant",
+			"keyHandlesToIndices":
+			{
+			}
+		}
+	},
+	"humanoidOutfitOptionsIds": [
+		{
+			"guid": "109234907010681",
+			"typeId": "7412360",
+			"name": "HarvestGuard"
+		},
+		{
+			"guid": "109234883286648",
+			"typeId": "7412360",
+			"name": "Mix_Commoner"
+		}
+	],
+	"sharedAppearanceInfoId":
+	{
+		"guid": "6064629971694714880",
+		"typeId": "402012",
+		"name": "None"
+	},
+	"guid": "109234915661434",
+	"name": "Commoner",
+	"typeId": "812360"
+}

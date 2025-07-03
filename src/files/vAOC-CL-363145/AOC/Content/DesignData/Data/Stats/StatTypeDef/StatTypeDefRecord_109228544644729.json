@@ -1,0 +1,55 @@
+{
+	"displayName": "NSLOCTEXT(\"[1909495A4C2095068D406C9D33F90055]\", \"6F8CABFA4040E84F8092879DBB356321\", \"Movement Speed\")",
+	"description": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"C489E2E7418B7878BFB73CA418C14BCA\", \"Increases movement speed. Each source of this stat adds together with others before being applied multiplicatively.\")",
+	"bHidden": false,
+	"gameplayType": "Type_Combat",
+	"bHasWaterfallStatsUI": false,
+	"waterfallStatsUIIds": [],
+	"bDisplayAsPercentage": true,
+	"statType": "Type_Float",
+	"bClampStatFinalValue": false,
+	"bMultiplyStatMods": false,
+	"bMultiplyCompliment": false,
+	"base":
+	{
+		"expression": "const fighterMomentumMult = GetStat(GetInstigator(), $#10516612381411111:6064629959589298751$) * 0.002;\r\nconst fighterForm = GetEffectCount(GetInstigator(), $#30316002:6064630168644354653$);\r\n//const rating = GetStat(GetInstigator(), $Stat:MoveSpeedMultRating$);\r\n\r\n1 + fighterMomentumMult * fighterForm\r\n//+ 2 * rating / (rating + EvalFormula($Formula:Coeff_MoveSpeedMult$))\r\n\r\n// need to add the rating to stat initializers\r\n// also to the waterfall recalc below"
+	},
+	"waterfallStatsBaseIds": [
+		{
+			"guid": "6064629959589298751",
+			"typeId": "10516612381411111",
+			"name": "None"
+		}
+	],
+	"valueMin":
+	{
+		"expression": "0"
+	},
+	"waterfallStatsMinIds": [],
+	"valueMax":
+	{
+		"expression": "10"
+	},
+	"waterfallStatsMaxIds": [],
+	"regenRate":
+	{
+		"expression": "0"
+	},
+	"waterfallStatsRegenIds": [],
+	"bRegenWhileDead": false,
+	"onSpawn": "Reset_None",
+	"onDeath": "Reset_None",
+	"onRevive": "Reset_None",
+	"bPersistValue": false,
+	"replication": 7,
+	"shieldStatId":
+	{
+		"guid": "0",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"grantedEffects": [],
+	"guid": "109228544644729",
+	"name": "MoveSpeedMult",
+	"typeId": "10516612381411111"
+}

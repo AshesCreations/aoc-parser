@@ -1,0 +1,96 @@
+{
+	"bAllowSatisfactionToRegress": true,
+	"parameterTypes": 1,
+	"objectiveType": "Channel",
+	"completionCriteria": [
+		{
+			"bOverrideCompletionValueWithExpression": true,
+			"completionValue": 0,
+			"operator": "GreaterThanOrEqualTo",
+			"completionExpression":
+			{
+				"expression": "(Event_GetFloatObjectiveProgress() >= 98.0) &&\r\nEvent_GetBoolVar(\"BarracksExplosivePlaced\") == true &&\r\nEvent_GetBoolVar(\"Barracks_Damaged\") == false"
+			},
+			"completionTriggersIds": [],
+			"bDisplayOnTracker": true,
+			"relevantTrackerIds": [
+				{
+					"guid": "6064632717378873596",
+					"typeId": "23095133",
+					"name": "None"
+				}
+			],
+			"displayText": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"2EF101144F60BF09B0E54C90FDC47476\", \"Disarm the Explosive Charge\")",
+			"displayType": 8,
+			"displayCompletionValue": 0,
+			"bInvertProgressDisplay": false
+		}
+	],
+	"nPCObjectiveIconOverrideId":
+	{
+		"guid": "0",
+		"typeId": "949952112329",
+		"name": "None"
+	},
+	"progressExpression":
+	{
+		"expression": ""
+	},
+	"gameplayTagFilter":
+	{
+		"tokenStreamVersion": 0,
+		"tagDictionary": [],
+		"queryTokenStream": [],
+		"userDescription": "",
+		"autoDescription": ""
+	},
+	"populationSetId":
+	{
+		"guid": "0",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"trackerId":
+	{
+		"guid": "0",
+		"typeId": "23095133",
+		"name": "None"
+	},
+	"interactablesIds": [],
+	"professionFilterIds": [],
+	"gatherableFilterIds": [],
+	"collectionFilterId":
+	{
+		"guid": "0",
+		"typeId": "1091110041",
+		"name": "None"
+	},
+	"collectionCount": 5,
+	"abilityRecordId":
+	{
+		"guid": "6064633584542416921",
+		"typeId": "30316001",
+		"name": "None"
+	},
+	"activityType": "NPCKill",
+	"activityQueryLocation":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"activityQueryExtent":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"visibilityExpression":
+	{
+		"expression": "Event_GetBoolVar(\"Event_Prototype\") == true &&\r\nEvent_GetBoolVar(\"BarracksExplosivePlaced\") == true &&\r\nEvent_GetBoolVar(\"Barracks_Damaged\") == false"
+	},
+	"visibilityOverridesTrackerFilter": false,
+	"guid": "6064633584577806362",
+	"name": "Siege_DisarmExplosive_Interact",
+	"typeId": "23095130"
+}

@@ -1,0 +1,23 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"D3FD72C14D40177160BA70B62B88FAF8\", \"I\\'ve brought some Spore Chunks\")",
+	"nextNodeId":
+	{
+		"guid": "6064630594383904965",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064629851231748099",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "IsOnStoryArcQuest(GetPlayer(),\"SAQ_0013_P1Q1_MushroomHunting\")&&GetStoryArcQuestFlag(GetPlayer(),\"SAQ_0013_P1Q1_MushroomHunting\",\"Mush1Done\")"
+	},
+	"guid": "6064629841016127573",
+	"name": "0013_AuntMush_Dialog_28",
+	"typeId": "1091110027"
+}

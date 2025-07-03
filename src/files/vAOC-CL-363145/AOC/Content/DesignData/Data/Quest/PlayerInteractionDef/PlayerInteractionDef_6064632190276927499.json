@@ -1,0 +1,77 @@
+{
+	"completionResponsesIds": [
+		{
+			"guid": "6064632190454398976",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064632223763662004",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"objectivesToCompleteUponCompletionIds": [],
+	"objectivesToRevealUponCompletionIds": [],
+	"itemsToGrantUponCompletion": [],
+	"channelDuration": 0,
+	"activePredicate":
+	{
+		"expression": "(!Player_ObjectiveStateEquals(GetPlayer(),\"CSQ_RVR_0085_FB_StaunchBloodyBlade_CollectSupplies_OBJ\",EObjectiveState::Complete)||\r\n!Player_ObjectiveStateEquals(GetPlayer(),\"CSQ_RVR_0085_FB_StaunchBloodyBlade_BlameSighted_OBJ\",EObjectiveState::Complete))&&\r\nPlayer_HasCommission(GetPlayer(),\"CSQ_RVR_0085_FB_StaunchBloodyBlade\")"
+	},
+	"cuePredicate":
+	{
+		"expression": "(!Player_ObjectiveStateEquals(GetPlayer(),\"CSQ_RVR_0085_FB_StaunchBloodyBlade_CollectSupplies_OBJ\",EObjectiveState::Complete)||\r\n!Player_ObjectiveStateEquals(GetPlayer(),\"CSQ_RVR_0085_FB_StaunchBloodyBlade_BlameSighted_OBJ\",EObjectiveState::Complete))&&\r\nPlayer_HasCommission(GetPlayer(),\"CSQ_RVR_0085_FB_StaunchBloodyBlade\")"
+	},
+	"visiblePredicate":
+	{
+		"expression": "(!Player_ObjectiveStateEquals(GetPlayer(),\"CSQ_RVR_0085_FB_StaunchBloodyBlade_CollectSupplies_OBJ\",EObjectiveState::Complete)||\r\n!Player_ObjectiveStateEquals(GetPlayer(),\"CSQ_RVR_0085_FB_StaunchBloodyBlade_BlameSighted_OBJ\",EObjectiveState::Complete))&&\r\nPlayer_HasCommission(GetPlayer(),\"CSQ_RVR_0085_FB_StaunchBloodyBlade\")"
+	},
+	"showErrorIfNotVisible": false,
+	"deleteOnCompletion": false,
+	"singleUse": false,
+	"alwaysShowUIPrompt": true,
+	"cancelChannelIfActivePredicateEverFails": true,
+	"interactTextFormat": "",
+	"channelModifierType": "NONE",
+	"rewardTableId":
+	{
+		"guid": "0",
+		"typeId": "1091110008",
+		"name": "None"
+	},
+	"startEffect": "None",
+	"endEffect": "None",
+	"failEffect": "None",
+	"successEffect": "None",
+	"cueEffect": "/Game/Effects/FX_Shared/Particles/FX_LootBeam_01.FX_LootBeam_01",
+	"startSound": "None",
+	"endSound": "None",
+	"failSound": "None",
+	"successSound": "None",
+	"cueSound": "None",
+	"interactAnimTag": "None",
+	"deletionDelay": 0,
+	"activeCueEnabled": true,
+	"activeCueIgnoresActivePredicate": false,
+	"facePlayer": false,
+	"allowInCombat": true,
+	"spawnAtBottomCapsule": false,
+	"channelAnimation": "None",
+	"interactRadius": 200,
+	"interactTolerance": 30,
+	"interactAngle": 0,
+	"busyTime": 0.89999997615814209,
+	"clientBusyTime": 1,
+	"channelStartResponseIds": [],
+	"failResponsesIds": [],
+	"gatheringInteractionDataId":
+	{
+		"guid": "0",
+		"typeId": "19846",
+		"name": "None"
+	},
+	"guid": "6064632190276927499",
+	"name": "CSQ_RVR_0085_FB_StaunchBloodyBlade_MedicalSupplies_Interact",
+	"typeId": "1091110031"
+}

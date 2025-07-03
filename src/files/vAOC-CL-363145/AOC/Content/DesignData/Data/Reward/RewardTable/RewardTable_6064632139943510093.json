@@ -1,0 +1,99 @@
+{
+	"predicate":
+	{
+		"expression": ""
+	},
+	"rewardDefContainers": [
+		{
+			"grantPredicate":
+			{
+				"expression": ""
+			},
+			"selectionAlgorithm": "All",
+			"numberToSelect": 0,
+			"grantMethod": "Always",
+			"rewardsWeightCurve":
+			{
+				"externalCurve": "None",
+				"editorCurveData":
+				{
+					"keys": [],
+					"defaultValue": 3.4028234663852886e+38,
+					"preInfinityExtrap": "RCCE_Constant",
+					"postInfinityExtrap": "RCCE_Constant",
+					"keyHandlesToIndices":
+					{
+					}
+				}
+			},
+			"weightsPerReward": [],
+			"percentageDropRatePerReward": [],
+			"maxSelectorChoices": 0,
+			"rewards": [
+				{
+					"displayName": "",
+					"currency":
+					{
+					},
+					"itemRewards": [],
+					"experienceRewards": [
+						{
+							"experienceType": "Profession",
+							"experienceValue":
+							{
+								"expression": "500"
+							},
+							"experienceContextId":
+							{
+								"guid": "6064630644204175885",
+								"typeId": "1091110055",
+								"name": "None"
+							},
+							"professionsId":
+							{
+								"guid": "108752769996425",
+								"typeId": "8125613373123",
+								"name": "None"
+							},
+							"gatheringResourceTypeId":
+							{
+								"guid": "0",
+								"typeId": "1983422155363",
+								"name": "None"
+							},
+							"craftingRecipeDefId":
+							{
+								"guid": "0",
+								"typeId": "163697",
+								"name": "None"
+							}
+						}
+					]
+				}
+			],
+			"rewardContainerIcon": "None"
+		}
+	],
+	"subTableSelectionAlgorithm": "All",
+	"numberOfSubtablesToSelect": 2,
+	"weightsPerSubTable": [],
+	"percentagePerSubTable": [],
+	"subTablesWeightCurve":
+	{
+		"externalCurve": "None",
+		"editorCurveData":
+		{
+			"keys": [],
+			"defaultValue": 3.4028234663852886e+38,
+			"preInfinityExtrap": "RCCE_Constant",
+			"postInfinityExtrap": "RCCE_Constant",
+			"keyHandlesToIndices":
+			{
+			}
+		}
+	},
+	"subTablesIds": [],
+	"guid": "6064632139943510093",
+	"name": "Base_Commission_Mining_XP_T1",
+	"typeId": "1091110040"
+}

@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"1E76B88B4E296678388A3D83944FD3BA\", \"has quest, cant complete\")",
+	"nextNodeId":
+	{
+		"guid": "6064629410550317602",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsOnStoryArcQuest(GetPlayer(),\"SAQ_0008_BrotherhoodoftheMissingCloak\")&&!CanCompleteQuest(GetPlayer(),\"SAQ_0008_BrotherhoodoftheMissingCloak\")"
+	},
+	"guid": "6064629410550317594",
+	"name": "MADD_0008_BrotherMindel_3",
+	"typeId": "1091110027"
+}

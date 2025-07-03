@@ -1,0 +1,81 @@
+{
+	"narrativeType": "StoryArc",
+	"taskId":
+	{
+		"guid": "6064630882082095459",
+		"typeId": "1095125186",
+		"name": "None"
+	},
+	"completionParameters":
+	{
+		"objectiveType": "Basic",
+		"nPCTaskIconOverrideId":
+		{
+			"guid": "0",
+			"typeId": "949952112329",
+			"name": "None"
+		},
+		"bAllowSatisfactionToRegress": false,
+		"completionQuantity": 3,
+		"tagQuery":
+		{
+			"tokenStreamVersion": 0,
+			"tagDictionary": [
+				{
+					"tagName": "0006_RoA_Goblins"
+				},
+				{
+					"tagName": "0006_RoA_ShamanRhebdo"
+				},
+				{
+					"tagName": "character.humanoid.goblin"
+				}
+			],
+			"queryTokenStream": [ 0, 1, 1, 3, 0, 1, 2 ],
+			"userDescription": "",
+			"autoDescription": " ANY( 0006_RoA_Goblins, 0006_RoA_ShamanRhebdo, character.humanoid.goblin )"
+		},
+		"professionFilterIds": [],
+		"gatherableFilterIds": [],
+		"collectionFilterId":
+		{
+			"guid": "0",
+			"typeId": "1091110041",
+			"name": "None"
+		},
+		"subObjectivesIds": [],
+		"bLimitToDisplayLocation": false,
+		"goToAreaLocation": [],
+		"populationSetIds": [],
+		"populationInstanceIds": [],
+		"notifyType": "None"
+	},
+	"objectiveText": "NSLOCTEXT(\"\", \"4316988B45EE42D9B195DE915EDF7C41\", \"Investigate Goblin Shrines\")",
+	"objectiveCountText": "",
+	"initiallyHidden": false,
+	"advanceWhileHidden": true,
+	"revealOnComplete": true,
+	"completionRewardsIds": [],
+	"minimumRequirement": true,
+	"completionFlags": [
+		"RangerShrines"
+	],
+	"instanceCompletionResult": [],
+	"enabledPredicate":
+	{
+		"expression": ""
+	},
+	"completionActionsIds": [],
+	"objectivesToCompleteUponCompletionIds": [],
+	"objectivesToRevealUponCompletionIds": [],
+	"allowOverAchievement": false,
+	"overAchievementCountText": "",
+	"maximumAdditionalCompletions": 2,
+	"multipleCompletionExperienceMultiplier": 0.30000001192092896,
+	"multipleCompletionGoldMultiplier": 0.30000001192092896,
+	"multipleCompletionVariableMultiplier": 0.30000001192092896,
+	"displayLocation": [],
+	"guid": "6064631663612527406",
+	"name": "NarrativeObjective_SAO_0006_Lionhold_Ranger_Obj3_1",
+	"typeId": "1091110420"
+}

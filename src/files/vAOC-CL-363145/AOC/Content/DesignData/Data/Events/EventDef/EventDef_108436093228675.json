@@ -1,0 +1,97 @@
+{
+	"eventName": "NSLOCTEXT(\"\", \"8B6FC59B4CB4D55E486C24A79D22F51C\", \"Roadside Ambush!\")",
+	"gameplayTags":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"activationPredicatesIds": [
+		{
+			"guid": "108435915429506",
+			"typeId": "23095129",
+			"name": "None"
+		}
+	],
+	"minChallengeRating": 0,
+	"maxChallengeRating": 0,
+	"eventType": 1,
+	"locationId":
+	{
+		"guid": "6064629733238046795",
+		"typeId": "23095137",
+		"name": "None"
+	},
+	"desiredTimeSlot": "0001.01.01-00.00.00",
+	"frequency": 0,
+	"priority": 0,
+	"rewardTableId":
+	{
+		"guid": "0",
+		"typeId": "1091110040",
+		"name": "None"
+	},
+	"rewardPopulationSetId":
+	{
+		"guid": "0",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"startStageId":
+	{
+		"guid": "108414567601787",
+		"typeId": "23095131",
+		"name": "ESD_0003_Bandits_Active"
+	},
+	"stagesIds": [
+		{
+			"guid": "108414567601787",
+			"typeId": "23095131",
+			"name": "ESD_0003_Bandits_Active"
+		},
+		{
+			"guid": "108414569633404",
+			"typeId": "23095131",
+			"name": "ESD_0003_Bandits_S1"
+		},
+		{
+			"guid": "108414490138234",
+			"typeId": "23095131",
+			"name": "ESD_0003_Bandits_Inactive"
+		}
+	],
+	"alignmentsIds": [],
+	"mapDisplayType": "None",
+	"mapEventIcon": "None",
+	"bDisplayOnTracker": true,
+	"notificationRadius": 15000,
+	"mapRadiusMinumum": 1000,
+	"cooldownTimer": 300,
+	"bDisabled": false,
+	"maxInstanceCount": 1,
+	"requiredMapName": "Verra_World_Master",
+	"comments": [],
+	"bIsTemplate": false,
+	"flowNodes": [
+		{
+			"flowType": "EventEntry",
+			"graphLocation":
+			{
+				"x": -1192,
+				"y": -174
+			},
+			"id": 0
+		},
+		{
+			"flowType": "EventExit",
+			"graphLocation":
+			{
+				"x": 1288,
+				"y": -543.87179714429578
+			},
+			"id": 1
+		}
+	],
+	"guid": "108436093228675",
+	"name": "ED_Event_0003_2_Ambush",
+	"typeId": "23095125"
+}

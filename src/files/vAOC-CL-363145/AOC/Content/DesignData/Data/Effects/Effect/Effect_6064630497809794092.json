@@ -1,0 +1,113 @@
+{
+	"effectCategory": "EFFECT_Hidden",
+	"effectTags": [],
+	"effectName": "",
+	"effectDescription": "",
+	"effectIcon": "None",
+	"effectFloatingText": "",
+	"bDispellable": false,
+	"bSignificant": false,
+	"scriptOnApply": "None",
+	"scriptOnExpire": "None",
+	"bSetUnkillable": false,
+	"effectFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"applicationRequirements":
+	{
+		"expression": "GetSkillPurchased(GetInstigator(), $#30316003:107813788866168$, $#981011333:6064630497868842032$)"
+	},
+	"bInfiniteDuration": true,
+	"effectDuration":
+	{
+		"expression": ""
+	},
+	"bNumStacksLostOnDurationElapse": false,
+	"numStacksLostOnDurationElapse":
+	{
+		"expression": ""
+	},
+	"bPersistsThroughDeath": false,
+	"bPersistsRelog": false,
+	"effectGroupId":
+	{
+		"guid": "0",
+		"typeId": "30316004",
+		"name": "None"
+	},
+	"effectStackType": "STACK_StackInPlace",
+	"bCompareSourceWhenStacking": true,
+	"collateStacksInUI": false,
+	"globalStackLimit": 1,
+	"stackInPlaceLimit": 0,
+	"stackDurationRefresh": "STACK_AlwaysRefresh",
+	"extensionAmount":
+	{
+		"expression": ""
+	},
+	"extendedMaximum": 50,
+	"scriptOnMaxStacks": "None",
+	"bLimitStacksFromInstigator": false,
+	"instigatorStackLimit":
+	{
+		"expression": ""
+	},
+	"tickTimer": 0.25,
+	"bIgnoreInitialTick": true,
+	"scriptOnTick": "None",
+	"preApplyHitsIds": [],
+	"applyHitsIds": [],
+	"tickHitsIds": [
+		{
+			"guid": "6064630497813529645",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"consumeHitsIds": [],
+	"removeHitsIds": [],
+	"expireHitsIds": [],
+	"endHitsIds": [],
+	"statModsIds": [],
+	"spawnNPCsIds": [],
+	"spawnLingeringZonesIds": [],
+	"redirectsIds": [],
+	"reactionsIds": [],
+	"crowdControlsIds": [],
+	"ignoreCCBreaksId":
+	{
+		"guid": "0",
+		"typeId": "3031600214",
+		"name": "None"
+	},
+	"resistancesIds": [],
+	"fragilityDefinitionsIds": [],
+	"hitModsIds": [],
+	"bApplyScale": false,
+	"scaleAmount":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"scaleTime": 0,
+	"statusVFX": "None",
+	"supressClickTargeting":
+	{
+		"expression": ""
+	},
+	"supressTabAndSoftTargeting":
+	{
+		"expression": ""
+	},
+	"supressNameplate":
+	{
+		"expression": ""
+	},
+	"guid": "6064630497809794092",
+	"name": "Fighter_Passive_Whirlwind_Overdrive_Drain",
+	"typeId": "30316002"
+}

@@ -1,0 +1,56 @@
+{
+	"completionResponsesIds": [
+		{
+			"guid": "6064630366756012052",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"channelDuration": 0,
+	"activePredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0005A_FGG_ForGreaterGlory\",\"MAP_0005A_FGG_Phase02\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005A_SNB_InTheShadowsOfNikaBrae\",\"GiveNote\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005A_SNB_InTheShadowsOfNikaBrae\",\"FindMap\")"
+	},
+	"cuePredicate":
+	{
+		"expression": ""
+	},
+	"deleteOnCompletion": false,
+	"singleUse": false,
+	"alwaysShowUIPrompt": true,
+	"cancelChannelIfActivePredicateEverFails": true,
+	"channelModifierType": "NONE",
+	"rewardTableId":
+	{
+		"guid": "0",
+		"typeId": "1091110008",
+		"name": "None"
+	},
+	"startEffect": "None",
+	"endEffect": "None",
+	"failEffect": "None",
+	"successEffect": "/Game/DesignAssets/Population/NPC/Beast/ElderDragon/ElderDragon_Flame/Effects/NS_Foot_Slam_Dust_Kickup.NS_Foot_Slam_Dust_Kickup",
+	"cueEffect": "None",
+	"startSound": "None",
+	"endSound": "None",
+	"failSound": "None",
+	"successSound": "None",
+	"cueSound": "None",
+	"interactAnimTag": "None",
+	"deletionDelay": 0,
+	"activeCueEnabled": true,
+	"activeCueIgnoresActivePredicate": false,
+	"facePlayer": false,
+	"allowInCombat": true,
+	"spawnAtBottomCapsule": false,
+	"channelAnimation": "None",
+	"interactRadius": 200,
+	"interactTolerance": 30,
+	"busyTime": 0.89999997615814209,
+	"clientBusyTime": 1,
+	"channelStartResponseIds": [],
+	"failResponsesIds": [],
+	"guid": "6064630366943117334",
+	"name": "MAPI_0005A_SNB_OBJ_ForsakenWarTable",
+	"typeId": "1091110031"
+}

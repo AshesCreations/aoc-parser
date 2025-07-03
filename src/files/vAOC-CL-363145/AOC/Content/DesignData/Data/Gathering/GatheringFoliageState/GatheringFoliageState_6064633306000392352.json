@@ -1,0 +1,168 @@
+{
+	"displayName": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"182C042E48914DF145015986D2BA4003\", \"Cut - Fungal Anemone\")",
+	"spawnTags":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"surveyingTags":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"bBlockPawn": false,
+	"bBlockCamera": false,
+	"staticMeshState": "/Game/ENV/Gatherables/Plants/MushroomPlant/Mesh/SM_Gatherables_Tropical_MushroomPlant_Adult_02.SM_Gatherables_Tropical_MushroomPlant_Adult_02",
+	"collisionRadius": 50,
+	"overrideInteractionDistance": 100,
+	"overrideInteractionAngle": 70,
+	"lifecycleDuration": 7200,
+	"dynamicLifecycleDefId":
+	{
+		"guid": "0",
+		"typeId": "1991555",
+		"name": "None"
+	},
+	"bShouldTransitionScale": false,
+	"startingScalePercentage": 1,
+	"scaleLerpSpeed": 1,
+	"bRuntimeMesh": false,
+	"skeletalMeshState": "/Game/ENV/Gatherables/Plants/MushroomPlant/Mesh/SK_Gatherables_Tropical_MushroomPlant_Adult_02.SK_Gatherables_Tropical_MushroomPlant_Adult_02",
+	"meshLifetimeDuration": 27,
+	"bMeshFade": true,
+	"meshDurationBeforeFade": 6,
+	"fadeScalarName": "Object Fade Amount",
+	"meshFadeDuration": 3,
+	"bFractureStaticMesh": false,
+	"fracturedMesh": "None",
+	"fractureSupportMesh": "None",
+	"fractureAngularDamping": 0,
+	"fractureLinearDamping": 0,
+	"fractureInertiaTensorScale":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"maxClusterLevel": 100,
+	"bApplyRadialImpulse": false,
+	"radialImpulseOffset":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"radialImpulseRadius": 0,
+	"radialImpulseForce": 0,
+	"bSimulatePhysics": true,
+	"bBreakBoneConstraint": false,
+	"impulseForce": 330000,
+	"impulseBoneName": "Trunk",
+	"impulseDirection": 90,
+	"disablePhysicsDuration": 10,
+	"bCalculateFadeAfterDisabledPhysics": true,
+	"bCalculateFadeAfterImpact": false,
+	"targetImpactMainBodyAngularDamping": 0,
+	"targetImpactMainBodyLinearDamping": 0.0099999997764825821,
+	"targetImpactMainBodyDuration": 2,
+	"targetImpactSecondaryBodyAngularDamping": 0,
+	"targetImpactSecondaryBodyLinearDamping": 0.0099999997764825821,
+	"targetImpactSecondaryBodyDuration": 2,
+	"skeletalMeshGatheredAnimation": "None",
+	"skeletalMeshGatheringEventAnimation": "None",
+	"foliageInteractionsIds": [
+		{
+			"guid": "6064633305915326606",
+			"typeId": "19846",
+			"name": "None"
+		}
+	],
+	"akAudioEvents": [],
+	"foliageAkAudioWeightedEvents": [],
+	"akSwitches": [],
+	"akAudioOffset":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 1
+	},
+	"akRTPCId":
+	{
+		"guid": "0",
+		"typeId": "919000",
+		"name": "None"
+	},
+	"akGatheringEvent": "None",
+	"akGatheredEvent": "None",
+	"akImpactEvent": "None",
+	"foliageMaxHitCount": 150,
+	"foliageMaxVelocity": 1000,
+	"stateTransitionFX": [],
+	"gatheringFX": [],
+	"gatheredFX": [
+		{
+			"enabled":
+			{
+				"expression": ""
+			},
+			"niagaraSystemSoft": "/Game/Effects/FX_Harvestables/Flowers/Particles/NS_GloomyFlower_Harvest.NS_GloomyFlower_Harvest",
+			"lifeTime": 0,
+			"bCastVolumetricTranslucentShadow": false,
+			"attachType": "AttachedTarget",
+			"originMesh": "Character",
+			"attachSocketName": "None",
+			"bUseAttachSocketForOriginLocation": true,
+			"bUseAttachSocketForOriginOrientation": true,
+			"transform":
+			{
+				"originLocation": "Target",
+				"originLocationSocket": "None",
+				"originOrientation": "Target",
+				"originOrientationSocket": "None",
+				"originScale": "World",
+				"bUseRelativeLocationExpression": false,
+				"relativeLocation":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"relativeLocationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeRotationExpression": false,
+				"relativeRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"relativeRotationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeScaleExpression": false,
+				"relativeScale":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				},
+				"relativeScaleExpression":
+				{
+					"expression": ""
+				}
+			},
+			"bVisibleToSceneCaptureOnly": false,
+			"bAllowScalability": true,
+			"bUseLocalRemoteDynamicSystem": false
+		}
+	],
+	"impactFX": [],
+	"destroyedFX": [],
+	"niagaraParams": [],
+	"guid": "6064633306000392352",
+	"name": "Plant_FungalAnemone_Large_Freehold",
+	"typeId": "19836"
+}

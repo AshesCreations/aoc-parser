@@ -1,0 +1,149 @@
+{
+	"effectCategory": "EFFECT_Buff",
+	"effectTags": [],
+	"effectName": "Consecrating Wave",
+	"effectDescription": "You have been deemed worthy",
+	"effectIcon": "/Game/UI_Kit/Textures/AbilityIcons/ICON_REFINE_EXPLOSION_WAVE.ICON_REFINE_EXPLOSION_WAVE",
+	"effectFloatingText": "",
+	"bDispellable": true,
+	"bSignificant": false,
+	"scriptOnApply": "None",
+	"scriptOnExpire": "None",
+	"bSetUnkillable": false,
+	"bGrantsPVPOptInProtection": false,
+	"effectFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"applicationRequirements":
+	{
+		"expression": ""
+	},
+	"bOverrideDefaultResistRate": false,
+	"resistRate":
+	{
+		"expression": ""
+	},
+	"bInfiniteDuration": false,
+	"effectDuration":
+	{
+		"expression": "5"
+	},
+	"bNumStacksLostOnDurationElapse": false,
+	"numStacksLostOnDurationElapse":
+	{
+		"expression": ""
+	},
+	"bPersistsThroughDeath": false,
+	"bPersistsRelog": false,
+	"effectGroupId":
+	{
+		"guid": "0",
+		"typeId": "30316004",
+		"name": "None"
+	},
+	"effectStackType": "STACK_StackSeperate",
+	"bCompareSourceWhenStacking": true,
+	"collateStacksInUI": false,
+	"globalStackLimit": 50,
+	"inPlaceStackLimit":
+	{
+		"expression": ""
+	},
+	"stackDurationRefresh": "STACK_AlwaysRefresh",
+	"extensionAmount":
+	{
+		"expression": ""
+	},
+	"extendedMaximum": 50,
+	"scriptOnMaxStacks": "None",
+	"bLimitStacksFromInstigator": false,
+	"instigatorStackLimit":
+	{
+		"expression": ""
+	},
+	"tickTimer": 0.89999997615814209,
+	"bIgnoreInitialTick": false,
+	"scriptOnTick": "None",
+	"bRecalculateHitOnTick": false,
+	"preApplyHitsIds": [],
+	"applyHitsIds": [],
+	"tickHitsIds": [
+		{
+			"guid": "6064629349224284177",
+			"typeId": "30316005",
+			"name": "None"
+		},
+		{
+			"guid": "6064629349225791506",
+			"typeId": "30316005",
+			"name": "None"
+		},
+		{
+			"guid": "6064629349226446867",
+			"typeId": "30316005",
+			"name": "None"
+		},
+		{
+			"guid": "6064629349226905620",
+			"typeId": "30316005",
+			"name": "None"
+		},
+		{
+			"guid": "6064629349227429909",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"consumeHitsIds": [],
+	"removeHitsIds": [],
+	"expireHitsIds": [],
+	"endHitsIds": [],
+	"statModsIds": [],
+	"spawnNPCsIds": [],
+	"spawnLingeringZonesIds": [],
+	"redirectsIds": [],
+	"reactionsIds": [],
+	"crowdControlId":
+	{
+		"guid": "0",
+		"typeId": "3031600206",
+		"name": "None"
+	},
+	"resistancesIds": [],
+	"fragilityDefinitionsIds": [],
+	"hitModsIds": [],
+	"addAlignmentsIds": [],
+	"removeAlignmentsIds": [],
+	"bApplyScale": false,
+	"scaleAmount":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"scaleTime": 0,
+	"statusVFX": "None",
+	"supressClickTargeting":
+	{
+		"expression": ""
+	},
+	"supressTabAndSoftTargeting":
+	{
+		"expression": ""
+	},
+	"supressNameplate":
+	{
+		"expression": ""
+	},
+	"bSlowFall": false,
+	"bNeverCull": false,
+	"addedAkEvents": [],
+	"removedAkEvents": [],
+	"akSwitchValues": [],
+	"guid": "6064629349078138883",
+	"name": "Cleric_ConsecratingWave_HoT",
+	"typeId": "30316002"
+}

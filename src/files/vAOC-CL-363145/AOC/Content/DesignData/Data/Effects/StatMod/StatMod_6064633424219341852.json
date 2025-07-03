@@ -1,0 +1,22 @@
+{
+	"statRefId":
+	{
+		"guid": "108986352686712",
+		"typeId": "10516612381411111",
+		"name": "Stat_Health"
+	},
+	"value":
+	{
+		"expression": "-Min(GetStat(GetTarget(),$#10516612381411111:108986352686712$) - 1.0, 0.2 * GetStat(GetTarget(),$#10516612381411111:108986356618873$))"
+	},
+	"bUseShieldAbsorb": false,
+	"shieldAbsorbPercentage":
+	{
+		"expression": ""
+	},
+	"bShowFloatingText": true,
+	"valueInputTerms": [],
+	"guid": "6064633424219341852",
+	"name": "Ooze_Duplicate_HealthConsumption",
+	"typeId": "3031600201"
+}

@@ -1,0 +1,28 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"3EF7F5F94BAD062545BC7C9855190EFC\", \"(Grab the button)\")",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064629386966007834",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064629386913644553",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MIA_0015_TPT_ThePhantomTower\",\"MIP_0015_TPT_Phase04\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MIQ_0015_AOF_AnOldFriend\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MIQ_0015_AOF_AnOldFriend\",\"OpenedSafe\")"
+	},
+	"guid": "6064629387072110639",
+	"name": "MIDD_0015_AOF_SecretSafe_4",
+	"typeId": "1091110027"
+}

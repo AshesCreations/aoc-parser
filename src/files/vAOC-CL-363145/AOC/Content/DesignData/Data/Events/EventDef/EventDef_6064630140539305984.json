@@ -1,0 +1,192 @@
+{
+	"eventName": "NSLOCTEXT(\"\", \"CA933CA748C332D88B9F96B5A902041E\", \"Groundskeeper\\'s Bane\")",
+	"gameplayTags":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"activationPredicatesIds": [
+		{
+			"guid": "6064630140539305987",
+			"typeId": "23095129",
+			"name": "None"
+		}
+	],
+	"minChallengeRating": 0,
+	"maxChallengeRating": 30,
+	"eventType": 1,
+	"locationId":
+	{
+		"guid": "6064631561688711200",
+		"typeId": "5127371160",
+		"name": "None"
+	},
+	"desiredTimeSlot": "0001.01.01-00.00.00",
+	"frequency": 24,
+	"priority": 1,
+	"rewardTableId":
+	{
+		"guid": "0",
+		"typeId": "1091110040",
+		"name": "None"
+	},
+	"rewardPopulationSetId":
+	{
+		"guid": "0",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"startStageId":
+	{
+		"guid": "6064630140539305989",
+		"typeId": "23095131",
+		"name": "None"
+	},
+	"stagesIds": [
+		{
+			"guid": "6064630140539305989",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064630140765012021",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064630140539305992",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064630140539305997",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064630140539306005",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064630140764749875",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064630140764880948",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064630140539305986",
+			"typeId": "23095131",
+			"name": "None"
+		}
+	],
+	"alignmentsIds": [],
+	"mapDisplayType": "None",
+	"mapEventIcon": "None",
+	"bDisplayOnTracker": true,
+	"notificationRadius": 15000,
+	"mapRadiusMinumum": 1000,
+	"cooldownTimer": 300,
+	"bDisabled": true,
+	"maxInstanceCount": 1,
+	"requiredMapName": "Verra_World_Master",
+	"comments": [
+		{
+			"commentGuid": "6064629733281169489",
+			"comment": "",
+			"location":
+			{
+				"x": -163.020746085913,
+				"y": -130.78612353649027,
+				"z": 0
+			},
+			"size":
+			{
+				"x": 1075.3204801082611,
+				"y": 294.29486632347107,
+				"z": 0
+			},
+			"color":
+			{
+				"r": 0.5,
+				"g": 0.5,
+				"b": 0.5,
+				"a": 0.5
+			}
+		},
+		{
+			"commentGuid": "6064629744359703072",
+			"comment": "When the tavern bandits are killed, the bartender respawns with different dialogue",
+			"location":
+			{
+				"x": 940.6377949309018,
+				"y": -127.92168878052186,
+				"z": 0
+			},
+			"size":
+			{
+				"x": 726.24995899200439,
+				"y": 716.24994552135468,
+				"z": 0
+			},
+			"color":
+			{
+				"r": 0.5,
+				"g": 0.5,
+				"b": 0.5,
+				"a": 0.5
+			}
+		},
+		{
+			"commentGuid": "6064629846031401639",
+			"comment": "Event @ Teleport RVR_GravepeakTerrace",
+			"location":
+			{
+				"x": -162.57852823839147,
+				"y": -261.2554286949773,
+				"z": 0
+			},
+			"size":
+			{
+				"x": 324.73684597015381,
+				"y": 61.052627563476562,
+				"z": 0
+			},
+			"color":
+			{
+				"r": 0.5,
+				"g": 0.5,
+				"b": 0.5,
+				"a": 0.5
+			}
+		}
+	],
+	"bIsTemplate": false,
+	"flowNodes": [
+		{
+			"flowType": "EventEntry",
+			"graphLocation":
+			{
+				"x": 511.03302717980489,
+				"y": -1061.2554286949774
+			},
+			"id": 0
+		},
+		{
+			"flowType": "EventExit",
+			"graphLocation":
+			{
+				"x": -34.749992170681963,
+				"y": 1990.5965260275557
+			},
+			"id": 1
+		}
+	],
+	"guid": "6064630140539305984",
+	"name": "Event_RVR_PU_GroundskeepersBane",
+	"typeId": "23095125"
+}

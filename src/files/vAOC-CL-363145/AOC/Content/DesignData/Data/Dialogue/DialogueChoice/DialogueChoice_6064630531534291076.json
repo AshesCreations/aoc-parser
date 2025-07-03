@@ -1,0 +1,28 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"AA5BA70749F791F99781E0ACD7EFE794\", \"(Place the Horn of Doom)\")",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064630531284140097",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064630531238002745",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "IsOnStoryArcQuest(GetPlayer(),\"MAQ_0005B_HOD_TheHornOfDoom\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005B_HOD_TheHornOfDoom\",\"TakeHorn\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005B_HOD_TheHornOfDoom\",\"DestroyHorn\")\r\n"
+	},
+	"guid": "6064630531534291076",
+	"name": "MADD_0005B_HOD_CircleOfStones_4",
+	"typeId": "1091110027"
+}

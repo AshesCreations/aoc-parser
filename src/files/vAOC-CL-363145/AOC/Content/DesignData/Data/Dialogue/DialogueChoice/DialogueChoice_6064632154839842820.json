@@ -1,0 +1,22 @@
+{
+	"choiceText": "NSLOCTEXT(\"[1909495A4C2095068D406C9D33F90055]\", \"2341329C45C586AC136B639462FBC75D\", \"(Service Building Expansion Quest Ready)\")",
+	"nextNodeId":
+	{
+		"guid": "6064632154842923014",
+		"typeId": "1091110028",
+		"name": "Master_Dialog_Kaelar_Guard_51"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "Node_IsExpansionInGivenState(Node_GetActorCityNode(GetInteractionTarget()), EAoCExpansionState::Vote)\r\n&& !(Player_HasCommission(GetPlayer(), \"CSQ_0157_FTUE_BuildingsAreGettingBetter\") ||\r\nPlayer_HasCompletedCommission(GetPlayer(), \"CSQ_0157_FTUE_BuildingsAreGettingBetter\"))"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064632154839842820",
+	"name": "Master_Dialog_Kaelar_Guard_50_Choice_1",
+	"typeId": "1091110027"
+}

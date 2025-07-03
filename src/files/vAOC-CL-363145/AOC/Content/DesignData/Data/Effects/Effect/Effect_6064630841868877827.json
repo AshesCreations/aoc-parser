@@ -1,0 +1,147 @@
+{
+	"effectCategory": "EFFECT_Buff",
+	"effectTags": [],
+	"effectName": "Camouflage",
+	"effectDescription": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"BEF8DC6E400662EA7E1BF1947D573441\", \"Enter a form of stealth, becoming very difficult to see, especially when not moving. Other characters may detect you based on their perception and your stealth level, as well as your distance and angle to them. Your allies will always be able to see you.\")",
+	"effectIcon": "/Game/UI/Icons/Archetypes/Ranger/Abilities/TUI_AbilityIcon_Camouflage.TUI_AbilityIcon_Camouflage",
+	"effectFloatingText": "",
+	"bDispellable": false,
+	"bSignificant": true,
+	"scriptOnApply": "None",
+	"scriptOnExpire": "None",
+	"bSetUnkillable": false,
+	"bGrantsPVPOptInProtection": false,
+	"effectFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"applicationRequirements":
+	{
+		"expression": ""
+	},
+	"bOverrideDefaultResistRate": false,
+	"resistRate":
+	{
+		"expression": ""
+	},
+	"bInfiniteDuration": true,
+	"effectDuration":
+	{
+		"expression": ""
+	},
+	"bNumStacksLostOnDurationElapse": false,
+	"numStacksLostOnDurationElapse":
+	{
+		"expression": ""
+	},
+	"bPersistsThroughDeath": false,
+	"bPersistsRelog": false,
+	"effectGroupId":
+	{
+		"guid": "0",
+		"typeId": "30316004",
+		"name": "None"
+	},
+	"effectStackType": "STACK_OverrideAlways",
+	"bCompareSourceWhenStacking": true,
+	"collateStacksInUI": false,
+	"globalStackLimit": 50,
+	"inPlaceStackLimit":
+	{
+		"expression": ""
+	},
+	"stackDurationRefresh": "STACK_AlwaysRefresh",
+	"extensionAmount":
+	{
+		"expression": ""
+	},
+	"extendedMaximum": 50,
+	"scriptOnMaxStacks": "None",
+	"bLimitStacksFromInstigator": false,
+	"instigatorStackLimit":
+	{
+		"expression": ""
+	},
+	"tickTimer": 0,
+	"bIgnoreInitialTick": false,
+	"scriptOnTick": "None",
+	"bRecalculateHitOnTick": false,
+	"preApplyHitsIds": [],
+	"applyHitsIds": [],
+	"tickHitsIds": [],
+	"consumeHitsIds": [],
+	"removeHitsIds": [],
+	"expireHitsIds": [],
+	"endHitsIds": [
+		{
+			"guid": "6064630842181812225",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"statModsIds": [
+		{
+			"guid": "6064633232903176995",
+			"typeId": "3031600201",
+			"name": "None"
+		}
+	],
+	"spawnNPCsIds": [],
+	"spawnLingeringZonesIds": [],
+	"redirectsIds": [],
+	"reactionsIds": [
+		{
+			"guid": "6064630842174537728",
+			"typeId": "3031600202",
+			"name": "None"
+		},
+		{
+			"guid": "6064630842330186254",
+			"typeId": "3031600202",
+			"name": "None"
+		}
+	],
+	"crowdControlId":
+	{
+		"guid": "0",
+		"typeId": "3031600206",
+		"name": "None"
+	},
+	"resistancesIds": [],
+	"fragilityDefinitionsIds": [],
+	"hitModsIds": [],
+	"addAlignmentsIds": [],
+	"removeAlignmentsIds": [],
+	"bApplyScale": false,
+	"scaleAmount":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"scaleTime": 0,
+	"statusVFX": "Stealth",
+	"bAppliesStealth": true,
+	"supressClickTargeting":
+	{
+		"expression": ""
+	},
+	"supressTabAndSoftTargeting":
+	{
+		"expression": ""
+	},
+	"supressNameplate":
+	{
+		"expression": ""
+	},
+	"bSlowFall": false,
+	"bNeverCull": false,
+	"addedAkEvents": [],
+	"removedAkEvents": [],
+	"akSwitchValues": [],
+	"guid": "6064630841868877827",
+	"name": "Ranger_Camouflage",
+	"typeId": "30316002"
+}

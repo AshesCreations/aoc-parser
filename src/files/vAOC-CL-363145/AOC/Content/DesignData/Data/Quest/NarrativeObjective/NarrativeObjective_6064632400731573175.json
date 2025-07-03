@@ -1,0 +1,97 @@
+{
+	"narrativeType": "Commission",
+	"taskId":
+	{
+		"guid": "6064632400733735864",
+		"typeId": "1095125186",
+		"name": "None"
+	},
+	"completionParameters":
+	{
+		"objectiveType": "Basic",
+		"nPCTaskIconOverrideId":
+		{
+			"guid": "0",
+			"typeId": "949952112329",
+			"name": "None"
+		},
+		"bAllowSatisfactionToRegress": false,
+		"completionQuantity": 1,
+		"tagQuery":
+		{
+			"tokenStreamVersion": 0,
+			"tagDictionary": [
+				{
+					"tagName": "SideQuest.QuestTarget.SQ_0009.BanditCommander"
+				}
+			],
+			"queryTokenStream": [ 0, 1, 2, 1, 0 ],
+			"userDescription": "SQ_0009_OutlawsEnd_BanditCommanderTarget",
+			"autoDescription": " ALL( SideQuest.QuestTarget.SQ_0009.BanditCommander )"
+		},
+		"professionFilterIds": [],
+		"gatherableFilterIds": [],
+		"collectionFilterId":
+		{
+			"guid": "0",
+			"typeId": "1091110041",
+			"name": "None"
+		},
+		"subObjectivesIds": [],
+		"bLimitToDisplayLocation": false,
+		"goToAreaLocation": [],
+		"populationSetIds": [],
+		"populationInstanceIds": [],
+		"notifyType": "None"
+	},
+	"objectiveText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"BFDCDA274C6A953BAD97A88B5E4BB045\", \"Return Scout Orithar and report on what you saw in the ruins.\")",
+	"objectiveCountText": "NSLOCTEXT(\"\", \"A51FA3D94ADA0B923E2044BB30E77352\", \"\")",
+	"initiallyHidden": true,
+	"advanceWhileHidden": false,
+	"revealOnComplete": false,
+	"completionRewardsIds": [
+		{
+			"guid": "6064631828174143489",
+			"typeId": "1091110040",
+			"name": "None"
+		}
+	],
+	"minimumRequirement": true,
+	"completionFlags": [],
+	"instanceCompletionResult": [],
+	"enabledPredicate":
+	{
+		"expression": ""
+	},
+	"completionActionsIds": [],
+	"objectivesToCompleteUponCompletionIds": [],
+	"objectivesToRevealUponCompletionIds": [],
+	"allowOverAchievement": false,
+	"overAchievementCountText": "",
+	"maximumAdditionalCompletions": 2,
+	"multipleCompletionExperienceMultiplier": 0.30000001192092896,
+	"multipleCompletionGoldMultiplier": 0.30000001192092896,
+	"multipleCompletionVariableMultiplier": 0.30000001192092896,
+	"displayLocation": [
+		{
+			"location":
+			{
+				"x": -983685.61403399997,
+				"y": 743244.44573599997,
+				"z": 15000.013701
+			},
+			"radius": 30,
+			"map_DisplayType": "ICON",
+			"map_IconVisual":
+			{
+				"guid": "0",
+				"typeId": "949952112329",
+				"name": "None"
+			},
+			"map_DisplayName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"568336A0474D251C300697BB811FDACC\", \"Scout Orithar\")"
+		}
+	],
+	"guid": "6064632400731573175",
+	"name": "SQO_0010_SliversOfThePast_ReturnToScoutOrithar",
+	"typeId": "1091110420"
+}

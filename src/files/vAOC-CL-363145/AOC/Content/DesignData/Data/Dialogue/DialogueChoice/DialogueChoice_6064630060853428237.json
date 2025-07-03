@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"4A3847EE46F5488829D291995525F44F\", \"Not On Quest, No Flag\")",
+	"nextNodeId":
+	{
+		"guid": "6064630060853428240",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "(!IsOnStoryArcQuest(GetPlayer(), \"SAQ_0022_p1q1_Handbill\")\r\n&&IsStoryArcQuestAvailable(GetPlayer(),\"SAQ_0022_p1q1_Handbill\")&&IsStoryArcQuestAvailable(GetPlayer(),\"SAQ_0022_p1q2_BestLaidPlans\")&&(!IsOnStoryArcQuest(GetPlayer(), \"SAQ_0022_p1q2_BestLaidPlans\")))\r\n"
+	},
+	"guid": "6064630060853428237",
+	"name": "0022_Seph_Kev_6",
+	"typeId": "1091110027"
+}

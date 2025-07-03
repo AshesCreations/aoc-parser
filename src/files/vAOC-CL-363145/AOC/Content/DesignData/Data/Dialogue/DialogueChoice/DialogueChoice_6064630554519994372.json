@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"AEDF47E0418F03EA5DFFE1988C6E8353\", \"(Level10AlreadyTurnedIn)\")",
+	"nextNodeId":
+	{
+		"guid": "6064630554466254849",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsOnStoryArcQuest(GetPlayer(), \"START_ME_Lumberjacking\")&&\r\nGetStoryArcQuestFlag(GetPlayer(), \"START_ME_Lumberjacking\", \"Level10TurnedIn\")&&\r\nGetPlayerProfessionLevel(GetPlayer(), \"Lumberjack\") >= 10"
+	},
+	"guid": "6064630554519994372",
+	"name": "ServiceBuildingNPC_Woodshop_Base_Interaction_12",
+	"typeId": "1091110027"
+}

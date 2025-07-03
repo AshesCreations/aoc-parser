@@ -1,0 +1,143 @@
+{
+	"narrativeType": "Commission",
+	"taskId":
+	{
+		"guid": "6064632227094069535",
+		"typeId": "1095125186",
+		"name": "None"
+	},
+	"completionParameters":
+	{
+		"objectiveType": "Kill",
+		"nPCTaskIconOverrideId":
+		{
+			"guid": "0",
+			"typeId": "949952112329",
+			"name": "None"
+		},
+		"bAllowSatisfactionToRegress": false,
+		"completionQuantity": 10,
+		"tagQuery":
+		{
+			"tokenStreamVersion": 0,
+			"tagDictionary": [
+				{
+					"tagName": "affiliation.bandit"
+				}
+			],
+			"queryTokenStream": [ 0, 1, 1, 1, 0 ],
+			"userDescription": "",
+			"autoDescription": " ANY( affiliation.bandit )"
+		},
+		"professionFilterIds": [],
+		"gatherableFilterIds": [],
+		"collectionFilterId":
+		{
+			"guid": "0",
+			"typeId": "1091110041",
+			"name": "None"
+		},
+		"subObjectivesIds": [],
+		"bLimitToDisplayLocation": true,
+		"goToAreaLocation": [
+			{
+				"location":
+				{
+					"x": -850149.79533500003,
+					"y": 619848.40681199997,
+					"z": 18540.695587999999
+				},
+				"radius": 5000,
+				"map_DisplayType": "ICON_AND_RADIUS",
+				"map_IconVisual":
+				{
+					"guid": "0",
+					"typeId": "949952112329",
+					"name": "None"
+				},
+				"map_DisplayName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"DA4CC0BD40938492D25FCA91D7F49CEA\", \"Explore Gryphon\\'s Nest\")"
+			}
+		],
+		"populationSetIds": [],
+		"populationInstanceIds": [],
+		"notifyType": "None"
+	},
+	"objectiveText": "NSLOCTEXT(\"\", \"7DA93764415A89FF8F0A09A9D71FF97E\", \"Bring justice to bandits that\\'ve overrun Lumber Landing\")",
+	"objectiveCountText": "NSLOCTEXT(\"\", \"D179C11E47A79FAFF6C5A798528325EE\", \"Bandits Slain\")",
+	"initiallyHidden": false,
+	"advanceWhileHidden": true,
+	"revealOnComplete": true,
+	"completionRewardsIds": [],
+	"minimumRequirement": true,
+	"completionFlags": [],
+	"instanceCompletionResult": [],
+	"enabledPredicate":
+	{
+		"expression": ""
+	},
+	"completionActionsIds": [],
+	"objectivesToCompleteUponCompletionIds": [],
+	"objectivesToRevealUponCompletionIds": [],
+	"allowOverAchievement": false,
+	"overAchievementCountText": "",
+	"maximumAdditionalCompletions": 2,
+	"multipleCompletionExperienceMultiplier": 0.30000001192092896,
+	"multipleCompletionGoldMultiplier": 0.30000001192092896,
+	"multipleCompletionVariableMultiplier": 0.30000001192092896,
+	"displayLocation": [
+		{
+			"location":
+			{
+				"x": -840410,
+				"y": 646890,
+				"z": 10530
+			},
+			"radius": 11500,
+			"map_DisplayType": "ICON_AND_RADIUS",
+			"map_IconVisual":
+			{
+				"guid": "0",
+				"typeId": "949952112329",
+				"name": "None"
+			},
+			"map_DisplayName": "NSLOCTEXT(\"\", \"B846D69941D938B1F995338136D6CBA1\", \"Slay Bandits\")"
+		},
+		{
+			"location":
+			{
+				"x": -849846.41127399995,
+				"y": 665450.13057299994,
+				"z": 11416.850703
+			},
+			"radius": 9500,
+			"map_DisplayType": "ICON_AND_RADIUS",
+			"map_IconVisual":
+			{
+				"guid": "0",
+				"typeId": "949952112329",
+				"name": "None"
+			},
+			"map_DisplayName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"8EB4F7984747D5600BE3F289F85C9E78\", \"Slay Bandits\")"
+		},
+		{
+			"location":
+			{
+				"x": -862774.65726699994,
+				"y": 655619.97279100004,
+				"z": 19239.910972999998
+			},
+			"radius": 6250,
+			"map_DisplayType": "ICON_AND_RADIUS",
+			"map_IconVisual":
+			{
+				"guid": "0",
+				"typeId": "949952112329",
+				"name": "None"
+			},
+			"map_DisplayName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"06125AC44A527CB73F9E1890AF71A6BB\", \"Slay Bandits\")"
+		}
+	],
+	"guid": "6064632228957520191",
+	"name": "NO_Com_RVR_Kill_Bandits_Lionhold",
+	"typeId": "1091110420"
+}

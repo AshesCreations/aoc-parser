@@ -1,0 +1,101 @@
+{
+	"commissionType": "Generic",
+	"commissionGameplayTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "Quest.Commission.Tier.T1"
+			},
+			{
+				"tagName": "Quest.Commission.Adventure.Goto"
+			},
+			{
+				"tagName": "Biome.Tropics"
+			}
+		],
+		"parentTags": [
+			{
+				"tagName": "Quest.Commission.Tier"
+			},
+			{
+				"tagName": "Quest.Commission"
+			},
+			{
+				"tagName": "Quest"
+			},
+			{
+				"tagName": "Quest.Commission.Adventure"
+			},
+			{
+				"tagName": "Biome"
+			}
+		]
+	},
+	"preRequisiteQuestsIds": [],
+	"autoFailTimer": -1,
+	"bRepeatable": false,
+	"mainObjectiveType": "GoToArea",
+	"commissionSection": 1,
+	"biomeOrigin": "FloodPlains",
+	"bFromDynamicContent": false,
+	"availabilityExpression":
+	{
+		"expression": ""
+	},
+	"bDisabled": false,
+	"level": 25,
+	"commissionRarity": "Common",
+	"objectivesIds": [
+		{
+			"guid": "6064633346282760307",
+			"typeId": "1091110420",
+			"name": "None"
+		}
+	],
+	"allowMultipleCompletion": false,
+	"commissionName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"DBDA26834F3FAC54722ECEBB5674D862\", \"Flame of the Sun\")",
+	"flavorText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"C16D15BF400C068EE5C2D999BD94C3F7\", \"Discover the blaze atop Subalfire Lighthouse. \\\"The light that once guided ships is now a beacon for ghosts.\\\" - Isha Firelight\")",
+	"mainObjectiveText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"590A16D044E7792502D0558C86DFF724\", \"Climb to the blaze atop Subalfire Lighthouse\")",
+	"rewardTablesIds": [
+		{
+			"guid": "6064631443187302402",
+			"typeId": "1091110040",
+			"name": "None"
+		}
+	],
+	"calloutName": "",
+	"calloutDescription": "",
+	"bCanProgressWhileInRaid": false,
+	"expiration":
+	{
+		"duration": "0"
+	},
+	"cooldown":
+	{
+		"duration": "0"
+	},
+	"moneyCost": "0",
+	"resourceCost": [],
+	"mayoralCompletionCount": 0,
+	"rewardId":
+	{
+		"guid": "0",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"bNodeTargeted": false,
+	"targetRewardId":
+	{
+		"guid": "0",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"questItemListIds": [],
+	"storedGraph":
+	{
+		"nodes": []
+	},
+	"guid": "6064633346282367090",
+	"name": "COM_TUR_Goto_SubalfireLighthouse",
+	"typeId": "280002"
+}

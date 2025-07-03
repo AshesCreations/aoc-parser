@@ -1,0 +1,56 @@
+{
+	"displayName": "NSLOCTEXT(\"\", \"9B32A4EE4EDED380DD405DA7260162E5\", \"Disable Reduction\")",
+	"description": "NSLOCTEXT(\"\", \"2AA1468943034B0B2C418EB546265C11\", \"Reduces the duration of incoming disabling effects\")",
+	"bHidden": false,
+	"gameplayType": "Type_Combat",
+	"bHasWaterfallStatsUI": false,
+	"waterfallStatsUIIds": [],
+	"bDisplayAsPercentage": true,
+	"statType": "Type_Float",
+	"bClampStatFinalValue": false,
+	"bMultiplyStatMods": false,
+	"bMultiplyCompliment": false,
+	"base":
+	{
+		"expression": "const rating = GetStat(GetInstigator(), $#10516612381411111:6064629618866913442$);\r\nrating / (rating + EvalFormula($#10516612381411113:6064633169562959878$))"
+	},
+	"waterfallStatsBaseIds": [
+		{
+			"guid": "6064629618866913442",
+			"typeId": "10516612381411111",
+			"name": "None"
+		}
+	],
+	"valueMin":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMinIds": [],
+	"valueMax":
+	{
+		"expression": "1"
+	},
+	"waterfallStatsMaxIds": [],
+	"regenRate":
+	{
+		"expression": ""
+	},
+	"waterfallStatsRegenIds": [],
+	"bRegenWhileDead": false,
+	"bRecalculateOnCombatState": false,
+	"onSpawn": "Reset_None",
+	"onDeath": "Reset_None",
+	"onRevive": "Reset_None",
+	"bPersistValue": false,
+	"replication": 5,
+	"shieldStatId":
+	{
+		"guid": "0",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"grantedEffects": [],
+	"guid": "6064629618868486307",
+	"name": "DisableReduction",
+	"typeId": "10516612381411111"
+}

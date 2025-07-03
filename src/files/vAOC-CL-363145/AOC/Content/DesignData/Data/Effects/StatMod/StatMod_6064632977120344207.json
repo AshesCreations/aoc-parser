@@ -1,0 +1,22 @@
+{
+	"statRefId":
+	{
+		"guid": "109183576135288",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"value":
+	{
+		"expression": "const v = Abs(GetStatModEffectiveValue(GetHitEvent(), $#10516612381411111:108986352686712$));\r\nconst scaling = EvalFormula($#10516612381411113:6064633216263990403$);\r\n1.0 * v * scaling"
+	},
+	"bUseShieldAbsorb": false,
+	"shieldAbsorbPercentage":
+	{
+		"expression": ""
+	},
+	"bShowFloatingText": true,
+	"valueInputTerms": [],
+	"guid": "6064632977120344207",
+	"name": "Bard_Saga_Pantheon_Mana",
+	"typeId": "3031600201"
+}

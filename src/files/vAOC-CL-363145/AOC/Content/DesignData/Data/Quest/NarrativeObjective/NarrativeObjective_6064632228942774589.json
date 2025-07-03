@@ -1,0 +1,103 @@
+{
+	"narrativeType": "Commission",
+	"completionParameters":
+	{
+		"objectiveType": "Kill",
+		"nPCTaskIconOverrideId":
+		{
+			"guid": "0",
+			"typeId": "949952112329",
+			"name": "None"
+		},
+		"bAllowSatisfactionToRegress": false,
+		"completionQuantity": 10,
+		"tagQuery":
+		{
+			"tokenStreamVersion": 0,
+			"tagDictionary": [
+				{
+					"tagName": "character.avian.gryphon"
+				}
+			],
+			"queryTokenStream": [ 0, 1, 1, 8, 0, 0, 0, 0, 0, 0, 0, 0 ],
+			"userDescription": "",
+			"autoDescription": " ANY( character.avian.gryphon, character.avian.gryphon, character.avian.gryphon, character.avian.gryphon, character.avian.gryphon, character.avian.gryphon, character.avian.gryphon, character.avian.gryphon )"
+		},
+		"professionFilterIds": [],
+		"gatherableFilterIds": [],
+		"collectionFilterId":
+		{
+			"guid": "0",
+			"typeId": "1091110041",
+			"name": "None"
+		},
+		"subObjectivesIds": [],
+		"bLimitToDisplayLocation": true,
+		"goToAreaLocation": [
+			{
+				"location":
+				{
+					"x": -790664.35791300004,
+					"y": 604298.73665900005,
+					"z": 21149.999932999999
+				},
+				"radius": 5000,
+				"map_DisplayType": "ICON_AND_RADIUS",
+				"map_IconVisual":
+				{
+					"guid": "0",
+					"typeId": "949952112329",
+					"name": "None"
+				},
+				"map_DisplayName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"DA4CC0BD40938492D25FCA91D7F49CEA\", \"Explore Gryphon\\'s Nest\")"
+			}
+		],
+		"populationSetIds": [],
+		"populationInstanceIds": [],
+		"notifyType": "None"
+	},
+	"objectiveText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"45BCE72F425FFE925E27318FD4F0B592\", \"Cull Gryphons\")",
+	"objectiveCountText": "NSLOCTEXT(\"\", \"A3C2669848CD1E67C8294EAC1F7E8FEC\", \"Corvids Slain\")",
+	"initiallyHidden": false,
+	"advanceWhileHidden": true,
+	"revealOnComplete": true,
+	"completionRewardsIds": [],
+	"minimumRequirement": true,
+	"completionFlags": [],
+	"instanceCompletionResult": [],
+	"enabledPredicate":
+	{
+		"expression": ""
+	},
+	"completionActionsIds": [],
+	"objectivesToCompleteUponCompletionIds": [],
+	"objectivesToRevealUponCompletionIds": [],
+	"allowOverAchievement": false,
+	"overAchievementCountText": "",
+	"maximumAdditionalCompletions": 2,
+	"multipleCompletionExperienceMultiplier": 0.30000001192092896,
+	"multipleCompletionGoldMultiplier": 0.30000001192092896,
+	"multipleCompletionVariableMultiplier": 0.30000001192092896,
+	"displayLocation": [
+		{
+			"location":
+			{
+				"x": -841197.18495000002,
+				"y": 612337.64734400006,
+				"z": 21431.549223000002
+			},
+			"radius": 20000,
+			"map_DisplayType": "ICON_AND_RADIUS",
+			"map_IconVisual":
+			{
+				"guid": "0",
+				"typeId": "949952112329",
+				"name": "None"
+			},
+			"map_DisplayName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"19CCF9D643A9836DED1FA49864303F0C\", \"Cull Gryphons\")"
+		}
+	],
+	"guid": "6064632228942774589",
+	"name": "NO_RVR_Kill_Gryphon_Lionhold",
+	"typeId": "1091110420"
+}

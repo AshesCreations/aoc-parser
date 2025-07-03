@@ -1,0 +1,23 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"029491D4438ABE5C0C40FABE2E285B5B\", \"I\\'ve got a bag of goblin ears for you.\")",
+	"nextNodeId":
+	{
+		"guid": "6064630616934908007",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064630616938250345",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "IsOnStoryArcQuest(GetPlayer(), \"SAQ_0026_P2_Q2_KillGoblinsInTheOuterFort\")&&\r\nGetStoryArcQuestFlag(GetPlayer(), \"SAQ_0026_P2_Q2_KillGoblinsInTheOuterFort\", \"EarsCollected\")"
+	},
+	"guid": "6064630616927699046",
+	"name": "DD_0026_LeodrasLionbrand_90",
+	"typeId": "1091110027"
+}

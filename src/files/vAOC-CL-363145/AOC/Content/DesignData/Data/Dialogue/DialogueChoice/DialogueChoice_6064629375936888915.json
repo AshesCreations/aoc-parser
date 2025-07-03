@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"616BFC11493BA21523B7A3BF8DB47F5A\", \"[Lamp of Malgus]\")",
+	"nextNodeId":
+	{
+		"guid": "6064629405071049569",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MIA_0015_TPT_ThePhantomTower\",\"MIP_0015_TPT_Phase02\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MIQ_0015_AAV_AnAncientVisitor\",\"KilledGolgoth\")"
+	},
+	"guid": "6064629375936888915",
+	"name": "MIDD_0015_AAV_ClockworkCodex_26",
+	"typeId": "1091110027"
+}

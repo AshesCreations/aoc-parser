@@ -1,0 +1,22 @@
+{
+	"choiceText": "",
+	"nextNodeId":
+	{
+		"guid": "6064632615756365863",
+		"typeId": "1091110028",
+		"name": "CSQ_DD_NPC_Goblin_Grubfiddle_15"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "Player_ObjectiveStateEquals(GetPlayer(), \"CSQ_RVR_Batyard_Grubfiddle_Return\", EObjectiveState::Complete)&&!Player_HasCompletedCommission(GetPlayer(),\"SQ_RVR_Batyard_GoTo_Grubfiddle\")"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064632615703937060",
+	"name": "CSQ_DD_NPC_Goblin_Grubfiddle_14_Choice_1",
+	"typeId": "1091110027"
+}

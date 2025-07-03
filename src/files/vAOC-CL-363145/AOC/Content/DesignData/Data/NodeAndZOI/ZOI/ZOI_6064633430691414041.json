@@ -1,0 +1,157 @@
+{
+	"designNotes": "",
+	"levelDefinitionId":
+	{
+		"guid": "6064629126799097877",
+		"typeId": "9227326",
+		"name": "None"
+	},
+	"playerFacingName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"3245AB7A41ABCC69356D26B59326FCFB\", \"Arisalon\")",
+	"zoiType": "HasNode",
+	"startingAreaGameplayTag":
+	{
+		"tagName": "None"
+	},
+	"cityNodeId":
+	{
+		"guid": "6064633429404090381",
+		"typeId": "1323521343",
+		"name": "None"
+	},
+	"adjacentZonesOfInfluenceIds": [
+		{
+			"guid": "6064633430683156504",
+			"typeId": "9127326",
+			"name": "None"
+		},
+		{
+			"guid": "6064633448024376293",
+			"typeId": "9127326",
+			"name": "None"
+		},
+		{
+			"guid": "6064633430733291549",
+			"typeId": "9127326",
+			"name": "None"
+		},
+		{
+			"guid": "6064629126906904602",
+			"typeId": "9127326",
+			"name": "None"
+		},
+		{
+			"guid": "6064629127486832640",
+			"typeId": "9127326",
+			"name": "None"
+		}
+	],
+	"corruptionRulesEnabled": true,
+	"bAllowPVPOptInProtection": false,
+	"alignmentsAssignedUponEnteringIds": [],
+	"zoiEnvironmentType": "None",
+	"editorColor":
+	{
+		"x": 0.224,
+		"y": 0.41199999999999998,
+		"z": 0.67500000000000004
+	},
+	"zOIRewardTables": [
+		{
+			"inclusionExpression":
+			{
+				"expression": "!DoesNPCContainTag(\"NoRewards\")"
+			},
+			"rewardTableId":
+			{
+				"guid": "6064633313653948416",
+				"typeId": "1091110040",
+				"name": "None"
+			}
+		},
+		{
+			"inclusionExpression":
+			{
+				"expression": "DoesNPCContainTag(\"character.humanoid\")"
+			},
+			"rewardTableId":
+			{
+				"guid": "6064633584457744403",
+				"typeId": "1091110040",
+				"name": "None"
+			}
+		}
+	],
+	"economicRegionTableId":
+	{
+		"guid": "6064633430730145820",
+		"typeId": "98738382",
+		"name": "None"
+	},
+	"bHideExperienceEvents": false,
+	"biome": "Jungle",
+	"biomeGatherableTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "Jundark"
+			}
+		],
+		"parentTags": []
+	},
+	"freeholdEstatesIds": [
+		{
+			"guid": "6064633578264985612",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633578267607053",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633578271735822",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633578272063503",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633578272391184",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633578272653329",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633578275143698",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633578275471379",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633578275799060",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633578276061205",
+			"typeId": "1337133701",
+			"name": "None"
+		}
+	],
+	"actorEffects": [],
+	"guid": "6064633430691414041",
+	"name": "Verra_JUN_Node_Arisalon",
+	"typeId": "9127326"
+}

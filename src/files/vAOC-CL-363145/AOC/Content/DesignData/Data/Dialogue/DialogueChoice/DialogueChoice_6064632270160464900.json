@@ -1,0 +1,33 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"3F634CCF4B1088B8839E52AFC4196222\", \"Add the Purification Powder\")",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064632270115703803",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064632270109871095",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "Player_HasItem(GetPlayer(),\"CSQ_ITM_0081_OCC_BOK_PurificationPowder\")&&\r\nPlayer_ObjectiveStateEquals(GetPlayer(),\"CSQ_NOB_0081_OCC_BOK_Secondary_IgniteCenser03\", EObjectiveState::Hidden)"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064632270160464900",
+	"name": "CSQ_DD_0081_OCC_BOK_KyronicCenser03_2_Choice_1",
+	"typeId": "1091110027"
+}

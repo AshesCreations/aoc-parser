@@ -1,0 +1,12 @@
+{
+	"equation":
+	{
+		"expression": "const stealther = GetOwner();\r\nconst InCamo = GetEffectCount(stealther, $#30316002:6064630841868877827$) > 0;\r\nconst observer = GetTarget();\r\nconst fwd = GetActorForward(observer);\r\nconst dir = Normalize(GetLocation(stealther)-GetLocation(observer));\r\nconst facing = dotproduct(fwd,dir) > 0.5; // 60 degree cone\r\nconst dist = GetDistanceBetween(stealther, observer);\r\n\r\nconst stealthDiff = GetStat(observer, $#10516612381411111:6064633186506047887$) - GetStat(stealther, $#10516612381411111:6064633186496741774$);\r\n\r\nconst hearingDist = 0.0 + stealthDiff * 100.0;\r\n\r\nInCamo ||\r\n(facing && dist < Max(0.0, 1500.0 + stealthDiff * 100.0)) ||\r\ndist < hearingDist"
+	},
+	"constraints":
+	{
+	},
+	"guid": "6064632949331989318",
+	"name": "StealthDetection",
+	"typeId": "10516612381411112"
+}

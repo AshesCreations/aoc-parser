@@ -1,0 +1,144 @@
+{
+	"bAllowSatisfactionToRegress": false,
+	"parameterTypes": 1,
+	"objectiveType": "Kill",
+	"completionCriteria": [
+		{
+			"bOverrideCompletionValueWithExpression": true,
+			"completionValue": 10,
+			"operator": "GreaterThanOrEqualTo",
+			"completionExpression":
+			{
+				"expression": "Event_GetStageTimer() > 30."
+			},
+			"completionTriggersIds": [
+				{
+					"guid": "6064633227504844816",
+					"typeId": "23095135",
+					"name": "None"
+				},
+				{
+					"guid": "6064633227514347538",
+					"typeId": "23095135",
+					"name": "None"
+				}
+			],
+			"bDisplayOnTracker": true,
+			"relevantTrackerIds": [
+				{
+					"guid": "6064633227480662031",
+					"typeId": "23095133",
+					"name": "None"
+				}
+			],
+			"displayText": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"AA0DDF10459DD0047BE3AE861A303812\", \"Defend the Wolves\")",
+			"displayType": 4,
+			"displayCompletionValue": 5,
+			"bInvertProgressDisplay": true
+		},
+		{
+			"bOverrideCompletionValueWithExpression": false,
+			"completionValue": 5,
+			"operator": "GreaterThanOrEqualTo",
+			"completionExpression":
+			{
+				"expression": ""
+			},
+			"completionTriggersIds": [
+				{
+					"guid": "6064633227518541843",
+					"typeId": "23095135",
+					"name": "None"
+				},
+				{
+					"guid": "6064633227518607380",
+					"typeId": "23095135",
+					"name": "None"
+				}
+			],
+			"bDisplayOnTracker": true,
+			"relevantTrackerIds": [
+				{
+					"guid": "6064633227472011276",
+					"typeId": "23095133",
+					"name": "None"
+				}
+			],
+			"displayText": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"4863792C4C6A8439D83CB5894ABE2CEE\", \"Kill the wolves\")",
+			"displayType": 1,
+			"displayCompletionValue": 0,
+			"bInvertProgressDisplay": false
+		}
+	],
+	"nPCObjectiveIconOverrideId":
+	{
+		"guid": "0",
+		"typeId": "949952112329",
+		"name": "None"
+	},
+	"progressExpression":
+	{
+		"expression": ""
+	},
+	"gameplayTagFilter":
+	{
+		"tokenStreamVersion": 0,
+		"tagDictionary": [
+			{
+				"tagName": "character.beast.wolf"
+			}
+		],
+		"queryTokenStream": [ 0, 1, 1, 1, 0 ],
+		"userDescription": "",
+		"autoDescription": " ANY( character.beast.wolf )"
+	},
+	"populationSetId":
+	{
+		"guid": "0",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"trackerId":
+	{
+		"guid": "0",
+		"typeId": "23095133",
+		"name": "None"
+	},
+	"interactablesIds": [],
+	"professionFilterIds": [],
+	"gatherableFilterIds": [],
+	"collectionFilterId":
+	{
+		"guid": "0",
+		"typeId": "1091110041",
+		"name": "None"
+	},
+	"collectionCount": 5,
+	"abilityRecordId":
+	{
+		"guid": "0",
+		"typeId": "30316001",
+		"name": "None"
+	},
+	"activityType": "NPCKill",
+	"activityQueryLocation":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"activityQueryExtent":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"visibilityExpression":
+	{
+		"expression": ""
+	},
+	"visibilityOverridesTrackerFilter": false,
+	"guid": "6064633227474239502",
+	"name": "Test_UI_Stage_Predicate(1)_Objective(0)",
+	"typeId": "23095130"
+}

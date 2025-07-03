@@ -1,0 +1,83 @@
+{
+	"completionResponsesIds": [
+		{
+			"guid": "6064633492983054476",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"objectivesToCompleteUponCompletionIds": [],
+	"objectivesToRevealUponCompletionIds": [],
+	"itemsToGrantUponCompletion": [],
+	"channelDuration": 0,
+	"activePredicate":
+	{
+		"expression": "HasAlignment(GetPlayer(), $#512160700:6064632733144580097$) &&\r\nPlayer_HasItem(GetPlayer(), \"Consumable_SiegeAntidote\") &&\r\nEvent_GetBoolVar(\"Event_Prototype\") == true &&\r\nEvent_GetBoolVar(\"Well_Poisoned\") == true"
+	},
+	"cuePredicate":
+	{
+		"expression": ""
+	},
+	"visiblePredicate":
+	{
+		"expression": "HasAlignment(GetPlayer(), $#512160700:6064632733144580097$)  &&\r\nPlayer_HasItem(GetPlayer(), \"Consumable_SiegeAntidote\")"
+	},
+	"showErrorIfNotVisible": false,
+	"deleteOnCompletion": false,
+	"singleUse": false,
+	"alwaysShowUIPrompt": false,
+	"cancelChannelIfActivePredicateEverFails": true,
+	"interactTextFormat": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"EA98BE634282C30F7BAFE99519E3F1E5\", \"Cure Well\")",
+	"channelModifierType": "NONE",
+	"rewardTableId":
+	{
+		"guid": "0",
+		"typeId": "1091110008",
+		"name": "None"
+	},
+	"startEffect": "None",
+	"endEffect": "None",
+	"failEffect": "None",
+	"successEffect": "None",
+	"cueEffect": "None",
+	"startSound": "None",
+	"endSound": "None",
+	"failSound": "None",
+	"successSound": "None",
+	"cueSound": "None",
+	"interactAnimTag": "None",
+	"deletionDelay": 0,
+	"activeCueEnabled": true,
+	"activeCueIgnoresActivePredicate": false,
+	"facePlayer": false,
+	"allowInCombat": true,
+	"spawnAtBottomCapsule": false,
+	"channelAnimation": "None",
+	"interactRadius": 250,
+	"discoveryDistance": 200,
+	"interactTolerance": 270,
+	"interactAngle": 0,
+	"bRequireLOS": false,
+	"busyTime": 0.89999997615814209,
+	"clientBusyTime": 1,
+	"channelStartResponseIds": [
+		{
+			"guid": "0",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"failResponsesIds": [],
+	"gatheringInteractionDataId":
+	{
+		"guid": "0",
+		"typeId": "19846",
+		"name": "None"
+	},
+	"interactCooldownMap":
+	{
+	},
+	"guid": "6064633492974600331",
+	"name": "Siege_Well_Antidote_PID",
+	"typeId": "1091110031"
+}

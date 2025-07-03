@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"5FC81C1B4FD1817E0EA9B1B75B2BFC4B\", \"No HB\")",
+	"nextNodeId":
+	{
+		"guid": "6064630169484591116",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "!IsOnStoryArcQuest(GetPlayer(), \"SAQ_0022_p1q1_Handbill\")||!IsStoryArcQuestAvailable(GetPlayer(),\"SAQ_0022_p1q1_Handbill\")||((IsOnStoryArcQuest(GetPlayer(), \"SAQ_0022_p1q2_BestLaidPlans\")&&(!GetStoryArcQuestFlag(GetPlayer(),\"SAQ_0022_p1q2_BestLaidPlans\",\"BLPFrohman\"))))"
+	},
+	"guid": "6064630061907509324",
+	"name": "0022_Seph_Frohman_7",
+	"typeId": "1091110027"
+}

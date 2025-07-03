@@ -1,0 +1,91 @@
+{
+	"narrativeType": "Commission",
+	"taskId":
+	{
+		"guid": "6064632196189979835",
+		"typeId": "1095125186",
+		"name": "None"
+	},
+	"completionParameters":
+	{
+		"objectiveType": "Kill",
+		"nPCTaskIconOverrideId":
+		{
+			"guid": "0",
+			"typeId": "949952112329",
+			"name": "None"
+		},
+		"bAllowSatisfactionToRegress": false,
+		"completionQuantity": 1,
+		"tagQuery":
+		{
+			"tokenStreamVersion": 0,
+			"tagDictionary": [
+				{
+					"tagName": "Hunt.Cursefang"
+				}
+			],
+			"queryTokenStream": [ 0, 1, 2, 1, 0 ],
+			"userDescription": "",
+			"autoDescription": " ALL( Hunt.Cursefang )"
+		},
+		"professionFilterIds": [],
+		"gatherableFilterIds": [],
+		"collectionFilterId":
+		{
+			"guid": "0",
+			"typeId": "1091110041",
+			"name": "None"
+		},
+		"subObjectivesIds": [],
+		"bLimitToDisplayLocation": false,
+		"goToAreaLocation": [],
+		"populationSetIds": [],
+		"populationInstanceIds": [],
+		"notifyType": "None"
+	},
+	"objectiveText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"E069063E40510DE9380ACE9E1FFBE498\", \"Hunt and slay Cursefang\")",
+	"objectiveCountText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"DE4C71B044ECA1634B2A9088EBC2B2DD\", \"Cursefang is Slain\")",
+	"initiallyHidden": false,
+	"advanceWhileHidden": true,
+	"revealOnComplete": true,
+	"completionRewardsIds": [],
+	"minimumRequirement": true,
+	"completionFlags": [],
+	"instanceCompletionResult": [],
+	"enabledPredicate":
+	{
+		"expression": ""
+	},
+	"completionActionsIds": [],
+	"objectivesToCompleteUponCompletionIds": [],
+	"objectivesToRevealUponCompletionIds": [],
+	"allowOverAchievement": false,
+	"overAchievementCountText": "",
+	"maximumAdditionalCompletions": 2,
+	"multipleCompletionExperienceMultiplier": 0.30000001192092896,
+	"multipleCompletionGoldMultiplier": 0.30000001192092896,
+	"multipleCompletionVariableMultiplier": 0.30000001192092896,
+	"displayLocation": [
+		{
+			"location":
+			{
+				"x": -952248,
+				"y": 757437,
+				"z": 12998.394
+			},
+			"radius": 30000,
+			"map_DisplayType": "RADIUS",
+			"map_IconVisual":
+			{
+				"guid": "0",
+				"typeId": "949952112329",
+				"name": "None"
+			},
+			"map_DisplayName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"F79AD4B84A3A8E78A0CE0BAF17E0A659\", \"Cursefang\")"
+		}
+	],
+	"guid": "6064632196186834106",
+	"name": "NarrativeObjective_TID_RVR_Bounty_Cursefang",
+	"typeId": "1091110420"
+}

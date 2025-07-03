@@ -1,0 +1,68 @@
+{
+	"commissionType": "Narrative",
+	"preRequisiteQuestsIds": [],
+	"bRepeatable": false,
+	"mainObjectiveType": "Basic",
+	"commissionSection": 1,
+	"biomeOrigin": "FloodPlains",
+	"bFromDynamicContent": false,
+	"availabilityExpression":
+	{
+		"expression": "GetPlayerLevel() >= 4 && \r\n!Player_HasCommission(GetPlayer(), \"SQ_0010_SliversOfThePast\") &&\r\n!Player_HasCompletedCommission(GetPlayer(), \"SQ_0010_SliversOfThePast\")"
+	},
+	"bDisabled": false,
+	"level": 7,
+	"commissionRarity": "Common",
+	"objectivesIds": [
+		{
+			"guid": "6064632393329016832",
+			"typeId": "1091110420",
+			"name": "None"
+		},
+		{
+			"guid": "6064632393506292712",
+			"typeId": "1091110420",
+			"name": "None"
+		}
+	],
+	"allowMultipleCompletion": false,
+	"commissionName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"3854BCD24E2BBFBB1DDC5F916FAB9DC8\", \"Slivers of the Past\")",
+	"flavorText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"4E09C54E42BDC3A93971178C02B3C693\", \"A mysterious cult has been using the bandits to sow chaos in Lionhold and gather magical artifacts from the region.  A cultist\\'s scroll mentions a tower Lumber Landing as a place to send shipments of artifacts.\")",
+	"mainObjectiveText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"A9840A3645D72A300B120D8DDDACAC9D\", \"Go to the tower and investigate what the cult is doing.\")",
+	"rewardTablesIds": [
+		{
+			"guid": "6064631828174536707",
+			"typeId": "1091110040",
+			"name": "None"
+		}
+	],
+	"calloutName": "",
+	"calloutDescription": "",
+	"expiration":
+	{
+		"duration": "0"
+	},
+	"cooldown":
+	{
+		"duration": "0"
+	},
+	"moneyCost": "0",
+	"resourceCost": [],
+	"mayoralCompletionCount": 0,
+	"rewardId":
+	{
+		"guid": "0",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"bNodeTargeted": false,
+	"targetRewardId":
+	{
+		"guid": "0",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"guid": "6064632387977871365",
+	"name": "SQ_0010_SliversOfThePast",
+	"typeId": "280002"
+}

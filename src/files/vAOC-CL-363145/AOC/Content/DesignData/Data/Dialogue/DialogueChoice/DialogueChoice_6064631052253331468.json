@@ -1,0 +1,33 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"45CABA9C495989DF58EEF0B68839CF3E\", \"Inspect area\")",
+	"nextNodeId":
+	{
+		"guid": "6064632042784817152",
+		"typeId": "1091110028",
+		"name": "CSQ_DialDef_0002_LIH_BrokenWindchime_12"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064632042825383939",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064631131576795136",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "Player_ObjectiveStateEquals(GetPlayer(),\"CSQ_NOB_0002_THO_ExamineThePost\", EObjectiveState::Active)"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064631052253331468",
+	"name": "CSQ_DialDef_0002_LIH_BrokenWindchime_8",
+	"typeId": "1091110027"
+}

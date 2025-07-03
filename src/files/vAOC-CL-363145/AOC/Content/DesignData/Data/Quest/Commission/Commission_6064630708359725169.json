@@ -1,0 +1,97 @@
+{
+	"commissionType": "Generic",
+	"commissionGameplayTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "Biome.Riverlands"
+			},
+			{
+				"tagName": "Quest.Commission.Adventure.Goto"
+			},
+			{
+				"tagName": "Quest.Commission.Tier.T1"
+			}
+		],
+		"parentTags": [
+			{
+				"tagName": "Biome"
+			},
+			{
+				"tagName": "Quest.Commission.Adventure"
+			},
+			{
+				"tagName": "Quest.Commission"
+			},
+			{
+				"tagName": "Quest"
+			},
+			{
+				"tagName": "Quest.Commission.Tier"
+			}
+		]
+	},
+	"preRequisiteQuestsIds": [],
+	"autoFailTimer": -1,
+	"bRepeatable": false,
+	"mainObjectiveType": "GoToArea",
+	"commissionSection": 1,
+	"biomeOrigin": "FloodPlains",
+	"bFromDynamicContent": false,
+	"availabilityExpression":
+	{
+		"expression": ""
+	},
+	"bDisabled": false,
+	"level": 4,
+	"commissionRarity": "Common",
+	"objectivesIds": [
+		{
+			"guid": "6064631663612461081",
+			"typeId": "1091110420",
+			"name": "None"
+		}
+	],
+	"allowMultipleCompletion": false,
+	"commissionName": "NSLOCTEXT(\"\", \"74D6001A40A515111220538C0C5322DB\", \"Sightseeing: Stoneworks Great Oak\")",
+	"flavorText": "NSLOCTEXT(\"\", \"286890794E5F9BD85AD595AE642082E2\", \"Visit the Great Oak growing atop the Stoneworks\")",
+	"mainObjectiveText": "NSLOCTEXT(\"\", \"A7136BF74513C8E0DF529095A85D2C02\", \"Visit the Stoneworks Great Oak\")",
+	"rewardTablesIds": [
+		{
+			"guid": "6064631443187302402",
+			"typeId": "1091110040",
+			"name": "None"
+		}
+	],
+	"calloutName": "",
+	"calloutDescription": "",
+	"bCanProgressWhileInRaid": false,
+	"expiration":
+	{
+		"duration": "0"
+	},
+	"cooldown":
+	{
+		"duration": "0"
+	},
+	"moneyCost": "0",
+	"resourceCost": [],
+	"mayoralCompletionCount": 0,
+	"rewardId":
+	{
+		"guid": "0",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"bNodeTargeted": false,
+	"targetRewardId":
+	{
+		"guid": "0",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"questItemListIds": [],
+	"guid": "6064630708359725169",
+	"name": "Com_RVR_GoTo_StoneworksGreatOak",
+	"typeId": "280002"
+}

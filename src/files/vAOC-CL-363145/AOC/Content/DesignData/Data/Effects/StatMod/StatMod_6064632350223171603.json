@@ -1,0 +1,22 @@
+{
+	"statRefId":
+	{
+		"guid": "6064629575339934476",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"value":
+	{
+		"expression": "var inCombat = IsInCombat(GetSource());\r\nvar isMoving = IsMoving(GetSource());\r\nvar Cost = 0.0;\r\n\r\nif(isMoving)\r\n{\r\nset Cost = -1.25;\r\n\r\nif (inCombat)\r\n{\r\nset Cost = -2.5;\r\n}\r\n\r\n}\r\n\r\nCost"
+	},
+	"bUseShieldAbsorb": false,
+	"shieldAbsorbPercentage":
+	{
+		"expression": ""
+	},
+	"bShowFloatingText": false,
+	"valueInputTerms": [],
+	"guid": "6064632350223171603",
+	"name": "General_Sprint_StaminaDrain",
+	"typeId": "3031600201"
+}

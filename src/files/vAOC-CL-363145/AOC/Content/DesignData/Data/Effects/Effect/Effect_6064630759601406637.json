@@ -1,0 +1,141 @@
+{
+	"effectCategory": "EFFECT_Buff",
+	"effectTags": [],
+	"effectName": "Glee",
+	"effectDescription": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"7E3EFB9F45B401B38AB392B5A0333CF8\", \"You are amused by the wit of a bard. Gain $statmod0.%F$. Heal for $tick0$ every $tick$. Lasts $duration$ and can be extended up to 30 seconds.\")",
+	"effectIcon": "/Game/UI/Icons/Archetypes/Bard/Abilities/TUI_StatusIcon_Comedy.TUI_StatusIcon_Comedy",
+	"effectFloatingText": "",
+	"bDispellable": true,
+	"bSignificant": false,
+	"scriptOnApply": "None",
+	"scriptOnExpire": "None",
+	"bSetUnkillable": false,
+	"bGrantsPVPOptInProtection": false,
+	"effectFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"applicationRequirements":
+	{
+		"expression": ""
+	},
+	"bOverrideDefaultResistRate": false,
+	"resistRate":
+	{
+		"expression": ""
+	},
+	"bInfiniteDuration": false,
+	"effectDuration":
+	{
+		"expression": "15"
+	},
+	"bNumStacksLostOnDurationElapse": false,
+	"numStacksLostOnDurationElapse":
+	{
+		"expression": ""
+	},
+	"bPersistsThroughDeath": false,
+	"bPersistsRelog": false,
+	"effectGroupId":
+	{
+		"guid": "0",
+		"typeId": "30316004",
+		"name": "None"
+	},
+	"effectStackType": "STACK_StackInPlace",
+	"bCompareSourceWhenStacking": true,
+	"collateStacksInUI": false,
+	"globalStackLimit": 50,
+	"inPlaceStackLimit":
+	{
+		"expression": "1"
+	},
+	"stackDurationRefresh": "STACK_ExtendDuration",
+	"extensionAmount":
+	{
+		"expression": "15"
+	},
+	"extendedMaximum": 30,
+	"scriptOnMaxStacks": "None",
+	"bLimitStacksFromInstigator": false,
+	"instigatorStackLimit":
+	{
+		"expression": ""
+	},
+	"tickTimer": 2,
+	"bIgnoreInitialTick": true,
+	"scriptOnTick": "None",
+	"bRecalculateHitOnTick": true,
+	"preApplyHitsIds": [],
+	"applyHitsIds": [],
+	"tickHitsIds": [
+		{
+			"guid": "6064630759608156846",
+			"typeId": "30316005",
+			"name": "None"
+		},
+		{
+			"guid": "6064632474144910782",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"consumeHitsIds": [],
+	"removeHitsIds": [],
+	"expireHitsIds": [],
+	"endHitsIds": [],
+	"statModsIds": [
+		{
+			"guid": "6064632474069609679",
+			"typeId": "3031600201",
+			"name": "None"
+		}
+	],
+	"spawnNPCsIds": [],
+	"spawnLingeringZonesIds": [],
+	"redirectsIds": [],
+	"reactionsIds": [],
+	"crowdControlId":
+	{
+		"guid": "0",
+		"typeId": "3031600206",
+		"name": "None"
+	},
+	"resistancesIds": [],
+	"fragilityDefinitionsIds": [],
+	"hitModsIds": [],
+	"addAlignmentsIds": [],
+	"removeAlignmentsIds": [],
+	"bApplyScale": false,
+	"scaleAmount":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"scaleTime": 0,
+	"statusVFX": "None",
+	"bAppliesStealth": false,
+	"supressClickTargeting":
+	{
+		"expression": ""
+	},
+	"supressTabAndSoftTargeting":
+	{
+		"expression": ""
+	},
+	"supressNameplate":
+	{
+		"expression": ""
+	},
+	"bSlowFall": false,
+	"bNeverCull": false,
+	"addedAkEvents": [],
+	"removedAkEvents": [],
+	"akSwitchValues": [],
+	"guid": "6064630759601406637",
+	"name": "Bard_Glee",
+	"typeId": "30316002"
+}

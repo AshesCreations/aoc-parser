@@ -1,0 +1,23 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"012442424686A63EF5C52A8E51B40F94\", \"The Star of Ozu.\")",
+	"nextNodeId":
+	{
+		"guid": "6064630367189270605",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064630366733795340",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0005A_FGG_ForGreaterGlory\",\"MAP_0005A_FGG_Phase02\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0005A_SNB_InTheShadowsOfNikaBrae\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005A_SNB_InTheShadowsOfNikaBrae\",\"FindRecord\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005A_SNB_InTheShadowsOfNikaBrae\",\"FindMap\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005A_SNB_InTheShadowsOfNikaBrae\",\"SpeakToOzu\")"
+	},
+	"guid": "6064630367176753225",
+	"name": "MADD_0005A_SNB_KnowledgeOfOzu_5",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,24 @@
+{
+	"buyingCurrencyTierId":
+	{
+		"guid": "6064629127873626112",
+		"typeId": "1011111289",
+		"name": "None"
+	},
+	"sellingCurrencyTierId":
+	{
+		"guid": "6064629127873626112",
+		"typeId": "1011111289",
+		"name": "None"
+	},
+	"currencyValues":
+	{
+		"(Guid=6064629127873626112,TypeId=1011111289)":
+		{
+			"expression": "const ItemLevel = GetItemLevel();\r\nconst ItemRarity = GetItemRarity();\r\nconst ItemBaseValue = EvalCurve($#10516612381411114:6064632294718898181$,Float(ItemLevel)) * EvalCurve($#10516612381411114:6064632293965955074$, Float(ItemRarity));\r\n\r\nItemBaseValue * 50"
+		}
+	},
+	"guid": "6064632656299687941",
+	"name": "Consumable_ExcavationKit",
+	"typeId": "3145314713"
+}

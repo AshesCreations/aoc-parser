@@ -1,0 +1,37 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"34029D15457FA68DAD9FB985ADF4723E\", \"[Blend the Aloe and Bone Fragments]\")",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064632230245630034",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064632230488965217",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064632230242943057",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "Player_HasItem(GetPlayer(),\"CSQ_ITM_0081_OCC_MothersAloe\")&&\r\nPlayer_HasItem(GetPlayer(),\"CSQ_ITM_0081_OCC_CursedBoneFragments\")&&\r\nPlayer_HasCommission(GetPlayer(),\"CSQ_RVR_0081_OCC_EOB_EchoesOfBetrayal\")\r\n"
+	},
+	"narrativeRequirementsIds": [],
+	"choiceType": "Default",
+	"guid": "6064632230693961849",
+	"name": "CSQ_DD_0081_OCC_ROW_MothersRest_Gravestone_3_Choice_2",
+	"typeId": "1091110027"
+}

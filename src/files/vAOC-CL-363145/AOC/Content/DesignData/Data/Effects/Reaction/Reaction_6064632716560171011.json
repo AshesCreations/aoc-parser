@@ -1,0 +1,32 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 4,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0,
+		"fishingEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "const extendedMod = GetSkillPurchased(GetInstigator(),GetCurrentWeaponSkilltree(GetInstigator()),$#981011333:6064631784055505116$);\r\n\r\n(GetStatModValue(GetHitEvent(), $#10516612381411111:108986352686712$) > 0.0 ||\r\nGetStatModValue(GetHitEvent(), $#10516612381411111:108986352686712$) < 0.0) &&\r\n//HitFlagsContains(GetHitFlags(GetHitEvent()), EHitFlag::Crit) &&\r\nGetRecordTypeId(GetHitSourceRecord(GetHitEvent())) != GetReactionTypeId() &&\r\nGetRecordTypeId(GetHitSourceRecord(GetHitEvent())) != GetEffectTypeId() &&\r\nGetOwner() == GetInstigator() &&\r\n//Event is a Deadly Extended Finisher or player has extendedMod skill\r\n(HitHasTag(GetHitEvent(), \"ComboStep.End2\")\r\n&&\r\n(HitHasTag(GetHitEvent(), \"ComboStep.ProcHit\") || extendedMod))"
+	},
+	"bEvaluateApplyingHit": false,
+	"instigator": "Owner",
+	"targetsBitmask": 1,
+	"reactHitsIds": [
+		{
+			"guid": "6064632716556566530",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"instigatorProcLimit": 0,
+	"globalProcLimit": 0,
+	"procReactOnApply": false,
+	"guid": "6064632716560171011",
+	"name": "Weapon_Proc_Concussion_Reaction_Remove",
+	"typeId": "3031600202"
+}

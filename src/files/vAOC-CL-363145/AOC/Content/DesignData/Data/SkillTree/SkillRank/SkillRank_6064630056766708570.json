@@ -1,0 +1,48 @@
+{
+	"abilityIdId":
+	{
+		"guid": "6064630056124570051",
+		"typeId": "30316001",
+		"name": "Prototype_Fighter_Leapstrike"
+	},
+	"effectIdId":
+	{
+		"guid": "0",
+		"typeId": "30316002",
+		"name": "None"
+	},
+	"guildEffectIdId":
+	{
+		"guid": "0",
+		"typeId": "30311337",
+		"name": "None"
+	},
+	"cost": 1,
+	"expansionId":
+	{
+		"guid": "0",
+		"typeId": "7823461",
+		"name": "None"
+	},
+	"skillCost":
+	{
+		"skillPointCosts": [
+			{
+				"skillPointTypeId":
+				{
+					"guid": "6064631448935923712",
+					"typeId": "981011400",
+					"name": "None"
+				},
+				"quantity": 1
+			}
+		],
+		"commodityCosts": [],
+		"currencyCosts": []
+	},
+	"tooltipText": "Deal $hit1$ and apply a debuff to the target. While the debuff is active, the target acquires 5 wound stacks per second that they are moving.\r\n\r\nAfter 5 seconds, the target takes another $hit:Fighter_Rupture_EndHit$, plus 1% additional damage for each stack of wound it has, up to a maximum total of $hit:Fighter_Rupture_EndHit.max$",
+	"tooltipIcon": "/Game/UI/Icons/Archetypes/Fighter/Abilities/TUI_AbilityIcon_Rupture.TUI_AbilityIcon_Rupture",
+	"guid": "6064630056766708570",
+	"name": "Fighter_Rupture",
+	"typeId": "981011101"
+}

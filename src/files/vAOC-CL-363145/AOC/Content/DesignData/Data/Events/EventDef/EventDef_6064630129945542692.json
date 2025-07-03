@@ -1,0 +1,146 @@
+{
+	"eventName": "NSLOCTEXT(\"\", \"DCAA16174000551DB6D21CAD876245DC\", \"A Scarlet Illusion\")",
+	"gameplayTags":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"activationPredicatesIds": [
+		{
+			"guid": "6064630129945542703",
+			"typeId": "23095129",
+			"name": "None"
+		}
+	],
+	"minChallengeRating": 0,
+	"maxChallengeRating": 30,
+	"eventType": 1,
+	"locationId":
+	{
+		"guid": "6064631561688711186",
+		"typeId": "5127371160",
+		"name": "None"
+	},
+	"desiredTimeSlot": "0001.01.01-00.00.00",
+	"frequency": 24,
+	"priority": 1,
+	"rewardTableId":
+	{
+		"guid": "0",
+		"typeId": "1091110040",
+		"name": "None"
+	},
+	"rewardPopulationSetId":
+	{
+		"guid": "0",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"startStageId":
+	{
+		"guid": "6064630129945542693",
+		"typeId": "23095131",
+		"name": "None"
+	},
+	"stagesIds": [
+		{
+			"guid": "6064630129945542693",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064630129945542717",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064630129945542694",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064630129945542696",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064630129945542697",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064630129945542698",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064630129945542714",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064630129945542695",
+			"typeId": "23095131",
+			"name": "None"
+		}
+	],
+	"alignmentsIds": [],
+	"mapDisplayType": "Biome",
+	"mapEventIcon": "/Game/UI/Widgets/Narrative/Textures/TUI_Icon_Event_PvETracker.TUI_Icon_Event_PvETracker",
+	"bDisplayOnTracker": true,
+	"notificationRadius": 15000,
+	"mapRadiusMinumum": 1000,
+	"cooldownTimer": 600,
+	"bDisabled": true,
+	"maxInstanceCount": 1,
+	"requiredMapName": "Verra_World_Master",
+	"comments": [
+		{
+			"commentGuid": "6064630129975361613",
+			"comment": "Begins with game event trigger from an action response. ",
+			"location":
+			{
+				"x": 252.57140694452187,
+				"y": 93.898875023029774,
+				"z": 0
+			},
+			"size":
+			{
+				"x": 689.99998271465302,
+				"y": 255.71427714824677,
+				"z": 0
+			},
+			"color":
+			{
+				"r": 0.5,
+				"g": 0.5,
+				"b": 0.5,
+				"a": 0.5
+			}
+		}
+	],
+	"bIsTemplate": false,
+	"flowNodes": [
+		{
+			"flowType": "EventEntry",
+			"graphLocation":
+			{
+				"x": -4.2857071818142174,
+				"y": -710
+			},
+			"id": 0
+		},
+		{
+			"flowType": "EventExit",
+			"graphLocation":
+			{
+				"x": -591.25000013038516,
+				"y": 2600
+			},
+			"id": 1
+		}
+	],
+	"guid": "6064630129945542692",
+	"name": "Event_RVR_PU_CorruptionFuel",
+	"typeId": "23095125"
+}

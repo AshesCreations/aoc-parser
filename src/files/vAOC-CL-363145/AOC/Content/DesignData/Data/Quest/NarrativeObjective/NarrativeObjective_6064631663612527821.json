@@ -1,0 +1,95 @@
+{
+	"narrativeType": "StoryArc",
+	"taskId":
+	{
+		"guid": "6064630882082096254",
+		"typeId": "1095125186",
+		"name": "None"
+	},
+	"completionParameters":
+	{
+		"objectiveType": "Basic",
+		"nPCTaskIconOverrideId":
+		{
+			"guid": "0",
+			"typeId": "949952112329",
+			"name": "None"
+		},
+		"bAllowSatisfactionToRegress": false,
+		"completionQuantity": 3,
+		"tagQuery":
+		{
+			"tokenStreamVersion": 0,
+			"tagDictionary": [],
+			"queryTokenStream": [ 0, 1, 1, 0 ],
+			"userDescription": "",
+			"autoDescription": ""
+		},
+		"professionFilterIds": [],
+		"gatherableFilterIds": [],
+		"collectionFilterId":
+		{
+			"guid": "0",
+			"typeId": "1091110041",
+			"name": "None"
+		},
+		"subObjectivesIds": [],
+		"bLimitToDisplayLocation": false,
+		"goToAreaLocation": [],
+		"populationSetIds": [],
+		"populationInstanceIds": [],
+		"notifyType": "None"
+	},
+	"objectiveText": "NSLOCTEXT(\"\", \"DCFE6FFA4033EC4FA907249D629E7D6E\", \"Kill the Goblin Leaders\")",
+	"objectiveCountText": "",
+	"initiallyHidden": false,
+	"advanceWhileHidden": true,
+	"revealOnComplete": true,
+	"completionRewardsIds": [
+		{
+			"guid": "6064630644520387087",
+			"typeId": "1091110040",
+			"name": "None"
+		}
+	],
+	"minimumRequirement": true,
+	"completionFlags": [
+		"LeadersKilled"
+	],
+	"instanceCompletionResult": [],
+	"enabledPredicate":
+	{
+		"expression": ""
+	},
+	"completionActionsIds": [],
+	"objectivesToCompleteUponCompletionIds": [],
+	"objectivesToRevealUponCompletionIds": [],
+	"allowOverAchievement": false,
+	"overAchievementCountText": "",
+	"maximumAdditionalCompletions": 2,
+	"multipleCompletionExperienceMultiplier": 0.30000001192092896,
+	"multipleCompletionGoldMultiplier": 0.30000001192092896,
+	"multipleCompletionVariableMultiplier": 0.30000001192092896,
+	"displayLocation": [
+		{
+			"location":
+			{
+				"x": -548170.65019399999,
+				"y": 646622.088781,
+				"z": 19641.755809999999
+			},
+			"radius": 15000,
+			"map_DisplayType": "ICON",
+			"map_IconVisual":
+			{
+				"guid": "0",
+				"typeId": "949952112329",
+				"name": "None"
+			},
+			"map_DisplayName": "NSLOCTEXT(\"\", \"ACA797544F81EB0A4256E1B8FE5C947C\", \"Kill Goblin Leaders\")"
+		}
+	],
+	"guid": "6064631663612527821",
+	"name": "NarrativeObjective_SAO_0026_P3_Q1_O1_KillGoblinLeaders",
+	"typeId": "1091110420"
+}

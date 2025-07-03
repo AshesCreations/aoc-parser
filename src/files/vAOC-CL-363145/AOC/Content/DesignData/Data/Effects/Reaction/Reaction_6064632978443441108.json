@@ -1,0 +1,32 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 2,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0,
+		"fishingEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "const damage = GetStatModValue(GetHitEvent(), GetOwner(), $#10516612381411111:108986352686712$) < 0.0;\r\nconst spec = GetSkillPurchased(GetOwner(), $#30316003:107281874310830$, $#981011333:6064629460966244413$);\r\nconst block = HitFlagsContains(GetHitFlags(GetHitEvent(), GetOwner()), EHitFlag::Block); \r\nconst ICD = GetEffectCount(GetOwner(), $#30316002:6064632978501899671$) > 0;\r\n\r\ndamage && spec && !block && !ICD"
+	},
+	"bEvaluateApplyingHit": false,
+	"instigator": "Instigator",
+	"targetsBitmask": 2,
+	"reactHitsIds": [
+		{
+			"guid": "6064632978459366357",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"instigatorProcLimit": 0,
+	"globalProcLimit": 0,
+	"procReactOnApply": false,
+	"guid": "6064632978443441108",
+	"name": "Tank_Vengeance_DamageTrigger",
+	"typeId": "3031600202"
+}

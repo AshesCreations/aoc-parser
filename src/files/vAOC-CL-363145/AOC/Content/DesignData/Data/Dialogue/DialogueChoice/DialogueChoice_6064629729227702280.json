@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"E328453B465E74CB3D13188818B2B519\", \"(q1 grant)\")",
+	"nextNodeId":
+	{
+		"guid": "6064629729227702273",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"SA_0021_AnUncoiledEssence\", \"SAP_0021_AnUncoiledEssence_P01\")\r\n&&\r\n(IsStoryArcQuestAvailable(GetPlayer(), \"SAQ_0021_P01_MappingTheCoil\")\r\n&&\r\n!IsOnStoryArcQuest(GetPlayer(), \"SAQ_0021_P01_MappingTheCoil\"))\r\n&&\r\n(IsStoryArcQuestAvailable(GetPlayer(), \"SAQ_0021_P01_TheFocus\")\r\n&&\r\n!IsOnStoryArcQuest(GetPlayer(), \"SAQ_0021_P01_TheFocus\"))\r\n&&\r\n(IsStoryArcQuestAvailable(GetPlayer(), \"SAQ_0021_P01_TheForgottenLens\")\r\n&&\r\n!IsOnStoryArcQuest(GetPlayer(), \"SAQ_0021_P01_TheForgottenLens\"))"
+	},
+	"guid": "6064629729227702280",
+	"name": "MADD_0021_Sergia_8",
+	"typeId": "1091110027"
+}

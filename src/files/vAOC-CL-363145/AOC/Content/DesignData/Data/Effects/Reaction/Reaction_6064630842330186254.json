@@ -1,0 +1,33 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 0,
+		"effectEvents": 0,
+		"abilityEvents": 4,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0,
+		"fishingEvents": 0,
+		"statEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "const abil = GetConsumedAbility();\r\nabil != $#30316001:6064631641648332884$\r\n//abil != $Ability:Ranger_Camouflage$"
+	},
+	"bEvaluateApplyingHit": false,
+	"instigator": "Owner",
+	"targetsBitmask": 1,
+	"reactHitsIds": [
+		{
+			"guid": "6064630842555892380",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"instigatorProcLimit": 0,
+	"globalProcLimit": 0,
+	"procReactOnApply": false,
+	"guid": "6064630842330186254",
+	"name": "Ranger_Camouflage_Outgoing",
+	"typeId": "3031600202"
+}

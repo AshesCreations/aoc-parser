@@ -1,0 +1,97 @@
+{
+	"narrativeType": "Commission",
+	"taskId":
+	{
+		"guid": "6064631704376388332",
+		"typeId": "1095125186",
+		"name": "None"
+	},
+	"completionParameters":
+	{
+		"objectiveType": "Kill",
+		"nPCTaskIconOverrideId":
+		{
+			"guid": "0",
+			"typeId": "949952112329",
+			"name": "None"
+		},
+		"bAllowSatisfactionToRegress": false,
+		"completionQuantity": 10,
+		"tagQuery":
+		{
+			"tokenStreamVersion": 0,
+			"tagDictionary": [
+				{
+					"tagName": "Quest.EventTarget.RVR.SQ.DotL"
+				}
+			],
+			"queryTokenStream": [ 0, 1, 2, 1, 0 ],
+			"userDescription": "Quest.EventTarget.RVR.SQ.DotL",
+			"autoDescription": " ALL( Quest.EventTarget.RVR.SQ.DotL )"
+		},
+		"professionFilterIds": [],
+		"gatherableFilterIds": [],
+		"collectionFilterId":
+		{
+			"guid": "0",
+			"typeId": "1091110041",
+			"name": "None"
+		},
+		"subObjectivesIds": [],
+		"bLimitToDisplayLocation": false,
+		"goToAreaLocation": [],
+		"populationSetIds": [],
+		"populationInstanceIds": [],
+		"notifyType": "None"
+	},
+	"objectiveText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"43AAD0BC41E624AD35708DA01EA44D96\", \"Cull Bewitched Blackbirds\")",
+	"objectiveCountText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"DFDC1B91400E3489AFD23EB94BDBA8C0\", \"Ravens Killed\")",
+	"initiallyHidden": false,
+	"advanceWhileHidden": true,
+	"revealOnComplete": true,
+	"completionRewardsIds": [],
+	"minimumRequirement": true,
+	"completionFlags": [],
+	"instanceCompletionResult": [],
+	"enabledPredicate":
+	{
+		"expression": ""
+	},
+	"completionActionsIds": [
+		{
+			"guid": "6064631726452779700",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"objectivesToCompleteUponCompletionIds": [],
+	"objectivesToRevealUponCompletionIds": [],
+	"allowOverAchievement": true,
+	"overAchievementCountText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"767526DA41C5DBF92830DD85B714B25B\", \"Additional Ravens defeated\")",
+	"maximumAdditionalCompletions": 12,
+	"multipleCompletionExperienceMultiplier": 0.30000001192092896,
+	"multipleCompletionGoldMultiplier": 0.30000001192092896,
+	"multipleCompletionVariableMultiplier": 0.30000001192092896,
+	"displayLocation": [
+		{
+			"location":
+			{
+				"x": -470257.028062,
+				"y": 395894.71129499999,
+				"z": 13175.74497
+			},
+			"radius": 10000,
+			"map_DisplayType": "ICON_AND_RADIUS",
+			"map_IconVisual":
+			{
+				"guid": "6064630990211645445",
+				"typeId": "949952112329",
+				"name": "None"
+			},
+			"map_DisplayName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"A4B1A99E4B1FEF566885AC9187BE9054\", \"Northern Carphin Woods\")"
+		}
+	],
+	"guid": "6064631663612526851",
+	"name": "NarrativeObjective_SQ_0036_DotL_Obj1_Kill",
+	"typeId": "1091110420"
+}

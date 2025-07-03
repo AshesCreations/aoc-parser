@@ -1,0 +1,33 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 4,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0,
+		"fishingEvents": 0,
+		"statEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "const extendedMod = GetSkillPurchased(GetInstigator(),GetCurrentWeaponSkilltree(GetInstigator()),$#981011333:6064632328228376723$);\r\n// trying to get the base arrow storm passive to work, but checking for this tracker doesnt seem to help\r\nconst arrowStorm = GetEffectCount(GetInstigator(), $#30316002:6064632328677799471$) > 0;\r\n\r\nHitHasTag(GetHitEvent(), \"ComboStep.End2\")\r\n&&\r\n(HitHasTag(GetHitEvent(), \"ComboStep.ProcHit\") || extendedMod || arrowStorm)\r\n&&\r\nGetRecordTypeId(GetHitSourceRecord(GetHitEvent())) != GetReactionTypeId() \r\n&&\r\nGetRecordTypeId(GetHitSourceRecord(GetHitEvent())) != GetEffectTypeId()\r\n&&\r\nGetOwner() == GetInstigator() "
+	},
+	"bEvaluateApplyingHit": false,
+	"instigator": "Owner",
+	"targetsBitmask": 1,
+	"reactHitsIds": [
+		{
+			"guid": "6064631726430748673",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"instigatorProcLimit": 0,
+	"globalProcLimit": 0,
+	"procReactOnApply": false,
+	"guid": "6064630493278585975",
+	"name": "Weapon_Proc_Arrowstorm_2",
+	"typeId": "3031600202"
+}

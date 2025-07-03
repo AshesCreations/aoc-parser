@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"F64672E847650033A72B33A6C28F78B5\", \"There will be no more fires.\")",
+	"nextNodeId":
+	{
+		"guid": "6064630361040486432",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0005A_FGG_ForGreaterGlory\",\"MAP_0005A_FGG_Phase02\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0005A_FOF_TheFieldsOfFire\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005A_FOF_TheFieldsOfFire\",\"EmptyBladders\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005A_FOF_TheFieldsOfFire\",\"ReturnToFiona\")"
+	},
+	"guid": "6064630361040748577",
+	"name": "MADD_0005A_FOF_Dial_FionaBriarmoor_9",
+	"typeId": "1091110027"
+}

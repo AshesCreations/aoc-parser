@@ -1,0 +1,97 @@
+{
+	"commissionType": "Generic",
+	"commissionGameplayTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "Biome.Riverlands"
+			},
+			{
+				"tagName": "Quest.Commission.Adventure.Goto"
+			},
+			{
+				"tagName": "Quest.Commission.Tier.T1"
+			}
+		],
+		"parentTags": [
+			{
+				"tagName": "Biome"
+			},
+			{
+				"tagName": "Quest.Commission.Adventure"
+			},
+			{
+				"tagName": "Quest.Commission"
+			},
+			{
+				"tagName": "Quest"
+			},
+			{
+				"tagName": "Quest.Commission.Tier"
+			}
+		]
+	},
+	"preRequisiteQuestsIds": [],
+	"autoFailTimer": -1,
+	"bRepeatable": false,
+	"mainObjectiveType": "GoToArea",
+	"commissionSection": 1,
+	"biomeOrigin": "FloodPlains",
+	"bFromDynamicContent": false,
+	"availabilityExpression":
+	{
+		"expression": ""
+	},
+	"bDisabled": false,
+	"level": 4,
+	"commissionRarity": "Uncommon",
+	"objectivesIds": [
+		{
+			"guid": "6064631663612461072",
+			"typeId": "1091110420",
+			"name": "None"
+		}
+	],
+	"allowMultipleCompletion": false,
+	"commissionName": "NSLOCTEXT(\"\", \"824701DF43D94A58DAAEB1AA958821C9\", \"Explore: Backdoor to Nika\\'Brae\")",
+	"flavorText": "NSLOCTEXT(\"\", \"7F97336D42E43A767D0901B117F3FE11\", \"Now hiring scouts for Nika\\'Brae. The drunkards in the taverns are speaking. There\\'s a Backdoor into the bandit camp on Nikae\\'Brae! If it\\'s true, then we might be able to slip in and ambush the horde of hooligans while they sleep. See what you can find and we\\'ll gladly pay. Just keep this to the shadows. No need to alarm the guards. - The Court of Cloaks\")",
+	"mainObjectiveText": "NSLOCTEXT(\"\", \"0FC4DD324FA9A4C7DBEC2782A0373AB9\", \"Locate the Backdoor into Nika\\'Brae.\")",
+	"rewardTablesIds": [
+		{
+			"guid": "6064631443187302402",
+			"typeId": "1091110040",
+			"name": "None"
+		}
+	],
+	"calloutName": "",
+	"calloutDescription": "",
+	"bCanProgressWhileInRaid": false,
+	"expiration":
+	{
+		"duration": "0"
+	},
+	"cooldown":
+	{
+		"duration": "0"
+	},
+	"moneyCost": "0",
+	"resourceCost": [],
+	"mayoralCompletionCount": 0,
+	"rewardId":
+	{
+		"guid": "0",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"bNodeTargeted": false,
+	"targetRewardId":
+	{
+		"guid": "0",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"questItemListIds": [],
+	"guid": "6064630870815146013",
+	"name": "COM_RVR_GoTo_NikaBraeBackdoor",
+	"typeId": "280002"
+}

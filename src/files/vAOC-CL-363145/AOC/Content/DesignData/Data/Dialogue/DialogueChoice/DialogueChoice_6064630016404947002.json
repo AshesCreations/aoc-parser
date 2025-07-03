@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"5073ADC64FDA5FF302707697CF675487\", \"I\\'ve got the record of the Battle of Bloom.\")",
+	"nextNodeId":
+	{
+		"guid": "6064629965396181052",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0007_PriestessAndThePiper\",\"MAP_0007_PriestessAndThePiper_Phase03\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_BOB_BattleOfBloom\",\"ReadTheScroll\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_BOB_BattleOfBloom\",\"ReportToPiper\")"
+	},
+	"guid": "6064630016404947002",
+	"name": "MADD_0007_WOO_NPC_ThePiper_42",
+	"typeId": "1091110027"
+}

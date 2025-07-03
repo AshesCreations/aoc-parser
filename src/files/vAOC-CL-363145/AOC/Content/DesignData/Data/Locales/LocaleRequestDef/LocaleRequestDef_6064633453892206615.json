@@ -1,0 +1,61 @@
+{
+	"bUseLocaleQuery": false,
+	"originWhiteListIds": [
+		{
+			"guid": "6064633453611122700",
+			"typeId": "421003",
+			"name": "None"
+		},
+		{
+			"guid": "6064633572353572887",
+			"typeId": "421003",
+			"name": "None"
+		},
+		{
+			"guid": "6064633493168128148",
+			"typeId": "421003",
+			"name": "None"
+		}
+	],
+	"localeWhiteListIds": [],
+	"localeBlackListIds": [],
+	"bQueryAllOrigins": false,
+	"localeQueryLocation":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"originQueryRange": 0,
+	"originTagFilter":
+	{
+		"tokenStreamVersion": 0,
+		"tagDictionary": [],
+		"queryTokenStream": [],
+		"userDescription": "",
+		"autoDescription": ""
+	},
+	"localeTagFilter":
+	{
+		"tokenStreamVersion": 0,
+		"tagDictionary": [],
+		"queryTokenStream": [],
+		"userDescription": "",
+		"autoDescription": ""
+	},
+	"localeSelectionAlgorithm": "ClosestToPoint",
+	"pointExpression":
+	{
+		"expression": "Event_GetInstanceLocation()"
+	},
+	"requiredExtents":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"bRequiresNav": false,
+	"guid": "6064633453892206615",
+	"name": "Siege_Dampener_LocaleRequest",
+	"typeId": "23095138"
+}

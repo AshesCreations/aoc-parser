@@ -1,0 +1,100 @@
+{
+	"narrativeType": "Commission",
+	"taskId":
+	{
+		"guid": "6064632399938191362",
+		"typeId": "1095125186",
+		"name": "None"
+	},
+	"completionParameters":
+	{
+		"objectiveType": "SubObjectives",
+		"nPCTaskIconOverrideId":
+		{
+			"guid": "0",
+			"typeId": "949952112329",
+			"name": "None"
+		},
+		"bAllowSatisfactionToRegress": false,
+		"completionQuantity": 1,
+		"tagQuery":
+		{
+			"tokenStreamVersion": 0,
+			"tagDictionary": [
+				{
+					"tagName": "SideQuest.QuestTarget.SQ_0010.TowerCultist"
+				}
+			],
+			"queryTokenStream": [ 0, 1, 2, 1, 0 ],
+			"userDescription": "Tower Cultist",
+			"autoDescription": " ALL( SideQuest.QuestTarget.SQ_0010.TowerCultist )"
+		},
+		"professionFilterIds": [],
+		"gatherableFilterIds": [],
+		"collectionFilterId":
+		{
+			"guid": "0",
+			"typeId": "1091110041",
+			"name": "None"
+		},
+		"subObjectivesIds": [
+			{
+				"guid": "6064632399985246211",
+				"typeId": "1091110420",
+				"name": "None"
+			},
+			{
+				"guid": "6064632400025092101",
+				"typeId": "1091110420",
+				"name": "None"
+			},
+			{
+				"guid": "6064632400044687367",
+				"typeId": "1091110420",
+				"name": "None"
+			},
+			{
+				"guid": "6064632400050061321",
+				"typeId": "1091110420",
+				"name": "None"
+			}
+		],
+		"bLimitToDisplayLocation": false,
+		"goToAreaLocation": [],
+		"populationSetIds": [],
+		"populationInstanceIds": [],
+		"notifyType": "None"
+	},
+	"objectiveText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"A91F8254485DC9F1B449DB8838BF156B\", \"Scout the different areas in the Ruins of Sephillion.\")",
+	"objectiveCountText": "",
+	"initiallyHidden": true,
+	"advanceWhileHidden": false,
+	"revealOnComplete": false,
+	"completionRewardsIds": [],
+	"minimumRequirement": true,
+	"completionFlags": [],
+	"instanceCompletionResult": [],
+	"enabledPredicate":
+	{
+		"expression": ""
+	},
+	"completionActionsIds": [],
+	"objectivesToCompleteUponCompletionIds": [],
+	"objectivesToRevealUponCompletionIds": [
+		{
+			"guid": "6064632400731573175",
+			"typeId": "1091110420",
+			"name": "None"
+		}
+	],
+	"allowOverAchievement": false,
+	"overAchievementCountText": "",
+	"maximumAdditionalCompletions": 2,
+	"multipleCompletionExperienceMultiplier": 0.30000001192092896,
+	"multipleCompletionGoldMultiplier": 0.30000001192092896,
+	"multipleCompletionVariableMultiplier": 0.30000001192092896,
+	"displayLocation": [],
+	"guid": "6064632399928885248",
+	"name": "SQO_0010_SliversOfThePast_SephillionScouting",
+	"typeId": "1091110420"
+}

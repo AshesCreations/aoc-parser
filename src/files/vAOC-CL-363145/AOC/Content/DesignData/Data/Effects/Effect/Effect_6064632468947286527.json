@@ -1,0 +1,131 @@
+{
+	"effectCategory": "EFFECT_Buff",
+	"effectTags": [],
+	"effectName": "NSLOCTEXT(\"[1909495A4C2095068D406C9D33F90055]\", \"E1A7B82949BF1E2182C35FA4F757790F\", \"Resonance\")",
+	"effectDescription": "NSLOCTEXT(\"[1909495A4C2095068D406C9D33F90055]\", \"561D025A42E3D08A36A1EB861363CAD9\", \"Your next weapon combo finisher triggers an additional effect based on your active melody. This effect will consume up to 3 resonance stacks to increase in power.\\r\\n\\r\\n<Bold>Menacing</>\\r\\nDeal bonus $hit:Bard_ResonantWeapon_End_Menacing$ and apply $hit:Bard_ResonantWeapon_End_Menacing.apply0$ to each target hit.\\r\\n\\r\\n<Bold>Cathartic</>\\r\\nDeal bonus $hit:Bard_ResonantWeapon_End_Cathartic$ and apply $hit:Bard_ResonantWeapon_End_Cathartic.apply0$ to each target hit.\\r\\n\\r\\n<Bold>Cheerful</>\\r\\nHeal a nearby injured ally for $hit:Bard_ResonantWeapon_End_Cheerful_Projectile$. Favors yourself and party members. Applies $effect:Bard_Glee$ at 3 or more resonance stacks.\\r\\n\\r\\n<Bold>Pensive</>\\r\\nRestore mana to a nearby ally in need equal to $statmod:Bard_ResonantWeapon_End_Pensive_AoE.Faddnostat$ + $statmod:Bard_ResonantWeapon_End_Pensive_AoE.F%magicalmax$. Favors yourself and party members.\\r\\n\\r\\n<Bold>Epic</>\\r\\nDispel up to 3 crowd control effects from up to $hit:Bard_ResonantWeapon_End_Epic_AoE.mtph$ nearby allies and apply $hit:Bard_ResonantWeapon_End_Epic_Projectile.apply0$.\")",
+	"effectIcon": "/Game/UI/Icons/Archetypes/Bard/Abilities/TUI_AbilityIcon_ResonantWeapon.TUI_AbilityIcon_ResonantWeapon",
+	"effectFloatingText": "",
+	"bDispellable": false,
+	"bSignificant": false,
+	"scriptOnApply": "None",
+	"scriptOnExpire": "None",
+	"bSetUnkillable": false,
+	"bGrantsPVPOptInProtection": false,
+	"bForceDismount": false,
+	"effectFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"applicationRequirements":
+	{
+		"expression": ""
+	},
+	"bOverrideDefaultResistRate": false,
+	"resistRate":
+	{
+		"expression": ""
+	},
+	"bInfiniteDuration": false,
+	"effectDuration":
+	{
+		"expression": "30"
+	},
+	"bNumStacksLostOnDurationElapse": false,
+	"numStacksLostOnDurationElapse":
+	{
+		"expression": ""
+	},
+	"bPersistsThroughDeath": true,
+	"bPersistsRelog": false,
+	"effectGroupId":
+	{
+		"guid": "0",
+		"typeId": "30316004",
+		"name": "None"
+	},
+	"effectStackType": "STACK_StackInPlace",
+	"bCompareSourceWhenStacking": true,
+	"collateStacksInUI": false,
+	"globalStackLimit": 10,
+	"inPlaceStackLimit":
+	{
+		"expression": "10"
+	},
+	"stackDurationRefresh": "STACK_AlwaysRefresh",
+	"extensionAmount":
+	{
+		"expression": ""
+	},
+	"extendedMaximum": 50,
+	"scriptOnMaxStacks": "None",
+	"bLimitStacksFromInstigator": false,
+	"instigatorStackLimit":
+	{
+		"expression": ""
+	},
+	"tickTimer": 0,
+	"bIgnoreInitialTick": false,
+	"scriptOnTick": "None",
+	"bRecalculateHitOnTick": false,
+	"preApplyHitsIds": [],
+	"applyHitsIds": [],
+	"tickHitsIds": [],
+	"consumeHitsIds": [],
+	"removeHitsIds": [],
+	"expireHitsIds": [],
+	"endHitsIds": [],
+	"statModsIds": [
+		{
+			"guid": "6064633053768717432",
+			"typeId": "3031600201",
+			"name": "None"
+		}
+	],
+	"spawnNPCsIds": [],
+	"spawnLingeringZonesIds": [],
+	"redirectsIds": [],
+	"reactionsIds": [],
+	"crowdControlId":
+	{
+		"guid": "0",
+		"typeId": "3031600206",
+		"name": "None"
+	},
+	"resistancesIds": [],
+	"fragilityDefinitionsIds": [],
+	"hitModsIds": [],
+	"addAlignmentsIds": [],
+	"removeAlignmentsIds": [],
+	"bApplyScale": false,
+	"scaleAmount":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"scaleTime": 0,
+	"statusVFX": "None",
+	"bAppliesStealth": false,
+	"supressClickTargeting":
+	{
+		"expression": ""
+	},
+	"supressTabAndSoftTargeting":
+	{
+		"expression": ""
+	},
+	"supressNameplate":
+	{
+		"expression": ""
+	},
+	"bSlowFall": false,
+	"bNeverCull": false,
+	"addedAkEvents": [],
+	"removedAkEvents": [],
+	"akSwitchValues": [],
+	"guid": "6064632468947286527",
+	"name": "Bard_Resonance",
+	"typeId": "30316002"
+}

@@ -1,0 +1,43 @@
+{
+	"populationSetId":
+	{
+		"guid": "6064630271532686734",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"actorToSpawn": "/Game/DesignAssets/Population/NPC/Monster/Aberration/Ooze/Ooze_Magma_Oozling.Ooze_Magma_Oozling_C",
+	"bPersistAfterInstigatorsDeath": false,
+	"spawnLocationType": "LOC_RelativeOffset",
+	"location":
+	{
+		"x": 200,
+		"y": 0,
+		"z": 0
+	},
+	"bSpawnFacingInstigatorsRotation": false,
+	"rotation":
+	{
+		"pitch": 0,
+		"yaw": 0,
+		"roll": 0
+	},
+	"triggerType": 0,
+	"spawnRadius": 0,
+	"spawnExtent": 1000,
+	"trackSpawnedNpcOnInstigator": true,
+	"targetSpawnLocationContext":
+	{
+		"expression": "GetLocation(GetInstigatorThatSpawnedNpc())"
+	},
+	"spawnExpressions": [],
+	"spawnedCharacterLevelOffset": -5,
+	"bSpecifyAbsoluteLevel": false,
+	"addThreatsFromCreator": true,
+	"copyThreatValuesFromCreator": false,
+	"blackboardKeysToSet":
+	{
+	},
+	"guid": "6064633493672165394",
+	"name": "Ooze_Magma_Oozling",
+	"typeId": "3031600204"
+}

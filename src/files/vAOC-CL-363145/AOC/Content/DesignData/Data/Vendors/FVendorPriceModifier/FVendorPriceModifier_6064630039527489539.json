@@ -1,0 +1,52 @@
+{
+	"modifierValueSource": "PriceModifierSet",
+	"valueExpression":
+	{
+		"expression": ""
+	},
+	"priceFactor": "Quality",
+	"valueCurve":
+	{
+		"externalCurve": "None",
+		"editorCurveData":
+		{
+			"keys": [],
+			"defaultValue": 3.4028234663852886e+38,
+			"preInfinityExtrap": "RCCE_Constant",
+			"postInfinityExtrap": "RCCE_Constant",
+			"keyHandlesToIndices":
+			{
+			}
+		}
+	},
+	"priceModifiersIds": [
+		{
+			"guid": "6064630039519559681",
+			"typeId": "3145314715",
+			"name": "None"
+		},
+		{
+			"guid": "6064630039522770946",
+			"typeId": "3145314715",
+			"name": "None"
+		}
+	],
+	"arithmeticOperation": "Add",
+	"itemFilter":
+	{
+		"tokenStreamVersion": 0,
+		"tagDictionary": [
+			{
+				"tagName": "item.resource.cert.nodecert"
+			}
+		],
+		"queryTokenStream": [ 0, 1, 1, 1, 0 ],
+		"userDescription": "",
+		"autoDescription": " ANY( item.resource.cert.nodecert )"
+	},
+	"affectedContexts": 226,
+	"affectedCurrenciesIds": [],
+	"guid": "6064630039527489539",
+	"name": "PlayerCommodity_Bounty",
+	"typeId": "3145314715"
+}

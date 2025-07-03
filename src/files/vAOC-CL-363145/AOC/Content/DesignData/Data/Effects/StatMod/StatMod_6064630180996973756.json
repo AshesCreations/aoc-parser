@@ -1,0 +1,22 @@
+{
+	"statRefId":
+	{
+		"guid": "108986352686712",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"value":
+	{
+		"expression": "var mag = 1.15;\r\n\r\nif(GetNpcEliteRank(GetSource()) >= 2)\r\n{\r\n   set mag = 1.05;\r\n}\r\n\r\nmag * EvalFormula($#10516612381411113:6064629862506364928$)"
+	},
+	"bUseShieldAbsorb": false,
+	"shieldAbsorbPercentage":
+	{
+		"expression": ""
+	},
+	"bShowFloatingText": true,
+	"valueInputTerms": [],
+	"guid": "6064630180996973756",
+	"name": "Minotaur_Berserker_AxeStrike_Damage",
+	"typeId": "3031600201"
+}

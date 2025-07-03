@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"B85F3C3D408DEE81FCC4F6B04F999468\", \"I\\'m not finished.\")",
+	"nextNodeId":
+	{
+		"guid": "6064629841447288970",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsOnStoryArcQuest(GetPlayer(),\"SAQ_0013_P1Q1_MushroomHunting\")&&!GetStoryArcQuestFlag(GetPlayer(),\"SAQ_0013_P1Q1_MushroomHunting\",\"Mush1Done\")"
+	},
+	"guid": "6064629841446568073",
+	"name": "0013_AuntMush_Dialog_37",
+	"typeId": "1091110027"
+}

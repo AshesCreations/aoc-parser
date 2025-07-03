@@ -1,0 +1,59 @@
+{
+	"assetRef": "/Game/DesignAssets/Population/NPC/Humanoid/Minotaur/Berserker/Minotaur_Berserker.Minotaur_Berserker",
+	"populationFilter":
+	{
+		"zoneOfInfluenceIds": [],
+		"nodeIds": [],
+		"cultures": [],
+		"nodeTypes": [],
+		"biomes": [],
+		"seasons": [],
+		"nodeLevelMin": "Wilderness",
+		"nodeLevelMax": "Metropolis",
+		"timeOfDayStart": -1,
+		"timeOfDayEnd": -1,
+		"weatherTypes": [],
+		"spawningStrategy":
+		{
+			"spawnStrategy": "Immediate",
+			"phaseInTime":
+			{
+				"minSeconds": 0,
+				"maxSeconds": 0
+			}
+		},
+		"despawningStrategy":
+		{
+			"despawnStrategy": "Timed",
+			"phaseOutTime":
+			{
+				"minSeconds": 300,
+				"maxSeconds": 300
+			}
+		}
+	},
+	"scaleMin": 1,
+	"scaleMax": 1,
+	"gameplayTags":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"bOverrideAggroRadius": false,
+	"aggroRadius": 0,
+	"bOverrideLeashRadius": false,
+	"leashRadius": 0,
+	"factionId": 0,
+	"interactionDefId":
+	{
+		"guid": "0",
+		"typeId": "1091110031",
+		"name": "None"
+	},
+	"displayNameOverrides": [
+		"NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"2349F6A244AD3013FB8B47A1654A4434\", \"Zinjala Raider\")"
+	],
+	"guid": "6064632712547860503",
+	"name": "PA_CSQ_0111_EotGH_Minotaur_Ambush_1",
+	"typeId": "5111001"
+}

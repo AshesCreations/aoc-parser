@@ -1,0 +1,32 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 4,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0,
+		"fishingEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "const tiger = GetEffectCountByRecordAndInstigator(GetHitTargetByIndex(GetHitEvent(), 0), $#30316002:6064629675815540306$, GetEffectInstigator()) > 0;\r\nconst bear = GetEffectCountByRecordAndInstigator(GetHitTargetByIndex(GetHitEvent(), 0), $#30316002:6064629927145964807$, GetEffectInstigator()) > 0;\r\nconst raven = GetEffectCountByRecordAndInstigator(GetHitTargetByIndex(GetHitEvent(), 0), $#30316002:6064629927250888823$, GetEffectInstigator()) > 0;\r\nconst siphoning = GetSkillPurchased(GetEffectInstigator(), $#30316003:108850029942393$, $#981011333:6064632757317397786$);\r\n\r\nsiphoning && GetStatModValue(GetHitEvent(), $#10516612381411111:108986352686712$) < 0.0 && (tiger || bear || raven)"
+	},
+	"bEvaluateApplyingHit": false,
+	"instigator": "Owner",
+	"targetsBitmask": 1,
+	"reactHitsIds": [
+		{
+			"guid": "6064632756765342160",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"instigatorProcLimit": 0,
+	"globalProcLimit": 0,
+	"procReactOnApply": false,
+	"guid": "6064632756759247159",
+	"name": "Ranger_Regeneration_Siphoning",
+	"typeId": "3031600202"
+}

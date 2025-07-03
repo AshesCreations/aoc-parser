@@ -1,0 +1,23 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"90C511544BBF6ECDFBB24F85B60D7FC5\", \"I squashed a bunch of them!\")",
+	"nextNodeId":
+	{
+		"guid": "6064629841056759922",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064629852776628295",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "IsOnStoryArcQuest(GetPlayer(),\"SAQ_0013_Control_1\")&&\r\n(GetStoryArcQuestFlag(GetPlayer(),\"SAQ_0013_Control_1\",\"SporeTended\"))\r\n"
+	},
+	"guid": "6064629841056759911",
+	"name": "0013_Jenner_Dialog_9",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,56 @@
+{
+	"displayName": "Lightning Mitigation",
+	"description": "NSLOCTEXT(\"\", \"B6EF5D9B4C0DF87B4CD5D9A5B322BEBD\", \"Reduces the amount of lightning damage taken\")",
+	"bHidden": false,
+	"gameplayType": "Type_Combat",
+	"bHasWaterfallStatsUI": false,
+	"waterfallStatsUIIds": [],
+	"bDisplayAsPercentage": true,
+	"statType": "Type_Float",
+	"bClampStatFinalValue": true,
+	"bMultiplyStatMods": true,
+	"bMultiplyCompliment": true,
+	"base":
+	{
+		"expression": "const rating = GetStat(GetInstigator(), $#10516612381411111:109343390193354$);\r\n(1.0 - rating / (rating + EvalFormula($#10516612381411113:6064630531622110190$)))"
+	},
+	"waterfallStatsBaseIds": [
+		{
+			"guid": "109343390193354",
+			"typeId": "10516612381411111",
+			"name": "None"
+		}
+	],
+	"valueMin":
+	{
+		"expression": "0"
+	},
+	"waterfallStatsMinIds": [],
+	"valueMax":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMaxIds": [],
+	"regenRate":
+	{
+		"expression": ""
+	},
+	"waterfallStatsRegenIds": [],
+	"bRegenWhileDead": false,
+	"bRecalculateOnCombatState": false,
+	"onSpawn": "Reset_None",
+	"onDeath": "Reset_None",
+	"onRevive": "Reset_None",
+	"bPersistValue": false,
+	"replication": 5,
+	"shieldStatId":
+	{
+		"guid": "0",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"grantedEffects": [],
+	"guid": "109343399237371",
+	"name": "LightningMitigation",
+	"typeId": "10516612381411111"
+}

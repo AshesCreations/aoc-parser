@@ -1,0 +1,33 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 2,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0,
+		"fishingEvents": 0,
+		"statEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "GetStatModValue(GetHitEvent(), $#10516612381411111:108986352686712$) < 0.0 \r\n&& GetAngleBetween(GetOwner(), GetInstigator()) < 90.\r\n&& GetInstigator() != GetOwner()"
+	},
+	"bEvaluateApplyingHit": false,
+	"instigator": "HitInstigator",
+	"targetsBitmask": 1,
+	"reactHitsIds": [
+		{
+			"guid": "6064633657629147618",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"instigatorProcLimit": 0,
+	"globalProcLimit": 0,
+	"procReactOnApply": false,
+	"guid": "6064633657627705825",
+	"name": "BanditCaptain_GCDTest_HitFromFront",
+	"typeId": "3031600202"
+}

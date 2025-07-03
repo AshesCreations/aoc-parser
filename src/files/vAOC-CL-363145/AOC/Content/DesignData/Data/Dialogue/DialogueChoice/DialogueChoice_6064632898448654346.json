@@ -1,0 +1,109 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"672C1F9C45FE3D3F381F8EB0B82CC6E0\", \"Is this something you want?\")",
+	"nextNodeId":
+	{
+		"guid": "6064632898428403718",
+		"typeId": "1091110028",
+		"name": "CSQ_RVR_0083_Hillfolk_DottieJane_DLG_57"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": ""
+	},
+	"requirements": [
+		{
+			"criteria": [
+				{
+					"elementType": "Item",
+					"narrativeType": "Commission",
+					"commissionId":
+					{
+						"guid": "0",
+						"typeId": "280002",
+						"name": "None"
+					},
+					"storyArcQuestId":
+					{
+						"guid": "0",
+						"typeId": "1091110035",
+						"name": "None"
+					},
+					"objectiveId":
+					{
+						"guid": "0",
+						"typeId": "1091110420",
+						"name": "None"
+					},
+					"itemFilterId":
+					{
+						"guid": "6064632513833800608",
+						"typeId": "1091110041",
+						"name": "None"
+					},
+					"currencyDefId":
+					{
+						"guid": "0",
+						"typeId": "1011151289",
+						"name": "None"
+					},
+					"amountToQuery": 1,
+					"questState": "InProgress",
+					"objectiveState": "Active",
+					"itemState": "InInventory",
+					"invert": false
+				}
+			]
+		},
+		{
+			"criteria": [
+				{
+					"elementType": "Objective",
+					"narrativeType": "Commission",
+					"commissionId":
+					{
+						"guid": "0",
+						"typeId": "280002",
+						"name": "None"
+					},
+					"storyArcQuestId":
+					{
+						"guid": "0",
+						"typeId": "1091110035",
+						"name": "None"
+					},
+					"objectiveId":
+					{
+						"guid": "6064632513446678313",
+						"typeId": "1091110420",
+						"name": "None"
+					},
+					"itemFilterId":
+					{
+						"guid": "0",
+						"typeId": "1091110041",
+						"name": "None"
+					},
+					"currencyDefId":
+					{
+						"guid": "0",
+						"typeId": "1011151289",
+						"name": "None"
+					},
+					"amountToQuery": 0,
+					"questState": "InProgress",
+					"objectiveState": "Complete",
+					"itemState": "InInventory",
+					"invert": false
+				}
+			]
+		}
+	],
+	"choiceType": "Default",
+	"guid": "6064632898448654346",
+	"name": "CSQ_RVR_0083_Hillfolk_DottieJane_DLG_51_Choice_12",
+	"typeId": "1091110027"
+}

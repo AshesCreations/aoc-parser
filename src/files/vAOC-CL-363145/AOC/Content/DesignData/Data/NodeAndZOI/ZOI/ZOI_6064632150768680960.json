@@ -1,0 +1,179 @@
+{
+	"designNotes": "",
+	"levelDefinitionId":
+	{
+		"guid": "6064629126799097877",
+		"typeId": "9227326",
+		"name": "None"
+	},
+	"playerFacingName": "NSLOCTEXT(\"\", \"A078010A47E599EEC45DCEB85F7130A3\", \"Windansea\")",
+	"zoiType": "HasNode",
+	"startingAreaGameplayTag":
+	{
+		"tagName": "None"
+	},
+	"cityNodeId":
+	{
+		"guid": "6064632225073725498",
+		"typeId": "1323521343",
+		"name": "None"
+	},
+	"adjacentZonesOfInfluenceIds": [
+		{
+			"guid": "6064633253929615361",
+			"typeId": "9127326",
+			"name": "None"
+		},
+		{
+			"guid": "6064633253929680898",
+			"typeId": "9127326",
+			"name": "None"
+		},
+		{
+			"guid": "6064633253929811971",
+			"typeId": "9127326",
+			"name": "None"
+		},
+		{
+			"guid": "6064629126902120472",
+			"typeId": "9127326",
+			"name": "None"
+		},
+		{
+			"guid": "6064629126905528345",
+			"typeId": "9127326",
+			"name": "None"
+		}
+	],
+	"corruptionRulesEnabled": true,
+	"bAllowPVPOptInProtection": false,
+	"alignmentsAssignedUponEnteringIds": [],
+	"zoiEnvironmentType": "None",
+	"editorColor":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 1
+	},
+	"zOIRewardTables": [
+		{
+			"inclusionExpression":
+			{
+				"expression": "!DoesNPCContainTag(\"NoRewards\")"
+			},
+			"rewardTableId":
+			{
+				"guid": "6064632271552381720",
+				"typeId": "1091110040",
+				"name": "None"
+			}
+		},
+		{
+			"inclusionExpression":
+			{
+				"expression": "DoesNPCContainTag(\"character.humanoid\")"
+			},
+			"rewardTableId":
+			{
+				"guid": "6064633391378137089",
+				"typeId": "1091110040",
+				"name": "None"
+			}
+		},
+		{
+			"inclusionExpression":
+			{
+				"expression": "!DoesNPCContainTag(\"NoRewards\")"
+			},
+			"rewardTableId":
+			{
+				"guid": "6064633313653948416",
+				"typeId": "1091110040",
+				"name": "None"
+			}
+		}
+	],
+	"economicRegionTableId":
+	{
+		"guid": "6064633459697123399",
+		"typeId": "98738382",
+		"name": "None"
+	},
+	"bHideExperienceEvents": false,
+	"biome": "Tropics",
+	"biomeGatherableTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "TurquoiseSea"
+			}
+		],
+		"parentTags": []
+	},
+	"freeholdEstatesIds": [
+		{
+			"guid": "6064633557975826432",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633557978513409",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633557978710018",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633557982707715",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633557983100932",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633557983232005",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633557983297542",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633557983428615",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633557983494152",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633557986115593",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633557986246666",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633557986377739",
+			"typeId": "1337133701",
+			"name": "None"
+		}
+	],
+	"actorEffects": [],
+	"guid": "6064632150768680960",
+	"name": "Verra_TUR_Node_Windansea",
+	"typeId": "9127326"
+}

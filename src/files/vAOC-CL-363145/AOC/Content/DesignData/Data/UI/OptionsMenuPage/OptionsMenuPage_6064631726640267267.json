@@ -1,0 +1,72 @@
+{
+	"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Keybindings_MiscSectionLabel\")",
+	"categoryHeaderLabel": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"KB_MiscSectionHeader\")",
+	"entryCategories": [
+		{
+			"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"KB_GlobalKeybindingsSubheader\")",
+			"entryAlignment": "HAlign_Fill",
+			"entryWrapSize": 10,
+			"wrapBoxClass": "KeyBinding",
+			"entries": [
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"KB_Unstuck\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 600,
+					"type": "KeyBinding",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "Unstuck",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetKeyBinding",
+					"setterFunctionName": "SetKeyBinding"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"KB_ShowAdvancedTooltips\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 600,
+					"type": "KeyBinding",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "ShowAdvancedTooltips",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetKeyBinding",
+					"setterFunctionName": "SetKeyBinding"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"KB_MountFlourishLabel\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 600,
+					"type": "KeyBinding",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "MountFlourish",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetKeyBinding",
+					"setterFunctionName": "SetKeyBinding"
+				}
+			],
+			"subcategories": []
+		}
+	],
+	"guid": "6064631726640267267",
+	"name": "KB_Miscellaneous",
+	"typeId": "3616673544"
+}

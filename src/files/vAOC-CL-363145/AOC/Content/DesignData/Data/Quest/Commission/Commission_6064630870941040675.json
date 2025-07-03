@@ -1,0 +1,97 @@
+{
+	"commissionType": "Generic",
+	"commissionGameplayTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "Biome.Riverlands"
+			},
+			{
+				"tagName": "Quest.Commission.Adventure.Goto"
+			},
+			{
+				"tagName": "Quest.Commission.Tier.T1"
+			}
+		],
+		"parentTags": [
+			{
+				"tagName": "Biome"
+			},
+			{
+				"tagName": "Quest.Commission.Adventure"
+			},
+			{
+				"tagName": "Quest.Commission"
+			},
+			{
+				"tagName": "Quest"
+			},
+			{
+				"tagName": "Quest.Commission.Tier"
+			}
+		]
+	},
+	"preRequisiteQuestsIds": [],
+	"autoFailTimer": -1,
+	"bRepeatable": false,
+	"mainObjectiveType": "GoToArea",
+	"commissionSection": 1,
+	"biomeOrigin": "FloodPlains",
+	"bFromDynamicContent": false,
+	"availabilityExpression":
+	{
+		"expression": ""
+	},
+	"bDisabled": false,
+	"level": 16,
+	"commissionRarity": "Common",
+	"objectivesIds": [
+		{
+			"guid": "6064631663612461106",
+			"typeId": "1091110420",
+			"name": "None"
+		}
+	],
+	"allowMultipleCompletion": false,
+	"commissionName": "NSLOCTEXT(\"\", \"BDE201F941F62C2DFB6EA695CB5BC858\", \"Explore: Oakenbane Keep\")",
+	"flavorText": "NSLOCTEXT(\"\", \"2FB89FFE43CD13120CB9FCA31C4DD229\", \"The Kaelar Army Needs You! With most of our forces engaged in larger campaigns, the Field Marshal has approved the conscription of settler scouts. We urgently need you, the commoner, to scout Oakenbane Keep. These powerful ruins were once the site of the Military Academy. With your aid, we will one day recclaim it. For Greater Glory!\")",
+	"mainObjectiveText": "NSLOCTEXT(\"\", \"00BCA18F445DF88079CFC496E078AC5E\", \"Locate Oakenbane Keep in the Riverlands.\")",
+	"rewardTablesIds": [
+		{
+			"guid": "6064631443187302402",
+			"typeId": "1091110040",
+			"name": "None"
+		}
+	],
+	"calloutName": "",
+	"calloutDescription": "",
+	"bCanProgressWhileInRaid": false,
+	"expiration":
+	{
+		"duration": "0"
+	},
+	"cooldown":
+	{
+		"duration": "0"
+	},
+	"moneyCost": "0",
+	"resourceCost": [],
+	"mayoralCompletionCount": 0,
+	"rewardId":
+	{
+		"guid": "0",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"bNodeTargeted": false,
+	"targetRewardId":
+	{
+		"guid": "0",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"questItemListIds": [],
+	"guid": "6064630870941040675",
+	"name": "COM_RVR_GoTo_OakenbaneKeepII",
+	"typeId": "280002"
+}

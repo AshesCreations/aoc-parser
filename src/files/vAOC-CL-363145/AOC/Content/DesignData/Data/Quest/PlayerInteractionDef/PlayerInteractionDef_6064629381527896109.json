@@ -1,0 +1,56 @@
+{
+	"completionResponsesIds": [
+		{
+			"guid": "6064629381517410344",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"channelDuration": 0,
+	"activePredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MIA_0015_TPT_ThePhantomTower\",\"MIP_0015_TPT_Phase03\")&&\r\n!IsOnStoryArcQuest(GetPlayer(),\"MIQ_0015_BFP_BetrayalOfFuturePast\")\r\n"
+	},
+	"cuePredicate":
+	{
+		"expression": ""
+	},
+	"deleteOnCompletion": false,
+	"singleUse": false,
+	"alwaysShowUIPrompt": true,
+	"cancelChannelIfActivePredicateEverFails": true,
+	"channelModifierType": "NONE",
+	"rewardTableId":
+	{
+		"guid": "0",
+		"typeId": "1091110008",
+		"name": "None"
+	},
+	"startEffect": "None",
+	"endEffect": "None",
+	"failEffect": "None",
+	"successEffect": "/Game/Effects/FX_Shared/Systems/Death/NS_Rebirth.NS_Rebirth",
+	"cueEffect": "None",
+	"startSound": "None",
+	"endSound": "None",
+	"failSound": "None",
+	"successSound": "None",
+	"cueSound": "None",
+	"interactAnimTag": "None",
+	"deletionDelay": 0,
+	"activeCueEnabled": true,
+	"activeCueIgnoresActivePredicate": false,
+	"facePlayer": false,
+	"allowInCombat": true,
+	"spawnAtBottomCapsule": false,
+	"channelAnimation": "/Game/Characters/Animations/Mounts_Rider/Horse/CM_M_BASE_Horse_Gather_Montage.CM_M_BASE_Horse_Gather_Montage",
+	"interactRadius": 200,
+	"interactTolerance": 30,
+	"busyTime": 0.89999997615814209,
+	"clientBusyTime": 1,
+	"channelStartResponseIds": [],
+	"failResponsesIds": [],
+	"guid": "6064629381527896109",
+	"name": "MIPI_0015_BFP_OBJ_ClockworkCodex",
+	"typeId": "1091110031"
+}

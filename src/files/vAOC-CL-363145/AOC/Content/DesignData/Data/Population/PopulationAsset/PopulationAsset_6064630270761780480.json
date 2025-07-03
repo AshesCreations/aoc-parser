@@ -1,0 +1,86 @@
+{
+	"assetRef": "/Game/DesignAssets/Population/NPC/Monster/Mimic/Hoarder/Hoarder_RareSpawn_CrunchTrunk.Hoarder_RareSpawn_CrunchTrunk",
+	"lootTablesIds": [],
+	"populationFilter":
+	{
+		"zoneOfInfluenceIds": [],
+		"nodeIds": [],
+		"cultures": [],
+		"nodeTypes": [],
+		"biomes": [],
+		"seasons": [],
+		"nodeLevelMin": "Wilderness",
+		"nodeLevelMax": "Metropolis",
+		"timeOfDayStart": -1,
+		"timeOfDayEnd": -1,
+		"weatherTypes": [],
+		"spawningStrategy":
+		{
+			"spawnStrategy": "Immediate",
+			"phaseInTime":
+			{
+				"minSeconds": 0,
+				"maxSeconds": 0
+			}
+		},
+		"despawningStrategy":
+		{
+			"despawnStrategy": "Immediate",
+			"phaseOutTime":
+			{
+				"minSeconds": 0,
+				"maxSeconds": 0
+			}
+		},
+		"requiredGameplayTags":
+		{
+			"gameplayTags": [],
+			"parentTags": []
+		}
+	},
+	"scaleMin": 1.1000000238418579,
+	"scaleMax": 1.1000000238418579,
+	"gameplayTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "npc.disposition.enemy"
+			},
+			{
+				"tagName": "character.beast"
+			},
+			{
+				"tagName": "npc.stature.rareSpawn"
+			}
+		],
+		"parentTags": [
+			{
+				"tagName": "npc.disposition"
+			},
+			{
+				"tagName": "npc"
+			},
+			{
+				"tagName": "character"
+			},
+			{
+				"tagName": "npc.stature"
+			}
+		]
+	},
+	"bOverrideAggroRadius": false,
+	"aggroRadius": 0,
+	"bOverrideLeashRadius": false,
+	"leashRadius": 0,
+	"factionId": 0,
+	"interactionDefId":
+	{
+		"guid": "0",
+		"typeId": "1091110031",
+		"name": "None"
+	},
+	"displayNameOverrides": [],
+	"guid": "6064630270761780480",
+	"name": "PA_RVR_Carphin_Hoarder_L24_3S_RareSpawn_CrunchTrunk",
+	"typeId": "5111001"
+}

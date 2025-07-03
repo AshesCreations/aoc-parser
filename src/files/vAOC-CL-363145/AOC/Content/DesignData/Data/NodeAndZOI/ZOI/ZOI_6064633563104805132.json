@@ -1,0 +1,128 @@
+{
+	"designNotes": "",
+	"levelDefinitionId":
+	{
+		"guid": "6064629126799097877",
+		"typeId": "9227326",
+		"name": "None"
+	},
+	"playerFacingName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"A5E4C27844C3247C9DCF2199F30A3482\", \"Korrin Open Ocean\")",
+	"zoiType": "CannotOwn",
+	"startingAreaGameplayTag":
+	{
+		"tagName": "None"
+	},
+	"cityNodeId":
+	{
+		"guid": "0",
+		"typeId": "1323521343",
+		"name": "None"
+	},
+	"adjacentZonesOfInfluenceIds": [
+		{
+			"guid": "6064633253929680898",
+			"typeId": "9127326",
+			"name": "None"
+		}
+	],
+	"corruptionRulesEnabled": true,
+	"bAllowPVPOptInProtection": false,
+	"alignmentsAssignedUponEnteringIds": [
+		{
+			"guid": "6064629443707731976",
+			"typeId": "512160700",
+			"name": "None"
+		}
+	],
+	"zoiEnvironmentType": "None",
+	"editorColor":
+	{
+		"x": 0,
+		"y": 1,
+		"z": 1
+	},
+	"zOIRewardTables": [
+		{
+			"inclusionExpression":
+			{
+				"expression": "!DoesNPCContainTag(\"NoRewards\")"
+			},
+			"rewardTableId":
+			{
+				"guid": "6064633313653948416",
+				"typeId": "1091110040",
+				"name": "None"
+			}
+		},
+		{
+			"inclusionExpression":
+			{
+				"expression": "!DoesNPCContainTag(\"NoRewards\")"
+			},
+			"rewardTableId":
+			{
+				"guid": "6064633313727152129",
+				"typeId": "1091110040",
+				"name": "None"
+			}
+		},
+		{
+			"inclusionExpression":
+			{
+				"expression": "DoesNPCContainTag(\"character.humanoid\")"
+			},
+			"rewardTableId":
+			{
+				"guid": "6064633391378137089",
+				"typeId": "1091110040",
+				"name": "None"
+			}
+		}
+	],
+	"economicRegionTableId":
+	{
+		"guid": "0",
+		"typeId": "98738382",
+		"name": "None"
+	},
+	"bHideExperienceEvents": false,
+	"biome": "Tropics",
+	"biomeGatherableTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "TurquoiseSea"
+			}
+		],
+		"parentTags": []
+	},
+	"freeholdEstatesIds": [],
+	"actorEffects": [
+		{
+			"availabilityExpression":
+			{
+				"expression": "true"
+			},
+			"areaOfInterestActorEffects": [
+				{
+					"effectRecordId":
+					{
+						"guid": "6064633429899935744",
+						"typeId": "30316002",
+						"name": "None"
+					},
+					"effectClassifications": [
+						"Character"
+					],
+					"effectNodeType": "Default",
+					"effectAlignments": [],
+					"bRequireAllAlignments": false,
+					"bRequireOrgAffiliation": false
+				}
+			]
+		}
+	],
+	"guid": "6064633563104805132",
+	"name": "Verra_TUR_Lawless_Korrin",
+	"typeId": "9127326"
+}

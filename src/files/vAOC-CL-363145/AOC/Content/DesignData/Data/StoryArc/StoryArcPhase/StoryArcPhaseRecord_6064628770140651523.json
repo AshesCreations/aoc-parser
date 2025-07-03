@@ -1,0 +1,146 @@
+{
+	"questsIds": [
+		{
+			"guid": "6064628770271789071",
+			"typeId": "1091110035",
+			"name": "None"
+		},
+		{
+			"guid": "6064628770271789072",
+			"typeId": "1091110035",
+			"name": "None"
+		},
+		{
+			"guid": "6064628781727481856",
+			"typeId": "1091110035",
+			"name": "None"
+		}
+	],
+	"activePopulationSetsIds": [
+		{
+			"guid": "6064630270761773780",
+			"typeId": "5111005",
+			"name": "None"
+		},
+		{
+			"guid": "6064630270761763402",
+			"typeId": "5111005",
+			"name": "None"
+		},
+		{
+			"guid": "6064630270761766471",
+			"typeId": "5111005",
+			"name": "None"
+		}
+	],
+	"phaseSpawnLocationsIds": [
+		{
+			"guid": "6064630445775192150",
+			"typeId": "1091110237",
+			"name": "None"
+		},
+		{
+			"guid": "6064630445775192151",
+			"typeId": "1091110237",
+			"name": "None"
+		},
+		{
+			"guid": "6064630445775192152",
+			"typeId": "1091110237",
+			"name": "None"
+		}
+	],
+	"spawnLocationsIds": [
+		{
+			"guid": "6064631091671793664",
+			"typeId": "5127371160",
+			"name": "None"
+		},
+		{
+			"guid": "6064631091671793665",
+			"typeId": "5127371160",
+			"name": "None"
+		},
+		{
+			"guid": "6064631091671793666",
+			"typeId": "5127371160",
+			"name": "None"
+		}
+	],
+	"interactVolumesIds": [],
+	"cannonizeOnEarlyTermination": true,
+	"cannonizeOnNormalAdvancement": true,
+	"phaseName": "NSLOCTEXT(\"\", \"242F65F24BA471976471089442DE4A62\", \"Muckbeard\\'s Illness\")",
+	"transitionsIds": [],
+	"advancePhaseByTime": false,
+	"advancementTime": 0,
+	"canAdvance":
+	{
+		"expression": "true || ( GetStoryArcInstanceVariable(\"MA_0010_TheGreenBattle\",\"NobleArc\") > 5.0 )"
+	},
+	"timeAdvancePhaseId":
+	{
+		"guid": "0",
+		"typeId": "1091110034",
+		"name": "None"
+	},
+	"leaveSequenceId":
+	{
+		"guid": "6064629251617849391",
+		"typeId": "1091110043",
+		"name": "None"
+	},
+	"leaveSequenceWorldTransform":
+	{
+		"rotation":
+		{
+			"x": 0,
+			"y": 0,
+			"z": 0,
+			"w": 1
+		},
+		"translation":
+		{
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"scale3D":
+		{
+			"x": 1,
+			"y": 1,
+			"z": 1
+		}
+	},
+	"enterSequenceId":
+	{
+		"guid": "0",
+		"typeId": "1091110043",
+		"name": "None"
+	},
+	"enterSequenceWorldTransform":
+	{
+		"rotation":
+		{
+			"x": 0,
+			"y": 0,
+			"z": 0,
+			"w": 1
+		},
+		"translation":
+		{
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"scale3D":
+		{
+			"x": 1,
+			"y": 1,
+			"z": 1
+		}
+	},
+	"guid": "6064628770140651523",
+	"name": "MA_0010_TheGreenBattle_P3",
+	"typeId": "1091110034"
+}

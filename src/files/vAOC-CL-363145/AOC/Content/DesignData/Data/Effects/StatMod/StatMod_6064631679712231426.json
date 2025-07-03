@@ -1,0 +1,22 @@
+{
+	"statRefId":
+	{
+		"guid": "6064629575339934476",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"value":
+	{
+		"expression": "const maxHealth = GetStat(GetTarget(), $#10516612381411111:108986356618873$);\r\nconst incDmg = GetCalculatedStatModValue($#10516612381411111:108986352686712$);\r\nconst currentStam = GetStat(GetTarget(), $#10516612381411111:6064629575339934476$);\r\nconst pctHit = (incDmg / maxHealth) * 100;\r\nconst skilled0 = GetSkillPurchased(GetInstigator(), $#30316003:6064631673604472832$, $#981011333:6064631748545085996$);\r\nconst skilled1 = GetSkillPurchased(GetInstigator(), $#30316003:6064631673604472832$, $#981011333:6064631748546200109$);\r\nconst skilled2 = GetSkillPurchased(GetInstigator(), $#30316003:6064631673604472832$, $#981011333:6064631748547117614$);\r\nconst IsBlock = HitFlagsContains(GetHitFlags(GetHitInProgress(), GetTarget()), EHitFlag::Block);\r\nvar Out = 0.0;\r\n\r\nif (IsBlock)\r\n{\r\nset Out = pctHit * (1.5 -\r\nSelectFloat (skilled0, 0.25, 0.0) -\r\nSelectFloat (skilled1, 0.25, 0.0) -\r\nSelectFloat (skilled2, 0.25, 0.0));\r\n\r\n if ((Out * -1.0) > currentStam)\r\n  {\r\n    set Out = (currentStam * -1.0) - 1.0;\r\n  }\r\n\r\n}\r\n\r\nOut"
+	},
+	"bUseShieldAbsorb": false,
+	"shieldAbsorbPercentage":
+	{
+		"expression": ""
+	},
+	"bShowFloatingText": true,
+	"valueInputTerms": [],
+	"guid": "6064631679712231426",
+	"name": "General_Guard_StaminaHit",
+	"typeId": "3031600201"
+}

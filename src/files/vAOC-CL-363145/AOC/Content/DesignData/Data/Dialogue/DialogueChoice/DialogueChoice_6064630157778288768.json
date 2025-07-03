@@ -1,0 +1,23 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"55EB28674CD75CAEE4AB088FA27DB234\", \"Has Q - Has Flag\")",
+	"nextNodeId":
+	{
+		"guid": "6064630157779271811",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064630214643548188",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcQuestAvailable(GetPlayer(),\"SAQ_0022_p3q1_CConscript\")&&GetStoryArcQuestFlag(GetPlayer(),\"SAQ_0022_p3q1_CConscript\",\"CConscript\")"
+	},
+	"guid": "6064630157778288768",
+	"name": "0022_Seph_Kev_77",
+	"typeId": "1091110027"
+}

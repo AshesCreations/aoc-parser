@@ -1,0 +1,30 @@
+{
+	"levelMinimum": 0,
+	"levelMaximum": -1,
+	"requiredQuestId":
+	{
+		"guid": "0",
+		"typeId": "1091110035",
+		"name": "None"
+	},
+	"requiredItemId":
+	{
+		"guid": "0",
+		"typeId": "1091110003",
+		"name": "None"
+	},
+	"location":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"distance": 0,
+	"optionalExpression":
+	{
+		"expression": "(!Player_HasCommission (GetPlayer(), \"SQ_RVR_Samias_OFF_GoTo_Sabah\") && !Player_HasCompletedCommission(GetPlayer(), \"SQ_RVR_Samias_OFF_GoTo_Sabah\") \r\n&& !Player_HasCompletedCommission(GetPlayer(), \"CSQ_RVR_0110_EotGH_SwordEdgeToFlame\")\r\n&& !Player_HasCompletedCommission(GetPlayer(), \"CSQ_RVR_0130_WTL_WelcomeToTheLarder\")\r\n&& !Player_HasCompletedCommission(GetPlayer(), \"SQ_0121_NewAelaCorridor_Part1\"))"
+	},
+	"guid": "6064632763564621838",
+	"name": "ARequirement_Narrative_OurFamilyFights_Initializer",
+	"typeId": "1091110006"
+}

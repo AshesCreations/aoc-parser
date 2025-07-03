@@ -1,0 +1,55 @@
+{
+	"displayName": "NSLOCTEXT(\"[1909495A4C2095068D406C9D33F90055]\", \"A50EB332440CDA51D9001DA3BFD25DF9\", \"Base General Speed\")",
+	"description": "NSLOCTEXT(\"[1909495A4C2095068D406C9D33F90055]\", \"87416F4B4D5DDC0EB6E0F8AAB02D2DEB\", \"The base speed of the caravan for all surfaces.\")",
+	"bHidden": false,
+	"gameplayType": "Type_Combat",
+	"bHasWaterfallStatsUI": false,
+	"waterfallStatsUIIds": [],
+	"bDisplayAsPercentage": false,
+	"statType": "Type_Float",
+	"bClampStatFinalValue": false,
+	"bMultiplyStatMods": false,
+	"bMultiplyCompliment": false,
+	"base":
+	{
+		"expression": "const rating = GetStat(GetInstigator(), $#10516612381411111:6064632303928152577$);\r\n1.67 * rating / (rating + EvalFormula($#10516612381411113:6064632304448325265$))"
+	},
+	"waterfallStatsBaseIds": [
+		{
+			"guid": "6064632303928152577",
+			"typeId": "10516612381411111",
+			"name": "None"
+		}
+	],
+	"valueMin":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMinIds": [],
+	"valueMax":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMaxIds": [],
+	"regenRate":
+	{
+		"expression": ""
+	},
+	"waterfallStatsRegenIds": [],
+	"bRegenWhileDead": false,
+	"onSpawn": "Reset_None",
+	"onDeath": "Reset_None",
+	"onRevive": "Reset_None",
+	"bPersistValue": false,
+	"replication": 1,
+	"shieldStatId":
+	{
+		"guid": "0",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"grantedEffects": [],
+	"guid": "109343269148318",
+	"name": "Caravan_MoveSpeedBase",
+	"typeId": "10516612381411111"
+}

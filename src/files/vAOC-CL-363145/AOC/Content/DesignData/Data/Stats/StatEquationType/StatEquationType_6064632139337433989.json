@@ -1,0 +1,12 @@
+{
+	"equation":
+	{
+		"expression": "// reward mult for mobs base on their elite rank\r\nconst BaseRewardMod = EvalCurve($#10516612381411114:6064631902054842601$,Float(GetNpcEliteRank(GetSelf())));\r\n// factor in current HP vs base HP so mobs with tons of health give bonus xp\r\nconst HP = GetStat(GetOwner(), $#10516612381411111:108986356618873$);\r\nconst baseHP = EvalFormula($#10516612381411113:6064632139161207554$);\r\n// specific per mob tuning stat, defaults to 1.0\r\nconst RewardMod = GetStat(GetOwner(), $#10516612381411111:6064630639444426780$);\r\nconst RareSpawnMod = EvalFormula($#10516612381411113:6064633532763275264$);\r\n\r\n(BaseRewardMod + Clamp(HP / baseHP, 0.1, 100.0)) * RewardMod * RareSpawnMod"
+	},
+	"constraints":
+	{
+	},
+	"guid": "6064632139337433989",
+	"name": "NPC_Base_Reward_Multiplier",
+	"typeId": "10516612381411112"
+}

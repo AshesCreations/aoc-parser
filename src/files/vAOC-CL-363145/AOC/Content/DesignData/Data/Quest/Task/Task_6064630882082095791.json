@@ -1,0 +1,71 @@
+{
+	"type": "Basic",
+	"progressExpression":
+	{
+		"expression": ""
+	},
+	"nPCTaskIconOverrideId":
+	{
+		"guid": "0",
+		"typeId": "949952112329",
+		"name": "None"
+	},
+	"bAllowSatisfactionToRegress": false,
+	"completionQuantity": 1,
+	"tagQuery":
+	{
+		"tokenStreamVersion": 0,
+		"tagDictionary": [
+			{
+				"tagName": "npc.disposition.enemy"
+			},
+			{
+				"tagName": "character.beast.bear"
+			}
+		],
+		"queryTokenStream": [ 0, 1, 1, 2, 0, 1 ],
+		"userDescription": "",
+		"autoDescription": " ANY( npc.disposition.enemy, character.beast.bear )"
+	},
+	"professionFilterIds": [],
+	"gatherableFilterIds": [],
+	"collectionFilterId":
+	{
+		"guid": "0",
+		"typeId": "1091110041",
+		"name": "None"
+	},
+	"collectionCount": 5,
+	"objectivesIds": [],
+	"bCheckKillLocation": false,
+	"displayLocation": [
+		{
+			"location":
+			{
+				"x": -542446.01510199998,
+				"y": 664246.45906899997,
+				"z": 17932.041913000001
+			},
+			"radius": 1500,
+			"map_DisplayType": "ICON",
+			"map_IconVisual":
+			{
+				"guid": "0",
+				"typeId": "949952112329",
+				"name": "None"
+			},
+			"map_DisplayName": "NSLOCTEXT(\"\", \"95B22178496E607794DD69822F513890\", \"Memorial Plaque\")"
+		}
+	],
+	"location": [],
+	"populationSetId":
+	{
+		"guid": "0",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"notifyType": "None",
+	"guid": "6064630882082095791",
+	"name": "Task_6064630882082095791",
+	"typeId": "1095125186"
+}

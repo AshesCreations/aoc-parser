@@ -1,0 +1,66 @@
+{
+	"displayName": "NSLOCTEXT(\"[1909495A4C2095068D406C9D33F90055]\", \"B28AD39D477D3BF954BBF0BAC0B115AF\", \"Block Mitigation\")",
+	"description": "NSLOCTEXT(\"\", \"439236CE43EB13EB81234188014BBF09\", \"Reduces the amount of damage taken on a blocked hit\")",
+	"bHidden": false,
+	"gameplayType": "Type_Combat",
+	"bHasWaterfallStatsUI": false,
+	"waterfallStatsUIIds": [],
+	"bDisplayAsPercentage": true,
+	"statType": "Type_Float",
+	"bClampStatFinalValue": true,
+	"bMultiplyStatMods": true,
+	"bMultiplyCompliment": true,
+	"base":
+	{
+		"expression": "const rating = GetStat(GetInstigator(), $#10516612381411111:109343269148326$);\r\nvar hasShield = EquippedItemInSlotHasTag(EEquipSlot::Secondary, \"Item.Gear.Weapon.Shield\");\r\nvar mit = 0.9;\r\nif (hasShield)\r\n{\r\n    set mit = 0.75;\r\n}\r\n\r\nmit - rating / (rating + EvalFormula($#10516612381411113:6064630531622110190$))"
+	},
+	"waterfallStatsBaseIds": [
+		{
+			"guid": "109343269148326",
+			"typeId": "10516612381411111",
+			"name": "None"
+		},
+		{
+			"guid": "6064629495591403526",
+			"typeId": "10516612381411111",
+			"name": "None"
+		},
+		{
+			"guid": "6064629495591731208",
+			"typeId": "10516612381411111",
+			"name": "None"
+		}
+	],
+	"valueMin":
+	{
+		"expression": "0"
+	},
+	"waterfallStatsMinIds": [],
+	"valueMax":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMaxIds": [],
+	"regenRate":
+	{
+		"expression": ""
+	},
+	"waterfallStatsRegenIds": [],
+	"bRegenWhileDead": false,
+	"bRecalculateOnCombatState": false,
+	"onSpawn": "Reset_None",
+	"onDeath": "Reset_None",
+	"onRevive": "Reset_None",
+	"bPersistValue": false,
+	"replication": 5,
+	"shieldStatId":
+	{
+		"guid": "0",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"grantedEffects": [],
+	"guid": "109343399171823",
+	"name": "BlockMitigation",
+	"typeId": "10516612381411111"
+}

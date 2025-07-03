@@ -1,0 +1,101 @@
+{
+	"commissionType": "Generic",
+	"commissionGameplayTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "Quest.Commission.Tier.T1"
+			},
+			{
+				"tagName": "Quest.Commission.Adventure.Slayer"
+			},
+			{
+				"tagName": "Biome.Tropics"
+			}
+		],
+		"parentTags": [
+			{
+				"tagName": "Quest.Commission.Tier"
+			},
+			{
+				"tagName": "Quest.Commission"
+			},
+			{
+				"tagName": "Quest"
+			},
+			{
+				"tagName": "Quest.Commission.Adventure"
+			},
+			{
+				"tagName": "Biome"
+			}
+		]
+	},
+	"preRequisiteQuestsIds": [],
+	"autoFailTimer": -1,
+	"bRepeatable": false,
+	"mainObjectiveType": "Kill",
+	"commissionSection": 1,
+	"biomeOrigin": "FloodPlains",
+	"bFromDynamicContent": false,
+	"availabilityExpression":
+	{
+		"expression": ""
+	},
+	"bDisabled": false,
+	"level": 23,
+	"commissionRarity": "Common",
+	"objectivesIds": [
+		{
+			"guid": "6064633346174494793",
+			"typeId": "1091110420",
+			"name": "None"
+		}
+	],
+	"allowMultipleCompletion": false,
+	"commissionName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"A2618C1043D0EF5A76269F8FC6FDF46B\", \"Rotting Grotto\")",
+	"flavorText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"9D5BB3D74A3A73376B3A5785009B86CE\", \"Cull Maelstrom Sailors in the Corral Grotto. \\\"The Maelstrom\\'s crew still sails in their own twisted way, but no wind should fill these sails again.\\\" - Captain Vaelrick\")",
+	"mainObjectiveText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"12B74476440C31654873F893EA170AC2\", \"Cull the Maelstrom Sailors in the Corral Grotto\")",
+	"rewardTablesIds": [
+		{
+			"guid": "6064631443187695620",
+			"typeId": "1091110040",
+			"name": "None"
+		}
+	],
+	"calloutName": "",
+	"calloutDescription": "",
+	"bCanProgressWhileInRaid": true,
+	"expiration":
+	{
+		"duration": "0"
+	},
+	"cooldown":
+	{
+		"duration": "0"
+	},
+	"moneyCost": "0",
+	"resourceCost": [],
+	"mayoralCompletionCount": 0,
+	"rewardId":
+	{
+		"guid": "0",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"bNodeTargeted": false,
+	"targetRewardId":
+	{
+		"guid": "0",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"questItemListIds": [],
+	"storedGraph":
+	{
+		"nodes": []
+	},
+	"guid": "6064633346174101576",
+	"name": "COM_TUR_Cull_CorralGrotto_Undead",
+	"typeId": "280002"
+}

@@ -1,0 +1,31 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 4,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "const healAmount = GetStatModValue(GetHitEvent(), $#10516612381411111:108986352686712$);\r\nconst health = GetStat(GetTarget(), $#10516612381411111:108986352686712$);\r\nconst maxHealth = GetStat(GetTarget(), $#10516612381411111:108986356618873$);\r\nhealAmount > 0.0"
+	},
+	"bEvaluateApplyingHit": false,
+	"instigator": "Instigator",
+	"targetsBitmask": 8,
+	"reactHitsIds": [
+		{
+			"guid": "6064629337719318780",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"instigatorProcLimit": 0,
+	"globalProcLimit": 0,
+	"procReactOnApply": false,
+	"guid": "6064629337710799099",
+	"name": "Cleric_DivineConcentration_OverHealShield",
+	"typeId": "3031600202"
+}

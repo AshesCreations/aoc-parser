@@ -1,0 +1,108 @@
+{
+	"narrativeType": "Commission",
+	"taskId":
+	{
+		"guid": "6064632155772748483",
+		"typeId": "1095125186",
+		"name": "None"
+	},
+	"completionParameters":
+	{
+		"objectiveType": "Kill",
+		"nPCTaskIconOverrideId":
+		{
+			"guid": "0",
+			"typeId": "949952112329",
+			"name": "None"
+		},
+		"bAllowSatisfactionToRegress": false,
+		"completionQuantity": 1,
+		"tagQuery":
+		{
+			"tokenStreamVersion": 0,
+			"tagDictionary": [
+				{
+					"tagName": "Quest.Faction.ForsakenBlade"
+				}
+			],
+			"queryTokenStream": [ 0, 1, 1, 1, 0 ],
+			"userDescription": "",
+			"autoDescription": " ANY( Quest.Faction.ForsakenBlade )"
+		},
+		"professionFilterIds": [],
+		"gatherableFilterIds": [],
+		"collectionFilterId":
+		{
+			"guid": "0",
+			"typeId": "1091110041",
+			"name": "None"
+		},
+		"subObjectivesIds": [],
+		"bLimitToDisplayLocation": true,
+		"goToAreaLocation": [],
+		"populationSetIds": [],
+		"populationInstanceIds": [],
+		"notifyType": "None"
+	},
+	"objectiveText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"ED7E8F1F4E26D0F72024ADBA6121FB73\", \"Defend the Hillfolk Camps from the Forsaken Blade\")",
+	"objectiveCountText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"90B446244B5511EF65AD59A4744D9230\", \"Hillfolk Camps Defended\")",
+	"initiallyHidden": true,
+	"advanceWhileHidden": true,
+	"revealOnComplete": true,
+	"completionRewardsIds": [],
+	"minimumRequirement": true,
+	"completionFlags": [],
+	"instanceCompletionResult": [],
+	"enabledPredicate":
+	{
+		"expression": ""
+	},
+	"completionActionsIds": [],
+	"objectivesToCompleteUponCompletionIds": [
+		{
+			"guid": "6064632155770192578",
+			"typeId": "1091110420",
+			"name": "None"
+		},
+		{
+			"guid": "6064632156179988653",
+			"typeId": "1091110420",
+			"name": "None"
+		}
+	],
+	"objectivesToRevealUponCompletionIds": [
+		{
+			"guid": "6064632145523048460",
+			"typeId": "1091110420",
+			"name": "None"
+		}
+	],
+	"allowOverAchievement": false,
+	"overAchievementCountText": "",
+	"maximumAdditionalCompletions": 2,
+	"multipleCompletionExperienceMultiplier": 0.30000001192092896,
+	"multipleCompletionGoldMultiplier": 0.30000001192092896,
+	"multipleCompletionVariableMultiplier": 0.30000001192092896,
+	"displayLocation": [
+		{
+			"location":
+			{
+				"x": -834982.71117499995,
+				"y": 393228.34054900002,
+				"z": 11367.901077
+			},
+			"radius": 3000,
+			"map_DisplayType": "NONE",
+			"map_IconVisual":
+			{
+				"guid": "6064630990211645445",
+				"typeId": "949952112329",
+				"name": "None"
+			},
+			"map_DisplayName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"9C43BE2A4CE44AB558D02B82F3DD49D1\", \"Defend the Hillsfolk Campsite\")"
+		}
+	],
+	"guid": "6064632156177891500",
+	"name": "CSQ_RVR_0083_FB_FlowersAlongATrail_DefendtheHillfolk_1_SubOBJ",
+	"typeId": "1091110420"
+}

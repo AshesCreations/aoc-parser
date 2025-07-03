@@ -1,0 +1,22 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"F44E94914F24B564B408CEAA0BBB88C0\", \"Historian Qatakijal asked me to find you.  They said you could help translate this inscription.\")",
+	"nextNodeId":
+	{
+		"guid": "6064632518189056279",
+		"typeId": "1091110028",
+		"name": "DD_SQ_0012_VaeluneScholar1_3"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "Player_HasCommission(GetPlayer(), \"SQ_0012_InTranslation\") &&\r\n!Player_ObjectiveStateEquals(GetPlayer(),\"SQO_0012_InTranslation_TalkToScholar4\", EObjectiveState::Complete)"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064632518189056278",
+	"name": "DD_SQ_0012_VaeluneScholar4_2_Choice_1",
+	"typeId": "1091110027"
+}

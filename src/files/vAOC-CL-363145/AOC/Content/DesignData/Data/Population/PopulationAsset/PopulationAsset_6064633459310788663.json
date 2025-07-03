@@ -1,0 +1,94 @@
+{
+	"assetRef": "/Game/DesignAssets/Population/NPC/PCRaces/Bandits/Pirates/PirateBard/Bandit_Musician2_Pirate.Bandit_Musician2_Pirate",
+	"lootTablesIds": [
+		{
+			"guid": "6064633465119506478",
+			"typeId": "1091110040",
+			"name": "None"
+		}
+	],
+	"populationFilter":
+	{
+		"zoneOfInfluenceIds": [],
+		"nodeIds": [],
+		"cultures": [],
+		"nodeTypes": [],
+		"biomes": [],
+		"seasons": [],
+		"nodeLevelMin": "Wilderness",
+		"nodeLevelMax": "Metropolis",
+		"timeOfDayStart": -1,
+		"timeOfDayEnd": -1,
+		"weatherTypes": [],
+		"spawningStrategy":
+		{
+			"spawnStrategy": "Immediate",
+			"phaseInTime":
+			{
+				"minSeconds": 0,
+				"maxSeconds": 0
+			}
+		},
+		"despawningStrategy":
+		{
+			"despawnStrategy": "Immediate",
+			"phaseOutTime":
+			{
+				"minSeconds": 0,
+				"maxSeconds": 0
+			}
+		},
+		"requiredGameplayTags":
+		{
+			"gameplayTags": [],
+			"parentTags": []
+		}
+	},
+	"scaleMin": 1,
+	"scaleMax": 1,
+	"gameplayTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "npc.disposition.enemy"
+			},
+			{
+				"tagName": "affiliation.pirate"
+			},
+			{
+				"tagName": "npc.stature.rareSpawn"
+			}
+		],
+		"parentTags": [
+			{
+				"tagName": "npc.disposition"
+			},
+			{
+				"tagName": "npc"
+			},
+			{
+				"tagName": "affiliation"
+			},
+			{
+				"tagName": "npc.stature"
+			}
+		]
+	},
+	"bOverrideAggroRadius": false,
+	"aggroRadius": 0,
+	"bOverrideLeashRadius": false,
+	"leashRadius": 0,
+	"factionId": 0,
+	"interactionDefId":
+	{
+		"guid": "0",
+		"typeId": "1091110031",
+		"name": "None"
+	},
+	"displayNameOverrides": [
+		"NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"5554B1A64888033D12A1ECB8CB79EC15\", \"Shanty Shawn\")"
+	],
+	"guid": "6064633459310788663",
+	"name": "PA_JUN_KrakenBelly_Pirate_Bard_L25_2S_Rarespawn_ShantyShawn",
+	"typeId": "5111001"
+}

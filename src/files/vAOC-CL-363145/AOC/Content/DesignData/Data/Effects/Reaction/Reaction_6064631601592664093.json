@@ -1,0 +1,32 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 2,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0,
+		"fishingEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "GetDistanceBetween(GetOwner(),GetInstigator()) < 300."
+	},
+	"bEvaluateApplyingHit": false,
+	"instigator": "HitSource",
+	"targetsBitmask": 4,
+	"reactHitsIds": [
+		{
+			"guid": "6064631601596203038",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"instigatorProcLimit": 0,
+	"globalProcLimit": 0,
+	"procReactOnApply": false,
+	"guid": "6064631601592664093",
+	"name": "Minotaur_Streamweaver_FrostShell_Reaction",
+	"typeId": "3031600202"
+}

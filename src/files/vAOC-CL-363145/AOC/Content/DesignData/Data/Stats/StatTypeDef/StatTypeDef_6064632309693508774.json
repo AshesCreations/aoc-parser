@@ -1,0 +1,55 @@
+{
+	"displayName": "NSLOCTEXT(\"[1909495A4C2095068D406C9D33F90055]\", \"F3AE28744C9DED6CE932858773819F3E\", \"Water Speed Bonus\")",
+	"description": "NSLOCTEXT(\"[1909495A4C2095068D406C9D33F90055]\", \"99D6BA144FF5DEAF4A2ECE91E42D45A7\", \"Additive bonus to movement speed when on water.\")",
+	"bHidden": false,
+	"gameplayType": "Type_Combat",
+	"bHasWaterfallStatsUI": false,
+	"waterfallStatsUIIds": [],
+	"bDisplayAsPercentage": false,
+	"statType": "Type_Float",
+	"bClampStatFinalValue": false,
+	"bMultiplyStatMods": false,
+	"bMultiplyCompliment": false,
+	"base":
+	{
+		"expression": "const rating = GetStat(GetInstigator(), $#10516612381411111:6064632309696326823$);\r\n2.5 * rating / (rating + EvalFormula($#10516612381411113:6064632309748034818$))"
+	},
+	"waterfallStatsBaseIds": [
+		{
+			"guid": "6064632309696326823",
+			"typeId": "10516612381411111",
+			"name": "None"
+		}
+	],
+	"valueMin":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMinIds": [],
+	"valueMax":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMaxIds": [],
+	"regenRate":
+	{
+		"expression": ""
+	},
+	"waterfallStatsRegenIds": [],
+	"bRegenWhileDead": false,
+	"onSpawn": "Reset_None",
+	"onDeath": "Reset_None",
+	"onRevive": "Reset_None",
+	"bPersistValue": false,
+	"replication": 1,
+	"shieldStatId":
+	{
+		"guid": "0",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"grantedEffects": [],
+	"guid": "6064632309693508774",
+	"name": "Caravan_MoveSpeedWaterBase",
+	"typeId": "10516612381411111"
+}

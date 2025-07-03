@@ -1,0 +1,56 @@
+{
+	"displayName": "NSLOCTEXT(\"\", \"34F7FCD642152B1307C3DA8A70916D5B\", \"Magical Disable Duration Rating\")",
+	"description": "NSLOCTEXT(\"[1909495A4C2095068D406C9D33F90055]\", \"651E13D24F5604C39C351590D99A7C2F\", \"Increases duration of outgoing magical disabling effects by a multiplier of their base duration\")",
+	"bHidden": false,
+	"gameplayType": "Type_Combat",
+	"bHasWaterfallStatsUI": false,
+	"waterfallStatsUIIds": [],
+	"bDisplayAsPercentage": false,
+	"statType": "Type_Float",
+	"bClampStatFinalValue": false,
+	"bMultiplyStatMods": false,
+	"bMultiplyCompliment": false,
+	"base":
+	{
+		"expression": "GetStat(GetInstigator(), $#10516612381411111:109183598614141$)\r\n* EvalFormula($#10516612381411113:6064633153362984963$)"
+	},
+	"waterfallStatsBaseIds": [
+		{
+			"guid": "109183598614141",
+			"typeId": "10516612381411111",
+			"name": "None"
+		}
+	],
+	"valueMin":
+	{
+		"expression": "0"
+	},
+	"waterfallStatsMinIds": [],
+	"valueMax":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMaxIds": [],
+	"regenRate":
+	{
+		"expression": ""
+	},
+	"waterfallStatsRegenIds": [],
+	"bRegenWhileDead": false,
+	"bRecalculateOnCombatState": false,
+	"onSpawn": "Reset_None",
+	"onDeath": "Reset_None",
+	"onRevive": "Reset_None",
+	"bPersistValue": false,
+	"replication": 1,
+	"shieldStatId":
+	{
+		"guid": "0",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"grantedEffects": [],
+	"guid": "6064629618899943593",
+	"name": "MagicalDisableDurationRating",
+	"typeId": "10516612381411111"
+}

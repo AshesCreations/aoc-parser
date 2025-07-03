@@ -1,0 +1,97 @@
+{
+	"commissionType": "Generic",
+	"commissionGameplayTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "Biome.Riverlands"
+			},
+			{
+				"tagName": "Quest.Commission.Adventure.Goto"
+			},
+			{
+				"tagName": "Quest.Commission.Tier.T1"
+			}
+		],
+		"parentTags": [
+			{
+				"tagName": "Biome"
+			},
+			{
+				"tagName": "Quest.Commission.Adventure"
+			},
+			{
+				"tagName": "Quest.Commission"
+			},
+			{
+				"tagName": "Quest"
+			},
+			{
+				"tagName": "Quest.Commission.Tier"
+			}
+		]
+	},
+	"preRequisiteQuestsIds": [],
+	"autoFailTimer": -1,
+	"bRepeatable": false,
+	"mainObjectiveType": "GoToArea",
+	"commissionSection": 1,
+	"biomeOrigin": "FloodPlains",
+	"bFromDynamicContent": false,
+	"availabilityExpression":
+	{
+		"expression": ""
+	},
+	"bDisabled": false,
+	"level": 8,
+	"commissionRarity": "Common",
+	"objectivesIds": [
+		{
+			"guid": "6064631663612461066",
+			"typeId": "1091110420",
+			"name": "None"
+		}
+	],
+	"allowMultipleCompletion": false,
+	"commissionName": "NSLOCTEXT(\"\", \"D6AD0B704B634D53A3630ABC47EAF88A\", \"Sightseeing: Great Stone Arch\")",
+	"flavorText": "NSLOCTEXT(\"\", \"443604BA4FAA75C4281E6683A8A74E63\", \"To the North of Korra\\'Loch, you\\'ll find a wonderous rock formation: a huge arch on the hillside up there. It\\'s worth a visit.\")",
+	"mainObjectiveText": "NSLOCTEXT(\"\", \"D9A49F234A7C93C3B0834D9C8EF873A0\", \"Explore the Stone Arch North of Korra\\'Loch\")",
+	"rewardTablesIds": [
+		{
+			"guid": "6064631443187302402",
+			"typeId": "1091110040",
+			"name": "None"
+		}
+	],
+	"calloutName": "",
+	"calloutDescription": "",
+	"bCanProgressWhileInRaid": false,
+	"expiration":
+	{
+		"duration": "0"
+	},
+	"cooldown":
+	{
+		"duration": "0"
+	},
+	"moneyCost": "0",
+	"resourceCost": [],
+	"mayoralCompletionCount": 0,
+	"rewardId":
+	{
+		"guid": "0",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"bNodeTargeted": false,
+	"targetRewardId":
+	{
+		"guid": "0",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"questItemListIds": [],
+	"guid": "6064630708478804091",
+	"name": "Com_RVR_GoTo_NorthStoneArch",
+	"typeId": "280002"
+}

@@ -1,0 +1,72 @@
+{
+	"completionResponsesIds": [
+		{
+			"guid": "6064631590414254157",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064631663509244215",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"channelDuration": 0.20000000298023224,
+	"activePredicate":
+	{
+		"expression": "HasAlignment(GetPlayer(), $#512160700:6064631662982070274$)"
+	},
+	"cuePredicate":
+	{
+		"expression": "HasAlignment(GetPlayer(), $#512160700:6064631662982070274$)"
+	},
+	"visiblePredicate":
+	{
+		"expression": "HasAlignment(GetPlayer(), $#512160700:6064631662982070274$)"
+	},
+	"showErrorIfNotVisible": false,
+	"deleteOnCompletion": false,
+	"singleUse": true,
+	"alwaysShowUIPrompt": true,
+	"cancelChannelIfActivePredicateEverFails": true,
+	"channelModifierType": "NONE",
+	"rewardTableId":
+	{
+		"guid": "0",
+		"typeId": "1091110008",
+		"name": "None"
+	},
+	"startEffect": "/Game/Effects/FX_PCs/Cleric/Particles/ChainOfRestraint/FX_ChainsOfRestraint_Cast.FX_ChainsOfRestraint_Cast",
+	"endEffect": "None",
+	"failEffect": "None",
+	"successEffect": "/Game/Effects/FX_PCs/Cleric/Particles/ChainOfRestraint/FX_ChainsOfRestraint_Cast.FX_ChainsOfRestraint_Cast",
+	"cueEffect": "/Game/Effects/FX_PCs/Cleric/Particles/ChainOfRestraint/FX_ChainsOfRestraint_Loop.FX_ChainsOfRestraint_Loop",
+	"startSound": "None",
+	"endSound": "None",
+	"failSound": "None",
+	"successSound": "None",
+	"cueSound": "None",
+	"interactAnimTag": "None",
+	"deletionDelay": 0,
+	"activeCueEnabled": true,
+	"activeCueIgnoresActivePredicate": false,
+	"facePlayer": false,
+	"allowInCombat": false,
+	"spawnAtBottomCapsule": true,
+	"channelAnimation": "/Game/Characters/Animations/00_EMO/All_EMO_M_Pickup01_Montage.All_EMO_M_Pickup01_Montage",
+	"interactRadius": 300,
+	"interactTolerance": 30,
+	"busyTime": 0.89999997615814209,
+	"clientBusyTime": 1,
+	"channelStartResponseIds": [],
+	"failResponsesIds": [],
+	"gatheringInteractionDataId":
+	{
+		"guid": "0",
+		"typeId": "19846",
+		"name": "None"
+	},
+	"guid": "6064631585030211917",
+	"name": "CSQ_RVR_0014_ROM_RingOfMourning_ImbuedRividium_PID",
+	"typeId": "1091110031"
+}

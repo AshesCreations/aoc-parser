@@ -1,0 +1,68 @@
+{
+	"type": "Kill",
+	"progressExpression":
+	{
+		"expression": ""
+	},
+	"nPCTaskIconOverrideId":
+	{
+		"guid": "0",
+		"typeId": "949952112329",
+		"name": "None"
+	},
+	"bAllowSatisfactionToRegress": false,
+	"completionQuantity": 10,
+	"tagQuery":
+	{
+		"tokenStreamVersion": 0,
+		"tagDictionary": [
+			{
+				"tagName": "character.humanoid.goblin"
+			}
+		],
+		"queryTokenStream": [ 0, 1, 1, 1, 0 ],
+		"userDescription": "",
+		"autoDescription": " ANY( character.humanoid.goblin )"
+	},
+	"professionFilterIds": [],
+	"gatherableFilterIds": [],
+	"collectionFilterId":
+	{
+		"guid": "0",
+		"typeId": "1091110041",
+		"name": "None"
+	},
+	"collectionCount": 5,
+	"objectivesIds": [],
+	"bCheckKillLocation": true,
+	"displayLocation": [
+		{
+			"location":
+			{
+				"x": -733228.30123300001,
+				"y": 595940.85102099995,
+				"z": 13083.8403
+			},
+			"radius": 12000,
+			"map_DisplayType": "ICON_AND_RADIUS",
+			"map_IconVisual":
+			{
+				"guid": "6064630990211645445",
+				"typeId": "949952112329",
+				"name": "None"
+			},
+			"map_DisplayName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"EBF3565447E3C37B082D3984B10361D6\", \"Kill Goblins\")"
+		}
+	],
+	"location": [],
+	"populationSetId":
+	{
+		"guid": "0",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"notifyType": "None",
+	"guid": "6064632508657172709",
+	"name": "TID_Kill_Goblins_NorthCrossroads_Samia",
+	"typeId": "1095125186"
+}

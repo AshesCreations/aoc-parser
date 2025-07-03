@@ -1,0 +1,206 @@
+{
+	"eventName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"06D825AA427880595DE1E690EDDD2763\", \"Unpleasant Hill\")",
+	"gameplayTags":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"activationPredicatesIds": [
+		{
+			"guid": "6064633453887357012",
+			"typeId": "23095129",
+			"name": "None"
+		}
+	],
+	"minChallengeRating": 0,
+	"maxChallengeRating": 30,
+	"eventLevel": 35,
+	"eventType": 1,
+	"locationId":
+	{
+		"guid": "6064633453893910613",
+		"typeId": "5127371160",
+		"name": "None"
+	},
+	"desiredTimeSlot": "0001.01.01-00.00.00",
+	"frequency": 24,
+	"priority": 1,
+	"rewardTableId":
+	{
+		"guid": "6064630474023174148",
+		"typeId": "1091110040",
+		"name": "None"
+	},
+	"rewardPopulationSetId":
+	{
+		"guid": "6064631470736670787",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"startStageId":
+	{
+		"guid": "6064633453881524253",
+		"typeId": "23095131",
+		"name": "None"
+	},
+	"stagesIds": [
+		{
+			"guid": "6064633453881524253",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064633453881524259",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064633453881524264",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064633453881524269",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064633453881524281",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064633453881524286",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064633453881524289",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064633453881524296",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064633453881524301",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064633453881524307",
+			"typeId": "23095131",
+			"name": "None"
+		}
+	],
+	"interactVolumesIds": [],
+	"alignmentsIds": [],
+	"mapDisplayType": "Biome",
+	"mapEventIcon": "/Game/UI/Icons/Map/TUI_Icon_Map_Event_Active.TUI_Icon_Map_Event_Active",
+	"mapDisplayTrackerFiltersIds": [],
+	"bDisplayOnTracker": true,
+	"notificationRadius": 15000,
+	"mapRadiusMinumum": 1000,
+	"cooldownTimer": 3600,
+	"bDisabled": false,
+	"maxInstanceCount": 1,
+	"requiredMapName": "Verra_World_Master",
+	"comments": [
+		{
+			"commentGuid": "6064631194535133267",
+			"comment": "Interact with Mounds to spawn spiders",
+			"location":
+			{
+				"x": -553.03008032120943,
+				"y": 836.13279100498335,
+				"z": 0
+			},
+			"size":
+			{
+				"x": 411.48147535324097,
+				"y": 192.59259283542633,
+				"z": 0
+			},
+			"color":
+			{
+				"r": 0.5,
+				"g": 0.5,
+				"b": 0.5,
+				"a": 0.5
+			}
+		},
+		{
+			"commentGuid": "6064631194555908180",
+			"comment": "Spawn Boss & Wait",
+			"location":
+			{
+				"x": 987.24188466130738,
+				"y": 1209.6512062961699,
+				"z": 0
+			},
+			"size":
+			{
+				"x": 412.96295547485352,
+				"y": 192.59259307384491,
+				"z": 0
+			},
+			"color":
+			{
+				"r": 0.5,
+				"g": 0.5,
+				"b": 0.5,
+				"a": 0.5
+			}
+		},
+		{
+			"commentGuid": "6064631194627145813",
+			"comment": "Spawn Reward NPCs",
+			"location":
+			{
+				"x": 1882.9545945562002,
+				"y": 1781.6102868932078,
+				"z": 0
+			},
+			"size":
+			{
+				"x": 361.11111319065094,
+				"y": 139.55555385351181,
+				"z": 0
+			},
+			"color":
+			{
+				"r": 0.5,
+				"g": 0.5,
+				"b": 0.5,
+				"a": 0.5
+			}
+		}
+	],
+	"bIsTemplate": false,
+	"flowNodes": [
+		{
+			"flowType": "EventEntry",
+			"graphLocation":
+			{
+				"x": -1402.8841937977641,
+				"y": 187.01572053732184
+			},
+			"id": 0
+		},
+		{
+			"flowType": "EventExit",
+			"graphLocation":
+			{
+				"x": -463.47535302484937,
+				"y": 3061.0977917598834
+			},
+			"id": 1
+		}
+	],
+	"bSkipCrashRecovery": false,
+	"guid": "6064633453881524251",
+	"name": "EVT_JUN_0002_Millefiori",
+	"typeId": "23095125"
+}

@@ -1,0 +1,12 @@
+{
+	"equation":
+	{
+		"expression": "// calc base health of ur standard NPC at this level\r\nconst baseHP   = EvalFormula($#10516612381411113:6064632139575723160$);\r\nconst baseCON  = EvalFormula($#10516612381411113:6064632139572970646$);\r\nconst llHP     = EvalCurve($#10516612381411114:6064632025574408192$, GetTerm($#10516612381411115:6064632140969738254$));\r\nconst HPPerCON = EvalFormula($#10516612381411113:6064631902646435875$) * EvalFormula($#10516612381411113:6064630684188540931$);\r\nconst HP       = (baseHP + baseCON * HPPerCON) * llHP;\r\n\r\nHP"
+	},
+	"constraints":
+	{
+	},
+	"guid": "6064632140964167693",
+	"name": "NPC_Base_HP",
+	"typeId": "10516612381411112"
+}

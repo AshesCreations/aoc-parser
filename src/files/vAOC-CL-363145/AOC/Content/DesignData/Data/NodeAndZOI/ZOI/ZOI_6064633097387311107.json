@@ -1,0 +1,169 @@
+{
+	"designNotes": "Squalls End",
+	"levelDefinitionId":
+	{
+		"guid": "6064629126799097877",
+		"typeId": "9227326",
+		"name": "None"
+	},
+	"playerFacingName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"2BF7E60C4F88D10425C07099A646DCA8\", \"Squall\\'s End\")",
+	"zoiType": "HasNode",
+	"startingAreaGameplayTag":
+	{
+		"tagName": "None"
+	},
+	"cityNodeId":
+	{
+		"guid": "6064633097371058177",
+		"typeId": "1323521343",
+		"name": "None"
+	},
+	"adjacentZonesOfInfluenceIds": [
+		{
+			"guid": "6064632751844032513",
+			"typeId": "9127326",
+			"name": "None"
+		},
+		{
+			"guid": "6064632734318067718",
+			"typeId": "9127326",
+			"name": "None"
+		},
+		{
+			"guid": "6064633097376432130",
+			"typeId": "9127326",
+			"name": "None"
+		}
+	],
+	"corruptionRulesEnabled": true,
+	"bAllowPVPOptInProtection": false,
+	"alignmentsAssignedUponEnteringIds": [],
+	"zoiEnvironmentType": "None",
+	"editorColor":
+	{
+		"x": 1,
+		"y": 0.5,
+		"z": 0
+	},
+	"zOIRewardTables": [
+		{
+			"inclusionExpression":
+			{
+				"expression": "!DoesNPCContainTag(\"NoRewards\")"
+			},
+			"rewardTableId":
+			{
+				"guid": "6064632271541961493",
+				"typeId": "1091110040",
+				"name": "None"
+			}
+		},
+		{
+			"inclusionExpression":
+			{
+				"expression": "DoesNPCContainTag(\"character.humanoid\")"
+			},
+			"rewardTableId":
+			{
+				"guid": "6064633391377612800",
+				"typeId": "1091110040",
+				"name": "None"
+			}
+		},
+		{
+			"inclusionExpression":
+			{
+				"expression": "!DoesNPCContainTag(\"NoRewards\")"
+			},
+			"rewardTableId":
+			{
+				"guid": "6064633313653948416",
+				"typeId": "1091110040",
+				"name": "None"
+			}
+		}
+	],
+	"economicRegionTableId":
+	{
+		"guid": "6064633102512488448",
+		"typeId": "98738382",
+		"name": "None"
+	},
+	"bHideExperienceEvents": false,
+	"biome": "Desert",
+	"biomeGatherableTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "SandsquallDesert"
+			}
+		],
+		"parentTags": []
+	},
+	"freeholdEstatesIds": [
+		{
+			"guid": "6064633294844526650",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633295011315772",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633294448885810",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633294743142457",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633294415134769",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633294878801979",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633294603747381",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633294708080696",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633294571175987",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633294580285492",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633294610038838",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633294681276471",
+			"typeId": "1337133701",
+			"name": "None"
+		}
+	],
+	"actorEffects": [],
+	"guid": "6064633097387311107",
+	"name": "Verra_SAN_Node_SquallsEnd",
+	"typeId": "9127326"
+}

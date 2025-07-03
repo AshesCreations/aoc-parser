@@ -1,0 +1,132 @@
+{
+	"dEPRECATED_ExpansionPrerequisiteIds": [],
+	"dEPRECATED_RequiredCapabilitiesIds": [],
+	"dEPRECATED_ExpansionSlotId":
+	{
+		"guid": "0",
+		"typeId": "7823460",
+		"name": "None"
+	},
+	"addedMaintenanceId":
+	{
+		"guid": "6064632123380859242",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"dEPRECATED_NodeConstructionCostId":
+	{
+		"guid": "0",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"postInitiationPlayerConstructionCostId":
+	{
+		"guid": "0",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"playerConstructionPhaseDurationMultiplier":
+	{
+		"expression": ""
+	},
+	"playerConstructionPhaseDuration":
+	{
+		"duration": "86400"
+	},
+	"addedRepairCostId":
+	{
+		"guid": "6064632123323056468",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"addedDisarrayRepairCostId":
+	{
+		"guid": "6064632123268858163",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"expansionName": "Journeyman Armorsmithing",
+	"expansionDescription": "This expansion provides Journeyman Armorsmithing stations, reagents, Freehold station permits, and trainers.",
+	"icon": "/Game/UI/Icons/Nodes/Buildings/Smithy/TUI_Icon_Smithy_1B_Armorsmith.TUI_Icon_Smithy_1B_Armorsmith",
+	"buildingServices": [
+		{
+			"icon": "/Game/UI/Icons/Nodes/Buildings/Smithy/TUI_Icon_Smithy_1B_Armorsmith.TUI_Icon_Smithy_1B_Armorsmith",
+			"serviceName": "NSLOCTEXT(\"[3A937076879C9EE4CFD42687DD9352E3]\", \"8F1A33DF4C24FAB89A194EAF8A7D8751\", \"Journeyman Armorsmithing Station\")",
+			"serviceDescription": "NSLOCTEXT(\"[3A937076879C9EE4CFD42687DD9352E3]\", \"837E39F8444AF1C3E56899ADF7A66FFA\", \"Craft Journeyman and below tool recipies\")"
+		},
+		{
+			"icon": "/Game/UI/Icons/Nodes/Buildings/BuildingServices/TUI_Icon_ServiceIcon_Vendor.TUI_Icon_ServiceIcon_Vendor",
+			"serviceName": "NSLOCTEXT(\"[3A937076879C9EE4CFD42687DD9352E3]\", \"F80B77D94C11C51C5FCD5C98A5C62F96\", \"Armorsmithing Vendor\")",
+			"serviceDescription": "NSLOCTEXT(\"[3A937076879C9EE4CFD42687DD9352E3]\", \"EFC047AF42DBD1690B9D3FB77105BF8D\", \"Sells Journeyman and below items and recipies\")"
+		}
+	],
+	"postInitiationEvent": 0,
+	"postInitiationVote": true,
+	"voteDuration":
+	{
+		"duration": "172800000"
+	},
+	"voteResultDuration":
+	{
+		"expression": "30"
+	},
+	"removalVoteDuration":
+	{
+		"duration": "172800000"
+	},
+	"removalVoteResultDuration":
+	{
+		"expression": ""
+	},
+	"requiredAchievements": [],
+	"expressionRequirements":
+	{
+		"expression": ""
+	},
+	"expansionSpawnsIds":
+	{
+		"3":
+		{
+			"guid": "6064629460609138744",
+			"typeId": "1091110044",
+			"name": "None"
+		}
+	},
+	"constructionDuration":
+	{
+		"duration": "0"
+	},
+	"dEPRECATED_CapabilitiesIds": [],
+	"dEPRECATED_NodeEffectId":
+	{
+		"guid": "0",
+		"typeId": "9127426",
+		"name": "None"
+	},
+	"nodeModificationsIds": [],
+	"expansionAssetSets": [
+		{
+			"bReplaceBuilding": true,
+			"buildingNodeAssetSetId":
+			{
+				"guid": "6064632519464452101",
+				"typeId": "1323521346",
+				"name": "None"
+			}
+		}
+	],
+	"expansionPopSpawns": [
+		{
+			"bReplacement": true,
+			"buildingSpawns":
+			{
+				"guid": "6064632275397312582",
+				"typeId": "1091110044",
+				"name": "None"
+			}
+		}
+	],
+	"guid": "6064633857313014497",
+	"name": "Construction_Active_Smithy_EXP_3B1_Armorsmithing",
+	"typeId": "7823461"
+}

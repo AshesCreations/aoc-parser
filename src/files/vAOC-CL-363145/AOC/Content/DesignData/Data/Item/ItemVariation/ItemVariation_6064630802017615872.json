@@ -1,0 +1,13 @@
+{
+	"quality":
+	{
+		"expression": "const Rand = RandIntRange(1,100000);\r\n\r\nconst IsCommon = Rand < 70000;\r\nconst IsUncommon = Rand >= 70000 && Rand < 94000;\r\nconst IsRare = Rand >= 94000 && Rand < 99900;\r\nconst IsHeroic = Rand >= 99900 && Rand < 99990;\r\nconst IsEpic = Rand >= 99990 && Rand < 100000;\r\nconst IsLegendary = Rand == 100000;\r\n\r\nSelectInt(IsCommon, RandIntRange(1,3), \r\nSelectInt(IsUncommon, RandIntRange(6,11), \r\nSelectInt(IsRare, RandIntRange(16,23), \r\nSelectInt(IsHeroic, RandIntRange(31,41), \r\nSelectInt(IsEpic, RandIntRange(51,61), \r\nSelectInt(IsLegendary, 71, 86)))))) + (GetNpcEliteRank(GetOwner()) * 2)"
+	},
+	"durability":
+	{
+		"expression": ""
+	},
+	"guid": "6064630802017615872",
+	"name": "Gear_Rarity_C70_UC24_R5_H0.09_E0.009_L0.001",
+	"typeId": "1091111111"
+}

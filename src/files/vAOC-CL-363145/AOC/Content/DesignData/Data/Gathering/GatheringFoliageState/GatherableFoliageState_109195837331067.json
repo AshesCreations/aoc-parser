@@ -1,0 +1,594 @@
+{
+	"displayName": "NSLOCTEXT(\"\", \"FC09AD6F4AC0C8AB89F8B8A63B919E58\", \"Chop - Oak\")",
+	"spawnTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "Tree"
+			}
+		],
+		"parentTags": []
+	},
+	"surveyingTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "artisanship.gathering.lumberjacking"
+			}
+		],
+		"parentTags": [
+			{
+				"tagName": "artisanship.gathering"
+			},
+			{
+				"tagName": "artisanship"
+			}
+		]
+	},
+	"bBlockPawn": false,
+	"bBlockCamera": false,
+	"staticMeshState": "/Game/ENV/Biomes/Riverlands/Flora/Riverlands_Forest_Flora/Riverlands_Trees/Oak_V2/Oak_Broad_Small_01.Oak_Broad_Small_01",
+	"collisionRadius": 50,
+	"overrideInteractionDistance": -1,
+	"overrideInteractionAngle": -1,
+	"lifecycleDuration": 1800,
+	"dynamicLifecycleDefId":
+	{
+		"guid": "6064631436954501123",
+		"typeId": "1991555",
+		"name": "None"
+	},
+	"bShouldTransitionScale": true,
+	"startingScalePercentage": 0.25,
+	"scaleLerpSpeed": 0.029999999329447746,
+	"bRuntimeMesh": false,
+	"skeletalMeshState": "None",
+	"meshLifetimeDuration": 20,
+	"bMeshFade": false,
+	"meshDurationBeforeFade": 6,
+	"fadeScalarName": "None",
+	"meshFadeDuration": 3,
+	"bFractureStaticMesh": false,
+	"fracturedMesh": "None",
+	"fractureSupportMesh": "None",
+	"fractureAngularDamping": 0,
+	"fractureLinearDamping": 0,
+	"fractureInertiaTensorScale":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"maxClusterLevel": 100,
+	"bApplyRadialImpulse": false,
+	"radialImpulseOffset":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"radialImpulseRadius": 0,
+	"radialImpulseForce": 0,
+	"bSimulatePhysics": false,
+	"bBreakBoneConstraint": false,
+	"impulseForce": 500000,
+	"impulseBoneName": "Trunk",
+	"impulseDirection": 90,
+	"disablePhysicsDuration": -1,
+	"bCalculateFadeAfterDisabledPhysics": true,
+	"bCalculateFadeAfterImpact": false,
+	"targetImpactMainBodyAngularDamping": 0,
+	"targetImpactMainBodyLinearDamping": 0.0099999997764825821,
+	"targetImpactMainBodyDuration": 2,
+	"targetImpactSecondaryBodyAngularDamping": 0,
+	"targetImpactSecondaryBodyLinearDamping": 0.0099999997764825821,
+	"targetImpactSecondaryBodyDuration": 2,
+	"skeletalMeshGatheredAnimation": "None",
+	"skeletalMeshGatheringEventAnimation": "None",
+	"foliageInteractionsIds": [],
+	"akAudioEvents": [
+		"/Game/WwiseAudio/Events/Main/Ambience/Shared/Foliage/AMB_Foliage_Tree_Leaves_Deciduous_01_Small.AMB_Foliage_Tree_Leaves_Deciduous_01_Small"
+	],
+	"foliageAkAudioWeightedEvents": [
+		{
+			"akAudioEvent": "/Game/WwiseAudio/Events/Main/Ambience/Shared/Foliage/Oak/AMB_Foliage_Fauna_Oak_01.AMB_Foliage_Fauna_Oak_01",
+			"weightValue": 50
+		},
+		{
+			"akAudioEvent": "/Game/WwiseAudio/Events/Main/Ambience/Shared/Foliage/Oak/AMB_Foliage_Fauna_Oak_02.AMB_Foliage_Fauna_Oak_02",
+			"weightValue": 50
+		},
+		{
+			"akAudioEvent": "/Game/WwiseAudio/Events/Main/Ambience/Shared/Foliage/Oak/AMB_Foliage_Fauna_Oak_03.AMB_Foliage_Fauna_Oak_03",
+			"weightValue": 50
+		},
+		{
+			"akAudioEvent": "/Game/WwiseAudio/Events/Main/Ambience/Shared/Foliage/Oak/AMB_Foliage_Fauna_Oak_04.AMB_Foliage_Fauna_Oak_04",
+			"weightValue": 50
+		},
+		{
+			"akAudioEvent": "None",
+			"weightValue": 20
+		}
+	],
+	"akSwitches": [
+		"/Game/WwiseAudio/Switches/GameSwitches/Professions/Logging/Logging-TreeBarkDeciduous.Logging-TreeBarkDeciduous"
+	],
+	"akAudioOffset":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 200
+	},
+	"akRTPCId":
+	{
+		"guid": "109200404141688",
+		"typeId": "919000",
+		"name": "Impact_Intensity"
+	},
+	"akGatheringEvent": "/Game/WwiseAudio/Events/Main/Professions/Gathering/PROF_Logging_Impact.PROF_Logging_Impact",
+	"akGatheredEvent": "/Game/WwiseAudio/Events/Main/Professions/Gathering/PROF_Logging_Tree_Fall.PROF_Logging_Tree_Fall",
+	"akImpactEvent": "/Game/WwiseAudio/Events/Main/Professions/Gathering/PROF_Logging_Tree_Impact.PROF_Logging_Tree_Impact",
+	"foliageMaxHitCount": 150,
+	"foliageMaxVelocity": 1000,
+	"stateTransitionFX": [
+		{
+			"enabled":
+			{
+				"expression": ""
+			},
+			"niagaraSystemSoft": "/Game/Effects/FX_Harvestables/Trees/Particles/FX_Tree_StateChange.FX_Tree_StateChange",
+			"lifeTime": 2,
+			"bCastVolumetricTranslucentShadow": false,
+			"attachType": "AttachedTarget",
+			"originMesh": "Character",
+			"attachSocketName": "None",
+			"bUseAttachSocketForOriginLocation": true,
+			"bUseAttachSocketForOriginOrientation": true,
+			"transform":
+			{
+				"originLocation": "Target",
+				"originLocationSocket": "None",
+				"originOrientation": "Target",
+				"originOrientationSocket": "None",
+				"originScale": "World",
+				"bUseRelativeLocationExpression": false,
+				"relativeLocation":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"relativeLocationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeRotationExpression": false,
+				"relativeRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"relativeRotationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeScaleExpression": false,
+				"relativeScale":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				},
+				"relativeScaleExpression":
+				{
+					"expression": ""
+				}
+			},
+			"bVisibleToSceneCaptureOnly": false,
+			"bAllowScalability": true,
+			"bUseLocalRemoteDynamicSystem": false
+		}
+	],
+	"gatheringFX": [],
+	"gatheredFX": [
+		{
+			"enabled":
+			{
+				"expression": ""
+			},
+			"niagaraSystemSoft": "/Game/Effects/FX_Harvestables/Trees/Particles/FX_Tree_Gathered.FX_Tree_Gathered",
+			"lifeTime": 2,
+			"bCastVolumetricTranslucentShadow": false,
+			"attachType": "AttachedTarget",
+			"originMesh": "Character",
+			"attachSocketName": "None",
+			"bUseAttachSocketForOriginLocation": true,
+			"bUseAttachSocketForOriginOrientation": true,
+			"transform":
+			{
+				"originLocation": "Target",
+				"originLocationSocket": "None",
+				"originOrientation": "Target",
+				"originOrientationSocket": "None",
+				"originScale": "World",
+				"bUseRelativeLocationExpression": false,
+				"relativeLocation":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"relativeLocationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeRotationExpression": false,
+				"relativeRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"relativeRotationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeScaleExpression": false,
+				"relativeScale":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				},
+				"relativeScaleExpression":
+				{
+					"expression": ""
+				}
+			},
+			"bVisibleToSceneCaptureOnly": false,
+			"bAllowScalability": true,
+			"bUseLocalRemoteDynamicSystem": false
+		}
+	],
+	"impactFX": [
+		{
+			"enabled":
+			{
+				"expression": ""
+			},
+			"niagaraSystemSoft": "/Game/Effects/FX_Harvestables/Trees/Particles/FX_Tree_Fall_Impact.FX_Tree_Fall_Impact",
+			"lifeTime": 4,
+			"bCastVolumetricTranslucentShadow": false,
+			"attachType": "AttachedTarget",
+			"originMesh": "Character",
+			"attachSocketName": "None",
+			"bUseAttachSocketForOriginLocation": true,
+			"bUseAttachSocketForOriginOrientation": true,
+			"transform":
+			{
+				"originLocation": "Target",
+				"originLocationSocket": "None",
+				"originOrientation": "Target",
+				"originOrientationSocket": "None",
+				"originScale": "World",
+				"bUseRelativeLocationExpression": false,
+				"relativeLocation":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"relativeLocationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeRotationExpression": false,
+				"relativeRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"relativeRotationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeScaleExpression": false,
+				"relativeScale":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				},
+				"relativeScaleExpression":
+				{
+					"expression": ""
+				}
+			},
+			"bVisibleToSceneCaptureOnly": false,
+			"bAllowScalability": true,
+			"bUseLocalRemoteDynamicSystem": false
+		},
+		{
+			"enabled":
+			{
+				"expression": ""
+			},
+			"niagaraSystemSoft": "/Game/Effects/FX_Utils/NiagaraSystems/FX_CoreSystems/NS_C_RT_TreeFallForce.NS_C_RT_TreeFallForce",
+			"lifeTime": 1,
+			"bCastVolumetricTranslucentShadow": false,
+			"attachType": "AttachedTarget",
+			"originMesh": "Character",
+			"attachSocketName": "None",
+			"bUseAttachSocketForOriginLocation": true,
+			"bUseAttachSocketForOriginOrientation": true,
+			"transform":
+			{
+				"originLocation": "Target",
+				"originLocationSocket": "None",
+				"originOrientation": "Target",
+				"originOrientationSocket": "None",
+				"originScale": "World",
+				"bUseRelativeLocationExpression": false,
+				"relativeLocation":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"relativeLocationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeRotationExpression": false,
+				"relativeRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"relativeRotationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeScaleExpression": false,
+				"relativeScale":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				},
+				"relativeScaleExpression":
+				{
+					"expression": ""
+				}
+			},
+			"bVisibleToSceneCaptureOnly": true,
+			"bAllowScalability": true,
+			"bUseLocalRemoteDynamicSystem": false
+		}
+	],
+	"destroyedFX": [
+		{
+			"enabled":
+			{
+				"expression": ""
+			},
+			"niagaraSystemSoft": "/Game/Effects/FX_Harvestables/Trees/Particles/FX_Tree_Destroyed.FX_Tree_Destroyed",
+			"lifeTime": 2,
+			"bCastVolumetricTranslucentShadow": false,
+			"attachType": "AttachedSource",
+			"originMesh": "Character",
+			"attachSocketName": "None",
+			"bUseAttachSocketForOriginLocation": true,
+			"bUseAttachSocketForOriginOrientation": true,
+			"transform":
+			{
+				"originLocation": "Source",
+				"originLocationSocket": "None",
+				"originOrientation": "Source",
+				"originOrientationSocket": "None",
+				"originScale": "World",
+				"bUseRelativeLocationExpression": false,
+				"relativeLocation":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"relativeLocationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeRotationExpression": false,
+				"relativeRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"relativeRotationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeScaleExpression": false,
+				"relativeScale":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				},
+				"relativeScaleExpression":
+				{
+					"expression": ""
+				}
+			},
+			"bVisibleToSceneCaptureOnly": false,
+			"bAllowScalability": true,
+			"bUseLocalRemoteDynamicSystem": false
+		}
+	],
+	"niagaraParams": [
+		{
+			"parameterName": "Radius",
+			"parameterType": "Float",
+			"boolParam": false,
+			"floatParam": 5,
+			"intParam": 0,
+			"quatParam":
+			{
+				"x": 0,
+				"y": 0,
+				"z": 0,
+				"w": 1
+			},
+			"vec2Param":
+			{
+				"x": 0,
+				"y": 0
+			},
+			"vec3Param":
+			{
+				"x": 0,
+				"y": 0,
+				"z": 0
+			},
+			"vec4Param":
+			{
+				"x": 0,
+				"y": 0,
+				"z": 0,
+				"w": 0
+			},
+			"linearColorParam":
+			{
+				"r": 0,
+				"g": 0,
+				"b": 0,
+				"a": 1
+			}
+		},
+		{
+			"parameterName": "Lifetime",
+			"parameterType": "Float",
+			"boolParam": false,
+			"floatParam": 1,
+			"intParam": 0,
+			"quatParam":
+			{
+				"x": 0,
+				"y": 0,
+				"z": 0,
+				"w": 1
+			},
+			"vec2Param":
+			{
+				"x": 0,
+				"y": 0
+			},
+			"vec3Param":
+			{
+				"x": 0,
+				"y": 0,
+				"z": 0
+			},
+			"vec4Param":
+			{
+				"x": 0,
+				"y": 0,
+				"z": 0,
+				"w": 0
+			},
+			"linearColorParam":
+			{
+				"r": 0,
+				"g": 0,
+				"b": 0,
+				"a": 1
+			}
+		},
+		{
+			"parameterName": "BoxSize",
+			"parameterType": "Vec3",
+			"boolParam": false,
+			"floatParam": 0,
+			"intParam": 0,
+			"quatParam":
+			{
+				"x": 0,
+				"y": 0,
+				"z": 0,
+				"w": 1
+			},
+			"vec2Param":
+			{
+				"x": 0,
+				"y": 0
+			},
+			"vec3Param":
+			{
+				"x": 2500,
+				"y": 750,
+				"z": 500
+			},
+			"vec4Param":
+			{
+				"x": 0,
+				"y": 0,
+				"z": 0,
+				"w": 0
+			},
+			"linearColorParam":
+			{
+				"r": 0,
+				"g": 0,
+				"b": 0,
+				"a": 1
+			}
+		},
+		{
+			"parameterName": "Strength",
+			"parameterType": "Float",
+			"boolParam": false,
+			"floatParam": 20,
+			"intParam": 0,
+			"quatParam":
+			{
+				"x": 0,
+				"y": 0,
+				"z": 0,
+				"w": 1
+			},
+			"vec2Param":
+			{
+				"x": 0,
+				"y": 0
+			},
+			"vec3Param":
+			{
+				"x": 0,
+				"y": 0,
+				"z": 0
+			},
+			"vec4Param":
+			{
+				"x": 0,
+				"y": 0,
+				"z": 0,
+				"w": 0
+			},
+			"linearColorParam":
+			{
+				"r": 0,
+				"g": 0,
+				"b": 0,
+				"a": 1
+			}
+		}
+	],
+	"guid": "109195837331067",
+	"name": "Tree_Oak_Small_1",
+	"typeId": "19836"
+}

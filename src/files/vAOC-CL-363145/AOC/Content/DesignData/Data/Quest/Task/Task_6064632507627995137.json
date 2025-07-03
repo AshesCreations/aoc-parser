@@ -1,0 +1,68 @@
+{
+	"type": "Kill",
+	"progressExpression":
+	{
+		"expression": ""
+	},
+	"nPCTaskIconOverrideId":
+	{
+		"guid": "0",
+		"typeId": "949952112329",
+		"name": "None"
+	},
+	"bAllowSatisfactionToRegress": false,
+	"completionQuantity": 10,
+	"tagQuery":
+	{
+		"tokenStreamVersion": 0,
+		"tagDictionary": [
+			{
+				"tagName": "character.beast.kirin"
+			}
+		],
+		"queryTokenStream": [ 0, 1, 2, 1, 0 ],
+		"userDescription": "",
+		"autoDescription": " ALL( character.beast.kirin )"
+	},
+	"professionFilterIds": [],
+	"gatherableFilterIds": [],
+	"collectionFilterId":
+	{
+		"guid": "0",
+		"typeId": "1091110041",
+		"name": "None"
+	},
+	"collectionCount": 5,
+	"objectivesIds": [],
+	"bCheckKillLocation": false,
+	"displayLocation": [
+		{
+			"location":
+			{
+				"x": -506895.012322,
+				"y": 571405.28777499998,
+				"z": 11640.938021
+			},
+			"radius": 20000,
+			"map_DisplayType": "ICON_AND_RADIUS",
+			"map_IconVisual":
+			{
+				"guid": "6064630990211645445",
+				"typeId": "949952112329",
+				"name": "None"
+			},
+			"map_DisplayName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"F6B0972E4C30B54E4C1A49A3770C6E36\", \"Kirin Herd\")"
+		}
+	],
+	"location": [],
+	"populationSetId":
+	{
+		"guid": "0",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"notifyType": "None",
+	"guid": "6064632507627995137",
+	"name": "MCOM_RVR_Miraleth_Kill_Kirin",
+	"typeId": "1095125186"
+}

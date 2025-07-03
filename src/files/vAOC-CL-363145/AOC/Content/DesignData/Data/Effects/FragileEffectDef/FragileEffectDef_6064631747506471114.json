@@ -1,0 +1,32 @@
+{
+	"effectFragilityType": "FRAGILITY_Tick",
+	"eventBindings":
+	{
+		"hitEvents": 0,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0
+	},
+	"evaluationTickFrequency": 1,
+	"shouldBreakEffectImmediately":
+	{
+		"expression": "!IsUsingAbility(GetOwner(), $#30316001:6064631641648332884$) || \r\n!IsMoving(GetOwner())"
+	},
+	"shouldEvaluateThresholdAccumulation":
+	{
+		"expression": ""
+	},
+	"effectBreakThreshold":
+	{
+		"expression": ""
+	},
+	"effectBreakThresholdAccumulationRate":
+	{
+		"expression": ""
+	},
+	"guid": "6064631747506471114",
+	"name": "General_Stamina_Sprint_SurgingSpeed_Fragility",
+	"typeId": "30316112"
+}

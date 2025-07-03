@@ -1,0 +1,43 @@
+{
+	"populationSetId":
+	{
+		"guid": "6064632276653899777",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"actorToSpawn": "/Game/DesignAssets/Population/NPC/Monster/Aberration/Beholder/Ocular/Ocular_AncientSummon.Ocular_AncientSummon_C",
+	"bPersistAfterInstigatorsDeath": true,
+	"spawnLocationType": "LOC_Absolute",
+	"location":
+	{
+		"x": -600,
+		"y": 0,
+		"z": 1000
+	},
+	"bSpawnFacingInstigatorsRotation": false,
+	"rotation":
+	{
+		"pitch": 0,
+		"yaw": 0,
+		"roll": 0
+	},
+	"triggerType": 0,
+	"spawnRadius": 0,
+	"spawnExtent": 1000,
+	"trackSpawnedNpcOnInstigator": true,
+	"targetSpawnLocationContext":
+	{
+		"expression": "GetLocation(GetInstigatorThatSpawnedNpc()) + (GetActorForward(GetInstigatorThatSpawnedNpc()) + GetActorRight(GetInstigatorThatSpawnedNpc())) * 600.0"
+	},
+	"spawnExpressions": [],
+	"spawnedCharacterLevelOffset": -3,
+	"bSpecifyAbsoluteLevel": false,
+	"addThreatsFromCreator": true,
+	"copyThreatValuesFromCreator": false,
+	"blackboardKeysToSet":
+	{
+	},
+	"guid": "6064632547331866795",
+	"name": "SpawnNPC_AncientsLeader_Ocular5",
+	"typeId": "3031600204"
+}

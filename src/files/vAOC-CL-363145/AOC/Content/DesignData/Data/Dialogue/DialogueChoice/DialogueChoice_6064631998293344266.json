@@ -1,0 +1,33 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"F81B65C843837BC26F15289D5C3BED45\", \"Place the blooms\")",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064631091165986816",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064630797482852370",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "Player_HasCommission(GetPlayer(),\"CSQ_RVR_0001_WIB_WhenInBloom\")&&\r\nPlayer_ObjectiveStateEquals(GetPlayer(),\"CSQ_NOB_0001_WIB_CollectMoonlightBlooms\", EObjectiveState::Complete)&&\r\nPlayer_ObjectiveStateEquals(GetPlayer(),\"CSQ_NOB_0001_WIB_PlaceLunarBlooms\", EObjectiveState::Active)"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064631998293344266",
+	"name": "LADD_0001_WIB_LonelyGrave_7_Choice_2",
+	"typeId": "1091110027"
+}

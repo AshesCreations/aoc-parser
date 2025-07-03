@@ -1,0 +1,104 @@
+{
+	"commissionType": "Generic",
+	"commissionGameplayTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "Quest.Commission.Artisan.Gathering.Herbalism"
+			},
+			{
+				"tagName": "Biome.Tropics"
+			},
+			{
+				"tagName": "Quest.Commission.Tier.T3"
+			}
+		],
+		"parentTags": [
+			{
+				"tagName": "Quest.Commission.Artisan.Gathering"
+			},
+			{
+				"tagName": "Quest.Commission.Artisan"
+			},
+			{
+				"tagName": "Quest.Commission"
+			},
+			{
+				"tagName": "Quest"
+			},
+			{
+				"tagName": "Biome"
+			},
+			{
+				"tagName": "Quest.Commission.Tier"
+			}
+		]
+	},
+	"preRequisiteQuestsIds": [],
+	"autoFailTimer": -1,
+	"bRepeatable": false,
+	"mainObjectiveType": "Collect",
+	"commissionSection": 2,
+	"biomeOrigin": "FloodPlains",
+	"bFromDynamicContent": false,
+	"availabilityExpression":
+	{
+		"expression": ""
+	},
+	"bDisabled": true,
+	"level": 21,
+	"commissionRarity": "Common",
+	"objectivesIds": [
+		{
+			"guid": "6064633503760973860",
+			"typeId": "1091110420",
+			"name": "None"
+		}
+	],
+	"allowMultipleCompletion": false,
+	"commissionName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"17B932C04686C91054E8D2A47A927151\", \"Fungal Bloom Grab\")",
+	"flavorText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"7429A2954CF6270FAC7CD9A47E148F7F\", \"Bioluminescent and thick-stemmed, the fungal anemone glows beneath the surface and carries potent spores. Gather them, but beware their sting.\")",
+	"mainObjectiveText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"41FCCAD746C5C027B29D06A6A2833F8F\", \"Gather Fungal Anemone from coastal caverns in the Turquoise Sea\")",
+	"rewardTablesIds": [
+		{
+			"guid": "6064632139939905608",
+			"typeId": "1091110040",
+			"name": "None"
+		}
+	],
+	"calloutName": "",
+	"calloutDescription": "",
+	"bCanProgressWhileInRaid": false,
+	"expiration":
+	{
+		"duration": "0"
+	},
+	"cooldown":
+	{
+		"duration": "0"
+	},
+	"moneyCost": "0",
+	"resourceCost": [],
+	"mayoralCompletionCount": 0,
+	"rewardId":
+	{
+		"guid": "0",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"bNodeTargeted": false,
+	"targetRewardId":
+	{
+		"guid": "0",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"questItemListIds": [],
+	"storedGraph":
+	{
+		"nodes": []
+	},
+	"guid": "6064633503601590281",
+	"name": "COM_TUR_Gather_Raw_Plant_FungalAnemone_DISABLED",
+	"typeId": "280002"
+}

@@ -1,0 +1,34 @@
+{
+	"effectFragilityType": "FRAGILITY_Proc",
+	"eventBindings":
+	{
+		"hitEvents": 2,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0,
+		"fishingEvents": 0,
+		"statEvents": 0
+	},
+	"evaluationTickFrequency": 1,
+	"shouldBreakEffectImmediately":
+	{
+		"expression": "IsHardCrowdControlled(GetOwner())"
+	},
+	"shouldEvaluateThresholdAccumulation":
+	{
+		"expression": ""
+	},
+	"effectBreakThreshold":
+	{
+		"expression": ""
+	},
+	"effectBreakThresholdAccumulationRate":
+	{
+		"expression": ""
+	},
+	"guid": "6064633260529745920",
+	"name": "Flangler_BlindingLure_Effect_Fragility",
+	"typeId": "30316112"
+}

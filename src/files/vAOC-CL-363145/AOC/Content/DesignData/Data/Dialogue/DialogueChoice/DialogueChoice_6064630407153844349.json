@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"9F7B447C486E3B31AFB487B81CC8DB29\", \"How can I help?\")",
+	"nextNodeId":
+	{
+		"guid": "6064630407155351678",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0005A_FGG_ForGreaterGlory\",\"MAP_0005A_FGG_Phase03\")&&\r\n!IsOnStoryArcQuest(GetPlayer(),\"MAQ_0005A_BLO_BlindingLightsOfOzu\")&&\r\nIsStoryArcQuestAvailable(GetPlayer(),\"MAQ_0005A_BLO_BlindingLightsOfOzu\")"
+	},
+	"guid": "6064630407153844349",
+	"name": "MADD_0005A_BLO_EudoxiaAvenmoor_Phase03_4",
+	"typeId": "1091110027"
+}

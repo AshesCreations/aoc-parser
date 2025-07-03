@@ -1,0 +1,100 @@
+{
+	"eventName": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"34400ED4414234227E0DAF8204FDB4C1\", \"Lambasted, Sandblasted!\")",
+	"gameplayTags":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"activationPredicatesIds": [
+		{
+			"guid": "6064633176469733527",
+			"typeId": "23095129",
+			"name": "None"
+		}
+	],
+	"minChallengeRating": 0,
+	"maxChallengeRating": 30,
+	"eventLevel": 29,
+	"eventType": 128,
+	"locationId":
+	{
+		"guid": "6064633176469733538",
+		"typeId": "5127371160",
+		"name": "None"
+	},
+	"desiredTimeSlot": "0001.01.01-00.00.00",
+	"frequency": 24,
+	"priority": 1,
+	"rewardTableId":
+	{
+		"guid": "0",
+		"typeId": "1091110040",
+		"name": "None"
+	},
+	"rewardPopulationSetId":
+	{
+		"guid": "0",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"startStageId":
+	{
+		"guid": "6064633176469733528",
+		"typeId": "23095131",
+		"name": "None"
+	},
+	"stagesIds": [
+		{
+			"guid": "6064633176469733528",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064633176469733529",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064633176469733531",
+			"typeId": "23095131",
+			"name": "None"
+		}
+	],
+	"interactVolumesIds": [],
+	"alignmentsIds": [],
+	"mapDisplayType": "Biome",
+	"mapEventIcon": "/Game/UI/Icons/Map/TUI_Icon_Map_Event_Active.TUI_Icon_Map_Event_Active",
+	"bDisplayOnTracker": true,
+	"notificationRadius": 30000,
+	"mapRadiusMinumum": 1000,
+	"cooldownTimer": 3600,
+	"bDisabled": false,
+	"maxInstanceCount": 1,
+	"requiredMapName": "Verra_World_Master",
+	"comments": [],
+	"bIsTemplate": false,
+	"flowNodes": [
+		{
+			"flowType": "EventEntry",
+			"graphLocation":
+			{
+				"x": -318.33335247304632,
+				"y": 189.99999642372151
+			},
+			"id": 0
+		},
+		{
+			"flowType": "EventExit",
+			"graphLocation":
+			{
+				"x": 3174.0000154972058,
+				"y": 371.66666779253217
+			},
+			"id": 1
+		}
+	],
+	"bSkipCrashRecovery": false,
+	"guid": "6064633176469733526",
+	"name": "EVT_SAN_0011_LambastedSandblasted",
+	"typeId": "23095125"
+}

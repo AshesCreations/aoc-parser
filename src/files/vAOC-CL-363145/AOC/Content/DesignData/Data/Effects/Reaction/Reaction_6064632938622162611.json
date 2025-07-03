@@ -1,0 +1,32 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 4,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0,
+		"fishingEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "HitHasTag(GetHitEvent(), \"Ability.weaponcombo\")\r\n&& HitHasTag(GetHitEvent(), \"combostep.end\")\r\n&& GetInstigator() == GetOwner() "
+	},
+	"bEvaluateApplyingHit": false,
+	"instigator": "Owner",
+	"targetsBitmask": 1,
+	"reactHitsIds": [
+		{
+			"guid": "6064632938623538882",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"instigatorProcLimit": 0,
+	"globalProcLimit": 0,
+	"procReactOnApply": false,
+	"guid": "6064632938622162611",
+	"name": "Rogue_Passive_Ambusher_WeaponComboEnd",
+	"typeId": "3031600202"
+}

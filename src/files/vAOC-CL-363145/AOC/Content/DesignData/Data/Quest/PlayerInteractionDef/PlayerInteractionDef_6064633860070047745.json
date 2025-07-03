@@ -1,0 +1,77 @@
+{
+	"completionResponsesIds": [
+		{
+			"guid": "6064629576661073931",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"objectivesToCompleteUponCompletionIds": [],
+	"objectivesToRevealUponCompletionIds": [],
+	"itemsToGrantUponCompletion": [],
+	"channelDuration": 0,
+	"activePredicate":
+	{
+		"expression": "Player_HasResource(GetPlayer(), \"Resource_Raw_Gem_Ruby\")"
+	},
+	"cuePredicate":
+	{
+		"expression": "Player_HasResource(GetPlayer(), \"Resource_Raw_Gem_Ruby\")"
+	},
+	"visiblePredicate":
+	{
+		"expression": "Player_HasResource(GetPlayer(), \"Resource_Raw_Gem_Ruby\")"
+	},
+	"showErrorIfNotVisible": false,
+	"deleteOnCompletion": false,
+	"singleUse": false,
+	"alwaysShowUIPrompt": false,
+	"cancelChannelIfActivePredicateEverFails": true,
+	"interactTextFormat": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"7FC517F2483B4C4BAEB1CAB864BCF62B\", \"Give Herb\")",
+	"channelModifierType": "NONE",
+	"rewardTableId":
+	{
+		"guid": "0",
+		"typeId": "1091110008",
+		"name": "None"
+	},
+	"startEffect": "None",
+	"endEffect": "None",
+	"failEffect": "None",
+	"successEffect": "None",
+	"cueEffect": "None",
+	"startSound": "None",
+	"endSound": "None",
+	"failSound": "None",
+	"successSound": "None",
+	"cueSound": "None",
+	"interactAnimTag": "None",
+	"deletionDelay": 0,
+	"activeCueEnabled": true,
+	"activeCueIgnoresActivePredicate": false,
+	"facePlayer": false,
+	"allowInCombat": true,
+	"spawnAtBottomCapsule": false,
+	"channelAnimation": "None",
+	"interactRadius": 200,
+	"discoveryDistance": 200,
+	"interactTolerance": 30,
+	"interactAngle": 0,
+	"bRequireLOS": false,
+	"busyTime": 0.89999997615814209,
+	"clientBusyTime": 1,
+	"channelStartResponseIds": [],
+	"failResponsesIds": [],
+	"gatheringInteractionDataId":
+	{
+		"guid": "0",
+		"typeId": "19846",
+		"name": "None"
+	},
+	"interactCooldownMap":
+	{
+	},
+	"guid": "6064633860070047745",
+	"name": "PID_SimpleGate_Multi2",
+	"typeId": "1091110031"
+}

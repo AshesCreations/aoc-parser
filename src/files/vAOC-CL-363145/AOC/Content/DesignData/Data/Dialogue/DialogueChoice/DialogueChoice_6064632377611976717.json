@@ -1,0 +1,22 @@
+{
+	"choiceText": "",
+	"nextNodeId":
+	{
+		"guid": "6064632377614794768",
+		"typeId": "1091110028",
+		"name": "DD_SQ_0009_SergeantVenalis_3"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "Player_HasCommission(GetPlayer(), \"SQ_0009_OutlawsEnd\") &&\r\nPlayer_ObjectiveStateEquals(GetPlayer(),\"SQO_0009_OutlawsEnd_TalkToSergeantVenalis\", EObjectiveState::Active)"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064632377611976717",
+	"name": "DD_SQ_0009_SergeantVenalis_1_Choice_2",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,97 @@
+{
+	"commissionType": "Generic",
+	"commissionGameplayTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "Biome.Riverlands"
+			},
+			{
+				"tagName": "Quest.Commission.Adventure.Goto"
+			},
+			{
+				"tagName": "Quest.Commission.Tier.T1"
+			}
+		],
+		"parentTags": [
+			{
+				"tagName": "Biome"
+			},
+			{
+				"tagName": "Quest.Commission.Adventure"
+			},
+			{
+				"tagName": "Quest.Commission"
+			},
+			{
+				"tagName": "Quest"
+			},
+			{
+				"tagName": "Quest.Commission.Tier"
+			}
+		]
+	},
+	"preRequisiteQuestsIds": [],
+	"autoFailTimer": -1,
+	"bRepeatable": false,
+	"mainObjectiveType": "GoToArea",
+	"commissionSection": 1,
+	"biomeOrigin": "FloodPlains",
+	"bFromDynamicContent": false,
+	"availabilityExpression":
+	{
+		"expression": ""
+	},
+	"bDisabled": false,
+	"level": 11,
+	"commissionRarity": "Common",
+	"objectivesIds": [
+		{
+			"guid": "6064631663612461088",
+			"typeId": "1091110420",
+			"name": "None"
+		}
+	],
+	"allowMultipleCompletion": false,
+	"commissionName": "NSLOCTEXT(\"\", \"4FB32D8B487D01E206B6F5822A352107\", \"Explore: Thanalas\")",
+	"flavorText": "NSLOCTEXT(\"\", \"1E06364443586678AFD274A2BFEF6CEE\", \"Discrete Scouts needed for bandit task. Numerous failed attempts have uncovered the possibility of a secret chamber beneath the ruins in the Highwaymen Hills. Scouts are to enter the depths of this bandit stronghold that is known to a handful as the ruins of Thanalas. If there is a hidden chamber beneath the ruins, we will pay to know. - The Ensemble\")",
+	"mainObjectiveText": "NSLOCTEXT(\"\", \"2B59B4944701C664F332E59B4D285B70\", \"Locate Thanalas in the Riverlands.\")",
+	"rewardTablesIds": [
+		{
+			"guid": "6064631443187302402",
+			"typeId": "1091110040",
+			"name": "None"
+		}
+	],
+	"calloutName": "",
+	"calloutDescription": "",
+	"bCanProgressWhileInRaid": false,
+	"expiration":
+	{
+		"duration": "0"
+	},
+	"cooldown":
+	{
+		"duration": "0"
+	},
+	"moneyCost": "0",
+	"resourceCost": [],
+	"mayoralCompletionCount": 0,
+	"rewardId":
+	{
+		"guid": "0",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"bNodeTargeted": false,
+	"targetRewardId":
+	{
+		"guid": "0",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"questItemListIds": [],
+	"guid": "6064630870920331297",
+	"name": "COM_RVR_GoTo_ThanalasRuins",
+	"typeId": "280002"
+}

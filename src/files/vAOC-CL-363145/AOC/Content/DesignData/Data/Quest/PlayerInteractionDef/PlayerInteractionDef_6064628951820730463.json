@@ -1,0 +1,59 @@
+{
+	"completionResponsesIds": [
+		{
+			"guid": "6064628951562715202",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064628951415849008",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"channelDuration": 0,
+	"activePredicate":
+	{
+		"expression": ""
+	},
+	"cuePredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0012_COD_CurseOfDaragal\",\"MAP_0012_COD_Phase02\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0012_WBB_WhatBlightsBelow\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0012_WBB_WhatBlightsBelow\",\"DecipheredTheDeed\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0012_WBB_WhatBlightsBelow\",\"ReadTheDeed\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0012_WBB_WhatBlightsBelow\",\"GiveDeedRecipe\")"
+	},
+	"deleteOnCompletion": false,
+	"singleUse": false,
+	"alwaysShowUIPrompt": true,
+	"cancelChannelIfActivePredicateEverFails": true,
+	"channelModifierType": "NONE",
+	"rewardTableId":
+	{
+		"guid": "0",
+		"typeId": "1091110008",
+		"name": "None"
+	},
+	"startEffect": "None",
+	"endEffect": "None",
+	"failEffect": "None",
+	"successEffect": "/Game/Effects/FX_Environment/Nature/Particles/FX_Ash_Leaves.FX_Ash_Leaves",
+	"cueEffect": "None",
+	"startSound": "None",
+	"endSound": "None",
+	"failSound": "None",
+	"successSound": "None",
+	"cueSound": "None",
+	"interactAnimTag": "None",
+	"deletionDelay": 0,
+	"activeCueEnabled": true,
+	"activeCueIgnoresActivePredicate": false,
+	"facePlayer": false,
+	"allowInCombat": true,
+	"interactRadius": 200,
+	"interactTolerance": 30,
+	"busyTime": 0.89999997615814209,
+	"clientBusyTime": 1,
+	"channelStartResponseIds": [],
+	"failResponsesIds": [],
+	"guid": "6064628951820730463",
+	"name": "MAPI_0012_WBB_OBJ_RavenRose",
+	"typeId": "1091110031"
+}

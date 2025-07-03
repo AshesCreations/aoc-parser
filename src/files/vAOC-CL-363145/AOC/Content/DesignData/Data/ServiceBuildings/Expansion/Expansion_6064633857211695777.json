@@ -1,0 +1,132 @@
+{
+	"dEPRECATED_ExpansionPrerequisiteIds": [],
+	"dEPRECATED_RequiredCapabilitiesIds": [],
+	"dEPRECATED_ExpansionSlotId":
+	{
+		"guid": "0",
+		"typeId": "7823460",
+		"name": "None"
+	},
+	"addedMaintenanceId":
+	{
+		"guid": "6064632123347632478",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"dEPRECATED_NodeConstructionCostId":
+	{
+		"guid": "0",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"postInitiationPlayerConstructionCostId":
+	{
+		"guid": "0",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"playerConstructionPhaseDurationMultiplier":
+	{
+		"expression": ""
+	},
+	"playerConstructionPhaseDuration":
+	{
+		"duration": "172800000"
+	},
+	"addedRepairCostId":
+	{
+		"guid": "6064632123311063370",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"addedDisarrayRepairCostId":
+	{
+		"guid": "6064632123274232119",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"expansionName": "NSLOCTEXT(\"[025B865A037C5F7CDCD76C20FC8D50B1]\", \"86CF7D54485E221E0C718591647FAB10\", \"Animal Husbandry Supply\")",
+	"expansionDescription": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"A971DEC943F386AABE9D7783AD42B48C\", \"Provides access to Journeman Animal Husbandry Stations for proccesing\")",
+	"icon": "/Game/UI/Icons/Nodes/Buildings/BuildingServices/TUI_Icon_ServiceIcon_AnimalHusbandry.TUI_Icon_ServiceIcon_AnimalHusbandry",
+	"buildingServices": [
+		{
+			"icon": "/Game/UI/Icons/Nodes/Buildings/BuildingServices/TUI_Icon_ServiceIcon_AnimalHusbandry.TUI_Icon_ServiceIcon_AnimalHusbandry",
+			"serviceName": "NSLOCTEXT(\"[3A937076879C9EE4CFD42687DD9352E3]\", \"9AC01346433CFE75B778559A58B5EA1D\", \"Journeyman Animal Husbandry Station\")",
+			"serviceDescription": "NSLOCTEXT(\"[3A937076879C9EE4CFD42687DD9352E3]\", \"837E39F8444AF1C3E56899ADF7A66FFA\", \"Craft Journeyman and below tool recipies\")"
+		},
+		{
+			"icon": "/Game/UI/Icons/Nodes/Buildings/BuildingServices/TUI_Icon_ServiceIcon_Vendor.TUI_Icon_ServiceIcon_Vendor",
+			"serviceName": "NSLOCTEXT(\"[3A937076879C9EE4CFD42687DD9352E3]\", \"DEFD3194455FF0EBE26FB9A42FCA0025\", \"Animal Husbandry Vendor\")",
+			"serviceDescription": "NSLOCTEXT(\"[3A937076879C9EE4CFD42687DD9352E3]\", \"EFC047AF42DBD1690B9D3FB77105BF8D\", \"Sells Journeyman and below items and recipies\")"
+		}
+	],
+	"postInitiationEvent": 0,
+	"postInitiationVote": true,
+	"voteDuration":
+	{
+		"duration": "172800000"
+	},
+	"voteResultDuration":
+	{
+		"expression": "30"
+	},
+	"removalVoteDuration":
+	{
+		"duration": "172800000"
+	},
+	"removalVoteResultDuration":
+	{
+		"expression": ""
+	},
+	"requiredAchievements": [],
+	"expressionRequirements":
+	{
+		"expression": ""
+	},
+	"expansionSpawnsIds":
+	{
+		"3":
+		{
+			"guid": "6064631880230895619",
+			"typeId": "1091110044",
+			"name": "None"
+		}
+	},
+	"constructionDuration":
+	{
+		"duration": "0"
+	},
+	"dEPRECATED_CapabilitiesIds": [],
+	"dEPRECATED_NodeEffectId":
+	{
+		"guid": "0",
+		"typeId": "9127426",
+		"name": "None"
+	},
+	"nodeModificationsIds": [],
+	"expansionAssetSets": [
+		{
+			"bReplaceBuilding": true,
+			"buildingNodeAssetSetId":
+			{
+				"guid": "6064632519457636352",
+				"typeId": "1323521346",
+				"name": "None"
+			}
+		}
+	],
+	"expansionPopSpawns": [
+		{
+			"bReplacement": true,
+			"buildingSpawns":
+			{
+				"guid": "6064632271254257687",
+				"typeId": "1091110044",
+				"name": "None"
+			}
+		}
+	],
+	"guid": "6064633857211695777",
+	"name": "Construction_Active_AgriculturalSupply_EXP_3C1_AnimalHusbandrySupply",
+	"typeId": "7823461"
+}

@@ -1,0 +1,32 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 4,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0,
+		"fishingEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "const extendedMod = GetSkillPurchased(GetInstigator(),GetCurrentWeaponSkilltree(GetInstigator()),$#981011333:6064631784055505116$);\r\n\r\n(GetOwner() == GetInstigator())\r\n&&\r\nHitHasTag(GetHitEvent(), \"ComboStep.End2\")\r\n&&\r\n(HitHasTag(GetHitEvent(), \"ComboStep.ProcHit\") || extendedMod)\r\n&&\r\nGetRecordTypeId(GetHitSourceRecord(GetHitEvent())) != GetReactionTypeId() \r\n&&\r\n(GetRecordTypeId(GetHitSourceRecord(GetHitEvent())) != GetEffectTypeId())\r\n&&\r\nGetOwner() == GetInstigator() "
+	},
+	"bEvaluateApplyingHit": false,
+	"instigator": "Owner",
+	"targetsBitmask": 8,
+	"reactHitsIds": [
+		{
+			"guid": "6064631749800230917",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"instigatorProcLimit": 0,
+	"globalProcLimit": 0,
+	"procReactOnApply": false,
+	"guid": "6064631749796429828",
+	"name": "Weapon_Proc_Concussion_2",
+	"typeId": "3031600202"
+}

@@ -1,0 +1,18 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"52F3C8B044F8892FCAD46DB54188D4F1\", \"Is on FAS\")",
+	"nextNodeId":
+	{
+		"guid": "6064631642002161665",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "Player_HasCommission (GetPlayer(), \"SQ_30_FAS_1\") && !Player_HasCompletedCommission(GetPlayer(), \"SQ_30_FAS_1\")"
+	},
+	"choiceType": "Default",
+	"guid": "6064631642002161668",
+	"name": "SQ_RVR_0035_TBH_Interact_4",
+	"typeId": "1091110027"
+}

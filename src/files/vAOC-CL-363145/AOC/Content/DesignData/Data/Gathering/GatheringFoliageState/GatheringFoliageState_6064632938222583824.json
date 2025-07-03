@@ -1,0 +1,181 @@
+{
+	"displayName": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"52D4A3424CFD4486E9CC3C88ACEE5D8A\", \"Mine - Obsidian\")",
+	"spawnTags":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"surveyingTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "artisanship.gathering.mining"
+			}
+		],
+		"parentTags": [
+			{
+				"tagName": "artisanship.gathering"
+			},
+			{
+				"tagName": "artisanship"
+			}
+		]
+	},
+	"bBlockPawn": true,
+	"bBlockCamera": true,
+	"staticMeshState": "/Game/ENV/Gatherables/Stone/Obsidian/SM_Gatherables_Obsidian_Medium_03.SM_Gatherables_Obsidian_Medium_03",
+	"collisionRadius": 50,
+	"overrideInteractionDistance": 150,
+	"overrideInteractionAngle": 70,
+	"lifecycleDuration": 60,
+	"dynamicLifecycleDefId":
+	{
+		"guid": "0",
+		"typeId": "1991555",
+		"name": "None"
+	},
+	"bShouldTransitionScale": false,
+	"startingScalePercentage": 1,
+	"scaleLerpSpeed": 1,
+	"bRuntimeMesh": false,
+	"skeletalMeshState": "None",
+	"meshLifetimeDuration": 27,
+	"bMeshFade": true,
+	"meshDurationBeforeFade": 6,
+	"fadeScalarName": "Object Fade Amount",
+	"meshFadeDuration": 3,
+	"bFractureStaticMesh": true,
+	"fracturedMesh": "None",
+	"fractureSupportMesh": "None",
+	"fractureAngularDamping": 0.15000000596046448,
+	"fractureLinearDamping": 0.15000000596046448,
+	"fractureInertiaTensorScale":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"maxClusterLevel": 100,
+	"bApplyRadialImpulse": true,
+	"radialImpulseOffset":
+	{
+		"x": 0,
+		"y": -25,
+		"z": 0
+	},
+	"radialImpulseRadius": 100,
+	"radialImpulseForce": 500000,
+	"bSimulatePhysics": true,
+	"bBreakBoneConstraint": false,
+	"impulseForce": 0,
+	"impulseBoneName": "None",
+	"impulseDirection": 0,
+	"disablePhysicsDuration": 2,
+	"bCalculateFadeAfterDisabledPhysics": true,
+	"bCalculateFadeAfterImpact": false,
+	"targetImpactMainBodyAngularDamping": 0,
+	"targetImpactMainBodyLinearDamping": 0.0099999997764825821,
+	"targetImpactMainBodyDuration": 5,
+	"targetImpactSecondaryBodyAngularDamping": 5,
+	"targetImpactSecondaryBodyLinearDamping": 0.0099999997764825821,
+	"targetImpactSecondaryBodyDuration": 2,
+	"skeletalMeshGatheredAnimation": "None",
+	"skeletalMeshGatheringEventAnimation": "None",
+	"foliageInteractionsIds": [
+		{
+			"guid": "6064632938201874444",
+			"typeId": "19846",
+			"name": "None"
+		}
+	],
+	"akAudioEvents": [],
+	"foliageAkAudioWeightedEvents": [],
+	"akSwitches": [
+		"/Game/WwiseAudio/Switches/GameSwitches/Professions/Mining/Mining-Gemstone.Mining-Gemstone"
+	],
+	"akAudioOffset":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"akRTPCId":
+	{
+		"guid": "0",
+		"typeId": "919000",
+		"name": "None"
+	},
+	"akGatheringEvent": "/Game/WwiseAudio/Events/Main/Professions/Gathering/PROF_Mining_Impact.PROF_Mining_Impact",
+	"akGatheredEvent": "/Game/WwiseAudio/Events/Main/Professions/Gathering/PROF_Mining_Crumble.PROF_Mining_Crumble",
+	"akImpactEvent": "None",
+	"foliageMaxHitCount": 150,
+	"foliageMaxVelocity": 1000,
+	"stateTransitionFX": [],
+	"gatheringFX": [],
+	"gatheredFX": [
+		{
+			"enabled":
+			{
+				"expression": ""
+			},
+			"niagaraSystemSoft": "None",
+			"lifeTime": 0,
+			"bCastVolumetricTranslucentShadow": false,
+			"attachType": "AttachedTarget",
+			"originMesh": "Character",
+			"attachSocketName": "None",
+			"bUseAttachSocketForOriginLocation": true,
+			"bUseAttachSocketForOriginOrientation": true,
+			"transform":
+			{
+				"originLocation": "Target",
+				"originLocationSocket": "None",
+				"originOrientation": "Target",
+				"originOrientationSocket": "None",
+				"originScale": "World",
+				"bUseRelativeLocationExpression": false,
+				"relativeLocation":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"relativeLocationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeRotationExpression": false,
+				"relativeRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"relativeRotationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeScaleExpression": false,
+				"relativeScale":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				},
+				"relativeScaleExpression":
+				{
+					"expression": ""
+				}
+			},
+			"bVisibleToSceneCaptureOnly": false,
+			"bAllowScalability": true,
+			"bUseLocalRemoteDynamicSystem": false
+		}
+	],
+	"impactFX": [],
+	"destroyedFX": [],
+	"niagaraParams": [],
+	"guid": "6064632938222583824",
+	"name": "Stone_Obsidian_Medium_3",
+	"typeId": "19836"
+}

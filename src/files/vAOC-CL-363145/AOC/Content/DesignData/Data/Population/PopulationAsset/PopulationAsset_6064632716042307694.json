@@ -1,0 +1,76 @@
+{
+	"assetRef": "/Game/DesignAssets/Population/NPC/Monster/Undead/Dunir/DunirTank/Master_Smith_Eucidiaeh.Master_Smith_Eucidiaeh",
+	"lootTablesIds": [],
+	"populationFilter":
+	{
+		"zoneOfInfluenceIds": [],
+		"nodeIds": [],
+		"cultures": [],
+		"nodeTypes": [],
+		"biomes": [],
+		"seasons": [],
+		"nodeLevelMin": "Wilderness",
+		"nodeLevelMax": "Metropolis",
+		"timeOfDayStart": -1,
+		"timeOfDayEnd": -1,
+		"weatherTypes": [],
+		"spawningStrategy":
+		{
+			"spawnStrategy": "Immediate",
+			"phaseInTime":
+			{
+				"minSeconds": 0,
+				"maxSeconds": 0
+			}
+		},
+		"despawningStrategy":
+		{
+			"despawnStrategy": "Immediate",
+			"phaseOutTime":
+			{
+				"minSeconds": 0,
+				"maxSeconds": 0
+			}
+		},
+		"requiredGameplayTags":
+		{
+			"gameplayTags": [],
+			"parentTags": []
+		}
+	},
+	"scaleMin": 2,
+	"scaleMax": 2,
+	"gameplayTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "npc.stature.rareSpawn"
+			}
+		],
+		"parentTags": [
+			{
+				"tagName": "npc.stature"
+			},
+			{
+				"tagName": "npc"
+			}
+		]
+	},
+	"bOverrideAggroRadius": false,
+	"aggroRadius": 0,
+	"bOverrideLeashRadius": false,
+	"leashRadius": 0,
+	"factionId": 0,
+	"interactionDefId":
+	{
+		"guid": "0",
+		"typeId": "1091110031",
+		"name": "None"
+	},
+	"displayNameOverrides": [
+		"NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"1ABF60344B15D2E4FFB884941277EA11\", \"Master Smith Eucidiaeh\")"
+	],
+	"guid": "6064632716042307694",
+	"name": "PA_Befallen_Dunir_L27_3S_RareSpawn_Master_Smith_Eucidiaeh",
+	"typeId": "5111001"
+}

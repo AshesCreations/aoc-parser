@@ -1,0 +1,89 @@
+{
+	"assetRef": "/Game/DesignAssets/Interactables/Siege/Siege_Dampener_Temp.Siege_Dampener_Temp",
+	"lootTablesIds": [],
+	"populationFilter":
+	{
+		"zoneOfInfluenceIds": [],
+		"nodeIds": [],
+		"cultures": [],
+		"nodeTypes": [],
+		"biomes": [],
+		"seasons": [],
+		"nodeLevelMin": "Wilderness",
+		"nodeLevelMax": "Metropolis",
+		"timeOfDayStart": -1,
+		"timeOfDayEnd": -1,
+		"weatherTypes": [],
+		"spawningStrategy":
+		{
+			"spawnStrategy": "Immediate",
+			"phaseInTime":
+			{
+				"minSeconds": 0,
+				"maxSeconds": 0
+			}
+		},
+		"despawningStrategy":
+		{
+			"despawnStrategy": "Immediate",
+			"phaseOutTime":
+			{
+				"minSeconds": 0,
+				"maxSeconds": 0
+			}
+		},
+		"requiredGameplayTags":
+		{
+			"gameplayTags": [],
+			"parentTags": []
+		}
+	},
+	"scaleMin": 1,
+	"scaleMax": 1,
+	"gameplayTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "War.Team.Attacker"
+			},
+			{
+				"tagName": "War.Team.Neutral"
+			}
+		],
+		"parentTags": [
+			{
+				"tagName": "War.Team"
+			},
+			{
+				"tagName": "War"
+			}
+		]
+	},
+	"bOverrideAggroRadius": false,
+	"aggroRadius": 0,
+	"bOverrideLeashRadius": false,
+	"leashRadius": 0,
+	"factionId": 0,
+	"interactionDefId":
+	{
+		"guid": "0",
+		"typeId": "1091110031",
+		"name": "None"
+	},
+	"displayNameOverrides": [],
+	"dialogueRootId":
+	{
+		"guid": "0",
+		"typeId": "0",
+		"name": "None"
+	},
+	"voiceOverrideId":
+	{
+		"guid": "0",
+		"typeId": "919300",
+		"name": "None"
+	},
+	"guid": "6064633453737345040",
+	"name": "Siege_Dampener_Attackable",
+	"typeId": "5111001"
+}

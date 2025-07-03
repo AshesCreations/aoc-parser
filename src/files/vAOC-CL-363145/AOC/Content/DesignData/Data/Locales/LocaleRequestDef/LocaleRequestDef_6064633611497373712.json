@@ -1,0 +1,61 @@
+{
+	"bUseLocaleQuery": false,
+	"originWhiteListIds": [
+		{
+			"guid": "6064633611458314244",
+			"typeId": "421003",
+			"name": "None"
+		},
+		{
+			"guid": "6064633611437867008",
+			"typeId": "421003",
+			"name": "None"
+		},
+		{
+			"guid": "6064633611483742218",
+			"typeId": "421003",
+			"name": "None"
+		}
+	],
+	"localeWhiteListIds": [],
+	"localeBlackListIds": [],
+	"bQueryAllOrigins": false,
+	"localeQueryLocation":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"originQueryRange": 0,
+	"originTagFilter":
+	{
+		"tokenStreamVersion": 0,
+		"tagDictionary": [],
+		"queryTokenStream": [],
+		"userDescription": "",
+		"autoDescription": ""
+	},
+	"localeTagFilter":
+	{
+		"tokenStreamVersion": 0,
+		"tagDictionary": [],
+		"queryTokenStream": [],
+		"userDescription": "",
+		"autoDescription": ""
+	},
+	"localeSelectionAlgorithm": "ClosestToPoint",
+	"pointExpression":
+	{
+		"expression": "Event_GetInstanceLocation()"
+	},
+	"requiredExtents":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"bRequiresNav": false,
+	"guid": "6064633611497373712",
+	"name": "Siege_Defender_Vehicle_LocaleRequest",
+	"typeId": "23095138"
+}

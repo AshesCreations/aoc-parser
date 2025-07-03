@@ -1,0 +1,18 @@
+{
+	"choiceText": "",
+	"nextNodeId":
+	{
+		"guid": "6064631583879528621",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "!Player_HasCommission (GetPlayer(), \"SQ_33_GhostIsle\") && !Player_HasCompletedCommission(GetPlayer(), \"SQ_33_GhostIsle\") && Player_HasCompletedCommission(GetPlayer(), \"SQ_32_NOL\")"
+	},
+	"choiceType": "Default",
+	"guid": "6064631561211215888",
+	"name": "SQ_32_Sehmi_Dialog_25",
+	"typeId": "1091110027"
+}

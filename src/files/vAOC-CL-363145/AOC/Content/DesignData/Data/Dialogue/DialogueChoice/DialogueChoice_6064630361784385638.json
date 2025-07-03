@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"0E7A4EEA44AF49CDECAFF991AF2F4D2F\", \"All exports tagged.\")",
+	"nextNodeId":
+	{
+		"guid": "6064630361786351719",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0005A_FGG_ForGreaterGlory\",\"MAP_0005A_FGG_Phase02\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0005A_FAS_FeedAnArmy\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005A_FAS_FeedAnArmy\",\"TagFarmExports\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005A_FAS_FeedAnArmy\",\"TagHideExports\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005A_FAS_FeedAnArmy\",\"TagSmithyExports\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005A_FAS_FeedAnArmy\",\"ReturnToOrrik\")"
+	},
+	"guid": "6064630361784385638",
+	"name": "MADD_0005A_BDA_OrrikBlackwood_Phase02_28",
+	"typeId": "1091110027"
+}

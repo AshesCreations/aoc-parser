@@ -1,0 +1,33 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 2,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0,
+		"fishingEvents": 0,
+		"statEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "GetRecordTypeId(GetHitSourceRecord(GetHitEvent())) != GetReactionTypeId()"
+	},
+	"bEvaluateApplyingHit": false,
+	"instigator": "HitSource",
+	"targetsBitmask": 2,
+	"reactHitsIds": [
+		{
+			"guid": "6064633175263215722",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"instigatorProcLimit": 0,
+	"globalProcLimit": 0,
+	"procReactOnApply": false,
+	"guid": "6064633175255810153",
+	"name": "LivingGeode_Hit_Reaction",
+	"typeId": "3031600202"
+}

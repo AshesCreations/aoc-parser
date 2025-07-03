@@ -1,0 +1,69 @@
+{
+	"displayName": "NSLOCTEXT(\"\", \"2E4AB22645D1E53FECA1E1BC593C8A1E\", \"Additive Weapon Fire Damage\")",
+	"description": "NSLOCTEXT(\"\", \"78F6D6AD453F056C4E1500A4C6B56572\", \"Bonus fire damage added to weapon attacks\")",
+	"bHidden": false,
+	"gameplayType": "Type_Combat",
+	"bHasWaterfallStatsUI": false,
+	"waterfallStatsUIIds": [],
+	"bDisplayAsPercentage": false,
+	"statType": "Type_Float",
+	"bClampStatFinalValue": false,
+	"bMultiplyStatMods": false,
+	"bMultiplyCompliment": false,
+	"base":
+	{
+		"expression": "const rating = GetStat(GetInstigator(), $#10516612381411111:6064631210088071169$);\r\nrating / EvalFormula($#10516612381411113:6064632196153147619$)"
+	},
+	"waterfallStatsBaseIds": [
+		{
+			"guid": "6064631210088071169",
+			"typeId": "10516612381411111",
+			"name": "None"
+		}
+	],
+	"valueMin":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMinIds": [],
+	"valueMax":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMaxIds": [],
+	"regenRate":
+	{
+		"expression": ""
+	},
+	"waterfallStatsRegenIds": [],
+	"bRegenWhileDead": false,
+	"onSpawn": "Reset_None",
+	"onDeath": "Reset_None",
+	"onRevive": "Reset_None",
+	"bPersistValue": false,
+	"replication": 1,
+	"shieldStatId":
+	{
+		"guid": "0",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"grantedEffects": [
+		{
+			"shouldGrant":
+			{
+				"expression": "GetStat(GetInstigator(), $#10516612381411111:6064631210079748096$) > 0.0 "
+			},
+			"effectId":
+			{
+				"guid": "6064631210125819910",
+				"typeId": "30316002",
+				"name": "None"
+			},
+			"numStacks": 1
+		}
+	],
+	"guid": "6064631210079748096",
+	"name": "FireWeaponDamageAdd",
+	"typeId": "10516612381411111"
+}

@@ -1,0 +1,24 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"417A0CE54CDE6E9E527D3C8FCA0025E2\", \"(Begin the Treasure Hunt)\")",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064631357474013240",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "!Player_HasCompletedCommission(GetPlayer(),\"CSQ_RVR_TH_0054_TIB_TheIsleOfBloom\")&&\r\n!Player_HasCommission(GetPlayer(),\"CSQ_RVR_TH_0054_TIB_TheIsleOfBloom\")&&\r\nPlayer_HasItem(GetPlayer(),\"CSQ_ITM_0054_TIB_TreasureMap\")\r\n"
+	},
+	"choiceType": "Default",
+	"guid": "6064631357554098256",
+	"name": "CSQ_DD_0054_TIB_TreasureMap_4",
+	"typeId": "1091110027"
+}

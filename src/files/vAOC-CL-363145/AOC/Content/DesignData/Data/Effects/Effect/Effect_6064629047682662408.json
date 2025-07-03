@@ -1,0 +1,90 @@
+{
+	"effectCategory": "EFFECT_Debuff",
+	"effectTags": [],
+	"effectName": "Slow",
+	"effectDescription": "",
+	"effectIcon": "None",
+	"effectFloatingText": "",
+	"bDispellable": true,
+	"bSignificant": false,
+	"scriptOnApply": "None",
+	"scriptOnExpire": "None",
+	"bSetUnkillable": false,
+	"effectFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"applicationRequirements":
+	{
+		"expression": ""
+	},
+	"bInfiniteDuration": false,
+	"effectDuration":
+	{
+		"expression": "6 * EvalFormula($#10516612381411113:6064629892103085022$)"
+	},
+	"bNumStacksLostOnDurationElapse": false,
+	"numStacksLostOnDurationElapse":
+	{
+		"expression": ""
+	},
+	"bPersistsThroughDeath": false,
+	"bPersistsRelog": false,
+	"effectStackType": "STACK_OverrideAlways",
+	"bCompareSourceWhenStacking": false,
+	"collateStacksInUI": false,
+	"globalStackLimit": 1,
+	"stackInPlaceLimit": 0,
+	"stackDurationRefresh": "STACK_AlwaysRefresh",
+	"extensionAmount":
+	{
+		"expression": ""
+	},
+	"extendedMaximum": 50,
+	"scriptOnMaxStacks": "None",
+	"tickTimer": 0.5,
+	"bIgnoreInitialTick": false,
+	"scriptOnTick": "None",
+	"preApplyHitsIds": [],
+	"applyHitsIds": [],
+	"tickHitsIds": [],
+	"consumeHitsIds": [],
+	"removeHitsIds": [],
+	"expireHitsIds": [],
+	"endHitsIds": [],
+	"statModsIds": [
+		{
+			"guid": "6064629047686529033",
+			"typeId": "3031600201",
+			"name": "None"
+		}
+	],
+	"spawnActorsIds": [],
+	"spawnNPCsIds": [],
+	"spawnLingeringZonesIds": [],
+	"redirectsIds": [],
+	"reactionsIds": [],
+	"crowdControlsIds": [],
+	"ignoreCCBreaksId":
+	{
+		"guid": "0",
+		"typeId": "3031600214",
+		"name": "None"
+	},
+	"resistancesIds": [],
+	"fragilityDefinitionsIds": [],
+	"hitModsIds": [],
+	"bApplyScale": false,
+	"scaleAmount":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"scaleTime": 0,
+	"guid": "6064629047682662408",
+	"name": "AshenHaunt_SweepingStrike_Slow",
+	"typeId": "30316002"
+}

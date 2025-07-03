@@ -1,0 +1,66 @@
+{
+	"displayName": "NSLOCTEXT(\"\", \"0F76D61240EFDD4F956477867E4D0297\", \"Healing Critical Chance\")",
+	"description": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"BAB1097E4BE72B3370CD03841FE7459C\", \"The chance for a healing critical hit. Inherits from half of your magical critical chance.\")",
+	"bHidden": false,
+	"gameplayType": "Type_Combat",
+	"bHasWaterfallStatsUI": false,
+	"waterfallStatsUIIds": [],
+	"bDisplayAsPercentage": true,
+	"statType": "Type_Float",
+	"bClampStatFinalValue": false,
+	"bMultiplyStatMods": false,
+	"bMultiplyCompliment": false,
+	"base":
+	{
+		"expression": "// halve scaling from magic crit, since theres no avoidance contesting healing crits\r\nconst base = GetStat(GetOwner(), $#10516612381411111:109343399171795$) / 2.0;\r\nconst baseRating = (GetStat(GetInstigator(), $#10516612381411111:6064628617694412804$) + GetStat(GetInstigator(), $#10516612381411111:109183607068301$))/2.0;\r\nconst coeff = EvalFormula($#10516612381411113:6064630400898301980$);\r\nconst coeffMult = EvalFormula($#10516612381411113:6064632412935028738$);\r\nconst baseAdj = base - baseRating / (baseRating * coeffMult + coeff);\r\nconst rating = baseRating + GetStat(GetInstigator(), $#10516612381411111:6064629246752391170$);\r\n\r\nconst ClericDP = GetStat(GetInstigator(), $#10516612381411111:6064629623747772676$);\r\nconst ClericDPBonus = ClericDP * 0.001;\r\n\r\nbaseAdj + ClericDPBonus + rating / (rating * coeffMult + coeff)"
+	},
+	"waterfallStatsBaseIds": [
+		{
+			"guid": "109343399171795",
+			"typeId": "10516612381411111",
+			"name": "None"
+		},
+		{
+			"guid": "6064629246752391170",
+			"typeId": "10516612381411111",
+			"name": "None"
+		},
+		{
+			"guid": "6064629623747772676",
+			"typeId": "10516612381411111",
+			"name": "None"
+		}
+	],
+	"valueMin":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMinIds": [],
+	"valueMax":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMaxIds": [],
+	"regenRate":
+	{
+		"expression": ""
+	},
+	"waterfallStatsRegenIds": [],
+	"bRegenWhileDead": false,
+	"bRecalculateOnCombatState": false,
+	"onSpawn": "Reset_None",
+	"onDeath": "Reset_None",
+	"onRevive": "Reset_None",
+	"bPersistValue": false,
+	"replication": 5,
+	"shieldStatId":
+	{
+		"guid": "0",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"grantedEffects": [],
+	"guid": "6064629246756323331",
+	"name": "HealingCriticalChance",
+	"typeId": "10516612381411111"
+}

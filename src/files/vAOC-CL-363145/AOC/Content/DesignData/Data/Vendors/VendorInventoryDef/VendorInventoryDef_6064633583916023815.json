@@ -1,0 +1,106 @@
+{
+	"listings": [
+		{
+			"itemId":
+			{
+				"guid": "6064633457506582531",
+				"typeId": "1091110003",
+				"name": "None"
+			},
+			"itemVariation":
+			{
+				"guid": "0",
+				"typeId": "1091111111",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": ""
+			},
+			"offers": []
+		},
+		{
+			"itemId":
+			{
+				"guid": "6064633457657249808",
+				"typeId": "1091110003",
+				"name": "None"
+			},
+			"itemVariation":
+			{
+				"guid": "0",
+				"typeId": "1091111111",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": ""
+			},
+			"offers": []
+		},
+		{
+			"itemId":
+			{
+				"guid": "6064633457657511953",
+				"typeId": "1091110003",
+				"name": "None"
+			},
+			"itemVariation":
+			{
+				"guid": "0",
+				"typeId": "1091111111",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": ""
+			},
+			"offers": []
+		},
+		{
+			"itemId":
+			{
+				"guid": "6064633457657774098",
+				"typeId": "1091110003",
+				"name": "None"
+			},
+			"itemVariation":
+			{
+				"guid": "0",
+				"typeId": "1091111111",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": ""
+			},
+			"offers": []
+		},
+		{
+			"itemId":
+			{
+				"guid": "6064633457658036243",
+				"typeId": "1091110003",
+				"name": "None"
+			},
+			"itemVariation":
+			{
+				"guid": "0",
+				"typeId": "1091111111",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": ""
+			},
+			"offers": []
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "Node_HasServiceBuilding(Node_GetActorCityNode(GetInteractionTarget()),$#7823463:6064630605128147022$) == false\r\n&&\r\n(\r\nGetCurrentNode(GetPlayer()) == $#1323521343:6064633407846088705$\r\n|| \r\nGetCurrentNode(GetPlayer()) == $#1323521343:6064633420448858113$\r\n)"
+	},
+	"guid": "6064633583916023815",
+	"name": "Node_Vendor_PlayerCommodities_TUR_Shorefoot_Base",
+	"typeId": "3145314714"
+}

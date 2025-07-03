@@ -1,0 +1,31 @@
+{
+	"expression":
+	{
+		"expression": "(Event_GetBoolVar(\"IsProgress\")==False)&&(Event_GetNumParticipants() > 0)"
+	},
+	"tickInterval": 5,
+	"maxActivationCount": -1,
+	"objectivesIds": [],
+	"triggersIds": [
+		{
+			"guid": "6064631006579590600",
+			"typeId": "23095135",
+			"name": "None"
+		},
+		{
+			"guid": "6064631006609475021",
+			"typeId": "23095135",
+			"name": "None"
+		}
+	],
+	"flowEditorNodeLocation":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"routePins": [],
+	"guid": "6064631006574872007",
+	"name": "ProgE_RVR_0002_TitansRing_RisenRanks_Phase2_Encounters_RestartProgress",
+	"typeId": "23095129"
+}

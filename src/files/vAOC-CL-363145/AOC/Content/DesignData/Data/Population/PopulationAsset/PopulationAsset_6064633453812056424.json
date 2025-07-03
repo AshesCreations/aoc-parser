@@ -1,0 +1,97 @@
+{
+	"assetRef": "/Game/DesignAssets/Population/NPC/Humanoid/Birdperson/Birdperson_Forager2.Birdperson_Forager2",
+	"lootTablesIds": [
+		{
+			"guid": "6064633465149980726",
+			"typeId": "1091110040",
+			"name": "None"
+		}
+	],
+	"populationFilter":
+	{
+		"zoneOfInfluenceIds": [],
+		"nodeIds": [],
+		"cultures": [],
+		"nodeTypes": [],
+		"biomes": [],
+		"seasons": [],
+		"nodeLevelMin": "Wilderness",
+		"nodeLevelMax": "Metropolis",
+		"timeOfDayStart": -1,
+		"timeOfDayEnd": -1,
+		"weatherTypes": [],
+		"spawningStrategy":
+		{
+			"spawnStrategy": "Immediate",
+			"phaseInTime":
+			{
+				"minSeconds": 0,
+				"maxSeconds": 0
+			}
+		},
+		"despawningStrategy":
+		{
+			"despawnStrategy": "Immediate",
+			"phaseOutTime":
+			{
+				"minSeconds": 0,
+				"maxSeconds": 0
+			}
+		},
+		"requiredGameplayTags":
+		{
+			"gameplayTags": [],
+			"parentTags": []
+		}
+	},
+	"scaleMin": 1,
+	"scaleMax": 1,
+	"gameplayTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "npc.stature.elite"
+			},
+			{
+				"tagName": "character.humanoid.birdperson.necromancer"
+			},
+			{
+				"tagName": "npc.stature.rareSpawn"
+			}
+		],
+		"parentTags": [
+			{
+				"tagName": "npc.stature"
+			},
+			{
+				"tagName": "npc"
+			},
+			{
+				"tagName": "character.humanoid.birdperson"
+			},
+			{
+				"tagName": "character.humanoid"
+			},
+			{
+				"tagName": "character"
+			}
+		]
+	},
+	"bOverrideAggroRadius": false,
+	"aggroRadius": 0,
+	"bOverrideLeashRadius": false,
+	"leashRadius": 0,
+	"factionId": 0,
+	"interactionDefId":
+	{
+		"guid": "0",
+		"typeId": "1091110031",
+		"name": "None"
+	},
+	"displayNameOverrides": [
+		"NSLOCTEXT(\"[92AA2A3D6F4A3D76AC3970D17CDDA1F2]\", \"D9D300324E6BC3F2DC3E18886AC8D724\", \"Shrill-Master Gallea\")"
+	],
+	"guid": "6064633453812056424",
+	"name": "PA_JUN_PoolsOfStench_Birdman_Forager_L40_2S_Rarespawn_ShrillMasterGallea",
+	"typeId": "5111001"
+}

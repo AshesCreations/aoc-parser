@@ -1,0 +1,56 @@
+{
+	"completionResponsesIds": [
+		{
+			"guid": "109088435754629",
+			"typeId": "1091110030",
+			"name": "MAAR_0005_BTF_Examine_Corpse"
+		}
+	],
+	"channelDuration": 0,
+	"activePredicate":
+	{
+		"expression": ""
+	},
+	"cuePredicate":
+	{
+		"expression": "GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005_BridgeTooFar\",\"FoundStolenChests\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005_BridgeTooFar\",\"CorpseExamined\")"
+	},
+	"deleteOnCompletion": false,
+	"singleUse": true,
+	"alwaysShowUIPrompt": true,
+	"cancelChannelIfActivePredicateEverFails": true,
+	"channelModifierType": "NONE",
+	"rewardTableId":
+	{
+		"guid": "0",
+		"typeId": "1091110008",
+		"name": "None"
+	},
+	"startEffect": "None",
+	"endEffect": "None",
+	"failEffect": "None",
+	"successEffect": "/Game/DesignAssets/Population/NPC/Beast/ElderDragon/ElderDragon_Flame/Effects/NS_Foot_Slam_Dust_Kickup.NS_Foot_Slam_Dust_Kickup",
+	"cueEffect": "None",
+	"startSound": "None",
+	"endSound": "None",
+	"failSound": "None",
+	"successSound": "None",
+	"cueSound": "None",
+	"interactAnimTag": "None",
+	"deletionDelay": 0,
+	"activeCueEnabled": true,
+	"activeCueIgnoresActivePredicate": false,
+	"facePlayer": false,
+	"allowInCombat": true,
+	"spawnAtBottomCapsule": false,
+	"channelAnimation": "/Game/Characters/Animations/00_ABLT/CM_M_ABLT_FlowerPick_Montage.CM_M_ABLT_FlowerPick_Montage",
+	"interactRadius": 200,
+	"interactTolerance": 30,
+	"busyTime": 0.89999997615814209,
+	"clientBusyTime": 1,
+	"channelStartResponseIds": [],
+	"failResponsesIds": [],
+	"guid": "109031474288367",
+	"name": "MAPI_0005_BTF_ExamineCorpse",
+	"typeId": "1091110031"
+}

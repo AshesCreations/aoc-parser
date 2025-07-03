@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"7069AE5D483B4D938D2F8793D41C982D\", \"What do you mean?\")",
+	"nextNodeId":
+	{
+		"guid": "6064630514357764234",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0005B_TEW_EnemyWithin\",\"MAP_0005B_TEW_Phase01\")&&\r\n!IsOnStoryArcQuest(GetPlayer(),\"MAQ_0005B_OSG_OnSacredGround\")&&\r\nIsStoryArcQuestAvailable(GetPlayer(),\"MAQ_0005B_OSG_OnSacredGround\")"
+	},
+	"guid": "6064630514355077257",
+	"name": "MADD_0005B_OSG_AkhundaWazoo_4",
+	"typeId": "1091110027"
+}

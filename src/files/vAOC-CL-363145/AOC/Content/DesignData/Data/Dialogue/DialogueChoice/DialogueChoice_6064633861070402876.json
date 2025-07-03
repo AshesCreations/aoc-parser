@@ -1,0 +1,28 @@
+{
+	"choiceText": "NSLOCTEXT(\"[4BE4F0A16D08556ACD6685BF392E6719]\", \"500A2EFB42A83DA83249A6979A54164D\", \"[Insert Runic Sigil]\")",
+	"nextNodeId":
+	{
+		"guid": "6064633861094913345",
+		"typeId": "1091110028",
+		"name": "ANV_FTUE_HR_0009_ThoseThatRemained_Pillar_Anvil_DLG_4"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064633861098976580",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "!Player_HasItem(GetPlayer(),\"ANV_FTUE_HR_0009_ThoseThatRemained_AnvilRune\")||\r\n!Player_HasItem(GetPlayer(),\"ANV_FTUE_HR_0009_ThoseThatRemained_BoarRune\")||\r\n!Player_HasItem(GetPlayer(),\"ANV_FTUE_HR_0009_ThoseThatRemained_SerpentRune\")"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064633861070402876",
+	"name": "ANV_FTUE_HR_0009_ThoseThatRemained_Pillar_Anvil_DLG_2_Choice_1",
+	"typeId": "1091110027"
+}

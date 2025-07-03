@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"C75746C648AF0CE6B236C6B14553D757\", \"I think Nurz in the West Camp is the chieftain.\")",
+	"nextNodeId":
+	{
+		"guid": "6064630443755044875",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "!GetStoryArcQuestFlag(GetPlayer(), \"SAQ_0023_P01_Q02_GoblinHierarchy\", \"DecisionMade\")&&\r\nIsOnStoryArcQuest(GetPlayer(), \"SAQ_0023_P01_Q02_GoblinHierarchy\")"
+	},
+	"guid": "6064630443747311624",
+	"name": "DD_0023_RealGoblinCorrespondance_7",
+	"typeId": "1091110027"
+}

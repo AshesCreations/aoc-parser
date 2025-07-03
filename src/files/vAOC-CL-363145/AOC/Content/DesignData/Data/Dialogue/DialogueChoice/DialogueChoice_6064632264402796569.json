@@ -1,0 +1,22 @@
+{
+	"choiceText": "",
+	"nextNodeId":
+	{
+		"guid": "6064631986981897434",
+		"typeId": "1091110028",
+		"name": "DD_CSQ_0074_Ibram_9"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "Player_ObjectiveStateEquals(GetPlayer(), \"SQO_0074_06_Basic_DispelMagic\", EObjectiveState::Active) &&\r\n!Player_HasItem(GetPlayer(),\"Item_CSQ_0074_CultistJournal_Locked\")"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064632264402796569",
+	"name": "DD_CSQ_0074_Ibram_Root_Choice_2",
+	"typeId": "1091110027"
+}

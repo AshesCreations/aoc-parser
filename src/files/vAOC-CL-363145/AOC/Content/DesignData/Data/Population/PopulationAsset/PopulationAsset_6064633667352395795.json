@@ -1,0 +1,89 @@
+{
+	"assetRef": "/Game/DesignAssets/Population/NPC/Monster/Elemental/RockElemental/RockElemental.RockElemental",
+	"lootTablesIds": [],
+	"populationFilter":
+	{
+		"zoneOfInfluenceIds": [],
+		"nodeIds": [],
+		"cultures": [],
+		"nodeTypes": [],
+		"biomes": [],
+		"seasons": [],
+		"nodeLevelMin": "Wilderness",
+		"nodeLevelMax": "Metropolis",
+		"timeOfDayStart": -1,
+		"timeOfDayEnd": -1,
+		"weatherTypes": [],
+		"spawningStrategy":
+		{
+			"spawnStrategy": "Immediate",
+			"phaseInTime":
+			{
+				"minSeconds": 0,
+				"maxSeconds": 0
+			}
+		},
+		"despawningStrategy":
+		{
+			"despawnStrategy": "Immediate",
+			"phaseOutTime":
+			{
+				"minSeconds": 0,
+				"maxSeconds": 0
+			}
+		},
+		"requiredGameplayTags":
+		{
+			"gameplayTags": [],
+			"parentTags": []
+		}
+	},
+	"scaleMin": 1,
+	"scaleMax": 1,
+	"gameplayTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "npc.stature.rareSpawn"
+			}
+		],
+		"parentTags": [
+			{
+				"tagName": "npc.stature"
+			},
+			{
+				"tagName": "npc"
+			}
+		]
+	},
+	"bOverrideAggroRadius": false,
+	"aggroRadius": 0,
+	"bOverrideLeashRadius": false,
+	"leashRadius": 0,
+	"factionId": 0,
+	"interactionDefId":
+	{
+		"guid": "0",
+		"typeId": "1091110031",
+		"name": "None"
+	},
+	"displayNameOverrides": [
+		"NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"5A9B5CB5492DBED4DCD162AE06A1F7F7\", \"Calcitooth\")"
+	],
+	"dialogueRootId":
+	{
+		"guid": "0",
+		"typeId": "0",
+		"name": "None"
+	},
+	"offeredQuests": [],
+	"voiceOverrideId":
+	{
+		"guid": "0",
+		"typeId": "919300",
+		"name": "None"
+	},
+	"guid": "6064633667352395795",
+	"name": "PA_ANV_VeinbreakerVeins_RockElemental_L7_1S_RareSpawn_Calcitooth",
+	"typeId": "5111001"
+}

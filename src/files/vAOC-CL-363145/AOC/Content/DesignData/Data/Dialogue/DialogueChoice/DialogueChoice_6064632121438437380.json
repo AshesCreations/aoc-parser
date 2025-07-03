@@ -1,0 +1,24 @@
+{
+	"choiceText": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"F9DC0E4C426D1E456641A0B0646C00E6\", \"Accept Quest\")",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064632121451413511",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "Player_CanAcceptQuest(GetPlayer(), $#280002:6064632121363202048$)"
+	},
+	"choiceType": "Default",
+	"guid": "6064632121438437380",
+	"name": "DialogueChoice_6064632121438437380",
+	"typeId": "1091110027"
+}

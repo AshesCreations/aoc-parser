@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"4A11026D47795CE68358E290B9D4DD78\", \"Isn\\'t there a plague?\")",
+	"nextNodeId":
+	{
+		"guid": "6064629297338122321",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MIA_0016_LOL_LastOfLyneth\",\"MIP_0016_LOL_Phase03\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MIQ_0016_ROK_ReturnOfTheKing\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MIQ_0016_ROK_ReturnOfTheKing\",\"SpokeToPrimeHealer\")"
+	},
+	"guid": "6064629297332486224",
+	"name": "MIDD_0016_ROK_PrimeHealer_4",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,99 @@
+{
+	"predicate":
+	{
+		"expression": ""
+	},
+	"rewardDefContainers": [
+		{
+			"grantPredicate":
+			{
+				"expression": ""
+			},
+			"selectionAlgorithm": "All",
+			"numberToSelect": 0,
+			"grantMethod": "Always",
+			"rewardsWeightCurve":
+			{
+				"externalCurve": "None",
+				"editorCurveData":
+				{
+					"keys": [],
+					"defaultValue": 3.4028234663852886e+38,
+					"preInfinityExtrap": "RCCE_Constant",
+					"postInfinityExtrap": "RCCE_Constant",
+					"keyHandlesToIndices":
+					{
+					}
+				}
+			},
+			"weightsPerReward": [],
+			"percentageDropRatePerReward": [],
+			"maxSelectorChoices": 0,
+			"rewards": [
+				{
+					"displayName": "",
+					"currency":
+					{
+					},
+					"itemRewards": [],
+					"experienceRewards": [
+						{
+							"experienceType": "Adventuring",
+							"experienceValue":
+							{
+								"expression": "var RetValue = 0.0;\r\nconst Tier = Player_GetEventContributionTier();\r\n\r\nif(Tier == EGameEventRewardTier::None)\r\n{\r\n    set RetValue = 500000.0;\r\n}\r\nif(Tier == EGameEventRewardTier::Bronze)\r\n{\r\n    set RetValue = 100.;\r\n}\r\nif(Tier == EGameEventRewardTier::Silver)\r\n{\r\n    set RetValue = 1000.;\r\n}\r\nif(Tier == EGameEventRewardTier::Gold)\r\n{\r\n    set RetValue = 10000.;\r\n}\r\n\r\nRetValue + GetNarrativeContentLevel()"
+							},
+							"experienceContextId":
+							{
+								"guid": "6064630644204175885",
+								"typeId": "1091110055",
+								"name": "None"
+							},
+							"professionsId":
+							{
+								"guid": "0",
+								"typeId": "8125613373123",
+								"name": "None"
+							},
+							"gatheringResourceTypeId":
+							{
+								"guid": "0",
+								"typeId": "1983422155363",
+								"name": "None"
+							},
+							"craftingRecipeDefId":
+							{
+								"guid": "0",
+								"typeId": "163697",
+								"name": "None"
+							}
+						}
+					]
+				}
+			],
+			"rewardContainerIcon": "None"
+		}
+	],
+	"subTableSelectionAlgorithm": "None",
+	"numberOfSubtablesToSelect": 2,
+	"weightsPerSubTable": [],
+	"percentagePerSubTable": [],
+	"subTablesWeightCurve":
+	{
+		"externalCurve": "None",
+		"editorCurveData":
+		{
+			"keys": [],
+			"defaultValue": 3.4028234663852886e+38,
+			"preInfinityExtrap": "RCCE_Constant",
+			"postInfinityExtrap": "RCCE_Constant",
+			"keyHandlesToIndices":
+			{
+			}
+		}
+	},
+	"subTablesIds": [],
+	"guid": "6064632263564132352",
+	"name": "TEST_RewardEvent_RewardTable",
+	"typeId": "1091110040"
+}

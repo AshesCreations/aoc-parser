@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"E197AEC9487F3A1CB080338404C5306E\", \"Budge MacKraggin sent me.\")",
+	"nextNodeId":
+	{
+		"guid": "6064629460406501379",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MIA_0020_KOC_KeepOnTheCrossroads\",\"MIP_0020_KOC_Phase02\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MIQ_0020_CAC_CloaksAndCaravans\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MIQ_0020_CAC_CloaksAndCaravans\",\"MetRoadGuard\")"
+	},
+	"guid": "6064629460404994050",
+	"name": "MIDD_0020_CAC_GreyshoreRoadGuard_4",
+	"typeId": "1091110027"
+}

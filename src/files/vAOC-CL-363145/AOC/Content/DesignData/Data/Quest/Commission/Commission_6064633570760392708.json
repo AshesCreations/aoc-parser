@@ -1,0 +1,104 @@
+{
+	"commissionType": "Generic",
+	"commissionGameplayTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "Quest.Commission.Artisan.Gathering.Lumberjacking"
+			},
+			{
+				"tagName": "Quest.Commission.Tier.T1"
+			},
+			{
+				"tagName": "Biome.Jungle"
+			}
+		],
+		"parentTags": [
+			{
+				"tagName": "Quest.Commission.Artisan.Gathering"
+			},
+			{
+				"tagName": "Quest.Commission.Artisan"
+			},
+			{
+				"tagName": "Quest.Commission"
+			},
+			{
+				"tagName": "Quest"
+			},
+			{
+				"tagName": "Quest.Commission.Tier"
+			},
+			{
+				"tagName": "Biome"
+			}
+		]
+	},
+	"preRequisiteQuestsIds": [],
+	"autoFailTimer": -1,
+	"bRepeatable": false,
+	"mainObjectiveType": "Collect",
+	"commissionSection": 2,
+	"biomeOrigin": "FloodPlains",
+	"bFromDynamicContent": false,
+	"availabilityExpression":
+	{
+		"expression": ""
+	},
+	"bDisabled": false,
+	"level": 1,
+	"commissionRarity": "Common",
+	"objectivesIds": [
+		{
+			"guid": "6064633570766880774",
+			"typeId": "1091110420",
+			"name": "None"
+		}
+	],
+	"allowMultipleCompletion": false,
+	"commissionName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"426E22F844B1A3A297E137A9F32D6EB6\", \"Rope of the Ancients\")",
+	"flavorText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"880829E94BD2A16F089DF4B9F90698A5\", \"Banyan roots knot like a thousand grasping fingers, coiling around whatever they touch, stone, bone, or ruin. Its wood carries the hush of old prayers.\")",
+	"mainObjectiveText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"5F51E10A43A1AC651C610FB95C01DDBA\", \"Harvest Banyan wood from vine-wrapped ruins and root-choked hollows in the Jundark\")",
+	"rewardTablesIds": [
+		{
+			"guid": "6064632139941281867",
+			"typeId": "1091110040",
+			"name": "None"
+		}
+	],
+	"calloutName": "",
+	"calloutDescription": "",
+	"bCanProgressWhileInRaid": false,
+	"expiration":
+	{
+		"duration": "0"
+	},
+	"cooldown":
+	{
+		"duration": "0"
+	},
+	"moneyCost": "0",
+	"resourceCost": [],
+	"mayoralCompletionCount": 0,
+	"rewardId":
+	{
+		"guid": "0",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"bNodeTargeted": false,
+	"targetRewardId":
+	{
+		"guid": "0",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"questItemListIds": [],
+	"storedGraph":
+	{
+		"nodes": []
+	},
+	"guid": "6064633570760392708",
+	"name": "COM_JUN_Gather_Raw_Wood_BanyanTree",
+	"typeId": "280002"
+}

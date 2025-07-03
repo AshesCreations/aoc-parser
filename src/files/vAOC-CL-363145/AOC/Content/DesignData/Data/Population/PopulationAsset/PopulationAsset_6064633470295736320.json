@@ -1,0 +1,82 @@
+{
+	"assetRef": "/Game/DesignAssets/Population/NPC/Monster/Undead/Spirit/Wraith/AshenHaunt_King.AshenHaunt_King",
+	"lootTablesIds": [
+		{
+			"guid": "6064633465183076413",
+			"typeId": "1091110040",
+			"name": "None"
+		}
+	],
+	"populationFilter":
+	{
+		"zoneOfInfluenceIds": [],
+		"nodeIds": [],
+		"cultures": [],
+		"nodeTypes": [],
+		"biomes": [],
+		"seasons": [],
+		"nodeLevelMin": "Wilderness",
+		"nodeLevelMax": "Metropolis",
+		"timeOfDayStart": -1,
+		"timeOfDayEnd": -1,
+		"weatherTypes": [],
+		"spawningStrategy":
+		{
+			"spawnStrategy": "Immediate",
+			"phaseInTime":
+			{
+				"minSeconds": 0,
+				"maxSeconds": 0
+			}
+		},
+		"despawningStrategy":
+		{
+			"despawnStrategy": "Immediate",
+			"phaseOutTime":
+			{
+				"minSeconds": 0,
+				"maxSeconds": 0
+			}
+		},
+		"requiredGameplayTags":
+		{
+			"gameplayTags": [],
+			"parentTags": []
+		}
+	},
+	"scaleMin": 1.2000000476837158,
+	"scaleMax": 1.2000000476837158,
+	"gameplayTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "npc.stature.rareSpawn"
+			}
+		],
+		"parentTags": [
+			{
+				"tagName": "npc.stature"
+			},
+			{
+				"tagName": "npc"
+			}
+		]
+	},
+	"bOverrideAggroRadius": false,
+	"aggroRadius": 0,
+	"bOverrideLeashRadius": false,
+	"leashRadius": 0,
+	"factionId": 0,
+	"interactionDefId":
+	{
+		"guid": "0",
+		"typeId": "1091110031",
+		"name": "None"
+	},
+	"displayNameOverrides": [
+		"NSLOCTEXT(\"[DE7D75BA991C894B1B056411820A8486]\", \"6351358F47547110C6D0DBA2F7D10566\", \"Echo of Atrax\")"
+	],
+	"guid": "6064633470295736320",
+	"name": "PA_JUN_Pocket_Dungeon_AshenHauntKing_L43_3S_RareSpawn_Echo_of_Atrax",
+	"typeId": "5111001"
+}

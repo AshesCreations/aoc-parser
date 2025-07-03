@@ -1,0 +1,22 @@
+{
+	"choiceText": "",
+	"nextNodeId":
+	{
+		"guid": "6064632621375816623",
+		"typeId": "1091110028",
+		"name": "SQ_NPC_RVR_Batyard_Jackson_6"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "!Player_HasCompletedCommission(GetPlayer(),\"SQ_RVR_Batyard_GoblinCleanup\")&&Player_CanCompleteCommission(GetPlayer(), \"SQ_RVR_Batyard_GoblinCleanup\")"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064632621375816626",
+	"name": "SQ_NPC_RVR_Batyard_Tenders_7_Choice_1",
+	"typeId": "1091110027"
+}

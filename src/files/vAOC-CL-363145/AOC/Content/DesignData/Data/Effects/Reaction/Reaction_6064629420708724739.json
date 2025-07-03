@@ -1,0 +1,27 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 4,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "GetRecordTypeId(GetHitSourceRecord(GetHitEvent())) != GetReactionTypeId() &&\r\nGetStatModValue(GetHitEvent(), $#10516612381411111:108986352686712$) > 0.0"
+	},
+	"bEvaluateApplyingHit": false,
+	"instigator": "Instigator",
+	"targetsBitmask": 2,
+	"reactHitsIds": [
+		{
+			"guid": "6064629421801866076",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"guid": "6064629420708724739",
+	"name": "Cleric_Beacon_Heal",
+	"typeId": "3031600202"
+}

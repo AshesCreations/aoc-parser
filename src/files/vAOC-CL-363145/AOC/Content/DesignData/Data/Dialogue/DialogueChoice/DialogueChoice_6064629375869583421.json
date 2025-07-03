@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"B8CD5321497433DEB5B6FA88997027B1\", \"(Inspect the machine)\")",
+	"nextNodeId":
+	{
+		"guid": "6064629375877316670",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MIA_0015_TPT_ThePhantomTower\",\"MIP_0015_TPT_Phase02\")&&\r\n!IsOnStoryArcQuest(GetPlayer(),\"MIQ_0015_AAV_AnAncientVisitor\")&&\r\nIsStoryArcQuestAvailable(GetPlayer(),\"MIQ_0015_AAV_AnAncientVisitor\")"
+	},
+	"guid": "6064629375869583421",
+	"name": "MIDD_0015_AAV_ClockworkCodex_4",
+	"typeId": "1091110027"
+}

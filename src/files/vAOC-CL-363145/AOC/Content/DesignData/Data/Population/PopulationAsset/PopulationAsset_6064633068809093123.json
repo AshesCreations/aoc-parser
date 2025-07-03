@@ -1,0 +1,95 @@
+{
+	"assetRef": "/Game/DesignAssets/Population/NPC/Humanoid/Giants/Giant_Base.Giant_Base",
+	"lootTablesIds": [
+		{
+			"guid": "6064633301098037297",
+			"typeId": "1091110040",
+			"name": "None"
+		}
+	],
+	"populationFilter":
+	{
+		"zoneOfInfluenceIds": [],
+		"nodeIds": [],
+		"cultures": [],
+		"nodeTypes": [],
+		"biomes": [],
+		"seasons": [],
+		"nodeLevelMin": "Wilderness",
+		"nodeLevelMax": "Metropolis",
+		"timeOfDayStart": -1,
+		"timeOfDayEnd": -1,
+		"weatherTypes": [],
+		"spawningStrategy":
+		{
+			"spawnStrategy": "Immediate",
+			"phaseInTime":
+			{
+				"minSeconds": 0,
+				"maxSeconds": 0
+			}
+		},
+		"despawningStrategy":
+		{
+			"despawnStrategy": "Immediate",
+			"phaseOutTime":
+			{
+				"minSeconds": 0,
+				"maxSeconds": 0
+			}
+		},
+		"requiredGameplayTags":
+		{
+			"gameplayTags": [],
+			"parentTags": []
+		}
+	},
+	"scaleMin": 1,
+	"scaleMax": 1,
+	"gameplayTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "npc.stature.rareSpawn"
+			}
+		],
+		"parentTags": [
+			{
+				"tagName": "npc.stature"
+			},
+			{
+				"tagName": "npc"
+			}
+		]
+	},
+	"bOverrideAggroRadius": false,
+	"aggroRadius": 0,
+	"bOverrideLeashRadius": false,
+	"leashRadius": 0,
+	"factionId": 0,
+	"interactionDefId":
+	{
+		"guid": "0",
+		"typeId": "1091110031",
+		"name": "None"
+	},
+	"displayNameOverrides": [
+		"NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"CA621B4849CF75B1CE2771942F9CB948\", \"Dom, Champion of Gom\")"
+	],
+	"dialogueRootId":
+	{
+		"guid": "0",
+		"typeId": "0",
+		"name": "None"
+	},
+	"offeredQuests": [],
+	"voiceOverrideId":
+	{
+		"guid": "0",
+		"typeId": "919300",
+		"name": "None"
+	},
+	"guid": "6064633068809093123",
+	"name": "PA_SAN_Stone_Hold_Giant_L31_3S_RareSpawn_Dom_Champion",
+	"typeId": "5111001"
+}

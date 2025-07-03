@@ -1,0 +1,56 @@
+{
+	"completionResponsesIds": [
+		{
+			"guid": "6064630525575626824",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"channelDuration": 0,
+	"activePredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0005B_TEW_EnemyWithin\",\"MAP_0005B_TEW_Phase02\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0005B_TGU_TheGreatUnifier\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005B_TGU_TheGreatUnifier\",\"ReadBook\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005B_TGU_TheGreatUnifier\",\"ExamineStatue\")\r\n"
+	},
+	"cuePredicate":
+	{
+		"expression": ""
+	},
+	"deleteOnCompletion": false,
+	"singleUse": false,
+	"alwaysShowUIPrompt": true,
+	"cancelChannelIfActivePredicateEverFails": true,
+	"channelModifierType": "NONE",
+	"rewardTableId":
+	{
+		"guid": "0",
+		"typeId": "1091110008",
+		"name": "None"
+	},
+	"startEffect": "None",
+	"endEffect": "None",
+	"failEffect": "None",
+	"successEffect": "None",
+	"cueEffect": "None",
+	"startSound": "None",
+	"endSound": "None",
+	"failSound": "None",
+	"successSound": "None",
+	"cueSound": "None",
+	"interactAnimTag": "None",
+	"deletionDelay": 0,
+	"activeCueEnabled": true,
+	"activeCueIgnoresActivePredicate": false,
+	"facePlayer": false,
+	"allowInCombat": true,
+	"spawnAtBottomCapsule": false,
+	"channelAnimation": "/Game/Characters/Animations/00_EMO/All_EMO_M_Searching02_Montage.All_EMO_M_Searching02_Montage",
+	"interactRadius": 200,
+	"interactTolerance": 30,
+	"busyTime": 0.89999997615814209,
+	"clientBusyTime": 1,
+	"channelStartResponseIds": [],
+	"failResponsesIds": [],
+	"guid": "6064630525700800611",
+	"name": "MAPI_0005B_TGU_DPO_StatueGreatUnifier",
+	"typeId": "1091110031"
+}

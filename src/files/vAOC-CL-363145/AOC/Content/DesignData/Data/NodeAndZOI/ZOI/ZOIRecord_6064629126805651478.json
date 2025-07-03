@@ -1,0 +1,174 @@
+{
+	"designNotes": "",
+	"levelDefinitionId":
+	{
+		"guid": "6064629126799097877",
+		"typeId": "9227326",
+		"name": "None"
+	},
+	"playerFacingName": "NSLOCTEXT(\"\", \"29DEFAD0449BB8F4877FC2AA152C75BD\", \"Miraleth\")",
+	"zoiType": "HasNode",
+	"startingAreaGameplayTag":
+	{
+		"tagName": "None"
+	},
+	"cityNodeId":
+	{
+		"guid": "108646615701117",
+		"typeId": "1323521343",
+		"name": "None"
+	},
+	"adjacentZonesOfInfluenceIds": [
+		{
+			"guid": "6064629126900678679",
+			"typeId": "9127326",
+			"name": "None"
+		},
+		{
+			"guid": "6064629127135166465",
+			"typeId": "9127326",
+			"name": "None"
+		},
+		{
+			"guid": "6064632501420490752",
+			"typeId": "9127326",
+			"name": "None"
+		},
+		{
+			"guid": "6064632751844032513",
+			"typeId": "9127326",
+			"name": "None"
+		}
+	],
+	"corruptionRulesEnabled": true,
+	"bAllowPVPOptInProtection": false,
+	"alignmentsAssignedUponEnteringIds": [],
+	"zoiEnvironmentType": "None",
+	"editorColor":
+	{
+		"x": 0.16,
+		"y": 0.60999999999999999,
+		"z": 1
+	},
+	"zOIRewardTables": [
+		{
+			"inclusionExpression":
+			{
+				"expression": "!DoesNPCContainTag(\"NoRewards\")"
+			},
+			"rewardTableId":
+			{
+				"guid": "6064632271552578329",
+				"typeId": "1091110040",
+				"name": "None"
+			}
+		},
+		{
+			"inclusionExpression":
+			{
+				"expression": "DoesNPCContainTag(\"character.humanoid\")"
+			},
+			"rewardTableId":
+			{
+				"guid": "6064632277128773740",
+				"typeId": "1091110040",
+				"name": "None"
+			}
+		},
+		{
+			"inclusionExpression":
+			{
+				"expression": "!DoesNPCContainTag(\"NoRewards\")"
+			},
+			"rewardTableId":
+			{
+				"guid": "6064633313653948416",
+				"typeId": "1091110040",
+				"name": "None"
+			}
+		}
+	],
+	"economicRegionTableId":
+	{
+		"guid": "6064630016153747456",
+		"typeId": "98738382",
+		"name": "None"
+	},
+	"bHideExperienceEvents": false,
+	"biome": "Riverlands",
+	"biomeGatherableTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "Riverlands"
+			}
+		],
+		"parentTags": []
+	},
+	"freeholdEstatesIds": [
+		{
+			"guid": "6064632763793211396",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064632763749498881",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064632763850817545",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064632763837054984",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064632763866873867",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064632763861041162",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064632763822702598",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064632763798716421",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064632763625046016",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064632763772567554",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064632763831484423",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064632763779186691",
+			"typeId": "1337133701",
+			"name": "None"
+		}
+	],
+	"actorEffects": [],
+	"guid": "6064629126805651478",
+	"name": "Verra_RVR_Node_Miraleth",
+	"typeId": "9127326"
+}

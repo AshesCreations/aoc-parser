@@ -1,0 +1,55 @@
+{
+	"displayName": "Fire Damage",
+	"description": "NSLOCTEXT(\"\", \"3D49C4E44BAE67EA6158BB9D885F5918\", \"Increases the amount of fire damage done\")",
+	"bHidden": false,
+	"gameplayType": "Type_Combat",
+	"bHasWaterfallStatsUI": false,
+	"waterfallStatsUIIds": [],
+	"bDisplayAsPercentage": false,
+	"statType": "Type_Float",
+	"bClampStatFinalValue": false,
+	"bMultiplyStatMods": false,
+	"bMultiplyCompliment": false,
+	"base":
+	{
+		"expression": "//const base = GetStat(GetInstigator(), $Stat:MagicalPower$);\r\nconst rating = GetStat(GetInstigator(), $#10516612381411111:109343355655871$);\r\nrating / EvalFormula($#10516612381411113:6064630531421635564$)"
+	},
+	"waterfallStatsBaseIds": [
+		{
+			"guid": "109343355655871",
+			"typeId": "10516612381411111",
+			"name": "None"
+		}
+	],
+	"valueMin":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMinIds": [],
+	"valueMax":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMaxIds": [],
+	"regenRate":
+	{
+		"expression": ""
+	},
+	"waterfallStatsRegenIds": [],
+	"bRegenWhileDead": false,
+	"onSpawn": "Reset_None",
+	"onDeath": "Reset_None",
+	"onRevive": "Reset_None",
+	"bPersistValue": false,
+	"replication": 5,
+	"shieldStatId":
+	{
+		"guid": "0",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"grantedEffects": [],
+	"guid": "109343399171824",
+	"name": "FireDamage",
+	"typeId": "10516612381411111"
+}

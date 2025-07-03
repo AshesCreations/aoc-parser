@@ -1,0 +1,89 @@
+{
+	"assetRef": "/Game/DesignAssets/Population/NPC/Monster/Construct/GraveyardGolem/GraveyardGolem_RareSpawn_MalevolentMound.GraveyardGolem_RareSpawn_MalevolentMound",
+	"lootTablesIds": [],
+	"populationFilter":
+	{
+		"zoneOfInfluenceIds": [],
+		"nodeIds": [],
+		"cultures": [],
+		"nodeTypes": [],
+		"biomes": [],
+		"seasons": [],
+		"nodeLevelMin": "Wilderness",
+		"nodeLevelMax": "Metropolis",
+		"timeOfDayStart": -1,
+		"timeOfDayEnd": -1,
+		"weatherTypes": [],
+		"spawningStrategy":
+		{
+			"spawnStrategy": "Immediate",
+			"phaseInTime":
+			{
+				"minSeconds": 0,
+				"maxSeconds": 0
+			}
+		},
+		"despawningStrategy":
+		{
+			"despawnStrategy": "Immediate",
+			"phaseOutTime":
+			{
+				"minSeconds": 0,
+				"maxSeconds": 0
+			}
+		},
+		"requiredGameplayTags":
+		{
+			"gameplayTags": [],
+			"parentTags": []
+		}
+	},
+	"scaleMin": 1,
+	"scaleMax": 1,
+	"gameplayTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "npc.disposition.enemy"
+			},
+			{
+				"tagName": "character.arcana.graveyardGolem"
+			},
+			{
+				"tagName": "npc.stature.rareSpawn"
+			}
+		],
+		"parentTags": [
+			{
+				"tagName": "npc.disposition"
+			},
+			{
+				"tagName": "npc"
+			},
+			{
+				"tagName": "character.arcana"
+			},
+			{
+				"tagName": "character"
+			},
+			{
+				"tagName": "npc.stature"
+			}
+		]
+	},
+	"bOverrideAggroRadius": false,
+	"aggroRadius": 0,
+	"bOverrideLeashRadius": false,
+	"leashRadius": 0,
+	"factionId": 0,
+	"interactionDefId":
+	{
+		"guid": "0",
+		"typeId": "1091110031",
+		"name": "None"
+	},
+	"displayNameOverrides": [],
+	"guid": "6064631828745355264",
+	"name": "PA_RVR_ChurchOfTheSevenStars_GraveyardGolem_L13_3S_RareSpawn_MalevolentMound",
+	"typeId": "5111001"
+}

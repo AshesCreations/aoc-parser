@@ -1,0 +1,147 @@
+{
+	"designNotes": "",
+	"levelDefinitionId":
+	{
+		"guid": "6064629126799097877",
+		"typeId": "9227326",
+		"name": "None"
+	},
+	"playerFacingName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"BEDDD1B946C0FBBA2E39489577781E05\", \"Vinebreach\")",
+	"zoiType": "HasNode",
+	"startingAreaGameplayTag":
+	{
+		"tagName": "None"
+	},
+	"cityNodeId":
+	{
+		"guid": "6064633425555816457",
+		"typeId": "1323521343",
+		"name": "None"
+	},
+	"adjacentZonesOfInfluenceIds": [
+		{
+			"guid": "6064633430643441687",
+			"typeId": "9127326",
+			"name": "None"
+		},
+		{
+			"guid": "6064633430691414041",
+			"typeId": "9127326",
+			"name": "None"
+		}
+	],
+	"corruptionRulesEnabled": true,
+	"bAllowPVPOptInProtection": false,
+	"alignmentsAssignedUponEnteringIds": [],
+	"zoiEnvironmentType": "None",
+	"editorColor":
+	{
+		"x": 0.94899999999999995,
+		"y": 0.71799999999999997,
+		"z": 0.0040000000000000001
+	},
+	"zOIRewardTables": [
+		{
+			"inclusionExpression":
+			{
+				"expression": "!DoesNPCContainTag(\"NoRewards\")"
+			},
+			"rewardTableId":
+			{
+				"guid": "6064633313653948416",
+				"typeId": "1091110040",
+				"name": "None"
+			}
+		},
+		{
+			"inclusionExpression":
+			{
+				"expression": "DoesNPCContainTag(\"character.humanoid\")"
+			},
+			"rewardTableId":
+			{
+				"guid": "6064633584457744403",
+				"typeId": "1091110040",
+				"name": "None"
+			}
+		}
+	],
+	"economicRegionTableId":
+	{
+		"guid": "6064633430717628442",
+		"typeId": "98738382",
+		"name": "None"
+	},
+	"bHideExperienceEvents": false,
+	"biome": "Jungle",
+	"biomeGatherableTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "Jundark"
+			}
+		],
+		"parentTags": []
+	},
+	"freeholdEstatesIds": [
+		{
+			"guid": "6064633587904282624",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633587907428353",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633587908214786",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633587908673539",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633587909001220",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633587909328901",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633587909656582",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633587909984263",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633587910443016",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633587910770697",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633587911229450",
+			"typeId": "1337133701",
+			"name": "None"
+		}
+	],
+	"actorEffects": [],
+	"guid": "6064633430683156504",
+	"name": "Verra_JUN_Node_Vinebreach",
+	"typeId": "9127326"
+}

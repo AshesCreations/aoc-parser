@@ -1,0 +1,56 @@
+{
+	"displayName": "NSLOCTEXT(\"\", \"80A6B69A4FB071EE5882E98A8BA872AE\", \"Magical Block Mitigation Rating\")",
+	"description": "NSLOCTEXT(\"\", \"CCEE426346403517CD418DAFDB9C306E\", \"Reduces the amount of magical damage taken on a blocked hit\")",
+	"bHidden": false,
+	"gameplayType": "Type_Combat",
+	"bHasWaterfallStatsUI": false,
+	"waterfallStatsUIIds": [],
+	"bDisplayAsPercentage": false,
+	"statType": "Type_Float",
+	"bClampStatFinalValue": false,
+	"bMultiplyStatMods": false,
+	"bMultiplyCompliment": false,
+	"base":
+	{
+		"expression": "GetStat(GetOwner(), $#10516612381411111:109183598614141$)\r\n* EvalFormula($#10516612381411113:6064633153359839233$)"
+	},
+	"waterfallStatsBaseIds": [
+		{
+			"guid": "109183598614141",
+			"typeId": "10516612381411111",
+			"name": "None"
+		}
+	],
+	"valueMin":
+	{
+		"expression": "0"
+	},
+	"waterfallStatsMinIds": [],
+	"valueMax":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMaxIds": [],
+	"regenRate":
+	{
+		"expression": ""
+	},
+	"waterfallStatsRegenIds": [],
+	"bRegenWhileDead": false,
+	"bRecalculateOnCombatState": false,
+	"onSpawn": "Reset_None",
+	"onDeath": "Reset_None",
+	"onRevive": "Reset_None",
+	"bPersistValue": false,
+	"replication": 1,
+	"shieldStatId":
+	{
+		"guid": "0",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"grantedEffects": [],
+	"guid": "6064629495591403526",
+	"name": "MagicalBlockMitigationRating",
+	"typeId": "10516612381411111"
+}

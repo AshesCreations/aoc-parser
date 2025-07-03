@@ -1,0 +1,59 @@
+{
+	"type": "Kill",
+	"progressExpression":
+	{
+		"expression": ""
+	},
+	"bAllowSatisfactionToRegress": false,
+	"completionQuantity": 1,
+	"completionActionsIds": [],
+	"tagQuery":
+	{
+		"tokenStreamVersion": 0,
+		"tagDictionary": [
+			{
+				"tagName": "Quest.Named_RVR_EchoOfCommand"
+			}
+		],
+		"queryTokenStream": [ 0, 1, 1, 1, 0 ],
+		"userDescription": "",
+		"autoDescription": " ANY( Quest.Named_RVR_EchoOfCommand )"
+	},
+	"professionFilterIds": [],
+	"collectionFilterId":
+	{
+		"guid": "0",
+		"typeId": "1091110041",
+		"name": "None"
+	},
+	"collectionCount": 5,
+	"displayLocation": [
+		{
+			"location":
+			{
+				"x": -552800,
+				"y": 574330,
+				"z": 13470
+			},
+			"radius": 2000,
+			"map_DisplayType": "ICON",
+			"map_IconVisual":
+			{
+				"guid": "6064630988804194306",
+				"typeId": "949952112329",
+				"name": "None"
+			},
+			"map_DisplayName": "NSLOCTEXT(\"\", \"2DA27C5E419983D1D25AA48721A400E9\", \"Titans Ring\")"
+		}
+	],
+	"location": [],
+	"populationSetId":
+	{
+		"guid": "0",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"guid": "6064630887427145733",
+	"name": "TID_RVR_Bounty_EchoOfCommand",
+	"typeId": "1095125186"
+}

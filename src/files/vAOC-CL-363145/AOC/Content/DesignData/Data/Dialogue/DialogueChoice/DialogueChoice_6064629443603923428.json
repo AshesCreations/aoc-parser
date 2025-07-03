@@ -1,0 +1,23 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"6CDC4F6C436A7CBE4E53459379CA13D8\", \"TRUE\")",
+	"nextNodeId":
+	{
+		"guid": "6064629443603923430",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064628782675132477",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "Node_CanPlayerBecomeCitizen(GetPlayer(),Node_GetActorCityNode(GetInteractionTarget())) == true"
+	},
+	"guid": "6064629443603923428",
+	"name": "DD_ServiceNPC_Adminastrater_01_31",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,27 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 4,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "Abs(GetStatModValue(GetHitEvent(), $#10516612381411111:108986352686712$)) > 0.0 &&\r\nGetRecordTypeId(GetHitSourceRecord(GetHitEvent())) != GetReactionTypeId() &&\r\nRecordNameContains(GetHitSourceRecord(GetHitEvent()), \"Cleric_\")"
+	},
+	"bEvaluateApplyingHit": false,
+	"instigator": "Owner",
+	"targetsBitmask": 1,
+	"reactHitsIds": [
+		{
+			"guid": "6064629330556620866",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"guid": "6064629330537680961",
+	"name": "Cleric_DivineInfusion_Consume_Old",
+	"typeId": "3031600202"
+}

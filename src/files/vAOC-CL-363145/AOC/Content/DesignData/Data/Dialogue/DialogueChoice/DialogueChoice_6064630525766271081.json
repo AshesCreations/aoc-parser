@@ -1,0 +1,23 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"3E7A933D4BF4D17EDCB7E59101C58CA5\", \"\\\"The Great Unifier\\\"\")",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064630525586374732",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0005B_TEW_EnemyWithin\",\"MAP_0005B_TEW_Phase02\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0005B_TGU_TheGreatUnifier\")&&\r\n!Player_HasItem(GetPlayer(),\"QST_MA0005B_TGU_Book_TheGreatUnifier\")\r\n"
+	},
+	"guid": "6064630525766271081",
+	"name": "MADD_0005B_TGU_MobileLibrary_4",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,24 @@
+{
+	"bWeaponCombo": false,
+	"statRefId":
+	{
+		"guid": "108986352686712",
+		"typeId": "10516612381411111",
+		"name": "Stat_MaxHealth"
+	},
+	"stat": "MaxHealth",
+	"value":
+	{
+		"expression": "-GetStat(GetTarget(), $#10516612381411111:108986356618873$) * 0.03"
+	},
+	"bonusPenetration":
+	{
+		"expression": ""
+	},
+	"bShowFloatingText": false,
+	"valueInputTerms": [],
+	"statBuckets": "CombatRegister1",
+	"guid": "6064629093586567169",
+	"name": "Mage_ArcaneEmpowerment_SelfDmg",
+	"typeId": "3031600201"
+}

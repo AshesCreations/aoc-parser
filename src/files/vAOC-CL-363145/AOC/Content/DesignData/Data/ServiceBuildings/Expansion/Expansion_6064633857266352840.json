@@ -1,0 +1,132 @@
+{
+	"dEPRECATED_ExpansionPrerequisiteIds": [],
+	"dEPRECATED_RequiredCapabilitiesIds": [],
+	"dEPRECATED_ExpansionSlotId":
+	{
+		"guid": "0",
+		"typeId": "7823460",
+		"name": "None"
+	},
+	"addedMaintenanceId":
+	{
+		"guid": "6064632123375747431",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"dEPRECATED_NodeConstructionCostId":
+	{
+		"guid": "0",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"postInitiationPlayerConstructionCostId":
+	{
+		"guid": "0",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"playerConstructionPhaseDurationMultiplier":
+	{
+		"expression": ""
+	},
+	"playerConstructionPhaseDuration":
+	{
+		"duration": "172800000"
+	},
+	"addedRepairCostId":
+	{
+		"guid": "0",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"addedDisarrayRepairCostId":
+	{
+		"guid": "0",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"expansionName": "NSLOCTEXT(\"[025B865A037C5F7CDCD76C20FC8D50B1]\", \"5A19B81D4103D690809F0283FA309B02\", \"Scribes\\' Workshop\")",
+	"expansionDescription": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"D5FA8CE0477BCF89267D9C998545A03B\", \"Provides access to Journeman Scribe Stations for crafting\")",
+	"icon": "/Game/UI/Icons/Resource/Processed/LumberMilling/Paper/TUI_Icon_Resource_Processed_LumberMilling_Paper_PH.TUI_Icon_Resource_Processed_LumberMilling_Paper_PH",
+	"buildingServices": [
+		{
+			"icon": "/Game/UI/Icons/Nodes/Buildings/BuildingServices/TUI_Icon_ServiceIcon_Scribe.TUI_Icon_ServiceIcon_Scribe",
+			"serviceName": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"D276044D4408AFAB97699AACF7B4AE6A\", \"Journeyman Scribe Station\")",
+			"serviceDescription": "NSLOCTEXT(\"[3A937076879C9EE4CFD42687DD9352E3]\", \"837E39F8444AF1C3E56899ADF7A66FFA\", \"Craft Journeyman and below tool recipies\")"
+		},
+		{
+			"icon": "/Game/UI/Icons/Nodes/Buildings/BuildingServices/TUI_Icon_ServiceIcon_Vendor.TUI_Icon_ServiceIcon_Vendor",
+			"serviceName": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"74CB25A5426C4F5A25B6D2931114034D\", \"Scribe Vendor\")",
+			"serviceDescription": "NSLOCTEXT(\"[3A937076879C9EE4CFD42687DD9352E3]\", \"EFC047AF42DBD1690B9D3FB77105BF8D\", \"Sells Journeyman and below items and recipies\")"
+		}
+	],
+	"postInitiationEvent": 0,
+	"postInitiationVote": true,
+	"voteDuration":
+	{
+		"duration": "172800000"
+	},
+	"voteResultDuration":
+	{
+		"expression": "30"
+	},
+	"removalVoteDuration":
+	{
+		"duration": "172800000"
+	},
+	"removalVoteResultDuration":
+	{
+		"expression": ""
+	},
+	"requiredAchievements": [],
+	"expressionRequirements":
+	{
+		"expression": ""
+	},
+	"expansionSpawnsIds":
+	{
+		"3":
+		{
+			"guid": "6064631879675609119",
+			"typeId": "1091110044",
+			"name": "None"
+		}
+	},
+	"constructionDuration":
+	{
+		"duration": "0"
+	},
+	"dEPRECATED_CapabilitiesIds": [],
+	"dEPRECATED_NodeEffectId":
+	{
+		"guid": "0",
+		"typeId": "9127426",
+		"name": "None"
+	},
+	"nodeModificationsIds": [],
+	"expansionAssetSets": [
+		{
+			"bReplaceBuilding": true,
+			"buildingNodeAssetSetId":
+			{
+				"guid": "6064632519458422785",
+				"typeId": "1323521346",
+				"name": "None"
+			}
+		}
+	],
+	"expansionPopSpawns": [
+		{
+			"bReplacement": true,
+			"buildingSpawns":
+			{
+				"guid": "6064632275338461233",
+				"typeId": "1091110044",
+				"name": "None"
+			}
+		}
+	],
+	"guid": "6064633857266352840",
+	"name": "Construction_Active_Laboratory_EXP_1B2_ScribesWorkshop",
+	"typeId": "7823461"
+}

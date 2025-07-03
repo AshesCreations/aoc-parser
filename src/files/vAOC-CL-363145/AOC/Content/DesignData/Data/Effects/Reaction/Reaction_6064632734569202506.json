@@ -1,0 +1,32 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 4,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0,
+		"fishingEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "const meditative = GetSkillPurchased(GetInstigator(), $#30316003:107813788866168$, $#981011333:6064631034789494851$);\r\nconst damage = GetStatModValue(GetHitEvent(), $#10516612381411111:108986352686712$) < 0.0;\r\nconst finisher = HitHasTag(GetHitEvent(), \"ComboStep.End\");\r\n\r\nmeditative && damage && finisher"
+	},
+	"bEvaluateApplyingHit": false,
+	"instigator": "Owner",
+	"targetsBitmask": 9,
+	"reactHitsIds": [
+		{
+			"guid": "6064632734620453099",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"instigatorProcLimit": 0,
+	"globalProcLimit": 0,
+	"procReactOnApply": false,
+	"guid": "6064632734569202506",
+	"name": "Fighter_Passive_FormOfCelerity_Meditative",
+	"typeId": "3031600202"
+}

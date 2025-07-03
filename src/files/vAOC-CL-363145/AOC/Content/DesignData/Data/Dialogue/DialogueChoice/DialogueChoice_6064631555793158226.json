@@ -1,0 +1,29 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"49B6694141654D9CCA272FA4B8646697\", \"[Take the key]\")",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064631555761569870",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064631551097765914",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "!Player_HasItem(GetPlayer(),\"CSQ_ITM_0066_WIB_TheBloodKey\")"
+	},
+	"choiceType": "Default",
+	"guid": "6064631555793158226",
+	"name": "CSQ_DD_0066_WIB_PoolOfBlood_7",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,18 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"18A00042459220FF70CBF19C44F8FAF2\", \"I haven\\'t seen them.\")",
+	"nextNodeId":
+	{
+		"guid": "6064631583950569911",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "Player_HasCommission (GetPlayer(), \"SQ_33_GhostIsland\") && !Player_CanCompleteCommission(GetPlayer(), \"SQ_33_GhostIsland\")"
+	},
+	"choiceType": "Default",
+	"guid": "6064631583899975904",
+	"name": "SQ_32_Sehmi_Dialog_40",
+	"typeId": "1091110027"
+}

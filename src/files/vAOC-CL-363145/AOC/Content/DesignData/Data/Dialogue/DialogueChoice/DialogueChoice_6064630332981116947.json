@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"ADD5424F41CD5A8FA88996ADC443C549\", \"Mission accomplished.\")",
+	"nextNodeId":
+	{
+		"guid": "6064630332993962013",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0005A_FGG_ForGreaterGlory\",\"MAP_0005A_FGG_Phase01\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0005A_TIG_TroubleInGrazeland\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005A_TIG_TroubleInGrazeland\",\"ReturnToFisherman\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005A_TIG_TroubleInGrazeland\",\"ReturnToOrrik\")\r\n"
+	},
+	"guid": "6064630332981116947",
+	"name": "MADD_0005A_TIG_NPC_OrrikBlackwood_Phase01_5",
+	"typeId": "1091110027"
+}

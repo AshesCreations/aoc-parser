@@ -1,0 +1,29 @@
+{
+	"expression":
+	{
+		"expression": "Event_GetActiveStageIndex() > Event_GetIntVar(\"LastStageIndex\")"
+	},
+	"maxActivationCount": -1,
+	"objectivesIds": [],
+	"triggersIds": [
+		{
+			"guid": "109104671446654",
+			"typeId": "23095135",
+			"name": "None"
+		},
+		{
+			"guid": "109104678131327",
+			"typeId": "23095135",
+			"name": "None"
+		}
+	],
+	"flowEditorNodeLocation":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"guid": "109104650802812",
+	"name": "TestWaveEncounter_BroadcastNewStage",
+	"typeId": "23095129"
+}

@@ -1,0 +1,135 @@
+{
+	"completionResponsesIds": [
+		{
+			"guid": "6064633527355310084",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"objectivesToCompleteUponCompletionIds": [],
+	"objectivesToRevealUponCompletionIds": [],
+	"itemsToGrantUponCompletion": [
+		{
+			"item":
+			{
+				"itemId":
+				{
+					"guid": "6064632774217957383",
+					"typeId": "1091110003",
+					"name": "None"
+				},
+				"variationId":
+				{
+					"guid": "0",
+					"typeId": "1091111111",
+					"name": "None"
+				}
+			},
+			"quantity": 1,
+			"bRemoveAll": false
+		},
+		{
+			"item":
+			{
+				"itemId":
+				{
+					"guid": "6064632774226214922",
+					"typeId": "1091110003",
+					"name": "None"
+				},
+				"variationId":
+				{
+					"guid": "0",
+					"typeId": "1091111111",
+					"name": "None"
+				}
+			},
+			"quantity": 1,
+			"bRemoveAll": false
+		},
+		{
+			"item":
+			{
+				"itemId":
+				{
+					"guid": "6064632774218285064",
+					"typeId": "1091110003",
+					"name": "None"
+				},
+				"variationId":
+				{
+					"guid": "0",
+					"typeId": "1091111111",
+					"name": "None"
+				}
+			},
+			"quantity": 1,
+			"bRemoveAll": false
+		}
+	],
+	"channelDuration": 0,
+	"activePredicate":
+	{
+		"expression": "GetEffectCount(GetPlayer(), $#30316002:6064633549620511302$) < 1\r\n&& HasAlignment(GetPlayer(), $#512160700:6064632733143662592$)"
+	},
+	"cuePredicate":
+	{
+		"expression": ""
+	},
+	"visiblePredicate":
+	{
+		"expression": "GetEffectCount(GetPlayer(), $#30316002:6064633549620511302$) < 1\r\n&& HasAlignment(GetPlayer(), $#512160700:6064632733143662592$)"
+	},
+	"showErrorIfNotVisible": false,
+	"deleteOnCompletion": true,
+	"singleUse": false,
+	"alwaysShowUIPrompt": true,
+	"cancelChannelIfActivePredicateEverFails": true,
+	"interactTextFormat": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"8394A0F0438420A09D3284B3DEA9A1E5\", \"Search Pile\")",
+	"channelModifierType": "NONE",
+	"rewardTableId":
+	{
+		"guid": "0",
+		"typeId": "1091110008",
+		"name": "None"
+	},
+	"startEffect": "None",
+	"endEffect": "None",
+	"failEffect": "None",
+	"successEffect": "None",
+	"cueEffect": "None",
+	"startSound": "None",
+	"endSound": "None",
+	"failSound": "None",
+	"successSound": "None",
+	"cueSound": "None",
+	"interactAnimTag": "None",
+	"deletionDelay": 0.5,
+	"activeCueEnabled": true,
+	"activeCueIgnoresActivePredicate": false,
+	"facePlayer": false,
+	"allowInCombat": true,
+	"spawnAtBottomCapsule": false,
+	"channelAnimation": "None",
+	"interactRadius": 400,
+	"discoveryDistance": 390,
+	"interactTolerance": 450,
+	"interactAngle": 0,
+	"bRequireLOS": false,
+	"busyTime": 0.89999997615814209,
+	"clientBusyTime": 1,
+	"channelStartResponseIds": [],
+	"failResponsesIds": [],
+	"gatheringInteractionDataId":
+	{
+		"guid": "0",
+		"typeId": "19846",
+		"name": "None"
+	},
+	"interactCooldownMap":
+	{
+	},
+	"guid": "6064633527359373317",
+	"name": "Siege_LootPile_Small_PID",
+	"typeId": "1091110031"
+}

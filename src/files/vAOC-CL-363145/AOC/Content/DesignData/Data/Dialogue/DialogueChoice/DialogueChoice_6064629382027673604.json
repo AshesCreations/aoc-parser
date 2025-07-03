@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"1C57AA0E45F944406D1C589411F469B3\", \"Any landmarks around?\")",
+	"nextNodeId":
+	{
+		"guid": "6064629409743243699",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsOnStoryArcQuest(GetPlayer(),\"SAQ_0019_TitansShadow\")&&!GetStoryArcQuestFlag(GetPlayer(),\"SAQ_0019_TitansShadow\",\"TitanS1\")"
+	},
+	"guid": "6064629382027673604",
+	"name": "0019_P1_Tomas_1_73",
+	"typeId": "1091110027"
+}

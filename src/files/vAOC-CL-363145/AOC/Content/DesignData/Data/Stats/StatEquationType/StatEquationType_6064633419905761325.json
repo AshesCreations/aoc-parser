@@ -1,0 +1,12 @@
+{
+	"equation":
+	{
+		"expression": "const rarity = GetItemRarity();\r\nconst grade = GetItemGrade();\r\nvar goldCost = 999999999;\r\nvar slotMod = 1.0;\r\nvar gradeMod = 1.0;\r\n\r\nif(ItemTypeTagsContains(\"Item.Gear.Weapon\")){\r\n    set slotMod = 0.75;\r\n} else\r\nif(ItemTypeTagsContains(\"Item.Gear.Armor\")){\r\n    set slotMod = 0.6125;\r\n} else\r\nif(ItemTypeTagsContains(\"Item.Gear.Accessory\")){\r\n    set slotMod = 0.32;\r\n} else\r\nif(ItemTypeTagsContains(\"Item.Gear.Artisan\")){\r\n    set slotMod = 0.5;\r\n}\r\n\r\nif(grade == 0){\r\n    set gradeMod = 1.0;\r\n} else\r\nif(grade == 1){\r\n    set gradeMod = 2.66;\r\n} else\r\nif(grade == 2){\r\n    set gradeMod = 4.33;\r\n} else\r\nif(grade == 3){\r\n    set gradeMod = 5.5;\r\n} else\r\nif(grade == 4){\r\n    set gradeMod = 6.5;\r\n} else\r\nif(grade == 5){\r\n    set gradeMod = 7.5;\r\n} \r\n\r\n\r\nif(rarity == 0){\r\n    set goldCost = 1440;\r\n} else\r\n\r\nif(rarity == 1){\r\n    set goldCost = 4320;\r\n} else\r\n\r\nif(rarity == 2){\r\n    set goldCost = 8640;\r\n} else\r\n\r\nif(rarity == 3){\r\n    set goldCost = 12960;\r\n} else\r\n\r\nif(rarity == 4){\r\n    set goldCost = 17280;\r\n} else\r\n\r\nif(rarity == 5){\r\n    set goldCost = 21600;\r\n}\r\n\r\ngoldCost * slotMod * gradeMod"
+	},
+	"constraints":
+	{
+	},
+	"guid": "6064633419905761325",
+	"name": "Tempering_GoldCost",
+	"typeId": "10516612381411112"
+}

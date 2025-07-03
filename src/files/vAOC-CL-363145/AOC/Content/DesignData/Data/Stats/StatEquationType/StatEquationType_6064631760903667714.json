@@ -1,0 +1,12 @@
+{
+	"equation":
+	{
+		"expression": "const grade = GetItemGrade();\r\nconst gradeMod = \r\nSelectFloat(grade == 0, 1.0, \r\nSelectFloat(grade == 1, 2.66,\r\nSelectFloat(grade == 2, 4.33,\r\nSelectFloat(grade == 3, 5.5,\r\nSelectFloat(grade == 4, 6.5,\r\nSelectFloat(grade == 5, 7.5,\r\n0.0))))));\r\n\r\ngradeMod"
+	},
+	"constraints":
+	{
+	},
+	"guid": "6064631760903667714",
+	"name": "Enchanting_GoldCost",
+	"typeId": "10516612381411112"
+}

@@ -1,0 +1,68 @@
+{
+	"type": "Kill",
+	"progressExpression":
+	{
+		"expression": ""
+	},
+	"nPCTaskIconOverrideId":
+	{
+		"guid": "0",
+		"typeId": "949952112329",
+		"name": "None"
+	},
+	"bAllowSatisfactionToRegress": false,
+	"completionQuantity": 15,
+	"tagQuery":
+	{
+		"tokenStreamVersion": 0,
+		"tagDictionary": [
+			{
+				"tagName": "character.undead.skeleton"
+			}
+		],
+		"queryTokenStream": [ 0, 1, 2, 1, 0 ],
+		"userDescription": "",
+		"autoDescription": " ALL( character.undead.skeleton )"
+	},
+	"professionFilterIds": [],
+	"gatherableFilterIds": [],
+	"collectionFilterId":
+	{
+		"guid": "0",
+		"typeId": "1091110041",
+		"name": "None"
+	},
+	"collectionCount": 5,
+	"objectivesIds": [],
+	"bCheckKillLocation": true,
+	"displayLocation": [
+		{
+			"location":
+			{
+				"x": -1068381.26,
+				"y": 655390.79000000004,
+				"z": 12410.558013
+			},
+			"radius": 50000,
+			"map_DisplayType": "ICON_AND_RADIUS",
+			"map_IconVisual":
+			{
+				"guid": "6064631884936970240",
+				"typeId": "949952112329",
+				"name": "None"
+			},
+			"map_DisplayName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"4A3EBF9B483BD09A5F463894E63C25B7\", \"Defeat Restless dead in Daragal\")"
+		}
+	],
+	"location": [],
+	"populationSetId":
+	{
+		"guid": "0",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"notifyType": "None",
+	"guid": "6064632501900869649",
+	"name": "MCOM_RVR_JOEVA_Kill_Undead_Daragal",
+	"typeId": "1095125186"
+}

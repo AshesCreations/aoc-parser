@@ -1,0 +1,22 @@
+{
+	"statRefId":
+	{
+		"guid": "6064629429438907308",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"value":
+	{
+		"expression": "const DamageReceived = Abs(GetStatModValue(GetHitEvent(), $#10516612381411111:108986352686712$));\r\nconst MaxHP = GetStat(GetInstigator(), $#10516612381411111:108986356618873$);\r\nconst x = DamageReceived/MaxHP;\r\nmax(-(x*100 + 1), -20.0)"
+	},
+	"bUseShieldAbsorb": false,
+	"shieldAbsorbPercentage":
+	{
+		"expression": ""
+	},
+	"bShowFloatingText": true,
+	"valueInputTerms": [],
+	"guid": "6064629462049626400",
+	"name": "Tank_Grit_CourageCost_OnHit",
+	"typeId": "3031600201"
+}

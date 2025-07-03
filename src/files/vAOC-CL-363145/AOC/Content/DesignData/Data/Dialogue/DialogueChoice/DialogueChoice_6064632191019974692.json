@@ -1,0 +1,27 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"C1CD19354AFB68F4B3E76AB091FAB4AF\", \"<Splatter the vial of corrupted blood.>\")",
+	"nextNodeId":
+	{
+		"guid": "6064632191019647011",
+		"typeId": "1091110028",
+		"name": "CSQ_RVR_0085_FB_StaunchBloodyBlade_MedicalSupplies_DLG_AR_3"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064632191026921510",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "!Player_ObjectiveStateEquals(GetPlayer(),\"CSQ_RVR_0085_FB_StaunchBloodyBlade_BlameSighted_OBJ\",EObjectiveState::Complete)"
+	},
+	"narrativeRequirementsIds": [],
+	"choiceType": "Default",
+	"guid": "6064632191019974692",
+	"name": "CSQ_RVR_0085_FB_StaunchBloodyBlade_MedicalSupplies_DLG_AR_3_Choice_1",
+	"typeId": "1091110027"
+}

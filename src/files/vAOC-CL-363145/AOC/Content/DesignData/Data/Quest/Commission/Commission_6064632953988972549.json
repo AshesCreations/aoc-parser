@@ -1,0 +1,100 @@
+{
+	"commissionType": "Generic",
+	"commissionGameplayTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "Biome.Desert"
+			},
+			{
+				"tagName": "Quest.Commission.Artisan.Gathering.Herbalism"
+			},
+			{
+				"tagName": "Quest.Commission.Tier.T2"
+			}
+		],
+		"parentTags": [
+			{
+				"tagName": "Biome"
+			},
+			{
+				"tagName": "Quest.Commission.Artisan.Gathering"
+			},
+			{
+				"tagName": "Quest.Commission.Artisan"
+			},
+			{
+				"tagName": "Quest.Commission"
+			},
+			{
+				"tagName": "Quest"
+			},
+			{
+				"tagName": "Quest.Commission.Tier"
+			}
+		]
+	},
+	"preRequisiteQuestsIds": [],
+	"autoFailTimer": -1,
+	"bRepeatable": false,
+	"mainObjectiveType": "Collect",
+	"commissionSection": 2,
+	"biomeOrigin": "FloodPlains",
+	"bFromDynamicContent": false,
+	"availabilityExpression":
+	{
+		"expression": "0"
+	},
+	"bDisabled": true,
+	"level": 11,
+	"commissionRarity": "Common",
+	"objectivesIds": [
+		{
+			"guid": "6064632955037679647",
+			"typeId": "1091110420",
+			"name": "None"
+		}
+	],
+	"allowMultipleCompletion": false,
+	"commissionName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"A252B4A24D28C0CDE22BE39823973FB7\", \"Thorny Fibers\")",
+	"flavorText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"F885CA004AE5E3DE763607A94F6E5F47\", \"The towering arms and spiny ribs of the Saguaro Cactus are a desert treasure, their sturdy skeletons prized for crafting rustic furniture and striking decor. Wealthy merchants seek the cacti dried frames to adorn their grand halls with a touch of the arid wilds. You can aid the desert artisans by gathering a haul of this iconic cactus wood, sharpen your blade and venture into the sands!\")",
+	"mainObjectiveText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"84AA722C40D7C34F66FE2E8BC71B0ED7\", \"Harvest Saguaro in the Sandsquall Desert\")",
+	"rewardTablesIds": [
+		{
+			"guid": "6064632139941281867",
+			"typeId": "1091110040",
+			"name": "None"
+		}
+	],
+	"calloutName": "",
+	"calloutDescription": "",
+	"bCanProgressWhileInRaid": false,
+	"expiration":
+	{
+		"duration": "0"
+	},
+	"cooldown":
+	{
+		"duration": "0"
+	},
+	"moneyCost": "0",
+	"resourceCost": [],
+	"mayoralCompletionCount": 0,
+	"rewardId":
+	{
+		"guid": "0",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"bNodeTargeted": false,
+	"targetRewardId":
+	{
+		"guid": "0",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"questItemListIds": [],
+	"guid": "6064632953988972549",
+	"name": "COM_SAN_Gather_Raw_Plant_Saguaro_DISABLED",
+	"typeId": "280002"
+}

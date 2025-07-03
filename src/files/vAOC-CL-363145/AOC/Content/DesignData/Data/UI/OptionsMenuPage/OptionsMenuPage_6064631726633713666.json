@@ -1,0 +1,54 @@
+{
+	"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Keybindings_CameraSectionLabel\")",
+	"categoryHeaderLabel": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"KB_CameraSectionHeader\")",
+	"entryCategories": [
+		{
+			"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"KB_GlobalKeybindingsSubheader\")",
+			"entryAlignment": "HAlign_Fill",
+			"entryWrapSize": 10,
+			"wrapBoxClass": "KeyBinding",
+			"entries": [
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"KB_Zoom\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 600,
+					"type": "KeyBinding",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "Zoom",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetKeyBinding",
+					"setterFunctionName": "SetKeyBinding"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"KB_ToggleActionMode\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 600,
+					"type": "KeyBinding",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "ToggleActionMode",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetKeyBinding",
+					"setterFunctionName": "SetKeyBinding"
+				}
+			],
+			"subcategories": []
+		}
+	],
+	"guid": "6064631726633713666",
+	"name": "KB_Camera",
+	"typeId": "3616673544"
+}

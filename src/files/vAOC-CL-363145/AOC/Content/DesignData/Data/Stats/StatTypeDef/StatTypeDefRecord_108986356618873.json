@@ -1,0 +1,55 @@
+{
+	"displayName": "Max Health",
+	"description": "NSLOCTEXT(\"\", \"49AA66E14C58B6A3BD56BC89F9CE666C\", \"Defines the maximum amount of health\")",
+	"bHidden": false,
+	"gameplayType": "Type_Combat",
+	"bHasWaterfallStatsUI": false,
+	"waterfallStatsUIIds": [],
+	"bDisplayAsPercentage": false,
+	"statType": "Type_Float",
+	"bClampStatFinalValue": false,
+	"bMultiplyStatMods": false,
+	"bMultiplyCompliment": false,
+	"base":
+	{
+		"expression": "GetStat(GetInstigator(), $#10516612381411111:109183598614140$)\r\n* EvalFormula($#10516612381411113:6064631902646435875$)\r\n* EvalFormula($#10516612381411113:6064630684188540931$)"
+	},
+	"waterfallStatsBaseIds": [
+		{
+			"guid": "109183598614140",
+			"typeId": "10516612381411111",
+			"name": "None"
+		}
+	],
+	"valueMin":
+	{
+		"expression": "1"
+	},
+	"waterfallStatsMinIds": [],
+	"valueMax":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMaxIds": [],
+	"regenRate":
+	{
+		"expression": ""
+	},
+	"waterfallStatsRegenIds": [],
+	"bRegenWhileDead": false,
+	"onSpawn": "Reset_None",
+	"onDeath": "Reset_None",
+	"onRevive": "Reset_None",
+	"bPersistValue": false,
+	"replication": 7,
+	"shieldStatId":
+	{
+		"guid": "0",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"grantedEffects": [],
+	"guid": "108986356618873",
+	"name": "MaxHealth",
+	"typeId": "10516612381411111"
+}

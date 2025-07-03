@@ -1,0 +1,23 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"16C4766641FC9EFDF9B14488F94A940D\", \"(Record your findings.)\")",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064630525553410111",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0005B_TEW_EnemyWithin\",\"MAP_0005B_TEW_Phase02\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0005B_TGU_TheGreatUnifier\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005B_TGU_TheGreatUnifier\",\"ReadBook\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005B_TGU_TheGreatUnifier\",\"ExamineTracks\")"
+	},
+	"guid": "6064630525832134774",
+	"name": "MADD_0005B_TGU_Tracks_Minotaur_8",
+	"typeId": "1091110027"
+}

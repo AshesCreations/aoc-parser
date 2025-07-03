@@ -1,0 +1,22 @@
+{
+	"statRefId":
+	{
+		"guid": "109343399171808",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"value":
+	{
+		"expression": "const max1 = GetEffectCount(GetOwner(),$#30316002:6064631007572132640$); \r\nconst max2 = GetEffectCount(GetOwner(),$#30316002:6064631007589958434$); \r\nconst max3 = GetEffectCount(GetOwner(),$#30316002:6064631007589892897$); \r\nconst totalMax = (max1 + max2 + max3) * 0.02;\r\n\r\n\r\n0.1 + totalMax\r\n"
+	},
+	"bUseShieldAbsorb": false,
+	"shieldAbsorbPercentage":
+	{
+		"expression": ""
+	},
+	"bShowFloatingText": true,
+	"valueInputTerms": [],
+	"guid": "6064630415086203702",
+	"name": "WeaponCombo_2H_Sword_Proc1_Haste",
+	"typeId": "3031600201"
+}

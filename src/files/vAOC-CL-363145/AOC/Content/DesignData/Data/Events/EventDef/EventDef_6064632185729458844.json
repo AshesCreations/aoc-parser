@@ -1,0 +1,263 @@
+{
+	"eventName": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"CD5805364857024C34CE13AD37680911\", \"Lionhold North\")",
+	"gameplayTags":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"activationPredicatesIds": [
+		{
+			"guid": "6064631607924424708",
+			"typeId": "23095129",
+			"name": "None"
+		}
+	],
+	"minChallengeRating": 1,
+	"maxChallengeRating": 1,
+	"eventLevel": 4,
+	"eventType": 33,
+	"locationId":
+	{
+		"guid": "6064632185729458845",
+		"typeId": "5127371160",
+		"name": "None"
+	},
+	"desiredTimeSlot": "0001.01.01-00.00.00",
+	"frequency": 24,
+	"priority": 1,
+	"rewardTableId":
+	{
+		"guid": "6064630474034184198",
+		"typeId": "1091110040",
+		"name": "None"
+	},
+	"rewardPopulationSetId":
+	{
+		"guid": "6064631641848741888",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"startStageId":
+	{
+		"guid": "6064632185729458846",
+		"typeId": "23095131",
+		"name": "None"
+	},
+	"stagesIds": [
+		{
+			"guid": "6064632185729458846",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064632185729458850",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064632185729458854",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064632185729458859",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064632185729458869",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064632185729458872",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064632185729458875",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064632281154125843",
+			"typeId": "23095131",
+			"name": "None"
+		}
+	],
+	"interactVolumesIds": [],
+	"alignmentsIds": [],
+	"mapDisplayType": "Biome",
+	"mapEventIcon": "/Game/UI/Icons/Map/TUI_Icon_Map_Event_Active.TUI_Icon_Map_Event_Active",
+	"bDisplayOnTracker": true,
+	"notificationRadius": 15000,
+	"mapRadiusMinumum": 10000,
+	"cooldownTimer": 600,
+	"bDisabled": true,
+	"maxInstanceCount": 1,
+	"requiredMapName": "Verra_World_Master",
+	"comments": [
+		{
+			"commentGuid": "6064631051481251843",
+			"comment": "Looks for the death of the Base Pop",
+			"location":
+			{
+				"x": -753.37732819461496,
+				"y": -1052.6381084673792,
+				"z": 0
+			},
+			"size":
+			{
+				"x": 519.69695234298706,
+				"y": 384.14338266849518,
+				"z": 0
+			},
+			"color":
+			{
+				"r": 0.5,
+				"g": 0.5,
+				"b": 0.5,
+				"a": 0.5
+			}
+		},
+		{
+			"commentGuid": "6064631051486691332",
+			"comment": "Sequence 1 & Spawn TARGETS - Timer checks participation, if 0 - fails. Won't fail if players are still participating.",
+			"location":
+			{
+				"x": -1309.7724234515465,
+				"y": 131.37949788475808,
+				"z": 0
+			},
+			"size":
+			{
+				"x": 1010.9524632692337,
+				"y": 479.36507260799408,
+				"z": 0
+			},
+			"color":
+			{
+				"r": 0.5,
+				"g": 0.5,
+				"b": 0.5,
+				"a": 0.5
+			}
+		},
+		{
+			"commentGuid": "6064631051490033669",
+			"comment": "Barricade Stage",
+			"location":
+			{
+				"x": 260.5894312266779,
+				"y": 878.77672537030662,
+				"z": 0
+			},
+			"size":
+			{
+				"x": 654.2777419090271,
+				"y": 360.3333215713501,
+				"z": 0
+			},
+			"color":
+			{
+				"r": 0.5,
+				"g": 0.5,
+				"b": 0.5,
+				"a": 0.5
+			}
+		},
+		{
+			"commentGuid": "6064631370041917441",
+			"comment": "Init trigger VAR",
+			"location":
+			{
+				"x": 205.80339177982864,
+				"y": -495.29701843949096,
+				"z": 0
+			},
+			"size":
+			{
+				"x": 561.96583163738251,
+				"y": 297.94871926307678,
+				"z": 0
+			},
+			"color":
+			{
+				"r": 0.5,
+				"g": 0.5,
+				"b": 0.5,
+				"a": 0.5
+			}
+		},
+		{
+			"commentGuid": "6064631370083926018",
+			"comment": "Failed - Sieged then Resetting",
+			"location":
+			{
+				"x": 1562.7801613843401,
+				"y": 263.16250757774088,
+				"z": 0
+			},
+			"size":
+			{
+				"x": 581.47622525691986,
+				"y": 355.52382719516754,
+				"z": 0
+			},
+			"color":
+			{
+				"r": 0.5,
+				"g": 0.5,
+				"b": 0.5,
+				"a": 0.5
+			}
+		},
+		{
+			"commentGuid": "6064632281494913042",
+			"comment": "Retreat Stage",
+			"location":
+			{
+				"x": 499.20490149656928,
+				"y": 160.42184680921059,
+				"z": 0
+			},
+			"size":
+			{
+				"x": 250,
+				"y": 200,
+				"z": 0
+			},
+			"color":
+			{
+				"r": 0.5,
+				"g": 0.5,
+				"b": 0.5,
+				"a": 0.5
+			}
+		}
+	],
+	"bIsTemplate": false,
+	"flowNodes": [
+		{
+			"flowType": "EventEntry",
+			"graphLocation":
+			{
+				"x": -570.32942155512205,
+				"y": -1679.0109822750092
+			},
+			"id": 0
+		},
+		{
+			"flowType": "EventExit",
+			"graphLocation":
+			{
+				"x": -645.94957397100188,
+				"y": 2043.7213618587443
+			},
+			"id": 1
+		}
+	],
+	"guid": "6064632185729458844",
+	"name": "Event_PopUp_RVR_LionholdNorth_0001",
+	"typeId": "23095125"
+}

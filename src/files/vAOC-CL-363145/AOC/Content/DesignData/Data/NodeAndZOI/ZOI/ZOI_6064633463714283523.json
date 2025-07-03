@@ -1,0 +1,80 @@
+{
+	"designNotes": "",
+	"levelDefinitionId":
+	{
+		"guid": "6064629126799097877",
+		"typeId": "9227326",
+		"name": "None"
+	},
+	"playerFacingName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"20940F4B4F65A1B9B2FEF4ACE9F1B7DF\", \"Sandsquall Eastern Harbor\")",
+	"zoiType": "CannotOwn",
+	"startingAreaGameplayTag":
+	{
+		"tagName": "None"
+	},
+	"cityNodeId":
+	{
+		"guid": "6064633463724965893",
+		"typeId": "1323521343",
+		"name": "None"
+	},
+	"adjacentZonesOfInfluenceIds": [],
+	"corruptionRulesEnabled": true,
+	"bAllowPVPOptInProtection": false,
+	"alignmentsAssignedUponEnteringIds": [],
+	"zoiEnvironmentType": "Harbor",
+	"editorColor":
+	{
+		"x": 0.80800000000000005,
+		"y": 0.99199999999999999,
+		"z": 1
+	},
+	"zOIRewardTables": [
+		{
+			"inclusionExpression":
+			{
+				"expression": "!DoesNPCContainTag(\"NoRewards\")"
+			},
+			"rewardTableId":
+			{
+				"guid": "6064633313653948416",
+				"typeId": "1091110040",
+				"name": "None"
+			}
+		},
+		{
+			"inclusionExpression":
+			{
+				"expression": "!DoesNPCContainTag(\"NoRewards\")"
+			},
+			"rewardTableId":
+			{
+				"guid": "6064633313727152129",
+				"typeId": "1091110040",
+				"name": "None"
+			}
+		}
+	],
+	"economicRegionTableId":
+	{
+		"guid": "6064633463717691396",
+		"typeId": "98738382",
+		"name": "None"
+	},
+	"bHideExperienceEvents": true,
+	"biome": "Desert",
+	"biomeGatherableTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "SandsquallDesert"
+			}
+		],
+		"parentTags": []
+	},
+	"freeholdEstatesIds": [],
+	"actorEffects": [],
+	"guid": "6064633463714283523",
+	"name": "Verra_SAN_HARBOR_SandsquallEastern",
+	"typeId": "9127326"
+}

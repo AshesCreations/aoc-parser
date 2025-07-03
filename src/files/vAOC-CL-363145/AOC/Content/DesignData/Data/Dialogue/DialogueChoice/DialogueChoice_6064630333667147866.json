@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"E5B54EF84A451105B12A249655A03950\", \"I see some fish.\")",
+	"nextNodeId":
+	{
+		"guid": "6064630333668917340",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0005A_FGG_ForGreaterGlory\",\"MAP_0005A_FGG_Phase01\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0005A_TIG_TroubleInGrazeland\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005A_TIG_TroubleInGrazeland\",\"ReportToOrrik\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005A_TIG_TroubleInGrazeland\",\"SpeakToFishmonger\")\r\n"
+	},
+	"guid": "6064630333667147866",
+	"name": "MADD_0005A_TIG_NPC_Fisherman_4",
+	"typeId": "1091110027"
+}

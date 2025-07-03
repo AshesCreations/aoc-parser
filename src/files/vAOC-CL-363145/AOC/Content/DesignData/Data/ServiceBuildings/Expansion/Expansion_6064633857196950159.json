@@ -1,0 +1,132 @@
+{
+	"dEPRECATED_ExpansionPrerequisiteIds": [],
+	"dEPRECATED_RequiredCapabilitiesIds": [],
+	"dEPRECATED_ExpansionSlotId":
+	{
+		"guid": "0",
+		"typeId": "7823460",
+		"name": "None"
+	},
+	"addedMaintenanceId":
+	{
+		"guid": "6064632123358773601",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"dEPRECATED_NodeConstructionCostId":
+	{
+		"guid": "0",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"postInitiationPlayerConstructionCostId":
+	{
+		"guid": "0",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"playerConstructionPhaseDurationMultiplier":
+	{
+		"expression": ""
+	},
+	"playerConstructionPhaseDuration":
+	{
+		"duration": "172800000"
+	},
+	"addedRepairCostId":
+	{
+		"guid": "6064632123311718731",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"addedDisarrayRepairCostId":
+	{
+		"guid": "6064632123274953016",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"expansionName": "NSLOCTEXT(\"[025B865A037C5F7CDCD76C20FC8D50B1]\", \"2614173446E2FCB10A3537AE6DCE9093\", \"Chef\\'s Workshop\")",
+	"expansionDescription": "NSLOCTEXT(\"[025B865A037C5F7CDCD76C20FC8D50B1]\", \"A6DF44EF42900773F445C79FB97B98FF\", \"Stations and Services for Burgeoning Chefs\")",
+	"icon": "/Game/UI/Icons/Nodes/Buildings/BuildingServices/TUI_Icon_ServiceIcon_Cooking.TUI_Icon_ServiceIcon_Cooking",
+	"buildingServices": [
+		{
+			"icon": "/Game/UI/Icons/Nodes/Buildings/BuildingServices/TUI_Icon_ServiceIcon_Cooking.TUI_Icon_ServiceIcon_Cooking",
+			"serviceName": "NSLOCTEXT(\"[3A937076879C9EE4CFD42687DD9352E3]\", \"E8615E6043F104555300C9A3829742CF\", \"Journeyman Cooking Station\")",
+			"serviceDescription": "NSLOCTEXT(\"[3A937076879C9EE4CFD42687DD9352E3]\", \"837E39F8444AF1C3E56899ADF7A66FFA\", \"Craft Journeyman and below tool recipies\")"
+		},
+		{
+			"icon": "/Game/UI/Icons/Nodes/Buildings/BuildingServices/TUI_Icon_ServiceIcon_Vendor.TUI_Icon_ServiceIcon_Vendor",
+			"serviceName": "NSLOCTEXT(\"[3A937076879C9EE4CFD42687DD9352E3]\", \"D2859DF94136B89A9DA19A95C14E8156\", \"Cooking Vendor\")",
+			"serviceDescription": "NSLOCTEXT(\"[3A937076879C9EE4CFD42687DD9352E3]\", \"EFC047AF42DBD1690B9D3FB77105BF8D\", \"Sells Journeyman and below items and recipies\")"
+		}
+	],
+	"postInitiationEvent": 0,
+	"postInitiationVote": true,
+	"voteDuration":
+	{
+		"duration": "172800000"
+	},
+	"voteResultDuration":
+	{
+		"expression": "30"
+	},
+	"removalVoteDuration":
+	{
+		"duration": "172800000"
+	},
+	"removalVoteResultDuration":
+	{
+		"expression": ""
+	},
+	"requiredAchievements": [],
+	"expressionRequirements":
+	{
+		"expression": ""
+	},
+	"expansionSpawnsIds":
+	{
+		"3":
+		{
+			"guid": "6064631879628488731",
+			"typeId": "1091110044",
+			"name": "None"
+		}
+	},
+	"constructionDuration":
+	{
+		"duration": "0"
+	},
+	"dEPRECATED_CapabilitiesIds": [],
+	"dEPRECATED_NodeEffectId":
+	{
+		"guid": "0",
+		"typeId": "9127426",
+		"name": "None"
+	},
+	"nodeModificationsIds": [],
+	"expansionAssetSets": [
+		{
+			"bReplaceBuilding": true,
+			"buildingNodeAssetSetId":
+			{
+				"guid": "6064632519459012610",
+				"typeId": "1323521346",
+				"name": "None"
+			}
+		}
+	],
+	"expansionPopSpawns": [
+		{
+			"bReplacement": true,
+			"buildingSpawns":
+			{
+				"guid": "6064632274652364815",
+				"typeId": "1091110044",
+				"name": "None"
+			}
+		}
+	],
+	"guid": "6064633857196950159",
+	"name": "Construction_Active_Cookhouse_EXP_1A1_ChefsWorkshop",
+	"typeId": "7823461"
+}

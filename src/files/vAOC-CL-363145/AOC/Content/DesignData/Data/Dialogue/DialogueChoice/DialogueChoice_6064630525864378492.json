@@ -1,0 +1,23 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"E5396E624A5D0EA77CCB8BA9BCE318BB\", \"(Record your findings.)\")",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064630525556817985",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0005B_TEW_EnemyWithin\",\"MAP_0005B_TEW_Phase02\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0005B_TGU_TheGreatUnifier\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005B_TGU_TheGreatUnifier\",\"FindShield\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005B_TGU_TheGreatUnifier\",\"ExamineShield\")\r\n"
+	},
+	"guid": "6064630525864378492",
+	"name": "MADD_0005B_TGU_StoneShield_7",
+	"typeId": "1091110027"
+}

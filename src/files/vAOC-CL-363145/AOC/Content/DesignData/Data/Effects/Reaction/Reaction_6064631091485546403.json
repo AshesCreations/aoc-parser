@@ -1,0 +1,25 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 4,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "GetRecordTypeId(GetHitSourceRecord(GetHitEvent())) != GetReactionTypeId() &&\r\nGetStatModValue(GetHitEvent(), $#10516612381411111:108986352686712$) < 0.0 &&\r\nHitHasTag(GetHitEvent(), \"Ability.weaponcombo\") &&\r\nGetEffectCount(GetInstigator(), $#30316002:6064630831382003720$) == 1"
+	},
+	"bEvaluateApplyingHit": false,
+	"instigator": "Owner",
+	"targetsBitmask": 16,
+	"reactHitsIds": [],
+	"instigatorProcLimit": 0,
+	"globalProcLimit": 0,
+	"procReactOnApply": false,
+	"guid": "6064631091485546403",
+	"name": "None",
+	"typeId": "3031600202"
+}

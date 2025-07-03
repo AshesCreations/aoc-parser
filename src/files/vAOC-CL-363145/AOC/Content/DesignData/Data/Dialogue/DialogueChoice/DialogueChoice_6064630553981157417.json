@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"FB03515542A22D6E74F2D9905D09AF7C\", \"(Novice Quest Complete)\")",
+	"nextNodeId":
+	{
+		"guid": "6064630553981157425",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsOnStoryArcQuest(GetPlayer(), \"DO_NOT_START_ME_Foraging_Quest\")&&\r\nGetStoryArcQuestFlag(GetPlayer(), \"DO_NOT_START_ME_Foraging_Quest\", \"PickaxeCollected\")&&\r\nGetStoryArcQuestFlag(GetPlayer(), \"DO_NOT_START_ME_Foraging_Quest\", \"PickaxeTurnedIn\")"
+	},
+	"guid": "6064630553981157417",
+	"name": "ServiceBuildingNPC_Stoneworks_Base_Interaction_Alt_9",
+	"typeId": "1091110027"
+}

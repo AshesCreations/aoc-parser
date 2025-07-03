@@ -1,0 +1,66 @@
+{
+	"displayName": "Physical Mitigation",
+	"description": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"2E1A5EA14314F078884BDF823A0F78E7\", \"Reduces the amount of physical damage taken\")",
+	"bHidden": false,
+	"gameplayType": "Type_Combat",
+	"bHasWaterfallStatsUI": false,
+	"waterfallStatsUIIds": [],
+	"bDisplayAsPercentage": true,
+	"statType": "Type_Float",
+	"bClampStatFinalValue": true,
+	"bMultiplyStatMods": true,
+	"bMultiplyCompliment": true,
+	"base":
+	{
+		"expression": "const base = GetStat(GetOwner(), $#10516612381411111:6064628617716498440$);\r\nconst rating = GetStat(GetInstigator(), $#10516612381411111:109183607068294$);\r\nconst courage = GetStat(GetOwner(), $#10516612381411111:6064629429438907308$);\r\nbase \r\n* (1.0 - rating / (rating + EvalFormula($#10516612381411113:6064630400815595520$)))"
+	},
+	"waterfallStatsBaseIds": [
+		{
+			"guid": "6064628617716498440",
+			"typeId": "10516612381411111",
+			"name": "None"
+		},
+		{
+			"guid": "109183607068294",
+			"typeId": "10516612381411111",
+			"name": "None"
+		},
+		{
+			"guid": "6064629429438907308",
+			"typeId": "10516612381411111",
+			"name": "None"
+		}
+	],
+	"valueMin":
+	{
+		"expression": "0"
+	},
+	"waterfallStatsMinIds": [],
+	"valueMax":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMaxIds": [],
+	"regenRate":
+	{
+		"expression": ""
+	},
+	"waterfallStatsRegenIds": [],
+	"bRegenWhileDead": false,
+	"bRecalculateOnCombatState": false,
+	"onSpawn": "Reset_None",
+	"onDeath": "Reset_None",
+	"onRevive": "Reset_None",
+	"bPersistValue": false,
+	"replication": 5,
+	"shieldStatId":
+	{
+		"guid": "0",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"grantedEffects": [],
+	"guid": "109343399171798",
+	"name": "PhysicalMitigation",
+	"typeId": "10516612381411111"
+}

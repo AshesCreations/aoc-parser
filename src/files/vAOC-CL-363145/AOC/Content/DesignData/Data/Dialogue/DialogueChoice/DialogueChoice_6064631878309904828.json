@@ -1,0 +1,18 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"B97CC3A34374277E397BE39D4A1591C3\", \"Not yet.\")",
+	"nextNodeId":
+	{
+		"guid": "6064631878310232509",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "(Player_HasCommission (GetPlayer(), \"CSQ_RVR_BL_Daragal_TCS\") && !Player_ObjectiveStateEquals(GetPlayer(), \"SQO_RVR_BL_Daragal_Loot4\", EObjectiveState::Complete))"
+	},
+	"choiceType": "Default",
+	"guid": "6064631878309904828",
+	"name": "SQ_BL_Daragal_Rhondo_17",
+	"typeId": "1091110027"
+}

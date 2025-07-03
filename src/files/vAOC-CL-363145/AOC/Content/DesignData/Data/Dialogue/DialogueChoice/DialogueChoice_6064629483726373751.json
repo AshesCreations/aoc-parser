@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"B357096C4F51ED134F1341A660A29D8D\", \"It\\'s me!\")",
+	"nextNodeId":
+	{
+		"guid": "6064629483725456245",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MIA_0020_KOC_KeepOnTheCrossroads\",\"MIP_0020_KOC_Phase01\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MIQ_0020_CTK_ClearTheKeep\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MIQ_0020_CTK_ClearTheKeep\",\"ReadMaidNote\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MIQ_0020_CTK_ClearTheKeep\",\"ReadWellSign\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MIQ_0020_CTK_ClearTheKeep\",\"ReadMap\")"
+	},
+	"guid": "6064629483726373751",
+	"name": "MIDD_0020_CTK_Fisherman_13",
+	"typeId": "1091110027"
+}

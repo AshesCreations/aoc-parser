@@ -1,0 +1,99 @@
+{
+	"eventName": "NSLOCTEXT(\"[8D315A4A491F36F9E732788665761C1B]\", \"502F238841BBD6C62235FBB17F5FC21E\", \"Verra is Generous!\")",
+	"gameplayTags":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"activationPredicatesIds": [
+		{
+			"guid": "6064632263586414594",
+			"typeId": "23095129",
+			"name": "None"
+		}
+	],
+	"minChallengeRating": 0,
+	"maxChallengeRating": 30,
+	"eventLevel": 1,
+	"eventType": 128,
+	"locationId":
+	{
+		"guid": "6064632551926398977",
+		"typeId": "5127371160",
+		"name": "None"
+	},
+	"desiredTimeSlot": "0001.01.01-00.00.00",
+	"frequency": 24,
+	"priority": 1,
+	"rewardTableId":
+	{
+		"guid": "0",
+		"typeId": "1091110040",
+		"name": "None"
+	},
+	"rewardPopulationSetId":
+	{
+		"guid": "0",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"startStageId":
+	{
+		"guid": "6064632551926398983",
+		"typeId": "23095131",
+		"name": "None"
+	},
+	"stagesIds": [
+		{
+			"guid": "6064632551926398978",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064632551926398982",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064632551926398983",
+			"typeId": "23095131",
+			"name": "None"
+		}
+	],
+	"interactVolumesIds": [],
+	"alignmentsIds": [],
+	"mapDisplayType": "Biome",
+	"mapEventIcon": "/Game/UI/Widgets/Narrative/Textures/TUI_Icon_Event_PvE.TUI_Icon_Event_PvE",
+	"bDisplayOnTracker": true,
+	"notificationRadius": 15000,
+	"mapRadiusMinumum": 10000,
+	"cooldownTimer": 300,
+	"bDisabled": true,
+	"maxInstanceCount": 1,
+	"requiredMapName": "Start_Empty",
+	"comments": [],
+	"bIsTemplate": false,
+	"flowNodes": [
+		{
+			"flowType": "EventEntry",
+			"graphLocation":
+			{
+				"x": -251.42860879703221,
+				"y": 117.14285597509274
+			},
+			"id": 0
+		},
+		{
+			"flowType": "EventExit",
+			"graphLocation":
+			{
+				"x": 791.4287082516322,
+				"y": 1039.9999768393395
+			},
+			"id": 1
+		}
+	],
+	"guid": "6064632551926398976",
+	"name": "GM_EVENT_REWARDCHEST",
+	"typeId": "23095125"
+}

@@ -1,0 +1,162 @@
+{
+	"designNotes": "",
+	"levelDefinitionId":
+	{
+		"guid": "6064629126799097877",
+		"typeId": "9227326",
+		"name": "None"
+	},
+	"playerFacingName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"BA2C845245A2909ED164A1AC22B09FF2\", \"Tangled Post\")",
+	"zoiType": "HasNode",
+	"startingAreaGameplayTag":
+	{
+		"tagName": "None"
+	},
+	"cityNodeId":
+	{
+		"guid": "6064633429423882257",
+		"typeId": "1323521343",
+		"name": "None"
+	},
+	"adjacentZonesOfInfluenceIds": [
+		{
+			"guid": "6064633430691414041",
+			"typeId": "9127326",
+			"name": "None"
+		},
+		{
+			"guid": "6064633448024376293",
+			"typeId": "9127326",
+			"name": "None"
+		},
+		{
+			"guid": "6064633430746988577",
+			"typeId": "9127326",
+			"name": "None"
+		},
+		{
+			"guid": "6064629126906904602",
+			"typeId": "9127326",
+			"name": "None"
+		}
+	],
+	"corruptionRulesEnabled": true,
+	"bAllowPVPOptInProtection": false,
+	"alignmentsAssignedUponEnteringIds": [],
+	"zoiEnvironmentType": "None",
+	"editorColor":
+	{
+		"x": 0.90600000000000003,
+		"y": 0.247,
+		"z": 0.45500000000000002
+	},
+	"zOIRewardTables": [
+		{
+			"inclusionExpression":
+			{
+				"expression": "!DoesNPCContainTag(\"NoRewards\")"
+			},
+			"rewardTableId":
+			{
+				"guid": "6064633313653948416",
+				"typeId": "1091110040",
+				"name": "None"
+			}
+		},
+		{
+			"inclusionExpression":
+			{
+				"expression": "DoesNPCContainTag(\"character.humanoid\")"
+			},
+			"rewardTableId":
+			{
+				"guid": "6064633584457744403",
+				"typeId": "1091110040",
+				"name": "None"
+			}
+		}
+	],
+	"economicRegionTableId":
+	{
+		"guid": "6064633430736896030",
+		"typeId": "98738382",
+		"name": "None"
+	},
+	"bHideExperienceEvents": false,
+	"biome": "Jungle",
+	"biomeGatherableTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "Jundark"
+			}
+		],
+		"parentTags": []
+	},
+	"freeholdEstatesIds": [
+		{
+			"guid": "6064633577832513536",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633577887825921",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633577888284674",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633577888743427",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633667512500224",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633577889398789",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633577889660934",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633577889923079",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633577890381832",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633577890775049",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633577891037194",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633577891430411",
+			"typeId": "1337133701",
+			"name": "None"
+		}
+	],
+	"actorEffects": [],
+	"guid": "6064633430733291549",
+	"name": "Verra_JUN_Node_TangledPost",
+	"typeId": "9127326"
+}

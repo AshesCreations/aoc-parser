@@ -1,0 +1,18 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"F0FBC04C4DA28C5023FEF39EFC79DE35\", \"Has Quest, AND Has Item AND QuestNotComplete\")",
+	"nextNodeId":
+	{
+		"guid": "6064631052822904854",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "Player_HasCommission(GetPlayer(),\"CSQ_RVR_0004_SOG_TheStudyOfGoblins\")&&\r\nPlayer_HasItem(GetPlayer(),\"CSQ_0004_Map_BloodRuneLocation\")"
+	},
+	"choiceType": "Default",
+	"guid": "6064631052813991955",
+	"name": "CSQ_DialDef_0004_SOG_ProfessorHughes_4",
+	"typeId": "1091110027"
+}

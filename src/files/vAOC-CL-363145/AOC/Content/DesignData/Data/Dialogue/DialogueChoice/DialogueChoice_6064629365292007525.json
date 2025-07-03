@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"3AA6DD9F461F68D4891D728D82AF936C\", \"[A.R.D.I.S.]\")",
+	"nextNodeId":
+	{
+		"guid": "6064629365294039142",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MIA_0015_TPT_ThePhantomTower\",\"MIP_0015_TPT_Phase01\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MIQ_0015_PTS_PartingTheSeas\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MIQ_0015_PTS_PartingTheSeas\",\"ExaminedIntraSphere\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MIQ_0015_PTS_PartingTheSeas\",\"LookupIntraSphere\")"
+	},
+	"guid": "6064629365292007525",
+	"name": "MIDD_0015_PTS_ClockworkCodex_14",
+	"typeId": "1091110027"
+}

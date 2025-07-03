@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"F80F3E0E400C625137E5DD965F1E9222\", \"Phase 1, done with handbill, get Seljuk Quest\")",
+	"nextNodeId":
+	{
+		"guid": "6064630096036954131",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "(IsOnStoryArcQuest(GetPlayer(), \"SAQ_0022_p1q1_Handbill\")&&GetStoryArcQuestFlag(GetPlayer(),\"SAQ_0022_p1q1_Handbill\",\"Handbill5\"))&&(IsOnStoryArcQuest(GetPlayer(), \"SAQ_0022_p1q3_Stonefaced\"))"
+	},
+	"guid": "6064630095797616657",
+	"name": "0022_Seph_Seljuk_35",
+	"typeId": "1091110027"
+}

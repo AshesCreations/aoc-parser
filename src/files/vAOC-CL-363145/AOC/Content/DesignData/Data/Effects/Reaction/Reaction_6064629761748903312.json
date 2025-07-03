@@ -1,0 +1,32 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 4,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0,
+		"fishingEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "const SourceRecordType = GetRecordTypeId(GetHitSourceRecord(GetHitEvent()));\r\n\r\nSourceRecordType != GetReactionTypeId() && SourceRecordType != GetEffectTypeId() &&\r\nGetStatModValue(GetHitEvent(), $#10516612381411111:108986352686712$) < 0.0\r\n&&\r\n(HitHasTag(GetHitEvent(), \"Combostep.End\") ||\r\nHitHasTag(GetHitEvent(), \"Archetype.Ranger.Ammo\"))"
+	},
+	"bEvaluateApplyingHit": false,
+	"instigator": "Owner",
+	"targetsBitmask": 8,
+	"reactHitsIds": [
+		{
+			"guid": "6064629761757488529",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"instigatorProcLimit": 0,
+	"globalProcLimit": 0,
+	"procReactOnApply": false,
+	"guid": "6064629761748903312",
+	"name": "Ranger_EnhanceArmament_Barbed_DamageTrigger",
+	"typeId": "3031600202"
+}

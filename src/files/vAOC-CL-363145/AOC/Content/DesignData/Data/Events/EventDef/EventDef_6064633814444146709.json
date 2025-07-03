@@ -1,0 +1,101 @@
+{
+	"eventName": "NSLOCTEXT(\"[4BE4F0A16D08556ACD6685BF392E6719]\", \"7E04F3734439AFC97CABC8A004EF1C46\", \"The Gilded Enigma\")",
+	"gameplayTags":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"activationPredicatesIds": [
+		{
+			"guid": "6064633814444146710",
+			"typeId": "23095129",
+			"name": "None"
+		}
+	],
+	"minChallengeRating": 0,
+	"maxChallengeRating": 30,
+	"eventLevel": 2,
+	"eventType": 128,
+	"locationId":
+	{
+		"guid": "6064633814444146720",
+		"typeId": "5127371160",
+		"name": "None"
+	},
+	"desiredTimeSlot": "0001.01.01-00.00.00",
+	"frequency": 24,
+	"priority": 1,
+	"rewardTableId":
+	{
+		"guid": "0",
+		"typeId": "1091110040",
+		"name": "None"
+	},
+	"rewardPopulationSetId":
+	{
+		"guid": "0",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"startStageId":
+	{
+		"guid": "6064633814444146711",
+		"typeId": "23095131",
+		"name": "None"
+	},
+	"stagesIds": [
+		{
+			"guid": "6064633814444146711",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064633814444146713",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064633814460071978",
+			"typeId": "23095131",
+			"name": "None"
+		}
+	],
+	"interactVolumesIds": [],
+	"alignmentsIds": [],
+	"mapDisplayType": "Biome",
+	"mapEventIcon": "/Game/UI/Icons/Map/TUI_Icon_Map_Event_Active.TUI_Icon_Map_Event_Active",
+	"mapDisplayTrackerFiltersIds": [],
+	"bDisplayOnTracker": true,
+	"notificationRadius": 15000,
+	"mapRadiusMinumum": 1000,
+	"cooldownTimer": 300,
+	"bDisabled": false,
+	"maxInstanceCount": 1,
+	"requiredMapName": "Verra_World_Master",
+	"comments": [],
+	"bIsTemplate": false,
+	"flowNodes": [
+		{
+			"flowType": "EventEntry",
+			"graphLocation":
+			{
+				"x": -453.33333637979251,
+				"y": 814.66667633586462
+			},
+			"id": 0
+		},
+		{
+			"flowType": "EventExit",
+			"graphLocation":
+			{
+				"x": 1891.818211594642,
+				"y": 834.77272562159203
+			},
+			"id": 1
+		}
+	],
+	"bSkipCrashRecovery": false,
+	"guid": "6064633814444146709",
+	"name": "EVT_ANV_0004_GildedEnigma",
+	"typeId": "23095125"
+}

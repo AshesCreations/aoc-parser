@@ -1,0 +1,14 @@
+{
+	"trigger":
+	{
+		"expression": "GetStatModValue(GetHitInProgress(), GetTarget(), $#10516612381411111:108986352686712$) < 0.0 &&\r\n!HitFlagsContains(GetHitFlags(GetHitInProgress()), EHitFlag::Redirect) &&\r\nGetInstigator() != GetTarget()"
+	},
+	"target": "RedirectInstigator",
+	"ratio":
+	{
+		"expression": "0.5 / GetEffectCount(GetTarget(),$#30316002:6064633503282299442$)"
+	},
+	"guid": "6064633503303467571",
+	"name": "Ramekin_Healer_Soullink",
+	"typeId": "3031600209"
+}

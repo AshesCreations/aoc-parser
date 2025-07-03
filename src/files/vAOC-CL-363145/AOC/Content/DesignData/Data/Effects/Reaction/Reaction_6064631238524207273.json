@@ -1,0 +1,32 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 4,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0,
+		"fishingEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "HitHasTag(GetHitEvent(), \"Ability.weaponcombo\")\r\n&& HitHasTag(GetHitEvent(), \"combostep.end\")\r\n&& GetInstigator() == GetOwner() \r\n&& GetEffectCount(GetInstigator(), $#30316002:6064631212173492744$) == 1\r\n&& GetEffectCount(GetInstigator(), $#30316002:6064632468947286527$) > 0"
+	},
+	"bEvaluateApplyingHit": false,
+	"instigator": "Owner",
+	"targetsBitmask": 8,
+	"reactHitsIds": [
+		{
+			"guid": "6064631238527811754",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"instigatorProcLimit": 0,
+	"globalProcLimit": 0,
+	"procReactOnApply": false,
+	"guid": "6064631238524207273",
+	"name": "Bard_ResonantWeapon_End_Cathartic",
+	"typeId": "3031600202"
+}

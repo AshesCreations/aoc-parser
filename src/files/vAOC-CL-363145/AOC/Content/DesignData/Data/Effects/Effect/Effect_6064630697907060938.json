@@ -1,0 +1,154 @@
+{
+	"effectCategory": "EFFECT_Debuff",
+	"effectTags": [],
+	"effectName": "Corruption III",
+	"effectDescription": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"8BEDB388494829DCB3D64F9E684E44D3\", \"You are corrupted.\\r\\nGuards will attack you on sight and players will hunt you.\\r\\nSlay monsters or die to reduce your corruption.\\r\\n\\r\\nYou deal 45% less damage to non-combatant players.\\r\\nYou suffer 45% reduced mitigation, health, and mana.\\r\\nYou move 15% slower.\\r\\nYou incur 14% XP debt upon death.\\r\\nYou drop 45% more resources upon death.\\r\\n<Corruption>You drop 3 to 5 equipped items randomly upon death.</>\")",
+	"effectIcon": "/Game/UI/Icons/Alignments/TUI_Corruption_3.TUI_Corruption_3",
+	"effectFloatingText": "",
+	"bDispellable": false,
+	"bSignificant": true,
+	"scriptOnApply": "None",
+	"scriptOnExpire": "None",
+	"bSetUnkillable": false,
+	"bGrantsPVPOptInProtection": false,
+	"effectFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"applicationRequirements":
+	{
+		"expression": ""
+	},
+	"bOverrideDefaultResistRate": false,
+	"resistRate":
+	{
+		"expression": ""
+	},
+	"bInfiniteDuration": true,
+	"effectDuration":
+	{
+		"expression": ""
+	},
+	"bNumStacksLostOnDurationElapse": false,
+	"numStacksLostOnDurationElapse":
+	{
+		"expression": ""
+	},
+	"bPersistsThroughDeath": true,
+	"bPersistsRelog": false,
+	"effectGroupId":
+	{
+		"guid": "0",
+		"typeId": "30316004",
+		"name": "None"
+	},
+	"effectStackType": "STACK_OverrideAlways",
+	"bCompareSourceWhenStacking": true,
+	"collateStacksInUI": false,
+	"globalStackLimit": 10,
+	"inPlaceStackLimit":
+	{
+		"expression": ""
+	},
+	"stackDurationRefresh": "STACK_AlwaysRefresh",
+	"extensionAmount":
+	{
+		"expression": ""
+	},
+	"extendedMaximum": 50,
+	"scriptOnMaxStacks": "None",
+	"bLimitStacksFromInstigator": false,
+	"instigatorStackLimit":
+	{
+		"expression": ""
+	},
+	"tickTimer": 0,
+	"bIgnoreInitialTick": false,
+	"scriptOnTick": "None",
+	"bRecalculateHitOnTick": false,
+	"preApplyHitsIds": [],
+	"applyHitsIds": [],
+	"tickHitsIds": [],
+	"consumeHitsIds": [],
+	"removeHitsIds": [],
+	"expireHitsIds": [],
+	"endHitsIds": [],
+	"statModsIds": [
+		{
+			"guid": "6064632197094768880",
+			"typeId": "3031600201",
+			"name": "None"
+		},
+		{
+			"guid": "6064632422926450688",
+			"typeId": "3031600201",
+			"name": "None"
+		},
+		{
+			"guid": "6064632423129808899",
+			"typeId": "3031600201",
+			"name": "None"
+		},
+		{
+			"guid": "6064632422929924097",
+			"typeId": "3031600201",
+			"name": "None"
+		},
+		{
+			"guid": "6064632422951485442",
+			"typeId": "3031600201",
+			"name": "None"
+		},
+		{
+			"guid": "6064632543879430151",
+			"typeId": "3031600201",
+			"name": "None"
+		}
+	],
+	"spawnNPCsIds": [],
+	"spawnLingeringZonesIds": [],
+	"redirectsIds": [],
+	"reactionsIds": [],
+	"crowdControlId":
+	{
+		"guid": "0",
+		"typeId": "3031600206",
+		"name": "None"
+	},
+	"resistancesIds": [],
+	"fragilityDefinitionsIds": [],
+	"hitModsIds": [],
+	"addAlignmentsIds": [],
+	"removeAlignmentsIds": [],
+	"bApplyScale": false,
+	"scaleAmount":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"scaleTime": 0,
+	"statusVFX": "None",
+	"supressClickTargeting":
+	{
+		"expression": ""
+	},
+	"supressTabAndSoftTargeting":
+	{
+		"expression": ""
+	},
+	"supressNameplate":
+	{
+		"expression": ""
+	},
+	"bSlowFall": false,
+	"bNeverCull": false,
+	"addedAkEvents": [],
+	"removedAkEvents": [],
+	"akSwitchValues": [],
+	"guid": "6064630697907060938",
+	"name": "Corruption_3",
+	"typeId": "30316002"
+}

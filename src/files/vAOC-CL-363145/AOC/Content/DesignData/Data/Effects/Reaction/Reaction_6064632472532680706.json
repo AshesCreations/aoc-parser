@@ -1,0 +1,32 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 0,
+		"effectEvents": 0,
+		"abilityEvents": 4,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0,
+		"fishingEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "AbilityHasTag(GetConsumedAbility(), \"Element.Magical.Ice\")"
+	},
+	"bEvaluateApplyingHit": false,
+	"instigator": "Owner",
+	"targetsBitmask": 1,
+	"reactHitsIds": [
+		{
+			"guid": "6064632472559222791",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"instigatorProcLimit": 0,
+	"globalProcLimit": 0,
+	"procReactOnApply": false,
+	"guid": "6064632472532680706",
+	"name": "Mage_Amplification_Ice",
+	"typeId": "3031600202"
+}

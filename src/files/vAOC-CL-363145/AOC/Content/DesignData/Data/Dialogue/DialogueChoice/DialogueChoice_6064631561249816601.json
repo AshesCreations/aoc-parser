@@ -1,0 +1,22 @@
+{
+	"choiceText": "",
+	"nextNodeId":
+	{
+		"guid": "6064633742302512134",
+		"typeId": "1091110028",
+		"name": "SQ_34_Tul_Dialog_56"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "!Player_HasCompletedCommission(GetPlayer(), \"SQ_34_VAV\") && !Player_HasCommission (GetPlayer(), \"SQ_34_VAV\")"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064631561249816601",
+	"name": "SQ_34_Tul_5",
+	"typeId": "1091110027"
+}

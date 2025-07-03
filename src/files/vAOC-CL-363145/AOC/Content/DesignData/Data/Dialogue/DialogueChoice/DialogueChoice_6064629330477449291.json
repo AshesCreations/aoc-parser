@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"A0B14A2D499366AE9AEDF793CFA6B231\", \"I bring you ashes!\")",
+	"nextNodeId":
+	{
+		"guid": "6064629330480726092",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MIA_0016_LOL_LastOfLyneth\",\"MIP_0016_LOL_Phase02\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MIQ_0016_TMC_TheMidnightCarnival\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MIQ_0016_TMC_TheMidnightCarnival\",\"HaveForgottenAshes\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MIQ_0016_TMC_TheMidnightCarnival\",\"HaveGrimAshes\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MIQ_0016_TMC_TheMidnightCarnival\",\"HaveUndyingAshes\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MIQ_0016_TMC_TheMidnightCarnival\",\"HaveLochspireAshes\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MIQ_0016_TMC_TheMidnightCarnival\",\"GiveLastAshes\")"
+	},
+	"guid": "6064629330477449291",
+	"name": "MIDD_0016_TMC_PrimeHealer_4",
+	"typeId": "1091110027"
+}

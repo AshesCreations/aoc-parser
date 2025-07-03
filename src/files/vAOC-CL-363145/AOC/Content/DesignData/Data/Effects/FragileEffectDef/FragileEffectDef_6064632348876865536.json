@@ -1,0 +1,33 @@
+{
+	"effectFragilityType": "FRAGILITY_Tick",
+	"eventBindings":
+	{
+		"hitEvents": 0,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0,
+		"fishingEvents": 0
+	},
+	"evaluationTickFrequency": 1,
+	"shouldBreakEffectImmediately":
+	{
+		"expression": "var inCombat = IsInCombat(GetOwner());\r\nvar stamCompare = 1.0;\r\n\r\nif (inCombat)\r\n{\r\nset stamCompare = 2.5;\r\n}\r\n\r\nGetStat(GetOwner(), $#10516612381411111:6064629575339934476$) < stamCompare"
+	},
+	"shouldEvaluateThresholdAccumulation":
+	{
+		"expression": ""
+	},
+	"effectBreakThreshold":
+	{
+		"expression": ""
+	},
+	"effectBreakThresholdAccumulationRate":
+	{
+		"expression": ""
+	},
+	"guid": "6064632348876865536",
+	"name": "General_Stamina_Sprint_NoStamina_Fragility",
+	"typeId": "30316112"
+}

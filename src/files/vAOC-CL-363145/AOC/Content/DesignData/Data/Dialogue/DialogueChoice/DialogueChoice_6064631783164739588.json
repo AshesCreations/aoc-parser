@@ -1,0 +1,18 @@
+{
+	"choiceText": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"EE9AD7E34BFB61FE614F81932DE25725\", \"Election state is registration period\")",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "Node_GetElectionState($#1323521343:6064628934942261248$) == EMayorElectionState::RegistrationPeriod"
+	},
+	"choiceType": "Default",
+	"guid": "6064631783164739588",
+	"name": "Node_GetElectionState",
+	"typeId": "1091110027"
+}

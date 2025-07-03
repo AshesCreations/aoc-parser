@@ -1,0 +1,55 @@
+{
+	"predicate":
+	{
+		"expression": ""
+	},
+	"rewardDefContainers": [],
+	"subTableSelectionAlgorithm": "RollEachByPercent",
+	"numberOfSubtablesToSelect": 2,
+	"weightsPerSubTable": [],
+	"percentagePerSubTable": [
+		{
+			"expression": "const levelDiff = GetPlayerLootMaxLevel() - Float(GetCharacterLevel(GetOwner()));\r\n\r\nEvalFormula($#10516612381411113:6064632242666341269$) * EvalCurve($#10516612381411114:6064632214182757247$, GetPlayerLootAvgLuck()) * EvalCurve($#10516612381411114:6064632237548240902$, Abs(levelDiff))"
+		},
+		{
+			"expression": "const levelDiff = GetPlayerLootMaxLevel() - Float(GetCharacterLevel(GetOwner()));\r\n\r\nEvalFormula($#10516612381411113:6064632242666406806$) * EvalCurve($#10516612381411114:6064632214182757247$, GetPlayerLootAvgLuck()) * EvalCurve($#10516612381411114:6064632237548240902$, Abs(levelDiff))"
+		},
+		{
+			"expression": "const levelDiff = GetPlayerLootMaxLevel() - Float(GetCharacterLevel(GetOwner()));\r\n\r\nEvalFormula($#10516612381411113:6064632243242533812$) * EvalCurve($#10516612381411114:6064632214182757247$, GetPlayerLootAvgLuck()) * EvalCurve($#10516612381411114:6064632237548240902$, Abs(levelDiff))"
+		}
+	],
+	"subTablesWeightCurve":
+	{
+		"externalCurve": "None",
+		"editorCurveData":
+		{
+			"keys": [],
+			"defaultValue": 3.4028234663852886e+38,
+			"preInfinityExtrap": "RCCE_Constant",
+			"postInfinityExtrap": "RCCE_Constant",
+			"keyHandlesToIndices":
+			{
+			}
+		}
+	},
+	"subTablesIds": [
+		{
+			"guid": "6064632255126896739",
+			"typeId": "1091110040",
+			"name": "None"
+		},
+		{
+			"guid": "6064632255127093348",
+			"typeId": "1091110040",
+			"name": "None"
+		},
+		{
+			"guid": "6064632267090821196",
+			"typeId": "1091110040",
+			"name": "None"
+		}
+	],
+	"guid": "6064630405968887815",
+	"name": "Bandit_Healer",
+	"typeId": "1091110040"
+}

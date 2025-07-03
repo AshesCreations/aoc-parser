@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"7B39DFC34B4D79F7052A57820A2CEE9F\", \"[EMERGENCY ENTRY]\")",
+	"nextNodeId":
+	{
+		"guid": "6064629375890358337",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MIA_0015_TPT_ThePhantomTower\",\"MIP_0015_TPT_Phase02\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MIQ_0015_AAV_AnAncientVisitor\",\"KilledGolgoth\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MIQ_0015_AAV_AnAncientVisitor\",\"AskedCodex\")"
+	},
+	"guid": "6064629375887474752",
+	"name": "MIDD_0015_AAV_ClockworkCodex_7",
+	"typeId": "1091110027"
+}

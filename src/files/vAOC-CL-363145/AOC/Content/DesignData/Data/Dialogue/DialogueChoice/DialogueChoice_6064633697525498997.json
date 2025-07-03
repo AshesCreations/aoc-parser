@@ -1,0 +1,22 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"C874D6904B5A89CD637DDCB12E62C4C4\", \"I\\'d like to practice defending a caravan.\")",
+	"nextNodeId":
+	{
+		"guid": "6064633697505444978",
+		"typeId": "1091110028",
+		"name": "Caravan_Master_Dialog_53"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "(!Player_HasCommission (GetPlayer(), \"CSQ_0161_FTUE_DefendCaravan\") && !Player_HasCompletedCommission(GetPlayer(), \"CSQ_0161_FTUE_DefendCaravan\"))"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064633697525498997",
+	"name": "Caravan_Master_Dialog_49_Choice_4",
+	"typeId": "1091110027"
+}

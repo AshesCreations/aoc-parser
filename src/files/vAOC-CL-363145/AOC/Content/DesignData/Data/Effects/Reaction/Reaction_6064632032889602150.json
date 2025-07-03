@@ -1,0 +1,31 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 2,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "GetStatModValue(GetHitEvent(), GetOwner(), $#10516612381411111:108986352686712$) < 0.0 // owner was hit for damage\r\n&& HitFlagsContains(GetHitFlags(GetHitEvent(), GetOwner()), EHitFlag::Block) // and owner blocked"
+	},
+	"bEvaluateApplyingHit": false,
+	"instigator": "Owner",
+	"targetsBitmask": 1,
+	"reactHitsIds": [
+		{
+			"guid": "6064632032908607793",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"instigatorProcLimit": 0,
+	"globalProcLimit": 0,
+	"procReactOnApply": false,
+	"guid": "6064632032889602150",
+	"name": "General_Guard_Block_Reaction",
+	"typeId": "3031600202"
+}

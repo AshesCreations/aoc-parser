@@ -1,0 +1,32 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 4,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0,
+		"fishingEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "HitHasTag(GetHitEvent(), \"Ability.weaponcombo\")\r\n&& HitHasTag(GetHitEvent(), \"combostep.end\")\r\n&& GetInstigator() == GetOwner() \r\n&& GetEffectCount(GetInstigator(), $#30316002:6064631006744216277$) == 1\r\n&& GetEffectCount(GetInstigator(), $#30316002:6064632468947286527$) > 0"
+	},
+	"bEvaluateApplyingHit": false,
+	"instigator": "Owner",
+	"targetsBitmask": 1,
+	"reactHitsIds": [
+		{
+			"guid": "6064631159642525753",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"instigatorProcLimit": 0,
+	"globalProcLimit": 0,
+	"procReactOnApply": false,
+	"guid": "6064631159634202679",
+	"name": "Bard_ResonantWeapon_End_Pensive",
+	"typeId": "3031600202"
+}

@@ -1,0 +1,22 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"6D479D70490ACA548A9BCBB6E9B43FDF\", \"I\\'m not done\")",
+	"nextNodeId":
+	{
+		"guid": "6064632711202668575",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "(Player_HasCommission (GetPlayer(), \"CSQ_RVR_BL_Daragal_TCS\") && !Player_ObjectiveStateEquals(GetPlayer(), \"SQO_RVR_BL_Daragal_Loot4\", EObjectiveState::Complete))"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064632711202668574",
+	"name": "SQ_RVR_NPC_Samias_Briarmoor_Jefferson_4_Choice_2",
+	"typeId": "1091110027"
+}

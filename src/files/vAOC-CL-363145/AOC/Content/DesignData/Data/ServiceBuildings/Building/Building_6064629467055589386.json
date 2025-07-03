@@ -1,0 +1,144 @@
+{
+	"prerequisitesIds": [],
+	"levelsIds":
+	{
+		"3":
+		{
+			"guid": "6064629466536804382",
+			"typeId": "7823458",
+			"name": "None"
+		},
+		"4":
+		{
+			"guid": "6064629466536935455",
+			"typeId": "7823458",
+			"name": "None"
+		},
+		"5":
+		{
+			"guid": "6064629466537132064",
+			"typeId": "7823458",
+			"name": "None"
+		},
+		"6":
+		{
+			"guid": "6064629466537328673",
+			"typeId": "7823458",
+			"name": "None"
+		}
+	},
+	"buildingAssetSetId":
+	{
+		"guid": "6064631346534679304",
+		"typeId": "1323521346",
+		"name": "None"
+	},
+	"nodeConstructionCostId":
+	{
+		"guid": "6064631166518034733",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"maintenanceCostId":
+	{
+		"guid": "6064632123090927908",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"playerConstructionCostId":
+	{
+		"guid": "6064631166871404889",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"damagedRepairCostId":
+	{
+		"guid": "6064632123126055214",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"disarrayRepairCostId":
+	{
+		"guid": "6064632123104428329",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"disarrayDebuffId":
+	{
+		"guid": "0",
+		"typeId": "30316002",
+		"name": "None"
+	},
+	"dEPRECATED_ExpansionsIds": [],
+	"serviceBuildingType": "Cultural",
+	"housingPropertyTiersIds": [],
+	"icon": "/Game/UI/Icons/Nodes/Buildings/BuildingNodes/TUI_Icon_NodeBldngs_MemorialSite.TUI_Icon_NodeBldngs_MemorialSite",
+	"mapIconVisualId":
+	{
+		"guid": "6064632399378382861",
+		"typeId": "949952112329",
+		"name": "None"
+	},
+	"buildingName": "NSLOCTEXT(\"\", \"ECA758824FD3AA3F6B79D49EAD21D93F\", \"Memorial Site\")",
+	"buildingDescription": "NSLOCTEXT(\"\", \"861A5D6B4968A5054A1F8A8254ED4850\", \"The Memorial Site is a passive service building that lessens the pentalties of death in the ZOI and can be visited to gain a random buff.\")",
+	"buildingServices": [
+		{
+			"icon": "/Game/UI/Icons/Nodes/Buildings/BuildingServices/TUI_Icon_ServiceIcon_NodeBuff.TUI_Icon_ServiceIcon_NodeBuff",
+			"serviceName": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"3BF79699438A1FFDA8C633A7198E18B0\", \"Zone of Influence: Blessings Of Creation\")",
+			"serviceDescription": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"DD4637D1480D1C6A2A97E1B9D59919E6\", \"Provides a 50% reduction of XP debt on death\")"
+		}
+	],
+	"buildingServiceDescriptions": [],
+	"bDisplayInBuildingManager": true,
+	"constructionPhaseDuration":
+	{
+		"duration": "604800000"
+	},
+	"buildingContributionPhasesId":
+	{
+		"guid": "6064632161551122432",
+		"typeId": "1091110047",
+		"name": "None"
+	},
+	"dEPRECATED_CapabilitiesIds": [],
+	"dEPRECATED_NodeEffectId":
+	{
+		"guid": "0",
+		"typeId": "9127426",
+		"name": "None"
+	},
+	"localeOriginId":
+	{
+		"guid": "0",
+		"typeId": "421003",
+		"name": "None"
+	},
+	"nodeModificationsIds": [
+		{
+			"guid": "6064632104940863488",
+			"typeId": "1091110048",
+			"name": "None"
+		}
+	],
+	"expansionSkillTreeId":
+	{
+		"guid": "0",
+		"typeId": "30316003",
+		"name": "None"
+	},
+	"repairStateDurationModifier":
+	{
+		"expression": ""
+	},
+	"demolitionStateDurationModifier":
+	{
+		"expression": ""
+	},
+	"voteResultDuration":
+	{
+		"expression": ""
+	},
+	"guid": "6064629467055589386",
+	"name": "Construction_Support_MemorialSite_Building",
+	"typeId": "7823463"
+}

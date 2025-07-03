@@ -1,0 +1,27 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 4,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "GetStatModValue(GetHitEvent(), $#10516612381411111:108986352686712$) < 0.0"
+	},
+	"bEvaluateApplyingHit": true,
+	"instigator": "Instigator",
+	"targetsBitmask": 2,
+	"reactHitsIds": [
+		{
+			"guid": "6064629687086743677",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"guid": "6064629686901080188",
+	"name": "Cleric_DivinePower_Gen_Damage",
+	"typeId": "3031600202"
+}

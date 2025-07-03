@@ -1,0 +1,102 @@
+{
+	"eventName": "NSLOCTEXT(\"\", \"A07C9D134130F085389BA28D2474A30E\", \"Testing\")",
+	"gameplayTags":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"activationPredicatesIds": [
+		{
+			"guid": "109183305799292",
+			"typeId": "23095129",
+			"name": "None"
+		}
+	],
+	"minChallengeRating": 0,
+	"maxChallengeRating": 30,
+	"eventType": 128,
+	"locationId":
+	{
+		"guid": "6064629733238046795",
+		"typeId": "23095137",
+		"name": "None"
+	},
+	"desiredTimeSlot": "0001.01.01-00.00.00",
+	"frequency": 24,
+	"priority": 1,
+	"rewardTableId":
+	{
+		"guid": "0",
+		"typeId": "1091110040",
+		"name": "None"
+	},
+	"rewardPopulationSetId":
+	{
+		"guid": "0",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"startStageId":
+	{
+		"guid": "109183305799290",
+		"typeId": "23095131",
+		"name": "None"
+	},
+	"stagesIds": [
+		{
+			"guid": "109183305799290",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "109183490807442",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "109183305799291",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "109183305799289",
+			"typeId": "23095131",
+			"name": "None"
+		}
+	],
+	"alignmentsIds": [],
+	"mapDisplayType": "None",
+	"mapEventIcon": "None",
+	"bDisplayOnTracker": true,
+	"notificationRadius": 15000,
+	"mapRadiusMinumum": 1000,
+	"cooldownTimer": 300,
+	"bDisabled": true,
+	"maxInstanceCount": 1,
+	"requiredMapName": "Verra_World_Master",
+	"comments": [],
+	"bIsTemplate": false,
+	"flowNodes": [
+		{
+			"flowType": "EventEntry",
+			"graphLocation":
+			{
+				"x": -1370.7691993656967,
+				"y": -179.99998459449267
+			},
+			"id": 0
+		},
+		{
+			"flowType": "EventExit",
+			"graphLocation":
+			{
+				"x": -470.76919936569686,
+				"y": 1575.3845947310783
+			},
+			"id": 1
+		}
+	],
+	"guid": "109183305799288",
+	"name": "TestNewSpawnsEvent",
+	"typeId": "23095125"
+}

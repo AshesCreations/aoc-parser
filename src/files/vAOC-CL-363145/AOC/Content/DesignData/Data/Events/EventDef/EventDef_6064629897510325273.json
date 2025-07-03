@@ -1,0 +1,109 @@
+{
+	"eventName": "NSLOCTEXT(\"\", \"01FAAC694F4C99AD2EBAEDA87F37344E\", \"Spore Tender\")",
+	"gameplayTags":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"activationPredicatesIds": [
+		{
+			"guid": "6064629897510325277",
+			"typeId": "23095129",
+			"name": "None"
+		}
+	],
+	"minChallengeRating": 0,
+	"maxChallengeRating": 30,
+	"eventLevel": 1,
+	"eventType": 1,
+	"locationId":
+	{
+		"guid": "6064631561688711187",
+		"typeId": "5127371160",
+		"name": "None"
+	},
+	"desiredTimeSlot": "0001.01.01-00.00.00",
+	"frequency": 24,
+	"priority": 1,
+	"rewardTableId":
+	{
+		"guid": "0",
+		"typeId": "1091110040",
+		"name": "None"
+	},
+	"rewardPopulationSetId":
+	{
+		"guid": "0",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"startStageId":
+	{
+		"guid": "6064629897510325279",
+		"typeId": "23095131",
+		"name": "None"
+	},
+	"stagesIds": [
+		{
+			"guid": "6064629897510325279",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064629897510325290",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064629897510325282",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064629897510325285",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064629897510325275",
+			"typeId": "23095131",
+			"name": "None"
+		}
+	],
+	"interactVolumesIds": [],
+	"alignmentsIds": [],
+	"mapDisplayType": "Biome",
+	"mapEventIcon": "/Game/UI/Widgets/Narrative/Textures/TUI_Icon_Event_PvETracker.TUI_Icon_Event_PvETracker",
+	"bDisplayOnTracker": true,
+	"notificationRadius": 15000,
+	"mapRadiusMinumum": 1000,
+	"cooldownTimer": 600,
+	"bDisabled": true,
+	"maxInstanceCount": 1,
+	"requiredMapName": "Verra_World_Master",
+	"comments": [],
+	"bIsTemplate": false,
+	"flowNodes": [
+		{
+			"flowType": "EventEntry",
+			"graphLocation":
+			{
+				"x": 642.60317664071897,
+				"y": -1123.8095284919009
+			},
+			"id": 0
+		},
+		{
+			"flowType": "EventExit",
+			"graphLocation":
+			{
+				"x": 119.36508108772334,
+				"y": 1302.3133918968394
+			},
+			"id": 1
+		}
+	],
+	"guid": "6064629897510325273",
+	"name": "ED_Event_0013_EliteMush",
+	"typeId": "23095125"
+}

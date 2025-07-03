@@ -1,0 +1,74 @@
+{
+	"assetRef": "/Game/DesignAssets/Population/NPC/Monster/Undead/Dunir/DunirMage/Dunir_Mage.Dunir_Mage",
+	"lootTablesIds": [],
+	"populationFilter":
+	{
+		"zoneOfInfluenceIds": [],
+		"nodeIds": [],
+		"cultures": [],
+		"nodeTypes": [],
+		"biomes": [],
+		"seasons": [],
+		"nodeLevelMin": "Wilderness",
+		"nodeLevelMax": "Metropolis",
+		"timeOfDayStart": -1,
+		"timeOfDayEnd": -1,
+		"weatherTypes": [],
+		"spawningStrategy":
+		{
+			"spawnStrategy": "Immediate",
+			"phaseInTime":
+			{
+				"minSeconds": 0,
+				"maxSeconds": 0
+			}
+		},
+		"despawningStrategy":
+		{
+			"despawnStrategy": "Immediate",
+			"phaseOutTime":
+			{
+				"minSeconds": 0,
+				"maxSeconds": 0
+			}
+		}
+	},
+	"scaleMin": 1,
+	"scaleMax": 1,
+	"gameplayTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "character.undead.dunir.mage"
+			}
+		],
+		"parentTags": [
+			{
+				"tagName": "character.undead.dunir"
+			},
+			{
+				"tagName": "character.undead"
+			},
+			{
+				"tagName": "character"
+			}
+		]
+	},
+	"bOverrideAggroRadius": false,
+	"aggroRadius": 0,
+	"bOverrideLeashRadius": false,
+	"leashRadius": 0,
+	"factionId": 0,
+	"interactionDefId":
+	{
+		"guid": "0",
+		"typeId": "1091110031",
+		"name": "None"
+	},
+	"displayNameOverrides": [
+		"NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"E57841394563B4EFC7070293D2C194D7\", \"Cursed Flamestoker\")"
+	],
+	"guid": "6064632707029401614",
+	"name": "Pop_Dunir_Mage_3Star",
+	"typeId": "5111001"
+}

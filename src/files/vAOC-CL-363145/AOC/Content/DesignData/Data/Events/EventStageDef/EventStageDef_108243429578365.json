@@ -1,0 +1,42 @@
+{
+	"stageName": "NSLOCTEXT(\"\", \"47432ECF410F65A956B744879AF0F5C1\", \"Levers?\")",
+	"transitionToast": "",
+	"bIsTemplate": false,
+	"bIsRewardStage": false,
+	"trackersIds": [
+		{
+			"guid": "108990493644408",
+			"typeId": "23095133",
+			"name": "TestEvent_WaveEncounter_Tracker-Main"
+		}
+	],
+	"bDisplayObjectiveTracker": true,
+	"teamsIds": [],
+	"secondsToFail": 600,
+	"predicatesIds": [
+		{
+			"guid": "108244557125248",
+			"typeId": "23095129",
+			"name": "TestWaveEncounter_OnCompletedSuccessfully"
+		},
+		{
+			"guid": "109104650802812",
+			"typeId": "23095129",
+			"name": "None"
+		},
+		{
+			"guid": "108244559943298",
+			"typeId": "23095129",
+			"name": "TestWaveEncounter_StartWaveOne"
+		}
+	],
+	"flowEditorNodeLocation":
+	{
+		"x": -190.00001544753741,
+		"y": -734.66668776671145,
+		"z": 0
+	},
+	"guid": "108243429578365",
+	"name": "TestWaveEncounter_InProgress",
+	"typeId": "23095131"
+}

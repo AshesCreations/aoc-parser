@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"DF68B58440811EBDAFB9819463DA52B5\", \"Take a closer look\")",
+	"nextNodeId":
+	{
+		"guid": "6064630084570775563",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "!IsOnStoryArcQuest(GetPlayer(), \"SAQ_0022_p1q1_Handbill\")&&(!IsOnStoryArcQuest(GetPlayer(), \"SAQ_0022_p1q2_BestLaidPlans\"))"
+	},
+	"guid": "6064630084570775560",
+	"name": "0022_Seph_Handbill_7",
+	"typeId": "1091110027"
+}

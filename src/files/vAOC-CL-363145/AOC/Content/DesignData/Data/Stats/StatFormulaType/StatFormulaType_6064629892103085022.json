@@ -1,0 +1,51 @@
+{
+	"equationId":
+	{
+		"guid": "6064629620056458582",
+		"typeId": "10516612381411112",
+		"name": "None"
+	},
+	"inputTerms": [
+		{
+			"termId":
+			{
+				"guid": "6064629620058096983",
+				"typeId": "10516612381411115",
+				"name": "None"
+			},
+			"value":
+			{
+				"expression": "const Instigator = GetInstigator();\r\nvar Dur = GetStat(Instigator, $#10516612381411111:6064629614175323427$);\r\nif (EffectHasTag(GetEffect(), \"Element.Physical\")) {\r\n   set Dur = Dur + GetStat(Instigator, $#10516612381411111:6064629618889326756$); }\r\nif (EffectHasTag(GetEffect(), \"Element.Magical\")) {\r\n   set Dur = Dur + GetStat(Instigator, $#10516612381411111:6064629618898698408$); }\r\n1.0 + Dur"
+			},
+			"bOptional": false,
+			"bKeepBeyondScope": false,
+			"filter":
+			{
+				"expression": ""
+			},
+			"mergeRuleOverride": "Merge_Default"
+		},
+		{
+			"termId":
+			{
+				"guid": "6064629620058686808",
+				"typeId": "10516612381411115",
+				"name": "None"
+			},
+			"value":
+			{
+				"expression": "const Target = GetTarget();\r\nvar Rdx = GetStat(Target, $#10516612381411111:6064629618868486307$);\r\nif (EffectHasTag(GetEffect(), \"Element.Physical\")) {\r\n   set Rdx = Rdx + GetStat(Target, $#10516612381411111:6064629618893521062$); }\r\nif (EffectHasTag(GetEffect(), \"Element.Magical\")) {\r\n   set Rdx = Rdx + GetStat(Target, $#10516612381411111:6064629618992087210$); }\r\nRdx"
+			},
+			"bOptional": false,
+			"bKeepBeyondScope": false,
+			"filter":
+			{
+				"expression": ""
+			},
+			"mergeRuleOverride": "Merge_Default"
+		}
+	],
+	"guid": "6064629892103085022",
+	"name": "DisableDurationMod",
+	"typeId": "10516612381411113"
+}

@@ -1,0 +1,22 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"CB7E569D41112A09B5ACEDB3E60AAEF5\", \"IS NOT GUILD LEADER\")",
+	"nextNodeId":
+	{
+		"guid": "6064630634011688979",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "Guild_IsLeader(GetPlayer()) == false"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064630634021716055",
+	"name": "DD_ServiceNPC_GuildAdministrator_76",
+	"typeId": "1091110027"
+}

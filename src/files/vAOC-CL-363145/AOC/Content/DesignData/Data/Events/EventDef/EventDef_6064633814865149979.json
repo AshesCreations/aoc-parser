@@ -1,0 +1,106 @@
+{
+	"eventName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"A172C210447D133E0493458A137FEE1D\", \"Embattled Traveler\")",
+	"gameplayTags":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"activationPredicatesIds": [
+		{
+			"guid": "6064633814865149980",
+			"typeId": "23095129",
+			"name": "None"
+		}
+	],
+	"minChallengeRating": 0,
+	"maxChallengeRating": 30,
+	"eventLevel": 1,
+	"eventType": 129,
+	"locationId":
+	{
+		"guid": "6064633814865149991",
+		"typeId": "5127371160",
+		"name": "None"
+	},
+	"desiredTimeSlot": "0001.01.01-00.00.00",
+	"frequency": 24,
+	"priority": 1,
+	"rewardTableId":
+	{
+		"guid": "0",
+		"typeId": "1091110040",
+		"name": "None"
+	},
+	"rewardPopulationSetId":
+	{
+		"guid": "0",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"startStageId":
+	{
+		"guid": "6064633814865149981",
+		"typeId": "23095131",
+		"name": "None"
+	},
+	"stagesIds": [
+		{
+			"guid": "6064633814865149981",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064633814865149982",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064633814865149984",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064633814865149986",
+			"typeId": "23095131",
+			"name": "None"
+		}
+	],
+	"interactVolumesIds": [],
+	"alignmentsIds": [],
+	"mapDisplayType": "Biome",
+	"mapEventIcon": "/Game/UI/Icons/Map/TUI_Icon_Map_Event_Active.TUI_Icon_Map_Event_Active",
+	"mapDisplayTrackerFiltersIds": [],
+	"bDisplayOnTracker": true,
+	"notificationRadius": 15000,
+	"mapRadiusMinumum": 1000,
+	"cooldownTimer": 300,
+	"bDisabled": false,
+	"maxInstanceCount": 1,
+	"requiredMapName": "Verra_World_Master",
+	"comments": [],
+	"bIsTemplate": false,
+	"flowNodes": [
+		{
+			"flowType": "EventEntry",
+			"graphLocation":
+			{
+				"x": -800,
+				"y": 100
+			},
+			"id": 0
+		},
+		{
+			"flowType": "EventExit",
+			"graphLocation":
+			{
+				"x": 4400,
+				"y": 700
+			},
+			"id": 1
+		}
+	],
+	"bSkipCrashRecovery": false,
+	"guid": "6064633814865149979",
+	"name": "ANV_FTUE_HeartwoodChamber_EmbattledTraveler",
+	"typeId": "23095125"
+}

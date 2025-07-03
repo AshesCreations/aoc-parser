@@ -1,0 +1,102 @@
+{
+	"type": "Kill",
+	"progressExpression":
+	{
+		"expression": ""
+	},
+	"nPCTaskIconOverrideId":
+	{
+		"guid": "0",
+		"typeId": "949952112329",
+		"name": "None"
+	},
+	"bAllowSatisfactionToRegress": false,
+	"completionQuantity": 10,
+	"tagQuery":
+	{
+		"tokenStreamVersion": 0,
+		"tagDictionary": [
+			{
+				"tagName": "character.undead.ashenHaunt"
+			}
+		],
+		"queryTokenStream": [ 0, 1, 2, 1, 0 ],
+		"userDescription": "",
+		"autoDescription": " ALL( character.undead.ashenHaunt )"
+	},
+	"professionFilterIds": [],
+	"gatherableFilterIds": [],
+	"collectionFilterId":
+	{
+		"guid": "0",
+		"typeId": "1091110041",
+		"name": "None"
+	},
+	"collectionCount": 5,
+	"objectivesIds": [],
+	"bCheckKillLocation": false,
+	"displayLocation": [
+		{
+			"location":
+			{
+				"x": -445965.92285700003,
+				"y": 412829.88415100001,
+				"z": 12652.038145
+			},
+			"radius": 7000,
+			"map_DisplayType": "ICON_AND_RADIUS",
+			"map_IconVisual":
+			{
+				"guid": "6064630990211645445",
+				"typeId": "949952112329",
+				"name": "None"
+			},
+			"map_DisplayName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"DECBFA864120F433A4B8E0BAB0C50A7A\", \"Defeat Ashen Haunts\")"
+		},
+		{
+			"location":
+			{
+				"x": -482348.28571099997,
+				"y": 512513.00461300003,
+				"z": 11937.359404000001
+			},
+			"radius": 7000,
+			"map_DisplayType": "ICON_AND_RADIUS",
+			"map_IconVisual":
+			{
+				"guid": "6064630990211645445",
+				"typeId": "949952112329",
+				"name": "None"
+			},
+			"map_DisplayName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"8D6B38D44098A06E610C5F99BD5679EB\", \"Defeat Ashen Haunts\")"
+		},
+		{
+			"location":
+			{
+				"x": -442752.13539200003,
+				"y": 509865.46552799997,
+				"z": 12795.575554999999
+			},
+			"radius": 10000,
+			"map_DisplayType": "ICON_AND_RADIUS",
+			"map_IconVisual":
+			{
+				"guid": "6064630990211645445",
+				"typeId": "949952112329",
+				"name": "None"
+			},
+			"map_DisplayName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"6026F4A54A2EC2338E7686AC5D12BF5D\", \"Defeat Ashen Haunts\")"
+		}
+	],
+	"location": [],
+	"populationSetId":
+	{
+		"guid": "0",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"notifyType": "None",
+	"guid": "6064632503882547227",
+	"name": "MCOM_RVR_Miraleth_Kill_Haunts",
+	"typeId": "1095125186"
+}

@@ -1,0 +1,20 @@
+{
+	"expression":
+	{
+		"expression": "(IsTimeOfDayType(ETimeOfDayType::Evening) && (Event_GetNumParticipants() < 9))"
+	},
+	"maxActivationCount": 1,
+	"bRequiresRegressionToLoop": true,
+	"objectivesIds": [],
+	"triggersIds": [],
+	"flowEditorNodeLocation":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"routePins": [],
+	"guid": "6064633629688137744",
+	"name": "RVR_0002_BonebinderBarrel_Event_EventStartPredicate",
+	"typeId": "23095129"
+}

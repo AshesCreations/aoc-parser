@@ -1,0 +1,64 @@
+{
+	"displayName": "NSLOCTEXT(\"[1909495A4C2095068D406C9D33F90055]\", \"2A5D87E34D7E62F3E867C184CBC9A4F2\", \"Advantage\")",
+	"description": "NSLOCTEXT(\"[1909495A4C2095068D406C9D33F90055]\", \"303305E54C74BF44E21DE2A1248E65ED\", \"Purely used to track the stacks of this effect in the player widget for now\")",
+	"bHidden": false,
+	"gameplayType": "Type_Combat",
+	"bHasWaterfallStatsUI": false,
+	"waterfallStatsUIIds": [],
+	"bDisplayAsPercentage": false,
+	"statType": "Type_Float",
+	"bClampStatFinalValue": false,
+	"bMultiplyStatMods": false,
+	"bMultiplyCompliment": false,
+	"base":
+	{
+		"expression": "0"
+	},
+	"waterfallStatsBaseIds": [],
+	"valueMin":
+	{
+		"expression": "0"
+	},
+	"waterfallStatsMinIds": [],
+	"valueMax":
+	{
+		"expression": "2"
+	},
+	"waterfallStatsMaxIds": [],
+	"regenRate":
+	{
+		"expression": ""
+	},
+	"waterfallStatsRegenIds": [],
+	"bRegenWhileDead": false,
+	"bRecalculateOnCombatState": false,
+	"onSpawn": "Reset_None",
+	"onDeath": "Reset_None",
+	"onRevive": "Reset_None",
+	"bPersistValue": false,
+	"replication": 1,
+	"shieldStatId":
+	{
+		"guid": "0",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"grantedEffects": [
+		{
+			"shouldGrant":
+			{
+				"expression": "Round(GetStat(GetInstigator(), $#10516612381411111:6064633053350531734$)) == 2"
+			},
+			"effectId":
+			{
+				"guid": "6064633226639377380",
+				"typeId": "30316002",
+				"name": "None"
+			},
+			"numStacks": 1
+		}
+	],
+	"guid": "6064633053350531734",
+	"name": "Rogue_Advantage",
+	"typeId": "10516612381411111"
+}

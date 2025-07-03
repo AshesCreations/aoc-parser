@@ -1,0 +1,56 @@
+{
+	"completionResponsesIds": [
+		{
+			"guid": "6064629965229522952",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"channelDuration": 0,
+	"activePredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0007_PriestessAndThePiper\",\"MAP_0007_PriestessAndThePiper_Phase03\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0007_WOO_WindowOfOpportunity\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_WOO_WindowOfOpportunity\",\"AcquiredPlunderKey\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_WOO_WindowOfOpportunity\",\"LocatedPlunder\")"
+	},
+	"cuePredicate":
+	{
+		"expression": ""
+	},
+	"deleteOnCompletion": false,
+	"singleUse": true,
+	"alwaysShowUIPrompt": true,
+	"cancelChannelIfActivePredicateEverFails": true,
+	"channelModifierType": "NONE",
+	"rewardTableId":
+	{
+		"guid": "0",
+		"typeId": "1091110008",
+		"name": "None"
+	},
+	"startEffect": "None",
+	"endEffect": "None",
+	"failEffect": "None",
+	"successEffect": "None",
+	"cueEffect": "None",
+	"startSound": "None",
+	"endSound": "None",
+	"failSound": "None",
+	"successSound": "None",
+	"cueSound": "None",
+	"interactAnimTag": "None",
+	"deletionDelay": 0,
+	"activeCueEnabled": true,
+	"activeCueIgnoresActivePredicate": false,
+	"facePlayer": false,
+	"allowInCombat": true,
+	"spawnAtBottomCapsule": false,
+	"channelAnimation": "/Game/Characters/Animations/00_EMO/All_EMO_M_Pickup01_Montage.All_EMO_M_Pickup01_Montage",
+	"interactRadius": 200,
+	"interactTolerance": 30,
+	"busyTime": 0.89999997615814209,
+	"clientBusyTime": 1,
+	"channelStartResponseIds": [],
+	"failResponsesIds": [],
+	"guid": "6064629965467942982",
+	"name": "MAPI_0007_WOO_PlunderChests",
+	"typeId": "1091110031"
+}

@@ -1,0 +1,174 @@
+{
+	"designNotes": "",
+	"levelDefinitionId":
+	{
+		"guid": "6064629126799097877",
+		"typeId": "9227326",
+		"name": "None"
+	},
+	"playerFacingName": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"AF983F004BA0517BBD4D83AEE9390AAB\", \"Azmaran\")",
+	"zoiType": "HasNode",
+	"startingAreaGameplayTag":
+	{
+		"tagName": "None"
+	},
+	"cityNodeId":
+	{
+		"guid": "6064632734253907971",
+		"typeId": "1323521343",
+		"name": "None"
+	},
+	"adjacentZonesOfInfluenceIds": [
+		{
+			"guid": "6064632751844032513",
+			"typeId": "9127326",
+			"name": "None"
+		},
+		{
+			"guid": "6064632734314856453",
+			"typeId": "9127326",
+			"name": "None"
+		},
+		{
+			"guid": "6064633097376432130",
+			"typeId": "9127326",
+			"name": "None"
+		},
+		{
+			"guid": "6064633097387311107",
+			"typeId": "9127326",
+			"name": "None"
+		}
+	],
+	"corruptionRulesEnabled": true,
+	"bAllowPVPOptInProtection": false,
+	"alignmentsAssignedUponEnteringIds": [],
+	"zoiEnvironmentType": "None",
+	"editorColor":
+	{
+		"x": 1,
+		"y": 0,
+		"z": 0
+	},
+	"zOIRewardTables": [
+		{
+			"inclusionExpression":
+			{
+				"expression": "!DoesNPCContainTag(\"NoRewards\")"
+			},
+			"rewardTableId":
+			{
+				"guid": "6064632271541961493",
+				"typeId": "1091110040",
+				"name": "None"
+			}
+		},
+		{
+			"inclusionExpression":
+			{
+				"expression": "DoesNPCContainTag(\"character.humanoid\")"
+			},
+			"rewardTableId":
+			{
+				"guid": "6064633391377612800",
+				"typeId": "1091110040",
+				"name": "None"
+			}
+		},
+		{
+			"inclusionExpression":
+			{
+				"expression": "!DoesNPCContainTag(\"NoRewards\")"
+			},
+			"rewardTableId":
+			{
+				"guid": "6064633313653948416",
+				"typeId": "1091110040",
+				"name": "None"
+			}
+		}
+	],
+	"economicRegionTableId":
+	{
+		"guid": "6064632734671110152",
+		"typeId": "98738382",
+		"name": "None"
+	},
+	"bHideExperienceEvents": false,
+	"biome": "Desert",
+	"biomeGatherableTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "SandsquallDesert"
+			}
+		],
+		"parentTags": []
+	},
+	"freeholdEstatesIds": [
+		{
+			"guid": "6064633290046242838",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633289543122959",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633289737502737",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633289784295443",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633289891315733",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633290073047063",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633289473261581",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633289713909776",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633289441673228",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633289484009486",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633289754083346",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633289834758164",
+			"typeId": "1337133701",
+			"name": "None"
+		}
+	],
+	"actorEffects": [],
+	"guid": "6064632734318067718",
+	"name": "Verra_SAN_Node_Azmaran",
+	"typeId": "9127326"
+}

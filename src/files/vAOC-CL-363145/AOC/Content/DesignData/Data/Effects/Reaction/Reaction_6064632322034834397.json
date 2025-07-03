@@ -1,0 +1,32 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 4,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0,
+		"fishingEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "const finisherMod = GetSkillPurchased(GetInstigator(),GetCurrentWeaponSkilltree(GetInstigator()),$#981011333:6064632317521042744$);\r\n\r\n(GetOwner() == GetInstigator())\r\n&&\r\nHitHasTag(GetHitEvent(), \"ComboStep.End\")\r\n&&\r\n!HitHasTag(GetHitEvent(), \"ComboStep.End2\")\r\n&&\r\n(HitHasTag(GetHitEvent(), \"ComboStep.ProcHit\") || finisherMod)\r\n&&\r\nGetRecordTypeId(GetHitSourceRecord(GetHitEvent())) != GetReactionTypeId() \r\n&&\r\n(GetRecordTypeId(GetHitSourceRecord(GetHitEvent())) != GetEffectTypeId())\r\n&&\r\nGetOwner() == GetInstigator() \r\n"
+	},
+	"bEvaluateApplyingHit": false,
+	"instigator": "Owner",
+	"targetsBitmask": 1,
+	"reactHitsIds": [
+		{
+			"guid": "6064632322038766561",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"instigatorProcLimit": 0,
+	"globalProcLimit": 0,
+	"procReactOnApply": false,
+	"guid": "6064632322034834397",
+	"name": "Weapon_Passive_Heartseeker",
+	"typeId": "3031600202"
+}

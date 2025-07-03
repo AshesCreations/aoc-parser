@@ -1,0 +1,71 @@
+{
+	"type": "Kill",
+	"progressExpression":
+	{
+		"expression": ""
+	},
+	"nPCTaskIconOverrideId":
+	{
+		"guid": "0",
+		"typeId": "949952112329",
+		"name": "None"
+	},
+	"bAllowSatisfactionToRegress": false,
+	"completionQuantity": 10,
+	"tagQuery":
+	{
+		"tokenStreamVersion": 0,
+		"tagDictionary": [
+			{
+				"tagName": "character.beast"
+			},
+			{
+				"tagName": "character.undead"
+			}
+		],
+		"queryTokenStream": [ 0, 1, 1, 2, 0, 1 ],
+		"userDescription": "",
+		"autoDescription": " ANY( character.beast, character.undead )"
+	},
+	"professionFilterIds": [],
+	"gatherableFilterIds": [],
+	"collectionFilterId":
+	{
+		"guid": "0",
+		"typeId": "1091110041",
+		"name": "None"
+	},
+	"collectionCount": 5,
+	"objectivesIds": [],
+	"bCheckKillLocation": true,
+	"displayLocation": [
+		{
+			"location":
+			{
+				"x": -575155,
+				"y": 315303,
+				"z": 15334
+			},
+			"radius": 15000,
+			"map_DisplayType": "ICON_AND_RADIUS",
+			"map_IconVisual":
+			{
+				"guid": "6064630990211645445",
+				"typeId": "949952112329",
+				"name": "None"
+			},
+			"map_DisplayName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"4B8872924F6DE9B5EBABD3BACDF3C624\", \"Protecting the Commonfolk\")"
+		}
+	],
+	"location": [],
+	"populationSetId":
+	{
+		"guid": "0",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"notifyType": "None",
+	"guid": "6064632507353858060",
+	"name": "MCOM_RVR_WINSTEAD_Kill_LynethWilds_SpiderRavenRabids",
+	"typeId": "1095125186"
+}

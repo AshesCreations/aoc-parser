@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"DFC59F85471981A45830FCAF6B97693E\", \"I beat the minotaurs.\")",
+	"nextNodeId":
+	{
+		"guid": "6064630531395551319",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsOnStoryArcQuest(GetPlayer(),\"MAQ_0005B_HOD_TheHornOfDoom\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005B_HOD_TheHornOfDoom\",\"DestroyHorn\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005B_HOD_TheHornOfDoom\",\"ReturnToEudoxia\")\r\n"
+	},
+	"guid": "6064630531394306134",
+	"name": "MADD_0005B_HOD_CaptainEudoxia_14",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,55 @@
+{
+	"displayName": "NSLOCTEXT(\"\", \"7EF6D5F94B5F37D592D78BAE685812C2\", \"Arcane Damage\")",
+	"description": "NSLOCTEXT(\"\", \"CFB3C19C473EB760935ABC94BB354553\", \"Increases the amount of arcane damage done\")",
+	"bHidden": false,
+	"gameplayType": "Type_Combat",
+	"bHasWaterfallStatsUI": false,
+	"waterfallStatsUIIds": [],
+	"bDisplayAsPercentage": false,
+	"statType": "Type_Float",
+	"bClampStatFinalValue": false,
+	"bMultiplyStatMods": false,
+	"bMultiplyCompliment": false,
+	"base":
+	{
+		"expression": "//const base = GetStat(GetInstigator(), $Stat:MagicalPower$);\r\nconst rating = GetStat(GetInstigator(), $#10516612381411111:6064629772956469695$);\r\nrating / EvalFormula($#10516612381411113:6064630531421635564$)"
+	},
+	"waterfallStatsBaseIds": [
+		{
+			"guid": "6064629772956469695",
+			"typeId": "10516612381411111",
+			"name": "None"
+		}
+	],
+	"valueMin":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMinIds": [],
+	"valueMax":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMaxIds": [],
+	"regenRate":
+	{
+		"expression": ""
+	},
+	"waterfallStatsRegenIds": [],
+	"bRegenWhileDead": false,
+	"onSpawn": "Reset_None",
+	"onDeath": "Reset_None",
+	"onRevive": "Reset_None",
+	"bPersistValue": false,
+	"replication": 5,
+	"shieldStatId":
+	{
+		"guid": "0",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"grantedEffects": [],
+	"guid": "6064629772956338622",
+	"name": "ArcaneDamage",
+	"typeId": "10516612381411111"
+}

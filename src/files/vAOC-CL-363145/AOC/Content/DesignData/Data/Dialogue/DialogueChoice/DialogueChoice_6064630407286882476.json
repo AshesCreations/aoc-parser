@@ -1,0 +1,23 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"6BDE285642A7E3345D01C59E390F2D13\", \"(Record this finding.)\")",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064630407181697168",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0005A_FGG_ForGreaterGlory\",\"MAP_0005A_FGG_Phase03\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0005A_BLO_BlindingLightsOfOzu\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005A_BLO_BlindingLightsOfOzu\",\"KillUulorian\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005A_BLO_BlindingLightsOfOzu\",\"ExamineStar\")\r\n"
+	},
+	"guid": "6064630407286882476",
+	"name": "MADD_0005A_BLO_StarOfOzu_4",
+	"typeId": "1091110027"
+}

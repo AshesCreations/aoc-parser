@@ -1,0 +1,164 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"B73B314341962B0786EDF69D209BF8AD\", \"Use the silver key.\")",
+	"nextNodeId":
+	{
+		"guid": "6064632785010425888",
+		"typeId": "1091110028",
+		"name": "RVR_Dungeon_HonorSworn_Tower_SilverChest_DLG_4"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064632784767025156",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"objectivesToCompleteUponSelectionIds": [
+		{
+			"guid": "6064632775768014924",
+			"typeId": "1091110420",
+			"name": "None"
+		}
+	],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": ""
+	},
+	"requirements": [
+		{
+			"criteria": [
+				{
+					"elementType": "Objective",
+					"narrativeType": "Commission",
+					"commissionId":
+					{
+						"guid": "0",
+						"typeId": "280002",
+						"name": "None"
+					},
+					"storyArcQuestId":
+					{
+						"guid": "0",
+						"typeId": "1091110035",
+						"name": "None"
+					},
+					"objectiveId":
+					{
+						"guid": "6064632775768014924",
+						"typeId": "1091110420",
+						"name": "None"
+					},
+					"itemFilterId":
+					{
+						"guid": "0",
+						"typeId": "1091110041",
+						"name": "None"
+					},
+					"currencyDefId":
+					{
+						"guid": "0",
+						"typeId": "1011151289",
+						"name": "None"
+					},
+					"amountToQuery": 0,
+					"questState": "InProgress",
+					"objectiveState": "Complete",
+					"itemState": "InInventory",
+					"invert": true
+				}
+			]
+		},
+		{
+			"criteria": [
+				{
+					"elementType": "Item",
+					"narrativeType": "Commission",
+					"commissionId":
+					{
+						"guid": "0",
+						"typeId": "280002",
+						"name": "None"
+					},
+					"storyArcQuestId":
+					{
+						"guid": "0",
+						"typeId": "1091110035",
+						"name": "None"
+					},
+					"objectiveId":
+					{
+						"guid": "0",
+						"typeId": "1091110420",
+						"name": "None"
+					},
+					"itemFilterId":
+					{
+						"guid": "6064632775637008426",
+						"typeId": "1091110041",
+						"name": "None"
+					},
+					"currencyDefId":
+					{
+						"guid": "0",
+						"typeId": "1011151289",
+						"name": "None"
+					},
+					"amountToQuery": 1,
+					"questState": "InProgress",
+					"objectiveState": "Active",
+					"itemState": "InInventory",
+					"invert": false
+				}
+			]
+		},
+		{
+			"criteria": [
+				{
+					"elementType": "Quest",
+					"narrativeType": "Commission",
+					"commissionId":
+					{
+						"guid": "6064632700184297648",
+						"typeId": "280002",
+						"name": "None"
+					},
+					"storyArcQuestId":
+					{
+						"guid": "0",
+						"typeId": "1091110035",
+						"name": "None"
+					},
+					"objectiveId":
+					{
+						"guid": "0",
+						"typeId": "1091110420",
+						"name": "None"
+					},
+					"itemFilterId":
+					{
+						"guid": "0",
+						"typeId": "1091110041",
+						"name": "None"
+					},
+					"currencyDefId":
+					{
+						"guid": "0",
+						"typeId": "1011151289",
+						"name": "None"
+					},
+					"amountToQuery": 0,
+					"questState": "InProgress",
+					"objectiveState": "Active",
+					"itemState": "InInventory",
+					"invert": false
+				}
+			]
+		}
+	],
+	"choiceType": "Default",
+	"guid": "6064632775819919443",
+	"name": "RVR_Dungeon_HonorSworn_Tower_SilverChest_DLG_2_Choice_1",
+	"typeId": "1091110027"
+}

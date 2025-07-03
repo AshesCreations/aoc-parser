@@ -1,0 +1,18 @@
+{
+	"targetEffect": [
+		{
+			"expression": "$#30316002:6064633187168420568$"
+		}
+	],
+	"deltaSeconds":
+	{
+		"expression": "const dur = GetEffectRemainingDuration(GetTarget(), $#30316002:6064633187168420568$);\r\nMax(0.0, 1.0 - dur)"
+	},
+	"deltaStacks":
+	{
+		"expression": ""
+	},
+	"guid": "6064633187206235248",
+	"name": "Mage_ArcaneEye_Reveal_FX_Extend",
+	"typeId": "3031600218"
+}

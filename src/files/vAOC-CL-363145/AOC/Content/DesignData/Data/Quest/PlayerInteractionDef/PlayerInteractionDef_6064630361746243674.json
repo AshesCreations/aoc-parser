@@ -1,0 +1,56 @@
+{
+	"completionResponsesIds": [
+		{
+			"guid": "6064630361702858832",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"channelDuration": 0,
+	"activePredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0005A_FGG_ForGreaterGlory\",\"MAP_0005A_FGG_Phase02\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0005A_FAS_FeedAnArmy\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005A_FAS_FeedAnArmy\",\"SpeakToFalco\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005A_FAS_FeedAnArmy\",\"TagHideExports\")"
+	},
+	"cuePredicate":
+	{
+		"expression": ""
+	},
+	"deleteOnCompletion": false,
+	"singleUse": true,
+	"alwaysShowUIPrompt": true,
+	"cancelChannelIfActivePredicateEverFails": true,
+	"channelModifierType": "NONE",
+	"rewardTableId":
+	{
+		"guid": "0",
+		"typeId": "1091110008",
+		"name": "None"
+	},
+	"startEffect": "None",
+	"endEffect": "None",
+	"failEffect": "None",
+	"successEffect": "/Game/Effects/FX_PCs/Guardian/Particles/FX_Brace_ShieldGlint.FX_Brace_ShieldGlint",
+	"cueEffect": "None",
+	"startSound": "None",
+	"endSound": "None",
+	"failSound": "None",
+	"successSound": "None",
+	"cueSound": "None",
+	"interactAnimTag": "None",
+	"deletionDelay": 0,
+	"activeCueEnabled": true,
+	"activeCueIgnoresActivePredicate": false,
+	"facePlayer": false,
+	"allowInCombat": true,
+	"spawnAtBottomCapsule": false,
+	"channelAnimation": "None",
+	"interactRadius": 200,
+	"interactTolerance": 30,
+	"busyTime": 0.89999997615814209,
+	"clientBusyTime": 1,
+	"channelStartResponseIds": [],
+	"failResponsesIds": [],
+	"guid": "6064630361746243674",
+	"name": "MAPI_0005A_FAS_OBJ_ExportHunter",
+	"typeId": "1091110031"
+}

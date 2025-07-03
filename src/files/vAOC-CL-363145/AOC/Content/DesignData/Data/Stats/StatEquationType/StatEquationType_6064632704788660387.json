@@ -1,0 +1,12 @@
+{
+	"equation":
+	{
+		"expression": "var binary = 0.0;\r\nconst rhythmic = GetEffectCount(GetOwner(),$#30316002:6064631744024412389$);\r\n// set random data\r\nconst randomNumber = RandDoubleRange(0.0,1.0);\r\nconst randomTarget = (rhythmic*0.25) +  EvalFormula($#10516612381411113:6064632693439528963$);\r\n\r\nif(randomNumber <= randomTarget)\r\n{\r\nset binary = 1.0;\r\n}\r\n\r\nbinary"
+	},
+	"constraints":
+	{
+	},
+	"guid": "6064632704788660387",
+	"name": "WeaponCombo_ExtendedFinisherProcced",
+	"typeId": "10516612381411112"
+}

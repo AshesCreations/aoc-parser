@@ -1,0 +1,33 @@
+{
+	"trigger":
+	{
+		"expression": "GetOwner() != GetInstigator() &&\r\n!HitHasTag(GetHitRecord(GetHitInProgress()), \"Element.Healing\")"
+	},
+	"terms": [
+		{
+			"termId":
+			{
+				"guid": "6064630633715007489",
+				"typeId": "10516612381411115",
+				"name": "None"
+			},
+			"value":
+			{
+				"expression": "0.7"
+			},
+			"bOptional": false,
+			"bKeepBeyondScope": false,
+			"filter":
+			{
+				"expression": ""
+			},
+			"mergeRuleOverride": "Merge_Default"
+		}
+	],
+	"tags": [],
+	"statModsIds": [],
+	"statModPostProcess": [],
+	"guid": "6064633033171402754",
+	"name": "SklaRisha_CalicheCarapace_DamageReduction_HitMod",
+	"typeId": "3031600210"
+}

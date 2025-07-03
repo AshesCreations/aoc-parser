@@ -1,0 +1,27 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 2,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0,
+		"fishingEvents": 0,
+		"statEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "GetHitRecord(GetHitEvent()) == $#30316005:6064633419524407335$"
+	},
+	"bEvaluateApplyingHit": false,
+	"instigator": "Owner",
+	"targetsBitmask": 16,
+	"reactHitsIds": [],
+	"instigatorProcLimit": 0,
+	"globalProcLimit": 0,
+	"procReactOnApply": false,
+	"guid": "6064633504166249792",
+	"name": "Ramkin_Healer_SoulLink_CheckRemoval",
+	"typeId": "3031600202"
+}

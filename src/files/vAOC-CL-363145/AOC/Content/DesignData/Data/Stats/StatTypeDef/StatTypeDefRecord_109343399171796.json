@@ -1,0 +1,66 @@
+{
+	"displayName": "Mana Regeneration",
+	"description": "NSLOCTEXT(\"[1909495A4C2095068D406C9D33F90055]\", \"D0DF454E432F9F2EC0B3F2902C731C64\", \"The amount of mana passively regenerated per second. Base regen is increased out of combat.\")",
+	"bHidden": false,
+	"gameplayType": "Type_Combat",
+	"bHasWaterfallStatsUI": false,
+	"waterfallStatsUIIds": [],
+	"bDisplayAsPercentage": false,
+	"statType": "Type_Float",
+	"bClampStatFinalValue": false,
+	"bMultiplyStatMods": false,
+	"bMultiplyCompliment": false,
+	"base":
+	{
+		"expression": "var val = 0.0;\r\nconst char = GetStat(GetOwner(), $#10516612381411111:6064630798183235705$);\r\nif(!(char == 0.0)) { // if a character\r\n    const MaxMana = GetStat(GetOwner(), $#10516612381411111:109183578756729$);\r\n    set val = MaxMana * 0.001;\r\n    if(char > 0.0) { // if player\r\n        // temp only allowing out of combat regen for PCs since NPCs have bugged combat state sometimes\r\n        const InCombat = IsInCombat(GetOwner());\r\n        if(!InCombat) {\r\n            set val = val + MaxMana * 0.004;\r\n        }\r\n        if(GetSkillPurchased(GetInstigator(), $#30316003:107813788866168$, $#981011333:6064631034789494851$)){\r\n            if(GetEffectCount(GetInstigator(), $#30316002:6064630168644354653$) > 0){\r\n                set val = val + 0.0001 * MaxMana * GetStat(GetInstigator(), $#10516612381411111:6064629959589298751$) ;\r\n            }\r\n        }\r\n    }\r\n}\r\nconst rating = GetStat(GetInstigator(), $#10516612381411111:109183607133839$);\r\nset val = val + rating / EvalFormula($#10516612381411113:6064633154695070570$);\r\n\r\nval"
+	},
+	"waterfallStatsBaseIds": [
+		{
+			"guid": "109183578756729",
+			"typeId": "10516612381411111",
+			"name": "None"
+		},
+		{
+			"guid": "109183607133839",
+			"typeId": "10516612381411111",
+			"name": "None"
+		},
+		{
+			"guid": "6064629959589298751",
+			"typeId": "10516612381411111",
+			"name": "None"
+		}
+	],
+	"valueMin":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMinIds": [],
+	"valueMax":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMaxIds": [],
+	"regenRate":
+	{
+		"expression": ""
+	},
+	"waterfallStatsRegenIds": [],
+	"bRegenWhileDead": false,
+	"bRecalculateOnCombatState": true,
+	"onSpawn": "Reset_None",
+	"onDeath": "Reset_None",
+	"onRevive": "Reset_None",
+	"bPersistValue": false,
+	"replication": 1,
+	"shieldStatId":
+	{
+		"guid": "0",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"grantedEffects": [],
+	"guid": "109343399171796",
+	"name": "ManaRegeneration",
+	"typeId": "10516612381411111"
+}

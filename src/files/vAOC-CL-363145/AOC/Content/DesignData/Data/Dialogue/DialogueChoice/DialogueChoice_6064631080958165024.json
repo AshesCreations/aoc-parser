@@ -1,0 +1,33 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"A966D00B42DA7BB69013E2ACB2E6F663\", \"The Royal Rockworks\")",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064631081162506307",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064631085368213515",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "!Player_HasCommission(GetPlayer(),\"CSQ_RVR_TurnIn_Delivery_RoyalRockworks\")&&\r\n!Player_HasItem(GetPlayer(),\"CSQ_ITM_ArtisanCrates_RoyalRockworks\")"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064631080958165024",
+	"name": "CSQ_DD_0020_EOL_CaravanFreight_8",
+	"typeId": "1091110027"
+}

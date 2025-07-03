@@ -1,0 +1,99 @@
+{
+	"populationInteractZone":
+	{
+		"zoneFGuid": "00000000000000000000000000000000",
+		"owningVolumeGuid": "0",
+		"location":
+		{
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"extents":
+		{
+			"x": 30000,
+			"y": 30000,
+			"z": 6000
+		},
+		"rotation":
+		{
+			"pitch": 0,
+			"yaw": 0,
+			"roll": 0
+		},
+		"bUseInternalLocation": true,
+		"bUseInternalRotation": true,
+		"bUseInternalExtents": true,
+		"actions": [
+			{
+				"actionType": "RemoveSpawns",
+				"actionResponses": [],
+				"filters":
+				{
+					"tagsIncludeFilter":
+					{
+						"tokenStreamVersion": 0,
+						"tagDictionary": [],
+						"queryTokenStream": [],
+						"userDescription": "",
+						"autoDescription": ""
+					},
+					"tagsExcludeFilter":
+					{
+						"tokenStreamVersion": 0,
+						"tagDictionary": [],
+						"queryTokenStream": [],
+						"userDescription": "",
+						"autoDescription": ""
+					},
+					"popSetsIncludeFilter": [],
+					"popSetsExcludeFilter": [
+						{
+							"guid": "6064632983763288711",
+							"typeId": "5111005",
+							"name": "None"
+						},
+						{
+							"guid": "6064632983766827657",
+							"typeId": "5111005",
+							"name": "None"
+						},
+						{
+							"guid": "6064632983764796040",
+							"typeId": "5111005",
+							"name": "None"
+						},
+						{
+							"guid": "6064632983769645706",
+							"typeId": "5111005",
+							"name": "None"
+						},
+						{
+							"guid": "6064632355648176215",
+							"typeId": "5111005",
+							"name": "None"
+						},
+						{
+							"guid": "6064632989843063033",
+							"typeId": "5111005",
+							"name": "None"
+						},
+						{
+							"guid": "6064632989402923208",
+							"typeId": "5111005",
+							"name": "None"
+						},
+						{
+							"guid": "6064633011632280416",
+							"typeId": "5111005",
+							"name": "None"
+						}
+					]
+				}
+			}
+		]
+	},
+	"guid": "6064632989359538375",
+	"name": "EVT_SAN_0003_ShadyMayhem_PopSuppression",
+	"typeId": "5111069"
+}

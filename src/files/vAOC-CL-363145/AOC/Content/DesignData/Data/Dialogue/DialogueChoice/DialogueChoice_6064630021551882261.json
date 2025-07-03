@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"7040DE4445939BC2A521808559D5AC91\", \"She\\'s gone!! Quit hiding!\")",
+	"nextNodeId":
+	{
+		"guid": "6064630021555027990",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0007_PriestessAndThePiper\",\"MAP_0007_PriestessAndThePiper_Phase04\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_PAS_PainAndSuffering\",\"KilledThePriestess\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_PAS_PainAndSuffering\",\"ReportedToBonekeeper\")"
+	},
+	"guid": "6064630021551882261",
+	"name": "MADD_0007_Phase04_ThePiper_18",
+	"typeId": "1091110027"
+}

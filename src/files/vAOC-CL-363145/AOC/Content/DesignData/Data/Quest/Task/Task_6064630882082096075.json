@@ -1,0 +1,86 @@
+{
+	"type": "GoToArea",
+	"progressExpression":
+	{
+		"expression": ""
+	},
+	"nPCTaskIconOverrideId":
+	{
+		"guid": "0",
+		"typeId": "949952112329",
+		"name": "None"
+	},
+	"bAllowSatisfactionToRegress": false,
+	"completionQuantity": 1,
+	"tagQuery":
+	{
+		"tokenStreamVersion": 0,
+		"tagDictionary": [
+			{
+				"tagName": "affiliation.bandit"
+			}
+		],
+		"queryTokenStream": [ 0, 1, 1, 1, 0 ],
+		"userDescription": "",
+		"autoDescription": " ANY( affiliation.bandit )"
+	},
+	"professionFilterIds": [],
+	"gatherableFilterIds": [],
+	"collectionFilterId":
+	{
+		"guid": "0",
+		"typeId": "1091110041",
+		"name": "None"
+	},
+	"collectionCount": 5,
+	"objectivesIds": [],
+	"bCheckKillLocation": false,
+	"displayLocation": [
+		{
+			"location":
+			{
+				"x": -591520.73965100001,
+				"y": 549825.31784300006,
+				"z": 14140.661683
+			},
+			"radius": 1000,
+			"map_DisplayType": "ICON",
+			"map_IconVisual":
+			{
+				"guid": "0",
+				"typeId": "949952112329",
+				"name": "None"
+			},
+			"map_DisplayName": "NSLOCTEXT(\"\", \"4DE9EBBD40AF967058C95FB5E025E091\", \"Troupe Camp\")"
+		}
+	],
+	"location": [
+		{
+			"location":
+			{
+				"x": -591520.73965100001,
+				"y": 549825.31784300006,
+				"z": 14140.661683
+			},
+			"radius": 1000,
+			"map_DisplayType": "ICON",
+			"map_IconVisual":
+			{
+				"guid": "0",
+				"typeId": "949952112329",
+				"name": "None"
+			},
+			"map_DisplayName": "NSLOCTEXT(\"\", \"1234EAB6432390D3037A98ACA21BA9A7\", \"Troupe Camp\")"
+		}
+	],
+	"populationSetId":
+	{
+		"guid": "0",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"notifyType": "None",
+	"guid": "6064630882082096075",
+	"name": "Task_6064630882082096075",
+	"typeId": "1095125186"
+}

@@ -1,0 +1,56 @@
+{
+	"displayName": "NSLOCTEXT(\"\", \"A1C189034E1563D6688F09A468A70BA5\", \"Magical Critical Power Rating\")",
+	"description": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"ABEEF4DB44FC278C7DAE33BE064DB258\", \"The multiplier applied to magical critical hits\")",
+	"bHidden": false,
+	"gameplayType": "Type_Combat",
+	"bHasWaterfallStatsUI": false,
+	"waterfallStatsUIIds": [],
+	"bDisplayAsPercentage": false,
+	"statType": "Type_Float",
+	"bClampStatFinalValue": false,
+	"bMultiplyStatMods": false,
+	"bMultiplyCompliment": false,
+	"base":
+	{
+		"expression": "GetStat(GetInstigator(), $#10516612381411111:109183598614141$)\r\n* EvalFormula($#10516612381411113:6064633136643310859$)"
+	},
+	"waterfallStatsBaseIds": [
+		{
+			"guid": "109183598614141",
+			"typeId": "10516612381411111",
+			"name": "None"
+		}
+	],
+	"valueMin":
+	{
+		"expression": "0"
+	},
+	"waterfallStatsMinIds": [],
+	"valueMax":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMaxIds": [],
+	"regenRate":
+	{
+		"expression": ""
+	},
+	"waterfallStatsRegenIds": [],
+	"bRegenWhileDead": false,
+	"bRecalculateOnCombatState": false,
+	"onSpawn": "Reset_None",
+	"onDeath": "Reset_None",
+	"onRevive": "Reset_None",
+	"bPersistValue": false,
+	"replication": 1,
+	"shieldStatId":
+	{
+		"guid": "0",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"grantedEffects": [],
+	"guid": "109342909421182",
+	"name": "MagicalCriticalPowerRating",
+	"typeId": "10516612381411111"
+}

@@ -1,0 +1,281 @@
+{
+	"predicate":
+	{
+		"expression": ""
+	},
+	"rewardDefContainers": [
+		{
+			"grantPredicate":
+			{
+				"expression": ""
+			},
+			"selectionAlgorithm": "All",
+			"numberToSelect": 0,
+			"grantMethod": "Auto",
+			"rewardsWeightCurve":
+			{
+				"externalCurve": "None",
+				"editorCurveData":
+				{
+					"keys": [],
+					"defaultValue": 3.4028234663852886e+38,
+					"preInfinityExtrap": "RCCE_Constant",
+					"postInfinityExtrap": "RCCE_Constant",
+					"keyHandlesToIndices":
+					{
+					}
+				}
+			},
+			"weightsPerReward": [ 1 ],
+			"percentageDropRatePerReward": [],
+			"maxSelectorChoices": 0,
+			"rewards": [
+				{
+					"displayName": "NSLOCTEXT(\"\", \"FF14124147F78ED4004F009BC9E820B4\", \"Experience\")",
+					"currency":
+					{
+					},
+					"itemRewards": [],
+					"experienceRewards": [
+						{
+							"experienceType": "Adventuring",
+							"experienceValue":
+							{
+								"expression": "const level      = float(GetCharacterLevel(GetOwner()));\r\nconst xp         = EvalCurve($#10516612381411114:6064630639394422811$, level);\r\nconst rewardMult = EvalFormula($#10516612381411113:6064632139336385412$);\r\nxp * rewardMult * 0.6"
+							},
+							"experienceContextId":
+							{
+								"guid": "0",
+								"typeId": "1091110055",
+								"name": "None"
+							},
+							"professionsId":
+							{
+								"guid": "0",
+								"typeId": "8125613373123",
+								"name": "None"
+							},
+							"gatheringResourceTypeId":
+							{
+								"guid": "0",
+								"typeId": "1983422155363",
+								"name": "None"
+							},
+							"craftingRecipeDefId":
+							{
+								"guid": "0",
+								"typeId": "163697",
+								"name": "None"
+							}
+						},
+						{
+							"experienceType": "NodeActivity",
+							"experienceValue":
+							{
+								"expression": "EvalFormula($#10516612381411113:6064632140925698058$) * 0.6"
+							},
+							"experienceContextId":
+							{
+								"guid": "6064630644204175885",
+								"typeId": "1091110055",
+								"name": "None"
+							},
+							"professionsId":
+							{
+								"guid": "0",
+								"typeId": "8125613373123",
+								"name": "None"
+							},
+							"gatheringResourceTypeId":
+							{
+								"guid": "0",
+								"typeId": "1983422155363",
+								"name": "None"
+							},
+							"craftingRecipeDefId":
+							{
+								"guid": "0",
+								"typeId": "163697",
+								"name": "None"
+							}
+						},
+						{
+							"experienceType": "Weapon",
+							"experienceValue":
+							{
+								"expression": "const level      = float(GetCharacterLevel(GetOwner()));\r\nconst xp         = EvalCurve($#10516612381411114:6064630639394422811$, level);\r\nconst rewardMult = EvalFormula($#10516612381411113:6064632139336385412$);\r\nxp * rewardMult * 0.6"
+							},
+							"experienceContextId":
+							{
+								"guid": "0",
+								"typeId": "1091110055",
+								"name": "None"
+							},
+							"professionsId":
+							{
+								"guid": "0",
+								"typeId": "8125613373123",
+								"name": "None"
+							},
+							"gatheringResourceTypeId":
+							{
+								"guid": "0",
+								"typeId": "1983422155363",
+								"name": "None"
+							},
+							"craftingRecipeDefId":
+							{
+								"guid": "0",
+								"typeId": "163697",
+								"name": "None"
+							}
+						}
+					]
+				}
+			],
+			"rewardContainerIcon": "None"
+		},
+		{
+			"grantPredicate":
+			{
+				"expression": "const level  = Float(GetCharacterLevel(GetOwner()));\r\nconst lootMax = GetPlayerLootMaxLevel();\r\nconst falloff = EvalCurve($#10516612381411114:6064632237548240902$, Abs(lootMax - level));\r\nconst chance = EvalCurve($#10516612381411114:6064630650862698497$, level);\r\nRandDouble() < chance * falloff"
+			},
+			"selectionAlgorithm": "All",
+			"numberToSelect": 0,
+			"grantMethod": "Always",
+			"rewardsWeightCurve":
+			{
+				"externalCurve": "None",
+				"editorCurveData":
+				{
+					"keys": [],
+					"defaultValue": 3.4028234663852886e+38,
+					"preInfinityExtrap": "RCCE_Constant",
+					"postInfinityExtrap": "RCCE_Constant",
+					"keyHandlesToIndices":
+					{
+					}
+				}
+			},
+			"weightsPerReward": [],
+			"percentageDropRatePerReward": [],
+			"maxSelectorChoices": 0,
+			"rewards": [
+				{
+					"displayName": "NSLOCTEXT(\"\", \"6EF1A02F4C55A088E490C2904FEE492F\", \"Glint T1\")",
+					"currency":
+					{
+					},
+					"itemRewards": [
+						{
+							"item":
+							{
+								"itemId":
+								{
+									"guid": "6064628753953390592",
+									"typeId": "1091110003",
+									"name": "None"
+								},
+								"variationId":
+								{
+									"guid": "0",
+									"typeId": "1091111111",
+									"name": "None"
+								}
+							},
+							"quantity":
+							{
+								"expression": "const level = Float(GetCharacterLevel(GetOwner()));\r\nconst min   = EvalCurve($#10516612381411114:6064630650928758791$, level);\r\nconst max   = EvalCurve($#10516612381411114:6064631031109648384$, level);\r\nconst mult  = EvalFormula($#10516612381411113:6064632139336385412$);\r\nconst roll  = RandDoubleRange(min*mult,max*mult);\r\nconst trunc = int(roll);\r\nconst fract = roll - trunc;\r\nRound(trunc + int(RandDouble() < fract) * 0.6)"
+							},
+							"bPrioritizeQuality": false
+						}
+					],
+					"experienceRewards": []
+				}
+			],
+			"rewardContainerIcon": "None"
+		},
+		{
+			"grantPredicate":
+			{
+				"expression": "const level  = Float(GetCharacterLevel(GetOwner()));\r\nconst lootMax = GetPlayerLootMaxLevel();\r\nconst falloff = EvalCurve($#10516612381411114:6064632237548240902$, Abs(lootMax - level));\r\nconst chance = EvalCurve($#10516612381411114:6064630650864533506$, level);\r\nRandDouble() < chance * falloff"
+			},
+			"selectionAlgorithm": "All",
+			"numberToSelect": 0,
+			"grantMethod": "Always",
+			"rewardsWeightCurve":
+			{
+				"externalCurve": "None",
+				"editorCurveData":
+				{
+					"keys": [],
+					"defaultValue": 3.4028234663852886e+38,
+					"preInfinityExtrap": "RCCE_Constant",
+					"postInfinityExtrap": "RCCE_Constant",
+					"keyHandlesToIndices":
+					{
+					}
+				}
+			},
+			"weightsPerReward": [],
+			"percentageDropRatePerReward": [],
+			"maxSelectorChoices": 0,
+			"rewards": [
+				{
+					"displayName": "NSLOCTEXT(\"\", \"44635CB84667FFE113D58181EB4F8E64\", \"Glint T2\")",
+					"currency":
+					{
+					},
+					"itemRewards": [
+						{
+							"item":
+							{
+								"itemId":
+								{
+									"guid": "6064629147780775936",
+									"typeId": "1091110003",
+									"name": "None"
+								},
+								"variationId":
+								{
+									"guid": "0",
+									"typeId": "1091111111",
+									"name": "None"
+								}
+							},
+							"quantity":
+							{
+								"expression": "const level = Float(GetCharacterLevel(GetOwner()));\r\nconst min   = Round(EvalCurve($#10516612381411114:6064630650931707912$, level));\r\nconst max   = Round(EvalCurve($#10516612381411114:6064631031112663041$, level));\r\nconst mult  = EvalFormula($#10516612381411113:6064632139336385412$);\r\nconst roll  = RandDoubleRange(min*mult,max*mult);\r\nconst trunc = int(roll);\r\nconst fract = roll - trunc;\r\nRound(trunc + int(RandDouble() < fract) * 0.6)"
+							},
+							"bPrioritizeQuality": false
+						}
+					],
+					"experienceRewards": []
+				}
+			],
+			"rewardContainerIcon": "None"
+		}
+	],
+	"subTableSelectionAlgorithm": "All",
+	"numberOfSubtablesToSelect": 2,
+	"weightsPerSubTable": [],
+	"percentagePerSubTable": [],
+	"subTablesWeightCurve":
+	{
+		"externalCurve": "None",
+		"editorCurveData":
+		{
+			"keys": [],
+			"defaultValue": 3.4028234663852886e+38,
+			"preInfinityExtrap": "RCCE_Constant",
+			"postInfinityExtrap": "RCCE_Constant",
+			"keyHandlesToIndices":
+			{
+			}
+		}
+	},
+	"subTablesIds": [],
+	"guid": "6064633567114231808",
+	"name": "Base_Kill_Reward_XP+Glint_60",
+	"typeId": "1091110040"
+}

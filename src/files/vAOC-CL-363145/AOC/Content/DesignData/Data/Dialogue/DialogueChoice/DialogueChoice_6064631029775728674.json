@@ -1,0 +1,18 @@
+{
+	"choiceText": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"C90902A548980CB6F618BEA827294CBA\", \"What do you need help with?\")",
+	"nextNodeId":
+	{
+		"guid": "6064631029778743331",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "!Player_HasCompletedCommission(GetPlayer(),\"CSQ_RVR_0013_TMA_TheMegalithicAge\")&&\r\n!Player_HasCommission(GetPlayer(),\"CSQ_RVR_0013_TMA_TheMegalithicAge\")"
+	},
+	"choiceType": "Default",
+	"guid": "6064631029775728674",
+	"name": "CSQ_DialDef_0013_AkhundBahrani_Camp_4",
+	"typeId": "1091110027"
+}

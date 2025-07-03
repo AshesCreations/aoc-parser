@@ -1,0 +1,28 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"8B0109BA44A024ED366E589E8FF634F5\", \"I have some\")",
+	"nextNodeId":
+	{
+		"guid": "6064632378030293000",
+		"typeId": "1091110028",
+		"name": "SQ_Lionhold_0002_Fragments_Carole_9"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064632377273876480",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "(Player_HasCommission (GetPlayer(), \"SQ_LionholdNorth_0002_TreeFragments\") && Player_ObjectiveStateEquals(GetPlayer(), \"CSQ_LionholdSouth_0002_Task_1_Collect\", EObjectiveState::Complete))"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064632304827760683",
+	"name": "SQ_Lionhold_0002_Fragments_Carole_4_Choice_1",
+	"typeId": "1091110027"
+}

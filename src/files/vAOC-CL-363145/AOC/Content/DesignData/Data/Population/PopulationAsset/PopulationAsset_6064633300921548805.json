@@ -1,0 +1,82 @@
+{
+	"assetRef": "/Game/DesignAssets/Population/NPC/Monster/Aberration/Beholder/Ocular/Ocular.Ocular",
+	"lootTablesIds": [
+		{
+			"guid": "6064633301424668781",
+			"typeId": "1091110040",
+			"name": "None"
+		}
+	],
+	"populationFilter":
+	{
+		"zoneOfInfluenceIds": [],
+		"nodeIds": [],
+		"cultures": [],
+		"nodeTypes": [],
+		"biomes": [],
+		"seasons": [],
+		"nodeLevelMin": "Wilderness",
+		"nodeLevelMax": "Metropolis",
+		"timeOfDayStart": -1,
+		"timeOfDayEnd": -1,
+		"weatherTypes": [],
+		"spawningStrategy":
+		{
+			"spawnStrategy": "Immediate",
+			"phaseInTime":
+			{
+				"minSeconds": 0,
+				"maxSeconds": 0
+			}
+		},
+		"despawningStrategy":
+		{
+			"despawnStrategy": "Immediate",
+			"phaseOutTime":
+			{
+				"minSeconds": 0,
+				"maxSeconds": 0
+			}
+		},
+		"requiredGameplayTags":
+		{
+			"gameplayTags": [],
+			"parentTags": []
+		}
+	},
+	"scaleMin": 1,
+	"scaleMax": 1,
+	"gameplayTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "character.arcana.ocular"
+			}
+		],
+		"parentTags": [
+			{
+				"tagName": "character.arcana"
+			},
+			{
+				"tagName": "character"
+			}
+		]
+	},
+	"bOverrideAggroRadius": false,
+	"aggroRadius": 0,
+	"bOverrideLeashRadius": false,
+	"leashRadius": 0,
+	"factionId": 0,
+	"interactionDefId":
+	{
+		"guid": "0",
+		"typeId": "1091110031",
+		"name": "None"
+	},
+	"displayNameOverrides": [
+		"NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"30D14A394A70942C7F50F7AF270EFE5B\", \"Eye of Amathar\")"
+	],
+	"guid": "6064633300921548805",
+	"name": "TUR_Pocket_Dungeons_Multroks_Fall_Eye_of_Amathar",
+	"typeId": "5111001"
+}

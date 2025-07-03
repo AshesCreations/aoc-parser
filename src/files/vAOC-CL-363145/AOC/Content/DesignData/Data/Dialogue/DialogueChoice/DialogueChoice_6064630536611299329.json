@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"307D559341D4BA72D99731B547C8BB80\", \"I\\'m here to turn in my contribution.\")",
+	"nextNodeId":
+	{
+		"guid": "6064630536616476674",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0005B_TEW_EnemyWithin\",\"MAP_0005B_TEW_Phase01\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0005B_HHB_HighwaymenHillsBust\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005B_HHB_HighwaymenHillsBust\",\"WorkForKaelar\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005B_HHB_HighwaymenHillsBust\",\"GatherThanacite\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005B_HHB_HighwaymenHillsBust\",\"GiveThanacite\")"
+	},
+	"guid": "6064630536611299329",
+	"name": "MADD_0005B_HHB_MiningDirector_16",
+	"typeId": "1091110027"
+}

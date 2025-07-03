@@ -1,0 +1,14 @@
+{
+	"storageType": "General",
+	"bIsMemberStorage": true,
+	"isSpecializable": false,
+	"availabilityRequirementsDescription": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"F99D02804D7E32FB71806A89E44E4C5A\", \"A tab available only to citizens of this node\")",
+	"availabilityRequirements":
+	{
+		"expression": "Node_IsActorInNodeName(GetPlayer(), Node_GetActorCityNode(GetPlayer()))\r\n&&\r\nNode_IsPlayerCitizenOfNode(GetPlayer(), GetCurrentNode(GetPlayer()))"
+	},
+	"tabCosts": [],
+	"guid": "6064631721160212480",
+	"name": "WarehouseStorageMaterialTab_Citizen",
+	"typeId": "8675309005"
+}

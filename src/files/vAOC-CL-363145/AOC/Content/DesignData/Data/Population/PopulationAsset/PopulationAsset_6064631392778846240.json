@@ -1,0 +1,67 @@
+{
+	"assetRef": "/Game/DesignAssets/Quests/Events/A2_EventsAssets/ProgE_0006_CarphinBlooms/PlantMonster_CarphinSpecial.PlantMonster_CarphinSpecial",
+	"populationFilter":
+	{
+		"zoneOfInfluenceIds": [],
+		"nodeIds": [],
+		"cultures": [],
+		"nodeTypes": [],
+		"biomes": [],
+		"seasons": [],
+		"nodeLevelMin": "Wilderness",
+		"nodeLevelMax": "Metropolis",
+		"timeOfDayStart": -1,
+		"timeOfDayEnd": -1,
+		"weatherTypes": [],
+		"spawningStrategy":
+		{
+			"spawnStrategy": "Immediate",
+			"phaseInTime":
+			{
+				"minSeconds": 0,
+				"maxSeconds": 0
+			}
+		},
+		"despawningStrategy":
+		{
+			"despawnStrategy": "Immediate",
+			"phaseOutTime":
+			{
+				"minSeconds": 0,
+				"maxSeconds": 0
+			}
+		}
+	},
+	"scaleMin": 1.5,
+	"scaleMax": 1.5,
+	"gameplayTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "npc.disposition.enemy"
+			}
+		],
+		"parentTags": [
+			{
+				"tagName": "npc.disposition"
+			},
+			{
+				"tagName": "npc"
+			}
+		]
+	},
+	"bOverrideAggroRadius": false,
+	"aggroRadius": 0,
+	"bOverrideLeashRadius": false,
+	"leashRadius": 0,
+	"factionId": 0,
+	"interactionDefId":
+	{
+		"guid": "0",
+		"typeId": "1091110031",
+		"name": "None"
+	},
+	"guid": "6064631392778846240",
+	"name": "ProgE_0006_PopAsset_Target",
+	"typeId": "5111001"
+}

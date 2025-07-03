@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"6A4BA20C48E01D1404CFF893479DBC41\", \"While the troops hit the front lines, I\\'ll deal with their leaders.\")",
+	"nextNodeId":
+	{
+		"guid": "6064630617027182705",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcQuestAvailable(GetPlayer(), \"SAQ_0026_P3_Q1_SeverTheHead\")&&\r\n!IsOnStoryArcQuest(GetPlayer(), \"SAQ_0026_P3_Q1_SeverTheHead\")"
+	},
+	"guid": "6064630617012174960",
+	"name": "DD_0026_LeodrasLionbrand_98",
+	"typeId": "1091110027"
+}

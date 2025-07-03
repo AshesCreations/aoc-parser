@@ -1,0 +1,114 @@
+{
+	"eventName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"A54F7643420A0F672BBA83AD7FBB6A6D\", \"Unleashed Hunger\")",
+	"gameplayTags":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"activationPredicatesIds": [
+		{
+			"guid": "6064631510892413031",
+			"typeId": "23095129",
+			"name": "None"
+		}
+	],
+	"minChallengeRating": 0,
+	"maxChallengeRating": 30,
+	"eventLevel": 5,
+	"eventType": 1,
+	"locationId":
+	{
+		"guid": "6064631561688711246",
+		"typeId": "5127371160",
+		"name": "None"
+	},
+	"desiredTimeSlot": "0001.01.01-00.00.00",
+	"frequency": 24,
+	"priority": 1,
+	"rewardTableId":
+	{
+		"guid": "6064630202447953920",
+		"typeId": "1091110040",
+		"name": "None"
+	},
+	"rewardPopulationSetId":
+	{
+		"guid": "6064631364263608359",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"startStageId":
+	{
+		"guid": "6064631510892413034",
+		"typeId": "23095131",
+		"name": "None"
+	},
+	"stagesIds": [
+		{
+			"guid": "6064631510892413034",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064631510892413048",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064631510892413037",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064631510892413042",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064631510892413046",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064631510892413029",
+			"typeId": "23095131",
+			"name": "None"
+		}
+	],
+	"interactVolumesIds": [],
+	"alignmentsIds": [],
+	"mapDisplayType": "Biome",
+	"mapEventIcon": "/Game/UI/Icons/Map/TUI_Icon_Map_Event_Active.TUI_Icon_Map_Event_Active",
+	"bDisplayOnTracker": true,
+	"notificationRadius": 15000,
+	"mapRadiusMinumum": 1000,
+	"cooldownTimer": 7200,
+	"bDisabled": false,
+	"maxInstanceCount": 1,
+	"requiredMapName": "Verra_World_Master",
+	"comments": [],
+	"bIsTemplate": false,
+	"flowNodes": [
+		{
+			"flowType": "EventEntry",
+			"graphLocation":
+			{
+				"x": -1468.8888265468495,
+				"y": -133.77193927765222
+			},
+			"id": 0
+		},
+		{
+			"flowType": "EventExit",
+			"graphLocation":
+			{
+				"x": 1953.3334003554387,
+				"y": 1435.8888627815004
+			},
+			"id": 1
+		}
+	],
+	"guid": "6064631510892413027",
+	"name": "Event_RVR_BriarmoorBanditWolfAttack",
+	"typeId": "23095125"
+}

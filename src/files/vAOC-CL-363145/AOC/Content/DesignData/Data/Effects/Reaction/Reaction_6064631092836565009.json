@@ -1,0 +1,31 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 0,
+		"effectEvents": 0,
+		"abilityEvents": 4,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "(GetOwner() == GetInstigator())\r\n&&\r\n!AbilityHasTag(GetConsumedAbility(), \"ability.weaponcombo\")"
+	},
+	"bEvaluateApplyingHit": false,
+	"instigator": "Owner",
+	"targetsBitmask": 1,
+	"reactHitsIds": [
+		{
+			"guid": "6064631092914552850",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"instigatorProcLimit": 0,
+	"globalProcLimit": 0,
+	"procReactOnApply": false,
+	"guid": "6064631092836565009",
+	"name": "Weapon_2H_Sword_Proc7",
+	"typeId": "3031600202"
+}

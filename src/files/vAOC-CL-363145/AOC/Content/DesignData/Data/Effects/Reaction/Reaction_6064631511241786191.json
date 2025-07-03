@@ -1,0 +1,31 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 2,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "GetStatModValue(GetHitEvent(), GetOwner(), $#10516612381411111:108986352686712$) < 0.0 && HitFlagsContains(GetHitFlags(GetHitEvent(), GetOwner()), EHitFlag::Lethal)"
+	},
+	"bEvaluateApplyingHit": false,
+	"instigator": "Owner",
+	"targetsBitmask": 16,
+	"reactHitsIds": [
+		{
+			"guid": "109201758377606",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"instigatorProcLimit": 0,
+	"globalProcLimit": 0,
+	"procReactOnApply": false,
+	"guid": "6064631511241786191",
+	"name": "Cleric_DefiantLight_Stun",
+	"typeId": "3031600202"
+}

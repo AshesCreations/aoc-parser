@@ -1,0 +1,18 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"796B9AC34A7F82618E110F99EF6DAFE4\", \"Side Quest 0011_LTM\")",
+	"nextNodeId":
+	{
+		"guid": "6064631075296116742",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "!Player_HasCompletedCommission(GetPlayer(),\"CSQ_RVR_0011_LTM_TheLostTreasureMaps\")&&\r\n!Player_HasCommission(GetPlayer(),\"CSQ_RVR_0011_LTM_TheLostTreasureMaps\")&&\r\n!Player_HasItem(GetPlayer(),\"CSQ_0011_LTM_TreasureMap_AelaRuins\")\r\n"
+	},
+	"choiceType": "Default",
+	"guid": "6064631075331309588",
+	"name": "CSQ_DD_NPC_MASTER_ZorrinFenn_3",
+	"typeId": "1091110027"
+}

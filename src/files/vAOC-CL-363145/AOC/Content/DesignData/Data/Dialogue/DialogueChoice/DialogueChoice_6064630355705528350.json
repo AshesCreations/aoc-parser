@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"6CAFC7624BC418FFC2F98AA77435E487\", \"The bandits have united?\")",
+	"nextNodeId":
+	{
+		"guid": "6064630355707756575",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0005A_FGG_ForGreaterGlory\",\"MAP_0005A_FGG_Phase02\")&&\r\n!IsOnStoryArcQuest(GetPlayer(),\"MAQ_0005A_BDA_BeItDeadOrAlive\")&&\r\nIsStoryArcQuestAvailable(GetPlayer(),\"MAQ_0005A_BDA_BeItDeadOrAlive\")\r\n"
+	},
+	"guid": "6064630355705528350",
+	"name": "MADD_0005A_BDA_EudoxiaAvenmoor_Phase02_4",
+	"typeId": "1091110027"
+}

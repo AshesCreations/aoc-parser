@@ -1,0 +1,22 @@
+{
+	"choiceText": "On Launch, no Defend, No Crates",
+	"nextNodeId":
+	{
+		"guid": "6064633669398954795",
+		"typeId": "1091110028",
+		"name": "Caravan_Master_Dialog_47"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "(Player_HasCommission (GetPlayer(), \"CSQ_0161b_FTUE_TurnIn_Caravan\") && !Player_HasCompletedCommission(GetPlayer(), \"CSQ_0161b_FTUE_TurnIn_Caravan\") && !Player_ObjectiveStateEquals(GetPlayer(), \"CSQ_0161b_FTUE_TurninCaravan_Begin\", EObjectiveState::Complete))"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064633669388403498",
+	"name": "Caravan_Master_Dialog_2_Choice_4",
+	"typeId": "1091110027"
+}

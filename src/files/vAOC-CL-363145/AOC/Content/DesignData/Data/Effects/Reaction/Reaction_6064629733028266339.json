@@ -1,0 +1,30 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 2,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "GetStatModValue(GetHitEvent(), GetOwner(), $#10516612381411111:108986352686712$) < 0.0 &&\r\nGetRecordTypeId(GetHitSourceRecord(GetHitEvent())) != GetEffectTypeId()"
+	},
+	"bEvaluateApplyingHit": false,
+	"instigator": "Instigator",
+	"targetsBitmask": 1,
+	"reactHitsIds": [
+		{
+			"guid": "6064629733038424420",
+			"typeId": "30316005",
+			"name": "Prototype_Fighter_BloodDrinker_Proc"
+		}
+	],
+	"instigatorProcLimit": 0,
+	"globalProcLimit": 0,
+	"procReactOnApply": false,
+	"guid": "6064629733028266339",
+	"name": "Scorpion_BuriedKnockOff_Reaction",
+	"typeId": "3031600202"
+}

@@ -1,0 +1,69 @@
+{
+	"populationInteractZone":
+	{
+		"zoneFGuid": "00000000000000000000000000000000",
+		"owningVolumeGuid": "0",
+		"location":
+		{
+			"x": 1500,
+			"y": 1500,
+			"z": 4000
+		},
+		"extents":
+		{
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"rotation":
+		{
+			"pitch": 0,
+			"yaw": 0,
+			"roll": 0
+		},
+		"bUseInternalLocation": false,
+		"bUseInternalRotation": false,
+		"bUseInternalExtents": false,
+		"actions": [
+			{
+				"actionType": "TriggerActionResponses",
+				"actionResponses": [
+					{
+						"guid": "6064631664425500673",
+						"typeId": "1091110030",
+						"name": "None"
+					},
+					{
+						"guid": "6064631664443392004",
+						"typeId": "1091110030",
+						"name": "None"
+					}
+				],
+				"filters":
+				{
+					"tagsIncludeFilter":
+					{
+						"tokenStreamVersion": 0,
+						"tagDictionary": [],
+						"queryTokenStream": [],
+						"userDescription": "",
+						"autoDescription": ""
+					},
+					"tagsExcludeFilter":
+					{
+						"tokenStreamVersion": 0,
+						"tagDictionary": [],
+						"queryTokenStream": [],
+						"userDescription": "",
+						"autoDescription": ""
+					},
+					"popSetsIncludeFilter": [],
+					"popSetsExcludeFilter": []
+				}
+			}
+		]
+	},
+	"guid": "6064631664783720462",
+	"name": "PV_NodeWar_TerritoryControl_MobModifier_08",
+	"typeId": "5111069"
+}

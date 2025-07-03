@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"1FD604934DAEF4E9FFB8D98F1497FB78\", \"I was helping out with the birds.\")",
+	"nextNodeId":
+	{
+		"guid": "6064630401822365364",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "(!IsOnStoryArcQuest(GetPlayer(),\"SAQ_0009_RavensField\"))&&\r\n!IsStoryArcQuestAvailable(GetPlayer(), \"SAQ_0009_RavensField\")"
+	},
+	"guid": "6064630401790252715",
+	"name": "SA_0009_ElizaLecker_67",
+	"typeId": "1091110027"
+}

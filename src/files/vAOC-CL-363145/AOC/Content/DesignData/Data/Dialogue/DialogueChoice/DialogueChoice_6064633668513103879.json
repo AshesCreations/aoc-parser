@@ -1,0 +1,22 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"27057D0C4DD42A3A1BE8D8B9609F3068\", \"Tell me about Crates.\")",
+	"nextNodeId":
+	{
+		"guid": "6064633691102314960",
+		"typeId": "1091110028",
+		"name": "Node_Caravansary_Helper_9"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "(!Player_HasCommission (GetPlayer(), \"CSQ_0159_FTUE_RunningCrates\") && !Player_HasCompletedCommission(GetPlayer(), \"CSQ_0159_FTUE_RunningCrates\"))"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064633668513103879",
+	"name": "Node_Caravansary_Helper_1_Choice_1",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,33 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"0E64936B4E267846355CF8B2ED183638\", \"I have signed the form for you.\")",
+	"nextNodeId":
+	{
+		"guid": "6064630480698540106",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064630475229888540",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064630480633200690",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064630475115659279",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0005B_TEW_EnemyWithin\",\"MAP_0005B_TEW_Phase01\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0005B_HHB_HighwaymenHillsBust\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005B_HHB_HighwaymenHillsBust\",\"SpeakToDirector\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005B_HHB_HighwaymenHillsBust\",\"SignForm\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005B_HHB_HighwaymenHillsBust\",\"WorkForKaelar\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005B_HHB_HighwaymenHillsBust\",\"WorkForBlades\")"
+	},
+	"guid": "6064630480704569421",
+	"name": "MADD_0005B_TEW_TheHighwayman_Phase01_17",
+	"typeId": "1091110027"
+}

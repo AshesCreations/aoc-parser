@@ -1,0 +1,23 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"49AD089F420EF8CF5BCFB992D5C68805\", \"The tower is secured.\")",
+	"nextNodeId":
+	{
+		"guid": "6064630322000429118",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064630321376329750",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0005A_FGG_ForGreaterGlory\",\"MAP_0005A_FGG_Phase01\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0005A_STR_SecuringTheTradeRoutes\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005A_STR_SecuringTheTradeRoutes\",\"KilledBossFishmongers\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005A_STR_SecuringTheTradeRoutes\",\"ReportToNerimedaSentry\")"
+	},
+	"guid": "6064630322000035901",
+	"name": "MADD_0005A_STR_NPC_NerimedaSentry_4",
+	"typeId": "1091110027"
+}

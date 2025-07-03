@@ -1,0 +1,33 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"CA921D7A48ED518241430CA0EBF06D82\", \"I\\'ve got some supplies for the catapults.\")",
+	"nextNodeId":
+	{
+		"guid": "6064630616669356100",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064630616655921217",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064630616658935874",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064630616665620547",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "IsOnStoryArcQuest(GetPlayer(), \"SAQ_0026_P1_Q1_CatapultConstruction\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(), \"SAQ_0026_P1_Q1_CatapultConstruction\", \"CampSupplied\")"
+	},
+	"guid": "6064630616644059200",
+	"name": "DD_0026_LeodrasLionbrand_60",
+	"typeId": "1091110027"
+}

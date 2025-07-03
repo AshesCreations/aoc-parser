@@ -1,0 +1,28 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"AAC8958D47B1CDEB503B0DA42D3742EC\", \"I found these\")",
+	"nextNodeId":
+	{
+		"guid": "6064632378161430683",
+		"typeId": "1091110028",
+		"name": "SQ_Lionhold_0001_GoblinsAttack_Coyle_8"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064632361184460800",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "(Player_HasCommission (GetPlayer(), \"SQ_LionholdNorth_0001_GoblinAttackers\") && Player_ObjectiveStateEquals(GetPlayer(), \"CSQ_0001_LionholdNorth_Task_2_Collect\", EObjectiveState::Complete))"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064632304839229521",
+	"name": "SQ_Lionhold_0001_GoblinsAttack_Coyle_4_Choice_1",
+	"typeId": "1091110027"
+}

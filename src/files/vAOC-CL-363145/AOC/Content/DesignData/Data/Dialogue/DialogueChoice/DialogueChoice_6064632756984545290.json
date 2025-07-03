@@ -1,0 +1,22 @@
+{
+	"choiceText": "",
+	"nextNodeId":
+	{
+		"guid": "6064632756994572299",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "Freehold_ClientIsEstateOwner(GetCurrentFreeholdEstate(GetPlayer()), GetPlayer())"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064632756984545290",
+	"name": "DialogueChoice_is_owner",
+	"typeId": "1091110027"
+}

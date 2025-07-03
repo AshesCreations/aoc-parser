@@ -1,0 +1,144 @@
+{
+	"designNotes": "",
+	"levelDefinitionId":
+	{
+		"guid": "6064629126799097877",
+		"typeId": "9227326",
+		"name": "None"
+	},
+	"playerFacingName": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"AC46421A48E6BB45A5309295AA75D98B\", \"Korrin\")",
+	"zoiType": "HasNode",
+	"startingAreaGameplayTag":
+	{
+		"tagName": "None"
+	},
+	"cityNodeId":
+	{
+		"guid": "6064633334652600320",
+		"typeId": "1323521343",
+		"name": "None"
+	},
+	"adjacentZonesOfInfluenceIds": [
+		{
+			"guid": "6064633563104805132",
+			"typeId": "9127326",
+			"name": "None"
+		},
+		{
+			"guid": "6064633253929484288",
+			"typeId": "9127326",
+			"name": "None"
+		},
+		{
+			"guid": "6064632150768680960",
+			"typeId": "9127326",
+			"name": "None"
+		},
+		{
+			"guid": "6064633253929811971",
+			"typeId": "9127326",
+			"name": "None"
+		},
+		{
+			"guid": "6064633253929615361",
+			"typeId": "9127326",
+			"name": "None"
+		}
+	],
+	"corruptionRulesEnabled": true,
+	"bAllowPVPOptInProtection": false,
+	"alignmentsAssignedUponEnteringIds": [],
+	"zoiEnvironmentType": "None",
+	"editorColor":
+	{
+		"x": 0,
+		"y": 1,
+		"z": 1
+	},
+	"zOIRewardTables": [
+		{
+			"inclusionExpression":
+			{
+				"expression": "!DoesNPCContainTag(\"NoRewards\")"
+			},
+			"rewardTableId":
+			{
+				"guid": "6064632271552381720",
+				"typeId": "1091110040",
+				"name": "None"
+			}
+		},
+		{
+			"inclusionExpression":
+			{
+				"expression": "DoesNPCContainTag(\"character.humanoid\")"
+			},
+			"rewardTableId":
+			{
+				"guid": "6064633391378137089",
+				"typeId": "1091110040",
+				"name": "None"
+			}
+		},
+		{
+			"inclusionExpression":
+			{
+				"expression": "!DoesNPCContainTag(\"NoRewards\")"
+			},
+			"rewardTableId":
+			{
+				"guid": "6064633313653948416",
+				"typeId": "1091110040",
+				"name": "None"
+			}
+		}
+	],
+	"economicRegionTableId":
+	{
+		"guid": "6064633459692142662",
+		"typeId": "98738382",
+		"name": "None"
+	},
+	"bHideExperienceEvents": false,
+	"biome": "Tropics",
+	"biomeGatherableTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "TurquoiseSea"
+			}
+		],
+		"parentTags": []
+	},
+	"freeholdEstatesIds": [
+		{
+			"guid": "6064633558013378576",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633558014820369",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633558015279122",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633558015410195",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633558015606804",
+			"typeId": "1337133701",
+			"name": "None"
+		}
+	],
+	"actorEffects": [],
+	"guid": "6064633253929680898",
+	"name": "Verra_TUR_Node_Korrin",
+	"typeId": "9127326"
+}

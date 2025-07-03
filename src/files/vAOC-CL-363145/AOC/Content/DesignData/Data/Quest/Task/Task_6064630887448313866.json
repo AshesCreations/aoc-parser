@@ -1,0 +1,59 @@
+{
+	"type": "Kill",
+	"progressExpression":
+	{
+		"expression": ""
+	},
+	"bAllowSatisfactionToRegress": false,
+	"completionQuantity": 1,
+	"completionActionsIds": [],
+	"tagQuery":
+	{
+		"tokenStreamVersion": 0,
+		"tagDictionary": [
+			{
+				"tagName": "Quest.Named_RVR_DoomedResearcher"
+			}
+		],
+		"queryTokenStream": [ 0, 1, 1, 1, 0 ],
+		"userDescription": "",
+		"autoDescription": " ANY( Quest.Named_RVR_DoomedResearcher )"
+	},
+	"professionFilterIds": [],
+	"collectionFilterId":
+	{
+		"guid": "0",
+		"typeId": "1091110041",
+		"name": "None"
+	},
+	"collectionCount": 5,
+	"displayLocation": [
+		{
+			"location":
+			{
+				"x": -594623.21297300002,
+				"y": 434264.52375300002,
+				"z": 13439.842551
+			},
+			"radius": 3000,
+			"map_DisplayType": "ICON",
+			"map_IconVisual":
+			{
+				"guid": "6064630988804194306",
+				"typeId": "949952112329",
+				"name": "None"
+			},
+			"map_DisplayName": "NSLOCTEXT(\"\", \"A84EC8314DBF37090EABF0AA9C54C26A\", \"Tura\\'Loch Ruins\")"
+		}
+	],
+	"location": [],
+	"populationSetId":
+	{
+		"guid": "0",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"guid": "6064630887448313866",
+	"name": "TID_RVR_Bounty_DoomedResearcher",
+	"typeId": "1095125186"
+}

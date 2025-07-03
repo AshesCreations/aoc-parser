@@ -1,0 +1,95 @@
+{
+	"assetRef": "/Game/DesignAssets/Population/NPC/Humanoid/Giants/Giant_Cultist.Giant_Cultist",
+	"lootTablesIds": [
+		{
+			"guid": "6064633301387444326",
+			"typeId": "1091110040",
+			"name": "None"
+		}
+	],
+	"populationFilter":
+	{
+		"zoneOfInfluenceIds": [],
+		"nodeIds": [],
+		"cultures": [],
+		"nodeTypes": [],
+		"biomes": [],
+		"seasons": [],
+		"nodeLevelMin": "Wilderness",
+		"nodeLevelMax": "Metropolis",
+		"timeOfDayStart": -1,
+		"timeOfDayEnd": -1,
+		"weatherTypes": [],
+		"spawningStrategy":
+		{
+			"spawnStrategy": "Immediate",
+			"phaseInTime":
+			{
+				"minSeconds": 0,
+				"maxSeconds": 0
+			}
+		},
+		"despawningStrategy":
+		{
+			"despawnStrategy": "Immediate",
+			"phaseOutTime":
+			{
+				"minSeconds": 0,
+				"maxSeconds": 0
+			}
+		},
+		"requiredGameplayTags":
+		{
+			"gameplayTags": [],
+			"parentTags": []
+		}
+	},
+	"scaleMin": 1,
+	"scaleMax": 1,
+	"gameplayTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "npc.stature.rareSpawn"
+			}
+		],
+		"parentTags": [
+			{
+				"tagName": "npc.stature"
+			},
+			{
+				"tagName": "npc"
+			}
+		]
+	},
+	"bOverrideAggroRadius": false,
+	"aggroRadius": 0,
+	"bOverrideLeashRadius": false,
+	"leashRadius": 0,
+	"factionId": 0,
+	"interactionDefId":
+	{
+		"guid": "0",
+		"typeId": "1091110031",
+		"name": "None"
+	},
+	"displayNameOverrides": [
+		"NSLOCTEXT(\"[CD1CAEBB124B4AC3B165BA6A4AC4498E]\", \"611822BA487C5E00315ED6A9BBF7F058\", \"Tavra\")"
+	],
+	"dialogueRootId":
+	{
+		"guid": "0",
+		"typeId": "0",
+		"name": "None"
+	},
+	"offeredQuests": [],
+	"voiceOverrideId":
+	{
+		"guid": "0",
+		"typeId": "919300",
+		"name": "None"
+	},
+	"guid": "6064633306176028737",
+	"name": "PA_TUR_Pocket_Dungeon_Isle_of_Bones_Sea_Giant_L29_3S_Tavra",
+	"typeId": "5111001"
+}

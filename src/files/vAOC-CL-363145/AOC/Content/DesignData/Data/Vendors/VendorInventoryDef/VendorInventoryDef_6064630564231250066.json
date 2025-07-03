@@ -1,0 +1,30 @@
+{
+	"listings": [
+		{
+			"itemId":
+			{
+				"guid": "6064630417666015574",
+				"typeId": "1091110003",
+				"name": "None"
+			},
+			"itemVariation":
+			{
+				"guid": "0",
+				"typeId": "1091111111",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "Node_IsPlotExpansionEnabled(Node_GetActorCityNode(GetInteractionTarget()),Node_GetActorPlotRecord(GetInteractionTarget()),$#7823461:6064631874556002328$)"
+			},
+			"offers": []
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "Node_IsPlotExpansionEnabled(Node_GetActorCityNode(GetInteractionTarget()),Node_GetActorPlotRecord(GetInteractionTarget()),$#7823461:6064631874556002328$)"
+	},
+	"guid": "6064630564231250066",
+	"name": "Tanning_Vendor_T3",
+	"typeId": "3145314714"
+}

@@ -1,0 +1,85 @@
+{
+	"type": "Kill",
+	"progressExpression":
+	{
+		"expression": ""
+	},
+	"nPCTaskIconOverrideId":
+	{
+		"guid": "0",
+		"typeId": "949952112329",
+		"name": "None"
+	},
+	"bAllowSatisfactionToRegress": false,
+	"completionQuantity": 10,
+	"tagQuery":
+	{
+		"tokenStreamVersion": 0,
+		"tagDictionary": [
+			{
+				"tagName": "character.humanoid.goblin"
+			}
+		],
+		"queryTokenStream": [ 0, 1, 2, 1, 0 ],
+		"userDescription": "",
+		"autoDescription": " ALL( character.humanoid.goblin )"
+	},
+	"professionFilterIds": [],
+	"gatherableFilterIds": [],
+	"collectionFilterId":
+	{
+		"guid": "0",
+		"typeId": "1091110041",
+		"name": "None"
+	},
+	"collectionCount": 5,
+	"objectivesIds": [],
+	"bCheckKillLocation": false,
+	"displayLocation": [
+		{
+			"location":
+			{
+				"x": -559485.81374899996,
+				"y": 615919.245857,
+				"z": 13057.556092000001
+			},
+			"radius": 15000,
+			"map_DisplayType": "ICON_AND_RADIUS",
+			"map_IconVisual":
+			{
+				"guid": "6064630990211645445",
+				"typeId": "949952112329",
+				"name": "None"
+			},
+			"map_DisplayName": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"F11124CB4246B8B745E72BB8CEBFB98F\", \"Goblins\")"
+		},
+		{
+			"location":
+			{
+				"x": -543510.46098199999,
+				"y": 566640.00450499996,
+				"z": 17400.686524000001
+			},
+			"radius": 15000,
+			"map_DisplayType": "ICON_AND_RADIUS",
+			"map_IconVisual":
+			{
+				"guid": "6064630990211645445",
+				"typeId": "949952112329",
+				"name": "None"
+			},
+			"map_DisplayName": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"F11124CB4246B8B745E72BB8CEBFB98F\", \"Goblins\")"
+		}
+	],
+	"location": [],
+	"populationSetId":
+	{
+		"guid": "0",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"notifyType": "None",
+	"guid": "6064632503011246095",
+	"name": "MCOM_RVR_Miraleth_Kill_Goblins",
+	"typeId": "1095125186"
+}

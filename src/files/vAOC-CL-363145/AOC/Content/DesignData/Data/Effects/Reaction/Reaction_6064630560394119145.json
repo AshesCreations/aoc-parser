@@ -1,0 +1,32 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 4,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0,
+		"fishingEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "GetRecordTypeId(GetHitSourceRecord(GetHitEvent())) != GetReactionTypeId() &&\r\nGetOwner() == GetInstigator() &&\r\nHitHasTag(GetHitEvent(), \"Combostep.ProcHit\") "
+	},
+	"bEvaluateApplyingHit": false,
+	"instigator": "HitInstigator",
+	"targetsBitmask": 16,
+	"reactHitsIds": [
+		{
+			"guid": "6064630633950546726",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"instigatorProcLimit": 0,
+	"globalProcLimit": 0,
+	"procReactOnApply": false,
+	"guid": "6064630560394119145",
+	"name": "Weapon_Proc_Bullseye_Reaction",
+	"typeId": "3031600202"
+}

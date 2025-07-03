@@ -1,0 +1,31 @@
+{
+	"expression":
+	{
+		"expression": "Event_GetNumParticipants()>=1 //&& Event_GetBoolVar(\"CanBegin\")"
+	},
+	"maxActivationCount": 1,
+	"bRequiresRegressionToLoop": true,
+	"objectivesIds": [],
+	"triggersIds": [
+		{
+			"guid": "6064631567034158097",
+			"typeId": "23095135",
+			"name": "None"
+		},
+		{
+			"guid": "6064632377588645888",
+			"typeId": "23095135",
+			"name": "None"
+		}
+	],
+	"flowEditorNodeLocation":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"routePins": [],
+	"guid": "6064631567031667728",
+	"name": "ProgE_RVR_0002_TitansRing_RisenRanks_CanBegin",
+	"typeId": "23095129"
+}

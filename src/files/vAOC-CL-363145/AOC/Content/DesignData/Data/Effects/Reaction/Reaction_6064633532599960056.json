@@ -1,0 +1,33 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 2,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0,
+		"fishingEvents": 0,
+		"statEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "var segment = GetEffectCount(GetOwner(),$#30316002:6064633532602188281$);\r\n\r\nvar p75 = segment == 0 && GetHealthPercentage(GetOwner()) < 0.75;\r\nvar p50 = segment == 1 && GetHealthPercentage(GetOwner()) < 0.5;\r\nvar p25 = segment == 2 && GetHealthPercentage(GetOwner()) < 0.25;\r\n\r\nGetStatModValue(GetHitEvent(), $#10516612381411111:108986352686712$) < 0.\r\n&& (p75 || p50 || p25)"
+	},
+	"bEvaluateApplyingHit": false,
+	"instigator": "Owner",
+	"targetsBitmask": 1,
+	"reactHitsIds": [
+		{
+			"guid": "6064633532657107451",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"instigatorProcLimit": 0,
+	"globalProcLimit": 0,
+	"procReactOnApply": false,
+	"guid": "6064633532599960056",
+	"name": "ConstructDunzenkell_HealthSegmentTracker",
+	"typeId": "3031600202"
+}

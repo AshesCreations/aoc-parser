@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"0B6EF3684DB31F381B780EB46F1C795D\", \"What preparations remain?\")",
+	"nextNodeId":
+	{
+		"guid": "6064630615919493138",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcQuestAvailable(GetPlayer(), \"SAQ_0026_P1_Q1_CatapultConstruction\")&&\r\n!IsOnStoryArcQuest(GetPlayer(), \"SAQ_0026_P1_Q1_CatapultConstruction\")"
+	},
+	"guid": "6064630615919493128",
+	"name": "DD_0026_LeodrasLionbrand_8",
+	"typeId": "1091110027"
+}

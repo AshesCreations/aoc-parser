@@ -1,0 +1,33 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"EBAB7EDF45C8999C6E438DBC63226D9E\", \"Take the Goblin Gillsnatcher\")",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064632281740345475",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064632281758367876",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "!Player_HasItem(GetPlayer(),\"RVR_Aela_GoblinTrash_1to5_GoblinGillsnatcher\")&&Player_HasItem(GetPlayer(),\"RVR_Aela_GoblinTrash_1to5_GoblinSnareline\")&&Player_HasItem(GetPlayer(),\"RVR_Aela_GoblinTrash_1to5_GoblinHilt\")&&Player_HasItem(GetPlayer(),\"RVR_Aela_GoblinTrash_1to5_GoblinTooth\")&&Player_HasItem(GetPlayer(),\"RVR_Aela_GoblinTrash_1to5_GoblinOozenog\")"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064632297221916090",
+	"name": "CSQ_DD_NPC_Goblin_Grubfiddle_5_Choice_1",
+	"typeId": "1091110027"
+}

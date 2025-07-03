@@ -1,0 +1,101 @@
+{
+	"commissionType": "Generic",
+	"commissionGameplayTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "Biome.Desert"
+			},
+			{
+				"tagName": "Quest.Commission.Adventure.Cull"
+			},
+			{
+				"tagName": "Quest.Commission.Tier.T1"
+			}
+		],
+		"parentTags": [
+			{
+				"tagName": "Biome"
+			},
+			{
+				"tagName": "Quest.Commission.Adventure"
+			},
+			{
+				"tagName": "Quest.Commission"
+			},
+			{
+				"tagName": "Quest"
+			},
+			{
+				"tagName": "Quest.Commission.Tier"
+			}
+		]
+	},
+	"preRequisiteQuestsIds": [],
+	"autoFailTimer": -1,
+	"bRepeatable": false,
+	"mainObjectiveType": "Kill",
+	"commissionSection": 1,
+	"biomeOrigin": "FloodPlains",
+	"bFromDynamicContent": false,
+	"availabilityExpression":
+	{
+		"expression": "(GetNodeRecord() == $#1323521343:6064632734251679746$ && Node_InLevelRangeInclusive($#1323521343:6064632734251679746$, ENodeLevel::Village, ENodeLevel::City)) || (GetNodeRecord() == $#1323521343:6064632734253907971$ && Node_InLevelRangeInclusive($#1323521343:6064632734253907971$, ENodeLevel::Village, ENodeLevel::City)) || (GetNodeRecord() == $#1323521343:6064632734268915716$ && Node_InLevelRangeInclusive($#1323521343:6064632734268915716$, ENodeLevel::Village, ENodeLevel::City))"
+	},
+	"bDisabled": false,
+	"level": 12,
+	"commissionRarity": "Rare",
+	"objectivesIds": [
+		{
+			"guid": "6064632959769378832",
+			"typeId": "1091110420",
+			"name": "None"
+		}
+	],
+	"allowMultipleCompletion": false,
+	"commissionName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"C880A95A4275733A7EC4419884CD3543\", \"Prismatic Fury\")",
+	"flavorText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"EFF35CAE47C9FBE3B4676EBFEC16D392\", \"Shardlings have started to gather near Embersprings, drawn by the magic in the air. If left unchecked, their growing power could engulf the region in chaos.\")",
+	"mainObjectiveText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"FEC2A1DC4B13C32655DECF9A82E0A976\", \"Locate and defeat shardlings in the Sandsquall Desert\")",
+	"rewardTablesIds": [
+		{
+			"guid": "6064631443187695620",
+			"typeId": "1091110040",
+			"name": "None"
+		}
+	],
+	"calloutName": "",
+	"calloutDescription": "",
+	"bCanProgressWhileInRaid": false,
+	"expiration":
+	{
+		"duration": "0"
+	},
+	"cooldown":
+	{
+		"duration": "0"
+	},
+	"moneyCost": "0",
+	"resourceCost": [],
+	"mayoralCompletionCount": 0,
+	"rewardId":
+	{
+		"guid": "0",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"bNodeTargeted": false,
+	"targetRewardId":
+	{
+		"guid": "0",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"questItemListIds": [],
+	"storedGraph":
+	{
+		"nodes": []
+	},
+	"guid": "6064632959735562247",
+	"name": "COM_SAN_Cull_CrystalShardling_Rare",
+	"typeId": "280002"
+}

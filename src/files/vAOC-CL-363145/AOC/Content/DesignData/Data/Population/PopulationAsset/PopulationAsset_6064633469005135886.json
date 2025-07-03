@@ -1,0 +1,97 @@
+{
+	"assetRef": "/Game/DesignAssets/Population/NPC/Monster/Undead/Skeleton/Skeleton_Reaper.Skeleton_Reaper",
+	"lootTablesIds": [
+		{
+			"guid": "6064633465185632318",
+			"typeId": "1091110040",
+			"name": "None"
+		}
+	],
+	"populationFilter":
+	{
+		"zoneOfInfluenceIds": [],
+		"nodeIds": [],
+		"cultures": [],
+		"nodeTypes": [],
+		"biomes": [],
+		"seasons": [],
+		"nodeLevelMin": "Wilderness",
+		"nodeLevelMax": "Metropolis",
+		"timeOfDayStart": -1,
+		"timeOfDayEnd": -1,
+		"weatherTypes": [],
+		"spawningStrategy":
+		{
+			"spawnStrategy": "Immediate",
+			"phaseInTime":
+			{
+				"minSeconds": 0,
+				"maxSeconds": 0
+			}
+		},
+		"despawningStrategy":
+		{
+			"despawnStrategy": "Immediate",
+			"phaseOutTime":
+			{
+				"minSeconds": 0,
+				"maxSeconds": 0
+			}
+		},
+		"requiredGameplayTags":
+		{
+			"gameplayTags": [],
+			"parentTags": []
+		}
+	},
+	"scaleMin": 1,
+	"scaleMax": 1,
+	"gameplayTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "npc.stature.elite"
+			},
+			{
+				"tagName": "character.undead.skeleton.reaper"
+			},
+			{
+				"tagName": "npc.stature.rareSpawn"
+			}
+		],
+		"parentTags": [
+			{
+				"tagName": "npc.stature"
+			},
+			{
+				"tagName": "npc"
+			},
+			{
+				"tagName": "character.undead.skeleton"
+			},
+			{
+				"tagName": "character.undead"
+			},
+			{
+				"tagName": "character"
+			}
+		]
+	},
+	"bOverrideAggroRadius": false,
+	"aggroRadius": 0,
+	"bOverrideLeashRadius": false,
+	"leashRadius": 0,
+	"factionId": 0,
+	"interactionDefId":
+	{
+		"guid": "0",
+		"typeId": "1091110031",
+		"name": "None"
+	},
+	"displayNameOverrides": [
+		"NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"BE21EF5D447E0187883A8D91B2B667A1\", \"Sir Jenry The Strong\")"
+	],
+	"guid": "6064633469005135886",
+	"name": "PA_JUN_Pocket_Dungeon_Verdance_Ruins_Skeleton_Reaper_L22_2S_RareSpawn_Sir_Jenry_The_Strong",
+	"typeId": "5111001"
+}

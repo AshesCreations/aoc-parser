@@ -1,0 +1,52 @@
+{
+	"trigger":
+	{
+		"expression": "(((HitHasTag(GetHitRecord(GetHitInProgress()), \"ComboStep.End\")) || (HitHasTag(GetHitRecord(GetHitInProgress()), \"ComboStep.EndSecondary\")))\r\n&&\r\nGetHealthPercentage(GetTarget()) <=0.25)"
+	},
+	"terms": [
+		{
+			"termId":
+			{
+				"guid": "6064629248780337173",
+				"typeId": "10516612381411115",
+				"name": "None"
+			},
+			"value":
+			{
+				"expression": "const level1 = SelectFloat(GetSkillPurchased(GetInstigator(),GetCurrentWeaponSkilltree(GetInstigator()),$#981011333:6064631965752500620$),0.06,0.0);\r\nconst level2 = SelectFloat(GetSkillPurchased(GetInstigator(),GetCurrentWeaponSkilltree(GetInstigator()),$#981011333:6064631965752107403$),0.06,0.0);\r\nconst level3 = SelectFloat(GetSkillPurchased(GetInstigator(),GetCurrentWeaponSkilltree(GetInstigator()),$#981011333:6064631965751714186$),0.06,0.0);\r\n\r\nlevel1 + level2 + level3"
+			},
+			"bOptional": false,
+			"bKeepBeyondScope": false,
+			"filter":
+			{
+				"expression": ""
+			},
+			"mergeRuleOverride": "Merge_Default"
+		},
+		{
+			"termId":
+			{
+				"guid": "6064630633715007489",
+				"typeId": "10516612381411115",
+				"name": "None"
+			},
+			"value":
+			{
+				"expression": "const level1 = SelectFloat(GetSkillPurchased(GetInstigator(),GetCurrentWeaponSkilltree(GetInstigator()),$#981011333:6064631965752500620$),0.02,0.0);\r\nconst level2 = SelectFloat(GetSkillPurchased(GetInstigator(),GetCurrentWeaponSkilltree(GetInstigator()),$#981011333:6064631965752107403$),0.02,0.0);\r\nconst level3 = SelectFloat(GetSkillPurchased(GetInstigator(),GetCurrentWeaponSkilltree(GetInstigator()),$#981011333:6064631965751714186$),0.02,0.0);\r\n\r\n1.00 + level1 + level2 + level3"
+			},
+			"bOptional": false,
+			"bKeepBeyondScope": false,
+			"filter":
+			{
+				"expression": ""
+			},
+			"mergeRuleOverride": "Merge_Default"
+		}
+	],
+	"tags": [],
+	"statModsIds": [],
+	"statModPostProcess": [],
+	"guid": "6064631965733298565",
+	"name": "Weapon_Passive_Executioner_Under25",
+	"typeId": "3031600210"
+}

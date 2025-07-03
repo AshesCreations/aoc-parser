@@ -1,0 +1,68 @@
+{
+	"type": "Basic",
+	"progressExpression":
+	{
+		"expression": ""
+	},
+	"nPCTaskIconOverrideId":
+	{
+		"guid": "0",
+		"typeId": "949952112329",
+		"name": "None"
+	},
+	"bAllowSatisfactionToRegress": false,
+	"completionQuantity": 1,
+	"tagQuery":
+	{
+		"tokenStreamVersion": 0,
+		"tagDictionary": [
+			{
+				"tagName": "SideQuest.QuestTarget.SQ_0010.TowerCultist"
+			}
+		],
+		"queryTokenStream": [ 0, 1, 2, 1, 0 ],
+		"userDescription": "Tower Cultist",
+		"autoDescription": " ALL( SideQuest.QuestTarget.SQ_0010.TowerCultist )"
+	},
+	"professionFilterIds": [],
+	"gatherableFilterIds": [],
+	"collectionFilterId":
+	{
+		"guid": "0",
+		"typeId": "1091110041",
+		"name": "None"
+	},
+	"collectionCount": 5,
+	"objectivesIds": [],
+	"bCheckKillLocation": false,
+	"displayLocation": [
+		{
+			"location":
+			{
+				"x": -902970,
+				"y": 654110,
+				"z": 15420
+			},
+			"radius": 30,
+			"map_DisplayType": "ICON",
+			"map_IconVisual":
+			{
+				"guid": "0",
+				"typeId": "949952112329",
+				"name": "None"
+			},
+			"map_DisplayName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"83E3B1614E9D2BB672D1CCA9774791FD\", \"Investigate the tower.\")"
+		}
+	],
+	"location": [],
+	"populationSetId":
+	{
+		"guid": "0",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"notifyType": "None",
+	"guid": "6064632393334456321",
+	"name": "SQT_0010_SliversOfThePast_InvestigateTower",
+	"typeId": "1095125186"
+}

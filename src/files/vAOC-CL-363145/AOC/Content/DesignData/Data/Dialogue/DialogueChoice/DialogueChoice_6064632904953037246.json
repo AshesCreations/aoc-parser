@@ -1,0 +1,28 @@
+{
+	"choiceText": "",
+	"nextNodeId":
+	{
+		"guid": "6064632757461516446",
+		"typeId": "1091110028",
+		"name": "SQ_NOC_RVR_Samias_Miraleth_MartinSwift_14"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064632757473771681",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "!Player_ObjectiveStateEquals(GetPlayer(), \"NarrativeObjective_RVR_Samias_Miraleth_PentEnergies_1\", EObjectiveState::Complete)"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064632904953037246",
+	"name": "SQ_NOC_RVR_Samias_Miraleth_MartinSwift_24_Choice_1",
+	"typeId": "1091110027"
+}

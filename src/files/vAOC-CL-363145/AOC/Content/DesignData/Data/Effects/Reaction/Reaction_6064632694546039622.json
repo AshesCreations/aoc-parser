@@ -1,0 +1,32 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 4,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0,
+		"fishingEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "GetStatModValue(GetHitEvent(), $#10516612381411111:108986352686712$) < 0.0 &&\r\nGetHitRecord(GetHitEvent()) != $#30316005:6064629771962485672$ &&\r\nGetEffectCount(GetHitTargetByIndex(GetHitEvent(), 0), $#30316002:6064629761775576467$) > 0"
+	},
+	"bEvaluateApplyingHit": false,
+	"instigator": "Instigator",
+	"targetsBitmask": 2,
+	"reactHitsIds": [
+		{
+			"guid": "6064632694836691787",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"instigatorProcLimit": 0,
+	"globalProcLimit": 0,
+	"procReactOnApply": false,
+	"guid": "6064632694546039622",
+	"name": "Undead_Dunir_Berserker_BloodFury_LifeSteal",
+	"typeId": "3031600202"
+}

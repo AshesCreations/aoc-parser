@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"FA06A47C4F116BE6265709BA45134B35\", \"I haven\\'t finished yet.\")",
+	"nextNodeId":
+	{
+		"guid": "6064629885989421081",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsOnStoryArcQuest(GetPlayer(),\"SAQ_0013_Control_1\")&&\r\n(!GetStoryArcQuestFlag(GetPlayer(),\"SAQ_0013_Control_1\",\"SporeTended\"))\r\n"
+	},
+	"guid": "6064629852774400070",
+	"name": "0013_Jenner_Dialog_34",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"F55926F341745BE622975DBB097B6749\", \"no quest\")",
+	"nextNodeId":
+	{
+		"guid": "6064629450481664004",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "(!IsOnStoryArcQuest(GetPlayer(),\"SAQ_0008_HeritageofHouseholds\")&&\r\nIsStoryArcQuestAvailable(GetPlayer(), \"SAQ_0008_HeritageofHouseholds\"))"
+	},
+	"guid": "6064629445149392996",
+	"name": "MADD_0008_RosalindBriar_20",
+	"typeId": "1091110027"
+}

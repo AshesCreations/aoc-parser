@@ -1,0 +1,33 @@
+{
+	"effectFragilityType": "FRAGILITY_Tick",
+	"eventBindings":
+	{
+		"hitEvents": 0,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0,
+		"fishingEvents": 0
+	},
+	"evaluationTickFrequency": 1,
+	"shouldBreakEffectImmediately":
+	{
+		"expression": "GetEffectCount(GetInstigator(), $#30316002:6064631668308443138$) <= 0 && (!IsMoving(GetInstigator()) || GetEffectCount(GetInstigator(), $#30316002:6064631641826394197$) <= 0)"
+	},
+	"shouldEvaluateThresholdAccumulation":
+	{
+		"expression": ""
+	},
+	"effectBreakThreshold":
+	{
+		"expression": ""
+	},
+	"effectBreakThresholdAccumulationRate":
+	{
+		"expression": ""
+	},
+	"guid": "6064631958316322435",
+	"name": "General_Stamina_Sprint_SecondWind_Charge_Fragility",
+	"typeId": "30316112"
+}

@@ -1,0 +1,28 @@
+{
+	"choiceText": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"5F148C854F16D293564825BC702BE62F\", \"[Provide the Stones]\")",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064633294982217734",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "//Check for these items if they have it AND the relic is available\r\n//please give them the relic\r\n\r\nPlayer_HasItem(GetPlayer(),\"Relic_Uncommon_Dusklit_Revelation_key_1\") \r\n&&\r\nPlayer_HasItem(GetPlayer(),\"Relic_Uncommon_Dusklit_Revelation_key_2\") \r\n&&\r\nPlayer_HasItem(GetPlayer(),\"Relic_Uncommon_Dusklit_Revelation_key_3\")\r\n&&\r\nRelic_GetRelicInstancesAvailable($#7823459:6064633256294154256$) > 0"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064633295347187714",
+	"name": "Relic_Acquisition_Uncommon_Dusklit_Revelation_1_Choice_1",
+	"typeId": "1091110027"
+}

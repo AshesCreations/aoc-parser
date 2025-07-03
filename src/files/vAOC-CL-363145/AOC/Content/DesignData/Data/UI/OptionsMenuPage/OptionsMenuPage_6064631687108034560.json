@@ -1,0 +1,585 @@
+{
+	"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Gameplay_CombatSectionLabel\")",
+	"categoryHeaderLabel": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Gameplay_CombatSectionHeader\")",
+	"entryCategories": [
+		{
+			"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Options_GeneralSubheader\")",
+			"entryAlignment": "HAlign_Fill",
+			"entryWrapSize": 10,
+			"wrapBoxClass": "Standard",
+			"entries": [
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Combat_MinimapCombatStatusLabel\")",
+					"labelTextMinDesiredWidth": 300,
+					"labelTextWrapWidth": 1080,
+					"type": "CheckBox",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetShowCombatStatusOnMinimap",
+					"setterFunctionName": "SetShowCombatStatusOnMinimap",
+					"dependencyGetter": "None"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Combat_LowHealthVignetteIntensityLabel\")",
+					"labelTextMinDesiredWidth": 300,
+					"labelTextWrapWidth": 600,
+					"type": "Slider",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 2
+					},
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 425,
+					"widgetClass": "None",
+					"getterFunctionName": "GetLowHealthVignetteIntensity",
+					"setterFunctionName": "SetLowHealthVignetteIntensity",
+					"dependencyGetter": "None"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Combat_DisplayStatsWhenZeroLabel\")",
+					"labelTextMinDesiredWidth": 300,
+					"labelTextWrapWidth": 1080,
+					"type": "CheckBox",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetDisplayStatsWhenZero",
+					"setterFunctionName": "SetDisplayStatsWhenZero",
+					"dependencyGetter": "None"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Combat_AttachPlayerEffectsLabel\")",
+					"labelTextMinDesiredWidth": 300,
+					"labelTextWrapWidth": 1080,
+					"type": "CheckBox",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetEffectsComponentAttached",
+					"setterFunctionName": "SetEffectsComponentAttached",
+					"dependencyGetter": "None"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Combat_ShowEffectCooldownNumbers\")",
+					"labelTextMinDesiredWidth": 300,
+					"labelTextWrapWidth": 1080,
+					"type": "CheckBox",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetShowEffectCooldownNumbers",
+					"setterFunctionName": "SetShowEffectCooldownNumbers",
+					"dependencyGetter": "None"
+				}
+			],
+			"subcategories": []
+		},
+		{
+			"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Combat_AutoAttackSubheader\")",
+			"entryAlignment": "HAlign_Fill",
+			"entryWrapSize": 10,
+			"wrapBoxClass": "Standard",
+			"entries": [
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Combat_AutoAttackEnabledLabel\")",
+					"labelTextMinDesiredWidth": 300,
+					"labelTextWrapWidth": 1080,
+					"type": "CheckBox",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetAutoAttackEnabled",
+					"setterFunctionName": "SetAutoAttackEnabled",
+					"dependencyGetter": "None"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Combat_StartAutoAttackAfterMeleeLabel\")",
+					"labelTextMinDesiredWidth": 300,
+					"labelTextWrapWidth": 600,
+					"type": "CheckBox",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 584,
+					"widgetClass": "None",
+					"getterFunctionName": "GetAutoAttackStartsAfterMeleeAbility",
+					"setterFunctionName": "SetAutoAttackStartsAfterMeleeAbility",
+					"dependencyGetter": "GetAutoAttackEnabled"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Combat_StartAutoAttackAfterRangedLabel\")",
+					"labelTextMinDesiredWidth": 300,
+					"labelTextWrapWidth": 600,
+					"type": "CheckBox",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 584,
+					"widgetClass": "None",
+					"getterFunctionName": "GetAutoAttackStartsAfterRangedAbility",
+					"setterFunctionName": "SetAutoAttackStartsAfterRangedAbility",
+					"dependencyGetter": "GetAutoAttackEnabled"
+				}
+			],
+			"subcategories": []
+		},
+		{
+			"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Combat_AbilitiesSubheader\")",
+			"entryAlignment": "HAlign_Fill",
+			"entryWrapSize": 10,
+			"wrapBoxClass": "Standard",
+			"entries": [
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Combat_HeldAbilityBehaviorLabel\")",
+					"labelTextMinDesiredWidth": 300,
+					"labelTextWrapWidth": 600,
+					"type": "Dropdown",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 584,
+					"widgetClass": "None",
+					"getterFunctionName": "GetHeldAbilityPressBehaviorTargetSetting",
+					"setterFunctionName": "SetHeldAbilityPressBehaviorTargetSetting",
+					"dependencyGetter": "None"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Combat_HeldAbilityLongPressBehaviorLabel\")",
+					"labelTextMinDesiredWidth": 300,
+					"labelTextWrapWidth": 600,
+					"type": "Dropdown",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 584,
+					"widgetClass": "None",
+					"getterFunctionName": "GetHeldAbilityLongPressDuration",
+					"setterFunctionName": "SetHeldAbilityLongPressDuration",
+					"dependencyGetter": "None"
+				}
+			],
+			"subcategories": []
+		},
+		{
+			"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Combat_PvPSubheader\")",
+			"entryAlignment": "HAlign_Fill",
+			"entryWrapSize": 10,
+			"wrapBoxClass": "Standard",
+			"entries": [
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Combat_IncludeNonCombatantsInAOELabel\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 1080,
+					"type": "CheckBox",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetMayHitNonCombatantsWithNonTargetedAbilities",
+					"setterFunctionName": "SetMayHitNonCombatantsWithNonTargetedAbilities",
+					"dependencyGetter": "None"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Combat_RequireForcePvPToHarmCombatantsLabel\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 1080,
+					"type": "CheckBox",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetRequireForceFunctionToHarmCombatants",
+					"setterFunctionName": "SetRequireForceFunctionToHarmCombatants",
+					"dependencyGetter": "None"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Combat_ForceFlagToHealLabel\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 1080,
+					"type": "CheckBox",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetRequireForceFlagToHealCombatants",
+					"setterFunctionName": "SetRequireForceFlagToHealCombatants",
+					"dependencyGetter": "None"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Combat_MayHealUnaffiliatedCombatants\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 1080,
+					"type": "CheckBox",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetMayHealUnaffiliatedCombatants",
+					"setterFunctionName": "SetMayHealUnaffiliatedCombatants",
+					"dependencyGetter": "None"
+				}
+			],
+			"subcategories": []
+		},
+		{
+			"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Combat_FloatingTextSubheader\")",
+			"entryAlignment": "HAlign_Fill",
+			"entryWrapSize": 10,
+			"wrapBoxClass": "Standard",
+			"entries": [
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Combat_FloatingTextFontLabel\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 600,
+					"type": "Dropdown",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 584,
+					"widgetClass": "None",
+					"getterFunctionName": "GetFloatingTextFont",
+					"setterFunctionName": "SetFloatingTextFont",
+					"dependencyGetter": "None"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Combat_ShowEnterCombatTextLabel\")",
+					"labelTextMinDesiredWidth": 300,
+					"labelTextWrapWidth": 1080,
+					"type": "CheckBox",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetShowEnterCombatFloatingText",
+					"setterFunctionName": "SetShowEnterCombatFloatingText",
+					"dependencyGetter": "None"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Combat_ShowExitCombatTextLabel\")",
+					"labelTextMinDesiredWidth": 300,
+					"labelTextWrapWidth": 1080,
+					"type": "CheckBox",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetShowExitCombatFloatingText",
+					"setterFunctionName": "SetShowExitCombatFloatingText",
+					"dependencyGetter": "None"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Combat_ShowLethalCombatTextLabel\")",
+					"labelTextMinDesiredWidth": 300,
+					"labelTextWrapWidth": 1080,
+					"type": "CheckBox",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetShowLethalCombatFloatingText",
+					"setterFunctionName": "SetShowLethalCombatFloatingText",
+					"dependencyGetter": "None"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Combat_ShowFloatingTextLabel\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 1080,
+					"type": "CheckBox",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetShowFloatingDamageText",
+					"setterFunctionName": "SetShowFloatingDamageText",
+					"dependencyGetter": "None"
+				}
+			],
+			"subcategories": []
+		},
+		{
+			"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Combat_DamageFloatingTextStylingLabel\")",
+			"entryAlignment": "HAlign_Fill",
+			"entryWrapSize": 10,
+			"wrapBoxClass": "Subsection",
+			"entries": [
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Combat_FloatingTextDamageDealtLabel\")",
+					"labelTextMinDesiredWidth": 264,
+					"labelTextWrapWidth": 524,
+					"type": "FloatingText",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetDamageDealtFloatingText",
+					"setterFunctionName": "SetDamageDealtFloatingText",
+					"dependencyGetter": "None"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Combat_FloatingTextCritDamageTakenLabel\")",
+					"labelTextMinDesiredWidth": 264,
+					"labelTextWrapWidth": 524,
+					"type": "FloatingText",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetCritDamageDealtFloatingText",
+					"setterFunctionName": "SetCritDamageDealtFloatingText",
+					"dependencyGetter": "None"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Combat_FloatingTextDamageTakenLabel\")",
+					"labelTextMinDesiredWidth": 264,
+					"labelTextWrapWidth": 524,
+					"type": "FloatingText",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetDamageTakenFloatingText",
+					"setterFunctionName": "SetDamageTakenFloatingText",
+					"dependencyGetter": "None"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Combat_FloatingTextCritDamageTakenLabel\")",
+					"labelTextMinDesiredWidth": 264,
+					"labelTextWrapWidth": 524,
+					"type": "FloatingText",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetCritDamageTakenFloatingText",
+					"setterFunctionName": "SetCritDamageTakenFloatingText",
+					"dependencyGetter": "None"
+				}
+			],
+			"subcategories": []
+		},
+		{
+			"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Combat_HealingFloatingTextStylingLabel\")",
+			"entryAlignment": "HAlign_Fill",
+			"entryWrapSize": 10,
+			"wrapBoxClass": "Subsection",
+			"entries": [
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Combat_FloatingTextHealingReceivedLabel\")",
+					"labelTextMinDesiredWidth": 264,
+					"labelTextWrapWidth": 524,
+					"type": "FloatingText",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetHealthTakenFloatingText",
+					"setterFunctionName": "SetHealthTakenFloatingText",
+					"dependencyGetter": "None"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Combat_FloatingTextCritHealingReceivedLabel\")",
+					"labelTextMinDesiredWidth": 264,
+					"labelTextWrapWidth": 524,
+					"type": "FloatingText",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetCritHealthTakenFloatingText",
+					"setterFunctionName": "SetCritHealthTakenFloatingText",
+					"dependencyGetter": "None"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Combat_FloatingTextHealingLabel\")",
+					"labelTextMinDesiredWidth": 264,
+					"labelTextWrapWidth": 524,
+					"type": "FloatingText",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetHealthDealtFloatingText",
+					"setterFunctionName": "SetHealthDealtFloatingText",
+					"dependencyGetter": "None"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Combat_FloatingTextCritHealingLabel\")",
+					"labelTextMinDesiredWidth": 264,
+					"labelTextWrapWidth": 524,
+					"type": "FloatingText",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetCritHealthDealtFloatingText",
+					"setterFunctionName": "SetCritHealthDealtFloatingText",
+					"dependencyGetter": "None"
+				}
+			],
+			"subcategories": []
+		}
+	],
+	"guid": "6064631687108034560",
+	"name": "Combat",
+	"typeId": "3616673544"
+}

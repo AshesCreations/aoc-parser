@@ -1,0 +1,37 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"A31DDBBB4A1C8212B56BF3B5D55C2CE3\", \"[Trace with the Oil]\")",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064632230249365587",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064632230906101902",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064632230225051722",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "Player_HasItem(GetPlayer(),\"CSQ_ITM_0081_OCC_OilOfSeventhSight\")&&\r\nPlayer_ObjectiveStateEquals(GetPlayer(),\"CSQ_NOB_0081_OCC_EOB_TraceSeal_Hate_FarTower\", EObjectiveState::Active)"
+	},
+	"narrativeRequirementsIds": [],
+	"choiceType": "Default",
+	"guid": "6064632230858850440",
+	"name": "CSQ_DD_0081_OCC_EOB_SealOfHate_FarTower_2_Choice_1",
+	"typeId": "1091110027"
+}

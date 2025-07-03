@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"4FB8D17141A96EED27DC049C4FC61885\", \"Now, how about that skull?\")",
+	"nextNodeId":
+	{
+		"guid": "6064630208314146821",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MIA_0017_BOB_BalladOfTheBull\",\"MIP_0017_BOB_Phase02\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MIQ_0017_HOB_HornsOfTheBull\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MIQ_0017_HOB_HornsOfTheBull\",\"KillSkullcrackers\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MIQ_0017_HOB_HornsOfTheBull\",\"HaveSkullBovus\")"
+	},
+	"guid": "6064630208312705028",
+	"name": "MIDD_0017_HOB_Hornskull_15",
+	"typeId": "1091110027"
+}

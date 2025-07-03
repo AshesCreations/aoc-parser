@@ -1,0 +1,28 @@
+{
+	"choiceText": "",
+	"nextNodeId":
+	{
+		"guid": "6064632756166066181",
+		"typeId": "1091110028",
+		"name": "SQ_NOC_RVR_Samias_Miraleth_MartinSwift_10"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064632751909568563",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "(Player_HasCommission (GetPlayer(), \"SQ_RVR_Samias_Sabah_MonumentV\") && !Player_HasCommission (GetPlayer(), \"SQ_RVR_Samias_Martin_BuiltOnBlood\") && !Player_ObjectiveStateEquals(GetPlayer(), \"NarrativeObjective_RVR_Samias_Miraleth_MonumentValley2.5\", EObjectiveState::Complete))"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064632756164689924",
+	"name": "SQ_NOC_RVR_Samias_Miraleth_MartinSwift_2_Choice_5",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,30 @@
+{
+	"listings": [
+		{
+			"itemId":
+			{
+				"guid": "6064632270186151968",
+				"typeId": "1091110003",
+				"name": "None"
+			},
+			"itemVariation":
+			{
+				"guid": "0",
+				"typeId": "1091111111",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "Node_IsPlotExpansionEnabled(Node_GetActorCityNode(GetInteractionTarget()),Node_GetActorPlotRecord(GetInteractionTarget()),$#7823461:6064631874110750724$)"
+			},
+			"offers": []
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "Node_IsPlotExpansionEnabled(Node_GetActorCityNode(GetInteractionTarget()),Node_GetActorPlotRecord(GetInteractionTarget()),$#7823461:6064631874110750724$)"
+	},
+	"guid": "6064630564219125890",
+	"name": "Herbalism_Vendor_T3",
+	"typeId": "3145314714"
+}

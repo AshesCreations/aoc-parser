@@ -1,0 +1,18 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"31F3EA594D23EAD2407B3BBC1AFA7746\", \"HASCompleted CSQ_0069_KTT_Support LastAccount\")",
+	"nextNodeId":
+	{
+		"guid": "6064631725967081488",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "Player_ObjectiveStateEquals(GetPlayer(),\"CSQ_NOB_0069_KTT_Support_CollectPages\", EObjectiveState::Complete)\r\n&&\r\nPlayer_ObjectiveStateEquals(GetPlayer(),\"CSQ_NOB_0069_KTT_Support_PlacePages\", EObjectiveState::Active)"
+	},
+	"choiceType": "Default",
+	"guid": "6064631725995524116",
+	"name": "CSQ_DD_0069_KTT_LastAccountScroll_12",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,104 @@
+{
+	"eventName": "SAN_Prismarium_BossWaveEvent",
+	"gameplayTags":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"activationPredicatesIds": [
+		{
+			"guid": "6064632988939714563",
+			"typeId": "23095129",
+			"name": "None"
+		}
+	],
+	"minChallengeRating": 0,
+	"maxChallengeRating": 30,
+	"eventLevel": 27,
+	"eventType": 128,
+	"locationId":
+	{
+		"guid": "6064632988939714574",
+		"typeId": "5127371160",
+		"name": "None"
+	},
+	"desiredTimeSlot": "0001.01.01-00.00.00",
+	"frequency": 24,
+	"priority": 1,
+	"rewardTableId":
+	{
+		"guid": "0",
+		"typeId": "1091110040",
+		"name": "None"
+	},
+	"rewardPopulationSetId":
+	{
+		"guid": "0",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"startStageId":
+	{
+		"guid": "6064632988939714564",
+		"typeId": "23095131",
+		"name": "None"
+	},
+	"stagesIds": [
+		{
+			"guid": "6064632988939714564",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064632988939714565",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064632988939714567",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064632988939714569",
+			"typeId": "23095131",
+			"name": "None"
+		}
+	],
+	"interactVolumesIds": [],
+	"alignmentsIds": [],
+	"mapDisplayType": "Biome",
+	"mapEventIcon": "/Game/UI/Icons/Map/TUI_Icon_Map_Event_Active.TUI_Icon_Map_Event_Active",
+	"bDisplayOnTracker": false,
+	"notificationRadius": 15000,
+	"mapRadiusMinumum": 1000,
+	"cooldownTimer": 7200,
+	"bDisabled": false,
+	"maxInstanceCount": 1,
+	"requiredMapName": "Verra_World_Master",
+	"comments": [],
+	"bIsTemplate": false,
+	"flowNodes": [
+		{
+			"flowType": "EventEntry",
+			"graphLocation":
+			{
+				"x": -800,
+				"y": 100
+			},
+			"id": 0
+		},
+		{
+			"flowType": "EventExit",
+			"graphLocation":
+			{
+				"x": 4400,
+				"y": 700
+			},
+			"id": 1
+		}
+	],
+	"guid": "6064632988939714562",
+	"name": "SAN_Prismarium_BossWaveEvent",
+	"typeId": "23095125"
+}

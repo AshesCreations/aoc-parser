@@ -1,0 +1,56 @@
+{
+	"populationFilterOverride":
+	{
+		"zoneOfInfluenceIds": [],
+		"nodeIds": [],
+		"cultures": [],
+		"nodeTypes": [],
+		"biomes": [],
+		"seasons": [],
+		"nodeLevelMin": "Wilderness",
+		"nodeLevelMax": "Metropolis",
+		"timeOfDayStart": -1,
+		"timeOfDayEnd": -1,
+		"weatherTypes": [],
+		"spawningStrategy":
+		{
+			"spawnStrategy": "Immediate",
+			"phaseInTime":
+			{
+				"minSeconds": 0,
+				"maxSeconds": 0
+			}
+		},
+		"despawningStrategy":
+		{
+			"despawnStrategy": "Immediate",
+			"phaseOutTime":
+			{
+				"minSeconds": 0,
+				"maxSeconds": 0
+			}
+		},
+		"requiredGameplayTags":
+		{
+			"gameplayTags": [
+				{
+					"tagName": "War.Siege.States.SiegeActive"
+				}
+			],
+			"parentTags": [
+				{
+					"tagName": "War.Siege.States"
+				},
+				{
+					"tagName": "War.Siege"
+				},
+				{
+					"tagName": "War"
+				}
+			]
+		}
+	},
+	"guid": "6064633618182635520",
+	"name": "Siege_Active",
+	"typeId": "5111003"
+}

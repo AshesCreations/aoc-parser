@@ -1,0 +1,56 @@
+{
+	"completionResponsesIds": [
+		{
+			"guid": "108991938057896",
+			"typeId": "1091110030",
+			"name": "MAAR_0005_BTF_AdvObj_SignalBloomBridge"
+		}
+	],
+	"channelDuration": 0,
+	"activePredicate":
+	{
+		"expression": ""
+	},
+	"cuePredicate":
+	{
+		"expression": "GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005_BridgeTooFar\",\"SecureFentisBridge\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005_BridgeTooFar\",\"SecureBloomBridge\")"
+	},
+	"deleteOnCompletion": false,
+	"singleUse": true,
+	"alwaysShowUIPrompt": true,
+	"cancelChannelIfActivePredicateEverFails": true,
+	"channelModifierType": "NONE",
+	"rewardTableId":
+	{
+		"guid": "0",
+		"typeId": "1091110008",
+		"name": "None"
+	},
+	"startEffect": "None",
+	"endEffect": "None",
+	"failEffect": "None",
+	"successEffect": "/Game/Effects/FX_Environment/Fire/Particles/FX_Thin_Torch_01.FX_Thin_Torch_01",
+	"cueEffect": "None",
+	"startSound": "None",
+	"endSound": "None",
+	"failSound": "None",
+	"successSound": "None",
+	"cueSound": "None",
+	"interactAnimTag": "None",
+	"deletionDelay": 0,
+	"activeCueEnabled": true,
+	"activeCueIgnoresActivePredicate": false,
+	"facePlayer": false,
+	"allowInCombat": true,
+	"spawnAtBottomCapsule": false,
+	"channelAnimation": "/Game/Characters/Animations/RNG_BOOK/CM_M_BOOK_Reload_Montage.CM_M_BOOK_Reload_Montage",
+	"interactRadius": 200,
+	"interactTolerance": 30,
+	"busyTime": 0.89999997615814209,
+	"clientBusyTime": 1,
+	"channelStartResponseIds": [],
+	"failResponsesIds": [],
+	"guid": "109026229900924",
+	"name": "MAPI_0005_BTF_BridgeSignal_Bloom",
+	"typeId": "1091110031"
+}

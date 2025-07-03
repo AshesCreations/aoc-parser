@@ -1,0 +1,175 @@
+{
+	"effectCategory": "EFFECT_Buff",
+	"effectTags": [],
+	"effectName": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"C16C335C4BBBE421D45089A12C2B35C8\", \"Elemental Amplification\")",
+	"effectDescription": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"8D612EF54994FF7B94E9FA9053FD30A0\", \"You become empowered by the element of your last cast elemental ability, gaining an empowerment buff:\\r\\n\\r\\n$effect:Mage_Amplification_Fire.inline$\\r\\n\\r\\n$effect:Mage_Amplification_Ice.inline$\\r\\n\\r\\n$effect:Mage_Amplification_Lightning.inline$\\r\\n\\r\\n$effect:Mage_Amplification_Arcane.inline$\")",
+	"effectIcon": "/Game/UI/Icons/Archetypes/Mage/TUI_IconStatus_ElementalEmpowerment.TUI_IconStatus_ElementalEmpowerment",
+	"effectFloatingText": "",
+	"bDispellable": false,
+	"bSignificant": true,
+	"scriptOnApply": "None",
+	"scriptOnExpire": "None",
+	"bSetUnkillable": false,
+	"bGrantsPVPOptInProtection": false,
+	"effectFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"applicationRequirements":
+	{
+		"expression": ""
+	},
+	"bOverrideDefaultResistRate": false,
+	"resistRate":
+	{
+		"expression": ""
+	},
+	"bInfiniteDuration": true,
+	"effectDuration":
+	{
+		"expression": ""
+	},
+	"bNumStacksLostOnDurationElapse": false,
+	"numStacksLostOnDurationElapse":
+	{
+		"expression": ""
+	},
+	"bPersistsThroughDeath": true,
+	"bPersistsRelog": false,
+	"effectGroupId":
+	{
+		"guid": "0",
+		"typeId": "30316004",
+		"name": "None"
+	},
+	"effectStackType": "STACK_OverrideAlways",
+	"bCompareSourceWhenStacking": true,
+	"collateStacksInUI": false,
+	"globalStackLimit": 50,
+	"inPlaceStackLimit":
+	{
+		"expression": ""
+	},
+	"stackDurationRefresh": "STACK_AlwaysRefresh",
+	"extensionAmount":
+	{
+		"expression": ""
+	},
+	"extendedMaximum": 50,
+	"scriptOnMaxStacks": "None",
+	"bLimitStacksFromInstigator": false,
+	"instigatorStackLimit":
+	{
+		"expression": ""
+	},
+	"tickTimer": 2,
+	"bIgnoreInitialTick": false,
+	"scriptOnTick": "None",
+	"bRecalculateHitOnTick": false,
+	"preApplyHitsIds": [],
+	"applyHitsIds": [],
+	"tickHitsIds": [
+		{
+			"guid": "6064632473356010428",
+			"typeId": "30316005",
+			"name": "None"
+		},
+		{
+			"guid": "6064632473358173117",
+			"typeId": "30316005",
+			"name": "None"
+		},
+		{
+			"guid": "6064632473359156158",
+			"typeId": "30316005",
+			"name": "None"
+		},
+		{
+			"guid": "6064632473360139199",
+			"typeId": "30316005",
+			"name": "None"
+		},
+		{
+			"guid": "6064632580600438284",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"consumeHitsIds": [],
+	"removeHitsIds": [],
+	"expireHitsIds": [],
+	"endHitsIds": [],
+	"statModsIds": [],
+	"spawnNPCsIds": [],
+	"spawnLingeringZonesIds": [],
+	"redirectsIds": [],
+	"reactionsIds": [
+		{
+			"guid": "6064632472534056964",
+			"typeId": "3031600202",
+			"name": "None"
+		},
+		{
+			"guid": "6064632472531697665",
+			"typeId": "3031600202",
+			"name": "None"
+		},
+		{
+			"guid": "6064632472532680706",
+			"typeId": "3031600202",
+			"name": "None"
+		},
+		{
+			"guid": "6064632472533401603",
+			"typeId": "3031600202",
+			"name": "None"
+		},
+		{
+			"guid": "6064632478089150511",
+			"typeId": "3031600202",
+			"name": "None"
+		}
+	],
+	"crowdControlId":
+	{
+		"guid": "0",
+		"typeId": "3031600206",
+		"name": "None"
+	},
+	"resistancesIds": [],
+	"fragilityDefinitionsIds": [],
+	"hitModsIds": [],
+	"addAlignmentsIds": [],
+	"removeAlignmentsIds": [],
+	"bApplyScale": false,
+	"scaleAmount":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"scaleTime": 0,
+	"statusVFX": "None",
+	"supressClickTargeting":
+	{
+		"expression": ""
+	},
+	"supressTabAndSoftTargeting":
+	{
+		"expression": ""
+	},
+	"supressNameplate":
+	{
+		"expression": ""
+	},
+	"bSlowFall": false,
+	"bNeverCull": false,
+	"addedAkEvents": [],
+	"removedAkEvents": [],
+	"akSwitchValues": [],
+	"guid": "6064632472478220288",
+	"name": "Mage_Amplification_Apply",
+	"typeId": "30316002"
+}

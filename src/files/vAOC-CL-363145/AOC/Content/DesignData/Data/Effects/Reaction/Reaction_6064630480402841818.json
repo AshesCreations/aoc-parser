@@ -1,0 +1,31 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 4,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "HitFlagsContains(GetHitFlags(GetHitEvent()), EHitFlag::Lethal) && \r\nGetSkillPurchased(GetInstigator(), $#30316003:107813788866168$, $#981011333:6064630480429121757$)"
+	},
+	"bEvaluateApplyingHit": true,
+	"instigator": "Owner",
+	"targetsBitmask": 1,
+	"reactHitsIds": [
+		{
+			"guid": "6064630480383377625",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"instigatorProcLimit": 0,
+	"globalProcLimit": 0,
+	"procReactOnApply": false,
+	"guid": "6064630480402841818",
+	"name": "Fighter_LethalBlow_Reinvigorating",
+	"typeId": "3031600202"
+}

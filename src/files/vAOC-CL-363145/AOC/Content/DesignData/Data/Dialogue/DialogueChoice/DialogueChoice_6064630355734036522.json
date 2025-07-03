@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"E7FE9B934A63C1708FC59EB6AFE82027\", \"Captain Eudoxia sent me.\")",
+	"nextNodeId":
+	{
+		"guid": "6064630355735740459",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0005A_FGG_ForGreaterGlory\",\"MAP_0005A_FGG_Phase02\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0005A_BDA_BeItDeadOrAlive\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005A_BDA_BeItDeadOrAlive\",\"ReportToBlackwood\")\r\n"
+	},
+	"guid": "6064630355734036522",
+	"name": "MADD_0005A_BDA_OrrikBlackwood_Phase02_4",
+	"typeId": "1091110027"
+}

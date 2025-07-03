@@ -1,0 +1,275 @@
+{
+	"displayName": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"667E0AA043AE24201031598C978E71F3\", \"Chop - Adolescent Acacia\")",
+	"spawnTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "Tree"
+			}
+		],
+		"parentTags": []
+	},
+	"surveyingTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "artisanship.gathering.lumberjacking"
+			}
+		],
+		"parentTags": [
+			{
+				"tagName": "artisanship.gathering"
+			},
+			{
+				"tagName": "artisanship"
+			}
+		]
+	},
+	"bBlockPawn": true,
+	"bBlockCamera": false,
+	"staticMeshState": "/Game/ENV/Biomes/Desert/Flora/Desert_Highlands_Flora/Desert_Highlands_Trees/Acacia/S_Desert_Acacia_Medium_02.S_Desert_Acacia_Medium_02",
+	"collisionRadius": 50,
+	"overrideInteractionDistance": 125,
+	"overrideInteractionAngle": 70,
+	"lifecycleDuration": 0,
+	"dynamicLifecycleDefId":
+	{
+		"guid": "6064631436927696897",
+		"typeId": "1991555",
+		"name": "None"
+	},
+	"bShouldTransitionScale": false,
+	"startingScalePercentage": 0.5,
+	"scaleLerpSpeed": 0.029999999329447746,
+	"bRuntimeMesh": false,
+	"skeletalMeshState": "/Game/ENV/Biomes/Desert/Flora/Desert_Highlands_Flora/Desert_Highlands_Trees/Acacia/SK_Desert_Acacia_Medium_02.SK_Desert_Acacia_Medium_02",
+	"meshLifetimeDuration": 25,
+	"bMeshFade": true,
+	"meshDurationBeforeFade": 6,
+	"fadeScalarName": "Object Fade Amount",
+	"meshFadeDuration": 6,
+	"bFractureStaticMesh": false,
+	"fracturedMesh": "None",
+	"fractureSupportMesh": "None",
+	"fractureAngularDamping": 0,
+	"fractureLinearDamping": 0,
+	"fractureInertiaTensorScale":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"maxClusterLevel": 100,
+	"bApplyRadialImpulse": false,
+	"radialImpulseOffset":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"radialImpulseRadius": 0,
+	"radialImpulseForce": 0,
+	"bSimulatePhysics": true,
+	"bBreakBoneConstraint": false,
+	"impulseForce": 15000,
+	"impulseBoneName": "Trunk",
+	"impulseDirection": 90,
+	"disablePhysicsDuration": 10,
+	"bCalculateFadeAfterDisabledPhysics": true,
+	"bCalculateFadeAfterImpact": false,
+	"targetImpactMainBodyAngularDamping": 0,
+	"targetImpactMainBodyLinearDamping": 0.0099999997764825821,
+	"targetImpactMainBodyDuration": 2,
+	"targetImpactSecondaryBodyAngularDamping": 0,
+	"targetImpactSecondaryBodyLinearDamping": 0.0099999997764825821,
+	"targetImpactSecondaryBodyDuration": 2,
+	"skeletalMeshGatheredAnimation": "None",
+	"skeletalMeshGatheringEventAnimation": "None",
+	"foliageInteractionsIds": [
+		{
+			"guid": "6064632976700997639",
+			"typeId": "19846",
+			"name": "None"
+		}
+	],
+	"akAudioEvents": [
+		"/Game/WwiseAudio/Events/Main/Ambience/Shared/Foliage/AMB_Foliage_Tree_Leaves_Evergreen_01_Large.AMB_Foliage_Tree_Leaves_Evergreen_01_Large"
+	],
+	"foliageAkAudioWeightedEvents": [
+		{
+			"akAudioEvent": "/Game/WwiseAudio/Events/Main/Ambience/Shared/Foliage/Acacia/AMB_Foliage_Fauna_Acacia_01.AMB_Foliage_Fauna_Acacia_01",
+			"weightValue": 50
+		},
+		{
+			"akAudioEvent": "/Game/WwiseAudio/Events/Main/Ambience/Shared/Foliage/Acacia/AMB_Foliage_Fauna_Acacia_02.AMB_Foliage_Fauna_Acacia_02",
+			"weightValue": 50
+		},
+		{
+			"akAudioEvent": "/Game/WwiseAudio/Events/Main/Ambience/Shared/Foliage/Acacia/AMB_Foliage_Fauna_Acacia_03.AMB_Foliage_Fauna_Acacia_03",
+			"weightValue": 50
+		},
+		{
+			"akAudioEvent": "/Game/WwiseAudio/Events/Main/Ambience/Shared/Foliage/Acacia/AMB_Foliage_Fauna_Acacia_04.AMB_Foliage_Fauna_Acacia_04",
+			"weightValue": 50
+		},
+		{
+			"akAudioEvent": "/Game/WwiseAudio/Events/Main/Ambience/Shared/Foliage/Acacia/AMB_Foliage_Fauna_Acacia_05.AMB_Foliage_Fauna_Acacia_05",
+			"weightValue": 50
+		},
+		{
+			"akAudioEvent": "/Game/WwiseAudio/Events/Main/Ambience/Shared/Foliage/Acacia/AMB_Foliage_Fauna_Acacia_06.AMB_Foliage_Fauna_Acacia_06",
+			"weightValue": 50
+		},
+		{
+			"akAudioEvent": "None",
+			"weightValue": 20
+		}
+	],
+	"akSwitches": [
+		"/Game/WwiseAudio/Switches/GameSwitches/Professions/Logging/Logging-TreeBarkEvergreen.Logging-TreeBarkEvergreen"
+	],
+	"akAudioOffset":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 250
+	},
+	"akRTPCId":
+	{
+		"guid": "109200404141688",
+		"typeId": "919000",
+		"name": "Impact_Intensity"
+	},
+	"akGatheringEvent": "/Game/WwiseAudio/Events/Main/Professions/Gathering/PROF_Logging_Impact.PROF_Logging_Impact",
+	"akGatheredEvent": "/Game/WwiseAudio/Events/Main/Professions/Gathering/PROF_Logging_Tree_Fall.PROF_Logging_Tree_Fall",
+	"akImpactEvent": "/Game/WwiseAudio/Events/Main/Professions/Gathering/PROF_Logging_Tree_Impact.PROF_Logging_Tree_Impact",
+	"foliageMaxHitCount": 150,
+	"foliageMaxVelocity": 750,
+	"stateTransitionFX": [],
+	"gatheringFX": [],
+	"gatheredFX": [
+		{
+			"enabled":
+			{
+				"expression": ""
+			},
+			"niagaraSystemSoft": "None",
+			"lifeTime": 2,
+			"bCastVolumetricTranslucentShadow": false,
+			"attachType": "AttachedTarget",
+			"originMesh": "Character",
+			"attachSocketName": "None",
+			"bUseAttachSocketForOriginLocation": true,
+			"bUseAttachSocketForOriginOrientation": true,
+			"transform":
+			{
+				"originLocation": "Target",
+				"originLocationSocket": "None",
+				"originOrientation": "Target",
+				"originOrientationSocket": "None",
+				"originScale": "World",
+				"bUseRelativeLocationExpression": false,
+				"relativeLocation":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"relativeLocationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeRotationExpression": false,
+				"relativeRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"relativeRotationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeScaleExpression": false,
+				"relativeScale":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				},
+				"relativeScaleExpression":
+				{
+					"expression": ""
+				}
+			},
+			"bVisibleToSceneCaptureOnly": false,
+			"bAllowScalability": true,
+			"bUseLocalRemoteDynamicSystem": false
+		}
+	],
+	"impactFX": [
+		{
+			"enabled":
+			{
+				"expression": ""
+			},
+			"niagaraSystemSoft": "None",
+			"lifeTime": 4,
+			"bCastVolumetricTranslucentShadow": false,
+			"attachType": "AttachedTarget",
+			"originMesh": "Character",
+			"attachSocketName": "Acacia_FX",
+			"bUseAttachSocketForOriginLocation": true,
+			"bUseAttachSocketForOriginOrientation": true,
+			"transform":
+			{
+				"originLocation": "Target",
+				"originLocationSocket": "OakLarge01_FX",
+				"originOrientation": "Target",
+				"originOrientationSocket": "None",
+				"originScale": "World",
+				"bUseRelativeLocationExpression": false,
+				"relativeLocation":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"relativeLocationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeRotationExpression": false,
+				"relativeRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"relativeRotationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeScaleExpression": false,
+				"relativeScale":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				},
+				"relativeScaleExpression":
+				{
+					"expression": ""
+				}
+			},
+			"bVisibleToSceneCaptureOnly": false,
+			"bAllowScalability": true,
+			"bUseLocalRemoteDynamicSystem": false
+		}
+	],
+	"destroyedFX": [],
+	"niagaraParams": [],
+	"guid": "6064633418352296048",
+	"name": "Tree_Acacia_End_Medium_2",
+	"typeId": "19836"
+}

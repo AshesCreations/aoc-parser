@@ -1,0 +1,30 @@
+{
+	"levelMinimum": 0,
+	"levelMaximum": -1,
+	"requiredQuestId":
+	{
+		"guid": "0",
+		"typeId": "1091110035",
+		"name": "None"
+	},
+	"requiredItemId":
+	{
+		"guid": "0",
+		"typeId": "1091110003",
+		"name": "None"
+	},
+	"location":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"distance": 0,
+	"optionalExpression":
+	{
+		"expression": "(Node_IsPlayerCitizenOfNode(GetPlayer(),$#1323521343:6064633425419042816$) && Node_IsPlayerMayor(GetPlayer()))\r\n||\r\nEvalFormula($#10516612381411113:6064632423074889745$) > 0.0"
+	},
+	"guid": "6064633606098255880",
+	"name": "Mount_Mayor_Wildport",
+	"typeId": "1091110006"
+}

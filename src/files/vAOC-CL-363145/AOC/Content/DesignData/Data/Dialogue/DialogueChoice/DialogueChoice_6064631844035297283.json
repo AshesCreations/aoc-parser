@@ -1,0 +1,21 @@
+{
+	"choiceText": "",
+	"nextNodeId":
+	{
+		"guid": "6064631844075274245",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "Player_HasCompletedCommission(GetPlayer(), \"CSQ_RVR_0071_DarkAlliance_TheGlyphs\")&&\r\n!Player_HasCompletedCommission(GetPlayer(), \"CSQ_RVR_0072_DarkAlliance_TheProof\")&&\r\n!Player_HasCommission(GetPlayer(), \"CSQ_RVR_0072_DarkAlliance_TheProof\")"
+	},
+	"narrativeRequirementsIds": [],
+	"choiceType": "Default",
+	"guid": "6064631844035297283",
+	"name": "DD_CSQ_0071_Farzaan_61",
+	"typeId": "1091110027"
+}

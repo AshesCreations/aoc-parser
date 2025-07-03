@@ -1,0 +1,76 @@
+{
+	"assetRef": "/Game/DesignAssets/Population/NPC/Beast/Bird/Raven/Raven.Raven",
+	"populationFilter":
+	{
+		"zoneOfInfluenceIds": [],
+		"nodeIds": [],
+		"cultures": [],
+		"nodeTypes": [],
+		"biomes": [],
+		"seasons": [],
+		"nodeLevelMin": "Wilderness",
+		"nodeLevelMax": "Metropolis",
+		"timeOfDayStart": -1,
+		"timeOfDayEnd": -1,
+		"weatherTypes": [],
+		"spawningStrategy":
+		{
+			"spawnStrategy": "Immediate",
+			"phaseInTime":
+			{
+				"minSeconds": 0,
+				"maxSeconds": 0
+			}
+		},
+		"despawningStrategy":
+		{
+			"despawnStrategy": "Immediate",
+			"phaseOutTime":
+			{
+				"minSeconds": 0,
+				"maxSeconds": 0
+			}
+		}
+	},
+	"scaleMin": 1,
+	"scaleMax": 1,
+	"gameplayTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "npc.disposition.enemy"
+			},
+			{
+				"tagName": "character.avian.raven"
+			}
+		],
+		"parentTags": [
+			{
+				"tagName": "npc.disposition"
+			},
+			{
+				"tagName": "npc"
+			},
+			{
+				"tagName": "character.avian"
+			},
+			{
+				"tagName": "character"
+			}
+		]
+	},
+	"bOverrideAggroRadius": false,
+	"aggroRadius": 0,
+	"bOverrideLeashRadius": false,
+	"leashRadius": 0,
+	"factionId": 0,
+	"interactionDefId":
+	{
+		"guid": "0",
+		"typeId": "1091110031",
+		"name": "None"
+	},
+	"guid": "6064630270761784522",
+	"name": "Pop_Raven",
+	"typeId": "5111001"
+}

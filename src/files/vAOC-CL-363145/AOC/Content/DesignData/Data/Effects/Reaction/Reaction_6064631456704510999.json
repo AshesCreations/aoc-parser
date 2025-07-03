@@ -1,0 +1,31 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 4,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "(GetOwner() == GetInstigator())\r\n&&\r\nHitHasTag(GetHitEvent(), \"ComboStep.End2\")\r\n&&\r\nHitHasTag(GetHitEvent(), \"ComboStep.ProcHit\")\r\n&&\r\nGetRecordTypeId(GetHitSourceRecord(GetHitEvent())) != GetReactionTypeId() \r\n&&\r\n(GetRecordTypeId(GetHitSourceRecord(GetHitEvent())) != GetEffectTypeId())\r\n&&\r\nGetOwner() == GetInstigator() \r\n"
+	},
+	"bEvaluateApplyingHit": false,
+	"instigator": "Owner",
+	"targetsBitmask": 1,
+	"reactHitsIds": [
+		{
+			"guid": "6064631092914552850",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"instigatorProcLimit": 0,
+	"globalProcLimit": 0,
+	"procReactOnApply": false,
+	"guid": "6064631456704510999",
+	"name": "Weapon_Proc_PerfectTiming",
+	"typeId": "3031600202"
+}

@@ -1,0 +1,33 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"4CA2667C4F78A20AAB09D0B0905FF04D\", \"(Put Lamp Inside and close it)\")",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064629375996854380",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064629375494848520",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064629375498911754",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MIA_0015_TPT_ThePhantomTower\",\"MIP_0015_TPT_Phase02\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MIQ_0015_AAV_AnAncientVisitor\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MIQ_0015_AAV_AnAncientVisitor\",\"GotLampMalgus\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MIQ_0015_AAV_AnAncientVisitor\",\"PlacedLamp\")"
+	},
+	"guid": "6064629375975227497",
+	"name": "MIDD_0015_AAV_SecretSafe_4",
+	"typeId": "1091110027"
+}

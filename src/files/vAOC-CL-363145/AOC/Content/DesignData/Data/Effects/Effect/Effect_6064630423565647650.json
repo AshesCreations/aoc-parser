@@ -1,0 +1,83 @@
+{
+	"effectCategory": "EFFECT_Debuff",
+	"effectTags": [],
+	"effectName": "Lord of Shadows",
+	"effectDescription": "This unit is currently in the shadow realm...",
+	"effectIcon": "/Game/UI_Kit/Textures/AbilityIcons/ICON_AbsorbBubble.ICON_AbsorbBubble",
+	"effectFloatingText": "",
+	"bDispellable": true,
+	"bSignificant": false,
+	"scriptOnApply": "None",
+	"scriptOnExpire": "None",
+	"bSetUnkillable": false,
+	"effectFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"applicationRequirements":
+	{
+		"expression": ""
+	},
+	"bInfiniteDuration": false,
+	"effectDuration":
+	{
+		"expression": "10"
+	},
+	"bNumStacksLostOnDurationElapse": false,
+	"numStacksLostOnDurationElapse":
+	{
+		"expression": ""
+	},
+	"bPersistsThroughDeath": false,
+	"bPersistsRelog": false,
+	"effectStackType": "STACK_OverrideAlways",
+	"bCompareSourceWhenStacking": true,
+	"collateStacksInUI": false,
+	"globalStackLimit": 50,
+	"stackInPlaceLimit": 0,
+	"stackDurationRefresh": "STACK_AlwaysRefresh",
+	"extensionAmount":
+	{
+		"expression": ""
+	},
+	"extendedMaximum": 50,
+	"scriptOnMaxStacks": "None",
+	"tickTimer": 0,
+	"bIgnoreInitialTick": false,
+	"scriptOnTick": "None",
+	"preApplyHitsIds": [],
+	"applyHitsIds": [],
+	"tickHitsIds": [],
+	"consumeHitsIds": [],
+	"removeHitsIds": [],
+	"expireHitsIds": [],
+	"endHitsIds": [],
+	"statModsIds": [],
+	"spawnNPCsIds": [],
+	"spawnLingeringZonesIds": [],
+	"redirectsIds": [],
+	"reactionsIds": [],
+	"crowdControlsIds": [],
+	"ignoreCCBreaksId":
+	{
+		"guid": "0",
+		"typeId": "3031600214",
+		"name": "None"
+	},
+	"resistancesIds": [],
+	"fragilityDefinitionsIds": [],
+	"hitModsIds": [],
+	"bApplyScale": true,
+	"scaleAmount":
+	{
+		"x": -0.10000000000000001,
+		"y": -0.10000000000000001,
+		"z": -0.10000000000000001
+	},
+	"scaleTime": 0,
+	"guid": "6064630423565647650",
+	"name": "Rogue_ShadowBanishment_ShadowHost",
+	"typeId": "30316002"
+}

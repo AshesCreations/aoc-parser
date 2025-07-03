@@ -1,0 +1,31 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 4,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "(GetRecordTypeId(GetHitSourceRecord(GetHitEvent())) != GetReactionTypeId())\r\n&&\r\n(GetRecordTypeId(GetHitSourceRecord(GetHitEvent())) != GetEffectTypeId()) \r\n&&\r\n(GetOwner() == GetInstigator())\r\n&&\r\nHitHasTag(GetHitEvent(), \"ComboStep.End\")\r\n"
+	},
+	"bEvaluateApplyingHit": false,
+	"instigator": "Owner",
+	"targetsBitmask": 1,
+	"reactHitsIds": [
+		{
+			"guid": "6064631077014471987",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"instigatorProcLimit": 0,
+	"globalProcLimit": 0,
+	"procReactOnApply": false,
+	"guid": "6064631077012833586",
+	"name": "Weapon_2H_Sword_Proc_Refreshing_Followthrough_Proc",
+	"typeId": "3031600202"
+}

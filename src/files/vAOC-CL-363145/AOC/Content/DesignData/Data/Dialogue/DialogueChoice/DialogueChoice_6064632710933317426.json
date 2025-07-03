@@ -1,0 +1,22 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"0CD1CD554237F066151970928BEFE1FF\", \"Offer CSQ_RVR_0112_EotGH_TheLastMoot\")",
+	"nextNodeId":
+	{
+		"guid": "6064632710932399918",
+		"typeId": "1091110028",
+		"name": "DD_0110_EotGH_Wiyakoni_6"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "!Player_HasCommission(GetPlayer(), \"CSQ_RVR_0112_EotGH_TheLastMoot\")&&!Player_HasCompletedCommission(GetPlayer(), \"CSQ_RVR_0112_EotGH_TheLastMoot\")&&Player_HasCompletedCommission(GetPlayer(), \"CSQ_RVR_0111_EotGH_WaysOfThePast\")"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064632710933317426",
+	"name": "DD_0110_EotGH_Wiyakoni_2_Choice_4",
+	"typeId": "1091110027"
+}

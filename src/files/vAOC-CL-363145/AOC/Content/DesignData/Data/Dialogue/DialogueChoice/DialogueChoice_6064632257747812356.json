@@ -1,0 +1,21 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"05A8DB5F41DEACAC2BA685A30A62AA94\", \"OFFER CSQ_RVR_0073_DarkAlliance_TheDig\")",
+	"nextNodeId":
+	{
+		"guid": "6064632257756659717",
+		"typeId": "1091110028",
+		"name": "DD_CSQ_0071_Farzaan_95"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "Player_HasCompletedCommission(GetPlayer(), \"CSQ_RVR_0072_DarkAlliance_TheProof\")&&\r\n!Player_HasCompletedCommission(GetPlayer(), \"CSQ_RVR_0073_DarkAlliance_TheDig\")&&\r\n!Player_HasCommission(GetPlayer(), \"CSQ_RVR_0073_DarkAlliance_TheDig\")"
+	},
+	"narrativeRequirementsIds": [],
+	"choiceType": "Default",
+	"guid": "6064632257747812356",
+	"name": "DD_CSQ_0071_Farzaan_Root_Choice_11",
+	"typeId": "1091110027"
+}

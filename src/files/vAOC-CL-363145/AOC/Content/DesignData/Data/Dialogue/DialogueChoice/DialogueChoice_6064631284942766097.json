@@ -1,0 +1,29 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"65EA272C422B0AE1182ACFAEF7318CC4\", \"[Give the Eye of Seafury]\")",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064631941509742610",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064631284966096916",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "Player_ObjectiveStateEquals(GetPlayer(),\"CSQ_NOB_0042_EOS_TAS_GiveToKeelhaul\", EObjectiveState::Active)"
+	},
+	"choiceType": "Default",
+	"guid": "6064631284942766097",
+	"name": "CSQ_DD_CourtOfCloaks_Keelhaul_27",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,43 @@
+{
+	"populationSetId":
+	{
+		"guid": "6064630271532686730",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"actorToSpawn": "/Game/DesignAssets/Population/NPC/Humanoid/Minotaur/Summoner/Minotaur_Summoner_Raven1.Minotaur_Summoner_Raven1_C",
+	"bPersistAfterInstigatorsDeath": false,
+	"spawnLocationType": "LOC_LocalOffset",
+	"location":
+	{
+		"x": 400,
+		"y": 0,
+		"z": 0
+	},
+	"bSpawnFacingInstigatorsRotation": true,
+	"rotation":
+	{
+		"pitch": 0,
+		"yaw": 0,
+		"roll": 0
+	},
+	"triggerType": 0,
+	"spawnRadius": 0,
+	"spawnExtent": 1000,
+	"trackSpawnedNpcOnInstigator": true,
+	"targetSpawnLocationContext":
+	{
+		"expression": "GetLocation(GetInstigatorThatSpawnedNpc()) + GetActorForward(GetInstigatorThatSpawnedNpc()) * 400."
+	},
+	"spawnExpressions": [],
+	"spawnedCharacterLevelOffset": 0,
+	"bSpecifyAbsoluteLevel": false,
+	"addThreatsFromCreator": true,
+	"copyThreatValuesFromCreator": false,
+	"blackboardKeysToSet":
+	{
+	},
+	"guid": "6064632342888054886",
+	"name": "Minotaur_Summoner_RavenSpirit1_01",
+	"typeId": "3031600204"
+}

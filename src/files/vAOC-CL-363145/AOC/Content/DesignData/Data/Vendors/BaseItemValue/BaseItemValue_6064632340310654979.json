@@ -1,0 +1,24 @@
+{
+	"buyingCurrencyTierId":
+	{
+		"guid": "6064629127873626112",
+		"typeId": "1011111289",
+		"name": "None"
+	},
+	"sellingCurrencyTierId":
+	{
+		"guid": "6064629127873626112",
+		"typeId": "1011111289",
+		"name": "None"
+	},
+	"currencyValues":
+	{
+		"(Guid=6064629127873626112,TypeId=1011111289)":
+		{
+			"expression": "const ItemLevel = GetItemLevel();\r\n\r\nRound(SelectFloat(ItemLevel == 1, 100.0,\r\nSelectFloat(ItemLevel == 10, 500.0,\r\nSelectFloat(ItemLevel == 20, 2500.0,\r\nSelectFloat(ItemLevel == 25, 10000.0, 999999999.0)))))"
+		}
+	},
+	"guid": "6064632340310654979",
+	"name": "Crate",
+	"typeId": "3145314713"
+}

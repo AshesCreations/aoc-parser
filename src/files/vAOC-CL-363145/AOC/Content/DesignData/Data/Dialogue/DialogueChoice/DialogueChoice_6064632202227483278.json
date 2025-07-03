@@ -1,0 +1,18 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"87FB33444DB4EA740D2DF782312E4778\", \"I think we can do better.\")",
+	"nextNodeId":
+	{
+		"guid": "6064632189613441028",
+		"typeId": "1091110028",
+		"name": "CSQ_RVR_0081_FB_NordenResnik_DLG_100"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "Player_ObjectiveStateEquals(GetPlayer(),\"CSQ_RVR_0085_FB_StaunchBloodyBlade_GotoInfirmary_OBJ\",EObjectiveState::Complete) &&\r\nPlayer_ObjectiveStateEquals(GetPlayer(),\"CSQ_RVR_0085_FB_StaunchBloodyBlade_ReadLogbook_OBJ\",EObjectiveState::Hidden)||\r\nPlayer_ObjectiveStateEquals(GetPlayer(),\"CSQ_RVR_0085_FB_StaunchBloodyBlade_FindXanderArtifact_Task\",EObjectiveState::Hidden)||\r\nPlayer_ObjectiveStateEquals(GetPlayer(),\"CSQ_RVR_0085_FB_StaunchBloodyBlade_CollectBandages_OBJ\",EObjectiveState::Hidden)"
+	},
+	"choiceType": "Default",
+	"guid": "6064632202227483278",
+	"name": "CSQ_RVR_0081_FB_NordenResnik_DLG_103_Choice_2",
+	"typeId": "1091110027"
+}

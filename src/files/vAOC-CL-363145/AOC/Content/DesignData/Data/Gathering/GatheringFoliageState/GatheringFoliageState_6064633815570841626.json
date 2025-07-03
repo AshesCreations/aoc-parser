@@ -1,0 +1,244 @@
+{
+	"displayName": "NSLOCTEXT(\"[E4D20BA648F08F07691FD6BAA26EEB4A]\", \"4CDDCC3247D2A3D42811AE880E94D1D0\", \"Mine - Tendonite\")",
+	"spawnTags":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"surveyingTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "artisanship.gathering.mining"
+			}
+		],
+		"parentTags": [
+			{
+				"tagName": "artisanship.gathering"
+			},
+			{
+				"tagName": "artisanship"
+			}
+		]
+	},
+	"bBlockPawn": true,
+	"bBlockCamera": true,
+	"staticMeshState": "/Game/ENV/Gatherables/Stone/Tendonite/Mesh/SM_Gatherables_Tendonite_Large_03.SM_Gatherables_Tendonite_Large_03",
+	"collisionRadius": 50,
+	"overrideInteractionDistance": 200,
+	"overrideInteractionAngle": 70,
+	"lifecycleDuration": 60,
+	"dynamicLifecycleDefId":
+	{
+		"guid": "0",
+		"typeId": "1991555",
+		"name": "None"
+	},
+	"bShouldTransitionScale": false,
+	"startingScalePercentage": 1,
+	"scaleLerpSpeed": 1,
+	"bRuntimeMesh": false,
+	"skeletalMeshState": "None",
+	"meshLifetimeDuration": 27,
+	"bMeshFade": true,
+	"meshDurationBeforeFade": 6,
+	"fadeScalarName": "Object Fade Amount",
+	"meshFadeDuration": 3,
+	"bFractureStaticMesh": true,
+	"fracturedMesh": "/Game/Effects/FX_Harvestables/Mining/UnrealChaos/Collections/Copper_Large_02_GeometryCollection.Copper_Large_02_GeometryCollection",
+	"fractureSupportMesh": "/Game/Effects/FX_Harvestables/Mining/UnrealChaos/SM_Copper_Large_02_Staticbase.SM_Copper_Large_02_Staticbase",
+	"fractureAngularDamping": 1,
+	"fractureLinearDamping": 0.69999998807907104,
+	"fractureInertiaTensorScale":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"maxClusterLevel": 100,
+	"bApplyRadialImpulse": true,
+	"radialImpulseOffset":
+	{
+		"x": -20,
+		"y": 0,
+		"z": 200
+	},
+	"radialImpulseRadius": 100,
+	"radialImpulseForce": 180000,
+	"bSimulatePhysics": true,
+	"bBreakBoneConstraint": false,
+	"impulseForce": 0,
+	"impulseBoneName": "None",
+	"impulseDirection": 0,
+	"disablePhysicsDuration": 1,
+	"bCalculateFadeAfterDisabledPhysics": false,
+	"bCalculateFadeAfterImpact": false,
+	"targetImpactMainBodyAngularDamping": 0,
+	"targetImpactMainBodyLinearDamping": 0.0099999997764825821,
+	"targetImpactMainBodyDuration": 2,
+	"targetImpactSecondaryBodyAngularDamping": 0,
+	"targetImpactSecondaryBodyLinearDamping": 0.0099999997764825821,
+	"targetImpactSecondaryBodyDuration": 2,
+	"skeletalMeshGatheredAnimation": "None",
+	"skeletalMeshGatheringEventAnimation": "None",
+	"foliageInteractionsIds": [
+		{
+			"guid": "6064633815453138951",
+			"typeId": "19846",
+			"name": "None"
+		}
+	],
+	"akAudioEvents": [],
+	"foliageAkAudioWeightedEvents": [],
+	"akSwitches": [
+		"/Game/WwiseAudio/Switches/GameSwitches/Professions/Mining/Mining-Ore.Mining-Ore"
+	],
+	"akAudioOffset":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"akRTPCId":
+	{
+		"guid": "0",
+		"typeId": "919000",
+		"name": "None"
+	},
+	"akGatheringEvent": "/Game/WwiseAudio/Events/Main/Professions/Gathering/PROF_Mining_Impact.PROF_Mining_Impact",
+	"akGatheredEvent": "/Game/WwiseAudio/Events/Main/Professions/Gathering/PROF_Mining_Crumble.PROF_Mining_Crumble",
+	"akImpactEvent": "None",
+	"foliageMaxHitCount": 150,
+	"foliageMaxVelocity": 1000,
+	"stateTransitionFX": [],
+	"gatheringFX": [],
+	"gatheredFX": [
+		{
+			"enabled":
+			{
+				"expression": ""
+			},
+			"niagaraSystemSoft": "/Game/Effects/FX_Harvestables/Mining/Particles/NS_HarvestOreStone_Copper_large_01.NS_HarvestOreStone_Copper_large_01",
+			"lifeTime": 0,
+			"bCastVolumetricTranslucentShadow": false,
+			"attachType": "AttachedTarget",
+			"originMesh": "Character",
+			"attachSocketName": "None",
+			"bUseAttachSocketForOriginLocation": true,
+			"bUseAttachSocketForOriginOrientation": true,
+			"transform":
+			{
+				"originLocation": "Target",
+				"originLocationSocket": "None",
+				"originOrientation": "Target",
+				"originOrientationSocket": "None",
+				"originScale": "World",
+				"bUseRelativeLocationExpression": false,
+				"relativeLocation":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"relativeLocationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeRotationExpression": false,
+				"relativeRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"relativeRotationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeScaleExpression": false,
+				"relativeScale":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				},
+				"relativeScaleExpression":
+				{
+					"expression": ""
+				}
+			},
+			"bVisibleToSceneCaptureOnly": false,
+			"bAllowScalability": true,
+			"bUseLocalRemoteDynamicSystem": false,
+			"audioFX": [],
+			"audioExitFX": []
+		}
+	],
+	"impactFX": [],
+	"destroyedFX": [
+		{
+			"enabled":
+			{
+				"expression": ""
+			},
+			"niagaraSystemSoft": "/Game/Effects/FX_Harvestables/Mining/Particles/FX_Mine_Ore_Break.FX_Mine_Ore_Break",
+			"lifeTime": 0,
+			"bCastVolumetricTranslucentShadow": false,
+			"attachType": "AttachedTarget",
+			"originMesh": "Character",
+			"attachSocketName": "None",
+			"bUseAttachSocketForOriginLocation": true,
+			"bUseAttachSocketForOriginOrientation": true,
+			"transform":
+			{
+				"originLocation": "Target",
+				"originLocationSocket": "None",
+				"originOrientation": "Target",
+				"originOrientationSocket": "None",
+				"originScale": "World",
+				"bUseRelativeLocationExpression": false,
+				"relativeLocation":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"relativeLocationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeRotationExpression": false,
+				"relativeRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"relativeRotationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeScaleExpression": false,
+				"relativeScale":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				},
+				"relativeScaleExpression":
+				{
+					"expression": ""
+				}
+			},
+			"bVisibleToSceneCaptureOnly": false,
+			"bAllowScalability": true,
+			"bUseLocalRemoteDynamicSystem": false,
+			"audioFX": [],
+			"audioExitFX": []
+		}
+	],
+	"niagaraParams": [],
+	"guid": "6064633815570841626",
+	"name": "Metal_Tendonite_Large_3",
+	"typeId": "19836"
+}

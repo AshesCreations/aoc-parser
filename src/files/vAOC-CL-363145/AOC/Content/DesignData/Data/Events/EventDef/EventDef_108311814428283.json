@@ -1,0 +1,112 @@
+{
+	"eventName": "",
+	"gameplayTags":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"activationPredicatesIds": [
+		{
+			"guid": "108311823865468",
+			"typeId": "23095129",
+			"name": "None"
+		}
+	],
+	"minChallengeRating": 0,
+	"maxChallengeRating": 30,
+	"eventType": 1,
+	"locationId":
+	{
+		"guid": "6064629733238046795",
+		"typeId": "23095137",
+		"name": "Aimi_Test_Level_Event_Location"
+	},
+	"desiredTimeSlot": "0001.01.01-00.00.00",
+	"frequency": 24,
+	"priority": 1,
+	"rewardTableId":
+	{
+		"guid": "0",
+		"typeId": "1091110040",
+		"name": "None"
+	},
+	"rewardPopulationSetId":
+	{
+		"guid": "0",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"startStageId":
+	{
+		"guid": "108311789983354",
+		"typeId": "23095131",
+		"name": "AimiTest_Active (Copy)"
+	},
+	"stagesIds": [
+		{
+			"guid": "108311789983354",
+			"typeId": "23095131",
+			"name": "AimiTest_Active (Copy)"
+		},
+		{
+			"guid": "108318123120270",
+			"typeId": "23095131",
+			"name": "PopUpPrototype_PP0001_Minotaurs_Complete"
+		},
+		{
+			"guid": "108311933834880",
+			"typeId": "23095131",
+			"name": "NarrativePrototype_SA0001_Event_NeverEnough_Stage1"
+		},
+		{
+			"guid": "108311995373189",
+			"typeId": "23095131",
+			"name": "NarrativePrototype_SA0001_Event_NeverEnough_Stage2"
+		},
+		{
+			"guid": "108317995783820",
+			"typeId": "23095131",
+			"name": "NarrativePrototype_SA0001_Event_NeverEnough_Fail"
+		},
+		{
+			"guid": "108311789393529",
+			"typeId": "23095131",
+			"name": "AimiTest_InActive (Copy)"
+		}
+	],
+	"alignmentsIds": [],
+	"mapDisplayType": "None",
+	"mapEventIcon": "None",
+	"bDisplayOnTracker": true,
+	"notificationRadius": 15000,
+	"mapRadiusMinumum": 1000,
+	"cooldownTimer": 300,
+	"bDisabled": true,
+	"maxInstanceCount": 1,
+	"requiredMapName": "Aimi_TestLvl",
+	"comments": [],
+	"bIsTemplate": false,
+	"flowNodes": [
+		{
+			"flowType": "EventEntry",
+			"graphLocation":
+			{
+				"x": 293.29998903721571,
+				"y": -1164.4000001847744
+			},
+			"id": 0
+		},
+		{
+			"flowType": "EventExit",
+			"graphLocation":
+			{
+				"x": -603.19997328519821,
+				"y": 1398.6999813392758
+			},
+			"id": 1
+		}
+	],
+	"guid": "108311814428283",
+	"name": "PopUpPrototype_PP0001_Minotaurs_EventDef",
+	"typeId": "23095125"
+}

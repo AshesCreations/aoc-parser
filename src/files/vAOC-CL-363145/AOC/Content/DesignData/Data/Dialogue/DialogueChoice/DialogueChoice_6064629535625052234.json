@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"97A594BA40271CB741EED78E4D7C896A\", \"The farmhand with the medallion, what\\'s his name?\")",
+	"nextNodeId":
+	{
+		"guid": "6064629535653888077",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "(!IsOnStoryArcQuest(GetPlayer(),\"SAQ_0009_GH_DemonsPitchfork\")&&\r\nIsStoryArcQuestAvailable(GetPlayer(), \"SAQ_0009_GH_QuicksilverToast\"))"
+	},
+	"guid": "6064629535625052234",
+	"name": "MADD_0009_FarmerLyle_20",
+	"typeId": "1091110027"
+}

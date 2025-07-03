@@ -1,0 +1,56 @@
+{
+	"displayName": "NSLOCTEXT(\"\", \"51C332504232B35CA738F99DFCB116FD\", \"Arcane Mitigation\")",
+	"description": "NSLOCTEXT(\"\", \"3C63E68B4AD1E51C33626E8C81E185E6\", \"Reduces the amount of arcane damage taken\")",
+	"bHidden": false,
+	"gameplayType": "Type_Combat",
+	"bHasWaterfallStatsUI": false,
+	"waterfallStatsUIIds": [],
+	"bDisplayAsPercentage": true,
+	"statType": "Type_Float",
+	"bClampStatFinalValue": true,
+	"bMultiplyStatMods": true,
+	"bMultiplyCompliment": true,
+	"base":
+	{
+		"expression": "const rating = GetStat(GetInstigator(), $#10516612381411111:6064629885424833630$);\r\n(1.0 - rating / (rating + EvalFormula($#10516612381411113:6064630531622110190$)))"
+	},
+	"waterfallStatsBaseIds": [
+		{
+			"guid": "6064629885424833630",
+			"typeId": "10516612381411111",
+			"name": "None"
+		}
+	],
+	"valueMin":
+	{
+		"expression": "0"
+	},
+	"waterfallStatsMinIds": [],
+	"valueMax":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMaxIds": [],
+	"regenRate":
+	{
+		"expression": ""
+	},
+	"waterfallStatsRegenIds": [],
+	"bRegenWhileDead": false,
+	"bRecalculateOnCombatState": false,
+	"onSpawn": "Reset_None",
+	"onDeath": "Reset_None",
+	"onRevive": "Reset_None",
+	"bPersistValue": false,
+	"replication": 5,
+	"shieldStatId":
+	{
+		"guid": "0",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"grantedEffects": [],
+	"guid": "6064629885423785053",
+	"name": "ArcaneMitigation",
+	"typeId": "10516612381411111"
+}

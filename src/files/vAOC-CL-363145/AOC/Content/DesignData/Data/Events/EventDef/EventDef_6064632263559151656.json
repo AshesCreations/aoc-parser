@@ -1,0 +1,109 @@
+{
+	"eventName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"029075D041037ACD864692B386365F2C\", \"Rosewater Has Been Taken\")",
+	"gameplayTags":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"activationPredicatesIds": [
+		{
+			"guid": "6064632263559151657",
+			"typeId": "23095129",
+			"name": "None"
+		}
+	],
+	"minChallengeRating": 1,
+	"maxChallengeRating": 30,
+	"eventLevel": 10,
+	"eventType": 1,
+	"locationId":
+	{
+		"guid": "6064632263559151669",
+		"typeId": "5127371160",
+		"name": "None"
+	},
+	"desiredTimeSlot": "0001.01.01-00.00.00",
+	"frequency": 24,
+	"priority": 1,
+	"rewardTableId":
+	{
+		"guid": "0",
+		"typeId": "1091110040",
+		"name": "None"
+	},
+	"rewardPopulationSetId":
+	{
+		"guid": "0",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"startStageId":
+	{
+		"guid": "6064632263559151658",
+		"typeId": "23095131",
+		"name": "None"
+	},
+	"stagesIds": [
+		{
+			"guid": "6064632263559151658",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064632263559151659",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064632263559151660",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064632263559151662",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064632263559151664",
+			"typeId": "23095131",
+			"name": "None"
+		}
+	],
+	"interactVolumesIds": [],
+	"alignmentsIds": [],
+	"mapDisplayType": "Biome",
+	"mapEventIcon": "/Game/UI/Icons/Map/TUI_Icon_Map_Event_Active.TUI_Icon_Map_Event_Active",
+	"bDisplayOnTracker": true,
+	"notificationRadius": 15000,
+	"mapRadiusMinumum": 1000,
+	"cooldownTimer": 7200,
+	"bDisabled": false,
+	"maxInstanceCount": 1,
+	"requiredMapName": "Verra_World_Master",
+	"comments": [],
+	"bIsTemplate": false,
+	"flowNodes": [
+		{
+			"flowType": "EventEntry",
+			"graphLocation":
+			{
+				"x": -800,
+				"y": 100
+			},
+			"id": 0
+		},
+		{
+			"flowType": "EventExit",
+			"graphLocation":
+			{
+				"x": 5200,
+				"y": 700
+			},
+			"id": 1
+		}
+	],
+	"guid": "6064632263559151656",
+	"name": "EVT_RVR_RosewaterTower_RetakeRosewater",
+	"typeId": "23095125"
+}

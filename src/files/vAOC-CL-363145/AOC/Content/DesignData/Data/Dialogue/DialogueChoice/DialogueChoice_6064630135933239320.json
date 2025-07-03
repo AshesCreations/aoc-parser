@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"9E01D31B4E7645A798E138A19C40BA6B\", \"Phase 1 Fallthru\")",
+	"nextNodeId":
+	{
+		"guid": "6064630135955259417",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "((IsOnStoryArcQuest(GetPlayer(), \"SAQ_0022_p1q2_BestLaidPlans\")&&GetStoryArcQuestFlag(GetPlayer(),\"SAQ_0022_p1q2_BestLaidPlans\",\"BLPJoon\"))||GetStoryArcQuestFlag(GetPlayer(),\"SAQ_0022_p1q1_Handbill\",\"Handbill2\"))||!IsStoryArcQuestAvailable(GetPlayer(),\"SAQ_0022_p1q2_BestLaidPlans\")"
+	},
+	"guid": "6064630135933239320",
+	"name": "0022_Seph_Joon_44",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,112 @@
+{
+	"eventName": "NSLOCTEXT(\"\", \"C8350AE2483B1586C948FC8BFDD4BFB1\", \"Locale Event Test\")",
+	"gameplayTags":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"activationPredicatesIds": [
+		{
+			"guid": "108594452321916",
+			"typeId": "23095129",
+			"name": "None"
+		}
+	],
+	"minChallengeRating": 0,
+	"maxChallengeRating": 30,
+	"eventType": 0,
+	"locationId":
+	{
+		"guid": "6064629733238046795",
+		"typeId": "23095137",
+		"name": "Aimi_Test_Level_Event_Location"
+	},
+	"desiredTimeSlot": "0001.01.01-00.00.00",
+	"frequency": 24,
+	"priority": 1,
+	"rewardTableId":
+	{
+		"guid": "0",
+		"typeId": "1091110040",
+		"name": "None"
+	},
+	"rewardPopulationSetId":
+	{
+		"guid": "0",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"startStageId":
+	{
+		"guid": "108594452321914",
+		"typeId": "23095131",
+		"name": "None"
+	},
+	"stagesIds": [
+		{
+			"guid": "108594452321914",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "108595201922683",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "108594452321915",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "108595199825528",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "108595201726074",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "108594452321913",
+			"typeId": "23095131",
+			"name": "None"
+		}
+	],
+	"alignmentsIds": [],
+	"mapDisplayType": "None",
+	"mapEventIcon": "None",
+	"bDisplayOnTracker": true,
+	"notificationRadius": 15000,
+	"mapRadiusMinumum": 1000,
+	"cooldownTimer": 300,
+	"bDisabled": false,
+	"maxInstanceCount": 1,
+	"requiredMapName": "Aimi_TestLvl",
+	"comments": [],
+	"bIsTemplate": false,
+	"flowNodes": [
+		{
+			"flowType": "EventEntry",
+			"graphLocation":
+			{
+				"x": -814,
+				"y": 282
+			},
+			"id": 0
+		},
+		{
+			"flowType": "EventExit",
+			"graphLocation":
+			{
+				"x": 1646.6666869511687,
+				"y": 100
+			},
+			"id": 1
+		}
+	],
+	"guid": "108594452321912",
+	"name": "AimiTest_LocaleEvent",
+	"typeId": "23095125"
+}

@@ -1,0 +1,48 @@
+{
+	"modifierValueSource": "Expression",
+	"valueExpression":
+	{
+		"expression": "const hasDiscount = GetEffectCount(GetPlayer(), $#30316002:6064630633180037256$) > 0;\r\nSelectFloat(hasDiscount, 0.5, 1.0)"
+	},
+	"priceFactor": "Quality",
+	"valueCurve":
+	{
+		"externalCurve": "None",
+		"editorCurveData":
+		{
+			"keys": [],
+			"defaultValue": 3.4028234663852886e+38,
+			"preInfinityExtrap": "RCCE_Constant",
+			"postInfinityExtrap": "RCCE_Constant",
+			"keyHandlesToIndices":
+			{
+			}
+		}
+	},
+	"priceModifiersIds": [],
+	"arithmeticOperation": "Multiply",
+	"itemFilter":
+	{
+		"tokenStreamVersion": 0,
+		"tagDictionary": [],
+		"queryTokenStream": [],
+		"userDescription": "",
+		"autoDescription": ""
+	},
+	"affectedContexts": 225,
+	"affectedCurrenciesIds": [
+		{
+			"guid": "6064629147812364289",
+			"typeId": "1011111289",
+			"name": "None"
+		},
+		{
+			"guid": "6064629127873626112",
+			"typeId": "1011111289",
+			"name": "None"
+		}
+	],
+	"guid": "6064630632925298726",
+	"name": "TradeBureau_Discount",
+	"typeId": "3145314715"
+}

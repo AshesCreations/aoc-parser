@@ -1,0 +1,103 @@
+{
+	"relativeTransform":
+	{
+		"rotation":
+		{
+			"x": 0,
+			"y": -0,
+			"z": 0,
+			"w": 1
+		},
+		"translation":
+		{
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"scale3D":
+		{
+			"x": 1,
+			"y": 1,
+			"z": 1
+		}
+	},
+	"staticMesh": "/Game/ENV/Pylons/SM_SurveyingPylon_01.SM_SurveyingPylon_01",
+	"beamFX": [
+		{
+			"enabled":
+			{
+				"expression": ""
+			},
+			"niagaraSystemSoft": "/Game/Effects/FX_NodeWars/GodSpike/Particles/FX_Godspike_Beam_Loop.FX_Godspike_Beam_Loop",
+			"lifeTime": 0,
+			"bCastVolumetricTranslucentShadow": false,
+			"attachType": "AttachedTarget",
+			"originMesh": "Character",
+			"attachSocketName": "None",
+			"bUseAttachSocketForOriginLocation": true,
+			"bUseAttachSocketForOriginOrientation": true,
+			"transform":
+			{
+				"originLocation": "Target",
+				"originLocationSocket": "None",
+				"originOrientation": "Target",
+				"originOrientationSocket": "None",
+				"originScale": "World",
+				"bUseRelativeLocationExpression": false,
+				"relativeLocation":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"relativeLocationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeRotationExpression": false,
+				"relativeRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"relativeRotationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeScaleExpression": false,
+				"relativeScale":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				},
+				"relativeScaleExpression":
+				{
+					"expression": ""
+				}
+			},
+			"bVisibleToSceneCaptureOnly": false,
+			"bAllowScalability": true,
+			"bUseLocalRemoteDynamicSystem": false
+		}
+	],
+	"idleFX": [],
+	"busyFX": [],
+	"niagaraParams": [],
+	"skeletalMesh": "None",
+	"bCustomAppearance": false,
+	"appearanceId":
+	{
+		"guid": "0",
+		"typeId": "812360",
+		"name": "None"
+	},
+	"race": "cCount",
+	"gender": "cCount",
+	"idleAnimation": "None",
+	"busyAnimation": "None",
+	"guid": "6064633510214828066",
+	"name": "SearchSurveyPylonVisuals",
+	"typeId": "39554161"
+}

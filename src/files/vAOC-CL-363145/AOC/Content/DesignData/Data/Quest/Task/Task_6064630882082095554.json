@@ -1,0 +1,56 @@
+{
+	"type": "Basic",
+	"progressExpression":
+	{
+		"expression": ""
+	},
+	"nPCTaskIconOverrideId":
+	{
+		"guid": "0",
+		"typeId": "949952112329",
+		"name": "None"
+	},
+	"bAllowSatisfactionToRegress": false,
+	"completionQuantity": 20,
+	"tagQuery":
+	{
+		"tokenStreamVersion": 0,
+		"tagDictionary": [
+			{
+				"tagName": "npc.disposition.enemy"
+			},
+			{
+				"tagName": "Quest.MA_0010.Foeclimbers"
+			},
+			{
+				"tagName": "character.humanoid"
+			}
+		],
+		"queryTokenStream": [ 0, 1, 1, 3, 0, 1, 2 ],
+		"userDescription": "",
+		"autoDescription": " ANY( npc.disposition.enemy, Quest.MA_0010.Foeclimbers, character.humanoid )"
+	},
+	"professionFilterIds": [],
+	"gatherableFilterIds": [],
+	"collectionFilterId":
+	{
+		"guid": "0",
+		"typeId": "1091110041",
+		"name": "None"
+	},
+	"collectionCount": 5,
+	"objectivesIds": [],
+	"bCheckKillLocation": false,
+	"displayLocation": [],
+	"location": [],
+	"populationSetId":
+	{
+		"guid": "0",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"notifyType": "None",
+	"guid": "6064630882082095554",
+	"name": "Task_6064630882082095554",
+	"typeId": "1095125186"
+}

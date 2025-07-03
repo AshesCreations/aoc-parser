@@ -1,0 +1,59 @@
+{
+	"populationInteractZone":
+	{
+		"zoneFGuid": "00000000000000000000000000000000",
+		"location":
+		{
+			"x": -5073.664452,
+			"y": 4551.2405950000002,
+			"z": 106.00005899999999
+		},
+		"extents":
+		{
+			"x": 10000,
+			"y": 10000,
+			"z": 10000
+		},
+		"actions": [
+			{
+				"actionType": "TriggerActionResponses",
+				"actionResponses": [],
+				"filters":
+				{
+					"tagsIncludeFilter":
+					{
+						"tokenStreamVersion": 0,
+						"tagDictionary": [
+							{
+								"tagName": "Event.QuestTarget.TEST.Soldier"
+							}
+						],
+						"queryTokenStream": [ 0, 1, 2, 1, 0 ],
+						"userDescription": "",
+						"autoDescription": " ALL( Event.QuestTarget.TEST.Soldier )"
+					},
+					"tagsExcludeFilter":
+					{
+						"tokenStreamVersion": 0,
+						"tagDictionary": [
+							{
+								"tagName": "Event.QuestTarget.TEST.Goblin"
+							},
+							{
+								"tagName": "Event.QuestTarget.TEST.Zombie"
+							}
+						],
+						"queryTokenStream": [ 0, 1, 1, 2, 0, 1 ],
+						"userDescription": "",
+						"autoDescription": " ANY( Event.QuestTarget.TEST.Goblin, Event.QuestTarget.TEST.Zombie )"
+					},
+					"popSetsIncludeFilter": [],
+					"popSetsExcludeFilter": []
+				}
+			}
+		]
+	},
+	"guid": "6064631511580409856",
+	"name": "PopulationInteractVolume_Narrative_Test_ViaTag_INCLUDESoldiers",
+	"typeId": "5111069"
+}

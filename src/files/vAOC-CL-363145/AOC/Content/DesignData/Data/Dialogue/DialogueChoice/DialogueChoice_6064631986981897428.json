@@ -1,0 +1,28 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"191EFF804557450C9C1970B439A1FC3A\", \"You are adept in magic, correct? I have a tome I cannot open. It is sealed magically by some sort of curse. Take a look.\")",
+	"nextNodeId":
+	{
+		"guid": "6064631986981897431",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064632264371470360",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "Player_HasItem(GetPlayer(),\"Item_CSQ_0074_CultistJournal_Locked\")"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064631986981897428",
+	"name": "DD_CSQ_0074_Ibram_3",
+	"typeId": "1091110027"
+}

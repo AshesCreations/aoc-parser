@@ -1,0 +1,108 @@
+{
+	"mapIconVisualId":
+	{
+		"guid": "6064631051544559617",
+		"typeId": "949952112329",
+		"name": "None"
+	},
+	"calloutData": [
+		{
+			"requirements": [],
+			"bCalloutIsDialog": false,
+			"bShowQuestHeader": true,
+			"questIcon": "None",
+			"narrativeType": 2,
+			"mapIcon":
+			{
+				"guid": "6064631051544559617",
+				"typeId": "949952112329",
+				"name": "None"
+			},
+			"displayNameOverride": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"9AB2B0B040EA2296AF8D8FA29896E323\", \"Aydin Sulgi\")",
+			"descriptionTextOverride": "NSLOCTEXT(\"\", \"777923274E77ABADFC7EEFB6395517B3\", \"Stowing away a delicate reed flute, the Vaelune performer examines his surroundings with a calm countenance.\")",
+			"calloutAudio": "None",
+			"bGroupBasedOnQuest": false,
+			"relatedCommission":
+			{
+				"guid": "0",
+				"typeId": "280002",
+				"name": "None"
+			},
+			"relatedStoryArcQuest":
+			{
+				"guid": "0",
+				"typeId": "1091110033",
+				"name": "None"
+			}
+		}
+	],
+	"calloutRange": 3000,
+	"narrativeType": 2,
+	"commissionsIds": [
+		{
+			"guid": "6064632944232828370",
+			"typeId": "280002",
+			"name": "None"
+		}
+	],
+	"storyArcQuestsIds": [],
+	"bIsControlPoint": false,
+	"bAlwaysShowOnMap": false,
+	"bUseMonsterTooltip": false,
+	"monsterTooltipText": "",
+	"filterSettingsIds": [],
+	"narrativeRequirements": [
+		{
+			"criteria": [
+				{
+					"elementType": "Quest",
+					"narrativeType": "Commission",
+					"commissionId":
+					{
+						"guid": "6064632944232828370",
+						"typeId": "280002",
+						"name": "None"
+					},
+					"storyArcQuestId":
+					{
+						"guid": "0",
+						"typeId": "1091110035",
+						"name": "None"
+					},
+					"objectiveId":
+					{
+						"guid": "0",
+						"typeId": "1091110420",
+						"name": "None"
+					},
+					"itemFilterId":
+					{
+						"guid": "0",
+						"typeId": "1091110041",
+						"name": "None"
+					},
+					"currencyDefId":
+					{
+						"guid": "0",
+						"typeId": "1011151289",
+						"name": "None"
+					},
+					"amountToQuery": 0,
+					"questState": "Unaccepted",
+					"objectiveState": "Active",
+					"itemState": "InInventory",
+					"characterAlignmentId":
+					{
+						"guid": "0",
+						"typeId": "512160700",
+						"name": "None"
+					},
+					"invert": false
+				}
+			]
+		}
+	],
+	"guid": "6064632944199732689",
+	"name": "EVT_SAN_0001_ScorpionCharmer_MapReg",
+	"typeId": "402007"
+}

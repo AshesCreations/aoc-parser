@@ -1,0 +1,56 @@
+{
+	"displayName": "NSLOCTEXT(\"\", \"F297207C4E81A51D07B705B3B158E053\", \"Physical Disable Evasion Rating\")",
+	"description": "NSLOCTEXT(\"\", \"185FBA794D6479B0056B0887241E6788\", \"Reduces the chance to be hit by disabling physical effects\")",
+	"bHidden": false,
+	"gameplayType": "Type_Combat",
+	"bHasWaterfallStatsUI": false,
+	"waterfallStatsUIIds": [],
+	"bDisplayAsPercentage": false,
+	"statType": "Type_Float",
+	"bClampStatFinalValue": false,
+	"bMultiplyStatMods": false,
+	"bMultiplyCompliment": false,
+	"base":
+	{
+		"expression": "GetStat(GetOwner(), $#10516612381411111:109183598614140$)\r\n* EvalFormula($#10516612381411113:6064633153362984963$)"
+	},
+	"waterfallStatsBaseIds": [
+		{
+			"guid": "109183598614140",
+			"typeId": "10516612381411111",
+			"name": "None"
+		}
+	],
+	"valueMin":
+	{
+		"expression": "0"
+	},
+	"waterfallStatsMinIds": [],
+	"valueMax":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMaxIds": [],
+	"regenRate":
+	{
+		"expression": ""
+	},
+	"waterfallStatsRegenIds": [],
+	"bRegenWhileDead": false,
+	"bRecalculateOnCombatState": false,
+	"onSpawn": "Reset_None",
+	"onDeath": "Reset_None",
+	"onRevive": "Reset_None",
+	"bPersistValue": false,
+	"replication": 1,
+	"shieldStatId":
+	{
+		"guid": "0",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"grantedEffects": [],
+	"guid": "109183607068295",
+	"name": "PhysicalDisableEvasionRating",
+	"typeId": "10516612381411111"
+}

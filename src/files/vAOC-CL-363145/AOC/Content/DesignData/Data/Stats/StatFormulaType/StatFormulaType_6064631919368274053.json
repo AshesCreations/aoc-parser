@@ -1,0 +1,146 @@
+{
+	"equationId":
+	{
+		"guid": "6064629862512721921",
+		"typeId": "10516612381411112",
+		"name": "None"
+	},
+	"inputTerms": [
+		{
+			"termId":
+			{
+				"guid": "6064629248874774551",
+				"typeId": "10516612381411115",
+				"name": "None"
+			},
+			"value":
+			{
+				"expression": "const HitInProgress = GetHitInProgress();\r\nconst Instigator = GetInstigator();\r\nconst PhysicalTag = HitHasTag(HitInProgress, \"Element.Physical\");\r\nconst MagicalTag = HitHasTag(HitInProgress, \"Element.Magical\");\r\nconst Swap = HitHasTag(HitInProgress, \"ability.SwapStatScaling\");\r\nconst IsPhysical = (!Swap && PhysicalTag) || (Swap && MagicalTag);\r\nconst IsMagical  = (!Swap && MagicalTag) || (Swap && PhysicalTag);\r\n\r\nvar Dmg = 0.0;\r\n\r\nif (IsPhysical)\r\n{\r\n    set Dmg = Dmg + GetStat(Instigator, $#10516612381411111:109343399171797$);\r\n\r\n    if (HitHasTag(HitInProgress, \"Element.Physical.Bleed\")) { \r\n        set Dmg = Dmg + GetStat(Instigator, $#10516612381411111:6064629772990155204$); }\r\n    if (HitHasTag(HitInProgress, \"Element.Physical.Bludgeon\")) { \r\n        set Dmg = Dmg + GetStat(Instigator, $#10516612381411111:109343501407997$); }\r\n    if (HitHasTag(HitInProgress, \"Element.Physical.Pierce\")) { \r\n        set Dmg = Dmg + GetStat(Instigator, $#10516612381411111:109343501408005$); }\r\n    if (HitHasTag(HitInProgress, \"Element.Physical.Slash\")) {\r\n        set Dmg = Dmg + GetStat(Instigator, $#10516612381411111:109343503832845$); }\r\n}\r\nif (IsMagical)\r\n{\r\n    set Dmg = Dmg + GetStat(Instigator, $#10516612381411111:109343399106254$);\r\n\r\n    if (HitHasTag(HitInProgress, \"Element.Magical.Arcane\")) { \r\n        set Dmg = Dmg + GetStat(Instigator, $#10516612381411111:6064629772956338622$); }\r\n    if (HitHasTag(HitInProgress, \"Element.Magical.Fire\")) {\r\n        set Dmg = Dmg + GetStat(Instigator, $#10516612381411111:109343399171824$); }\r\n    if (HitHasTag(HitInProgress, \"Element.Magical.Ice\")) { \r\n        set Dmg = Dmg + GetStat(Instigator, $#10516612381411111:109343399171825$); }\r\n    if (HitHasTag(HitInProgress, \"Element.Magical.Lightning\")) {\r\n        set Dmg = Dmg + GetStat(Instigator, $#10516612381411111:109343399171826$); }\r\n    if (HitHasTag(HitInProgress, \"Element.Magical.Radiant\")) {\r\n        set Dmg = Dmg + GetStat(Instigator, $#10516612381411111:6064629772981897664$); }\r\n    if (HitHasTag(HitInProgress, \"Element.Magical.Necrotic\")) {\r\n        set Dmg = Dmg + GetStat(Instigator, $#10516612381411111:6064631171498508288$); }\r\n    if (HitHasTag(HitInProgress, \"Element.Magical.Spirit\")) {\r\n        set Dmg = Dmg + GetStat(Instigator, $#10516612381411111:6064631171504013315$); }\r\n}\r\n\r\nDmg"
+			},
+			"bOptional": false,
+			"bKeepBeyondScope": false,
+			"filter":
+			{
+				"expression": ""
+			},
+			"mergeRuleOverride": "Merge_Default"
+		},
+		{
+			"termId":
+			{
+				"guid": "6064630633715007489",
+				"typeId": "10516612381411115",
+				"name": "None"
+			},
+			"value":
+			{
+				"expression": "const HitInProgress = GetHitInProgress();\r\nconst Instigator = GetInstigator();\r\nconst PhysicalTag = HitHasTag(HitInProgress, \"Element.Physical\");\r\nconst MagicalTag = HitHasTag(HitInProgress, \"Element.Magical\");\r\nconst Swap = HitHasTag(HitInProgress, \"ability.SwapStatScaling\");\r\nconst IsPhysical = (!Swap && PhysicalTag) || (Swap && MagicalTag);\r\nconst IsMagical  = (!Swap && MagicalTag) || (Swap && PhysicalTag);\r\n\r\nvar Dmg = GetStat(Instigator, $#10516612381411111:6064630634097410063$) *\r\nGetStat(Instigator, $#10516612381411111:6064630854084526095$);\r\n\r\nif (IsPhysical)\r\n{\r\n    set Dmg = Dmg * GetStat(Instigator, $#10516612381411111:6064630634059989002$);\r\n\r\n    if (HitHasTag(HitInProgress, \"Element.Physical.Bleed\")) { \r\n        set Dmg = Dmg * GetStat(Instigator, $#10516612381411111:6064630634023288836$); }\r\n    if (HitHasTag(HitInProgress, \"Element.Physical.Bludgeon\")) { \r\n        set Dmg = Dmg * GetStat(Instigator, $#10516612381411111:6064630634025123845$); }\r\n    if (HitHasTag(HitInProgress, \"Element.Physical.Pierce\")) { \r\n        set Dmg = Dmg * GetStat(Instigator, $#10516612381411111:6064630634061234187$); }\r\n    if (HitHasTag(HitInProgress, \"Element.Physical.Slash\")) {\r\n        set Dmg = Dmg * GetStat(Instigator, $#10516612381411111:6064630634070474765$); }\r\n}\r\nif (IsMagical)\r\n{\r\n    set Dmg = Dmg * GetStat(Instigator, $#10516612381411111:6064630634058743817$);\r\n\r\n    if (HitHasTag(HitInProgress, \"Element.Magical.Arcane\")) { \r\n        set Dmg = Dmg * GetStat(Instigator, $#10516612381411111:6064630634003759106$); }\r\n    if (HitHasTag(HitInProgress, \"Element.Magical.Fire\")) {\r\n        set Dmg = Dmg * GetStat(Instigator, $#10516612381411111:6064630634029056006$); }\r\n    if (HitHasTag(HitInProgress, \"Element.Magical.Ice\")) { \r\n        set Dmg = Dmg * GetStat(Instigator, $#10516612381411111:6064630634053566471$); }\r\n    if (HitHasTag(HitInProgress, \"Element.Magical.Lightning\")) {\r\n        set Dmg = Dmg * GetStat(Instigator, $#10516612381411111:6064630634055794696$); }\r\n    if (HitHasTag(HitInProgress, \"Element.Magical.Radiant\")) {\r\n        set Dmg = Dmg * GetStat(Instigator, $#10516612381411111:6064630634067525644$); }\r\n    if (HitHasTag(HitInProgress, \"Element.Magical.Necrotic\")) {\r\n        set Dmg = Dmg * GetStat(Instigator, $#10516612381411111:6064631171498704897$); }\r\n    if (HitHasTag(HitInProgress, \"Element.Magical.Spirit\")) {\r\n        set Dmg = Dmg * GetStat(Instigator, $#10516612381411111:6064631171504209924$); }\r\n}\r\n\r\nDmg"
+			},
+			"bOptional": false,
+			"bKeepBeyondScope": false,
+			"filter":
+			{
+				"expression": ""
+			},
+			"mergeRuleOverride": "Merge_Default"
+		},
+		{
+			"termId":
+			{
+				"guid": "6064629248876085273",
+				"typeId": "10516612381411115",
+				"name": "None"
+			},
+			"value":
+			{
+				"expression": "const HitInProgress = GetHitInProgress();\r\nconst Target = GetTarget();\r\nconst IsPhysical = HitHasTag(HitInProgress, \"Element.Physical\");\r\nconst IsMagical = HitHasTag(HitInProgress, \"Element.Magical\");\r\nconst IsCrit = HitFlagsContains(GetHitFlags(HitInProgress, Target), EHitFlag::Crit);\r\nconst IsBlock = HitFlagsContains(GetHitFlags(HitInProgress, Target), EHitFlag::Block);\r\n\r\nvar Mit = 1.0;\r\n\r\nif (IsPhysical) \r\n{\r\n    set Mit = Mit * GetStat(Target, $#10516612381411111:109343399171798$);\r\n\r\n    if (HitHasTag(HitInProgress, \"Element.Physical.Bleed\")) { \r\n        set Mit = Mit * GetStat(Target, $#10516612381411111:6064629885220945967$); }\r\n    if (HitHasTag(HitInProgress, \"Element.Physical.Bludgeon\")) {\r\n        set Mit = Mit * GetStat(Target, $#10516612381411111:109343501408003$); }\r\n    if (HitHasTag(HitInProgress, \"Element.Physical.Pierce\")) {\r\n        set Mit = Mit * GetStat(Target, $#10516612381411111:109343503832843$); }\r\n    if (HitHasTag(HitInProgress, \"Element.Physical.Slash\")) {\r\n        set Mit = Mit * GetStat(Target, $#10516612381411111:109343503832851$); }\r\n}\r\n\r\nif (IsMagical)\r\n{\r\n    set Mit = Mit * GetStat(Target, $#10516612381411111:109343399171803$);\r\n\r\n    if (HitHasTag(HitInProgress, \"Element.Magical.Arcane\")) {\r\n        set Mit = Mit * GetStat(Target, $#10516612381411111:6064629885423785053$); }\r\n    if (HitHasTag(HitInProgress, \"Element.Magical.Fire\")) {\r\n        set Mit = Mit * GetStat(Target, $#10516612381411111:109343399237369$); }\r\n    if (HitHasTag(HitInProgress, \"Element.Magical.Ice\")) {\r\n        set Mit = Mit * GetStat(Target, $#10516612381411111:109343399237370$); }\r\n    if (HitHasTag(HitInProgress, \"Element.Magical.Lightning\")) {\r\n        set Mit = Mit * GetStat(Target, $#10516612381411111:109343399237371$); }\r\n    if (HitHasTag(HitInProgress, \"Element.Magical.Radiant\")) {\r\n        set Mit = Mit * GetStat(Target, $#10516612381411111:6064629885430797409$); }\r\n    if (HitHasTag(HitInProgress, \"Element.Magical.Necrotic\")) {\r\n        set Mit = Mit * GetStat(Target, $#10516612381411111:6064631171509452806$); }\r\n    if (HitHasTag(HitInProgress, \"Element.Magical.Spirit\")) {\r\n        set Mit = Mit * GetStat(Target, $#10516612381411111:6064631171512401928$); }\r\n}\r\n\r\nif (IsCrit)\r\n{\r\n    if (IsPhysical) { \r\n        set Mit = Mit * GetStat(Target, $#10516612381411111:109343399171815$); }\r\n    if (IsMagical) {\r\n        set Mit = Mit * GetStat(Target, $#10516612381411111:109343183951496$); }\r\n}\r\n\r\nif (IsBlock)\r\n{\r\n    if (IsPhysical) {\r\n        set Mit = Mit * GetStat(Target, $#10516612381411111:6064629495592452105$); }\r\n    if (IsMagical) {\r\n        set Mit = Mit * GetStat(Target, $#10516612381411111:6064629495592517642$); }\r\n}\r\n\r\n1.0 - Mit"
+			},
+			"bOptional": false,
+			"bKeepBeyondScope": false,
+			"filter":
+			{
+				"expression": ""
+			},
+			"mergeRuleOverride": "Merge_Default"
+		},
+		{
+			"termId":
+			{
+				"guid": "6064629248874250262",
+				"typeId": "10516612381411115",
+				"name": "None"
+			},
+			"value":
+			{
+				"expression": "var CDmg = 1.0;\r\nconst IsCrit = HitFlagsContains(GetHitFlags(GetHitInProgress(), GetTarget()), EHitFlag::Crit);\r\nif (IsCrit)\r\n{\r\n    const HitInProgress = GetHitInProgress();\r\n    const Instigator = GetInstigator();\r\n    const PhysicalTag = HitHasTag(HitInProgress, \"Element.Physical\");\r\n    const MagicalTag = HitHasTag(HitInProgress, \"Element.Magical\");\r\n    const Swap = HitHasTag(HitInProgress, \"ability.SwapStatScaling\");\r\n    const IsPhysical = (!Swap && PhysicalTag) || (Swap && MagicalTag);\r\n    const IsMagical  = (!Swap && MagicalTag) || (Swap && PhysicalTag);\r\n\r\n    set CDmg = 0.0;\r\n    if (IsPhysical) {\r\n        set CDmg = CDmg + GetStat(Instigator, $#10516612381411111:109343399171807$); }\r\n    if (IsMagical) {\r\n        set CDmg = CDmg + GetStat(Instigator, $#10516612381411111:109343399171811$); }\r\n}\r\nCDmg"
+			},
+			"bOptional": false,
+			"bKeepBeyondScope": false,
+			"filter":
+			{
+				"expression": ""
+			},
+			"mergeRuleOverride": "Merge_Default"
+		},
+		{
+			"termId":
+			{
+				"guid": "6064629248876412954",
+				"typeId": "10516612381411115",
+				"name": "None"
+			},
+			"value":
+			{
+				"expression": "const HitInProgress = GetHitInProgress();\r\nconst Instigator = GetInstigator();\r\nconst PhysicalTag = HitHasTag(HitInProgress, \"Element.Physical\");\r\nconst MagicalTag = HitHasTag(HitInProgress, \"Element.Magical\");\r\nconst Swap = HitHasTag(HitInProgress, \"ability.SwapStatScaling\");\r\nconst IsPhysical = (!Swap && PhysicalTag) || (Swap && MagicalTag);\r\nconst IsMagical  = (!Swap && MagicalTag) || (Swap && PhysicalTag);\r\n\r\nvar Pen = 0.0;\r\n\r\nif (IsPhysical) {\r\n    set Pen = Pen + GetStat(Instigator, $#10516612381411111:109343399106256$); }\r\nif (IsMagical) {\r\n    set Pen = Pen + GetStat(Instigator, $#10516612381411111:109343399171810$); }\r\n\r\nPen"
+			},
+			"bOptional": false,
+			"bKeepBeyondScope": false,
+			"filter":
+			{
+				"expression": ""
+			},
+			"mergeRuleOverride": "Merge_Default"
+		},
+		{
+			"termId":
+			{
+				"guid": "6064630704647897228",
+				"typeId": "10516612381411115",
+				"name": "None"
+			},
+			"value":
+			{
+				"expression": "var Damp = 0.0;\r\nconst ct = GetStat(GetInstigator(), $#10516612381411111:6064630485796716545$);\r\nif (ct > 0.0)\r\n{\r\n    // check if target is NonCombatant\r\n    if (HasAlignment(GetTarget(),$#512160700:6064629443712188425$) && \r\n        !HasAlignment(GetTarget(),$#512160700:6064629443707731976$) &&\r\n        !HasAlignment(GetTarget(),$#512160700:6064629443752951818$))\r\n    {\r\n        set Damp = Damp + EvalCurve($#10516612381411114:6064630704775430285$, ct);\r\n    }\r\n}\r\n1.0 - Damp"
+			},
+			"bOptional": false,
+			"bKeepBeyondScope": false,
+			"filter":
+			{
+				"expression": ""
+			},
+			"mergeRuleOverride": "Merge_Default"
+		},
+		{
+			"termId":
+			{
+				"guid": "6064630794789849875",
+				"typeId": "10516612381411115",
+				"name": "None"
+			},
+			"value":
+			{
+				"expression": "//const IsPlayer = GetStat(GetInstigator(), $Stat:IsPlayer$) > 0.0;\r\n//SelectFloat(IsPlayer, 1.0, 1.25)\r\n-1.0"
+			},
+			"bOptional": false,
+			"bKeepBeyondScope": false,
+			"filter":
+			{
+				"expression": ""
+			},
+			"mergeRuleOverride": "Merge_Default"
+		}
+	],
+	"guid": "6064631919368274053",
+	"name": "DamageMod_ORIGINAL_RECIPE_MAMA_MIA",
+	"typeId": "10516612381411113"
+}

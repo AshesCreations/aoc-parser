@@ -1,0 +1,157 @@
+{
+	"designNotes": "",
+	"levelDefinitionId":
+	{
+		"guid": "6064629126799097877",
+		"typeId": "9227326",
+		"name": "None"
+	},
+	"playerFacingName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"FEC7DEAD4936870BC925BFB3B9AC858F\", \"Mythbreak\")",
+	"zoiType": "HasNode",
+	"startingAreaGameplayTag":
+	{
+		"tagName": "None"
+	},
+	"cityNodeId":
+	{
+		"guid": "6064633429437251605",
+		"typeId": "1323521343",
+		"name": "None"
+	},
+	"adjacentZonesOfInfluenceIds": [
+		{
+			"guid": "6064633430733291549",
+			"typeId": "9127326",
+			"name": "None"
+		},
+		{
+			"guid": "6064629126906904602",
+			"typeId": "9127326",
+			"name": "None"
+		},
+		{
+			"guid": "6064632734314856453",
+			"typeId": "9127326",
+			"name": "None"
+		}
+	],
+	"corruptionRulesEnabled": true,
+	"bAllowPVPOptInProtection": false,
+	"alignmentsAssignedUponEnteringIds": [],
+	"zoiEnvironmentType": "None",
+	"editorColor":
+	{
+		"x": 0.502,
+		"y": 0.72899999999999998,
+		"z": 0.35299999999999998
+	},
+	"zOIRewardTables": [
+		{
+			"inclusionExpression":
+			{
+				"expression": "!DoesNPCContainTag(\"NoRewards\")"
+			},
+			"rewardTableId":
+			{
+				"guid": "6064633313653948416",
+				"typeId": "1091110040",
+				"name": "None"
+			}
+		},
+		{
+			"inclusionExpression":
+			{
+				"expression": "DoesNPCContainTag(\"character.humanoid\")"
+			},
+			"rewardTableId":
+			{
+				"guid": "6064633584457744403",
+				"typeId": "1091110040",
+				"name": "None"
+			}
+		}
+	],
+	"economicRegionTableId":
+	{
+		"guid": "6064633430750461986",
+		"typeId": "98738382",
+		"name": "None"
+	},
+	"bHideExperienceEvents": false,
+	"biome": "Jungle",
+	"biomeGatherableTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "Jundark"
+			}
+		],
+		"parentTags": []
+	},
+	"freeholdEstatesIds": [
+		{
+			"guid": "6064633576997715968",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633577003483137",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633577006563330",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633577007087619",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633577016721412",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633668815290368",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633577016983558",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633577017114631",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633577018621960",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633577019015177",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633577019342858",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633577081470987",
+			"typeId": "1337133701",
+			"name": "None"
+		}
+	],
+	"actorEffects": [],
+	"guid": "6064633430746988577",
+	"name": "Verra_JUN_Node_Mythbreak",
+	"typeId": "9127326"
+}

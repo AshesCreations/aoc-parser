@@ -1,0 +1,33 @@
+{
+	"choiceText": "",
+	"nextNodeId":
+	{
+		"guid": "6064632898585755680",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064632756756676636",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064632756754645019",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "!Player_ObjectiveStateEquals(GetPlayer(), \"NarrativeObjective_RVR_Samias_Miraleth_BuiltOnBlood_2.5\", EObjectiveState::Complete)"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064632898585755676",
+	"name": "SQ_RVR_Interact_Samias_Miraleth_BuiltOnBlood_2_Choice_1",
+	"typeId": "1091110027"
+}

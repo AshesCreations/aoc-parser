@@ -1,0 +1,61 @@
+{
+	"completionResponsesIds": [
+		{
+			"guid": "6064629449259810838",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064629449249194001",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"channelDuration": 0,
+	"activePredicate":
+	{
+		"expression": ""
+	},
+	"cuePredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MIA_0020_KOC_KeepOnTheCrossroads\",\"MIP_0020_KOC_Phase01\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MIQ_0020_SAR_SearchAndRescue\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MIQ_0020_SAR_SearchAndRescue\",\"GotDaggerBronson\")"
+	},
+	"deleteOnCompletion": false,
+	"singleUse": false,
+	"alwaysShowUIPrompt": true,
+	"cancelChannelIfActivePredicateEverFails": true,
+	"channelModifierType": "NONE",
+	"rewardTableId":
+	{
+		"guid": "0",
+		"typeId": "1091110008",
+		"name": "None"
+	},
+	"startEffect": "None",
+	"endEffect": "None",
+	"failEffect": "None",
+	"successEffect": "None",
+	"cueEffect": "None",
+	"startSound": "None",
+	"endSound": "None",
+	"failSound": "None",
+	"successSound": "None",
+	"cueSound": "None",
+	"interactAnimTag": "None",
+	"deletionDelay": 0,
+	"activeCueEnabled": true,
+	"activeCueIgnoresActivePredicate": false,
+	"facePlayer": false,
+	"allowInCombat": true,
+	"spawnAtBottomCapsule": false,
+	"channelAnimation": "/Game/Characters/Animations/00_BASE/All_No_Gather_M_Montage.All_No_Gather_M_Montage",
+	"interactRadius": 200,
+	"interactTolerance": 30,
+	"busyTime": 0.89999997615814209,
+	"clientBusyTime": 1,
+	"channelStartResponseIds": [],
+	"failResponsesIds": [],
+	"guid": "6064629449411854388",
+	"name": "MIPI_0020_SAR_OBJ_DaggerOfBronson",
+	"typeId": "1091110031"
+}

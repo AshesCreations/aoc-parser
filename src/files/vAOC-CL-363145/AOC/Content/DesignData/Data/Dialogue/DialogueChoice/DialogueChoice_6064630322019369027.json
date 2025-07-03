@@ -1,0 +1,23 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"E665CB104D1D9E7C654EE7B3ABD0D177\", \"The tower is secured.\")",
+	"nextNodeId":
+	{
+		"guid": "6064630322019762244",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064630321377771543",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0005A_FGG_ForGreaterGlory\",\"MAP_0005A_FGG_Phase01\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0005A_STR_SecuringTheTradeRoutes\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005A_STR_SecuringTheTradeRoutes\",\"KilledBossTheLost\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005A_STR_SecuringTheTradeRoutes\",\"ReportToThornmarchSentry\")"
+	},
+	"guid": "6064630322019369027",
+	"name": "MADD_0005A_STR_NPC_ThornmarchSentry_4",
+	"typeId": "1091110027"
+}

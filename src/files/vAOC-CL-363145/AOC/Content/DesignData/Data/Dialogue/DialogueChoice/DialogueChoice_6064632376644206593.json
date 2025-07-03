@@ -1,0 +1,22 @@
+{
+	"choiceText": "",
+	"nextNodeId":
+	{
+		"guid": "6064632376644927490",
+		"typeId": "1091110028",
+		"name": "DD_0100_EudoxiaAvenmoor_51"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "GetPlayerLevel() >= 4 && \r\n!Player_HasCommission(GetPlayer(), \"SQ_0009_OutlawsEnd\") &&\r\n!Player_HasCompletedCommission(GetPlayer(), \"SQ_0009_OutlawsEnd\")"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064632376644206593",
+	"name": "DD_0100_EudoxiaAvenmoor_2_Choice_4",
+	"typeId": "1091110027"
+}

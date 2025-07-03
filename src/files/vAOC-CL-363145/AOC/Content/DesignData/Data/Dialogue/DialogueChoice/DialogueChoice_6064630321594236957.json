@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"B63A391F4042EEC363DFE6A4A546087A\", \"Towers secured!\")",
+	"nextNodeId":
+	{
+		"guid": "6064630321615798317",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0005A_FGG_ForGreaterGlory\",\"MAP_0005A_FGG_Phase01\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0005A_STR_SecuringTheTradeRoutes\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005A_STR_SecuringTheTradeRoutes\",\"ReportToHonorswalkSentry\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005A_STR_SecuringTheTradeRoutes\",\"ReportToThornmarchSentry\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005A_STR_SecuringTheTradeRoutes\",\"ReportToNerimedaSentry\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005A_STR_SecuringTheTradeRoutes\",\"ReturnToEudoxia\")\r\n"
+	},
+	"guid": "6064630321594236957",
+	"name": "MADD_0005A_STR_NPC_Eudoxia_Phase01_5",
+	"typeId": "1091110027"
+}

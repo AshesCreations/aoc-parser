@@ -1,0 +1,22 @@
+{
+	"statRefId":
+	{
+		"guid": "109228544644729",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"value":
+	{
+		"expression": "var Player = GetActorGuid(GetOwner());\r\nvar ZOI = GetCurrentZoi(Player);\r\nvar statMod = -0.4;\r\nvar CitizenMod = -0.0;\r\n\r\n//IF THE PLAYER IS A CITIZEN MAKE THE NUMBER JUICED\r\nif(Node_IsPlayerCitizenOfNode(Player,Node_GetNodeFromZoi(ZOI)))\r\n{set statMod = CitizenMod;}\r\n\r\n\r\nstatMod"
+	},
+	"bUseShieldAbsorb": false,
+	"shieldAbsorbPercentage":
+	{
+		"expression": ""
+	},
+	"bShowFloatingText": true,
+	"valueInputTerms": [],
+	"guid": "6064633770911924267",
+	"name": "Relic_Rare_Tangleblight_Sphere_ActiveMod_Snared",
+	"typeId": "3031600201"
+}

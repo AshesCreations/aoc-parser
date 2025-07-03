@@ -1,0 +1,22 @@
+{
+	"statRefId":
+	{
+		"guid": "6064628633961889796",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"value":
+	{
+		"expression": "const skilled0 = GetSkillPurchased(GetInstigator(), $#30316003:6064631673604472832$, $#981011333:6064631720430927946$);\r\nconst skilled1 = GetSkillPurchased(GetInstigator(), $#30316003:6064631673604472832$, $#981011333:6064631720431845451$);\r\nconst skilled2 = GetSkillPurchased(GetInstigator(), $#30316003:6064631673604472832$, $#981011333:6064631720432566348$);\r\nvar value =\r\n0.1 +\r\nSelectFloat(skilled1, 0.1, 0.0) +\r\nSelectFloat(skilled2, 0.1, 0.0);\r\n\r\nvalue"
+	},
+	"bUseShieldAbsorb": false,
+	"shieldAbsorbPercentage":
+	{
+		"expression": ""
+	},
+	"bShowFloatingText": true,
+	"valueInputTerms": [],
+	"guid": "6064632031534645278",
+	"name": "General_Stamina_Sprint_FocusedSprint_Tooltip",
+	"typeId": "3031600201"
+}

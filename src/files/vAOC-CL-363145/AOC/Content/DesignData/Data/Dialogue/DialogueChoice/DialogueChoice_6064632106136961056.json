@@ -1,0 +1,18 @@
+{
+	"choiceText": "NSLOCTEXT(\"[4BE4F0A16D08556ACD6685BF392E6719]\", \"A79668224E42FC65D348D5BE165846BA\", \"On Quest\")",
+	"nextNodeId":
+	{
+		"guid": "6064632106138796065",
+		"typeId": "1091110028",
+		"name": "DD_ServiceNPC_BuyOrderManager_102"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "Player_HasCompletedObjective(GetPlayer(), \"CSQ_NO_0154_FTUE_EveryNodeNeedsResources_BuyOrder\") &&\r\n!Player_HasCompletedCommission(GetPlayer(), \"CSQ_0154_FTUE_EveryNodeNeedsResources\")"
+	},
+	"choiceType": "Default",
+	"guid": "6064632106136961056",
+	"name": "DD_ServiceNPC_BuyOrderManager_98_Choice_3",
+	"typeId": "1091110027"
+}

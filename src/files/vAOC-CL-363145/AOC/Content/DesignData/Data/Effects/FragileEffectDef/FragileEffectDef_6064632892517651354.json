@@ -1,0 +1,34 @@
+{
+	"effectFragilityType": "FRAGILITY_Proc",
+	"eventBindings":
+	{
+		"hitEvents": 0,
+		"effectEvents": 0,
+		"abilityEvents": 4,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0,
+		"fishingEvents": 0,
+		"statEvents": 0
+	},
+	"evaluationTickFrequency": 0,
+	"shouldBreakEffectImmediately":
+	{
+		"expression": "const abil = GetConsumedAbility();\r\n// these abilities are okay to use in stealth always\r\nabil != $#30316001:107258680465016$\r\n&& abil != $#30316001:6064631641648332884$\r\n&& abil != $#30316001:109393746155128$\r\n&& abil != $#30316001:6064632660345830052$\r\n&& abil != $#30316001:6064632932032791429$\r\n&& abil != $#30316001:6064632892302953930$\r\n&& abil != $#30316001:6064632773920455308$\r\n&& !RecordNameContains(abil, \"Consumable\")\r\n&&\r\n( // check if you have the padded toolbelt which allows other abilities in stealth\r\n!GetSkillPurchased(GetOwner(),$#30316003:6064630422842835238$,$#981011333:6064632898497876912$)\r\n||\r\n!(EvalFormula($#10516612381411113:6064633232362243701$) > 0.0)\r\n)"
+	},
+	"shouldEvaluateThresholdAccumulation":
+	{
+		"expression": ""
+	},
+	"effectBreakThreshold":
+	{
+		"expression": ""
+	},
+	"effectBreakThresholdAccumulationRate":
+	{
+		"expression": ""
+	},
+	"guid": "6064632892517651354",
+	"name": "Rogue_Stealth_AbilityBreak",
+	"typeId": "30316112"
+}

@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"C66BD1694922FCB88F67E2A773ABBCCC\", \"You speak?\")",
+	"nextNodeId":
+	{
+		"guid": "6064630179978346515",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MIA_0017_BOB_BalladOfTheBull\",\"MIP_0017_BOB_Phase02\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MIQ_0017_HOB_HornsOfTheBull\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MIQ_0017_HOB_HornsOfTheBull\",\"HaveSkullBovus\")"
+	},
+	"guid": "6064630179976380434",
+	"name": "MIDD_0017_HOB_Hornskull_4",
+	"typeId": "1091110027"
+}

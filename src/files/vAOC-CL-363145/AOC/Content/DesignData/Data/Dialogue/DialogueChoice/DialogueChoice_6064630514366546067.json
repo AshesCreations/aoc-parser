@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"E022176D4D8197B87F19CAB6F5F5151C\", \"I bring you the Ancient Relics!\")",
+	"nextNodeId":
+	{
+		"guid": "6064630514367856788",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0005B_TEW_EnemyWithin\",\"MAP_0005B_TEW_Phase01\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0005B_OSG_OnSacredGround\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005B_OSG_OnSacredGround\",\"CollectMinoHoofBoots\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005B_OSG_OnSacredGround\",\"CollectMinoSkulls\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005B_OSG_OnSacredGround\",\"CollectMinoTablets\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005B_OSG_OnSacredGround\",\"CollectShieldDoombringer\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005B_OSG_OnSacredGround\",\"CollectShieldFiresky\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005B_OSG_OnSacredGround\",\"CollectShieldKoraxis\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005B_OSG_OnSacredGround\",\"CollectShieldNumuk\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005B_OSG_OnSacredGround\",\"GiveRelics\")"
+	},
+	"guid": "6064630514366546067",
+	"name": "MADD_0005B_OSG_AkhundaWazoo_14",
+	"typeId": "1091110027"
+}

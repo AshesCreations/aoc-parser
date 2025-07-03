@@ -1,0 +1,27 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 6,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "GetSource() != GetOwner()\r\n&& GetRecordTypeId(GetHitSourceRecord(GetHitEvent())) != GetEffectTypeId() \r\n&& GetStatModValue(GetHitEvent(), $#10516612381411111:108986352686712$) < 0.0"
+	},
+	"bEvaluateApplyingHit": false,
+	"instigator": "Owner",
+	"targetsBitmask": 8,
+	"reactHitsIds": [
+		{
+			"guid": "6064629217149648901",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"guid": "6064629586012798995",
+	"name": "Test_SourceCheckReaction",
+	"typeId": "3031600202"
+}

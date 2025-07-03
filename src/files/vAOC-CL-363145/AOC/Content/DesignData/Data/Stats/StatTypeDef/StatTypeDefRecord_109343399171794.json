@@ -1,0 +1,61 @@
+{
+	"displayName": "NSLOCTEXT(\"\", \"AB029B734826B520BDA9CF8A6C0B7528\", \"Physical Critical Chance\")",
+	"description": "NSLOCTEXT(\"\", \"D778AED74621C5BE369394BCC4CC1DC7\", \"The chance for a physical critical hit\")",
+	"bHidden": false,
+	"gameplayType": "Type_Combat",
+	"bHasWaterfallStatsUI": false,
+	"waterfallStatsUIIds": [],
+	"bDisplayAsPercentage": true,
+	"statType": "Type_Float",
+	"bClampStatFinalValue": false,
+	"bMultiplyStatMods": false,
+	"bMultiplyCompliment": false,
+	"base":
+	{
+		"expression": "const base = GetStat(GetOwner(), $#10516612381411111:6064628617693364226$);\r\nconst baseRating = GetStat(GetInstigator(), $#10516612381411111:6064628617694412804$);\r\nconst coeff = EvalFormula($#10516612381411113:6064630400898301980$);\r\nconst coeffMult = EvalFormula($#10516612381411113:6064632412935028738$);\r\nconst baseAdj = base - baseRating / (baseRating * coeffMult + coeff);\r\nconst rating = baseRating + GetStat(GetInstigator(), $#10516612381411111:109183605036675$);\r\nbaseAdj + rating / (rating * coeffMult + coeff)"
+	},
+	"waterfallStatsBaseIds": [
+		{
+			"guid": "6064628617693364226",
+			"typeId": "10516612381411111",
+			"name": "None"
+		},
+		{
+			"guid": "109183605036675",
+			"typeId": "10516612381411111",
+			"name": "None"
+		}
+	],
+	"valueMin":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMinIds": [],
+	"valueMax":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMaxIds": [],
+	"regenRate":
+	{
+		"expression": ""
+	},
+	"waterfallStatsRegenIds": [],
+	"bRegenWhileDead": false,
+	"bRecalculateOnCombatState": false,
+	"onSpawn": "Reset_None",
+	"onDeath": "Reset_None",
+	"onRevive": "Reset_None",
+	"bPersistValue": false,
+	"replication": 5,
+	"shieldStatId":
+	{
+		"guid": "0",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"grantedEffects": [],
+	"guid": "109343399171794",
+	"name": "PhysicalCriticalChance",
+	"typeId": "10516612381411111"
+}

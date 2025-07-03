@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"C0C8B6C246F148A704A568992E0CBC8F\", \"They are after the Horn of Doom.\")",
+	"nextNodeId":
+	{
+		"guid": "6064630531452043372",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsOnStoryArcQuest(GetPlayer(),\"MAQ_0005B_HOD_TheHornOfDoom\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005B_HOD_TheHornOfDoom\",\"SpeakToWadoo\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005B_HOD_TheHornOfDoom\",\"SpeakToOrrin\")\r\n"
+	},
+	"guid": "6064630531443327083",
+	"name": "MADD_0005B_HOD_TheHighwayman_4",
+	"typeId": "1091110027"
+}

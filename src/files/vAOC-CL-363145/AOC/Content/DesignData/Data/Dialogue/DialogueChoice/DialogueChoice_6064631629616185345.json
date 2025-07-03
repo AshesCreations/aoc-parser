@@ -1,0 +1,33 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"9A6086AA406379760ECD4AAE2968AB53\", \"I found some bones on these undead near the tower.\")",
+	"nextNodeId":
+	{
+		"guid": "6064631629615071232",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064631629025116164",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064631720589067109",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "Player_ObjectiveStateEquals(GetPlayer(), \"SQO_0032_04_DeliverBones\", EObjectiveState::Active)"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064631629616185345",
+	"name": "DialogueChoice_6064631629616185345",
+	"typeId": "1091110027"
+}

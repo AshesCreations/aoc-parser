@@ -1,0 +1,18 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"29C869C24ABEC9DF74B8B6815FDA7CCB\", \"Where can I go to vote for our next Mayor?\")",
+	"nextNodeId":
+	{
+		"guid": "6064632110819639296",
+		"typeId": "1091110028",
+		"name": "DD_ServiceNPC_NodeAdministrator_113"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "Node_GetActorCityNode(GetPlayer()) == \r\nNode_GetActorCityNode(GetInteractionTarget())\r\n&&\r\nNode_IsNodeMayorElectionActive\r\n(Node_GetActorCityNode(GetInteractionTarget()))"
+	},
+	"choiceType": "Default",
+	"guid": "6064629444635525695",
+	"name": "DD_ServiceNPC_NodeAdministrator_22",
+	"typeId": "1091110027"
+}

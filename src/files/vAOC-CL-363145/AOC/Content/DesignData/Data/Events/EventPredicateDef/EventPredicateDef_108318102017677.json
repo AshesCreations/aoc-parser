@@ -1,0 +1,36 @@
+{
+	"expression":
+	{
+		"expression": "//Event_GetActiveStageIndex() >= 2 && Event_GetNumNPCKills(\"npc.type.animal.wolf\") >= 4\r\n\r\n// the above doesn't compile, returning false -Bucky\r\nfalse"
+	},
+	"tickInterval": 5,
+	"maxActivationCount": 1,
+	"objectivesIds": [],
+	"triggersIds": [
+		{
+			"guid": "108317672101503",
+			"typeId": "23095135",
+			"name": "NarrativePrototype_SA0001_Event_NeverEnough_Spawn_Wolf"
+		},
+		{
+			"guid": "108317818508934",
+			"typeId": "23095135",
+			"name": "NarrativePrototype_SA0001_Event_NeverEnough_Spawn_Wolfpack_2"
+		},
+		{
+			"guid": "108318861317758",
+			"typeId": "23095135",
+			"name": "PopUpPrototype_PP0001_Minotaurs_Broadcast_Complete"
+		}
+	],
+	"flowEditorNodeLocation":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"routePins": [],
+	"guid": "108318102017677",
+	"name": "PopUpPrototype_PP0001_Minotaurs_RespawnWolf_Objective",
+	"typeId": "23095129"
+}

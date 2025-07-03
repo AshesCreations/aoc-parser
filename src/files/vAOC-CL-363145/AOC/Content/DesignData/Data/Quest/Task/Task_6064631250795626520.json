@@ -1,0 +1,76 @@
+{
+	"type": "Kill",
+	"progressExpression":
+	{
+		"expression": ""
+	},
+	"bAllowSatisfactionToRegress": false,
+	"completionQuantity": 5,
+	"completionActionsIds": [],
+	"tagQuery":
+	{
+		"tokenStreamVersion": 0,
+		"tagDictionary": [
+			{
+				"tagName": "Quest.CSQ_0039_DecoyCrates"
+			}
+		],
+		"queryTokenStream": [ 0, 1, 1, 1, 0 ],
+		"userDescription": "",
+		"autoDescription": " ANY( Quest.CSQ_0039_DecoyCrates )"
+	},
+	"professionFilterIds": [],
+	"collectionFilterId":
+	{
+		"guid": "0",
+		"typeId": "1091110041",
+		"name": "None"
+	},
+	"collectionCount": 5,
+	"displayLocation": [
+		{
+			"location":
+			{
+				"x": -695950,
+				"y": 631120,
+				"z": 10960
+			},
+			"radius": 5000,
+			"map_DisplayType": "ICON",
+			"map_IconVisual":
+			{
+				"guid": "6064630990211645445",
+				"typeId": "949952112329",
+				"name": "None"
+			},
+			"map_DisplayName": "NSLOCTEXT(\"\", \"783240CB451C7668200D78ACE1926AA0\", \"East Gate Ruins\")"
+		},
+		{
+			"location":
+			{
+				"x": -717700,
+				"y": 581450,
+				"z": 13670
+			},
+			"radius": 5000,
+			"map_DisplayType": "ICON",
+			"map_IconVisual":
+			{
+				"guid": "6064630990211645445",
+				"typeId": "949952112329",
+				"name": "None"
+			},
+			"map_DisplayName": "NSLOCTEXT(\"\", \"2FFD91B849537F5E4CFDCFB391C27E3D\", \"Central Gate Ruins\")"
+		}
+	],
+	"location": [],
+	"populationSetId":
+	{
+		"guid": "0",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"guid": "6064631250795626520",
+	"name": "CSQ_TID_0039_BOC_DestroyCrates",
+	"typeId": "1095125186"
+}

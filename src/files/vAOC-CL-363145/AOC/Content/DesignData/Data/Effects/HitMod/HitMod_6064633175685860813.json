@@ -1,0 +1,52 @@
+{
+	"trigger":
+	{
+		"expression": "!HitHasTag(GetHitInProgress(), \"ability.weaponcombo\")"
+	},
+	"terms": [
+		{
+			"termId":
+			{
+				"guid": "6064630633715007489",
+				"typeId": "10516612381411115",
+				"name": "None"
+			},
+			"value":
+			{
+				"expression": "const Focus = GetStat(GetInstigator(), $#10516612381411111:6064633175093543338$);\r\n\r\n1.0 + 0.0015 * Focus"
+			},
+			"bOptional": false,
+			"bKeepBeyondScope": false,
+			"filter":
+			{
+				"expression": ""
+			},
+			"mergeRuleOverride": "Merge_Default"
+		},
+		{
+			"termId":
+			{
+				"guid": "6064629248874250262",
+				"typeId": "10516612381411115",
+				"name": "None"
+			},
+			"value":
+			{
+				"expression": "SelectFloat(GetSkillPurchased(GetInstigator(),GetCurrentWeaponSkilltree(GetInstigator()),$#981011333:6064631747785392131$),0.1,0.0)"
+			},
+			"bOptional": false,
+			"bKeepBeyondScope": false,
+			"filter":
+			{
+				"expression": ""
+			},
+			"mergeRuleOverride": "Merge_Default"
+		}
+	],
+	"tags": [],
+	"statModsIds": [],
+	"statModPostProcess": [],
+	"guid": "6064633175685860813",
+	"name": "Ranger_Focus_DamageMod",
+	"typeId": "3031600210"
+}

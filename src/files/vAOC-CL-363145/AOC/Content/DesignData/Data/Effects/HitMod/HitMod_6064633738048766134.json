@@ -1,0 +1,33 @@
+{
+	"trigger":
+	{
+		"expression": "HitHasTag(GetHitRecord(GetHitInProgress()), \"Element.Physical\")"
+	},
+	"terms": [
+		{
+			"termId":
+			{
+				"guid": "6064630633715007489",
+				"typeId": "10516612381411115",
+				"name": "None"
+			},
+			"value":
+			{
+				"expression": "0.85"
+			},
+			"bOptional": false,
+			"bKeepBeyondScope": false,
+			"filter":
+			{
+				"expression": ""
+			},
+			"mergeRuleOverride": "Merge_Default"
+		}
+	],
+	"tags": [],
+	"statModsIds": [],
+	"statModPostProcess": [],
+	"guid": "6064633738048766134",
+	"name": "DustDevil_Immaterial_HitMod",
+	"typeId": "3031600210"
+}

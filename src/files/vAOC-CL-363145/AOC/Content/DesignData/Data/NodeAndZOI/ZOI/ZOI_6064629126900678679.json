@@ -1,0 +1,184 @@
+{
+	"designNotes": "",
+	"levelDefinitionId":
+	{
+		"guid": "6064629126799097877",
+		"typeId": "9227326",
+		"name": "None"
+	},
+	"playerFacingName": "NSLOCTEXT(\"\", \"5474385F410F8F214089248E5773B618\", \"Winstead\")",
+	"zoiType": "HasNode",
+	"startingAreaGameplayTag":
+	{
+		"tagName": "None"
+	},
+	"cityNodeId":
+	{
+		"guid": "108646108518008",
+		"typeId": "1323521343",
+		"name": "None"
+	},
+	"adjacentZonesOfInfluenceIds": [
+		{
+			"guid": "6064629126805651478",
+			"typeId": "9127326",
+			"name": "None"
+		},
+		{
+			"guid": "6064629127135166465",
+			"typeId": "9127326",
+			"name": "None"
+		},
+		{
+			"guid": "6064629126905528345",
+			"typeId": "9127326",
+			"name": "None"
+		},
+		{
+			"guid": "6064629126902120472",
+			"typeId": "9127326",
+			"name": "None"
+		},
+		{
+			"guid": "6064632501420490752",
+			"typeId": "9127326",
+			"name": "None"
+		}
+	],
+	"corruptionRulesEnabled": true,
+	"bAllowPVPOptInProtection": false,
+	"alignmentsAssignedUponEnteringIds": [],
+	"zoiEnvironmentType": "None",
+	"editorColor":
+	{
+		"x": 0.91000000000000003,
+		"y": 0.52000000000000002,
+		"z": 0
+	},
+	"zOIRewardTables": [
+		{
+			"inclusionExpression":
+			{
+				"expression": "!DoesNPCContainTag(\"NoRewards\")"
+			},
+			"rewardTableId":
+			{
+				"guid": "6064632271552578329",
+				"typeId": "1091110040",
+				"name": "None"
+			}
+		},
+		{
+			"inclusionExpression":
+			{
+				"expression": "DoesNPCContainTag(\"character.humanoid\")"
+			},
+			"rewardTableId":
+			{
+				"guid": "6064632277128773740",
+				"typeId": "1091110040",
+				"name": "None"
+			}
+		},
+		{
+			"inclusionExpression":
+			{
+				"expression": "!DoesNPCContainTag(\"NoRewards\")"
+			},
+			"rewardTableId":
+			{
+				"guid": "6064633313653948416",
+				"typeId": "1091110040",
+				"name": "None"
+			}
+		}
+	],
+	"economicRegionTableId":
+	{
+		"guid": "6064630016773521408",
+		"typeId": "98738382",
+		"name": "None"
+	},
+	"bHideExperienceEvents": false,
+	"biome": "Riverlands",
+	"biomeGatherableTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "Riverlands"
+			}
+		],
+		"parentTags": []
+	},
+	"freeholdEstatesIds": [
+		{
+			"guid": "6064632764234596371",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064632764230074384",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064632764229681165",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064632764238266392",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064632764229877774",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064632764227321868",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064632764229943311",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064632764234792981",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064632764237676566",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064632764238135319",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064632764230270994",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064632764234727444",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064632764230139921",
+			"typeId": "1337133701",
+			"name": "None"
+		}
+	],
+	"actorEffects": [],
+	"guid": "6064629126900678679",
+	"name": "Verra_RVR_Node_Winstead",
+	"typeId": "9127326"
+}

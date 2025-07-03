@@ -1,0 +1,325 @@
+{
+	"eventName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"DE5D241A496CEEF946024497B9E6930C\", \"OLDER DO NOT USE\")",
+	"gameplayTags":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"activationPredicatesIds": [
+		{
+			"guid": "6064631465721725015",
+			"typeId": "23095129",
+			"name": "None"
+		}
+	],
+	"minChallengeRating": 1,
+	"maxChallengeRating": 30,
+	"eventType": 1,
+	"locationId":
+	{
+		"guid": "6064631561688711242",
+		"typeId": "5127371160",
+		"name": "None"
+	},
+	"desiredTimeSlot": "0001.01.01-00.00.00",
+	"frequency": 24,
+	"priority": 1,
+	"rewardTableId":
+	{
+		"guid": "6064630474023174148",
+		"typeId": "1091110040",
+		"name": "None"
+	},
+	"rewardPopulationSetId":
+	{
+		"guid": "0",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"startStageId":
+	{
+		"guid": "6064631465721725018",
+		"typeId": "23095131",
+		"name": "None"
+	},
+	"stagesIds": [
+		{
+			"guid": "6064631465721725018",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064631465721725052",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064631465721725024",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064631465721725028",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064631465721725036",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064631465721725044",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064631465721725014",
+			"typeId": "23095131",
+			"name": "None"
+		}
+	],
+	"alignmentsIds": [],
+	"mapDisplayType": "None",
+	"mapEventIcon": "None",
+	"bDisplayOnTracker": true,
+	"notificationRadius": 15000,
+	"mapRadiusMinumum": 1000,
+	"cooldownTimer": 300,
+	"bDisabled": true,
+	"maxInstanceCount": 1,
+	"requiredMapName": "Verra_World_Master",
+	"comments": [
+		{
+			"commentGuid": "6064629733281169489",
+			"comment": "Require 3 kills in the area. The event is inactive while the activation conditions are False. They remain in a pool of all the possible events until the the condition is true and the scheduler can queue them.                              ",
+			"location":
+			{
+				"x": -45.903763349839437,
+				"y": -937.77058843111422,
+				"z": 0
+			},
+			"size":
+			{
+				"x": 653.32469660043716,
+				"y": 558.81164675951004,
+				"z": 0
+			},
+			"color":
+			{
+				"r": 0.5,
+				"g": 0.5,
+				"b": 0.5,
+				"a": 0.5
+			}
+		},
+		{
+			"commentGuid": "6064629783872407118",
+			"comment": "Event Resets after a timer",
+			"location":
+			{
+				"x": 1716.8214879688619,
+				"y": 835.89226199337486,
+				"z": 0
+			},
+			"size":
+			{
+				"x": 780.3296879529953,
+				"y": 311.0988986492157,
+				"z": 0
+			},
+			"color":
+			{
+				"r": 0.5,
+				"g": 0.5,
+				"b": 0.5,
+				"a": 0.5
+			}
+		},
+		{
+			"commentGuid": "6064629806517846335",
+			"comment": "Conditions for beginning the event. In this case: a participant enters the tracked area.",
+			"location":
+			{
+				"x": 977.36516160476481,
+				"y": -958.81445593709714,
+				"z": 0
+			},
+			"size":
+			{
+				"x": 666.66666126251221,
+				"y": 329.99999248981476,
+				"z": 0
+			},
+			"color":
+			{
+				"r": 0.5,
+				"g": 0.5,
+				"b": 0.5,
+				"a": 0.5
+			}
+		},
+		{
+			"commentGuid": "6064629822997790781",
+			"comment": "Closeout conditions. In this case: all participants exit the tracked area.",
+			"location":
+			{
+				"x": 3140.3879652677615,
+				"y": 194.92702416450209,
+				"z": 0
+			},
+			"size":
+			{
+				"x": 469.20637845993042,
+				"y": 193.33333522081375,
+				"z": 0
+			},
+			"color":
+			{
+				"r": 0.5,
+				"g": 0.5,
+				"b": 0.5,
+				"a": 0.5
+			}
+		},
+		{
+			"commentGuid": "6064629823001788478",
+			"comment": "These stages are considered in progress.Two waves of enemies infiltrate the temple. Mobs must have the event tag to be counted.",
+			"location":
+			{
+				"x": 2075.0491899272211,
+				"y": -1001.8691793631479,
+				"z": 0
+			},
+			"size":
+			{
+				"x": 783.75605845451355,
+				"y": 681.99488365650177,
+				"z": 0
+			},
+			"color":
+			{
+				"r": 0.5,
+				"g": 0.5,
+				"b": 0.5,
+				"a": 0.5
+			}
+		},
+		{
+			"commentGuid": "6064629840679534687",
+			"comment": "Elite enemy encounter spawns. Event ends when it's dead.",
+			"location":
+			{
+				"x": 1661.1414531488253,
+				"y": 228.17314930033854,
+				"z": 0
+			},
+			"size":
+			{
+				"x": 794.8571138381958,
+				"y": 364.85713160037994,
+				"z": 0
+			},
+			"color":
+			{
+				"r": 0.5,
+				"g": 0.5,
+				"b": 0.5,
+				"a": 0.5
+			}
+		},
+		{
+			"commentGuid": "6064629840700768353",
+			"comment": "Abandoned events return to inactive. The active state predicates need to be satisfied before it begins again.",
+			"location":
+			{
+				"x": 375.05452608428732,
+				"y": 721.42335555513,
+				"z": 0
+			},
+			"size":
+			{
+				"x": 727.15416407585144,
+				"y": 187.11462593078613,
+				"z": 0
+			},
+			"color":
+			{
+				"r": 0.5,
+				"g": 0.5,
+				"b": 0.5,
+				"a": 0.5
+			}
+		},
+		{
+			"commentGuid": "6064629846068822721",
+			"comment": "Event @ Teleport RVR_TempleA",
+			"location":
+			{
+				"x": -451.78893625928788,
+				"y": -1014.7695457011599,
+				"z": 0
+			},
+			"size":
+			{
+				"x": 250,
+				"y": 200,
+				"z": 0
+			},
+			"color":
+			{
+				"r": 0.5,
+				"g": 0.5,
+				"b": 0.5,
+				"a": 0.5
+			}
+		},
+		{
+			"commentGuid": "6064629885822828593",
+			"comment": "Return to Inactive if story arc isn't running",
+			"location":
+			{
+				"x": -193.75132910410574,
+				"y": 807.33602554820254,
+				"z": 0
+			},
+			"size":
+			{
+				"x": 250,
+				"y": 200,
+				"z": 0
+			},
+			"color":
+			{
+				"r": 0.5,
+				"g": 0.5,
+				"b": 0.5,
+				"a": 0.5
+			}
+		}
+	],
+	"bIsTemplate": false,
+	"flowNodes": [
+		{
+			"flowType": "EventEntry",
+			"graphLocation":
+			{
+				"x": 205.76338517536638,
+				"y": -1814.76954570116
+			},
+			"id": 0
+		},
+		{
+			"flowType": "EventExit",
+			"graphLocation":
+			{
+				"x": -596.85737007424052,
+				"y": 2259.2504919457051
+			},
+			"id": 1
+		}
+	],
+	"guid": "6064631465721725012",
+	"name": "Event_RVR_ThePhantomTower_HighRoad",
+	"typeId": "23095125"
+}

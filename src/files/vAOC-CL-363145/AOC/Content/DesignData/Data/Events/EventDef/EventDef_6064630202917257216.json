@@ -1,0 +1,267 @@
+{
+	"eventName": "NSLOCTEXT(\"\", \"64E882C94639D9E2AD1B6B907C47F6AE\", \"Survival Guide for New Recruits\")",
+	"gameplayTags":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"activationPredicatesIds": [
+		{
+			"guid": "6064630202917257227",
+			"typeId": "23095129",
+			"name": "None"
+		}
+	],
+	"minChallengeRating": 0,
+	"maxChallengeRating": 30,
+	"eventType": 1,
+	"locationId":
+	{
+		"guid": "6064631561688711202",
+		"typeId": "5127371160",
+		"name": "None"
+	},
+	"desiredTimeSlot": "0001.01.01-00.00.00",
+	"frequency": 24,
+	"priority": 1,
+	"rewardTableId":
+	{
+		"guid": "6064631430955597824",
+		"typeId": "1091110040",
+		"name": "None"
+	},
+	"rewardPopulationSetId":
+	{
+		"guid": "6064631437732806961",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"startStageId":
+	{
+		"guid": "6064630202917257217",
+		"typeId": "23095131",
+		"name": "None"
+	},
+	"stagesIds": [
+		{
+			"guid": "6064630202917257217",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064631347288997889",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064630202917257218",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064630202917257220",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064630202917257221",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064630202917257222",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064630202917257238",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064630208679248304",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064630202917257219",
+			"typeId": "23095131",
+			"name": "None"
+		}
+	],
+	"interactVolumesIds": [],
+	"alignmentsIds": [],
+	"mapDisplayType": "Biome",
+	"mapEventIcon": "/Game/UI/Widgets/Narrative/Textures/TUI_Icon_Event_PvETracker.TUI_Icon_Event_PvETracker",
+	"bDisplayOnTracker": true,
+	"notificationRadius": 15000,
+	"mapRadiusMinumum": 1000,
+	"cooldownTimer": 600,
+	"bDisabled": true,
+	"maxInstanceCount": 1,
+	"requiredMapName": "Verra_World_Master",
+	"comments": [
+		{
+			"commentGuid": "6064630208705593781",
+			"comment": "When any player enters the Trigger Box (Goto Objective)",
+			"location":
+			{
+				"x": -137.37302321323389,
+				"y": 1143.162630246022,
+				"z": 0
+			},
+			"size":
+			{
+				"x": 380.90908360481262,
+				"y": 188.10276532173157,
+				"z": 0
+			},
+			"color":
+			{
+				"r": 0.5,
+				"g": 0.5,
+				"b": 0.5,
+				"a": 0.5
+			}
+		},
+		{
+			"commentGuid": "6064630594505474368",
+			"comment": "The event begins if players are attacking goblins in a nearby field.",
+			"location":
+			{
+				"x": -759.52135824841787,
+				"y": 55.737450922368794,
+				"z": 0
+			},
+			"size":
+			{
+				"x": 1812.8571572303772,
+				"y": 538.38510346412659,
+				"z": 0
+			},
+			"color":
+			{
+				"r": 0.5,
+				"g": 0.5,
+				"b": 0.5,
+				"a": 0.5
+			}
+		},
+		{
+			"commentGuid": "6064630594577432897",
+			"comment": "Bear appears and attacks the guard. Player must help the guard survive and the bear defeated.",
+			"location":
+			{
+				"x": 605.89412528700166,
+				"y": 1131.5322238306649,
+				"z": 0
+			},
+			"size":
+			{
+				"x": 610.259725689888,
+				"y": 232.85713756084442,
+				"z": 0
+			},
+			"color":
+			{
+				"r": 0.5,
+				"g": 0.5,
+				"b": 0.5,
+				"a": 0.5
+			}
+		},
+		{
+			"commentGuid": "6064630594594537794",
+			"comment": "Event fails if the guard dies.",
+			"location":
+			{
+				"x": 1468.59178855342,
+				"y": 726.6022567470784,
+				"z": 0
+			},
+			"size":
+			{
+				"x": 563.63635325431824,
+				"y": 191.81818199157715,
+				"z": 0
+			},
+			"color":
+			{
+				"r": 0.5,
+				"g": 0.5,
+				"b": 0.5,
+				"a": 0.5
+			}
+		},
+		{
+			"commentGuid": "6064630594604564803",
+			"comment": "Event succeeds if the bear dies.",
+			"location":
+			{
+				"x": 1481.9402595152192,
+				"y": 1409.0720535673952,
+				"z": 0
+			},
+			"size":
+			{
+				"x": 568.18180596828461,
+				"y": 244.54545247554779,
+				"z": 0
+			},
+			"color":
+			{
+				"r": 0.5,
+				"g": 0.5,
+				"b": 0.5,
+				"a": 0.5
+			}
+		},
+		{
+			"commentGuid": "6064631347287621632",
+			"comment": "Event fails with timer",
+			"location":
+			{
+				"x": 1475.0413828790188,
+				"y": 138.96332174539566,
+				"z": 0
+			},
+			"size":
+			{
+				"x": 250,
+				"y": 200,
+				"z": 0
+			},
+			"color":
+			{
+				"r": 0.5,
+				"g": 0.5,
+				"b": 0.5,
+				"a": 0.5
+			}
+		}
+	],
+	"bIsTemplate": false,
+	"flowNodes": [
+		{
+			"flowType": "EventEntry",
+			"graphLocation":
+			{
+				"x": -99.246030705287666,
+				"y": -744.26254907763121
+			},
+			"id": 0
+		},
+		{
+			"flowType": "EventExit",
+			"graphLocation":
+			{
+				"x": -600,
+				"y": 2690.3732886199732
+			},
+			"id": 1
+		}
+	],
+	"guid": "6064630202917257216",
+	"name": "Event_RVR_PU_LucentFlare",
+	"typeId": "23095125"
+}

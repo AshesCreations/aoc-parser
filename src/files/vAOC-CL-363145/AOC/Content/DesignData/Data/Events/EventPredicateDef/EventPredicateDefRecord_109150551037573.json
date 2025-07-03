@@ -1,0 +1,39 @@
+{
+	"expression":
+	{
+		"expression": "Event_GetNumParticipants() < 1 && Event_GetStageTimer() > 5.0"
+	},
+	"maxActivationCount": -1,
+	"objectivesIds": [],
+	"triggersIds": [
+		{
+			"guid": "109150528099966",
+			"typeId": "23095135",
+			"name": "TestEvent_Gauntlet_Transition_ToActive"
+		},
+		{
+			"guid": "6064629296980099161",
+			"typeId": "23095135",
+			"name": "None"
+		}
+	],
+	"flowEditorNodeLocation":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"routePins": [
+		{
+			"x": -336.45196661213919,
+			"y": -406.07736984609585
+		},
+		{
+			"x": -700.08833550947475,
+			"y": -393.95615680667686
+		}
+	],
+	"guid": "109150551037573",
+	"name": "TestEvent_Gauntlet_InProgress_MaintainParticipantCount",
+	"typeId": "23095129"
+}

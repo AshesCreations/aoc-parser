@@ -1,0 +1,22 @@
+{
+	"statRefId":
+	{
+		"guid": "6064630634059989002",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"value":
+	{
+		"expression": "const courageMod = (GetStat(GetOwner(),$#10516612381411111:6064629429438907308$))/1000.0;\r\n\r\n1.0 - (0.25 - courageMod)"
+	},
+	"bUseShieldAbsorb": false,
+	"shieldAbsorbPercentage":
+	{
+		"expression": ""
+	},
+	"bShowFloatingText": true,
+	"valueInputTerms": [],
+	"guid": "6064628594812977152",
+	"name": "Tank_Grit_DmgReduc",
+	"typeId": "3031600201"
+}

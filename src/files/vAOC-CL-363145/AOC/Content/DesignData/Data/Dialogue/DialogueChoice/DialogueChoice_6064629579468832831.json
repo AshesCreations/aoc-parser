@@ -1,0 +1,23 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"8D0897D24B85FB24BA617CA697925B56\", \"I\\'ll take the plant essence.\")",
+	"nextNodeId":
+	{
+		"guid": "6064629579431673911",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064629579497537604",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "GetStoryArcVariable(\"MA_0014_PutDownRoots\",\"HerbsCollected\") > 0.0"
+	},
+	"guid": "6064629579468832831",
+	"name": "DDR_0014_Lorne_87",
+	"typeId": "1091110027"
+}

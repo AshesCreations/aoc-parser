@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"1A51090C4710A2C380962B997AA2B6CA\", \"I return with information.\")",
+	"nextNodeId":
+	{
+		"guid": "6064630367023530021",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0005A_FGG_ForGreaterGlory\",\"MAP_0005A_FGG_Phase02\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0005A_SNB_InTheShadowsOfNikaBrae\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005A_SNB_InTheShadowsOfNikaBrae\",\"FindRecord\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005A_SNB_InTheShadowsOfNikaBrae\",\"FindMap\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005A_SNB_InTheShadowsOfNikaBrae\",\"SpeakToOzu\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005A_SNB_InTheShadowsOfNikaBrae\",\"ReturnToEudoxia\")"
+	},
+	"guid": "6064630367021891620",
+	"name": "MADD_0005A_BDA_EudoxiaAvenmoor_Phase02_27",
+	"typeId": "1091110027"
+}

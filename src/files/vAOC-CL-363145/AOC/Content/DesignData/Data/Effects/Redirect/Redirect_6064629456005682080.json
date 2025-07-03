@@ -1,0 +1,14 @@
+{
+	"trigger":
+	{
+		"expression": "GetStatModValue(GetHitInProgress(), GetTarget(), $#10516612381411111:108986352686712$) < 0.0 &&\r\n!HitFlagsContains(GetHitFlags(GetHitInProgress()), EHitFlag::Redirect)"
+	},
+	"target": "RedirectInstigator",
+	"ratio":
+	{
+		"expression": "0.3"
+	},
+	"guid": "6064629456005682080",
+	"name": "Tank_Protect",
+	"typeId": "3031600209"
+}

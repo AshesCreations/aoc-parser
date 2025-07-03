@@ -1,0 +1,122 @@
+{
+	"eventName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"5030B2F54B1EE8E5918618867B7CFFFD\", \"The Forsaken Envoy\")",
+	"gameplayTags":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"activationPredicatesIds": [
+		{
+			"guid": "6064632077880066272",
+			"typeId": "23095129",
+			"name": "None"
+		}
+	],
+	"minChallengeRating": 0,
+	"maxChallengeRating": 30,
+	"eventType": 128,
+	"locationId":
+	{
+		"guid": "6064632077797621902",
+		"typeId": "5127371160",
+		"name": "None"
+	},
+	"desiredTimeSlot": "0001.01.01-00.00.00",
+	"frequency": 24,
+	"priority": 1,
+	"rewardTableId":
+	{
+		"guid": "0",
+		"typeId": "1091110040",
+		"name": "None"
+	},
+	"rewardPopulationSetId":
+	{
+		"guid": "0",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"startStageId":
+	{
+		"guid": "6064632077797621903",
+		"typeId": "23095131",
+		"name": "None"
+	},
+	"stagesIds": [
+		{
+			"guid": "6064632077797621903",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064632077797621910",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064632077797621913",
+			"typeId": "23095131",
+			"name": "None"
+		}
+	],
+	"interactVolumesIds": [],
+	"alignmentsIds": [],
+	"mapDisplayType": "Biome",
+	"mapEventIcon": "/Game/UI/Widgets/Narrative/Textures/TUI_Icon_Event_PvE.TUI_Icon_Event_PvE",
+	"bDisplayOnTracker": true,
+	"notificationRadius": 15000,
+	"mapRadiusMinumum": 1000,
+	"cooldownTimer": 60,
+	"bDisabled": true,
+	"maxInstanceCount": 1,
+	"requiredMapName": "Verra_World_Master",
+	"comments": [
+		{
+			"commentGuid": "6064632026533462108",
+			"comment": "Begins Here",
+			"location":
+			{
+				"x": -1491.201000734977,
+				"y": -700.62448749535884,
+				"z": 0
+			},
+			"size":
+			{
+				"x": 663.50423920154572,
+				"y": 576.06837570667267,
+				"z": 0
+			},
+			"color":
+			{
+				"r": 1,
+				"g": 0.16826939582824707,
+				"b": 0.33245152235031128,
+				"a": 0.5
+			}
+		}
+	],
+	"bIsTemplate": false,
+	"flowNodes": [
+		{
+			"flowType": "EventEntry",
+			"graphLocation":
+			{
+				"x": -1867.8899337617531,
+				"y": -439.39719679695406
+			},
+			"id": 0
+		},
+		{
+			"flowType": "EventExit",
+			"graphLocation":
+			{
+				"x": 806.43929909749409,
+				"y": 471.06663485002889
+			},
+			"id": 1
+		}
+	],
+	"guid": "6064632077797621901",
+	"name": "RVR_ED_M1001_LeoniusPlea",
+	"typeId": "23095125"
+}

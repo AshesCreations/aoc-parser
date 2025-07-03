@@ -1,0 +1,27 @@
+{
+	"bWeaponCombo": false,
+	"statRefId":
+	{
+		"guid": "108986352686712",
+		"typeId": "10516612381411111",
+		"name": "Stat_Health"
+	},
+	"stat": "Health",
+	"value":
+	{
+		"expression": "200+200*(1-GetStat(GetOwner(),$#10516612381411111:108986352686712$)/GetStat(GetOwner(),$#10516612381411111:108986356618873$))"
+	},
+	"sourceFormula": "HealingPower",
+	"targetFormula": "HealingMod",
+	"bonusPenetration":
+	{
+		"expression": ""
+	},
+	"applyAs": "Healing",
+	"bShowFloatingText": true,
+	"valueInputs": [],
+	"statBuckets": "CombatRegister1",
+	"guid": "109144794027667",
+	"name": "Ancients_Minion_Crawler_TailSwipe_Heal",
+	"typeId": "3031600201"
+}

@@ -1,0 +1,31 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 4,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "HitHasTag(GetHitEvent(), \"Ability.weaponcombo\") &&\r\nGetStatModValue(GetHitEvent(), $#10516612381411111:108986352686712$) < 0.0"
+	},
+	"bEvaluateApplyingHit": false,
+	"instigator": "Owner",
+	"targetsBitmask": 8,
+	"reactHitsIds": [
+		{
+			"guid": "6064632078197653571",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"instigatorProcLimit": 0,
+	"globalProcLimit": 0,
+	"procReactOnApply": false,
+	"guid": "6064632078196867138",
+	"name": "Passive_Stat_NecroticWeaponDamageAdd",
+	"typeId": "3031600202"
+}

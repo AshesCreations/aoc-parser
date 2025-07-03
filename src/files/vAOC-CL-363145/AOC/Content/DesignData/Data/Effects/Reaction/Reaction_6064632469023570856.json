@@ -1,0 +1,33 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 4,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0,
+		"fishingEvents": 0,
+		"statEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "// only do cost for damager procs since they are instant and not projectile based\r\nconst damagers = GetEffectCount(GetInstigator(), $#30316002:6064631212173492744$)+GetEffectCount(GetInstigator(), $#30316002:6064630958653642007$)>0;\r\n\r\nHitHasTag(GetHitEvent(), \"Ability.weaponcombo\")\r\n&& HitHasTag(GetHitEvent(), \"combostep.end\")\r\n&& GetInstigator() == GetOwner() \r\n&& damagers\r\n&& GetEffectCount(GetInstigator(), $#30316002:6064632468947286527$) > 0"
+	},
+	"bEvaluateApplyingHit": false,
+	"instigator": "Owner",
+	"targetsBitmask": 1,
+	"reactHitsIds": [
+		{
+			"guid": "6064632469033597867",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"instigatorProcLimit": 0,
+	"globalProcLimit": 0,
+	"procReactOnApply": false,
+	"guid": "6064632469023570856",
+	"name": "Bard_ResonantWeapon_DamagerCost",
+	"typeId": "3031600202"
+}

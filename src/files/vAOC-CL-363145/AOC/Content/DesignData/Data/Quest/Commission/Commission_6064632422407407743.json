@@ -1,0 +1,68 @@
+{
+	"commissionType": "Narrative",
+	"preRequisiteQuestsIds": [],
+	"bRepeatable": false,
+	"mainObjectiveType": "Basic",
+	"commissionSection": 1,
+	"biomeOrigin": "FloodPlains",
+	"bFromDynamicContent": false,
+	"availabilityExpression":
+	{
+		"expression": "GetPlayerLevel() >= 4 && \r\n!Player_HasCommission(GetPlayer(), \"SQ_0010_SliversOfThePastPart3\") &&\r\n!Player_HasCompletedCommission(GetPlayer(), \"SQ_0010_SliversOfThePastPart3\") &&\r\nPlayer_HasCompletedCommission(GetPlayer(), \"SQ_0010_SliversOfThePastPart2\")"
+	},
+	"bDisabled": false,
+	"level": 8,
+	"commissionRarity": "Common",
+	"objectivesIds": [
+		{
+			"guid": "6064632416251871242",
+			"typeId": "1091110420",
+			"name": "None"
+		},
+		{
+			"guid": "6064632416243613704",
+			"typeId": "1091110420",
+			"name": "None"
+		}
+	],
+	"allowMultipleCompletion": false,
+	"commissionName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"EC01D0BE45077F831DDA59BF11363926\", \"Slivers of the Past, Part 3\")",
+	"flavorText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"367A24FE4703B35E20AE74AD45656676\", \"A Sighted patrol out of Sephillion moved out southwest and came back without a member.  Scout Orithar has asked me to track down what happened to the missing cultist if I can and warn Marshal McGannis in New Aela about the cult\\'s acitivity in the area.\")",
+	"mainObjectiveText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"E960B6BC43C5D750EF5CDEA410CB31A7\", \"Warn Marshal McGannis in New Aela of the rising cultist activity and find evidence of the missing cultist if able.\")",
+	"rewardTablesIds": [
+		{
+			"guid": "6064631828174536707",
+			"typeId": "1091110040",
+			"name": "None"
+		}
+	],
+	"calloutName": "",
+	"calloutDescription": "",
+	"expiration":
+	{
+		"duration": "0"
+	},
+	"cooldown":
+	{
+		"duration": "0"
+	},
+	"moneyCost": "0",
+	"resourceCost": [],
+	"mayoralCompletionCount": 0,
+	"rewardId":
+	{
+		"guid": "0",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"bNodeTargeted": false,
+	"targetRewardId":
+	{
+		"guid": "0",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"guid": "6064632422407407743",
+	"name": "SQ_0010_SliversOfThePastPart3",
+	"typeId": "280002"
+}

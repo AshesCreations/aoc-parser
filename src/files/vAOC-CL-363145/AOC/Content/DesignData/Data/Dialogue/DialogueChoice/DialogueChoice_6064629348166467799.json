@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"B74FC2434FAB87F0218675B4C8A83B56\", \"No, I haven\\'t yet.\")",
+	"nextNodeId":
+	{
+		"guid": "6064629348964172055",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsOnStoryArcQuest(GetPlayer(),\"SAQ_0019_FlightFromTheWoods\")&&!GetStoryArcQuestFlag(GetPlayer(),\"SAQ_0019_FlightFromTheWoods\",\"Flight1\")"
+	},
+	"guid": "6064629348166467799",
+	"name": "0019_P1_Tomas_1_8",
+	"typeId": "1091110027"
+}

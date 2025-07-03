@@ -1,0 +1,18 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"D012710943BFFB3E23485CB3815066DE\", \"Would you happen to know anyone that can translate this scroll?\")",
+	"nextNodeId":
+	{
+		"guid": "6064631793855823875",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "Player_HasCommission(GetPlayer(), \"CSQ_RVR_0071_DarkAlliance_TheGlyphs\")&& \r\nPlayer_ObjectiveStateEquals(GetPlayer(), \"SQO_0071_01_Basic_FindLinguist\", EObjectiveState::Active)"
+	},
+	"choiceType": "Default",
+	"guid": "6064631793343987742",
+	"name": "DD_CSQ_0071_Scholar_28",
+	"typeId": "1091110027"
+}

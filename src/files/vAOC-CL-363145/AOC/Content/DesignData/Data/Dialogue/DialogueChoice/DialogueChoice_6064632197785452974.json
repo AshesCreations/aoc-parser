@@ -1,0 +1,30 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"02441F48446236CFE5AAC38E8C402005\", \"Toss in ingredients\")",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064632201608626437",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064632219254063879",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "Player_GetItemCount(GetPlayer(), $#1091110003:6064629207102521358$) >= 5 &&\r\nPlayer_GetItemCount(GetPlayer(), $#1091110003:6064629184431849472$) >= 5 &&\r\nPlayer_GetItemCount(GetPlayer(), $#1091110003:6064630694579339288$) >= 1 &&\r\nPlayer_GetItemCount(GetPlayer(), $#1091110003:6064632201737601286$) >= 1"
+	},
+	"narrativeRequirementsIds": [],
+	"choiceType": "Default",
+	"guid": "6064632197785452974",
+	"name": "DD_CSQ_0070_Cauldron_2_Choice_2",
+	"typeId": "1091110027"
+}

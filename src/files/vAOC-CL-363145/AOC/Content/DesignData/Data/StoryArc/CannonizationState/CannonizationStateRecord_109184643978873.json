@@ -1,0 +1,36 @@
+{
+	"localized": false,
+	"spawnsIds": [
+		{
+			"guid": "109106010091215",
+			"typeId": "420006",
+			"name": "TestStoryArcCznTest1"
+		}
+	],
+	"populationSetsIds": [
+		{
+			"guid": "6064630270761772816",
+			"typeId": "5111005",
+			"name": "None"
+		}
+	],
+	"spawnLocations": [
+		{
+			"x": 0,
+			"y": 0,
+			"z": 0
+		}
+	],
+	"localDefault": false,
+	"globalEnablement":
+	{
+		"expression": "true || GetStoryArcVariable(\"StartLevelArc\", \"FOO\") > 9."
+	},
+	"localizedEnablement":
+	{
+		"expression": ""
+	},
+	"guid": "109184643978873",
+	"name": "StartLevel2",
+	"typeId": "1091110042"
+}

@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"CE647F70406402C4F717F69324A80763\", \"[EMERGENCY ENTRY]\")",
+	"nextNodeId":
+	{
+		"guid": "6064629381453316114",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MIA_0015_TPT_ThePhantomTower\",\"MIP_0015_TPT_Phase03\")&&\r\n!IsOnStoryArcQuest(GetPlayer(),\"MIQ_0015_BFP_BetrayalOfFuturePast\")&&\r\nIsStoryArcQuestAvailable(GetPlayer(),\"MIQ_0015_BFP_BetrayalOfFuturePast\")"
+	},
+	"guid": "6064629381445713935",
+	"name": "MIDD_0015_BFP_ClockworkCodex_4",
+	"typeId": "1091110027"
+}

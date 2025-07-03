@@ -1,0 +1,77 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"E5D39A9E428F98E9646BBE9EB2A2B8FB\", \"[Pay the silver]\")",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064632218799965290",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064632218825065580",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": ""
+	},
+	"requirements": [
+		{
+			"criteria": [
+				{
+					"elementType": "Currency",
+					"narrativeType": "StoryArc",
+					"commissionId":
+					{
+						"guid": "0",
+						"typeId": "280002",
+						"name": "None"
+					},
+					"storyArcQuestId":
+					{
+						"guid": "0",
+						"typeId": "1091110035",
+						"name": "None"
+					},
+					"objectiveId":
+					{
+						"guid": "0",
+						"typeId": "1091110420",
+						"name": "None"
+					},
+					"itemFilterId":
+					{
+						"guid": "0",
+						"typeId": "1091110041",
+						"name": "None"
+					},
+					"currencyDefId":
+					{
+						"guid": "6064629127877558273",
+						"typeId": "1011151289",
+						"name": "None"
+					},
+					"amountToQuery": 1,
+					"questState": "Unaccepted",
+					"objectiveState": "Active",
+					"itemState": "InInventory",
+					"invert": false
+				}
+			]
+		}
+	],
+	"choiceType": "Default",
+	"guid": "6064632218791052392",
+	"name": "Event_Bandit_Toll_Bridge_Toll_Taker_3_Choice_1",
+	"typeId": "1091110027"
+}

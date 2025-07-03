@@ -1,0 +1,56 @@
+{
+	"completionResponsesIds": [
+		{
+			"guid": "6064630367108333629",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"channelDuration": 0,
+	"activePredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0005A_FGG_ForGreaterGlory\",\"MAP_0005A_FGG_Phase02\")&&\r\n!IsOnStoryArcQuest(GetPlayer(),\"MAQ_0005A_SNB_InTheShadowsOfNikaBrae\")&&\r\nIsStoryArcQuestAvailable(GetPlayer(),\"MAQ_0005A_SNB_InTheShadowsOfNikaBrae\")"
+	},
+	"cuePredicate":
+	{
+		"expression": ""
+	},
+	"deleteOnCompletion": false,
+	"singleUse": false,
+	"alwaysShowUIPrompt": true,
+	"cancelChannelIfActivePredicateEverFails": true,
+	"channelModifierType": "NONE",
+	"rewardTableId":
+	{
+		"guid": "0",
+		"typeId": "1091110008",
+		"name": "None"
+	},
+	"startEffect": "None",
+	"endEffect": "None",
+	"failEffect": "None",
+	"successEffect": "/Game/DesignAssets/Population/NPC/Beast/ElderDragon/ElderDragon_Ice/Effects/Particles/NS_Frost_6_Explosion_Mage_Frostbolt_Proxy.NS_Frost_6_Explosion_Mage_Frostbolt_Proxy",
+	"cueEffect": "None",
+	"startSound": "None",
+	"endSound": "None",
+	"failSound": "None",
+	"successSound": "None",
+	"cueSound": "None",
+	"interactAnimTag": "None",
+	"deletionDelay": 0,
+	"activeCueEnabled": true,
+	"activeCueIgnoresActivePredicate": false,
+	"facePlayer": false,
+	"allowInCombat": true,
+	"spawnAtBottomCapsule": false,
+	"channelAnimation": "/Game/Characters/Animations/00_ABLT/CM_M_ABLT_FlowerPick_Montage.CM_M_ABLT_FlowerPick_Montage",
+	"interactRadius": 200,
+	"interactTolerance": 30,
+	"busyTime": 0.89999997615814209,
+	"clientBusyTime": 1,
+	"channelStartResponseIds": [],
+	"failResponsesIds": [],
+	"guid": "6064630367234818127",
+	"name": "MAPI_0005A_SNB_OBJ_CaravanWreckage",
+	"typeId": "1091110031"
+}

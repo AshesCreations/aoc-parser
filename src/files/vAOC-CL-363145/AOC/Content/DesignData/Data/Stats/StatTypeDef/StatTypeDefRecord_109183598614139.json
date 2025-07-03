@@ -1,0 +1,50 @@
+{
+	"displayName": "Dexterity",
+	"description": "NSLOCTEXT(\"[1909495A4C2095068D406C9D33F90055]\", \"173442014D04B66065C7C4AAF253D0F8\", \"Each point of Dexterity provides:*2 Physical Attack Speed Rating*2 Physical Penetration Rating*2 Physical Critical Chance Rating*2 Physical Evasion Rating*1 Physical Disable Accuracy Rating\")",
+	"bHidden": false,
+	"gameplayType": "Type_Combat",
+	"bHasWaterfallStatsUI": true,
+	"waterfallStatsUIIds": [],
+	"bDisplayAsPercentage": false,
+	"statType": "Type_Float",
+	"bClampStatFinalValue": false,
+	"bMultiplyStatMods": false,
+	"bMultiplyCompliment": false,
+	"base":
+	{
+		"expression": "0"
+	},
+	"waterfallStatsBaseIds": [],
+	"valueMin":
+	{
+		"expression": "0"
+	},
+	"waterfallStatsMinIds": [],
+	"valueMax":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMaxIds": [],
+	"regenRate":
+	{
+		"expression": ""
+	},
+	"waterfallStatsRegenIds": [],
+	"bRegenWhileDead": false,
+	"bRecalculateOnCombatState": false,
+	"onSpawn": "Reset_None",
+	"onDeath": "Reset_None",
+	"onRevive": "Reset_None",
+	"bPersistValue": false,
+	"replication": 1,
+	"shieldStatId":
+	{
+		"guid": "0",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"grantedEffects": [],
+	"guid": "109183598614139",
+	"name": "Dexterity",
+	"typeId": "10516612381411111"
+}

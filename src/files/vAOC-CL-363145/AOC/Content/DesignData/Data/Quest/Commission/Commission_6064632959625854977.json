@@ -1,0 +1,101 @@
+{
+	"commissionType": "Generic",
+	"commissionGameplayTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "Biome.Desert"
+			},
+			{
+				"tagName": "Quest.Commission.Adventure.Cull"
+			},
+			{
+				"tagName": "Quest.Commission.Tier.T1"
+			}
+		],
+		"parentTags": [
+			{
+				"tagName": "Biome"
+			},
+			{
+				"tagName": "Quest.Commission.Adventure"
+			},
+			{
+				"tagName": "Quest.Commission"
+			},
+			{
+				"tagName": "Quest"
+			},
+			{
+				"tagName": "Quest.Commission.Tier"
+			}
+		]
+	},
+	"preRequisiteQuestsIds": [],
+	"autoFailTimer": -1,
+	"bRepeatable": false,
+	"mainObjectiveType": "Kill",
+	"commissionSection": 1,
+	"biomeOrigin": "FloodPlains",
+	"bFromDynamicContent": false,
+	"availabilityExpression":
+	{
+		"expression": "(GetNodeRecord() == $#1323521343:6064632734251679746$ && Node_InLevelRangeInclusive($#1323521343:6064632734251679746$, ENodeLevel::Village, ENodeLevel::City)) || (GetNodeRecord() == $#1323521343:6064632734253907971$ && Node_InLevelRangeInclusive($#1323521343:6064632734253907971$, ENodeLevel::Village, ENodeLevel::City)) || (GetNodeRecord() == $#1323521343:6064632734268915716$ && Node_InLevelRangeInclusive($#1323521343:6064632734268915716$, ENodeLevel::Village, ENodeLevel::City))"
+	},
+	"bDisabled": false,
+	"level": 10,
+	"commissionRarity": "Rare",
+	"objectivesIds": [
+		{
+			"guid": "6064632959770755094",
+			"typeId": "1091110420",
+			"name": "None"
+		}
+	],
+	"allowMultipleCompletion": false,
+	"commissionName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"767E77E04C3D1D98161123B1B53FA37A\", \"King of the Sands\")",
+	"flavorText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"ECB60F924678087F48514680750D3B9A\", \"Local legends speak of massive scorpions stirring in the dunes. Their resurgence threatens to drive entire caravans into ruin.\")",
+	"mainObjectiveText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"9085801C44270625EA1E58976D701C74\", \"Locate and defeat scorpions in the Sandsquall Desert\")",
+	"rewardTablesIds": [
+		{
+			"guid": "6064631443187695620",
+			"typeId": "1091110040",
+			"name": "None"
+		}
+	],
+	"calloutName": "",
+	"calloutDescription": "",
+	"bCanProgressWhileInRaid": false,
+	"expiration":
+	{
+		"duration": "0"
+	},
+	"cooldown":
+	{
+		"duration": "0"
+	},
+	"moneyCost": "0",
+	"resourceCost": [],
+	"mayoralCompletionCount": 0,
+	"rewardId":
+	{
+		"guid": "0",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"bNodeTargeted": false,
+	"targetRewardId":
+	{
+		"guid": "0",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"questItemListIds": [],
+	"storedGraph":
+	{
+		"nodes": []
+	},
+	"guid": "6064632959625854977",
+	"name": "COM_SAN_Cull_Scorpion_Rare",
+	"typeId": "280002"
+}

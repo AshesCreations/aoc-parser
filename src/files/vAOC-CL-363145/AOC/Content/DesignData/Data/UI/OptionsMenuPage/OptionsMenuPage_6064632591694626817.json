@@ -1,0 +1,54 @@
+{
+	"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Gameplay_MovementSectionLabel\")",
+	"categoryHeaderLabel": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Gameplay_MovementSectionHeader\")",
+	"entryCategories": [
+		{
+			"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Options_GeneralSubheader\")",
+			"entryAlignment": "HAlign_Fill",
+			"entryWrapSize": 10,
+			"wrapBoxClass": "Standard",
+			"entries": [
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Movement_UnlockedCameraLabel\")",
+					"labelTextMinDesiredWidth": 300,
+					"labelTextWrapWidth": 1080,
+					"type": "CheckBox",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetUnlockedCameraMovement",
+					"setterFunctionName": "SetUnlockedCameraMovement"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Movement_InvertYAxisLabel\")",
+					"labelTextMinDesiredWidth": 300,
+					"labelTextWrapWidth": 1080,
+					"type": "CheckBox",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetInvertYAxis",
+					"setterFunctionName": "SetInvertYAxis"
+				}
+			],
+			"subcategories": []
+		}
+	],
+	"guid": "6064632591694626817",
+	"name": "CameraAndMovement",
+	"typeId": "3616673544"
+}

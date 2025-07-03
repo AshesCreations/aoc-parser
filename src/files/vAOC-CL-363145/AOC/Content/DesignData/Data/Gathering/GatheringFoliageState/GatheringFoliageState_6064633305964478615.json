@@ -1,0 +1,168 @@
+{
+	"displayName": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"929F87E54737A5AF110C7F8EFCA2FD0D\", \"Cut - Bird of Paradise\")",
+	"spawnTags":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"surveyingTags":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"bBlockPawn": false,
+	"bBlockCamera": false,
+	"staticMeshState": "/Game/ENV/Gatherables/Plants/BirdOfParadise/Mesh/SM_Tropical_BirdsOfParadise_Adult_01.SM_Tropical_BirdsOfParadise_Adult_01",
+	"collisionRadius": 50,
+	"overrideInteractionDistance": 100,
+	"overrideInteractionAngle": 70,
+	"lifecycleDuration": 0,
+	"dynamicLifecycleDefId":
+	{
+		"guid": "6064633221395185687",
+		"typeId": "1991555",
+		"name": "None"
+	},
+	"bShouldTransitionScale": true,
+	"startingScalePercentage": 0.5,
+	"scaleLerpSpeed": 0.10000000149011612,
+	"bRuntimeMesh": false,
+	"skeletalMeshState": "None",
+	"meshLifetimeDuration": 27,
+	"bMeshFade": false,
+	"meshDurationBeforeFade": 6,
+	"fadeScalarName": "None",
+	"meshFadeDuration": 3,
+	"bFractureStaticMesh": false,
+	"fracturedMesh": "None",
+	"fractureSupportMesh": "None",
+	"fractureAngularDamping": 0,
+	"fractureLinearDamping": 0,
+	"fractureInertiaTensorScale":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"maxClusterLevel": 100,
+	"bApplyRadialImpulse": false,
+	"radialImpulseOffset":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"radialImpulseRadius": 0,
+	"radialImpulseForce": 0,
+	"bSimulatePhysics": false,
+	"bBreakBoneConstraint": false,
+	"impulseForce": 0,
+	"impulseBoneName": "None",
+	"impulseDirection": 0,
+	"disablePhysicsDuration": -1,
+	"bCalculateFadeAfterDisabledPhysics": true,
+	"bCalculateFadeAfterImpact": false,
+	"targetImpactMainBodyAngularDamping": 0,
+	"targetImpactMainBodyLinearDamping": 0.0099999997764825821,
+	"targetImpactMainBodyDuration": 2,
+	"targetImpactSecondaryBodyAngularDamping": 0,
+	"targetImpactSecondaryBodyLinearDamping": 0.0099999997764825821,
+	"targetImpactSecondaryBodyDuration": 2,
+	"skeletalMeshGatheredAnimation": "None",
+	"skeletalMeshGatheringEventAnimation": "None",
+	"foliageInteractionsIds": [
+		{
+			"guid": "6064633305905299595",
+			"typeId": "19846",
+			"name": "None"
+		}
+	],
+	"akAudioEvents": [],
+	"foliageAkAudioWeightedEvents": [],
+	"akSwitches": [],
+	"akAudioOffset":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 1
+	},
+	"akRTPCId":
+	{
+		"guid": "0",
+		"typeId": "919000",
+		"name": "None"
+	},
+	"akGatheringEvent": "None",
+	"akGatheredEvent": "/Game/WwiseAudio/Events/Main/Professions/Gathering/PROF_Herbalism_FrondDrop.PROF_Herbalism_FrondDrop",
+	"akImpactEvent": "None",
+	"foliageMaxHitCount": 150,
+	"foliageMaxVelocity": 1000,
+	"stateTransitionFX": [],
+	"gatheringFX": [],
+	"gatheredFX": [
+		{
+			"enabled":
+			{
+				"expression": ""
+			},
+			"niagaraSystemSoft": "/Game/Effects/FX_Harvestables/Flowers/Particles/NS_BirdsOfParadise1_Harvest.NS_BirdsOfParadise1_Harvest",
+			"lifeTime": 0,
+			"bCastVolumetricTranslucentShadow": false,
+			"attachType": "AttachedTarget",
+			"originMesh": "Character",
+			"attachSocketName": "None",
+			"bUseAttachSocketForOriginLocation": true,
+			"bUseAttachSocketForOriginOrientation": true,
+			"transform":
+			{
+				"originLocation": "Target",
+				"originLocationSocket": "None",
+				"originOrientation": "Target",
+				"originOrientationSocket": "None",
+				"originScale": "World",
+				"bUseRelativeLocationExpression": false,
+				"relativeLocation":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"relativeLocationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeRotationExpression": false,
+				"relativeRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"relativeRotationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeScaleExpression": false,
+				"relativeScale":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				},
+				"relativeScaleExpression":
+				{
+					"expression": ""
+				}
+			},
+			"bVisibleToSceneCaptureOnly": false,
+			"bAllowScalability": true,
+			"bUseLocalRemoteDynamicSystem": false
+		}
+	],
+	"impactFX": [],
+	"destroyedFX": [],
+	"niagaraParams": [],
+	"guid": "6064633305964478615",
+	"name": "Plant_BirdOfParadise_Large_Freehold",
+	"typeId": "19836"
+}

@@ -1,0 +1,169 @@
+{
+	"designNotes": "",
+	"levelDefinitionId":
+	{
+		"guid": "6064629126799097877",
+		"typeId": "9227326",
+		"name": "None"
+	},
+	"playerFacingName": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"E39C060842906049279FEAA2E266933E\", \"Sunhaven\")",
+	"zoiType": "HasNode",
+	"startingAreaGameplayTag":
+	{
+		"tagName": "None"
+	},
+	"cityNodeId":
+	{
+		"guid": "6064632734268915716",
+		"typeId": "1323521343",
+		"name": "None"
+	},
+	"adjacentZonesOfInfluenceIds": [
+		{
+			"guid": "6064629126906904602",
+			"typeId": "9127326",
+			"name": "None"
+		},
+		{
+			"guid": "6064632734318067718",
+			"typeId": "9127326",
+			"name": "None"
+		},
+		{
+			"guid": "6064633430746988577",
+			"typeId": "9127326",
+			"name": "None"
+		}
+	],
+	"corruptionRulesEnabled": true,
+	"bAllowPVPOptInProtection": false,
+	"alignmentsAssignedUponEnteringIds": [],
+	"zoiEnvironmentType": "None",
+	"editorColor":
+	{
+		"x": 0.20000000000000001,
+		"y": 0,
+		"z": 0.75
+	},
+	"zOIRewardTables": [
+		{
+			"inclusionExpression":
+			{
+				"expression": "!DoesNPCContainTag(\"NoRewards\")"
+			},
+			"rewardTableId":
+			{
+				"guid": "6064632271541961493",
+				"typeId": "1091110040",
+				"name": "None"
+			}
+		},
+		{
+			"inclusionExpression":
+			{
+				"expression": "DoesNPCContainTag(\"character.humanoid\")"
+			},
+			"rewardTableId":
+			{
+				"guid": "6064633391377612800",
+				"typeId": "1091110040",
+				"name": "None"
+			}
+		},
+		{
+			"inclusionExpression":
+			{
+				"expression": "!DoesNPCContainTag(\"NoRewards\")"
+			},
+			"rewardTableId":
+			{
+				"guid": "6064633313653948416",
+				"typeId": "1091110040",
+				"name": "None"
+			}
+		}
+	],
+	"economicRegionTableId":
+	{
+		"guid": "6064632734670127111",
+		"typeId": "98738382",
+		"name": "None"
+	},
+	"bHideExperienceEvents": false,
+	"biome": "Highlands",
+	"biomeGatherableTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "SandsquallDesert"
+			}
+		],
+		"parentTags": []
+	},
+	"freeholdEstatesIds": [
+		{
+			"guid": "6064633288751054849",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633289099116554",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633288638005248",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633289016934409",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633288873541639",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633288760950786",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633288859648006",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633288829632517",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633288892481544",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633289144860683",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633288788344835",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633288814034948",
+			"typeId": "1337133701",
+			"name": "None"
+		}
+	],
+	"actorEffects": [],
+	"guid": "6064632734314856453",
+	"name": "Verra_SAN_Node_Sunhaven",
+	"typeId": "9127326"
+}

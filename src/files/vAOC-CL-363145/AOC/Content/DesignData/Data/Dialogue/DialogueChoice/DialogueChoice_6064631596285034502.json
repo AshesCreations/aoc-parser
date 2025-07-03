@@ -1,0 +1,18 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"3825A95043F25F408D155A86090C91A8\", \"Who are you?\")",
+	"nextNodeId":
+	{
+		"guid": "6064631596284051460",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "!Player_HasCommission(GetPlayer(),\"CSQ_RVR_0032_ProperBurial\")&&\r\n!Player_HasCompletedCommission(GetPlayer(), \"CSQ_RVR_0032_ProperBurial\")"
+	},
+	"choiceType": "Default",
+	"guid": "6064631596285034502",
+	"name": "DD_CSQ_0030_Cleric_5",
+	"typeId": "1091110027"
+}

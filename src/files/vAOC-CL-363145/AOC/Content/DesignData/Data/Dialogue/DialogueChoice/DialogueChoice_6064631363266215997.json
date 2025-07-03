@@ -1,0 +1,38 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"4A4AB9B048C03C49E04CCABF69D47618\", \"[Put the Briarmoor Taxes in the chest]\")",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064632315274199337",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064631364224483460",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064631364223041667",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "Player_HasCommission(GetPlayer(),\"CSQ_RVR_Plunder_0059_BMT_TheBriarmoorTaxes\")&&\r\nPlayer_HasItem(GetPlayer(),\"CSQ_ITM_Plunder_0059_BMT_BriarmoorTaxes\")\r\n"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064631363266215997",
+	"name": "CSQ_DD_PlunderChest_Aela_10",
+	"typeId": "1091110027"
+}

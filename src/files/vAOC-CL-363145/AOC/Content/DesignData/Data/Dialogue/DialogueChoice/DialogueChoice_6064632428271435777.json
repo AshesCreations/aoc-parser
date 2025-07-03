@@ -1,0 +1,22 @@
+{
+	"choiceText": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"43728C094FA31AEE3D44319284416C23\", \"Is level 10 or more\")",
+	"nextNodeId":
+	{
+		"guid": "6064629449095643139",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "GetCharacterLevel(GetPlayer()) >= 10"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064632428271435777",
+	"name": "DD_ServiceNPC_NodeAdministrator_129_Choice_1",
+	"typeId": "1091110027"
+}

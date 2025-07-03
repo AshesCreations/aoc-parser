@@ -1,0 +1,18 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"9BEEFE1C469B55F5240462B4584FB3A2\", \"HasCompleted POV Not STP\")",
+	"nextNodeId":
+	{
+		"guid": "6064631233958379576",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "!Player_HasCompletedCommission(GetPlayer(),\"CSQ_FTU_RVR_0035_STP_ServiceToThePast\")&&\r\nPlayer_HasCompletedCommission(GetPlayer(),\"CSQ_RVR_0006_POV_PathOfVaelune\")\r\n"
+	},
+	"choiceType": "Default",
+	"guid": "6064631233949728821",
+	"name": "CSQ_DD_FTU_AmbassadorOfSamiasHope_16",
+	"typeId": "1091110027"
+}

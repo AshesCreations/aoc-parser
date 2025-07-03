@@ -1,0 +1,576 @@
+{
+	"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Keybindings_TargetingSectionLabel\")",
+	"categoryHeaderLabel": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"KB_TargetingSectionHeader\")",
+	"entryCategories": [
+		{
+			"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"KB_GlobalKeybindingsSubheader\")",
+			"entryAlignment": "HAlign_Fill",
+			"entryWrapSize": 10,
+			"wrapBoxClass": "KeyBinding",
+			"entries": [
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"KB_SwapWeapons\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 600,
+					"type": "KeyBinding",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "SwapWeapons",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetKeyBinding",
+					"setterFunctionName": "SetKeyBinding"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"KB_CycleTargets\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 600,
+					"type": "KeyBinding",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "CycleTargets",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetKeyBinding",
+					"setterFunctionName": "SetKeyBinding"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"KB_CycleTargetsBackwards\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 600,
+					"type": "KeyBinding",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "CycleTargetsBackwards",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetKeyBinding",
+					"setterFunctionName": "SetKeyBinding"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"KB_TargetNearestEnemy\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 600,
+					"type": "KeyBinding",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "TargetNearestEnemy",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetKeyBinding",
+					"setterFunctionName": "SetKeyBinding"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"KB_CycleFriendlyTargets\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 600,
+					"type": "KeyBinding",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "CycleFriendlyTargets",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetKeyBinding",
+					"setterFunctionName": "SetKeyBinding"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"KB_TargetNearestAlly\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 600,
+					"type": "KeyBinding",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "TargetNearestAlly",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetKeyBinding",
+					"setterFunctionName": "SetKeyBinding"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"KB_CycleDefensiveTargets\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 600,
+					"type": "KeyBinding",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "CycleDefensiveTargets",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetKeyBinding",
+					"setterFunctionName": "SetKeyBinding"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"KB_CycleDefensiveTargetsBackwards\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 600,
+					"type": "KeyBinding",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "CycleDefensiveTargetsBackwards",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetKeyBinding",
+					"setterFunctionName": "SetKeyBinding"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"KB_ClearTarget\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 600,
+					"type": "KeyBinding",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "ClearTarget",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetKeyBinding",
+					"setterFunctionName": "SetKeyBinding"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"KB_ToggleHardLock\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 600,
+					"type": "KeyBinding",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "ToggleHardLock",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetKeyBinding",
+					"setterFunctionName": "SetKeyBinding"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"KB_TargetOfTarget\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 600,
+					"type": "KeyBinding",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "TargetOfTarget",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetKeyBinding",
+					"setterFunctionName": "SetKeyBinding"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"KB_TargetOfDefensiveTarget\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 600,
+					"type": "KeyBinding",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "TargetOfDefensiveTarget",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetKeyBinding",
+					"setterFunctionName": "SetKeyBinding"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"KB_TargetSelf\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 600,
+					"type": "KeyBinding",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "TargetSelf",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetKeyBinding",
+					"setterFunctionName": "SetKeyBinding"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"KB_TargetPartyMember1\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 600,
+					"type": "KeyBinding",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "TargetPartyMember1",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetKeyBinding",
+					"setterFunctionName": "SetKeyBinding"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"KB_TargetPartyMember2\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 600,
+					"type": "KeyBinding",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "TargetPartyMember2",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetKeyBinding",
+					"setterFunctionName": "SetKeyBinding"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"KB_TargetPartyMember3\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 600,
+					"type": "KeyBinding",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "TargetPartyMember3",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetKeyBinding",
+					"setterFunctionName": "SetKeyBinding"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"KB_TargetPartyMember4\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 600,
+					"type": "KeyBinding",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "TargetPartyMember4",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetKeyBinding",
+					"setterFunctionName": "SetKeyBinding"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"KB_TargetPartyMember5\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 600,
+					"type": "KeyBinding",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "TargetPartyMember5",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetKeyBinding",
+					"setterFunctionName": "SetKeyBinding"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"KB_TargetPartyMember6\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 600,
+					"type": "KeyBinding",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "TargetPartyMember6",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetKeyBinding",
+					"setterFunctionName": "SetKeyBinding"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"KB_TargetPartyMember7\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 600,
+					"type": "KeyBinding",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "TargetPartyMember7",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetKeyBinding",
+					"setterFunctionName": "SetKeyBinding"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"KB_ApplyRaidMarker1\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 600,
+					"type": "KeyBinding",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "ApplyRaidMarker1",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetKeyBinding",
+					"setterFunctionName": "SetKeyBinding"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"KB_ApplyRaidMarker2\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 600,
+					"type": "KeyBinding",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "ApplyRaidMarker2",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetKeyBinding",
+					"setterFunctionName": "SetKeyBinding"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"KB_ApplyRaidMarker3\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 600,
+					"type": "KeyBinding",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "ApplyRaidMarker3",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetKeyBinding",
+					"setterFunctionName": "SetKeyBinding"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"KB_ApplyRaidMarker4\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 600,
+					"type": "KeyBinding",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "ApplyRaidMarker4",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetKeyBinding",
+					"setterFunctionName": "SetKeyBinding"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"KB_ApplyRaidMarker5\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 600,
+					"type": "KeyBinding",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "ApplyRaidMarker5",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetKeyBinding",
+					"setterFunctionName": "SetKeyBinding"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"KB_ApplyRaidMarker6\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 600,
+					"type": "KeyBinding",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "ApplyRaidMarker6",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetKeyBinding",
+					"setterFunctionName": "SetKeyBinding"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"KB_ApplyRaidMarker7\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 600,
+					"type": "KeyBinding",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "ApplyRaidMarker7",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetKeyBinding",
+					"setterFunctionName": "SetKeyBinding"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"KB_ApplyRaidMarker8\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 600,
+					"type": "KeyBinding",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "ApplyRaidMarker8",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetKeyBinding",
+					"setterFunctionName": "SetKeyBinding"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"KB_RemoveRaidMarker\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 600,
+					"type": "KeyBinding",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "RemoveRaidMarker",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetKeyBinding",
+					"setterFunctionName": "SetKeyBinding"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"KB_PvpForceFlag\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 600,
+					"type": "KeyBinding",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "PvpForceFlag",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetKeyBinding",
+					"setterFunctionName": "SetKeyBinding"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"KB_TogglePvpForceFlag\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 600,
+					"type": "KeyBinding",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "TogglePvpForceFlag",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetKeyBinding",
+					"setterFunctionName": "SetKeyBinding"
+				}
+			],
+			"subcategories": []
+		}
+	],
+	"guid": "6064631726445101056",
+	"name": "KB_Targeting",
+	"typeId": "3616673544"
+}

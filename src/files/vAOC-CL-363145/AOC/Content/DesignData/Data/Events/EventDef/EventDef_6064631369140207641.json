@@ -1,0 +1,237 @@
+{
+	"eventName": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"BF48A1C4475C22DE9F640FA7DF3DF346\", \"Carphin Blooms\")",
+	"gameplayTags":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"activationPredicatesIds": [
+		{
+			"guid": "6064631369140207645",
+			"typeId": "23095129",
+			"name": "None"
+		}
+	],
+	"minChallengeRating": 0,
+	"maxChallengeRating": 30,
+	"eventLevel": 18,
+	"eventType": 33,
+	"locationId":
+	{
+		"guid": "6064631561688711238",
+		"typeId": "5127371160",
+		"name": "None"
+	},
+	"desiredTimeSlot": "0001.01.01-00.00.00",
+	"frequency": 24,
+	"priority": 1,
+	"rewardTableId":
+	{
+		"guid": "6064630474023174148",
+		"typeId": "1091110040",
+		"name": "None"
+	},
+	"rewardPopulationSetId":
+	{
+		"guid": "6064631392171196503",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"startStageId":
+	{
+		"guid": "6064631369140207648",
+		"typeId": "23095131",
+		"name": "None"
+	},
+	"stagesIds": [
+		{
+			"guid": "6064631369140207648",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064631471750185058",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064631369140207651",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064631369140207657",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064631369140207674",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064631369140207713",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064631369140207643",
+			"typeId": "23095131",
+			"name": "None"
+		}
+	],
+	"interactVolumesIds": [],
+	"alignmentsIds": [],
+	"mapDisplayType": "Biome",
+	"mapEventIcon": "/Game/UI/Icons/Map/TUI_Icon_Map_Event_Active.TUI_Icon_Map_Event_Active",
+	"mapDisplayTrackerFiltersIds": [],
+	"bDisplayOnTracker": true,
+	"notificationRadius": 15000,
+	"mapRadiusMinumum": 1000,
+	"cooldownTimer": 1200,
+	"bDisabled": false,
+	"maxInstanceCount": 1,
+	"requiredMapName": "Verra_World_Master",
+	"comments": [
+		{
+			"commentGuid": "6064631051481251843",
+			"comment": "Looks for the death of the Base Pop Named Plants (NAME)",
+			"location":
+			{
+				"x": -753.37732819461496,
+				"y": -1052.6381084673792,
+				"z": 0
+			},
+			"size":
+			{
+				"x": 635.25250351428986,
+				"y": 347.10634684562683,
+				"z": 0
+			},
+			"color":
+			{
+				"r": 0.5,
+				"g": 0.5,
+				"b": 0.5,
+				"a": 0.5
+			}
+		},
+		{
+			"commentGuid": "6064631051486691332",
+			"comment": "Sequence 1 & Spawn Gardeners - Timer checks participation, if 0 - fails. Won't fail if players are still participating.",
+			"location":
+			{
+				"x": -750.08984838690935,
+				"y": 109.9509275293406,
+				"z": 0
+			},
+			"size":
+			{
+				"x": 569.04765123128891,
+				"y": 366.984106361866,
+				"z": 0
+			},
+			"color":
+			{
+				"r": 0.5,
+				"g": 0.5,
+				"b": 0.5,
+				"a": 0.5
+			}
+		},
+		{
+			"commentGuid": "6064631051490033669",
+			"comment": "End & Rewards",
+			"location":
+			{
+				"x": 303.66635314599341,
+				"y": 774.50322264289036,
+				"z": 0
+			},
+			"size":
+			{
+				"x": 654.2777419090271,
+				"y": 360.3333215713501,
+				"z": 0
+			},
+			"color":
+			{
+				"r": 0.5,
+				"g": 0.5,
+				"b": 0.5,
+				"a": 0.5
+			}
+		},
+		{
+			"commentGuid": "6064631370041917441",
+			"comment": "Announcement -> Begin",
+			"location":
+			{
+				"x": 269.03571453670139,
+				"y": -382.97378639740668,
+				"z": 0
+			},
+			"size":
+			{
+				"x": 561.96583163738251,
+				"y": 297.94871926307678,
+				"z": 0
+			},
+			"color":
+			{
+				"r": 0.5,
+				"g": 0.5,
+				"b": 0.5,
+				"a": 0.5
+			}
+		},
+		{
+			"commentGuid": "6064631370083926018",
+			"comment": "Failed - Resetting",
+			"location":
+			{
+				"x": 260.27511285437947,
+				"y": 124.65745819344718,
+				"z": 0
+			},
+			"size":
+			{
+				"x": 643.1428906917572,
+				"y": 358.8571605682373,
+				"z": 0
+			},
+			"color":
+			{
+				"r": 0.5,
+				"g": 0.5,
+				"b": 0.5,
+				"a": 0.5
+			}
+		}
+	],
+	"bIsTemplate": false,
+	"flowNodes": [
+		{
+			"flowType": "EventEntry",
+			"graphLocation":
+			{
+				"x": -680.55164694742848,
+				"y": -1996.344322681427
+			},
+			"id": 0
+		},
+		{
+			"flowType": "EventExit",
+			"graphLocation":
+			{
+				"x": -645.94957397100188,
+				"y": 2043.7213618587443
+			},
+			"id": 1
+		}
+	],
+	"bSkipCrashRecovery": false,
+	"guid": "6064631369140207641",
+	"name": "ProgE_0006_CarphinBlooms",
+	"typeId": "23095125"
+}

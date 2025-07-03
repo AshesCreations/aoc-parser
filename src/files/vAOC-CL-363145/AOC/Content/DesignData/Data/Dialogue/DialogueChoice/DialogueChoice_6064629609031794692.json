@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"5F6797C1429D1FE93C3434900D3C9E34\", \"NeedsQuest3\")",
+	"nextNodeId":
+	{
+		"guid": "6064629609243410481",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "!IsStoryArcQuestAvailable(GetPlayer(), \"SAQ_0009_GH_DemonsPitchfork\")\r\n&&\r\n!IsStoryArcQuestAvailable(GetPlayer(), \"SAQ_0009_GH_QuicksilverToast\")"
+	},
+	"guid": "6064629609031794692",
+	"name": "MADD_0009_ElizaLecker_29",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,143 @@
+{
+	"narrativeType": "Commission",
+	"taskId":
+	{
+		"guid": "6064632462142013442",
+		"typeId": "1095125186",
+		"name": "None"
+	},
+	"completionParameters":
+	{
+		"objectiveType": "Kill",
+		"nPCTaskIconOverrideId":
+		{
+			"guid": "0",
+			"typeId": "949952112329",
+			"name": "None"
+		},
+		"bAllowSatisfactionToRegress": false,
+		"completionQuantity": 10,
+		"tagQuery":
+		{
+			"tokenStreamVersion": 0,
+			"tagDictionary": [
+				{
+					"tagName": "character.beast.wolf"
+				}
+			],
+			"queryTokenStream": [ 0, 1, 1, 1, 0 ],
+			"userDescription": "",
+			"autoDescription": " ANY( character.beast.wolf )"
+		},
+		"professionFilterIds": [],
+		"gatherableFilterIds": [],
+		"collectionFilterId":
+		{
+			"guid": "0",
+			"typeId": "1091110041",
+			"name": "None"
+		},
+		"subObjectivesIds": [],
+		"bLimitToDisplayLocation": true,
+		"goToAreaLocation": [
+			{
+				"location":
+				{
+					"x": -850149.79533500003,
+					"y": 619848.40681199997,
+					"z": 18540.695587999999
+				},
+				"radius": 5000,
+				"map_DisplayType": "ICON_AND_RADIUS",
+				"map_IconVisual":
+				{
+					"guid": "0",
+					"typeId": "949952112329",
+					"name": "None"
+				},
+				"map_DisplayName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"DA4CC0BD40938492D25FCA91D7F49CEA\", \"Explore Gryphon\\'s Nest\")"
+			}
+		],
+		"populationSetIds": [],
+		"populationInstanceIds": [],
+		"notifyType": "None"
+	},
+	"objectiveText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"3B7E3F934D0ECF9D5645B7958302751F\", \"Slay wolves south of Lionhold. They only come out at night.\")",
+	"objectiveCountText": "NSLOCTEXT(\"\", \"8F73E96B4E7CB360F11DFC9FC4755FC8\", \"Rabids Slain\")",
+	"initiallyHidden": false,
+	"advanceWhileHidden": true,
+	"revealOnComplete": true,
+	"completionRewardsIds": [],
+	"minimumRequirement": true,
+	"completionFlags": [],
+	"instanceCompletionResult": [],
+	"enabledPredicate":
+	{
+		"expression": ""
+	},
+	"completionActionsIds": [],
+	"objectivesToCompleteUponCompletionIds": [],
+	"objectivesToRevealUponCompletionIds": [],
+	"allowOverAchievement": false,
+	"overAchievementCountText": "",
+	"maximumAdditionalCompletions": 2,
+	"multipleCompletionExperienceMultiplier": 0.30000001192092896,
+	"multipleCompletionGoldMultiplier": 0.30000001192092896,
+	"multipleCompletionVariableMultiplier": 0.30000001192092896,
+	"displayLocation": [
+		{
+			"location":
+			{
+				"x": -833593.26402400003,
+				"y": 632344.82526299998,
+				"z": 11195.408396000001
+			},
+			"radius": 10000,
+			"map_DisplayType": "ICON_AND_RADIUS",
+			"map_IconVisual":
+			{
+				"guid": "0",
+				"typeId": "949952112329",
+				"name": "None"
+			},
+			"map_DisplayName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"B6B6ADCC460AA5F5C4E525B398BF7A3C\", \"Slay Wolves at Night\")"
+		},
+		{
+			"location":
+			{
+				"x": -847910.324318,
+				"y": 671055.50858799997,
+				"z": 11369.841311
+			},
+			"radius": 5000,
+			"map_DisplayType": "ICON_AND_RADIUS",
+			"map_IconVisual":
+			{
+				"guid": "0",
+				"typeId": "949952112329",
+				"name": "None"
+			},
+			"map_DisplayName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"0BA383A742AADC96E71304811F28C05F\", \"Slay Wolves at Night\")"
+		},
+		{
+			"location":
+			{
+				"x": -832514.370001,
+				"y": 675225.16877300001,
+				"z": 11367.419978
+			},
+			"radius": 7000,
+			"map_DisplayType": "ICON_AND_RADIUS",
+			"map_IconVisual":
+			{
+				"guid": "0",
+				"typeId": "949952112329",
+				"name": "None"
+			},
+			"map_DisplayName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"0BA383A742AADC96E71304811F28C05F\", \"Slay Wolves at Night\")"
+		}
+	],
+	"guid": "6064632462141489153",
+	"name": "NO_RVR_Kill_Wolves_Lionhold",
+	"typeId": "1091110420"
+}

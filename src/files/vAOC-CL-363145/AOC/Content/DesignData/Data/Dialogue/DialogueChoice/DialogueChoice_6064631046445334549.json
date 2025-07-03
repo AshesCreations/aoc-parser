@@ -1,0 +1,18 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"F0616350449BFB47E496918051AAA3A3\", \"[Not Has NOR Completed CSQ_WTV]\")",
+	"nextNodeId":
+	{
+		"guid": "6064631046461456406",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "!Player_HasCompletedCommission(GetPlayer(),\"CSQ_RVR_0005_WTV_WelcomeToVerra\")||\r\n!Player_HasCommission(GetPlayer(),\"CSQ_RVR_0005_WTV_WelcomeToVerra\")"
+	},
+	"choiceType": "Default",
+	"guid": "6064631046445334549",
+	"name": "CSQ_DialDef_0005_WTV_GatewayWatcher_5",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,123 @@
+{
+	"eventName": "NSLOCTEXT(\"\", \"5C0A3D4D42A30849A5559D904A8B72FA\", \"Gauntlet Test Event\")",
+	"gameplayTags":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"activationPredicatesIds": [
+		{
+			"guid": "109150528099964",
+			"typeId": "23095129",
+			"name": "None"
+		}
+	],
+	"minChallengeRating": 0,
+	"maxChallengeRating": 30,
+	"eventType": 1,
+	"locationId":
+	{
+		"guid": "6064631561688711168",
+		"typeId": "5127371160",
+		"name": "None"
+	},
+	"desiredTimeSlot": "0001.01.01-16.00.00",
+	"frequency": 24,
+	"priority": 1,
+	"rewardTableId":
+	{
+		"guid": "0",
+		"typeId": "1091110040",
+		"name": "None"
+	},
+	"rewardPopulationSetId":
+	{
+		"guid": "0",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"startStageId":
+	{
+		"guid": "109150528099962",
+		"typeId": "23095131",
+		"name": "None"
+	},
+	"stagesIds": [
+		{
+			"guid": "109150528099962",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064630168525209602",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "109150528099963",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "109150601434764",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "109326300829304",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "109326303123065",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "109150528099961",
+			"typeId": "23095131",
+			"name": "None"
+		}
+	],
+	"alignmentsIds": [
+		{
+			"guid": "6064630134813884424",
+			"typeId": "512160700",
+			"name": "None"
+		}
+	],
+	"mapDisplayType": "World",
+	"mapEventIcon": "None",
+	"bDisplayOnTracker": true,
+	"notificationRadius": 15000,
+	"mapRadiusMinumum": 1000,
+	"cooldownTimer": 300,
+	"bDisabled": false,
+	"maxInstanceCount": 3,
+	"requiredMapName": "Start_Clayton",
+	"comments": [],
+	"bIsTemplate": false,
+	"flowNodes": [
+		{
+			"flowType": "EventEntry",
+			"graphLocation":
+			{
+				"x": -557.60459401584092,
+				"y": -1415.6541499854104
+			},
+			"id": 0
+		},
+		{
+			"flowType": "EventExit",
+			"graphLocation":
+			{
+				"x": 706.78881813737303,
+				"y": -503.76862609948557
+			},
+			"id": 1
+		}
+	],
+	"guid": "109150528099960",
+	"name": "TestEvent_Gauntlet",
+	"typeId": "23095125"
+}

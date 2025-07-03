@@ -1,0 +1,70 @@
+{
+	"displayName": "NSLOCTEXT(\"\", \"EABE61304115C3C138F19FA16A8F664B\", \"Lifesteal\")",
+	"description": "NSLOCTEXT(\"\", \"77D7614C41B8CFCDFD76F0995CE9C265\", \"Your damaging abilities have a 25% chance to heal you for a percentage (equal to your lifesteal stat) of the damage done.\")",
+	"bHidden": false,
+	"gameplayType": "Type_Combat",
+	"bHasWaterfallStatsUI": false,
+	"waterfallStatsUIIds": [],
+	"bDisplayAsPercentage": true,
+	"statType": "Type_Float",
+	"bClampStatFinalValue": false,
+	"bMultiplyStatMods": false,
+	"bMultiplyCompliment": false,
+	"base":
+	{
+		"expression": "const x = GetStat(GetInstigator(), $#10516612381411111:6064629501730557640$);\r\nx / EvalFormula($#10516612381411113:6064633368881922048$)"
+	},
+	"waterfallStatsBaseIds": [
+		{
+			"guid": "6064629501730557640",
+			"typeId": "10516612381411111",
+			"name": "None"
+		}
+	],
+	"valueMin":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMinIds": [],
+	"valueMax":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMaxIds": [],
+	"regenRate":
+	{
+		"expression": ""
+	},
+	"waterfallStatsRegenIds": [],
+	"bRegenWhileDead": false,
+	"bRecalculateOnCombatState": false,
+	"onSpawn": "Reset_None",
+	"onDeath": "Reset_None",
+	"onRevive": "Reset_None",
+	"bPersistValue": false,
+	"replication": 1,
+	"shieldStatId":
+	{
+		"guid": "0",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"grantedEffects": [
+		{
+			"shouldGrant":
+			{
+				"expression": "GetStat(GetInstigator(), $#10516612381411111:6064629501729246919$) > 0.0"
+			},
+			"effectId":
+			{
+				"guid": "6064629501734817481",
+				"typeId": "30316002",
+				"name": "None"
+			},
+			"numStacks": 1
+		}
+	],
+	"guid": "6064629501729246919",
+	"name": "Lifesteal",
+	"typeId": "10516612381411111"
+}

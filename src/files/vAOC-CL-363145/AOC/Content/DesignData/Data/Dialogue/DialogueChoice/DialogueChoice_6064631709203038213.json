@@ -1,0 +1,18 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"A50483054C77E5FDCEB5F7919C76C084\", \"Has eye - no quests\")",
+	"nextNodeId":
+	{
+		"guid": "6064631710145119282",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "Player_HasItem(GetPlayer(), \"SQ_ITM_0035_QuestInit_RavenEye\") && !Player_HasCompletedCommission(GetPlayer(), \"SQ_35_TBH\") && !Player_HasCommission (GetPlayer(), \"SQ_35_TBH\")"
+	},
+	"choiceType": "Default",
+	"guid": "6064631709203038213",
+	"name": "SQ_RVR_0036_Hrok_5",
+	"typeId": "1091110027"
+}

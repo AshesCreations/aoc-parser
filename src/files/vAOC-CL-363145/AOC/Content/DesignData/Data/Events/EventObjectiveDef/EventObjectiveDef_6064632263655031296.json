@@ -1,0 +1,100 @@
+{
+	"bAllowSatisfactionToRegress": false,
+	"parameterTypes": 2,
+	"objectiveType": "Kill",
+	"completionCriteria": [
+		{
+			"bOverrideCompletionValueWithExpression": true,
+			"completionValue": 0,
+			"operator": "GreaterThan",
+			"completionExpression":
+			{
+				"expression": "Event_GetActivity() >= 20"
+			},
+			"completionTriggersIds": [],
+			"bDisplayOnTracker": true,
+			"relevantTrackerIds": [],
+			"displayText": "",
+			"displayType": 0,
+			"displayCompletionValue": 0,
+			"bInvertProgressDisplay": false
+		}
+	],
+	"nPCObjectiveIconOverrideId":
+	{
+		"guid": "0",
+		"typeId": "949952112329",
+		"name": "None"
+	},
+	"progressExpression":
+	{
+		"expression": ""
+	},
+	"gameplayTagFilter":
+	{
+		"tokenStreamVersion": 0,
+		"tagDictionary": [
+			{
+				"tagName": "npc.disposition.enemy"
+			}
+		],
+		"queryTokenStream": [ 0, 1, 1, 1, 0 ],
+		"userDescription": "",
+		"autoDescription": " ANY( npc.disposition.enemy )"
+	},
+	"populationSetId":
+	{
+		"guid": "0",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"trackerId":
+	{
+		"guid": "0",
+		"typeId": "23095133",
+		"name": "None"
+	},
+	"interactablesIds": [],
+	"professionFilterIds": [],
+	"gatherableFilterIds": [],
+	"collectionFilterId":
+	{
+		"guid": "0",
+		"typeId": "1091110041",
+		"name": "None"
+	},
+	"collectionCount": 5,
+	"abilityRecordId":
+	{
+		"guid": "0",
+		"typeId": "30316001",
+		"name": "None"
+	},
+	"activityType": "NPCKill",
+	"activityQueryLocation":
+	{
+		"x": -843267.78749100002,
+		"y": 547509.03798999998,
+		"z": 12729.772627
+	},
+	"activityQueryExtent":
+	{
+		"x": 10000,
+		"y": 10000,
+		"z": 10000
+	},
+	"bDisplayOnTracker": true,
+	"trackerText": "",
+	"displayType": 0,
+	"displayCompletionValue": 0,
+	"visibilityExpression":
+	{
+		"expression": ""
+	},
+	"visibilityOverridesTrackerFilter": false,
+	"trackersToDisplayToIds": [],
+	"relevantAlignmentsIds": [],
+	"guid": "6064632263655031296",
+	"name": "EVT_RosewaterTower_EventObjectiveDef_RetakeTheTower",
+	"typeId": "23095130"
+}

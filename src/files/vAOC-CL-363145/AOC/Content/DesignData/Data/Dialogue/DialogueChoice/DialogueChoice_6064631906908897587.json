@@ -1,0 +1,18 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"B51F8C214B21576D4AC79E95C283BFA7\", \"Has Quest\")",
+	"nextNodeId":
+	{
+		"guid": "6064631941645271046",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "Player_HasCommission(GetPlayer(),\"CSQ_RVR_0083_FB_FlowersAlongATrail\") &&\r\n!Player_HasCompletedCommission(GetPlayer(),\"CSQ_RVR_0083_FB_FlowersAlongATrail\")"
+	},
+	"choiceType": "Default",
+	"guid": "6064631906908897587",
+	"name": "CSQ_RVR_0081_FB_NordenResnik_DLG_62",
+	"typeId": "1091110027"
+}

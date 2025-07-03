@@ -1,0 +1,29 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"BA1EDF9B4EB73BE2A16EF1AD70D660DB\", \"[Pull your hand out]\")",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064632185336499705",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064632185327062519",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "!Player_HasCommission(GetPlayer(),\"CSQ_RVR_Aela_HarrowingWords_PortentOfDiscord\")"
+	},
+	"choiceType": "Default",
+	"guid": "6064632185662670007",
+	"name": "CSQ_DD_HarrowingWords_Glow_2_Choice_1",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"79B272C2479D296507A91BBAF11DC945\", \"I stopped the ritual.\")",
+	"nextNodeId":
+	{
+		"guid": "6064629297403658364",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MIA_0016_LOL_LastOfLyneth\",\"MIP_0016_LOL_Phase03\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MIQ_0016_ROK_ReturnOfTheKing\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MIQ_0016_ROK_ReturnOfTheKing\",\"KilledTheRingmaster\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MIQ_0016_ROK_ReturnOfTheKing\",\"KilledPerformers\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MIQ_0016_ROK_ReturnOfTheKing\",\"StoppedRitual\")"
+	},
+	"guid": "6064629297402740859",
+	"name": "MIDD_0016_ROK_GreatVoodini_18",
+	"typeId": "1091110027"
+}

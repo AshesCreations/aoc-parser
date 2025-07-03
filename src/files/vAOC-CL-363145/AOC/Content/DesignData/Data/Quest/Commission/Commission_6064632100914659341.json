@@ -1,0 +1,74 @@
+{
+	"commissionType": "Narrative",
+	"preRequisiteQuestsIds": [],
+	"bRepeatable": false,
+	"mainObjectiveType": "Basic",
+	"commissionSection": 1,
+	"biomeOrigin": "FloodPlains",
+	"bFromDynamicContent": false,
+	"availabilityExpression":
+	{
+		"expression": "Node_IsMayoralCommissionActive(Node_GetActorCityNode(GetPlayer()))"
+	},
+	"bDisabled": false,
+	"level": 5,
+	"commissionRarity": "Common",
+	"objectivesIds": [
+		{
+			"guid": "6064632110921220108",
+			"typeId": "1091110420",
+			"name": "None"
+		},
+		{
+			"guid": "6064632110956216335",
+			"typeId": "1091110420",
+			"name": "None"
+		}
+	],
+	"allowMultipleCompletion": false,
+	"commissionName": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"E9335FE44DA9CD8307631F805E231C2D\", \"Helping Out Around Town\")",
+	"flavorText": "",
+	"mainObjectiveText": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"7DD3AF19440E0E72B05A36BB9700B919\", \"Contribute to the node by completing a mayoral commission. Check the mayoral commission board in front of the town hall.\")",
+	"rewardTableId":
+	{
+		"guid": "6064631828178206724",
+		"typeId": "1091110040",
+		"name": "None"
+	},
+	"rewardTablesIds": [
+		{
+			"guid": "6064631828178206724",
+			"typeId": "1091110040",
+			"name": "None"
+		}
+	],
+	"calloutName": "",
+	"calloutDescription": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"775F8F904273581FC6E82599104EF913\", \"The administrator beckons you over excitedly.\")",
+	"expiration":
+	{
+		"duration": "0"
+	},
+	"cooldown":
+	{
+		"duration": "0"
+	},
+	"moneyCost": "0",
+	"resourceCost": [],
+	"mayoralCompletionCount": 0,
+	"rewardId":
+	{
+		"guid": "0",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"bNodeTargeted": false,
+	"targetRewardId":
+	{
+		"guid": "0",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"guid": "6064632100914659341",
+	"name": "CSQ_0152_FTUE_HelpingOutAroundTown",
+	"typeId": "280002"
+}

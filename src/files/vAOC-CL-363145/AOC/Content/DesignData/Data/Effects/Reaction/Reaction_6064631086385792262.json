@@ -1,0 +1,32 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 4,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0,
+		"fishingEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "(GetRecordTypeId(GetHitSourceRecord(GetHitEvent())) != GetReactionTypeId())\r\n&&\r\n(GetRecordTypeId(GetHitSourceRecord(GetHitEvent())) != GetEffectTypeId()) \r\n&&\r\n(GetOwner() == GetInstigator())\r\n&&\r\nHitHasTag(GetHitEvent(), \"ComboStep.End\")\r\n"
+	},
+	"bEvaluateApplyingHit": false,
+	"instigator": "Owner",
+	"targetsBitmask": 1,
+	"reactHitsIds": [
+		{
+			"guid": "6064631086392935688",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"instigatorProcLimit": 0,
+	"globalProcLimit": 0,
+	"procReactOnApply": false,
+	"guid": "6064631086385792262",
+	"name": "Weapon_Proc_Ward_TempHealth_Proc",
+	"typeId": "3031600202"
+}

@@ -1,0 +1,16 @@
+{
+	"currencyValues":
+	{
+		"(Guid=6064629147812364289,TypeId=1011111289)":
+		{
+			"expression": "// remind engineering to make this feesible please and thank you\r\n\r\nconst ItemLevel  = Float(GetItemLevel());\r\nconst ItemRarity = EvalCurve($#10516612381411114:6064632293965955074$,Float(GetItemRarity()));\r\nvar BaseCost = 500;\r\n\r\nif (ItemLevel <= 9.0){\r\n set BaseCost = 500;\r\n} else \r\nif(ItemLevel >= 10.0 && ItemLevel <= 19.0){\r\n set BaseCost = 1000;\r\n} else \r\nif(ItemLevel >= 20.0 && ItemLevel <= 29.0){\r\n set BaseCost = 2000;\r\n} else \r\nif(ItemLevel >= 30.0 && ItemLevel <= 39.0){\r\n set BaseCost = 3000;\r\n} else \r\nif(ItemLevel >= 40.0 && ItemLevel <= 49.0){\r\n set BaseCost = 4000;\r\n} else \r\nif(ItemLevel >= 50.0 && ItemLevel <= 60.0){\r\n set BaseCost = 1;\r\n}\r\n\r\nBaseCost * ItemRarity / 10"
+		},
+		"(Guid=6064633319541309442,TypeId=1011111289)":
+		{
+			"expression": "1"
+		}
+	},
+	"guid": "6064633319532396544",
+	"name": "PlayerCommodity_Lawless",
+	"typeId": "3145314712"
+}

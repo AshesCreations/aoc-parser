@@ -1,0 +1,33 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 2,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0,
+		"fishingEvents": 0,
+		"statEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "GetHitRecord(GetHitEvent()) == $#30316005:6064632350231232533$"
+	},
+	"bEvaluateApplyingHit": false,
+	"instigator": "Instigator",
+	"targetsBitmask": 1,
+	"reactHitsIds": [
+		{
+			"guid": "6064633142456158799",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"instigatorProcLimit": 0,
+	"globalProcLimit": 0,
+	"procReactOnApply": false,
+	"guid": "6064633142458321488",
+	"name": "RockMonster_PetrifyingCurse_SlowAlleviation_Sprint",
+	"typeId": "3031600202"
+}

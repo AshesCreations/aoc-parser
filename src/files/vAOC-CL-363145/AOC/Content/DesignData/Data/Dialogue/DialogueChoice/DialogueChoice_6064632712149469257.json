@@ -1,0 +1,22 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"3AD24E5D4258AB34FB06B1B485994B99\", \"Have you seen any merchants pass through here recently, aside from the Exalted from Sanctus?\")",
+	"nextNodeId":
+	{
+		"guid": "6064632712149272648",
+		"typeId": "1091110028",
+		"name": "DD_0111_EotGH_AgriculturalSupply_Certification_2"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "Player_ObjectiveStateEquals(GetPlayer(), \"SQO_0111_EotGH_02.1_SpeakAgSupplier\", EObjectiveState::Hidden)||Player_ObjectiveStateEquals(GetPlayer(), \"SQO_0111_EotGH_02.1_SpeakAgSupplier\", EObjectiveState::Active)"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064632712149469257",
+	"name": "DD_0111_EotGH_AgriculturalSupply_Certification_1_Choice_2",
+	"typeId": "1091110027"
+}

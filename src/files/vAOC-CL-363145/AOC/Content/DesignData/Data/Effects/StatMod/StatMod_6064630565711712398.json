@@ -1,0 +1,22 @@
+{
+	"statRefId":
+	{
+		"guid": "108986352686712",
+		"typeId": "10516612381411111",
+		"name": "Stat_Health"
+	},
+	"value":
+	{
+		"expression": "const damageMod1 = GetEffectCount(GetOwner(),$#30316002:6064630995808814824$);\r\nconst damageMod2 = GetEffectCount(GetOwner(),$#30316002:6064630995813271273$);\r\nconst damageMod3 = GetEffectCount(GetOwner(),$#30316002:6064630995824936682$);\r\nconst totalDamageMod = ((damageMod1 + damageMod2 + damageMod3) * 0.25) + 1;\r\n\r\n0.5 * totalDamageMod * EvalFormula($#10516612381411113:6064629862506364928$)"
+	},
+	"bUseShieldAbsorb": false,
+	"shieldAbsorbPercentage":
+	{
+		"expression": ""
+	},
+	"bShowFloatingText": true,
+	"valueInputTerms": [],
+	"guid": "6064630565711712398",
+	"name": "Weapon_2H_Sword_Proc6_SecondStrike",
+	"typeId": "3031600201"
+}

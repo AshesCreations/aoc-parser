@@ -1,0 +1,22 @@
+{
+	"statRefId":
+	{
+		"guid": "109183576135288",
+		"typeId": "10516612381411111",
+		"name": "Health"
+	},
+	"value":
+	{
+		"expression": "const v = Abs(GetStatModEffectiveValue(GetHitEvent(), $#10516612381411111:108986352686712$));\r\nconst scaling = EvalFormula($#10516612381411113:6064633216263990403$);\r\n0.5 * v * scaling"
+	},
+	"bUseShieldAbsorb": false,
+	"shieldAbsorbPercentage":
+	{
+		"expression": ""
+	},
+	"bShowFloatingText": true,
+	"valueInputTerms": [],
+	"guid": "6064629970844058845",
+	"name": "Fighter_BloodFusion_Mana",
+	"typeId": "3031600201"
+}

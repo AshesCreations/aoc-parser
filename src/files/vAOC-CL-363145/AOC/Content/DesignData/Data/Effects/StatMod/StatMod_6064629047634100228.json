@@ -1,0 +1,22 @@
+{
+	"statRefId":
+	{
+		"guid": "108986352686712",
+		"typeId": "10516612381411111",
+		"name": "Stat_Health"
+	},
+	"value":
+	{
+		"expression": "3.0 * EvalFormula($#10516612381411113:6064629862506364928$) * Max((Float(GetAngleBetween(GetTarget(), GetSource()) > 90.0) + 0.5), 1.0)"
+	},
+	"bUseShieldAbsorb": false,
+	"shieldAbsorbPercentage":
+	{
+		"expression": ""
+	},
+	"bShowFloatingText": true,
+	"valueInputTerms": [],
+	"guid": "6064629047634100228",
+	"name": "AshenHaunt_UpStrike_Damage",
+	"typeId": "3031600201"
+}

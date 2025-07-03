@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"F7F702944CF1DE050DFB39879B2491A8\", \"What\\'s the problem?\")",
+	"nextNodeId":
+	{
+		"guid": "6064629965344997406",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0007_PriestessAndThePiper\",\"MAP_0007_PriestessAndThePiper_Phase03\")&&\r\n!IsOnStoryArcQuest(GetPlayer(),\"MAQ_0007_WOO_WindowOfOpportunity\")&&\r\nIsStoryArcQuestAvailable(GetPlayer(),\"MAQ_0007_WOO_WindowOfOpportunity\")\r\n"
+	},
+	"guid": "6064629965342310429",
+	"name": "MADD_0007_WOO_NPC_ThePiper_4",
+	"typeId": "1091110027"
+}

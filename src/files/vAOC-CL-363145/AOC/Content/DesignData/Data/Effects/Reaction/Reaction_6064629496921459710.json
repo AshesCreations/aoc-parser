@@ -1,0 +1,27 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 2,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "GetStatModValue(GetHitEvent(), GetOwner(), $#10516612381411111:108986352686712$) < 0.0"
+	},
+	"bEvaluateApplyingHit": false,
+	"instigator": "Owner",
+	"targetsBitmask": 1,
+	"reactHitsIds": [
+		{
+			"guid": "6064629496989945000",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"guid": "6064629496921459710",
+	"name": "Tank_Passive_RecentDamage_Reaction",
+	"typeId": "3031600202"
+}

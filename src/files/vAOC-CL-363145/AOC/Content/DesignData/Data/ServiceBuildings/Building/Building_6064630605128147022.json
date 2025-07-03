@@ -1,0 +1,149 @@
+{
+	"prerequisitesIds": [],
+	"levelsIds":
+	{
+		"3":
+		{
+			"guid": "6064630605139943503",
+			"typeId": "7823458",
+			"name": "None"
+		},
+		"4":
+		{
+			"guid": "6064630605141975120",
+			"typeId": "7823458",
+			"name": "None"
+		},
+		"5":
+		{
+			"guid": "6064630605142433873",
+			"typeId": "7823458",
+			"name": "None"
+		},
+		"6":
+		{
+			"guid": "6064630605142761554",
+			"typeId": "7823458",
+			"name": "None"
+		}
+	},
+	"buildingAssetSetId":
+	{
+		"guid": "6064631347023577886",
+		"typeId": "1323521346",
+		"name": "None"
+	},
+	"nodeConstructionCostId":
+	{
+		"guid": "6064631166520983856",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"maintenanceCostId":
+	{
+		"guid": "6064632123092107558",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"playerConstructionCostId":
+	{
+		"guid": "6064631166876778850",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"damagedRepairCostId":
+	{
+		"guid": "6064632123129332016",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"disarrayRepairCostId":
+	{
+		"guid": "6064632123105607979",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"disarrayDebuffId":
+	{
+		"guid": "0",
+		"typeId": "30316002",
+		"name": "None"
+	},
+	"dEPRECATED_ExpansionsIds": [],
+	"serviceBuildingType": "Civic",
+	"housingPropertyTiersIds": [],
+	"icon": "/Game/UI/Icons/Nodes/Buildings/BuildingNodes/TUI_Icon_NodeBldngs_TradeBuero.TUI_Icon_NodeBldngs_TradeBuero",
+	"mapIconVisualId":
+	{
+		"guid": "6064632399366062091",
+		"typeId": "949952112329",
+		"name": "None"
+	},
+	"buildingName": "NSLOCTEXT(\"\", \"3D1DB8C44F222609569C6B860144B6DE\", \"Trade Bureau\")",
+	"buildingDescription": "NSLOCTEXT(\"\", \"44A6CF91419D5B169AB8B8A33949C6CD\", \"The Trade Bureau is a passive service building that provides bonuses to caravans and player commodity trade.\")",
+	"buildingServices": [
+		{
+			"icon": "/Game/UI/Icons/Nodes/Buildings/BuildingServices/TUI_Icon_ServiceIcon_NodeBuff.TUI_Icon_ServiceIcon_NodeBuff",
+			"serviceName": "NSLOCTEXT(\"[3A937076879C9EE4CFD42687DD9352E3]\", \"4E1A7AFE4A4F707C11B037967B7AF180\", \"Zone of Influence: Citizens Trade Deals\")",
+			"serviceDescription": "NSLOCTEXT(\"[1909495A4C2095068D406C9D33F90055]\", \"EB4EA2A14E8ADBBF9A703D8C4B1BDB29\", \"Citizens recieve a 5% discount when purchasing player commodities in this Zone of Influence\")"
+		},
+		{
+			"icon": "/Game/UI/Icons/Nodes/Buildings/BuildingServices/TUI_Icon_ServiceIcon_NodeBuff.TUI_Icon_ServiceIcon_NodeBuff",
+			"serviceName": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"92C9A3B84A21995040D9AB84A92086A4\", \"Zone of Influence: Upgraded Roads\")",
+			"serviceDescription": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"A3222BA74F1D84F68A6F88AAF53679E1\", \"Increased the speed of Caravans by 20% within the Zone of Influence\")"
+		}
+	],
+	"buildingServiceDescriptions": [],
+	"bDisplayInBuildingManager": true,
+	"constructionPhaseDuration":
+	{
+		"duration": "604800000"
+	},
+	"buildingContributionPhasesId":
+	{
+		"guid": "6064629841000792168",
+		"typeId": "1091110047",
+		"name": "None"
+	},
+	"dEPRECATED_CapabilitiesIds": [],
+	"dEPRECATED_NodeEffectId":
+	{
+		"guid": "0",
+		"typeId": "9127426",
+		"name": "None"
+	},
+	"localeOriginId":
+	{
+		"guid": "0",
+		"typeId": "421003",
+		"name": "None"
+	},
+	"nodeModificationsIds": [
+		{
+			"guid": "6064631940959305728",
+			"typeId": "1091110048",
+			"name": "None"
+		}
+	],
+	"expansionSkillTreeId":
+	{
+		"guid": "0",
+		"typeId": "30316003",
+		"name": "None"
+	},
+	"repairStateDurationModifier":
+	{
+		"expression": ""
+	},
+	"demolitionStateDurationModifier":
+	{
+		"expression": ""
+	},
+	"voteResultDuration":
+	{
+		"expression": ""
+	},
+	"guid": "6064630605128147022",
+	"name": "Construction_Support_TradeBureau_Building",
+	"typeId": "7823463"
+}

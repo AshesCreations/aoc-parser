@@ -1,0 +1,22 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"E325DEE247FB30BBE39153B1DFD0D977\", \"Offer CSQ_RVR_0111_EotGH_WaysOfThePast\")",
+	"nextNodeId":
+	{
+		"guid": "6064632710932006700",
+		"typeId": "1091110028",
+		"name": "DD_0110_EotGH_Wiyakoni_4"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "!Player_HasCommission(GetPlayer(), \"CSQ_RVR_0111_EotGH_WaysOfThePast\")&&!Player_HasCompletedCommission(GetPlayer(), \"CSQ_RVR_0111_EotGH_WaysOfThePast\")&&Player_HasCompletedCommission(GetPlayer(), \"CSQ_RVR_0110_EotGH_SwordEdgeToFlame\")"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064632710933251888",
+	"name": "DD_0110_EotGH_Wiyakoni_2_Choice_2",
+	"typeId": "1091110027"
+}

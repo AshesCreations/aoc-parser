@@ -1,0 +1,23 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"2E5C3F7C411F66CF0605C291AB47B101\", \"Make a note of this in your journal.\")",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064629732302520359",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "(IsStoryArcQuestAvailable(GetPlayer(), \"SAQ_0021_P01_TheFocus\")\r\n&&\r\n!IsOnStoryArcQuest(GetPlayer(), \"SAQ_0021_P01_TheFocus\"))"
+	},
+	"guid": "6064629732780605606",
+	"name": "MADD_0021_SergiasNote_13",
+	"typeId": "1091110027"
+}

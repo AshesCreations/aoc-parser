@@ -1,0 +1,56 @@
+{
+	"completionResponsesIds": [
+		{
+			"guid": "6064629450186162306",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"channelDuration": 0,
+	"activePredicate":
+	{
+		"expression": ""
+	},
+	"cuePredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MIA_0020_KOC_KeepOnTheCrossroads\",\"MIP_0020_KOC_Phase02\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MIQ_0020_CAC_CloaksAndCaravans\",\"MetRoadGuard\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MIQ_0020_CAC_CloaksAndCaravans\",\"MetRatCellar\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MIQ_0020_CAC_CloaksAndCaravans\",\"SpokeToGuardPhoenix\")"
+	},
+	"deleteOnCompletion": false,
+	"singleUse": false,
+	"alwaysShowUIPrompt": true,
+	"cancelChannelIfActivePredicateEverFails": true,
+	"channelModifierType": "NONE",
+	"rewardTableId":
+	{
+		"guid": "0",
+		"typeId": "1091110008",
+		"name": "None"
+	},
+	"startEffect": "None",
+	"endEffect": "None",
+	"failEffect": "None",
+	"successEffect": "None",
+	"cueEffect": "None",
+	"startSound": "None",
+	"endSound": "None",
+	"failSound": "None",
+	"successSound": "None",
+	"cueSound": "None",
+	"interactAnimTag": "None",
+	"deletionDelay": 0,
+	"activeCueEnabled": true,
+	"activeCueIgnoresActivePredicate": false,
+	"facePlayer": false,
+	"allowInCombat": true,
+	"spawnAtBottomCapsule": false,
+	"channelAnimation": "/Game/Characters/Animations/00_EMO/All_EMO_M_Salute02_Montage.All_EMO_M_Salute02_Montage",
+	"interactRadius": 200,
+	"interactTolerance": 30,
+	"busyTime": 0.89999997615814209,
+	"clientBusyTime": 1,
+	"channelStartResponseIds": [],
+	"failResponsesIds": [],
+	"guid": "6064629450224566414",
+	"name": "MIPI_0020_CAC_NPC_Guard_PostPhoenix",
+	"typeId": "1091110031"
+}

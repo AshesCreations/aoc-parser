@@ -1,0 +1,29 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"ECD646894CB5855BF168EFA73D5CFCD0\", \"[Grab the shackle]\")",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064631680463142946",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064631680419168274",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "Player_ObjectiveStateEquals(GetPlayer(),\"CSQ_COB_0069_JAR_ExamineEvidence_ShackledArm\", EObjectiveState::Active)"
+	},
+	"choiceType": "Default",
+	"guid": "6064631680867893355",
+	"name": "CSQ_DD_0069_JAR_ShackledArm_7",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,40 @@
+{
+	"invisibleDecalRVTBaseMaterialInstances": [
+		"/Game/ENV/WorldTech/WorldRVTs/Decals/M_RVTDecalMaterial.M_RVTDecalMaterial",
+		"/Game/ENV/WorldTech/WorldRVTs/Decals/M_RVTDecalHideGrass.M_RVTDecalHideGrass",
+		"/Game/ENV/WorldTech/WorldRVTs/Decals/M_RVTDecalHideGrass_BuildingsAutomask.M_RVTDecalHideGrass_BuildingsAutomask"
+	],
+	"invisibleDecalRVTSettings":
+	{
+		"virtualTextureRenderPassType": "Never",
+		"bRenderInMainPass": false,
+		"bRenderInDepthPass": false,
+		"bHiddenInSceneCapture": true,
+		"bVisibleInRayTracing": false,
+		"bCastShadow": false,
+		"bAffectDistanceFieldLighting": false,
+		"bAffectDynamicIndirectLighting": false,
+		"bReceivesDecals": false,
+		"bEnableAutoLODGeneration": false,
+		"canCharacterStepUpOn": "ECB_No",
+		"collisionProfileName": "NoCollision"
+	},
+	"visiblePropRVTSettings":
+	{
+		"virtualTextureRenderPassType": "Exclusive",
+		"bRenderInMainPass": true,
+		"bRenderInDepthPass": true,
+		"bHiddenInSceneCapture": false,
+		"bVisibleInRayTracing": true,
+		"bCastShadow": true,
+		"bAffectDistanceFieldLighting": true,
+		"bAffectDynamicIndirectLighting": true,
+		"bReceivesDecals": true,
+		"bEnableAutoLODGeneration": true,
+		"canCharacterStepUpOn": "ECB_Yes",
+		"collisionProfileName": "Default"
+	},
+	"guid": "6064632071982678016",
+	"name": "NodeAssetDefinitionStaticInstanceDataConstants",
+	"typeId": "1323521347"
+}

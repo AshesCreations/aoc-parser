@@ -1,0 +1,28 @@
+{
+	"choiceText": "",
+	"nextNodeId":
+	{
+		"guid": "6064632739528900615",
+		"typeId": "1091110028",
+		"name": "SQ_RVR_NPC_Samias_Miraleth_Sabah_15"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064632729432096781",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "(Player_HasCommission (GetPlayer(), \"SQ_RVR_Samias_OFF_GoTo_Sabah\") && !Player_HasCommission (GetPlayer(), \"CSQ_RVR_Samia_Miraleth_RebelRousers\")||Player_CanCompleteCommission(GetPlayer(), \"SQ_RVR_Samias_OFF_GoTo_Sabah\")&& !Player_HasCommission (GetPlayer(), \"CSQ_RVR_Samia_Miraleth_RebelRousers\"))"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064632711206273067",
+	"name": "SQ_RVR_NPC_Samias_Miraleth_Sabah_2_Choice_1",
+	"typeId": "1091110027"
+}

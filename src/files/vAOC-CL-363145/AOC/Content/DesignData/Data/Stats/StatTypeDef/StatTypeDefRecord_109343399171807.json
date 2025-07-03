@@ -1,0 +1,61 @@
+{
+	"displayName": "NSLOCTEXT(\"\", \"7E4BD20E42EC9C8DB582379629250DF4\", \"Physical Critical Power\")",
+	"description": "NSLOCTEXT(\"\", \"00D55E9E40971A6963434893393924A0\", \"The multiplier applied to physical critical hits\")",
+	"bHidden": false,
+	"gameplayType": "Type_Combat",
+	"bHasWaterfallStatsUI": false,
+	"waterfallStatsUIIds": [],
+	"bDisplayAsPercentage": true,
+	"statType": "Type_Float",
+	"bClampStatFinalValue": false,
+	"bMultiplyStatMods": false,
+	"bMultiplyCompliment": false,
+	"base":
+	{
+		"expression": "const base = GetStat(GetOwner(), $#10516612381411111:6064628617693364225$);\r\nconst baseRating = GetStat(GetInstigator(), $#10516612381411111:6064628617694412803$);\r\nconst coeff = EvalFormula($#10516612381411113:6064630400896860186$);\r\nconst baseAdj = base - baseRating / (baseRating + coeff);\r\nconst rating = baseRating + GetStat(GetInstigator(), $#10516612381411111:109342862759546$);\r\nbaseAdj + rating / (rating + coeff)"
+	},
+	"waterfallStatsBaseIds": [
+		{
+			"guid": "6064628617693364225",
+			"typeId": "10516612381411111",
+			"name": "None"
+		},
+		{
+			"guid": "109342862759546",
+			"typeId": "10516612381411111",
+			"name": "None"
+		}
+	],
+	"valueMin":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMinIds": [],
+	"valueMax":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMaxIds": [],
+	"regenRate":
+	{
+		"expression": ""
+	},
+	"waterfallStatsRegenIds": [],
+	"bRegenWhileDead": false,
+	"bRecalculateOnCombatState": false,
+	"onSpawn": "Reset_None",
+	"onDeath": "Reset_None",
+	"onRevive": "Reset_None",
+	"bPersistValue": false,
+	"replication": 5,
+	"shieldStatId":
+	{
+		"guid": "0",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"grantedEffects": [],
+	"guid": "109343399171807",
+	"name": "PhysicalCriticalPower",
+	"typeId": "10516612381411111"
+}

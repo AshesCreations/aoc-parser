@@ -1,0 +1,32 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 4,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0,
+		"fishingEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "GetEffectCountByRecordAndInstigator(GetTarget(), $#30316002:6064632739418147926$, GetInstigator()) == 1"
+	},
+	"bEvaluateApplyingHit": true,
+	"instigator": "Instigator",
+	"targetsBitmask": 8,
+	"reactHitsIds": [
+		{
+			"guid": "6064632739565672714",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"instigatorProcLimit": 0,
+	"globalProcLimit": 0,
+	"procReactOnApply": false,
+	"guid": "6064632739558332681",
+	"name": "Rogue_Shuriken_Hooked_Dispel",
+	"typeId": "3031600202"
+}

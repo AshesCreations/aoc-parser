@@ -1,0 +1,24 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"BBB6939E4CC79FA8A480FBB30F28D694\", \"Has Quest\")",
+	"nextNodeId":
+	{
+		"guid": "6064631879712244764",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064631906820948269",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "Player_HasCommission(GetPlayer(),\"CSQ_RVR_0082_FB_WoeOfXander\") &&\r\n!Player_HasCompletedCommission(GetPlayer(),\"CSQ_RVR_0082_FB_WoeOfXander\")"
+	},
+	"choiceType": "Default",
+	"guid": "6064631879689438230",
+	"name": "CSQ_RVR_0081_FB_NordenResnik_DLG_49",
+	"typeId": "1091110027"
+}

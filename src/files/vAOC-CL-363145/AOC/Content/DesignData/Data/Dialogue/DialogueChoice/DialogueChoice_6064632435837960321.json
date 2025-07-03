@@ -1,0 +1,22 @@
+{
+	"choiceText": "",
+	"nextNodeId":
+	{
+		"guid": "6064632435837960337",
+		"typeId": "1091110028",
+		"name": "SQ_Lionhold_0002_Fragments_Jimson_10"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "Player_HasCommission (GetPlayer(), \"SQ_LionholdNorth_0002_TreeFragments\") && !Player_HasCompletedCommission(GetPlayer(), \"SQ_LionholdNorth_0002_TreeFragments\") && Player_ObjectiveStateEquals(GetPlayer(), \"CSQ_LionholdSouth_0002_Task_2_Return\", EObjectiveState::Complete)"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064632435837960321",
+	"name": "SQ_Lionhold_0002_Fragments_Carole_2_Choice_2",
+	"typeId": "1091110027"
+}

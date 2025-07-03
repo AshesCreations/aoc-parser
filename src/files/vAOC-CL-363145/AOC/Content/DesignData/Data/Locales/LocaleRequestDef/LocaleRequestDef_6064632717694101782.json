@@ -1,0 +1,61 @@
+{
+	"bUseLocaleQuery": false,
+	"originWhiteListIds": [
+		{
+			"guid": "6064632949357084696",
+			"typeId": "421003",
+			"name": "None"
+		},
+		{
+			"guid": "6064632949860139032",
+			"typeId": "421003",
+			"name": "None"
+		},
+		{
+			"guid": "6064633272405590028",
+			"typeId": "421003",
+			"name": "None"
+		}
+	],
+	"localeWhiteListIds": [],
+	"localeBlackListIds": [],
+	"bQueryAllOrigins": false,
+	"localeQueryLocation":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"originQueryRange": 0,
+	"originTagFilter":
+	{
+		"tokenStreamVersion": 0,
+		"tagDictionary": [],
+		"queryTokenStream": [],
+		"userDescription": "",
+		"autoDescription": ""
+	},
+	"localeTagFilter":
+	{
+		"tokenStreamVersion": 0,
+		"tagDictionary": [],
+		"queryTokenStream": [],
+		"userDescription": "",
+		"autoDescription": ""
+	},
+	"localeSelectionAlgorithm": "ClosestToPoint",
+	"pointExpression":
+	{
+		"expression": "Event_GetInstanceLocation()"
+	},
+	"requiredExtents":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"bRequiresNav": false,
+	"guid": "6064632717694101782",
+	"name": "Siege_Instigator_WarCamp_LocaleRequest",
+	"typeId": "23095138"
+}

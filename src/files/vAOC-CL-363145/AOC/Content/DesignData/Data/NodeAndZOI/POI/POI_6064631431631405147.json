@@ -1,0 +1,118 @@
+{
+	"levelDefinitionId":
+	{
+		"guid": "6064629126799097877",
+		"typeId": "9227326",
+		"name": "None"
+	},
+	"playerFacingName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"D9F31C40463F7DCF1601A38E19D16C96\", \"Citadel of the Steel Bloom\")",
+	"worldDiscoveryId":
+	{
+		"guid": "6064632202593501194",
+		"typeId": "5882304",
+		"name": "None"
+	},
+	"overlappingZoisIds": [
+		{
+			"guid": "6064629126900678679",
+			"typeId": "9127326",
+			"name": "None"
+		}
+	],
+	"mapLocation":
+	{
+		"x": -781401.28867599997,
+		"y": 452480.98183200002,
+		"z": 0
+	},
+	"mapIconVisualId":
+	{
+		"guid": "6064630988798951424",
+		"typeId": "949952112329",
+		"name": "None"
+	},
+	"editorColor":
+	{
+		"x": 1,
+		"y": 0,
+		"z": 0.46999999999999997
+	},
+	"pOIRewardTables": [
+		{
+			"inclusionExpression":
+			{
+				"expression": "DoesNPCContainTag(\"character.humanoid\")"
+			},
+			"rewardTableId":
+			{
+				"guid": "6064632277045149778",
+				"typeId": "1091110040",
+				"name": "None"
+			}
+		},
+		{
+			"inclusionExpression":
+			{
+				"expression": "DoesNPCContainTag(\"character.humanoid.captain\") || \r\nDoesNPCContainTag(\"character.humanoid.raider\") ||\r\nDoesNPCContainTag(\"character.humanoid.ranger\") "
+			},
+			"rewardTableId":
+			{
+				"guid": "6064632276834451456",
+				"typeId": "1091110040",
+				"name": "None"
+			}
+		},
+		{
+			"inclusionExpression":
+			{
+				"expression": "DoesNPCContainTag(\"character.humanoid.healer\") ||\r\nDoesNPCContainTag(\"character.humanoid.arsonist\") || \r\nDoesNPCContainTag(\"character.humanoid.frosthand\")"
+			},
+			"rewardTableId":
+			{
+				"guid": "6064632276945141788",
+				"typeId": "1091110040",
+				"name": "None"
+			}
+		},
+		{
+			"inclusionExpression":
+			{
+				"expression": "DoesNPCContainTag(\"character.humanoid.performer\") ||\r\nDoesNPCContainTag(\"character.humanoid.arsonist\") || \r\nDoesNPCContainTag(\"character.humanoid.frosthand\")"
+			},
+			"rewardTableId":
+			{
+				"guid": "6064632276945272861",
+				"typeId": "1091110040",
+				"name": "None"
+			}
+		},
+		{
+			"inclusionExpression":
+			{
+				"expression": "DoesNPCContainTag(\"character.humanoid\")"
+			},
+			"rewardTableId":
+			{
+				"guid": "6064632349527310340",
+				"typeId": "1091110040",
+				"name": "None"
+			}
+		},
+		{
+			"inclusionExpression":
+			{
+				"expression": ""
+			},
+			"rewardTableId":
+			{
+				"guid": "0",
+				"typeId": "1091110040",
+				"name": "None"
+			}
+		}
+	],
+	"alignmentsAssignedUponEnteringIds": [],
+	"guid": "6064631431631405147",
+	"name": "RVR_CitadelSteelBloom",
+	"typeId": "9128326"
+}

@@ -1,0 +1,18 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"1B9279874C7A9B2FF6779FA319B568B9\", \"HasQuest EOS\")",
+	"nextNodeId":
+	{
+		"guid": "6064631284938047501",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "!Player_HasCompletedCommission(GetPlayer(),\"CSQ_RVR_0041_EOS_TurnIn_EyeOfSeafury\")&&\r\nPlayer_HasCommission(GetPlayer(),\"CSQ_RVR_0041_EOS_TurnIn_EyeOfSeafury\")"
+	},
+	"choiceType": "Default",
+	"guid": "6064631284635468422",
+	"name": "CSQ_DD_CourtOfCloaks_Keelhaul_7",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,61 @@
+{
+	"completionResponsesIds": [
+		{
+			"guid": "6064629131898519562",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064629137687314440",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"channelDuration": 0,
+	"activePredicate":
+	{
+		"expression": ""
+	},
+	"cuePredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MIA_0003_ROW_RelicOfWar\",\"MAP_0003_ROW_Phase02\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0003_RRR_RelicRaiderRivalry\",\"SpokeToSirKane\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0003_RRR_RelicRaiderRivalry\",\"SpokeToDaela\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0003_RRR_RelicRaiderRivalry\",\"PlaceMedalOfDefense\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0003_RRR_RelicRaiderRivalry\",\"PlaceMedalOfFaith\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0003_RRR_RelicRaiderRivalry\",\"PlaceMedalOfIntellect\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0003_RRR_RelicRaiderRivalry\",\"PlaceMedalOfEquitation\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0003_RRR_RelicRaiderRivalry\",\"GotScourge\")"
+	},
+	"deleteOnCompletion": false,
+	"singleUse": false,
+	"alwaysShowUIPrompt": true,
+	"cancelChannelIfActivePredicateEverFails": true,
+	"channelModifierType": "NONE",
+	"rewardTableId":
+	{
+		"guid": "0",
+		"typeId": "1091110008",
+		"name": "None"
+	},
+	"startEffect": "None",
+	"endEffect": "None",
+	"failEffect": "None",
+	"successEffect": "/Game/Effects/FX_Environment/Structures/Pylon/FX_Pylon_Vertical_Core.FX_Pylon_Vertical_Core",
+	"cueEffect": "None",
+	"startSound": "None",
+	"endSound": "None",
+	"failSound": "None",
+	"successSound": "None",
+	"cueSound": "None",
+	"interactAnimTag": "None",
+	"deletionDelay": 0,
+	"activeCueEnabled": true,
+	"activeCueIgnoresActivePredicate": false,
+	"facePlayer": false,
+	"allowInCombat": true,
+	"spawnAtBottomCapsule": false,
+	"channelAnimation": "/Game/Characters/Animations/2H_STF/All_2H_Stf_Equip_M_Montage.All_2H_Stf_Equip_M_Montage",
+	"interactRadius": 200,
+	"interactTolerance": 30,
+	"busyTime": 0.89999997615814209,
+	"clientBusyTime": 1,
+	"channelStartResponseIds": [],
+	"failResponsesIds": [],
+	"guid": "6064629132077301806",
+	"name": "MIPI_0003_RRR_OBJ_VeilOfWrath",
+	"typeId": "1091110031"
+}

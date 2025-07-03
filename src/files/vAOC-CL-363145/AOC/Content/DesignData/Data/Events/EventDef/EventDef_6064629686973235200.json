@@ -1,0 +1,107 @@
+{
+	"eventName": "NSLOCTEXT(\"\", \"1E0317854440C226088B94B51FDCFE00\", \"Ritual of the Raven King\")",
+	"gameplayTags":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"activationPredicatesIds": [
+		{
+			"guid": "6064629686973235204",
+			"typeId": "23095129",
+			"name": "None"
+		}
+	],
+	"minChallengeRating": 26,
+	"maxChallengeRating": 27,
+	"eventType": 1,
+	"locationId":
+	{
+		"guid": "6064631561688711181",
+		"typeId": "5127371160",
+		"name": "None"
+	},
+	"desiredTimeSlot": "0001.01.01-00.00.00",
+	"frequency": 24,
+	"priority": 1,
+	"rewardTableId":
+	{
+		"guid": "0",
+		"typeId": "1091110040",
+		"name": "None"
+	},
+	"rewardPopulationSetId":
+	{
+		"guid": "0",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"startStageId":
+	{
+		"guid": "6064629686973235202",
+		"typeId": "23095131",
+		"name": "None"
+	},
+	"stagesIds": [
+		{
+			"guid": "6064629686973235202",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064629733173166082",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064629686973235203",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064629687895654416",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064629686973235201",
+			"typeId": "23095131",
+			"name": "None"
+		}
+	],
+	"alignmentsIds": [],
+	"mapDisplayType": "None",
+	"mapEventIcon": "None",
+	"bDisplayOnTracker": true,
+	"notificationRadius": 15000,
+	"mapRadiusMinumum": 1000,
+	"cooldownTimer": 300,
+	"bDisabled": false,
+	"maxInstanceCount": 1,
+	"requiredMapName": "",
+	"comments": [],
+	"bIsTemplate": false,
+	"flowNodes": [
+		{
+			"flowType": "EventEntry",
+			"graphLocation":
+			{
+				"x": 630.00000029802311,
+				"y": -944.91228027567934
+			},
+			"id": 0
+		},
+		{
+			"flowType": "EventExit",
+			"graphLocation":
+			{
+				"x": 107.71929789998416,
+				"y": 1705.2097626279967
+			},
+			"id": 1
+		}
+	],
+	"guid": "6064629686973235200",
+	"name": "RVR_Gravepeak_Raven_event_01",
+	"typeId": "23095125"
+}

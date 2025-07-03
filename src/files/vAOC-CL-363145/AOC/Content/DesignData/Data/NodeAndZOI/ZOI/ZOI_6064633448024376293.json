@@ -1,0 +1,133 @@
+{
+	"designNotes": "",
+	"levelDefinitionId":
+	{
+		"guid": "6064629126799097877",
+		"typeId": "9227326",
+		"name": "None"
+	},
+	"playerFacingName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"0980F72D4B02F61C7C947DBBC8E373BD\", \"Jundark Harbor South\")",
+	"zoiType": "CannotOwn",
+	"startingAreaGameplayTag":
+	{
+		"tagName": "None"
+	},
+	"cityNodeId":
+	{
+		"guid": "6064633447993574369",
+		"typeId": "1323521343",
+		"name": "None"
+	},
+	"adjacentZonesOfInfluenceIds": [
+		{
+			"guid": "6064633430733291549",
+			"typeId": "9127326",
+			"name": "None"
+		},
+		{
+			"guid": "6064633430691414041",
+			"typeId": "9127326",
+			"name": "None"
+		}
+	],
+	"corruptionRulesEnabled": true,
+	"bAllowPVPOptInProtection": false,
+	"alignmentsAssignedUponEnteringIds": [
+		{
+			"guid": "6064629443707731976",
+			"typeId": "512160700",
+			"name": "None"
+		}
+	],
+	"zoiEnvironmentType": "Harbor",
+	"editorColor":
+	{
+		"x": 0.62,
+		"y": 0.52200000000000002,
+		"z": 0.46300000000000002
+	},
+	"zOIRewardTables": [
+		{
+			"inclusionExpression":
+			{
+				"expression": "!DoesNPCContainTag(\"NoRewards\")"
+			},
+			"rewardTableId":
+			{
+				"guid": "6064633313653948416",
+				"typeId": "1091110040",
+				"name": "None"
+			}
+		},
+		{
+			"inclusionExpression":
+			{
+				"expression": "!DoesNPCContainTag(\"NoRewards\")"
+			},
+			"rewardTableId":
+			{
+				"guid": "6064633313727152129",
+				"typeId": "1091110040",
+				"name": "None"
+			}
+		},
+		{
+			"inclusionExpression":
+			{
+				"expression": "DoesNPCContainTag(\"character.humanoid\")"
+			},
+			"rewardTableId":
+			{
+				"guid": "6064633584457941012",
+				"typeId": "1091110040",
+				"name": "None"
+			}
+		}
+	],
+	"economicRegionTableId":
+	{
+		"guid": "6064633458074714127",
+		"typeId": "98738382",
+		"name": "None"
+	},
+	"bHideExperienceEvents": true,
+	"biome": "Jungle",
+	"biomeGatherableTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "Jundark"
+			}
+		],
+		"parentTags": []
+	},
+	"freeholdEstatesIds": [],
+	"actorEffects": [
+		{
+			"availabilityExpression":
+			{
+				"expression": ""
+			},
+			"areaOfInterestActorEffects": [
+				{
+					"effectRecordId":
+					{
+						"guid": "6064633429899935744",
+						"typeId": "30316002",
+						"name": "None"
+					},
+					"effectClassifications": [
+						"Character"
+					],
+					"effectNodeType": "Default",
+					"effectAlignments": [],
+					"bRequireAllAlignments": true,
+					"bRequireOrgAffiliation": true
+				}
+			]
+		}
+	],
+	"guid": "6064633448024376293",
+	"name": "Verra_JUN_HARBOR_South",
+	"typeId": "9127326"
+}

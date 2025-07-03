@@ -1,0 +1,97 @@
+{
+	"commissionType": "Generic",
+	"commissionGameplayTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "Biome.Riverlands"
+			},
+			{
+				"tagName": "Quest.Commission.Religion"
+			},
+			{
+				"tagName": "Quest.Commission.Tier.T1"
+			},
+			{
+				"tagName": "Quest.Commission.Adventure"
+			}
+		],
+		"parentTags": [
+			{
+				"tagName": "Biome"
+			},
+			{
+				"tagName": "Quest.Commission"
+			},
+			{
+				"tagName": "Quest"
+			},
+			{
+				"tagName": "Quest.Commission.Tier"
+			}
+		]
+	},
+	"preRequisiteQuestsIds": [],
+	"autoFailTimer": -1,
+	"bRepeatable": false,
+	"mainObjectiveType": "Kill",
+	"commissionSection": 1,
+	"biomeOrigin": "FloodPlains",
+	"bFromDynamicContent": false,
+	"availabilityExpression":
+	{
+		"expression": "false"
+	},
+	"bDisabled": true,
+	"level": 5,
+	"commissionRarity": "Rare",
+	"objectivesIds": [
+		{
+			"guid": "6064631663612461135",
+			"typeId": "1091110420",
+			"name": "None"
+		}
+	],
+	"allowMultipleCompletion": false,
+	"commissionName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"86DCD6C4444941B7FC0ACC9544B73815\", \"Purge of the Haunts\")",
+	"flavorText": "NSLOCTEXT(\"\", \"7940DFCE4D503195778D16A0065F5E21\", \"We call to you! Defend the Riverlands from the wicked haunts of this land. Twisted and evil Ashen Haunts have risen from the chaos of the Harbinger Apocalypse. It is the calling of the clerics to all faithful Kaelar to wage war upon these ghosts of the past. Release them from this world! Serve the Seven! - The Church of the Seven Stars\")",
+	"mainObjectiveText": "NSLOCTEXT(\"\", \"3AE0E1294F04029EDCBEDAB7D1C5A23B\", \"Destroy Ashen Haunts in the Riverlands!\")",
+	"rewardTablesIds": [
+		{
+			"guid": "6064631443187695620",
+			"typeId": "1091110040",
+			"name": "None"
+		}
+	],
+	"calloutName": "",
+	"calloutDescription": "",
+	"bCanProgressWhileInRaid": false,
+	"expiration":
+	{
+		"duration": "0"
+	},
+	"cooldown":
+	{
+		"duration": "0"
+	},
+	"moneyCost": "0",
+	"resourceCost": [],
+	"mayoralCompletionCount": 0,
+	"rewardId":
+	{
+		"guid": "0",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"bNodeTargeted": false,
+	"targetRewardId":
+	{
+		"guid": "0",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"questItemListIds": [],
+	"guid": "6064630882543337501",
+	"name": "COM_RVR_Religion_AshenHaunt_Rare",
+	"typeId": "280002"
+}

@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"DCA7E91A4231FCA1A0FBF8B1C7A9D718\", \"[Physically Adept] I think I can break the lock.\")",
+	"nextNodeId":
+	{
+		"guid": "6064630443068817560",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsOnStoryArcQuest(GetPlayer(), \"SAQ_0023_P01_Q03_LostSouls\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(), \"SAQ_0023_P01_Q03_LostSouls\", \"LeodrasFreed\")"
+	},
+	"guid": "6064630443068817555",
+	"name": "DD_0023_LeodrasCaged_3",
+	"typeId": "1091110027"
+}

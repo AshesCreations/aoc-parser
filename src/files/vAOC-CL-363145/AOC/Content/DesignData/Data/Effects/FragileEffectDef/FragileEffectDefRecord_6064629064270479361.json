@@ -1,0 +1,33 @@
+{
+	"effectFragilityType": "FRAGILITY_Proc",
+	"eventBindings":
+	{
+		"hitEvents": 2,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0,
+		"fishingEvents": 0
+	},
+	"evaluationTickFrequency": 0,
+	"shouldBreakEffectImmediately":
+	{
+		"expression": "const HitEvent = GetHitEvent();\r\nGetStatModValue(HitEvent, GetOwner(), $#10516612381411111:108986352686712$) < 0.0 &&\r\nGetHitRecord(HitEvent) != $#30316005:6064631108344616423$ &&\r\nGetHitRecord(HitEvent) != $#30316005:6064631914157113615$\r\n&& GetHitRecord(HitEvent) != $#30316005:6064632695237250097$\r\n//&& GetRecordTypeId(GetHitSourceRecord(GetHitEvent())) != GetReactionTypeId()\r\n//&& GetRecordTypeId(GetHitSourceRecord(GetHitEvent())) != GetEffectTypeId()"
+	},
+	"shouldEvaluateThresholdAccumulation":
+	{
+		"expression": ""
+	},
+	"effectBreakThreshold":
+	{
+		"expression": ""
+	},
+	"effectBreakThresholdAccumulationRate":
+	{
+		"expression": ""
+	},
+	"guid": "6064629064270479361",
+	"name": "InstantBreak",
+	"typeId": "30316112"
+}

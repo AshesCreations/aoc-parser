@@ -1,0 +1,22 @@
+{
+	"choiceText": "",
+	"nextNodeId":
+	{
+		"guid": "6064632513887338518",
+		"typeId": "1091110028",
+		"name": "DD_SQ_0011_HistorianQatakijal_14"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "Player_HasCommission(GetPlayer(), \"SQ_0012_InTranslation\") &&\r\nPlayer_ObjectiveStateEquals(GetPlayer(),\"SQO_0012_InTranslation_ReturnToHistorian\", EObjectiveState::Active)"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064632513886224405",
+	"name": "DD_SQ_0011_HistorianQatakijal_1_Choice_5",
+	"typeId": "1091110027"
+}

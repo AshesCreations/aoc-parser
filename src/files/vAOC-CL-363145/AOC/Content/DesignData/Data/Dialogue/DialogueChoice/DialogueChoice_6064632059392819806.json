@@ -1,0 +1,24 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"4A06FC3B47908D725FC6FBB050AF644A\", \" <Is it truly benign though?>\")",
+	"nextNodeId":
+	{
+		"guid": "6064632059406254688",
+		"typeId": "1091110028",
+		"name": "DD_0100_UnsignedEntryPermit_3"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064632059403567711",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "Player_ObjectiveStateEquals(GetPlayer(), \"NO_0100_13_FTUE_FigureOutSponsorship\", EObjectiveState::Active)"
+	},
+	"choiceType": "Default",
+	"guid": "6064632059392819806",
+	"name": "DD_0100_UnsignedEntryPermit_2_Choice_1",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,67 @@
+{
+	"equationId":
+	{
+		"guid": "6064628769606074368",
+		"typeId": "10516612381411112",
+		"name": "None"
+	},
+	"inputTerms": [
+		{
+			"termId":
+			{
+				"guid": "6064628991072403456",
+				"typeId": "10516612381411115",
+				"name": "None"
+			},
+			"value":
+			{
+				"expression": "const hpDelta = GetStatModEffectiveValue(GetHitEvent(), $#10516612381411111:108986352686712$);\r\nMax(hpDelta, 0.0) * 0.3"
+			},
+			"bOptional": false,
+			"filter":
+			{
+				"expression": ""
+			},
+			"mergeRuleOverride": "Merge_Default"
+		},
+		{
+			"termId":
+			{
+				"guid": "6064628991072403459",
+				"typeId": "10516612381411115",
+				"name": "None"
+			},
+			"value":
+			{
+				"expression": "GetStat(GetInstigator(), $#10516612381411111:109343236642446$)"
+			},
+			"bOptional": false,
+			"filter":
+			{
+				"expression": ""
+			},
+			"mergeRuleOverride": "Merge_Default"
+		},
+		{
+			"termId":
+			{
+				"guid": "6064628991072403458",
+				"typeId": "10516612381411115",
+				"name": "None"
+			},
+			"value":
+			{
+				"expression": "0.0"
+			},
+			"bOptional": false,
+			"filter":
+			{
+				"expression": ""
+			},
+			"mergeRuleOverride": "Merge_Default"
+		}
+	],
+	"guid": "6064628774789840896",
+	"name": "ThreatObserved",
+	"typeId": "10516612381411113"
+}

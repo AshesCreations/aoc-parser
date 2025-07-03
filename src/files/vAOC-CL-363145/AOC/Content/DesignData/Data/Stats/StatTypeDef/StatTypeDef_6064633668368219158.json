@@ -1,0 +1,50 @@
+{
+	"displayName": "NSLOCTEXT(\"[1909495A4C2095068D406C9D33F90055]\", \"2D27B1BB4E2948E40A4F96B30D629807\", \"Essence\")",
+	"description": "",
+	"bHidden": false,
+	"gameplayType": "Type_Combat",
+	"bHasWaterfallStatsUI": false,
+	"waterfallStatsUIIds": [],
+	"bDisplayAsPercentage": false,
+	"statType": "Type_Float",
+	"bClampStatFinalValue": false,
+	"bMultiplyStatMods": false,
+	"bMultiplyCompliment": false,
+	"base":
+	{
+		"expression": "0"
+	},
+	"waterfallStatsBaseIds": [],
+	"valueMin":
+	{
+		"expression": "0"
+	},
+	"waterfallStatsMinIds": [],
+	"valueMax":
+	{
+		"expression": "30"
+	},
+	"waterfallStatsMaxIds": [],
+	"regenRate":
+	{
+		"expression": "SelectInt(GetEffectCountByTag(GetInstigator(), \"pet.summon\") > 0, 1, -100)"
+	},
+	"waterfallStatsRegenIds": [],
+	"bRegenWhileDead": false,
+	"bRecalculateOnCombatState": false,
+	"onSpawn": "Reset_SetMin",
+	"onDeath": "Reset_SetMin",
+	"onRevive": "Reset_SetMin",
+	"bPersistValue": false,
+	"replication": 1,
+	"shieldStatId":
+	{
+		"guid": "0",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"grantedEffects": [],
+	"guid": "6064633668368219158",
+	"name": "Summoner_Essence",
+	"typeId": "10516612381411111"
+}

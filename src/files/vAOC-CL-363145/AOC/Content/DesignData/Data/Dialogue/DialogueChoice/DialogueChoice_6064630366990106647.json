@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"C6FAC7614E3CA0E5A876C381E0A884F3\", \"I found this at a caravan wreck.\")",
+	"nextNodeId":
+	{
+		"guid": "6064630367005638680",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0005A_FGG_ForGreaterGlory\",\"MAP_0005A_FGG_Phase02\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0005A_SNB_InTheShadowsOfNikaBrae\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005A_SNB_InTheShadowsOfNikaBrae\",\"ReturnToEudoxia\")"
+	},
+	"guid": "6064630366990106647",
+	"name": "MADD_0005A_BDA_EudoxiaAvenmoor_Phase02_14",
+	"typeId": "1091110027"
+}

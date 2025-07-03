@@ -1,0 +1,23 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"B6A0F7934A594A9CA3EFA38B8D10F10A\", \"(Search for a key.)\")",
+	"nextNodeId":
+	{
+		"guid": "6064629891488284677",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064628821369618523",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0007_PriestessAndThePiper\",\"MAP_0007_PriestessAndThePiper_Phase01\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0007_BAL_BeggarAndLocks\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_BAL_BeggarAndLocks\",\"GotCaptainsKey\")"
+	},
+	"guid": "6064629891486711812",
+	"name": "MADD_0007_BAL_DrunkCaptain_3",
+	"typeId": "1091110027"
+}

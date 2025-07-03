@@ -1,0 +1,72 @@
+{
+	"completionResponsesIds": [
+		{
+			"guid": "6064631091272351769",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064631085377257487",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"channelDuration": 0,
+	"activePredicate":
+	{
+		"expression": "Player_ObjectiveStateEquals(GetPlayer(),\"NarrativeObjective_TID_RVR_Delivery_FlameAndFormula_Objective\", EObjectiveState::Active)\r\n||\r\nPlayer_ObjectiveStateEquals(GetPlayer(),\"NarrativeObjective_TID_RVR_Delivery_FlameAndFormula_Objective\", EObjectiveState::Complete)"
+	},
+	"cuePredicate":
+	{
+		"expression": ""
+	},
+	"visiblePredicate":
+	{
+		"expression": ""
+	},
+	"showErrorIfNotVisible": false,
+	"deleteOnCompletion": false,
+	"singleUse": false,
+	"alwaysShowUIPrompt": true,
+	"cancelChannelIfActivePredicateEverFails": true,
+	"channelModifierType": "NONE",
+	"rewardTableId":
+	{
+		"guid": "0",
+		"typeId": "1091110008",
+		"name": "None"
+	},
+	"startEffect": "None",
+	"endEffect": "None",
+	"failEffect": "None",
+	"successEffect": "/Game/Effects/FX_Environment/Nodes/Particles/FX_Dust_Cloud.FX_Dust_Cloud",
+	"cueEffect": "None",
+	"startSound": "None",
+	"endSound": "None",
+	"failSound": "None",
+	"successSound": "None",
+	"cueSound": "None",
+	"interactAnimTag": "None",
+	"deletionDelay": 0,
+	"activeCueEnabled": true,
+	"activeCueIgnoresActivePredicate": false,
+	"facePlayer": false,
+	"allowInCombat": true,
+	"spawnAtBottomCapsule": false,
+	"channelAnimation": "/Game/Characters/Animations/00_EMO/All_EMO_M_Pickup01_Montage.All_EMO_M_Pickup01_Montage",
+	"interactRadius": 200,
+	"interactTolerance": 30,
+	"busyTime": 0.89999997615814209,
+	"clientBusyTime": 1,
+	"channelStartResponseIds": [],
+	"failResponsesIds": [],
+	"gatheringInteractionDataId":
+	{
+		"guid": "0",
+		"typeId": "19846",
+		"name": "None"
+	},
+	"guid": "6064631085404520470",
+	"name": "CSQ_PID_OBJ_CaravanDeliveries_RVR_FlameAndFormula",
+	"typeId": "1091110031"
+}

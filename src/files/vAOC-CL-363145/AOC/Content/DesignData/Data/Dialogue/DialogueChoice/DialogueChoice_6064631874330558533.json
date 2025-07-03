@@ -1,0 +1,18 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"68E9F5E542B9D0AD019E79AD8B66B0B7\", \"Need Quest\")",
+	"nextNodeId":
+	{
+		"guid": "6064631874331082822",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "!Player_HasCommission(GetPlayer(),\"CSQ_RVR_0081_FB_ForsakenDefiance\") &&\r\n!Player_HasCompletedCommission(GetPlayer(),\"CSQ_RVR_0081_FB_ForsakenDefiance\")"
+	},
+	"choiceType": "Default",
+	"guid": "6064631874330558533",
+	"name": "CSQ_RVR_0081_FB_Barricade_DLG_11",
+	"typeId": "1091110027"
+}

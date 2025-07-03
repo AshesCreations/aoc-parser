@@ -1,0 +1,23 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"0568D37842398F305BDF14BC911B10DE\", \"(Cert Turn In Ready)\")",
+	"nextNodeId":
+	{
+		"guid": "6064630554466254849",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064630554516914179",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "IsOnStoryArcQuest(GetPlayer(), \"START_ME_Lumberjacking\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(), \"START_ME_Lumberjacking\", \"Level10TurnedIn\")&&\r\nGetPlayerProfessionLevel(GetPlayer(), \"Lumberjack\") >= 10"
+	},
+	"guid": "6064630554091388994",
+	"name": "ServiceBuildingNPC_Woodshop_Base_Interaction_11",
+	"typeId": "1091110027"
+}

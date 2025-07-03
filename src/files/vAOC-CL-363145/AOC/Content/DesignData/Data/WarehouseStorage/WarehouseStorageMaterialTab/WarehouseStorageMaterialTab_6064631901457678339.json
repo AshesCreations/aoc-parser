@@ -1,0 +1,31 @@
+{
+	"storageType": "General",
+	"bIsMemberStorage": true,
+	"isSpecializable": true,
+	"availabilityRequirementsDescription": "NSLOCTEXT(\"[025B865A037C5F7CDCD76C20FC8D50B1]\", \"9299E8E8434156DA9DEBFC9B6A739496\", \"Level 6 item storage increase for citizens\")",
+	"availabilityRequirements":
+	{
+		"expression": "Node_IsActorInNodeName(GetPlayer(), Node_GetActorCityNode(GetPlayer()))\r\n&&\r\nNode_IsPlayerCitizenOfNode(GetPlayer(), GetCurrentNode(GetPlayer()))\r\n&&\r\nEnumInt(Node_GetLevel(GetCurrentNode(GetPlayer()))) >= EnumInt(ENodeLevel::Metropolis)"
+	},
+	"tabCosts": [
+		{
+			"currencyDefId":
+			{
+				"guid": "6064628901272551424",
+				"typeId": "1011151289",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "15"
+			},
+			"costMultiplier":
+			{
+				"expression": "1"
+			}
+		}
+	],
+	"guid": "6064631901457678339",
+	"name": "WarehouseStorageMaterialTab_Level6_Citizen",
+	"typeId": "8675309005"
+}

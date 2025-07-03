@@ -1,0 +1,28 @@
+{
+	"choiceText": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"09AEA2BC47D8AE4D720E2A948DE455CF\", \"[Insert the Molten Crystal]\")",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064633295533506575",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "//Check for these items if they have it AND the relic is available\r\n//please give them the relic\r\n\r\nPlayer_HasItem(GetPlayer(),\"Relic_Epic_Befallen_Anvil_key\") \r\n&&\r\nRelic_GetRelicInstancesAvailable($#7823459:6064633227403460610$) > 0"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064633295514763276",
+	"name": "Relic_Acquisition_Epic_Befallen_Anvil_1_Choice_1",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,66 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"587DDF4A4389C1B0543A94A0AFE97224\", \"Greyshore Starchart\")",
+	"nextNodeId":
+	{
+		"guid": "6064631363154149394",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "GetCharacterLevel(GetPlayer()) >= 10"
+	},
+	"requirements": [
+		{
+			"criteria": [
+				{
+					"elementType": "Quest",
+					"narrativeType": "Commission",
+					"commissionId":
+					{
+						"guid": "6064631364071391342",
+						"typeId": "280002",
+						"name": "None"
+					},
+					"storyArcQuestId":
+					{
+						"guid": "0",
+						"typeId": "1091110035",
+						"name": "None"
+					},
+					"objectiveId":
+					{
+						"guid": "0",
+						"typeId": "1091110420",
+						"name": "None"
+					},
+					"itemFilterId":
+					{
+						"guid": "0",
+						"typeId": "1091110041",
+						"name": "None"
+					},
+					"currencyDefId":
+					{
+						"guid": "0",
+						"typeId": "1011151289",
+						"name": "None"
+					},
+					"amountToQuery": 0,
+					"questState": "InProgress",
+					"objectiveState": "Active",
+					"itemState": "InInventory",
+					"invert": true
+				}
+			]
+		}
+	],
+	"choiceType": "Default",
+	"guid": "6064631363153100817",
+	"name": "CSQ_DD_PlunderList_Aela_15",
+	"typeId": "1091110027"
+}

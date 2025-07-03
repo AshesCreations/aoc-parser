@@ -1,0 +1,185 @@
+{
+	"eventName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"FD32BA7B4540BFB22B843E9946E5ABD3\", \"Mushroom River\")",
+	"gameplayTags":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"activationPredicatesIds": [
+		{
+			"guid": "6064633413213618176",
+			"typeId": "23095129",
+			"name": "None"
+		}
+	],
+	"minChallengeRating": 0,
+	"maxChallengeRating": 30,
+	"eventLevel": 9,
+	"eventType": 32,
+	"locationId":
+	{
+		"guid": "6064633412624384001",
+		"typeId": "5127371160",
+		"name": "None"
+	},
+	"desiredTimeSlot": "0001.01.01-00.00.00",
+	"frequency": 24,
+	"priority": 1,
+	"rewardTableId":
+	{
+		"guid": "6064631443187433475",
+		"typeId": "1091110040",
+		"name": "None"
+	},
+	"rewardPopulationSetId":
+	{
+		"guid": "6064631868244885527",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"startStageId":
+	{
+		"guid": "6064633412624384002",
+		"typeId": "23095131",
+		"name": "None"
+	},
+	"stagesIds": [
+		{
+			"guid": "6064633412624384002",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064633412624384008",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064633412624384011",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064633412624384016",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064633412624384025",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064633412624384026",
+			"typeId": "23095131",
+			"name": "None"
+		}
+	],
+	"interactVolumesIds": [],
+	"alignmentsIds": [],
+	"mapDisplayType": "Biome",
+	"mapEventIcon": "/Game/UI/Icons/Map/TUI_Icon_Map_Event_Active.TUI_Icon_Map_Event_Active",
+	"bDisplayOnTracker": true,
+	"notificationRadius": 12000,
+	"mapRadiusMinumum": 2500,
+	"cooldownTimer": 3600,
+	"bDisabled": false,
+	"maxInstanceCount": 1,
+	"requiredMapName": "Verra_World_Master",
+	"comments": [
+		{
+			"commentGuid": "6064629647305277741",
+			"comment": "Wait for BasePop to die then spawn and announce",
+			"location":
+			{
+				"x": -1649.6218249266526,
+				"y": -1075.1406537612145,
+				"z": 0
+			},
+			"size":
+			{
+				"x": 1089.1110609769821,
+				"y": 298.22221046686172,
+				"z": 0
+			},
+			"color":
+			{
+				"r": 0.5,
+				"g": 0.5,
+				"b": 0.5,
+				"a": 0.5
+			}
+		},
+		{
+			"commentGuid": "6064629647324414254",
+			"comment": "Spawner should be live now - if no participants, begin count",
+			"location":
+			{
+				"x": -1652.8328781168332,
+				"y": 803.64218479293902,
+				"z": 0
+			},
+			"size":
+			{
+				"x": 736.30302441120148,
+				"y": 168.60606056451797,
+				"z": 0
+			},
+			"color":
+			{
+				"r": 0.5,
+				"g": 0.5,
+				"b": 0.5,
+				"a": 0.5
+			}
+		},
+		{
+			"commentGuid": "6064629647327232303",
+			"comment": "Sleep 600 seconds and reset",
+			"location":
+			{
+				"x": 989.60463900807906,
+				"y": -417.00831573979713,
+				"z": 0
+			},
+			"size":
+			{
+				"x": 795.45459520816803,
+				"y": 395.32471179962158,
+				"z": 0
+			},
+			"color":
+			{
+				"r": 0.5,
+				"g": 0.5,
+				"b": 0.5,
+				"a": 0.5
+			}
+		}
+	],
+	"bIsTemplate": false,
+	"flowNodes": [
+		{
+			"flowType": "EventEntry",
+			"graphLocation":
+			{
+				"x": -1981.9551558012956,
+				"y": -836.91421202635354
+			},
+			"id": 0
+		},
+		{
+			"flowType": "EventExit",
+			"graphLocation":
+			{
+				"x": 2316.9498247588358,
+				"y": 984.55973753307705
+			},
+			"id": 1
+		}
+	],
+	"bSkipCrashRecovery": false,
+	"guid": "6064633412624384000",
+	"name": "EVT_RVR_PopUp_NewMushroomRiver",
+	"typeId": "23095125"
+}

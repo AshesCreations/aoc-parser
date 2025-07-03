@@ -1,0 +1,127 @@
+{
+	"questsIds": [
+		{
+			"guid": "6064629444041703426",
+			"typeId": "1091110035",
+			"name": "None"
+		}
+	],
+	"activePopulationSetsIds": [
+		{
+			"guid": "6064630270761781407",
+			"typeId": "5111005",
+			"name": "None"
+		},
+		{
+			"guid": "6064630270761780069",
+			"typeId": "5111005",
+			"name": "None"
+		}
+	],
+	"phaseSpawnLocationsIds": [
+		{
+			"guid": "6064630445775192371",
+			"typeId": "1091110237",
+			"name": "None"
+		},
+		{
+			"guid": "6064630445775192372",
+			"typeId": "1091110237",
+			"name": "None"
+		}
+	],
+	"spawnLocationsIds": [
+		{
+			"guid": "6064631091671793842",
+			"typeId": "5127371160",
+			"name": "None"
+		},
+		{
+			"guid": "6064631091671793843",
+			"typeId": "5127371160",
+			"name": "None"
+		}
+	],
+	"interactVolumesIds": [],
+	"cannonizeOnEarlyTermination": false,
+	"cannonizeOnNormalAdvancement": false,
+	"phaseName": "NSLOCTEXT(\"\", \"7655E1764CF7352B791C09801520CF84\", \"Purge of Oakenbane\")",
+	"transitionsIds": [
+		{
+			"guid": "6064629325771374624",
+			"typeId": "1091110034",
+			"name": "None"
+		}
+	],
+	"advancePhaseByTime": true,
+	"advancementTime": 1800,
+	"canAdvance":
+	{
+		"expression": "GetStoryArcInstanceVariable(\"MA_0019b_Oakenbane_PurgeofOakenbane\",\"RitualConfound\") >= 1.0"
+	},
+	"timeAdvancePhaseId":
+	{
+		"guid": "6064629325771374624",
+		"typeId": "1091110034",
+		"name": "None"
+	},
+	"leaveSequenceId":
+	{
+		"guid": "0",
+		"typeId": "1091110043",
+		"name": "None"
+	},
+	"leaveSequenceWorldTransform":
+	{
+		"rotation":
+		{
+			"x": 0,
+			"y": 0,
+			"z": 0,
+			"w": 1
+		},
+		"translation":
+		{
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"scale3D":
+		{
+			"x": 1,
+			"y": 1,
+			"z": 1
+		}
+	},
+	"enterSequenceId":
+	{
+		"guid": "0",
+		"typeId": "1091110043",
+		"name": "None"
+	},
+	"enterSequenceWorldTransform":
+	{
+		"rotation":
+		{
+			"x": 0,
+			"y": 0,
+			"z": 0,
+			"w": 1
+		},
+		"translation":
+		{
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"scale3D":
+		{
+			"x": 1,
+			"y": 1,
+			"z": 1
+		}
+	},
+	"guid": "6064629325753090079",
+	"name": "SAP_0019b_Oakenbane_2",
+	"typeId": "1091110034"
+}

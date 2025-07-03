@@ -1,0 +1,240 @@
+{
+	"displayName": "NSLOCTEXT(\"\", \"9A5D3F2D433E889AB918DD8F193EDDD7\", \"Mine - Lumadon\")",
+	"spawnTags":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"surveyingTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "artisanship.gathering.mining"
+			}
+		],
+		"parentTags": [
+			{
+				"tagName": "artisanship.gathering"
+			},
+			{
+				"tagName": "artisanship"
+			}
+		]
+	},
+	"bBlockPawn": true,
+	"bBlockCamera": true,
+	"staticMeshState": "/Game/ENV/Gatherables/Gems/Lumadon/SM_Gatherables_Lumadon_Medium.SM_Gatherables_Lumadon_Medium",
+	"collisionRadius": 50,
+	"overrideInteractionDistance": 150,
+	"overrideInteractionAngle": 70,
+	"lifecycleDuration": 10,
+	"dynamicLifecycleDefId":
+	{
+		"guid": "0",
+		"typeId": "1991555",
+		"name": "None"
+	},
+	"bShouldTransitionScale": false,
+	"startingScalePercentage": 1,
+	"scaleLerpSpeed": 1,
+	"bRuntimeMesh": false,
+	"skeletalMeshState": "None",
+	"meshLifetimeDuration": 10,
+	"bMeshFade": true,
+	"meshDurationBeforeFade": 6,
+	"fadeScalarName": "Object Fade Amount",
+	"meshFadeDuration": 3,
+	"bFractureStaticMesh": true,
+	"fracturedMesh": "/Game/Effects/FX_Harvestables/Mining/UnrealChaos/Collections/Lumadon_Medium_01_GeometryCollection.Lumadon_Medium_01_GeometryCollection",
+	"fractureSupportMesh": "/Game/Effects/FX_Harvestables/Mining/UnrealChaos/SM_Lumadon_Medium_01_Staticbase.SM_Lumadon_Medium_01_Staticbase",
+	"fractureAngularDamping": 0,
+	"fractureLinearDamping": 0.30000001192092896,
+	"fractureInertiaTensorScale":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"maxClusterLevel": 100,
+	"bApplyRadialImpulse": true,
+	"radialImpulseOffset":
+	{
+		"x": 0,
+		"y": 0,
+		"z": -50
+	},
+	"radialImpulseRadius": 100,
+	"radialImpulseForce": 300000,
+	"bSimulatePhysics": true,
+	"bBreakBoneConstraint": false,
+	"impulseForce": 0,
+	"impulseBoneName": "None",
+	"impulseDirection": 0,
+	"disablePhysicsDuration": -1,
+	"bCalculateFadeAfterDisabledPhysics": true,
+	"bCalculateFadeAfterImpact": false,
+	"targetImpactMainBodyAngularDamping": 0,
+	"targetImpactMainBodyLinearDamping": 0.0099999997764825821,
+	"targetImpactMainBodyDuration": 2,
+	"targetImpactSecondaryBodyAngularDamping": 0,
+	"targetImpactSecondaryBodyLinearDamping": 0.0099999997764825821,
+	"targetImpactSecondaryBodyDuration": 2,
+	"skeletalMeshGatheredAnimation": "None",
+	"skeletalMeshGatheringEventAnimation": "None",
+	"foliageInteractionsIds": [
+		{
+			"guid": "6064629680947855372",
+			"typeId": "19846",
+			"name": "None"
+		}
+	],
+	"akAudioEvents": [],
+	"foliageAkAudioWeightedEvents": [],
+	"akSwitches": [
+		"/Game/WwiseAudio/Switches/GameSwitches/Professions/Mining/Mining-Gemstone.Mining-Gemstone"
+	],
+	"akAudioOffset":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"akRTPCId":
+	{
+		"guid": "0",
+		"typeId": "919000",
+		"name": "None"
+	},
+	"akGatheringEvent": "/Game/WwiseAudio/Events/Main/Professions/Gathering/PROF_Mining_Impact.PROF_Mining_Impact",
+	"akGatheredEvent": "/Game/WwiseAudio/Events/Main/Professions/Gathering/PROF_Mining_Crumble.PROF_Mining_Crumble",
+	"akImpactEvent": "None",
+	"foliageMaxHitCount": 150,
+	"foliageMaxVelocity": 1000,
+	"stateTransitionFX": [],
+	"gatheringFX": [],
+	"gatheredFX": [
+		{
+			"enabled":
+			{
+				"expression": ""
+			},
+			"niagaraSystemSoft": "/Game/Effects/FX_Harvestables/Mining/Particles/NS_HarvestOreStone_Lumadon_small_01.NS_HarvestOreStone_Lumadon_small_01",
+			"lifeTime": 0,
+			"bCastVolumetricTranslucentShadow": false,
+			"attachType": "AttachedTarget",
+			"originMesh": "Character",
+			"attachSocketName": "None",
+			"bUseAttachSocketForOriginLocation": true,
+			"bUseAttachSocketForOriginOrientation": true,
+			"transform":
+			{
+				"originLocation": "Target",
+				"originLocationSocket": "None",
+				"originOrientation": "Target",
+				"originOrientationSocket": "None",
+				"originScale": "World",
+				"bUseRelativeLocationExpression": false,
+				"relativeLocation":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"relativeLocationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeRotationExpression": false,
+				"relativeRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"relativeRotationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeScaleExpression": false,
+				"relativeScale":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				},
+				"relativeScaleExpression":
+				{
+					"expression": ""
+				}
+			},
+			"bVisibleToSceneCaptureOnly": false,
+			"bAllowScalability": true,
+			"bUseLocalRemoteDynamicSystem": false
+		}
+	],
+	"impactFX": [],
+	"destroyedFX": [
+		{
+			"enabled":
+			{
+				"expression": ""
+			},
+			"niagaraSystemSoft": "/Game/Effects/FX_Harvestables/Mining/Particles/FX_Mine_Ore_Break.FX_Mine_Ore_Break",
+			"lifeTime": 0,
+			"bCastVolumetricTranslucentShadow": false,
+			"attachType": "AttachedTarget",
+			"originMesh": "Character",
+			"attachSocketName": "None",
+			"bUseAttachSocketForOriginLocation": true,
+			"bUseAttachSocketForOriginOrientation": true,
+			"transform":
+			{
+				"originLocation": "Target",
+				"originLocationSocket": "None",
+				"originOrientation": "Target",
+				"originOrientationSocket": "None",
+				"originScale": "World",
+				"bUseRelativeLocationExpression": false,
+				"relativeLocation":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"relativeLocationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeRotationExpression": false,
+				"relativeRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"relativeRotationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeScaleExpression": false,
+				"relativeScale":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				},
+				"relativeScaleExpression":
+				{
+					"expression": ""
+				}
+			},
+			"bVisibleToSceneCaptureOnly": false,
+			"bAllowScalability": true,
+			"bUseLocalRemoteDynamicSystem": false
+		}
+	],
+	"niagaraParams": [],
+	"guid": "6064629680982982672",
+	"name": "Gem_Lumadon_Medium_1",
+	"typeId": "19836"
+}

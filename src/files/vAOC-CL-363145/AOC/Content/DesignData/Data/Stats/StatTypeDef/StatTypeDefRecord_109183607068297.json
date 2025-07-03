@@ -1,0 +1,55 @@
+{
+	"displayName": "NSLOCTEXT(\"\", \"DC85F9E449267A5E04AC61B57F4C8992\", \"Magical Power Rating\")",
+	"description": "NSLOCTEXT(\"\", \"045C967848A68C31F3F5ABA833D9051C\", \"Increases the amount of magical damage and healing done\")",
+	"bHidden": false,
+	"gameplayType": "Type_Combat",
+	"bHasWaterfallStatsUI": false,
+	"waterfallStatsUIIds": [],
+	"bDisplayAsPercentage": false,
+	"statType": "Type_Float",
+	"bClampStatFinalValue": false,
+	"bMultiplyStatMods": false,
+	"bMultiplyCompliment": false,
+	"base":
+	{
+		"expression": "GetStat(GetInstigator(), $#10516612381411111:109183598614141$)\r\n* EvalFormula($#10516612381411113:6064631902560911387$)"
+	},
+	"waterfallStatsBaseIds": [
+		{
+			"guid": "109183598614141",
+			"typeId": "10516612381411111",
+			"name": "None"
+		}
+	],
+	"valueMin":
+	{
+		"expression": "0"
+	},
+	"waterfallStatsMinIds": [],
+	"valueMax":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMaxIds": [],
+	"regenRate":
+	{
+		"expression": ""
+	},
+	"waterfallStatsRegenIds": [],
+	"bRegenWhileDead": false,
+	"onSpawn": "Reset_None",
+	"onDeath": "Reset_None",
+	"onRevive": "Reset_None",
+	"bPersistValue": false,
+	"replication": 1,
+	"shieldStatId":
+	{
+		"guid": "0",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"grantedEffects": [],
+	"guid": "109183607068297",
+	"name": "MagicalPowerRating",
+	"typeId": "10516612381411111"
+}

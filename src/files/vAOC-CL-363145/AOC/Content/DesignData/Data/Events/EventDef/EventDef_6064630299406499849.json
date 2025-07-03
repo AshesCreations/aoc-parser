@@ -1,0 +1,124 @@
+{
+	"eventName": "NSLOCTEXT(\"\", \"8FDF25B54094CEB52A4EA8A6CC80EADE\", \"Perilous Roads\")",
+	"gameplayTags":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"activationPredicatesIds": [
+		{
+			"guid": "6064630299406499860",
+			"typeId": "23095129",
+			"name": "None"
+		}
+	],
+	"minChallengeRating": 0,
+	"maxChallengeRating": 30,
+	"eventType": 1,
+	"locationId":
+	{
+		"guid": "6064631561688711197",
+		"typeId": "5127371160",
+		"name": "None"
+	},
+	"desiredTimeSlot": "0001.01.01-00.00.00",
+	"frequency": 24,
+	"priority": 1,
+	"rewardTableId":
+	{
+		"guid": "6064631430955597824",
+		"typeId": "1091110040",
+		"name": "None"
+	},
+	"rewardPopulationSetId":
+	{
+		"guid": "6064630339293872129",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"startStageId":
+	{
+		"guid": "6064631765522644997",
+		"typeId": "23095131",
+		"name": "None"
+	},
+	"stagesIds": [
+		{
+			"guid": "6064631765522644997",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064630299406499850",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064630355293242584",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064630299406499853",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064630299406499854",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064630299406499873",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064630299406499852",
+			"typeId": "23095131",
+			"name": "None"
+		}
+	],
+	"interactVolumesIds": [],
+	"alignmentsIds": [
+		{
+			"guid": "6064629443694362626",
+			"typeId": "512160700",
+			"name": "None"
+		}
+	],
+	"mapDisplayType": "Biome",
+	"mapEventIcon": "/Game/UI/Widgets/Narrative/Textures/TUI_Icon_Event_PvETracker.TUI_Icon_Event_PvETracker",
+	"bDisplayOnTracker": true,
+	"notificationRadius": 15000,
+	"mapRadiusMinumum": 1000,
+	"cooldownTimer": 600,
+	"bDisabled": true,
+	"maxInstanceCount": 1,
+	"requiredMapName": "Verra_World_Master",
+	"comments": [],
+	"bIsTemplate": false,
+	"flowNodes": [
+		{
+			"flowType": "EventEntry",
+			"graphLocation":
+			{
+				"x": -1685.50619686849,
+				"y": 678.50900148357812
+			},
+			"id": 0
+		},
+		{
+			"flowType": "EventExit",
+			"graphLocation":
+			{
+				"x": 3666.302903571876,
+				"y": 1344.3332781425954
+			},
+			"id": 1
+		}
+	],
+	"guid": "6064630299406499849",
+	"name": "Event_LS_Oct_Robinhood",
+	"typeId": "23095125"
+}

@@ -1,0 +1,18 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"A9F935554DEE11E0CF6F6F945384E3C1\", \"<Pin>\")",
+	"nextNodeId":
+	{
+		"guid": "6064631924876509900",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "Player_ObjectiveStateEquals(GetPlayer(),\"CSQ_RVR_0083_FB_FlowersAlongATrail_UnlockBracer_OBJ\",EObjectiveState::Active) &&\r\n!Player_ObjectiveStateEquals(GetPlayer(),\"CSQ_RVR_0083_FB_FlowersAlongATrail_Bracer_Slot1_OBJ\",EObjectiveState::Complete)"
+	},
+	"choiceType": "Default",
+	"guid": "6064631924658668129",
+	"name": "CSQ_0083_FB_Bracer_DLG_19",
+	"typeId": "1091110027"
+}

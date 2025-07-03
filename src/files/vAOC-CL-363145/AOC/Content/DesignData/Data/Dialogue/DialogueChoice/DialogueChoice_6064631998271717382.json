@@ -1,0 +1,33 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"0E8E079C4A314AFEA76575A9A16E7C31\", \"Whipe away the dirt.\")",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064631998242095107",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064631998347018251",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "Player_ObjectiveStateEquals(GetPlayer(),\"CSQ_NOB_0016_GTF_ExamineGrave\", EObjectiveState::Active)"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064631998271717382",
+	"name": "LADD_0001_WIB_LonelyGrave_6_Choice_1",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,18 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"9A3CC9714F9FF6601C3331A113040EDE\", \"Not Has Quest 1\")",
+	"nextNodeId":
+	{
+		"guid": "6064631702896640014",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "!Player_HasCommission(GetPlayer(),\"CSQ_0023_FoulPresence\") &&\r\n!Player_HasCompletedCommission(GetPlayer(),\"CSQ_0023_FoulPresence\")"
+	},
+	"choiceType": "Default",
+	"guid": "6064631703690084358",
+	"name": "CSQ_0023_FoulPresence_LouieDillard_41",
+	"typeId": "1091110027"
+}

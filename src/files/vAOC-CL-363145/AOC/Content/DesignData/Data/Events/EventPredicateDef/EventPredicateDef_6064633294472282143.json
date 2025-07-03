@@ -1,0 +1,26 @@
+{
+	"expression":
+	{
+		"expression": "(Event_GetNumParticipants() == 0) && Event_GetStageTimer() > 300."
+	},
+	"maxActivationCount": 1,
+	"bRequiresRegressionToLoop": true,
+	"objectivesIds": [],
+	"triggersIds": [
+		{
+			"guid": "6064633294472282144",
+			"typeId": "23095135",
+			"name": "None"
+		}
+	],
+	"flowEditorNodeLocation":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"routePins": [],
+	"guid": "6064633294472282143",
+	"name": "EVT_TUR_0004_UnseenHand_Wave1_Fail",
+	"typeId": "23095129"
+}

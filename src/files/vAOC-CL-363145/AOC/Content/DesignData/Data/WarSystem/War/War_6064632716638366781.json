@@ -1,0 +1,97 @@
+{
+	"displayName": "NSLOCTEXT(\"[025B865A037C5F7CDCD76C20FC8D50B1]\", \"E028AE6D42A647459A826CA000CC006A\", \"Siege\")",
+	"warToastId":
+	{
+		"guid": "6064632734084366336",
+		"typeId": "949952112328",
+		"name": "None"
+	},
+	"victoryConditionText": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"1E84037D44138ADA6F9990A83A101467\", \"Attackers must channel the banner to win. Defenders must hold off the attackers to win.\")",
+	"unlockRequirement":
+	{
+		"expression": ""
+	},
+	"warType": 4,
+	"warPhasesIds": [
+		{
+			"guid": "6064632717149235446",
+			"typeId": "98966980",
+			"name": "None"
+		}
+	],
+	"victoryPointTableId":
+	{
+		"guid": "6064632717145237749",
+		"typeId": "98966982",
+		"name": "None"
+	},
+	"warLocaleSelectionType": "TargetNodeLocaleRequest",
+	"bTargetNodeLocaleRequestFirst": false,
+	"localeRequestId":
+	{
+		"guid": "0",
+		"typeId": "23095138",
+		"name": "None"
+	},
+	"customLocaleSelectionPerPhase": [],
+	"warCompletionRewardsIds": [
+		{
+			"guid": "6064632898838003715",
+			"typeId": "98966983",
+			"name": "None"
+		}
+	],
+	"cooldownDurationSeconds": 259200,
+	"applyCooldownTo": "Target",
+	"waveRespawnInterval":
+	{
+		"duration": "45000"
+	},
+	"resurrectAddTimeThreshold": 5000,
+	"resurrectExtraAcceptTime": 5000,
+	"startingGameplayTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "War.Siege.States.SiegeDeclared"
+			}
+		],
+		"parentTags": [
+			{
+				"tagName": "War.Siege.States"
+			},
+			{
+				"tagName": "War.Siege"
+			},
+			{
+				"tagName": "War"
+			}
+		]
+	},
+	"endingGameplayTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "War.Siege.States.SiegeInactive"
+			}
+		],
+		"parentTags": [
+			{
+				"tagName": "War.Siege.States"
+			},
+			{
+				"tagName": "War.Siege"
+			},
+			{
+				"tagName": "War"
+			}
+		]
+	},
+	"parentGameplayTag":
+	{
+		"tagName": "War.Siege"
+	},
+	"guid": "6064632716638366781",
+	"name": "Node_Siege",
+	"typeId": "98966981"
+}

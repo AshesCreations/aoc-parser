@@ -1,0 +1,24 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"B4E5E4F748337A0CDBD5A48E920EFD8C\", \"(Find the Tower Guard Payroll)\")",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064631364202397818",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "!Player_HasCompletedCommission(GetPlayer(),\"CSQ_RVR_Plunder_0057_TGP_TowerGuardPayroll\")"
+	},
+	"choiceType": "Default",
+	"guid": "6064631363149037584",
+	"name": "CSQ_DD_PlunderList_Aela_14",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,27 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 6,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "GetStat(GetOwner(), $#10516612381411111:6064629429438907308$) <= 0.99"
+	},
+	"bEvaluateApplyingHit": false,
+	"instigator": "Owner",
+	"targetsBitmask": 1,
+	"reactHitsIds": [
+		{
+			"guid": "6064628594222170118",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"guid": "6064628595338969093",
+	"name": "Tank_Grit_Remove",
+	"typeId": "3031600202"
+}

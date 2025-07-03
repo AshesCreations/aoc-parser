@@ -1,0 +1,22 @@
+{
+	"statRefId":
+	{
+		"guid": "6064629069966082048",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"value":
+	{
+		"expression": "var percentage = GetHealthPercentage(GetInstigator());\r\n\r\nMax(percentage, 0.5) * GetStat(GetInstigator(), $#10516612381411111:108986356618873$)"
+	},
+	"bUseShieldAbsorb": false,
+	"shieldAbsorbPercentage":
+	{
+		"expression": ""
+	},
+	"bShowFloatingText": true,
+	"valueInputTerms": [],
+	"guid": "6064633725283467282",
+	"name": "Wraith_Possess_TempHealth",
+	"typeId": "3031600201"
+}

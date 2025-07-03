@@ -1,0 +1,24 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"9AB6DDB04F6CB39F3191C597C3A5791C\", \"(Go Treasure Hunting!)\")",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064631079912669189",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "!Player_HasCompletedCommission(GetPlayer(),\"CSQ_RVR_TH_0012_TPK_ThePrecariousKeep\")&&\r\n!Player_HasCommission(GetPlayer(),\"CSQ_RVR_TH_0012_TPK_ThePrecariousKeep\")&&\r\nPlayer_HasItem(GetPlayer(),\"CSQ_0012_TreasureMap_KyronDun\")"
+	},
+	"choiceType": "Default",
+	"guid": "6064631080027488281",
+	"name": "CSQ_DD_0012_TMap_KyronDun_4",
+	"typeId": "1091110027"
+}

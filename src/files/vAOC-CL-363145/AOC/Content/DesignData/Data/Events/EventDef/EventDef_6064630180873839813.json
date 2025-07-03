@@ -1,0 +1,165 @@
+{
+	"eventName": "NSLOCTEXT(\"\", \"819A963A426930AB1DDC91A53FCC4F2F\", \"Hunter\\'s Mark\")",
+	"gameplayTags":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"activationPredicatesIds": [
+		{
+			"guid": "6064630180873839824",
+			"typeId": "23095129",
+			"name": "None"
+		}
+	],
+	"minChallengeRating": 0,
+	"maxChallengeRating": 30,
+	"eventType": 1,
+	"locationId":
+	{
+		"guid": "6064631561688711191",
+		"typeId": "5127371160",
+		"name": "None"
+	},
+	"desiredTimeSlot": "0001.01.01-00.00.00",
+	"frequency": 24,
+	"priority": 1,
+	"rewardTableId":
+	{
+		"guid": "6064630814695620898",
+		"typeId": "1091110040",
+		"name": "None"
+	},
+	"rewardPopulationSetId":
+	{
+		"guid": "6064630452013897909",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"startStageId":
+	{
+		"guid": "6064630180873839814",
+		"typeId": "23095131",
+		"name": "None"
+	},
+	"stagesIds": [
+		{
+			"guid": "6064630180873839814",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064630197216609320",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064630180873839815",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064630180873839817",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064630180873839818",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064630180873839835",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064630180873839816",
+			"typeId": "23095131",
+			"name": "None"
+		}
+	],
+	"interactVolumesIds": [],
+	"alignmentsIds": [],
+	"mapDisplayType": "Biome",
+	"mapEventIcon": "/Game/UI/Widgets/Narrative/Textures/TUI_Icon_Event_PvETracker.TUI_Icon_Event_PvETracker",
+	"bDisplayOnTracker": true,
+	"notificationRadius": 15000,
+	"mapRadiusMinumum": 1000,
+	"cooldownTimer": 600,
+	"bDisabled": true,
+	"maxInstanceCount": 1,
+	"requiredMapName": "Verra_World_Master",
+	"comments": [
+		{
+			"commentGuid": "6064630594494136638",
+			"comment": "If any one of the goblins are killed the event triggers",
+			"location":
+			{
+				"x": -778.01761563795162,
+				"y": 56.780830636908085,
+				"z": 0
+			},
+			"size":
+			{
+				"x": 2289.0642926692963,
+				"y": 592.11570382118225,
+				"z": 0
+			},
+			"color":
+			{
+				"r": 0.5,
+				"g": 0.5,
+				"b": 0.5,
+				"a": 0.5
+			}
+		},
+		{
+			"commentGuid": "6064630594496168255",
+			"comment": "If there are still goblins alive at the end of the timer, the shaman appears. In either case, if there are no goblins remaining, a reward cache appears.",
+			"location":
+			{
+				"x": 54.964778968499104,
+				"y": 1368.2959343220068,
+				"z": 0
+			},
+			"size":
+			{
+				"x": 1131.0526776313782,
+				"y": 818.94738054275513,
+				"z": 0
+			},
+			"color":
+			{
+				"r": 0.5,
+				"g": 0.5,
+				"b": 0.5,
+				"a": 0.5
+			}
+		}
+	],
+	"bIsTemplate": false,
+	"flowNodes": [
+		{
+			"flowType": "EventEntry",
+			"graphLocation":
+			{
+				"x": 52.857143012236548,
+				"y": -743.21916936309196
+			},
+			"id": 0
+		},
+		{
+			"flowType": "EventExit",
+			"graphLocation":
+			{
+				"x": -598.75000001862645,
+				"y": 2987.2433148647619
+			},
+			"id": 1
+		}
+	],
+	"guid": "6064630180873839813",
+	"name": "Event_RVR_PU_HuntersMark",
+	"typeId": "23095125"
+}

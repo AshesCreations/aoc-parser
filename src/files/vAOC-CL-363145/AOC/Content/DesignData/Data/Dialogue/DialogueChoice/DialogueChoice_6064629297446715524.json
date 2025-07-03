@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"9BE4137D4CFD8C7686EF65A9C3F587FE\", \"Are you alright?\")",
+	"nextNodeId":
+	{
+		"guid": "6064629297446322307",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MIA_0016_LOL_LastOfLyneth\",\"MIP_0016_LOL_Phase03\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MIQ_0016_ROK_ReturnOfTheKing\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MIQ_0016_ROK_ReturnOfTheKing\",\"StoppedRitual\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MIQ_0016_ROK_ReturnOfTheKing\",\"AccuseThePrimeHealer\")"
+	},
+	"guid": "6064629297446715524",
+	"name": "MIDD_0016_ROK_LynetteXander_7",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,33 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"8AD6E36D47A20B82BE42B4943C035E6D\", \"Pause and reflect\")",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064631794940444674",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064631794922684417",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "(Player_HasCommission (GetPlayer(), \"SQ_37_CoTS\")&&!Player_HasCompletedCommission(GetPlayer(), \"SQ_37_CoTS\")&&Player_ObjectiveStateEquals(GetPlayer(), \"NarrativeObjective_RVR_CoTS_0038_Objective_Consecrate1\", EObjectiveState::Complete)&&Player_ObjectiveStateEquals(GetPlayer(), \"NarrativeObjective_RVR_CoTS_0038_Objective_Consecrate2\", EObjectiveState::Complete)&&Player_ObjectiveStateEquals(GetPlayer(), \"NarrativeObjective_RVR_CoTS_0038_Objective_Consecrate3\", EObjectiveState::Complete)&&Player_ObjectiveStateEquals(GetPlayer(), \"NarrativeObjective_RVR_CoTS_0038_Objective_Consecrate4\", EObjectiveState::Complete))"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064632417194477517",
+	"name": "SQ_0039_CoTS_Minototem_8_Choice_1",
+	"typeId": "1091110027"
+}

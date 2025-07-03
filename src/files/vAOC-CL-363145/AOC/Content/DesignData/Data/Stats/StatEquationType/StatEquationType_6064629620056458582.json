@@ -1,0 +1,25 @@
+{
+	"equation":
+	{
+		"expression": "const Dur = GetTerm($#10516612381411115:6064629620058096983$);\r\nconst Redux = GetTerm($#10516612381411115:6064629620058686808$);\r\nDur * (1.0 - Redux)"
+	},
+	"constraints":
+	{
+		"none":
+		{
+			"bClampMin": true,
+			"min": 0.5,
+			"bClampMax": false,
+			"max": 1,
+			"roundingRule": "Rounding_None",
+			"combineOperation": "Op_Add",
+			"bucketEntryOperation":
+			{
+				"expression": ""
+			}
+		}
+	},
+	"guid": "6064629620056458582",
+	"name": "DisableDurationMod",
+	"typeId": "10516612381411112"
+}

@@ -1,0 +1,33 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"DC6819D140D6DD889BFED9B2B5B1FA13\", \"I\\'ve come from Lumber Landing.  I put an end to the bandit commander there.\")",
+	"nextNodeId":
+	{
+		"guid": "6064632382762582817",
+		"typeId": "1091110028",
+		"name": "CSQ_DD_0035_SFS_2ndSwordCaptain_8"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064632382854267895",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064632382797775651",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "Player_HasCommission(GetPlayer(), \"SQ_0009_OutlawsEnd\") &&\r\nPlayer_ObjectiveStateEquals(GetPlayer(),\"SQO_0009_OutlawsEnd_KillBanditLeader\", EObjectiveState::Complete) "
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064632382722409248",
+	"name": "CSQ_DD_0035_SFS_2ndSwordCaptain_3_Choice_1",
+	"typeId": "1091110027"
+}

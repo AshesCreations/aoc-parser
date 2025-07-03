@@ -1,0 +1,66 @@
+{
+	"displayName": "Physical Evasion",
+	"description": "NSLOCTEXT(\"\", \"DF407AFC4007888AAF61F09AB072D404\", \"Reduces the chance to be hit by physical attacks\")",
+	"bHidden": false,
+	"gameplayType": "Type_Combat",
+	"bHasWaterfallStatsUI": false,
+	"waterfallStatsUIIds": [],
+	"bDisplayAsPercentage": true,
+	"statType": "Type_Float",
+	"bClampStatFinalValue": false,
+	"bMultiplyStatMods": false,
+	"bMultiplyCompliment": false,
+	"base":
+	{
+		"expression": "const base = GetStat(GetOwner(), $#10516612381411111:6064628617716498442$);\r\nconst baseRating = GetStat(GetInstigator(), $#10516612381411111:6064628617716695054$);\r\nconst coeff = EvalFormula($#10516612381411113:6064630400882049044$);\r\nconst baseAdj = base - baseRating / (baseRating + coeff);\r\nconst rating = baseRating + GetStat(GetInstigator(), $#10516612381411111:109183605036676$);\r\nconst stamEvaMult = EvalFormula($#10516612381411113:6064631902456119305$);\r\n(baseAdj + rating / (rating + coeff)) * stamEvaMult"
+	},
+	"waterfallStatsBaseIds": [
+		{
+			"guid": "6064628617716498442",
+			"typeId": "10516612381411111",
+			"name": "None"
+		},
+		{
+			"guid": "109183605036676",
+			"typeId": "10516612381411111",
+			"name": "None"
+		},
+		{
+			"guid": "6064629575339934476",
+			"typeId": "10516612381411111",
+			"name": "None"
+		}
+	],
+	"valueMin":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMinIds": [],
+	"valueMax":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMaxIds": [],
+	"regenRate":
+	{
+		"expression": ""
+	},
+	"waterfallStatsRegenIds": [],
+	"bRegenWhileDead": false,
+	"bRecalculateOnCombatState": false,
+	"onSpawn": "Reset_None",
+	"onDeath": "Reset_None",
+	"onRevive": "Reset_None",
+	"bPersistValue": false,
+	"replication": 5,
+	"shieldStatId":
+	{
+		"guid": "0",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"grantedEffects": [],
+	"guid": "109343399171802",
+	"name": "PhysicalEvasion",
+	"typeId": "10516612381411111"
+}

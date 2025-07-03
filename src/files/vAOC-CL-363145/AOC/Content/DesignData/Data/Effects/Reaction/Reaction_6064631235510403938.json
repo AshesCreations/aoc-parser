@@ -1,0 +1,31 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 4,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "const rec = GetRecordTypeId(GetHitSourceRecord(GetHitEvent()));\r\n!HitHasTag(GetHitEvent(),\"ability.weaponcombo\") &&\r\n(rec == GetAbilityTypeId() || rec == GetProjectileTypeId())"
+	},
+	"bEvaluateApplyingHit": false,
+	"instigator": "Owner",
+	"targetsBitmask": 1,
+	"reactHitsIds": [
+		{
+			"guid": "6064631235535766372",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"instigatorProcLimit": 0,
+	"globalProcLimit": 0,
+	"procReactOnApply": false,
+	"guid": "6064631235510403938",
+	"name": "Bard_Story_Crit_Proc_Consume",
+	"typeId": "3031600202"
+}

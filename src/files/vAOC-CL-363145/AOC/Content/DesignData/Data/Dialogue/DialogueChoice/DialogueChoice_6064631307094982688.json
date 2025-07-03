@@ -1,0 +1,29 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"B598E0804ABAAD0DE59B018997D931B2\", \"[Place the Cyclops Eyes]\")",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064631946267590747",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064631941508235281",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "Player_HasItem(GetPlayer(),\"CSQ_ITM_0041_EOS_Stone_LeftEye\")&&\r\nPlayer_HasItem(GetPlayer(),\"CSQ_ITM_0041_EOS_Stone_RightEye\")\r\n"
+	},
+	"choiceType": "Default",
+	"guid": "6064631307094982688",
+	"name": "CSQ_DD_0042_TAS_TheSpyglass_4",
+	"typeId": "1091110027"
+}

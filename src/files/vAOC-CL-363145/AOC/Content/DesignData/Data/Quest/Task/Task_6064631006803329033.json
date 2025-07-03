@@ -1,0 +1,59 @@
+{
+	"type": "Kill",
+	"progressExpression":
+	{
+		"expression": ""
+	},
+	"bAllowSatisfactionToRegress": false,
+	"completionQuantity": 4,
+	"completionActionsIds": [],
+	"tagQuery":
+	{
+		"tokenStreamVersion": 0,
+		"tagDictionary": [
+			{
+				"tagName": "Quest.CSQ_0017_FoulRunes"
+			}
+		],
+		"queryTokenStream": [ 0, 1, 1, 1, 0 ],
+		"userDescription": "",
+		"autoDescription": " ANY( Quest.CSQ_0017_FoulRunes )"
+	},
+	"professionFilterIds": [],
+	"collectionFilterId":
+	{
+		"guid": "0",
+		"typeId": "1091110041",
+		"name": "None"
+	},
+	"collectionCount": 4,
+	"displayLocation": [
+		{
+			"location":
+			{
+				"x": -684117.53736299998,
+				"y": 456393.34861799999,
+				"z": 17412.980349000001
+			},
+			"radius": 5000,
+			"map_DisplayType": "ICON",
+			"map_IconVisual":
+			{
+				"guid": "6064630990211645445",
+				"typeId": "949952112329",
+				"name": "None"
+			},
+			"map_DisplayName": "NSLOCTEXT(\"\", \"3A8DF3AA437C57EFB8F0C4B150229BF8\", \"The Foul Grog\")"
+		}
+	],
+	"location": [],
+	"populationSetId":
+	{
+		"guid": "0",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"guid": "6064631006803329033",
+	"name": "TID_COM_RVR_Kill_Destroy_FoulRunes",
+	"typeId": "1095125186"
+}

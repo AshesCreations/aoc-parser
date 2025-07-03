@@ -1,0 +1,21 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"4B2A43E744F44B7CCAC750A723DBA13A\", \"Sorry, where were we?\")",
+	"nextNodeId":
+	{
+		"guid": "6064631794621349956",
+		"typeId": "1091110028",
+		"name": "DD_CSQ_0071_Monroe_5"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "Player_HasCommission(GetPlayer(), \"CSQ_RVR_0071_DarkAlliance_TheGlyphs\")&& \r\nPlayer_ObjectiveStateEquals(GetPlayer(), \"SQO_0071_01_Basic_FindLinguist\", EObjectiveState::Complete)&&\r\nPlayer_ObjectiveStateEquals(GetPlayer(), \"SQO_0071_02_Basic_TranslateScroll\", EObjectiveState::Active)"
+	},
+	"narrativeRequirementsIds": [],
+	"choiceType": "Default",
+	"guid": "6064631799138091015",
+	"name": "DD_CSQ_0071_Monroe_28",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,31 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 0,
+		"effectEvents": 0,
+		"abilityEvents": 4,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "(GetOwner() == GetInstigator())\r\n&&\r\n!AbilityHasTag(GetConsumedAbility(), \"ability.weaponcombo\")\r\n&&\r\n!AbilityHasTag(GetConsumedAbility(), \"ability.Toggle\")"
+	},
+	"bEvaluateApplyingHit": false,
+	"instigator": "Owner",
+	"targetsBitmask": 1,
+	"reactHitsIds": [
+		{
+			"guid": "6064631457125313013",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"instigatorProcLimit": 0,
+	"globalProcLimit": 0,
+	"procReactOnApply": false,
+	"guid": "6064631456775507231",
+	"name": "Weapon_Proc_PerfectTiming_Cooldown",
+	"typeId": "3031600202"
+}

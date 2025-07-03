@@ -1,0 +1,78 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"7488E19749D0ED3AE494AA9368674C24\", \"<Take a rubbing of the stone>\")",
+	"nextNodeId":
+	{
+		"guid": "6064632506890977664",
+		"typeId": "1091110028",
+		"name": "CSQ_DD_0011_AncientEpitaphs_Monolith_3"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [
+		{
+			"guid": "6064632502678652965",
+			"typeId": "1091110420",
+			"name": "None"
+		}
+	],
+	"objectivesToRevealUponSelectionIds": [
+		{
+			"guid": "6064632507384988315",
+			"typeId": "1091110420",
+			"name": "None"
+		}
+	],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": ""
+	},
+	"requirements": [
+		{
+			"criteria": [
+				{
+					"elementType": "Objective",
+					"narrativeType": "Commission",
+					"commissionId":
+					{
+						"guid": "0",
+						"typeId": "280002",
+						"name": "None"
+					},
+					"storyArcQuestId":
+					{
+						"guid": "0",
+						"typeId": "1091110035",
+						"name": "None"
+					},
+					"objectiveId":
+					{
+						"guid": "6064632502678652965",
+						"typeId": "1091110420",
+						"name": "None"
+					},
+					"itemFilterId":
+					{
+						"guid": "0",
+						"typeId": "1091110041",
+						"name": "None"
+					},
+					"currencyDefId":
+					{
+						"guid": "0",
+						"typeId": "1011151289",
+						"name": "None"
+					},
+					"amountToQuery": 0,
+					"questState": "InProgress",
+					"objectiveState": "Active",
+					"itemState": "InInventory",
+					"invert": false
+				}
+			]
+		}
+	],
+	"choiceType": "Default",
+	"guid": "6064632506873282943",
+	"name": "CSQ_DD_0011_AncientEpitaphs_Monolith_2_Choice_1",
+	"typeId": "1091110027"
+}

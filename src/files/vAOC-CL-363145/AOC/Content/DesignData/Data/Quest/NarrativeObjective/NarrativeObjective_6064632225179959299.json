@@ -1,0 +1,128 @@
+{
+	"narrativeType": "Commission",
+	"taskId":
+	{
+		"guid": "6064632225222885382",
+		"typeId": "1095125186",
+		"name": "None"
+	},
+	"completionParameters":
+	{
+		"objectiveType": "SubObjectives",
+		"nPCTaskIconOverrideId":
+		{
+			"guid": "0",
+			"typeId": "949952112329",
+			"name": "None"
+		},
+		"bAllowSatisfactionToRegress": false,
+		"completionQuantity": 1,
+		"tagQuery":
+		{
+			"tokenStreamVersion": 0,
+			"tagDictionary": [],
+			"queryTokenStream": [],
+			"userDescription": "",
+			"autoDescription": ""
+		},
+		"professionFilterIds": [
+			{
+				"guid": "0",
+				"typeId": "8125613373123",
+				"name": "None"
+			}
+		],
+		"gatherableFilterIds": [
+			{
+				"guid": "0",
+				"typeId": "19846",
+				"name": "None"
+			}
+		],
+		"collectionFilterId":
+		{
+			"guid": "0",
+			"typeId": "1091110041",
+			"name": "None"
+		},
+		"subObjectivesIds": [
+			{
+				"guid": "6064632225229111303",
+				"typeId": "1091110420",
+				"name": "None"
+			}
+		],
+		"bLimitToDisplayLocation": false,
+		"goToAreaLocation": [],
+		"populationSetIds": [],
+		"populationInstanceIds": [],
+		"notifyType": "None"
+	},
+	"objectiveText": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"59074CAE4640E0719DB158B4CC9F3522\", \"Now that I\\'ve harvested the Weathered Oak, I\\'ll need to process it into Weathered Oak Timber.\")",
+	"objectiveCountText": "",
+	"initiallyHidden": true,
+	"advanceWhileHidden": false,
+	"revealOnComplete": false,
+	"completionRewardsIds": [],
+	"minimumRequirement": true,
+	"completionFlags": [],
+	"instanceCompletionResult": [],
+	"enabledPredicate":
+	{
+		"expression": ""
+	},
+	"completionActionsIds": [],
+	"objectivesToCompleteUponCompletionIds": [],
+	"objectivesToRevealUponCompletionIds": [
+		{
+			"guid": "6064632225248378890",
+			"typeId": "1091110420",
+			"name": "None"
+		}
+	],
+	"allowOverAchievement": false,
+	"overAchievementCountText": "",
+	"maximumAdditionalCompletions": 2,
+	"multipleCompletionExperienceMultiplier": 0.30000001192092896,
+	"multipleCompletionGoldMultiplier": 0.30000001192092896,
+	"multipleCompletionVariableMultiplier": 0.30000001192092896,
+	"displayLocation": [
+		{
+			"location":
+			{
+				"x": -814144.51706900005,
+				"y": 631479.40749999997,
+				"z": 7648.992585
+			},
+			"radius": 30,
+			"map_DisplayType": "ICON",
+			"map_IconVisual":
+			{
+				"guid": "6064630990211645445",
+				"typeId": "949952112329",
+				"name": "None"
+			},
+			"map_DisplayName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"5893D42C45503919B726C9947840C72C\", \"Process Lumber\")"
+		},
+		{
+			"location":
+			{
+				"x": -739920,
+				"y": 632480,
+				"z": 8730
+			},
+			"radius": 2000,
+			"map_DisplayType": "RADIUS",
+			"map_IconVisual":
+			{
+				"guid": "6064630990211645445",
+				"typeId": "949952112329",
+				"name": "None"
+			},
+			"map_DisplayName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"5893D42C45503919B726C9947840C72C\", \"Process Lumber\")"
+		}
+	],
+	"guid": "6064632225179959299",
+	"name": "NO_FTUE_103_01b_ProcessLumber",
+	"typeId": "1091110420"
+}

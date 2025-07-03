@@ -1,0 +1,23 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"54E197AF469CCC74157630BC9EC643A3\", \"(Place Eyes on Chain)\")",
+	"nextNodeId":
+	{
+		"guid": "6064630010348240900",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064630010427277319",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0007_PriestessAndThePiper\",\"MAP_0007_PriestessAndThePiper_Phase02\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0007_BTP_BoneToPick\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_BTP_BoneToPick\",\"GotSightedEyes\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_BTP_BoneToPick\",\"NecklaceCombined\")"
+	},
+	"guid": "6064630010346930179",
+	"name": "MADD_0007_BTP_ITM_FingerboneNecklace_9",
+	"typeId": "1091110027"
+}

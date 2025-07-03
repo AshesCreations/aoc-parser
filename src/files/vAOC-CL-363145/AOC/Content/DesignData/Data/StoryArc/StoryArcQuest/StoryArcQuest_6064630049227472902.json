@@ -1,0 +1,50 @@
+{
+	"objectivesIds": [
+		{
+			"guid": "6064631663612527755",
+			"typeId": "1091110420",
+			"name": "None"
+		},
+		{
+			"guid": "6064631663612527756",
+			"typeId": "1091110420",
+			"name": "None"
+		},
+		{
+			"guid": "6064631663612527757",
+			"typeId": "1091110420",
+			"name": "None"
+		},
+		{
+			"guid": "6064631663612527758",
+			"typeId": "1091110420",
+			"name": "None"
+		},
+		{
+			"guid": "6064631663612527759",
+			"typeId": "1091110420",
+			"name": "None"
+		}
+	],
+	"tempObjectivesIds": [],
+	"instanceCompletionResult": [],
+	"availablePredicate":
+	{
+		"expression": "(!GetStoryArcQuestFlag(GetPlayer(),\"SAQ_0022_p1q1_Handbill\",\"Handbill2\"))||(!GetStoryArcQuestFlag(GetPlayer(),\"SAQ_0022_p1q1_Handbill\",\"Handbill3\"))||(!GetStoryArcQuestFlag(GetPlayer(),\"SAQ_0022_p1q1_Handbill\",\"Handbill4\"))||(!GetStoryArcQuestFlag(GetPlayer(),\"SAQ_0022_p1q1_Handbill\",\"Handbill5\"))\r\n"
+	},
+	"repeatable": false,
+	"questName": "NSLOCTEXT(\"\", \"4780039A4678EF00C6C786A7CD500E26\", \"Locate the Lost\")",
+	"callToAction": "NSLOCTEXT(\"\", \"6ECEE03447FCE1CC3EE6819C9EDF1D86\", \"Locate Kev and his squad in Sephillion\")",
+	"description": "NSLOCTEXT(\"\", \"993A12BA466CB4D8F104518E9A28E655\", \"Kev and his squad have gone missing! Find them in the Ruins of Sephillion.\")",
+	"mapIndicatorId":
+	{
+		"guid": "0",
+		"typeId": "8675309",
+		"name": "None"
+	},
+	"calloutName": "",
+	"calloutDescription": "",
+	"guid": "6064630049227472902",
+	"name": "SAQ_0022_p1q1_Handbill",
+	"typeId": "1091110035"
+}

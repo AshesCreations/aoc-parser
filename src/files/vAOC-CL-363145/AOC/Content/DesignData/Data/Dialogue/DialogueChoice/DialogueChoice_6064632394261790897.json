@@ -1,0 +1,38 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"6001554C454A0487683442BBAF83EB8F\", \"I\\'ve found evidence of a cult trying to steal artifacts and perform expirements on them.\")",
+	"nextNodeId":
+	{
+		"guid": "6064632394276405426",
+		"typeId": "1091110028",
+		"name": "CSQ_DD_0035_SFS_2ndSwordCaptain_9"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064632394293248181",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064632394578461095",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064632422451382400",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "Player_HasCommission(GetPlayer(), \"SQ_0010_SliversOfThePast\") &&\r\nPlayer_ObjectiveStateEquals(GetPlayer(),\"SQO_0010_SliversOfThePast_InvestigateTower\", EObjectiveState::Complete) "
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064632394261790897",
+	"name": "CSQ_DD_0035_SFS_2ndSwordCaptain_3_Choice_2",
+	"typeId": "1091110027"
+}

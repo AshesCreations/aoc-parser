@@ -1,0 +1,107 @@
+{
+	"eventName": "",
+	"gameplayTags":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"activationPredicatesIds": [
+		{
+			"guid": "108130716898939",
+			"typeId": "23095129",
+			"name": "None"
+		}
+	],
+	"minChallengeRating": 0,
+	"maxChallengeRating": 0,
+	"eventType": 1,
+	"locationId":
+	{
+		"guid": "0",
+		"typeId": "23095137",
+		"name": "None"
+	},
+	"desiredTimeSlot": "0001.01.01-00.00.00",
+	"frequency": 0,
+	"priority": 0,
+	"rewardTableId":
+	{
+		"guid": "0",
+		"typeId": "1091110040",
+		"name": "None"
+	},
+	"rewardPopulationSetId":
+	{
+		"guid": "0",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"startStageId":
+	{
+		"guid": "108084467881593",
+		"typeId": "23095131",
+		"name": "TestEvent_Active"
+	},
+	"stagesIds": [
+		{
+			"guid": "108084467881593",
+			"typeId": "23095131",
+			"name": "TestEvent_Active"
+		},
+		{
+			"guid": "108175555843705",
+			"typeId": "23095131",
+			"name": "TestEvent_Stage2"
+		},
+		{
+			"guid": "108084474893946",
+			"typeId": "23095131",
+			"name": "TestEvent_InProgress"
+		},
+		{
+			"guid": "108080287733370",
+			"typeId": "23095131",
+			"name": "TestEvent_Stage1"
+		},
+		{
+			"guid": "108084448417400",
+			"typeId": "23095131",
+			"name": "TestEvent_InActive"
+		}
+	],
+	"alignmentsIds": [],
+	"mapDisplayType": "None",
+	"mapEventIcon": "None",
+	"bDisplayOnTracker": true,
+	"notificationRadius": 15000,
+	"mapRadiusMinumum": 1000,
+	"cooldownTimer": 300,
+	"bDisabled": false,
+	"maxInstanceCount": 1,
+	"requiredMapName": "Start_Clayton_test",
+	"comments": [],
+	"bIsTemplate": false,
+	"flowNodes": [
+		{
+			"flowType": "EventEntry",
+			"graphLocation":
+			{
+				"x": 874.79999697208405,
+				"y": -572.80001664161682
+			},
+			"id": 0
+		},
+		{
+			"flowType": "EventExit",
+			"graphLocation":
+			{
+				"x": 1977.8666508197784,
+				"y": 653.46665096282959
+			},
+			"id": 1
+		}
+	],
+	"guid": "108237540906616",
+	"name": "TestEvent_Bandits",
+	"typeId": "23095125"
+}

@@ -1,0 +1,27 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 0,
+		"abilityEvents": 4,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "AbilityHasTag(GetConsumedAbility(), \"ArchetypeMechanic.DivinePower\")"
+	},
+	"bEvaluateApplyingHit": false,
+	"instigator": "Owner",
+	"targetsBitmask": 1,
+	"reactHitsIds": [
+		{
+			"guid": "6064629286539954396",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"guid": "6064629285818861330",
+	"name": "Cleric_Passive_DivinePower_Apply",
+	"typeId": "3031600202"
+}

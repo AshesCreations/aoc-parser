@@ -1,0 +1,37 @@
+{
+	"expression":
+	{
+		"expression": "(IsStoryArcInPhase(\"SA_0003_RoadsideVendor2\",\"SAP_0003_RoadsideVendor2_P2\")) && (Event_GetNumParticipants() == 0) || (IsStoryArcInPhase(\"SA_0003_RoadsideVendor2\",\"SAP_0003_RoadsideVendor2_P3\")) && (Event_GetNumParticipants() == 0)"
+	},
+	"triggersIds": [
+		{
+			"guid": "108639583164024",
+			"typeId": "23095135",
+			"name": "ETD_0003_Q2_AdvanceToP4"
+		},
+		{
+			"guid": "108492693198456",
+			"typeId": "23095135",
+			"name": "EventTrigger_0003_Q2_Debug2"
+		},
+		{
+			"guid": "108640770020988",
+			"typeId": "23095135",
+			"name": "EventTriggerDefRecord_108640770020988"
+		}
+	],
+	"bIsObjective": true,
+	"objectiveText": "Time Remaining: {n}",
+	"progressType": "IntType",
+	"displayType": 0,
+	"completionValue": 0,
+	"flowEditorNodeLocation":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"guid": "108431769359999",
+	"name": "ESD_0003_Bandits_InProgress_S1_Reset",
+	"typeId": "23095129"
+}

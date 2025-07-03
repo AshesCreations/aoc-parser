@@ -1,0 +1,20 @@
+{
+	"expression":
+	{
+		"expression": " Event_GetNumParticipants() > 0 && (IsTimeOfDayType(ETimeOfDayType::Evening) || IsTimeOfDayType(ETimeOfDayType::Night))"
+	},
+	"maxActivationCount": 1,
+	"bRequiresRegressionToLoop": true,
+	"objectivesIds": [],
+	"triggersIds": [],
+	"flowEditorNodeLocation":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"routePins": [],
+	"guid": "6064633453047840770",
+	"name": "Feedin' Time_EventStartPredicate",
+	"typeId": "23095129"
+}

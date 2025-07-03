@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"B99F57C8458C07D1BB4D2BBA42CA0155\", \"Justice was served.\")",
+	"nextNodeId":
+	{
+		"guid": "6064630355744784434",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0005A_FGG_ForGreaterGlory\",\"MAP_0005A_FGG_Phase02\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0005A_BDA_BeItDeadOrAlive\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005A_BDA_BeItDeadOrAlive\",\"KillCole\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005A_BDA_BeItDeadOrAlive\",\"KillDubh\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005A_BDA_BeItDeadOrAlive\",\"KillDugal\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005A_BDA_BeItDeadOrAlive\",\"KillGandal\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005A_BDA_BeItDeadOrAlive\",\"KillMach\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005A_BDA_BeItDeadOrAlive\",\"KillRonan\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005A_BDA_BeItDeadOrAlive\",\"KillSionn\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005A_BDA_BeItDeadOrAlive\",\"ReturnToOrrik\")\r\n"
+	},
+	"guid": "6064630355742228529",
+	"name": "MADD_0005A_BDA_OrrikBlackwood_Phase02_11",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,18 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"EC0D534848CE32CF61FBD9AACB0C7BAC\", \"I\\'ve got a promisory note from the Scholar\\'s Academy. Will you deliver some meat to Botanist Lorne?\")",
+	"nextNodeId":
+	{
+		"guid": "6064629577115238479",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "//Player_HasItem(GetPlayer(),6064629576693121037)\r\n\r\n// the above doesn't compile, returning false -Bucky\r\nfalse"
+	},
+	"choiceType": "Default",
+	"guid": "6064629577115238477",
+	"name": "DDR_0014_Herbalist_6",
+	"typeId": "1091110027"
+}

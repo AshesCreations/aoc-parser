@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"4FCC063E40E911562F8915B63D617B45\", \"No HB, No BLP\")",
+	"nextNodeId":
+	{
+		"guid": "6064630061908230254",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "(!IsOnStoryArcQuest(GetPlayer(), \"SAQ_0022_p1q1_Handbill\")&&(!IsOnStoryArcQuest(GetPlayer(), \"SAQ_0022_p1q2_BestLaidPlans\"))&&IsStoryArcQuestAvailable(GetPlayer(),\"SAQ_0022_p1q2_BestLaidPlans\"))"
+	},
+	"guid": "6064630061908230251",
+	"name": "0022_Seph_Joon_7",
+	"typeId": "1091110027"
+}

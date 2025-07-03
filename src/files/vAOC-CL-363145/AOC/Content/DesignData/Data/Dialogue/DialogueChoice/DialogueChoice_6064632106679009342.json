@@ -1,0 +1,24 @@
+{
+	"choiceText": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"322E5EF54D55A55B95024480B93A123B\", \"I will go to a construction project and contribute materials.\")",
+	"nextNodeId":
+	{
+		"guid": "6064629444710564425",
+		"typeId": "1091110028",
+		"name": "DD_ServiceNPC_NodeAdministrator_32"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064632121917833221",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "false\r\n//!(Player_HasCommission(GetPlayer(), \"CSQ_0156_FTUE_ConstructionAroundTown\") ||\r\n//Player_HasCompletedCommission(GetPlayer(), \"CSQ_0156_FTUE_ConstructionAroundTown\")) &&\r\n//Node_NumOfServiceBuilding(Node_GetActorCityNode(GetInteractionTarget()), EBuildingState::UnderConstruction) >= 1"
+	},
+	"choiceType": "Default",
+	"guid": "6064632106679009342",
+	"name": "DD_ServiceNPC_NodeAdministrator_73_Choice_3",
+	"typeId": "1091110027"
+}

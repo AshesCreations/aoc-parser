@@ -1,0 +1,1435 @@
+{
+	"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Interface_NameplatesSectionLabel\")",
+	"categoryHeaderLabel": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Interface_NameplatesSectionHeader\")",
+	"bUseScrollWindow": false,
+	"entryCategories": [
+		{
+			"label": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"CB61D44047B7C3BC2D09FC8B42C95779\", \"Nameplate Settings\")",
+			"entryAlignment": "HAlign_Fill",
+			"entryWrapSize": 10,
+			"wrapBoxClass": "Standard",
+			"entries": [
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Nameplates_DisplayDistancePlayersLabel\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 600,
+					"type": "Slider",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"bApplyOnMouseRelease": false,
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"leftNameplateRelationshipIds": [],
+					"leftNameplateAlignmentIds": [],
+					"leftLabel": "",
+					"rightNameplateRelationshipIds": [],
+					"rightNameplateAlignmentIds": [],
+					"rightLabel": "",
+					"linkedKeyBindingIds": [],
+					"subheaderBorderStyle": "None",
+					"selectorWidth": 425,
+					"widgetClass": "None",
+					"getterFunctionName": "GetPlayerDisplayDistance",
+					"setterFunctionName": "SetPlayerDisplayDistance",
+					"dependencyGetter": "None"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Nameplates_DisplayDistanceNPCLabel\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 600,
+					"type": "Slider",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"bApplyOnMouseRelease": false,
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"leftNameplateRelationshipIds": [],
+					"leftNameplateAlignmentIds": [],
+					"leftLabel": "",
+					"rightNameplateRelationshipIds": [],
+					"rightNameplateAlignmentIds": [],
+					"rightLabel": "",
+					"linkedKeyBindingIds": [],
+					"subheaderBorderStyle": "None",
+					"selectorWidth": 425,
+					"widgetClass": "None",
+					"getterFunctionName": "GetNPCDisplayDistance",
+					"setterFunctionName": "SetNPCDisplayDistance",
+					"dependencyGetter": "None"
+				}
+			],
+			"subcategories": []
+		},
+		{
+			"label": "",
+			"entryAlignment": "HAlign_Fill",
+			"entryWrapSize": 10,
+			"wrapBoxClass": "Tabbed",
+			"entries": [],
+			"subcategories": [
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Nameplates_AlliedPlayers_Subheader\")",
+					"entries": [
+						{
+							"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Nameplates_Self_Subheader\")",
+							"labelTextMinDesiredWidth": 320,
+							"labelTextWrapWidth": 600,
+							"type": "Subheader",
+							"sliderMinMax":
+							{
+								"x": 0,
+								"y": 1
+							},
+							"bApplyOnMouseRelease": false,
+							"keyBindingId": "None",
+							"associatedClass": "Mage",
+							"leftNameplateRelationshipIds": [],
+							"leftNameplateAlignmentIds": [],
+							"leftLabel": "",
+							"rightNameplateRelationshipIds": [],
+							"rightNameplateAlignmentIds": [],
+							"rightLabel": "",
+							"linkedKeyBindingIds": [],
+							"subheaderBorderStyle": "/Game/UI/CommonAssets/Border/SubheaderStyle_Green_2.SubheaderStyle_Green_2_C",
+							"selectorWidth": 300,
+							"widgetClass": "/Game/UI/Widgets/Options/WBP_OptionsMenuSubheaderRow.WBP_OptionsMenuSubheaderRow_C",
+							"getterFunctionName": "GetSelfSubheader",
+							"setterFunctionName": "SetSelfSubheader",
+							"dependencyGetter": "None"
+						},
+						{
+							"label": "",
+							"labelTextMinDesiredWidth": 320,
+							"labelTextWrapWidth": 1080,
+							"type": "NameplateColor",
+							"sliderMinMax":
+							{
+								"x": 0,
+								"y": 1
+							},
+							"bApplyOnMouseRelease": false,
+							"keyBindingId": "None",
+							"associatedClass": "Mage",
+							"leftNameplateRelationshipIds": [],
+							"leftNameplateAlignmentIds": [],
+							"leftLabel": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Nameplates_SelfColorLabel\")",
+							"rightNameplateRelationshipIds": [],
+							"rightNameplateAlignmentIds": [],
+							"rightLabel": "",
+							"linkedKeyBindingIds": [],
+							"subheaderBorderStyle": "None",
+							"selectorWidth": 300,
+							"widgetClass": "None",
+							"getterFunctionName": "GetOwningNameplateColor",
+							"setterFunctionName": "SetOwningNameplateColor",
+							"dependencyGetter": "None"
+						},
+						{
+							"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Nameplates_DisplayNameLabel\")",
+							"labelTextMinDesiredWidth": 320,
+							"labelTextWrapWidth": 600,
+							"type": "Dropdown",
+							"sliderMinMax":
+							{
+								"x": 0,
+								"y": 1
+							},
+							"bApplyOnMouseRelease": false,
+							"keyBindingId": "None",
+							"associatedClass": "Mage",
+							"leftNameplateRelationshipIds": [],
+							"leftNameplateAlignmentIds": [],
+							"leftLabel": "",
+							"rightNameplateRelationshipIds": [],
+							"rightNameplateAlignmentIds": [],
+							"rightLabel": "",
+							"linkedKeyBindingIds": [],
+							"subheaderBorderStyle": "None",
+							"selectorWidth": 584,
+							"widgetClass": "None",
+							"getterFunctionName": "GetOwningNameplateVisibility",
+							"setterFunctionName": "SetOwningNameplateVisibility",
+							"dependencyGetter": "None"
+						},
+						{
+							"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Nameplates_HealthBarLabel\")",
+							"labelTextMinDesiredWidth": 320,
+							"labelTextWrapWidth": 600,
+							"type": "Dropdown",
+							"sliderMinMax":
+							{
+								"x": 0,
+								"y": 1
+							},
+							"bApplyOnMouseRelease": false,
+							"keyBindingId": "None",
+							"associatedClass": "Mage",
+							"leftNameplateRelationshipIds": [],
+							"leftNameplateAlignmentIds": [],
+							"leftLabel": "",
+							"rightNameplateRelationshipIds": [],
+							"rightNameplateAlignmentIds": [],
+							"rightLabel": "",
+							"linkedKeyBindingIds": [],
+							"subheaderBorderStyle": "None",
+							"selectorWidth": 584,
+							"widgetClass": "None",
+							"getterFunctionName": "GetOwningHealthVisibility",
+							"setterFunctionName": "SetOwningHealthVisibility",
+							"dependencyGetter": "None"
+						},
+						{
+							"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Nameplates_DisplayMountName_Label\")",
+							"labelTextMinDesiredWidth": 320,
+							"labelTextWrapWidth": 600,
+							"type": "Dropdown",
+							"sliderMinMax":
+							{
+								"x": 0,
+								"y": 1
+							},
+							"bApplyOnMouseRelease": false,
+							"keyBindingId": "None",
+							"associatedClass": "Mage",
+							"leftNameplateRelationshipIds": [],
+							"leftNameplateAlignmentIds": [],
+							"leftLabel": "",
+							"rightNameplateRelationshipIds": [],
+							"rightNameplateAlignmentIds": [],
+							"rightLabel": "",
+							"linkedKeyBindingIds": [],
+							"subheaderBorderStyle": "None",
+							"selectorWidth": 584,
+							"widgetClass": "None",
+							"getterFunctionName": "GetOwningMountVisibility",
+							"setterFunctionName": "SetOwningMountVisibility",
+							"dependencyGetter": "None"
+						},
+						{
+							"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Nameplates_DisplayVehicleName_Label\")",
+							"labelTextMinDesiredWidth": 320,
+							"labelTextWrapWidth": 600,
+							"type": "Dropdown",
+							"sliderMinMax":
+							{
+								"x": 0,
+								"y": 1
+							},
+							"bApplyOnMouseRelease": false,
+							"keyBindingId": "None",
+							"associatedClass": "Mage",
+							"leftNameplateRelationshipIds": [],
+							"leftNameplateAlignmentIds": [],
+							"leftLabel": "",
+							"rightNameplateRelationshipIds": [],
+							"rightNameplateAlignmentIds": [],
+							"rightLabel": "",
+							"linkedKeyBindingIds": [],
+							"subheaderBorderStyle": "None",
+							"selectorWidth": 584,
+							"widgetClass": "None",
+							"getterFunctionName": "GetOwningVehicleVisibility",
+							"setterFunctionName": "SetOwningVehicleVisibility",
+							"dependencyGetter": "None"
+						},
+						{
+							"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Nameplates_Allies_Subheader\")",
+							"labelTextMinDesiredWidth": 320,
+							"labelTextWrapWidth": 600,
+							"type": "Subheader",
+							"sliderMinMax":
+							{
+								"x": 0,
+								"y": 1
+							},
+							"bApplyOnMouseRelease": false,
+							"keyBindingId": "None",
+							"associatedClass": "Mage",
+							"leftNameplateRelationshipIds": [],
+							"leftNameplateAlignmentIds": [],
+							"leftLabel": "",
+							"rightNameplateRelationshipIds": [],
+							"rightNameplateAlignmentIds": [],
+							"rightLabel": "",
+							"linkedKeyBindingIds": [],
+							"subheaderBorderStyle": "None",
+							"selectorWidth": 300,
+							"widgetClass": "/Game/UI/Widgets/Options/WBP_OptionsMenuSubheaderRow.WBP_OptionsMenuSubheaderRow_C",
+							"getterFunctionName": "GetAlliesSubheader",
+							"setterFunctionName": "SetAlliesSubheader",
+							"dependencyGetter": "None"
+						},
+						{
+							"label": "",
+							"labelTextMinDesiredWidth": 320,
+							"labelTextWrapWidth": 1550,
+							"type": "NameplateColor",
+							"sliderMinMax":
+							{
+								"x": 0,
+								"y": 1
+							},
+							"bApplyOnMouseRelease": false,
+							"keyBindingId": "None",
+							"associatedClass": "Mage",
+							"leftNameplateRelationshipIds": [
+								{
+									"guid": "6064629495019143186",
+									"typeId": "512160702",
+									"name": "None"
+								}
+							],
+							"leftNameplateAlignmentIds": [
+								{
+									"guid": "6064629443712188425",
+									"typeId": "512160700",
+									"name": "None"
+								}
+							],
+							"leftLabel": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Nameplates_NeutralPlayerTextColorLabel\")",
+							"rightNameplateRelationshipIds": [],
+							"rightNameplateAlignmentIds": [
+								{
+									"guid": "6064630560782155776",
+									"typeId": "512160700",
+									"name": "None"
+								}
+							],
+							"rightLabel": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Nameplates_GuildMemberColorLabel\")",
+							"linkedKeyBindingIds": [],
+							"subheaderBorderStyle": "None",
+							"selectorWidth": 300,
+							"widgetClass": "None",
+							"getterFunctionName": "GetAssociatedNameplateColors",
+							"setterFunctionName": "SetAssociatedNameplateColors",
+							"dependencyGetter": "None"
+						},
+						{
+							"label": "",
+							"labelTextMinDesiredWidth": 320,
+							"labelTextWrapWidth": 320,
+							"type": "NameplateColor",
+							"sliderMinMax":
+							{
+								"x": 0,
+								"y": 1
+							},
+							"bApplyOnMouseRelease": false,
+							"keyBindingId": "None",
+							"associatedClass": "Mage",
+							"leftNameplateRelationshipIds": [
+								{
+									"guid": "6064629495019143186",
+									"typeId": "512160702",
+									"name": "None"
+								}
+							],
+							"leftNameplateAlignmentIds": [
+								{
+									"guid": "6064631051897143296",
+									"typeId": "512160700",
+									"name": "None"
+								}
+							],
+							"leftLabel": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Nameplates_NodeCitizenColorLabel\")",
+							"rightNameplateRelationshipIds": [
+								{
+									"guid": "6064632915446202381",
+									"typeId": "512160702",
+									"name": "None"
+								},
+								{
+									"guid": "6064633064068874240",
+									"typeId": "512160702",
+									"name": "None"
+								},
+								{
+									"guid": "6064631364431511554",
+									"typeId": "512160702",
+									"name": "None"
+								}
+							],
+							"rightNameplateAlignmentIds": [],
+							"rightLabel": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Nameplates_EventAllyNameplateColor\")",
+							"linkedKeyBindingIds": [],
+							"subheaderBorderStyle": "None",
+							"selectorWidth": 300,
+							"widgetClass": "None",
+							"getterFunctionName": "GetAssociatedNameplateColors",
+							"setterFunctionName": "SetAssociatedNameplateColors",
+							"dependencyGetter": "None"
+						},
+						{
+							"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Nameplates_DisplayAlliedNameplateLabel\")",
+							"labelTextMinDesiredWidth": 320,
+							"labelTextWrapWidth": 600,
+							"type": "Dropdown",
+							"sliderMinMax":
+							{
+								"x": 0,
+								"y": 1
+							},
+							"bApplyOnMouseRelease": false,
+							"keyBindingId": "None",
+							"associatedClass": "Mage",
+							"leftNameplateRelationshipIds": [],
+							"leftNameplateAlignmentIds": [],
+							"leftLabel": "",
+							"rightNameplateRelationshipIds": [],
+							"rightNameplateAlignmentIds": [],
+							"rightLabel": "",
+							"linkedKeyBindingIds": [],
+							"subheaderBorderStyle": "None",
+							"selectorWidth": 584,
+							"widgetClass": "None",
+							"getterFunctionName": "GetNeutralNameplateVisibility",
+							"setterFunctionName": "SetNeutralNameplateVisibility",
+							"dependencyGetter": "None"
+						},
+						{
+							"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Nameplates_DisplayAlliedHealthLabel\")",
+							"labelTextMinDesiredWidth": 320,
+							"labelTextWrapWidth": 600,
+							"type": "Dropdown",
+							"sliderMinMax":
+							{
+								"x": 0,
+								"y": 1
+							},
+							"bApplyOnMouseRelease": false,
+							"keyBindingId": "None",
+							"associatedClass": "Mage",
+							"leftNameplateRelationshipIds": [],
+							"leftNameplateAlignmentIds": [],
+							"leftLabel": "",
+							"rightNameplateRelationshipIds": [],
+							"rightNameplateAlignmentIds": [],
+							"rightLabel": "",
+							"linkedKeyBindingIds": [],
+							"subheaderBorderStyle": "None",
+							"selectorWidth": 584,
+							"widgetClass": "None",
+							"getterFunctionName": "GetNeutralHealthVisibility",
+							"setterFunctionName": "SetNeutralHealthVisibility",
+							"dependencyGetter": "None"
+						},
+						{
+							"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Nameplates_DisplayNeutralMountName_Label\")",
+							"labelTextMinDesiredWidth": 320,
+							"labelTextWrapWidth": 600,
+							"type": "Dropdown",
+							"sliderMinMax":
+							{
+								"x": 0,
+								"y": 1
+							},
+							"bApplyOnMouseRelease": false,
+							"keyBindingId": "None",
+							"associatedClass": "Mage",
+							"leftNameplateRelationshipIds": [],
+							"leftNameplateAlignmentIds": [],
+							"leftLabel": "",
+							"rightNameplateRelationshipIds": [],
+							"rightNameplateAlignmentIds": [],
+							"rightLabel": "",
+							"linkedKeyBindingIds": [],
+							"subheaderBorderStyle": "None",
+							"selectorWidth": 584,
+							"widgetClass": "None",
+							"getterFunctionName": "GetNeutralMountVisibility",
+							"setterFunctionName": "SetNeutralMountVisibility",
+							"dependencyGetter": "None"
+						},
+						{
+							"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Nameplates_DisplayNeutralVehicleName_Label\")",
+							"labelTextMinDesiredWidth": 320,
+							"labelTextWrapWidth": 600,
+							"type": "Dropdown",
+							"sliderMinMax":
+							{
+								"x": 0,
+								"y": 1
+							},
+							"bApplyOnMouseRelease": false,
+							"keyBindingId": "None",
+							"associatedClass": "Mage",
+							"leftNameplateRelationshipIds": [],
+							"leftNameplateAlignmentIds": [],
+							"leftLabel": "",
+							"rightNameplateRelationshipIds": [],
+							"rightNameplateAlignmentIds": [],
+							"rightLabel": "",
+							"linkedKeyBindingIds": [],
+							"subheaderBorderStyle": "None",
+							"selectorWidth": 584,
+							"widgetClass": "None",
+							"getterFunctionName": "GetNeutralVehicleVisibility",
+							"setterFunctionName": "SetNeutralVehicleVisibility",
+							"dependencyGetter": "None"
+						},
+						{
+							"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Nameplates_GroupMembers_Subheader\")",
+							"labelTextMinDesiredWidth": 320,
+							"labelTextWrapWidth": 600,
+							"type": "Subheader",
+							"sliderMinMax":
+							{
+								"x": 0,
+								"y": 1
+							},
+							"bApplyOnMouseRelease": false,
+							"keyBindingId": "None",
+							"associatedClass": "Mage",
+							"leftNameplateRelationshipIds": [],
+							"leftNameplateAlignmentIds": [],
+							"leftLabel": "",
+							"rightNameplateRelationshipIds": [],
+							"rightNameplateAlignmentIds": [],
+							"rightLabel": "",
+							"linkedKeyBindingIds": [],
+							"subheaderBorderStyle": "None",
+							"selectorWidth": 300,
+							"widgetClass": "/Game/UI/Widgets/Options/WBP_OptionsMenuSubheaderRow.WBP_OptionsMenuSubheaderRow_C",
+							"getterFunctionName": "GetGroupMembersSubheader",
+							"setterFunctionName": "SetGroupMembersSubheader",
+							"dependencyGetter": "None"
+						},
+						{
+							"label": "",
+							"labelTextMinDesiredWidth": 320,
+							"labelTextWrapWidth": 900,
+							"type": "NameplateColor",
+							"sliderMinMax":
+							{
+								"x": 0,
+								"y": 1
+							},
+							"bApplyOnMouseRelease": false,
+							"keyBindingId": "None",
+							"associatedClass": "Mage",
+							"leftNameplateRelationshipIds": [],
+							"leftNameplateAlignmentIds": [
+								{
+									"guid": "6064629443706159110",
+									"typeId": "512160700",
+									"name": "None"
+								}
+							],
+							"leftLabel": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Nameplates_GroupMemberColorLabel\")",
+							"rightNameplateRelationshipIds": [],
+							"rightNameplateAlignmentIds": [
+								{
+									"guid": "6064629443707142151",
+									"typeId": "512160700",
+									"name": "None"
+								}
+							],
+							"rightLabel": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Nameplates_RaidNameplateColor\")",
+							"linkedKeyBindingIds": [],
+							"subheaderBorderStyle": "None",
+							"selectorWidth": 300,
+							"widgetClass": "None",
+							"getterFunctionName": "GetAssociatedNameplateColors",
+							"setterFunctionName": "SetAssociatedNameplateColors",
+							"dependencyGetter": "None"
+						},
+						{
+							"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Nameplates_DisplayGroupMemberNameplate_Label\")",
+							"labelTextMinDesiredWidth": 320,
+							"labelTextWrapWidth": 600,
+							"type": "Dropdown",
+							"sliderMinMax":
+							{
+								"x": 0,
+								"y": 1
+							},
+							"bApplyOnMouseRelease": false,
+							"keyBindingId": "None",
+							"associatedClass": "Mage",
+							"leftNameplateRelationshipIds": [],
+							"leftNameplateAlignmentIds": [],
+							"leftLabel": "",
+							"rightNameplateRelationshipIds": [],
+							"rightNameplateAlignmentIds": [],
+							"rightLabel": "",
+							"linkedKeyBindingIds": [],
+							"subheaderBorderStyle": "None",
+							"selectorWidth": 584,
+							"widgetClass": "None",
+							"getterFunctionName": "GetGroupNameplateVisibility",
+							"setterFunctionName": "SetGroupNameplateVisibility",
+							"dependencyGetter": "None"
+						},
+						{
+							"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Nameplates_DisplayGroupMemberHealth_Label\")",
+							"labelTextMinDesiredWidth": 320,
+							"labelTextWrapWidth": 600,
+							"type": "Dropdown",
+							"sliderMinMax":
+							{
+								"x": 0,
+								"y": 1
+							},
+							"bApplyOnMouseRelease": false,
+							"keyBindingId": "None",
+							"associatedClass": "Mage",
+							"leftNameplateRelationshipIds": [],
+							"leftNameplateAlignmentIds": [],
+							"leftLabel": "",
+							"rightNameplateRelationshipIds": [],
+							"rightNameplateAlignmentIds": [],
+							"rightLabel": "",
+							"linkedKeyBindingIds": [],
+							"subheaderBorderStyle": "None",
+							"selectorWidth": 584,
+							"widgetClass": "None",
+							"getterFunctionName": "GetGroupHealthVisibility",
+							"setterFunctionName": "SetGroupHealthVisibility",
+							"dependencyGetter": "None"
+						},
+						{
+							"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Nameplates_DisplayGroupMemberMountName_Label\")",
+							"labelTextMinDesiredWidth": 320,
+							"labelTextWrapWidth": 600,
+							"type": "Dropdown",
+							"sliderMinMax":
+							{
+								"x": 0,
+								"y": 1
+							},
+							"bApplyOnMouseRelease": false,
+							"keyBindingId": "None",
+							"associatedClass": "Mage",
+							"leftNameplateRelationshipIds": [],
+							"leftNameplateAlignmentIds": [],
+							"leftLabel": "",
+							"rightNameplateRelationshipIds": [],
+							"rightNameplateAlignmentIds": [],
+							"rightLabel": "",
+							"linkedKeyBindingIds": [],
+							"subheaderBorderStyle": "None",
+							"selectorWidth": 584,
+							"widgetClass": "None",
+							"getterFunctionName": "GetGroupMountVisibility",
+							"setterFunctionName": "SetGroupMountVisibility",
+							"dependencyGetter": "None"
+						},
+						{
+							"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Nameplates_DisplayGroupMemberVehicleName_Label\")",
+							"labelTextMinDesiredWidth": 320,
+							"labelTextWrapWidth": 600,
+							"type": "Dropdown",
+							"sliderMinMax":
+							{
+								"x": 0,
+								"y": 1
+							},
+							"bApplyOnMouseRelease": false,
+							"keyBindingId": "None",
+							"associatedClass": "Mage",
+							"leftNameplateRelationshipIds": [],
+							"leftNameplateAlignmentIds": [],
+							"leftLabel": "",
+							"rightNameplateRelationshipIds": [],
+							"rightNameplateAlignmentIds": [],
+							"rightLabel": "",
+							"linkedKeyBindingIds": [],
+							"subheaderBorderStyle": "None",
+							"selectorWidth": 584,
+							"widgetClass": "None",
+							"getterFunctionName": "GetGroupVehicleVisibility",
+							"setterFunctionName": "SetGroupVehicleVisibility",
+							"dependencyGetter": "None"
+						}
+					]
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Nameplates_PvPSectionHeader\")",
+					"entries": [
+						{
+							"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Nameplates_Hostile_Subheader\")",
+							"labelTextMinDesiredWidth": 320,
+							"labelTextWrapWidth": 600,
+							"type": "Subheader",
+							"sliderMinMax":
+							{
+								"x": 0,
+								"y": 1
+							},
+							"bApplyOnMouseRelease": false,
+							"keyBindingId": "None",
+							"associatedClass": "Mage",
+							"leftNameplateRelationshipIds": [],
+							"leftNameplateAlignmentIds": [],
+							"leftLabel": "",
+							"rightNameplateRelationshipIds": [],
+							"rightNameplateAlignmentIds": [],
+							"rightLabel": "",
+							"linkedKeyBindingIds": [],
+							"subheaderBorderStyle": "None",
+							"selectorWidth": 300,
+							"widgetClass": "/Game/UI/Widgets/Options/WBP_OptionsMenuSubheaderRow.WBP_OptionsMenuSubheaderRow_C",
+							"getterFunctionName": "GetHostileSubheader",
+							"setterFunctionName": "SetHostileSubheader",
+							"dependencyGetter": "None"
+						},
+						{
+							"label": "",
+							"labelTextMinDesiredWidth": 320,
+							"labelTextWrapWidth": 900,
+							"type": "NameplateColor",
+							"sliderMinMax":
+							{
+								"x": 0,
+								"y": 1
+							},
+							"bApplyOnMouseRelease": false,
+							"keyBindingId": "None",
+							"associatedClass": "Mage",
+							"leftNameplateRelationshipIds": [],
+							"leftNameplateAlignmentIds": [
+								{
+									"guid": "6064629443707731976",
+									"typeId": "512160700",
+									"name": "None"
+								}
+							],
+							"leftLabel": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Nameplates_CombatantPlayerTextColorLabel\")",
+							"rightNameplateRelationshipIds": [
+								{
+									"guid": "6064632915445219340",
+									"typeId": "512160702",
+									"name": "None"
+								},
+								{
+									"guid": "6064633064069988353",
+									"typeId": "512160702",
+									"name": "None"
+								},
+								{
+									"guid": "6064631364422008833",
+									"typeId": "512160702",
+									"name": "None"
+								}
+							],
+							"rightNameplateAlignmentIds": [],
+							"rightLabel": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Nameplates_EventEnemyNameplateColor\")",
+							"linkedKeyBindingIds": [],
+							"subheaderBorderStyle": "None",
+							"selectorWidth": 300,
+							"widgetClass": "None",
+							"getterFunctionName": "GetAssociatedNameplateColors",
+							"setterFunctionName": "SetAssociatedNameplateColors",
+							"dependencyGetter": "None"
+						},
+						{
+							"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Nameplates_DisplayCombatantNameplate_Label\")",
+							"labelTextMinDesiredWidth": 320,
+							"labelTextWrapWidth": 600,
+							"type": "Dropdown",
+							"sliderMinMax":
+							{
+								"x": 0,
+								"y": 1
+							},
+							"bApplyOnMouseRelease": false,
+							"keyBindingId": "None",
+							"associatedClass": "Mage",
+							"leftNameplateRelationshipIds": [],
+							"leftNameplateAlignmentIds": [],
+							"leftLabel": "",
+							"rightNameplateRelationshipIds": [],
+							"rightNameplateAlignmentIds": [],
+							"rightLabel": "",
+							"linkedKeyBindingIds": [],
+							"subheaderBorderStyle": "None",
+							"selectorWidth": 584,
+							"widgetClass": "None",
+							"getterFunctionName": "GetCombatantNameplateVisibility",
+							"setterFunctionName": "SetCombatantNameplateVisibility",
+							"dependencyGetter": "None"
+						},
+						{
+							"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Nameplates_DisplayCombatantHealthBar_Label\")",
+							"labelTextMinDesiredWidth": 320,
+							"labelTextWrapWidth": 600,
+							"type": "Dropdown",
+							"sliderMinMax":
+							{
+								"x": 0,
+								"y": 1
+							},
+							"bApplyOnMouseRelease": false,
+							"keyBindingId": "None",
+							"associatedClass": "Mage",
+							"leftNameplateRelationshipIds": [],
+							"leftNameplateAlignmentIds": [],
+							"leftLabel": "",
+							"rightNameplateRelationshipIds": [],
+							"rightNameplateAlignmentIds": [],
+							"rightLabel": "",
+							"linkedKeyBindingIds": [],
+							"subheaderBorderStyle": "None",
+							"selectorWidth": 584,
+							"widgetClass": "None",
+							"getterFunctionName": "GetCombatantHealthVisibility",
+							"setterFunctionName": "SetCombatantHealthVisibility",
+							"dependencyGetter": "None"
+						},
+						{
+							"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Nameplates_DisplayCombatantMountName_Label\")",
+							"labelTextMinDesiredWidth": 320,
+							"labelTextWrapWidth": 600,
+							"type": "Dropdown",
+							"sliderMinMax":
+							{
+								"x": 0,
+								"y": 1
+							},
+							"bApplyOnMouseRelease": false,
+							"keyBindingId": "None",
+							"associatedClass": "None",
+							"leftNameplateRelationshipIds": [],
+							"leftNameplateAlignmentIds": [],
+							"leftLabel": "",
+							"rightNameplateRelationshipIds": [],
+							"rightNameplateAlignmentIds": [],
+							"rightLabel": "",
+							"linkedKeyBindingIds": [],
+							"subheaderBorderStyle": "None",
+							"selectorWidth": 584,
+							"widgetClass": "None",
+							"getterFunctionName": "GetCombatantMountVisibility",
+							"setterFunctionName": "SetCombatantMountVisibility",
+							"dependencyGetter": "None"
+						},
+						{
+							"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Nameplates_DisplayCombatantVehicleName_Label\")",
+							"labelTextMinDesiredWidth": 320,
+							"labelTextWrapWidth": 600,
+							"type": "Dropdown",
+							"sliderMinMax":
+							{
+								"x": 0,
+								"y": 1
+							},
+							"bApplyOnMouseRelease": false,
+							"keyBindingId": "None",
+							"associatedClass": "Mage",
+							"leftNameplateRelationshipIds": [],
+							"leftNameplateAlignmentIds": [],
+							"leftLabel": "",
+							"rightNameplateRelationshipIds": [],
+							"rightNameplateAlignmentIds": [],
+							"rightLabel": "",
+							"linkedKeyBindingIds": [],
+							"subheaderBorderStyle": "None",
+							"selectorWidth": 584,
+							"widgetClass": "None",
+							"getterFunctionName": "GetCombatantVehicleVisibility",
+							"setterFunctionName": "SetCombatantVehicleVisibility",
+							"dependencyGetter": "None"
+						},
+						{
+							"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Nameplates_Corrupted_Subheader\")",
+							"labelTextMinDesiredWidth": 320,
+							"labelTextWrapWidth": 600,
+							"type": "Subheader",
+							"sliderMinMax":
+							{
+								"x": 0,
+								"y": 1
+							},
+							"bApplyOnMouseRelease": false,
+							"keyBindingId": "None",
+							"associatedClass": "Mage",
+							"leftNameplateRelationshipIds": [],
+							"leftNameplateAlignmentIds": [],
+							"leftLabel": "",
+							"rightNameplateRelationshipIds": [],
+							"rightNameplateAlignmentIds": [],
+							"rightLabel": "",
+							"linkedKeyBindingIds": [],
+							"subheaderBorderStyle": "None",
+							"selectorWidth": 300,
+							"widgetClass": "/Game/UI/Widgets/Options/WBP_OptionsMenuSubheaderRow.WBP_OptionsMenuSubheaderRow_C",
+							"getterFunctionName": "GetCorruptedSubheader",
+							"setterFunctionName": "SetCorruptedSubheader",
+							"dependencyGetter": "None"
+						},
+						{
+							"label": "",
+							"labelTextMinDesiredWidth": 320,
+							"labelTextWrapWidth": 900,
+							"type": "NameplateColor",
+							"sliderMinMax":
+							{
+								"x": 0,
+								"y": 1
+							},
+							"bApplyOnMouseRelease": false,
+							"keyBindingId": "None",
+							"associatedClass": "None",
+							"leftNameplateRelationshipIds": [],
+							"leftNameplateAlignmentIds": [
+								{
+									"guid": "6064629443752951818",
+									"typeId": "512160700",
+									"name": "None"
+								}
+							],
+							"leftLabel": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Nameplates_CorruptedPlayerTextColorLabel\")",
+							"rightNameplateRelationshipIds": [],
+							"rightNameplateAlignmentIds": [],
+							"rightLabel": "",
+							"linkedKeyBindingIds": [],
+							"subheaderBorderStyle": "None",
+							"selectorWidth": 300,
+							"widgetClass": "None",
+							"getterFunctionName": "GetAssociatedNameplateColors",
+							"setterFunctionName": "SetAssociatedNameplateColors",
+							"dependencyGetter": "None"
+						},
+						{
+							"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Nameplates_DisplayCorruptedNameplate_Label\")",
+							"labelTextMinDesiredWidth": 320,
+							"labelTextWrapWidth": 600,
+							"type": "Dropdown",
+							"sliderMinMax":
+							{
+								"x": 0,
+								"y": 1
+							},
+							"bApplyOnMouseRelease": false,
+							"keyBindingId": "None",
+							"associatedClass": "None",
+							"leftNameplateRelationshipIds": [],
+							"leftNameplateAlignmentIds": [],
+							"leftLabel": "",
+							"rightNameplateRelationshipIds": [],
+							"rightNameplateAlignmentIds": [],
+							"rightLabel": "",
+							"linkedKeyBindingIds": [],
+							"subheaderBorderStyle": "None",
+							"selectorWidth": 584,
+							"widgetClass": "None",
+							"getterFunctionName": "GetCorruptedNameplateVisibility",
+							"setterFunctionName": "SetCorruptedNameplateVisibility",
+							"dependencyGetter": "None"
+						},
+						{
+							"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Nameplates_DisplayCorruptedHealthBar_Label\")",
+							"labelTextMinDesiredWidth": 320,
+							"labelTextWrapWidth": 600,
+							"type": "Dropdown",
+							"sliderMinMax":
+							{
+								"x": 0,
+								"y": 1
+							},
+							"bApplyOnMouseRelease": false,
+							"keyBindingId": "None",
+							"associatedClass": "None",
+							"leftNameplateRelationshipIds": [],
+							"leftNameplateAlignmentIds": [],
+							"leftLabel": "",
+							"rightNameplateRelationshipIds": [],
+							"rightNameplateAlignmentIds": [],
+							"rightLabel": "",
+							"linkedKeyBindingIds": [],
+							"subheaderBorderStyle": "None",
+							"selectorWidth": 584,
+							"widgetClass": "None",
+							"getterFunctionName": "GetCorruptedHealthVisibility",
+							"setterFunctionName": "SetCorruptedHealthVisibility",
+							"dependencyGetter": "None"
+						},
+						{
+							"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Nameplates_DisplayCorruptedMountName_Label\")",
+							"labelTextMinDesiredWidth": 320,
+							"labelTextWrapWidth": 600,
+							"type": "Dropdown",
+							"sliderMinMax":
+							{
+								"x": 0,
+								"y": 1
+							},
+							"bApplyOnMouseRelease": false,
+							"keyBindingId": "None",
+							"associatedClass": "None",
+							"leftNameplateRelationshipIds": [],
+							"leftNameplateAlignmentIds": [],
+							"leftLabel": "",
+							"rightNameplateRelationshipIds": [],
+							"rightNameplateAlignmentIds": [],
+							"rightLabel": "",
+							"linkedKeyBindingIds": [],
+							"subheaderBorderStyle": "None",
+							"selectorWidth": 584,
+							"widgetClass": "None",
+							"getterFunctionName": "GetCorruptedMountVisibility",
+							"setterFunctionName": "SetCorruptedMountVisibility",
+							"dependencyGetter": "None"
+						},
+						{
+							"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Nameplates_DisplayCorruptedVehicleName_Label\")",
+							"labelTextMinDesiredWidth": 320,
+							"labelTextWrapWidth": 600,
+							"type": "Dropdown",
+							"sliderMinMax":
+							{
+								"x": 0,
+								"y": 1
+							},
+							"bApplyOnMouseRelease": false,
+							"keyBindingId": "None",
+							"associatedClass": "None",
+							"leftNameplateRelationshipIds": [],
+							"leftNameplateAlignmentIds": [],
+							"leftLabel": "",
+							"rightNameplateRelationshipIds": [],
+							"rightNameplateAlignmentIds": [],
+							"rightLabel": "",
+							"linkedKeyBindingIds": [],
+							"subheaderBorderStyle": "None",
+							"selectorWidth": 584,
+							"widgetClass": "None",
+							"getterFunctionName": "GetCorruptedVehicleVisibility",
+							"setterFunctionName": "SetCorruptedVehicleVisibility",
+							"dependencyGetter": "None"
+						}
+					]
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Nameplates_NonPlayerSubheader\")",
+					"entries": [
+						{
+							"label": "",
+							"labelTextMinDesiredWidth": 320,
+							"labelTextWrapWidth": 900,
+							"type": "NameplateColor",
+							"sliderMinMax":
+							{
+								"x": 0,
+								"y": 1
+							},
+							"bApplyOnMouseRelease": false,
+							"keyBindingId": "None",
+							"associatedClass": "Mage",
+							"leftNameplateRelationshipIds": [
+								{
+									"guid": "6064629443701243909",
+									"typeId": "512160702",
+									"name": "None"
+								},
+								{
+									"guid": "6064632151522738179",
+									"typeId": "512160702",
+									"name": "None"
+								},
+								{
+									"guid": "6064630650761445389",
+									"typeId": "512160702",
+									"name": "None"
+								},
+								{
+									"guid": "6064629443857285131",
+									"typeId": "512160702",
+									"name": "None"
+								},
+								{
+									"guid": "6064633221309988865",
+									"typeId": "512160702",
+									"name": "None"
+								},
+								{
+									"guid": "6064633301354545153",
+									"typeId": "512160702",
+									"name": "None"
+								},
+								{
+									"guid": "6064631358673190913",
+									"typeId": "512160702",
+									"name": "None"
+								}
+							],
+							"leftNameplateAlignmentIds": [],
+							"leftLabel": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Nameplates_FriendlyNPCTextColorLabel\")",
+							"rightNameplateRelationshipIds": [
+								{
+									"guid": "6064632151521230850",
+									"typeId": "512160702",
+									"name": "None"
+								}
+							],
+							"rightNameplateAlignmentIds": [],
+							"rightLabel": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Nameplates_VendorNameplateColor\")",
+							"linkedKeyBindingIds": [],
+							"subheaderBorderStyle": "None",
+							"selectorWidth": 300,
+							"widgetClass": "None",
+							"getterFunctionName": "GetAssociatedNameplateColors",
+							"setterFunctionName": "SetAssociatedNameplateColors",
+							"dependencyGetter": "None"
+						},
+						{
+							"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Nameplates_DisplayFriendlyNameplate_Label\")",
+							"labelTextMinDesiredWidth": 320,
+							"labelTextWrapWidth": 600,
+							"type": "Dropdown",
+							"sliderMinMax":
+							{
+								"x": 0,
+								"y": 1
+							},
+							"bApplyOnMouseRelease": false,
+							"keyBindingId": "None",
+							"associatedClass": "Mage",
+							"leftNameplateRelationshipIds": [],
+							"leftNameplateAlignmentIds": [],
+							"leftLabel": "",
+							"rightNameplateRelationshipIds": [],
+							"rightNameplateAlignmentIds": [],
+							"rightLabel": "",
+							"linkedKeyBindingIds": [],
+							"subheaderBorderStyle": "None",
+							"selectorWidth": 584,
+							"widgetClass": "None",
+							"getterFunctionName": "GetFriendlyNameplateVisibility",
+							"setterFunctionName": "SetFriendlyNameplateVisibility",
+							"dependencyGetter": "None"
+						},
+						{
+							"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Nameplates_DisplayFriendlyhealthBar_Label\")",
+							"labelTextMinDesiredWidth": 320,
+							"labelTextWrapWidth": 600,
+							"type": "Dropdown",
+							"sliderMinMax":
+							{
+								"x": 0,
+								"y": 1
+							},
+							"bApplyOnMouseRelease": false,
+							"keyBindingId": "None",
+							"associatedClass": "Mage",
+							"leftNameplateRelationshipIds": [],
+							"leftNameplateAlignmentIds": [],
+							"leftLabel": "",
+							"rightNameplateRelationshipIds": [],
+							"rightNameplateAlignmentIds": [],
+							"rightLabel": "",
+							"linkedKeyBindingIds": [],
+							"subheaderBorderStyle": "None",
+							"selectorWidth": 584,
+							"widgetClass": "None",
+							"getterFunctionName": "GetFriendlyHealthVisibility",
+							"setterFunctionName": "SetFriendlyHealthVisibility",
+							"dependencyGetter": "None"
+						},
+						{
+							"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Nameplates_DisplayFriendlyTitle_Label\")",
+							"labelTextMinDesiredWidth": 320,
+							"labelTextWrapWidth": 600,
+							"type": "Dropdown",
+							"sliderMinMax":
+							{
+								"x": 0,
+								"y": 1
+							},
+							"bApplyOnMouseRelease": false,
+							"keyBindingId": "None",
+							"associatedClass": "Mage",
+							"leftNameplateRelationshipIds": [],
+							"leftNameplateAlignmentIds": [],
+							"leftLabel": "",
+							"rightNameplateRelationshipIds": [],
+							"rightNameplateAlignmentIds": [],
+							"rightLabel": "",
+							"linkedKeyBindingIds": [],
+							"subheaderBorderStyle": "None",
+							"selectorWidth": 584,
+							"widgetClass": "None",
+							"getterFunctionName": "GetFriendlyTitleVisibility",
+							"setterFunctionName": "SetFriendlyTitleVisibility",
+							"dependencyGetter": "None"
+						},
+						{
+							"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Nameplates_DisplayFriendlyQuestIcon_Label\")",
+							"labelTextMinDesiredWidth": 320,
+							"labelTextWrapWidth": 600,
+							"type": "Dropdown",
+							"sliderMinMax":
+							{
+								"x": 0,
+								"y": 1
+							},
+							"bApplyOnMouseRelease": false,
+							"keyBindingId": "None",
+							"associatedClass": "Mage",
+							"leftNameplateRelationshipIds": [],
+							"leftNameplateAlignmentIds": [],
+							"leftLabel": "",
+							"rightNameplateRelationshipIds": [],
+							"rightNameplateAlignmentIds": [],
+							"rightLabel": "",
+							"linkedKeyBindingIds": [],
+							"subheaderBorderStyle": "None",
+							"selectorWidth": 584,
+							"widgetClass": "None",
+							"getterFunctionName": "GetFriendlyQuestIconVisibility",
+							"setterFunctionName": "SetFriendlyQuestIconVisibility",
+							"dependencyGetter": "None"
+						},
+						{
+							"label": "",
+							"labelTextMinDesiredWidth": 320,
+							"labelTextWrapWidth": 900,
+							"type": "NameplateColor",
+							"sliderMinMax":
+							{
+								"x": 0,
+								"y": 1
+							},
+							"bApplyOnMouseRelease": false,
+							"keyBindingId": "None",
+							"associatedClass": "Mage",
+							"leftNameplateRelationshipIds": [
+								{
+									"guid": "6064629443700129796",
+									"typeId": "512160702",
+									"name": "None"
+								},
+								{
+									"guid": "6064633062422085797",
+									"typeId": "512160702",
+									"name": "None"
+								}
+							],
+							"leftNameplateAlignmentIds": [
+								{
+									"guid": "6064632310208593979",
+									"typeId": "512160700",
+									"name": "None"
+								},
+								{
+									"guid": "6064633174709502388",
+									"typeId": "512160700",
+									"name": "None"
+								}
+							],
+							"leftLabel": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Nameplates_NeutralNPCTextColorLabel\")",
+							"rightNameplateRelationshipIds": [],
+							"rightNameplateAlignmentIds": [],
+							"rightLabel": "",
+							"linkedKeyBindingIds": [],
+							"subheaderBorderStyle": "None",
+							"selectorWidth": 300,
+							"widgetClass": "None",
+							"getterFunctionName": "GetAssociatedNameplateColors",
+							"setterFunctionName": "SetAssociatedNameplateColors",
+							"dependencyGetter": "None"
+						},
+						{
+							"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Nameplates_DisplayNeutralNPCNameplate_Label\")",
+							"labelTextMinDesiredWidth": 320,
+							"labelTextWrapWidth": 601,
+							"type": "Dropdown",
+							"sliderMinMax":
+							{
+								"x": 0,
+								"y": 1
+							},
+							"bApplyOnMouseRelease": false,
+							"keyBindingId": "None",
+							"associatedClass": "Mage",
+							"leftNameplateRelationshipIds": [],
+							"leftNameplateAlignmentIds": [],
+							"leftLabel": "",
+							"rightNameplateRelationshipIds": [],
+							"rightNameplateAlignmentIds": [],
+							"rightLabel": "",
+							"linkedKeyBindingIds": [],
+							"subheaderBorderStyle": "None",
+							"selectorWidth": 584,
+							"widgetClass": "None",
+							"getterFunctionName": "GetNeutralNonPlayerNameplateVisibility",
+							"setterFunctionName": "SetNeutralNonPlayerNameplateVisibility",
+							"dependencyGetter": "None"
+						},
+						{
+							"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Nameplates_DisplayNeutralNPCHealthBar_Label\")",
+							"labelTextMinDesiredWidth": 320,
+							"labelTextWrapWidth": 600,
+							"type": "Dropdown",
+							"sliderMinMax":
+							{
+								"x": 0,
+								"y": 1
+							},
+							"bApplyOnMouseRelease": false,
+							"keyBindingId": "None",
+							"associatedClass": "Mage",
+							"leftNameplateRelationshipIds": [],
+							"leftNameplateAlignmentIds": [],
+							"leftLabel": "",
+							"rightNameplateRelationshipIds": [],
+							"rightNameplateAlignmentIds": [],
+							"rightLabel": "",
+							"linkedKeyBindingIds": [],
+							"subheaderBorderStyle": "None",
+							"selectorWidth": 584,
+							"widgetClass": "None",
+							"getterFunctionName": "GetNeutralNonPlayerHealthVisibility",
+							"setterFunctionName": "SetNeutralNonPlayerHealthVisibility",
+							"dependencyGetter": "None"
+						},
+						{
+							"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Nameplates_DisplayNeutralNPCTitle_Label\")",
+							"labelTextMinDesiredWidth": 320,
+							"labelTextWrapWidth": 600,
+							"type": "Dropdown",
+							"sliderMinMax":
+							{
+								"x": 0,
+								"y": 1
+							},
+							"bApplyOnMouseRelease": false,
+							"keyBindingId": "None",
+							"associatedClass": "Mage",
+							"leftNameplateRelationshipIds": [],
+							"leftNameplateAlignmentIds": [],
+							"leftLabel": "",
+							"rightNameplateRelationshipIds": [],
+							"rightNameplateAlignmentIds": [],
+							"rightLabel": "",
+							"linkedKeyBindingIds": [],
+							"subheaderBorderStyle": "None",
+							"selectorWidth": 584,
+							"widgetClass": "None",
+							"getterFunctionName": "GetNeutralNonPlayerTitleVisibility",
+							"setterFunctionName": "SetNeutralNonPlayerTitleVisibility",
+							"dependencyGetter": "None"
+						},
+						{
+							"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Nameplates_DisplayHostileNameplate_Label\")",
+							"labelTextMinDesiredWidth": 320,
+							"labelTextWrapWidth": 600,
+							"type": "Dropdown",
+							"sliderMinMax":
+							{
+								"x": 0,
+								"y": 1
+							},
+							"bApplyOnMouseRelease": false,
+							"keyBindingId": "None",
+							"associatedClass": "Mage",
+							"leftNameplateRelationshipIds": [],
+							"leftNameplateAlignmentIds": [],
+							"leftLabel": "",
+							"rightNameplateRelationshipIds": [],
+							"rightNameplateAlignmentIds": [],
+							"rightLabel": "",
+							"linkedKeyBindingIds": [],
+							"subheaderBorderStyle": "None",
+							"selectorWidth": 584,
+							"widgetClass": "None",
+							"getterFunctionName": "GetHostileNameplateVisibility",
+							"setterFunctionName": "SetHostileNameplateVisibility",
+							"dependencyGetter": "None"
+						},
+						{
+							"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Nameplates_DisplayHostileHealthBar_Label\")",
+							"labelTextMinDesiredWidth": 320,
+							"labelTextWrapWidth": 600,
+							"type": "Dropdown",
+							"sliderMinMax":
+							{
+								"x": 0,
+								"y": 1
+							},
+							"bApplyOnMouseRelease": false,
+							"keyBindingId": "None",
+							"associatedClass": "Mage",
+							"leftNameplateRelationshipIds": [],
+							"leftNameplateAlignmentIds": [],
+							"leftLabel": "",
+							"rightNameplateRelationshipIds": [],
+							"rightNameplateAlignmentIds": [],
+							"rightLabel": "",
+							"linkedKeyBindingIds": [],
+							"subheaderBorderStyle": "None",
+							"selectorWidth": 584,
+							"widgetClass": "None",
+							"getterFunctionName": "GetHostileHealthVisibility",
+							"setterFunctionName": "SetHostileHealthVisibility",
+							"dependencyGetter": "None"
+						},
+						{
+							"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Nameplates_DisplayHostileTitle_Label\")",
+							"labelTextMinDesiredWidth": 320,
+							"labelTextWrapWidth": 600,
+							"type": "Dropdown",
+							"sliderMinMax":
+							{
+								"x": 0,
+								"y": 1
+							},
+							"bApplyOnMouseRelease": false,
+							"keyBindingId": "None",
+							"associatedClass": "Mage",
+							"leftNameplateRelationshipIds": [],
+							"leftNameplateAlignmentIds": [],
+							"leftLabel": "",
+							"rightNameplateRelationshipIds": [],
+							"rightNameplateAlignmentIds": [],
+							"rightLabel": "",
+							"linkedKeyBindingIds": [],
+							"subheaderBorderStyle": "None",
+							"selectorWidth": 584,
+							"widgetClass": "None",
+							"getterFunctionName": "GetHostileTitleVisibility",
+							"setterFunctionName": "SetHostileTitleVisibility",
+							"dependencyGetter": "None"
+						},
+						{
+							"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Nameplates_DisplayHostileRank_Label\")",
+							"labelTextMinDesiredWidth": 320,
+							"labelTextWrapWidth": 600,
+							"type": "Dropdown",
+							"sliderMinMax":
+							{
+								"x": 0,
+								"y": 1
+							},
+							"bApplyOnMouseRelease": false,
+							"keyBindingId": "None",
+							"associatedClass": "Mage",
+							"leftNameplateRelationshipIds": [],
+							"leftNameplateAlignmentIds": [],
+							"leftLabel": "",
+							"rightNameplateRelationshipIds": [],
+							"rightNameplateAlignmentIds": [],
+							"rightLabel": "",
+							"linkedKeyBindingIds": [],
+							"subheaderBorderStyle": "None",
+							"selectorWidth": 584,
+							"widgetClass": "None",
+							"getterFunctionName": "GetHostileRankVisibility",
+							"setterFunctionName": "SetHostileRankVisibility",
+							"dependencyGetter": "None"
+						}
+					]
+				}
+			]
+		}
+	],
+	"guid": "6064632602248544256",
+	"name": "Nameplates",
+	"typeId": "3616673544"
+}

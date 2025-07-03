@@ -1,0 +1,25 @@
+{
+	"bWeaponCombo": false,
+	"statRefId":
+	{
+		"guid": "108986352686712",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"stat": "Health",
+	"value":
+	{
+		"expression": "0.1 * GetStatModValue(GetHitEvent(), $#10516612381411111:108986352686712$) * EvalFormula($#10516612381411113:6064629247910805510$)"
+	},
+	"priority": 0,
+	"bonusPenetration":
+	{
+		"expression": ""
+	},
+	"bShowFloatingText": true,
+	"valueInputTerms": [],
+	"statBuckets": "CombatRegister1",
+	"guid": "6064629420753813510",
+	"name": "Cleric_Beacon_Heal",
+	"typeId": "3031600201"
+}

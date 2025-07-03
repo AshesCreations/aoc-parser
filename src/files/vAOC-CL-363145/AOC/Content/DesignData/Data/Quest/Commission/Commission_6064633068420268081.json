@@ -1,0 +1,107 @@
+{
+	"commissionType": "Generic",
+	"commissionGameplayTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "Biome.Desert"
+			},
+			{
+				"tagName": "Quest.Commission.Adventure.Goto"
+			},
+			{
+				"tagName": "Quest.Commission.Tier.T1"
+			}
+		],
+		"parentTags": [
+			{
+				"tagName": "Biome"
+			},
+			{
+				"tagName": "Quest.Commission.Adventure"
+			},
+			{
+				"tagName": "Quest.Commission"
+			},
+			{
+				"tagName": "Quest"
+			},
+			{
+				"tagName": "Quest.Commission.Tier"
+			}
+		]
+	},
+	"preRequisiteQuestsIds": [],
+	"autoFailTimer": -1,
+	"bRepeatable": false,
+	"mainObjectiveType": "Collect",
+	"commissionSection": 1,
+	"biomeOrigin": "FloodPlains",
+	"bFromDynamicContent": false,
+	"availabilityExpression":
+	{
+		"expression": "GetNodeRecord() == $#1323521343:6064632734253907971$ && Node_InLevelRangeInclusive($#1323521343:6064632734253907971$, ENodeLevel::Village, ENodeLevel::City)"
+	},
+	"bDisabled": true,
+	"level": 30,
+	"commissionRarity": "Rare",
+	"objectivesIds": [
+		{
+			"guid": "6064633068547866683",
+			"typeId": "1091110420",
+			"name": "None"
+		}
+	],
+	"allowMultipleCompletion": false,
+	"commissionName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"C99A40C8464472976FD2B8947FD14270\", \"Scrap to Riches\")",
+	"flavorText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"B2FD04514C4663035DB0D2B600D5D475\", \"Search for the existence of Scrap Metal Strands within the Gypsum Outpost. \\\"Some skulkers say the Jackals know how to twist scrap metal into gold. That\\'s crazy about here, eh?\\\" - Junkle Stumblerump, Crypt Raider and Acrobat\")",
+	"mainObjectiveText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"AE914778405A26AEDEF81290BA18E293\", \"Collect proof of Scrap Metal Strand\")",
+	"rewardTablesIds": [
+		{
+			"guid": "6064631828174536707",
+			"typeId": "1091110040",
+			"name": "None"
+		}
+	],
+	"calloutName": "",
+	"calloutDescription": "",
+	"bCanProgressWhileInRaid": true,
+	"expiration":
+	{
+		"duration": "0"
+	},
+	"cooldown":
+	{
+		"duration": "0"
+	},
+	"moneyCost": "0",
+	"resourceCost": [],
+	"mayoralCompletionCount": 0,
+	"rewardId":
+	{
+		"guid": "0",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"bNodeTargeted": false,
+	"targetRewardId":
+	{
+		"guid": "0",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"questItemListIds": [
+		{
+			"guid": "6064633068387762222",
+			"typeId": "1091110003",
+			"name": "None"
+		}
+	],
+	"storedGraph":
+	{
+		"nodes": []
+	},
+	"guid": "6064633068420268081",
+	"name": "COM_SAN_Collect_ObsidianJackal_Reagent",
+	"typeId": "280002"
+}

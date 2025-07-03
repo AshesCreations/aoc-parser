@@ -1,0 +1,74 @@
+{
+	"commissionType": "Narrative",
+	"preRequisiteQuestsIds": [],
+	"bRepeatable": false,
+	"mainObjectiveType": "Basic",
+	"commissionSection": 1,
+	"biomeOrigin": "FloodPlains",
+	"bFromDynamicContent": false,
+	"availabilityExpression":
+	{
+		"expression": "const playerNode = Node_GetActorCityNode(GetPlayer());\r\nconst npcNode = Node_GetActorCityNode(GetInteractionTarget());\r\nplayerNode == npcNode\r\n&&\r\nNode_GetElectionState(npcNode) == EMayorElectionState::ActiveElection"
+	},
+	"bDisabled": false,
+	"level": 5,
+	"commissionRarity": "Common",
+	"objectivesIds": [
+		{
+			"guid": "6064632099138306062",
+			"typeId": "1091110420",
+			"name": "None"
+		},
+		{
+			"guid": "6064632100594909185",
+			"typeId": "1091110420",
+			"name": "None"
+		}
+	],
+	"allowMultipleCompletion": false,
+	"commissionName": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"F87BACD24A488272A82E8292879B510A\", \"Make Your Voice Heard\")",
+	"flavorText": "",
+	"mainObjectiveText": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"7A05F9324B8E5F5C86C0BDA6A908CF34\", \"The Town hall administrator wants you to vote in the node\\'s mayoral election! Cast your vote and then speak with him again.\")",
+	"rewardTableId":
+	{
+		"guid": "6064631828174143489",
+		"typeId": "1091110040",
+		"name": "None"
+	},
+	"rewardTablesIds": [
+		{
+			"guid": "6064631828174143489",
+			"typeId": "1091110040",
+			"name": "None"
+		}
+	],
+	"calloutName": "",
+	"calloutDescription": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"10F3672F45E74C9102798F9C5F257D11\", \"The administrator beckons you over excitedly.\")",
+	"expiration":
+	{
+		"duration": "0"
+	},
+	"cooldown":
+	{
+		"duration": "0"
+	},
+	"moneyCost": "0",
+	"resourceCost": [],
+	"mayoralCompletionCount": 0,
+	"rewardId":
+	{
+		"guid": "0",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"bNodeTargeted": false,
+	"targetRewardId":
+	{
+		"guid": "0",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"guid": "6064632099131031565",
+	"name": "CSQ_0150_FTUE_MakeYourVoiceHeard",
+	"typeId": "280002"
+}

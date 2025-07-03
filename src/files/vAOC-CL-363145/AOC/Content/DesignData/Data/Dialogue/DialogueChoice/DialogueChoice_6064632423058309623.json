@@ -1,0 +1,22 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"C157001642A1A291543D2B8F2E9AE9D4\", \"About those cultists...\")",
+	"nextNodeId":
+	{
+		"guid": "6064632400371122204",
+		"typeId": "1091110028",
+		"name": "CSQ_DD_0010_SPH_ScoutOrithar_6"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "Player_HasCompletedCommission(GetPlayer(), \"SQ_0010_SliversOfThePast2\") &&\r\n!Player_HasCompletedCommission(GetPlayer(), \"SQ_0010_SliversOfThePastPart3\") &&\r\n!Player_HasCommission(GetPlayer(), \"SQ_0010_SliversOfThePastPart3\")"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064632423058309623",
+	"name": "CSQ_DD_0010_SPH_ScoutOrithar_1_Choice_2",
+	"typeId": "1091110027"
+}

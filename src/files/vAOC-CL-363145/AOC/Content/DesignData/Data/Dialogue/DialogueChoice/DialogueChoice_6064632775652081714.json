@@ -1,0 +1,72 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"1FB974314BDD28B41810B1A2B7F6F5C4\", \"Toss the Honorsworn Key in the fire.\")",
+	"nextNodeId":
+	{
+		"guid": "6064632775674626108",
+		"typeId": "1091110028",
+		"name": "RVR_Dungeon_HonorSworn_Tower_RedBrazier_DLG_3"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064632774710460442",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": ""
+	},
+	"requirements": [
+		{
+			"criteria": [
+				{
+					"elementType": "Item",
+					"narrativeType": "Commission",
+					"commissionId":
+					{
+						"guid": "0",
+						"typeId": "280002",
+						"name": "None"
+					},
+					"storyArcQuestId":
+					{
+						"guid": "0",
+						"typeId": "1091110035",
+						"name": "None"
+					},
+					"objectiveId":
+					{
+						"guid": "0",
+						"typeId": "1091110420",
+						"name": "None"
+					},
+					"itemFilterId":
+					{
+						"guid": "6064632774634635275",
+						"typeId": "1091110041",
+						"name": "None"
+					},
+					"currencyDefId":
+					{
+						"guid": "0",
+						"typeId": "1011151289",
+						"name": "None"
+					},
+					"amountToQuery": 1,
+					"questState": "InProgress",
+					"objectiveState": "Active",
+					"itemState": "InInventory",
+					"invert": false
+				}
+			]
+		}
+	],
+	"choiceType": "Default",
+	"guid": "6064632775652081714",
+	"name": "RVR_Dungeon_HonorSworn_Tower_RedBrazier_DLG_2_Choice_1",
+	"typeId": "1091110027"
+}

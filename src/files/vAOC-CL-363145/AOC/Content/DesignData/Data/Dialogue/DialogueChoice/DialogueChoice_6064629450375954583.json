@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"192601EE48D691BF2C9B70AB0725A9FB\", \"Where are your guards?\")",
+	"nextNodeId":
+	{
+		"guid": "6064629450379624600",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MIA_0020_KOC_KeepOnTheCrossroads\",\"MIP_0020_KOC_Phase02\")&&\r\n!IsOnStoryArcQuest(GetPlayer(),\"MIQ_0020_CAC_CloaksAndCaravans\")&&\r\nIsStoryArcQuestAvailable(GetPlayer(),\"MIQ_0020_CAC_CloaksAndCaravans\")\r\n"
+	},
+	"guid": "6064629450375954583",
+	"name": "MIDD_0020_CAC_BudgeMac_4",
+	"typeId": "1091110027"
+}

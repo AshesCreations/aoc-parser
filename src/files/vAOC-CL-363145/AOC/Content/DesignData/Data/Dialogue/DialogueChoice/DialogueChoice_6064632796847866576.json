@@ -1,0 +1,22 @@
+{
+	"choiceText": "",
+	"nextNodeId":
+	{
+		"guid": "6064632796847866580",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "!Player_HasCommission (GetPlayer(), \"SQ_30_FAS_1\") && !Player_HasCompletedCommission(GetPlayer(), \"SQ_30_FAS_1\")"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064632796847866576",
+	"name": "SQ_BuiltOnBlood_DigSite_2_Choice_1",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,179 @@
+{
+	"designNotes": "",
+	"levelDefinitionId":
+	{
+		"guid": "6064629126799097877",
+		"typeId": "9227326",
+		"name": "None"
+	},
+	"playerFacingName": "NSLOCTEXT(\"\", \"CF37D77E418AA80053E8859029A75380\", \"Halcyon\")",
+	"zoiType": "HasNode",
+	"startingAreaGameplayTag":
+	{
+		"tagName": "None"
+	},
+	"cityNodeId":
+	{
+		"guid": "108646610851452",
+		"typeId": "1323521343",
+		"name": "None"
+	},
+	"adjacentZonesOfInfluenceIds": [
+		{
+			"guid": "6064629126900678679",
+			"typeId": "9127326",
+			"name": "None"
+		},
+		{
+			"guid": "6064629126905528345",
+			"typeId": "9127326",
+			"name": "None"
+		},
+		{
+			"guid": "6064629127135166465",
+			"typeId": "9127326",
+			"name": "None"
+		},
+		{
+			"guid": "6064632501420490752",
+			"typeId": "9127326",
+			"name": "None"
+		}
+	],
+	"corruptionRulesEnabled": true,
+	"bAllowPVPOptInProtection": false,
+	"alignmentsAssignedUponEnteringIds": [],
+	"zoiEnvironmentType": "None",
+	"editorColor":
+	{
+		"x": 0,
+		"y": 1,
+		"z": 0.53000000000000003
+	},
+	"zOIRewardTables": [
+		{
+			"inclusionExpression":
+			{
+				"expression": "!DoesNPCContainTag(\"NoRewards\")"
+			},
+			"rewardTableId":
+			{
+				"guid": "6064632271552578329",
+				"typeId": "1091110040",
+				"name": "None"
+			}
+		},
+		{
+			"inclusionExpression":
+			{
+				"expression": "DoesNPCContainTag(\"character.humanoid\")"
+			},
+			"rewardTableId":
+			{
+				"guid": "6064632277128773740",
+				"typeId": "1091110040",
+				"name": "None"
+			}
+		},
+		{
+			"inclusionExpression":
+			{
+				"expression": "!DoesNPCContainTag(\"NoRewards\")"
+			},
+			"rewardTableId":
+			{
+				"guid": "6064633313653948416",
+				"typeId": "1091110040",
+				"name": "None"
+			}
+		}
+	],
+	"economicRegionTableId":
+	{
+		"guid": "6064631963229421568",
+		"typeId": "98738382",
+		"name": "None"
+	},
+	"bHideExperienceEvents": false,
+	"biome": "Riverlands",
+	"biomeGatherableTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "Riverlands"
+			}
+		],
+		"parentTags": []
+	},
+	"freeholdEstatesIds": [
+		{
+			"guid": "6064632764455387163",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064632764455256090",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064632764459974688",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064632764457746463",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064632764462596132",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064632764457680926",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064632764538028070",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064632764453290009",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064632764455518236",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064632764457549853",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064632764460171298",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064632764460040225",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064632764462661669",
+			"typeId": "1337133701",
+			"name": "None"
+		}
+	],
+	"actorEffects": [],
+	"guid": "6064629126902120472",
+	"name": "Verra_RVR_Node_Halcyon",
+	"typeId": "9127326"
+}

@@ -1,0 +1,33 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 2,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0,
+		"fishingEvents": 0,
+		"statEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "GetEffectInstigator() == GetInstigator()\r\n&& GetStatModValue(GetHitEvent(), $#10516612381411111:108986352686712$) < 0.0 \r\n&& HitFlagsContains(GetHitFlags(GetHitEvent()), EHitFlag::Lethal)"
+	},
+	"bEvaluateApplyingHit": false,
+	"instigator": "HitInstigator",
+	"targetsBitmask": 16,
+	"reactHitsIds": [
+		{
+			"guid": "6064632932335978355",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"instigatorProcLimit": 0,
+	"globalProcLimit": 0,
+	"procReactOnApply": false,
+	"guid": "6064632932332177266",
+	"name": "Rogue_DeathsMark_Lethal",
+	"typeId": "3031600202"
+}

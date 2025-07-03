@@ -1,0 +1,61 @@
+{
+	"displayName": "NSLOCTEXT(\"[1909495A4C2095068D406C9D33F90055]\", \"D133F4D144CA15443A74CCB4E534BC3E\", \"Evasion\")",
+	"description": "NSLOCTEXT(\"\", \"C2B33F1544D1BC273EC614820EC64EFD\", \"Reduces the chance to be hit by attacks\")",
+	"bHidden": false,
+	"gameplayType": "Type_Combat",
+	"bHasWaterfallStatsUI": false,
+	"waterfallStatsUIIds": [],
+	"bDisplayAsPercentage": true,
+	"statType": "Type_Float",
+	"bClampStatFinalValue": false,
+	"bMultiplyStatMods": false,
+	"bMultiplyCompliment": false,
+	"base":
+	{
+		"expression": "const rating = GetStat(GetInstigator(), $#10516612381411111:6064628617716695054$);\r\nconst fighterMomentumMult = GetStat(GetInstigator(), $#10516612381411111:6064629959589298751$) * 0.0015;\r\nconst fighterForm = GetEffectCount(GetInstigator(), $#30316002:6064630158664844305$);\r\n\r\nrating / (rating + EvalFormula($#10516612381411113:6064630400882049044$)) + fighterMomentumMult * fighterForm"
+	},
+	"waterfallStatsBaseIds": [
+		{
+			"guid": "6064628617716695054",
+			"typeId": "10516612381411111",
+			"name": "None"
+		},
+		{
+			"guid": "6064629959589298751",
+			"typeId": "10516612381411111",
+			"name": "None"
+		}
+	],
+	"valueMin":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMinIds": [],
+	"valueMax":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMaxIds": [],
+	"regenRate":
+	{
+		"expression": ""
+	},
+	"waterfallStatsRegenIds": [],
+	"bRegenWhileDead": false,
+	"bRecalculateOnCombatState": false,
+	"onSpawn": "Reset_None",
+	"onDeath": "Reset_None",
+	"onRevive": "Reset_None",
+	"bPersistValue": false,
+	"replication": 5,
+	"shieldStatId":
+	{
+		"guid": "0",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"grantedEffects": [],
+	"guid": "6064628617716498442",
+	"name": "Evasion",
+	"typeId": "10516612381411111"
+}

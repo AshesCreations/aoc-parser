@@ -1,0 +1,73 @@
+{
+	"commissionType": "Narrative",
+	"preRequisiteQuestsIds": [],
+	"bRepeatable": false,
+	"mainObjectiveType": "Basic",
+	"commissionSection": 1,
+	"biomeOrigin": "FloodPlains",
+	"bFromDynamicContent": false,
+	"availabilityExpression":
+	{
+		"expression": "GetPlayerLevel() >= 4 && \r\n!Player_HasCommission(GetPlayer(), \"SQ_0010_SliversOfThePastPart2\") &&\r\n!Player_HasCompletedCommission(GetPlayer(), \"SQ_0010_SliversOfThePastPart2\") &&\r\nPlayer_HasCompletedCommission(GetPlayer(), \"SQ_0010_SliversOfThePast\")"
+	},
+	"bDisabled": false,
+	"level": 7,
+	"commissionRarity": "Common",
+	"objectivesIds": [
+		{
+			"guid": "6064632394713727564",
+			"typeId": "1091110420",
+			"name": "None"
+		},
+		{
+			"guid": "6064632399928885248",
+			"typeId": "1091110420",
+			"name": "None"
+		},
+		{
+			"guid": "6064632400731573175",
+			"typeId": "1091110420",
+			"name": "None"
+		}
+	],
+	"allowMultipleCompletion": false,
+	"commissionName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"F03E03B64CCAD632AA9C41AB24E37AF5\", \"Slivers of the Past, Part 2\")",
+	"flavorText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"5BCBBBF640080CF61C5F7FB53D9C167D\", \"The Sighted cult has been very active around the Ruins of Sephillion.  Captain Redblade has tasked me to seek out Scout Orithar near Sephillion and help them figure out what the cult has been up to.\")",
+	"mainObjectiveText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"4C026F644A857745383B068412BACF2E\", \"Find Scout Orithar on the outskirts of Sephillion and help them investigate what the cult is doing there.\")",
+	"rewardTablesIds": [
+		{
+			"guid": "6064631828174536707",
+			"typeId": "1091110040",
+			"name": "None"
+		}
+	],
+	"calloutName": "",
+	"calloutDescription": "",
+	"expiration":
+	{
+		"duration": "0"
+	},
+	"cooldown":
+	{
+		"duration": "0"
+	},
+	"moneyCost": "0",
+	"resourceCost": [],
+	"mayoralCompletionCount": 0,
+	"rewardId":
+	{
+		"guid": "0",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"bNodeTargeted": false,
+	"targetRewardId":
+	{
+		"guid": "0",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"guid": "6064632422373722238",
+	"name": "SQ_0010_SliversOfThePastPart2",
+	"typeId": "280002"
+}

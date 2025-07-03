@@ -1,0 +1,22 @@
+{
+	"choiceText": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"BEBF2913487B1E41DD6E33919B5831A4\", \"(Not in Guild)\")",
+	"nextNodeId":
+	{
+		"guid": "6064632983175823369",
+		"typeId": "1091110028",
+		"name": "DD_ServiceNPC_GuildCommodityVendor_3"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "!Guild_IsMember(GetPlayer())"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064632983173857288",
+	"name": "DD_ServiceNPC_GuildCommodityVendor_2_Choice_3",
+	"typeId": "1091110027"
+}

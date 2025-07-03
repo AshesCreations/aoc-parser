@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"7D357FFA400EC81A1295AA9E0DAE72B7\", \"I work for Budge MacKraggin.\")",
+	"nextNodeId":
+	{
+		"guid": "6064629461039579148",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MIA_0020_KOC_KeepOnTheCrossroads\",\"MIP_0020_KOC_Phase02\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MIQ_0020_CAC_CloaksAndCaravans\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MIQ_0020_CAC_CloaksAndCaravans\",\"MetRatCellar\")"
+	},
+	"guid": "6064629461036761099",
+	"name": "MIDD_0020_CAC_RatCellar_4",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,28 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"145A3A914E3DA03E75494DAF21E0A105\", \"Begin the search\")",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064631079901986819",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "!Player_HasCompletedCommission(GetPlayer(),\"CSQ_RVR_TH_0010_TOA_TopOfTheArch\")&&\r\n!Player_HasCommission(GetPlayer(),\"CSQ_RVR_TH_0010_TOA_TopOfTheArch\")&&\r\nPlayer_HasItem(GetPlayer(),\"CSQ_0010_TreasureMap_JarraksRock\")"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064631080017526806",
+	"name": "CSQ_DD_0010_TMap_JarraksRock_4",
+	"typeId": "1091110027"
+}

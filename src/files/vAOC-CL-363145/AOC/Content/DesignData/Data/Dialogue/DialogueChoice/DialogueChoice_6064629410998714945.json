@@ -1,0 +1,23 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"F8AC2C084A5ACCDC904AEAB2C83A6516\", \"Would you find these runes valuable?\")",
+	"nextNodeId":
+	{
+		"guid": "6064629427870498821",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064629427837403137",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "GetStoryArcQuestFlag(GetPlayer(),\"SAQ_0008_BrotherhoodOftheMissingCloak\",\"FlagShipments\")"
+	},
+	"guid": "6064629410998714945",
+	"name": "MADD_0008_BrotherHugh_29",
+	"typeId": "1091110027"
+}

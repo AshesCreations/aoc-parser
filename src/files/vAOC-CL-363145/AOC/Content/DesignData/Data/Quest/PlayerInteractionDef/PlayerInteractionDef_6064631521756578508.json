@@ -1,0 +1,72 @@
+{
+	"completionResponsesIds": [
+		{
+			"guid": "6064631521854882772",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"objectivesToCompleteUponCompletionIds": [],
+	"objectivesToRevealUponCompletionIds": [],
+	"itemsToGrantUponCompletion": [],
+	"channelDuration": 0,
+	"activePredicate":
+	{
+		"expression": "Player_ObjectiveStateEquals(GetPlayer(), \"SQO_0050_02.1_Ingots\", EObjectiveState::Active)"
+	},
+	"cuePredicate":
+	{
+		"expression": "Player_ObjectiveStateEquals(GetPlayer(), \"SQO_0050_02.1_Ingots\", EObjectiveState::Active)"
+	},
+	"visiblePredicate":
+	{
+		"expression": "Player_ObjectiveStateEquals(GetPlayer(), \"SQO_0050_02.1_Ingots\", EObjectiveState::Active)"
+	},
+	"showErrorIfNotVisible": false,
+	"deleteOnCompletion": false,
+	"singleUse": false,
+	"alwaysShowUIPrompt": true,
+	"cancelChannelIfActivePredicateEverFails": true,
+	"interactTextFormat": "",
+	"channelModifierType": "NONE",
+	"rewardTableId":
+	{
+		"guid": "0",
+		"typeId": "1091110008",
+		"name": "None"
+	},
+	"startEffect": "None",
+	"endEffect": "None",
+	"failEffect": "None",
+	"successEffect": "None",
+	"cueEffect": "None",
+	"startSound": "None",
+	"endSound": "None",
+	"failSound": "None",
+	"successSound": "None",
+	"cueSound": "None",
+	"interactAnimTag": "kneel",
+	"deletionDelay": 0,
+	"activeCueEnabled": true,
+	"activeCueIgnoresActivePredicate": false,
+	"facePlayer": false,
+	"allowInCombat": false,
+	"spawnAtBottomCapsule": false,
+	"channelAnimation": "None",
+	"interactRadius": 300,
+	"interactTolerance": 360,
+	"interactAngle": 0,
+	"busyTime": 0.89999997615814209,
+	"clientBusyTime": 1,
+	"channelStartResponseIds": [],
+	"failResponsesIds": [],
+	"gatheringInteractionDataId":
+	{
+		"guid": "0",
+		"typeId": "19846",
+		"name": "None"
+	},
+	"guid": "6064631521756578508",
+	"name": "PI_CSQ_0050_GiveItem_Ingot",
+	"typeId": "1091110031"
+}

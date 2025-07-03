@@ -1,0 +1,115 @@
+{
+	"bAllowSatisfactionToRegress": false,
+	"parameterTypes": 1,
+	"objectiveType": "Kill",
+	"completionCriteria": [
+		{
+			"bOverrideCompletionValueWithExpression": true,
+			"completionValue": 20,
+			"operator": "GreaterThan",
+			"completionExpression":
+			{
+				"expression": "Event_GetIntObjectiveProgress() >=20"
+			},
+			"completionTriggersIds": [],
+			"bDisplayOnTracker": true,
+			"relevantTrackerIds": [
+				{
+					"guid": "6064631470906344651",
+					"typeId": "23095133",
+					"name": "None"
+				}
+			],
+			"displayText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"8FAA607C4A6F6B693AE95088D679DC63\", \"Defeat the Two-Fangers\")",
+			"displayType": 1,
+			"displayCompletionValue": 20,
+			"bInvertProgressDisplay": false
+		}
+	],
+	"nPCObjectiveIconOverrideId":
+	{
+		"guid": "0",
+		"typeId": "949952112329",
+		"name": "None"
+	},
+	"progressExpression":
+	{
+		"expression": ""
+	},
+	"gameplayTagFilter":
+	{
+		"tokenStreamVersion": 0,
+		"tagDictionary": [
+			{
+				"tagName": "Quest.EventTarget.Generic.A"
+			},
+			{
+				"tagName": "affiliation.bandit"
+			}
+		],
+		"queryTokenStream": [ 0, 1, 1, 2, 0, 1 ],
+		"userDescription": "",
+		"autoDescription": " ANY( Quest.EventTarget.Generic.A, affiliation.bandit )"
+	},
+	"populationSetId":
+	{
+		"guid": "0",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"trackerId":
+	{
+		"guid": "0",
+		"typeId": "23095133",
+		"name": "None"
+	},
+	"interactablesIds": [],
+	"professionFilterIds": [],
+	"gatherableFilterIds": [],
+	"collectionFilterId":
+	{
+		"guid": "0",
+		"typeId": "1091110041",
+		"name": "None"
+	},
+	"collectionCount": 5,
+	"abilityRecordId":
+	{
+		"guid": "0",
+		"typeId": "30316001",
+		"name": "None"
+	},
+	"activityType": "NPCKill",
+	"activityQueryLocation":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"activityQueryExtent":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"bDisplayOnTracker": true,
+	"trackerText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"8FAA607C4A6F6B693AE95088D679DC63\", \"Defeat the Two-Fangers\")",
+	"displayType": 1,
+	"displayCompletionValue": 20,
+	"visibilityExpression":
+	{
+		"expression": "HasAlignment(GetPlayer(), $#512160700:6064630497144737806$)"
+	},
+	"visibilityOverridesTrackerFilter": false,
+	"trackersToDisplayToIds": [
+		{
+			"guid": "6064631470906344651",
+			"typeId": "23095133",
+			"name": "None"
+		}
+	],
+	"relevantAlignmentsIds": [],
+	"guid": "6064631443518783959",
+	"name": "ED_RVR_M903_LarcenersPact_Stage_KillFactionA",
+	"typeId": "23095130"
+}

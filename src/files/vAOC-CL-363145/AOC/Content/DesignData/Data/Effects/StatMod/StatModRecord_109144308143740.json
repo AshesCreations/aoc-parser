@@ -1,0 +1,22 @@
+{
+	"statRefId":
+	{
+		"guid": "108986352686712",
+		"typeId": "10516612381411111",
+		"name": "Stat_Health"
+	},
+	"value":
+	{
+		"expression": "1.20 * EvalFormula($#10516612381411113:6064629862506364928$)*(1+GetStat(GetTarget(),$#10516612381411111:108986352686712$)/GetStat(GetTarget(),$#10516612381411111:108986356618873$))"
+	},
+	"bUseShieldAbsorb": false,
+	"shieldAbsorbPercentage":
+	{
+		"expression": ""
+	},
+	"bShowFloatingText": true,
+	"valueInputTerms": [],
+	"guid": "109144308143740",
+	"name": "Ancients_Minion_Crawler_Strike_Damage",
+	"typeId": "3031600201"
+}

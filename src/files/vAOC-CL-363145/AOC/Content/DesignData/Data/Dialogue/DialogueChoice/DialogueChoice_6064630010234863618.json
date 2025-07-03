@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"E069E8CE407A8DC96B02B8B2F7CF7349\", \"I bring news.\")",
+	"nextNodeId":
+	{
+		"guid": "6064628816036692233",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0007_PriestessAndThePiper\",\"MAP_0007_PriestessAndThePiper_Phase02\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_BTP_BoneToPick\",\"NecklaceCombined\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_BTP_BoneToPick\",\"MetTheBoneWitch\")"
+	},
+	"guid": "6064630010234863618",
+	"name": "MADD_0007_NPC_TheBonekeeper_23",
+	"typeId": "1091110027"
+}

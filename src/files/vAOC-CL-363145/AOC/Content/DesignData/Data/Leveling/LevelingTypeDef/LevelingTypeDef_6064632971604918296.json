@@ -1,0 +1,700 @@
+{
+	"displayName": "Guild Level",
+	"experienceType": "Guild",
+	"modulationStatIds": [],
+	"bUsesExperienceDebt": false,
+	"bProvidesNodeExperience": false,
+	"bProvidesGuildExperience": true,
+	"levelUpCurve":
+	{
+		"externalCurve": "None",
+		"editorCurveData":
+		{
+			"keys": [
+				{
+					"interpMode": "RCIM_Linear",
+					"tangentMode": "RCTM_Auto",
+					"tangentWeightMode": "RCTWM_WeightedNone",
+					"time": 0,
+					"value": 0,
+					"arriveTangent": 0,
+					"arriveTangentWeight": 0,
+					"leaveTangent": 0,
+					"leaveTangentWeight": 0
+				},
+				{
+					"interpMode": "RCIM_Linear",
+					"tangentMode": "RCTM_Auto",
+					"tangentWeightMode": "RCTWM_WeightedNone",
+					"time": 1,
+					"value": 0,
+					"arriveTangent": 0,
+					"arriveTangentWeight": 0,
+					"leaveTangent": 0,
+					"leaveTangentWeight": 0
+				},
+				{
+					"interpMode": "RCIM_Linear",
+					"tangentMode": "RCTM_Auto",
+					"tangentWeightMode": "RCTWM_WeightedNone",
+					"time": 2,
+					"value": 3000000,
+					"arriveTangent": 0,
+					"arriveTangentWeight": 0,
+					"leaveTangent": 0,
+					"leaveTangentWeight": 0
+				},
+				{
+					"interpMode": "RCIM_Linear",
+					"tangentMode": "RCTM_Auto",
+					"tangentWeightMode": "RCTWM_WeightedNone",
+					"time": 3,
+					"value": 8000000,
+					"arriveTangent": 0,
+					"arriveTangentWeight": 0,
+					"leaveTangent": 0,
+					"leaveTangentWeight": 0
+				},
+				{
+					"interpMode": "RCIM_Linear",
+					"tangentMode": "RCTM_Auto",
+					"tangentWeightMode": "RCTWM_WeightedNone",
+					"time": 4,
+					"value": 16000000,
+					"arriveTangent": 0,
+					"arriveTangentWeight": 0,
+					"leaveTangent": 0,
+					"leaveTangentWeight": 0
+				},
+				{
+					"interpMode": "RCIM_Linear",
+					"tangentMode": "RCTM_Auto",
+					"tangentWeightMode": "RCTWM_WeightedNone",
+					"time": 5,
+					"value": 31000000,
+					"arriveTangent": 0,
+					"arriveTangentWeight": 0,
+					"leaveTangent": 0,
+					"leaveTangentWeight": 0
+				},
+				{
+					"interpMode": "RCIM_Linear",
+					"tangentMode": "RCTM_Auto",
+					"tangentWeightMode": "RCTWM_WeightedNone",
+					"time": 6,
+					"value": 60000000,
+					"arriveTangent": 0,
+					"arriveTangentWeight": 0,
+					"leaveTangent": 0,
+					"leaveTangentWeight": 0
+				},
+				{
+					"interpMode": "RCIM_Linear",
+					"tangentMode": "RCTM_Auto",
+					"tangentWeightMode": "RCTWM_WeightedNone",
+					"time": 7,
+					"value": 113000000,
+					"arriveTangent": 0,
+					"arriveTangentWeight": 0,
+					"leaveTangent": 0,
+					"leaveTangentWeight": 0
+				},
+				{
+					"interpMode": "RCIM_Linear",
+					"tangentMode": "RCTM_Auto",
+					"tangentWeightMode": "RCTWM_WeightedNone",
+					"time": 8,
+					"value": 206000000,
+					"arriveTangent": 0,
+					"arriveTangentWeight": 0,
+					"leaveTangent": 0,
+					"leaveTangentWeight": 0
+				},
+				{
+					"interpMode": "RCIM_Linear",
+					"tangentMode": "RCTM_Auto",
+					"tangentWeightMode": "RCTWM_WeightedNone",
+					"time": 9,
+					"value": 366000000,
+					"arriveTangent": 0,
+					"arriveTangentWeight": 0,
+					"leaveTangent": 0,
+					"leaveTangentWeight": 0
+				},
+				{
+					"interpMode": "RCIM_Linear",
+					"tangentMode": "RCTM_Auto",
+					"tangentWeightMode": "RCTWM_WeightedNone",
+					"time": 10,
+					"value": 624000000,
+					"arriveTangent": 0,
+					"arriveTangentWeight": 0,
+					"leaveTangent": 0,
+					"leaveTangentWeight": 0
+				}
+			],
+			"defaultValue": 3.4028234663852886e+38,
+			"preInfinityExtrap": "RCCE_Constant",
+			"postInfinityExtrap": "RCCE_Constant",
+			"keyHandlesToIndices":
+			{
+			}
+		}
+	},
+	"rewardCurves": [],
+	"certificationLevelsIds": [],
+	"baseLevelUpEffect":
+	{
+		"audioEvent": "None",
+		"particleFX": "None",
+		"niagaraFX": "None",
+		"decalFX":
+		{
+			"material": "None",
+			"size":
+			{
+				"x": 100,
+				"y": 100,
+				"z": 100
+			},
+			"rotation":
+			{
+				"pitch": -90,
+				"yaw": 90,
+				"roll": 0
+			},
+			"lifeTime": 1,
+			"fadeInDelay": 0,
+			"fadeInDuration": 0,
+			"fadeOutDelay": 0,
+			"fadeOutDuration": 0
+		},
+		"socketName": "None"
+	},
+	"levels": [
+		{
+			"levelName": "None",
+			"skillPointContainers": [],
+			"subLevelSkillPoints": [],
+			"useLevelUpOverride": false,
+			"levelUpEffectOverride":
+			{
+				"audioEvent": "None",
+				"particleFX": "None",
+				"niagaraFX": "None",
+				"decalFX":
+				{
+					"material": "None",
+					"size":
+					{
+						"x": 100,
+						"y": 100,
+						"z": 100
+					},
+					"rotation":
+					{
+						"pitch": -90,
+						"yaw": 90,
+						"roll": 0
+					},
+					"lifeTime": 1,
+					"fadeInDelay": 0,
+					"fadeInDuration": 0,
+					"fadeOutDelay": 0,
+					"fadeOutDuration": 0
+				},
+				"socketName": "None"
+			}
+		},
+		{
+			"levelName": "None",
+			"skillPointContainers": [
+				{
+					"skillPointTypeId":
+					{
+						"guid": "6064632956336865289",
+						"typeId": "981011400",
+						"name": "None"
+					},
+					"quantity": 1
+				}
+			],
+			"subLevelSkillPoints": [],
+			"useLevelUpOverride": false,
+			"levelUpEffectOverride":
+			{
+				"audioEvent": "None",
+				"particleFX": "None",
+				"niagaraFX": "None",
+				"decalFX":
+				{
+					"material": "None",
+					"size":
+					{
+						"x": 100,
+						"y": 100,
+						"z": 100
+					},
+					"rotation":
+					{
+						"pitch": -90,
+						"yaw": 90,
+						"roll": 0
+					},
+					"lifeTime": 1,
+					"fadeInDelay": 0,
+					"fadeInDuration": 0,
+					"fadeOutDelay": 0,
+					"fadeOutDuration": 0
+				},
+				"socketName": "None"
+			}
+		},
+		{
+			"levelName": "None",
+			"skillPointContainers": [
+				{
+					"skillPointTypeId":
+					{
+						"guid": "6064632956336865289",
+						"typeId": "981011400",
+						"name": "None"
+					},
+					"quantity": 1
+				}
+			],
+			"subLevelSkillPoints": [],
+			"useLevelUpOverride": false,
+			"levelUpEffectOverride":
+			{
+				"audioEvent": "None",
+				"particleFX": "None",
+				"niagaraFX": "None",
+				"decalFX":
+				{
+					"material": "None",
+					"size":
+					{
+						"x": 100,
+						"y": 100,
+						"z": 100
+					},
+					"rotation":
+					{
+						"pitch": -90,
+						"yaw": 90,
+						"roll": 0
+					},
+					"lifeTime": 1,
+					"fadeInDelay": 0,
+					"fadeInDuration": 0,
+					"fadeOutDelay": 0,
+					"fadeOutDuration": 0
+				},
+				"socketName": "None"
+			}
+		},
+		{
+			"levelName": "None",
+			"skillPointContainers": [
+				{
+					"skillPointTypeId":
+					{
+						"guid": "6064632956336865289",
+						"typeId": "981011400",
+						"name": "None"
+					},
+					"quantity": 1
+				}
+			],
+			"subLevelSkillPoints": [],
+			"useLevelUpOverride": false,
+			"levelUpEffectOverride":
+			{
+				"audioEvent": "None",
+				"particleFX": "None",
+				"niagaraFX": "None",
+				"decalFX":
+				{
+					"material": "None",
+					"size":
+					{
+						"x": 100,
+						"y": 100,
+						"z": 100
+					},
+					"rotation":
+					{
+						"pitch": -90,
+						"yaw": 90,
+						"roll": 0
+					},
+					"lifeTime": 1,
+					"fadeInDelay": 0,
+					"fadeInDuration": 0,
+					"fadeOutDelay": 0,
+					"fadeOutDuration": 0
+				},
+				"socketName": "None"
+			}
+		},
+		{
+			"levelName": "None",
+			"skillPointContainers": [
+				{
+					"skillPointTypeId":
+					{
+						"guid": "6064632956336865289",
+						"typeId": "981011400",
+						"name": "None"
+					},
+					"quantity": 1
+				}
+			],
+			"subLevelSkillPoints": [],
+			"useLevelUpOverride": false,
+			"levelUpEffectOverride":
+			{
+				"audioEvent": "None",
+				"particleFX": "None",
+				"niagaraFX": "None",
+				"decalFX":
+				{
+					"material": "None",
+					"size":
+					{
+						"x": 100,
+						"y": 100,
+						"z": 100
+					},
+					"rotation":
+					{
+						"pitch": -90,
+						"yaw": 90,
+						"roll": 0
+					},
+					"lifeTime": 1,
+					"fadeInDelay": 0,
+					"fadeInDuration": 0,
+					"fadeOutDelay": 0,
+					"fadeOutDuration": 0
+				},
+				"socketName": "None"
+			}
+		},
+		{
+			"levelName": "None",
+			"skillPointContainers": [
+				{
+					"skillPointTypeId":
+					{
+						"guid": "6064632956336865289",
+						"typeId": "981011400",
+						"name": "None"
+					},
+					"quantity": 1
+				}
+			],
+			"subLevelSkillPoints": [],
+			"useLevelUpOverride": false,
+			"levelUpEffectOverride":
+			{
+				"audioEvent": "None",
+				"particleFX": "None",
+				"niagaraFX": "None",
+				"decalFX":
+				{
+					"material": "None",
+					"size":
+					{
+						"x": 100,
+						"y": 100,
+						"z": 100
+					},
+					"rotation":
+					{
+						"pitch": -90,
+						"yaw": 90,
+						"roll": 0
+					},
+					"lifeTime": 1,
+					"fadeInDelay": 0,
+					"fadeInDuration": 0,
+					"fadeOutDelay": 0,
+					"fadeOutDuration": 0
+				},
+				"socketName": "None"
+			}
+		},
+		{
+			"levelName": "None",
+			"skillPointContainers": [
+				{
+					"skillPointTypeId":
+					{
+						"guid": "6064632956336865289",
+						"typeId": "981011400",
+						"name": "None"
+					},
+					"quantity": 1
+				}
+			],
+			"subLevelSkillPoints": [],
+			"useLevelUpOverride": false,
+			"levelUpEffectOverride":
+			{
+				"audioEvent": "None",
+				"particleFX": "None",
+				"niagaraFX": "None",
+				"decalFX":
+				{
+					"material": "None",
+					"size":
+					{
+						"x": 100,
+						"y": 100,
+						"z": 100
+					},
+					"rotation":
+					{
+						"pitch": -90,
+						"yaw": 90,
+						"roll": 0
+					},
+					"lifeTime": 1,
+					"fadeInDelay": 0,
+					"fadeInDuration": 0,
+					"fadeOutDelay": 0,
+					"fadeOutDuration": 0
+				},
+				"socketName": "None"
+			}
+		},
+		{
+			"levelName": "None",
+			"skillPointContainers": [
+				{
+					"skillPointTypeId":
+					{
+						"guid": "6064632956336865289",
+						"typeId": "981011400",
+						"name": "None"
+					},
+					"quantity": 1
+				}
+			],
+			"subLevelSkillPoints": [],
+			"useLevelUpOverride": false,
+			"levelUpEffectOverride":
+			{
+				"audioEvent": "None",
+				"particleFX": "None",
+				"niagaraFX": "None",
+				"decalFX":
+				{
+					"material": "None",
+					"size":
+					{
+						"x": 100,
+						"y": 100,
+						"z": 100
+					},
+					"rotation":
+					{
+						"pitch": -90,
+						"yaw": 90,
+						"roll": 0
+					},
+					"lifeTime": 1,
+					"fadeInDelay": 0,
+					"fadeInDuration": 0,
+					"fadeOutDelay": 0,
+					"fadeOutDuration": 0
+				},
+				"socketName": "None"
+			}
+		},
+		{
+			"levelName": "None",
+			"skillPointContainers": [
+				{
+					"skillPointTypeId":
+					{
+						"guid": "6064632956336865289",
+						"typeId": "981011400",
+						"name": "None"
+					},
+					"quantity": 1
+				}
+			],
+			"subLevelSkillPoints": [],
+			"useLevelUpOverride": false,
+			"levelUpEffectOverride":
+			{
+				"audioEvent": "None",
+				"particleFX": "None",
+				"niagaraFX": "None",
+				"decalFX":
+				{
+					"material": "None",
+					"size":
+					{
+						"x": 100,
+						"y": 100,
+						"z": 100
+					},
+					"rotation":
+					{
+						"pitch": -90,
+						"yaw": 90,
+						"roll": 0
+					},
+					"lifeTime": 1,
+					"fadeInDelay": 0,
+					"fadeInDuration": 0,
+					"fadeOutDelay": 0,
+					"fadeOutDuration": 0
+				},
+				"socketName": "None"
+			}
+		},
+		{
+			"levelName": "None",
+			"skillPointContainers": [
+				{
+					"skillPointTypeId":
+					{
+						"guid": "6064632956336865289",
+						"typeId": "981011400",
+						"name": "None"
+					},
+					"quantity": 1
+				}
+			],
+			"subLevelSkillPoints": [],
+			"useLevelUpOverride": false,
+			"levelUpEffectOverride":
+			{
+				"audioEvent": "None",
+				"particleFX": "None",
+				"niagaraFX": "None",
+				"decalFX":
+				{
+					"material": "None",
+					"size":
+					{
+						"x": 100,
+						"y": 100,
+						"z": 100
+					},
+					"rotation":
+					{
+						"pitch": -90,
+						"yaw": 90,
+						"roll": 0
+					},
+					"lifeTime": 1,
+					"fadeInDelay": 0,
+					"fadeInDuration": 0,
+					"fadeOutDelay": 0,
+					"fadeOutDuration": 0
+				},
+				"socketName": "None"
+			}
+		},
+		{
+			"levelName": "None",
+			"skillPointContainers": [
+				{
+					"skillPointTypeId":
+					{
+						"guid": "6064632956336865289",
+						"typeId": "981011400",
+						"name": "None"
+					},
+					"quantity": 1
+				}
+			],
+			"subLevelSkillPoints": [],
+			"useLevelUpOverride": false,
+			"levelUpEffectOverride":
+			{
+				"audioEvent": "None",
+				"particleFX": "None",
+				"niagaraFX": "None",
+				"decalFX":
+				{
+					"material": "None",
+					"size":
+					{
+						"x": 100,
+						"y": 100,
+						"z": 100
+					},
+					"rotation":
+					{
+						"pitch": -90,
+						"yaw": 90,
+						"roll": 0
+					},
+					"lifeTime": 1,
+					"fadeInDelay": 0,
+					"fadeInDuration": 0,
+					"fadeOutDelay": 0,
+					"fadeOutDuration": 0
+				},
+				"socketName": "None"
+			}
+		}
+	],
+	"experienceDecayCurve":
+	{
+		"externalCurve": "None",
+		"editorCurveData":
+		{
+			"keys": [],
+			"defaultValue": 3.4028234663852886e+38,
+			"preInfinityExtrap": "RCCE_Constant",
+			"postInfinityExtrap": "RCCE_Constant",
+			"keyHandlesToIndices":
+			{
+			}
+		}
+	},
+	"partyExperienceMultCurve":
+	{
+		"externalCurve": "None",
+		"editorCurveData":
+		{
+			"keys": [],
+			"defaultValue": 3.4028234663852886e+38,
+			"preInfinityExtrap": "RCCE_Constant",
+			"postInfinityExtrap": "RCCE_Constant",
+			"keyHandlesToIndices":
+			{
+			}
+		}
+	},
+	"experienceLevelDisparityMultCurve":
+	{
+		"externalCurve": "None",
+		"editorCurveData":
+		{
+			"keys": [],
+			"defaultValue": 3.4028234663852886e+38,
+			"preInfinityExtrap": "RCCE_Constant",
+			"postInfinityExtrap": "RCCE_Constant",
+			"keyHandlesToIndices":
+			{
+			}
+		}
+	},
+	"xPMultiplier":
+	{
+		"expression": ""
+	},
+	"levelCapOverride": 10,
+	"guid": "6064632971604918296",
+	"name": "LevelingTypeDef_Guild",
+	"typeId": "4565416516154"
+}

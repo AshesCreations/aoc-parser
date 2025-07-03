@@ -1,0 +1,33 @@
+{
+	"effectFragilityType": "FRAGILITY_Proc",
+	"eventBindings":
+	{
+		"hitEvents": 4,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0,
+		"fishingEvents": 0
+	},
+	"evaluationTickFrequency": 1,
+	"shouldBreakEffectImmediately":
+	{
+		"expression": "(GetRecordTypeId(GetHitSourceRecord(GetHitEvent())) != GetReactionTypeId() &&\r\n(GetRecordTypeId(GetHitSourceRecord(GetHitEvent())) != GetEffectTypeId()) &&\r\nGetOwner() == GetInstigator() &&\r\nHitHasTag(GetHitEvent(),\"ComboStep.End\"))"
+	},
+	"shouldEvaluateThresholdAccumulation":
+	{
+		"expression": ""
+	},
+	"effectBreakThreshold":
+	{
+		"expression": ""
+	},
+	"effectBreakThresholdAccumulationRate":
+	{
+		"expression": ""
+	},
+	"guid": "6064632716238393112",
+	"name": "Weapon_Passive_KeenEdge_AbilityBuff_Fragility",
+	"typeId": "30316112"
+}

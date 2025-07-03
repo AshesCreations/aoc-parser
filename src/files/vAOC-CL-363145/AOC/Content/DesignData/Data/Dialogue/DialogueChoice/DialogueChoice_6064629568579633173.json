@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"5577FE314C3A8A9B9389D5B0C03BFA83\", \"(Show the totem)\")",
+	"nextNodeId":
+	{
+		"guid": "6064629568585924630",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0007_PriestessAndThePiper\",\"MAP_0007_PriestessAndThePiper_Phase01\")&&\r\n!IsOnStoryArcQuest(GetPlayer(),\"MAQ_0007_TOF_TaleOfTallfoot\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_TOT_TaleOfATotem\",\"MAO_0007_TOT_MeetTheProfessor\")"
+	},
+	"guid": "6064629568579633173",
+	"name": "MADD_0007_TOF_Historian_18",
+	"typeId": "1091110027"
+}

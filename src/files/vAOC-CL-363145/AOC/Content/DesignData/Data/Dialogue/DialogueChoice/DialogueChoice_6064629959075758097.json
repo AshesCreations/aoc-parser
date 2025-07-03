@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"4131973D4DA214816959DFB39D191DEA\", \"I have the final seals.\")",
+	"nextNodeId":
+	{
+		"guid": "6064629959077265426",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0007_PriestessAndThePiper\",\"MAP_0007_PriestessAndThePiper_Phase03\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_TSS_TheSephillionSeals\",\"EnchantedTheSeals\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_TSS_TheSephillionSeals\",\"ReturnedToBonekeeper\")"
+	},
+	"guid": "6064629959075758097",
+	"name": "MADD_0007_TSS_NPC_AlishaBonekeeper_18",
+	"typeId": "1091110027"
+}

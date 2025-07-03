@@ -1,0 +1,24 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"A318500C40FD694459DB37A563D8972C\", \"What\\'s the job, boss?\")",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064631188538130450",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "!Player_HasCompletedCommission(GetPlayer(),\"CSQ_RVR_TLC_0030_07_BearskinBoonen\")&&\r\n!Player_HasCommission(GetPlayer(),\"CSQ_RVR_TLC_0030_07_BearskinBoone\")"
+	},
+	"choiceType": "StoryArc",
+	"guid": "6064631482752368672",
+	"name": "ED_RVR_M903_LarcenersPact_FactionB_Boss_Dlg_11",
+	"typeId": "1091110027"
+}

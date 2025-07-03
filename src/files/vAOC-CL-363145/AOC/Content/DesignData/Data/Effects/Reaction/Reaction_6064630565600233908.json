@@ -1,0 +1,31 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 4,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "GetRecordTypeId(GetHitSourceRecord(GetHitEvent())) != GetReactionTypeId() \r\n&&\r\n(GetRecordTypeId(GetHitSourceRecord(GetHitEvent())) != GetEffectTypeId())\r\n&&\r\nGetOwner() == GetInstigator() \r\n&&\r\n(HitHasTag(GetHitEvent(), \"Element.Physical\") || \r\nHitHasTag(GetHitEvent(), \"Element.Magical\")) \r\n&& \r\n!HitHasTag(GetHitEvent(), \"ability.weaponcombo\")"
+	},
+	"bEvaluateApplyingHit": false,
+	"instigator": "Owner",
+	"targetsBitmask": 8,
+	"reactHitsIds": [
+		{
+			"guid": "6064630565609998773",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"instigatorProcLimit": 0,
+	"globalProcLimit": 0,
+	"procReactOnApply": false,
+	"guid": "6064630565600233908",
+	"name": "Weapon_2H_Sword_Proc6_SecondStrike",
+	"typeId": "3031600202"
+}

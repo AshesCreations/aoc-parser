@@ -1,0 +1,101 @@
+{
+	"commissionType": "Generic",
+	"commissionGameplayTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "Biome.Desert"
+			},
+			{
+				"tagName": "Quest.Commission.Adventure.Goto"
+			},
+			{
+				"tagName": "Quest.Commission.Tier.T1"
+			}
+		],
+		"parentTags": [
+			{
+				"tagName": "Biome"
+			},
+			{
+				"tagName": "Quest.Commission.Adventure"
+			},
+			{
+				"tagName": "Quest.Commission"
+			},
+			{
+				"tagName": "Quest"
+			},
+			{
+				"tagName": "Quest.Commission.Tier"
+			}
+		]
+	},
+	"preRequisiteQuestsIds": [],
+	"autoFailTimer": -1,
+	"bRepeatable": false,
+	"mainObjectiveType": "Basic",
+	"commissionSection": 1,
+	"biomeOrigin": "FloodPlains",
+	"bFromDynamicContent": false,
+	"availabilityExpression":
+	{
+		"expression": "GetNodeRecord() == $#1323521343:6064632734253907971$ && Node_InLevelRangeInclusive($#1323521343:6064632734253907971$, ENodeLevel::Village, ENodeLevel::City)"
+	},
+	"bDisabled": false,
+	"level": 30,
+	"commissionRarity": "Rare",
+	"objectivesIds": [
+		{
+			"guid": "6064633072957652996",
+			"typeId": "1091110420",
+			"name": "None"
+		}
+	],
+	"allowMultipleCompletion": false,
+	"commissionName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"A8F7F2274328033B62E2BEB4C377A63C\", \"Suspicious Shipments\")",
+	"flavorText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"6162DE8E48F3340DE2F8689AC8C86C37\", \"Investigate the Gypsum Outpost for mysterious contraband. \\\"I\\'m not one to chat, but I\\'ve heard whispers that the Jackals move a lot of cargo through there for a lot bad folks. But that\\'s what others say.\\\" - Tum Perrywin, Bartender at the Green Scarab Tavern\")",
+	"mainObjectiveText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"BBA4F5B848A5A90F500DFFB501FFD52F\", \"Search for clues in the Gypsum Outpost\")",
+	"rewardTablesIds": [
+		{
+			"guid": "6064631828174536707",
+			"typeId": "1091110040",
+			"name": "None"
+		}
+	],
+	"calloutName": "",
+	"calloutDescription": "",
+	"bCanProgressWhileInRaid": true,
+	"expiration":
+	{
+		"duration": "0"
+	},
+	"cooldown":
+	{
+		"duration": "0"
+	},
+	"moneyCost": "0",
+	"resourceCost": [],
+	"mayoralCompletionCount": 0,
+	"rewardId":
+	{
+		"guid": "0",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"bNodeTargeted": false,
+	"targetRewardId":
+	{
+		"guid": "0",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"questItemListIds": [],
+	"storedGraph":
+	{
+		"nodes": []
+	},
+	"guid": "6064633072990420999",
+	"name": "COM_SAN_Investigate_ObsidianJackal",
+	"typeId": "280002"
+}

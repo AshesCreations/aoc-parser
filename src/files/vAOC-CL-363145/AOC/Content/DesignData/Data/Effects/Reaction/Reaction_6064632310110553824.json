@@ -1,0 +1,32 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 4,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0,
+		"fishingEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "(GetStatModValue(GetHitEvent(), $#10516612381411111:108986352686712$) > 0.0 ||\r\nGetStatModValue(GetHitEvent(), $#10516612381411111:108986352686712$) < 0.0) &&\r\n//HitFlagsContains(GetHitFlags(GetHitEvent()), EHitFlag::Crit) &&\r\nGetRecordTypeId(GetHitSourceRecord(GetHitEvent())) != GetReactionTypeId() &&\r\nGetOwner() == GetInstigator() &&\r\n//Event is a Deadly / Deadly Extended Finisher and Player does not have the stack skill purchased (which prevents the effect from being removed by proc hits)\r\n((HitHasTag(GetHitEvent(), \"Combostep.ProcHit\") && !GetSkillPurchased(GetOwner(),GetCurrentWeaponSkilltree(GetInstigator()),$#981011333:6064632311630797367$))\r\n//Or hit is an ability or non-weapon-combo projectile\r\n|| (GetRecordTypeId(GetHitSourceRecord(GetHitEvent())) == GetAbilityTypeId() || \r\n(GetRecordTypeId(GetHitSourceRecord(GetHitEvent())) == GetProjectileTypeId()) && !(HitHasTag(GetHitEvent(), \"ability.weaponcombo\"))))"
+	},
+	"bEvaluateApplyingHit": false,
+	"instigator": "Owner",
+	"targetsBitmask": 1,
+	"reactHitsIds": [
+		{
+			"guid": "6064630633958280022",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"instigatorProcLimit": 0,
+	"globalProcLimit": 0,
+	"procReactOnApply": false,
+	"guid": "6064632310110553824",
+	"name": "Weapon_Proc_Bullseye_Reaction_2",
+	"typeId": "3031600202"
+}

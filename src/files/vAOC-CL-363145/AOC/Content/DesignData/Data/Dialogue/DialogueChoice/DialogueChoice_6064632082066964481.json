@@ -1,0 +1,18 @@
+{
+	"choiceText": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"DA2BC03449DFD6DD2863BE9CFA660993\", \"Plot building state is operational\")",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "Node_GetPlotBuildingState($#1323521343:6064628934942261248$, $#7823464:6064629286530777224$) == EBuildingState::Operational"
+	},
+	"choiceType": "Default",
+	"guid": "6064632082066964481",
+	"name": "Node_GetPlotBuildingState",
+	"typeId": "1091110027"
+}

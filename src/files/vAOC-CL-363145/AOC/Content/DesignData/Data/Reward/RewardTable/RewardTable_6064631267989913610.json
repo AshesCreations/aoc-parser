@@ -1,0 +1,186 @@
+{
+	"predicate":
+	{
+		"expression": "const levelDiff = GetPlayerLootMaxLevel() - Float(GetCharacterLevel(GetOwner()));\r\nconst dropRange = EvalFormula($#10516612381411113:6064633589507489792$) * EvalCurve($#10516612381411114:6064632214182757247$, GetPlayerLootAvgLuck()) * EvalCurve($#10516612381411114:6064632237548240902$, Abs(levelDiff));\r\n\r\nRandDoubleRange(0.0,1.0) < dropRange"
+	},
+	"rewardDefContainers": [
+		{
+			"grantPredicate":
+			{
+				"expression": ""
+			},
+			"selectionAlgorithm": "PerElementWeightedRandom",
+			"numberToSelect": 0,
+			"grantMethod": "Always",
+			"rewardsWeightCurve":
+			{
+				"externalCurve": "None",
+				"editorCurveData":
+				{
+					"keys": [],
+					"defaultValue": 3.4028234663852886e+38,
+					"preInfinityExtrap": "RCCE_Constant",
+					"postInfinityExtrap": "RCCE_Constant",
+					"keyHandlesToIndices":
+					{
+					}
+				}
+			},
+			"weightsPerReward": [ 6, 3, 1, 10 ],
+			"percentageDropRatePerReward": [],
+			"maxSelectorChoices": 0,
+			"rewards": [
+				{
+					"displayName": "",
+					"currency":
+					{
+					},
+					"itemRewards": [
+						{
+							"item":
+							{
+								"itemId":
+								{
+									"guid": "6064631234584642237",
+									"typeId": "1091110003",
+									"name": "None"
+								},
+								"variationId":
+								{
+									"guid": "0",
+									"typeId": "1091111111",
+									"name": "None"
+								}
+							},
+							"quantity":
+							{
+								"expression": "1"
+							},
+							"bPrioritizeQuality": false
+						}
+					],
+					"experienceRewards": []
+				},
+				{
+					"displayName": "",
+					"currency":
+					{
+					},
+					"itemRewards": [
+						{
+							"item":
+							{
+								"itemId":
+								{
+									"guid": "6064631234516615823",
+									"typeId": "1091110003",
+									"name": "None"
+								},
+								"variationId":
+								{
+									"guid": "6064633526935683072",
+									"typeId": "1091111111",
+									"name": "None"
+								}
+							},
+							"quantity":
+							{
+								"expression": "1"
+							},
+							"bPrioritizeQuality": false
+						}
+					],
+					"experienceRewards": []
+				},
+				{
+					"displayName": "",
+					"currency":
+					{
+					},
+					"itemRewards": [
+						{
+							"item":
+							{
+								"itemId":
+								{
+									"guid": "6064631250910773278",
+									"typeId": "1091110003",
+									"name": "None"
+								},
+								"variationId":
+								{
+									"guid": "0",
+									"typeId": "1091111111",
+									"name": "None"
+								}
+							},
+							"quantity":
+							{
+								"expression": "1"
+							},
+							"bPrioritizeQuality": false
+						}
+					],
+					"experienceRewards": []
+				},
+				{
+					"displayName": "",
+					"currency":
+					{
+					},
+					"itemRewards": [],
+					"experienceRewards": []
+				},
+				{
+					"displayName": "",
+					"currency":
+					{
+					},
+					"itemRewards": [],
+					"experienceRewards": []
+				}
+			],
+			"rewardContainerIcon": "None"
+		}
+	],
+	"subTableSelectionAlgorithm": "RollEachByPercent",
+	"numberOfSubtablesToSelect": 2,
+	"weightsPerSubTable": [],
+	"percentagePerSubTable": [
+		{
+			"expression": "const levelDiff = GetPlayerLootMaxLevel() - Float(GetCharacterLevel(GetOwner()));\r\n\r\nEvalFormula($#10516612381411113:6064632428443795462$) * EvalCurve($#10516612381411114:6064632214182757247$, GetPlayerLootAvgLuck()) * EvalCurve($#10516612381411114:6064632237548240902$, Abs(levelDiff))"
+		},
+		{
+			"expression": "const levelDiff = GetPlayerLootMaxLevel() - Float(GetCharacterLevel(GetOwner()));\r\n\r\nEvalFormula($#10516612381411113:6064633391495774208$) * EvalCurve($#10516612381411114:6064632214182757247$, GetPlayerLootAvgLuck()) * EvalCurve($#10516612381411114:6064632237548240902$, Abs(levelDiff))"
+		}
+	],
+	"subTablesWeightCurve":
+	{
+		"externalCurve": "None",
+		"editorCurveData":
+		{
+			"keys": [],
+			"defaultValue": 3.4028234663852886e+38,
+			"preInfinityExtrap": "RCCE_Constant",
+			"postInfinityExtrap": "RCCE_Constant",
+			"keyHandlesToIndices":
+			{
+			}
+		}
+	},
+	"subTablesIds": [
+		{
+			"guid": "6064632428410437637",
+			"typeId": "1091110040",
+			"name": "None"
+		},
+		{
+			"guid": "6064633391502131202",
+			"typeId": "1091110040",
+			"name": "None"
+		}
+	],
+	"guid": "6064631267989913610",
+	"name": "Zombie_Scholar_Sweeper_Named",
+	"typeId": "1091110040"
+}

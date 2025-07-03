@@ -1,0 +1,61 @@
+{
+	"displayName": "Physical Penetration",
+	"description": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"16161BC04FDD16F06FF1F2A81C42A01F\", \"Ignores a portion of your target\\'s armor\")",
+	"bHidden": false,
+	"gameplayType": "Type_Combat",
+	"bHasWaterfallStatsUI": false,
+	"waterfallStatsUIIds": [],
+	"bDisplayAsPercentage": true,
+	"statType": "Type_Float",
+	"bClampStatFinalValue": true,
+	"bMultiplyStatMods": true,
+	"bMultiplyCompliment": true,
+	"base":
+	{
+		"expression": "const base = GetStat(GetOwner(), $#10516612381411111:6064629246696095744$);\r\nconst rating = GetStat(GetInstigator(), $#10516612381411111:109342856795769$);\r\nbase * (1.0 - rating / (rating + EvalFormula($#10516612381411113:6064630400892665880$)))"
+	},
+	"waterfallStatsBaseIds": [
+		{
+			"guid": "6064629246696095744",
+			"typeId": "10516612381411111",
+			"name": "None"
+		},
+		{
+			"guid": "109342856795769",
+			"typeId": "10516612381411111",
+			"name": "None"
+		}
+	],
+	"valueMin":
+	{
+		"expression": "0"
+	},
+	"waterfallStatsMinIds": [],
+	"valueMax":
+	{
+		"expression": "1"
+	},
+	"waterfallStatsMaxIds": [],
+	"regenRate":
+	{
+		"expression": ""
+	},
+	"waterfallStatsRegenIds": [],
+	"bRegenWhileDead": false,
+	"bRecalculateOnCombatState": false,
+	"onSpawn": "Reset_None",
+	"onDeath": "Reset_None",
+	"onRevive": "Reset_None",
+	"bPersistValue": false,
+	"replication": 7,
+	"shieldStatId":
+	{
+		"guid": "0",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"grantedEffects": [],
+	"guid": "109343399106256",
+	"name": "PhysicalPenetration",
+	"typeId": "10516612381411111"
+}

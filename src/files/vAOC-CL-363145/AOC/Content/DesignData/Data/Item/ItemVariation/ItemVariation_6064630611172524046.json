@@ -1,0 +1,13 @@
+{
+	"quality":
+	{
+		"expression": "const Rand = RandIntRange(1,100);\r\n\r\nconst IsCommon = Rand <= 80;\r\nconst IsUncommon = Rand <= 98 && Rand > 80;\r\nconst IsRare = Rand > 98;\r\n\r\nSelectInt(IsCommon, RandIntRange(1,5),SelectInt(IsUncommon, RandIntRange(6,15),SelectInt(IsRare, RandIntRange(16,30),1)))"
+	},
+	"durability":
+	{
+		"expression": ""
+	},
+	"guid": "6064630611172524046",
+	"name": "Rarity_C70_UC25_R5",
+	"typeId": "1091111111"
+}

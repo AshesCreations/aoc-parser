@@ -1,0 +1,103 @@
+{
+	"eventName": "NSLOCTEXT(\"\", \"98F07DEB4D1E28D6EC8A0A834146BFD8\", \"Kill Template\")",
+	"gameplayTags":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"activationPredicatesIds": [
+		{
+			"guid": "6064631346726961321",
+			"typeId": "23095129",
+			"name": "None"
+		}
+	],
+	"minChallengeRating": 0,
+	"maxChallengeRating": 30,
+	"eventType": 128,
+	"locationId":
+	{
+		"guid": "6064631561688711225",
+		"typeId": "5127371160",
+		"name": "None"
+	},
+	"desiredTimeSlot": "0001.01.01-00.00.00",
+	"frequency": 24,
+	"priority": 1,
+	"rewardTableId":
+	{
+		"guid": "0",
+		"typeId": "1091110040",
+		"name": "None"
+	},
+	"rewardPopulationSetId":
+	{
+		"guid": "0",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"startStageId":
+	{
+		"guid": "6064631346726961311",
+		"typeId": "23095131",
+		"name": "None"
+	},
+	"stagesIds": [
+		{
+			"guid": "6064631346726961311",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064631533848756224",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064631346726961312",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064631346726961313",
+			"typeId": "23095131",
+			"name": "None"
+		}
+	],
+	"interactVolumesIds": [],
+	"alignmentsIds": [],
+	"mapDisplayType": "None",
+	"mapEventIcon": "None",
+	"bDisplayOnTracker": true,
+	"notificationRadius": 15000,
+	"mapRadiusMinumum": 1000,
+	"cooldownTimer": 600,
+	"bDisabled": false,
+	"maxInstanceCount": 1,
+	"requiredMapName": "Verra_Narrative_Tests",
+	"comments": [],
+	"bIsTemplate": true,
+	"flowNodes": [
+		{
+			"flowType": "EventEntry",
+			"graphLocation":
+			{
+				"x": 257.86665635638769,
+				"y": -589.42223301640217
+			},
+			"id": 0
+		},
+		{
+			"flowType": "EventExit",
+			"graphLocation":
+			{
+				"x": 226.1111222511085,
+				"y": 1927.6131168239883
+			},
+			"id": 1
+		}
+	],
+	"guid": "6064631346726961310",
+	"name": "Template_KillEvent",
+	"typeId": "23095125"
+}

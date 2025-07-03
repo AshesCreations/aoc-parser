@@ -1,0 +1,28 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"2180498A49E932E2FE98C384B5F577DD\", \"I defended a Caravan!\")",
+	"nextNodeId":
+	{
+		"guid": "6064633691795620335",
+		"typeId": "1091110028",
+		"name": "Node_Caravansary_Helper_12"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064633669198480158",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "(Player_HasCommission (GetPlayer(), \"CSQ_0161_FTUE_DefendCaravan\") && Player_ObjectiveStateEquals(GetPlayer(), \"CSQ_0161_FTUE_DefendCaravan_1_join\", EObjectiveState::Complete) && !Player_ObjectiveStateEquals(GetPlayer(), \"CSQ_0161_FTUE_DefendCaravan_3_return\", EObjectiveState::Complete)) || (Player_HasCommission (GetPlayer(), \"CSQ_0161_FTUE_DefendCaravan\") && Player_ObjectiveStateEquals(GetPlayer(), \"CSQ_0161_FTUE_DefendCaravan_3_return\", EObjectiveState::Complete) && !Player_HasCompletedCommission(GetPlayer(), \"CSQ_0161_FTUE_DefendCaravan\"))"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064633702347768493",
+	"name": "Node_Caravansary_Helper_15_Choice_3",
+	"typeId": "1091110027"
+}

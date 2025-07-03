@@ -1,0 +1,55 @@
+{
+	"displayName": "NSLOCTEXT(\"\", \"2D412C7146CDE3390CA11F9A13BA2476\", \"Physical Power Rating\")",
+	"description": "NSLOCTEXT(\"\", \"454A42724FD6DE81E810B3909E4C507D\", \"Increases the amount of physical damage done\")",
+	"bHidden": false,
+	"gameplayType": "Type_Combat",
+	"bHasWaterfallStatsUI": false,
+	"waterfallStatsUIIds": [],
+	"bDisplayAsPercentage": false,
+	"statType": "Type_Float",
+	"bClampStatFinalValue": false,
+	"bMultiplyStatMods": false,
+	"bMultiplyCompliment": false,
+	"base":
+	{
+		"expression": "GetStat(GetInstigator(), $#10516612381411111:109183598614138$)\r\n* EvalFormula($#10516612381411113:6064631902560911387$)"
+	},
+	"waterfallStatsBaseIds": [
+		{
+			"guid": "109183598614138",
+			"typeId": "10516612381411111",
+			"name": "None"
+		}
+	],
+	"valueMin":
+	{
+		"expression": "0"
+	},
+	"waterfallStatsMinIds": [],
+	"valueMax":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMaxIds": [],
+	"regenRate":
+	{
+		"expression": ""
+	},
+	"waterfallStatsRegenIds": [],
+	"bRegenWhileDead": false,
+	"onSpawn": "Reset_None",
+	"onDeath": "Reset_None",
+	"onRevive": "Reset_None",
+	"bPersistValue": false,
+	"replication": 1,
+	"shieldStatId":
+	{
+		"guid": "0",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"grantedEffects": [],
+	"guid": "109183603267200",
+	"name": "PhysicalPowerRating",
+	"typeId": "10516612381411111"
+}

@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"FAC957BC4A8E97EE75198CA2E627292B\", \"But you\\'re in danger.\")",
+	"nextNodeId":
+	{
+		"guid": "6064629449362047015",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MIA_0020_KOC_KeepOnTheCrossroads\",\"MIP_0020_KOC_Phase01\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MIQ_0020_SAR_SearchAndRescue\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MIQ_0020_SAR_SearchAndRescue\",\"MetBudge\")"
+	},
+	"guid": "6064629449360539686",
+	"name": "MIDD_0020_SAR_BudgeMac_4",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,21 @@
+{
+	"choiceText": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"79015A134B1F53F607C1C19330B9B4A7\", \"hasnt done caravan defender quest\")",
+	"nextNodeId":
+	{
+		"guid": "6064632259115286537",
+		"typeId": "1091110028",
+		"name": "Master_Dialog_Kaelar_Guard_53"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "!(Player_HasCommission(GetPlayer(), \"CSQ_0161_FTUE_DefendCaravan\") ||\r\nPlayer_HasCompletedCommission(GetPlayer(), \"CSQ_0161_FTUE_DefendCaravan\"))"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064632259120594958",
+	"name": "Master_Dialog_Kaelar_Guard_54_Choice_1",
+	"typeId": "1091110027"
+}

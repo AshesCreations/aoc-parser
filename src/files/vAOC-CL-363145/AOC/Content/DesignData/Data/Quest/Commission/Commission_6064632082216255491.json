@@ -1,0 +1,65 @@
+{
+	"commissionType": "Narrative",
+	"preRequisiteQuestsIds": [],
+	"bRepeatable": false,
+	"mainObjectiveType": "Basic",
+	"commissionSection": 1,
+	"biomeOrigin": "FloodPlains",
+	"bFromDynamicContent": false,
+	"availabilityExpression":
+	{
+		"expression": "GetCurrentNode(GetPlayer()) != $#1323521343:6064630651307950121$ \r\n&& !Node_IsPlayerCitizen(GetPlayer()) \r\n&& GetCharacterLevel(GetPlayer()) >= 10"
+	},
+	"bDisabled": false,
+	"level": 10,
+	"commissionRarity": "Common",
+	"objectivesIds": [
+		{
+			"guid": "6064632082236243975",
+			"typeId": "1091110420",
+			"name": "None"
+		}
+	],
+	"allowMultipleCompletion": false,
+	"commissionName": "NSLOCTEXT(\"[4BE4F0A16D08556ACD6685BF392E6719]\", \"DC71DAA1478037D259FC44ADA70AE161\", \"So You Want to be a Citizen\")",
+	"flavorText": "",
+	"mainObjectiveText": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"DB5400144E25FDADB250098BE0B7441C\", \"Become a Citizen\")",
+	"rewardTablesIds": [
+		{
+			"guid": "6064631828174143489",
+			"typeId": "1091110040",
+			"name": "None"
+		}
+	],
+	"calloutName": "",
+	"calloutDescription": "",
+	"bCanProgressWhileInRaid": false,
+	"expiration":
+	{
+		"duration": "0"
+	},
+	"cooldown":
+	{
+		"duration": "0"
+	},
+	"moneyCost": "0",
+	"resourceCost": [],
+	"mayoralCompletionCount": 0,
+	"rewardId":
+	{
+		"guid": "0",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"bNodeTargeted": false,
+	"targetRewardId":
+	{
+		"guid": "0",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"questItemListIds": [],
+	"guid": "6064632082216255491",
+	"name": "CSQ_0155_FTUE_SoYouWantToBeACitizen",
+	"typeId": "280002"
+}

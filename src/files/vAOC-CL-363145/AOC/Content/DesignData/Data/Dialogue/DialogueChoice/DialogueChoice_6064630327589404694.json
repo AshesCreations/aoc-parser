@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"010FABFB4224937DB87565AB1AA9BA89\", \"I can help the Briarmoor.\")",
+	"nextNodeId":
+	{
+		"guid": "6064630327701602328",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0005A_FGG_ForGreaterGlory\",\"MAP_0005A_FGG_Phase01\")&&\r\n!IsOnStoryArcQuest(GetPlayer(),\"MAQ_0005A_TIG_TroubleInGrazeland\")&&\r\nIsStoryArcQuestAvailable(GetPlayer(),\"MAQ_0005A_TIG_TroubleInGrazeland\")"
+	},
+	"guid": "6064630327589404694",
+	"name": "MADD_0005A_STR_NPC_Eudoxia_Phase01_29",
+	"typeId": "1091110027"
+}

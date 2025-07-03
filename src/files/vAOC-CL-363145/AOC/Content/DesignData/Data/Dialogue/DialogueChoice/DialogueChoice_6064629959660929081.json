@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"DA39EED0469096D2474DA1A98964811E\", \"(Search for a match)\")",
+	"nextNodeId":
+	{
+		"guid": "6064629959662764090",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0007_PriestessAndThePiper\",\"MAP_0007_PriestessAndThePiper_Phase03\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0007_TSS_TheSephillionSeals\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_TSS_TheSephillionSeals\",\"ExaminedChart\")"
+	},
+	"guid": "6064629959660929081",
+	"name": "MADD_0007_TSS_OBJ_GemSamples_4",
+	"typeId": "1091110027"
+}

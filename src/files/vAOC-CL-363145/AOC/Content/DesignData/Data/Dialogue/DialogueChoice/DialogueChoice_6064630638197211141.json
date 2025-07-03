@@ -1,0 +1,23 @@
+{
+	"choiceText": "",
+	"nextNodeId":
+	{
+		"guid": "6064630638197211137",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064629165829521536",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0015_PilgrimsProblem\",\"MAP_0015_PilgrimsProblem_P1\")&&IsOnStoryArcQuest(GetPlayer(),\"MAQ_0015_P1_ReciteTheWords\")&&!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0015_P1_ReciteTheWords\",\"DeliveredBundle\")"
+	},
+	"guid": "6064630638197211141",
+	"name": "SA_0014_ShrineRites_Dialog_5",
+	"typeId": "1091110027"
+}

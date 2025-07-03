@@ -1,0 +1,69 @@
+{
+	"completionResponsesIds": [
+		{
+			"guid": "6064632190123180033",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"channelDuration": 0,
+	"activePredicate":
+	{
+		"expression": "!Player_ObjectiveStateEquals(GetPlayer(),\"CSQ_RVR_0085_FB_StaunchBloodyBlade_CollectBandages_OBJ\",EObjectiveState::Complete)&&\r\nPlayer_HasCommission(GetPlayer(),\"CSQ_RVR_0085_FB_StaunchBloodyBlade\")"
+	},
+	"cuePredicate":
+	{
+		"expression": "!Player_ObjectiveStateEquals(GetPlayer(),\"CSQ_RVR_0085_FB_StaunchBloodyBlade_CollectBandages_OBJ\",EObjectiveState::Complete)&&\r\nPlayer_HasCommission(GetPlayer(),\"CSQ_RVR_0085_FB_StaunchBloodyBlade\")"
+	},
+	"visiblePredicate":
+	{
+		"expression": "!Player_ObjectiveStateEquals(GetPlayer(),\"CSQ_RVR_0085_FB_StaunchBloodyBlade_CollectBandages_OBJ\",EObjectiveState::Complete)&&\r\nPlayer_HasCommission(GetPlayer(),\"CSQ_RVR_0085_FB_StaunchBloodyBlade\")"
+	},
+	"showErrorIfNotVisible": false,
+	"deleteOnCompletion": false,
+	"singleUse": false,
+	"alwaysShowUIPrompt": true,
+	"cancelChannelIfActivePredicateEverFails": true,
+	"interactTextFormat": "",
+	"channelModifierType": "NONE",
+	"rewardTableId":
+	{
+		"guid": "0",
+		"typeId": "1091110008",
+		"name": "None"
+	},
+	"startEffect": "None",
+	"endEffect": "None",
+	"failEffect": "None",
+	"successEffect": "None",
+	"cueEffect": "None",
+	"startSound": "None",
+	"endSound": "None",
+	"failSound": "None",
+	"successSound": "None",
+	"cueSound": "None",
+	"interactAnimTag": "None",
+	"deletionDelay": 0,
+	"activeCueEnabled": true,
+	"activeCueIgnoresActivePredicate": false,
+	"facePlayer": false,
+	"allowInCombat": true,
+	"spawnAtBottomCapsule": false,
+	"channelAnimation": "None",
+	"interactRadius": 200,
+	"interactTolerance": 30,
+	"interactAngle": 0,
+	"busyTime": 0.89999997615814209,
+	"clientBusyTime": 1,
+	"channelStartResponseIds": [],
+	"failResponsesIds": [],
+	"gatheringInteractionDataId":
+	{
+		"guid": "0",
+		"typeId": "19846",
+		"name": "None"
+	},
+	"guid": "6064632190121410560",
+	"name": "CSQ_RVR_0085_FB_StaunchBloodyBlade_Bandages",
+	"typeId": "1091110031"
+}

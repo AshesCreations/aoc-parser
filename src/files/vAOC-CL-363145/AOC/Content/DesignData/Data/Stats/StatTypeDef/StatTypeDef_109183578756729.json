@@ -1,0 +1,55 @@
+{
+	"displayName": "Max Mana",
+	"description": "NSLOCTEXT(\"\", \"DF98E063473C006E0B4288884CB122AA\", \"Defines the maximum amount of mana\")",
+	"bHidden": false,
+	"gameplayType": "Type_Combat",
+	"bHasWaterfallStatsUI": false,
+	"waterfallStatsUIIds": [],
+	"bDisplayAsPercentage": false,
+	"statType": "Type_Float",
+	"bClampStatFinalValue": false,
+	"bMultiplyStatMods": false,
+	"bMultiplyCompliment": false,
+	"base":
+	{
+		"expression": "GetStat(GetInstigator(), $#10516612381411111:109183598614143$)\r\n* EvalFormula($#10516612381411113:6064631902658953253$)\r\n* EvalFormula($#10516612381411113:6064630684190572549$)"
+	},
+	"waterfallStatsBaseIds": [
+		{
+			"guid": "109183598614143",
+			"typeId": "10516612381411111",
+			"name": "None"
+		}
+	],
+	"valueMin":
+	{
+		"expression": "1"
+	},
+	"waterfallStatsMinIds": [],
+	"valueMax":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMaxIds": [],
+	"regenRate":
+	{
+		"expression": ""
+	},
+	"waterfallStatsRegenIds": [],
+	"bRegenWhileDead": false,
+	"onSpawn": "Reset_None",
+	"onDeath": "Reset_None",
+	"onRevive": "Reset_None",
+	"bPersistValue": false,
+	"replication": 7,
+	"shieldStatId":
+	{
+		"guid": "0",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"grantedEffects": [],
+	"guid": "109183578756729",
+	"name": "MaxMana",
+	"typeId": "10516612381411111"
+}

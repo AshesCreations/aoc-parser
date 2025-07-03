@@ -1,0 +1,152 @@
+{
+	"prerequisitesIds": [],
+	"levelsIds":
+	{
+		"3":
+		{
+			"guid": "6064629466535362582",
+			"typeId": "7823458",
+			"name": "None"
+		},
+		"4":
+		{
+			"guid": "6064629466535559191",
+			"typeId": "7823458",
+			"name": "None"
+		},
+		"5":
+		{
+			"guid": "6064629466535755800",
+			"typeId": "7823458",
+			"name": "None"
+		},
+		"6":
+		{
+			"guid": "6064629466535886873",
+			"typeId": "7823458",
+			"name": "None"
+		}
+	},
+	"buildingAssetSetId":
+	{
+		"guid": "6064631346517246725",
+		"typeId": "1323521346",
+		"name": "None"
+	},
+	"nodeConstructionCostId":
+	{
+		"guid": "6064632121870123116",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"maintenanceCostId":
+	{
+		"guid": "6064632122132332672",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"playerConstructionCostId":
+	{
+		"guid": "6064632121892995186",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"damagedRepairCostId":
+	{
+		"guid": "6064632122157760648",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"disarrayRepairCostId":
+	{
+		"guid": "6064632121923862649",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"disarrayDebuffId":
+	{
+		"guid": "0",
+		"typeId": "30316002",
+		"name": "None"
+	},
+	"dEPRECATED_ExpansionsIds": [],
+	"serviceBuildingType": "Artisan",
+	"housingPropertyTiersIds": [],
+	"icon": "/Game/UI/Icons/Nodes/Buildings/BuildingNodes/TUI_Icon_NodeBldngs_Hideworks.TUI_Icon_NodeBldngs_Hideworks",
+	"mapIconVisualId":
+	{
+		"guid": "6064632399024422918",
+		"typeId": "949952112329",
+		"name": "None"
+	},
+	"buildingName": "Hideworks",
+	"buildingDescription": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"EFFC42E34900CC081BCA1BB3198D1AE8\", \"Provides access to higher tier artisanship stations and vendors for tanning and leatherworking professions.\")",
+	"buildingServices": [
+		{
+			"icon": "/Game/UI/Icons/Nodes/Buildings/BuildingServices/TUI_Icon_ServiceIcon_Tanning.TUI_Icon_ServiceIcon_Tanning",
+			"serviceName": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"99CE648D4100A64D108EAA88650FA5F3\", \"Apprentice Tanning Station\")",
+			"serviceDescription": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"DB6CAA4E4D4C8988F86BC6A7EFF88625\", \"Process apprentice and below recipies\")"
+		},
+		{
+			"icon": "/Game/UI/Icons/Nodes/Buildings/BuildingServices/TUI_Icon_ServiceIcon_Leatherworking.TUI_Icon_ServiceIcon_Leatherworking",
+			"serviceName": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"567FB37646A635E4CA369FA0C9439D3F\", \"Apprentice Leatherworking Station\")",
+			"serviceDescription": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"3CEAF374409CDBD6964C86BD93B498E7\", \"Craft apprentice and below tool recipies\")"
+		},
+		{
+			"icon": "/Game/UI/Icons/Nodes/Buildings/BuildingServices/TUI_Icon_ServiceIcon_Vendor.TUI_Icon_ServiceIcon_Vendor",
+			"serviceName": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"65D4956D44830BABF857FF8768C2AD3F\", \"Hideworks Vendor\")",
+			"serviceDescription": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"FCF6BEC8458EBF3EE2FB4A903E27582D\", \"Sells apprentice and below items and recipies\")"
+		}
+	],
+	"buildingServiceDescriptions": [
+		"NSLOCTEXT(\"\", \"2581B0074125189631DC27B36270DE68\", \"Apprentice Tanning Station\")",
+		"NSLOCTEXT(\"\", \"5267A91F434A0A4D55DE1A8FC5C53154\", \"Apprentice Leatherworking Station\")",
+		""
+	],
+	"bDisplayInBuildingManager": true,
+	"constructionPhaseDuration":
+	{
+		"duration": "604800000"
+	},
+	"buildingContributionPhasesId":
+	{
+		"guid": "6064629841000792168",
+		"typeId": "1091110047",
+		"name": "None"
+	},
+	"dEPRECATED_CapabilitiesIds": [],
+	"dEPRECATED_NodeEffectId":
+	{
+		"guid": "0",
+		"typeId": "9127426",
+		"name": "None"
+	},
+	"localeOriginId":
+	{
+		"guid": "0",
+		"typeId": "421003",
+		"name": "None"
+	},
+	"nodeModificationsIds": [],
+	"expansionSkillTreeId":
+	{
+		"guid": "6064631874505932820",
+		"typeId": "30316003",
+		"name": "None"
+	},
+	"repairStateDurationModifier":
+	{
+		"expression": ""
+	},
+	"demolitionStateDurationModifier":
+	{
+		"expression": ""
+	},
+	"voteResultDuration":
+	{
+		"expression": ""
+	},
+	"guid": "6064629467052967944",
+	"name": "Construction_Active_Hideworks_Building",
+	"typeId": "7823463"
+}

@@ -1,0 +1,22 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"EFF141C741163DF7EC3C8E81B12F8712\", \"How are things here?\")",
+	"nextNodeId":
+	{
+		"guid": "6064632457325772801",
+		"typeId": "1091110028",
+		"name": "Master_Dialog_Kaelar_Guard_67"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "!Node_IsPlayerCitizenOfNode(GetPlayer(), GetCurrentNode(GetPlayer()))\r\n&& GetCurrentNode(GetPlayer()) != $#1323521343:6064630651307950121$"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064632439329718272",
+	"name": "Master_Dialog_Kaelar_Guard_39_Choice_9",
+	"typeId": "1091110027"
+}

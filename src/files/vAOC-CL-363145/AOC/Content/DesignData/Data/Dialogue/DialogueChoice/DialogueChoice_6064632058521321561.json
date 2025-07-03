@@ -1,0 +1,24 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"84BECCAC4A1BFBAB63C3BAA4686FD4DA\", \"Who\\'s in charge around here?\")",
+	"nextNodeId":
+	{
+		"guid": "6064632058534232155",
+		"typeId": "1091110028",
+		"name": "DD_Ambient_Lionhold_Villagers_20"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064632058527285338",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "Player_ObjectiveStateEquals(GetPlayer(), \"NO_0100_18_LearnedAboutEudoxia\", EObjectiveState::Active)"
+	},
+	"choiceType": "Default",
+	"guid": "6064632058521321561",
+	"name": "DD_Ambient_Lionhold_Villagers_9_Choice_1",
+	"typeId": "1091110027"
+}

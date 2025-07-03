@@ -1,0 +1,22 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"E4EA0A6F43150BCFA666C598F16C9C6D\", \"Have you heard anything about the 3rd Lance Army? I\\'m told they\\'re cursed?\")",
+	"nextNodeId":
+	{
+		"guid": "6064632037320425487",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "Player_HasCommission(GetPlayer(), \"CSQ_RVR_0032_ProperBurial\")&&!Player_ObjectiveStateEquals(GetPlayer(), \"SQO_0032_01_TalkGuard_1\", EObjectiveState::Complete)"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064632150751189108",
+	"name": "Master_Dialog_Kaelar_Guard_39_Choice_5",
+	"typeId": "1091110027"
+}

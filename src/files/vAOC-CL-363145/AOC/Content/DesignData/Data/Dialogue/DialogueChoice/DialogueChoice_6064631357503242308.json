@@ -1,0 +1,24 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"F9725AA047AF74470C9299BE036BEADF\", \"(Begin the Treasure Hunt)\")",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064631357413851166",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "!Player_HasCompletedCommission(GetPlayer(),\"CSQ_RVR_TH_0050_TMH_MinotaursHorns\")&&\r\n!Player_HasCommission(GetPlayer(),\"CSQ_RVR_TH_0050_TMH_MinotaursHorns\")&&\r\nPlayer_HasItem(GetPlayer(),\"CSQ_ITM_0050_TMH_TreasureMap\")\r\n"
+	},
+	"choiceType": "Default",
+	"guid": "6064631357503242308",
+	"name": "CSQ_DD_0050_TMH_TreasureMap_4",
+	"typeId": "1091110027"
+}

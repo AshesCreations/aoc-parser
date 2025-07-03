@@ -1,0 +1,23 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"DE1F2A8A4398C66C0167FA990EADA85F\", \"(Put the Foci inside.)\")",
+	"nextNodeId":
+	{
+		"guid": "6064629381833424965",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064629381514919975",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MIA_0015_TPT_ThePhantomTower\",\"MIP_0015_TPT_Phase03\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MIQ_0015_BFP_BetrayalOfFuturePast\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MIQ_0015_BFP_BetrayalOfFuturePast\",\"DestroyedWellOfFire\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MIQ_0015_BFP_BetrayalOfFuturePast\",\"DestroyedWellOfWater\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MIQ_0015_BFP_BetrayalOfFuturePast\",\"DestroyedWellOfEarth\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MIQ_0015_BFP_BetrayalOfFuturePast\",\"DestroyedWellOfAir\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MIQ_0015_BFP_BetrayalOfFuturePast\",\"KilledMalgus\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MIQ_0015_BFP_BetrayalOfFuturePast\",\"PlacedFoci\")"
+	},
+	"guid": "6064629381807865923",
+	"name": "MIDD_0015_BFP_SecretSafe_4",
+	"typeId": "1091110027"
+}

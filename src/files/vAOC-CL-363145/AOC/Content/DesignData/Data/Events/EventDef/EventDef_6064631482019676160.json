@@ -1,0 +1,234 @@
+{
+	"eventName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"89244F9440A1391AF2AAB488B2E4110B\", \"The Crew of the Wreckless\")",
+	"gameplayTags":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"activationPredicatesIds": [
+		{
+			"guid": "6064631482019676164",
+			"typeId": "23095129",
+			"name": "None"
+		}
+	],
+	"minChallengeRating": 0,
+	"maxChallengeRating": 30,
+	"eventType": 33,
+	"locationId":
+	{
+		"guid": "6064631561688711244",
+		"typeId": "5127371160",
+		"name": "None"
+	},
+	"desiredTimeSlot": "0001.01.01-00.00.00",
+	"frequency": 24,
+	"priority": 1,
+	"rewardTableId":
+	{
+		"guid": "6064630474023174148",
+		"typeId": "1091110040",
+		"name": "None"
+	},
+	"rewardPopulationSetId":
+	{
+		"guid": "6064631482792935425",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"startStageId":
+	{
+		"guid": "6064631482019676167",
+		"typeId": "23095131",
+		"name": "None"
+	},
+	"stagesIds": [
+		{
+			"guid": "6064631482019676167",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064631482019676192",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064631482019676170",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064631482019676174",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064631482019676184",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064631482019676188",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064631482019676162",
+			"typeId": "23095131",
+			"name": "None"
+		}
+	],
+	"interactVolumesIds": [],
+	"alignmentsIds": [],
+	"mapDisplayType": "Biome",
+	"mapEventIcon": "/Game/UI/Widgets/Narrative/Textures/TUI_Icon_Event_PvE.TUI_Icon_Event_PvE",
+	"bDisplayOnTracker": true,
+	"notificationRadius": 15000,
+	"mapRadiusMinumum": 1000,
+	"cooldownTimer": 600,
+	"bDisabled": true,
+	"maxInstanceCount": 1,
+	"requiredMapName": "Verra_World_Master",
+	"comments": [
+		{
+			"commentGuid": "6064631051481251843",
+			"comment": "Initiated by",
+			"location":
+			{
+				"x": -779.59955042566764,
+				"y": -1034.8603319037695,
+				"z": 0
+			},
+			"size":
+			{
+				"x": 519.69695234298706,
+				"y": 384.14338266849518,
+				"z": 0
+			},
+			"color":
+			{
+				"r": 0.5,
+				"g": 0.5,
+				"b": 0.5,
+				"a": 0.5
+			}
+		},
+		{
+			"commentGuid": "6064631051486691332",
+			"comment": "Sequence 1 & Spawn TARGETS - Timer checks participation, if 0 - fails. Won't fail if players are still participating.",
+			"location":
+			{
+				"x": -1405.3279697131904,
+				"y": 108.04616587597236,
+				"z": 0
+			},
+			"size":
+			{
+				"x": 1010.9524632692337,
+				"y": 479.36507260799408,
+				"z": 0
+			},
+			"color":
+			{
+				"r": 0.5,
+				"g": 0.5,
+				"b": 0.5,
+				"a": 0.5
+			}
+		},
+		{
+			"commentGuid": "6064631051490033669",
+			"comment": "End & Rewards",
+			"location":
+			{
+				"x": 261.44413134321155,
+				"y": 767.83655604245098,
+				"z": 0
+			},
+			"size":
+			{
+				"x": 654.2777419090271,
+				"y": 360.3333215713501,
+				"z": 0
+			},
+			"color":
+			{
+				"r": 0.5,
+				"g": 0.5,
+				"b": 0.5,
+				"a": 0.5
+			}
+		},
+		{
+			"commentGuid": "6064631370041917441",
+			"comment": "Announcement -> Begin",
+			"location":
+			{
+				"x": 269.03571453670139,
+				"y": -382.97378639740668,
+				"z": 0
+			},
+			"size":
+			{
+				"x": 561.96583163738251,
+				"y": 297.94871926307678,
+				"z": 0
+			},
+			"color":
+			{
+				"r": 0.5,
+				"g": 0.5,
+				"b": 0.5,
+				"a": 0.5
+			}
+		},
+		{
+			"commentGuid": "6064631370083926018",
+			"comment": "Failed - Resetting",
+			"location":
+			{
+				"x": 260.27511285437947,
+				"y": 124.65745819344718,
+				"z": 0
+			},
+			"size":
+			{
+				"x": 643.1428906917572,
+				"y": 358.8571605682373,
+				"z": 0
+			},
+			"color":
+			{
+				"r": 0.5,
+				"g": 0.5,
+				"b": 0.5,
+				"a": 0.5
+			}
+		}
+	],
+	"bIsTemplate": false,
+	"flowNodes": [
+		{
+			"flowType": "EventEntry",
+			"graphLocation":
+			{
+				"x": -608.55164674874618,
+				"y": -1996.344322681427
+			},
+			"id": 0
+		},
+		{
+			"flowType": "EventExit",
+			"graphLocation":
+			{
+				"x": -665.060684945243,
+				"y": 2045.9435840588908
+			},
+			"id": 1
+		}
+	],
+	"guid": "6064631482019676160",
+	"name": "ProgE_0008_wreckless",
+	"typeId": "23095125"
+}

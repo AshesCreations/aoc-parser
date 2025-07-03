@@ -1,0 +1,112 @@
+{
+	"bAllowSatisfactionToRegress": false,
+	"parameterTypes": 1,
+	"objectiveType": "Kill",
+	"completionCriteria": [
+		{
+			"bOverrideCompletionValueWithExpression": true,
+			"completionValue": 10,
+			"operator": "GreaterThan",
+			"completionExpression":
+			{
+				"expression": "Event_GetIntObjectiveProgress() >= 10"
+			},
+			"completionTriggersIds": [],
+			"bDisplayOnTracker": true,
+			"relevantTrackerIds": [
+				{
+					"guid": "6064631369140207644",
+					"typeId": "23095133",
+					"name": "None"
+				}
+			],
+			"displayText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"B2C3C6154D63F6AC70DF89B65A01E95C\", \"Defeat the Garden Steward and his Risen Gardeners\")",
+			"displayType": 4,
+			"displayCompletionValue": 10,
+			"bInvertProgressDisplay": false
+		}
+	],
+	"nPCObjectiveIconOverrideId":
+	{
+		"guid": "0",
+		"typeId": "949952112329",
+		"name": "None"
+	},
+	"progressExpression":
+	{
+		"expression": "Event_GetStageTimer()"
+	},
+	"gameplayTagFilter":
+	{
+		"tokenStreamVersion": 0,
+		"tagDictionary": [
+			{
+				"tagName": "Quest.EventTarget.ProgE_0006_Target"
+			}
+		],
+		"queryTokenStream": [ 0, 1, 2, 1, 0 ],
+		"userDescription": "",
+		"autoDescription": " ALL( Quest.EventTarget.ProgE_0006_Target )"
+	},
+	"populationSetId":
+	{
+		"guid": "0",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"trackerId":
+	{
+		"guid": "0",
+		"typeId": "23095133",
+		"name": "None"
+	},
+	"interactablesIds": [],
+	"professionFilterIds": [],
+	"gatherableFilterIds": [],
+	"collectionFilterId":
+	{
+		"guid": "0",
+		"typeId": "1091110041",
+		"name": "None"
+	},
+	"collectionCount": 1,
+	"abilityRecordId":
+	{
+		"guid": "0",
+		"typeId": "30316001",
+		"name": "None"
+	},
+	"activityType": "NPCKill",
+	"activityQueryLocation":
+	{
+		"x": -445853.21279100003,
+		"y": 456260.90063699998,
+		"z": 15180.081359
+	},
+	"activityQueryExtent":
+	{
+		"x": 10000,
+		"y": 10000,
+		"z": 10000
+	},
+	"bDisplayOnTracker": true,
+	"trackerText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"B2C3C6154D63F6AC70DF89B65A01E95C\", \"Defeat the Garden Steward and his Risen Gardeners\")",
+	"displayType": 4,
+	"displayCompletionValue": 10,
+	"visibilityExpression":
+	{
+		"expression": ""
+	},
+	"visibilityOverridesTrackerFilter": false,
+	"trackersToDisplayToIds": [
+		{
+			"guid": "6064631369140207644",
+			"typeId": "23095133",
+			"name": "None"
+		}
+	],
+	"relevantAlignmentsIds": [],
+	"guid": "6064631369140207665",
+	"name": "ProgE_0006_CarphinBlooms_Phase1_Encounters_KillObjective",
+	"typeId": "23095130"
+}

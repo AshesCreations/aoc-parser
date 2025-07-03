@@ -1,0 +1,54 @@
+{
+	"completionResponsesIds": [
+		{
+			"guid": "6064628951429152820",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"channelDuration": 0,
+	"activePredicate":
+	{
+		"expression": ""
+	},
+	"cuePredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0012_COD_CurseOfDaragal\",\"MAP_0012_COD_Phase02\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0012_WBB_WhatBlightsBelow\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0012_WBB_WhatBlightsBelow\",\"GiveDeedRecipe\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0012_WBB_WhatBlightsBelow\",\"KilledReaperOfDuAirre\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0012_WBB_WhatBlightsBelow\",\"BrokeTheAltar\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0012_WBB_WhatBlightsBelow\",\"PouredBlightKiller\")"
+	},
+	"deleteOnCompletion": false,
+	"singleUse": true,
+	"alwaysShowUIPrompt": true,
+	"cancelChannelIfActivePredicateEverFails": true,
+	"channelModifierType": "NONE",
+	"rewardTableId":
+	{
+		"guid": "0",
+		"typeId": "1091110008",
+		"name": "None"
+	},
+	"startEffect": "None",
+	"endEffect": "None",
+	"failEffect": "None",
+	"successEffect": "/Game/Effects/FX_PCs/WeaponMaster/Particles/FX_BloodDrinkerBuff.FX_BloodDrinkerBuff",
+	"cueEffect": "None",
+	"startSound": "None",
+	"endSound": "None",
+	"failSound": "None",
+	"successSound": "None",
+	"cueSound": "None",
+	"interactAnimTag": "None",
+	"deletionDelay": 0,
+	"activeCueEnabled": true,
+	"activeCueIgnoresActivePredicate": false,
+	"facePlayer": false,
+	"allowInCombat": true,
+	"interactRadius": 200,
+	"interactTolerance": 30,
+	"busyTime": 0.89999997615814209,
+	"clientBusyTime": 1,
+	"channelStartResponseIds": [],
+	"failResponsesIds": [],
+	"guid": "6064628951830823008",
+	"name": "MAPI_0012_WBB_MOB_BlightBloom",
+	"typeId": "1091110031"
+}

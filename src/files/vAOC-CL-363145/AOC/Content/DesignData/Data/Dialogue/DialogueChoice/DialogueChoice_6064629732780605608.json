@@ -1,0 +1,23 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"8DCA732B4BCA9B5BFD31B4B31F033A26\", \"Make a note of this in your journal.\")",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064629732304158760",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "(IsStoryArcQuestAvailable(GetPlayer(), \"SAQ_0021_P01_TheForgottenLens\")\r\n&&\r\n!IsOnStoryArcQuest(GetPlayer(), \"SAQ_0021_P01_TheForgottenLens\"))"
+	},
+	"guid": "6064629732780605608",
+	"name": "MADD_0021_SergiasNote_15",
+	"typeId": "1091110027"
+}

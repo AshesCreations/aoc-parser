@@ -1,0 +1,23 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"F41992E24F3621FC3405FE9A70BD227C\", \"Form MT-4HH\")",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064630475225890843",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0005B_TEW_EnemyWithin\",\"MAP_0005B_TEW_Phase01\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0005B_HHB_HighwaymenHillsBust\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005B_HHB_HighwaymenHillsBust\",\"SpeakToDirector\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005B_HHB_HighwaymenHillsBust\",\"SignForm\")\r\n"
+	},
+	"guid": "6064630480500424738",
+	"name": "MADD_0005B_TEW_TradeForms_4",
+	"typeId": "1091110027"
+}

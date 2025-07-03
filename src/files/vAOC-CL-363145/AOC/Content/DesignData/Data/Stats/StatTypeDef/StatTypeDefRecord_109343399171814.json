@@ -1,0 +1,61 @@
+{
+	"displayName": "Physical Critical Avoidance",
+	"description": "NSLOCTEXT(\"\", \"80B62BF64D9E71FC73F03BAE1D3A9B87\", \"Reduces the chance to be critically hit by physical attacks\")",
+	"bHidden": false,
+	"gameplayType": "Type_Combat",
+	"bHasWaterfallStatsUI": false,
+	"waterfallStatsUIIds": [],
+	"bDisplayAsPercentage": true,
+	"statType": "Type_Float",
+	"bClampStatFinalValue": false,
+	"bMultiplyStatMods": false,
+	"bMultiplyCompliment": false,
+	"base":
+	{
+		"expression": "const base = GetStat(GetOwner(), $#10516612381411111:109343399106255$);\r\nconst baseRating = GetStat(GetInstigator(), $#10516612381411111:6064628617694478341$);\r\nconst coeff = EvalFormula($#10516612381411113:6064632412891643904$);\r\nconst coeffMult = EvalFormula($#10516612381411113:6064632412936273924$);\r\nconst baseAdj = base - baseRating / (baseRating * coeffMult + coeff);\r\nconst rating = baseRating + GetStat(GetInstigator(), $#10516612381411111:109343183951492$);\r\nbaseAdj + rating / (rating * coeffMult + coeff)"
+	},
+	"waterfallStatsBaseIds": [
+		{
+			"guid": "109343399106255",
+			"typeId": "10516612381411111",
+			"name": "None"
+		},
+		{
+			"guid": "109343183951492",
+			"typeId": "10516612381411111",
+			"name": "None"
+		}
+	],
+	"valueMin":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMinIds": [],
+	"valueMax":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMaxIds": [],
+	"regenRate":
+	{
+		"expression": ""
+	},
+	"waterfallStatsRegenIds": [],
+	"bRegenWhileDead": false,
+	"bRecalculateOnCombatState": false,
+	"onSpawn": "Reset_None",
+	"onDeath": "Reset_None",
+	"onRevive": "Reset_None",
+	"bPersistValue": false,
+	"replication": 5,
+	"shieldStatId":
+	{
+		"guid": "0",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"grantedEffects": [],
+	"guid": "109343399171814",
+	"name": "PhysicalCriticalAvoidance",
+	"typeId": "10516612381411111"
+}

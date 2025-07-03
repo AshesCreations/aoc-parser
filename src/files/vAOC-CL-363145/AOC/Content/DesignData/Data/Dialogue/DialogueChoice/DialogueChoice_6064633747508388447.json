@@ -1,0 +1,28 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"163EC29D4F215B2B5403129029E5D152\", \"[Offer the Obsidian Prism]\")",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064633747170943572",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "Player_HasItem(GetPlayer(),\"Relic_Rare_Golgora_Heart_Key\") \r\n&&\r\nRelic_GetRelicInstancesAvailable($#7823459:6064633746879504967$) > 0"
+	},
+	"requirements": [],
+	"choiceType": "StoryArc",
+	"guid": "6064633747508388447",
+	"name": "JUN_Pocket_Dungeon_Pit_of_Golgora_AS_Relic_Heart_DLG_2_Choice_1",
+	"typeId": "1091110027"
+}

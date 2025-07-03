@@ -1,0 +1,2382 @@
+{
+	"displayName": "Lumberjack",
+	"experienceType": "Gathering",
+	"modulationStatIds": [],
+	"bUsesExperienceDebt": false,
+	"bProvidesNodeExperience": false,
+	"bProvidesGuildExperience": false,
+	"levelUpCurve":
+	{
+		"externalCurve": "/Game/DesignAssets/Artisanship/Gathering/GatheringLevelUpCurve.GatheringLevelUpCurve",
+		"editorCurveData":
+		{
+			"keys": [
+				{
+					"interpMode": "RCIM_Linear",
+					"tangentMode": "RCTM_Auto",
+					"tangentWeightMode": "RCTWM_WeightedNone",
+					"time": 0,
+					"value": 0,
+					"arriveTangent": 0,
+					"arriveTangentWeight": 0,
+					"leaveTangent": 0,
+					"leaveTangentWeight": 0
+				},
+				{
+					"interpMode": "RCIM_Linear",
+					"tangentMode": "RCTM_Auto",
+					"tangentWeightMode": "RCTWM_WeightedNone",
+					"time": 50,
+					"value": 50000,
+					"arriveTangent": 0,
+					"arriveTangentWeight": 0,
+					"leaveTangent": 0,
+					"leaveTangentWeight": 0
+				}
+			],
+			"defaultValue": 3.4028234663852886e+38,
+			"preInfinityExtrap": "RCCE_Constant",
+			"postInfinityExtrap": "RCCE_Constant",
+			"keyHandlesToIndices":
+			{
+			}
+		}
+	},
+	"rewardCurves": [],
+	"certificationLevelsIds": [
+		{
+			"guid": "108906339653240",
+			"typeId": "455189666431",
+			"name": "None"
+		},
+		{
+			"guid": "108906340767353",
+			"typeId": "455189666431",
+			"name": "None"
+		},
+		{
+			"guid": "108906342012538",
+			"typeId": "455189666431",
+			"name": "None"
+		},
+		{
+			"guid": "108906343061115",
+			"typeId": "455189666431",
+			"name": "None"
+		},
+		{
+			"guid": "108906343782012",
+			"typeId": "455189666431",
+			"name": "None"
+		}
+	],
+	"baseLevelUpEffect":
+	{
+		"audioEvent": "None",
+		"particleFX": "None",
+		"niagaraFX": "/Game/Effects/FX_PCs/Shared/NS_LevelUp_Proffession.NS_LevelUp_Proffession",
+		"decalFX":
+		{
+			"material": "None",
+			"size":
+			{
+				"x": 100,
+				"y": 100,
+				"z": 100
+			},
+			"rotation":
+			{
+				"pitch": -90,
+				"yaw": 90,
+				"roll": 0
+			},
+			"lifeTime": 1,
+			"fadeInDelay": 0,
+			"fadeInDuration": 0,
+			"fadeOutDelay": 0,
+			"fadeOutDuration": 0
+		},
+		"socketName": "FX_Root"
+	},
+	"levels": [
+		{
+			"levelName": "None",
+			"skillPoints": 0,
+			"skillPointContainers": [],
+			"subLevelSkillPoints": [],
+			"useLevelUpOverride": false,
+			"levelUpEffectOverride":
+			{
+				"audioEvent": "None",
+				"particleFX": "None",
+				"niagaraFX": "None",
+				"decalFX":
+				{
+					"material": "None",
+					"size":
+					{
+						"x": 100,
+						"y": 100,
+						"z": 100
+					},
+					"rotation":
+					{
+						"pitch": -90,
+						"yaw": 90,
+						"roll": 0
+					},
+					"lifeTime": 1,
+					"fadeInDelay": 0,
+					"fadeInDuration": 0,
+					"fadeOutDelay": 0,
+					"fadeOutDuration": 0
+				},
+				"socketName": "None"
+			}
+		},
+		{
+			"levelName": "None",
+			"skillPoints": 1,
+			"skillPointContainers": [
+				{
+					"skillPointTypeId":
+					{
+						"guid": "6064631448937627649",
+						"typeId": "981011400",
+						"name": "None"
+					},
+					"quantity": 1
+				}
+			],
+			"subLevelSkillPoints": [],
+			"useLevelUpOverride": false,
+			"levelUpEffectOverride":
+			{
+				"audioEvent": "None",
+				"particleFX": "None",
+				"niagaraFX": "None",
+				"decalFX":
+				{
+					"material": "None",
+					"size":
+					{
+						"x": 100,
+						"y": 100,
+						"z": 100
+					},
+					"rotation":
+					{
+						"pitch": -90,
+						"yaw": 90,
+						"roll": 0
+					},
+					"lifeTime": 1,
+					"fadeInDelay": 0,
+					"fadeInDuration": 0,
+					"fadeOutDelay": 0,
+					"fadeOutDuration": 0
+				},
+				"socketName": "None"
+			}
+		},
+		{
+			"levelName": "None",
+			"skillPoints": 1,
+			"skillPointContainers": [
+				{
+					"skillPointTypeId":
+					{
+						"guid": "6064631448937627649",
+						"typeId": "981011400",
+						"name": "None"
+					},
+					"quantity": 1
+				}
+			],
+			"subLevelSkillPoints": [],
+			"useLevelUpOverride": false,
+			"levelUpEffectOverride":
+			{
+				"audioEvent": "None",
+				"particleFX": "None",
+				"niagaraFX": "None",
+				"decalFX":
+				{
+					"material": "None",
+					"size":
+					{
+						"x": 100,
+						"y": 100,
+						"z": 100
+					},
+					"rotation":
+					{
+						"pitch": -90,
+						"yaw": 90,
+						"roll": 0
+					},
+					"lifeTime": 1,
+					"fadeInDelay": 0,
+					"fadeInDuration": 0,
+					"fadeOutDelay": 0,
+					"fadeOutDuration": 0
+				},
+				"socketName": "None"
+			}
+		},
+		{
+			"levelName": "None",
+			"skillPoints": 1,
+			"skillPointContainers": [
+				{
+					"skillPointTypeId":
+					{
+						"guid": "6064631448937627649",
+						"typeId": "981011400",
+						"name": "None"
+					},
+					"quantity": 1
+				}
+			],
+			"subLevelSkillPoints": [],
+			"useLevelUpOverride": false,
+			"levelUpEffectOverride":
+			{
+				"audioEvent": "None",
+				"particleFX": "None",
+				"niagaraFX": "None",
+				"decalFX":
+				{
+					"material": "None",
+					"size":
+					{
+						"x": 100,
+						"y": 100,
+						"z": 100
+					},
+					"rotation":
+					{
+						"pitch": -90,
+						"yaw": 90,
+						"roll": 0
+					},
+					"lifeTime": 1,
+					"fadeInDelay": 0,
+					"fadeInDuration": 0,
+					"fadeOutDelay": 0,
+					"fadeOutDuration": 0
+				},
+				"socketName": "None"
+			}
+		},
+		{
+			"levelName": "None",
+			"skillPoints": 1,
+			"skillPointContainers": [
+				{
+					"skillPointTypeId":
+					{
+						"guid": "6064631448937627649",
+						"typeId": "981011400",
+						"name": "None"
+					},
+					"quantity": 1
+				}
+			],
+			"subLevelSkillPoints": [],
+			"useLevelUpOverride": false,
+			"levelUpEffectOverride":
+			{
+				"audioEvent": "None",
+				"particleFX": "None",
+				"niagaraFX": "None",
+				"decalFX":
+				{
+					"material": "None",
+					"size":
+					{
+						"x": 100,
+						"y": 100,
+						"z": 100
+					},
+					"rotation":
+					{
+						"pitch": -90,
+						"yaw": 90,
+						"roll": 0
+					},
+					"lifeTime": 1,
+					"fadeInDelay": 0,
+					"fadeInDuration": 0,
+					"fadeOutDelay": 0,
+					"fadeOutDuration": 0
+				},
+				"socketName": "None"
+			}
+		},
+		{
+			"levelName": "None",
+			"skillPoints": 1,
+			"skillPointContainers": [
+				{
+					"skillPointTypeId":
+					{
+						"guid": "6064631448937627649",
+						"typeId": "981011400",
+						"name": "None"
+					},
+					"quantity": 1
+				}
+			],
+			"subLevelSkillPoints": [],
+			"useLevelUpOverride": false,
+			"levelUpEffectOverride":
+			{
+				"audioEvent": "None",
+				"particleFX": "None",
+				"niagaraFX": "None",
+				"decalFX":
+				{
+					"material": "None",
+					"size":
+					{
+						"x": 100,
+						"y": 100,
+						"z": 100
+					},
+					"rotation":
+					{
+						"pitch": -90,
+						"yaw": 90,
+						"roll": 0
+					},
+					"lifeTime": 1,
+					"fadeInDelay": 0,
+					"fadeInDuration": 0,
+					"fadeOutDelay": 0,
+					"fadeOutDuration": 0
+				},
+				"socketName": "None"
+			}
+		},
+		{
+			"levelName": "None",
+			"skillPoints": 1,
+			"skillPointContainers": [
+				{
+					"skillPointTypeId":
+					{
+						"guid": "6064631448937627649",
+						"typeId": "981011400",
+						"name": "None"
+					},
+					"quantity": 1
+				}
+			],
+			"subLevelSkillPoints": [],
+			"useLevelUpOverride": false,
+			"levelUpEffectOverride":
+			{
+				"audioEvent": "None",
+				"particleFX": "None",
+				"niagaraFX": "None",
+				"decalFX":
+				{
+					"material": "None",
+					"size":
+					{
+						"x": 100,
+						"y": 100,
+						"z": 100
+					},
+					"rotation":
+					{
+						"pitch": -90,
+						"yaw": 90,
+						"roll": 0
+					},
+					"lifeTime": 1,
+					"fadeInDelay": 0,
+					"fadeInDuration": 0,
+					"fadeOutDelay": 0,
+					"fadeOutDuration": 0
+				},
+				"socketName": "None"
+			}
+		},
+		{
+			"levelName": "None",
+			"skillPoints": 1,
+			"skillPointContainers": [
+				{
+					"skillPointTypeId":
+					{
+						"guid": "6064631448937627649",
+						"typeId": "981011400",
+						"name": "None"
+					},
+					"quantity": 1
+				}
+			],
+			"subLevelSkillPoints": [],
+			"useLevelUpOverride": false,
+			"levelUpEffectOverride":
+			{
+				"audioEvent": "None",
+				"particleFX": "None",
+				"niagaraFX": "None",
+				"decalFX":
+				{
+					"material": "None",
+					"size":
+					{
+						"x": 100,
+						"y": 100,
+						"z": 100
+					},
+					"rotation":
+					{
+						"pitch": -90,
+						"yaw": 90,
+						"roll": 0
+					},
+					"lifeTime": 1,
+					"fadeInDelay": 0,
+					"fadeInDuration": 0,
+					"fadeOutDelay": 0,
+					"fadeOutDuration": 0
+				},
+				"socketName": "None"
+			}
+		},
+		{
+			"levelName": "None",
+			"skillPoints": 1,
+			"skillPointContainers": [
+				{
+					"skillPointTypeId":
+					{
+						"guid": "6064631448937627649",
+						"typeId": "981011400",
+						"name": "None"
+					},
+					"quantity": 1
+				}
+			],
+			"subLevelSkillPoints": [],
+			"useLevelUpOverride": false,
+			"levelUpEffectOverride":
+			{
+				"audioEvent": "None",
+				"particleFX": "None",
+				"niagaraFX": "None",
+				"decalFX":
+				{
+					"material": "None",
+					"size":
+					{
+						"x": 100,
+						"y": 100,
+						"z": 100
+					},
+					"rotation":
+					{
+						"pitch": -90,
+						"yaw": 90,
+						"roll": 0
+					},
+					"lifeTime": 1,
+					"fadeInDelay": 0,
+					"fadeInDuration": 0,
+					"fadeOutDelay": 0,
+					"fadeOutDuration": 0
+				},
+				"socketName": "None"
+			}
+		},
+		{
+			"levelName": "None",
+			"skillPoints": 1,
+			"skillPointContainers": [
+				{
+					"skillPointTypeId":
+					{
+						"guid": "6064631448937627649",
+						"typeId": "981011400",
+						"name": "None"
+					},
+					"quantity": 1
+				}
+			],
+			"subLevelSkillPoints": [],
+			"useLevelUpOverride": false,
+			"levelUpEffectOverride":
+			{
+				"audioEvent": "None",
+				"particleFX": "None",
+				"niagaraFX": "None",
+				"decalFX":
+				{
+					"material": "None",
+					"size":
+					{
+						"x": 100,
+						"y": 100,
+						"z": 100
+					},
+					"rotation":
+					{
+						"pitch": -90,
+						"yaw": 90,
+						"roll": 0
+					},
+					"lifeTime": 1,
+					"fadeInDelay": 0,
+					"fadeInDuration": 0,
+					"fadeOutDelay": 0,
+					"fadeOutDuration": 0
+				},
+				"socketName": "None"
+			}
+		},
+		{
+			"levelName": "None",
+			"skillPoints": 1,
+			"skillPointContainers": [
+				{
+					"skillPointTypeId":
+					{
+						"guid": "6064631448937627649",
+						"typeId": "981011400",
+						"name": "None"
+					},
+					"quantity": 1
+				}
+			],
+			"subLevelSkillPoints": [],
+			"useLevelUpOverride": false,
+			"levelUpEffectOverride":
+			{
+				"audioEvent": "None",
+				"particleFX": "None",
+				"niagaraFX": "None",
+				"decalFX":
+				{
+					"material": "None",
+					"size":
+					{
+						"x": 100,
+						"y": 100,
+						"z": 100
+					},
+					"rotation":
+					{
+						"pitch": -90,
+						"yaw": 90,
+						"roll": 0
+					},
+					"lifeTime": 1,
+					"fadeInDelay": 0,
+					"fadeInDuration": 0,
+					"fadeOutDelay": 0,
+					"fadeOutDuration": 0
+				},
+				"socketName": "None"
+			}
+		},
+		{
+			"levelName": "None",
+			"skillPoints": 1,
+			"skillPointContainers": [
+				{
+					"skillPointTypeId":
+					{
+						"guid": "6064631448937627649",
+						"typeId": "981011400",
+						"name": "None"
+					},
+					"quantity": 1
+				}
+			],
+			"subLevelSkillPoints": [],
+			"useLevelUpOverride": false,
+			"levelUpEffectOverride":
+			{
+				"audioEvent": "None",
+				"particleFX": "None",
+				"niagaraFX": "None",
+				"decalFX":
+				{
+					"material": "None",
+					"size":
+					{
+						"x": 100,
+						"y": 100,
+						"z": 100
+					},
+					"rotation":
+					{
+						"pitch": -90,
+						"yaw": 90,
+						"roll": 0
+					},
+					"lifeTime": 1,
+					"fadeInDelay": 0,
+					"fadeInDuration": 0,
+					"fadeOutDelay": 0,
+					"fadeOutDuration": 0
+				},
+				"socketName": "None"
+			}
+		},
+		{
+			"levelName": "None",
+			"skillPoints": 1,
+			"skillPointContainers": [
+				{
+					"skillPointTypeId":
+					{
+						"guid": "6064631448937627649",
+						"typeId": "981011400",
+						"name": "None"
+					},
+					"quantity": 1
+				}
+			],
+			"subLevelSkillPoints": [],
+			"useLevelUpOverride": false,
+			"levelUpEffectOverride":
+			{
+				"audioEvent": "None",
+				"particleFX": "None",
+				"niagaraFX": "None",
+				"decalFX":
+				{
+					"material": "None",
+					"size":
+					{
+						"x": 100,
+						"y": 100,
+						"z": 100
+					},
+					"rotation":
+					{
+						"pitch": -90,
+						"yaw": 90,
+						"roll": 0
+					},
+					"lifeTime": 1,
+					"fadeInDelay": 0,
+					"fadeInDuration": 0,
+					"fadeOutDelay": 0,
+					"fadeOutDuration": 0
+				},
+				"socketName": "None"
+			}
+		},
+		{
+			"levelName": "None",
+			"skillPoints": 1,
+			"skillPointContainers": [
+				{
+					"skillPointTypeId":
+					{
+						"guid": "6064631448937627649",
+						"typeId": "981011400",
+						"name": "None"
+					},
+					"quantity": 1
+				}
+			],
+			"subLevelSkillPoints": [],
+			"useLevelUpOverride": false,
+			"levelUpEffectOverride":
+			{
+				"audioEvent": "None",
+				"particleFX": "None",
+				"niagaraFX": "None",
+				"decalFX":
+				{
+					"material": "None",
+					"size":
+					{
+						"x": 100,
+						"y": 100,
+						"z": 100
+					},
+					"rotation":
+					{
+						"pitch": -90,
+						"yaw": 90,
+						"roll": 0
+					},
+					"lifeTime": 1,
+					"fadeInDelay": 0,
+					"fadeInDuration": 0,
+					"fadeOutDelay": 0,
+					"fadeOutDuration": 0
+				},
+				"socketName": "None"
+			}
+		},
+		{
+			"levelName": "None",
+			"skillPoints": 1,
+			"skillPointContainers": [
+				{
+					"skillPointTypeId":
+					{
+						"guid": "6064631448937627649",
+						"typeId": "981011400",
+						"name": "None"
+					},
+					"quantity": 1
+				}
+			],
+			"subLevelSkillPoints": [],
+			"useLevelUpOverride": false,
+			"levelUpEffectOverride":
+			{
+				"audioEvent": "None",
+				"particleFX": "None",
+				"niagaraFX": "None",
+				"decalFX":
+				{
+					"material": "None",
+					"size":
+					{
+						"x": 100,
+						"y": 100,
+						"z": 100
+					},
+					"rotation":
+					{
+						"pitch": -90,
+						"yaw": 90,
+						"roll": 0
+					},
+					"lifeTime": 1,
+					"fadeInDelay": 0,
+					"fadeInDuration": 0,
+					"fadeOutDelay": 0,
+					"fadeOutDuration": 0
+				},
+				"socketName": "None"
+			}
+		},
+		{
+			"levelName": "None",
+			"skillPoints": 1,
+			"skillPointContainers": [
+				{
+					"skillPointTypeId":
+					{
+						"guid": "6064631448937627649",
+						"typeId": "981011400",
+						"name": "None"
+					},
+					"quantity": 1
+				}
+			],
+			"subLevelSkillPoints": [],
+			"useLevelUpOverride": false,
+			"levelUpEffectOverride":
+			{
+				"audioEvent": "None",
+				"particleFX": "None",
+				"niagaraFX": "None",
+				"decalFX":
+				{
+					"material": "None",
+					"size":
+					{
+						"x": 100,
+						"y": 100,
+						"z": 100
+					},
+					"rotation":
+					{
+						"pitch": -90,
+						"yaw": 90,
+						"roll": 0
+					},
+					"lifeTime": 1,
+					"fadeInDelay": 0,
+					"fadeInDuration": 0,
+					"fadeOutDelay": 0,
+					"fadeOutDuration": 0
+				},
+				"socketName": "None"
+			}
+		},
+		{
+			"levelName": "None",
+			"skillPoints": 1,
+			"skillPointContainers": [
+				{
+					"skillPointTypeId":
+					{
+						"guid": "6064631448937627649",
+						"typeId": "981011400",
+						"name": "None"
+					},
+					"quantity": 1
+				}
+			],
+			"subLevelSkillPoints": [],
+			"useLevelUpOverride": false,
+			"levelUpEffectOverride":
+			{
+				"audioEvent": "None",
+				"particleFX": "None",
+				"niagaraFX": "None",
+				"decalFX":
+				{
+					"material": "None",
+					"size":
+					{
+						"x": 100,
+						"y": 100,
+						"z": 100
+					},
+					"rotation":
+					{
+						"pitch": -90,
+						"yaw": 90,
+						"roll": 0
+					},
+					"lifeTime": 1,
+					"fadeInDelay": 0,
+					"fadeInDuration": 0,
+					"fadeOutDelay": 0,
+					"fadeOutDuration": 0
+				},
+				"socketName": "None"
+			}
+		},
+		{
+			"levelName": "None",
+			"skillPoints": 1,
+			"skillPointContainers": [
+				{
+					"skillPointTypeId":
+					{
+						"guid": "6064631448937627649",
+						"typeId": "981011400",
+						"name": "None"
+					},
+					"quantity": 1
+				}
+			],
+			"subLevelSkillPoints": [],
+			"useLevelUpOverride": false,
+			"levelUpEffectOverride":
+			{
+				"audioEvent": "None",
+				"particleFX": "None",
+				"niagaraFX": "None",
+				"decalFX":
+				{
+					"material": "None",
+					"size":
+					{
+						"x": 100,
+						"y": 100,
+						"z": 100
+					},
+					"rotation":
+					{
+						"pitch": -90,
+						"yaw": 90,
+						"roll": 0
+					},
+					"lifeTime": 1,
+					"fadeInDelay": 0,
+					"fadeInDuration": 0,
+					"fadeOutDelay": 0,
+					"fadeOutDuration": 0
+				},
+				"socketName": "None"
+			}
+		},
+		{
+			"levelName": "None",
+			"skillPoints": 1,
+			"skillPointContainers": [
+				{
+					"skillPointTypeId":
+					{
+						"guid": "6064631448937627649",
+						"typeId": "981011400",
+						"name": "None"
+					},
+					"quantity": 1
+				}
+			],
+			"subLevelSkillPoints": [],
+			"useLevelUpOverride": false,
+			"levelUpEffectOverride":
+			{
+				"audioEvent": "None",
+				"particleFX": "None",
+				"niagaraFX": "None",
+				"decalFX":
+				{
+					"material": "None",
+					"size":
+					{
+						"x": 100,
+						"y": 100,
+						"z": 100
+					},
+					"rotation":
+					{
+						"pitch": -90,
+						"yaw": 90,
+						"roll": 0
+					},
+					"lifeTime": 1,
+					"fadeInDelay": 0,
+					"fadeInDuration": 0,
+					"fadeOutDelay": 0,
+					"fadeOutDuration": 0
+				},
+				"socketName": "None"
+			}
+		},
+		{
+			"levelName": "None",
+			"skillPoints": 1,
+			"skillPointContainers": [
+				{
+					"skillPointTypeId":
+					{
+						"guid": "6064631448937627649",
+						"typeId": "981011400",
+						"name": "None"
+					},
+					"quantity": 1
+				}
+			],
+			"subLevelSkillPoints": [],
+			"useLevelUpOverride": false,
+			"levelUpEffectOverride":
+			{
+				"audioEvent": "None",
+				"particleFX": "None",
+				"niagaraFX": "None",
+				"decalFX":
+				{
+					"material": "None",
+					"size":
+					{
+						"x": 100,
+						"y": 100,
+						"z": 100
+					},
+					"rotation":
+					{
+						"pitch": -90,
+						"yaw": 90,
+						"roll": 0
+					},
+					"lifeTime": 1,
+					"fadeInDelay": 0,
+					"fadeInDuration": 0,
+					"fadeOutDelay": 0,
+					"fadeOutDuration": 0
+				},
+				"socketName": "None"
+			}
+		},
+		{
+			"levelName": "None",
+			"skillPoints": 1,
+			"skillPointContainers": [
+				{
+					"skillPointTypeId":
+					{
+						"guid": "6064631448937627649",
+						"typeId": "981011400",
+						"name": "None"
+					},
+					"quantity": 1
+				}
+			],
+			"subLevelSkillPoints": [],
+			"useLevelUpOverride": false,
+			"levelUpEffectOverride":
+			{
+				"audioEvent": "None",
+				"particleFX": "None",
+				"niagaraFX": "None",
+				"decalFX":
+				{
+					"material": "None",
+					"size":
+					{
+						"x": 100,
+						"y": 100,
+						"z": 100
+					},
+					"rotation":
+					{
+						"pitch": -90,
+						"yaw": 90,
+						"roll": 0
+					},
+					"lifeTime": 1,
+					"fadeInDelay": 0,
+					"fadeInDuration": 0,
+					"fadeOutDelay": 0,
+					"fadeOutDuration": 0
+				},
+				"socketName": "None"
+			}
+		},
+		{
+			"levelName": "None",
+			"skillPoints": 1,
+			"skillPointContainers": [
+				{
+					"skillPointTypeId":
+					{
+						"guid": "6064631448937627649",
+						"typeId": "981011400",
+						"name": "None"
+					},
+					"quantity": 1
+				}
+			],
+			"subLevelSkillPoints": [],
+			"useLevelUpOverride": false,
+			"levelUpEffectOverride":
+			{
+				"audioEvent": "None",
+				"particleFX": "None",
+				"niagaraFX": "None",
+				"decalFX":
+				{
+					"material": "None",
+					"size":
+					{
+						"x": 100,
+						"y": 100,
+						"z": 100
+					},
+					"rotation":
+					{
+						"pitch": -90,
+						"yaw": 90,
+						"roll": 0
+					},
+					"lifeTime": 1,
+					"fadeInDelay": 0,
+					"fadeInDuration": 0,
+					"fadeOutDelay": 0,
+					"fadeOutDuration": 0
+				},
+				"socketName": "None"
+			}
+		},
+		{
+			"levelName": "None",
+			"skillPoints": 1,
+			"skillPointContainers": [
+				{
+					"skillPointTypeId":
+					{
+						"guid": "6064631448937627649",
+						"typeId": "981011400",
+						"name": "None"
+					},
+					"quantity": 1
+				}
+			],
+			"subLevelSkillPoints": [],
+			"useLevelUpOverride": false,
+			"levelUpEffectOverride":
+			{
+				"audioEvent": "None",
+				"particleFX": "None",
+				"niagaraFX": "None",
+				"decalFX":
+				{
+					"material": "None",
+					"size":
+					{
+						"x": 100,
+						"y": 100,
+						"z": 100
+					},
+					"rotation":
+					{
+						"pitch": -90,
+						"yaw": 90,
+						"roll": 0
+					},
+					"lifeTime": 1,
+					"fadeInDelay": 0,
+					"fadeInDuration": 0,
+					"fadeOutDelay": 0,
+					"fadeOutDuration": 0
+				},
+				"socketName": "None"
+			}
+		},
+		{
+			"levelName": "None",
+			"skillPoints": 1,
+			"skillPointContainers": [
+				{
+					"skillPointTypeId":
+					{
+						"guid": "6064631448937627649",
+						"typeId": "981011400",
+						"name": "None"
+					},
+					"quantity": 1
+				}
+			],
+			"subLevelSkillPoints": [],
+			"useLevelUpOverride": false,
+			"levelUpEffectOverride":
+			{
+				"audioEvent": "None",
+				"particleFX": "None",
+				"niagaraFX": "None",
+				"decalFX":
+				{
+					"material": "None",
+					"size":
+					{
+						"x": 100,
+						"y": 100,
+						"z": 100
+					},
+					"rotation":
+					{
+						"pitch": -90,
+						"yaw": 90,
+						"roll": 0
+					},
+					"lifeTime": 1,
+					"fadeInDelay": 0,
+					"fadeInDuration": 0,
+					"fadeOutDelay": 0,
+					"fadeOutDuration": 0
+				},
+				"socketName": "None"
+			}
+		},
+		{
+			"levelName": "None",
+			"skillPoints": 1,
+			"skillPointContainers": [
+				{
+					"skillPointTypeId":
+					{
+						"guid": "6064631448937627649",
+						"typeId": "981011400",
+						"name": "None"
+					},
+					"quantity": 1
+				}
+			],
+			"subLevelSkillPoints": [],
+			"useLevelUpOverride": false,
+			"levelUpEffectOverride":
+			{
+				"audioEvent": "None",
+				"particleFX": "None",
+				"niagaraFX": "None",
+				"decalFX":
+				{
+					"material": "None",
+					"size":
+					{
+						"x": 100,
+						"y": 100,
+						"z": 100
+					},
+					"rotation":
+					{
+						"pitch": -90,
+						"yaw": 90,
+						"roll": 0
+					},
+					"lifeTime": 1,
+					"fadeInDelay": 0,
+					"fadeInDuration": 0,
+					"fadeOutDelay": 0,
+					"fadeOutDuration": 0
+				},
+				"socketName": "None"
+			}
+		},
+		{
+			"levelName": "None",
+			"skillPoints": 1,
+			"skillPointContainers": [],
+			"subLevelSkillPoints": [],
+			"useLevelUpOverride": false,
+			"levelUpEffectOverride":
+			{
+				"audioEvent": "None",
+				"particleFX": "None",
+				"niagaraFX": "None",
+				"decalFX":
+				{
+					"material": "None",
+					"size":
+					{
+						"x": 100,
+						"y": 100,
+						"z": 100
+					},
+					"rotation":
+					{
+						"pitch": -90,
+						"yaw": 90,
+						"roll": 0
+					},
+					"lifeTime": 1,
+					"fadeInDelay": 0,
+					"fadeInDuration": 0,
+					"fadeOutDelay": 0,
+					"fadeOutDuration": 0
+				},
+				"socketName": "None"
+			}
+		},
+		{
+			"levelName": "None",
+			"skillPoints": 1,
+			"skillPointContainers": [
+				{
+					"skillPointTypeId":
+					{
+						"guid": "6064631448937627649",
+						"typeId": "981011400",
+						"name": "None"
+					},
+					"quantity": 1
+				}
+			],
+			"subLevelSkillPoints": [],
+			"useLevelUpOverride": false,
+			"levelUpEffectOverride":
+			{
+				"audioEvent": "None",
+				"particleFX": "None",
+				"niagaraFX": "None",
+				"decalFX":
+				{
+					"material": "None",
+					"size":
+					{
+						"x": 100,
+						"y": 100,
+						"z": 100
+					},
+					"rotation":
+					{
+						"pitch": -90,
+						"yaw": 90,
+						"roll": 0
+					},
+					"lifeTime": 1,
+					"fadeInDelay": 0,
+					"fadeInDuration": 0,
+					"fadeOutDelay": 0,
+					"fadeOutDuration": 0
+				},
+				"socketName": "None"
+			}
+		},
+		{
+			"levelName": "None",
+			"skillPoints": 1,
+			"skillPointContainers": [
+				{
+					"skillPointTypeId":
+					{
+						"guid": "6064631448937627649",
+						"typeId": "981011400",
+						"name": "None"
+					},
+					"quantity": 1
+				}
+			],
+			"subLevelSkillPoints": [],
+			"useLevelUpOverride": false,
+			"levelUpEffectOverride":
+			{
+				"audioEvent": "None",
+				"particleFX": "None",
+				"niagaraFX": "None",
+				"decalFX":
+				{
+					"material": "None",
+					"size":
+					{
+						"x": 100,
+						"y": 100,
+						"z": 100
+					},
+					"rotation":
+					{
+						"pitch": -90,
+						"yaw": 90,
+						"roll": 0
+					},
+					"lifeTime": 1,
+					"fadeInDelay": 0,
+					"fadeInDuration": 0,
+					"fadeOutDelay": 0,
+					"fadeOutDuration": 0
+				},
+				"socketName": "None"
+			}
+		},
+		{
+			"levelName": "None",
+			"skillPoints": 1,
+			"skillPointContainers": [
+				{
+					"skillPointTypeId":
+					{
+						"guid": "6064631448937627649",
+						"typeId": "981011400",
+						"name": "None"
+					},
+					"quantity": 1
+				}
+			],
+			"subLevelSkillPoints": [],
+			"useLevelUpOverride": false,
+			"levelUpEffectOverride":
+			{
+				"audioEvent": "None",
+				"particleFX": "None",
+				"niagaraFX": "None",
+				"decalFX":
+				{
+					"material": "None",
+					"size":
+					{
+						"x": 100,
+						"y": 100,
+						"z": 100
+					},
+					"rotation":
+					{
+						"pitch": -90,
+						"yaw": 90,
+						"roll": 0
+					},
+					"lifeTime": 1,
+					"fadeInDelay": 0,
+					"fadeInDuration": 0,
+					"fadeOutDelay": 0,
+					"fadeOutDuration": 0
+				},
+				"socketName": "None"
+			}
+		},
+		{
+			"levelName": "None",
+			"skillPoints": 1,
+			"skillPointContainers": [
+				{
+					"skillPointTypeId":
+					{
+						"guid": "6064631448937627649",
+						"typeId": "981011400",
+						"name": "None"
+					},
+					"quantity": 1
+				}
+			],
+			"subLevelSkillPoints": [],
+			"useLevelUpOverride": false,
+			"levelUpEffectOverride":
+			{
+				"audioEvent": "None",
+				"particleFX": "None",
+				"niagaraFX": "None",
+				"decalFX":
+				{
+					"material": "None",
+					"size":
+					{
+						"x": 100,
+						"y": 100,
+						"z": 100
+					},
+					"rotation":
+					{
+						"pitch": -90,
+						"yaw": 90,
+						"roll": 0
+					},
+					"lifeTime": 1,
+					"fadeInDelay": 0,
+					"fadeInDuration": 0,
+					"fadeOutDelay": 0,
+					"fadeOutDuration": 0
+				},
+				"socketName": "None"
+			}
+		},
+		{
+			"levelName": "None",
+			"skillPoints": 1,
+			"skillPointContainers": [
+				{
+					"skillPointTypeId":
+					{
+						"guid": "6064631448937627649",
+						"typeId": "981011400",
+						"name": "None"
+					},
+					"quantity": 1
+				}
+			],
+			"subLevelSkillPoints": [],
+			"useLevelUpOverride": false,
+			"levelUpEffectOverride":
+			{
+				"audioEvent": "None",
+				"particleFX": "None",
+				"niagaraFX": "None",
+				"decalFX":
+				{
+					"material": "None",
+					"size":
+					{
+						"x": 100,
+						"y": 100,
+						"z": 100
+					},
+					"rotation":
+					{
+						"pitch": -90,
+						"yaw": 90,
+						"roll": 0
+					},
+					"lifeTime": 1,
+					"fadeInDelay": 0,
+					"fadeInDuration": 0,
+					"fadeOutDelay": 0,
+					"fadeOutDuration": 0
+				},
+				"socketName": "None"
+			}
+		},
+		{
+			"levelName": "None",
+			"skillPoints": 1,
+			"skillPointContainers": [
+				{
+					"skillPointTypeId":
+					{
+						"guid": "6064631448937627649",
+						"typeId": "981011400",
+						"name": "None"
+					},
+					"quantity": 1
+				}
+			],
+			"subLevelSkillPoints": [],
+			"useLevelUpOverride": false,
+			"levelUpEffectOverride":
+			{
+				"audioEvent": "None",
+				"particleFX": "None",
+				"niagaraFX": "None",
+				"decalFX":
+				{
+					"material": "None",
+					"size":
+					{
+						"x": 100,
+						"y": 100,
+						"z": 100
+					},
+					"rotation":
+					{
+						"pitch": -90,
+						"yaw": 90,
+						"roll": 0
+					},
+					"lifeTime": 1,
+					"fadeInDelay": 0,
+					"fadeInDuration": 0,
+					"fadeOutDelay": 0,
+					"fadeOutDuration": 0
+				},
+				"socketName": "None"
+			}
+		},
+		{
+			"levelName": "None",
+			"skillPoints": 1,
+			"skillPointContainers": [
+				{
+					"skillPointTypeId":
+					{
+						"guid": "6064631448937627649",
+						"typeId": "981011400",
+						"name": "None"
+					},
+					"quantity": 1
+				}
+			],
+			"subLevelSkillPoints": [],
+			"useLevelUpOverride": false,
+			"levelUpEffectOverride":
+			{
+				"audioEvent": "None",
+				"particleFX": "None",
+				"niagaraFX": "None",
+				"decalFX":
+				{
+					"material": "None",
+					"size":
+					{
+						"x": 100,
+						"y": 100,
+						"z": 100
+					},
+					"rotation":
+					{
+						"pitch": -90,
+						"yaw": 90,
+						"roll": 0
+					},
+					"lifeTime": 1,
+					"fadeInDelay": 0,
+					"fadeInDuration": 0,
+					"fadeOutDelay": 0,
+					"fadeOutDuration": 0
+				},
+				"socketName": "None"
+			}
+		},
+		{
+			"levelName": "None",
+			"skillPoints": 1,
+			"skillPointContainers": [
+				{
+					"skillPointTypeId":
+					{
+						"guid": "6064631448937627649",
+						"typeId": "981011400",
+						"name": "None"
+					},
+					"quantity": 1
+				}
+			],
+			"subLevelSkillPoints": [],
+			"useLevelUpOverride": false,
+			"levelUpEffectOverride":
+			{
+				"audioEvent": "None",
+				"particleFX": "None",
+				"niagaraFX": "None",
+				"decalFX":
+				{
+					"material": "None",
+					"size":
+					{
+						"x": 100,
+						"y": 100,
+						"z": 100
+					},
+					"rotation":
+					{
+						"pitch": -90,
+						"yaw": 90,
+						"roll": 0
+					},
+					"lifeTime": 1,
+					"fadeInDelay": 0,
+					"fadeInDuration": 0,
+					"fadeOutDelay": 0,
+					"fadeOutDuration": 0
+				},
+				"socketName": "None"
+			}
+		},
+		{
+			"levelName": "None",
+			"skillPoints": 1,
+			"skillPointContainers": [
+				{
+					"skillPointTypeId":
+					{
+						"guid": "6064631448937627649",
+						"typeId": "981011400",
+						"name": "None"
+					},
+					"quantity": 1
+				}
+			],
+			"subLevelSkillPoints": [],
+			"useLevelUpOverride": false,
+			"levelUpEffectOverride":
+			{
+				"audioEvent": "None",
+				"particleFX": "None",
+				"niagaraFX": "None",
+				"decalFX":
+				{
+					"material": "None",
+					"size":
+					{
+						"x": 100,
+						"y": 100,
+						"z": 100
+					},
+					"rotation":
+					{
+						"pitch": -90,
+						"yaw": 90,
+						"roll": 0
+					},
+					"lifeTime": 1,
+					"fadeInDelay": 0,
+					"fadeInDuration": 0,
+					"fadeOutDelay": 0,
+					"fadeOutDuration": 0
+				},
+				"socketName": "None"
+			}
+		},
+		{
+			"levelName": "None",
+			"skillPoints": 1,
+			"skillPointContainers": [
+				{
+					"skillPointTypeId":
+					{
+						"guid": "6064631448937627649",
+						"typeId": "981011400",
+						"name": "None"
+					},
+					"quantity": 1
+				}
+			],
+			"subLevelSkillPoints": [],
+			"useLevelUpOverride": false,
+			"levelUpEffectOverride":
+			{
+				"audioEvent": "None",
+				"particleFX": "None",
+				"niagaraFX": "None",
+				"decalFX":
+				{
+					"material": "None",
+					"size":
+					{
+						"x": 100,
+						"y": 100,
+						"z": 100
+					},
+					"rotation":
+					{
+						"pitch": -90,
+						"yaw": 90,
+						"roll": 0
+					},
+					"lifeTime": 1,
+					"fadeInDelay": 0,
+					"fadeInDuration": 0,
+					"fadeOutDelay": 0,
+					"fadeOutDuration": 0
+				},
+				"socketName": "None"
+			}
+		},
+		{
+			"levelName": "None",
+			"skillPoints": 1,
+			"skillPointContainers": [
+				{
+					"skillPointTypeId":
+					{
+						"guid": "6064631448937627649",
+						"typeId": "981011400",
+						"name": "None"
+					},
+					"quantity": 1
+				}
+			],
+			"subLevelSkillPoints": [],
+			"useLevelUpOverride": false,
+			"levelUpEffectOverride":
+			{
+				"audioEvent": "None",
+				"particleFX": "None",
+				"niagaraFX": "None",
+				"decalFX":
+				{
+					"material": "None",
+					"size":
+					{
+						"x": 100,
+						"y": 100,
+						"z": 100
+					},
+					"rotation":
+					{
+						"pitch": -90,
+						"yaw": 90,
+						"roll": 0
+					},
+					"lifeTime": 1,
+					"fadeInDelay": 0,
+					"fadeInDuration": 0,
+					"fadeOutDelay": 0,
+					"fadeOutDuration": 0
+				},
+				"socketName": "None"
+			}
+		},
+		{
+			"levelName": "None",
+			"skillPoints": 1,
+			"skillPointContainers": [
+				{
+					"skillPointTypeId":
+					{
+						"guid": "6064631448937627649",
+						"typeId": "981011400",
+						"name": "None"
+					},
+					"quantity": 1
+				}
+			],
+			"subLevelSkillPoints": [],
+			"useLevelUpOverride": false,
+			"levelUpEffectOverride":
+			{
+				"audioEvent": "None",
+				"particleFX": "None",
+				"niagaraFX": "None",
+				"decalFX":
+				{
+					"material": "None",
+					"size":
+					{
+						"x": 100,
+						"y": 100,
+						"z": 100
+					},
+					"rotation":
+					{
+						"pitch": -90,
+						"yaw": 90,
+						"roll": 0
+					},
+					"lifeTime": 1,
+					"fadeInDelay": 0,
+					"fadeInDuration": 0,
+					"fadeOutDelay": 0,
+					"fadeOutDuration": 0
+				},
+				"socketName": "None"
+			}
+		},
+		{
+			"levelName": "None",
+			"skillPoints": 1,
+			"skillPointContainers": [
+				{
+					"skillPointTypeId":
+					{
+						"guid": "6064631448937627649",
+						"typeId": "981011400",
+						"name": "None"
+					},
+					"quantity": 1
+				}
+			],
+			"subLevelSkillPoints": [],
+			"useLevelUpOverride": false,
+			"levelUpEffectOverride":
+			{
+				"audioEvent": "None",
+				"particleFX": "None",
+				"niagaraFX": "None",
+				"decalFX":
+				{
+					"material": "None",
+					"size":
+					{
+						"x": 100,
+						"y": 100,
+						"z": 100
+					},
+					"rotation":
+					{
+						"pitch": -90,
+						"yaw": 90,
+						"roll": 0
+					},
+					"lifeTime": 1,
+					"fadeInDelay": 0,
+					"fadeInDuration": 0,
+					"fadeOutDelay": 0,
+					"fadeOutDuration": 0
+				},
+				"socketName": "None"
+			}
+		},
+		{
+			"levelName": "None",
+			"skillPoints": 1,
+			"skillPointContainers": [
+				{
+					"skillPointTypeId":
+					{
+						"guid": "6064631448937627649",
+						"typeId": "981011400",
+						"name": "None"
+					},
+					"quantity": 1
+				}
+			],
+			"subLevelSkillPoints": [],
+			"useLevelUpOverride": false,
+			"levelUpEffectOverride":
+			{
+				"audioEvent": "None",
+				"particleFX": "None",
+				"niagaraFX": "None",
+				"decalFX":
+				{
+					"material": "None",
+					"size":
+					{
+						"x": 100,
+						"y": 100,
+						"z": 100
+					},
+					"rotation":
+					{
+						"pitch": -90,
+						"yaw": 90,
+						"roll": 0
+					},
+					"lifeTime": 1,
+					"fadeInDelay": 0,
+					"fadeInDuration": 0,
+					"fadeOutDelay": 0,
+					"fadeOutDuration": 0
+				},
+				"socketName": "None"
+			}
+		},
+		{
+			"levelName": "None",
+			"skillPoints": 1,
+			"skillPointContainers": [
+				{
+					"skillPointTypeId":
+					{
+						"guid": "6064631448937627649",
+						"typeId": "981011400",
+						"name": "None"
+					},
+					"quantity": 1
+				}
+			],
+			"subLevelSkillPoints": [],
+			"useLevelUpOverride": false,
+			"levelUpEffectOverride":
+			{
+				"audioEvent": "None",
+				"particleFX": "None",
+				"niagaraFX": "None",
+				"decalFX":
+				{
+					"material": "None",
+					"size":
+					{
+						"x": 100,
+						"y": 100,
+						"z": 100
+					},
+					"rotation":
+					{
+						"pitch": -90,
+						"yaw": 90,
+						"roll": 0
+					},
+					"lifeTime": 1,
+					"fadeInDelay": 0,
+					"fadeInDuration": 0,
+					"fadeOutDelay": 0,
+					"fadeOutDuration": 0
+				},
+				"socketName": "None"
+			}
+		},
+		{
+			"levelName": "None",
+			"skillPoints": 1,
+			"skillPointContainers": [
+				{
+					"skillPointTypeId":
+					{
+						"guid": "6064631448937627649",
+						"typeId": "981011400",
+						"name": "None"
+					},
+					"quantity": 1
+				}
+			],
+			"subLevelSkillPoints": [],
+			"useLevelUpOverride": false,
+			"levelUpEffectOverride":
+			{
+				"audioEvent": "None",
+				"particleFX": "None",
+				"niagaraFX": "None",
+				"decalFX":
+				{
+					"material": "None",
+					"size":
+					{
+						"x": 100,
+						"y": 100,
+						"z": 100
+					},
+					"rotation":
+					{
+						"pitch": -90,
+						"yaw": 90,
+						"roll": 0
+					},
+					"lifeTime": 1,
+					"fadeInDelay": 0,
+					"fadeInDuration": 0,
+					"fadeOutDelay": 0,
+					"fadeOutDuration": 0
+				},
+				"socketName": "None"
+			}
+		},
+		{
+			"levelName": "None",
+			"skillPoints": 1,
+			"skillPointContainers": [
+				{
+					"skillPointTypeId":
+					{
+						"guid": "6064631448937627649",
+						"typeId": "981011400",
+						"name": "None"
+					},
+					"quantity": 1
+				}
+			],
+			"subLevelSkillPoints": [],
+			"useLevelUpOverride": false,
+			"levelUpEffectOverride":
+			{
+				"audioEvent": "None",
+				"particleFX": "None",
+				"niagaraFX": "None",
+				"decalFX":
+				{
+					"material": "None",
+					"size":
+					{
+						"x": 100,
+						"y": 100,
+						"z": 100
+					},
+					"rotation":
+					{
+						"pitch": -90,
+						"yaw": 90,
+						"roll": 0
+					},
+					"lifeTime": 1,
+					"fadeInDelay": 0,
+					"fadeInDuration": 0,
+					"fadeOutDelay": 0,
+					"fadeOutDuration": 0
+				},
+				"socketName": "None"
+			}
+		},
+		{
+			"levelName": "None",
+			"skillPoints": 1,
+			"skillPointContainers": [
+				{
+					"skillPointTypeId":
+					{
+						"guid": "6064631448937627649",
+						"typeId": "981011400",
+						"name": "None"
+					},
+					"quantity": 1
+				}
+			],
+			"subLevelSkillPoints": [],
+			"useLevelUpOverride": false,
+			"levelUpEffectOverride":
+			{
+				"audioEvent": "None",
+				"particleFX": "None",
+				"niagaraFX": "None",
+				"decalFX":
+				{
+					"material": "None",
+					"size":
+					{
+						"x": 100,
+						"y": 100,
+						"z": 100
+					},
+					"rotation":
+					{
+						"pitch": -90,
+						"yaw": 90,
+						"roll": 0
+					},
+					"lifeTime": 1,
+					"fadeInDelay": 0,
+					"fadeInDuration": 0,
+					"fadeOutDelay": 0,
+					"fadeOutDuration": 0
+				},
+				"socketName": "None"
+			}
+		},
+		{
+			"levelName": "None",
+			"skillPoints": 1,
+			"skillPointContainers": [
+				{
+					"skillPointTypeId":
+					{
+						"guid": "6064631448937627649",
+						"typeId": "981011400",
+						"name": "None"
+					},
+					"quantity": 1
+				}
+			],
+			"subLevelSkillPoints": [],
+			"useLevelUpOverride": false,
+			"levelUpEffectOverride":
+			{
+				"audioEvent": "None",
+				"particleFX": "None",
+				"niagaraFX": "None",
+				"decalFX":
+				{
+					"material": "None",
+					"size":
+					{
+						"x": 100,
+						"y": 100,
+						"z": 100
+					},
+					"rotation":
+					{
+						"pitch": -90,
+						"yaw": 90,
+						"roll": 0
+					},
+					"lifeTime": 1,
+					"fadeInDelay": 0,
+					"fadeInDuration": 0,
+					"fadeOutDelay": 0,
+					"fadeOutDuration": 0
+				},
+				"socketName": "None"
+			}
+		},
+		{
+			"levelName": "None",
+			"skillPoints": 1,
+			"skillPointContainers": [
+				{
+					"skillPointTypeId":
+					{
+						"guid": "6064631448937627649",
+						"typeId": "981011400",
+						"name": "None"
+					},
+					"quantity": 1
+				}
+			],
+			"subLevelSkillPoints": [],
+			"useLevelUpOverride": false,
+			"levelUpEffectOverride":
+			{
+				"audioEvent": "None",
+				"particleFX": "None",
+				"niagaraFX": "None",
+				"decalFX":
+				{
+					"material": "None",
+					"size":
+					{
+						"x": 100,
+						"y": 100,
+						"z": 100
+					},
+					"rotation":
+					{
+						"pitch": -90,
+						"yaw": 90,
+						"roll": 0
+					},
+					"lifeTime": 1,
+					"fadeInDelay": 0,
+					"fadeInDuration": 0,
+					"fadeOutDelay": 0,
+					"fadeOutDuration": 0
+				},
+				"socketName": "None"
+			}
+		},
+		{
+			"levelName": "None",
+			"skillPoints": 1,
+			"skillPointContainers": [
+				{
+					"skillPointTypeId":
+					{
+						"guid": "6064631448937627649",
+						"typeId": "981011400",
+						"name": "None"
+					},
+					"quantity": 1
+				}
+			],
+			"subLevelSkillPoints": [],
+			"useLevelUpOverride": false,
+			"levelUpEffectOverride":
+			{
+				"audioEvent": "None",
+				"particleFX": "None",
+				"niagaraFX": "None",
+				"decalFX":
+				{
+					"material": "None",
+					"size":
+					{
+						"x": 100,
+						"y": 100,
+						"z": 100
+					},
+					"rotation":
+					{
+						"pitch": -90,
+						"yaw": 90,
+						"roll": 0
+					},
+					"lifeTime": 1,
+					"fadeInDelay": 0,
+					"fadeInDuration": 0,
+					"fadeOutDelay": 0,
+					"fadeOutDuration": 0
+				},
+				"socketName": "None"
+			}
+		},
+		{
+			"levelName": "None",
+			"skillPoints": 1,
+			"skillPointContainers": [
+				{
+					"skillPointTypeId":
+					{
+						"guid": "6064631448937627649",
+						"typeId": "981011400",
+						"name": "None"
+					},
+					"quantity": 1
+				}
+			],
+			"subLevelSkillPoints": [],
+			"useLevelUpOverride": false,
+			"levelUpEffectOverride":
+			{
+				"audioEvent": "None",
+				"particleFX": "None",
+				"niagaraFX": "None",
+				"decalFX":
+				{
+					"material": "None",
+					"size":
+					{
+						"x": 100,
+						"y": 100,
+						"z": 100
+					},
+					"rotation":
+					{
+						"pitch": -90,
+						"yaw": 90,
+						"roll": 0
+					},
+					"lifeTime": 1,
+					"fadeInDelay": 0,
+					"fadeInDuration": 0,
+					"fadeOutDelay": 0,
+					"fadeOutDuration": 0
+				},
+				"socketName": "None"
+			}
+		},
+		{
+			"levelName": "None",
+			"skillPoints": 1,
+			"skillPointContainers": [
+				{
+					"skillPointTypeId":
+					{
+						"guid": "6064631448937627649",
+						"typeId": "981011400",
+						"name": "None"
+					},
+					"quantity": 1
+				}
+			],
+			"subLevelSkillPoints": [],
+			"useLevelUpOverride": false,
+			"levelUpEffectOverride":
+			{
+				"audioEvent": "None",
+				"particleFX": "None",
+				"niagaraFX": "None",
+				"decalFX":
+				{
+					"material": "None",
+					"size":
+					{
+						"x": 100,
+						"y": 100,
+						"z": 100
+					},
+					"rotation":
+					{
+						"pitch": -90,
+						"yaw": 90,
+						"roll": 0
+					},
+					"lifeTime": 1,
+					"fadeInDelay": 0,
+					"fadeInDuration": 0,
+					"fadeOutDelay": 0,
+					"fadeOutDuration": 0
+				},
+				"socketName": "None"
+			}
+		},
+		{
+			"levelName": "None",
+			"skillPoints": 1,
+			"skillPointContainers": [
+				{
+					"skillPointTypeId":
+					{
+						"guid": "6064631448937627649",
+						"typeId": "981011400",
+						"name": "None"
+					},
+					"quantity": 1
+				}
+			],
+			"subLevelSkillPoints": [],
+			"useLevelUpOverride": false,
+			"levelUpEffectOverride":
+			{
+				"audioEvent": "None",
+				"particleFX": "None",
+				"niagaraFX": "None",
+				"decalFX":
+				{
+					"material": "None",
+					"size":
+					{
+						"x": 100,
+						"y": 100,
+						"z": 100
+					},
+					"rotation":
+					{
+						"pitch": -90,
+						"yaw": 90,
+						"roll": 0
+					},
+					"lifeTime": 1,
+					"fadeInDelay": 0,
+					"fadeInDuration": 0,
+					"fadeOutDelay": 0,
+					"fadeOutDuration": 0
+				},
+				"socketName": "None"
+			}
+		}
+	],
+	"experienceDecayCurve":
+	{
+		"externalCurve": "None",
+		"editorCurveData":
+		{
+			"keys": [],
+			"defaultValue": 3.4028234663852886e+38,
+			"preInfinityExtrap": "RCCE_Constant",
+			"postInfinityExtrap": "RCCE_Constant",
+			"keyHandlesToIndices":
+			{
+			}
+		}
+	},
+	"partyExperienceMultCurve":
+	{
+		"externalCurve": "None",
+		"editorCurveData":
+		{
+			"keys": [],
+			"defaultValue": 3.4028234663852886e+38,
+			"preInfinityExtrap": "RCCE_Constant",
+			"postInfinityExtrap": "RCCE_Constant",
+			"keyHandlesToIndices":
+			{
+			}
+		}
+	},
+	"experienceLevelDisparityMultCurve":
+	{
+		"externalCurve": "None",
+		"editorCurveData":
+		{
+			"keys": [],
+			"defaultValue": 3.4028234663852886e+38,
+			"preInfinityExtrap": "RCCE_Constant",
+			"postInfinityExtrap": "RCCE_Constant",
+			"keyHandlesToIndices":
+			{
+			}
+		}
+	},
+	"xPMultiplier":
+	{
+		"expression": ""
+	},
+	"guid": "109273709237880",
+	"name": "LevelingTypeDef_Lumberjack",
+	"typeId": "4565416516154"
+}

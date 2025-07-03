@@ -1,0 +1,12 @@
+{
+	"equation":
+	{
+		"expression": "// copied from npc new initializer, but with even weights\r\nconst numWeights = 8;\r\nconst weightHP = 1.0/numWeights;\r\nconst weightCON = 1.0/numWeights;\r\nconst totalStats = EvalCurve($#10516612381411114:6064631783354597376$, GetTerm($#10516612381411115:6064632140969738254$));\r\nconst statBase = EvalCurve($#10516612381411114:6064630531117024232$, GetTerm($#10516612381411115:6064632140969738254$));\r\nconst gearWaterfallRatio = 1.0 - EvalFormula($#10516612381411113:6064631901770809575$);\r\nconst ratingAttribRatio = EvalFormula($#10516612381411113:6064631902646435875$) / EvalFormula($#10516612381411113:6064631924703821919$);\r\nconst hpPerRating = EvalFormula($#10516612381411113:6064630684188540931$);\r\n\r\nstatBase * weightHP * numWeights\r\n+ totalStats * weightCON * gearWaterfallRatio * ratingAttribRatio * hpPerRating"
+	},
+	"constraints":
+	{
+	},
+	"guid": "6064632139576181913",
+	"name": "NPC_Base_EvenWeight_MaxHP",
+	"typeId": "10516612381411112"
+}

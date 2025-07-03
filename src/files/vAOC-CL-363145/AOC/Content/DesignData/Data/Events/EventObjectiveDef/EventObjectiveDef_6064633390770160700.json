@@ -1,0 +1,90 @@
+{
+	"bAllowSatisfactionToRegress": false,
+	"parameterTypes": 1,
+	"objectiveType": "TurnIn",
+	"completionCriteria": [
+		{
+			"bOverrideCompletionValueWithExpression": false,
+			"completionValue": 25,
+			"operator": "GreaterThanOrEqualTo",
+			"completionExpression":
+			{
+				"expression": "Event_GetNumNPCKills() >= 100"
+			},
+			"completionTriggersIds": [],
+			"bDisplayOnTracker": true,
+			"relevantTrackerIds": [],
+			"displayText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"86EB442C4C3B9EA0DE39A0B8C5E54E01\", \"Offerings of Yearning Ash\")",
+			"displayType": 4,
+			"displayCompletionValue": 100,
+			"bInvertProgressDisplay": false
+		}
+	],
+	"nPCObjectiveIconOverrideId":
+	{
+		"guid": "0",
+		"typeId": "949952112329",
+		"name": "None"
+	},
+	"progressExpression":
+	{
+		"expression": ""
+	},
+	"gameplayTagFilter":
+	{
+		"tokenStreamVersion": 0,
+		"tagDictionary": [],
+		"queryTokenStream": [],
+		"userDescription": "",
+		"autoDescription": ""
+	},
+	"populationSetId":
+	{
+		"guid": "0",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"trackerId":
+	{
+		"guid": "0",
+		"typeId": "23095133",
+		"name": "None"
+	},
+	"interactablesIds": [],
+	"professionFilterIds": [],
+	"gatherableFilterIds": [],
+	"collectionFilterId":
+	{
+		"guid": "6064633391385018391",
+		"typeId": "1091110041",
+		"name": "None"
+	},
+	"collectionCount": 25,
+	"abilityRecordId":
+	{
+		"guid": "0",
+		"typeId": "30316001",
+		"name": "None"
+	},
+	"activityType": "NPCKill",
+	"activityQueryLocation":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"activityQueryExtent":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"visibilityExpression":
+	{
+		"expression": ""
+	},
+	"visibilityOverridesTrackerFilter": false,
+	"guid": "6064633390770160700",
+	"name": "EVT_TUR_0008_MoltenFury_Stage_TurnIn_Rock1",
+	"typeId": "23095130"
+}

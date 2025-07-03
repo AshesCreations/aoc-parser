@@ -1,0 +1,24 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"40E8CBCA41EC36BEA9D57392E76A2DDC\", \"Sure, I could oblige.\")",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064631188538130450",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "!Player_HasCompletedCommission(GetPlayer(),\"CSQ_RVR_TLC_0030_07_BearskinBoonen\")&&\r\n!Player_HasCommission(GetPlayer(),\"CSQ_RVR_TLC_0030_07_BearskinBoone\")"
+	},
+	"choiceType": "Default",
+	"guid": "6064631522749515168",
+	"name": "ED_RVR_M903_LarcenersPact_FactionB_Boss_Dlg_50",
+	"typeId": "1091110027"
+}

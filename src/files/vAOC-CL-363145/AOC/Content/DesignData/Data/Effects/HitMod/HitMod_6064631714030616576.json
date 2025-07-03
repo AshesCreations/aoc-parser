@@ -1,0 +1,32 @@
+{
+	"trigger":
+	{
+		"expression": "GetOwner() == GetTarget() && \r\nGetOwner() != GetInstigator()"
+	},
+	"terms": [],
+	"tags": [],
+	"statModsIds": [
+		{
+			"guid": "6064631679712231426",
+			"typeId": "3031600201",
+			"name": "None"
+		}
+	],
+	"statModPostProcess": [
+		{
+			"targetStatId":
+			{
+				"guid": "108986352686712",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"expression":
+			{
+				"expression": "const HitInProgress = GetHitInProgress();\r\nconst Target = GetTarget();\r\nconst IsBlock = HitFlagsContains(GetHitFlags(HitInProgress, Target), EHitFlag::Block);\r\nvar Mit = 1.0;\r\nif (IsBlock)\r\n{\r\n    const PhysicalTag = HitHasTag(HitInProgress, \"Element.Physical\");\r\n    const MagicalTag = HitHasTag(HitInProgress, \"Element.Magical\");\r\n    const BaseBlockMit = GetStat(Target, $#10516612381411111:109343399171823$);\r\n    const PhysicalBlockMit = GetStat(Target, $#10516612381411111:6064629495592452105$);\r\n    const MagicalBlockMit = GetStat(Target, $#10516612381411111:6064629495592517642$);\r\n\r\n    const skilled0 = GetSkillPurchased(GetTarget(), $#30316003:6064631673604472832$, $#981011333:6064631748540629544$);\r\n    if (PhysicalTag) {\r\n        set Mit = Mit * PhysicalBlockMit;\r\n        if(skilled0){\r\n            const MagicalBlockRaw = MagicalBlockMit / Max(BaseBlockMit, 0.001);\r\n            set Mit = Mit * (1.0 - (1.0 - MagicalBlockRaw) * 0.25);\r\n        }\r\n    }\r\n    if (MagicalTag) {\r\n        set Mit = Mit * MagicalBlockMit;\r\n        if(skilled0){\r\n            const PhysicalBlockRaw = PhysicalBlockMit / Max(BaseBlockMit, 0.001);\r\n            set Mit = Mit * (1.0 - (1.0 - PhysicalBlockRaw) * 0.25);\r\n        }\r\n    }\r\n}\r\nconst IncomingDamage = GetCalculatedStatModValue($#10516612381411111:108986352686712$);\r\nMit * IncomingDamage"
+			}
+		}
+	],
+	"guid": "6064631714030616576",
+	"name": "Block",
+	"typeId": "3031600210"
+}

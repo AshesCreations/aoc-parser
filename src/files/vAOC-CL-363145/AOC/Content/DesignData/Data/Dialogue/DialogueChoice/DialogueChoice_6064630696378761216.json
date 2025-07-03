@@ -1,0 +1,23 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"4A851A174937DFDDED9117977989EEDE\", \"Have you seen the goblins moving any supplies nearby?\")",
+	"nextNodeId":
+	{
+		"guid": "6064630696387018755",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064630696384462850",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "IsOnStoryArcQuest(GetPlayer(), \"SAQ_0023_P1_Q1_HalfTheBattle\")"
+	},
+	"guid": "6064630696378761216",
+	"name": "DD_Ambient_Lionhold_Villagers_15",
+	"typeId": "1091110027"
+}

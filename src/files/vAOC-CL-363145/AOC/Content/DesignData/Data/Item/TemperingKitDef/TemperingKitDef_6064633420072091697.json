@@ -1,0 +1,65 @@
+{
+	"targetTag": [
+		{
+			"tagName": "Item.Gear.Armor"
+		}
+	],
+	"minimumTemperAmount":
+	{
+		"expression": "const rarity = GetItemRarity();\r\nvar temperValue = 0;\r\n\r\nif(rarity == 0){\r\n    set tempervalue = 20;\r\n} else\r\n\r\nif(rarity == 1){\r\n    set tempervalue = 15;\r\n} else\r\n\r\nif(rarity == 2){\r\n    set tempervalue = 10;\r\n} else\r\n\r\nif(rarity == 3){\r\n    set tempervalue = 5;\r\n} else\r\n\r\nif(rarity == 4){\r\n    set tempervalue = 5;\r\n} else\r\n\r\nif(rarity == 5){\r\n    set tempervalue = 1;\r\n}\r\n\r\ntemperValue"
+	},
+	"maximumTemperAmount":
+	{
+		"expression": "const rarity = GetItemRarity();\r\nvar temperValue = 0;\r\n\r\nif(rarity == 0){\r\n    set tempervalue = 40;\r\n} else\r\n\r\nif(rarity == 1){\r\n    set tempervalue = 30;\r\n} else\r\n\r\nif(rarity == 2){\r\n    set tempervalue = 25;\r\n} else\r\n\r\nif(rarity == 3){\r\n    set tempervalue = 20;\r\n} else\r\n\r\nif(rarity == 4){\r\n    set tempervalue = 15;\r\n} else\r\n\r\nif(rarity == 5){\r\n    set tempervalue = 5;\r\n}\r\n\r\ntemperValue"
+	},
+	"temperAmount":
+	{
+		"expression": "const rarity = GetItemRarity();\r\nvar temperValue = 0;\r\n\r\nif(rarity == 0){\r\n    set tempervalue = RandIntRange(20,40);\r\n} else\r\n\r\nif(rarity == 1){\r\n    set tempervalue = RandIntRange(15,30);\r\n} else\r\n\r\nif(rarity == 2){\r\n    set tempervalue = RandIntRange(10,25);\r\n} else\r\n\r\nif(rarity == 3){\r\n    set tempervalue = RandIntRange(5,20);\r\n} else\r\n\r\nif(rarity == 4){\r\n    set tempervalue = RandIntRange(5,15);\r\n} else\r\n\r\nif(rarity == 5){\r\n    set tempervalue = RandIntRange(1,5);\r\n}\r\n\r\ntemperValue"
+	},
+	"generalMaterialsRequiredByRarityIds":
+	{
+		"common":
+		{
+			"guid": "6064633408332496914",
+			"typeId": "9279173953",
+			"name": "None"
+		},
+		"uncommon":
+		{
+			"guid": "6064633408339836951",
+			"typeId": "9279173953",
+			"name": "None"
+		},
+		"rare":
+		{
+			"guid": "6064633408339640342",
+			"typeId": "9279173953",
+			"name": "None"
+		},
+		"heroic":
+		{
+			"guid": "6064633408334725140",
+			"typeId": "9279173953",
+			"name": "None"
+		},
+		"epic":
+		{
+			"guid": "6064633408334462995",
+			"typeId": "9279173953",
+			"name": "None"
+		},
+		"legendary":
+		{
+			"guid": "6064633408334856213",
+			"typeId": "9279173953",
+			"name": "None"
+		}
+	},
+	"copperCost":
+	{
+		"expression": "Evalformula($#10516612381411113:6064633419905499180$)"
+	},
+	"guid": "6064633420072091697",
+	"name": "TemperingKit_Armor_T2",
+	"typeId": "939925647227"
+}

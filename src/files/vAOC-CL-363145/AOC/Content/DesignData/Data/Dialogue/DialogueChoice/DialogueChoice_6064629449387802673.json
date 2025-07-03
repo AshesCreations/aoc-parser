@@ -1,0 +1,38 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"B7503CFE48C657CE095CA5920784F612\", \"Here are the daggers.\")",
+	"nextNodeId":
+	{
+		"guid": "6064629449387540528",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064629449268854812",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064629449264332825",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064629449266233370",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064629449267478555",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MIA_0020_KOC_KeepOnTheCrossroads\",\"MIP_0020_KOC_Phase01\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MIQ_0020_SAR_SearchAndRescue\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MIQ_0020_SAR_SearchAndRescue\",\"GotDaggerBrolin\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MIQ_0020_SAR_SearchAndRescue\",\"GotDaggerBronson\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MIQ_0020_SAR_SearchAndRescue\",\"GotDaggerKoburn\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MIQ_0020_SAR_SearchAndRescue\",\"GotDaggerBrenner\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MIQ_0020_SAR_SearchAndRescue\",\"ReturnedDaggers\")"
+	},
+	"guid": "6064629449387802673",
+	"name": "MIDD_0020_SAR_BudgeMac_15",
+	"typeId": "1091110027"
+}

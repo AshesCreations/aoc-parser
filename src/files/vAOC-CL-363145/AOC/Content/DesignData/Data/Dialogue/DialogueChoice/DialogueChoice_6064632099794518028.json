@@ -1,0 +1,18 @@
+{
+	"choiceText": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"96492C4643BD7F56D1A6E8BFC3570B83\", \"morning\")",
+	"nextNodeId":
+	{
+		"guid": "6064632118085156866",
+		"typeId": "1091110028",
+		"name": "DD_ServiceNPC_NodeAdministrator_115"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "const time = int(GetTimeOfDayInSeconds()/3600);\r\ntime >= 5 && time < 12"
+	},
+	"choiceType": "Default",
+	"guid": "6064632099794518028",
+	"name": "DD_ServiceNPC_NodeAdministrator_108_Choice_1",
+	"typeId": "1091110027"
+}

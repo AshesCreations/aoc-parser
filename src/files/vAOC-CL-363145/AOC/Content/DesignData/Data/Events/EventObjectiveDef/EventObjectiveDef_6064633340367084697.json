@@ -1,0 +1,90 @@
+{
+	"bAllowSatisfactionToRegress": false,
+	"parameterTypes": 2,
+	"objectiveType": "Kill",
+	"completionCriteria": [
+		{
+			"bOverrideCompletionValueWithExpression": true,
+			"completionValue": 0,
+			"operator": "GreaterThanOrEqualTo",
+			"completionExpression":
+			{
+				"expression": "Event_GetActivity() >= 12"
+			},
+			"completionTriggersIds": [],
+			"bDisplayOnTracker": false,
+			"relevantTrackerIds": [],
+			"displayText": "",
+			"displayType": 0,
+			"displayCompletionValue": 0,
+			"bInvertProgressDisplay": false
+		}
+	],
+	"nPCObjectiveIconOverrideId":
+	{
+		"guid": "0",
+		"typeId": "949952112329",
+		"name": "None"
+	},
+	"progressExpression":
+	{
+		"expression": ""
+	},
+	"gameplayTagFilter":
+	{
+		"tokenStreamVersion": 0,
+		"tagDictionary": [],
+		"queryTokenStream": [],
+		"userDescription": "",
+		"autoDescription": ""
+	},
+	"populationSetId":
+	{
+		"guid": "0",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"trackerId":
+	{
+		"guid": "0",
+		"typeId": "23095133",
+		"name": "None"
+	},
+	"interactablesIds": [],
+	"professionFilterIds": [],
+	"gatherableFilterIds": [],
+	"collectionFilterId":
+	{
+		"guid": "0",
+		"typeId": "1091110041",
+		"name": "None"
+	},
+	"collectionCount": 5,
+	"abilityRecordId":
+	{
+		"guid": "0",
+		"typeId": "30316001",
+		"name": "None"
+	},
+	"activityType": "NPCKill",
+	"activityQueryLocation":
+	{
+		"x": -1636450,
+		"y": 504480,
+		"z": 3890
+	},
+	"activityQueryExtent":
+	{
+		"x": 40000,
+		"y": 30000,
+		"z": 4000
+	},
+	"visibilityExpression":
+	{
+		"expression": ""
+	},
+	"visibilityOverridesTrackerFilter": false,
+	"guid": "6064633340367084697",
+	"name": "EVT_TUR_0006_CrabbyHunt_AP_Objective",
+	"typeId": "23095130"
+}

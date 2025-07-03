@@ -1,0 +1,24 @@
+{
+	"choiceText": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"97D9D98F4D659F398304ABA030DA4C08\", \"I\\'ve got a sponsored permit for an aid package.\")",
+	"nextNodeId":
+	{
+		"guid": "6064632058253410320",
+		"typeId": "1091110028",
+		"name": "DD_0100_QuartermasterDunne_6"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064632058263044114",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "Player_ObjectiveStateEquals(GetPlayer(), \"NA_0100_13j_ReturnToQuartermaster\", EObjectiveState::Active)"
+	},
+	"choiceType": "Default",
+	"guid": "6064632058250461199",
+	"name": "DD_0100_QuartermasterDunne_3_Choice_2",
+	"typeId": "1091110027"
+}

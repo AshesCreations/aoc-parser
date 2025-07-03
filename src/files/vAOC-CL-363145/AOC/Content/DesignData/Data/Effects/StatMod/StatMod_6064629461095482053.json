@@ -1,0 +1,22 @@
+{
+	"statRefId":
+	{
+		"guid": "6064629429438907308",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"value":
+	{
+		"expression": "const DamageReceived = Abs(GetStatModValue(GetHitEvent(), $#10516612381411111:108986352686712$));\r\nconst MaxHP = GetStat(GetInstigator(), $#10516612381411111:108986356618873$);\r\nconst fortified = GetEffectCount(GetOwner(), $#30316002:6064629501386359260$) > 0;\r\nconst x = 1.0 * (DamageReceived/MaxHP);\r\n\r\n\r\nselectfloat(fortified, min((x*45.0) + 3.0, 20.0), min((x*15.0) + 1.0, 20.0))"
+	},
+	"bUseShieldAbsorb": false,
+	"shieldAbsorbPercentage":
+	{
+		"expression": ""
+	},
+	"bShowFloatingText": true,
+	"valueInputTerms": [],
+	"guid": "6064629461095482053",
+	"name": "Tank_Passive_Courageous_CourageOnTakeDmg",
+	"typeId": "3031600201"
+}

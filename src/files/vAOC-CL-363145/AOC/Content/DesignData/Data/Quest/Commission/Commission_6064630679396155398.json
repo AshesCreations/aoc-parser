@@ -1,0 +1,91 @@
+{
+	"commissionType": "Generic",
+	"commissionGameplayTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "Biome.Riverlands"
+			},
+			{
+				"tagName": "Quest.Commission.Adventure.Slayer"
+			},
+			{
+				"tagName": "Quest.Commission.Tier.T1"
+			}
+		],
+		"parentTags": [
+			{
+				"tagName": "Biome"
+			},
+			{
+				"tagName": "Quest.Commission.Adventure"
+			},
+			{
+				"tagName": "Quest.Commission"
+			},
+			{
+				"tagName": "Quest"
+			},
+			{
+				"tagName": "Quest.Commission.Tier"
+			}
+		]
+	},
+	"preRequisiteQuestsIds": [],
+	"autoFailTimer": -1,
+	"bRepeatable": false,
+	"mainObjectiveType": "Kill",
+	"commissionSection": 1,
+	"biomeOrigin": "FloodPlains",
+	"bFromDynamicContent": false,
+	"availabilityExpression":
+	{
+		"expression": "false"
+	},
+	"bDisabled": true,
+	"level": 5,
+	"commissionRarity": "Common",
+	"objectivesIds": [],
+	"allowMultipleCompletion": false,
+	"commissionName": "NSLOCTEXT(\"\", \"B69DEC90432CEDF64D6F8C93322DCCBD\", \"Road Ranger\")",
+	"flavorText": "NSLOCTEXT(\"\", \"DF2CB27249F9B6143B2A0181EE8D7DD9\", \"You can\\'t get a caravan down the roads these days without bandits shaking you down. Won\\'t someone put them in their place?\")",
+	"mainObjectiveText": "NSLOCTEXT(\"\", \"B688347F496346103E6DF2817D19B902\", \"Kill Bandits Throughout the Riverlands\")",
+	"rewardTablesIds": [
+		{
+			"guid": "6064631443187695620",
+			"typeId": "1091110040",
+			"name": "None"
+		}
+	],
+	"calloutName": "",
+	"calloutDescription": "",
+	"bCanProgressWhileInRaid": false,
+	"expiration":
+	{
+		"duration": "0"
+	},
+	"cooldown":
+	{
+		"duration": "0"
+	},
+	"moneyCost": "0",
+	"resourceCost": [],
+	"mayoralCompletionCount": 0,
+	"rewardId":
+	{
+		"guid": "0",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"bNodeTargeted": false,
+	"targetRewardId":
+	{
+		"guid": "0",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"questItemListIds": [],
+	"guid": "6064630679396155398",
+	"name": "Com_RVR_Slay_Bandits_Common",
+	"typeId": "280002"
+}

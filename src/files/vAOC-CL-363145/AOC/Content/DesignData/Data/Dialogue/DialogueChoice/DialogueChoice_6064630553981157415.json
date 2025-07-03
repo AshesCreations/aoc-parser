@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"7ED96E154647343AB598188E8A7AF68E\", \"(Novice Quest Grant)\")",
+	"nextNodeId":
+	{
+		"guid": "6064630553981157412",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"0000_Livestream_StartMe_FakePersonalArc\", \"0000_Livestream_Phase1\")&&\r\nIsStoryArcQuestAvailable(GetPlayer(), \"DO_NOT_START_ME_Mining_Quest\")&&\r\n!IsOnStoryArcQuest(GetPlayer(), \"DO_NOT_START_ME_Mining_Quest\")"
+	},
+	"guid": "6064630553981157415",
+	"name": "ServiceBuildingNPC_Stoneworks_Base_Interaction_Alt_7",
+	"typeId": "1091110027"
+}

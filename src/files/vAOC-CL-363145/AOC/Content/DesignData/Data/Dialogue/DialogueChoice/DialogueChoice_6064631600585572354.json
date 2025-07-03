@@ -1,0 +1,24 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"7883B9C642589F57EF1053ABCFD6618D\", \"[Find a use for the shield]\")",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064631601693919543",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "!Player_HasCompletedCommission(GetPlayer(),\"CSQ_RVR_0068_TSS_TheShiningShield\")||\r\n!Player_HasCommission(GetPlayer(),\"CSQ_RVR_0068_TSS_TheShiningShield\")\r\n"
+	},
+	"choiceType": "Default",
+	"guid": "6064631600585572354",
+	"name": "CSQ_DD_0068_TAW_RefurbishedShield_4",
+	"typeId": "1091110027"
+}

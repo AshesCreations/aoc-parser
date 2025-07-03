@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"3C187BA64AF8A113CC99B8A1F0EBCF8F\", \"Does not own property\")",
+	"nextNodeId":
+	{
+		"guid": "6064629449116942352",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "Node_CanPlayerBecomeCitizen\r\n(GetPlayer(), \r\nNode_GetActorCityNode(GetInteractionTarget())) \r\n== \r\nfalse"
+	},
+	"guid": "6064629449119957010",
+	"name": "DD_ServiceNPC_NodeAdministrator_66",
+	"typeId": "1091110027"
+}

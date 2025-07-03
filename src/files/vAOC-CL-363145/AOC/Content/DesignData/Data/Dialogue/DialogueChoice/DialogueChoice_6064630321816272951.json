@@ -1,0 +1,23 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"4CFBFE0D4F5211D3A81A0E86C231444F\", \"This tower is secured.\")",
+	"nextNodeId":
+	{
+		"guid": "6064630321873944632",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064630321374035989",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0005A_FGG_ForGreaterGlory\",\"MAP_0005A_FGG_Phase01\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0005A_STR_SecuringTheTradeRoutes\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005A_STR_SecuringTheTradeRoutes\",\"KilledBossCrags\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005A_STR_SecuringTheTradeRoutes\",\"ReportToHonorswalkSentry\")\r\n"
+	},
+	"guid": "6064630321816272951",
+	"name": "MADD_0005A_STR_NPC_HonorswalkSentry_4",
+	"typeId": "1091110027"
+}

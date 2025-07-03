@@ -1,0 +1,32 @@
+{
+	"choiceText": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"F5BD361246088B0CA3C4B9AAC0A55BF9\", \"I got the goods.\")",
+	"nextNodeId":
+	{
+		"guid": "6064632223778275595",
+		"typeId": "1091110028",
+		"name": "Node_Vendor_BlackMarket_17"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064632223784239374",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064632223787909391",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "Player_ObjectiveStateEquals(GetPlayer(), \"CSQ_0160_FTUE_AttackCaravan_5_return\", EObjectiveState::Active)"
+	},
+	"narrativeRequirementsIds": [],
+	"choiceType": "Default",
+	"guid": "6064632223757959431",
+	"name": "Node_Vendor_BlackMarket_16_Choice_2",
+	"typeId": "1091110027"
+}

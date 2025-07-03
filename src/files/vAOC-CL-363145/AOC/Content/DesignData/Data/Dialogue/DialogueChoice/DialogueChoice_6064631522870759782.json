@@ -1,0 +1,18 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"6D6900064AEA304F1179ABB0E3CB5687\", \"Quest 1 Completed - No 2\")",
+	"nextNodeId":
+	{
+		"guid": "6064631522875281767",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "Player_HasCompletedCommission(GetPlayer(), \"SQ_30_FAS_1\")&&!Player_HasCommission (GetPlayer(), \"SQ_31_WFHF\")&&!Player_HasCompletedCommission(GetPlayer(), \"SQ_31_WFHF\")"
+	},
+	"choiceType": "Default",
+	"guid": "6064631522870759782",
+	"name": "SQ_FAS_Intro_20",
+	"typeId": "1091110027"
+}

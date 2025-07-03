@@ -1,0 +1,30 @@
+{
+	"listings": [
+		{
+			"itemId":
+			{
+				"guid": "6064630417665687878",
+				"typeId": "1091110003",
+				"name": "None"
+			},
+			"itemVariation":
+			{
+				"guid": "0",
+				"typeId": "1091111111",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": "Node_IsPlotExpansionEnabled(Node_GetActorCityNode(GetInteractionTarget()),Node_GetActorPlotRecord(GetInteractionTarget()),$#7823461:6064631873915322400$)"
+			},
+			"offers": []
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "Node_IsPlotExpansionEnabled(Node_GetActorCityNode(GetInteractionTarget()),Node_GetActorPlotRecord(GetInteractionTarget()),$#7823461:6064631873915322400$)"
+	},
+	"guid": "6064630564213751922",
+	"name": "Alchemy_Vendor_T3",
+	"typeId": "3145314714"
+}

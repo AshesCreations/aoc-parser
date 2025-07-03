@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"DD11A4434A3D510ADF2B588A682F30CC\", \"What are we waiting for?\")",
+	"nextNodeId":
+	{
+		"guid": "6064630616811110488",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "!IsOnStoryArcQuest(GetPlayer(), \"SAQ_0026_P2_Q1_MarkTargets\")&&\r\nIsStoryArcQuestAvailable(GetPlayer(), \"SAQ_0026_P2_Q1_MarkTargets\")"
+	},
+	"guid": "6064630616741576791",
+	"name": "DD_0026_LeodrasLionbrand_78",
+	"typeId": "1091110027"
+}

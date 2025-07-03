@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"5BA870FC4893E9523FF322821E24C8BF\", \"Where are the minotaur?\")",
+	"nextNodeId":
+	{
+		"guid": "6064630531380346957",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0005B_TEW_EnemyWithin\",\"MAP_0005B_TEW_Phase03\")&&\r\n!IsOnStoryArcQuest(GetPlayer(),\"MAQ_0005B_HOD_TheHornOfDoom\")&&\r\nIsStoryArcQuestAvailable(GetPlayer(),\"MAQ_0005B_HOD_TheHornOfDoom\")\r\n"
+	},
+	"guid": "6064630531374907468",
+	"name": "MADD_0005B_HOD_CaptainEudoxia_4",
+	"typeId": "1091110027"
+}

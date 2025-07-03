@@ -1,0 +1,29 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"19E503834043AD5439DE779DF9FE8C3D\", \"[Retrieve the Stone Rose]\")",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064631742416158729",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064631720364408958",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "Player_ObjectiveStateEquals(GetPlayer(),\"CSQ_NOB_0069_KTT_Main_GetStoneRose\", EObjectiveState::Active)"
+	},
+	"choiceType": "Default",
+	"guid": "6064631742401347592",
+	"name": "CSQ_DD_0069_KTT_LogWithStoneRose_4",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,32 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 4,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "GetStatModValue(GetHitEvent(), $#10516612381411111:108986352686712$) > 0.0 &&\r\n!RecordNameContains(GetHitSourceRecord(GetHitEvent()), \"Cleric_CleansingWave\") &&\r\nGetRecordTypeId(GetHitSourceRecord(GetHitEvent())) != GetReactionTypeId() &&\r\nGetRecordTypeId(GetHitSourceRecord(GetHitEvent())) != GetEffectTypeId()"
+	},
+	"bEvaluateApplyingHit": false,
+	"instigator": "Owner",
+	"targetsBitmask": 1,
+	"reactHitsIds": [
+		{
+			"guid": "109263605356153",
+			"typeId": "30316005",
+			"name": "Cleric_CleansingWave_Hit_Cleanse"
+		},
+		{
+			"guid": "109263644808826",
+			"typeId": "30316005",
+			"name": "Cleric_CleansingWave_Hit_CleanseThis"
+		}
+	],
+	"guid": "109263565969016",
+	"name": "Cleric_CleansingWave_DispellReact",
+	"typeId": "3031600202"
+}

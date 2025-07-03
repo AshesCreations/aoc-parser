@@ -1,0 +1,18 @@
+{
+	"choiceText": "NSLOCTEXT(\"[4BE4F0A16D08556ACD6685BF392E6719]\", \"9146EF8B4F9191F77A01D792B7CD5DFA\", \"Not On/Completed Quest\")",
+	"nextNodeId":
+	{
+		"guid": "6064632099326132315",
+		"typeId": "1091110028",
+		"name": "CSQ_012X_FTUE_EstablishingASettlement_NodeTrader_2"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "!Player_HasCommission(GetPlayer(), \"CSQ_0153_FTUE_EstablishingASettlement\") &&\r\n!Player_HasCompletedCommission(GetPlayer(), \"CSQ_0153_FTUE_EstablishingASettlement\") &&\r\n(Node_ClientGetNumNodesAtLevel(ENodeLevel::Crossroads) >= 1 ||\r\nNode_ClientGetNumNodesAtLevel(ENodeLevel::Encampment) >= 1 ||\r\nNode_ClientGetNumNodesAtLevel(ENodeLevel::Village) >= 1 ||\r\nNode_ClientGetNumNodesAtLevel(ENodeLevel::Town) >= 1 ||\r\nNode_ClientGetNumNodesAtLevel(ENodeLevel::City) >= 1 ||\r\nNode_ClientGetNumNodesAtLevel(ENodeLevel::Metropolis) >= 1)"
+	},
+	"choiceType": "Default",
+	"guid": "6064632099327836252",
+	"name": "CSQ_0153_FTUE_EstablishingASettlement_LionholdTrader_1_Choice_1",
+	"typeId": "1091110027"
+}

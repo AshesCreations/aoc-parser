@@ -1,0 +1,12 @@
+{
+	"equation":
+	{
+		"expression": "const Perception = GetStealthPerceptionState(GetTarget(), GetSource());\r\nvar Opacity = 1.0;\r\nif(Perception == EStealthPerceptionState::Hidden ||\r\n  \tPerception == EStealthPerceptionState::Detected){\r\n  \tset Opacity = 0.0;\r\n}else if(Perception == EStealthPerceptionState::Revealed){\r\n  \tset Opacity = 0.5;\r\n}\r\nOpacity"
+	},
+	"constraints":
+	{
+	},
+	"guid": "6064633299773821259",
+	"name": "Rogue_StealthFXOpacity",
+	"typeId": "10516612381411112"
+}

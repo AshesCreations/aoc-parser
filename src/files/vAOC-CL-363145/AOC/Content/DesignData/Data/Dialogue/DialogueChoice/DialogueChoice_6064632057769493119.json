@@ -1,0 +1,18 @@
+{
+	"choiceText": "",
+	"nextNodeId":
+	{
+		"guid": "6064632057777554048",
+		"typeId": "1091110028",
+		"name": "DD_0100_HathamCrowe_2"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "Player_ObjectiveStateEquals(GetPlayer(), \"NO_0100_15d_DeliverSuppliestToPetrah\", EObjectiveState::Hidden)||\r\nPlayer_ObjectiveStateEquals(GetPlayer(), \"NO_0100_15_FTUE_DeliverRecoveredMedicalSupplies\", EObjectiveState::Active)"
+	},
+	"choiceType": "Default",
+	"guid": "6064632057769493119",
+	"name": "DGN_HathamCrowe_Root_Choice_1",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,22 @@
+{
+	"statRefId":
+	{
+		"guid": "109183576135288",
+		"typeId": "10516612381411111",
+		"name": "Stat_Health"
+	},
+	"value":
+	{
+		"expression": "Min(Abs(GetStatModValue(GetHitEvent(), GetOwner(), $#10516612381411111:108986352686712$)), 0.2 * GetStat(GetInstigator(), $#10516612381411111:109183578756729$))"
+	},
+	"bUseShieldAbsorb": false,
+	"shieldAbsorbPercentage":
+	{
+		"expression": ""
+	},
+	"bShowFloatingText": true,
+	"valueInputTerms": [],
+	"guid": "6064630696396783779",
+	"name": "Tank_Reflect_Refreshing",
+	"typeId": "3031600201"
+}

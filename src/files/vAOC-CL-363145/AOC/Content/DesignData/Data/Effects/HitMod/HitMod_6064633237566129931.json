@@ -1,0 +1,33 @@
+{
+	"trigger":
+	{
+		"expression": "GetTarget() == GetOwner() \r\n&& GetRecordTypeId(GetHitSourceRecord(GetHitInProgress())) \r\n== GetEffectTypeId()"
+	},
+	"terms": [
+		{
+			"termId":
+			{
+				"guid": "6064630633715007489",
+				"typeId": "10516612381411115",
+				"name": "None"
+			},
+			"value":
+			{
+				"expression": "1.25"
+			},
+			"bOptional": false,
+			"bKeepBeyondScope": false,
+			"filter":
+			{
+				"expression": ""
+			},
+			"mergeRuleOverride": "Merge_Default"
+		}
+	],
+	"tags": [],
+	"statModsIds": [],
+	"statModPostProcess": [],
+	"guid": "6064633237566129931",
+	"name": "Status_Exposed",
+	"typeId": "3031600210"
+}

@@ -1,0 +1,99 @@
+{
+	"eventName": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"31CA5E51410C1A9F36C4789C3D457DC8\", \"Elminate the Defectors\")",
+	"gameplayTags":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"activationPredicatesIds": [
+		{
+			"guid": "6064631164573450251",
+			"typeId": "23095129",
+			"name": "None"
+		}
+	],
+	"minChallengeRating": 0,
+	"maxChallengeRating": 30,
+	"eventLevel": 1,
+	"eventType": 128,
+	"locationId":
+	{
+		"guid": "0",
+		"typeId": "5127371160",
+		"name": "None"
+	},
+	"desiredTimeSlot": "0001.01.01-06.00.00",
+	"frequency": 4,
+	"priority": 1,
+	"rewardTableId":
+	{
+		"guid": "0",
+		"typeId": "1091110040",
+		"name": "None"
+	},
+	"rewardPopulationSetId":
+	{
+		"guid": "0",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"startStageId":
+	{
+		"guid": "6064632689142792207",
+		"typeId": "23095131",
+		"name": "None"
+	},
+	"stagesIds": [
+		{
+			"guid": "6064632689142792207",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064632695314251823",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064632699707457590",
+			"typeId": "23095131",
+			"name": "None"
+		}
+	],
+	"interactVolumesIds": [],
+	"alignmentsIds": [],
+	"mapDisplayType": "None",
+	"mapEventIcon": "/Game/UI/Icons/Map/TUI_Icon_Map_AttackerEvent.TUI_Icon_Map_AttackerEvent",
+	"bDisplayOnTracker": true,
+	"notificationRadius": 100000,
+	"mapRadiusMinumum": 20000,
+	"cooldownTimer": 3600,
+	"bDisabled": false,
+	"maxInstanceCount": 0,
+	"requiredMapName": "",
+	"comments": [],
+	"bIsTemplate": false,
+	"flowNodes": [
+		{
+			"flowType": "EventEntry",
+			"graphLocation":
+			{
+				"x": -753.14512051744919,
+				"y": -2199.2346651281764
+			},
+			"id": 0
+		},
+		{
+			"flowType": "EventExit",
+			"graphLocation":
+			{
+				"x": 1221.4976350330328,
+				"y": -314.49352989257289
+			},
+			"id": 1
+		}
+	],
+	"guid": "6064632666586218500",
+	"name": "War_Defectors_Event",
+	"typeId": "23095125"
+}

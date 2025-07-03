@@ -1,0 +1,133 @@
+{
+	"effectCategory": "EFFECT_Hidden",
+	"effectTags": [],
+	"effectName": "",
+	"effectDescription": "Taking reduced ranged damage.",
+	"effectIcon": "None",
+	"effectFloatingText": "",
+	"bDispellable": false,
+	"bSignificant": false,
+	"scriptOnApply": "None",
+	"scriptOnExpire": "None",
+	"effectFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"applicationRequirements":
+	{
+		"expression": ""
+	},
+	"basePercentChance": 100,
+	"chanceApplyScalingStatRecordId":
+	{
+		"guid": "0",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"chanceApplyScalingStat": "Power",
+	"chanceApplyScalingSoft":
+	{
+		"externalCurve": "None",
+		"editorCurveData":
+		{
+			"keys": [],
+			"defaultValue": 3.4028234663852886e+38,
+			"preInfinityExtrap": "RCCE_Constant",
+			"postInfinityExtrap": "RCCE_Constant",
+			"keyHandlesToIndices":
+			{
+			}
+		}
+	},
+	"chanceResistScalingStatRecordId":
+	{
+		"guid": "0",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"chanceResistScalingStat": "Power",
+	"chanceResistScalingSoft":
+	{
+		"externalCurve": "None",
+		"editorCurveData":
+		{
+			"keys": [],
+			"defaultValue": 3.4028234663852886e+38,
+			"preInfinityExtrap": "RCCE_Constant",
+			"postInfinityExtrap": "RCCE_Constant",
+			"keyHandlesToIndices":
+			{
+			}
+		}
+	},
+	"bInfiniteDuration": false,
+	"effectDuration":
+	{
+		"expression": "12.000000"
+	},
+	"bPersistsThroughDeath": false,
+	"bPersistsRelog": false,
+	"effectStackType": "STACK_OverrideAlways",
+	"bCompareSourceWhenStacking": true,
+	"collateStacksInUI": false,
+	"globalStackLimit": 50,
+	"stackInPlaceLimit": 0,
+	"stackDurationRefresh": "STACK_AlwaysRefresh",
+	"scriptOnMaxStacks": "None",
+	"tickTimer": 0,
+	"bIgnoreInitialTick": false,
+	"bTickRateScaling": false,
+	"tickRateScalingStatRecordId":
+	{
+		"guid": "0",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"tickRateScalingStat": "Power",
+	"tickRateScalingPercentSoft":
+	{
+		"externalCurve": "None",
+		"editorCurveData":
+		{
+			"keys": [],
+			"defaultValue": 3.4028234663852886e+38,
+			"preInfinityExtrap": "RCCE_Constant",
+			"postInfinityExtrap": "RCCE_Constant",
+			"keyHandlesToIndices":
+			{
+			}
+		}
+	},
+	"scriptOnTick": "None",
+	"applyHitsIds": [],
+	"tickHitsIds": [],
+	"removeHitsIds": [],
+	"statModsIds": [],
+	"spawnActorsIds": [],
+	"spawnNPCsIds": [
+		{
+			"guid": "6064629173215166472",
+			"typeId": "3031600204",
+			"name": "SpawnNPC_Cyclops_SpiritWolves"
+		}
+	],
+	"spawnLingeringZonesIds": [],
+	"redirectsIds": [],
+	"reactionsIds": [],
+	"crowdControlsIds": [],
+	"resistancesIds": [],
+	"fragilityDefinitionsIds": [],
+	"bApplyScale": false,
+	"scaleAmount":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"scaleTime": 0,
+	"guid": "6064629173212086277",
+	"name": "CyclopsShaman_Mushroom4_SummonNPC",
+	"typeId": "30316002"
+}

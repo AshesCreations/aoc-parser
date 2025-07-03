@@ -1,0 +1,71 @@
+{
+	"type": "Kill",
+	"progressExpression":
+	{
+		"expression": ""
+	},
+	"nPCTaskIconOverrideId":
+	{
+		"guid": "0",
+		"typeId": "949952112329",
+		"name": "None"
+	},
+	"bAllowSatisfactionToRegress": false,
+	"completionQuantity": 10,
+	"tagQuery":
+	{
+		"tokenStreamVersion": 0,
+		"tagDictionary": [
+			{
+				"tagName": "character.beast.bear"
+			},
+			{
+				"tagName": "character.beast.bearGrizzly"
+			}
+		],
+		"queryTokenStream": [ 0, 1, 1, 2, 0, 1 ],
+		"userDescription": "",
+		"autoDescription": " ANY( character.beast.bear, character.beast.bearGrizzly )"
+	},
+	"professionFilterIds": [],
+	"gatherableFilterIds": [],
+	"collectionFilterId":
+	{
+		"guid": "0",
+		"typeId": "1091110041",
+		"name": "None"
+	},
+	"collectionCount": 5,
+	"objectivesIds": [],
+	"bCheckKillLocation": false,
+	"displayLocation": [
+		{
+			"location":
+			{
+				"x": -985158.78231499996,
+				"y": 345184.365788,
+				"z": 14418.266638999999
+			},
+			"radius": 50000,
+			"map_DisplayType": "ICON_AND_RADIUS",
+			"map_IconVisual":
+			{
+				"guid": "6064631884936970240",
+				"typeId": "949952112329",
+				"name": "None"
+			},
+			"map_DisplayName": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"72B061694F707BCA36BB378447C613DF\", \"Kill bears near Halcyon\")"
+		}
+	],
+	"location": [],
+	"populationSetId":
+	{
+		"guid": "0",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"notifyType": "None",
+	"guid": "6064632513471840281",
+	"name": "MCOM_RVR_Halcyon_Kill_Bears",
+	"typeId": "1095125186"
+}

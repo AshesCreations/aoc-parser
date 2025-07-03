@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"55C1DBC449991955FA549BBCB68B850A\", \"Need me to take a few out?\")",
+	"nextNodeId":
+	{
+		"guid": "6064630616847155292",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "!IsOnStoryArcQuest(GetPlayer(), \"SAQ_0026_P2_Q2_KillGoblinsInTheOuterFort\")&&\r\nIsStoryArcQuestAvailable(GetPlayer(), \"SAQ_0026_P2_Q2_KillGoblinsInTheOuterFort\")"
+	},
+	"guid": "6064630616848203870",
+	"name": "DD_0026_LeodrasLionbrand_84",
+	"typeId": "1091110027"
+}

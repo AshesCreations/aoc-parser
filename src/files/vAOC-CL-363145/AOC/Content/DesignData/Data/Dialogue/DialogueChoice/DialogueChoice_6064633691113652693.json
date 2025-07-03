@@ -1,0 +1,22 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"5DF1D54E4FF8F756192D78BEC7D29E51\", \"How do I run a caravan of my own?\")",
+	"nextNodeId":
+	{
+		"guid": "6064633696052577254",
+		"typeId": "1091110028",
+		"name": "Node_Caravansary_Helper_13"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "(!Player_HasCommission (GetPlayer(), \"CSQ_0161b_FTUE_TurnIn_Caravan\") && !Player_HasCompletedCommission(GetPlayer(), \"CSQ_0161b_FTUE_TurnIn_Caravan\"))"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064633691113652693",
+	"name": "Node_Caravansary_Helper_1_Choice_2",
+	"typeId": "1091110027"
+}

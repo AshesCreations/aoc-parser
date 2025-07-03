@@ -1,0 +1,77 @@
+{
+	"completionResponsesIds": [
+		{
+			"guid": "6064633023027478528",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"objectivesToCompleteUponCompletionIds": [],
+	"objectivesToRevealUponCompletionIds": [],
+	"itemsToGrantUponCompletion": [],
+	"channelDuration": 0,
+	"activePredicate":
+	{
+		"expression": ""
+	},
+	"cuePredicate":
+	{
+		"expression": ""
+	},
+	"visiblePredicate":
+	{
+		"expression": "Player_HasItem(GetPlayer(), \"Consumable_SiegeDeclarationBanner_Windansea\") && \r\n(GetCurrentNode(GetPlayer()) == $#1323521343:6064632225073725498$) &&\r\nGetCharacterLevel(GetPlayer()) >= 15 &&\r\nNode_IsPlayerCitizenOfNode(GetPlayer(), $#1323521343:6064632225073725498$) == false"
+	},
+	"showErrorIfNotVisible": false,
+	"deleteOnCompletion": false,
+	"singleUse": false,
+	"alwaysShowUIPrompt": true,
+	"cancelChannelIfActivePredicateEverFails": true,
+	"interactTextFormat": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"0F2466864A869B4A102EC1943422B612\", \"Declare Siege Against Windansea\")",
+	"channelModifierType": "NONE",
+	"rewardTableId":
+	{
+		"guid": "0",
+		"typeId": "1091110008",
+		"name": "None"
+	},
+	"startEffect": "None",
+	"endEffect": "None",
+	"failEffect": "None",
+	"successEffect": "None",
+	"cueEffect": "None",
+	"startSound": "None",
+	"endSound": "None",
+	"failSound": "None",
+	"successSound": "None",
+	"cueSound": "None",
+	"interactAnimTag": "None",
+	"deletionDelay": 0,
+	"activeCueEnabled": true,
+	"activeCueIgnoresActivePredicate": false,
+	"facePlayer": false,
+	"allowInCombat": true,
+	"spawnAtBottomCapsule": false,
+	"channelAnimation": "None",
+	"interactRadius": 250,
+	"discoveryDistance": 200,
+	"interactTolerance": 270,
+	"interactAngle": 0,
+	"bRequireLOS": false,
+	"busyTime": 0.89999997615814209,
+	"clientBusyTime": 1,
+	"channelStartResponseIds": [],
+	"failResponsesIds": [],
+	"gatheringInteractionDataId":
+	{
+		"guid": "0",
+		"typeId": "19846",
+		"name": "None"
+	},
+	"interactCooldownMap":
+	{
+	},
+	"guid": "6064633465804357681",
+	"name": "Siege_BannerPlacement_Windansea_ChannelTarget_PID",
+	"typeId": "1091110031"
+}

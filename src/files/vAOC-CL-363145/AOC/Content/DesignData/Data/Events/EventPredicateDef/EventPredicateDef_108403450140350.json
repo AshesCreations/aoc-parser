@@ -1,0 +1,36 @@
+{
+	"expression":
+	{
+		"expression": "//Event_GetNumNPCKills(\"npc.type.humanoid.pirate\") >= 30\r\n\r\n// the above doesn't compile, returning false -Bucky\r\nfalse"
+	},
+	"tickInterval": 5,
+	"maxActivationCount": 1,
+	"objectivesIds": [],
+	"triggersIds": [
+		{
+			"guid": "108403429496500",
+			"typeId": "23095135",
+			"name": "NarrativePrototype_SA_0001_Event3_StridersRevenge_Transition_ToStage2"
+		},
+		{
+			"guid": "108408331130572",
+			"typeId": "23095135",
+			"name": "NarrativePrototype_SA_0002_Event3_StridersRevenge_Spawn_TraggerBoone"
+		},
+		{
+			"guid": "108431658145421",
+			"typeId": "23095135",
+			"name": "NarrativePrototype_SA_0002_Event3_StridersRevenge_Spawn_Triggered_Barrels"
+		}
+	],
+	"flowEditorNodeLocation":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"routePins": [],
+	"guid": "108403450140350",
+	"name": "NarrativePrototype_SA0001_Event3_StridersRevenge_Transition_ToStage2",
+	"typeId": "23095129"
+}

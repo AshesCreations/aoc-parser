@@ -1,0 +1,33 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"6AE50DCC4D27418D5852388979AAE066\", \"Take the Goblin Spyglass\")",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064632281885245592",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064632281854640279",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "!Player_HasItem(GetPlayer(),\"RVR_Aela_GoblinTrash_1to5_GoblinSpyglass\")&&Player_HasItem(GetPlayer(),\"RVR_Aela_GoblinTrash_1to5_GoblinShardOfGlass\")&&Player_HasItem(GetPlayer(),\"RVR_Aela_GoblinTrash_1to5_GoblinHilt\")&&Player_HasItem(GetPlayer(),\"RVR_Aela_GoblinTrash_1to5_GoblinAncientBone\")&&Player_HasItem(GetPlayer(),\"RVR_Aela_GoblinTrash_1to5_GoblinOozenog\")"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064632297480257538",
+	"name": "CSQ_DD_NPC_Goblin_Grubfiddle_6_Choice_1",
+	"typeId": "1091110027"
+}

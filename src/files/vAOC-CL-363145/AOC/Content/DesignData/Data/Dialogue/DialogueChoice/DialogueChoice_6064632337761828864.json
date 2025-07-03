@@ -1,0 +1,22 @@
+{
+	"choiceText": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"ADA809114A19EBF31A9D8B897A5B6BA5\", \"(Is Mayor but not on quest)\")",
+	"nextNodeId":
+	{
+		"guid": "6064632337790205955",
+		"typeId": "1091110028",
+		"name": "DD_ServiceNPC_NodeAdministrator_128"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "const interactNode = Node_GetActorCityNode(GetInteractionTarget());\r\nNode_IsPlayerMayorCurrentNode(GetPlayer(), interactNode)"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064632337761828864",
+	"name": "DD_ServiceNPC_NodeAdministrator_108_Choice_6",
+	"typeId": "1091110027"
+}

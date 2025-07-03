@@ -1,0 +1,51 @@
+{
+	"equationId":
+	{
+		"guid": "6064629257433841668",
+		"typeId": "10516612381411112",
+		"name": "None"
+	},
+	"inputTerms": [
+		{
+			"termId":
+			{
+				"guid": "6064629257577168902",
+				"typeId": "10516612381411115",
+				"name": "None"
+			},
+			"value":
+			{
+				"expression": "const HitInProgress = GetHitInProgress();\r\nconst Target = GetTarget();\r\n\r\nconst IsPhysical = HitHasTag(HitInProgress, \"Element.Physical\");\r\nconst IsMagical  = HitHasTag(HitInProgress, \"Element.Magical\");\r\n\r\nvar Eva = 0.0;\r\nif (IsPhysical) {\r\n    set Eva = GetStat(Target, $#10516612381411111:109343399171802$); }\r\nif (IsMagical && !IsPhysical) {\r\n    set Eva = GetStat(Target, $#10516612381411111:109343399171812$); }\r\n\r\nEva"
+			},
+			"bOptional": false,
+			"bKeepBeyondScope": false,
+			"filter":
+			{
+				"expression": ""
+			},
+			"mergeRuleOverride": "Merge_Default"
+		},
+		{
+			"termId":
+			{
+				"guid": "6064629257576775685",
+				"typeId": "10516612381411115",
+				"name": "None"
+			},
+			"value":
+			{
+				"expression": "const HitInProgress = GetHitInProgress();\r\nconst Instigator = GetInstigator();\r\n\r\nconst PhysicalTag = HitHasTag(HitInProgress, \"Element.Physical\");\r\nconst MagicalTag = HitHasTag(HitInProgress, \"Element.Magical\");\r\nconst PhysicalOverride = CheckForDamageTag(HitInProgress, \"ability.PhysicalScalingOverride\");\r\nconst MagicalOverride = CheckForDamageTag(HitInProgress, \"ability.MagicalScalingOverride\");\r\n\r\nconst IsPhysical = (PhysicalTag || PhysicalOverride) && !MagicalOverride;\r\nconst IsMagical = (MagicalTag || MagicalOverride) && !PhysicalOverride;\r\n\r\nvar Acc = 0.0;\r\nif (IsPhysical) {\r\n    set Acc = GetStat(Instigator, $#10516612381411111:109343399106253$); }\r\nif (IsMagical && !IsPhysical) {\r\n    set Acc = GetStat(Instigator, $#10516612381411111:109343399171809$); }\r\n\r\nAcc"
+			},
+			"bOptional": false,
+			"bKeepBeyondScope": false,
+			"filter":
+			{
+				"expression": ""
+			},
+			"mergeRuleOverride": "Merge_Default"
+		}
+	],
+	"guid": "6064629257369419776",
+	"name": "UniversalMissChance",
+	"typeId": "10516612381411113"
+}

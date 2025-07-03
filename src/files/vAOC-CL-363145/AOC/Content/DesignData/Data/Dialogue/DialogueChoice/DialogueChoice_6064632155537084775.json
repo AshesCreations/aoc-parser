@@ -1,0 +1,33 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"9EFD46554FDA9D08A44461A8E93BC724\", \"I\\'ve delivered a caravan.\")",
+	"nextNodeId":
+	{
+		"guid": "6064632155540885867",
+		"typeId": "1091110028",
+		"name": "Caravan_Master_Dialog_40"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064633669472551731",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064633669374182185",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "(Player_HasCommission (GetPlayer(), \"CSQ_0161b_FTUE_TurnIn_Caravan\") && !Player_HasCompletedCommission(GetPlayer(), \"CSQ_0161b_FTUE_TurnIn_Caravan\") && Player_ObjectiveStateEquals(GetPlayer(), \"CSQ_0161b_FTUE_TurnInCaravan_2_deliver\", EObjectiveState::Complete))"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064632155537084775",
+	"name": "Caravan_Master_Dialog_37_Choice_1",
+	"typeId": "1091110027"
+}

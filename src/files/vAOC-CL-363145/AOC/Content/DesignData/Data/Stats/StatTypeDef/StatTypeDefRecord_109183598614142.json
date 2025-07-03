@@ -1,0 +1,50 @@
+{
+	"displayName": "Wisdom",
+	"description": "NSLOCTEXT(\"[1909495A4C2095068D406C9D33F90055]\", \"FAD6EE5E4B8F1239C3C0C9B3262F346F\", \"Each point of Wisdom provides:*2 Magical Casting Speed Rating*2 Magical Penetration Rating*2 Magical Critical Chance Rating*2 Magical Evasion Rating*1 Magical Disable Accuracy Rating\")",
+	"bHidden": false,
+	"gameplayType": "Type_Combat",
+	"bHasWaterfallStatsUI": true,
+	"waterfallStatsUIIds": [],
+	"bDisplayAsPercentage": false,
+	"statType": "Type_Float",
+	"bClampStatFinalValue": false,
+	"bMultiplyStatMods": false,
+	"bMultiplyCompliment": false,
+	"base":
+	{
+		"expression": "0"
+	},
+	"waterfallStatsBaseIds": [],
+	"valueMin":
+	{
+		"expression": "0"
+	},
+	"waterfallStatsMinIds": [],
+	"valueMax":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMaxIds": [],
+	"regenRate":
+	{
+		"expression": ""
+	},
+	"waterfallStatsRegenIds": [],
+	"bRegenWhileDead": false,
+	"bRecalculateOnCombatState": false,
+	"onSpawn": "Reset_None",
+	"onDeath": "Reset_None",
+	"onRevive": "Reset_None",
+	"bPersistValue": false,
+	"replication": 1,
+	"shieldStatId":
+	{
+		"guid": "0",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"grantedEffects": [],
+	"guid": "109183598614142",
+	"name": "Wisdom",
+	"typeId": "10516612381411111"
+}

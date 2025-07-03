@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"C2E26CBE48E65708538467A3E12C5165\", \"(Sickle TurnIn Quest Complete)\")",
+	"nextNodeId":
+	{
+		"guid": "6064630553981157421",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsOnStoryArcQuest(GetPlayer(), \"DO_NOT_START_ME_Mining_Quest\")&&\r\nGetStoryArcQuestFlag(GetPlayer(), \"DO_NOT_START_ME_Foraging_Quest\", \"PickaxeCollected\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(), \"DO_NOT_START_ME_Foraging_Quest\", \"PickaxeTurnedIn\")"
+	},
+	"guid": "6064630553981157416",
+	"name": "ServiceBuildingNPC_Stoneworks_Base_Interaction_Alt_8",
+	"typeId": "1091110027"
+}

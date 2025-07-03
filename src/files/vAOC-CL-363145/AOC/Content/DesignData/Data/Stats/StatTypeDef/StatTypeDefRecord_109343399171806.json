@@ -1,0 +1,66 @@
+{
+	"displayName": "Health Regeneration",
+	"description": "NSLOCTEXT(\"[1909495A4C2095068D406C9D33F90055]\", \"2CA4FE8249C99061672E9D9F1CE87755\", \"The amount of health passively regenerated per second. Base regen is increased out of combat.\")",
+	"bHidden": false,
+	"gameplayType": "Type_Combat",
+	"bHasWaterfallStatsUI": false,
+	"waterfallStatsUIIds": [],
+	"bDisplayAsPercentage": false,
+	"statType": "Type_Float",
+	"bClampStatFinalValue": false,
+	"bMultiplyStatMods": false,
+	"bMultiplyCompliment": false,
+	"base":
+	{
+		"expression": "var val = 0.0;\r\nconst char = GetStat(GetOwner(), $#10516612381411111:6064630798183235705$);\r\n\r\nif(char == -1.0) { // NPC\r\n    const MaxHealth = GetStat(GetOwner(), $#10516612381411111:108986356618873$);\r\n    set val = MaxHealth * 0.001;\r\n    // disabling out of combat regen for now on NPCs since they have bugged combat state sometimes\r\n}\r\nelse if(char >= 1.0 && char < 1.15) { // Player / Mount\r\n    const MaxHealth = GetStat(GetOwner(), $#10516612381411111:108986356618873$);\r\n    set val = MaxHealth * 0.001;\r\n    const InCombat = IsInCombat(GetOwner());\r\n    if(!InCombat) {\r\n        set val = val + MaxHealth * 0.004;\r\n    }\r\n    if(GetSkillPurchased(GetInstigator(), $#30316003:107813788866168$, $#981011333:6064630706725388629$)){\r\n        if(GetEffectCount(GetInstigator(), $#30316002:6064630158664844305$) > 0){\r\n            set val = val + 0.0001 * MaxHealth * GetStat(GetInstigator(), $#10516612381411111:6064629959589298751$);\r\n        }\r\n    }\r\n}\r\nelse if(char >= 3.0) { // Caravan/Caravel (/despair)\r\n    const MaxHealth = GetStat(GetOwner(), $#10516612381411111:108986356618873$);\r\n    set val = MaxHealth * 0.0001;\r\n    const InCombat = IsInCombat(GetOwner());\r\n    if(!InCombat) {\r\n        set val = val + MaxHealth * 0.0019;\r\n    }\r\n}\r\n\r\nconst rating = GetStat(GetInstigator(), $#10516612381411111:109315114489464$);\r\nset val = val + rating / EvalFormula($#10516612381411113:6064633154695070570$);\r\n\r\nval"
+	},
+	"waterfallStatsBaseIds": [
+		{
+			"guid": "108986356618873",
+			"typeId": "10516612381411111",
+			"name": "None"
+		},
+		{
+			"guid": "109315114489464",
+			"typeId": "10516612381411111",
+			"name": "None"
+		},
+		{
+			"guid": "6064629959589298751",
+			"typeId": "10516612381411111",
+			"name": "None"
+		}
+	],
+	"valueMin":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMinIds": [],
+	"valueMax":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMaxIds": [],
+	"regenRate":
+	{
+		"expression": ""
+	},
+	"waterfallStatsRegenIds": [],
+	"bRegenWhileDead": false,
+	"bRecalculateOnCombatState": true,
+	"onSpawn": "Reset_None",
+	"onDeath": "Reset_None",
+	"onRevive": "Reset_None",
+	"bPersistValue": false,
+	"replication": 1,
+	"shieldStatId":
+	{
+		"guid": "0",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"grantedEffects": [],
+	"guid": "109343399171806",
+	"name": "HealthRegeneration",
+	"typeId": "10516612381411111"
+}

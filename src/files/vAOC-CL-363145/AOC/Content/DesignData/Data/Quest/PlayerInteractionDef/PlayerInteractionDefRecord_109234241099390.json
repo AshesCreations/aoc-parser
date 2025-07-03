@@ -1,0 +1,61 @@
+{
+	"completionResponsesIds": [
+		{
+			"guid": "109234426435209",
+			"typeId": "1091110030",
+			"name": "MAAR_0005_ROE_AdvObj_PlaceAethenaeum"
+		},
+		{
+			"guid": "109235323229929",
+			"typeId": "1091110030",
+			"name": "MAAR_0005_ROE_RemoveItem_AthenaeumGem"
+		}
+	],
+	"channelDuration": 0,
+	"activePredicate":
+	{
+		"expression": ""
+	},
+	"cuePredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0005_EnemyWithin\",\"MAP_0005_Phase04\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005_HeadoftheHighwaymen\",\"KilledTrollEast\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005_HeadoftheHighwaymen\",\"KilledTrollWest\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005_HeadoftheHighwaymen\",\"KilledTrollNorth\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005_HeadoftheHighwaymen\",\"KilledTrollSouth\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005_HeadoftheHighwaymen\",\"GemIsInTree\")"
+	},
+	"deleteOnCompletion": false,
+	"singleUse": false,
+	"alwaysShowUIPrompt": true,
+	"cancelChannelIfActivePredicateEverFails": true,
+	"channelModifierType": "NONE",
+	"rewardTableId":
+	{
+		"guid": "0",
+		"typeId": "1091110008",
+		"name": "None"
+	},
+	"startEffect": "None",
+	"endEffect": "None",
+	"failEffect": "None",
+	"successEffect": "/Game/Effects/FX_Shared/Systems/MagicCircles/NS_Magic_Circle_Base.NS_Magic_Circle_Base",
+	"cueEffect": "None",
+	"startSound": "None",
+	"endSound": "None",
+	"failSound": "None",
+	"successSound": "None",
+	"cueSound": "None",
+	"interactAnimTag": "None",
+	"deletionDelay": 0,
+	"activeCueEnabled": true,
+	"activeCueIgnoresActivePredicate": false,
+	"facePlayer": false,
+	"allowInCombat": true,
+	"spawnAtBottomCapsule": false,
+	"channelAnimation": "None",
+	"interactRadius": 200,
+	"interactTolerance": 30,
+	"busyTime": 0.89999997615814209,
+	"clientBusyTime": 1,
+	"channelStartResponseIds": [],
+	"failResponsesIds": [],
+	"guid": "109234241099390",
+	"name": "MAPI_0005_ROE_PutGemInTree",
+	"typeId": "1091110031"
+}

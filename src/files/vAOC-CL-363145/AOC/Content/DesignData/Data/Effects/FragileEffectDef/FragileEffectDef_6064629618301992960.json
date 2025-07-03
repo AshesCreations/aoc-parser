@@ -1,0 +1,23 @@
+{
+	"effectFragilityType": "FRAGILITY_Tick",
+	"evaluationTickFrequency": 1,
+	"shouldBreakEffectImmediately":
+	{
+		"expression": "GetWorldLineOfSight(GetOwner(), GetSource()) == false"
+	},
+	"shouldEvaluateThresholdAccumulation":
+	{
+		"expression": ""
+	},
+	"effectBreakThreshold":
+	{
+		"expression": ""
+	},
+	"effectBreakThresholdAccumulationRate":
+	{
+		"expression": ""
+	},
+	"guid": "6064629618301992960",
+	"name": "Tank_Protect_Fragility",
+	"typeId": "30316112"
+}

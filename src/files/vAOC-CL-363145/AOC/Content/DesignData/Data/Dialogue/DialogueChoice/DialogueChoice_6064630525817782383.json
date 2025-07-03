@@ -1,0 +1,23 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"7453B5FE4885D794F3B370BCE54332A4\", \"(Record your findings.)\")",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064630525551902782",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0005B_TEW_EnemyWithin\",\"MAP_0005B_TEW_Phase02\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0005B_TGU_TheGreatUnifier\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005B_TGU_TheGreatUnifier\",\"ReadBook\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005B_TGU_TheGreatUnifier\",\"ExamineStatue\")"
+	},
+	"guid": "6064630525817782383",
+	"name": "MADD_0005B_TGU_Statue_TheGreatUnifier_4",
+	"typeId": "1091110027"
+}

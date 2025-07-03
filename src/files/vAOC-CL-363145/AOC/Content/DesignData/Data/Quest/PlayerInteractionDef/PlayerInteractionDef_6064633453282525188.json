@@ -1,0 +1,83 @@
+{
+	"completionResponsesIds": [
+		{
+			"guid": "6064633453401669637",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"objectivesToCompleteUponCompletionIds": [],
+	"objectivesToRevealUponCompletionIds": [],
+	"itemsToGrantUponCompletion": [],
+	"channelDuration": 0,
+	"activePredicate":
+	{
+		"expression": "HasAlignment(GetPlayer(), $#512160700:6064632733143662592$) &&\r\nPlayer_HasItem(GetPlayer(), \"Consumable_SiegeDampener\") &&\r\nEvent_GetBoolVar(\"Event_Prototype\") == true &&\r\nEvent_GetIntVar(\"Dampener_Placed\") == 0"
+	},
+	"cuePredicate":
+	{
+		"expression": ""
+	},
+	"visiblePredicate":
+	{
+		"expression": "HasAlignment(GetPlayer(), $#512160700:6064632733143662592$)"
+	},
+	"showErrorIfNotVisible": false,
+	"deleteOnCompletion": false,
+	"singleUse": false,
+	"alwaysShowUIPrompt": true,
+	"cancelChannelIfActivePredicateEverFails": true,
+	"interactTextFormat": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"AA95869C42D9F95FE4D8E08E44CC82BC\", \"Place Dampener\")",
+	"channelModifierType": "NONE",
+	"rewardTableId":
+	{
+		"guid": "0",
+		"typeId": "1091110008",
+		"name": "None"
+	},
+	"startEffect": "None",
+	"endEffect": "None",
+	"failEffect": "None",
+	"successEffect": "None",
+	"cueEffect": "None",
+	"startSound": "None",
+	"endSound": "None",
+	"failSound": "None",
+	"successSound": "None",
+	"cueSound": "None",
+	"interactAnimTag": "None",
+	"deletionDelay": 0,
+	"activeCueEnabled": true,
+	"activeCueIgnoresActivePredicate": false,
+	"facePlayer": false,
+	"allowInCombat": true,
+	"spawnAtBottomCapsule": false,
+	"channelAnimation": "None",
+	"interactRadius": 250,
+	"discoveryDistance": 200,
+	"interactTolerance": 270,
+	"interactAngle": 0,
+	"bRequireLOS": false,
+	"busyTime": 0.89999997615814209,
+	"clientBusyTime": 1,
+	"channelStartResponseIds": [
+		{
+			"guid": "0",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"failResponsesIds": [],
+	"gatheringInteractionDataId":
+	{
+		"guid": "0",
+		"typeId": "19846",
+		"name": "None"
+	},
+	"interactCooldownMap":
+	{
+	},
+	"guid": "6064633453282525188",
+	"name": "Siege_Dampen_PID",
+	"typeId": "1091110031"
+}

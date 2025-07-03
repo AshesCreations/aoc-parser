@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"2FDBE9184D01E79C1E488BAAA8C7DD8F\", \"I\\'m looking for berries.\")",
+	"nextNodeId":
+	{
+		"guid": "6064629381390467074",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsOnStoryArcQuest(GetPlayer(),\"SAQ_0019_Bearberry\")&&!GetStoryArcQuestFlag(GetPlayer(),\"SAQ_0019_Bearberry\",\"BearberryBoy\")"
+	},
+	"guid": "6064629381379653632",
+	"name": "0019_P1_Tomas_1_63",
+	"typeId": "1091110027"
+}

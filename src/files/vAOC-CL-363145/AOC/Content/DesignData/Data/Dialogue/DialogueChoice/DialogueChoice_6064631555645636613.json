@@ -1,0 +1,24 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"CFFA68DE47E7402FE1856A977F351749\", \"On COTS\")",
+	"nextNodeId":
+	{
+		"guid": "6064631766521479241",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064631782142509062",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "Player_HasCompletedCommission(GetPlayer(), \"SQ_30_FAS_1\")&&Player_HasCompletedCommission(GetPlayer(), \"SQ_31_WFHF\")&&(Player_HasCommission (GetPlayer(), \"SQ_37_CoTS\") || Player_HasCompletedCommission(GetPlayer(), \"SQ_37_CoTS\"))"
+	},
+	"choiceType": "Default",
+	"guid": "6064631555645636613",
+	"name": "SQ_30_FAS_Intro_29",
+	"typeId": "1091110027"
+}

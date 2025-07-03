@@ -1,0 +1,61 @@
+{
+	"displayName": "NSLOCTEXT(\"\", \"23023F0C4DD313FA6BD609A4B54729AE\", \"Physical Disable Reduction\")",
+	"description": "NSLOCTEXT(\"\", \"F494C9B54F9D2C7DB8A018A32C437BF9\", \"Reduces the duration of incoming physical disabling effects\")",
+	"bHidden": false,
+	"gameplayType": "Type_Combat",
+	"bHasWaterfallStatsUI": false,
+	"waterfallStatsUIIds": [],
+	"bDisplayAsPercentage": true,
+	"statType": "Type_Float",
+	"bClampStatFinalValue": false,
+	"bMultiplyStatMods": false,
+	"bMultiplyCompliment": false,
+	"base":
+	{
+		"expression": "const base = GetStat(GetOwner(), $#10516612381411111:6064629618868486307$);\r\nconst baseRating = GetStat(GetInstigator(), $#10516612381411111:6064629618866913442$);\r\nconst coeff = EvalFormula($#10516612381411113:6064633169562959878$);\r\nconst baseAdj = base - baseRating / (baseRating + coeff);\r\nconst rating = baseRating + GetStat(GetInstigator(), $#10516612381411111:6064629618894504103$);\r\nbaseAdj + rating / (rating + coeff)"
+	},
+	"waterfallStatsBaseIds": [
+		{
+			"guid": "6064629618868486307",
+			"typeId": "10516612381411111",
+			"name": "None"
+		},
+		{
+			"guid": "6064629618894504103",
+			"typeId": "10516612381411111",
+			"name": "None"
+		}
+	],
+	"valueMin":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMinIds": [],
+	"valueMax":
+	{
+		"expression": "1"
+	},
+	"waterfallStatsMaxIds": [],
+	"regenRate":
+	{
+		"expression": ""
+	},
+	"waterfallStatsRegenIds": [],
+	"bRegenWhileDead": false,
+	"bRecalculateOnCombatState": false,
+	"onSpawn": "Reset_None",
+	"onDeath": "Reset_None",
+	"onRevive": "Reset_None",
+	"bPersistValue": false,
+	"replication": 5,
+	"shieldStatId":
+	{
+		"guid": "0",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"grantedEffects": [],
+	"guid": "6064629618893521062",
+	"name": "PhysicalDisableReduction",
+	"typeId": "10516612381411111"
+}

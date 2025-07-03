@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"3BF7A8674F34B62C6D020FB4A5BB5734\", \"That should be all the supplies you need!\")",
+	"nextNodeId":
+	{
+		"guid": "6064630616680824907",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "GetStoryArcQuestFlag(GetPlayer(), \"SAQ_0026_P1_Q1_CatapultConstruction\", \"CampSupplied\")&&\r\nIsOnStoryArcQuest(GetPlayer(), \"SAQ_0026_P1_Q1_CatapultConstruction\")"
+	},
+	"guid": "6064630616678203466",
+	"name": "DD_0026_LeodrasLionbrand_67",
+	"typeId": "1091110027"
+}

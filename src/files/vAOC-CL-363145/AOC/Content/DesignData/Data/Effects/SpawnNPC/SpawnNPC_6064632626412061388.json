@@ -1,0 +1,43 @@
+{
+	"populationSetId":
+	{
+		"guid": "6064630271532686734",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"actorToSpawn": "/Game/DesignAssets/Population/NPC/Humanoid/Minotaur/Summoner/Minotaur_Summoner_Wolf1.Minotaur_Summoner_Wolf1_C",
+	"bPersistAfterInstigatorsDeath": false,
+	"spawnLocationType": "LOC_LocalOffset",
+	"location":
+	{
+		"x": 200,
+		"y": 0,
+		"z": 0
+	},
+	"bSpawnFacingInstigatorsRotation": true,
+	"rotation":
+	{
+		"pitch": 0,
+		"yaw": 0,
+		"roll": 0
+	},
+	"triggerType": 0,
+	"spawnRadius": 0,
+	"spawnExtent": 1000,
+	"trackSpawnedNpcOnInstigator": true,
+	"targetSpawnLocationContext":
+	{
+		"expression": "GetLocation(GetInstigatorThatSpawnedNpc()) + GetActorForward(GetInstigatorThatSpawnedNpc()) * 200."
+	},
+	"spawnExpressions": [],
+	"spawnedCharacterLevelOffset": 0,
+	"bSpecifyAbsoluteLevel": false,
+	"addThreatsFromCreator": true,
+	"copyThreatValuesFromCreator": false,
+	"blackboardKeysToSet":
+	{
+	},
+	"guid": "6064632626412061388",
+	"name": "Minotaur_Summoner_WolfSpirit1",
+	"typeId": "3031600204"
+}

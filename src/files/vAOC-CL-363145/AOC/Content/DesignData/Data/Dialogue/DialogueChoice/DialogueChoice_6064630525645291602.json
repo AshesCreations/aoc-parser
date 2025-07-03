@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"311B7FB44C130B96DDD977A9206AD84D\", \"Hear what?\")",
+	"nextNodeId":
+	{
+		"guid": "6064630525646995539",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0005B_TEW_EnemyWithin\",\"MAP_0005B_TEW_Phase02\")&&\r\n!IsOnStoryArcQuest(GetPlayer(),\"MAQ_0005B_TGU_TheGreatUnifier\")&&\r\nIsStoryArcQuestAvailable(GetPlayer(),\"MAQ_0005B_TGU_TheGreatUnifier\")\r\n"
+	},
+	"guid": "6064630525645291602",
+	"name": "MADD_0005B_TGU_AkhundaWadoo_4",
+	"typeId": "1091110027"
+}

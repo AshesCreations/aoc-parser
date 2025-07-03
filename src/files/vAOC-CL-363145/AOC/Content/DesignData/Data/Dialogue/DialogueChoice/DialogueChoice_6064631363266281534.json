@@ -1,0 +1,38 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"B4D552DF48A9202F5A0DEFB9A7302F2B\", \"[Put the Portrait of a Rose in the chest]\")",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064632315290845493",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064631364241719433",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064631364240408712",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "Player_HasCommission(GetPlayer(),\"CSQ_RVR_Plunder_0060_POR_PortraitOfRose\")&&\r\nPlayer_HasItem(GetPlayer(),\"CSQ_ITM_Plunder_0060_POR_PortraitOfRose\")\r\n"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064631363266281534",
+	"name": "CSQ_DD_PlunderChest_Aela_11",
+	"typeId": "1091110027"
+}

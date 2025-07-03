@@ -1,0 +1,100 @@
+{
+	"bAllowSatisfactionToRegress": false,
+	"parameterTypes": 1,
+	"objectiveType": "Kill",
+	"completionCriteria": [
+		{
+			"bOverrideCompletionValueWithExpression": true,
+			"completionValue": 5,
+			"operator": "GreaterThan",
+			"completionExpression":
+			{
+				"expression": "Event_GetNumNPCKills()>=1"
+			},
+			"completionTriggersIds": [],
+			"bDisplayOnTracker": false,
+			"relevantTrackerIds": [],
+			"displayText": "NSLOCTEXT(\"\", \"332624B74960BD9D64A4B1A904D69F8F\", \"Scare off bandits\")",
+			"displayType": 1,
+			"displayCompletionValue": 5,
+			"bInvertProgressDisplay": false
+		}
+	],
+	"nPCObjectiveIconOverrideId":
+	{
+		"guid": "0",
+		"typeId": "949952112329",
+		"name": "None"
+	},
+	"progressExpression":
+	{
+		"expression": ""
+	},
+	"gameplayTagFilter":
+	{
+		"tokenStreamVersion": 0,
+		"tagDictionary": [
+			{
+				"tagName": "Quest.EventTarget"
+			}
+		],
+		"queryTokenStream": [ 0, 1, 2, 1, 0 ],
+		"userDescription": "",
+		"autoDescription": " ALL( Quest.EventTarget )"
+	},
+	"populationSetId":
+	{
+		"guid": "0",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"trackerId":
+	{
+		"guid": "0",
+		"typeId": "23095133",
+		"name": "None"
+	},
+	"interactablesIds": [],
+	"professionFilterIds": [],
+	"gatherableFilterIds": [],
+	"collectionFilterId":
+	{
+		"guid": "0",
+		"typeId": "1091110041",
+		"name": "None"
+	},
+	"collectionCount": 5,
+	"abilityRecordId":
+	{
+		"guid": "0",
+		"typeId": "30316001",
+		"name": "None"
+	},
+	"activityType": "NPCKill",
+	"activityQueryLocation":
+	{
+		"x": -708263.54673599999,
+		"y": 555737.29334800004,
+		"z": 13109.014687000001
+	},
+	"activityQueryExtent":
+	{
+		"x": 1000,
+		"y": 1000,
+		"z": 500
+	},
+	"bDisplayOnTracker": false,
+	"trackerText": "NSLOCTEXT(\"\", \"332624B74960BD9D64A4B1A904D69F8F\", \"Scare off bandits\")",
+	"displayType": 1,
+	"displayCompletionValue": 5,
+	"visibilityExpression":
+	{
+		"expression": ""
+	},
+	"visibilityOverridesTrackerFilter": false,
+	"trackersToDisplayToIds": [],
+	"relevantAlignmentsIds": [],
+	"guid": "6064629783791339069",
+	"name": "Wavespawn_EventTemplate_EventObjectiveDef_6064629733552619529(copy)",
+	"typeId": "23095130"
+}

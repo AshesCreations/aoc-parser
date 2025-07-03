@@ -1,0 +1,133 @@
+{
+	"eventName": "NSLOCTEXT(\"[C0A48779AC9FFDA4BAC80B2EE1C04C0D]\", \"EFB6099D4DC7BB1DE24F59B71A842790\", \"Harness the Godspike\")",
+	"gameplayTags":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"activationPredicatesIds": [
+		{
+			"guid": "6064631164573450251",
+			"typeId": "23095129",
+			"name": "None"
+		}
+	],
+	"minChallengeRating": 0,
+	"maxChallengeRating": 30,
+	"eventLevel": 1,
+	"eventType": 128,
+	"locationId":
+	{
+		"guid": "0",
+		"typeId": "5127371160",
+		"name": "None"
+	},
+	"desiredTimeSlot": "0001.01.01-06.00.00",
+	"frequency": 24,
+	"priority": 1,
+	"rewardTableId":
+	{
+		"guid": "0",
+		"typeId": "1091110040",
+		"name": "None"
+	},
+	"rewardPopulationSetId":
+	{
+		"guid": "0",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"startStageId":
+	{
+		"guid": "6064631164573450241",
+		"typeId": "23095131",
+		"name": "None"
+	},
+	"stagesIds": [
+		{
+			"guid": "6064631164573450241",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064631165940269085",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064631164577775642",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064631165939089434",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064631164573450243",
+			"typeId": "23095131",
+			"name": "None"
+		}
+	],
+	"interactVolumesIds": [],
+	"alignmentsIds": [],
+	"mapDisplayType": "World",
+	"mapEventIcon": "None",
+	"bDisplayOnTracker": true,
+	"notificationRadius": 100000,
+	"mapRadiusMinumum": 20000,
+	"cooldownTimer": 600,
+	"bDisabled": false,
+	"maxInstanceCount": 0,
+	"requiredMapName": "",
+	"comments": [
+		{
+			"commentGuid": "6064631289515016220",
+			"comment": "Completing the GatherKill Predicate --> ",
+			"location":
+			{
+				"x": 273.1341401243335,
+				"y": 225.45802945327364,
+				"z": 0
+			},
+			"size":
+			{
+				"x": 978.48480427265167,
+				"y": 486.86867010593414,
+				"z": 0
+			},
+			"color":
+			{
+				"r": 0.5,
+				"g": 0.5,
+				"b": 0.5,
+				"a": 0.5
+			}
+		}
+	],
+	"bIsTemplate": false,
+	"flowNodes": [
+		{
+			"flowType": "EventEntry",
+			"graphLocation":
+			{
+				"x": -748.97845556855509,
+				"y": -2186.7346697847893
+			},
+			"id": 0
+		},
+		{
+			"flowType": "EventExit",
+			"graphLocation":
+			{
+				"x": -718.5022878782961,
+				"y": -274.49353148203005
+			},
+			"id": 1
+		}
+	],
+	"guid": "6064631164573450240",
+	"name": "War_TerritoryControl_Event",
+	"typeId": "23095125"
+}

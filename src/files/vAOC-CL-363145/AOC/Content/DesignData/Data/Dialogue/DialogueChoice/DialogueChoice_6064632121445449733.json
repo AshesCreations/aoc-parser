@@ -1,0 +1,24 @@
+{
+	"choiceText": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"883F1640448A8D7830DFD8A57302A657\", \"Complete Quest\")",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064632121448267782",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "Player_CanCompleteCommission(GetPlayer(), \"TEST_ObjectiveRewardsTest\")"
+	},
+	"choiceType": "Default",
+	"guid": "6064632121445449733",
+	"name": "DialogueChoice_6064632121445449733",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,24 @@
+{
+	"buyingCurrencyTierId":
+	{
+		"guid": "6064629127873626112",
+		"typeId": "1011111289",
+		"name": "None"
+	},
+	"sellingCurrencyTierId":
+	{
+		"guid": "6064629127873626112",
+		"typeId": "1011111289",
+		"name": "None"
+	},
+	"currencyValues":
+	{
+		"(Guid=6064629127873626112,TypeId=1011111289)":
+		{
+			"expression": "const ItemLevel = GetItemLevel();\r\nconst ItemRarity = GetItemRarity();\r\nconst ItemBaseValue = \r\nSelectFloat(GetItemLevel() >= 1 && GetItemLevel() < 10, 50.0,\r\nSelectFloat(GetItemLevel() >= 10 && GetItemLevel() < 20, 500.0,\r\nSelectFloat(GetItemLevel() >= 20 && GetItemLevel() < 30, 1000.0, 0.0))) * EvalCurve($#10516612381411114:6064632293965955074$, Float(ItemRarity));\r\nconst SlotMod = \r\nSelectFloat(ItemTypeTagsContains(\"Item.Resource.Raw\"), 1.0,\r\nSelectFloat(ItemTypeTagsContains(\"Item.Resource.Processed\"), 1.6,\r\n1.0));\r\n\r\nItemBaseValue * SlotMod"
+		}
+	},
+	"guid": "6064632294712541188",
+	"name": "Resource",
+	"typeId": "3145314713"
+}

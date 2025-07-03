@@ -1,0 +1,34 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"B8D12A7648A5340455E77A8A3BF0CF1B\", \"I\\'d like to register as a candidate in the upcoming Mayoral Election.\")",
+	"nextNodeId":
+	{
+		"guid": "6064629444683825733",
+		"typeId": "1091110028",
+		"name": "DD_ServiceNPC_NodeAdministrator_28"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064628973683015680",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064632150967654561",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064632150922762391",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "const interactNode = Node_GetActorCityNode(GetInteractionTarget());\r\ninteractNode == Node_GetActorCityNode(GetPlayer())\r\n&&\r\nNode_IsNodeMayorPrevoteActive(interactNode) \r\n&&\r\n!Node_IsPlayerMayorCandidate(GetPlayer(),interactNode)"
+	},
+	"choiceType": "Default",
+	"guid": "6064629444634018366",
+	"name": "DD_ServiceNPC_NodeAdministrator_21",
+	"typeId": "1091110027"
+}

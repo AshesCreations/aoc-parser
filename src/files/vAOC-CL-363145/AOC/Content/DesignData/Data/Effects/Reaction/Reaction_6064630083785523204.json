@@ -1,0 +1,31 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 2,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "GetDistanceBetween(GetOwner(), GetInstigator()) > 500.0"
+	},
+	"bEvaluateApplyingHit": true,
+	"instigator": "Owner",
+	"targetsBitmask": 16,
+	"reactHitsIds": [
+		{
+			"guid": "6064630083865608197",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"instigatorProcLimit": 0,
+	"globalProcLimit": 0,
+	"procReactOnApply": false,
+	"guid": "6064630083785523204",
+	"name": "GoblinFlayer_WeaponGuardActivation_Reaction",
+	"typeId": "3031600202"
+}

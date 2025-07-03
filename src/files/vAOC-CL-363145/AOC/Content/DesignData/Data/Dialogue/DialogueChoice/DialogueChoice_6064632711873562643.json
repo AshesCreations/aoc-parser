@@ -1,0 +1,22 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"FCF123B24B8D5B3CDD5639B99810FEAB\", \"Have you seen a merchant pass through recently? Small caravan, a couple of horses?\")",
+	"nextNodeId":
+	{
+		"guid": "6064632711872448528",
+		"typeId": "1091110028",
+		"name": "DD_0111_EotGH_Herbalism_Vendor_3"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "Player_ObjectiveStateEquals(GetPlayer(), \"SQO_0111_EotGH_02.1_SpeakHerbVendor\", EObjectiveState::Hidden)||Player_ObjectiveStateEquals(GetPlayer(), \"SQO_0111_EotGH_02.1_SpeakHerbVendor\", EObjectiveState::Active)"
+	},
+	"requirements": [],
+	"choiceType": "Complete",
+	"guid": "6064632711873562643",
+	"name": "DD_0111_EotGH_Herbalism_Vendor_2_Choice_1",
+	"typeId": "1091110027"
+}

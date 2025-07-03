@@ -1,0 +1,29 @@
+{
+	"choiceText": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"54686CD64BCA4B0167E3758668E10B06\", \"I contributed to a service building!\")",
+	"nextNodeId":
+	{
+		"guid": "6064632121929695241",
+		"typeId": "1091110028",
+		"name": "DD_ServiceNPC_NodeAdministrator_122"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064632122010107918",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064632122011156495",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "Player_HasObjective(GetPlayer(), \"CSQ_NO_0156_FTUE_ConstructionAroundTown_ReturnToAdmin\") &&\r\nPlayer_HasCompletedObjective(GetPlayer(), \"CSQ_NO_0156_FTUE_ConstructionAroundTown_Contribute\")"
+	},
+	"choiceType": "Default",
+	"guid": "6064632121926483975",
+	"name": "DD_ServiceNPC_NodeAdministrator_14_Choice_11",
+	"typeId": "1091110027"
+}

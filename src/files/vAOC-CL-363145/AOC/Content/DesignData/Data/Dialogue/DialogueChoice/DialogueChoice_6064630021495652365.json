@@ -1,0 +1,23 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"95810FCB4E519FB6CE68C7BAEC5DE5E3\", \"She has been defeated.\")",
+	"nextNodeId":
+	{
+		"guid": "6064630021497487374",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064630021520556052",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0007_PriestessAndThePiper\",\"MAP_0007_PriestessAndThePiper_Phase04\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_PAS_PainAndSuffering\",\"KilledThePriestess\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_PAS_PainAndSuffering\",\"ReportedToBonekeeper\")"
+	},
+	"guid": "6064630021495652365",
+	"name": "MADD_0007_Phase04_TheBonekeeper_18",
+	"typeId": "1091110027"
+}

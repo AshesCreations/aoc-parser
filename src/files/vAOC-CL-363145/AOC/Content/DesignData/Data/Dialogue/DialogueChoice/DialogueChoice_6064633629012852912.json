@@ -1,0 +1,22 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"6648944F41E3F5C513C0989AA0499D57\", \"Know Language\")",
+	"nextNodeId":
+	{
+		"guid": "6064633629028581556",
+		"typeId": "1091110028",
+		"name": "DD_EVT_SAN_0016_TFF_TheEfreet_4"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "Player_HasCompletedCommission(GetPlayer(),\"CSQ_SAN_0100_COS_CypherOfScrolls\")\r\n||\r\nGetRace(GetPlayer())==ECharacterRace::Vaelune"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064633629012852912",
+	"name": "DD_EVT_SAN_0016_TFF_TheEfreet_2_Choice_1",
+	"typeId": "1091110027"
+}

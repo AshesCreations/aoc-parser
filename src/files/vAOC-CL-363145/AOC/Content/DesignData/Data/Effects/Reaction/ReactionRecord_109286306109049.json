@@ -1,0 +1,27 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 4,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "GetStatModValue(GetHitEvent(), $#10516612381411111:108986352686712$) < 0.0 &&\r\nRecordNameContains(GetHitSourceRecord(GetHitEvent()), \"Ranger_PiercingShot\")"
+	},
+	"bEvaluateApplyingHit": false,
+	"instigator": "Owner",
+	"targetsBitmask": 8,
+	"reactHitsIds": [
+		{
+			"guid": "109286356833914",
+			"typeId": "30316005",
+			"name": "Ranger_HuntOfTheBadger"
+		}
+	],
+	"guid": "109286306109049",
+	"name": "Ranger_PiercingShot_HuntOfTheBadger",
+	"typeId": "3031600202"
+}

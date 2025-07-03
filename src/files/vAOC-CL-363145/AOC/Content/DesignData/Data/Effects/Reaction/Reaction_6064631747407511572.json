@@ -1,0 +1,33 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 2,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0,
+		"fishingEvents": 0,
+		"statEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "GetSkillPurchased(GetOwner(), $#30316003:6064631673604472832$, $#981011333:6064631720427847750$) &&\r\nGetEffectCount(GetOwner(), $#30316002:6064633502454972747$) >= 1 &&\r\nHitFlagsContains(GetHitFlags(GetHitEvent(), GetOwner()), EHitFlag::Miss)"
+	},
+	"bEvaluateApplyingHit": false,
+	"instigator": "Owner",
+	"targetsBitmask": 1,
+	"reactHitsIds": [
+		{
+			"guid": "6064631747433136149",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"instigatorProcLimit": 0,
+	"globalProcLimit": 0,
+	"procReactOnApply": false,
+	"guid": "6064631747407511572",
+	"name": "General_Stamina_Dodge_RecuperationTrigger",
+	"typeId": "3031600202"
+}

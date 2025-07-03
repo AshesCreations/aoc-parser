@@ -1,0 +1,97 @@
+{
+	"assetRef": "/Game/DesignAssets/Population/NPC/Monster/Undead/Dunir/DunirFighter/NamedBoss/Dunir_Fighter_Forgelord_Zammer.Dunir_Fighter_Forgelord_Zammer",
+	"lootTablesIds": [
+		{
+			"guid": "6064633290493067268",
+			"typeId": "1091110040",
+			"name": "None"
+		}
+	],
+	"populationFilter":
+	{
+		"zoneOfInfluenceIds": [],
+		"nodeIds": [],
+		"cultures": [],
+		"nodeTypes": [],
+		"biomes": [],
+		"seasons": [],
+		"nodeLevelMin": "Wilderness",
+		"nodeLevelMax": "Metropolis",
+		"timeOfDayStart": -1,
+		"timeOfDayEnd": -1,
+		"weatherTypes": [],
+		"spawningStrategy":
+		{
+			"spawnStrategy": "Immediate",
+			"phaseInTime":
+			{
+				"minSeconds": 0,
+				"maxSeconds": 0
+			}
+		},
+		"despawningStrategy":
+		{
+			"despawnStrategy": "Immediate",
+			"phaseOutTime":
+			{
+				"minSeconds": 0,
+				"maxSeconds": 0
+			}
+		},
+		"requiredGameplayTags":
+		{
+			"gameplayTags": [],
+			"parentTags": []
+		}
+	},
+	"scaleMin": 1,
+	"scaleMax": 1,
+	"gameplayTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "character.undead.dunir.fighter"
+			},
+			{
+				"tagName": "npc.stature.elite"
+			},
+			{
+				"tagName": "npc.stature.rareSpawn"
+			}
+		],
+		"parentTags": [
+			{
+				"tagName": "character.undead.dunir"
+			},
+			{
+				"tagName": "character.undead"
+			},
+			{
+				"tagName": "character"
+			},
+			{
+				"tagName": "npc.stature"
+			},
+			{
+				"tagName": "npc"
+			}
+		]
+	},
+	"bOverrideAggroRadius": false,
+	"aggroRadius": 0,
+	"bOverrideLeashRadius": false,
+	"leashRadius": 0,
+	"factionId": 0,
+	"interactionDefId":
+	{
+		"guid": "0",
+		"typeId": "1091110031",
+		"name": "None"
+	},
+	"displayNameOverrides": [
+		"NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"BB6CB1AF409FF9C19FECD5AA70F064AA\", \"Forgelord Zammer\")"
+	],
+	"guid": "6064632717180928000",
+	"name": "PA_Befallen_Dunir_Berserker_L29_4S_RareSpawn_Forgelord Zammer",
+	"typeId": "5111001"
+}

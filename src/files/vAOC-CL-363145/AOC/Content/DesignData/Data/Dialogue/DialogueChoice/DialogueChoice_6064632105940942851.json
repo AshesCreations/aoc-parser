@@ -1,0 +1,22 @@
+{
+	"choiceText": "NSLOCTEXT(\"[4BE4F0A16D08556ACD6685BF392E6719]\", \"F57E536744607613B238CB910318C7BF\", \"On / Not Completed Quest\")",
+	"nextNodeId":
+	{
+		"guid": "6064632105954967558",
+		"typeId": "1091110028",
+		"name": "CSQ_0153_FTUE_EstablishingASettlement_NodeTraderGuy_2"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "Player_HasCommission(GetPlayer(), \"CSQ_0153_FTUE_EstablishingASettlement\") \r\n&& (Node_GetActorCityNode(GetInteractionTarget()) != $#1323521343:6064630651307950121$ && Node_GetActorCityNode(GetInteractionTarget()) != $#1323521343:6064632496548413449$)"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064632105940942851",
+	"name": "DD_ServiceNPC_StorageClerk_1_Choice_1",
+	"typeId": "1091110027"
+}

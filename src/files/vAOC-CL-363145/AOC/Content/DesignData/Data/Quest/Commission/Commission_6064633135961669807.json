@@ -1,0 +1,65 @@
+{
+	"commissionType": "Narrative",
+	"commissionGameplayTags":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"preRequisiteQuestsIds": [],
+	"autoFailTimer": 30,
+	"bRepeatable": true,
+	"mainObjectiveType": "Basic",
+	"commissionSection": 1,
+	"biomeOrigin": "FloodPlains",
+	"bFromDynamicContent": false,
+	"availabilityExpression":
+	{
+		"expression": ""
+	},
+	"bDisabled": false,
+	"level": 1,
+	"commissionRarity": "Common",
+	"objectivesIds": [
+		{
+			"guid": "6064633135968878768",
+			"typeId": "1091110420",
+			"name": "None"
+		}
+	],
+	"allowMultipleCompletion": false,
+	"commissionName": "NSLOCTEXT(\"[F167E37A50A484B2410F77FC6E608C0B]\", \"E35EBD0749FEF9C271BE64B216DA6917\", \"QA Quest Expiration Test\")",
+	"flavorText": "NSLOCTEXT(\"[F167E37A50A484B2410F77FC6E608C0B]\", \"6AF6A3204494FEAEF50E7693316A1CA3\", \"This quest expires in 30 seconds. you can use this to test quest expiration without a proper engineered quest\")",
+	"mainObjectiveText": "NSLOCTEXT(\"[F167E37A50A484B2410F77FC6E608C0B]\", \"51291B384D52F6EA0F350F88EDE1E469\", \"Wait for expiration time, then attempt to complete the objective and quest\")",
+	"rewardTablesIds": [],
+	"calloutName": "",
+	"calloutDescription": "",
+	"bCanProgressWhileInRaid": false,
+	"expiration":
+	{
+		"duration": "0"
+	},
+	"cooldown":
+	{
+		"duration": "0"
+	},
+	"moneyCost": "0",
+	"resourceCost": [],
+	"mayoralCompletionCount": 0,
+	"rewardId":
+	{
+		"guid": "0",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"bNodeTargeted": false,
+	"targetRewardId":
+	{
+		"guid": "0",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"questItemListIds": [],
+	"guid": "6064633135961669807",
+	"name": "QA_QuestExpirationTest",
+	"typeId": "280002"
+}

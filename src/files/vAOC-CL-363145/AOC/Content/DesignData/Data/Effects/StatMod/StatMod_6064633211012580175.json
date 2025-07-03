@@ -1,0 +1,22 @@
+{
+	"statRefId":
+	{
+		"guid": "109343399171806",
+		"typeId": "10516612381411111",
+		"name": "Stat_MoveSpeedMult"
+	},
+	"value":
+	{
+		"expression": "var HealthRegeneration = GetStat(GetTarget(), $#10516612381411111:109343399171806$);\r\nHealthRegeneration * -1.0"
+	},
+	"bUseShieldAbsorb": false,
+	"shieldAbsorbPercentage":
+	{
+		"expression": ""
+	},
+	"bShowFloatingText": true,
+	"valueInputTerms": [],
+	"guid": "6064633211012580175",
+	"name": "Status_BirdmansCurse_HPRegenerationReduction_StatMod",
+	"typeId": "3031600201"
+}

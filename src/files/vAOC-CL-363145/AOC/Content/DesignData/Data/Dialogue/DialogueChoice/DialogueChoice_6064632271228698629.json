@@ -1,0 +1,22 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"394DE403404F323294DD63AFF3F5D498\", \"(Proper Burial Commission)\")",
+	"nextNodeId":
+	{
+		"guid": "6064632058516865112",
+		"typeId": "1091110028",
+		"name": "DD_Ambient_Lionhold_Villagers_19"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "Player_HasCommission(GetPlayer(), \"CSQ_RVR_0032_ProperBurial\")&&!Player_ObjectiveStateEquals(GetPlayer(), \"SQO_0032_01_TalkVillager_1\", EObjectiveState::Complete)"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064632271228698629",
+	"name": "DD_Ambient_Lionhold_Villagers_1_Choice_5",
+	"typeId": "1091110027"
+}

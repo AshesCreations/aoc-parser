@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"31D3082B487AB2B0F044FE9B48615D5A\", \"They have overtaken the hills.\")",
+	"nextNodeId":
+	{
+		"guid": "6064630531417505888",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsOnStoryArcQuest(GetPlayer(),\"MAQ_0005B_HOD_TheHornOfDoom\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005B_HOD_TheHornOfDoom\",\"SpeakToWadoo\")"
+	},
+	"guid": "6064630531413508191",
+	"name": "MADD_0005B_HOD_AkhundaWadoo_4",
+	"typeId": "1091110027"
+}

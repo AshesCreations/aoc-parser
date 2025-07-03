@@ -1,0 +1,40 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 0,
+		"abilityEvents": 4,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "AbilityHasTag(GetConsumedAbility(), \"Element.Magical.Fire\")"
+	},
+	"bEvaluateApplyingHit": false,
+	"instigator": "Owner",
+	"targetsBitmask": 1,
+	"reactHitsIds": [
+		{
+			"guid": "6064629093012078592",
+			"typeId": "30316005",
+			"name": "None"
+		},
+		{
+			"guid": "6064629093012078592",
+			"typeId": "30316005",
+			"name": "None"
+		},
+		{
+			"guid": "6064629093012078592",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"instigatorProcLimit": 0,
+	"globalProcLimit": 0,
+	"procReactOnApply": false,
+	"guid": "6064629135581446145",
+	"name": "Mage_Elemental_Empowerment_Fire_Test",
+	"typeId": "3031600202"
+}

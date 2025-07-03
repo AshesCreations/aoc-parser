@@ -1,0 +1,23 @@
+{
+	"effectFragilityType": "FRAGILITY_Tick",
+	"evaluationTickFrequency": 1,
+	"shouldBreakEffectImmediately":
+	{
+		"expression": "GetHealthPercentage(GetSource()) <= 0.0 || GetBlackboardBool(GetSource(),\"TreePlaced\") == false"
+	},
+	"shouldEvaluateThresholdAccumulation":
+	{
+		"expression": ""
+	},
+	"effectBreakThreshold":
+	{
+		"expression": ""
+	},
+	"effectBreakThresholdAccumulationRate":
+	{
+		"expression": ""
+	},
+	"guid": "6064631549869364845",
+	"name": "CyclopsShamanTree_TreeActivationRoots_FragileEffect",
+	"typeId": "30316112"
+}

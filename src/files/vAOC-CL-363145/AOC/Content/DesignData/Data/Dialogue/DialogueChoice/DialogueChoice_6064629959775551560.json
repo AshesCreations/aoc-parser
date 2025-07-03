@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"81DDCDD94BE7A3176148899C5E9C9FDA\", \"Rune of Suffering, Rune of Torment, and Rune of Sunderring.\")",
+	"nextNodeId":
+	{
+		"guid": "6064629959776796745",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0007_PriestessAndThePiper\",\"MAP_0007_PriestessAndThePiper_Phase03\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0007_TSS_TheSephillionSeals\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_TSS_TheSephillionSeals\",\"HaveSephilliteCrystals\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0007_TSS_TheSephillionSeals\",\"GemcutTheSephillite\")"
+	},
+	"guid": "6064629959775551560",
+	"name": "MADD_0007_TSS_Gemcrafter_4",
+	"typeId": "1091110027"
+}

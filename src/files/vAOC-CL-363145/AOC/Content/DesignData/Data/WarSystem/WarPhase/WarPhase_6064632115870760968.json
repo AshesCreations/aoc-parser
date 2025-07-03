@@ -1,0 +1,56 @@
+{
+	"displayName": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"1D06139D4DF8B5D4EDC85C98BC9D9EC0\", \"Large Lumberjacking Race\")",
+	"phaseToastId":
+	{
+		"guid": "0",
+		"typeId": "949952112328",
+		"name": "None"
+	},
+	"victoryConditionText": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"029AB7194DBABACF760CE49200341AEE\", \"The first guild to chop down 500 trees wins!\")",
+	"phaseDescriptionLong": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"77A86E374A6B214CE79BFB8F647745ED\", \"Chop down trees in the region to earn points!\")",
+	"bStartEventOnPhaseBegin": true,
+	"bEventsOccurRandomly": false,
+	"bLoopWarEventsArray": true,
+	"warEventsIds": [
+		{
+			"guid": "6064632116011466791",
+			"typeId": "23095125",
+			"name": "None"
+		}
+	],
+	"schedulePlusMinusMinutes": 120,
+	"scheduleOfEvents": [ 0, 4, 8, 12, 16, 20 ],
+	"bUseParentWarRecordVictoryPointTable": true,
+	"bUseGlobalConstantVictoryPointTable": false,
+	"victoryPointTableId":
+	{
+		"guid": "0",
+		"typeId": "98966982",
+		"name": "None"
+	},
+	"bUseDefaultPhaseRewards": false,
+	"bUseDefaultObjectiveRewards": false,
+	"bUseDefaultEventRewards": false,
+	"completionCondition":
+	{
+		"expression": "War_HasTimeElapsedSeconds(60*240) ||War_HasOrgScoredEnough(250)"
+	},
+	"bUseParentWarRecordLocaleSelectionOptions": true,
+	"phaseLocaleSelectionType": "WarRecordLocaleRequest",
+	"bTargetNodeLocaleRequestFirst": false,
+	"localeRequestId":
+	{
+		"guid": "0",
+		"typeId": "23095138",
+		"name": "None"
+	},
+	"customLocaleSelectionPerEvent": [],
+	"bFlaggedAgainstEachOther": false,
+	"bFlaggedInRelevantNodeZOIs": true,
+	"bAllowAlliance_UNSUPPORTED": false,
+	"bCanSurrender": true,
+	"surrenderAvailableSecondsAfterPhaseStart": 3600,
+	"guid": "6064632115870760968",
+	"name": "GuildWar_Variant2_Large_Phase1",
+	"typeId": "98966980"
+}

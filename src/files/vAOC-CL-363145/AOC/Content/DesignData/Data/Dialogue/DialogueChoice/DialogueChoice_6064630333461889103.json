@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"21C6466A4A85228AA86C5E909DB57E82\", \"All pigs accounted for.\")",
+	"nextNodeId":
+	{
+		"guid": "6064630333461495886",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0005A_FGG_ForGreaterGlory\",\"MAP_0005A_FGG_Phase01\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0005A_TIG_TroubleInGrazeland\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005A_TIG_TroubleInGrazeland\",\"CageSwiftlets\")"
+	},
+	"guid": "6064630333461889103",
+	"name": "MADD_0005A_TIG_NPC_PigWrangler_12",
+	"typeId": "1091110027"
+}

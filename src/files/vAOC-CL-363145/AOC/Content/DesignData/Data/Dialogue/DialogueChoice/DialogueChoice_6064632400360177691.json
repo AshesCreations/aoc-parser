@@ -1,0 +1,33 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"D692201041A44247A4E0F2BB871B1665\", \"I\\'ve finished scouting the access points to the city.\")",
+	"nextNodeId":
+	{
+		"guid": "6064632400371122204",
+		"typeId": "1091110028",
+		"name": "CSQ_DD_0010_SPH_ScoutOrithar_6"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064632423224116311",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064632422484543618",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "Player_HasCommission(GetPlayer(), \"SQ_0010_SliversOfThePastPart2\") &&\r\nPlayer_ObjectiveStateEquals(GetPlayer(),\"SQO_0010_SliversOfThePast_ReturnToScoutOrithar\", EObjectiveState::Active)"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064632400360177691",
+	"name": "CSQ_DD_0010_SPH_ScoutOrithar_5_Choice_1",
+	"typeId": "1091110027"
+}

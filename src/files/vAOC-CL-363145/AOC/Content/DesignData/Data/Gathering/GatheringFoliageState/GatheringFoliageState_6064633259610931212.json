@@ -1,0 +1,183 @@
+{
+	"displayName": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"C1C263A9451869393FCB419DE10A639E\", \"Cut - Giant Fern\")",
+	"spawnTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "Plant"
+			}
+		],
+		"parentTags": []
+	},
+	"surveyingTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "Artisanship.Gathering.Herbalism"
+			}
+		],
+		"parentTags": [
+			{
+				"tagName": "Artisanship.Gathering"
+			},
+			{
+				"tagName": "Artisanship"
+			}
+		]
+	},
+	"bBlockPawn": false,
+	"bBlockCamera": false,
+	"staticMeshState": "/Game/ENV/Gatherables/Plants/GiantFern/Mesh/SM_Tropics_GiantFern_Adult_02.SM_Tropics_GiantFern_Adult_02",
+	"collisionRadius": 50,
+	"overrideInteractionDistance": 100,
+	"overrideInteractionAngle": 70,
+	"lifecycleDuration": 0,
+	"dynamicLifecycleDefId":
+	{
+		"guid": "6064633259573641219",
+		"typeId": "1991555",
+		"name": "None"
+	},
+	"bShouldTransitionScale": true,
+	"startingScalePercentage": 0.5,
+	"scaleLerpSpeed": 0.10000000149011612,
+	"bRuntimeMesh": false,
+	"skeletalMeshState": "None",
+	"meshLifetimeDuration": 12,
+	"bMeshFade": true,
+	"meshDurationBeforeFade": 5,
+	"fadeScalarName": "Object Fade Amount",
+	"meshFadeDuration": 2,
+	"bFractureStaticMesh": true,
+	"fracturedMesh": "/Game/Effects/FX_Harvestables/Plants/GiantFern/GiantFern2_GeometryCollection.GiantFern2_GeometryCollection",
+	"fractureSupportMesh": "/Game/Effects/FX_Harvestables/Plants/GiantFern/SM_GiantFern2_StaticBase.SM_GiantFern2_StaticBase",
+	"fractureAngularDamping": 0,
+	"fractureLinearDamping": 0,
+	"fractureInertiaTensorScale":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"maxClusterLevel": 100,
+	"bApplyRadialImpulse": true,
+	"radialImpulseOffset":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 200
+	},
+	"radialImpulseRadius": 400,
+	"radialImpulseForce": 10000,
+	"bSimulatePhysics": true,
+	"bBreakBoneConstraint": false,
+	"impulseForce": 0,
+	"impulseBoneName": "None",
+	"impulseDirection": 0,
+	"disablePhysicsDuration": 1,
+	"bCalculateFadeAfterDisabledPhysics": true,
+	"bCalculateFadeAfterImpact": false,
+	"targetImpactMainBodyAngularDamping": 0,
+	"targetImpactMainBodyLinearDamping": 0.0099999997764825821,
+	"targetImpactMainBodyDuration": 2,
+	"targetImpactSecondaryBodyAngularDamping": 0,
+	"targetImpactSecondaryBodyLinearDamping": 0.0099999997764825821,
+	"targetImpactSecondaryBodyDuration": 2,
+	"skeletalMeshGatheredAnimation": "None",
+	"skeletalMeshGatheringEventAnimation": "None",
+	"foliageInteractionsIds": [
+		{
+			"guid": "6064633259578163207",
+			"typeId": "19846",
+			"name": "None"
+		}
+	],
+	"akAudioEvents": [],
+	"foliageAkAudioWeightedEvents": [],
+	"akSwitches": [],
+	"akAudioOffset":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 1
+	},
+	"akRTPCId":
+	{
+		"guid": "0",
+		"typeId": "919000",
+		"name": "None"
+	},
+	"akGatheringEvent": "None",
+	"akGatheredEvent": "/Game/WwiseAudio/Events/Main/Professions/Gathering/PROF_Herbalism_FrondDrop.PROF_Herbalism_FrondDrop",
+	"akImpactEvent": "None",
+	"foliageMaxHitCount": 150,
+	"foliageMaxVelocity": 1000,
+	"stateTransitionFX": [],
+	"gatheringFX": [],
+	"gatheredFX": [
+		{
+			"enabled":
+			{
+				"expression": ""
+			},
+			"niagaraSystemSoft": "/Game/Effects/FX_Harvestables/Plants/GiantFern/NS_GiantFern_Harvest.NS_GiantFern_Harvest",
+			"lifeTime": 0,
+			"bCastVolumetricTranslucentShadow": false,
+			"attachType": "AttachedTarget",
+			"originMesh": "Character",
+			"attachSocketName": "None",
+			"bUseAttachSocketForOriginLocation": true,
+			"bUseAttachSocketForOriginOrientation": true,
+			"transform":
+			{
+				"originLocation": "Target",
+				"originLocationSocket": "None",
+				"originOrientation": "Target",
+				"originOrientationSocket": "None",
+				"originScale": "World",
+				"bUseRelativeLocationExpression": false,
+				"relativeLocation":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"relativeLocationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeRotationExpression": false,
+				"relativeRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"relativeRotationExpression":
+				{
+					"expression": ""
+				},
+				"bUseRelativeScaleExpression": false,
+				"relativeScale":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				},
+				"relativeScaleExpression":
+				{
+					"expression": ""
+				}
+			},
+			"bVisibleToSceneCaptureOnly": false,
+			"bAllowScalability": true,
+			"bUseLocalRemoteDynamicSystem": false
+		}
+	],
+	"impactFX": [],
+	"destroyedFX": [],
+	"niagaraParams": [],
+	"guid": "6064633259610931212",
+	"name": "Plant_GiantFern_Medium_2",
+	"typeId": "19836"
+}

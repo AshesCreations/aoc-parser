@@ -1,0 +1,23 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"FA600C5A4AA66538DF50A98E8BDBFFE8\", \"Captain Avenmoor sent me to check on your farm.\")",
+	"nextNodeId":
+	{
+		"guid": "6064630442603774056",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064630442647486577",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"SA_0023_AnAncientViolence\", \"SAP_0023_AnAncientViolence_P1\")&&\r\nIsOnStoryArcQuest(GetPlayer(), \"SAQ_0023_P1_Q1_HalfTheBattle\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(), \"SAQ_0023_P1_Q1_HalfTheBattle\", \"AhvenCheckedOn\")\r\n"
+	},
+	"guid": "6064630442603774052",
+	"name": "DD_0023_AhvenBriarmoor_2",
+	"typeId": "1091110027"
+}

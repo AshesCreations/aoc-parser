@@ -1,0 +1,86 @@
+{
+	"assetRef": "/Game/DesignAssets/Population/NPC/Monster/Elemental/FlameElemental/Medium/FlameElemental_Medium_3Star.FlameElemental_Medium_3Star",
+	"lootTablesIds": [],
+	"populationFilter":
+	{
+		"zoneOfInfluenceIds": [],
+		"nodeIds": [],
+		"cultures": [],
+		"nodeTypes": [],
+		"biomes": [],
+		"seasons": [],
+		"nodeLevelMin": "Wilderness",
+		"nodeLevelMax": "Metropolis",
+		"timeOfDayStart": -1,
+		"timeOfDayEnd": -1,
+		"weatherTypes": [],
+		"spawningStrategy":
+		{
+			"spawnStrategy": "Immediate",
+			"phaseInTime":
+			{
+				"minSeconds": 0,
+				"maxSeconds": 0
+			}
+		},
+		"despawningStrategy":
+		{
+			"despawnStrategy": "Immediate",
+			"phaseOutTime":
+			{
+				"minSeconds": 0,
+				"maxSeconds": 0
+			}
+		},
+		"requiredGameplayTags":
+		{
+			"gameplayTags": [],
+			"parentTags": []
+		}
+	},
+	"scaleMin": 1,
+	"scaleMax": 1,
+	"gameplayTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "Element.Magical.Fire"
+			},
+			{
+				"tagName": "Event.TUR.BurningHatred.Boss"
+			}
+		],
+		"parentTags": [
+			{
+				"tagName": "Element.Magical"
+			},
+			{
+				"tagName": "Element"
+			},
+			{
+				"tagName": "Event.TUR.BurningHatred"
+			},
+			{
+				"tagName": "EVENT.TUR"
+			},
+			{
+				"tagName": "Event"
+			}
+		]
+	},
+	"bOverrideAggroRadius": false,
+	"aggroRadius": 0,
+	"bOverrideLeashRadius": false,
+	"leashRadius": 0,
+	"factionId": 0,
+	"interactionDefId":
+	{
+		"guid": "0",
+		"typeId": "1091110031",
+		"name": "None"
+	},
+	"displayNameOverrides": [],
+	"guid": "6064633384782921787",
+	"name": "AS_EVT_TUR_0010_BurningHatred_Elemental",
+	"typeId": "5111001"
+}

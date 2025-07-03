@@ -1,0 +1,100 @@
+{
+	"bAllowSatisfactionToRegress": false,
+	"parameterTypes": 2,
+	"objectiveType": "Kill",
+	"completionCriteria": [
+		{
+			"bOverrideCompletionValueWithExpression": true,
+			"completionValue": 0,
+			"operator": "GreaterThan",
+			"completionExpression":
+			{
+				"expression": "Event_GetActivity() >= 2"
+			},
+			"completionTriggersIds": [],
+			"bDisplayOnTracker": false,
+			"relevantTrackerIds": [],
+			"displayText": "",
+			"displayType": 0,
+			"displayCompletionValue": 0,
+			"bInvertProgressDisplay": false
+		}
+	],
+	"nPCObjectiveIconOverrideId":
+	{
+		"guid": "0",
+		"typeId": "949952112329",
+		"name": "None"
+	},
+	"progressExpression":
+	{
+		"expression": ""
+	},
+	"gameplayTagFilter":
+	{
+		"tokenStreamVersion": 0,
+		"tagDictionary": [
+			{
+				"tagName": "npc"
+			}
+		],
+		"queryTokenStream": [ 0, 1, 1, 1, 0 ],
+		"userDescription": "",
+		"autoDescription": " ANY( npc )"
+	},
+	"populationSetId":
+	{
+		"guid": "0",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"trackerId":
+	{
+		"guid": "0",
+		"typeId": "23095133",
+		"name": "None"
+	},
+	"interactablesIds": [],
+	"professionFilterIds": [],
+	"gatherableFilterIds": [],
+	"collectionFilterId":
+	{
+		"guid": "0",
+		"typeId": "1091110041",
+		"name": "None"
+	},
+	"collectionCount": 5,
+	"abilityRecordId":
+	{
+		"guid": "0",
+		"typeId": "30316001",
+		"name": "None"
+	},
+	"activityType": "NPCKill",
+	"activityQueryLocation":
+	{
+		"x": -623838.83293599996,
+		"y": 284238.94126300002,
+		"z": 15417.906150000001
+	},
+	"activityQueryExtent":
+	{
+		"x": 15000,
+		"y": 15000,
+		"z": 1000
+	},
+	"bDisplayOnTracker": false,
+	"trackerText": "",
+	"displayType": 0,
+	"displayCompletionValue": 0,
+	"visibilityExpression":
+	{
+		"expression": ""
+	},
+	"visibilityOverridesTrackerFilter": false,
+	"trackersToDisplayToIds": [],
+	"relevantAlignmentsIds": [],
+	"guid": "6064629805969637383",
+	"name": "WaveEventTemplate_TempleB_InitialCondition",
+	"typeId": "23095130"
+}

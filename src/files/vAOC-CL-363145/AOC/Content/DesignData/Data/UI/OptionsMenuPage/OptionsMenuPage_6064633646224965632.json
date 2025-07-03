@@ -1,0 +1,154 @@
+{
+	"label": "NSLOCTEXT(\"[1909495A4C2095068D406C9D33F90055]\", \"4469087C40F6337C3114788E10C262A6\", \"Visuals\")",
+	"categoryHeaderLabel": "NSLOCTEXT(\"[1909495A4C2095068D406C9D33F90055]\", \"15B7C7B34754EB51070AD887259C3FEE\", \"Accessibility | Visuals\")",
+	"bUseScrollWindow": true,
+	"entryCategories": [
+		{
+			"label": "NSLOCTEXT(\"[1909495A4C2095068D406C9D33F90055]\", \"361748C047EAAF1F45576DB120383EC7\", \"Motion Effects\")",
+			"entryAlignment": "HAlign_Fill",
+			"entryWrapSize": 10,
+			"wrapBoxClass": "Standard",
+			"entries": [
+				{
+					"label": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"EBBCBFCC45C8371D20060EBAFD38DE5C\", \"Disable Motion Blur\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 640,
+					"type": "CheckBox",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"bApplyOnMouseRelease": false,
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"subheaderBorderStyle": "None",
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetDisableMotionBlur",
+					"setterFunctionName": "SetDisableMotionBlur",
+					"dependencyGetter": "None"
+				}
+			],
+			"subcategories": []
+		},
+		{
+			"label": "NSLOCTEXT(\"[1909495A4C2095068D406C9D33F90055]\", \"0E00E119408ABE189EAF58B4CB3E53F2\", \"Camera Effects\")",
+			"entryAlignment": "HAlign_Fill",
+			"entryWrapSize": 10,
+			"wrapBoxClass": "Standard",
+			"entries": [
+				{
+					"label": "NSLOCTEXT(\"[1909495A4C2095068D406C9D33F90055]\", \"F0617AB942BAEF9ADEAC178B07E7FFF6\", \"Master Camera FX Intensity\")",
+					"labelTextMinDesiredWidth": 300,
+					"labelTextWrapWidth": 1080,
+					"type": "Slider",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"bApplyOnMouseRelease": true,
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"subheaderBorderStyle": "None",
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetMasterCameraFxIntensity",
+					"setterFunctionName": "SetMasterCameraFxIntensity",
+					"dependencyGetter": "None"
+				},
+				{
+					"label": "NSLOCTEXT(\"[1909495A4C2095068D406C9D33F90055]\", \"6DE78EF3425E7435D8C149B955950B4B\", \"Camera Shake Intensity\")",
+					"labelTextMinDesiredWidth": 300,
+					"labelTextWrapWidth": 1080,
+					"type": "Slider",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"bApplyOnMouseRelease": true,
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"subheaderBorderStyle": "None",
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetCameraShakeIntensity",
+					"setterFunctionName": "SetCameraShakeIntensity",
+					"dependencyGetter": "None"
+				},
+				{
+					"label": "NSLOCTEXT(\"[1909495A4C2095068D406C9D33F90055]\", \"EB64FCB2496D21E86205A88F59816773\", \"Combat Blur Intensity\")",
+					"labelTextMinDesiredWidth": 300,
+					"labelTextWrapWidth": 1080,
+					"type": "Slider",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"bApplyOnMouseRelease": true,
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"subheaderBorderStyle": "None",
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetCameraCombatBlurIntensity",
+					"setterFunctionName": "SetCameraCombatBlurIntensity",
+					"dependencyGetter": "None"
+				},
+				{
+					"label": "NSLOCTEXT(\"[1909495A4C2095068D406C9D33F90055]\", \"9FCA399049498C877184F9B360A13907\", \"Chromatic Aberration Intensity\")",
+					"labelTextMinDesiredWidth": 300,
+					"labelTextWrapWidth": 1080,
+					"type": "Slider",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"bApplyOnMouseRelease": true,
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"subheaderBorderStyle": "None",
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetCameraChromaticAberrationIntensity",
+					"setterFunctionName": "SetCameraChromaticAberrationIntensity",
+					"dependencyGetter": "None"
+				},
+				{
+					"label": "NSLOCTEXT(\"[1909495A4C2095068D406C9D33F90055]\", \"0E2B9F4E41B66B1FDD486B8CC7E205A3\", \"FOV Manipulation Intensity\")",
+					"labelTextMinDesiredWidth": 300,
+					"labelTextWrapWidth": 1080,
+					"type": "Slider",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"bApplyOnMouseRelease": true,
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"subheaderBorderStyle": "None",
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetCameraFOVManipulationIntensity",
+					"setterFunctionName": "SetCameraFOVManipulationIntensity",
+					"dependencyGetter": "None"
+				}
+			],
+			"subcategories": []
+		}
+	],
+	"guid": "6064633646224965632",
+	"name": "Accessibility_Visuals",
+	"typeId": "3616673544"
+}

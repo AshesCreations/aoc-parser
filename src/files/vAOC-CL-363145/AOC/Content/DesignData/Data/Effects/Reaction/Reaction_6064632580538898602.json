@@ -1,0 +1,32 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 4,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0,
+		"fishingEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "EvalFormula($#10516612381411113:6064632265042630896$)>0.0 && GetEffectCount(GetOwner(), $#30316002:6064632472478220288$) > 0 &&\r\nGetEffectCount(GetOwner(), $#30316002:6064629093014044673$) == 0 &&\r\nGetEffectCount(GetOwner(), $#30316002:6064629105628020751$) == 0 &&\r\nGetEffectCount(GetOwner(), $#30316002:6064629105627627534$) == 0"
+	},
+	"bEvaluateApplyingHit": false,
+	"instigator": "Owner",
+	"targetsBitmask": 1,
+	"reactHitsIds": [
+		{
+			"guid": "6064632472556273669",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"instigatorProcLimit": 0,
+	"globalProcLimit": 0,
+	"procReactOnApply": false,
+	"guid": "6064632580538898602",
+	"name": "Mage_Amplification_ArcaneCombo",
+	"typeId": "3031600202"
+}

@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"93474D6E4866C67FA6C819AEC0B2CE19\", \"I have news of your fiance.\")",
+	"nextNodeId":
+	{
+		"guid": "6064630442603774058",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsOnStoryArcQuest(GetPlayer(), \"SAQ_0023_P01_Q03_LostSouls\")&&\r\nGetStoryArcQuestFlag(GetPlayer(), \"SAQ_0023_P01_Q03_LostSouls\", \"FateUncovered\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(), \"SAQ_0023_P01_Q03_LostSouls\", \"LeodrasFreed\")"
+	},
+	"guid": "6064630442603774054",
+	"name": "DD_0023_AhvenBriarmoor_4",
+	"typeId": "1091110027"
+}

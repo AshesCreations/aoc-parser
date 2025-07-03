@@ -1,0 +1,18 @@
+{
+	"choiceText": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"3C6391E44BB3E3B21DEE45B95E8C6B79\", \"taxes exist! (greater than 50%)\")",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "Node_GetTaxRate($#1323521343:6064628934942261248$, \"NodeTax\") >= 0.5"
+	},
+	"choiceType": "Default",
+	"guid": "6064631783185055750",
+	"name": "Node_GetTaxRate",
+	"typeId": "1091110027"
+}

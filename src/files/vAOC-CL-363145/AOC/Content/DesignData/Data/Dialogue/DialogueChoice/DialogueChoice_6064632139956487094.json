@@ -1,0 +1,22 @@
+{
+	"choiceText": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"BC93D0DC4EF8E456B60609B2897F35B8\", \"New to Construction\")",
+	"nextNodeId":
+	{
+		"guid": "6064632139963630521",
+		"typeId": "1091110028",
+		"name": "DD_ServiceNPC_ConstructionForeman_2"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "!(Player_HasCommission(GetPlayer(), \"CSQ_0156_FTUE_ConstructionAroundTown\") ||\r\nPlayer_HasCompletedCommission(GetPlayer(), \"CSQ_0156_FTUE_ConstructionAroundTown\")) &&\r\nNode_NumOfServiceBuildingsInState(Node_GetActorCityNode(GetInteractionTarget()), EBuildingState::UnderConstruction) >= 1"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064632139956487094",
+	"name": "DD_ServiceNPC_ConstructionForeman_1_Choice_1",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,22 @@
+{
+	"statRefId":
+	{
+		"guid": "108986352686712",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"value":
+	{
+		"expression": "\r\n// take half of all damage taken in past 4 seconds\r\nconst v = 0.5 * GetStatDeltaOverTime(GetInstigator(), 4.0, $#10516612381411111:108986352686712$);\r\n//define base and max heal \r\nconst baseHeal = 0.1 * GetStat(GetInstigator(),$#10516612381411111:108986356618873$);\r\nconst maxHeal = 0.3 * GetStat(GetInstigator(),$#10516612381411111:108986356618873$);\r\n//check if we should apply the base or max heal or calculated heal\r\nconst x = max(min(abs(v), maxHeal),baseHeal);\r\n\r\n\r\n\r\n\r\n\r\n//ensure delta is negative, if not apply base heal\r\nselectfloat (v < 0.0,x, baseHeal)"
+	},
+	"bUseShieldAbsorb": false,
+	"shieldAbsorbPercentage":
+	{
+		"expression": ""
+	},
+	"bShowFloatingText": true,
+	"valueInputTerms": [],
+	"guid": "6064629522696897243",
+	"name": "Tank_ShakeItOff_Heal",
+	"typeId": "3031600201"
+}

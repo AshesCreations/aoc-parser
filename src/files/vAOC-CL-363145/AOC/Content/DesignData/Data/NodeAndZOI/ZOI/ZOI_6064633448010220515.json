@@ -1,0 +1,128 @@
+{
+	"designNotes": "",
+	"levelDefinitionId":
+	{
+		"guid": "6064629126799097877",
+		"typeId": "9227326",
+		"name": "None"
+	},
+	"playerFacingName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"A112DE414771DF8AF8CCC2A5ADCC9536\", \"Jundark Harbor West\")",
+	"zoiType": "CannotOwn",
+	"startingAreaGameplayTag":
+	{
+		"tagName": "None"
+	},
+	"cityNodeId":
+	{
+		"guid": "6064633447998161890",
+		"typeId": "1323521343",
+		"name": "None"
+	},
+	"adjacentZonesOfInfluenceIds": [
+		{
+			"guid": "6064633448221772947",
+			"typeId": "9127326",
+			"name": "None"
+		}
+	],
+	"corruptionRulesEnabled": true,
+	"bAllowPVPOptInProtection": false,
+	"alignmentsAssignedUponEnteringIds": [
+		{
+			"guid": "6064629443707731976",
+			"typeId": "512160700",
+			"name": "None"
+		}
+	],
+	"zoiEnvironmentType": "Harbor",
+	"editorColor":
+	{
+		"x": 0.47799999999999998,
+		"y": 0.32900000000000001,
+		"z": 0.17999999999999999
+	},
+	"zOIRewardTables": [
+		{
+			"inclusionExpression":
+			{
+				"expression": "!DoesNPCContainTag(\"NoRewards\")"
+			},
+			"rewardTableId":
+			{
+				"guid": "6064633313653948416",
+				"typeId": "1091110040",
+				"name": "None"
+			}
+		},
+		{
+			"inclusionExpression":
+			{
+				"expression": "!DoesNPCContainTag(\"NoRewards\")"
+			},
+			"rewardTableId":
+			{
+				"guid": "6064633313727152129",
+				"typeId": "1091110040",
+				"name": "None"
+			}
+		},
+		{
+			"inclusionExpression":
+			{
+				"expression": "DoesNPCContainTag(\"character.humanoid\")"
+			},
+			"rewardTableId":
+			{
+				"guid": "6064633584457941012",
+				"typeId": "1091110040",
+				"name": "None"
+			}
+		}
+	],
+	"economicRegionTableId":
+	{
+		"guid": "6064633458081595408",
+		"typeId": "98738382",
+		"name": "None"
+	},
+	"bHideExperienceEvents": true,
+	"biome": "Jungle",
+	"biomeGatherableTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "Jundark"
+			}
+		],
+		"parentTags": []
+	},
+	"freeholdEstatesIds": [],
+	"actorEffects": [
+		{
+			"availabilityExpression":
+			{
+				"expression": ""
+			},
+			"areaOfInterestActorEffects": [
+				{
+					"effectRecordId":
+					{
+						"guid": "6064633429899935744",
+						"typeId": "30316002",
+						"name": "None"
+					},
+					"effectClassifications": [
+						"Character"
+					],
+					"effectNodeType": "Default",
+					"effectAlignments": [],
+					"bRequireAllAlignments": true,
+					"bRequireOrgAffiliation": true
+				}
+			]
+		}
+	],
+	"guid": "6064633448010220515",
+	"name": "Verra_JUN_HARBOR_West",
+	"typeId": "9127326"
+}

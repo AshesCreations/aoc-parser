@@ -1,0 +1,107 @@
+{
+	"bAllowSatisfactionToRegress": false,
+	"parameterTypes": 2,
+	"objectiveType": "Gather",
+	"completionCriteria": [
+		{
+			"bOverrideCompletionValueWithExpression": true,
+			"completionValue": 0,
+			"operator": "GreaterThan",
+			"completionExpression":
+			{
+				"expression": "Event_GetActivity()>=2"
+			},
+			"completionTriggersIds": [],
+			"bDisplayOnTracker": false,
+			"relevantTrackerIds": [],
+			"displayText": "",
+			"displayType": 0,
+			"displayCompletionValue": 0,
+			"bInvertProgressDisplay": false
+		}
+	],
+	"nPCObjectiveIconOverrideId":
+	{
+		"guid": "0",
+		"typeId": "949952112329",
+		"name": "None"
+	},
+	"progressExpression":
+	{
+		"expression": ""
+	},
+	"gameplayTagFilter":
+	{
+		"tokenStreamVersion": 0,
+		"tagDictionary": [],
+		"queryTokenStream": [],
+		"userDescription": "",
+		"autoDescription": ""
+	},
+	"populationSetId":
+	{
+		"guid": "0",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"trackerId":
+	{
+		"guid": "0",
+		"typeId": "23095133",
+		"name": "None"
+	},
+	"interactablesIds": [],
+	"professionFilterIds": [
+		{
+			"guid": "108752769996426",
+			"typeId": "8125613373123",
+			"name": "None"
+		},
+		{
+			"guid": "108752770061963",
+			"typeId": "8125613373123",
+			"name": "None"
+		}
+	],
+	"gatherableFilterIds": [],
+	"collectionFilterId":
+	{
+		"guid": "0",
+		"typeId": "1091110041",
+		"name": "None"
+	},
+	"collectionCount": 5,
+	"abilityRecordId":
+	{
+		"guid": "0",
+		"typeId": "30316001",
+		"name": "None"
+	},
+	"activityType": "Gatherable",
+	"activityQueryLocation":
+	{
+		"x": -688987.54850000003,
+		"y": 601304.64570800005,
+		"z": 13828.409170000001
+	},
+	"activityQueryExtent":
+	{
+		"x": 5000,
+		"y": 5000,
+		"z": 5000
+	},
+	"bDisplayOnTracker": false,
+	"trackerText": "",
+	"displayType": 0,
+	"displayCompletionValue": 0,
+	"visibilityExpression":
+	{
+		"expression": ""
+	},
+	"visibilityOverridesTrackerFilter": false,
+	"trackersToDisplayToIds": [],
+	"relevantAlignmentsIds": [],
+	"guid": "6064630525571694592",
+	"name": "Event_RVR_M703_AngryHarvest_InstantiateEvent_Objective(1)",
+	"typeId": "23095130"
+}

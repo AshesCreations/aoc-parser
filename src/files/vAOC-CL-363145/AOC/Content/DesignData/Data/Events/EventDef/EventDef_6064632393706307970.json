@@ -1,0 +1,206 @@
+{
+	"eventName": "NSLOCTEXT(\"\", \"01A2B41E40A9910F1BC0249E04E54A13\", \"Angry Harvest\")",
+	"gameplayTags":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"activationPredicatesIds": [
+		{
+			"guid": "6064630520378557928",
+			"typeId": "23095129",
+			"name": "None"
+		}
+	],
+	"minChallengeRating": 0,
+	"maxChallengeRating": 30,
+	"eventType": 1,
+	"locationId":
+	{
+		"guid": "6064632393706307971",
+		"typeId": "5127371160",
+		"name": "None"
+	},
+	"desiredTimeSlot": "0001.01.01-00.00.00",
+	"frequency": 24,
+	"priority": 1,
+	"rewardTableId":
+	{
+		"guid": "0",
+		"typeId": "1091110040",
+		"name": "None"
+	},
+	"rewardPopulationSetId":
+	{
+		"guid": "0",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"startStageId":
+	{
+		"guid": "6064632393706307972",
+		"typeId": "23095131",
+		"name": "None"
+	},
+	"stagesIds": [
+		{
+			"guid": "6064632393706307972",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064632393706307976",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064632393706307982",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064632393706307985",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064632393706307991",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064632393706307994",
+			"typeId": "23095131",
+			"name": "None"
+		}
+	],
+	"interactVolumesIds": [],
+	"alignmentsIds": [],
+	"mapDisplayType": "Biome",
+	"mapEventIcon": "/Game/UI/Widgets/Narrative/Textures/TUI_Icon_Event_PvETracker.TUI_Icon_Event_PvETracker",
+	"bDisplayOnTracker": true,
+	"notificationRadius": 15000,
+	"mapRadiusMinumum": 1000,
+	"cooldownTimer": 600,
+	"bDisabled": false,
+	"maxInstanceCount": 1,
+	"requiredMapName": "Verra_World_Master",
+	"comments": [
+		{
+			"commentGuid": "6064630594455077175",
+			"comment": "T1 flowers trigger this event if they are harvested in the event bounds",
+			"location":
+			{
+				"x": -737.50793152054155,
+				"y": -579.16132652759495,
+				"z": 0
+			},
+			"size":
+			{
+				"x": 1237.2222220897675,
+				"y": 563.8888852596283,
+				"z": 0
+			},
+			"color":
+			{
+				"r": 0.5,
+				"g": 0.5,
+				"b": 0.5,
+				"a": 0.5
+			}
+		},
+		{
+			"commentGuid": "6064630594465300792",
+			"comment": "Toadstools and Thariblooms spawn off to the side",
+			"location":
+			{
+				"x": 530.69314547459487,
+				"y": 250.51590987818795,
+				"z": 0
+			},
+			"size":
+			{
+				"x": 595.40740835666656,
+				"y": 468.40739798545837,
+				"z": 0
+			},
+			"color":
+			{
+				"r": 0.5,
+				"g": 0.5,
+				"b": 0.5,
+				"a": 0.5
+			}
+		},
+		{
+			"commentGuid": "6064630594469101881",
+			"comment": "No Fail condition other than timeout",
+			"location":
+			{
+				"x": 1463.1269804019423,
+				"y": 437.6641453828031,
+				"z": 0
+			},
+			"size":
+			{
+				"x": 572.53964829444885,
+				"y": 318.88890182971954,
+				"z": 0
+			},
+			"color":
+			{
+				"r": 0.5,
+				"g": 0.5,
+				"b": 0.5,
+				"a": 0.5
+			}
+		},
+		{
+			"commentGuid": "6064630594470347066",
+			"comment": "Reward chest is bit difficult to spot, but its hidden in a log in the event bounds",
+			"location":
+			{
+				"x": 548.38799322092984,
+				"y": 1059.267773380986,
+				"z": 0
+			},
+			"size":
+			{
+				"x": 575.55553364753723,
+				"y": 539.99997794628143,
+				"z": 0
+			},
+			"color":
+			{
+				"r": 0.5,
+				"g": 0.5,
+				"b": 0.5,
+				"a": 0.5
+			}
+		}
+	],
+	"bIsTemplate": false,
+	"flowNodes": [
+		{
+			"flowType": "EventEntry",
+			"graphLocation":
+			{
+				"x": -42.296281233246617,
+				"y": -1654.6666847964125
+			},
+			"id": 0
+		},
+		{
+			"flowType": "EventExit",
+			"graphLocation":
+			{
+				"x": -608.88888760849295,
+				"y": 2399.2677513272674
+			},
+			"id": 1
+		}
+	],
+	"guid": "6064632393706307970",
+	"name": "Event_RVR_M1101_T1KaBloom",
+	"typeId": "23095125"
+}

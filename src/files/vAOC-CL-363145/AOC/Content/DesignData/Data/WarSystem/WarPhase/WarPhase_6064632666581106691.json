@@ -1,0 +1,60 @@
+{
+	"displayName": "NSLOCTEXT(\"[C0A48779AC9FFDA4BAC80B2EE1C04C0D]\", \"30323F1B4A3330ADEE8867B3FED0F270\", \"Phase One\")",
+	"phaseToastId":
+	{
+		"guid": "0",
+		"typeId": "949952112328",
+		"name": "None"
+	},
+	"victoryConditionText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"3589FDC2482618A870565386607D924C\", \"First Node to reach 500 victory points\")",
+	"phaseDescriptionLong": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"7EB70F2F405137AC1E09C89A2A1C281B\", \"Eliminate the defectors. Defector camps will be discovered throughout the day. \")",
+	"bStartEventOnPhaseBegin": true,
+	"bEventsOccurRandomly": true,
+	"bLoopWarEventsArray": true,
+	"warEventsIds": [
+		{
+			"guid": "6064632666586218500",
+			"typeId": "23095125",
+			"name": "None"
+		}
+	],
+	"schedulePlusMinusMinutes": 60,
+	"scheduleOfEvents": [ 3 ],
+	"bUseParentWarRecordVictoryPointTable": true,
+	"bUseGlobalConstantVictoryPointTable": false,
+	"victoryPointTableId":
+	{
+		"guid": "6064631199863079187",
+		"typeId": "98966982",
+		"name": "None"
+	},
+	"bUseDefaultPhaseRewards": false,
+	"bUseDefaultObjectiveRewards": false,
+	"bUseDefaultEventRewards": false,
+	"completionCondition":
+	{
+		"expression": "War_HasOrgScoredEnough(500)"
+	},
+	"bUseParentWarRecordLocaleSelectionOptions": true,
+	"phaseLocaleSelectionType": "WarRecordLocaleRequest",
+	"bTargetNodeLocaleRequestFirst": false,
+	"localeRequestId":
+	{
+		"guid": "0",
+		"typeId": "23095138",
+		"name": "None"
+	},
+	"customLocaleSelectionPerEvent": [],
+	"bFlaggedAgainstEachOther": true,
+	"bFlaggedInRelevantNodeZOIs": true,
+	"bAllowAlliance_UNSUPPORTED": false,
+	"bCanSurrender": true,
+	"surrenderAvailableSecondsAfterPhaseStart": 3600,
+	"delayForEventStartTime":
+	{
+		"duration": "3600000"
+	},
+	"guid": "6064632666581106691",
+	"name": "NodeWar_Defectors_Phase_1",
+	"typeId": "98966980"
+}

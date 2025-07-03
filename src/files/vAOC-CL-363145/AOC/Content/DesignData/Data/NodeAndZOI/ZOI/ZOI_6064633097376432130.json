@@ -1,0 +1,169 @@
+{
+	"designNotes": "Djinna",
+	"levelDefinitionId":
+	{
+		"guid": "6064629126799097877",
+		"typeId": "9227326",
+		"name": "None"
+	},
+	"playerFacingName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"B0BBE9AA41EE5C025C189B8164BF3E8F\", \"Djinna\")",
+	"zoiType": "HasNode",
+	"startingAreaGameplayTag":
+	{
+		"tagName": "None"
+	},
+	"cityNodeId":
+	{
+		"guid": "6064633097318170624",
+		"typeId": "1323521343",
+		"name": "None"
+	},
+	"adjacentZonesOfInfluenceIds": [
+		{
+			"guid": "6064632751844032513",
+			"typeId": "9127326",
+			"name": "None"
+		},
+		{
+			"guid": "6064632734318067718",
+			"typeId": "9127326",
+			"name": "None"
+		},
+		{
+			"guid": "6064633097387311107",
+			"typeId": "9127326",
+			"name": "None"
+		}
+	],
+	"corruptionRulesEnabled": true,
+	"bAllowPVPOptInProtection": false,
+	"alignmentsAssignedUponEnteringIds": [],
+	"zoiEnvironmentType": "None",
+	"editorColor":
+	{
+		"x": 0.5,
+		"y": 0.80000000000000004,
+		"z": 1
+	},
+	"zOIRewardTables": [
+		{
+			"inclusionExpression":
+			{
+				"expression": "!DoesNPCContainTag(\"NoRewards\")"
+			},
+			"rewardTableId":
+			{
+				"guid": "6064632271541961493",
+				"typeId": "1091110040",
+				"name": "None"
+			}
+		},
+		{
+			"inclusionExpression":
+			{
+				"expression": "DoesNPCContainTag(\"character.humanoid\")"
+			},
+			"rewardTableId":
+			{
+				"guid": "6064633391377612800",
+				"typeId": "1091110040",
+				"name": "None"
+			}
+		},
+		{
+			"inclusionExpression":
+			{
+				"expression": "!DoesNPCContainTag(\"NoRewards\")"
+			},
+			"rewardTableId":
+			{
+				"guid": "6064633313653948416",
+				"typeId": "1091110040",
+				"name": "None"
+			}
+		}
+	],
+	"economicRegionTableId":
+	{
+		"guid": "6064633102519631873",
+		"typeId": "98738382",
+		"name": "None"
+	},
+	"bHideExperienceEvents": false,
+	"biome": "Desert",
+	"biomeGatherableTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "SandsquallDesert"
+			}
+		],
+		"parentTags": []
+	},
+	"freeholdEstatesIds": [
+		{
+			"guid": "6064633294076379173",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633294375354416",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633294198276136",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633294245199914",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633294337474606",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633294102265894",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633294264139819",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633294318010413",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633294355038255",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633294125727783",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633294207647785",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633294301626412",
+			"typeId": "1337133701",
+			"name": "None"
+		}
+	],
+	"actorEffects": [],
+	"guid": "6064633097376432130",
+	"name": "Verra_SAN_Node_Djinna",
+	"typeId": "9127326"
+}

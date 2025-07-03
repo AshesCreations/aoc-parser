@@ -1,0 +1,61 @@
+{
+	"bUseLocaleQuery": false,
+	"originWhiteListIds": [
+		{
+			"guid": "6064633572350689302",
+			"typeId": "421003",
+			"name": "None"
+		},
+		{
+			"guid": "6064633572324737027",
+			"typeId": "421003",
+			"name": "None"
+		},
+		{
+			"guid": "6064633616809197568",
+			"typeId": "421003",
+			"name": "None"
+		}
+	],
+	"localeWhiteListIds": [],
+	"localeBlackListIds": [],
+	"bQueryAllOrigins": false,
+	"localeQueryLocation":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"originQueryRange": 0,
+	"originTagFilter":
+	{
+		"tokenStreamVersion": 0,
+		"tagDictionary": [],
+		"queryTokenStream": [],
+		"userDescription": "",
+		"autoDescription": ""
+	},
+	"localeTagFilter":
+	{
+		"tokenStreamVersion": 0,
+		"tagDictionary": [],
+		"queryTokenStream": [],
+		"userDescription": "",
+		"autoDescription": ""
+	},
+	"localeSelectionAlgorithm": "ClosestToPoint",
+	"pointExpression":
+	{
+		"expression": "Event_GetInstanceLocation()"
+	},
+	"requiredExtents":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"bRequiresNav": false,
+	"guid": "6064632717677848852",
+	"name": "Siege_PopBlockingVolume_LocaleRequestDef",
+	"typeId": "23095138"
+}

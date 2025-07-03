@@ -1,0 +1,18 @@
+{
+	"choiceText": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"E7EED026450DD68A4F57BBAF3F0178D8\", \"(Is New Mayor, FTUE Quest Incomplete)\")",
+	"nextNodeId":
+	{
+		"guid": "6064632155557789752",
+		"typeId": "1091110028",
+		"name": "DD_ServiceNPC_NodeAdministrator_123"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "const interactNode = Node_GetActorCityNode(GetInteractionTarget());\r\nNode_IsPlayerMayorCurrentNode(GetPlayer(), interactNode) &&\r\n!Player_HasCompletedCommission(GetPlayer(), \"CSQ_0158_FTUE_WithMayoralPowerComesMayoralResponsibility\") &&\r\n!Player_HasCommission(GetPlayer(), \"CSQ_0158_FTUE_WithMayoralPowerComesMayoralResponsibility\")"
+	},
+	"choiceType": "Default",
+	"guid": "6064632155558182969",
+	"name": "DD_ServiceNPC_NodeAdministrator_108_Choice_4",
+	"typeId": "1091110027"
+}

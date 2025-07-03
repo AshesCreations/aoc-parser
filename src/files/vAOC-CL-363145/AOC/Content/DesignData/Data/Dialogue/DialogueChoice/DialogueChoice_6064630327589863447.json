@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"84EF4484455CEB23D203E6B04B47AED1\", \"The Briarmoor is secured!\")",
+	"nextNodeId":
+	{
+		"guid": "6064630327724605470",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0005A_FGG_ForGreaterGlory\",\"MAP_0005A_FGG_Phase01\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0005A_TIG_TroubleInGrazeland\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005A_TIG_TroubleInGrazeland\",\"KillTheBarracuda\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005A_TIG_TroubleInGrazeland\",\"ReturnToFisherman\")\r\n"
+	},
+	"guid": "6064630327589863447",
+	"name": "MADD_0005A_STR_NPC_Eudoxia_Phase01_30",
+	"typeId": "1091110027"
+}

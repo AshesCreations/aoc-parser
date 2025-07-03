@@ -1,0 +1,22 @@
+{
+	"choiceText": "",
+	"nextNodeId":
+	{
+		"guid": "6064632057947292336",
+		"typeId": "1091110028",
+		"name": "DD_0100_CommissionHarold_7"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "Player_HasCommission(GetPlayer(), \"CSQ_RVR_0102_CommissionTutorial\") &&\r\nPlayer_ObjectiveStateEquals(GetPlayer(), \"NO_0102_01b_ReturnToHarold\", EObjectiveState::Complete)"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064632507312242688",
+	"name": "DD_0100_CommissionHarold_2_Choice_4",
+	"typeId": "1091110027"
+}

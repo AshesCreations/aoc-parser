@@ -1,0 +1,18 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"D8F6D565449E0571896ED1B8812C218A\", \"Needs Ambush Objective\")",
+	"nextNodeId":
+	{
+		"guid": "6064631872851345429",
+		"typeId": "1091110028",
+		"name": "CSQ_RVR_0081_FB_NordenResnick_DLG_12"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "!Player_ObjectiveStateEquals(GetPlayer(),\"CSQ_RVR_0081_FB_ForsakenDefiance_GotoAmbush_OBJ\",EObjectiveState::Complete)"
+	},
+	"choiceType": "Default",
+	"guid": "6064632139022336052",
+	"name": "CSQ_RVR_0081_FB_NordenResnik_DLG_96_Choice_1",
+	"typeId": "1091110027"
+}

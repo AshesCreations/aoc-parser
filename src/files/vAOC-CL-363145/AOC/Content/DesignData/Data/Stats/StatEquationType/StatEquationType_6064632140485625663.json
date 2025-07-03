@@ -1,0 +1,12 @@
+{
+	"equation":
+	{
+		"expression": "const hasProc = GetEffectCount(GetOwner(),$#30316002:6064631391930811706$) > 0;\r\nconst prism = GetSkillPurchased(GetInstigator(), GetCurrentWeaponSkilltree(GetInstigator()), $#981011333:6064631439673277683$);\r\nSelectFloat(hasProc && prism, 0.1, 0.0)"
+	},
+	"constraints":
+	{
+	},
+	"guid": "6064632140485625663",
+	"name": "DEPR_Weapon_SkillTree_Prism",
+	"typeId": "10516612381411112"
+}

@@ -1,0 +1,13 @@
+{
+	"quality":
+	{
+		"expression": "const Rand = RandIntRange(1,100000);\r\n\r\nconst IsUncommon = Rand < 83989;\r\nconst IsRare = Rand >= 83989 && Rand < 99000;\r\nconst IsHeroic = Rand >= 99000 && Rand < 99990;\r\nconst IsEpic = Rand >= 99990 && Rand < 100000;\r\nconst IsLegendary = Rand == 100000;\r\n\r\nSelectInt(IsUncommon, RandIntRange(6,11), \r\nSelectInt(IsRare, RandIntRange(16,23), \r\nSelectInt(IsHeroic, RandIntRange(31,41), \r\nSelectInt(IsEpic, RandIntRange(51,61), \r\nSelectInt(IsLegendary, 71, 86)))))"
+	},
+	"durability":
+	{
+		"expression": ""
+	},
+	"guid": "6064633526935683072",
+	"name": "Gear_Rarity_Named_UC83_R15_H1_E0.01_L0.001",
+	"typeId": "1091111111"
+}

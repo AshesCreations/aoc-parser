@@ -1,0 +1,69 @@
+{
+	"displayName": "NSLOCTEXT(\"\", \"CFC6B7804A9F53A7E862C2AF00177779\", \"Thorns\")",
+	"description": "NSLOCTEXT(\"\", \"B0EEEF6C4D47798941E74899E3025997\", \"Reflects a percentage of direct damage back at the attacker\")",
+	"bHidden": false,
+	"gameplayType": "Type_Combat",
+	"bHasWaterfallStatsUI": false,
+	"waterfallStatsUIIds": [],
+	"bDisplayAsPercentage": false,
+	"statType": "Type_Float",
+	"bClampStatFinalValue": false,
+	"bMultiplyStatMods": false,
+	"bMultiplyCompliment": false,
+	"base":
+	{
+		"expression": "const x = GetStat(GetInstigator(), $#10516612381411111:6064630794046801108$);\r\nx / 10000"
+	},
+	"waterfallStatsBaseIds": [
+		{
+			"guid": "6064630794046801108",
+			"typeId": "10516612381411111",
+			"name": "None"
+		}
+	],
+	"valueMin":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMinIds": [],
+	"valueMax":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMaxIds": [],
+	"regenRate":
+	{
+		"expression": ""
+	},
+	"waterfallStatsRegenIds": [],
+	"bRegenWhileDead": false,
+	"onSpawn": "Reset_None",
+	"onDeath": "Reset_None",
+	"onRevive": "Reset_None",
+	"bPersistValue": false,
+	"replication": 1,
+	"shieldStatId":
+	{
+		"guid": "0",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"grantedEffects": [
+		{
+			"shouldGrant":
+			{
+				"expression": "GetStat(GetInstigator(), $#10516612381411111:6064630794045031635$) > 0.0"
+			},
+			"effectId":
+			{
+				"guid": "6064630793997190352",
+				"typeId": "30316002",
+				"name": "None"
+			},
+			"numStacks": 1
+		}
+	],
+	"guid": "6064630794045031635",
+	"name": "Thorns",
+	"typeId": "10516612381411111"
+}

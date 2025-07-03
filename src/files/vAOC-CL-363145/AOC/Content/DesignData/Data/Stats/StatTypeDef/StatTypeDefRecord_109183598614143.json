@@ -1,0 +1,50 @@
+{
+	"displayName": "Mentality",
+	"description": "NSLOCTEXT(\"[1909495A4C2095068D406C9D33F90055]\", \"A038BDCB4F517EF9D0AFACAEA303ED71\", \"Each point of Mentality provides:*1 Max Mana*2 Magic Resist*2 Magical Critical Avoidance Rating*1 Magical Critical Mitigation Rating*1 Magical Disable Evasion Rating*1 Magical Disable Reduction Rating\")",
+	"bHidden": false,
+	"gameplayType": "Type_Combat",
+	"bHasWaterfallStatsUI": true,
+	"waterfallStatsUIIds": [],
+	"bDisplayAsPercentage": false,
+	"statType": "Type_Float",
+	"bClampStatFinalValue": false,
+	"bMultiplyStatMods": false,
+	"bMultiplyCompliment": false,
+	"base":
+	{
+		"expression": "0"
+	},
+	"waterfallStatsBaseIds": [],
+	"valueMin":
+	{
+		"expression": "0"
+	},
+	"waterfallStatsMinIds": [],
+	"valueMax":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMaxIds": [],
+	"regenRate":
+	{
+		"expression": ""
+	},
+	"waterfallStatsRegenIds": [],
+	"bRegenWhileDead": false,
+	"bRecalculateOnCombatState": false,
+	"onSpawn": "Reset_None",
+	"onDeath": "Reset_None",
+	"onRevive": "Reset_None",
+	"bPersistValue": false,
+	"replication": 1,
+	"shieldStatId":
+	{
+		"guid": "0",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"grantedEffects": [],
+	"guid": "109183598614143",
+	"name": "Mentality",
+	"typeId": "10516612381411111"
+}

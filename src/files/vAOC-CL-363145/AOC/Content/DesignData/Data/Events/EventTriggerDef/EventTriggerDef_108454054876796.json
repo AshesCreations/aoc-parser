@@ -1,0 +1,46 @@
+{
+	"triggerType": "SetFloatVariable",
+	"targetSpawnTableId":
+	{
+		"guid": "108244450236026",
+		"typeId": "250006",
+		"name": "EventTestArmor_Lever"
+	},
+	"spawnAmount": 1,
+	"bSpawnShouldActivate": true,
+	"newStageId":
+	{
+		"guid": "108243434559102",
+		"typeId": "23095131",
+		"name": "TestWaveEncounter_Stage1"
+	},
+	"message": "",
+	"targetsId":
+	{
+		"guid": "0",
+		"typeId": "23095133",
+		"name": "None"
+	},
+	"actionResponseId":
+	{
+		"guid": "0",
+		"typeId": "1091110030",
+		"name": "None"
+	},
+	"variableName": "ExitChance",
+	"variableOwner": "Event",
+	"newValue":
+	{
+		"expression": "0.125"
+	},
+	"eventToInstantiateId":
+	{
+		"guid": "0",
+		"typeId": "23095125",
+		"name": "None"
+	},
+	"triggersToActivateIds": [],
+	"guid": "108454054876796",
+	"name": "TestWaveEncounter_InitExitChance",
+	"typeId": "23095135"
+}

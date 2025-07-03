@@ -1,0 +1,27 @@
+{
+	"choiceText": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"406A80694DE9EC0988EB8D9D0F1C011A\", \"Show me your current active buy orders.\")",
+	"nextNodeId":
+	{
+		"guid": "6064632240841162755",
+		"typeId": "1091110028",
+		"name": "DD_ServiceNPC_BuyOrderManager_105"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064629189107646464",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "Node_IsBuyOrderActive\r\n(Node_GetActorCityNode(GetInteractionTarget()))"
+	},
+	"narrativeRequirementsIds": [],
+	"choiceType": "Default",
+	"guid": "6064632140075500540",
+	"name": "DD_ServiceNPC_BuyOrderManager_101_Choice_1",
+	"typeId": "1091110027"
+}

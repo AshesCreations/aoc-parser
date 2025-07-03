@@ -1,0 +1,62 @@
+{
+	"type": "Kill",
+	"progressExpression":
+	{
+		"expression": ""
+	},
+	"nPCTaskIconOverrideId":
+	{
+		"guid": "0",
+		"typeId": "949952112329",
+		"name": "None"
+	},
+	"bAllowSatisfactionToRegress": false,
+	"completionQuantity": 10,
+	"tagQuery":
+	{
+		"tokenStreamVersion": 0,
+		"tagDictionary": [
+			{
+				"tagName": "Event.0010.SpiderPass.Matron"
+			},
+			{
+				"tagName": "character.vermin.spider"
+			},
+			{
+				"tagName": "character.vermin.miniSpider"
+			},
+			{
+				"tagName": "character.vermin.giantSpider"
+			},
+			{
+				"tagName": "Quest.MA_0010.GiantSpiderElite"
+			}
+		],
+		"queryTokenStream": [ 0, 1, 1, 5, 0, 1, 2, 3, 4 ],
+		"userDescription": "",
+		"autoDescription": " ANY( Event.0010.SpiderPass.Matron, character.vermin.spider, character.vermin.miniSpider, character.vermin.giantSpider, Quest.MA_0010.GiantSpiderElite )"
+	},
+	"professionFilterIds": [],
+	"gatherableFilterIds": [],
+	"collectionFilterId":
+	{
+		"guid": "0",
+		"typeId": "1091110041",
+		"name": "None"
+	},
+	"collectionCount": 5,
+	"objectivesIds": [],
+	"bCheckKillLocation": false,
+	"displayLocation": [],
+	"location": [],
+	"populationSetId":
+	{
+		"guid": "0",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"notifyType": "None",
+	"guid": "6064632032558186706",
+	"name": "MCOM_RVR_Kill_ArborealSpider",
+	"typeId": "1095125186"
+}

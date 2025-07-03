@@ -1,0 +1,13 @@
+{
+	"quality":
+	{
+		"expression": "const Rand = RandIntRange(1,100);\r\n\r\nconst IsCommon = Rand <= 80;\r\nconst IsUncommon = Rand <= 97 && Rand > 80;\r\nconst IsRare = Rand <= 99 && Rand > 97;\r\nconst IsHeroic = Rand > 99;\r\n\r\nSelectInt(IsCommon, RandIntRange(1,5),SelectInt(IsUncommon, RandIntRange(6,15),SelectInt(IsRare, RandIntRange(16,30),SelectInt(IsHeroic, RandIntRange(31,50),1))))"
+	},
+	"durability":
+	{
+		"expression": ""
+	},
+	"guid": "6064630611346980879",
+	"name": "Rarity_C70_UC20_R9_H1",
+	"typeId": "1091111111"
+}

@@ -1,0 +1,18 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"A60C579E4E6F36A53A905E81995A2355\", \"Needs Flower F\")",
+	"nextNodeId":
+	{
+		"guid": "6064631941003149353",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "Player_HasCommission(GetPlayer(),\"CSQ_RVR_0083_FB_FlowersAlongATrail\") &&\r\n!Player_ObjectiveStateEquals(GetPlayer(),\"CSQ_RVR_0083_FB_FlowersAlongATrail_FlowerGoto_6_OBJ\",EObjectiveState::Complete)"
+	},
+	"choiceType": "Default",
+	"guid": "6064631940991746081",
+	"name": "CSQ_RVR_0083_Hillfolk_DLG_11",
+	"typeId": "1091110027"
+}

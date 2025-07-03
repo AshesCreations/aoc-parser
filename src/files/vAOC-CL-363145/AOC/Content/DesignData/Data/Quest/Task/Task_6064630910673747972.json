@@ -1,0 +1,59 @@
+{
+	"type": "Kill",
+	"progressExpression":
+	{
+		"expression": ""
+	},
+	"bAllowSatisfactionToRegress": false,
+	"completionQuantity": 1,
+	"completionActionsIds": [],
+	"tagQuery":
+	{
+		"tokenStreamVersion": 0,
+		"tagDictionary": [
+			{
+				"tagName": "Quest.Named_RVR_BoughWarden"
+			}
+		],
+		"queryTokenStream": [ 0, 1, 1, 1, 0 ],
+		"userDescription": "",
+		"autoDescription": " ANY( Quest.Named_RVR_BoughWarden )"
+	},
+	"professionFilterIds": [],
+	"collectionFilterId":
+	{
+		"guid": "0",
+		"typeId": "1091110041",
+		"name": "None"
+	},
+	"collectionCount": 5,
+	"displayLocation": [
+		{
+			"location":
+			{
+				"x": -549740.894233,
+				"y": 649005.79007400002,
+				"z": 19331.323976
+			},
+			"radius": 30,
+			"map_DisplayType": "ICON",
+			"map_IconVisual":
+			{
+				"guid": "6064630988798951424",
+				"typeId": "949952112329",
+				"name": "None"
+			},
+			"map_DisplayName": "NSLOCTEXT(\"\", \"725F99B146170E51F4CC2C9DF3FBF504\", \"Oakenbane Keep\")"
+		}
+	],
+	"location": [],
+	"populationSetId":
+	{
+		"guid": "0",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"guid": "6064630910673747972",
+	"name": "TID_RVR_Bounty_BoughWarden",
+	"typeId": "1095125186"
+}

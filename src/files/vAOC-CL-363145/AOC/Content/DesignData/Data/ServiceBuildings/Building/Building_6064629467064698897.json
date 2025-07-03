@@ -1,0 +1,149 @@
+{
+	"prerequisitesIds": [],
+	"levelsIds":
+	{
+		"3":
+		{
+			"guid": "6064629466541654074",
+			"typeId": "7823458",
+			"name": "None"
+		},
+		"4":
+		{
+			"guid": "6064629466541850683",
+			"typeId": "7823458",
+			"name": "None"
+		},
+		"5":
+		{
+			"guid": "6064629466541981756",
+			"typeId": "7823458",
+			"name": "None"
+		},
+		"6":
+		{
+			"guid": "6064629466542178365",
+			"typeId": "7823458",
+			"name": "None"
+		}
+	},
+	"buildingAssetSetId":
+	{
+		"guid": "6064631992377278468",
+		"typeId": "1323521346",
+		"name": "None"
+	},
+	"nodeConstructionCostId":
+	{
+		"guid": "6064631166522753329",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"maintenanceCostId":
+	{
+		"guid": "6064632123091452197",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"playerConstructionCostId":
+	{
+		"guid": "6064631166878155109",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"damagedRepairCostId":
+	{
+		"guid": "6064632123127169327",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"disarrayRepairCostId":
+	{
+		"guid": "6064632123105018154",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"disarrayDebuffId":
+	{
+		"guid": "0",
+		"typeId": "30316002",
+		"name": "None"
+	},
+	"dEPRECATED_ExpansionsIds": [],
+	"serviceBuildingType": "Scholarly",
+	"housingPropertyTiersIds": [],
+	"icon": "/Game/UI/Icons/Nodes/Buildings/BuildingNodes/TUI_Icon_NodeBldngs_SchoolofConstruction.TUI_Icon_NodeBldngs_SchoolofConstruction",
+	"mapIconVisualId":
+	{
+		"guid": "6064632399367372812",
+		"typeId": "949952112329",
+		"name": "None"
+	},
+	"buildingName": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"87C79D6247BCA04750963CB1DA8249B2\", \"School of Construction\")",
+	"buildingDescription": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"86B2E55741B2045E159A13B42BDC3FD7\", \"The School of Construction is a passive service building that provides reductions to building construction and maintenance costs, as well as crafting bonuses to players.\")",
+	"buildingServices": [
+		{
+			"icon": "/Game/UI/Icons/Nodes/Buildings/BuildingServices/TUI_Icon_ServiceIcon_NodeBuff.TUI_Icon_ServiceIcon_NodeBuff",
+			"serviceName": "NSLOCTEXT(\"[3A937076879C9EE4CFD42687DD9352E3]\", \"81325D104F2FFF7CB7B03791D1C7ED82\", \"Zone of Influence: Increased Construction Speed\")",
+			"serviceDescription": "NSLOCTEXT(\"[3A937076879C9EE4CFD42687DD9352E3]\", \"E70D4D5D4D92B8A1FD497595C9D37BDF\", \"Provides the Node increased construction speed on new buildings\")"
+		},
+		{
+			"icon": "/Game/UI/Icons/Nodes/Buildings/BuildingServices/TUI_Icon_ServiceIcon_NodeBuff.TUI_Icon_ServiceIcon_NodeBuff",
+			"serviceName": "NSLOCTEXT(\"[3A937076879C9EE4CFD42687DD9352E3]\", \"25DC02E84DE31ED3C34D75AEEA34E003\", \"Zone of Influence: A Gift for Craft\")",
+			"serviceDescription": "NSLOCTEXT(\"[3A937076879C9EE4CFD42687DD9352E3]\", \"9E8E7A7E47B098EE4C3D95A398A89168\", \"Provides players with increased crafting XP while within the Zone of Influence\")"
+		}
+	],
+	"buildingServiceDescriptions": [],
+	"bDisplayInBuildingManager": true,
+	"constructionPhaseDuration":
+	{
+		"duration": "604800000"
+	},
+	"buildingContributionPhasesId":
+	{
+		"guid": "6064632161551122432",
+		"typeId": "1091110047",
+		"name": "None"
+	},
+	"dEPRECATED_CapabilitiesIds": [],
+	"dEPRECATED_NodeEffectId":
+	{
+		"guid": "0",
+		"typeId": "9127426",
+		"name": "None"
+	},
+	"localeOriginId":
+	{
+		"guid": "0",
+		"typeId": "421003",
+		"name": "None"
+	},
+	"nodeModificationsIds": [
+		{
+			"guid": "6064632105247178754",
+			"typeId": "1091110048",
+			"name": "None"
+		}
+	],
+	"expansionSkillTreeId":
+	{
+		"guid": "0",
+		"typeId": "30316003",
+		"name": "None"
+	},
+	"repairStateDurationModifier":
+	{
+		"expression": ""
+	},
+	"demolitionStateDurationModifier":
+	{
+		"expression": ""
+	},
+	"voteResultDuration":
+	{
+		"expression": ""
+	},
+	"guid": "6064629467064698897",
+	"name": "Construction_Support_SchoolOfConstruction_Building",
+	"typeId": "7823463"
+}

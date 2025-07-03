@@ -1,0 +1,33 @@
+{
+	"choiceText": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"16E0F81B4F420288CD13A39198CE2DEC\", \"I\\'ve successfully defended a caravan to its destination!\")",
+	"nextNodeId":
+	{
+		"guid": "6064632259165880345",
+		"typeId": "1091110028",
+		"name": "Master_Dialog_Kaelar_Guard_56"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064632259161358359",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064632259161751576",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "Player_ObjectiveStateEquals(GetPlayer(), \"CSQ_0161_FTUE_DefendCaravan_2_deliver\", EObjectiveState::Complete)\r\n&& !Player_ObjectiveStateEquals(GetPlayer(), \"CSQ_0161_FTUE_DefendCaravan_3_return\", EObjectiveState::Complete)"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064632259153166358",
+	"name": "Master_Dialog_Kaelar_Guard_39_Choice_8",
+	"typeId": "1091110027"
+}

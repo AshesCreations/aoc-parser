@@ -1,0 +1,117 @@
+{
+	"eventName": "NSLOCTEXT(\"\", \"228294AB4BA83CEE22132FA9D4A66C3A\", \"Siegebreaking\")",
+	"gameplayTags":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"activationPredicatesIds": [
+		{
+			"guid": "6064630964912193741",
+			"typeId": "23095129",
+			"name": "None"
+		}
+	],
+	"minChallengeRating": 0,
+	"maxChallengeRating": 30,
+	"eventType": 32,
+	"locationId":
+	{
+		"guid": "6064631561688711234",
+		"typeId": "5127371160",
+		"name": "None"
+	},
+	"desiredTimeSlot": "0001.01.01-00.00.00",
+	"frequency": 24,
+	"priority": 1,
+	"rewardTableId":
+	{
+		"guid": "0",
+		"typeId": "1091110040",
+		"name": "None"
+	},
+	"rewardPopulationSetId":
+	{
+		"guid": "0",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"startStageId":
+	{
+		"guid": "6064630964912193731",
+		"typeId": "23095131",
+		"name": "None"
+	},
+	"stagesIds": [
+		{
+			"guid": "6064630964912193731",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064630964912193754",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064630964912193732",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064630964912193734",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064630964912193735",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064630964912193736",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064630964912193733",
+			"typeId": "23095131",
+			"name": "None"
+		}
+	],
+	"alignmentsIds": [],
+	"mapDisplayType": "Biome",
+	"mapEventIcon": "/Game/UI/Widgets/Narrative/Textures/TUI_Icon_Event_PvETracker.TUI_Icon_Event_PvETracker",
+	"bDisplayOnTracker": true,
+	"notificationRadius": 15000,
+	"mapRadiusMinumum": 1000,
+	"cooldownTimer": 600,
+	"bDisabled": false,
+	"maxInstanceCount": 1,
+	"requiredMapName": "",
+	"comments": [],
+	"bIsTemplate": true,
+	"flowNodes": [
+		{
+			"flowType": "EventEntry",
+			"graphLocation":
+			{
+				"x": 87.500000186264529,
+				"y": -732.49999951571226
+			},
+			"id": 0
+		},
+		{
+			"flowType": "EventExit",
+			"graphLocation":
+			{
+				"x": -600,
+				"y": 2600
+			},
+			"id": 1
+		}
+	],
+	"guid": "6064630964912193730",
+	"name": "SAPE_0023_DefeatSiegemasterResh",
+	"typeId": "23095125"
+}

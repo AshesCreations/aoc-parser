@@ -1,0 +1,61 @@
+{
+	"displayName": "NSLOCTEXT(\"[1909495A4C2095068D406C9D33F90055]\", \"021C1CD34E44DD2D41AF00BBD56BE3F9\", \"Physical Power\")",
+	"description": "NSLOCTEXT(\"\", \"C1116476451D091E8907A5AD9088C434\", \"Increases the amount of physical damage done\")",
+	"bHidden": false,
+	"gameplayType": "Type_Combat",
+	"bHasWaterfallStatsUI": false,
+	"waterfallStatsUIIds": [],
+	"bDisplayAsPercentage": false,
+	"statType": "Type_Float",
+	"bClampStatFinalValue": false,
+	"bMultiplyStatMods": false,
+	"bMultiplyCompliment": false,
+	"base":
+	{
+		"expression": "const base = GetStat(GetOwner(), $#10516612381411111:6064628617716498439$); \r\nconst baseRating = GetStat(GetOwner(), $#10516612381411111:6064628617716695051$);\r\nconst coeff = EvalFormula($#10516612381411113:6064630531420521450$);\r\nconst scalar = EvalFormula($#10516612381411113:6064633419410178056$);\r\nconst baseAdj = base - (baseRating / (baseRating + coeff))*scalar;\r\nconst rating = baseRating + GetStat(GetInstigator(), $#10516612381411111:109183603267200$);\r\nbaseAdj + rating / (rating + coeff) * scalar"
+	},
+	"waterfallStatsBaseIds": [
+		{
+			"guid": "6064628617716498439",
+			"typeId": "10516612381411111",
+			"name": "None"
+		},
+		{
+			"guid": "109183603267200",
+			"typeId": "10516612381411111",
+			"name": "None"
+		}
+	],
+	"valueMin":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMinIds": [],
+	"valueMax":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMaxIds": [],
+	"regenRate":
+	{
+		"expression": ""
+	},
+	"waterfallStatsRegenIds": [],
+	"bRegenWhileDead": false,
+	"bRecalculateOnCombatState": false,
+	"onSpawn": "Reset_None",
+	"onDeath": "Reset_None",
+	"onRevive": "Reset_None",
+	"bPersistValue": false,
+	"replication": 5,
+	"shieldStatId":
+	{
+		"guid": "0",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"grantedEffects": [],
+	"guid": "109343399171797",
+	"name": "PhysicalPower",
+	"typeId": "10516612381411111"
+}

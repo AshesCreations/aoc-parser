@@ -1,0 +1,106 @@
+{
+	"eventName": "NSLOCTEXT(\"[4BE4F0A16D08556ACD6685BF392E6719]\", \"F6C85EA34C1FAB2BFBBD8FAF7DF05924\", \"Gilded Mine Warden\")",
+	"gameplayTags":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"activationPredicatesIds": [
+		{
+			"guid": "6064633776400760833",
+			"typeId": "23095129",
+			"name": "None"
+		}
+	],
+	"minChallengeRating": 0,
+	"maxChallengeRating": 30,
+	"eventLevel": 5,
+	"eventType": 128,
+	"locationId":
+	{
+		"guid": "6064633776400760843",
+		"typeId": "5127371160",
+		"name": "None"
+	},
+	"desiredTimeSlot": "0001.01.01-00.00.00",
+	"frequency": 24,
+	"priority": 1,
+	"rewardTableId":
+	{
+		"guid": "0",
+		"typeId": "1091110040",
+		"name": "None"
+	},
+	"rewardPopulationSetId":
+	{
+		"guid": "0",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"startStageId":
+	{
+		"guid": "6064633776418324504",
+		"typeId": "23095131",
+		"name": "None"
+	},
+	"stagesIds": [
+		{
+			"guid": "6064633776418324504",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064633776400760834",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064633776400760836",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064633776400760838",
+			"typeId": "23095131",
+			"name": "None"
+		}
+	],
+	"interactVolumesIds": [],
+	"alignmentsIds": [],
+	"mapDisplayType": "Biome",
+	"mapEventIcon": "/Game/UI/Icons/Map/TUI_Icon_Map_Event_Active.TUI_Icon_Map_Event_Active",
+	"mapDisplayTrackerFiltersIds": [],
+	"bDisplayOnTracker": true,
+	"notificationRadius": 15000,
+	"mapRadiusMinumum": 1000,
+	"cooldownTimer": 600,
+	"bDisabled": false,
+	"maxInstanceCount": 1,
+	"requiredMapName": "Noah_Test_Map",
+	"comments": [],
+	"bIsTemplate": true,
+	"flowNodes": [
+		{
+			"flowType": "EventEntry",
+			"graphLocation":
+			{
+				"x": -800,
+				"y": 100
+			},
+			"id": 0
+		},
+		{
+			"flowType": "EventExit",
+			"graphLocation":
+			{
+				"x": 2740,
+				"y": 660
+			},
+			"id": 1
+		}
+	],
+	"bSkipCrashRecovery": false,
+	"guid": "6064633776400760832",
+	"name": "EVT_ANV_0002_GildedMineWarden",
+	"typeId": "23095125"
+}

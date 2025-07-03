@@ -1,0 +1,31 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 2,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "HitHasTag(GetHitRecord(GetHitEvent()), \"Element.Magical\")\r\n|| HitHasTag(GetHitRecord(GetHitEvent()), \"Element.Physical\")\r\n|| HitHasTag(GetHitRecord(GetHitEvent()), \"Element.True\")"
+	},
+	"bEvaluateApplyingHit": true,
+	"instigator": "Owner",
+	"targetsBitmask": 1,
+	"reactHitsIds": [
+		{
+			"guid": "6064631781823873572",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"instigatorProcLimit": 0,
+	"globalProcLimit": 0,
+	"procReactOnApply": false,
+	"guid": "6064631781819613731",
+	"name": "Zombie_Disease_Infected_DamageReaction",
+	"typeId": "3031600202"
+}

@@ -1,0 +1,22 @@
+{
+	"statRefId":
+	{
+		"guid": "6064631359436099247",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"value":
+	{
+		"expression": "const max = 8.0 * EvalFormula($#10516612381411113:6064632664637833222$);\r\nconst min = 4.0 * EvalFormula($#10516612381411113:6064632664637833222$);\r\nconst dur = GetStat(GetTarget(), $#10516612381411111:6064631359436099247$);\r\nMax(max - dur, min)"
+	},
+	"bUseShieldAbsorb": false,
+	"shieldAbsorbPercentage":
+	{
+		"expression": ""
+	},
+	"bShowFloatingText": false,
+	"valueInputTerms": [],
+	"guid": "6064632506616386722",
+	"name": "Status_BurningStat_FinisherDur",
+	"typeId": "3031600201"
+}

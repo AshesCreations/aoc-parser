@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"EEA620C64FB7D95643B87880B3EB3FD2\", \"I destroyed the source.\")",
+	"nextNodeId":
+	{
+		"guid": "6064630412333357312",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0005A_FGG_ForGreaterGlory\",\"MAP_0005A_FGG_Phase01\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0005A_MOK_TheMistsOfKorraLoch\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005A_MOK_TheMistsOfKorraLoch\",\"KillFendris\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005A_MOK_TheMistsOfKorraLoch\",\"ReturnToOrrik\")\r\n"
+	},
+	"guid": "6064630412298750011",
+	"name": "MADD_0005A_TIG_NPC_OrrikBlackwood_Phase01_30",
+	"typeId": "1091110027"
+}

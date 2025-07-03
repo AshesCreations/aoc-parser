@@ -1,0 +1,22 @@
+{
+	"choiceText": "I don't know yet",
+	"nextNodeId":
+	{
+		"guid": "6064632745899265212",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "(Player_HasCommission (GetPlayer(), \"SQ_RVR_Samias_Martin_BuiltOnBlood\") && !Player_ObjectiveStateEquals(GetPlayer(), \"NarrativeObjective_RVR_Samias_Miraleth_BuiltOnBlood_3\", EObjectiveState::Complete) && !Player_ObjectiveStateEquals(GetPlayer(), \"NarrativeObjective_RVR_Samias_Miraleth_BuiltOnBlood_2\", EObjectiveState::Complete))"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064632745899265211",
+	"name": "SQ_NOC_RVR_Samias_Miraleth_MartinSwift_4_Choice_2",
+	"typeId": "1091110027"
+}

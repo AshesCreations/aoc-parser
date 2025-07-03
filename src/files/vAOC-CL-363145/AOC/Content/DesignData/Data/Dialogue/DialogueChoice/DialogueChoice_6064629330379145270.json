@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"7C659A744AD9291A52BB24997FA29614\", \"Fun and faith?\")",
+	"nextNodeId":
+	{
+		"guid": "6064629330386944055",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MIA_0016_LOL_LastOfLyneth\",\"MIP_0016_LOL_Phase02\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MIQ_0016_TMC_TheMidnightCarnival\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MIQ_0016_TMC_TheMidnightCarnival\",\"SpokeToRingmaster\")"
+	},
+	"guid": "6064629330379145270",
+	"name": "MIDD_0016_TMC_RingmasterNero_4",
+	"typeId": "1091110027"
+}

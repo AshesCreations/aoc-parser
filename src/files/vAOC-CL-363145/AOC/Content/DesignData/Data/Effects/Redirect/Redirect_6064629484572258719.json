@@ -1,0 +1,14 @@
+{
+	"trigger":
+	{
+		"expression": "GetStatModValue(GetHitInProgress(), GetTarget(), $#10516612381411111:108986352686712$) < 0.0 &&\r\n!HitFlagsContains(GetHitFlags(GetHitInProgress()), EHitFlag::Redirect)"
+	},
+	"target": "RedirectInstigator",
+	"ratio":
+	{
+		"expression": "0.0"
+	},
+	"guid": "6064629484572258719",
+	"name": "Tank_DelayPain_Redirect",
+	"typeId": "3031600209"
+}

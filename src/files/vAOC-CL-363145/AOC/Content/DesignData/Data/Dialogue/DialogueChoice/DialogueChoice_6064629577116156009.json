@@ -1,0 +1,18 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"D123AA5F44479D5C0CC450A079407AB2\", \"I\\'ve got a promisory note from the Scholar\\'s Academy. Will you deliver some meat to Botanist Lorne?\")",
+	"nextNodeId":
+	{
+		"guid": "6064629577116156011",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "//Player_HasItem(GetPlayer(),6064629576693121037)\r\n\r\n// the above doesn't compile, returning false -Bucky\r\nfalse"
+	},
+	"choiceType": "Default",
+	"guid": "6064629577116156009",
+	"name": "DDR_0014_Butcher_6",
+	"typeId": "1091110027"
+}

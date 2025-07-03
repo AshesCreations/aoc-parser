@@ -1,0 +1,22 @@
+{
+	"choiceText": "",
+	"nextNodeId":
+	{
+		"guid": "6064632435122765904",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "(Player_HasCommission (GetPlayer(), \"SQ_Lionhold_ClothArmor_1\") && !Player_HasCompletedCommission(GetPlayer(), \"SQ_Lionhold_ClothArmor_1\") && !Player_ObjectiveStateEquals(GetPlayer(), \"CSQ_Lionhold_ClothArmor_Task_3_Choose\", EObjectiveState::Complete))"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064632435122765900",
+	"name": "SQ_Lionhold_ClothArmor_Turnin_2_Choice_1",
+	"typeId": "1091110027"
+}

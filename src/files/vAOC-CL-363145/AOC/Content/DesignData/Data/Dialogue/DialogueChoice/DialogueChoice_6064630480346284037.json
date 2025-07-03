@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"7FCA96F24D6518BE18B6E693DEDA85EF\", \"What crystal boom?\")",
+	"nextNodeId":
+	{
+		"guid": "6064630480351002630",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0005B_TEW_EnemyWithin\",\"MAP_0005B_TEW_Phase01\")&&\r\n!IsOnStoryArcQuest(GetPlayer(),\"MAQ_0005B_HHB_HighwaymenHillsBust\")&&\r\nIsStoryArcQuestAvailable(GetPlayer(),\"MAQ_0005B_HHB_HighwaymenHillsBust\")\r\n"
+	},
+	"guid": "6064630480346284037",
+	"name": "MADD_0005B_TEW_CaptainEudoxia_Phase01_4",
+	"typeId": "1091110027"
+}

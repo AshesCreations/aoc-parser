@@ -1,0 +1,91 @@
+{
+	"completionResponsesIds": [],
+	"objectivesToCompleteUponCompletionIds": [],
+	"objectivesToRevealUponCompletionIds": [],
+	"itemsToGrantUponCompletion": [
+		{
+			"item":
+			{
+				"itemId":
+				{
+					"guid": "6064633860984747291",
+					"typeId": "1091110003",
+					"name": "None"
+				},
+				"variationId":
+				{
+					"guid": "0",
+					"typeId": "1091111111",
+					"name": "None"
+				}
+			},
+			"quantity": 1,
+			"bRemoveAll": false
+		}
+	],
+	"channelDuration": 0,
+	"activePredicate":
+	{
+		"expression": "!Player_HasItem(GetPlayer(),\"ANV_FTUE_HR_0009_ThoseThatRemained_AnvilRune\")&&\r\n!Player_HasItem(GetPlayer(),\"ANV_FTUE_HR_0009_ThoseThatRemained_BoarRune\")&&\r\n!Player_HasItem(GetPlayer(),\"ANV_FTUE_HR_0009_ThoseThatRemained_SerpentRune\")"
+	},
+	"cuePredicate":
+	{
+		"expression": "!Player_HasItem(GetPlayer(),\"ANV_FTUE_HR_0009_ThoseThatRemained_AnvilRune\")&&\r\n!Player_HasItem(GetPlayer(),\"ANV_FTUE_HR_0009_ThoseThatRemained_BoarRune\")&&\r\n!Player_HasItem(GetPlayer(),\"ANV_FTUE_HR_0009_ThoseThatRemained_SerpentRune\")"
+	},
+	"visiblePredicate":
+	{
+		"expression": "!Player_HasItem(GetPlayer(),\"ANV_FTUE_HR_0009_ThoseThatRemained_AnvilRune\")&&\r\n!Player_HasItem(GetPlayer(),\"ANV_FTUE_HR_0009_ThoseThatRemained_BoarRune\")&&\r\n!Player_HasItem(GetPlayer(),\"ANV_FTUE_HR_0009_ThoseThatRemained_SerpentRune\")"
+	},
+	"showErrorIfNotVisible": false,
+	"deleteOnCompletion": false,
+	"singleUse": false,
+	"alwaysShowUIPrompt": true,
+	"cancelChannelIfActivePredicateEverFails": true,
+	"interactTextFormat": "NSLOCTEXT(\"[4BE4F0A16D08556ACD6685BF392E6719]\", \"CAB5E2A84C7B9B70C02AD3A23C2A1B5C\", \"Pickup Rune\")",
+	"channelModifierType": "NONE",
+	"rewardTableId":
+	{
+		"guid": "0",
+		"typeId": "1091110008",
+		"name": "None"
+	},
+	"startEffect": "None",
+	"endEffect": "None",
+	"failEffect": "None",
+	"successEffect": "None",
+	"cueEffect": "/Game/DesignAssets/Quests/SidequestAssets/SQ_0121_NewAelaCorridor/FX_Interact_Sparkle_White.FX_Interact_Sparkle_White",
+	"startSound": "None",
+	"endSound": "None",
+	"failSound": "None",
+	"successSound": "None",
+	"cueSound": "None",
+	"interactAnimTag": "None",
+	"deletionDelay": 0,
+	"activeCueEnabled": true,
+	"activeCueIgnoresActivePredicate": false,
+	"facePlayer": false,
+	"allowInCombat": true,
+	"spawnAtBottomCapsule": false,
+	"channelAnimation": "None",
+	"interactRadius": 200,
+	"discoveryDistance": 200,
+	"interactTolerance": 30,
+	"interactAngle": 0,
+	"bRequireLOS": false,
+	"busyTime": 0.89999997615814209,
+	"clientBusyTime": 1,
+	"channelStartResponseIds": [],
+	"failResponsesIds": [],
+	"gatheringInteractionDataId":
+	{
+		"guid": "0",
+		"typeId": "19846",
+		"name": "None"
+	},
+	"interactCooldownMap":
+	{
+	},
+	"guid": "6064633860937692438",
+	"name": "ANV_FTUE_HR_0009_ThoseThatRemained_AnvilRune_Interact",
+	"typeId": "1091110031"
+}

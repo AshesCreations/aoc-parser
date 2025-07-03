@@ -1,0 +1,118 @@
+{
+	"eventName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"86228E8346F1D9AFEF9EF4A753E0E786\", \"Burying the Hatchet\")",
+	"gameplayTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "artisanship.gathering.lumberjacking"
+			}
+		],
+		"parentTags": [
+			{
+				"tagName": "artisanship.gathering"
+			},
+			{
+				"tagName": "artisanship"
+			}
+		]
+	},
+	"activationPredicatesIds": [],
+	"minChallengeRating": 0,
+	"maxChallengeRating": 30,
+	"eventType": 128,
+	"locationId":
+	{
+		"guid": "0",
+		"typeId": "5127371160",
+		"name": "None"
+	},
+	"desiredTimeSlot": "0001.01.01-00.00.00",
+	"frequency": 12,
+	"priority": 1,
+	"rewardTableId":
+	{
+		"guid": "0",
+		"typeId": "1091110040",
+		"name": "None"
+	},
+	"rewardPopulationSetId":
+	{
+		"guid": "0",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"startStageId":
+	{
+		"guid": "6064632116209385589",
+		"typeId": "23095131",
+		"name": "None"
+	},
+	"stagesIds": [
+		{
+			"guid": "6064632116209385589",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064632116211679351",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064632116212727928",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064632116214235258",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064632116213514361",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064632116210303094",
+			"typeId": "23095131",
+			"name": "None"
+		}
+	],
+	"interactVolumesIds": [],
+	"alignmentsIds": [],
+	"mapDisplayType": "World",
+	"mapEventIcon": "/Game/UI/Icons/Items/Gear/Artisan/Tools/Lumberjacking/TUI_Icon_Gear_Artisan_Lumberjacking_Tool_Axe.TUI_Icon_Gear_Artisan_Lumberjacking_Tool_Axe",
+	"bDisplayOnTracker": true,
+	"notificationRadius": 100000,
+	"mapRadiusMinumum": 85000,
+	"cooldownTimer": 1,
+	"bDisabled": false,
+	"maxInstanceCount": 0,
+	"requiredMapName": "",
+	"comments": [],
+	"bIsTemplate": false,
+	"flowNodes": [
+		{
+			"flowType": "EventEntry",
+			"graphLocation":
+			{
+				"x": -824.89222598544256,
+				"y": 431.62780922050337
+			},
+			"id": 0
+		},
+		{
+			"flowType": "EventExit",
+			"graphLocation":
+			{
+				"x": 4552.4696602745125,
+				"y": -1223.4431072239825
+			},
+			"id": 1
+		}
+	],
+	"guid": "6064632116013367337",
+	"name": "GuildWar_Variant2_Medium_PVP_Phase1_EventDef",
+	"typeId": "23095125"
+}

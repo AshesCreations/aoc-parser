@@ -1,0 +1,32 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 4,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0,
+		"fishingEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "const regenerative = GetSkillPurchased(GetInstigator(), $#30316003:107813788866168$, $#981011333:6064630706725388629$);\r\nconst damage = GetStatModValue(GetHitEvent(), $#10516612381411111:108986352686712$) < 0.0;\r\nconst finisher = HitHasTag(GetHitEvent(), \"ComboStep.End\");\r\n\r\nregenerative && damage && finisher"
+	},
+	"bEvaluateApplyingHit": false,
+	"instigator": "Owner",
+	"targetsBitmask": 9,
+	"reactHitsIds": [
+		{
+			"guid": "6064632734824014852",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"instigatorProcLimit": 0,
+	"globalProcLimit": 0,
+	"procReactOnApply": false,
+	"guid": "6064632734821852105",
+	"name": "Fighter_Passive_FormOfFluidity_Regenerative",
+	"typeId": "3031600202"
+}

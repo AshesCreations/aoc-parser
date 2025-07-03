@@ -1,0 +1,116 @@
+{
+	"eventName": "NSLOCTEXT(\"[4BE4F0A16D08556ACD6685BF392E6719]\", \"9731BFB94764646D406D198C166F068F\", \"Event Benchmark Test\")",
+	"gameplayTags":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"activationPredicatesIds": [],
+	"minChallengeRating": 0,
+	"maxChallengeRating": 30,
+	"eventType": 128,
+	"locationId":
+	{
+		"guid": "6064632094246699009",
+		"typeId": "5127371160",
+		"name": "None"
+	},
+	"desiredTimeSlot": "0001.01.01-00.00.00",
+	"frequency": 24,
+	"priority": 1,
+	"rewardTableId":
+	{
+		"guid": "0",
+		"typeId": "1091110040",
+		"name": "None"
+	},
+	"rewardPopulationSetId":
+	{
+		"guid": "0",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"startStageId":
+	{
+		"guid": "6064632094246699010",
+		"typeId": "23095131",
+		"name": "None"
+	},
+	"stagesIds": [
+		{
+			"guid": "6064632094246699010",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064632094246699017",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064632094246699021",
+			"typeId": "23095131",
+			"name": "None"
+		}
+	],
+	"interactVolumesIds": [],
+	"alignmentsIds": [],
+	"mapDisplayType": "World",
+	"mapEventIcon": "/Game/UI/Widgets/Narrative/Textures/TUI_Icon_Event_PvE.TUI_Icon_Event_PvE",
+	"bDisplayOnTracker": true,
+	"notificationRadius": 15000,
+	"mapRadiusMinumum": 10000,
+	"cooldownTimer": 300,
+	"bDisabled": false,
+	"maxInstanceCount": 1,
+	"requiredMapName": "Narrative_Test",
+	"comments": [
+		{
+			"commentGuid": "6064632026533462108",
+			"comment": "Begins Here",
+			"location":
+			{
+				"x": -1491.201000734977,
+				"y": -700.62448749535884,
+				"z": 0
+			},
+			"size":
+			{
+				"x": 858.50422036647797,
+				"y": 718.56836092472076,
+				"z": 0
+			},
+			"color":
+			{
+				"r": 1,
+				"g": 0.16826939582824707,
+				"b": 0.33245152235031128,
+				"a": 0.5
+			}
+		}
+	],
+	"bIsTemplate": true,
+	"flowNodes": [
+		{
+			"flowType": "EventEntry",
+			"graphLocation":
+			{
+				"x": -1147.3098409781446,
+				"y": -1152.6244874953588
+			},
+			"id": 0
+		},
+		{
+			"flowType": "EventExit",
+			"graphLocation":
+			{
+				"x": 1288.2250098533059,
+				"y": -447.8619500724559
+			},
+			"id": 1
+		}
+	],
+	"guid": "6064632094246699008",
+	"name": "RoamingEvent_YoYo_Test",
+	"typeId": "23095125"
+}

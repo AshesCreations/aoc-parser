@@ -1,0 +1,22 @@
+{
+	"choiceText": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"CC820DDC444FE8CCC1C0FAAB1CE6EF96\", \"I\\'m interested in becoming a citizen.\")",
+	"nextNodeId":
+	{
+		"guid": "6064632117899755527",
+		"typeId": "1091110028",
+		"name": "Master_Dialog_Kaelar_Guard_34"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "GetCurrentNode(GetPlayer()) != $#1323521343:6064630651307950121$ \r\n&& !Node_IsPlayerCitizen(GetPlayer()) \r\n&& GetCharacterLevel(GetPlayer()) >= 10"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064632117894250499",
+	"name": "Master_Dialog_Kaelar_Guard_32_Choice_1",
+	"typeId": "1091110027"
+}

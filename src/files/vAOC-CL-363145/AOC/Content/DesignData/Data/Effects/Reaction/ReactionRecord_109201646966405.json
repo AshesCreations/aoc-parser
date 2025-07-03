@@ -1,0 +1,36 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 2,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "GetStatModValue(GetHitEvent(), GetOwner(), $#10516612381411111:108986352686712$) < 0.0 && HitFlagsContains(GetHitFlags(GetHitEvent(), GetOwner()), EHitFlag::Lethal)"
+	},
+	"bEvaluateApplyingHit": false,
+	"instigator": "Owner",
+	"targetsBitmask": 1,
+	"reactHitsIds": [
+		{
+			"guid": "6064631511256400720",
+			"typeId": "30316005",
+			"name": "None"
+		},
+		{
+			"guid": "6064629643151742639",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"instigatorProcLimit": 0,
+	"globalProcLimit": 0,
+	"procReactOnApply": false,
+	"guid": "109201646966405",
+	"name": "Cleric_DefiantLight",
+	"typeId": "3031600202"
+}

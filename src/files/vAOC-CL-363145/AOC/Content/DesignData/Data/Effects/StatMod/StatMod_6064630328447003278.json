@@ -1,0 +1,22 @@
+{
+	"statRefId":
+	{
+		"guid": "109183576135288",
+		"typeId": "10516612381411111",
+		"name": "Health"
+	},
+	"value":
+	{
+		"expression": "const DmgRaw = GetStatModValue(GetHitEvent(), $#10516612381411111:108986352686712$);\r\nconst DmgEffective = GetStatModEffectiveValue(GetHitEvent(), $#10516612381411111:108986352686712$);\r\n0.5 * Max(DmgEffective - DmgRaw, 0.0)"
+	},
+	"bUseShieldAbsorb": false,
+	"shieldAbsorbPercentage":
+	{
+		"expression": ""
+	},
+	"bShowFloatingText": true,
+	"valueInputTerms": [],
+	"guid": "6064630328447003278",
+	"name": "Fighter_LethalBlow_KillTrigger_Mana",
+	"typeId": "3031600201"
+}

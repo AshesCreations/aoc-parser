@@ -1,0 +1,313 @@
+{
+	"eventName": "NSLOCTEXT(\"\", \"21C9ECD2458BC977B18B3AA4BE40F88E\", \"Skeleton Rush\")",
+	"gameplayTags":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"activationPredicatesIds": [
+		{
+			"guid": "6064629745080205315",
+			"typeId": "23095129",
+			"name": "None"
+		}
+	],
+	"minChallengeRating": 0,
+	"maxChallengeRating": 30,
+	"eventType": 1,
+	"locationId":
+	{
+		"guid": "6064631561688711215",
+		"typeId": "5127371160",
+		"name": "None"
+	},
+	"desiredTimeSlot": "0001.01.01-00.00.00",
+	"frequency": 24,
+	"priority": 1,
+	"rewardTableId":
+	{
+		"guid": "6064630202447953920",
+		"typeId": "1091110040",
+		"name": "None"
+	},
+	"rewardPopulationSetId":
+	{
+		"guid": "6064631353093193729",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"startStageId":
+	{
+		"guid": "6064629745080205317",
+		"typeId": "23095131",
+		"name": "None"
+	},
+	"stagesIds": [
+		{
+			"guid": "6064629745080205317",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064629745080270869",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064629745080270856",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064629745080270861",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064629783791339063",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064629783779739173",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064629783788193327",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064629783321576968",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064629745080205314",
+			"typeId": "23095131",
+			"name": "None"
+		}
+	],
+	"interactVolumesIds": [],
+	"alignmentsIds": [],
+	"mapDisplayType": "Biome",
+	"mapEventIcon": "/Game/UI/Widgets/Narrative/Textures/TUI_Icon_Event_PvE.TUI_Icon_Event_PvE",
+	"bDisplayOnTracker": true,
+	"notificationRadius": 15000,
+	"mapRadiusMinumum": 1000,
+	"cooldownTimer": 600,
+	"bDisabled": true,
+	"maxInstanceCount": 1,
+	"requiredMapName": "Verra_World_Master",
+	"comments": [
+		{
+			"commentGuid": "6064629733281169489",
+			"comment": "Require 2 units of player activity in the approximate POI boundaries",
+			"location":
+			{
+				"x": -185.15738833606983,
+				"y": -728.63289870250742,
+				"z": 0
+			},
+			"size":
+			{
+				"x": 610.46755981445312,
+				"y": 334.04976916313171,
+				"z": 0
+			},
+			"color":
+			{
+				"r": 0.5,
+				"g": 0.5,
+				"b": 0.5,
+				"a": 0.5
+			}
+		},
+		{
+			"commentGuid": "6064629783872407118",
+			"comment": "Event Resets after a timer",
+			"location":
+			{
+				"x": 1887.8215165458423,
+				"y": 989.89225251339963,
+				"z": 0
+			},
+			"size":
+			{
+				"x": 797.94873595237732,
+				"y": 278.71794927120209,
+				"z": 0
+			},
+			"color":
+			{
+				"r": 0.5,
+				"g": 0.5,
+				"b": 0.5,
+				"a": 0.5
+			}
+		},
+		{
+			"commentGuid": "6064629806517846335",
+			"comment": "Participant Enters the Temple",
+			"location":
+			{
+				"x": 551.61514265007486,
+				"y": -728.06444980237177,
+				"z": 0
+			},
+			"size":
+			{
+				"x": 666.66666126251221,
+				"y": 329.99999248981476,
+				"z": 0
+			},
+			"color":
+			{
+				"r": 0.5,
+				"g": 0.5,
+				"b": 0.5,
+				"a": 0.5
+			}
+		},
+		{
+			"commentGuid": "6064629840639754332",
+			"comment": "This event uses the wave event template ands adds some extra custom components. It uses sightly more complex stages to build a custom Skeleton Rush encounter.",
+			"location":
+			{
+				"x": -191.30169735879321,
+				"y": -954.98697711436046,
+				"z": 0
+			},
+			"size":
+			{
+				"x": 1409.9999184608459,
+				"y": 180.00000107288361,
+				"z": 0
+			},
+			"color":
+			{
+				"r": 0.5,
+				"g": 0.5,
+				"b": 0.5,
+				"a": 0.5
+			}
+		},
+		{
+			"commentGuid": "6064629840656400477",
+			"comment": "Sksletons spawn at one of four locations at every stage. Skeletons keep respawning until the bone pile is destroyed.",
+			"location":
+			{
+				"x": 937.60361571548481,
+				"y": -143.23109247792735,
+				"z": 0
+			},
+			"size":
+			{
+				"x": 779.090895652771,
+				"y": 1076.8181529045105,
+				"z": 0
+			},
+			"color":
+			{
+				"r": 0.5,
+				"g": 0.5,
+				"b": 0.5,
+				"a": 0.5
+			}
+		},
+		{
+			"commentGuid": "6064629840661315678",
+			"comment": "Final encounter is an elite mimic.",
+			"location":
+			{
+				"x": 943.05814837621176,
+				"y": 983.90177400713162,
+				"z": 0
+			},
+			"size":
+			{
+				"x": 773.63634634017944,
+				"y": 289.09090256690979,
+				"z": 0
+			},
+			"color":
+			{
+				"r": 0.5,
+				"g": 0.5,
+				"b": 0.5,
+				"a": 0.5
+			}
+		},
+		{
+			"commentGuid": "6064629840814800996",
+			"comment": "Reset if participants abandon the tracked zone.",
+			"location":
+			{
+				"x": -183.4555885552536,
+				"y": -376.32975506143117,
+				"z": 0
+			},
+			"size":
+			{
+				"x": 611.18181824684143,
+				"y": 44.818186521530151,
+				"z": 0
+			},
+			"color":
+			{
+				"r": 0.5,
+				"g": 0.5,
+				"b": 0.5,
+				"a": 0.5
+			}
+		},
+		{
+			"commentGuid": "6064629846065939136",
+			"comment": "Event @ Teleport RVR_TempleB",
+			"location":
+			{
+				"x": -190.97994995117188,
+				"y": -1168.0612182617188,
+				"z": 0
+			},
+			"size":
+			{
+				"x": 250,
+				"y": 200,
+				"z": 0
+			},
+			"color":
+			{
+				"r": 0.5,
+				"g": 0.5,
+				"b": 0.5,
+				"a": 0.5
+			}
+		}
+	],
+	"bIsTemplate": false,
+	"flowNodes": [
+		{
+			"flowType": "EventEntry",
+			"graphLocation":
+			{
+				"x": 718.09803619075069,
+				"y": -1968.0612182617188
+			},
+			"id": 0
+		},
+		{
+			"flowType": "EventExit",
+			"graphLocation":
+			{
+				"x": 14.35294697743899,
+				"y": 2649.6327227089159
+			},
+			"id": 1
+		}
+	],
+	"guid": "6064629745080205312",
+	"name": "WaveEventTemplate_TempleB",
+	"typeId": "23095125"
+}

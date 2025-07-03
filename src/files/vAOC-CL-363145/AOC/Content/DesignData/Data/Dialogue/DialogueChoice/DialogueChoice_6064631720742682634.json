@@ -1,0 +1,18 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"D90F79C84A9E9B65162117AE72B35E72\", \"Have you considered focusing your efforts toward a single cause?\")",
+	"nextNodeId":
+	{
+		"guid": "6064631709806952576",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "!Player_ObjectiveStateEquals(GetPlayer(), \"CSQ_0024_ReportOnThornmarch_OptionalLeverage_OBJ\", EObjectiveState::Complete)"
+	},
+	"choiceType": "Default",
+	"guid": "6064631720742682634",
+	"name": "CSQ_0024_ReportonThornmarch_AmberDillard_DLG_31",
+	"typeId": "1091110027"
+}

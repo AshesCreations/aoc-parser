@@ -1,0 +1,56 @@
+{
+	"displayName": "NSLOCTEXT(\"\", \"071FC46B4F79385AEA2585916656320C\", \"Magical Disable Evasion Rating\")",
+	"description": "NSLOCTEXT(\"\", \"B5132BD5472BC175694E3B92E4D592C2\", \"Reduces the chance to be hit by disabling magical effects\")",
+	"bHidden": false,
+	"gameplayType": "Type_Combat",
+	"bHasWaterfallStatsUI": false,
+	"waterfallStatsUIIds": [],
+	"bDisplayAsPercentage": false,
+	"statType": "Type_Float",
+	"bClampStatFinalValue": false,
+	"bMultiplyStatMods": false,
+	"bMultiplyCompliment": false,
+	"base":
+	{
+		"expression": "GetStat(GetOwner(), $#10516612381411111:109183598614143$)\r\n* EvalFormula($#10516612381411113:6064633153362984963$)"
+	},
+	"waterfallStatsBaseIds": [
+		{
+			"guid": "109183598614143",
+			"typeId": "10516612381411111",
+			"name": "None"
+		}
+	],
+	"valueMin":
+	{
+		"expression": "0"
+	},
+	"waterfallStatsMinIds": [],
+	"valueMax":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMaxIds": [],
+	"regenRate":
+	{
+		"expression": ""
+	},
+	"waterfallStatsRegenIds": [],
+	"bRegenWhileDead": false,
+	"bRecalculateOnCombatState": false,
+	"onSpawn": "Reset_None",
+	"onDeath": "Reset_None",
+	"onRevive": "Reset_None",
+	"bPersistValue": false,
+	"replication": 1,
+	"shieldStatId":
+	{
+		"guid": "0",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"grantedEffects": [],
+	"guid": "109183607068302",
+	"name": "MagicalDisableEvasionRating",
+	"typeId": "10516612381411111"
+}

@@ -1,0 +1,154 @@
+{
+	"prerequisitesIds": [],
+	"levelsIds":
+	{
+		"3":
+		{
+			"guid": "6064629065574121522",
+			"typeId": "7823458",
+			"name": "None"
+		},
+		"4":
+		{
+			"guid": "6064629065574318131",
+			"typeId": "7823458",
+			"name": "None"
+		},
+		"5":
+		{
+			"guid": "6064629065574514740",
+			"typeId": "7823458",
+			"name": "None"
+		},
+		"6":
+		{
+			"guid": "6064629065574711349",
+			"typeId": "7823458",
+			"name": "None"
+		}
+	},
+	"buildingAssetSetId":
+	{
+		"guid": "6064631346512986883",
+		"typeId": "1323521346",
+		"name": "None"
+	},
+	"nodeConstructionCostId":
+	{
+		"guid": "6064631166507680038",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"maintenanceCostId":
+	{
+		"guid": "6064632123065958690",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"playerConstructionCostId":
+	{
+		"guid": "6064631166864523603",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"damagedRepairCostId":
+	{
+		"guid": "0",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"disarrayRepairCostId":
+	{
+		"guid": "0",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"disarrayDebuffId":
+	{
+		"guid": "0",
+		"typeId": "30316002",
+		"name": "None"
+	},
+	"dEPRECATED_ExpansionsIds": [],
+	"serviceBuildingType": "Fabrication",
+	"housingPropertyTiersIds": [],
+	"icon": "/Game/UI/Icons/Nodes/Buildings/BuildingNodes/TUI_Icon_NodeBldngs_Factory.TUI_Icon_NodeBldngs_Factory",
+	"mapIconVisualId":
+	{
+		"guid": "6064632399362785289",
+		"typeId": "949952112329",
+		"name": "None"
+	},
+	"buildingName": "NSLOCTEXT(\"\", \"91D4A2D84B06544D1DF6C499479A4355\", \"Factory\")",
+	"buildingDescription": "NSLOCTEXT(\"\", \"52CBDBC649A97CA8B39361BFAC409587\", \"The Factory is a support service building that provides passive commodity income to the node as well as processing bonuses to players.\")",
+	"buildingServices": [
+		{
+			"icon": "/Game/UI/Icons/Nodes/Buildings/BuildingServices/TUI_Icon_ServiceIcon_Income.TUI_Icon_ServiceIcon_Income",
+			"serviceName": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"5C571FA44A04BE58C21121B75428EB83\", \"Node Resource Generation\")",
+			"serviceDescription": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"91B4009245EAD8932F9F16A0B5DDC932\", \"Provides passive T1 Node Resources \")"
+		},
+		{
+			"icon": "/Game/UI/Icons/Nodes/Buildings/BuildingServices/TUI_Icon_ServiceIcon_NodeBuff.TUI_Icon_ServiceIcon_NodeBuff",
+			"serviceName": "NSLOCTEXT(\"[3A937076879C9EE4CFD42687DD9352E3]\", \"4884796A44127520DEC5A99185B5AADC\", \"Zone of Influence: Citizens Metel and Stoneworking Ingenuity\")",
+			"serviceDescription": "NSLOCTEXT(\"[3A937076879C9EE4CFD42687DD9352E3]\", \"FD898BB94A29E0F8EFFBE58E87F181C1\", \"Citizens have increased Metalworking and Stoneworking XP within the Zone of Influence\")"
+		},
+		{
+			"icon": "/Game/UI/Icons/Nodes/Buildings/BuildingServices/TUI_Icon_ServiceIcon_NodeBuff.TUI_Icon_ServiceIcon_NodeBuff",
+			"serviceName": "NSLOCTEXT(\"[3A937076879C9EE4CFD42687DD9352E3]\", \"902CD80C40CFE7AF39ACFA869182DEED\", \"Zone of Influence: Mining Prowess\")",
+			"serviceDescription": "NSLOCTEXT(\"[3A937076879C9EE4CFD42687DD9352E3]\", \"B088F3D2498775C85C0A85BC1D04F4E4\", \"Players have increased mining speed within the Zone of Influence\")"
+		}
+	],
+	"buildingServiceDescriptions": [],
+	"bDisplayInBuildingManager": true,
+	"constructionPhaseDuration":
+	{
+		"duration": "604800000"
+	},
+	"buildingContributionPhasesId":
+	{
+		"guid": "6064629841000792168",
+		"typeId": "1091110047",
+		"name": "None"
+	},
+	"dEPRECATED_CapabilitiesIds": [],
+	"dEPRECATED_NodeEffectId":
+	{
+		"guid": "0",
+		"typeId": "9127426",
+		"name": "None"
+	},
+	"localeOriginId":
+	{
+		"guid": "0",
+		"typeId": "421003",
+		"name": "None"
+	},
+	"nodeModificationsIds": [
+		{
+			"guid": "6064631941038014466",
+			"typeId": "1091110048",
+			"name": "None"
+		}
+	],
+	"expansionSkillTreeId":
+	{
+		"guid": "0",
+		"typeId": "30316003",
+		"name": "None"
+	},
+	"repairStateDurationModifier":
+	{
+		"expression": ""
+	},
+	"demolitionStateDurationModifier":
+	{
+		"expression": ""
+	},
+	"voteResultDuration":
+	{
+		"expression": ""
+	},
+	"guid": "6064629065454518285",
+	"name": "Construction_Support_Factory_Building",
+	"typeId": "7823463"
+}

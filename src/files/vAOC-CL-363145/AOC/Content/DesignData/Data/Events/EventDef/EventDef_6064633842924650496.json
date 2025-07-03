@@ -1,0 +1,130 @@
+{
+	"eventName": "NSLOCTEXT(\"[4BE4F0A16D08556ACD6685BF392E6719]\", \"992B0EBB46FC1CDC3F4F579ED753B55D\", \"Nexus Regulator\")",
+	"gameplayTags":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"activationPredicatesIds": [
+		{
+			"guid": "6064633842924650497",
+			"typeId": "23095129",
+			"name": "None"
+		}
+	],
+	"minChallengeRating": 0,
+	"maxChallengeRating": 30,
+	"eventLevel": 3,
+	"eventType": 128,
+	"locationId":
+	{
+		"guid": "6064633842924650502",
+		"typeId": "5127371160",
+		"name": "None"
+	},
+	"desiredTimeSlot": "0001.01.01-00.00.00",
+	"frequency": 24,
+	"priority": 1,
+	"rewardTableId":
+	{
+		"guid": "0",
+		"typeId": "1091110040",
+		"name": "None"
+	},
+	"rewardPopulationSetId":
+	{
+		"guid": "0",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"startStageId":
+	{
+		"guid": "6064633843034619927",
+		"typeId": "23095131",
+		"name": "None"
+	},
+	"stagesIds": [
+		{
+			"guid": "6064633842924650498",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064633842924650500",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064633843010502675",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064633843034619927",
+			"typeId": "23095131",
+			"name": "None"
+		}
+	],
+	"interactVolumesIds": [],
+	"alignmentsIds": [],
+	"mapDisplayType": "Biome",
+	"mapEventIcon": "/Game/UI/Icons/Map/TUI_Icon_Map_Event_Active.TUI_Icon_Map_Event_Active",
+	"mapDisplayTrackerFiltersIds": [],
+	"bDisplayOnTracker": true,
+	"notificationRadius": 15000,
+	"mapRadiusMinumum": 1000,
+	"cooldownTimer": 300,
+	"bDisabled": false,
+	"maxInstanceCount": 1,
+	"requiredMapName": "Verra_World_Master",
+	"comments": [
+		{
+			"commentGuid": "6064633843045629977",
+			"comment": "This Event begins by Player Activity OR using an Override AR from the quest",
+			"location":
+			{
+				"x": -1323.3390055607524,
+				"y": -111.66079679058299,
+				"z": 0
+			},
+			"size":
+			{
+				"x": 1954.9998662471771,
+				"y": 1134.9999176263809,
+				"z": 0
+			},
+			"color":
+			{
+				"r": 1,
+				"g": 1,
+				"b": 1,
+				"a": 1
+			}
+		}
+	],
+	"bIsTemplate": false,
+	"flowNodes": [
+		{
+			"flowType": "EventEntry",
+			"graphLocation":
+			{
+				"x": -1070.8699491955012,
+				"y": 242.06958708843393
+			},
+			"id": 0
+		},
+		{
+			"flowType": "EventExit",
+			"graphLocation":
+			{
+				"x": 2000,
+				"y": 700
+			},
+			"id": 1
+		}
+	],
+	"bSkipCrashRecovery": false,
+	"guid": "6064633842924650496",
+	"name": "EVT_ANV_0005_NexusRegulator",
+	"typeId": "23095125"
+}

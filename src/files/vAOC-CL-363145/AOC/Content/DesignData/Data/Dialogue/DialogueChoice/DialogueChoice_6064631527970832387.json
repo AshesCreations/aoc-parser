@@ -1,0 +1,29 @@
+{
+	"choiceText": "NSLOCTEXT(\"[C0A48779AC9FFDA4BAC80B2EE1C04C0D]\", \"1F245D2D4E375A64CB79FA88D7D23550\", \"Yes!\")",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064631267112648706",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064631244988022796",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "HasAlignment(GetPlayer(),\r\n$#512160700:6064631086252163116$)\r\n||\r\nHasAlignment(GetPlayer(),\r\n$#512160700:6064630610806636544$)"
+	},
+	"choiceType": "Default",
+	"guid": "6064631527970832387",
+	"name": "DialogueDef_6064631527967883264_4",
+	"typeId": "1091110027"
+}

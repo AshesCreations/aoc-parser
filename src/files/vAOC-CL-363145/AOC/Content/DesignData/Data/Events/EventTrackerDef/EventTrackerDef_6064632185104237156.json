@@ -1,0 +1,60 @@
+{
+	"trackerType": "SphereArea",
+	"nodeId":
+	{
+		"guid": "0",
+		"typeId": "1323521343",
+		"name": "None"
+	},
+	"tagFilter":
+	{
+		"tokenStreamVersion": 0,
+		"tagDictionary": [],
+		"queryTokenStream": [],
+		"userDescription": "",
+		"autoDescription": ""
+	},
+	"expressionFilter":
+	{
+		"expression": "HasAlignment(GetPlayer(), $#512160700:6064631051909070850$) ||\r\nHasAlignment(GetPlayer(), $#512160700:6064631086252163116$) ||\r\nHasAlignment(GetPlayer(), $#512160700:6064631086261600301$) ||\r\nHasAlignment(GetPlayer(), $#512160700:6064630610806636544$)"
+	},
+	"relevantAlignmentsIds": [],
+	"untrackedSecondsThreshold": 0,
+	"extents":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"rotation":
+	{
+		"pitch": 0,
+		"yaw": 0,
+		"roll": 0
+	},
+	"locationOffset":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"radius": 40000,
+	"bPersistParticipant": false,
+	"bAllowManualRegistration": false,
+	"onEnterActionResponseId":
+	{
+		"guid": "6064632161983004674",
+		"typeId": "1091110030",
+		"name": "None"
+	},
+	"onExitActionResponseId":
+	{
+		"guid": "6064632202097275007",
+		"typeId": "1091110030",
+		"name": "None"
+	},
+	"notifyAlignmentIds": [],
+	"guid": "6064632185104237156",
+	"name": "War_XPDebt_Blocker",
+	"typeId": "23095133"
+}

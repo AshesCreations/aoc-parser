@@ -1,0 +1,36 @@
+{
+	"expression":
+	{
+		"expression": "(Event_GetActiveStageIndex() == 2 && Event_GetIntVar(\"PilgrimRitual\") >= 1)"
+	},
+	"tickInterval": 5,
+	"maxActivationCount": 1,
+	"objectivesIds": [],
+	"triggersIds": [
+		{
+			"guid": "6064630486119482787",
+			"typeId": "23095135",
+			"name": "None"
+		},
+		{
+			"guid": "6064630486126232998",
+			"typeId": "23095135",
+			"name": "None"
+		},
+		{
+			"guid": "6064630481097524628",
+			"typeId": "23095135",
+			"name": "None"
+		}
+	],
+	"flowEditorNodeLocation":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"routePins": [],
+	"guid": "6064630481097524627",
+	"name": "ED_0015_PilgrimsProblem_Event_InProgress_Spawn",
+	"typeId": "23095129"
+}

@@ -1,0 +1,33 @@
+{
+	"trigger":
+	{
+		"expression": "(HitHasTag(GetHitRecord(GetHitInProgress()), \"ability.weaponcombo\"))"
+	},
+	"terms": [
+		{
+			"termId":
+			{
+				"guid": "6064629248780337173",
+				"typeId": "10516612381411115",
+				"name": "None"
+			},
+			"value":
+			{
+				"expression": "SelectFloat(GetSkillPurchased(GetOwner(),GetCurrentWeaponSkilltree(GetOwner()),$#981011333:6064632506051919874$),0.01,0.0) +\r\nSelectFloat(GetSkillPurchased(GetOwner(),GetCurrentWeaponSkilltree(GetOwner()),$#981011333:6064632506068107273$),0.01,0.0) + \r\nSelectFloat(GetSkillPurchased(GetOwner(),GetCurrentWeaponSkilltree(GetOwner()),$#981011333:6064632506069155850$),0.01,0.0)"
+			},
+			"bOptional": false,
+			"bKeepBeyondScope": false,
+			"filter":
+			{
+				"expression": ""
+			},
+			"mergeRuleOverride": "Merge_Default"
+		}
+	],
+	"tags": [],
+	"statModsIds": [],
+	"statModPostProcess": [],
+	"guid": "6064632506023739393",
+	"name": "Weapon_Passive_Critical_Combos",
+	"typeId": "3031600210"
+}

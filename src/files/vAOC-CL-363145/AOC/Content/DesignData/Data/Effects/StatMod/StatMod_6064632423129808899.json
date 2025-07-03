@@ -1,0 +1,22 @@
+{
+	"statRefId":
+	{
+		"guid": "109183607133840",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"value":
+	{
+		"expression": "const stat = GetStat(GetOwner(), $#10516612381411111:109183607133840$);\r\nconst ctier = GetStat(GetOwner(), $#10516612381411111:6064630485796716545$);\r\nconst mult = EvalCurve($#10516612381411114:6064630704775430285$, ctier);\r\n-stat * mult"
+	},
+	"bUseShieldAbsorb": false,
+	"shieldAbsorbPercentage":
+	{
+		"expression": ""
+	},
+	"bShowFloatingText": true,
+	"valueInputTerms": [],
+	"guid": "6064632423129808899",
+	"name": "Corruption_MagicalMit",
+	"typeId": "3031600201"
+}

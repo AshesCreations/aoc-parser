@@ -1,0 +1,62 @@
+{
+	"displayName": "NSLOCTEXT(\"\", \"BAA1CCD74723ADEAB7476EB08843CD59\", \"Health\")",
+	"description": "NSLOCTEXT(\"\", \"3311C2FD4A1ACAF9750DF2AE0556E669\", \"The health of your character, if this is reduced to 0, you die!\")",
+	"bHidden": false,
+	"gameplayType": "Type_Combat",
+	"bHasWaterfallStatsUI": false,
+	"waterfallStatsUIIds": [],
+	"bDisplayAsPercentage": false,
+	"statType": "Type_Float",
+	"bClampStatFinalValue": false,
+	"bMultiplyStatMods": false,
+	"bMultiplyCompliment": false,
+	"base":
+	{
+		"expression": "0"
+	},
+	"waterfallStatsBaseIds": [],
+	"valueMin":
+	{
+		"expression": "IsUnkillable(GetInstigator())"
+	},
+	"waterfallStatsMinIds": [],
+	"valueMax":
+	{
+		"expression": "GetStat(GetInstigator(), $#10516612381411111:108986356618873$)"
+	},
+	"waterfallStatsMaxIds": [
+		{
+			"guid": "108986356618873",
+			"typeId": "10516612381411111",
+			"name": "None"
+		}
+	],
+	"regenRate":
+	{
+		"expression": "GetStat(GetInstigator(), $#10516612381411111:109343399171806$)"
+	},
+	"waterfallStatsRegenIds": [
+		{
+			"guid": "109343399171806",
+			"typeId": "10516612381411111",
+			"name": "None"
+		}
+	],
+	"bRegenWhileDead": false,
+	"bRecalculateOnCombatState": false,
+	"onSpawn": "Reset_SetMax",
+	"onDeath": "Reset_SetMax",
+	"onRevive": "Reset_SetMax",
+	"bPersistValue": true,
+	"replication": 7,
+	"shieldStatId":
+	{
+		"guid": "6064629069966082048",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"grantedEffects": [],
+	"guid": "108986352686712",
+	"name": "Health",
+	"typeId": "10516612381411111"
+}

@@ -1,0 +1,25 @@
+{
+	"bWeaponCombo": false,
+	"statRefId":
+	{
+		"guid": "6064629484650246984",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"stat": "Health",
+	"value":
+	{
+		"expression": "const v = Abs(GetStatModValue(GetHitEvent(), $#10516612381411111:108986352686712$));\r\nv"
+	},
+	"priority": 0,
+	"bonusPenetration":
+	{
+		"expression": ""
+	},
+	"bShowFloatingText": true,
+	"valueInputTerms": [],
+	"statBuckets": "CombatRegister1",
+	"guid": "6064629484709688737",
+	"name": "Tank_DelayedPain_DelayedDamageAdd",
+	"typeId": "3031600201"
+}

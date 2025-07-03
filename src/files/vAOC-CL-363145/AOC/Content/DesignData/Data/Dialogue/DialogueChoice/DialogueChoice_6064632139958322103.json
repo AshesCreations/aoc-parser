@@ -1,0 +1,18 @@
+{
+	"choiceText": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"184D66194EFD21DECE58D4AD81DE3F99\", \"On Quest\")",
+	"nextNodeId":
+	{
+		"guid": "6064632139979752380",
+		"typeId": "1091110028",
+		"name": "DD_ServiceNPC_ConstructionForeman_3"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "Player_HasCompletedObjective(GetPlayer(), \"CSQ_NO_0156_FTUE_ConstructionAroundTown_Contribute\") &&\r\n!Player_HasCompletedCommission(GetPlayer(), \"CSQ_0156_FTUE_ConstructionAroundTown\")"
+	},
+	"choiceType": "Default",
+	"guid": "6064632139958322103",
+	"name": "DD_ServiceNPC_ConstructionForeman_1_Choice_2",
+	"typeId": "1091110027"
+}

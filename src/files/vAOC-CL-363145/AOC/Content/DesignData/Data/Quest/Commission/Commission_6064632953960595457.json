@@ -1,0 +1,105 @@
+{
+	"commissionType": "Generic",
+	"commissionGameplayTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "Biome.Desert"
+			},
+			{
+				"tagName": "Quest.Commission.Artisan.Gathering.Fishing"
+			},
+			{
+				"tagName": "Quest.Commission.Tier.T2"
+			}
+		],
+		"parentTags": [
+			{
+				"tagName": "Biome"
+			},
+			{
+				"tagName": "Quest.Commission.Artisan.Gathering"
+			},
+			{
+				"tagName": "Quest.Commission.Artisan"
+			},
+			{
+				"tagName": "Quest.Commission"
+			},
+			{
+				"tagName": "Quest"
+			},
+			{
+				"tagName": "Quest.Commission.Tier"
+			}
+		]
+	},
+	"preRequisiteQuestsIds": [],
+	"autoFailTimer": -1,
+	"bRepeatable": false,
+	"mainObjectiveType": "Collect",
+	"commissionSection": 2,
+	"biomeOrigin": "FloodPlains",
+	"bFromDynamicContent": false,
+	"availabilityExpression":
+	{
+		"expression": ""
+	},
+	"bDisabled": false,
+	"level": 11,
+	"commissionRarity": "Common",
+	"objectivesIds": [
+		{
+			"guid": "6064632954865909780",
+			"typeId": "1091110420",
+			"name": "None"
+		},
+		{
+			"guid": "6064632954875281430",
+			"typeId": "1091110420",
+			"name": "None"
+		}
+	],
+	"allowMultipleCompletion": false,
+	"commissionName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"C7F7B38F4E07C445EC9CEE91E5B01A3D\", \"Pupfish Pursuit\")",
+	"flavorText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"F901276F41B89C60F3640899DAC9E69A\", \"The desert waters are home to the elusive Pupfish, their vibrant scales a rare sight in the arid land. A true feat for any angler, catching these hardy fish is a prize. Cast your net and gather a haul. You might even break a record!\")",
+	"mainObjectiveText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"A095684D4568394F78C7FEBB46B6549B\", \"Fish Pupfish from oases and streams in the Sandsquall Desert\")",
+	"rewardTablesIds": [
+		{
+			"guid": "6064632139973328976",
+			"typeId": "1091110040",
+			"name": "None"
+		}
+	],
+	"calloutName": "",
+	"calloutDescription": "",
+	"bCanProgressWhileInRaid": false,
+	"expiration":
+	{
+		"duration": "0"
+	},
+	"cooldown":
+	{
+		"duration": "0"
+	},
+	"moneyCost": "0",
+	"resourceCost": [],
+	"mayoralCompletionCount": 0,
+	"rewardId":
+	{
+		"guid": "0",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"bNodeTargeted": false,
+	"targetRewardId":
+	{
+		"guid": "0",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"questItemListIds": [],
+	"guid": "6064632953960595457",
+	"name": "COM_SAN_Gather_Raw_Fish_Pupfish",
+	"typeId": "280002"
+}

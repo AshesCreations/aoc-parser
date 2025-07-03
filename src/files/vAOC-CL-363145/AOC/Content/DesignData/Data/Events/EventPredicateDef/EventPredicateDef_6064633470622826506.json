@@ -1,0 +1,36 @@
+{
+	"expression":
+	{
+		"expression": "Event_GetBoolVar(\"Well_Poisoned\") == true  &&\r\n(Event_GetStageTimer() >= Float(Event_GetIntVar(\"Time_To_Poison\")))"
+	},
+	"maxActivationCount": -1,
+	"bRequiresRegressionToLoop": true,
+	"objectivesIds": [],
+	"triggersIds": [
+		{
+			"guid": "6064633470624989195",
+			"typeId": "23095135",
+			"name": "None"
+		},
+		{
+			"guid": "6064633492226965517",
+			"typeId": "23095135",
+			"name": "None"
+		},
+		{
+			"guid": "6064633492273758224",
+			"typeId": "23095135",
+			"name": "None"
+		}
+	],
+	"flowEditorNodeLocation":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"routePins": [],
+	"guid": "6064633470622826506",
+	"name": "Siege_Well_Poison_Apply",
+	"typeId": "23095129"
+}

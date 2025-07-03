@@ -1,0 +1,61 @@
+{
+	"bUseLocaleQuery": false,
+	"originWhiteListIds": [
+		{
+			"guid": "6064632949407547418",
+			"typeId": "421003",
+			"name": "None"
+		},
+		{
+			"guid": "6064632949857648663",
+			"typeId": "421003",
+			"name": "None"
+		},
+		{
+			"guid": "6064633272652136463",
+			"typeId": "421003",
+			"name": "None"
+		}
+	],
+	"localeWhiteListIds": [],
+	"localeBlackListIds": [],
+	"bQueryAllOrigins": false,
+	"localeQueryLocation":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"originQueryRange": 0,
+	"originTagFilter":
+	{
+		"tokenStreamVersion": 0,
+		"tagDictionary": [],
+		"queryTokenStream": [],
+		"userDescription": "",
+		"autoDescription": ""
+	},
+	"localeTagFilter":
+	{
+		"tokenStreamVersion": 0,
+		"tagDictionary": [],
+		"queryTokenStream": [],
+		"userDescription": "",
+		"autoDescription": ""
+	},
+	"localeSelectionAlgorithm": "ClosestToPoint",
+	"pointExpression":
+	{
+		"expression": "Event_GetInstanceLocation()"
+	},
+	"requiredExtents":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"bRequiresNav": false,
+	"guid": "6064632717662054673",
+	"name": "Siege_Banner_LocaleRequest",
+	"typeId": "23095138"
+}

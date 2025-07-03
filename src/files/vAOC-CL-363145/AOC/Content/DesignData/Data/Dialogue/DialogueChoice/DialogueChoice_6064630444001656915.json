@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"AD7C23564C3F4ECFC4C4AB89CE69B4CA\", \"I can help!\")",
+	"nextNodeId":
+	{
+		"guid": "6064630444016336985",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcQuestAvailable(GetPlayer(), \"SAQ_0023_P1_Q1_HalfTheBattle\")&&\r\n!IsOnStoryArcQuest(GetPlayer(), \"SAQ_0023_P1_Q1_HalfTheBattle\")"
+	},
+	"guid": "6064630444001656915",
+	"name": "DD_0023_CaptainEudoxiaAvenmoor_15",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,32 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 4,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0,
+		"fishingEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "(GetSkillPurchased(GetInstigator(), GetCurrentWeaponSkilltree(GetInstigator()), $#981011333:6064631238789300490$) &&\r\nGetRecordTypeId(GetHitSourceRecord(GetHitEvent())) != GetReactionTypeId())  &&\r\nHitHasTag(GetHitEvent(),\"ComboStep.End\") &&\r\nHitHasTag(GetHitEvent(),\"ComboStep.ProcHit\") &&\r\n!HitHasTag(GetHitEvent(),\"ComboStep.End2\") "
+	},
+	"bEvaluateApplyingHit": false,
+	"instigator": "Owner",
+	"targetsBitmask": 8,
+	"reactHitsIds": [
+		{
+			"guid": "6064631940667803084",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"instigatorProcLimit": 0,
+	"globalProcLimit": 0,
+	"procReactOnApply": false,
+	"guid": "6064631940665509322",
+	"name": "Weapon_Finisher_Chilled",
+	"typeId": "3031600202"
+}

@@ -1,0 +1,22 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"6D479D70490ACA548A9BCBB6E9B43FDF\", \"I\\'m not done\")",
+	"nextNodeId":
+	{
+		"guid": "6064633668513103888",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "(!Player_HasCommission (GetPlayer(), \"CSQ_0161b_FTUE_TurnIn_Caravan\") && !Player_HasCompletedCommission(GetPlayer(), \"CSQ_0161b_FTUE_TurnIn_Caravan\") && !Player_HasCommission (GetPlayer(), \"CSQ_0159_FTUE_RunningCrates\") && !Player_HasCompletedCommission(GetPlayer(), \"CSQ_0159_FTUE_RunningCrates\"))"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064633668513103887",
+	"name": "Node_Caravansary_Helper_4_Choice_2",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,33 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 0,
+		"effectEvents": 0,
+		"abilityEvents": 4,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0,
+		"fishingEvents": 0,
+		"statEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "GetSkillPurchased(GetOwner(),$#30316003:6064630422842835238$,$#981011333:6064632898497876912$)\r\n&& EvalFormula($#10516612381411113:6064633232362243701$) > 0.0"
+	},
+	"bEvaluateApplyingHit": false,
+	"instigator": "Owner",
+	"targetsBitmask": 1,
+	"reactHitsIds": [
+		{
+			"guid": "6064633232378496631",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"instigatorProcLimit": 0,
+	"globalProcLimit": 0,
+	"procReactOnApply": false,
+	"guid": "6064633232356148852",
+	"name": "Rogue_Toolbelt_Padded_OnUse",
+	"typeId": "3031600202"
+}

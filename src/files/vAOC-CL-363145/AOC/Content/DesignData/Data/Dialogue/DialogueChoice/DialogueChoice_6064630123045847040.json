@@ -1,0 +1,23 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"6A54137B422FF90E257096B364AF520E\", \"On HB, No Flag\")",
+	"nextNodeId":
+	{
+		"guid": "6064630169514803217",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064630095469346818",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "(IsOnStoryArcQuest(GetPlayer(), \"SAQ_0022_p1q1_Handbill\")&&!GetStoryArcQuestFlag(GetPlayer(),\"SAQ_0022_p1q1_Handbill\",\"Handbill3\"))"
+	},
+	"guid": "6064630123045847040",
+	"name": "0022_Seph_Frohman_31",
+	"typeId": "1091110027"
+}

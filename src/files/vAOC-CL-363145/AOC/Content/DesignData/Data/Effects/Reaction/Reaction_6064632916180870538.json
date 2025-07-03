@@ -1,0 +1,33 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 4,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0,
+		"fishingEvents": 0,
+		"statEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "// can just send it on every hit\r\n// since it scales off damage done\r\n(HitHasTag(GetHitEvent(), \"Archetype.Rogue\")\r\n||\r\nHitHasTag(GetHitEvent(), \"ability.weaponcombo\"))\r\n&& GetInstigator() == GetOwner()"
+	},
+	"bEvaluateApplyingHit": false,
+	"instigator": "Owner",
+	"targetsBitmask": 1,
+	"reactHitsIds": [
+		{
+			"guid": "6064632916193191307",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"instigatorProcLimit": 0,
+	"globalProcLimit": 0,
+	"procReactOnApply": false,
+	"guid": "6064632916180870538",
+	"name": "Rogue_Poison_Mana_Owner",
+	"typeId": "3031600202"
+}

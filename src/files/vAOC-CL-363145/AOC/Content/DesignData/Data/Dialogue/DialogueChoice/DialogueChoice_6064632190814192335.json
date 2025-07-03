@@ -1,0 +1,28 @@
+{
+	"choiceText": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"AF2DA6DB4CE24B105206A49C48BAB8FE\", \"IF BUY ORDER IS ACTIVE = TRUE\")",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "DD_ServiceNPC_BuyOrderManager_106"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064629189107646464",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "Node_IsBuyOrderActive\r\n(Node_GetActorCityNode(GetInteractionTarget()))"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064632190814192335",
+	"name": "DD_ServiceNPC_BuyOrderManager_98_Choice_4",
+	"typeId": "1091110027"
+}

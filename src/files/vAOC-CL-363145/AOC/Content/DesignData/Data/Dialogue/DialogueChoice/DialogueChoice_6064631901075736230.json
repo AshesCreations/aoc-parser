@@ -1,0 +1,24 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"4286A51249230A06F9AA7886A1CD73B4\", \"<Trace the restored gravestones.>\")",
+	"nextNodeId":
+	{
+		"guid": "6064631901104703143",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064631908084285969",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "Player_ObjectiveStateEquals(GetPlayer(),\"CSQ_RVR_0082_FB_WoeOfXander_FamilyTree_Return_OBJ\",EObjectiveState::Active) ||\r\nPlayer_ObjectiveStateEquals(GetPlayer(),\"CSQ_RVR_0082_FB_WoeOfXander_FamilyTree_Return_OBJ\",EObjectiveState::Complete)"
+	},
+	"choiceType": "Default",
+	"guid": "6064631901075736230",
+	"name": "CSQ_RVR_0082_FB_WoeOfXander_FamilyTree_DLG_8",
+	"typeId": "1091110027"
+}

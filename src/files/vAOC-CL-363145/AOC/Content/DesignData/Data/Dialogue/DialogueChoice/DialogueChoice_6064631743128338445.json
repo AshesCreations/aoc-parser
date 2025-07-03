@@ -1,0 +1,18 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"71593FBE41E250259FFFEFACCDE70CC8\", \"Has Quest, Hasn\\'t Completed\")",
+	"nextNodeId":
+	{
+		"guid": "6064631743128338446",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "Player_HasCommission (GetPlayer(), \"SQ_0037_WinxDrop\") && !Player_HasCompletedCommission(GetPlayer(), \"SQ_0037_WinxDrop\")"
+	},
+	"choiceType": "Default",
+	"guid": "6064631743128338445",
+	"name": "SQ_RVR_0037_Winx_Interact_5",
+	"typeId": "1091110027"
+}

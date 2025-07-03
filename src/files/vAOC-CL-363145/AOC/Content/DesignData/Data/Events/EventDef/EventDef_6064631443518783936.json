@@ -1,0 +1,158 @@
+{
+	"eventName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"7EE5E854419255615FFE74A56B815F21\", \"Larceners\\' Pact\")",
+	"gameplayTags":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"activationPredicatesIds": [
+		{
+			"guid": "6064631443518783939",
+			"typeId": "23095129",
+			"name": "None"
+		}
+	],
+	"minChallengeRating": 0,
+	"maxChallengeRating": 30,
+	"eventType": 128,
+	"locationId":
+	{
+		"guid": "6064631561688711233",
+		"typeId": "5127371160",
+		"name": "None"
+	},
+	"desiredTimeSlot": "0001.01.01-00.00.00",
+	"frequency": 24,
+	"priority": 1,
+	"rewardTableId":
+	{
+		"guid": "6064631430955597824",
+		"typeId": "1091110040",
+		"name": "None"
+	},
+	"rewardPopulationSetId":
+	{
+		"guid": "6064631471201521603",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"startStageId":
+	{
+		"guid": "6064631443518783942",
+		"typeId": "23095131",
+		"name": "None"
+	},
+	"stagesIds": [
+		{
+			"guid": "6064631443518783942",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064631482698891281",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064631443518783948",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064631443518783951",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064631443518783954",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064631443518783961",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064631470727561745",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064631443518783938",
+			"typeId": "23095131",
+			"name": "None"
+		}
+	],
+	"interactVolumesIds": [],
+	"alignmentsIds": [
+		{
+			"guid": "6064630497168265231",
+			"typeId": "512160700",
+			"name": "None"
+		},
+		{
+			"guid": "6064630497144737806",
+			"typeId": "512160700",
+			"name": "None"
+		}
+	],
+	"mapDisplayType": "Biome",
+	"mapEventIcon": "/Game/UI/Widgets/Narrative/Textures/TUI_Icon_Event_PvP.TUI_Icon_Event_PvP",
+	"bDisplayOnTracker": true,
+	"notificationRadius": 15000,
+	"mapRadiusMinumum": 1000,
+	"cooldownTimer": 600,
+	"bDisabled": true,
+	"maxInstanceCount": 1,
+	"requiredMapName": "Verra_World_Master",
+	"comments": [
+		{
+			"commentGuid": "6064631386327220252",
+			"comment": "This Event instantiates automatically when off cooldown",
+			"location":
+			{
+				"x": -764.26594503308877,
+				"y": 38.068111121229016,
+				"z": 0
+			},
+			"size":
+			{
+				"x": 1581.3131009340286,
+				"y": 718.13128507137299,
+				"z": 0
+			},
+			"color":
+			{
+				"r": 0.10999999940395355,
+				"g": 0.059999998658895493,
+				"b": 1,
+				"a": 0.5
+			}
+		}
+	],
+	"bIsTemplate": false,
+	"flowNodes": [
+		{
+			"flowType": "EventEntry",
+			"graphLocation":
+			{
+				"x": 289.71861220435619,
+				"y": -919.24511737376451
+			},
+			"id": 0
+		},
+		{
+			"flowType": "EventExit",
+			"graphLocation":
+			{
+				"x": -600,
+				"y": 2636.6814551287616
+			},
+			"id": 1
+		}
+	],
+	"guid": "6064631443518783936",
+	"name": "ED_RVR_M903_LarcenersPact",
+	"typeId": "23095125"
+}

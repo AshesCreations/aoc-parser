@@ -1,0 +1,28 @@
+{
+	"choiceText": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"D16AB3F24622FE52D55DE48FC474C136\", \"[Insert the Stone Owl]\")",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064633295544123409",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "//Check for these items if they have it AND the relic is available\r\n//please give them the relic\r\n\r\nPlayer_HasItem(GetPlayer(),\"Relic_Uncommon_Eskra_Owl_key\") \r\n&&\r\nRelic_GetRelicInstancesAvailable($#7823459:6064633256294154256$) > 0"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064633295443787783",
+	"name": "Relic_Acquisition_Uncommon_Eskra_Owl_1_Choice_1",
+	"typeId": "1091110027"
+}

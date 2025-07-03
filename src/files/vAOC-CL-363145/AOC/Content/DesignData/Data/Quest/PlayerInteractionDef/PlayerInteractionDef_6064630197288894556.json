@@ -1,0 +1,72 @@
+{
+	"completionResponsesIds": [
+		{
+			"guid": "6064630197270741080",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064630197205008466",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"channelDuration": 0,
+	"activePredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MIA_0017_BOB_BalladOfTheBull\",\"MIP_0017_BOB_Phase03\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MIQ_0017_CTR_ContainingTheRage\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MIQ_0017_CTR_ContainingTheRage\",\"HaveOubliette\")"
+	},
+	"cuePredicate":
+	{
+		"expression": ""
+	},
+	"visiblePredicate":
+	{
+		"expression": ""
+	},
+	"showErrorIfNotVisible": false,
+	"deleteOnCompletion": false,
+	"singleUse": false,
+	"alwaysShowUIPrompt": true,
+	"cancelChannelIfActivePredicateEverFails": true,
+	"channelModifierType": "NONE",
+	"rewardTableId":
+	{
+		"guid": "0",
+		"typeId": "1091110008",
+		"name": "None"
+	},
+	"startEffect": "None",
+	"endEffect": "None",
+	"failEffect": "None",
+	"successEffect": "/Game/Effects/FX_PCs/Assassin/Particles/NS_F_01.NS_F_01",
+	"cueEffect": "None",
+	"startSound": "None",
+	"endSound": "None",
+	"failSound": "None",
+	"successSound": "None",
+	"cueSound": "None",
+	"interactAnimTag": "None",
+	"deletionDelay": 0,
+	"activeCueEnabled": true,
+	"activeCueIgnoresActivePredicate": false,
+	"facePlayer": false,
+	"allowInCombat": true,
+	"spawnAtBottomCapsule": false,
+	"channelAnimation": "None",
+	"interactRadius": 200,
+	"interactTolerance": 30,
+	"busyTime": 0.89999997615814209,
+	"clientBusyTime": 1,
+	"channelStartResponseIds": [],
+	"failResponsesIds": [],
+	"gatheringInteractionDataId":
+	{
+		"guid": "0",
+		"typeId": "19846",
+		"name": "None"
+	},
+	"guid": "6064630197288894556",
+	"name": "MIPI_0017_CTR_OBJ_OublietteChest",
+	"typeId": "1091110031"
+}

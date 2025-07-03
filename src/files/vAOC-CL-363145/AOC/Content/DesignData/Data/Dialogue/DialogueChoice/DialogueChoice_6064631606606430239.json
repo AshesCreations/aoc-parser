@@ -1,0 +1,18 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"5171B4894FD4EB9A2BB92E96CFE6DF2F\", \"[Seek the Collar of Vuul]\")",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "Player_HasCompletedCommission(GetPlayer(),\"CSQ_RVR_0068_TSS_TheShiningShield\")&&\r\n!Player_HasCommission(GetPlayer(),\"CSQ_RVR_0068_SOT_StonesOfTuraMadu\")\r\n||\r\nPlayer_HasCompletedCommission(GetPlayer(),\"CSQ_RVR_0068_TSS_TheShiningShield\")&&\r\n!Player_HasCompletedCommission(GetPlayer(),\"CSQ_RVR_0068_SOT_StonesOfTuraMadu\")"
+	},
+	"choiceType": "Default",
+	"guid": "6064631606606430239",
+	"name": "CSQ_DD_0068_TSS_CaptainsJournal_24",
+	"typeId": "1091110027"
+}

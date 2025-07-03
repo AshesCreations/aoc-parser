@@ -1,0 +1,33 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 2,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0,
+		"fishingEvents": 0,
+		"statEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "GetStatModValue(GetHitEvent(), $#10516612381411111:108986352686712$) < 0.0\r\n&& GetBlackboardFloat(GetOwner(), \"CourageHealthPercent\") - GetHealthPercentage(GetOwner()) >= 0.4"
+	},
+	"bEvaluateApplyingHit": false,
+	"instigator": "Targets",
+	"targetsBitmask": 8,
+	"reactHitsIds": [
+		{
+			"guid": "6064633391053144188",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"instigatorProcLimit": 0,
+	"globalProcLimit": 0,
+	"procReactOnApply": false,
+	"guid": "6064633391038005371",
+	"name": "Raptor_CourageHealthTracker",
+	"typeId": "3031600202"
+}

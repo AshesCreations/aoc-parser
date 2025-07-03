@@ -1,0 +1,23 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"18130D7A44D55187A9DD50A955509B7B\", \"Make a note of this in your journal.\")",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064629732300029990",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "(IsStoryArcQuestAvailable(GetPlayer(), \"SAQ_0021_P01_MappingTheCoil\")\r\n&&\r\n!IsOnStoryArcQuest(GetPlayer(), \"SAQ_0021_P01_MappingTheCoil\"))"
+	},
+	"guid": "6064629732780605604",
+	"name": "MADD_0021_SergiasNote_11",
+	"typeId": "1091110027"
+}

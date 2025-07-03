@@ -1,0 +1,18 @@
+{
+	"choiceText": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"32125BA64AAF53211AE44795AB0DE57C\", \"commission active or completed\")",
+	"nextNodeId":
+	{
+		"guid": "6064629444730683983",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "Player_HasCommission(GetPlayer(), \"CSQ_0150_FTUE_MakeYourVoiceHeard\") ||\r\nPlayer_HasCompletedCommission(GetPlayer(), \"CSQ_0150_FTUE_MakeYourVoiceHeard\")"
+	},
+	"choiceType": "Default",
+	"guid": "6064632110820425730",
+	"name": "DD_ServiceNPC_NodeAdministrator_113_Choice_1",
+	"typeId": "1091110027"
+}

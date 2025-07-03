@@ -1,0 +1,56 @@
+{
+	"completionResponsesIds": [
+		{
+			"guid": "6064629738086596627",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"channelDuration": 0,
+	"activePredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0002_CCC_CollectorOfCursedCurios\",\"MAP_0002_CCC_Phase03\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0002_TDC_TheDivineCarnage\",\"GotCarnaUltimo\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0002_TDC_TheDivineCarnage\",\"HaveIncantraKerBar\")"
+	},
+	"cuePredicate":
+	{
+		"expression": ""
+	},
+	"deleteOnCompletion": false,
+	"singleUse": false,
+	"alwaysShowUIPrompt": true,
+	"cancelChannelIfActivePredicateEverFails": true,
+	"channelModifierType": "NONE",
+	"rewardTableId":
+	{
+		"guid": "0",
+		"typeId": "1091110008",
+		"name": "None"
+	},
+	"startEffect": "None",
+	"endEffect": "None",
+	"failEffect": "None",
+	"successEffect": "/Game/Effects/FX_Environment/Corruption/Particles/FX_Corruption_newEvilFire.FX_Corruption_newEvilFire",
+	"cueEffect": "None",
+	"startSound": "None",
+	"endSound": "None",
+	"failSound": "None",
+	"successSound": "None",
+	"cueSound": "None",
+	"interactAnimTag": "None",
+	"deletionDelay": 0,
+	"activeCueEnabled": true,
+	"activeCueIgnoresActivePredicate": false,
+	"facePlayer": false,
+	"allowInCombat": true,
+	"spawnAtBottomCapsule": false,
+	"channelAnimation": "/Game/Characters/Animations/00_ABLT/CM_M_ABLT_FlowerPick_Montage.CM_M_ABLT_FlowerPick_Montage",
+	"interactRadius": 200,
+	"interactTolerance": 30,
+	"busyTime": 0.89999997615814209,
+	"clientBusyTime": 1,
+	"channelStartResponseIds": [],
+	"failResponsesIds": [],
+	"guid": "6064629738015293456",
+	"name": "MAPI_0002_EVT_TuteksLastStand_Monolith_Kerbar",
+	"typeId": "1091110031"
+}

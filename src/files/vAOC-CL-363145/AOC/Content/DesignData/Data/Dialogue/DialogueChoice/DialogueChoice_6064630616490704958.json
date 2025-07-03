@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"A2923A494C13CA7513242798F1106D93\", \"Is it dangerous?\")",
+	"nextNodeId":
+	{
+		"guid": "6064630615919493138",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcQuestAvailable(GetPlayer(), \"SAQ_0024_P1_Q1_CatapultConstruction\")&&\r\n!IsOnStoryArcQuest(GetPlayer(), \"SAQ_0024_P1_Q1_CatapultConstruction\")"
+	},
+	"guid": "6064630616490704958",
+	"name": "DD_0026_LeodrasLionbrand_58",
+	"typeId": "1091110027"
+}

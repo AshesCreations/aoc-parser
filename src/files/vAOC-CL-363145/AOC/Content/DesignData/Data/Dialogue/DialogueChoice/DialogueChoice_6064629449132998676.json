@@ -1,0 +1,34 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"B766A2D3404C5D89E91B4EB9BED00E83\", \"Can become citizen\")",
+	"nextNodeId":
+	{
+		"guid": "6064629449117204497",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064628617580838912",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064632122198917136",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064632122203832337",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "Node_CanPlayerBecomeCitizen\r\n(GetPlayer(), \r\nNode_GetActorCityNode(GetInteractionTarget())) \r\n== \r\ntrue"
+	},
+	"choiceType": "Default",
+	"guid": "6064629449132998676",
+	"name": "DD_ServiceNPC_NodeAdministrator_68",
+	"typeId": "1091110027"
+}

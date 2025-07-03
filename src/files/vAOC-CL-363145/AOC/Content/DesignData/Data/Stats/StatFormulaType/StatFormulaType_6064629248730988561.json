@@ -1,0 +1,51 @@
+{
+	"equationId":
+	{
+		"guid": "6064629248731840530",
+		"typeId": "10516612381411112",
+		"name": "None"
+	},
+	"inputTerms": [
+		{
+			"termId":
+			{
+				"guid": "6064629248780337173",
+				"typeId": "10516612381411115",
+				"name": "None"
+			},
+			"value":
+			{
+				"expression": "const HitInProgress = GetHitInProgress();\r\nconst Instigator = GetInstigator();\r\n\r\nconst PhysicalTag = HitHasTag(HitInProgress, \"Element.Physical\");\r\nconst MagicalTag = HitHasTag(HitInProgress, \"Element.Magical\");\r\nconst PhysicalOverride = CheckForDamageTag(HitInProgress, \"ability.PhysicalScalingOverride\");\r\nconst MagicalOverride = CheckForDamageTag(HitInProgress, \"ability.MagicalScalingOverride\");\r\n\r\nconst IsPhysical = (PhysicalTag || PhysicalOverride) && !MagicalOverride;\r\nconst IsMagical = (MagicalTag || MagicalOverride) && !PhysicalOverride;\r\nconst IsHealing  = HitHasTag(HitInProgress, \"Element.Healing\");\r\n\r\nvar Crit = 0.0;\r\n\r\nif (IsPhysical) {\r\n    set Crit = Crit + GetStat(Instigator, $#10516612381411111:109343399171794$); }\r\nif (IsMagical && !IsPhysical) {\r\n    set Crit = Crit + GetStat(Instigator, $#10516612381411111:109343399171795$); }\r\nif (IsHealing && !(IsPhysical || IsMagical)) { // if only we had elses\r\n    set Crit = Crit + GetStat(Instigator, $#10516612381411111:6064629246756323331$); }\r\n\r\nCrit"
+			},
+			"bOptional": false,
+			"bKeepBeyondScope": false,
+			"filter":
+			{
+				"expression": ""
+			},
+			"mergeRuleOverride": "Merge_Default"
+		},
+		{
+			"termId":
+			{
+				"guid": "6064629248881459228",
+				"typeId": "10516612381411115",
+				"name": "None"
+			},
+			"value":
+			{
+				"expression": "const HitInProgress = GetHitInProgress();\r\nconst Target = GetTarget();\r\n\r\nconst IsPhysical = HitHasTag(HitInProgress, \"Element.Physical\");\r\nconst IsMagical  = HitHasTag(HitInProgress, \"Element.Magical\");\r\n\r\nvar CritA = 0.0;\r\n\r\nif (IsPhysical) {\r\n    set CritA = CritA + GetStat(Target, $#10516612381411111:109343399171814$); }\r\nif (IsMagical) {\r\n    set CritA = CritA + GetStat(Target, $#10516612381411111:109343183951495$); }\r\n\r\nCritA"
+			},
+			"bOptional": false,
+			"bKeepBeyondScope": false,
+			"filter":
+			{
+				"expression": ""
+			},
+			"mergeRuleOverride": "Merge_Default"
+		}
+	],
+	"guid": "6064629248730988561",
+	"name": "UniversalCriticalChance",
+	"typeId": "10516612381411113"
+}

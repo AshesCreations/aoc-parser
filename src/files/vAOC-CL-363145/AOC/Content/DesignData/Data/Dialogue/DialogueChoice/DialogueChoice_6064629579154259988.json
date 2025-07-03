@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"94E1D915420213EF98D6AC9D1FD1C66E\", \"Did you say something about needing meat?\")",
+	"nextNodeId":
+	{
+		"guid": "6064629577112944694",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcQuestAvailable(GetPlayer(),\"MAQ_0014_01_02_SourcingMeat\")&&\r\n!IsOnStoryArcQuest(GetPlayer(),\"MAQ_0014_01_02_SourcingMeat\")"
+	},
+	"guid": "6064629579154259988",
+	"name": "DDR_0014_Lorne_48",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,37 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"6A2A859E466470D8E40EB0ADE7E69EBC\", \"[Trace with the Oil]\")",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064632230249365587",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064632230914556048",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064632230228394060",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "Player_HasItem(GetPlayer(),\"CSQ_ITM_0081_OCC_OilOfSeventhSight\")&&\r\nPlayer_ObjectiveStateEquals(GetPlayer(),\"CSQ_NOB_0081_OCC_EOB_TraceSeal_Seduction_WestSkyHall\", EObjectiveState::Active)"
+	},
+	"narrativeRequirementsIds": [],
+	"choiceType": "Default",
+	"guid": "6064632230860882058",
+	"name": "CSQ_DD_0081_OCC_EOB_SealOfSeduction_WestSkyHall_2_Choice_1",
+	"typeId": "1091110027"
+}

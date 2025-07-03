@@ -1,0 +1,18 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"DDCE077E41A98AC267B951AC96C50ACC\", \"Delivery!\")",
+	"nextNodeId":
+	{
+		"guid": "6064631193649872923",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "!Player_HasCompletedCommission(GetPlayer(),\"CSQ_RVR_TLC_0030_06_CaravanOfCuriosities\")&&\r\nPlayer_HasCommission(GetPlayer(),\"CSQ_RVR_TLC_0030_06_CaravanOfCuriosities\")&&\r\nPlayer_HasItem(GetPlayer(),\"CSQ_ITM_LostCrates_CaravanOfCuriosities\")"
+	},
+	"choiceType": "Default",
+	"guid": "6064631193648955418",
+	"name": "MADD_0005A_BLO_Antiquitor_20",
+	"typeId": "1091110027"
+}

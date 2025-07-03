@@ -1,0 +1,33 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 2,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0,
+		"fishingEvents": 0,
+		"statEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "const type = GetRecordTypeId(GetHitSourceRecord(GetHitEvent()));\r\nGetStatModValue(GetHitEvent(), $#10516612381411111:108986352686712$) < 0.0 &&\r\ntype != GetReactionTypeId() &&\r\ntype != GetEffectTypeId() &&\r\n(HitHasTag(GetHitEvent(), \"Element.Magical.Ice\") ||\r\nHitHasTag(GetHitEvent(), \"Element.Magical.Water\"))"
+	},
+	"bEvaluateApplyingHit": false,
+	"instigator": "Owner",
+	"targetsBitmask": 1,
+	"reactHitsIds": [
+		{
+			"guid": "6064633503913149796",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"instigatorProcLimit": 0,
+	"globalProcLimit": 0,
+	"procReactOnApply": false,
+	"guid": "6064633503218794611",
+	"name": "ClayDunzenkell_EarthenMalleabilityPassive_Reaction",
+	"typeId": "3031600202"
+}

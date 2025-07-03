@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"DE2111464B27BBBD4DB48591C969280F\", \"I\\'m from the Settler Militia.\")",
+	"nextNodeId":
+	{
+		"guid": "6064630333237428272",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0005A_FGG_ForGreaterGlory\",\"MAP_0005A_FGG_Phase01\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0005A_TIG_TroubleInGrazeland\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005A_TIG_TroubleInGrazeland\",\"ReportToOrrik\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005A_TIG_TroubleInGrazeland\",\"SpeakLumberjack\")\r\n"
+	},
+	"guid": "6064630333234610223",
+	"name": "MADD_0005A_TIG_NPC_LumberChief_4",
+	"typeId": "1091110027"
+}

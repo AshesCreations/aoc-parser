@@ -1,0 +1,100 @@
+{
+	"commissionType": "Generic",
+	"commissionGameplayTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "Biome.Desert"
+			},
+			{
+				"tagName": "Quest.Commission.Artisan.Gathering.Herbalism"
+			},
+			{
+				"tagName": "Quest.Commission.Tier.T2"
+			}
+		],
+		"parentTags": [
+			{
+				"tagName": "Biome"
+			},
+			{
+				"tagName": "Quest.Commission.Artisan.Gathering"
+			},
+			{
+				"tagName": "Quest.Commission.Artisan"
+			},
+			{
+				"tagName": "Quest.Commission"
+			},
+			{
+				"tagName": "Quest"
+			},
+			{
+				"tagName": "Quest.Commission.Tier"
+			}
+		]
+	},
+	"preRequisiteQuestsIds": [],
+	"autoFailTimer": -1,
+	"bRepeatable": false,
+	"mainObjectiveType": "Collect",
+	"commissionSection": 2,
+	"biomeOrigin": "FloodPlains",
+	"bFromDynamicContent": false,
+	"availabilityExpression":
+	{
+		"expression": "0"
+	},
+	"bDisabled": true,
+	"level": 11,
+	"commissionRarity": "Common",
+	"objectivesIds": [
+		{
+			"guid": "6064632954953334809",
+			"typeId": "1091110420",
+			"name": "None"
+		}
+	],
+	"allowMultipleCompletion": false,
+	"commissionName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"B9F55CB1421B74705B4B2C93D0465179\", \"Brush with Brilliance\")",
+	"flavorText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"AFE991764542B100D2FF9E9E5A8A456D\", \"The vibrant hues of the Paintbrush plant stand out like strokes of a master artist, its fiery red blossoms sought after for their striking beauty and potent pigments. Crafters and artists across the land eagerly await this treasure to bring color and life to their creations. Brave the fields and gather these brilliant blooms, for they are sure to fetch a handsome reward.\")",
+	"mainObjectiveText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"1275424F4C31F795F819559A71AB84FF\", \"Harvest Paintbrush in the Sandsquall Desert\")",
+	"rewardTablesIds": [
+		{
+			"guid": "6064632139939905608",
+			"typeId": "1091110040",
+			"name": "None"
+		}
+	],
+	"calloutName": "",
+	"calloutDescription": "",
+	"bCanProgressWhileInRaid": false,
+	"expiration":
+	{
+		"duration": "0"
+	},
+	"cooldown":
+	{
+		"duration": "0"
+	},
+	"moneyCost": "0",
+	"resourceCost": [],
+	"mayoralCompletionCount": 0,
+	"rewardId":
+	{
+		"guid": "0",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"bNodeTargeted": false,
+	"targetRewardId":
+	{
+		"guid": "0",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"questItemListIds": [],
+	"guid": "6064632954123976711",
+	"name": "COM_SAN_Gather_Raw_Plant_Paintbrush_DISABLED",
+	"typeId": "280002"
+}

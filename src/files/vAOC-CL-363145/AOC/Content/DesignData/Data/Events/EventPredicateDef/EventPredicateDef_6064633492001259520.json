@@ -1,0 +1,26 @@
+{
+	"expression":
+	{
+		"expression": "(Event_GetNumParticipants() == 0) && (Event_GetStageTimer() > 600.0)"
+	},
+	"maxActivationCount": 1,
+	"bRequiresRegressionToLoop": true,
+	"objectivesIds": [],
+	"triggersIds": [
+		{
+			"guid": "6064633492002963457",
+			"typeId": "23095135",
+			"name": "None"
+		}
+	],
+	"flowEditorNodeLocation":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"routePins": [],
+	"guid": "6064633492001259520",
+	"name": "EVT_JUN_0006_SummonersGift_FailureTimer",
+	"typeId": "23095129"
+}

@@ -1,0 +1,18 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"A6CDDF934D3FF252E7570D8EF6353689\", \"[Try the Bloody Key]\")",
+	"nextNodeId":
+	{
+		"guid": "6064631556222353553",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "Player_HasCommission(GetPlayer(),\"CSQ_RVR_0066_WIB_WhereIsBellsong\")&&\r\nPlayer_HasItem(GetPlayer(),\"CSQ_ITM_0066_WIB_TheBloodKey\")"
+	},
+	"choiceType": "Default",
+	"guid": "6064631556209508494",
+	"name": "CSQ_DD_0066_WIB_BellsongChest_5",
+	"typeId": "1091110027"
+}

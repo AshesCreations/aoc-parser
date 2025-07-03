@@ -1,0 +1,109 @@
+{
+	"bAllowSatisfactionToRegress": false,
+	"parameterTypes": 2,
+	"objectiveType": "Kill",
+	"completionCriteria": [
+		{
+			"bOverrideCompletionValueWithExpression": true,
+			"completionValue": 0,
+			"operator": "GreaterThanOrEqualTo",
+			"completionExpression":
+			{
+				"expression": "Event_GetActivity() >= 30"
+			},
+			"completionTriggersIds": [],
+			"bDisplayOnTracker": false,
+			"relevantTrackerIds": [],
+			"displayText": "",
+			"displayType": 0,
+			"displayCompletionValue": 0,
+			"bInvertProgressDisplay": false
+		}
+	],
+	"nPCObjectiveIconOverrideId":
+	{
+		"guid": "0",
+		"typeId": "949952112329",
+		"name": "None"
+	},
+	"progressExpression":
+	{
+		"expression": ""
+	},
+	"gameplayTagFilter":
+	{
+		"tokenStreamVersion": 0,
+		"tagDictionary": [
+			{
+				"tagName": "character.vermin.scorpion"
+			},
+			{
+				"tagName": "character.vermin.giantScorpion"
+			},
+			{
+				"tagName": "character.arcana.crystalGolem"
+			},
+			{
+				"tagName": "character.arcana.crystalGolemShard"
+			},
+			{
+				"tagName": "character.saurian.crocodile"
+			},
+			{
+				"tagName": "character.saurian.alligator"
+			}
+		],
+		"queryTokenStream": [ 0, 1, 1, 6, 0, 1, 2, 3, 4, 5 ],
+		"userDescription": "",
+		"autoDescription": " ANY( character.vermin.scorpion, character.vermin.giantScorpion, character.arcana.crystalGolem, character.arcana.crystalGolemShard, character.saurian.crocodile, character.saurian.alligator )"
+	},
+	"populationSetId":
+	{
+		"guid": "0",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"trackerId":
+	{
+		"guid": "0",
+		"typeId": "23095133",
+		"name": "None"
+	},
+	"interactablesIds": [],
+	"professionFilterIds": [],
+	"gatherableFilterIds": [],
+	"collectionFilterId":
+	{
+		"guid": "0",
+		"typeId": "1091110041",
+		"name": "None"
+	},
+	"collectionCount": 5,
+	"abilityRecordId":
+	{
+		"guid": "0",
+		"typeId": "30316001",
+		"name": "None"
+	},
+	"activityType": "NPCKill",
+	"activityQueryLocation":
+	{
+		"x": -82884.565872000006,
+		"y": 835373.38089000003,
+		"z": 7686.4378919999999
+	},
+	"activityQueryExtent":
+	{
+		"x": 50000,
+		"y": 50000,
+		"z": 20000
+	},
+	"visibilityExpression":
+	{
+		"expression": ""
+	},
+	"visibilityOverridesTrackerFilter": false,
+	"guid": "6064633622044412243",
+	"name": "EVT_SAN_0015_LIE_ActivationPredicateObjective",
+	"typeId": "23095130"
+}

@@ -1,0 +1,118 @@
+{
+	"levelDefinitionId":
+	{
+		"guid": "6064629126799097877",
+		"typeId": "9227326",
+		"name": "None"
+	},
+	"playerFacingName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"FEE3DE634A91808748928EA74CEC4005\", \"Highwaymen Hills\")",
+	"worldDiscoveryId":
+	{
+		"guid": "6064632202593501194",
+		"typeId": "5882304",
+		"name": "None"
+	},
+	"overlappingZoisIds": [
+		{
+			"guid": "6064629126900678679",
+			"typeId": "9127326",
+			"name": "None"
+		}
+	],
+	"mapLocation":
+	{
+		"x": -629043.941659,
+		"y": 482068.428075,
+		"z": 0
+	},
+	"mapIconVisualId":
+	{
+		"guid": "6064630988798951424",
+		"typeId": "949952112329",
+		"name": "None"
+	},
+	"editorColor":
+	{
+		"x": 0.84999999999999998,
+		"y": 1,
+		"z": 0
+	},
+	"pOIRewardTables": [
+		{
+			"inclusionExpression":
+			{
+				"expression": "DoesNPCContainTag(\"character.humanoid.raider\") ||\r\nDoesNPCContainTag(\"character.humanoid.captain\")"
+			},
+			"rewardTableId":
+			{
+				"guid": "6064632274836783104",
+				"typeId": "1091110040",
+				"name": "None"
+			}
+		},
+		{
+			"inclusionExpression":
+			{
+				"expression": "DoesNPCContainTag(\"character.humanoid.raider\") ||\r\nDoesNPCContainTag(\"character.humanoid.captain\") ||\r\nDoesNPCContainTag(\"character.humanoid.ranger\")"
+			},
+			"rewardTableId":
+			{
+				"guid": "6064632275003441156",
+				"typeId": "1091110040",
+				"name": "None"
+			}
+		},
+		{
+			"inclusionExpression":
+			{
+				"expression": "DoesNPCContainTag(\"character.humanoid.healer\") ||\r\nDoesNPCContainTag(\"character.humanoid.arsonist\") ||\r\nDoesNPCContainTag(\"character.humanoid.frosthand\")"
+			},
+			"rewardTableId":
+			{
+				"guid": "6064632275003572229",
+				"typeId": "1091110040",
+				"name": "None"
+			}
+		},
+		{
+			"inclusionExpression":
+			{
+				"expression": "DoesNPCContainTag(\"character.humanoid.raider\") ||\r\nDoesNPCContainTag(\"character.humanoid.captain\")"
+			},
+			"rewardTableId":
+			{
+				"guid": "6064632275003375619",
+				"typeId": "1091110040",
+				"name": "None"
+			}
+		},
+		{
+			"inclusionExpression":
+			{
+				"expression": "DoesNPCContainTag(\"character.humanoid.raider\") ||\r\nDoesNPCContainTag(\"character.humanoid.captain\")"
+			},
+			"rewardTableId":
+			{
+				"guid": "6064632275278037001",
+				"typeId": "1091110040",
+				"name": "None"
+			}
+		},
+		{
+			"inclusionExpression":
+			{
+				"expression": "DoesNPCContainTag(\"character.humanoid\")"
+			},
+			"rewardTableId":
+			{
+				"guid": "6064632349999038476",
+				"typeId": "1091110040",
+				"name": "None"
+			}
+		}
+	],
+	"alignmentsAssignedUponEnteringIds": [],
+	"guid": "6064631211767693318",
+	"name": "RVR_HighwaymenHills",
+	"typeId": "9128326"
+}

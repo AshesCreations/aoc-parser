@@ -1,0 +1,12 @@
+{
+	"equation":
+	{
+		"expression": "// bow stats on play\r\nconst CritRating = GetStat(GetInstigator(), $#10516612381411111:6064633191815512067$);\r\nconst Crit = CritRating / (CritRating + 100.0);\r\n\r\n// hunting npc stats\r\nconst PhysicalCritAvoid = GetStat(GetTarget(), $#10516612381411111:109343399171814$);\r\nconst MagicalCritAvoid = GetStat(GetTarget(), $#10516612381411111:109343183951495$);\r\n\r\nCrit - Max(PhysicalCritAvoid, MagicalCritAvoid)"
+	},
+	"constraints":
+	{
+	},
+	"guid": "6064633192146599959",
+	"name": "HuntingBowCritChance",
+	"typeId": "10516612381411112"
+}

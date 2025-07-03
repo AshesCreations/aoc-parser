@@ -1,0 +1,12 @@
+{
+	"equation":
+	{
+		"expression": "const itemRarity = GetItemRarity();\r\nconst recipeCert = GetSourceCertificationTier();\r\n\r\n// get xp for a kill at your level\r\nconst level = float(GetCharacterLevel(GetOwner()));\r\nconst xp    = EvalCurve($#10516612381411114:6064630639394422811$, level);\r\nconst gatheringMod = 0.2;\r\n\r\nvar recipeTierMod = 1.0;\r\nif(recipeCert == 0){\r\n     set recipeTierMod = EvalCurve($#10516612381411114:6064633469604267308$, level);\r\n}else if(recipeCert == 1){\r\n     set recipeTierMod = EvalCurve($#10516612381411114:6064633469606364461$, level);\r\n}else if(recipeCert >= 2){\r\n     set recipeTierMod = EvalCurve($#10516612381411114:6064633469607937326$, level);\r\n}\r\nvar rarityMult = 1.0;\r\nif(itemRarity == 0){ // common\r\n     set rarityMult = 1.0;\r\n}else if(itemRarity == 1){ // uncommon\r\n     set rarityMult = 1.4;\r\n}else if(itemRarity == 2){ // rare\r\n     set rarityMult = 2.0;\r\n}else if(itemRarity == 3){ // heroic\r\n     set rarityMult = 4.0;\r\n}else if(itemRarity == 4){ // epic\r\n     set rarityMult = 8.0;\r\n}else if(itemRarity >= 5){ // LEG\r\n     set rarityMult = 20.0;\r\n}\r\nxp * gatheringMod * recipeTierMod * rarityMult"
+	},
+	"constraints":
+	{
+	},
+	"guid": "6064633469259284483",
+	"name": "Adventuring_Gathering_BaseXP",
+	"typeId": "10516612381411112"
+}

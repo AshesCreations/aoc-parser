@@ -1,0 +1,77 @@
+{
+	"completionResponsesIds": [
+		{
+			"guid": "6064633509517262853",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"objectivesToCompleteUponCompletionIds": [],
+	"objectivesToRevealUponCompletionIds": [],
+	"itemsToGrantUponCompletion": [],
+	"channelDuration": 7,
+	"activePredicate":
+	{
+		"expression": "(!HasMontageGroupInActiveAbilities(GetPlayer(), \"DefaultGroup\") || IsUsingAbility(GetPlayer(), \t$#30316001:6064631641648332884$)) && !HasMontageGroupInActiveAbilities(GetPlayer(), \"EmoteGroup\") && !IsPlayerHardCrowdControlled(GetPlayer())"
+	},
+	"cuePredicate":
+	{
+		"expression": ""
+	},
+	"visiblePredicate":
+	{
+		"expression": ""
+	},
+	"showErrorIfNotVisible": false,
+	"deleteOnCompletion": false,
+	"singleUse": false,
+	"alwaysShowUIPrompt": true,
+	"cancelChannelIfActivePredicateEverFails": true,
+	"interactTextFormat": "",
+	"channelModifierType": "NONE",
+	"rewardTableId":
+	{
+		"guid": "0",
+		"typeId": "1091110008",
+		"name": "None"
+	},
+	"startEffect": "/Game/Effects/FX_Harvestables/Surveying/Particles/NS_Survey_Pylon_Rotation.NS_Survey_Pylon_Rotation",
+	"endEffect": "None",
+	"failEffect": "None",
+	"successEffect": "None",
+	"cueEffect": "None",
+	"startSound": "None",
+	"endSound": "None",
+	"failSound": "None",
+	"successSound": "None",
+	"cueSound": "None",
+	"interactAnimTag": "None",
+	"deletionDelay": 0,
+	"activeCueEnabled": true,
+	"activeCueIgnoresActivePredicate": false,
+	"facePlayer": false,
+	"allowInCombat": true,
+	"spawnAtBottomCapsule": false,
+	"channelAnimation": "/Game/Characters/Animations/00_BASE/All_No_Hnd_SurveyChannel01_M_Montage.All_No_Hnd_SurveyChannel01_M_Montage",
+	"interactRadius": 200,
+	"discoveryDistance": 200,
+	"interactTolerance": 30,
+	"interactAngle": 0,
+	"bRequireLOS": false,
+	"busyTime": 1,
+	"clientBusyTime": 1.1000000238418579,
+	"channelStartResponseIds": [],
+	"failResponsesIds": [],
+	"gatheringInteractionDataId":
+	{
+		"guid": "0",
+		"typeId": "19846",
+		"name": "None"
+	},
+	"interactCooldownMap":
+	{
+	},
+	"guid": "6064633509512282116",
+	"name": "TEST_SEARCH_SurveyPylonInteraction",
+	"typeId": "1091110031"
+}

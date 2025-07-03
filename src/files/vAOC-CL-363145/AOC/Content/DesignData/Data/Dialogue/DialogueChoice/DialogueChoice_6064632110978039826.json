@@ -1,0 +1,29 @@
+{
+	"choiceText": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"D6EBC0514F18164BE417FE85139539C4\", \"I completed a mayoral commission!\")",
+	"nextNodeId":
+	{
+		"guid": "6064632111042986007",
+		"typeId": "1091110028",
+		"name": "DD_ServiceNPC_NodeAdministrator_114"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064632110983348243",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064632110983806996",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "Player_ObjectiveStateEquals(GetPlayer(), \"CSQ_0152_FTUE_HelpingOutAroundTown_1\", EObjectiveState::Complete)\r\n&& !Player_ObjectiveStateEquals(GetPlayer(), \"CSQ_0152_FTUE_HelpingOutAroundTown_2\", EObjectiveState::Complete)"
+	},
+	"choiceType": "Default",
+	"guid": "6064632110978039826",
+	"name": "DD_ServiceNPC_NodeAdministrator_14_Choice_9",
+	"typeId": "1091110027"
+}

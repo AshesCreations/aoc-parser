@@ -1,0 +1,49 @@
+{
+	"expression":
+	{
+		"expression": "Event_GetStageTimer() >= 100.0"
+	},
+	"triggersIds": [
+		{
+			"guid": "108324381480617",
+			"typeId": "23095135",
+			"name": "POIEventPrototype_PE0001_Battlefield_GoblinsvTrolls_Transition_ToInactive"
+		},
+		{
+			"guid": "108328247580332",
+			"typeId": "23095135",
+			"name": "POIEventPrototype_PE0001_Battlefield_GoblinsvTrolls_DespawnWave_G1"
+		},
+		{
+			"guid": "108328249218733",
+			"typeId": "23095135",
+			"name": "POIEventPrototype_PE0001_Battlefield_GoblinsvTrolls_DespawnWave_G2"
+		},
+		{
+			"guid": "108328250529454",
+			"typeId": "23095135",
+			"name": "POIEventPrototype_PE0001_Battlefield_GoblinsvTrolls_DespawnWave_G3"
+		},
+		{
+			"guid": "108328254199471",
+			"typeId": "23095135",
+			"name": "POIEventPrototype_PE0001_Battlefield_GoblinsvTrolls_DespawnWave_T1"
+		},
+		{
+			"guid": "108328255444656",
+			"typeId": "23095135",
+			"name": "POIEventPrototype_PE0001_Battlefield_GoblinsvTrolls_DespawnWave_T2"
+		},
+		{
+			"guid": "108328256886449",
+			"typeId": "23095135",
+			"name": "POIEventPrototype_PE0001_Battlefield_GoblinsvTrolls_DespawnWave_T3"
+		}
+	],
+	"bIsObjective": false,
+	"objectiveText": "Goblins Remaining: {3-n}/3",
+	"progressType": "IntType",
+	"guid": "108324372305576",
+	"name": "POIEventPrototype_PE0001_Battlefield_GoblinsvTrolls_TransitionToInactive",
+	"typeId": "23095129"
+}

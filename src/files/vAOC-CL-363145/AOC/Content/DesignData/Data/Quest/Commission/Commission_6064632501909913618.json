@@ -1,0 +1,65 @@
+{
+	"commissionType": "PlayerSponsored",
+	"preRequisiteQuestsIds": [],
+	"bRepeatable": false,
+	"mainObjectiveType": "Kill",
+	"commissionSection": 1,
+	"biomeOrigin": "FloodPlains",
+	"bFromDynamicContent": false,
+	"availabilityExpression":
+	{
+		"expression": ""
+	},
+	"bDisabled": false,
+	"level": 15,
+	"commissionRarity": "Common",
+	"objectivesIds": [
+		{
+			"guid": "6064632501916074003",
+			"typeId": "1091110420",
+			"name": "NarrativeObjective_6064632501916074003"
+		}
+	],
+	"allowMultipleCompletion": false,
+	"commissionName": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"31DC209C4B7B49A1FC6FCA9F792C83A5\", \"Grem Hunt in the Eliz Foothills\")",
+	"flavorText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"8FB16F1F4142EBB2FAC51E9924FDAAF3\", \"Beware an abundance of Grems in the foothills near Lake Eliz. The Mayor of Joeva has authorized a hunt of these creatures to restore safety to the region and decrees rewards for your assistance.\")",
+	"mainObjectiveText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"027586E944796470018615A73EC7E426\", \"Hunt Grems in the Eliz Foothills\")",
+	"rewardTablesIds": [
+		{
+			"guid": "6064632340743651341",
+			"typeId": "1091110040",
+			"name": "Mayoral_Commission_Kill"
+		}
+	],
+	"calloutName": "",
+	"calloutDescription": "",
+	"bCanProgressWhileInRaid": false,
+	"expiration":
+	{
+		"duration": "172800000"
+	},
+	"cooldown":
+	{
+		"duration": "21600000"
+	},
+	"moneyCost": "50000",
+	"resourceCost": [],
+	"mayoralCompletionCount": 100,
+	"rewardId":
+	{
+		"guid": "6064632151092428827",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"bNodeTargeted": false,
+	"targetRewardId":
+	{
+		"guid": "0",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"questItemListIds": [],
+	"guid": "6064632501909913618",
+	"name": "MCOM_RVR_JOEVA_Kill_Grem_ElizFoothills",
+	"typeId": "280002"
+}

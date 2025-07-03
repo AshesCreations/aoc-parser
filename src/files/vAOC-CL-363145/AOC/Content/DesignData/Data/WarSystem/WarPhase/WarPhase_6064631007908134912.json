@@ -1,0 +1,61 @@
+{
+	"displayName": "NSLOCTEXT(\"\", \"3C76DC4442E7B5E7AC0907B7EF5BF797\", \"Phase 1\")",
+	"phaseToastId":
+	{
+		"guid": "6064631164654583808",
+		"typeId": "949952112328",
+		"name": "None"
+	},
+	"victoryConditionText": "",
+	"phaseDescriptionLong": "",
+	"bStartEventOnPhaseBegin": true,
+	"bEventsOccurRandomly": true,
+	"bLoopWarEventsArray": true,
+	"warEventsIds": [
+		{
+			"guid": "6064631034650951682",
+			"typeId": "23095125",
+			"name": "None"
+		},
+		{
+			"guid": "6064630446134525953",
+			"typeId": "23095125",
+			"name": "None"
+		}
+	],
+	"schedulePlusMinusMinutes": 0,
+	"scheduleOfEvents": [ 1, 2, 3, 4, 5, 6 ],
+	"bUseParentWarRecordVictoryPointTable": false,
+	"bUseGlobalConstantVictoryPointTable": true,
+	"victoryPointTableId":
+	{
+		"guid": "0",
+		"typeId": "98966982",
+		"name": "None"
+	},
+	"bUseDefaultPhaseRewards": false,
+	"bUseDefaultObjectiveRewards": false,
+	"bUseDefaultEventRewards": false,
+	"completionCondition":
+	{
+		"expression": "War_HasTimeElapsedSeconds(18)"
+	},
+	"bUseParentWarRecordLocaleSelectionOptions": true,
+	"phaseLocaleSelectionType": "WarRecordLocaleRequest",
+	"bTargetNodeLocaleRequestFirst": false,
+	"localeRequestId":
+	{
+		"guid": "0",
+		"typeId": "23095138",
+		"name": "None"
+	},
+	"customLocaleSelectionPerEvent": [],
+	"bFlaggedAgainstEachOther": true,
+	"bFlaggedInRelevantNodeZOIs": true,
+	"bAllowAlliance_UNSUPPORTED": false,
+	"bCanSurrender": true,
+	"surrenderAvailableSecondsAfterPhaseStart": 3600,
+	"guid": "6064631007908134912",
+	"name": "TestPhase1",
+	"typeId": "98966980"
+}

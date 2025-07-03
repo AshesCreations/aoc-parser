@@ -1,0 +1,32 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 2,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0,
+		"fishingEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "const type = GetRecordTypeId(GetHitSourceRecord(GetHitEvent()));\r\nGetStatModValue(GetHitEvent(), $#10516612381411111:108986352686712$) < 0.0 &&\r\ntype != GetReactionTypeId() &&\r\ntype != GetEffectTypeId() &&\r\nHitHasTag(GetHitEvent(), \"Element.Magical.Ice\") || HitHasTag(GetHitEvent(), \"Element.Magical.Water\")"
+	},
+	"bEvaluateApplyingHit": false,
+	"instigator": "Instigator",
+	"targetsBitmask": 1,
+	"reactHitsIds": [
+		{
+			"guid": "6064632695091495322",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"instigatorProcLimit": 0,
+	"globalProcLimit": 0,
+	"procReactOnApply": false,
+	"guid": "6064632695059317145",
+	"name": "FireSkeleton_BurningAuraWaterIceCheck_Reaction",
+	"typeId": "3031600202"
+}

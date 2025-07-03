@@ -1,0 +1,18 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"E06DF7F540757CD558B10FBBFE3259F0\", \"You require the Elements of Daragal\")",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "(Player_HasCommission (GetPlayer(), \"CSQ_RVR_BL_Daragal_TCS\") &&(!Player_ObjectiveStateEquals(GetPlayer(), \"SQO_RVR_BL_Daragal_Loot1\", EObjectiveState::Complete)||(!Player_ObjectiveStateEquals(GetPlayer(), \"SQO_RVR_BL_Daragal_Loot2\", EObjectiveState::Complete)||(!Player_ObjectiveStateEquals(GetPlayer(), \"SQO_RVR_BL_Daragal_Loot3\", EObjectiveState::Complete))))||(!Player_HasItem(GetPlayer(), \"SQ_BL_Daragal_Salt\")||(!Player_HasItem(GetPlayer(), \"SQ_BL_Daragal_Eye\")||(!Player_HasItem(GetPlayer(), \"SQ_BL_Daragal_Seed\")))))"
+	},
+	"choiceType": "Default",
+	"guid": "6064631879489421323",
+	"name": "SQ_BL_Daragal_WellHead_10",
+	"typeId": "1091110027"
+}

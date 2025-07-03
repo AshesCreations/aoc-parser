@@ -1,0 +1,31 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 4,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "GetEffectCount(GetInstigator(),$#30316002:6064631454318893954$) > 0\r\n&&\r\nGetRecordTypeId(GetHitSourceRecord(GetHitEvent())) != GetReactionTypeId() \r\n&&\r\n(GetRecordTypeId(GetHitSourceRecord(GetHitEvent())) != GetEffectTypeId())\r\n&&\r\nGetOwner() == GetInstigator() \r\n&&\r\n(HitHasTag(GetHitEvent(), \"Element.Physical\") || \r\nHitHasTag(GetHitEvent(), \"Element.Magical\")) \r\n&& \r\n!HitHasTag(GetHitEvent(), \"ability.weaponcombo\")\r\n&&\r\n(GetStatModValue(GetHitEvent(), $#10516612381411111:108986352686712$) < 0.0 ||\r\nGetStatModValue(GetHitEvent(), $#10516612381411111:108986352686712$) > 0.0)"
+	},
+	"bEvaluateApplyingHit": false,
+	"instigator": "Owner",
+	"targetsBitmask": 8,
+	"reactHitsIds": [
+		{
+			"guid": "6064631454222551957",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"instigatorProcLimit": 0,
+	"globalProcLimit": 0,
+	"procReactOnApply": false,
+	"guid": "6064631454496722677",
+	"name": "Weapon_Ranged_Wand_Proc_Echo_Damage_4Stack",
+	"typeId": "3031600202"
+}

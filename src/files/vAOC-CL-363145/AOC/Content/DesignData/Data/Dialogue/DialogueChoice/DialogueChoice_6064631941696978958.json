@@ -1,0 +1,18 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"059759754F6145B8B49743AD2C50596D\", \"Need Quest\")",
+	"nextNodeId":
+	{
+		"guid": "6064632111143125238",
+		"typeId": "1091110028",
+		"name": "CSQ_RVR_0081_FB_NordenResnik_DLG_89"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "!Player_HasCommission(GetPlayer(),\"CSQ_RVR_0084_FB_MercilessGeneral\") &&\r\n!Player_HasCompletedCommission(GetPlayer(),\"CSQ_RVR_0084_FB_MercilessGeneral\")"
+	},
+	"choiceType": "Default",
+	"guid": "6064631941696978958",
+	"name": "CSQ_RVR_0081_FB_NordenResnik_DLG_82",
+	"typeId": "1091110027"
+}

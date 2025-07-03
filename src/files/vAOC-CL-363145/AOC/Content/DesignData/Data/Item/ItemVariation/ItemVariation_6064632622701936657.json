@@ -1,0 +1,13 @@
+{
+	"quality":
+	{
+		"expression": "const Rand = RandIntRange(1,1000);\r\n\r\nconst IsUncommon = Rand < 900;\r\nconst IsRare = Rand >= 900 && Rand < 980;\r\nconst IsHeroic = Rand >= 980 && Rand < 990;\r\nconst IsEpic = Rand >= 990 && Rand < 1000;\r\nconst IsLegendary = Rand == 1000;\r\n\r\n\r\nSelectInt(IsUncommon, 6, \r\nSelectInt(IsRare, 16, \r\nSelectInt(IsHeroic, 31, \r\nSelectInt(IsEpic, 51, \r\nSelectInt(IsLegendary, 71, 6)))))"
+	},
+	"durability":
+	{
+		"expression": ""
+	},
+	"guid": "6064632622701936657",
+	"name": "Loot_Resource_UC90_R8_H1_E0.9_L0.1",
+	"typeId": "1091111111"
+}

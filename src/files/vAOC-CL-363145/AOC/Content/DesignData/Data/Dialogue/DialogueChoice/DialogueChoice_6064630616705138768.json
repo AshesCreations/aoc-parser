@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"146E7BF94E4F681BCFDBF780B1BEB9D0\", \"I\\'ve got some intel for you.\")",
+	"nextNodeId":
+	{
+		"guid": "6064630616717590609",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsOnStoryArcQuest(GetPlayer(), \"SAQ_0026_P1_Q2_ScoutingMission\")&&\r\nGetStoryArcQuestFlag(GetPlayer(), \"SAQ_0026_P1_Q2_ScoutingMission\", \"IntelGathered\")"
+	},
+	"guid": "6064630616705138768",
+	"name": "DD_0026_LeodrasLionbrand_72",
+	"typeId": "1091110027"
+}

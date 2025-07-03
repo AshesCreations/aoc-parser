@@ -1,0 +1,28 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"440B7B744F58283008B35B8748985279\", \"I\\'ve packed a crate.\")",
+	"nextNodeId":
+	{
+		"guid": "6064633668513103889",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064633668565598235",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "(Player_HasCommission (GetPlayer(), \"CSQ_0159_FTUE_RunningCrates\") && Player_ObjectiveStateEquals(GetPlayer(), \"CSQ_0159_FTUE_RunningCrates_2_pack\", EObjectiveState::Complete) && !Player_ObjectiveStateEquals(GetPlayer(), \"CSQ_0159_FTUE_RunningCrates_Return\", EObjectiveState::Complete))"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064633668513103886",
+	"name": "Node_Caravansary_Helper_4_Choice_1",
+	"typeId": "1091110027"
+}

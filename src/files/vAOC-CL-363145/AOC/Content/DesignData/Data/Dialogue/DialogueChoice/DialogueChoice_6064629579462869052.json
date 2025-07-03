@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"73E14DA1462C2B1F0BBD738CA3EFA110\", \"You said you had reagents for me?\")",
+	"nextNodeId":
+	{
+		"guid": "6064629579466604605",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "(GetStoryArcVariable(\"MA_0014_PutDownRoots\",\"HerbsCollected\") > 0.0)||\r\n(GetStoryArcVariable(\"MA_0014_PutDownRoots\",\"MeatCollected\") > 0.0)"
+	},
+	"guid": "6064629579462869052",
+	"name": "DDR_0014_Lorne_84",
+	"typeId": "1091110027"
+}

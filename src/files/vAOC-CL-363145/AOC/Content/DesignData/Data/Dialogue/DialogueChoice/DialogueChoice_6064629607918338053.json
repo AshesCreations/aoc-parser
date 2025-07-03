@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"2E9169554AC3554CFAA7AB81AB6665F8\", \"Before\")",
+	"nextNodeId":
+	{
+		"guid": "6064629607918338057",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsOnStoryArcQuest(GetPlayer(),\"SAQ_0009_GH_QuicksilverToast\")\r\n&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"SAQ_0009_GH_QuicksilverToast\",\"HasManners\")"
+	},
+	"guid": "6064629607918338053",
+	"name": "MADD_0009_BartenderJames_5",
+	"typeId": "1091110027"
+}

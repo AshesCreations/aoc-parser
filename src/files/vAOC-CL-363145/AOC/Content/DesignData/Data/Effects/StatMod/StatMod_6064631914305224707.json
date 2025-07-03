@@ -1,0 +1,42 @@
+{
+	"statRefId":
+	{
+		"guid": "108986352686712",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"value":
+	{
+		"expression": "EvalFormula($#10516612381411113:6064629862506364928$)"
+	},
+	"bUseShieldAbsorb": false,
+	"shieldAbsorbPercentage":
+	{
+		"expression": ""
+	},
+	"bShowFloatingText": true,
+	"valueInputTerms": [
+		{
+			"termId":
+			{
+				"guid": "6064631035951644675",
+				"typeId": "10516612381411115",
+				"name": "None"
+			},
+			"value":
+			{
+				"expression": "var mod = 0.4;\r\nif(EvalFormula($#10516612381411113:6064631601365325731$)>0.0) {\r\n    set mod = mod * 1.3;\r\n}\r\n//if(GetEffectCountByTag(GetTarget(), \"Debuff.Frozen\") > 0){\r\n//    set mod = mod * 1.5;\r\n//}\r\nmod"
+			},
+			"bOptional": false,
+			"bKeepBeyondScope": false,
+			"filter":
+			{
+				"expression": ""
+			},
+			"mergeRuleOverride": "Merge_Default"
+		}
+	],
+	"guid": "6064631914305224707",
+	"name": "Bard_Song_Lament_AOE",
+	"typeId": "3031600201"
+}

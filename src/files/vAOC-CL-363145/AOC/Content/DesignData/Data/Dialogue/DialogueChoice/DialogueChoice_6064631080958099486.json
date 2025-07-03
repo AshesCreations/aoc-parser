@@ -1,0 +1,33 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"ECEEA7994B746C687495A1B8CB86BBC1\", \"The Ardent Anvil\")",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064631081148284989",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064631085337870340",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "!Player_HasCommission(GetPlayer(),\"CSQ_RVR_TurnIn_Delivery_ArdentAnvil\")&&\r\n!Player_HasItem(GetPlayer(),\"CSQ_ITM_ArtisanCrates_ArdentAnvil\")"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064631080958099486",
+	"name": "CSQ_DD_0020_EOL_CaravanFreight_6",
+	"typeId": "1091110027"
+}

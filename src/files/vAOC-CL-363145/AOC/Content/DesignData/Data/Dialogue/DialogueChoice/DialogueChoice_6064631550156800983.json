@@ -1,0 +1,22 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"15414D8441A90125E9F85AAA5733792B\", \"I found this manifest at the Highwaymen docks. The Caravan Raiders were planning to sell your stolen goods at the local market.\")",
+	"nextNodeId":
+	{
+		"guid": "6064632123722563705",
+		"typeId": "1091110028",
+		"name": "DD_CSQ_0050_GreyshoreNPC_27"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "Player_HasItem(GetPlayer(),\"Item_CSQ_0050_Greyshore_Manifest\") &&\r\nPlayer_GetItemCount(GetPlayer(), $#1091110003:6064633011572178944$) >= 4"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064631550156800983",
+	"name": "DD_CSQ_0050_CaravanAssistant_22",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,32 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 4,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0,
+		"fishingEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "GetRecordTypeId(GetHitSourceRecord(GetHitEvent())) != GetReactionTypeId() &&\r\nGetOwner() == GetInstigator() &&\r\n(GetRecordTypeId(GetHitSourceRecord(GetHitEvent())) == GetAbilityTypeId() \r\n|| \r\nGetRecordTypeId(GetHitSourceRecord(GetHitEvent())) == GetProjectileTypeId()) \r\n&& !HitHasTag(GetHitEvent(), \"ability.weaponcombo\")\r\n&& !HitHasTag(GetHitEvent(), \"ComboStep.End\")"
+	},
+	"bEvaluateApplyingHit": false,
+	"instigator": "HitSource",
+	"targetsBitmask": 4,
+	"reactHitsIds": [
+		{
+			"guid": "6064632322327915499",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"instigatorProcLimit": 0,
+	"globalProcLimit": 0,
+	"procReactOnApply": false,
+	"guid": "6064632322318216170",
+	"name": "Weapon_Passive_Heartseeker_Remove",
+	"typeId": "3031600202"
+}

@@ -1,0 +1,71 @@
+{
+	"trigger":
+	{
+		"expression": "GetOwner() == GetInstigator() \r\n&&\r\nGetRecordTypeId(GetHitSourceRecord(GetHitInProgress())) != GetReactionTypeId() \r\n&&\r\n(GetRecordTypeId(GetHitSourceRecord(GetHitInProgress())) == GetAbilityTypeId() || \r\n(GetRecordTypeId(GetHitSourceRecord(GetHitInProgress())) == GetProjectileTypeId() && !(HitHasTag(GetHitRecord(GetHitInProgress()), \"ability.weaponcombo\"))))"
+	},
+	"terms": [
+		{
+			"termId":
+			{
+				"guid": "6064629248874250262",
+				"typeId": "10516612381411115",
+				"name": "None"
+			},
+			"value":
+			{
+				"expression": "const bleeding = GetEffectCount(GetTarget(),$#30316002:6064629761775576467$) > 0;\r\n\r\nselectfloat(bleeding, 0.2, 0.1)"
+			},
+			"bOptional": false,
+			"bKeepBeyondScope": false,
+			"filter":
+			{
+				"expression": ""
+			},
+			"mergeRuleOverride": "Merge_Default"
+		},
+		{
+			"termId":
+			{
+				"guid": "6064629257576775685",
+				"typeId": "10516612381411115",
+				"name": "None"
+			},
+			"value":
+			{
+				"expression": "const bleeding = GetEffectCount(GetTarget(),$#30316002:6064629761775576467$) > 0;\r\n\r\nselectfloat(bleeding, 1.1, 1.05)"
+			},
+			"bOptional": false,
+			"bKeepBeyondScope": false,
+			"filter":
+			{
+				"expression": ""
+			},
+			"mergeRuleOverride": "Merge_Default"
+		},
+		{
+			"termId":
+			{
+				"guid": "6064630633715007489",
+				"typeId": "10516612381411115",
+				"name": "None"
+			},
+			"value":
+			{
+				"expression": "const bleeding = GetEffectCount(GetTarget(),$#30316002:6064629761775576467$) > 0;\r\n\r\nselectfloat(bleeding, 1.1, 1.05)"
+			},
+			"bOptional": false,
+			"bKeepBeyondScope": false,
+			"filter":
+			{
+				"expression": ""
+			},
+			"mergeRuleOverride": "Merge_Default"
+		}
+	],
+	"tags": [],
+	"statModsIds": [],
+	"statModPostProcess": [],
+	"guid": "6064632322342792173",
+	"name": "Weapon_Proc_Heartseeker_Buff",
+	"typeId": "3031600210"
+}

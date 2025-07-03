@@ -1,0 +1,61 @@
+{
+	"completionResponsesIds": [
+		{
+			"guid": "6064629024996196388",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064629024526499852",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"channelDuration": 0,
+	"activePredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0002_CCC_CollectorOfCursedCurios\",\"MAP_0002_CCC_Phase01\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0002_TTI_TheTauroxianIdols\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0002_TTI_TheTauroxianIdols\",\"FoundIdolOfUbok\")"
+	},
+	"cuePredicate":
+	{
+		"expression": ""
+	},
+	"deleteOnCompletion": false,
+	"singleUse": true,
+	"alwaysShowUIPrompt": true,
+	"cancelChannelIfActivePredicateEverFails": true,
+	"channelModifierType": "NONE",
+	"rewardTableId":
+	{
+		"guid": "0",
+		"typeId": "1091110008",
+		"name": "None"
+	},
+	"startEffect": "None",
+	"endEffect": "None",
+	"failEffect": "None",
+	"successEffect": "/Game/Effects/FX_Environment/Corruption/Particles/NS_Corruption_Fire_01.NS_Corruption_Fire_01",
+	"cueEffect": "None",
+	"startSound": "None",
+	"endSound": "None",
+	"failSound": "None",
+	"successSound": "None",
+	"cueSound": "None",
+	"interactAnimTag": "None",
+	"deletionDelay": 0,
+	"activeCueEnabled": true,
+	"activeCueIgnoresActivePredicate": false,
+	"facePlayer": false,
+	"allowInCombat": true,
+	"spawnAtBottomCapsule": false,
+	"channelAnimation": "None",
+	"interactRadius": 200,
+	"interactTolerance": 30,
+	"busyTime": 0.89999997615814209,
+	"clientBusyTime": 1,
+	"channelStartResponseIds": [],
+	"failResponsesIds": [],
+	"guid": "6064629025043709994",
+	"name": "MAPI_0002_TTI_OBJ_IdolOfUbok",
+	"typeId": "1091110031"
+}

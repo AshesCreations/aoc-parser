@@ -1,0 +1,32 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 2,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0,
+		"fishingEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "GetRecordTypeId(GetHitSourceRecord(GetHitEvent())) != GetReactionTypeId() &&\r\nGetRecordTypeId(GetHitSourceRecord(GetHitEvent())) != GetEffectTypeId() &&\r\nGetStatModValue(GetHitEvent(), GetOwner(), $#10516612381411111:108986352686712$) < 0.0 &&\r\nGetStat(GetOwner(), $#10516612381411111:6064630794045031635$) > 0.0"
+	},
+	"bEvaluateApplyingHit": false,
+	"instigator": "Instigator",
+	"targetsBitmask": 16,
+	"reactHitsIds": [
+		{
+			"guid": "6064630794005054673",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"instigatorProcLimit": 0,
+	"globalProcLimit": 0,
+	"procReactOnApply": false,
+	"guid": "6064630793992078542",
+	"name": "Passive_Thorns_Reaction",
+	"typeId": "3031600202"
+}

@@ -1,0 +1,33 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"7555F94C43EBD6FEB0B28D91E35FC1CA\", \"Here are some of your supplies.\")",
+	"nextNodeId":
+	{
+		"guid": "6064632416695419487",
+		"typeId": "1091110028",
+		"name": "RVR_Ambush_Caravan_Down_MasterDomm_DLG_2"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064632265811099656",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064633612761302141",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "Player_HasItem(GetPlayer(),\"Ambush_Caravan_Down_Crate\")"
+	},
+	"requirements": [],
+	"choiceType": "Event",
+	"guid": "6064632416329596936",
+	"name": "RVR_Ambush_Caravan_Down_MasterDomm_DLG_1_Choice_1",
+	"typeId": "1091110027"
+}

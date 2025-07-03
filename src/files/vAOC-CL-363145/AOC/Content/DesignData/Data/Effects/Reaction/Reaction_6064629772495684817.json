@@ -1,0 +1,30 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 4,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "GetRemainingAbilityCooldown(GetAbilityRecordByName(\"Ranger_Disengage\")) > 0.0 && GetEffectCount(GetInstigator(), $#30316002:6064629772430541109$) == 0"
+	},
+	"bEvaluateApplyingHit": false,
+	"instigator": "Owner",
+	"targetsBitmask": 1,
+	"reactHitsIds": [
+		{
+			"guid": "6064629771860706860",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"instigatorProcLimit": 0,
+	"globalProcLimit": 0,
+	"procReactOnApply": false,
+	"guid": "6064629772495684817",
+	"name": "Ranger_Disengage_Cleanup_Reaction",
+	"typeId": "3031600202"
+}

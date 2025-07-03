@@ -1,0 +1,32 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 4,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0,
+		"fishingEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "GetEffectCountByTag(GetHitTargetByIndex(GetHitEvent(), 0), \"Debuff:Bleeding\") > 0"
+	},
+	"bEvaluateApplyingHit": true,
+	"instigator": "Instigator",
+	"targetsBitmask": 31,
+	"reactHitsIds": [
+		{
+			"guid": "6064632637833150526",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"instigatorProcLimit": 0,
+	"globalProcLimit": 0,
+	"procReactOnApply": false,
+	"guid": "6064632637827645501",
+	"name": "Dunir_OvercurseExplosion_EffectCounting_Reaction",
+	"typeId": "3031600202"
+}

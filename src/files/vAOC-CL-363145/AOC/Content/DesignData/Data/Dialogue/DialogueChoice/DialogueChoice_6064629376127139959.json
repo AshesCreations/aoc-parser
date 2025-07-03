@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"6D5E48BB4E9C77D5D4FE1199CD55628D\", \"What else can you tell me about the ruins?\")",
+	"nextNodeId":
+	{
+		"guid": "6064629376176554105",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsOnStoryArcQuest(GetPlayer(),\"SAQ_0019_TitansShadow\")&&!GetStoryArcQuestFlag(GetPlayer(),\"SAQ_0019_TitansShadow\",\"TitanS1\")"
+	},
+	"guid": "6064629376127139959",
+	"name": "0019_P1_Tomas_1_59",
+	"typeId": "1091110027"
+}

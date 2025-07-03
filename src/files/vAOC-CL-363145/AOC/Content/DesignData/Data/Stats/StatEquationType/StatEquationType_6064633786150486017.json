@@ -1,0 +1,12 @@
+{
+	"equation":
+	{
+		"expression": "// calculate the approx fall distance based on impact velocity\r\nconst FallVector = GetFallVelocity();\r\nconst FallZ = DotProduct(FallVector,Vector(0.,0.,1.))/100.0;\r\n// g is -980 cm, but PlayerPawn also has a 2.5 grav mult\r\nconst g = 9.8 * 2.5;\r\n// add in how much extra velocity you should have based on time spent at terminal\r\nconst TerminalTime = GetFallTimeAtTerminalVelocity();\r\nconst Fall = Fallz - g * TerminalTime;\r\n// h = v*v / (2*g)\r\nconst VelocityBasedFallDistance = Fall*Fall / (2*g);\r\nconst ActualFallDistance = GetFallDistance() / 100.0;\r\n// take the min of the two distances to double check each other\r\nconst FallDistance = Min(VelocityBasedFallDistance, ActualFallDistance);\r\n// calculate %hp-based final damage based on ideal min and lethal distances\r\nconst MinDistance = 10.0;\r\nconst LethalDistance = 40.0;\r\nconst Ratio = Max(0.0, FallDistance - MinDistance) / (LethalDistance - MinDistance);\r\nconst MaxHP = GetStat(GetOwner(), $#10516612381411111:108986356618873$);\r\nRatio * MaxHP"
+	},
+	"constraints":
+	{
+	},
+	"guid": "6064633786150486017",
+	"name": "FallDamage",
+	"typeId": "10516612381411112"
+}

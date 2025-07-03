@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"C6D1FCA3477586FD998811A639CA5281\", \"I bring the Crown of Mungle!\")",
+	"nextNodeId":
+	{
+		"guid": "6064629466305134650",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MIA_0020_KOC_KeepOnTheCrossroads\",\"MIP_0020_KOC_Phase03\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MIQ_0020_MOM_MasterOfMungle\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MIQ_0020_MOM_MasterOfMungle\",\"GaveCrown\")"
+	},
+	"guid": "6064629466305003577",
+	"name": "MIDD_0020_MOM_BudgeMac_11",
+	"typeId": "1091110027"
+}

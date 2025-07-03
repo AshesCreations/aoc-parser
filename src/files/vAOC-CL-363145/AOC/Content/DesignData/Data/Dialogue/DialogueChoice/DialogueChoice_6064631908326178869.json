@@ -1,0 +1,33 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"71593FBE41E250259FFFEFACCDE70CC8\", \"Has Quest, Hasn\\'t Completed\")",
+	"nextNodeId":
+	{
+		"guid": "6064631908326178870",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064631908512104449",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064631908532486149",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "Player_HasCommission (GetPlayer(), \"CSQ_RVR_BL_Daragal_TCS\") && !Player_HasCompletedCommission(GetPlayer(), \"CSQ_RVR_BL_Daragal_TCS\")"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064631908326178869",
+	"name": "SQ_BL_Daragal_Water_Dialog_5",
+	"typeId": "1091110027"
+}

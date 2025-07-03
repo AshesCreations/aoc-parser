@@ -1,0 +1,31 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 4,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "GetStatModValue(GetHitEvent(), $#10516612381411111:108986352686712$) < 0.0 &&\r\n(HitHasTag(GetHitEvent(), \"ComboStep.End\") ||\r\nHitHasTag(GetHitEvent(), \"ComboStep.End2\"))"
+	},
+	"bEvaluateApplyingHit": false,
+	"instigator": "Owner",
+	"targetsBitmask": 8,
+	"reactHitsIds": [
+		{
+			"guid": "6064630775798108903",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"instigatorProcLimit": 1,
+	"globalProcLimit": 0,
+	"procReactOnApply": false,
+	"guid": "6064630775794307814",
+	"name": "Bard_Passive_Flourish",
+	"typeId": "3031600202"
+}

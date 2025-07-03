@@ -1,0 +1,21 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"3E34C7084C282012379B8F97BD0982FD\", \"Complete OCC_EOB and OCC_ROW\")",
+	"nextNodeId":
+	{
+		"guid": "6064632235692261438",
+		"typeId": "1091110028",
+		"name": "CSQ_DD_NPC_ArchPurifier_21"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "Player_HasCompletedCommission(GetPlayer(),\"CSQ_RVR_0081_OCC_EOB_EchoesOfBetrayal\")&&\r\nPlayer_HasCompletedCommission(GetPlayer(),\"CSQ_RVR_0081_OCC_ROW_RuinsOfWarhelm\")\r\n"
+	},
+	"narrativeRequirementsIds": [],
+	"choiceType": "Default",
+	"guid": "6064632235685118013",
+	"name": "CSQ_DD_NPC_ArchPurifier_2_Choice_9",
+	"typeId": "1091110027"
+}

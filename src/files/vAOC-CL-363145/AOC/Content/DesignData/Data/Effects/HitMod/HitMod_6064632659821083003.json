@@ -1,0 +1,33 @@
+{
+	"trigger":
+	{
+		"expression": "EvalFormula($#10516612381411113:6064632744723089195$) > 0.0\r\n&& (HitHasTag(GetHitRecord(GetHitInProgress()), \"Element.Physical\")\r\n||  HitHasTag(GetHitRecord(GetHitInProgress()), \"Element.Magical\"))\r\n&& GetTarget() != GetInstigator()\r\n\r\n//&& GetEffectCount(GetInstigator(), $Effect:Rogue_Advantage$) > 0"
+	},
+	"terms": [
+		{
+			"termId":
+			{
+				"guid": "6064629248780337173",
+				"typeId": "10516612381411115",
+				"name": "None"
+			},
+			"value":
+			{
+				"expression": "0.1"
+			},
+			"bOptional": false,
+			"bKeepBeyondScope": false,
+			"filter":
+			{
+				"expression": ""
+			},
+			"mergeRuleOverride": "Merge_Default"
+		}
+	],
+	"tags": [],
+	"statModsIds": [],
+	"statModPostProcess": [],
+	"guid": "6064632659821083003",
+	"name": "Rogue_Passive_Ambusher",
+	"typeId": "3031600210"
+}

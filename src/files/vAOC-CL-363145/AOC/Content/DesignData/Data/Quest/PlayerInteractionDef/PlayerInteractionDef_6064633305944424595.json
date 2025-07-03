@@ -1,0 +1,71 @@
+{
+	"completionResponsesIds": [],
+	"objectivesToCompleteUponCompletionIds": [],
+	"objectivesToRevealUponCompletionIds": [],
+	"itemsToGrantUponCompletion": [],
+	"channelDuration": 5,
+	"activePredicate":
+	{
+		"expression": "(!HasMontageGroupInActiveAbilities(GetPlayer(), \"DefaultGroup\") || IsUsingAbility(GetPlayer(), \t$#30316001:6064631641648332884$)) && !HasMontageGroupInActiveAbilities(GetPlayer(), \"EmoteGroup\") && !IsPlayerHardCrowdControlled(GetPlayer())"
+	},
+	"cuePredicate":
+	{
+		"expression": ""
+	},
+	"visiblePredicate":
+	{
+		"expression": ""
+	},
+	"showErrorIfNotVisible": false,
+	"deleteOnCompletion": false,
+	"singleUse": true,
+	"alwaysShowUIPrompt": true,
+	"cancelChannelIfActivePredicateEverFails": true,
+	"interactTextFormat": "",
+	"channelModifierType": "NONE",
+	"rewardTableId":
+	{
+		"guid": "0",
+		"typeId": "1091110008",
+		"name": "None"
+	},
+	"startEffect": "None",
+	"endEffect": "None",
+	"failEffect": "None",
+	"successEffect": "None",
+	"cueEffect": "None",
+	"startSound": "None",
+	"endSound": "None",
+	"failSound": "None",
+	"successSound": "None",
+	"cueSound": "None",
+	"interactAnimTag": "None",
+	"deletionDelay": 0,
+	"activeCueEnabled": true,
+	"activeCueIgnoresActivePredicate": false,
+	"facePlayer": false,
+	"allowInCombat": true,
+	"spawnAtBottomCapsule": false,
+	"channelAnimation": "None",
+	"interactRadius": 250,
+	"discoveryDistance": 200,
+	"interactTolerance": 0,
+	"interactAngle": 0,
+	"bRequireLOS": false,
+	"busyTime": 0,
+	"clientBusyTime": 0,
+	"channelStartResponseIds": [],
+	"failResponsesIds": [],
+	"gatheringInteractionDataId":
+	{
+		"guid": "6064633305913294989",
+		"typeId": "19846",
+		"name": "None"
+	},
+	"interactCooldownMap":
+	{
+	},
+	"guid": "6064633305944424595",
+	"name": "Plant_ElephantEar_Freehold",
+	"typeId": "1091110031"
+}

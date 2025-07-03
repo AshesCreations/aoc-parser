@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"8223EB844DB0EABEE812CBB570663B66\", \"I think Gribbok in the Central Camp is the chieftain.\")",
+	"nextNodeId":
+	{
+		"guid": "6064630443760484367",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "!GetStoryArcQuestFlag(GetPlayer(), \"SAQ_0023_P01_Q02_GoblinHierarchy\", \"DecisionMade\")&&\r\nIsOnStoryArcQuest(GetPlayer(), \"SAQ_0023_P01_Q02_GoblinHierarchy\")"
+	},
+	"guid": "6064630443750588425",
+	"name": "DD_0023_RealGoblinCorrespondance_8",
+	"typeId": "1091110027"
+}

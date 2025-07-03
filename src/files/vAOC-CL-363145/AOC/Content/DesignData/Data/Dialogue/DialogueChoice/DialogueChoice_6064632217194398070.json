@@ -1,0 +1,21 @@
+{
+	"choiceText": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"1F311E6A4158AE076179D0B90ABB6176\", \"(Not On / Started FTUE Quest)\")",
+	"nextNodeId":
+	{
+		"guid": "6064632217280840056",
+		"typeId": "1091110028",
+		"name": "DD_ServiceNPC_CommodityVendor_2"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "false\r\n//!(Player_HasCommission(GetPlayer(), \"CSQ_0162_FTUE_RunningACommodity\") ||\r\n//Player_HasCompletedCommission(GetPlayer(), \"CSQ_0162_FTUE_RunningACommodity\"))"
+	},
+	"narrativeRequirementsIds": [],
+	"choiceType": "Default",
+	"guid": "6064632217194398070",
+	"name": "DD_ServiceNPC_CommodityVendor_1_Choice_1",
+	"typeId": "1091110027"
+}

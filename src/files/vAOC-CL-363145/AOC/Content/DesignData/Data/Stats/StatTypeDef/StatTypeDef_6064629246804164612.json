@@ -1,0 +1,61 @@
+{
+	"displayName": "NSLOCTEXT(\"\", \"317E912342525619AB26A38B39464B4F\", \"Healing Critical Power\")",
+	"description": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"9A3209904D4B443CFFDA178057630B5C\", \"The multiplier applied to healing critical hits. Inherits from half of your magical critical power.\")",
+	"bHidden": false,
+	"gameplayType": "Type_Combat",
+	"bHasWaterfallStatsUI": false,
+	"waterfallStatsUIIds": [],
+	"bDisplayAsPercentage": true,
+	"statType": "Type_Float",
+	"bClampStatFinalValue": false,
+	"bMultiplyStatMods": false,
+	"bMultiplyCompliment": false,
+	"base":
+	{
+		"expression": "// halve scaling from magic crit, since theres no avoidance contesting healing crits\r\nconst base = 1.0 + (GetStat(GetOwner(), $#10516612381411111:109343399171811$)-1.0) / 2.0;\r\nconst baseRating = (GetStat(GetInstigator(), $#10516612381411111:6064628617694412803$)+GetStat(GetInstigator(), $#10516612381411111:109342909421182$))/2.0;\r\nconst coeff = EvalFormula($#10516612381411113:6064630400896860186$);\r\nconst baseAdj = base - baseRating / (baseRating + coeff);\r\nconst rating = baseRating + GetStat(GetInstigator(), $#10516612381411111:6064629246805082117$);\r\nbaseAdj + rating / (rating + coeff)"
+	},
+	"waterfallStatsBaseIds": [
+		{
+			"guid": "109343399171811",
+			"typeId": "10516612381411111",
+			"name": "None"
+		},
+		{
+			"guid": "6064629246805082117",
+			"typeId": "10516612381411111",
+			"name": "None"
+		}
+	],
+	"valueMin":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMinIds": [],
+	"valueMax":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMaxIds": [],
+	"regenRate":
+	{
+		"expression": ""
+	},
+	"waterfallStatsRegenIds": [],
+	"bRegenWhileDead": false,
+	"bRecalculateOnCombatState": false,
+	"onSpawn": "Reset_None",
+	"onDeath": "Reset_None",
+	"onRevive": "Reset_None",
+	"bPersistValue": false,
+	"replication": 5,
+	"shieldStatId":
+	{
+		"guid": "0",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"grantedEffects": [],
+	"guid": "6064629246804164612",
+	"name": "HealingCriticalPower",
+	"typeId": "10516612381411111"
+}

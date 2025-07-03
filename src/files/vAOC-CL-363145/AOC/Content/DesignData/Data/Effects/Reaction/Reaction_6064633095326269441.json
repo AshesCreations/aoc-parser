@@ -1,0 +1,33 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 0,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0,
+		"fishingEvents": 0,
+		"statEvents": 2
+	},
+	"reactTrigger":
+	{
+		"expression": "true"
+	},
+	"bEvaluateApplyingHit": false,
+	"instigator": "Instigator",
+	"targetsBitmask": 1,
+	"reactHitsIds": [
+		{
+			"guid": "6064633095329218562",
+			"typeId": "30316005",
+			"name": "Test_ThornsReaction"
+		}
+	],
+	"instigatorProcLimit": 0,
+	"globalProcLimit": 0,
+	"procReactOnApply": false,
+	"guid": "6064633095326269441",
+	"name": "Test_DeathReaction",
+	"typeId": "3031600202"
+}

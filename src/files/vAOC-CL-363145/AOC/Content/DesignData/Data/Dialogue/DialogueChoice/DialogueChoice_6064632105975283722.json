@@ -1,0 +1,18 @@
+{
+	"choiceText": "NSLOCTEXT(\"[4BE4F0A16D08556ACD6685BF392E6719]\", \"AE70F8064EA28D40E816FB9993A8B033\", \"I have your supplies.\")",
+	"nextNodeId":
+	{
+		"guid": "6064632105955491847",
+		"typeId": "1091110028",
+		"name": "CSQ_0153_FTUE_EstablishingASettlement_NodeTraderGuy_3"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "Player_HasCommission(GetPlayer(), \"CSQ_0153_FTUE_EstablishingASettlement\") &&\r\n!Player_HasCompletedCommission(GetPlayer(), \"CSQ_0153_FTUE_EstablishingASettlement\")"
+	},
+	"choiceType": "Default",
+	"guid": "6064632105975283722",
+	"name": "DD_ServiceNPC_StorageClerk_2_Choice_1",
+	"typeId": "1091110027"
+}

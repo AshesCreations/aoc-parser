@@ -1,0 +1,28 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"1AB01A73460063A3034C4BAD27C7ED6C\", \"(Take the Shield)\")",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064630514174787706",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064630492028010511",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005B_OSG_OnSacredGround\",\"CollectShieldDoombringer\")"
+	},
+	"guid": "6064630514467930268",
+	"name": "MADD_0005B_OSG_EudoxiasTrophies_4",
+	"typeId": "1091110027"
+}

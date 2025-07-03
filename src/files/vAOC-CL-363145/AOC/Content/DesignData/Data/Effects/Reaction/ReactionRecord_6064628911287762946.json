@@ -1,0 +1,31 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 2,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "const sourceRecord = GetHitSourceRecord(GetHitEvent());\r\nconst type = GetRecordTypeId(sourceRecord);\r\nconst conflag = sourceRecord == $#30316002:6064629030686294029$;\r\nconst fuse = GetSkillPurchased(GetInstigator(), $#30316003:107281647359609$, $#981011101:6064630530911765512$);\r\n\r\nGetStatModValue(GetHitEvent(), GetOwner(), $#10516612381411111:108986352686712$) < 0.0 &&\r\ntype != GetReactionTypeId() &&\r\n(type != GetEffectTypeId() || (fuse && conflag))"
+	},
+	"bEvaluateApplyingHit": false,
+	"instigator": "Instigator",
+	"targetsBitmask": 8,
+	"reactHitsIds": [
+		{
+			"guid": "6064628895825002497",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"instigatorProcLimit": 0,
+	"globalProcLimit": 0,
+	"procReactOnApply": false,
+	"guid": "6064628911287762946",
+	"name": "Mage_Status_Shocked_Reaction",
+	"typeId": "3031600202"
+}

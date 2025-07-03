@@ -1,0 +1,23 @@
+{
+	"effectFragilityType": "FRAGILITY_Tick",
+	"evaluationTickFrequency": 1,
+	"shouldBreakEffectImmediately":
+	{
+		"expression": "GetHealthPercentage(GetBlackboardGuid(GetSource(),\"TreeActor\")) <= 0.0"
+	},
+	"shouldEvaluateThresholdAccumulation":
+	{
+		"expression": ""
+	},
+	"effectBreakThreshold":
+	{
+		"expression": ""
+	},
+	"effectBreakThresholdAccumulationRate":
+	{
+		"expression": ""
+	},
+	"guid": "6064631521989296507",
+	"name": "CyclopsShaman_EnragedRegeneration_FragileEffect",
+	"typeId": "30316112"
+}

@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"3AE5C58648034C9BCEDD53BD78CEE028\", \"[OPEN RECEPTACLE]\")",
+	"nextNodeId":
+	{
+		"guid": "6064629387094786108",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MIA_0015_TPT_ThePhantomTower\",\"MIP_0015_TPT_Phase04\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MIQ_0015_AOF_AnOldFriend\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MIQ_0015_AOF_AnOldFriend\",\"OpenedSafe\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MIQ_0015_AOF_AnOldFriend\",\"GotBookAppliedMagic\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MIQ_0015_AOF_AnOldFriend\",\"GotBookKyronicCode\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MIQ_0015_AOF_AnOldFriend\",\"GotBookCondensedHistory\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MIQ_0015_AOF_AnOldFriend\",\"PlacedBooks\")"
+	},
+	"guid": "6064629387086397493",
+	"name": "MIDD_0015_AOF_ClockworkCodex_5",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"D01CE1D8484D9129D64757B61152A66E\", \"(q2 grant)\")",
+	"nextNodeId":
+	{
+		"guid": "6064629729227702302",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"SA_0021_AnUncoiledEssence\", \"SAP_0021_AnUncoiledEssence_P02\")\r\n&&\r\n(IsStoryArcQuestAvailable(GetPlayer(), \"SAQ_0021_P02_UnlivingHistory\")\r\n&&\r\n!IsOnStoryArcQuest(GetPlayer(), \"SAQ_0021_P02_UnlivingHistory\"))"
+	},
+	"guid": "6064629729227702281",
+	"name": "MADD_0021_Sergia_9",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,78 @@
+{
+	"completionResponsesIds": [
+		{
+			"guid": "6064632183990124556",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"objectivesToCompleteUponCompletionIds": [
+		{
+			"guid": "6064632467365757044",
+			"typeId": "1091110420",
+			"name": "None"
+		}
+	],
+	"objectivesToRevealUponCompletionIds": [],
+	"itemsToGrantUponCompletion": [],
+	"channelDuration": 0,
+	"activePredicate":
+	{
+		"expression": "Player_ObjectiveStateEquals(GetPlayer(),\"CSQ_RVR_0084_FB_MercilessGeneral_KillMessenger_OBJ\",EObjectiveState::Complete)&&\r\n!Player_HasCompletedCommission(GetPlayer(),\"CSQ_RVR_0084_FB_MercilessGeneral\")"
+	},
+	"cuePredicate":
+	{
+		"expression": "Player_ObjectiveStateEquals(GetPlayer(),\"CSQ_RVR_0084_FB_MercilessGeneral_KillMessenger_OBJ\",EObjectiveState::Complete)&&\r\n!Player_HasCompletedCommission(GetPlayer(),\"CSQ_RVR_0084_FB_MercilessGeneral\")"
+	},
+	"visiblePredicate":
+	{
+		"expression": "Player_ObjectiveStateEquals(GetPlayer(),\"CSQ_RVR_0084_FB_MercilessGeneral_KillMessenger_OBJ\",EObjectiveState::Complete)&&\r\n!Player_HasCompletedCommission(GetPlayer(),\"CSQ_RVR_0084_FB_MercilessGeneral\")"
+	},
+	"showErrorIfNotVisible": false,
+	"deleteOnCompletion": false,
+	"singleUse": false,
+	"alwaysShowUIPrompt": true,
+	"cancelChannelIfActivePredicateEverFails": true,
+	"interactTextFormat": "",
+	"channelModifierType": "NONE",
+	"rewardTableId":
+	{
+		"guid": "0",
+		"typeId": "1091110008",
+		"name": "None"
+	},
+	"startEffect": "None",
+	"endEffect": "None",
+	"failEffect": "None",
+	"successEffect": "None",
+	"cueEffect": "/Game/Effects/FX_Shared/Particles/FX_LootBeam_01.FX_LootBeam_01",
+	"startSound": "None",
+	"endSound": "None",
+	"failSound": "None",
+	"successSound": "None",
+	"cueSound": "None",
+	"interactAnimTag": "None",
+	"deletionDelay": 0,
+	"activeCueEnabled": true,
+	"activeCueIgnoresActivePredicate": false,
+	"facePlayer": false,
+	"allowInCombat": true,
+	"spawnAtBottomCapsule": false,
+	"channelAnimation": "None",
+	"interactRadius": 200,
+	"interactTolerance": 30,
+	"interactAngle": 0,
+	"busyTime": 0.89999997615814209,
+	"clientBusyTime": 1,
+	"channelStartResponseIds": [],
+	"failResponsesIds": [],
+	"gatheringInteractionDataId":
+	{
+		"guid": "0",
+		"typeId": "19846",
+		"name": "None"
+	},
+	"guid": "6064632183978328075",
+	"name": "RVR_COMM_CrescentIsland_SightedCamp_MessageDrop",
+	"typeId": "1091110031"
+}

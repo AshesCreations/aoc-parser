@@ -1,0 +1,100 @@
+{
+	"label": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"A8FD671B4737095CDF91569521A959DD\", \"General\")",
+	"categoryHeaderLabel": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"A07A2C654FFED167BA0D32B9238D46B1\", \"Interface  |  General\")",
+	"bUseScrollWindow": true,
+	"entryCategories": [
+		{
+			"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Options_GeneralSubheader\")",
+			"entryAlignment": "HAlign_Fill",
+			"entryWrapSize": 10,
+			"wrapBoxClass": "Standard",
+			"entries": [
+				{
+					"label": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"53DD28A04D5F2432F9754B87D50579C4\", \"Assign Right Mouse Button to open submenu on items. This flips Shift modified behavior.\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 720,
+					"type": "CheckBox",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"bApplyOnMouseRelease": false,
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"leftNameplateRelationshipIds": [],
+					"leftNameplateAlignmentIds": [],
+					"leftLabel": "",
+					"rightNameplateRelationshipIds": [],
+					"rightNameplateAlignmentIds": [],
+					"rightLabel": "",
+					"linkedKeyBindingIds": [],
+					"subheaderBorderStyle": "None",
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetFlipShiftRMBMenuInput",
+					"setterFunctionName": "SetFlipShiftRMBMenuInput",
+					"dependencyGetter": "None"
+				},
+				{
+					"label": "NSLOCTEXT(\"[BA0C61234A8A0A9207F086AF0530E1D5]\", \"5C096EAF480512545E73899938B47017\", \"Ping waypoint automatically when placed on the map\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 320,
+					"type": "CheckBox",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"bApplyOnMouseRelease": false,
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"leftNameplateRelationshipIds": [],
+					"leftNameplateAlignmentIds": [],
+					"leftLabel": "",
+					"rightNameplateRelationshipIds": [],
+					"rightNameplateAlignmentIds": [],
+					"rightLabel": "",
+					"linkedKeyBindingIds": [],
+					"subheaderBorderStyle": "None",
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetPingWaypointOnPlacement",
+					"setterFunctionName": "SetPingWaypointOnPlacement",
+					"dependencyGetter": "None"
+				},
+				{
+					"label": "NSLOCTEXT(\"[BA0C61234A8A0A9207F086AF0530E1D5]\", \"D2A1D7EA4537084DE5482390DAD211E1\", \"Show Party Pings on Map\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 320,
+					"type": "CheckBox",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"bApplyOnMouseRelease": false,
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"leftNameplateRelationshipIds": [],
+					"leftNameplateAlignmentIds": [],
+					"leftLabel": "",
+					"rightNameplateRelationshipIds": [],
+					"rightNameplateAlignmentIds": [],
+					"rightLabel": "",
+					"linkedKeyBindingIds": [],
+					"subheaderBorderStyle": "None",
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetShowPartyPings",
+					"setterFunctionName": "SetShowPartyPings",
+					"dependencyGetter": "None"
+				}
+			],
+			"subcategories": []
+		}
+	],
+	"guid": "6064633662558633984",
+	"name": "IF_General",
+	"typeId": "3616673544"
+}

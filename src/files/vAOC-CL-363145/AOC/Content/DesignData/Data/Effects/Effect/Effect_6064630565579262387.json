@@ -1,0 +1,129 @@
+{
+	"effectCategory": "EFFECT_Buff",
+	"effectTags": [],
+	"effectName": "Swordmaster: Swiftness",
+	"effectDescription": "20% attack speed. ",
+	"effectIcon": "/Game/UI/Icons/Abilities/Weapons/WeaponCombo/TUI_WeaponComboIcon_SwiftnessWing.TUI_WeaponComboIcon_SwiftnessWing",
+	"effectFloatingText": "",
+	"bDispellable": false,
+	"bSignificant": false,
+	"scriptOnApply": "None",
+	"scriptOnExpire": "None",
+	"bSetUnkillable": false,
+	"effectFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"applicationRequirements":
+	{
+		"expression": "const duration1 = GetEffectCount(GetOwner(),$#30316002:6064631003033961188$);\r\nconst duration2 = GetEffectCount(GetOwner(),$#30316002:6064631003034092261$);  \r\nconst duration3 = GetEffectCount(GetOwner(),$#30316002:6064631003067909205$); \r\nconst totalDurationMod = (duration1 + duration2 + duration3) * 0.25;\r\nconst randomTarget = 0.25 + totalDurationMod;\r\nconst randomNumber = RandDoubleRange(0.00, 1.00);\r\n\r\n\r\nrandomNumber <= randomTarget \r\n&&\r\nGetEffectCount(GetOwner(),$#30316002:6064631002625933312$) > 0"
+	},
+	"bOverrideDefaultResistRate": false,
+	"resistRate":
+	{
+		"expression": ""
+	},
+	"bInfiniteDuration": false,
+	"effectDuration":
+	{
+		"expression": "const min1 = GetEffectCount(GetOwner(),$#30316002:6064631007543690013$); \r\nconst min2 = GetEffectCount(GetOwner(),$#30316002:6064631007565906719$); \r\nconst min3 = GetEffectCount(GetOwner(),$#30316002:6064631007565710110$);\r\nconst totalMin = (min1 + min2 + min3) * 0.5; \r\n\r\n2 + totalMin\r\n\r\n\r\n"
+	},
+	"bNumStacksLostOnDurationElapse": false,
+	"numStacksLostOnDurationElapse":
+	{
+		"expression": ""
+	},
+	"bPersistsThroughDeath": false,
+	"bPersistsRelog": false,
+	"effectGroupId":
+	{
+		"guid": "0",
+		"typeId": "30316004",
+		"name": "None"
+	},
+	"effectStackType": "STACK_OverrideAlways",
+	"bCompareSourceWhenStacking": true,
+	"collateStacksInUI": false,
+	"globalStackLimit": 1,
+	"inPlaceStackLimit":
+	{
+		"expression": "1"
+	},
+	"stackDurationRefresh": "STACK_AlwaysRefresh",
+	"extensionAmount":
+	{
+		"expression": ""
+	},
+	"extendedMaximum": 50,
+	"scriptOnMaxStacks": "None",
+	"bLimitStacksFromInstigator": false,
+	"instigatorStackLimit":
+	{
+		"expression": ""
+	},
+	"tickTimer": 0,
+	"bIgnoreInitialTick": false,
+	"scriptOnTick": "None",
+	"preApplyHitsIds": [],
+	"applyHitsIds": [],
+	"tickHitsIds": [],
+	"consumeHitsIds": [],
+	"removeHitsIds": [],
+	"expireHitsIds": [],
+	"endHitsIds": [],
+	"statModsIds": [
+		{
+			"guid": "6064630415086203702",
+			"typeId": "3031600201",
+			"name": "None"
+		}
+	],
+	"spawnNPCsIds": [],
+	"spawnLingeringZonesIds": [],
+	"redirectsIds": [],
+	"reactionsIds": [],
+	"crowdControlsIds": [],
+	"abilityDisablesId":
+	{
+		"guid": "0",
+		"typeId": "3031600211",
+		"name": "None"
+	},
+	"ignoreCCBreaksId":
+	{
+		"guid": "0",
+		"typeId": "3031600214",
+		"name": "None"
+	},
+	"resistancesIds": [],
+	"fragilityDefinitionsIds": [],
+	"hitModsIds": [],
+	"bApplyScale": false,
+	"scaleAmount":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"scaleTime": 0,
+	"statusVFX": "None",
+	"supressClickTargeting":
+	{
+		"expression": ""
+	},
+	"supressTabAndSoftTargeting":
+	{
+		"expression": ""
+	},
+	"supressNameplate":
+	{
+		"expression": ""
+	},
+	"bSlowFall": false,
+	"bNeverCull": false,
+	"guid": "6064630565579262387",
+	"name": "Weapon_2H_Sword_Proc",
+	"typeId": "30316002"
+}

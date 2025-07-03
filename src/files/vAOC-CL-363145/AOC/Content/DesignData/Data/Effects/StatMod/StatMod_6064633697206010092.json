@@ -1,0 +1,22 @@
+{
+	"statRefId":
+	{
+		"guid": "108986352686712",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"value":
+	{
+		"expression": "var mult = 1.5;\r\nvar count = GetBlackboardInt(GetInstigator(), \"Target Buff Count\");\r\n\r\nset count = Max(count - 1, 0);\r\n\r\n(mult + 0.5 * count) * EvalFormula($#10516612381411113:6064629862506364928$)"
+	},
+	"bUseShieldAbsorb": false,
+	"shieldAbsorbPercentage":
+	{
+		"expression": ""
+	},
+	"bShowFloatingText": true,
+	"valueInputTerms": [],
+	"guid": "6064633697206010092",
+	"name": "SpellRazer_VoidDispel_Damage",
+	"typeId": "3031600201"
+}

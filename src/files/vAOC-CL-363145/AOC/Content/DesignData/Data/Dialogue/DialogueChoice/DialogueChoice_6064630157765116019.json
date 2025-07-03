@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"84F3CF644865BF683AF91C95144ED02E\", \"PT on -> No flag\")",
+	"nextNodeId":
+	{
+		"guid": "6064630157772521592",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "(IsOnStoryArcQuest(GetPlayer(), \"SAQ_0022_p2q1_PaperTrails\"))&&!GetStoryArcQuestFlag(GetPlayer(),\"SAQ_0022_p2q1_PaperTrails\",\"PaperTrails\")&&(!IsOnStoryArcQuest(GetPlayer(), \"SAQ_0022_p2q2_Shining\"))"
+	},
+	"guid": "6064630157765116019",
+	"name": "0022_Seph_Kev_64",
+	"typeId": "1091110027"
+}

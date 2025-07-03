@@ -1,0 +1,23 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"D762B7BA4FF903B5D6A570AF08DFB8D8\", \"On HB, No Flag\")",
+	"nextNodeId":
+	{
+		"guid": "6064630123485790216",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064630095469477891",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "((IsOnStoryArcQuest(GetPlayer(), \"SAQ_0022_p1q1_Handbill\")&&!GetStoryArcQuestFlag(GetPlayer(),\"SAQ_0022_p1q1_Handbill\",\"Handbill4\")))"
+	},
+	"guid": "6064630123485003783",
+	"name": "0022_Seph_Tenarith_31",
+	"typeId": "1091110027"
+}

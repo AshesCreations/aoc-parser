@@ -1,0 +1,100 @@
+{
+	"commissionType": "Generic",
+	"commissionGameplayTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "Biome.Desert"
+			},
+			{
+				"tagName": "Quest.Commission.Artisan.Gathering.Mining"
+			},
+			{
+				"tagName": "Quest.Commission.Tier.T2"
+			}
+		],
+		"parentTags": [
+			{
+				"tagName": "Biome"
+			},
+			{
+				"tagName": "Quest.Commission.Artisan.Gathering"
+			},
+			{
+				"tagName": "Quest.Commission.Artisan"
+			},
+			{
+				"tagName": "Quest.Commission"
+			},
+			{
+				"tagName": "Quest"
+			},
+			{
+				"tagName": "Quest.Commission.Tier"
+			}
+		]
+	},
+	"preRequisiteQuestsIds": [],
+	"autoFailTimer": -1,
+	"bRepeatable": false,
+	"mainObjectiveType": "Collect",
+	"commissionSection": 2,
+	"biomeOrigin": "FloodPlains",
+	"bFromDynamicContent": false,
+	"availabilityExpression":
+	{
+		"expression": "0"
+	},
+	"bDisabled": true,
+	"level": 11,
+	"commissionRarity": "Common",
+	"objectivesIds": [
+		{
+			"guid": "6064632954988724251",
+			"typeId": "1091110420",
+			"name": "None"
+		}
+	],
+	"allowMultipleCompletion": false,
+	"commissionName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"91FFF71546048775C7B16D92BB8A77DA\", \"Glass Act\")",
+	"flavorText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"6EF3EED8476F2B2AE95A3DBA3850B860\", \"Sharp and dark as a moonless night, Obsidian is prized for its beauty and utility. From ceremonial blades to polished tiles, its volcanic origins lend it an air of mystique. The frontier calls for this rare and brittle stone to forge tools and ornament the halls of the mighty. Venture into the shadowed crags to gather Obsidian for our craftsmen!\")",
+	"mainObjectiveText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"0F8058D245430E0DB30A759715C6F4FF\", \"Mine Obsidian from stone outcroppings in the Sandsquall Desert\")",
+	"rewardTablesIds": [
+		{
+			"guid": "6064632139988992083",
+			"typeId": "1091110040",
+			"name": "None"
+		}
+	],
+	"calloutName": "",
+	"calloutDescription": "",
+	"bCanProgressWhileInRaid": false,
+	"expiration":
+	{
+		"duration": "0"
+	},
+	"cooldown":
+	{
+		"duration": "0"
+	},
+	"moneyCost": "0",
+	"resourceCost": [],
+	"mayoralCompletionCount": 0,
+	"rewardId":
+	{
+		"guid": "0",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"bNodeTargeted": false,
+	"targetRewardId":
+	{
+		"guid": "0",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"questItemListIds": [],
+	"guid": "6064632954198425610",
+	"name": "COM_SAN_Gather_Raw_Stone_Obsidian_DISABLED",
+	"typeId": "280002"
+}

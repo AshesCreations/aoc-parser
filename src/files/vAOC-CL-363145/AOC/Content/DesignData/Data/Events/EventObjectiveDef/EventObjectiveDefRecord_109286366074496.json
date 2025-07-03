@@ -1,0 +1,103 @@
+{
+	"bAllowSatisfactionToRegress": false,
+	"parameterTypes": 1,
+	"objectiveType": "Kill",
+	"completionCriteria": [
+		{
+			"bOverrideCompletionValueWithExpression": true,
+			"completionValue": 0,
+			"operator": "GreaterThan",
+			"completionExpression":
+			{
+				"expression": "Event_GetNumNPCKills() >= 15"
+			},
+			"completionTriggersIds": [],
+			"bDisplayOnTracker": true,
+			"relevantTrackerIds": [],
+			"displayText": "",
+			"displayType": 0,
+			"displayCompletionValue": 0,
+			"bInvertProgressDisplay": false
+		}
+	],
+	"nPCObjectiveIconOverrideId":
+	{
+		"guid": "0",
+		"typeId": "949952112329",
+		"name": "None"
+	},
+	"progressExpression":
+	{
+		"expression": ""
+	},
+	"gameplayTagFilter":
+	{
+		"tokenStreamVersion": 0,
+		"tagDictionary": [
+			{
+				"tagName": "npc.type.monster.plantmonster"
+			},
+			{
+				"tagName": "Quest.EventTarget.PE0004_RiverfolksReprieve.Stage2"
+			}
+		],
+		"queryTokenStream": [ 0, 1, 2, 2, 0, 1 ],
+		"userDescription": "",
+		"autoDescription": " ALL( npc.type.monster.plantmonster, Quest.EventTarget.PE0004_RiverfolksReprieve.Stage2 )"
+	},
+	"populationSetId":
+	{
+		"guid": "0",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"trackerId":
+	{
+		"guid": "0",
+		"typeId": "23095133",
+		"name": "None"
+	},
+	"interactablesIds": [],
+	"professionFilterIds": [],
+	"gatherableFilterIds": [],
+	"collectionFilterId":
+	{
+		"guid": "0",
+		"typeId": "1091110041",
+		"name": "None"
+	},
+	"collectionCount": 5,
+	"abilityRecordId":
+	{
+		"guid": "0",
+		"typeId": "30316001",
+		"name": "None"
+	},
+	"activityType": "NPCKill",
+	"activityQueryLocation":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"activityQueryExtent":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"bDisplayOnTracker": true,
+	"trackerText": "",
+	"displayType": 0,
+	"displayCompletionValue": 0,
+	"visibilityExpression":
+	{
+		"expression": ""
+	},
+	"visibilityOverridesTrackerFilter": false,
+	"trackersToDisplayToIds": [],
+	"relevantAlignmentsIds": [],
+	"guid": "109286366074496",
+	"name": "Event_PE_0004_RiverfolksReprieve_Stage_2_Transition_Objective_KillThariblooms",
+	"typeId": "23095130"
+}

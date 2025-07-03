@@ -1,0 +1,56 @@
+{
+	"displayName": "NSLOCTEXT(\"\", \"00AA25CB4D19B6981AD6768273F2C474\", \"Bleed Mitigation\")",
+	"description": "NSLOCTEXT(\"\", \"25049C2545CBC45FA44FC0A2C873401D\", \"Reduces the amount of bleed damage taken\")",
+	"bHidden": false,
+	"gameplayType": "Type_Combat",
+	"bHasWaterfallStatsUI": false,
+	"waterfallStatsUIIds": [],
+	"bDisplayAsPercentage": true,
+	"statType": "Type_Float",
+	"bClampStatFinalValue": true,
+	"bMultiplyStatMods": true,
+	"bMultiplyCompliment": true,
+	"base":
+	{
+		"expression": "const rating = GetStat(GetInstigator(), $#10516612381411111:6064629885219569710$);\r\n(1.0 - rating / (rating + EvalFormula($#10516612381411113:6064630531622110190$)))"
+	},
+	"waterfallStatsBaseIds": [
+		{
+			"guid": "6064629885219569710",
+			"typeId": "10516612381411111",
+			"name": "None"
+		}
+	],
+	"valueMin":
+	{
+		"expression": "0"
+	},
+	"waterfallStatsMinIds": [],
+	"valueMax":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMaxIds": [],
+	"regenRate":
+	{
+		"expression": ""
+	},
+	"waterfallStatsRegenIds": [],
+	"bRegenWhileDead": false,
+	"bRecalculateOnCombatState": false,
+	"onSpawn": "Reset_None",
+	"onDeath": "Reset_None",
+	"onRevive": "Reset_None",
+	"bPersistValue": false,
+	"replication": 5,
+	"shieldStatId":
+	{
+		"guid": "0",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"grantedEffects": [],
+	"guid": "6064629885220945967",
+	"name": "BleedMitigation",
+	"typeId": "10516612381411111"
+}

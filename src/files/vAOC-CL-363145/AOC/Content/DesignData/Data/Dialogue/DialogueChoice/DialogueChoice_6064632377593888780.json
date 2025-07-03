@@ -1,0 +1,22 @@
+{
+	"choiceText": "",
+	"nextNodeId":
+	{
+		"guid": "6064632377613352974",
+		"typeId": "1091110028",
+		"name": "DD_SQ_0009_SergeantVenalis_2"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "GetPlayerLevel() >= 4 && \r\n!Player_HasCommission(GetPlayer(), \"SQ_0009_OutlawsEnd\") &&\r\n!Player_HasCompletedCommission(GetPlayer(), \"SQ_0009_OutlawsEnd\")"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064632377593888780",
+	"name": "DD_SQ_0009_SergeantVenalis_1_Choice_1",
+	"typeId": "1091110027"
+}

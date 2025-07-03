@@ -1,0 +1,174 @@
+{
+	"designNotes": "",
+	"levelDefinitionId":
+	{
+		"guid": "6064629126799097877",
+		"typeId": "9227326",
+		"name": "None"
+	},
+	"playerFacingName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"7056010F43C65AFAA783B6821217263C\", \"Aithanahr\")",
+	"zoiType": "HasNode",
+	"startingAreaGameplayTag":
+	{
+		"tagName": "None"
+	},
+	"cityNodeId":
+	{
+		"guid": "6064632734251679746",
+		"typeId": "1323521343",
+		"name": "None"
+	},
+	"adjacentZonesOfInfluenceIds": [
+		{
+			"guid": "6064629126805651478",
+			"typeId": "9127326",
+			"name": "None"
+		},
+		{
+			"guid": "6064632734318067718",
+			"typeId": "9127326",
+			"name": "None"
+		},
+		{
+			"guid": "6064633097376432130",
+			"typeId": "9127326",
+			"name": "None"
+		},
+		{
+			"guid": "6064633097387311107",
+			"typeId": "9127326",
+			"name": "None"
+		}
+	],
+	"corruptionRulesEnabled": true,
+	"bAllowPVPOptInProtection": false,
+	"alignmentsAssignedUponEnteringIds": [],
+	"zoiEnvironmentType": "None",
+	"editorColor":
+	{
+		"x": 0,
+		"y": 1,
+		"z": 0.75
+	},
+	"zOIRewardTables": [
+		{
+			"inclusionExpression":
+			{
+				"expression": "!DoesNPCContainTag(\"NoRewards\")"
+			},
+			"rewardTableId":
+			{
+				"guid": "6064632271541961493",
+				"typeId": "1091110040",
+				"name": "None"
+			}
+		},
+		{
+			"inclusionExpression":
+			{
+				"expression": "DoesNPCContainTag(\"character.humanoid\")"
+			},
+			"rewardTableId":
+			{
+				"guid": "6064633391377612800",
+				"typeId": "1091110040",
+				"name": "None"
+			}
+		},
+		{
+			"inclusionExpression":
+			{
+				"expression": "!DoesNPCContainTag(\"NoRewards\")"
+			},
+			"rewardTableId":
+			{
+				"guid": "6064633313653948416",
+				"typeId": "1091110040",
+				"name": "None"
+			}
+		}
+	],
+	"economicRegionTableId":
+	{
+		"guid": "6064632349333389312",
+		"typeId": "98738382",
+		"name": "None"
+	},
+	"bHideExperienceEvents": false,
+	"biome": "Highlands",
+	"biomeGatherableTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "SandsquallDesert"
+			}
+		],
+		"parentTags": []
+	},
+	"freeholdEstatesIds": [
+		{
+			"guid": "6064633290097754136",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633290118135833",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633290186620955",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633293868433439",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633294037385250",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633294047215651",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633290153525274",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633293985218593",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633294055866404",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633290222075932",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633293859389470",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633293899431968",
+			"typeId": "1337133701",
+			"name": "None"
+		}
+	],
+	"actorEffects": [],
+	"guid": "6064632751844032513",
+	"name": "Verra_SAN_Node_Aithanahr",
+	"typeId": "9127326"
+}

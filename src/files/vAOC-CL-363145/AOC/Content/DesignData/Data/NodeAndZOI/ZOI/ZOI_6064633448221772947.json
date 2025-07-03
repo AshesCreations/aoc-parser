@@ -1,0 +1,157 @@
+{
+	"designNotes": "Wildport",
+	"levelDefinitionId":
+	{
+		"guid": "6064629126799097877",
+		"typeId": "9227326",
+		"name": "None"
+	},
+	"playerFacingName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"51965BEA444C5D92B56E44976057185F\", \"Wildport\")",
+	"zoiType": "HasNode",
+	"startingAreaGameplayTag":
+	{
+		"tagName": "None"
+	},
+	"cityNodeId":
+	{
+		"guid": "6064633425419042816",
+		"typeId": "1323521343",
+		"name": "None"
+	},
+	"adjacentZonesOfInfluenceIds": [
+		{
+			"guid": "6064633253929811971",
+			"typeId": "9127326",
+			"name": "None"
+		},
+		{
+			"guid": "6064633430643441687",
+			"typeId": "9127326",
+			"name": "None"
+		},
+		{
+			"guid": "6064633448010220515",
+			"typeId": "9127326",
+			"name": "None"
+		}
+	],
+	"corruptionRulesEnabled": true,
+	"bAllowPVPOptInProtection": false,
+	"alignmentsAssignedUponEnteringIds": [],
+	"zoiEnvironmentType": "None",
+	"editorColor":
+	{
+		"x": 0.498,
+		"y": 0.23499999999999999,
+		"z": 0.55300000000000005
+	},
+	"zOIRewardTables": [
+		{
+			"inclusionExpression":
+			{
+				"expression": "!DoesNPCContainTag(\"NoRewards\")"
+			},
+			"rewardTableId":
+			{
+				"guid": "6064633313653948416",
+				"typeId": "1091110040",
+				"name": "None"
+			}
+		},
+		{
+			"inclusionExpression":
+			{
+				"expression": "DoesNPCContainTag(\"character.humanoid\")"
+			},
+			"rewardTableId":
+			{
+				"guid": "6064633584457744403",
+				"typeId": "1091110040",
+				"name": "None"
+			}
+		}
+	],
+	"economicRegionTableId":
+	{
+		"guid": "6064633430635708438",
+		"typeId": "98738382",
+		"name": "None"
+	},
+	"bHideExperienceEvents": false,
+	"biome": "Jungle",
+	"biomeGatherableTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "Jundark"
+			}
+		],
+		"parentTags": []
+	},
+	"freeholdEstatesIds": [
+		{
+			"guid": "6064633588915503127",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633588917403672",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633588918059033",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633588918648858",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633588918976539",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633588919238684",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633588919631901",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633588919959582",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633588920287263",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633588920680480",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633588921008161",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633588921335842",
+			"typeId": "1337133701",
+			"name": "None"
+		}
+	],
+	"actorEffects": [],
+	"guid": "6064633448221772947",
+	"name": "Verra_JUN_Node_Wildport",
+	"typeId": "9127326"
+}

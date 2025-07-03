@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"23EA86DC47AC1E51451FEEB97572A820\", \"On Q1 No flag\")",
+	"nextNodeId":
+	{
+		"guid": "6064630095626502150",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsOnStoryArcQuest(GetPlayer(), \"SAQ_0022_p1q1_Handbill\")&&!GetStoryArcQuestFlag(GetPlayer(),\"SAQ_0022_p1q1_Handbill\",\"Handbill1\")"
+	},
+	"guid": "6064630095546744837",
+	"name": "0022_Seph_Kev_31",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,24 @@
+{
+	"choiceText": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"90DA868B4FF72AD85C3609A72E74678F\", \"I will go to the warehouse and complete a buy order.\")",
+	"nextNodeId":
+	{
+		"guid": "6064629444710564425",
+		"typeId": "1091110028",
+		"name": "DD_ServiceNPC_NodeAdministrator_32"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064632106148954148",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "false\r\n//!(Player_HasCommission(GetPlayer(), \"CSQ_0154_FTUE_EveryNodeNeedsResources\") ||\r\n//Player_HasCompletedCommission(GetPlayer(), \"CSQ_0154_FTUE_EveryNodeNeedsResources\")) &&\r\n//Node_IsBuyOrderActive\r\n//(Node_GetActorCityNode(GetInteractionTarget()))"
+	},
+	"choiceType": "Default",
+	"guid": "6064632106675535933",
+	"name": "DD_ServiceNPC_NodeAdministrator_73_Choice_2",
+	"typeId": "1091110027"
+}

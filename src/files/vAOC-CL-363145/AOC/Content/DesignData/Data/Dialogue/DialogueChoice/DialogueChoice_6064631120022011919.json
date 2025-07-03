@@ -1,0 +1,18 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"C59260D74F699D06AEE2CD9AE747B6FD\", \"HasComplete WTV and POV\")",
+	"nextNodeId":
+	{
+		"guid": "6064631046740836413",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "Player_HasCompletedCommission(GetPlayer(),\"CSQ_RVR_0005_WTV_WelcomeToVerra\")&&\r\nPlayer_HasCompletedCommission(GetPlayer(),\"CSQ_RVR_0006_POV_PathOfVaelune\")"
+	},
+	"choiceType": "Default",
+	"guid": "6064631120022011919",
+	"name": "CSQ_DialDef_0006_POV_EmissaryOfVaelune_21",
+	"typeId": "1091110027"
+}

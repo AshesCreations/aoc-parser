@@ -1,0 +1,147 @@
+{
+	"eventName": "NSLOCTEXT(\"\", \"39947A664E27C49E0DE62E8AC32E3AF9\", \"Wave Encounter\")",
+	"gameplayTags":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"activationPredicatesIds": [
+		{
+			"guid": "108244522980991",
+			"typeId": "23095129",
+			"name": "None"
+		}
+	],
+	"minChallengeRating": 0,
+	"maxChallengeRating": 10,
+	"eventType": 128,
+	"locationId":
+	{
+		"guid": "6064631561688711218",
+		"typeId": "5127371160",
+		"name": "None"
+	},
+	"desiredTimeSlot": "0001.01.01-00.00.00",
+	"frequency": 48,
+	"priority": 6,
+	"rewardTableId":
+	{
+		"guid": "0",
+		"typeId": "1091110040",
+		"name": "None"
+	},
+	"rewardPopulationSetId":
+	{
+		"guid": "0",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"startStageId":
+	{
+		"guid": "108243428857468",
+		"typeId": "23095131",
+		"name": "TestWaveEncounter_Active"
+	},
+	"stagesIds": [
+		{
+			"guid": "108243428857468",
+			"typeId": "23095131",
+			"name": "TestWaveEncounter_Active"
+		},
+		{
+			"guid": "108515383924344",
+			"typeId": "23095131",
+			"name": "TestEvent_WaveEncounter_Cooldown"
+		},
+		{
+			"guid": "108243429578365",
+			"typeId": "23095131",
+			"name": "TestWaveEncounter_InProgress"
+		},
+		{
+			"guid": "108243434559102",
+			"typeId": "23095131",
+			"name": "TestWaveEncounter_Stage1"
+		},
+		{
+			"guid": "108248960161403",
+			"typeId": "23095131",
+			"name": "TestWaveEncounter_Stage2"
+		},
+		{
+			"guid": "108248960882300",
+			"typeId": "23095131",
+			"name": "TestWaveEncounter_FinalStage"
+		},
+		{
+			"guid": "108243416077946",
+			"typeId": "23095131",
+			"name": "TestWaveEncounter_InActive"
+		}
+	],
+	"alignmentsIds": [
+		{
+			"guid": "6064630134813884424",
+			"typeId": "512160700",
+			"name": "None"
+		}
+	],
+	"mapDisplayType": "World",
+	"mapEventIcon": "None",
+	"bDisplayOnTracker": true,
+	"notificationRadius": 15000,
+	"mapRadiusMinumum": 1000,
+	"cooldownTimer": 600,
+	"bDisabled": false,
+	"maxInstanceCount": 1,
+	"requiredMapName": "",
+	"comments": [
+		{
+			"commentGuid": "6064628872614576128",
+			"comment": "WIN CONDITION - when you've killed enough that they just run away",
+			"location":
+			{
+				"x": -1302.2686951633116,
+				"y": -867.61988940584934,
+				"z": 0
+			},
+			"size":
+			{
+				"x": 410.95235002040863,
+				"y": 39.365095376968384,
+				"z": 0
+			},
+			"color":
+			{
+				"r": 0.5,
+				"g": 0.5,
+				"b": 0.5,
+				"a": 0.5
+			}
+		}
+	],
+	"bIsTemplate": false,
+	"flowNodes": [
+		{
+			"flowType": "EventEntry",
+			"graphLocation":
+			{
+				"x": -527.00000197192037,
+				"y": -1667.6198894058493
+			},
+			"id": 0
+		},
+		{
+			"flowType": "EventExit",
+			"graphLocation":
+			{
+				"x": -1124.666694273551,
+				"y": 800.4074155940317
+			},
+			"id": 1
+		}
+	],
+	"guid": "6064631034650951682",
+	"name": "TestEvent_WaveEncounter_Kyle",
+	"typeId": "23095125"
+}

@@ -1,0 +1,103 @@
+{
+	"bAllowSatisfactionToRegress": false,
+	"parameterTypes": 2,
+	"objectiveType": "Kill",
+	"completionCriteria": [
+		{
+			"bOverrideCompletionValueWithExpression": true,
+			"completionValue": 0,
+			"operator": "GreaterThanOrEqualTo",
+			"completionExpression":
+			{
+				"expression": "Event_GetActivity() >= 30"
+			},
+			"completionTriggersIds": [],
+			"bDisplayOnTracker": false,
+			"relevantTrackerIds": [],
+			"displayText": "",
+			"displayType": 0,
+			"displayCompletionValue": 0,
+			"bInvertProgressDisplay": false
+		}
+	],
+	"nPCObjectiveIconOverrideId":
+	{
+		"guid": "0",
+		"typeId": "949952112329",
+		"name": "None"
+	},
+	"progressExpression":
+	{
+		"expression": ""
+	},
+	"gameplayTagFilter":
+	{
+		"tokenStreamVersion": 0,
+		"tagDictionary": [
+			{
+				"tagName": "character.vermin.giantScorpion"
+			},
+			{
+				"tagName": "character.vermin.scorpion"
+			},
+			{
+				"tagName": "character.arcana.crystalGolem"
+			},
+			{
+				"tagName": "character.arcana.crystalGolemShard"
+			}
+		],
+		"queryTokenStream": [ 0, 1, 1, 4, 0, 1, 2, 3 ],
+		"userDescription": "",
+		"autoDescription": " ANY( character.vermin.giantScorpion, character.vermin.scorpion, character.arcana.crystalGolem, character.arcana.crystalGolemShard )"
+	},
+	"populationSetId":
+	{
+		"guid": "0",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"trackerId":
+	{
+		"guid": "0",
+		"typeId": "23095133",
+		"name": "None"
+	},
+	"interactablesIds": [],
+	"professionFilterIds": [],
+	"gatherableFilterIds": [],
+	"collectionFilterId":
+	{
+		"guid": "0",
+		"typeId": "1091110041",
+		"name": "None"
+	},
+	"collectionCount": 5,
+	"abilityRecordId":
+	{
+		"guid": "0",
+		"typeId": "30316001",
+		"name": "None"
+	},
+	"activityType": "NPCKill",
+	"activityQueryLocation":
+	{
+		"x": 70760,
+		"y": 752680,
+		"z": 5990
+	},
+	"activityQueryExtent":
+	{
+		"x": 50000,
+		"y": 50000,
+		"z": 20000
+	},
+	"visibilityExpression":
+	{
+		"expression": ""
+	},
+	"visibilityOverridesTrackerFilter": false,
+	"guid": "6064633628937617542",
+	"name": "EventObjective_EVT_SAN_0016_TFF_KillScorpions_StartPredicate",
+	"typeId": "23095130"
+}

@@ -1,0 +1,22 @@
+{
+	"statRefId":
+	{
+		"guid": "108986352686712",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"value":
+	{
+		"expression": "((GetEffectCount(GetBlackboardGuid(GetTarget(),\"BiteTarget\"),$#30316002:6064629761775576467$) * 0.15) + 0.1) * GetStat(GetTarget(),$#10516612381411111:108986356618873$)"
+	},
+	"bUseShieldAbsorb": false,
+	"shieldAbsorbPercentage":
+	{
+		"expression": ""
+	},
+	"bShowFloatingText": true,
+	"valueInputTerms": [],
+	"guid": "6064633270734225411",
+	"name": "Bat_Vampire_BloodBite_SelfHeal_StatMod",
+	"typeId": "3031600201"
+}

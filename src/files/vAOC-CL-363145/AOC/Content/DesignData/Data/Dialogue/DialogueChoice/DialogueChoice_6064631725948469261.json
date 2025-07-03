@@ -1,0 +1,18 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"3473477B4C999344F7D551A683D34A58\", \"NOTCompleted CSQ_0069_KTT_Support LastAccount\")",
+	"nextNodeId":
+	{
+		"guid": "6064631725959413774",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "Player_ObjectiveStateEquals(GetPlayer(),\"CSQ_NOB_0069_KTT_Main_LocateStoneRose\", EObjectiveState::Active)\r\n&&\r\n!Player_HasCommission(GetPlayer(),\"CSQ_RVR_0069_KTT_Support_LastAccount\")"
+	},
+	"choiceType": "Default",
+	"guid": "6064631725948469261",
+	"name": "CSQ_DD_0069_KTT_LastAccountScroll_5",
+	"typeId": "1091110027"
+}

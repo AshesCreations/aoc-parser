@@ -1,0 +1,18 @@
+{
+	"choiceText": "NSLOCTEXT(\"[4BE4F0A16D08556ACD6685BF392E6719]\", \"46F6C588463E0643A0F4629642C28ADD\", \"New To Buy Orders\")",
+	"nextNodeId":
+	{
+		"guid": "6064632106105962517",
+		"typeId": "1091110028",
+		"name": "DD_ServiceNPC_BuyOrderManager_99"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "!(Player_HasCommission(GetPlayer(), \"CSQ_0154_FTUE_EveryNodeNeedsResources\") ||\r\nPlayer_HasCompletedCommission(GetPlayer(), \"CSQ_0154_FTUE_EveryNodeNeedsResources\")) &&\r\nNode_IsBuyOrderActive\r\n(Node_GetActorCityNode(GetInteractionTarget()))"
+	},
+	"choiceType": "Default",
+	"guid": "6064632106098622483",
+	"name": "DD_ServiceNPC_BuyOrderManager_98_Choice_1",
+	"typeId": "1091110027"
+}

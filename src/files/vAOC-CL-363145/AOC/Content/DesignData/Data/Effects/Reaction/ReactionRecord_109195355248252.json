@@ -1,0 +1,27 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 4,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "RecordNameIs(GetHitRecord(GetHitEvent()), \"Cleric_Judgment_Hit2_Enemy\")"
+	},
+	"bEvaluateApplyingHit": false,
+	"instigator": "Owner",
+	"targetsBitmask": 1,
+	"reactHitsIds": [
+		{
+			"guid": "109195350398587",
+			"typeId": "30316005",
+			"name": "Cleric_HandOfProvidence_Hit3_ConvictionProc"
+		}
+	],
+	"guid": "109195355248252",
+	"name": "Cleric_Judgment_ConvictionProc",
+	"typeId": "3031600202"
+}

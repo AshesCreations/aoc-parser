@@ -1,0 +1,38 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"4A78A6F34C15FA9F7225B6B0515A4707\", \"[Put the Highwaymen Oath in the chest]\")",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064632315300938048",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064631364273963152",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064631364272717967",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "Player_HasCommission(GetPlayer(),\"CSQ_RVR_Plunder_0062_THO_TheHighwaymenOath\")&&\r\nPlayer_HasItem(GetPlayer(),\"CSQ_ITM_Plunder_0062_THO_TheHighwaymenOath\")\r\n"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064631363266412608",
+	"name": "CSQ_DD_PlunderChest_Aela_13",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,118 @@
+{
+	"designNotes": "",
+	"levelDefinitionId":
+	{
+		"guid": "6064629126799097877",
+		"typeId": "9227326",
+		"name": "None"
+	},
+	"playerFacingName": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"4325B33948A6BEECE3D8A1A99733C862\", \"Open Ocean\")",
+	"zoiType": "CannotOwn",
+	"startingAreaGameplayTag":
+	{
+		"tagName": "None"
+	},
+	"cityNodeId":
+	{
+		"guid": "6064633504177586176",
+		"typeId": "1323521343",
+		"name": "None"
+	},
+	"adjacentZonesOfInfluenceIds": [],
+	"corruptionRulesEnabled": true,
+	"bAllowPVPOptInProtection": false,
+	"alignmentsAssignedUponEnteringIds": [
+		{
+			"guid": "6064629443707731976",
+			"typeId": "512160700",
+			"name": "None"
+		}
+	],
+	"zoiEnvironmentType": "Ocean",
+	"editorColor":
+	{
+		"x": 1,
+		"y": 1,
+		"z": 0.75
+	},
+	"zOIRewardTables": [
+		{
+			"inclusionExpression":
+			{
+				"expression": "!DoesNPCContainTag(\"NoRewards\")"
+			},
+			"rewardTableId":
+			{
+				"guid": "6064633313653948416",
+				"typeId": "1091110040",
+				"name": "None"
+			}
+		},
+		{
+			"inclusionExpression":
+			{
+				"expression": "!DoesNPCContainTag(\"NoRewards\")"
+			},
+			"rewardTableId":
+			{
+				"guid": "6064633313727152129",
+				"typeId": "1091110040",
+				"name": "None"
+			}
+		},
+		{
+			"inclusionExpression":
+			{
+				"expression": "DoesNPCContainTag(\"character.humanoid\")"
+			},
+			"rewardTableId":
+			{
+				"guid": "6064633584457744403",
+				"typeId": "1091110040",
+				"name": "None"
+			}
+		}
+	],
+	"economicRegionTableId":
+	{
+		"guid": "0",
+		"typeId": "98738382",
+		"name": "None"
+	},
+	"bHideExperienceEvents": false,
+	"biome": "Default",
+	"biomeGatherableTags":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"freeholdEstatesIds": [],
+	"actorEffects": [
+		{
+			"availabilityExpression":
+			{
+				"expression": "true"
+			},
+			"areaOfInterestActorEffects": [
+				{
+					"effectRecordId":
+					{
+						"guid": "6064633429899935744",
+						"typeId": "30316002",
+						"name": "None"
+					},
+					"effectClassifications": [
+						"Character"
+					],
+					"effectNodeType": "Default",
+					"effectAlignments": [],
+					"bRequireAllAlignments": false,
+					"bRequireOrgAffiliation": false
+				}
+			]
+		}
+	],
+	"guid": "6064633486589362176",
+	"name": "Verra_Lawless_Ocean",
+	"typeId": "9127326"
+}

@@ -1,0 +1,33 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 4,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0,
+		"fishingEvents": 0,
+		"statEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "GetStatModValue(GetHitEvent(), $#10516612381411111:108986352686712$) < 0.0\r\n&& HitHasTag(GetHitEvent(), \"Ability.weaponcombo\")"
+	},
+	"bEvaluateApplyingHit": true,
+	"instigator": "Instigator",
+	"targetsBitmask": 8,
+	"reactHitsIds": [
+		{
+			"guid": "6064633628752347143",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"instigatorProcLimit": 0,
+	"globalProcLimit": 0,
+	"procReactOnApply": false,
+	"guid": "6064633628751101958",
+	"name": "ClayDunzenkell_Cleric_RadiantWeapon_Reaction",
+	"typeId": "3031600202"
+}

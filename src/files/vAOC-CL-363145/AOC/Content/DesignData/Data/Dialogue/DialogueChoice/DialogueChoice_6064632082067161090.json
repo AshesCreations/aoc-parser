@@ -1,0 +1,18 @@
+{
+	"choiceText": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"5FDE8A134535407F0711EFBCDF90C758\", \"Plot contribution progress is greater than 50%\")",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "Node_GetPlotContributionProgress($#1323521343:6064628934942261248$, $#7823464:6064629286530777224$) >= 0.5"
+	},
+	"choiceType": "Default",
+	"guid": "6064632082067161090",
+	"name": "Node_GetPlotContributionProgress",
+	"typeId": "1091110027"
+}

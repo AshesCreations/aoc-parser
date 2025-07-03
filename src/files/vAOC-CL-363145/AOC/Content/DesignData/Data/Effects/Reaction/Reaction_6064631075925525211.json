@@ -1,0 +1,31 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 0,
+		"effectEvents": 0,
+		"abilityEvents": 4,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "AbilityHasTag(GetConsumedAbility(), \"ability.Archetype\")\r\n&&\r\n!AbilityHasTag(GetConsumedAbility(), \"ability.Toggle\")"
+	},
+	"bEvaluateApplyingHit": false,
+	"instigator": "HitInstigator",
+	"targetsBitmask": 16,
+	"reactHitsIds": [
+		{
+			"guid": "6064631075932537564",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"instigatorProcLimit": 0,
+	"globalProcLimit": 0,
+	"procReactOnApply": false,
+	"guid": "6064631075925525211",
+	"name": "Weapon_Proc_RefreshingFollowthrough",
+	"typeId": "3031600202"
+}

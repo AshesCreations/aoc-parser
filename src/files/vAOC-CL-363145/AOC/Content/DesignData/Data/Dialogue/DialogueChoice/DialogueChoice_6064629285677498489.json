@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"98A74DEC44D203E52FC021B44F73A6CC\", \"I\\'ve found the formula!\")",
+	"nextNodeId":
+	{
+		"guid": "6064629285684183162",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MIA_0016_LOL_LastOfLyneth\",\"MIP_0016_LOL_Phase01\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MIQ_0016_TPP_ThePlaguePotion\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MIQ_0016_TPP_ThePlaguePotion\",\"ExaminedMungShield\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MIQ_0016_TPP_ThePlaguePotion\",\"GaveSheildToLynette\")"
+	},
+	"guid": "6064629285677498489",
+	"name": "MIDD_0016_TPP_Lynette_Phase01_17",
+	"typeId": "1091110027"
+}

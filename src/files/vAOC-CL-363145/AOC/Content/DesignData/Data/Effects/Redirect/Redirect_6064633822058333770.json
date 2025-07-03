@@ -1,0 +1,14 @@
+{
+	"trigger":
+	{
+		"expression": "GetStatModValue(GetHitInProgress(), GetTarget(), $#10516612381411111:108986352686712$) < 0.0 &&\r\n!HitFlagsContains(GetHitFlags(GetHitInProgress()), EHitFlag::Redirect) &&\r\nGetEffectCountByTag(GetTarget(), \"Pet.Summon\") > 0"
+	},
+	"target": "RedirectInstigator",
+	"ratio":
+	{
+		"expression": "0.3"
+	},
+	"guid": "6064633822058333770",
+	"name": "Summoner_Bond_Caster",
+	"typeId": "3031600209"
+}

@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"ACC28BB0458339FADF6A68B8785C761D\", \"It\\'s empty?\")",
+	"nextNodeId":
+	{
+		"guid": "6064629387064705066",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MIA_0015_TPT_ThePhantomTower\",\"MIP_0015_TPT_Phase04\")&&\r\n!IsOnStoryArcQuest(GetPlayer(),\"MIQ_0015_AOF_AnOldFriend\")&&\r\nIsStoryArcQuestAvailable(GetPlayer(),\"MIQ_0015_AOF_AnOldFriend\")"
+	},
+	"guid": "6064629387061100585",
+	"name": "MIDD_0015_AOF_AcademyGuard_4",
+	"typeId": "1091110027"
+}

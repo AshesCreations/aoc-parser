@@ -1,0 +1,61 @@
+{
+	"displayName": "NSLOCTEXT(\"\", \"E30CDA78451A56849676D8AC6EE7C382\", \"Magical Critical Chance\")",
+	"description": "NSLOCTEXT(\"\", \"51758521465FE9D06885028D4C0495BB\", \"The chance for a magical critical hit\")",
+	"bHidden": false,
+	"gameplayType": "Type_Combat",
+	"bHasWaterfallStatsUI": false,
+	"waterfallStatsUIIds": [],
+	"bDisplayAsPercentage": true,
+	"statType": "Type_Float",
+	"bClampStatFinalValue": false,
+	"bMultiplyStatMods": false,
+	"bMultiplyCompliment": false,
+	"base":
+	{
+		"expression": "const base = GetStat(GetOwner(), $#10516612381411111:6064628617693364226$);\r\nconst baseRating = GetStat(GetInstigator(), $#10516612381411111:6064628617694412804$);\r\nconst coeff = EvalFormula($#10516612381411113:6064630400898301980$);\r\nconst coeffMult = EvalFormula($#10516612381411113:6064632412935028738$);\r\nconst baseAdj = base - baseRating / (baseRating * coeffMult + coeff);\r\nconst rating = baseRating + GetStat(GetInstigator(), $#10516612381411111:109183607068301$);\r\nbaseAdj + rating / (rating * coeffMult + coeff)"
+	},
+	"waterfallStatsBaseIds": [
+		{
+			"guid": "6064628617693364226",
+			"typeId": "10516612381411111",
+			"name": "None"
+		},
+		{
+			"guid": "109183607068301",
+			"typeId": "10516612381411111",
+			"name": "None"
+		}
+	],
+	"valueMin":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMinIds": [],
+	"valueMax":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMaxIds": [],
+	"regenRate":
+	{
+		"expression": ""
+	},
+	"waterfallStatsRegenIds": [],
+	"bRegenWhileDead": false,
+	"bRecalculateOnCombatState": false,
+	"onSpawn": "Reset_None",
+	"onDeath": "Reset_None",
+	"onRevive": "Reset_None",
+	"bPersistValue": false,
+	"replication": 5,
+	"shieldStatId":
+	{
+		"guid": "0",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"grantedEffects": [],
+	"guid": "109343399171795",
+	"name": "MagicalCriticalChance",
+	"typeId": "10516612381411111"
+}

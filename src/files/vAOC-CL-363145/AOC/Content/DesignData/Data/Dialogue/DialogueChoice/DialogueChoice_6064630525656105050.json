@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"A126A4D746D262B34E8EE485034B78CB\", \"Here is the shield.\")",
+	"nextNodeId":
+	{
+		"guid": "6064630525655711833",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0005B_TEW_EnemyWithin\",\"MAP_0005B_TEW_Phase02\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0005B_TGU_TheGreatUnifier\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005B_TGU_TheGreatUnifier\",\"ExamineShield\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005B_TGU_TheGreatUnifier\",\"ReturnToWadoo\")\r\n"
+	},
+	"guid": "6064630525656105050",
+	"name": "MADD_0005B_TGU_AkhundaWadoo_12",
+	"typeId": "1091110027"
+}

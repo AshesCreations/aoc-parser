@@ -1,0 +1,29 @@
+{
+	"itemFilter":
+	{
+		"tokenStreamVersion": 0,
+		"tagDictionary": [
+			{
+				"tagName": "item.equipment.armor"
+			}
+		],
+		"queryTokenStream": [ 0, 1, 1, 1, 0 ],
+		"userDescription": "",
+		"autoDescription": " ANY( item.equipment.armor )"
+	},
+	"itemWhitelistIds": [
+		{
+			"guid": "6064629336754094084",
+			"typeId": "1091110003",
+			"name": "None"
+		},
+		{
+			"guid": "6064629347405269238",
+			"typeId": "1091110003",
+			"name": "None"
+		}
+	],
+	"guid": "6064629086810210305",
+	"name": "TestVendor_SellFilter",
+	"typeId": "3145314716"
+}

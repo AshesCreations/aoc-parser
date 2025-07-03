@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"458D667D4D9AC9CAF96BD6962F95EBF8\", \"Signals destroyed!\")",
+	"nextNodeId":
+	{
+		"guid": "6064630372113055764",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005A_SMF_SignalsMustFall\",\"DestroySignalNest\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005A_SMF_SignalsMustFall\",\"DestroySignalBriarmoor\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005A_SMF_SignalsMustFall\",\"DestroySignalJarrak\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005A_SMF_SignalsMustFall\",\"DestroySignalKorra\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005A_SMF_SignalsMustFall\",\"DestroySignalNika\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005A_SMF_SignalsMustFall\",\"DestroySignalCrystal\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005A_SMF_SignalsMustFall\",\"ReturnToOrrik\")\r\n"
+	},
+	"guid": "6064630372120723480",
+	"name": "MADD_0005A_SMF_OrrikBlackwood_Phase03_15",
+	"typeId": "1091110027"
+}

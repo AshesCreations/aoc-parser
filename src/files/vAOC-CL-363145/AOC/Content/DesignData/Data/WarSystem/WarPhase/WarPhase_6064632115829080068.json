@@ -1,0 +1,56 @@
+{
+	"displayName": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"9ED70489486903C7A9C37BB7BB9BAEA2\", \"Deadly Fishing Derby\")",
+	"phaseToastId":
+	{
+		"guid": "0",
+		"typeId": "949952112328",
+		"name": "None"
+	},
+	"victoryConditionText": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"A2E43C654709459CCB834992B060E506\", \"The first guild to earn 250 points in the derby wins!\")",
+	"phaseDescriptionLong": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"CABEB13D43470D51D8F140A2D4829411\", \"Catch fish or kill rivals to earn points!\")",
+	"bStartEventOnPhaseBegin": true,
+	"bEventsOccurRandomly": false,
+	"bLoopWarEventsArray": true,
+	"warEventsIds": [
+		{
+			"guid": "6064632116006748196",
+			"typeId": "23095125",
+			"name": "None"
+		}
+	],
+	"schedulePlusMinusMinutes": 60,
+	"scheduleOfEvents": [ 0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22 ],
+	"bUseParentWarRecordVictoryPointTable": true,
+	"bUseGlobalConstantVictoryPointTable": false,
+	"victoryPointTableId":
+	{
+		"guid": "0",
+		"typeId": "98966982",
+		"name": "None"
+	},
+	"bUseDefaultPhaseRewards": false,
+	"bUseDefaultObjectiveRewards": false,
+	"bUseDefaultEventRewards": false,
+	"completionCondition":
+	{
+		"expression": "War_HasTimeElapsedSeconds(60*120) ||War_HasOrgScoredEnough(150)"
+	},
+	"bUseParentWarRecordLocaleSelectionOptions": true,
+	"phaseLocaleSelectionType": "WarRecordLocaleRequest",
+	"bTargetNodeLocaleRequestFirst": false,
+	"localeRequestId":
+	{
+		"guid": "0",
+		"typeId": "23095138",
+		"name": "None"
+	},
+	"customLocaleSelectionPerEvent": [],
+	"bFlaggedAgainstEachOther": true,
+	"bFlaggedInRelevantNodeZOIs": false,
+	"bAllowAlliance_UNSUPPORTED": false,
+	"bCanSurrender": true,
+	"surrenderAvailableSecondsAfterPhaseStart": 3600,
+	"guid": "6064632115829080068",
+	"name": "GuildWar_Variant1_Medium_PVP_Phase1",
+	"typeId": "98966980"
+}

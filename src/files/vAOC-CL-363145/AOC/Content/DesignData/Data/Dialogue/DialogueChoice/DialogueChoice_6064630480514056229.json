@@ -1,0 +1,23 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"3516D36A4674F32691F063868E678186\", \"(Fill out and sign)\")",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064630475108581389",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0005B_TEW_EnemyWithin\",\"MAP_0005B_TEW_Phase01\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0005B_HHB_HighwaymenHillsBust\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005B_HHB_HighwaymenHillsBust\",\"SpeakToDirector\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005B_HHB_HighwaymenHillsBust\",\"SignForm\")\r\n"
+	},
+	"guid": "6064630480514056229",
+	"name": "MADD_0005B_HHB_MiningForm_4",
+	"typeId": "1091110027"
+}

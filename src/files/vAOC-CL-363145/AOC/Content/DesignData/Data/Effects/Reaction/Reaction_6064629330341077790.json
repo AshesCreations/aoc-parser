@@ -1,0 +1,25 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 4,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "GetStat(GetInstigator(), $#10516612381411111:109183576135288$) < 25.0 "
+	},
+	"bEvaluateApplyingHit": false,
+	"instigator": "Owner",
+	"targetsBitmask": 16,
+	"reactHitsIds": [],
+	"instigatorProcLimit": 0,
+	"globalProcLimit": 0,
+	"procReactOnApply": false,
+	"guid": "6064629330341077790",
+	"name": "Cleric_DivineFocus_ManaCheck",
+	"typeId": "3031600202"
+}

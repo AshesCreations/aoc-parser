@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"43270E4E43C1C6C522AD7C8E77919039\", \"[EMERGENCY ENTRY]\")",
+	"nextNodeId":
+	{
+		"guid": "6064629365277851740",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MIA_0015_TPT_ThePhantomTower\",\"MIP_0015_TPT_Phase01\")&&\r\n!IsOnStoryArcQuest(GetPlayer(),\"MIQ_0015_PTS_PartingTheSeas\")&&\r\nIsStoryArcQuestAvailable(GetPlayer(),\"MIQ_0015_PTS_PartingTheSeas\")"
+	},
+	"guid": "6064629365247246427",
+	"name": "MIDD_0015_PTS_ClockworkCodex_4",
+	"typeId": "1091110027"
+}

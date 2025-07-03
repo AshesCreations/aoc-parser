@@ -1,0 +1,182 @@
+{
+	"eventName": "NSLOCTEXT(\"\", \"750FF15D4461F85D025075B7974668EF\", \"In the Fanciful Mire\")",
+	"gameplayTags":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"activationPredicatesIds": [
+		{
+			"guid": "6064630530730360838",
+			"typeId": "23095129",
+			"name": "None"
+		}
+	],
+	"minChallengeRating": 0,
+	"maxChallengeRating": 30,
+	"eventType": 128,
+	"locationId":
+	{
+		"guid": "6064631561688711204",
+		"typeId": "5127371160",
+		"name": "None"
+	},
+	"desiredTimeSlot": "0001.01.01-00.00.00",
+	"frequency": 24,
+	"priority": 1,
+	"rewardTableId":
+	{
+		"guid": "0",
+		"typeId": "1091110040",
+		"name": "None"
+	},
+	"rewardPopulationSetId":
+	{
+		"guid": "0",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"startStageId":
+	{
+		"guid": "6064630530729050115",
+		"typeId": "23095131",
+		"name": "None"
+	},
+	"stagesIds": [
+		{
+			"guid": "6064630530729050115",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064630532170057638",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064630530729246724",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064630530729639941",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064630532158588831",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064630530728525826",
+			"typeId": "23095131",
+			"name": "None"
+		}
+	],
+	"alignmentsIds": [],
+	"mapDisplayType": "Biome",
+	"mapEventIcon": "/Game/UI/Widgets/Narrative/Textures/TUI_Icon_Event_PvETracker.TUI_Icon_Event_PvETracker",
+	"bDisplayOnTracker": true,
+	"notificationRadius": 15000,
+	"mapRadiusMinumum": 1000,
+	"cooldownTimer": 300,
+	"bDisabled": true,
+	"maxInstanceCount": 1,
+	"requiredMapName": "Verra_World_Master",
+	"comments": [
+		{
+			"commentGuid": "6064630531234005022",
+			"comment": "Blooms need to be interacted with in a specific order",
+			"location":
+			{
+				"x": -1613.2692630267532,
+				"y": -138.44702935550475,
+				"z": 0
+			},
+			"size":
+			{
+				"x": 1956.8095133304596,
+				"y": 280.24575746059418,
+				"z": 0
+			},
+			"color":
+			{
+				"r": 0.5,
+				"g": 0.5,
+				"b": 0.5,
+				"a": 0.5
+			}
+		},
+		{
+			"commentGuid": "6064630594479522107",
+			"comment": "Petalooms are long channel objectives",
+			"location":
+			{
+				"x": -339.24374757791168,
+				"y": 196.94740635227197,
+				"z": 0
+			},
+			"size":
+			{
+				"x": 627.11413896083832,
+				"y": 282.49521362781525,
+				"z": 0
+			},
+			"color":
+			{
+				"r": 0.5,
+				"g": 0.5,
+				"b": 0.5,
+				"a": 0.5
+			}
+		},
+		{
+			"commentGuid": "6064630594486862141",
+			"comment": "The event succeeds when all petalooms are destroyed.",
+			"location":
+			{
+				"x": -341.04162079696459,
+				"y": 581.94180633424162,
+				"z": 0
+			},
+			"size":
+			{
+				"x": 623.74996697902679,
+				"y": 248.74999487400055,
+				"z": 0
+			},
+			"color":
+			{
+				"r": 0.5,
+				"g": 0.5,
+				"b": 0.5,
+				"a": 0.5
+			}
+		}
+	],
+	"bIsTemplate": false,
+	"flowNodes": [
+		{
+			"flowType": "EventEntry",
+			"graphLocation":
+			{
+				"x": -860.03123860889173,
+				"y": -955.06810506184888
+			},
+			"id": 0
+		},
+		{
+			"flowType": "EventExit",
+			"graphLocation":
+			{
+				"x": -1489.14111328125,
+				"y": 1885.4965688181837
+			},
+			"id": 1
+		}
+	],
+	"guid": "6064630530702966785",
+	"name": "Event_RVR_M704_SoggySeasons",
+	"typeId": "23095125"
+}

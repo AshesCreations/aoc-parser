@@ -1,0 +1,22 @@
+{
+	"choiceText": "",
+	"nextNodeId":
+	{
+		"guid": "6064632501959590454",
+		"typeId": "1091110028",
+		"name": "DD_SQ_0011_HistorianQatakijal_3"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "!Player_HasCommission(GetPlayer(), \"SQ_0011_AncientEpitaphs\") &&\r\n!Player_HasCompletedCommission(GetPlayer(), \"SQ_0011_AncientEpitaphs\")"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064632501917516338",
+	"name": "DD_SQ_0011_HistorianQatakijal_1_Choice_1",
+	"typeId": "1091110027"
+}

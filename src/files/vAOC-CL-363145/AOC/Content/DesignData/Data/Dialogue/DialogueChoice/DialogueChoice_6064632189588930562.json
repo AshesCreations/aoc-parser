@@ -1,0 +1,21 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"E437E5E84C3CF89E678F14912C6F7BD3\", \"Has Quest\")",
+	"nextNodeId":
+	{
+		"guid": "6064632217969492625",
+		"typeId": "1091110028",
+		"name": "CSQ_RVR_0081_FB_NordenResnik_DLG_105"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "Player_HasCommission(GetPlayer(),\"CSQ_RVR_0085_FB_StaunchBloodyBlade\") &&\r\n!Player_HasCompletedCommission(GetPlayer(),\"CSQ_RVR_0085_FB_StaunchBloodyBlade\")"
+	},
+	"narrativeRequirementsIds": [],
+	"choiceType": "Default",
+	"guid": "6064632189588930562",
+	"name": "CSQ_RVR_0081_FB_NordenResnik_DLG_91_Choice_4",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,54 @@
+{
+	"completionResponsesIds": [
+		{
+			"guid": "109116488111750",
+			"typeId": "1091110030",
+			"name": "MAAR_0005_PYD_Exam_FishmongerTrap"
+		}
+	],
+	"channelDuration": 0,
+	"activePredicate":
+	{
+		"expression": ""
+	},
+	"cuePredicate":
+	{
+		"expression": "GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005_PayYourDues\",\"SpokeToFishmonger01\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005_PayYourDues\",\"MAO_0005_PYD_KillFishmongers\")"
+	},
+	"deleteOnCompletion": false,
+	"singleUse": false,
+	"alwaysShowUIPrompt": true,
+	"cancelChannelIfActivePredicateEverFails": true,
+	"channelModifierType": "NONE",
+	"rewardTableId":
+	{
+		"guid": "0",
+		"typeId": "1091110008",
+		"name": "None"
+	},
+	"startEffect": "None",
+	"endEffect": "None",
+	"failEffect": "None",
+	"successEffect": "None",
+	"cueEffect": "/Game/DesignAssets/Population/NPC/Beast/ElderDragon/ElderDragon_Flame/Effects/NS_Foot_Slam_Dust_Kickup.NS_Foot_Slam_Dust_Kickup",
+	"startSound": "None",
+	"endSound": "None",
+	"failSound": "None",
+	"successSound": "None",
+	"cueSound": "None",
+	"interactAnimTag": "None",
+	"deletionDelay": 0,
+	"activeCueEnabled": true,
+	"activeCueIgnoresActivePredicate": false,
+	"facePlayer": false,
+	"allowInCombat": true,
+	"interactRadius": 200,
+	"interactTolerance": 30,
+	"busyTime": 0.89999997615814209,
+	"clientBusyTime": 1,
+	"channelStartResponseIds": [],
+	"failResponsesIds": [],
+	"guid": "109116494665352",
+	"name": "MAPI_0005_PYD_Exam_FishmongerTrap",
+	"typeId": "1091110031"
+}

@@ -1,0 +1,152 @@
+{
+	"defaultRanks": [
+		{
+			"rankName": "Guild Leader",
+			"permissions":
+			{
+				"bInvitePlayer": true,
+				"bKickPlayer": true,
+				"bReadGuildMemberDescription": true,
+				"bEditOwnGuildMemberDescription": true,
+				"bReadOfficerDescription": true,
+				"bEditOtherGuildMemberDescription": true,
+				"bEditOtherOfficerDescription": true,
+				"bDisbandGuild": true,
+				"bRenameGuildGroups": true,
+				"bReassignGuildMemberGroup": true,
+				"bManageGuildRanks": true,
+				"bManageGuildRankPermissions": true,
+				"bAssignMemberRanks": true,
+				"bViewGuildBank": true,
+				"bDepositGuildBank": true,
+				"bWithdrawGuildBank": true,
+				"bAllianceBankAccess": true,
+				"bGuildHallAccess": true,
+				"bGuildCastleAccess": true,
+				"bGuildStoreAccess": true,
+				"bViewGuildCalendarEvents": true,
+				"bPostGuildCalendarEvents": true,
+				"bViewGuildAlerts": true,
+				"bPostGuildAlerts": true,
+				"bViewGuildBoard": true,
+				"bPostGuildBoard": true,
+				"bViewGuildMemberLocation": true,
+				"bReadGuildChat": true,
+				"bWriteGuildChat": true,
+				"bAllocateGuildSkillPoints": true,
+				"bDeclareGuildWar": true,
+				"bRewardGuildPoints": true,
+				"bAdjustGuildPoints": true
+			}
+		},
+		{
+			"rankName": "Officer",
+			"permissions":
+			{
+				"bInvitePlayer": true,
+				"bKickPlayer": true,
+				"bReadGuildMemberDescription": true,
+				"bEditOwnGuildMemberDescription": true,
+				"bReadOfficerDescription": true,
+				"bEditOtherGuildMemberDescription": true,
+				"bEditOtherOfficerDescription": true,
+				"bDisbandGuild": false,
+				"bRenameGuildGroups": false,
+				"bReassignGuildMemberGroup": false,
+				"bManageGuildRanks": true,
+				"bManageGuildRankPermissions": true,
+				"bAssignMemberRanks": true,
+				"bViewGuildBank": true,
+				"bDepositGuildBank": true,
+				"bWithdrawGuildBank": true,
+				"bAllianceBankAccess": true,
+				"bGuildHallAccess": true,
+				"bGuildCastleAccess": true,
+				"bGuildStoreAccess": true,
+				"bViewGuildCalendarEvents": true,
+				"bPostGuildCalendarEvents": true,
+				"bViewGuildAlerts": true,
+				"bPostGuildAlerts": true,
+				"bViewGuildBoard": true,
+				"bPostGuildBoard": true,
+				"bViewGuildMemberLocation": true,
+				"bReadGuildChat": true,
+				"bWriteGuildChat": true,
+				"bAllocateGuildSkillPoints": false,
+				"bDeclareGuildWar": false,
+				"bRewardGuildPoints": false,
+				"bAdjustGuildPoints": false
+			}
+		},
+		{
+			"rankName": "Member",
+			"permissions":
+			{
+				"bInvitePlayer": false,
+				"bKickPlayer": false,
+				"bReadGuildMemberDescription": true,
+				"bEditOwnGuildMemberDescription": false,
+				"bReadOfficerDescription": true,
+				"bEditOtherGuildMemberDescription": false,
+				"bEditOtherOfficerDescription": false,
+				"bDisbandGuild": false,
+				"bRenameGuildGroups": false,
+				"bReassignGuildMemberGroup": false,
+				"bManageGuildRanks": false,
+				"bManageGuildRankPermissions": false,
+				"bAssignMemberRanks": false,
+				"bViewGuildBank": false,
+				"bDepositGuildBank": true,
+				"bWithdrawGuildBank": false,
+				"bAllianceBankAccess": false,
+				"bGuildHallAccess": false,
+				"bGuildCastleAccess": false,
+				"bGuildStoreAccess": false,
+				"bViewGuildCalendarEvents": false,
+				"bPostGuildCalendarEvents": false,
+				"bViewGuildAlerts": true,
+				"bPostGuildAlerts": false,
+				"bViewGuildBoard": true,
+				"bPostGuildBoard": false,
+				"bViewGuildMemberLocation": false,
+				"bReadGuildChat": true,
+				"bWriteGuildChat": true,
+				"bAllocateGuildSkillPoints": false,
+				"bDeclareGuildWar": false,
+				"bRewardGuildPoints": false,
+				"bAdjustGuildPoints": false
+			}
+		}
+	],
+	"costId":
+	{
+		"guid": "6064630684811329536",
+		"typeId": "3145314713",
+		"name": "None"
+	},
+	"startingCapacity": 50,
+	"guildCooldownDurationSeconds": 86400,
+	"invalidRankAction": "SetToLowestRank",
+	"removedLeaderAction": "PromoteNextHighestRankingPlayer",
+	"inviteDurationSeconds": 60,
+	"levelingTypeDefId":
+	{
+		"guid": "6064632971604918296",
+		"typeId": "4565416516154",
+		"name": "None"
+	},
+	"skillTreeId":
+	{
+		"guid": "6064632978920112154",
+		"typeId": "30316003",
+		"name": "None"
+	},
+	"currentLevelCap":
+	{
+		"expression": "10"
+	},
+	"finalLevelCap": 50,
+	"guid": "6413934743475607160",
+	"name": "Guild_Information_Base",
+	"typeId": "148113113"
+}

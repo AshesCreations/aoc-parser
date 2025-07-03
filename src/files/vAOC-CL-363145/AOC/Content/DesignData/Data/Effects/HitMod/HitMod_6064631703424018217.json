@@ -1,0 +1,52 @@
+{
+	"trigger":
+	{
+		"expression": "HitHasTag(GetHitRecord(GetHitInProgress()), \"Element.Magical\")\r\n|| HitHasTag(GetHitRecord(GetHitInProgress()), \"Element.Healing\")"
+	},
+	"terms": [
+		{
+			"termId":
+			{
+				"guid": "6064630633715007489",
+				"typeId": "10516612381411115",
+				"name": "None"
+			},
+			"value":
+			{
+				"expression": "0.50"
+			},
+			"bOptional": false,
+			"bKeepBeyondScope": false,
+			"filter":
+			{
+				"expression": ""
+			},
+			"mergeRuleOverride": "Merge_Default"
+		},
+		{
+			"termId":
+			{
+				"guid": "6064630634153443371",
+				"typeId": "10516612381411115",
+				"name": "None"
+			},
+			"value":
+			{
+				"expression": "0.50"
+			},
+			"bOptional": false,
+			"bKeepBeyondScope": false,
+			"filter":
+			{
+				"expression": ""
+			},
+			"mergeRuleOverride": "Merge_Default"
+		}
+	],
+	"tags": [],
+	"statModsIds": [],
+	"statModPostProcess": [],
+	"guid": "6064631703424018217",
+	"name": "CrystalGolem_AntiMagicShield_Absorb_HitMod",
+	"typeId": "3031600210"
+}

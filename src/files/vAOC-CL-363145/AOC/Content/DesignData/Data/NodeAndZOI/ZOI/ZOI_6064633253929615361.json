@@ -1,0 +1,194 @@
+{
+	"designNotes": "",
+	"levelDefinitionId":
+	{
+		"guid": "6064629126799097877",
+		"typeId": "9227326",
+		"name": "None"
+	},
+	"playerFacingName": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"F939CABD44C02338DAD4D984A088BF3E\", \"Shorefoot\")",
+	"zoiType": "HasNode",
+	"startingAreaGameplayTag":
+	{
+		"tagName": "None"
+	},
+	"cityNodeId":
+	{
+		"guid": "6064633407846088705",
+		"typeId": "1323521343",
+		"name": "None"
+	},
+	"adjacentZonesOfInfluenceIds": [
+		{
+			"guid": "6064633253929484288",
+			"typeId": "9127326",
+			"name": "None"
+		},
+		{
+			"guid": "6064633253929680898",
+			"typeId": "9127326",
+			"name": "None"
+		},
+		{
+			"guid": "6064632150768680960",
+			"typeId": "9127326",
+			"name": "None"
+		},
+		{
+			"guid": "6064633253931057156",
+			"typeId": "9127326",
+			"name": "None"
+		}
+	],
+	"corruptionRulesEnabled": true,
+	"bAllowPVPOptInProtection": false,
+	"alignmentsAssignedUponEnteringIds": [],
+	"zoiEnvironmentType": "None",
+	"editorColor":
+	{
+		"x": 0.29999999999999999,
+		"y": 0.5,
+		"z": 0.20000000000000001
+	},
+	"zOIRewardTables": [
+		{
+			"inclusionExpression":
+			{
+				"expression": "!DoesNPCContainTag(\"NoRewards\")"
+			},
+			"rewardTableId":
+			{
+				"guid": "6064632271552381720",
+				"typeId": "1091110040",
+				"name": "None"
+			}
+		},
+		{
+			"inclusionExpression":
+			{
+				"expression": "DoesNPCContainTag(\"character.humanoid\")"
+			},
+			"rewardTableId":
+			{
+				"guid": "6064633391378137089",
+				"typeId": "1091110040",
+				"name": "None"
+			}
+		},
+		{
+			"inclusionExpression":
+			{
+				"expression": "!DoesNPCContainTag(\"NoRewards\")"
+			},
+			"rewardTableId":
+			{
+				"guid": "6064633313653948416",
+				"typeId": "1091110040",
+				"name": "None"
+			}
+		}
+	],
+	"economicRegionTableId":
+	{
+		"guid": "6064633459698040904",
+		"typeId": "98738382",
+		"name": "None"
+	},
+	"bHideExperienceEvents": false,
+	"biome": "Tropics",
+	"biomeGatherableTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "TurquoiseSea"
+			}
+		],
+		"parentTags": []
+	},
+	"freeholdEstatesIds": [
+		{
+			"guid": "6064633558023405589",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633558026747926",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633558026878999",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633558028582936",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633558028779545",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633558028845082",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633558029107227",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633558029172764",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633558029303837",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633558030876702",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633558031138847",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633558031204384",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633558031532065",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633558031663138",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633558031728675",
+			"typeId": "1337133701",
+			"name": "None"
+		},
+		{
+			"guid": "6064633558031859748",
+			"typeId": "1337133701",
+			"name": "None"
+		}
+	],
+	"actorEffects": [],
+	"guid": "6064633253929615361",
+	"name": "Verra_TUR_Node_Shorefoot",
+	"typeId": "9127326"
+}

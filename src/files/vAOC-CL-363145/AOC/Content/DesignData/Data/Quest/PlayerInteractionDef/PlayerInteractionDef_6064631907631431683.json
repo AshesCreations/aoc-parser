@@ -1,0 +1,72 @@
+{
+	"completionResponsesIds": [
+		{
+			"guid": "6064631907635888132",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"objectivesToCompleteUponCompletionIds": [],
+	"objectivesToRevealUponCompletionIds": [],
+	"itemsToGrantUponCompletion": [],
+	"channelDuration": 0,
+	"activePredicate":
+	{
+		"expression": "Player_ObjectiveStateEquals(GetPlayer(),\"CSQ_NOB_0080_CSS_TSS_TouchTheScarsOfTheHarrower\", EObjectiveState::Active)\r\n||\r\nPlayer_ObjectiveStateEquals(GetPlayer(),\"CSQ_NOB_0080_CSS_TSS_SpeakToDarrow\", EObjectiveState::Active)"
+	},
+	"cuePredicate":
+	{
+		"expression": "Player_ObjectiveStateEquals(GetPlayer(),\"CSQ_NOB_0080_CSS_TSS_TouchTheScarsOfTheHarrower\", EObjectiveState::Active)\r\n||\r\nPlayer_ObjectiveStateEquals(GetPlayer(),\"CSQ_NOB_0080_CSS_TSS_SpeakToDarrow\", EObjectiveState::Active)"
+	},
+	"visiblePredicate":
+	{
+		"expression": "Player_ObjectiveStateEquals(GetPlayer(),\"CSQ_NOB_0080_CSS_TSS_TouchTheScarsOfTheHarrower\", EObjectiveState::Active)\r\n||\r\nPlayer_ObjectiveStateEquals(GetPlayer(),\"CSQ_NOB_0080_CSS_TSS_SpeakToDarrow\", EObjectiveState::Active)"
+	},
+	"showErrorIfNotVisible": false,
+	"deleteOnCompletion": false,
+	"singleUse": false,
+	"alwaysShowUIPrompt": true,
+	"cancelChannelIfActivePredicateEverFails": true,
+	"interactTextFormat": "",
+	"channelModifierType": "NONE",
+	"rewardTableId":
+	{
+		"guid": "0",
+		"typeId": "1091110008",
+		"name": "None"
+	},
+	"startEffect": "None",
+	"endEffect": "None",
+	"failEffect": "None",
+	"successEffect": "None",
+	"cueEffect": "/Game/Effects/FX_PCs/Combat_Demo/FX_HeavyGroundHit_04.FX_HeavyGroundHit_04",
+	"startSound": "None",
+	"endSound": "None",
+	"failSound": "None",
+	"successSound": "None",
+	"cueSound": "None",
+	"interactAnimTag": "None",
+	"deletionDelay": 0,
+	"activeCueEnabled": true,
+	"activeCueIgnoresActivePredicate": false,
+	"facePlayer": false,
+	"allowInCombat": true,
+	"spawnAtBottomCapsule": false,
+	"channelAnimation": "/Game/Characters/Animations/00_ABLT/CM_M_ABLT_FlowerPick_Montage.CM_M_ABLT_FlowerPick_Montage",
+	"interactRadius": 200,
+	"interactTolerance": 30,
+	"interactAngle": 0,
+	"busyTime": 0.89999997615814209,
+	"clientBusyTime": 1,
+	"channelStartResponseIds": [],
+	"failResponsesIds": [],
+	"gatheringInteractionDataId":
+	{
+		"guid": "0",
+		"typeId": "19846",
+		"name": "None"
+	},
+	"guid": "6064631907631431683",
+	"name": "CSQ_PID_0080_CSS_TSS_INT_HarrowerScars",
+	"typeId": "1091110031"
+}

@@ -1,0 +1,28 @@
+{
+	"choiceText": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"534B9E5D48C6421A8AD628AE45B4E0A0\", \"I have some parcels\")",
+	"nextNodeId":
+	{
+		"guid": "6064632435122765908",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064632435031081031",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "(Player_HasCommission (GetPlayer(), \"SQ_Lionhold_ClothArmor_1\") && Player_ObjectiveStateEquals(GetPlayer(), \"CSQ_Lionhold_ClothArmor_Task_1_Collect\", EObjectiveState::Complete))"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064632435122765905",
+	"name": "SQ_Lionhold_ClothArmor_Turnin_4_Choice_1",
+	"typeId": "1091110027"
+}

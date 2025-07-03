@@ -1,0 +1,22 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"302251774C3B30D5FB3DC08AD8118ED7\", \"On Turnin, Got crates, need advance\")",
+	"nextNodeId":
+	{
+		"guid": "6064633691321467355",
+		"typeId": "1091110028",
+		"name": "Caravan_Master_Dialog_49"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "(Player_HasCommission (GetPlayer(), \"CSQ_0161b_FTUE_TurnIn_Caravan\") && !Player_ObjectiveStateEquals(GetPlayer(), \"CSQ_0161b_FTUE_TurninCaravan_Begin\", EObjectiveState::Complete) && Player_HasCompletedCommission(GetPlayer(), \"CSQ_0159_FTUE_RunningCrates\"))"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064633691681980904",
+	"name": "Caravan_Master_Dialog_2_Choice_4",
+	"typeId": "1091110027"
+}

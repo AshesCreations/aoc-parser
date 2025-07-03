@@ -1,0 +1,2157 @@
+{
+	"predicate":
+	{
+		"expression": ""
+	},
+	"rewardDefContainers": [
+		{
+			"grantPredicate":
+			{
+				"expression": "GetActivatedItemRarity() == 0"
+			},
+			"selectionAlgorithm": "PerElementWeightedRandom",
+			"numberToSelect": 0,
+			"grantMethod": "Always",
+			"rewardsWeightCurve":
+			{
+				"externalCurve": "None",
+				"editorCurveData":
+				{
+					"keys": [],
+					"defaultValue": 3.4028234663852886e+38,
+					"preInfinityExtrap": "RCCE_Constant",
+					"postInfinityExtrap": "RCCE_Constant",
+					"keyHandlesToIndices":
+					{
+					}
+				}
+			},
+			"weightsPerReward": [ 80, 80, 19, 19, 1, 1 ],
+			"percentageDropRatePerReward": [],
+			"maxSelectorChoices": 0,
+			"rewards": [
+				{
+					"displayName": "",
+					"currency":
+					{
+					},
+					"itemRewards": [
+						{
+							"item":
+							{
+								"itemId":
+								{
+									"guid": "6064633391232581636",
+									"typeId": "1091110003",
+									"name": "None"
+								},
+								"variationId":
+								{
+									"guid": "6064632267068473412",
+									"typeId": "1091111111",
+									"name": "None"
+								}
+							},
+							"quantity":
+							{
+								"expression": "const resourceQuant = Int(EvalFormula($#10516612381411113:6064632622680375311$));\r\n\r\nRandIntRange(resourceQuant, Int(resourceQuant * 1.25))"
+							},
+							"bPrioritizeQuality": true
+						}
+					],
+					"experienceRewards": []
+				},
+				{
+					"displayName": "",
+					"currency":
+					{
+					},
+					"itemRewards": [
+						{
+							"item":
+							{
+								"itemId":
+								{
+									"guid": "6064633221016387589",
+									"typeId": "1091110003",
+									"name": "None"
+								},
+								"variationId":
+								{
+									"guid": "6064632267068473412",
+									"typeId": "1091111111",
+									"name": "None"
+								}
+							},
+							"quantity":
+							{
+								"expression": "const resourceQuant = Int(EvalFormula($#10516612381411113:6064632622680375311$));\r\n\r\nRandIntRange(resourceQuant, Int(resourceQuant * 1.25))"
+							},
+							"bPrioritizeQuality": true
+						}
+					],
+					"experienceRewards": []
+				},
+				{
+					"displayName": "",
+					"currency":
+					{
+					},
+					"itemRewards": [
+						{
+							"item":
+							{
+								"itemId":
+								{
+									"guid": "6064633391232581636",
+									"typeId": "1091110003",
+									"name": "None"
+								},
+								"variationId":
+								{
+									"guid": "6064632267068473412",
+									"typeId": "1091111111",
+									"name": "None"
+								}
+							},
+							"quantity":
+							{
+								"expression": "const resourceQuant = Int(EvalFormula($#10516612381411113:6064632622680375311$));\r\n\r\nRandIntRange(Int(resourceQuant * 1.3), Int(resourceQuant * 1.5))"
+							},
+							"bPrioritizeQuality": true
+						}
+					],
+					"experienceRewards": []
+				},
+				{
+					"displayName": "",
+					"currency":
+					{
+					},
+					"itemRewards": [
+						{
+							"item":
+							{
+								"itemId":
+								{
+									"guid": "6064633221016387589",
+									"typeId": "1091110003",
+									"name": "None"
+								},
+								"variationId":
+								{
+									"guid": "6064632267068473412",
+									"typeId": "1091111111",
+									"name": "None"
+								}
+							},
+							"quantity":
+							{
+								"expression": "const resourceQuant = Int(EvalFormula($#10516612381411113:6064632622680375311$));\r\n\r\nRandIntRange(Int(resourceQuant * 1.3), Int(resourceQuant * 1.5))"
+							},
+							"bPrioritizeQuality": true
+						}
+					],
+					"experienceRewards": []
+				},
+				{
+					"displayName": "",
+					"currency":
+					{
+					},
+					"itemRewards": [
+						{
+							"item":
+							{
+								"itemId":
+								{
+									"guid": "6064633391232581636",
+									"typeId": "1091110003",
+									"name": "None"
+								},
+								"variationId":
+								{
+									"guid": "6064632267068473412",
+									"typeId": "1091111111",
+									"name": "None"
+								}
+							},
+							"quantity":
+							{
+								"expression": "const resourceQuant = Int(EvalFormula($#10516612381411113:6064632622680375311$));\r\n\r\nRandIntRange(Int(resourceQuant * 2.5), Int(resourceQuant * 5.0))"
+							},
+							"bPrioritizeQuality": true
+						}
+					],
+					"experienceRewards": []
+				},
+				{
+					"displayName": "",
+					"currency":
+					{
+					},
+					"itemRewards": [
+						{
+							"item":
+							{
+								"itemId":
+								{
+									"guid": "6064633221016387589",
+									"typeId": "1091110003",
+									"name": "None"
+								},
+								"variationId":
+								{
+									"guid": "6064632267068473412",
+									"typeId": "1091111111",
+									"name": "None"
+								}
+							},
+							"quantity":
+							{
+								"expression": "const resourceQuant = Int(EvalFormula($#10516612381411113:6064632622680375311$));\r\n\r\nRandIntRange(Int(resourceQuant * 2.5), Int(resourceQuant * 5.0))"
+							},
+							"bPrioritizeQuality": true
+						}
+					],
+					"experienceRewards": []
+				}
+			],
+			"rewardContainerIcon": "None"
+		},
+		{
+			"grantPredicate":
+			{
+				"expression": "GetActivatedItemRarity() == 1"
+			},
+			"selectionAlgorithm": "PerElementWeightedRandom",
+			"numberToSelect": 0,
+			"grantMethod": "Always",
+			"rewardsWeightCurve":
+			{
+				"externalCurve": "None",
+				"editorCurveData":
+				{
+					"keys": [],
+					"defaultValue": 3.4028234663852886e+38,
+					"preInfinityExtrap": "RCCE_Constant",
+					"postInfinityExtrap": "RCCE_Constant",
+					"keyHandlesToIndices":
+					{
+					}
+				}
+			},
+			"weightsPerReward": [ 80, 80, 80, 80, 80, 19, 19, 19, 19, 19, 1, 1, 1, 1, 1 ],
+			"percentageDropRatePerReward": [],
+			"maxSelectorChoices": 0,
+			"rewards": [
+				{
+					"displayName": "",
+					"currency":
+					{
+					},
+					"itemRewards": [
+						{
+							"item":
+							{
+								"itemId":
+								{
+									"guid": "6064633221496700975",
+									"typeId": "1091110003",
+									"name": "None"
+								},
+								"variationId":
+								{
+									"guid": "6064632267068473412",
+									"typeId": "1091111111",
+									"name": "None"
+								}
+							},
+							"quantity":
+							{
+								"expression": "const resourceQuant = Int(EvalFormula($#10516612381411113:6064632622680375311$));\r\n\r\nRandIntRange(resourceQuant, Int(resourceQuant * 1.25))"
+							},
+							"bPrioritizeQuality": true
+						}
+					],
+					"experienceRewards": []
+				},
+				{
+					"displayName": "",
+					"currency":
+					{
+					},
+					"itemRewards": [
+						{
+							"item":
+							{
+								"itemId":
+								{
+									"guid": "6064633259572002818",
+									"typeId": "1091110003",
+									"name": "None"
+								},
+								"variationId":
+								{
+									"guid": "6064632267068473412",
+									"typeId": "1091111111",
+									"name": "None"
+								}
+							},
+							"quantity":
+							{
+								"expression": "const resourceQuant = Int(EvalFormula($#10516612381411113:6064632622680375311$));\r\n\r\nRandIntRange(resourceQuant, Int(resourceQuant * 1.25))"
+							},
+							"bPrioritizeQuality": true
+						}
+					],
+					"experienceRewards": []
+				},
+				{
+					"displayName": "",
+					"currency":
+					{
+					},
+					"itemRewards": [
+						{
+							"item":
+							{
+								"itemId":
+								{
+									"guid": "6064633221579931712",
+									"typeId": "1091110003",
+									"name": "None"
+								},
+								"variationId":
+								{
+									"guid": "6064632267068473412",
+									"typeId": "1091111111",
+									"name": "None"
+								}
+							},
+							"quantity":
+							{
+								"expression": "const resourceQuant = Int(EvalFormula($#10516612381411113:6064632622680375311$));\r\n\r\nRandIntRange(resourceQuant, Int(resourceQuant * 1.25))"
+							},
+							"bPrioritizeQuality": true
+						}
+					],
+					"experienceRewards": []
+				},
+				{
+					"displayName": "",
+					"currency":
+					{
+					},
+					"itemRewards": [
+						{
+							"item":
+							{
+								"itemId":
+								{
+									"guid": "6064633306588250118",
+									"typeId": "1091110003",
+									"name": "None"
+								},
+								"variationId":
+								{
+									"guid": "6064632267068473412",
+									"typeId": "1091111111",
+									"name": "None"
+								}
+							},
+							"quantity":
+							{
+								"expression": "const resourceQuant = Int(EvalFormula($#10516612381411113:6064632622680375311$));\r\n\r\nRandIntRange(resourceQuant, Int(resourceQuant * 1.25))"
+							},
+							"bPrioritizeQuality": true
+						}
+					],
+					"experienceRewards": []
+				},
+				{
+					"displayName": "",
+					"currency":
+					{
+					},
+					"itemRewards": [
+						{
+							"item":
+							{
+								"itemId":
+								{
+									"guid": "6064633306653851683",
+									"typeId": "1091110003",
+									"name": "None"
+								},
+								"variationId":
+								{
+									"guid": "6064632267068473412",
+									"typeId": "1091111111",
+									"name": "None"
+								}
+							},
+							"quantity":
+							{
+								"expression": "const resourceQuant = Int(EvalFormula($#10516612381411113:6064632622680375311$));\r\n\r\nRandIntRange(resourceQuant, Int(resourceQuant * 1.25))"
+							},
+							"bPrioritizeQuality": true
+						}
+					],
+					"experienceRewards": []
+				},
+				{
+					"displayName": "",
+					"currency":
+					{
+					},
+					"itemRewards": [
+						{
+							"item":
+							{
+								"itemId":
+								{
+									"guid": "6064633221496700975",
+									"typeId": "1091110003",
+									"name": "None"
+								},
+								"variationId":
+								{
+									"guid": "6064632267068473412",
+									"typeId": "1091111111",
+									"name": "None"
+								}
+							},
+							"quantity":
+							{
+								"expression": "const resourceQuant = Int(EvalFormula($#10516612381411113:6064632622680375311$));\r\n\r\nRandIntRange(Int(resourceQuant * 1.3), Int(resourceQuant * 1.5))"
+							},
+							"bPrioritizeQuality": true
+						}
+					],
+					"experienceRewards": []
+				},
+				{
+					"displayName": "",
+					"currency":
+					{
+					},
+					"itemRewards": [
+						{
+							"item":
+							{
+								"itemId":
+								{
+									"guid": "6064633259572002818",
+									"typeId": "1091110003",
+									"name": "None"
+								},
+								"variationId":
+								{
+									"guid": "6064632267068473412",
+									"typeId": "1091111111",
+									"name": "None"
+								}
+							},
+							"quantity":
+							{
+								"expression": "const resourceQuant = Int(EvalFormula($#10516612381411113:6064632622680375311$));\r\n\r\nRandIntRange(Int(resourceQuant * 1.3), Int(resourceQuant * 1.5))"
+							},
+							"bPrioritizeQuality": true
+						}
+					],
+					"experienceRewards": []
+				},
+				{
+					"displayName": "",
+					"currency":
+					{
+					},
+					"itemRewards": [
+						{
+							"item":
+							{
+								"itemId":
+								{
+									"guid": "6064633221579931712",
+									"typeId": "1091110003",
+									"name": "None"
+								},
+								"variationId":
+								{
+									"guid": "6064632267068473412",
+									"typeId": "1091111111",
+									"name": "None"
+								}
+							},
+							"quantity":
+							{
+								"expression": "const resourceQuant = Int(EvalFormula($#10516612381411113:6064632622680375311$));\r\n\r\nRandIntRange(Int(resourceQuant * 1.3), Int(resourceQuant * 1.5))"
+							},
+							"bPrioritizeQuality": true
+						}
+					],
+					"experienceRewards": []
+				},
+				{
+					"displayName": "",
+					"currency":
+					{
+					},
+					"itemRewards": [
+						{
+							"item":
+							{
+								"itemId":
+								{
+									"guid": "6064633306588250118",
+									"typeId": "1091110003",
+									"name": "None"
+								},
+								"variationId":
+								{
+									"guid": "6064632267068473412",
+									"typeId": "1091111111",
+									"name": "None"
+								}
+							},
+							"quantity":
+							{
+								"expression": "const resourceQuant = Int(EvalFormula($#10516612381411113:6064632622680375311$));\r\n\r\nRandIntRange(Int(resourceQuant * 1.3), Int(resourceQuant * 1.5))"
+							},
+							"bPrioritizeQuality": true
+						}
+					],
+					"experienceRewards": []
+				},
+				{
+					"displayName": "",
+					"currency":
+					{
+					},
+					"itemRewards": [
+						{
+							"item":
+							{
+								"itemId":
+								{
+									"guid": "6064633306653851683",
+									"typeId": "1091110003",
+									"name": "None"
+								},
+								"variationId":
+								{
+									"guid": "6064632267068473412",
+									"typeId": "1091111111",
+									"name": "None"
+								}
+							},
+							"quantity":
+							{
+								"expression": "const resourceQuant = Int(EvalFormula($#10516612381411113:6064632622680375311$));\r\n\r\nRandIntRange(Int(resourceQuant * 1.3), Int(resourceQuant * 1.5))"
+							},
+							"bPrioritizeQuality": true
+						}
+					],
+					"experienceRewards": []
+				},
+				{
+					"displayName": "",
+					"currency":
+					{
+					},
+					"itemRewards": [
+						{
+							"item":
+							{
+								"itemId":
+								{
+									"guid": "6064633221496700975",
+									"typeId": "1091110003",
+									"name": "None"
+								},
+								"variationId":
+								{
+									"guid": "6064632267068473412",
+									"typeId": "1091111111",
+									"name": "None"
+								}
+							},
+							"quantity":
+							{
+								"expression": "const resourceQuant = Int(EvalFormula($#10516612381411113:6064632622680375311$));\r\n\r\nRandIntRange(Int(resourceQuant * 2.5), Int(resourceQuant * 5.0))"
+							},
+							"bPrioritizeQuality": true
+						}
+					],
+					"experienceRewards": []
+				},
+				{
+					"displayName": "",
+					"currency":
+					{
+					},
+					"itemRewards": [
+						{
+							"item":
+							{
+								"itemId":
+								{
+									"guid": "6064633259572002818",
+									"typeId": "1091110003",
+									"name": "None"
+								},
+								"variationId":
+								{
+									"guid": "6064632267068473412",
+									"typeId": "1091111111",
+									"name": "None"
+								}
+							},
+							"quantity":
+							{
+								"expression": "const resourceQuant = Int(EvalFormula($#10516612381411113:6064632622680375311$));\r\n\r\nRandIntRange(Int(resourceQuant * 2.5), Int(resourceQuant * 5.0))"
+							},
+							"bPrioritizeQuality": true
+						}
+					],
+					"experienceRewards": []
+				},
+				{
+					"displayName": "",
+					"currency":
+					{
+					},
+					"itemRewards": [
+						{
+							"item":
+							{
+								"itemId":
+								{
+									"guid": "6064633221579931712",
+									"typeId": "1091110003",
+									"name": "None"
+								},
+								"variationId":
+								{
+									"guid": "6064632267068473412",
+									"typeId": "1091111111",
+									"name": "None"
+								}
+							},
+							"quantity":
+							{
+								"expression": "const resourceQuant = Int(EvalFormula($#10516612381411113:6064632622680375311$));\r\n\r\nRandIntRange(Int(resourceQuant * 2.5), Int(resourceQuant * 5.0))"
+							},
+							"bPrioritizeQuality": true
+						}
+					],
+					"experienceRewards": []
+				},
+				{
+					"displayName": "",
+					"currency":
+					{
+					},
+					"itemRewards": [
+						{
+							"item":
+							{
+								"itemId":
+								{
+									"guid": "6064633306588250118",
+									"typeId": "1091110003",
+									"name": "None"
+								},
+								"variationId":
+								{
+									"guid": "6064632267068473412",
+									"typeId": "1091111111",
+									"name": "None"
+								}
+							},
+							"quantity":
+							{
+								"expression": "const resourceQuant = Int(EvalFormula($#10516612381411113:6064632622680375311$));\r\n\r\nRandIntRange(Int(resourceQuant * 2.5), Int(resourceQuant * 5.0))"
+							},
+							"bPrioritizeQuality": true
+						}
+					],
+					"experienceRewards": []
+				},
+				{
+					"displayName": "",
+					"currency":
+					{
+					},
+					"itemRewards": [
+						{
+							"item":
+							{
+								"itemId":
+								{
+									"guid": "6064633306653851683",
+									"typeId": "1091110003",
+									"name": "None"
+								},
+								"variationId":
+								{
+									"guid": "6064632267068473412",
+									"typeId": "1091111111",
+									"name": "None"
+								}
+							},
+							"quantity":
+							{
+								"expression": "const resourceQuant = Int(EvalFormula($#10516612381411113:6064632622680375311$));\r\n\r\nRandIntRange(Int(resourceQuant * 2.5), Int(resourceQuant * 5.0))"
+							},
+							"bPrioritizeQuality": true
+						}
+					],
+					"experienceRewards": []
+				}
+			],
+			"rewardContainerIcon": "None"
+		},
+		{
+			"grantPredicate":
+			{
+				"expression": "GetActivatedItemRarity() == 2"
+			},
+			"selectionAlgorithm": "PerElementWeightedRandom",
+			"numberToSelect": 0,
+			"grantMethod": "Always",
+			"rewardsWeightCurve":
+			{
+				"externalCurve": "None",
+				"editorCurveData":
+				{
+					"keys": [],
+					"defaultValue": 3.4028234663852886e+38,
+					"preInfinityExtrap": "RCCE_Constant",
+					"postInfinityExtrap": "RCCE_Constant",
+					"keyHandlesToIndices":
+					{
+					}
+				}
+			},
+			"weightsPerReward": [ 80, 80, 80, 80, 80, 19, 19, 19, 19, 19, 1, 1, 1, 1, 1 ],
+			"percentageDropRatePerReward": [],
+			"maxSelectorChoices": 0,
+			"rewards": [
+				{
+					"displayName": "",
+					"currency":
+					{
+					},
+					"itemRewards": [
+						{
+							"item":
+							{
+								"itemId":
+								{
+									"guid": "6064633221496700975",
+									"typeId": "1091110003",
+									"name": "None"
+								},
+								"variationId":
+								{
+									"guid": "6064632622701936657",
+									"typeId": "1091111111",
+									"name": "None"
+								}
+							},
+							"quantity":
+							{
+								"expression": "const resourceQuant = Int(EvalFormula($#10516612381411113:6064632622680375311$));\r\n\r\nRandIntRange(resourceQuant, Int(resourceQuant * 1.25))"
+							},
+							"bPrioritizeQuality": true
+						}
+					],
+					"experienceRewards": []
+				},
+				{
+					"displayName": "",
+					"currency":
+					{
+					},
+					"itemRewards": [
+						{
+							"item":
+							{
+								"itemId":
+								{
+									"guid": "6064633259572002818",
+									"typeId": "1091110003",
+									"name": "None"
+								},
+								"variationId":
+								{
+									"guid": "6064632622701936657",
+									"typeId": "1091111111",
+									"name": "None"
+								}
+							},
+							"quantity":
+							{
+								"expression": "const resourceQuant = Int(EvalFormula($#10516612381411113:6064632622680375311$));\r\n\r\nRandIntRange(resourceQuant, Int(resourceQuant * 1.25))"
+							},
+							"bPrioritizeQuality": true
+						}
+					],
+					"experienceRewards": []
+				},
+				{
+					"displayName": "",
+					"currency":
+					{
+					},
+					"itemRewards": [
+						{
+							"item":
+							{
+								"itemId":
+								{
+									"guid": "6064633221579931712",
+									"typeId": "1091110003",
+									"name": "None"
+								},
+								"variationId":
+								{
+									"guid": "6064632622701936657",
+									"typeId": "1091111111",
+									"name": "None"
+								}
+							},
+							"quantity":
+							{
+								"expression": "const resourceQuant = Int(EvalFormula($#10516612381411113:6064632622680375311$));\r\n\r\nRandIntRange(resourceQuant, Int(resourceQuant * 1.25))"
+							},
+							"bPrioritizeQuality": true
+						}
+					],
+					"experienceRewards": []
+				},
+				{
+					"displayName": "",
+					"currency":
+					{
+					},
+					"itemRewards": [
+						{
+							"item":
+							{
+								"itemId":
+								{
+									"guid": "6064633306588250118",
+									"typeId": "1091110003",
+									"name": "None"
+								},
+								"variationId":
+								{
+									"guid": "6064632622701936657",
+									"typeId": "1091111111",
+									"name": "None"
+								}
+							},
+							"quantity":
+							{
+								"expression": "const resourceQuant = Int(EvalFormula($#10516612381411113:6064632622680375311$));\r\n\r\nRandIntRange(resourceQuant, Int(resourceQuant * 1.25))"
+							},
+							"bPrioritizeQuality": true
+						}
+					],
+					"experienceRewards": []
+				},
+				{
+					"displayName": "",
+					"currency":
+					{
+					},
+					"itemRewards": [
+						{
+							"item":
+							{
+								"itemId":
+								{
+									"guid": "6064633306653851683",
+									"typeId": "1091110003",
+									"name": "None"
+								},
+								"variationId":
+								{
+									"guid": "6064632622701936657",
+									"typeId": "1091111111",
+									"name": "None"
+								}
+							},
+							"quantity":
+							{
+								"expression": "const resourceQuant = Int(EvalFormula($#10516612381411113:6064632622680375311$));\r\n\r\nRandIntRange(resourceQuant, Int(resourceQuant * 1.25))"
+							},
+							"bPrioritizeQuality": true
+						}
+					],
+					"experienceRewards": []
+				},
+				{
+					"displayName": "",
+					"currency":
+					{
+					},
+					"itemRewards": [
+						{
+							"item":
+							{
+								"itemId":
+								{
+									"guid": "6064633221496700975",
+									"typeId": "1091110003",
+									"name": "None"
+								},
+								"variationId":
+								{
+									"guid": "6064632622701936657",
+									"typeId": "1091111111",
+									"name": "None"
+								}
+							},
+							"quantity":
+							{
+								"expression": "const resourceQuant = Int(EvalFormula($#10516612381411113:6064632622680375311$));\r\n\r\nRandIntRange(Int(resourceQuant * 1.3), Int(resourceQuant * 1.5))"
+							},
+							"bPrioritizeQuality": true
+						}
+					],
+					"experienceRewards": []
+				},
+				{
+					"displayName": "",
+					"currency":
+					{
+					},
+					"itemRewards": [
+						{
+							"item":
+							{
+								"itemId":
+								{
+									"guid": "6064633259572002818",
+									"typeId": "1091110003",
+									"name": "None"
+								},
+								"variationId":
+								{
+									"guid": "6064632622701936657",
+									"typeId": "1091111111",
+									"name": "None"
+								}
+							},
+							"quantity":
+							{
+								"expression": "const resourceQuant = Int(EvalFormula($#10516612381411113:6064632622680375311$));\r\n\r\nRandIntRange(Int(resourceQuant * 1.3), Int(resourceQuant * 1.5))"
+							},
+							"bPrioritizeQuality": true
+						}
+					],
+					"experienceRewards": []
+				},
+				{
+					"displayName": "",
+					"currency":
+					{
+					},
+					"itemRewards": [
+						{
+							"item":
+							{
+								"itemId":
+								{
+									"guid": "6064633221579931712",
+									"typeId": "1091110003",
+									"name": "None"
+								},
+								"variationId":
+								{
+									"guid": "6064632622701936657",
+									"typeId": "1091111111",
+									"name": "None"
+								}
+							},
+							"quantity":
+							{
+								"expression": "const resourceQuant = Int(EvalFormula($#10516612381411113:6064632622680375311$));\r\n\r\nRandIntRange(Int(resourceQuant * 1.3), Int(resourceQuant * 1.5))"
+							},
+							"bPrioritizeQuality": true
+						}
+					],
+					"experienceRewards": []
+				},
+				{
+					"displayName": "",
+					"currency":
+					{
+					},
+					"itemRewards": [
+						{
+							"item":
+							{
+								"itemId":
+								{
+									"guid": "6064633306588250118",
+									"typeId": "1091110003",
+									"name": "None"
+								},
+								"variationId":
+								{
+									"guid": "6064632622701936657",
+									"typeId": "1091111111",
+									"name": "None"
+								}
+							},
+							"quantity":
+							{
+								"expression": "const resourceQuant = Int(EvalFormula($#10516612381411113:6064632622680375311$));\r\n\r\nRandIntRange(Int(resourceQuant * 1.3), Int(resourceQuant * 1.5))"
+							},
+							"bPrioritizeQuality": true
+						}
+					],
+					"experienceRewards": []
+				},
+				{
+					"displayName": "",
+					"currency":
+					{
+					},
+					"itemRewards": [
+						{
+							"item":
+							{
+								"itemId":
+								{
+									"guid": "6064633306653851683",
+									"typeId": "1091110003",
+									"name": "None"
+								},
+								"variationId":
+								{
+									"guid": "6064632622701936657",
+									"typeId": "1091111111",
+									"name": "None"
+								}
+							},
+							"quantity":
+							{
+								"expression": "const resourceQuant = Int(EvalFormula($#10516612381411113:6064632622680375311$));\r\n\r\nRandIntRange(Int(resourceQuant * 1.3), Int(resourceQuant * 1.5))"
+							},
+							"bPrioritizeQuality": true
+						}
+					],
+					"experienceRewards": []
+				},
+				{
+					"displayName": "",
+					"currency":
+					{
+					},
+					"itemRewards": [
+						{
+							"item":
+							{
+								"itemId":
+								{
+									"guid": "6064633221496700975",
+									"typeId": "1091110003",
+									"name": "None"
+								},
+								"variationId":
+								{
+									"guid": "6064632622701936657",
+									"typeId": "1091111111",
+									"name": "None"
+								}
+							},
+							"quantity":
+							{
+								"expression": "const resourceQuant = Int(EvalFormula($#10516612381411113:6064632622680375311$));\r\n\r\nRandIntRange(Int(resourceQuant * 2.5), Int(resourceQuant * 5.0))"
+							},
+							"bPrioritizeQuality": true
+						}
+					],
+					"experienceRewards": []
+				},
+				{
+					"displayName": "",
+					"currency":
+					{
+					},
+					"itemRewards": [
+						{
+							"item":
+							{
+								"itemId":
+								{
+									"guid": "6064633259572002818",
+									"typeId": "1091110003",
+									"name": "None"
+								},
+								"variationId":
+								{
+									"guid": "6064632622701936657",
+									"typeId": "1091111111",
+									"name": "None"
+								}
+							},
+							"quantity":
+							{
+								"expression": "const resourceQuant = Int(EvalFormula($#10516612381411113:6064632622680375311$));\r\n\r\nRandIntRange(Int(resourceQuant * 2.5), Int(resourceQuant * 5.0))"
+							},
+							"bPrioritizeQuality": true
+						}
+					],
+					"experienceRewards": []
+				},
+				{
+					"displayName": "",
+					"currency":
+					{
+					},
+					"itemRewards": [
+						{
+							"item":
+							{
+								"itemId":
+								{
+									"guid": "6064633221579931712",
+									"typeId": "1091110003",
+									"name": "None"
+								},
+								"variationId":
+								{
+									"guid": "6064632622701936657",
+									"typeId": "1091111111",
+									"name": "None"
+								}
+							},
+							"quantity":
+							{
+								"expression": "const resourceQuant = Int(EvalFormula($#10516612381411113:6064632622680375311$));\r\n\r\nRandIntRange(Int(resourceQuant * 2.5), Int(resourceQuant * 5.0))"
+							},
+							"bPrioritizeQuality": true
+						}
+					],
+					"experienceRewards": []
+				},
+				{
+					"displayName": "",
+					"currency":
+					{
+					},
+					"itemRewards": [
+						{
+							"item":
+							{
+								"itemId":
+								{
+									"guid": "6064633306588250118",
+									"typeId": "1091110003",
+									"name": "None"
+								},
+								"variationId":
+								{
+									"guid": "6064632622701936657",
+									"typeId": "1091111111",
+									"name": "None"
+								}
+							},
+							"quantity":
+							{
+								"expression": "const resourceQuant = Int(EvalFormula($#10516612381411113:6064632622680375311$));\r\n\r\nRandIntRange(Int(resourceQuant * 2.5), Int(resourceQuant * 5.0))"
+							},
+							"bPrioritizeQuality": true
+						}
+					],
+					"experienceRewards": []
+				},
+				{
+					"displayName": "",
+					"currency":
+					{
+					},
+					"itemRewards": [
+						{
+							"item":
+							{
+								"itemId":
+								{
+									"guid": "6064633306653851683",
+									"typeId": "1091110003",
+									"name": "None"
+								},
+								"variationId":
+								{
+									"guid": "6064632622701936657",
+									"typeId": "1091111111",
+									"name": "None"
+								}
+							},
+							"quantity":
+							{
+								"expression": "const resourceQuant = Int(EvalFormula($#10516612381411113:6064632622680375311$));\r\n\r\nRandIntRange(Int(resourceQuant * 2.5), Int(resourceQuant * 5.0))"
+							},
+							"bPrioritizeQuality": true
+						}
+					],
+					"experienceRewards": []
+				}
+			],
+			"rewardContainerIcon": "None"
+		},
+		{
+			"grantPredicate":
+			{
+				"expression": "GetActivatedItemRarity() == 3"
+			},
+			"selectionAlgorithm": "PerElementWeightedRandom",
+			"numberToSelect": 0,
+			"grantMethod": "Always",
+			"rewardsWeightCurve":
+			{
+				"externalCurve": "None",
+				"editorCurveData":
+				{
+					"keys": [],
+					"defaultValue": 3.4028234663852886e+38,
+					"preInfinityExtrap": "RCCE_Constant",
+					"postInfinityExtrap": "RCCE_Constant",
+					"keyHandlesToIndices":
+					{
+					}
+				}
+			},
+			"weightsPerReward": [ 80, 80, 80, 19, 19, 19, 1, 1, 1 ],
+			"percentageDropRatePerReward": [],
+			"maxSelectorChoices": 0,
+			"rewards": [
+				{
+					"displayName": "",
+					"currency":
+					{
+					},
+					"itemRewards": [
+						{
+							"item":
+							{
+								"itemId":
+								{
+									"guid": "6064633221397217305",
+									"typeId": "1091110003",
+									"name": "None"
+								},
+								"variationId":
+								{
+									"guid": "6064632581060755605",
+									"typeId": "1091111111",
+									"name": "None"
+								}
+							},
+							"quantity":
+							{
+								"expression": "const resourceQuant = Int(EvalFormula($#10516612381411113:6064632622680375311$));\r\n\r\nRandIntRange(resourceQuant, Int(resourceQuant * 1.25))"
+							},
+							"bPrioritizeQuality": true
+						}
+					],
+					"experienceRewards": []
+				},
+				{
+					"displayName": "",
+					"currency":
+					{
+					},
+					"itemRewards": [
+						{
+							"item":
+							{
+								"itemId":
+								{
+									"guid": "6064633288204353544",
+									"typeId": "1091110003",
+									"name": "None"
+								},
+								"variationId":
+								{
+									"guid": "6064632581060755605",
+									"typeId": "1091111111",
+									"name": "None"
+								}
+							},
+							"quantity":
+							{
+								"expression": "const resourceQuant = Int(EvalFormula($#10516612381411113:6064632622680375311$));\r\n\r\nRandIntRange(resourceQuant, Int(resourceQuant * 1.25))"
+							},
+							"bPrioritizeQuality": true
+						}
+					],
+					"experienceRewards": []
+				},
+				{
+					"displayName": "",
+					"currency":
+					{
+					},
+					"itemRewards": [
+						{
+							"item":
+							{
+								"itemId":
+								{
+									"guid": "6064633221630984274",
+									"typeId": "1091110003",
+									"name": "None"
+								},
+								"variationId":
+								{
+									"guid": "6064632581060755605",
+									"typeId": "1091111111",
+									"name": "None"
+								}
+							},
+							"quantity":
+							{
+								"expression": "const resourceQuant = Int(EvalFormula($#10516612381411113:6064632622680375311$));\r\n\r\nRandIntRange(resourceQuant, Int(resourceQuant * 1.25))"
+							},
+							"bPrioritizeQuality": true
+						}
+					],
+					"experienceRewards": []
+				},
+				{
+					"displayName": "",
+					"currency":
+					{
+					},
+					"itemRewards": [
+						{
+							"item":
+							{
+								"itemId":
+								{
+									"guid": "6064633221397217305",
+									"typeId": "1091110003",
+									"name": "None"
+								},
+								"variationId":
+								{
+									"guid": "6064632581060755605",
+									"typeId": "1091111111",
+									"name": "None"
+								}
+							},
+							"quantity":
+							{
+								"expression": "const resourceQuant = Int(EvalFormula($#10516612381411113:6064632622680375311$));\r\n\r\nRandIntRange(Int(resourceQuant * 1.3), Int(resourceQuant * 1.5))"
+							},
+							"bPrioritizeQuality": true
+						}
+					],
+					"experienceRewards": []
+				},
+				{
+					"displayName": "",
+					"currency":
+					{
+					},
+					"itemRewards": [
+						{
+							"item":
+							{
+								"itemId":
+								{
+									"guid": "6064633288204353544",
+									"typeId": "1091110003",
+									"name": "None"
+								},
+								"variationId":
+								{
+									"guid": "6064632581060755605",
+									"typeId": "1091111111",
+									"name": "None"
+								}
+							},
+							"quantity":
+							{
+								"expression": "const resourceQuant = Int(EvalFormula($#10516612381411113:6064632622680375311$));\r\n\r\nRandIntRange(Int(resourceQuant * 1.3), Int(resourceQuant * 1.5))"
+							},
+							"bPrioritizeQuality": true
+						}
+					],
+					"experienceRewards": []
+				},
+				{
+					"displayName": "",
+					"currency":
+					{
+					},
+					"itemRewards": [
+						{
+							"item":
+							{
+								"itemId":
+								{
+									"guid": "6064633221630984274",
+									"typeId": "1091110003",
+									"name": "None"
+								},
+								"variationId":
+								{
+									"guid": "6064632581060755605",
+									"typeId": "1091111111",
+									"name": "None"
+								}
+							},
+							"quantity":
+							{
+								"expression": "const resourceQuant = Int(EvalFormula($#10516612381411113:6064632622680375311$));\r\n\r\nRandIntRange(Int(resourceQuant * 1.3), Int(resourceQuant * 1.5))"
+							},
+							"bPrioritizeQuality": true
+						}
+					],
+					"experienceRewards": []
+				},
+				{
+					"displayName": "",
+					"currency":
+					{
+					},
+					"itemRewards": [
+						{
+							"item":
+							{
+								"itemId":
+								{
+									"guid": "6064633221397217305",
+									"typeId": "1091110003",
+									"name": "None"
+								},
+								"variationId":
+								{
+									"guid": "6064632581060755605",
+									"typeId": "1091111111",
+									"name": "None"
+								}
+							},
+							"quantity":
+							{
+								"expression": "const resourceQuant = Int(EvalFormula($#10516612381411113:6064632622680375311$));\r\n\r\nRandIntRange(Int(resourceQuant * 2.5), Int(resourceQuant * 5.0))"
+							},
+							"bPrioritizeQuality": true
+						}
+					],
+					"experienceRewards": []
+				},
+				{
+					"displayName": "",
+					"currency":
+					{
+					},
+					"itemRewards": [
+						{
+							"item":
+							{
+								"itemId":
+								{
+									"guid": "6064633288204353544",
+									"typeId": "1091110003",
+									"name": "None"
+								},
+								"variationId":
+								{
+									"guid": "6064632581060755605",
+									"typeId": "1091111111",
+									"name": "None"
+								}
+							},
+							"quantity":
+							{
+								"expression": "const resourceQuant = Int(EvalFormula($#10516612381411113:6064632622680375311$));\r\n\r\nRandIntRange(Int(resourceQuant * 2.5), Int(resourceQuant * 5.0))"
+							},
+							"bPrioritizeQuality": true
+						}
+					],
+					"experienceRewards": []
+				},
+				{
+					"displayName": "",
+					"currency":
+					{
+					},
+					"itemRewards": [
+						{
+							"item":
+							{
+								"itemId":
+								{
+									"guid": "6064633221630984274",
+									"typeId": "1091110003",
+									"name": "None"
+								},
+								"variationId":
+								{
+									"guid": "6064632581060755605",
+									"typeId": "1091111111",
+									"name": "None"
+								}
+							},
+							"quantity":
+							{
+								"expression": "const resourceQuant = Int(EvalFormula($#10516612381411113:6064632622680375311$));\r\n\r\nRandIntRange(Int(resourceQuant * 2.5), Int(resourceQuant * 5.0))"
+							},
+							"bPrioritizeQuality": true
+						}
+					],
+					"experienceRewards": []
+				}
+			],
+			"rewardContainerIcon": "None"
+		},
+		{
+			"grantPredicate":
+			{
+				"expression": "GetActivatedItemRarity() == 4"
+			},
+			"selectionAlgorithm": "PerElementWeightedRandom",
+			"numberToSelect": 0,
+			"grantMethod": "Always",
+			"rewardsWeightCurve":
+			{
+				"externalCurve": "None",
+				"editorCurveData":
+				{
+					"keys": [],
+					"defaultValue": 3.4028234663852886e+38,
+					"preInfinityExtrap": "RCCE_Constant",
+					"postInfinityExtrap": "RCCE_Constant",
+					"keyHandlesToIndices":
+					{
+					}
+				}
+			},
+			"weightsPerReward": [ 80, 80, 80, 19, 19, 19, 1, 1, 1 ],
+			"percentageDropRatePerReward": [],
+			"maxSelectorChoices": 0,
+			"rewards": [
+				{
+					"displayName": "",
+					"currency":
+					{
+					},
+					"itemRewards": [
+						{
+							"item":
+							{
+								"itemId":
+								{
+									"guid": "6064633221397217305",
+									"typeId": "1091110003",
+									"name": "None"
+								},
+								"variationId":
+								{
+									"guid": "6064632622701936657",
+									"typeId": "1091111111",
+									"name": "None"
+								}
+							},
+							"quantity":
+							{
+								"expression": "const resourceQuant = Int(EvalFormula($#10516612381411113:6064632622680375311$));\r\n\r\nRandIntRange(resourceQuant, Int(resourceQuant * 1.25))"
+							},
+							"bPrioritizeQuality": true
+						}
+					],
+					"experienceRewards": []
+				},
+				{
+					"displayName": "",
+					"currency":
+					{
+					},
+					"itemRewards": [
+						{
+							"item":
+							{
+								"itemId":
+								{
+									"guid": "6064633288204353544",
+									"typeId": "1091110003",
+									"name": "None"
+								},
+								"variationId":
+								{
+									"guid": "6064632622701936657",
+									"typeId": "1091111111",
+									"name": "None"
+								}
+							},
+							"quantity":
+							{
+								"expression": "const resourceQuant = Int(EvalFormula($#10516612381411113:6064632622680375311$));\r\n\r\nRandIntRange(resourceQuant, Int(resourceQuant * 1.25))"
+							},
+							"bPrioritizeQuality": true
+						}
+					],
+					"experienceRewards": []
+				},
+				{
+					"displayName": "",
+					"currency":
+					{
+					},
+					"itemRewards": [
+						{
+							"item":
+							{
+								"itemId":
+								{
+									"guid": "6064633221630984274",
+									"typeId": "1091110003",
+									"name": "None"
+								},
+								"variationId":
+								{
+									"guid": "6064632622701936657",
+									"typeId": "1091111111",
+									"name": "None"
+								}
+							},
+							"quantity":
+							{
+								"expression": "const resourceQuant = Int(EvalFormula($#10516612381411113:6064632622680375311$));\r\n\r\nRandIntRange(resourceQuant, Int(resourceQuant * 1.25))"
+							},
+							"bPrioritizeQuality": true
+						}
+					],
+					"experienceRewards": []
+				},
+				{
+					"displayName": "",
+					"currency":
+					{
+					},
+					"itemRewards": [
+						{
+							"item":
+							{
+								"itemId":
+								{
+									"guid": "6064633221397217305",
+									"typeId": "1091110003",
+									"name": "None"
+								},
+								"variationId":
+								{
+									"guid": "6064632622701936657",
+									"typeId": "1091111111",
+									"name": "None"
+								}
+							},
+							"quantity":
+							{
+								"expression": "const resourceQuant = Int(EvalFormula($#10516612381411113:6064632622680375311$));\r\n\r\nRandIntRange(Int(resourceQuant * 1.3), Int(resourceQuant * 1.5))"
+							},
+							"bPrioritizeQuality": true
+						}
+					],
+					"experienceRewards": []
+				},
+				{
+					"displayName": "",
+					"currency":
+					{
+					},
+					"itemRewards": [
+						{
+							"item":
+							{
+								"itemId":
+								{
+									"guid": "6064633288204353544",
+									"typeId": "1091110003",
+									"name": "None"
+								},
+								"variationId":
+								{
+									"guid": "6064632622701936657",
+									"typeId": "1091111111",
+									"name": "None"
+								}
+							},
+							"quantity":
+							{
+								"expression": "const resourceQuant = Int(EvalFormula($#10516612381411113:6064632622680375311$));\r\n\r\nRandIntRange(Int(resourceQuant * 1.3), Int(resourceQuant * 1.5))"
+							},
+							"bPrioritizeQuality": true
+						}
+					],
+					"experienceRewards": []
+				},
+				{
+					"displayName": "",
+					"currency":
+					{
+					},
+					"itemRewards": [
+						{
+							"item":
+							{
+								"itemId":
+								{
+									"guid": "6064633221630984274",
+									"typeId": "1091110003",
+									"name": "None"
+								},
+								"variationId":
+								{
+									"guid": "6064632622701936657",
+									"typeId": "1091111111",
+									"name": "None"
+								}
+							},
+							"quantity":
+							{
+								"expression": "const resourceQuant = Int(EvalFormula($#10516612381411113:6064632622680375311$));\r\n\r\nRandIntRange(Int(resourceQuant * 1.3), Int(resourceQuant * 1.5))"
+							},
+							"bPrioritizeQuality": true
+						}
+					],
+					"experienceRewards": []
+				},
+				{
+					"displayName": "",
+					"currency":
+					{
+					},
+					"itemRewards": [
+						{
+							"item":
+							{
+								"itemId":
+								{
+									"guid": "6064633221397217305",
+									"typeId": "1091110003",
+									"name": "None"
+								},
+								"variationId":
+								{
+									"guid": "6064632622701936657",
+									"typeId": "1091111111",
+									"name": "None"
+								}
+							},
+							"quantity":
+							{
+								"expression": "const resourceQuant = Int(EvalFormula($#10516612381411113:6064632622680375311$));\r\n\r\nRandIntRange(Int(resourceQuant * 2.5), Int(resourceQuant * 5.0))"
+							},
+							"bPrioritizeQuality": true
+						}
+					],
+					"experienceRewards": []
+				},
+				{
+					"displayName": "",
+					"currency":
+					{
+					},
+					"itemRewards": [
+						{
+							"item":
+							{
+								"itemId":
+								{
+									"guid": "6064633288204353544",
+									"typeId": "1091110003",
+									"name": "None"
+								},
+								"variationId":
+								{
+									"guid": "6064632622701936657",
+									"typeId": "1091111111",
+									"name": "None"
+								}
+							},
+							"quantity":
+							{
+								"expression": "const resourceQuant = Int(EvalFormula($#10516612381411113:6064632622680375311$));\r\n\r\nRandIntRange(Int(resourceQuant * 2.5), Int(resourceQuant * 5.0))"
+							},
+							"bPrioritizeQuality": true
+						}
+					],
+					"experienceRewards": []
+				},
+				{
+					"displayName": "",
+					"currency":
+					{
+					},
+					"itemRewards": [
+						{
+							"item":
+							{
+								"itemId":
+								{
+									"guid": "6064633221630984274",
+									"typeId": "1091110003",
+									"name": "None"
+								},
+								"variationId":
+								{
+									"guid": "6064632622701936657",
+									"typeId": "1091111111",
+									"name": "None"
+								}
+							},
+							"quantity":
+							{
+								"expression": "const resourceQuant = Int(EvalFormula($#10516612381411113:6064632622680375311$));\r\n\r\nRandIntRange(Int(resourceQuant * 2.5), Int(resourceQuant * 5.0))"
+							},
+							"bPrioritizeQuality": true
+						}
+					],
+					"experienceRewards": []
+				}
+			],
+			"rewardContainerIcon": "None"
+		},
+		{
+			"grantPredicate":
+			{
+				"expression": "GetActivatedItemRarity() == 5"
+			},
+			"selectionAlgorithm": "PerElementWeightedRandom",
+			"numberToSelect": 0,
+			"grantMethod": "Always",
+			"rewardsWeightCurve":
+			{
+				"externalCurve": "None",
+				"editorCurveData":
+				{
+					"keys": [],
+					"defaultValue": 3.4028234663852886e+38,
+					"preInfinityExtrap": "RCCE_Constant",
+					"postInfinityExtrap": "RCCE_Constant",
+					"keyHandlesToIndices":
+					{
+					}
+				}
+			},
+			"weightsPerReward": [ 80, 80, 80, 19, 19, 19, 1, 1, 1 ],
+			"percentageDropRatePerReward": [],
+			"maxSelectorChoices": 0,
+			"rewards": [
+				{
+					"displayName": "",
+					"currency":
+					{
+					},
+					"itemRewards": [
+						{
+							"item":
+							{
+								"itemId":
+								{
+									"guid": "6064633221397217305",
+									"typeId": "1091110003",
+									"name": "None"
+								},
+								"variationId":
+								{
+									"guid": "6064632622713798674",
+									"typeId": "1091111111",
+									"name": "None"
+								}
+							},
+							"quantity":
+							{
+								"expression": "const resourceQuant = Int(EvalFormula($#10516612381411113:6064632622680375311$));\r\n\r\nRandIntRange(resourceQuant, Int(resourceQuant * 1.25))"
+							},
+							"bPrioritizeQuality": true
+						}
+					],
+					"experienceRewards": []
+				},
+				{
+					"displayName": "",
+					"currency":
+					{
+					},
+					"itemRewards": [
+						{
+							"item":
+							{
+								"itemId":
+								{
+									"guid": "6064633288204353544",
+									"typeId": "1091110003",
+									"name": "None"
+								},
+								"variationId":
+								{
+									"guid": "6064632622713798674",
+									"typeId": "1091111111",
+									"name": "None"
+								}
+							},
+							"quantity":
+							{
+								"expression": "const resourceQuant = Int(EvalFormula($#10516612381411113:6064632622680375311$));\r\n\r\nRandIntRange(resourceQuant, Int(resourceQuant * 1.25))"
+							},
+							"bPrioritizeQuality": true
+						}
+					],
+					"experienceRewards": []
+				},
+				{
+					"displayName": "",
+					"currency":
+					{
+					},
+					"itemRewards": [
+						{
+							"item":
+							{
+								"itemId":
+								{
+									"guid": "6064633221630984274",
+									"typeId": "1091110003",
+									"name": "None"
+								},
+								"variationId":
+								{
+									"guid": "6064632622713798674",
+									"typeId": "1091111111",
+									"name": "None"
+								}
+							},
+							"quantity":
+							{
+								"expression": "const resourceQuant = Int(EvalFormula($#10516612381411113:6064632622680375311$));\r\n\r\nRandIntRange(resourceQuant, Int(resourceQuant * 1.25))"
+							},
+							"bPrioritizeQuality": true
+						}
+					],
+					"experienceRewards": []
+				},
+				{
+					"displayName": "",
+					"currency":
+					{
+					},
+					"itemRewards": [
+						{
+							"item":
+							{
+								"itemId":
+								{
+									"guid": "6064633221397217305",
+									"typeId": "1091110003",
+									"name": "None"
+								},
+								"variationId":
+								{
+									"guid": "6064632622713798674",
+									"typeId": "1091111111",
+									"name": "None"
+								}
+							},
+							"quantity":
+							{
+								"expression": "const resourceQuant = Int(EvalFormula($#10516612381411113:6064632622680375311$));\r\n\r\nRandIntRange(Int(resourceQuant * 1.3), Int(resourceQuant * 1.5))"
+							},
+							"bPrioritizeQuality": true
+						}
+					],
+					"experienceRewards": []
+				},
+				{
+					"displayName": "",
+					"currency":
+					{
+					},
+					"itemRewards": [
+						{
+							"item":
+							{
+								"itemId":
+								{
+									"guid": "6064633288204353544",
+									"typeId": "1091110003",
+									"name": "None"
+								},
+								"variationId":
+								{
+									"guid": "6064632622713798674",
+									"typeId": "1091111111",
+									"name": "None"
+								}
+							},
+							"quantity":
+							{
+								"expression": "const resourceQuant = Int(EvalFormula($#10516612381411113:6064632622680375311$));\r\n\r\nRandIntRange(Int(resourceQuant * 1.3), Int(resourceQuant * 1.5))"
+							},
+							"bPrioritizeQuality": true
+						}
+					],
+					"experienceRewards": []
+				},
+				{
+					"displayName": "",
+					"currency":
+					{
+					},
+					"itemRewards": [
+						{
+							"item":
+							{
+								"itemId":
+								{
+									"guid": "6064633221630984274",
+									"typeId": "1091110003",
+									"name": "None"
+								},
+								"variationId":
+								{
+									"guid": "6064632622713798674",
+									"typeId": "1091111111",
+									"name": "None"
+								}
+							},
+							"quantity":
+							{
+								"expression": "const resourceQuant = Int(EvalFormula($#10516612381411113:6064632622680375311$));\r\n\r\nRandIntRange(Int(resourceQuant * 1.3), Int(resourceQuant * 1.5))"
+							},
+							"bPrioritizeQuality": true
+						}
+					],
+					"experienceRewards": []
+				},
+				{
+					"displayName": "",
+					"currency":
+					{
+					},
+					"itemRewards": [
+						{
+							"item":
+							{
+								"itemId":
+								{
+									"guid": "6064633221397217305",
+									"typeId": "1091110003",
+									"name": "None"
+								},
+								"variationId":
+								{
+									"guid": "6064632622713798674",
+									"typeId": "1091111111",
+									"name": "None"
+								}
+							},
+							"quantity":
+							{
+								"expression": "const resourceQuant = Int(EvalFormula($#10516612381411113:6064632622680375311$));\r\n\r\nRandIntRange(Int(resourceQuant * 2.5), Int(resourceQuant * 5.0))"
+							},
+							"bPrioritizeQuality": true
+						}
+					],
+					"experienceRewards": []
+				},
+				{
+					"displayName": "",
+					"currency":
+					{
+					},
+					"itemRewards": [
+						{
+							"item":
+							{
+								"itemId":
+								{
+									"guid": "6064633288204353544",
+									"typeId": "1091110003",
+									"name": "None"
+								},
+								"variationId":
+								{
+									"guid": "6064632622713798674",
+									"typeId": "1091111111",
+									"name": "None"
+								}
+							},
+							"quantity":
+							{
+								"expression": "const resourceQuant = Int(EvalFormula($#10516612381411113:6064632622680375311$));\r\n\r\nRandIntRange(Int(resourceQuant * 2.5), Int(resourceQuant * 5.0))"
+							},
+							"bPrioritizeQuality": true
+						}
+					],
+					"experienceRewards": []
+				},
+				{
+					"displayName": "",
+					"currency":
+					{
+					},
+					"itemRewards": [
+						{
+							"item":
+							{
+								"itemId":
+								{
+									"guid": "6064633221630984274",
+									"typeId": "1091110003",
+									"name": "None"
+								},
+								"variationId":
+								{
+									"guid": "6064632622713798674",
+									"typeId": "1091111111",
+									"name": "None"
+								}
+							},
+							"quantity":
+							{
+								"expression": "const resourceQuant = Int(EvalFormula($#10516612381411113:6064632622680375311$));\r\n\r\nRandIntRange(Int(resourceQuant * 2.5), Int(resourceQuant * 5.0))"
+							},
+							"bPrioritizeQuality": true
+						}
+					],
+					"experienceRewards": []
+				}
+			],
+			"rewardContainerIcon": "None"
+		}
+	],
+	"subTableSelectionAlgorithm": "None",
+	"numberOfSubtablesToSelect": 2,
+	"weightsPerSubTable": [ 80, 19, 1 ],
+	"percentagePerSubTable": [],
+	"subTablesWeightCurve":
+	{
+		"externalCurve": "None",
+		"editorCurveData":
+		{
+			"keys": [],
+			"defaultValue": 3.4028234663852886e+38,
+			"preInfinityExtrap": "RCCE_Constant",
+			"postInfinityExtrap": "RCCE_Constant",
+			"keyHandlesToIndices":
+			{
+			}
+		}
+	},
+	"subTablesIds": [],
+	"guid": "6064633584459841562",
+	"name": "TreasureMap_JUN_Lynoa_Resource",
+	"typeId": "1091110040"
+}

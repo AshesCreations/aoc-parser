@@ -1,0 +1,49 @@
+{
+	"modifierValueSource": "PriceModifierSet",
+	"valueExpression":
+	{
+		"expression": ""
+	},
+	"priceFactor": "Quality",
+	"valueCurve":
+	{
+		"externalCurve": "None",
+		"editorCurveData":
+		{
+			"keys": [],
+			"defaultValue": 3.4028234663852886e+38,
+			"preInfinityExtrap": "RCCE_Constant",
+			"postInfinityExtrap": "RCCE_Constant",
+			"keyHandlesToIndices":
+			{
+			}
+		}
+	},
+	"priceModifiersIds": [
+		{
+			"guid": "6064629461429649408",
+			"typeId": "3145314715",
+			"name": "None"
+		}
+	],
+	"arithmeticOperation": "Multiply",
+	"itemFilter":
+	{
+		"tokenStreamVersion": 0,
+		"tagDictionary": [],
+		"queryTokenStream": [],
+		"userDescription": "",
+		"autoDescription": ""
+	},
+	"affectedContexts": 228,
+	"affectedCurrenciesIds": [
+		{
+			"guid": "6064629127873626112",
+			"typeId": "1011111289",
+			"name": "None"
+		}
+	],
+	"guid": "6064629460879605760",
+	"name": "UniversalRepairModifier",
+	"typeId": "3145314715"
+}

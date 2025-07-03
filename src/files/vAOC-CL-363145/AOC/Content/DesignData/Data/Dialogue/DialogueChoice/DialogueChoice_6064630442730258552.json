@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"D59C5FA54E12E65FBF8A32A96C226F8C\", \"Do you need any help with anything?\")",
+	"nextNodeId":
+	{
+		"guid": "6064630442603774057",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"SA_0023_AnAncientViolence\", \"SAP_0023_AnAncientViolence_P1\")&&\r\nIsStoryArcQuestAvailable(GetPlayer(), \"SAQ_0023_P01_Q03_LostSouls\")&&\r\n!IsOnStoryArcQuest(GetPlayer(), \"SAQ_0023_P01_Q03_LostSouls\")"
+	},
+	"guid": "6064630442730258552",
+	"name": "DD_0023_AhvenBriarmoor_20",
+	"typeId": "1091110027"
+}

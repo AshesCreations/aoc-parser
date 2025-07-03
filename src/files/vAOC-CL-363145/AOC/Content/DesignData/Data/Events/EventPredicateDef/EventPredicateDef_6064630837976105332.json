@@ -1,0 +1,25 @@
+{
+	"expression":
+	{
+		"expression": "(Event_GetActiveStageIndex() == 3 && Event_GetNumParticipants() == 0 && Event_GetStageTimer() > 300.)"
+	},
+	"maxActivationCount": 1,
+	"objectivesIds": [],
+	"triggersIds": [
+		{
+			"guid": "6064630837976105333",
+			"typeId": "23095135",
+			"name": "None"
+		}
+	],
+	"flowEditorNodeLocation":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"routePins": [],
+	"guid": "6064630837976105332",
+	"name": "RVR_Event_010_SpiderPass_Stage_Fight_IfFled",
+	"typeId": "23095129"
+}

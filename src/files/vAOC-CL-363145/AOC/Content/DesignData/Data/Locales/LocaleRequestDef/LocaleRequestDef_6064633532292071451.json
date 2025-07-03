@@ -1,0 +1,61 @@
+{
+	"bUseLocaleQuery": true,
+	"originWhiteListIds": [
+		{
+			"guid": "6064633532142977037",
+			"typeId": "421003",
+			"name": "None"
+		},
+		{
+			"guid": "6064633572355801115",
+			"typeId": "421003",
+			"name": "None"
+		},
+		{
+			"guid": "6064633572224729088",
+			"typeId": "421003",
+			"name": "None"
+		}
+	],
+	"localeWhiteListIds": [],
+	"localeBlackListIds": [],
+	"bQueryAllOrigins": false,
+	"localeQueryLocation":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"originQueryRange": 0,
+	"originTagFilter":
+	{
+		"tokenStreamVersion": 0,
+		"tagDictionary": [],
+		"queryTokenStream": [],
+		"userDescription": "",
+		"autoDescription": ""
+	},
+	"localeTagFilter":
+	{
+		"tokenStreamVersion": 0,
+		"tagDictionary": [],
+		"queryTokenStream": [],
+		"userDescription": "",
+		"autoDescription": ""
+	},
+	"localeSelectionAlgorithm": "ClosestToPoint",
+	"pointExpression":
+	{
+		"expression": "Event_GetInstanceLocation()"
+	},
+	"requiredExtents":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"bRequiresNav": false,
+	"guid": "6064633532292071451",
+	"name": "Siege_LootPile_Large_LocaleRequest",
+	"typeId": "23095138"
+}

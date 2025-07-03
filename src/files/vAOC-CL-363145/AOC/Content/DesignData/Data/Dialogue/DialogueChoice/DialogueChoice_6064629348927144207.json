@@ -1,0 +1,23 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"E461EBEC4CC99C86F5403D99B74EC94F\", \"No surprises at all, just berries.\")",
+	"nextNodeId":
+	{
+		"guid": "6064629348931076370",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064629382718947363",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "!GetStoryArcQuestFlag(GetPlayer(),\"SAQ_0019_Bearberry\",\"BearberryBoy\")"
+	},
+	"guid": "6064629348927144207",
+	"name": "0019_1_P1_Lily_24",
+	"typeId": "1091110027"
+}

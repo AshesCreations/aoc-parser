@@ -1,0 +1,216 @@
+{
+	"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Community_GeneralSectionLabel\")",
+	"categoryHeaderLabel": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Community_GeneralSectionHeader\")",
+	"entryCategories": [
+		{
+			"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Community_ChatWindowSectionSubheader\")",
+			"entryAlignment": "HAlign_Fill",
+			"entryWrapSize": 10,
+			"wrapBoxClass": "Standard",
+			"entries": [
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Chat_WindowBGOpacityLabel\")",
+					"labelTextMinDesiredWidth": 300,
+					"labelTextWrapWidth": 600,
+					"type": "Slider",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 425,
+					"widgetClass": "None",
+					"getterFunctionName": "GetChatBGOpacity",
+					"setterFunctionName": "SetChatBGOpacity"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Chat_WindowFadeAfterInactivityLabel\")",
+					"labelTextMinDesiredWidth": 300,
+					"labelTextWrapWidth": 600,
+					"type": "Dropdown",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 584,
+					"widgetClass": "None",
+					"getterFunctionName": "GetFadeAfterInactivity",
+					"setterFunctionName": "SetFadeAfterInactivity"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Chat_FontLabel\")",
+					"labelTextMinDesiredWidth": 300,
+					"labelTextWrapWidth": 600,
+					"type": "Dropdown",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 584,
+					"widgetClass": "None",
+					"getterFunctionName": "GetChatFont",
+					"setterFunctionName": "SetChatFont"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Chat_FontSizeLabel\")",
+					"labelTextMinDesiredWidth": 300,
+					"labelTextWrapWidth": 600,
+					"type": "Dropdown",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 584,
+					"widgetClass": "None",
+					"getterFunctionName": "GetChatFontSize",
+					"setterFunctionName": "SetChatFontSize"
+				}
+			],
+			"subcategories": []
+		},
+		{
+			"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Community_ChatTextColorsSectionSubheader\")",
+			"entryAlignment": "HAlign_Fill",
+			"entryWrapSize": 1100,
+			"wrapBoxClass": "Standard",
+			"entries": [
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Chat_GlobalCommunicationLabel\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 1100,
+					"type": "UserWidget",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 300,
+					"widgetClass": "/Game/UI/Widgets/HUD/Chat/ChatOptions/WBP_ChatTextColorsGrid.WBP_ChatTextColorsGrid_C",
+					"getterFunctionName": "GetGlobalCommsColorGrid",
+					"setterFunctionName": "SetGlobalCommsColorGrid"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Chat_PersonalCommunicationLabel\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 1100,
+					"type": "UserWidget",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 300,
+					"widgetClass": "/Game/UI/Widgets/HUD/Chat/ChatOptions/WBP_ChatTextColorsGrid.WBP_ChatTextColorsGrid_C",
+					"getterFunctionName": "GetPersonalCommsColorGrid",
+					"setterFunctionName": "SetPersonalCommsColorGrid"
+				}
+			],
+			"subcategories": []
+		},
+		{
+			"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Community_InvitationFiltersSectionSubheader\")",
+			"entryAlignment": "HAlign_Fill",
+			"entryWrapSize": 10,
+			"wrapBoxClass": "Standard",
+			"entries": [
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Community_AutoDeclineFriendRequestLabel\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 1080,
+					"type": "CheckBox",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetAutoDeclineFriendsRequests",
+					"setterFunctionName": "SetGlobalCommsColorGrid"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Community_AutoDeclinePartyInvitesLabel\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 1080,
+					"type": "CheckBox",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetAutoDeclineFriendsRequests",
+					"setterFunctionName": "SetGlobalCommsColorGrid"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Community_AutoDeclineTradesLabel\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 1080,
+					"type": "CheckBox",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetAutoDeclineFriendsRequests",
+					"setterFunctionName": "SetGlobalCommsColorGrid"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Community_AutoDeclineGuildInvitesLabel\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 1080,
+					"type": "CheckBox",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetAutoDeclineFriendsRequests",
+					"setterFunctionName": "SetGlobalCommsColorGrid"
+				}
+			],
+			"subcategories": []
+		}
+	],
+	"guid": "6064632613432066050",
+	"name": "Community_General",
+	"typeId": "3616673544"
+}

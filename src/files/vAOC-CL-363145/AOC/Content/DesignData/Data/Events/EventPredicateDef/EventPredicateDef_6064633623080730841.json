@@ -1,0 +1,36 @@
+{
+	"expression":
+	{
+		"expression": "(Event_GetNumParticipants() < 9 && Event_GetNumParticipants() >= 1)"
+	},
+	"maxActivationCount": 1,
+	"bRequiresRegressionToLoop": true,
+	"objectivesIds": [],
+	"triggersIds": [
+		{
+			"guid": "6064633623080730842",
+			"typeId": "23095135",
+			"name": "None"
+		},
+		{
+			"guid": "6064633623080730843",
+			"typeId": "23095135",
+			"name": "None"
+		},
+		{
+			"guid": "6064633623080730844",
+			"typeId": "23095135",
+			"name": "None"
+		}
+	],
+	"flowEditorNodeLocation":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"routePins": [],
+	"guid": "6064633623080730841",
+	"name": "EVT_RVR_0001_AbandonedAmbush_AmbushStart",
+	"typeId": "23095129"
+}

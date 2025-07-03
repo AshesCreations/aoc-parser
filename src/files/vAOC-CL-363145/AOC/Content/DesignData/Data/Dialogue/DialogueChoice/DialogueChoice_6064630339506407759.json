@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"7997A33145B064742BB235A82F22EA3B\", \"Is on DP - No flag\")",
+	"nextNodeId":
+	{
+		"guid": "6064630339506407753",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "(IsOnStoryArcQuest(GetPlayer(),\"SAQ_0009_GH_DemonsPitchfork\")&&(!GetStoryArcQuestFlag(GetPlayer(),\"SAQ_0009_GH_DemonsPitchfork\",\"0009_ReturnSpecial\")&&!GetStoryArcQuestFlag(GetPlayer(),\"SAQ_0009_GH_DemonsPitchfork\",\"0009_Farmhand\")))"
+	},
+	"guid": "6064630339506407759",
+	"name": "SA_0009_ElizaLecker_14",
+	"typeId": "1091110027"
+}

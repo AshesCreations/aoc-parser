@@ -1,0 +1,50 @@
+{
+	"displayName": "Constitution",
+	"description": "NSLOCTEXT(\"[1909495A4C2095068D406C9D33F90055]\", \"F908057C48C5228F4FBEF5A529CA1F70\", \"Each point of Constitution provides:*1 Max Health*2 Armor*2 Physical Critical Avoidance Rating*1 Physical Critical Mitigation Rating*1 Physical Disable Evasion Rating*1 Physical Disable Reduction Rating\")",
+	"bHidden": false,
+	"gameplayType": "Type_Combat",
+	"bHasWaterfallStatsUI": true,
+	"waterfallStatsUIIds": [],
+	"bDisplayAsPercentage": false,
+	"statType": "Type_Float",
+	"bClampStatFinalValue": false,
+	"bMultiplyStatMods": false,
+	"bMultiplyCompliment": false,
+	"base":
+	{
+		"expression": "0"
+	},
+	"waterfallStatsBaseIds": [],
+	"valueMin":
+	{
+		"expression": "0"
+	},
+	"waterfallStatsMinIds": [],
+	"valueMax":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMaxIds": [],
+	"regenRate":
+	{
+		"expression": ""
+	},
+	"waterfallStatsRegenIds": [],
+	"bRegenWhileDead": false,
+	"bRecalculateOnCombatState": false,
+	"onSpawn": "Reset_None",
+	"onDeath": "Reset_None",
+	"onRevive": "Reset_None",
+	"bPersistValue": false,
+	"replication": 1,
+	"shieldStatId":
+	{
+		"guid": "0",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"grantedEffects": [],
+	"guid": "109183598614140",
+	"name": "Constitution",
+	"typeId": "10516612381411111"
+}

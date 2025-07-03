@@ -1,0 +1,34 @@
+{
+	"effectFragilityType": "FRAGILITY_Proc",
+	"eventBindings":
+	{
+		"hitEvents": 4,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0,
+		"fishingEvents": 0,
+		"statEvents": 0
+	},
+	"evaluationTickFrequency": 1,
+	"shouldBreakEffectImmediately":
+	{
+		"expression": "GetRecordTypeId(GetHitSourceRecord(GetHitEvent())) != GetReactionTypeId() &&\r\nGetRecordTypeId(GetHitSourceRecord(GetHitEvent())) != GetEffectTypeId() &&\r\nGetOwner() == GetInstigator() && \r\nHitHasTag(GetHitEvent(), \"ability.weaponcombo\") &&\r\n!HitHasTag(GetHitEvent(), \"ComboStep.End2\") &&\r\n!HitHasTag(GetHitEvent(), \"ComboStep.End2Secondary\") &&\r\n(!HitHasTag(GetHitEvent(), \"ComboStep.ProcHit\") || !GetSkillPurchased(GetInstigator(),GetCurrentWeaponSkilltree(GetInstigator()),$#981011333:6064632328228376723$))"
+	},
+	"shouldEvaluateThresholdAccumulation":
+	{
+		"expression": ""
+	},
+	"effectBreakThreshold":
+	{
+		"expression": ""
+	},
+	"effectBreakThresholdAccumulationRate":
+	{
+		"expression": ""
+	},
+	"guid": "6064632716139630359",
+	"name": "Weapon_Passive_ArrowStorm_Tracker_Fragility",
+	"typeId": "30316112"
+}

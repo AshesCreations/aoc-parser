@@ -1,0 +1,30 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 2,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "CalcEffectDuration(GetEffectRecordByName(\"StatusEffect_Snare\")) > 10.0"
+	},
+	"bEvaluateApplyingHit": false,
+	"instigator": "HitSource",
+	"targetsBitmask": 8,
+	"reactHitsIds": [
+		{
+			"guid": "6064630023378113141",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"instigatorProcLimit": 1,
+	"globalProcLimit": 1,
+	"procReactOnApply": false,
+	"guid": "6064630023385846390",
+	"name": "Ranger_VineTrap_Root_Reaction",
+	"typeId": "3031600202"
+}

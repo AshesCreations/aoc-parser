@@ -1,0 +1,18 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"4CEB536D4EC71DE6864AF699D854363A\", \"Why are you here?\")",
+	"nextNodeId":
+	{
+		"guid": "6064631600638591041",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "!Player_HasCompletedCommission(GetPlayer(), \"SQ_34_VAV\") && !Player_HasCommission (GetPlayer(), \"SQ_34_VAV\")"
+	},
+	"choiceType": "Default",
+	"guid": "6064631561249816605",
+	"name": "SQ_34_Tul_9",
+	"typeId": "1091110027"
+}

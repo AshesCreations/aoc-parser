@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"7C597778457F59B180B38C9DF75E7EB5\", \"There must be something we can do?\")",
+	"nextNodeId":
+	{
+		"guid": "6064629959049281540",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0007_PriestessAndThePiper\",\"MAP_0007_PriestessAndThePiper_Phase03\")&&\r\n!IsOnStoryArcQuest(GetPlayer(),\"MAQ_0007_TSS_TheSephillionSeals\")"
+	},
+	"guid": "6064629959045545987",
+	"name": "MADD_0007_TSS_NPC_AlishaBonekeeper_4",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"FECFB0874C165173C1908C91919C7A88\", \"Did you say something about needing plants?\")",
+	"nextNodeId":
+	{
+		"guid": "6064629579110809613",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcQuestAvailable(GetPlayer(),\"MAQ_0014_01_01_SourcingHerbs\")&&\r\n!IsOnStoryArcQuest(GetPlayer(),\"MAQ_0014_01_01_SourcingHerbs\")"
+	},
+	"guid": "6064629579152949267",
+	"name": "DDR_0014_Lorne_47",
+	"typeId": "1091110027"
+}

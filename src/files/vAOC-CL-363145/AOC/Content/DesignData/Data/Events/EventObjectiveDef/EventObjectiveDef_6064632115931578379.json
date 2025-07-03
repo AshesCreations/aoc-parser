@@ -1,0 +1,129 @@
+{
+	"bAllowSatisfactionToRegress": false,
+	"parameterTypes": 1,
+	"objectiveType": "Gather",
+	"completionCriteria": [
+		{
+			"bOverrideCompletionValueWithExpression": true,
+			"completionValue": 100,
+			"operator": "GreaterThan",
+			"completionExpression":
+			{
+				"expression": "Event_GetIntObjectiveProgress() >= 100"
+			},
+			"completionTriggersIds": [],
+			"bDisplayOnTracker": true,
+			"relevantTrackerIds": [
+				{
+					"guid": "6064631805289299972",
+					"typeId": "23095133",
+					"name": "None"
+				}
+			],
+			"displayText": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"A936FE6C4C9194A2FB617287932423C1\", \"Earn points by catching fish!\")",
+			"displayType": 5,
+			"displayCompletionValue": 100,
+			"bInvertProgressDisplay": false
+		}
+	],
+	"nPCObjectiveIconOverrideId":
+	{
+		"guid": "0",
+		"typeId": "949952112329",
+		"name": "None"
+	},
+	"progressExpression":
+	{
+		"expression": ""
+	},
+	"gameplayTagFilter":
+	{
+		"tokenStreamVersion": 0,
+		"tagDictionary": [
+			{
+				"tagName": "Artisanship.Gathering.Fishing"
+			}
+		],
+		"queryTokenStream": [ 0, 1, 2, 1, 0 ],
+		"userDescription": "",
+		"autoDescription": " ALL( Artisanship.Gathering.Fishing )"
+	},
+	"populationSetId":
+	{
+		"guid": "0",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"trackerId":
+	{
+		"guid": "0",
+		"typeId": "23095133",
+		"name": "None"
+	},
+	"interactablesIds": [],
+	"professionFilterIds": [
+		{
+			"guid": "108752770061964",
+			"typeId": "8125613373123",
+			"name": "None"
+		}
+	],
+	"gatherableFilterIds": [
+		{
+			"guid": "6064631029846245378",
+			"typeId": "19846",
+			"name": "None"
+		},
+		{
+			"guid": "6064630921524806928",
+			"typeId": "19846",
+			"name": "None"
+		}
+	],
+	"collectionFilterId":
+	{
+		"guid": "0",
+		"typeId": "1091110041",
+		"name": "None"
+	},
+	"collectionCount": 5,
+	"abilityRecordId":
+	{
+		"guid": "0",
+		"typeId": "30316001",
+		"name": "None"
+	},
+	"activityType": "NPCKill",
+	"activityQueryLocation":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"activityQueryExtent":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"bDisplayOnTracker": true,
+	"trackerText": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"A936FE6C4C9194A2FB617287932423C1\", \"Earn points by catching fish!\")",
+	"displayType": 5,
+	"displayCompletionValue": 100,
+	"visibilityExpression":
+	{
+		"expression": "HasAlignment(GetPlayer(), $#512160700:6064630610806636544$)"
+	},
+	"visibilityOverridesTrackerFilter": false,
+	"trackersToDisplayToIds": [
+		{
+			"guid": "6064631805289299972",
+			"typeId": "23095133",
+			"name": "None"
+		}
+	],
+	"relevantAlignmentsIds": [],
+	"guid": "6064632115931578379",
+	"name": "GuildWar_Variant1_Small_Phase1_InstigatorFish_Objective",
+	"typeId": "23095130"
+}

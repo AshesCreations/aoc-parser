@@ -1,0 +1,31 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 4,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "const damage = GetStatModValue(GetHitEvent(), $#10516612381411111:108986352686712$) < 0.0;\r\nconst lightning = HitHasTag(GetHitEvent(), \"element.magical.lightning\");\r\n\r\ndamage && lightning"
+	},
+	"bEvaluateApplyingHit": false,
+	"instigator": "Instigator",
+	"targetsBitmask": 8,
+	"reactHitsIds": [
+		{
+			"guid": "6064628895186944001",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"instigatorProcLimit": 0,
+	"globalProcLimit": 0,
+	"procReactOnApply": false,
+	"guid": "6064631233874035095",
+	"name": "Mage_Shatter",
+	"typeId": "3031600202"
+}

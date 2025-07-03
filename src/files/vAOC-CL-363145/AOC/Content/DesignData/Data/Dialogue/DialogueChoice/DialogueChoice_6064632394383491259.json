@@ -1,0 +1,22 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"26B22E454BE2D6F1BCB9AD838F62EDC1\", \"About those cultists...\")",
+	"nextNodeId":
+	{
+		"guid": "6064632394334142647",
+		"typeId": "1091110028",
+		"name": "CSQ_DD_0035_SFS_2ndSwordCaptain_10"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "Player_HasCompletedCommission(GetPlayer(), \"SQ_0010_SliversOfThePast\") &&\r\n!Player_HasCompletedCommission(GetPlayer(), \"SQ_0010_SliversOfThePastPart2\") &&\r\n!Player_HasCommission(GetPlayer(), \"SQ_0010_SliversOfThePastPart2\")"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064632394383491259",
+	"name": "CSQ_DD_0035_SFS_2ndSwordCaptain_3_Choice_3",
+	"typeId": "1091110027"
+}

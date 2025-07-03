@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"029A8D9D49537F5EB0DBB094775509A0\", \"I can help with the Roads.\")",
+	"nextNodeId":
+	{
+		"guid": "6064630321596596254",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0005A_FGG_ForGreaterGlory\",\"MAP_0005A_FGG_Phase01\")&&\r\n!IsOnStoryArcQuest(GetPlayer(),\"MAQ_0005A_STR_SecuringTheTradeRoutes\")&&\r\nIsStoryArcQuestAvailable(GetPlayer(),\"MAQ_0005A_STR_SecuringTheTradeRoutes\")\r\n"
+	},
+	"guid": "6064630321494491164",
+	"name": "MADD_0005A_STR_NPC_Eudoxia_Phase01_4",
+	"typeId": "1091110027"
+}

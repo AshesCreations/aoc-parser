@@ -1,0 +1,82 @@
+{
+	"completionResponsesIds": [
+		{
+			"guid": "6064633378951528489",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064633378493694022",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"objectivesToCompleteUponCompletionIds": [],
+	"objectivesToRevealUponCompletionIds": [],
+	"itemsToGrantUponCompletion": [],
+	"channelDuration": 0,
+	"activePredicate":
+	{
+		"expression": "Player_HasItem(GetPlayer(),\"EVT_TUR_0005_SnatchedSea_PowderBarrel\")"
+	},
+	"cuePredicate":
+	{
+		"expression": "Player_HasItem(GetPlayer(),\"EVT_TUR_0005_SnatchedSea_PowderBarrel\")"
+	},
+	"visiblePredicate":
+	{
+		"expression": ""
+	},
+	"showErrorIfNotVisible": false,
+	"deleteOnCompletion": false,
+	"singleUse": false,
+	"alwaysShowUIPrompt": true,
+	"cancelChannelIfActivePredicateEverFails": true,
+	"interactTextFormat": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"64F13E374CAD5BDD43C0BE835B3250E6\", \"Place Powder Barrel\")",
+	"channelModifierType": "NONE",
+	"rewardTableId":
+	{
+		"guid": "0",
+		"typeId": "1091110008",
+		"name": "None"
+	},
+	"startEffect": "None",
+	"endEffect": "None",
+	"failEffect": "None",
+	"successEffect": "None",
+	"cueEffect": "/Game/DesignAssets/Quests/SidequestAssets/SQ_0121_NewAelaCorridor/FX_Interact_Sparkle_Silver.FX_Interact_Sparkle_Silver",
+	"startSound": "None",
+	"endSound": "None",
+	"failSound": "None",
+	"successSound": "None",
+	"cueSound": "None",
+	"interactAnimTag": "None",
+	"deletionDelay": 0,
+	"activeCueEnabled": true,
+	"activeCueIgnoresActivePredicate": false,
+	"facePlayer": false,
+	"allowInCombat": true,
+	"spawnAtBottomCapsule": false,
+	"channelAnimation": "None",
+	"interactRadius": 200,
+	"discoveryDistance": 200,
+	"interactTolerance": 30,
+	"interactAngle": 0,
+	"bRequireLOS": false,
+	"busyTime": 0.89999997615814209,
+	"clientBusyTime": 1,
+	"channelStartResponseIds": [],
+	"failResponsesIds": [],
+	"gatheringInteractionDataId":
+	{
+		"guid": "0",
+		"typeId": "19846",
+		"name": "None"
+	},
+	"interactCooldownMap":
+	{
+	},
+	"guid": "6064633378951004200",
+	"name": "EVT_TUR_0005_SnatchedSea_ReadyMark_Interact_7",
+	"typeId": "1091110031"
+}

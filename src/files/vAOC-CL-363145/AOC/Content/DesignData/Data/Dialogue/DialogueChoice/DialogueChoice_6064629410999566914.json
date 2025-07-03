@@ -1,0 +1,23 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"ADFA2BE64951D0B6F820C1B4BB61591A\", \"This shield could be valuable if repaired.\")",
+	"nextNodeId":
+	{
+		"guid": "6064629427878101000",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064629427800113152",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "GetStoryArcQuestFlag(GetPlayer(),\"SAQ_0008_BrotherhoodOftheMissingCloak\",\"FlagShipments\")"
+	},
+	"guid": "6064629410999566914",
+	"name": "MADD_0008_BrotherHugh_30",
+	"typeId": "1091110027"
+}

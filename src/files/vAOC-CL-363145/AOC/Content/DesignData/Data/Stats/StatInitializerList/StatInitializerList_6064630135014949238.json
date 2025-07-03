@@ -1,0 +1,63 @@
+{
+	"statIds": [
+		{
+			"statId":
+			{
+				"guid": "108986356618873",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "GetStatInitRunningTotal() * 0.5"
+			},
+			"bOverrideDefaultValue": "STATINIT_Default",
+			"defaultValue": 490,
+			"levelValues":
+			{
+				"externalCurve": "None",
+				"editorCurveData":
+				{
+					"keys": [],
+					"defaultValue": 3.4028234663852886e+38,
+					"preInfinityExtrap": "RCCE_Constant",
+					"postInfinityExtrap": "RCCE_Constant",
+					"keyHandlesToIndices":
+					{
+					}
+				}
+			}
+		},
+		{
+			"statId":
+			{
+				"guid": "6064628617716498442",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "0.15"
+			},
+			"bOverrideDefaultValue": "STATINIT_Default",
+			"defaultValue": 0.15000000596046448,
+			"levelValues":
+			{
+				"externalCurve": "None",
+				"editorCurveData":
+				{
+					"keys": [],
+					"defaultValue": 3.4028234663852886e+38,
+					"preInfinityExtrap": "RCCE_Constant",
+					"postInfinityExtrap": "RCCE_Constant",
+					"keyHandlesToIndices":
+					{
+					}
+				}
+			}
+		}
+	],
+	"guid": "6064630135014949238",
+	"name": "Raven_Base",
+	"typeId": "409016"
+}

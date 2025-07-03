@@ -1,0 +1,83 @@
+{
+	"appliedStatus": 36,
+	"abilitiesToDisableId":
+	{
+		"guid": "6064631787339448346",
+		"typeId": "3031600211",
+		"name": "None"
+	},
+	"snareStrength":
+	{
+		"expression": ""
+	},
+	"bOverrideClientAuthMovement": true,
+	"originTransform":
+	{
+		"originLocation": "Source",
+		"originLocationSocket": "None",
+		"originOrientation": "Source",
+		"originOrientationSocket": "None",
+		"originScale": "World",
+		"bUseRelativeLocationExpression": false,
+		"relativeLocation":
+		{
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"relativeLocationExpression":
+		{
+			"expression": ""
+		},
+		"bUseRelativeRotationExpression": false,
+		"relativeRotation":
+		{
+			"pitch": 0,
+			"yaw": 0,
+			"roll": 0
+		},
+		"relativeRotationExpression":
+		{
+			"expression": ""
+		},
+		"bUseRelativeScaleExpression": false,
+		"relativeScale":
+		{
+			"x": 1,
+			"y": 1,
+			"z": 1
+		},
+		"relativeScaleExpression":
+		{
+			"expression": ""
+		}
+	},
+	"bCacheInitialOriginTransfrom": true,
+	"pushParameterization": "Force",
+	"pushMagnitude":
+	{
+		"expression": "const d = GetDistanceBetween(GetInstigator(),GetTarget());\r\nconst f = 1500000.0-d*d;\r\nSelectFloat(f > 0.0, f, 0.0)"
+	},
+	"pushDirection":
+	{
+		"x": 1,
+		"y": 0,
+		"z": 0
+	},
+	"pushDuration":
+	{
+		"expression": "1"
+	},
+	"pushArrivalDistance": 50,
+	"bEndPushAtArrival": true,
+	"animationRequest": "None",
+	"priority": 100,
+	"bFaceSource": false,
+	"bRestartMontageOnReapply": false,
+	"montagePaths": [],
+	"endMontage": [],
+	"endSectionName": "None",
+	"guid": "6064628928343572480",
+	"name": "Mage_ConeOfCold_Push",
+	"typeId": "3031600206"
+}

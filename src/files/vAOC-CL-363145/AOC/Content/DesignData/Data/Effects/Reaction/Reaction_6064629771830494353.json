@@ -1,0 +1,31 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 4,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "GetRecordTypeId(GetHitSourceRecord(GetHitEvent())) != GetReactionTypeId() && \r\nGetEffectCount(GetInstigator(), $Effect:Ranger_Disengage_Reinvigorating_ICD$) == 0 && \r\nGetSkillPurchased(GetInstigator(), $#30316003:108850029942393$, $#981011333:6064630649790267465$)"
+	},
+	"bEvaluateApplyingHit": false,
+	"instigator": "Owner",
+	"targetsBitmask": 1,
+	"reactHitsIds": [
+		{
+			"guid": "6064629771860706860",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"instigatorProcLimit": 1,
+	"globalProcLimit": 1,
+	"procReactOnApply": false,
+	"guid": "6064629771830494353",
+	"name": "Ranger_Disengage_Reinvigorating",
+	"typeId": "3031600202"
+}

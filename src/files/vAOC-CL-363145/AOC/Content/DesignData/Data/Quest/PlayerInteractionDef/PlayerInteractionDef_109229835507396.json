@@ -1,0 +1,69 @@
+{
+	"completionResponsesIds": [
+		{
+			"guid": "109229858576071",
+			"typeId": "1091110030",
+			"name": "MAAR_0005_PFB_AdvObj_PoisonWardogs"
+		},
+		{
+			"guid": "109314002671254",
+			"typeId": "1091110030",
+			"name": "MAAR_0005_TES_AdvObj_MixToxicIngredients"
+		},
+		{
+			"guid": "109229784782527",
+			"typeId": "1091110030",
+			"name": "MAAR_0005_PFB_RemoveItem_BaaltopToadstool"
+		},
+		{
+			"guid": "109229788452545",
+			"typeId": "1091110030",
+			"name": "MAAR_0005_PFB_RemoveItem_RottenSwine"
+		}
+	],
+	"channelDuration": 0,
+	"activePredicate":
+	{
+		"expression": ""
+	},
+	"cuePredicate":
+	{
+		"expression": "IsOnStoryArcQuest(GetPlayer(),\"MAQ_0005_PFB_Support_BearPoison\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0005_PrepareForBattle\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005_PrepareForBattle\",\"PoisonedWardogs\")"
+	},
+	"deleteOnCompletion": false,
+	"singleUse": false,
+	"alwaysShowUIPrompt": true,
+	"cancelChannelIfActivePredicateEverFails": true,
+	"channelModifierType": "NONE",
+	"rewardTableId":
+	{
+		"guid": "0",
+		"typeId": "1091110008",
+		"name": "None"
+	},
+	"startEffect": "None",
+	"endEffect": "None",
+	"failEffect": "None",
+	"successEffect": "/Game/DesignAssets/Population/NPC/Beast/ElderDragon/ElderDragon_Forest/Effects/Particles/NS_Poison_Dot.NS_Poison_Dot",
+	"cueEffect": "None",
+	"startSound": "None",
+	"endSound": "None",
+	"failSound": "None",
+	"successSound": "None",
+	"cueSound": "None",
+	"interactAnimTag": "None",
+	"deletionDelay": 0,
+	"activeCueEnabled": true,
+	"activeCueIgnoresActivePredicate": false,
+	"facePlayer": false,
+	"allowInCombat": true,
+	"interactRadius": 200,
+	"interactTolerance": 30,
+	"busyTime": 0.89999997615814209,
+	"clientBusyTime": 1,
+	"channelStartResponseIds": [],
+	"failResponsesIds": [],
+	"guid": "109229835507396",
+	"name": "MAPI_0005_PFB_PoisonTrough",
+	"typeId": "1091110031"
+}

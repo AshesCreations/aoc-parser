@@ -1,0 +1,18 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"04C1008246D54C2C7EB16CA81FBF2363\", \"So give me a weapon, and I\\'ll help!\")",
+	"nextNodeId":
+	{
+		"guid": "6064631749107187764",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "Player_ObjectiveStateEquals(GetPlayer(), \"NO_0100_03_FTUE_FindAWeapon\", EObjectiveState::Hidden) &&\r\n!Player_ObjectiveStateEquals(GetPlayer(), \"NO_0100_03_FTUE_FindAWeapon\", EObjectiveState::Complete)"
+	},
+	"choiceType": "Default",
+	"guid": "6064631749085954093",
+	"name": "DD_0100_EudoxiaAvenmoor_8",
+	"typeId": "1091110027"
+}

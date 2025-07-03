@@ -1,0 +1,46 @@
+{
+	"expression":
+	{
+		"expression": "//Event_GetNumNPCKills(\"npc.type.humanoid.goblins\") >= 30\r\n\r\n// the above doesn't compile, returning false -Bucky\r\nfalse"
+	},
+	"tickInterval": 5,
+	"maxActivationCount": 1,
+	"objectivesIds": [],
+	"triggersIds": [
+		{
+			"guid": "108324168226456",
+			"typeId": "23095135",
+			"name": "POIEventPrototype_PE0001_Battlefield_GoblinsvTrolls_Transition_ToTrollsComplete"
+		},
+		{
+			"guid": "108328135710378",
+			"typeId": "23095135",
+			"name": "POIEventPrototype_PE0001_Battlefield_GoblinsvTrolls_Broadcast_TrollsWin"
+		},
+		{
+			"guid": "108328247580332",
+			"typeId": "23095135",
+			"name": "POIEventPrototype_PE0001_Battlefield_GoblinsvTrolls_DespawnWave_G1"
+		},
+		{
+			"guid": "108328249218733",
+			"typeId": "23095135",
+			"name": "POIEventPrototype_PE0001_Battlefield_GoblinsvTrolls_DespawnWave_G2"
+		},
+		{
+			"guid": "108328250529454",
+			"typeId": "23095135",
+			"name": "POIEventPrototype_PE0001_Battlefield_GoblinsvTrolls_DespawnWave_G3"
+		}
+	],
+	"flowEditorNodeLocation":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"routePins": [],
+	"guid": "108324189853339",
+	"name": "POIEventPrototype_PE0001_Battlefield_GoblinsvTrolls_GoblinCount_Objective",
+	"typeId": "23095129"
+}

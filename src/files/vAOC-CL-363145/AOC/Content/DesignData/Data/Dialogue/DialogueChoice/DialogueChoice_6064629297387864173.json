@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"1852FF1C4C2ECBF9301EFEB812C7AD3B\", \"You\\'re the great Voodini!\")",
+	"nextNodeId":
+	{
+		"guid": "6064629297390878831",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MIA_0016_LOL_LastOfLyneth\",\"MIP_0016_LOL_Phase03\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MIQ_0016_ROK_ReturnOfTheKing\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MIQ_0016_ROK_ReturnOfTheKing\",\"KilledTheRingmaster\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MIQ_0016_ROK_ReturnOfTheKing\",\"KilledPerformers\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MIQ_0016_ROK_ReturnOfTheKing\",\"StoppedRitual\")"
+	},
+	"guid": "6064629297387864173",
+	"name": "MIDD_0016_ROK_GreatVoodini_4",
+	"typeId": "1091110027"
+}

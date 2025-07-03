@@ -1,0 +1,18 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"65CB23C84A5D8BB5225674A9FE772BD8\", \"Harold, I need to ask you to return the favor.\")",
+	"nextNodeId":
+	{
+		"guid": "6064632057968657079",
+		"typeId": "1091110028",
+		"name": "DD_0100_CommissionHarold_8"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "Player_HasCompletedCommission(GetPlayer(), \"NO_0102_01a_CompleteLionholdCommission\")\r\n&&\r\nPlayer_ObjectiveStateEquals(GetPlayer(), \"NO_0100_13_FTUE_FigureOutSponsorship\", EObjectiveState::Active)\r\n&&\r\n!Player_ObjectiveStateEquals(GetPlayer(), \"NA_0100_13f_HaroldSigned\", EObjectiveState::Complete)"
+	},
+	"choiceType": "Default",
+	"guid": "6064632057962955446",
+	"name": "DGN_CommissionHarold_Root_Choice_1",
+	"typeId": "1091110027"
+}

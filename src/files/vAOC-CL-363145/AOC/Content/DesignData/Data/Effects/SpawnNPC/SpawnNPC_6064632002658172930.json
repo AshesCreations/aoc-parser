@@ -1,0 +1,43 @@
+{
+	"populationSetId":
+	{
+		"guid": "6064630271532686698",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"actorToSpawn": "/Game/DesignAssets/Population/NPC/Monster/Construct/AnimatedObjects/AnimatedWeapon/AnimatedWeapon.AnimatedWeapon_C",
+	"bPersistAfterInstigatorsDeath": false,
+	"spawnLocationType": "LOC_RelativeOffset",
+	"location":
+	{
+		"x": 0,
+		"y": 300,
+		"z": 0
+	},
+	"bSpawnFacingInstigatorsRotation": true,
+	"rotation":
+	{
+		"pitch": 0,
+		"yaw": 0,
+		"roll": 0
+	},
+	"triggerType": 0,
+	"spawnRadius": 0,
+	"spawnExtent": 1000,
+	"trackSpawnedNpcOnInstigator": true,
+	"targetSpawnLocationContext":
+	{
+		"expression": "GetLocation(GetInstigatorThatSpawnedNpc()) + GetActorRight(GetInstigatorThatSpawnedNpc()) * 300."
+	},
+	"spawnExpressions": [],
+	"spawnedCharacterLevelOffset": 0,
+	"bSpecifyAbsoluteLevel": false,
+	"addThreatsFromCreator": true,
+	"copyThreatValuesFromCreator": false,
+	"blackboardKeysToSet":
+	{
+	},
+	"guid": "6064632002658172930",
+	"name": "AshenHauntMage_SummonWeapon_SpawnNPC",
+	"typeId": "3031600204"
+}

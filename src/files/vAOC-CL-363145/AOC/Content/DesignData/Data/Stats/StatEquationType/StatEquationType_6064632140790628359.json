@@ -1,0 +1,12 @@
+{
+	"equation":
+	{
+		"expression": "var mult = 0.0;\r\n\r\nconst finisher1 = GetSkillPurchased(GetInstigator(), $#30316003:6064630408247771149$, $#981011333:6064631439508323712$);\r\nconst finisher2 = GetSkillPurchased(GetInstigator(), $#30316003:6064630408247771149$, $#981011333:6064631439508913616$);\r\nconst finisher3 = GetSkillPurchased(GetInstigator(), $#30316003:6064630408247771149$, $#981011333:6064631439509241364$);\r\n\r\nif(finisher1){set mult=mult+0.05;}\r\nif(finisher2){set mult=mult+0.05;}\r\nif(finisher3){set mult=mult+0.05;}\r\n\r\nmult"
+	},
+	"constraints":
+	{
+	},
+	"guid": "6064632140790628359",
+	"name": "Weapon_Ranged_Wand_Passive_6+",
+	"typeId": "10516612381411112"
+}

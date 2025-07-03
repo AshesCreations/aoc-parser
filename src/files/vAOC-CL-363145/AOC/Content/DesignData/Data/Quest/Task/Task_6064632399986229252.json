@@ -1,0 +1,86 @@
+{
+	"type": "GoToArea",
+	"progressExpression":
+	{
+		"expression": ""
+	},
+	"nPCTaskIconOverrideId":
+	{
+		"guid": "0",
+		"typeId": "949952112329",
+		"name": "None"
+	},
+	"bAllowSatisfactionToRegress": false,
+	"completionQuantity": 1,
+	"tagQuery":
+	{
+		"tokenStreamVersion": 0,
+		"tagDictionary": [
+			{
+				"tagName": "SideQuest.QuestTarget.SQ_0010.TowerCultist"
+			}
+		],
+		"queryTokenStream": [ 0, 1, 2, 1, 0 ],
+		"userDescription": "Tower Cultist",
+		"autoDescription": " ALL( SideQuest.QuestTarget.SQ_0010.TowerCultist )"
+	},
+	"professionFilterIds": [],
+	"gatherableFilterIds": [],
+	"collectionFilterId":
+	{
+		"guid": "0",
+		"typeId": "1091110041",
+		"name": "None"
+	},
+	"collectionCount": 5,
+	"objectivesIds": [],
+	"bCheckKillLocation": false,
+	"displayLocation": [
+		{
+			"location":
+			{
+				"x": -973700,
+				"y": 740710,
+				"z": 12360
+			},
+			"radius": 3000,
+			"map_DisplayType": "ICON_AND_RADIUS",
+			"map_IconVisual":
+			{
+				"guid": "0",
+				"typeId": "949952112329",
+				"name": "None"
+			},
+			"map_DisplayName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"83615D2C4ED95479C851E0970ECEF5C7\", \"Sephillion Gate\")"
+		}
+	],
+	"location": [
+		{
+			"location":
+			{
+				"x": -973700,
+				"y": 740710,
+				"z": 12360
+			},
+			"radius": 1000,
+			"map_DisplayType": "ICON_AND_RADIUS",
+			"map_IconVisual":
+			{
+				"guid": "0",
+				"typeId": "949952112329",
+				"name": "None"
+			},
+			"map_DisplayName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"D5E984BF4C11FABACC8515A7353C9849\", \"Sephillion Gate\")"
+		}
+	],
+	"populationSetId":
+	{
+		"guid": "0",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"notifyType": "None",
+	"guid": "6064632399986229252",
+	"name": "SQT_0010_SliversOfThePast_ScoutSephillionPoint1",
+	"typeId": "1095125186"
+}

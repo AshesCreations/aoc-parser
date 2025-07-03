@@ -1,0 +1,29 @@
+{
+	"choiceText": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"5A46E7684F91F75C05A87F86ACE44464\", \"I voted in the election!\")",
+	"nextNodeId":
+	{
+		"guid": "6064632100770217989",
+		"typeId": "1091110028",
+		"name": "DD_ServiceNPC_NodeAdministrator_112"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064632100821467144",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064632100824219657",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "Player_ObjectiveStateEquals(GetPlayer(), \"CSQ_0150_FTUE_MakeYourVoiceHeard_1\", EObjectiveState::Complete)\r\n&& !Player_ObjectiveStateEquals(GetPlayer(), \"CSQ_0150_FTUE_MakeYourVoiceHeard_2\", EObjectiveState::Complete)"
+	},
+	"choiceType": "Default",
+	"guid": "6064632100651991044",
+	"name": "DD_ServiceNPC_NodeAdministrator_14_Choice_8",
+	"typeId": "1091110027"
+}

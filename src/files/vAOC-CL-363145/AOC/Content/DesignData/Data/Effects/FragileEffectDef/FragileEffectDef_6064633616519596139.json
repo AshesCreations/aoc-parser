@@ -1,0 +1,34 @@
+{
+	"effectFragilityType": "FRAGILITY_Tick",
+	"eventBindings":
+	{
+		"hitEvents": 0,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0,
+		"fishingEvents": 0,
+		"statEvents": 0
+	},
+	"evaluationTickFrequency": 2,
+	"shouldBreakEffectImmediately":
+	{
+		"expression": "GetEffectCount(GetSource(),$#30316002:6064633610708517442$) == 0"
+	},
+	"shouldEvaluateThresholdAccumulation":
+	{
+		"expression": ""
+	},
+	"effectBreakThreshold":
+	{
+		"expression": ""
+	},
+	"effectBreakThresholdAccumulationRate":
+	{
+		"expression": ""
+	},
+	"guid": "6064633616519596139",
+	"name": "Withered_Savage_Bloodcraze_Buff_FragileEffect",
+	"typeId": "30316112"
+}

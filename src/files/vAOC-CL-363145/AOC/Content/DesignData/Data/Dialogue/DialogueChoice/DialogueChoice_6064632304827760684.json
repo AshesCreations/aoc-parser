@@ -1,0 +1,22 @@
+{
+	"choiceText": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"3C16A58743ACFCD0E9AD348F06FEF2A3\", \"I haven\\'t found enough\")",
+	"nextNodeId":
+	{
+		"guid": "6064632304827760685",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "(Player_HasCommission (GetPlayer(), \"CSQ_RVR_BL_Daragal_TCS\") && !Player_ObjectiveStateEquals(GetPlayer(), \"SQO_RVR_BL_Daragal_Loot4\", EObjectiveState::Complete))"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064632304827760684",
+	"name": "SQ_Lionhold_0002_Fragments_Carole_4_Choice_2",
+	"typeId": "1091110027"
+}

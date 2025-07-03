@@ -1,0 +1,22 @@
+{
+	"statRefId":
+	{
+		"guid": "108986352686712",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"value":
+	{
+		"expression": "var dmg = 1.95;\r\n\r\nif (GetEffectCount(GetSource(), $#30316002:6064633446201622530$) >= 1){\r\n    set dmg = dmg * 1.3;\r\n}\r\n\r\ndmg * EvalFormula($#10516612381411113:6064629862506364928$)"
+	},
+	"bUseShieldAbsorb": false,
+	"shieldAbsorbPercentage":
+	{
+		"expression": ""
+	},
+	"bShowFloatingText": true,
+	"valueInputTerms": [],
+	"guid": "6064633429440200711",
+	"name": "Rafflesia_SeedCannon_Damage",
+	"typeId": "3031600201"
+}

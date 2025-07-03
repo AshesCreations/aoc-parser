@@ -1,0 +1,31 @@
+{
+	"expression":
+	{
+		"expression": "//Event_Stage_GetNumNPCKills(\"npc.type.humanoid.bandit\") > 1 && Event_GetNumPredicateActivations(3) < 1\r\n\r\n// the above doesn't compile, returning false -Bucky\r\nfalse"
+	},
+	"tickInterval": 5,
+	"maxActivationCount": 1,
+	"objectivesIds": [],
+	"triggersIds": [
+		{
+			"guid": "108205220910715",
+			"typeId": "23095135",
+			"name": "TestEvent_Broadcast_2ndKill"
+		},
+		{
+			"guid": "108237836473977",
+			"typeId": "23095135",
+			"name": "TestEvent_Transition_ToInactive"
+		}
+	],
+	"flowEditorNodeLocation":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"routePins": [],
+	"guid": "108205241489020",
+	"name": "TestEvent_Brodcast_2ndKill",
+	"typeId": "23095129"
+}

@@ -1,0 +1,103 @@
+{
+	"bAllowSatisfactionToRegress": false,
+	"parameterTypes": 1,
+	"objectiveType": "Kill",
+	"completionCriteria": [
+		{
+			"bOverrideCompletionValueWithExpression": true,
+			"completionValue": 100,
+			"operator": "GreaterThan",
+			"completionExpression":
+			{
+				"expression": "Event_GetNumNPCKills() >= 10"
+			},
+			"completionTriggersIds": [],
+			"bDisplayOnTracker": true,
+			"relevantTrackerIds": [],
+			"displayText": "NSLOCTEXT(\"\", \"C313D7A64FFB2EBC365CF8948F5FFFF7\", \"Defeat the Deserters\")",
+			"displayType": 0,
+			"displayCompletionValue": 100,
+			"bInvertProgressDisplay": false
+		}
+	],
+	"nPCObjectiveIconOverrideId":
+	{
+		"guid": "0",
+		"typeId": "949952112329",
+		"name": "None"
+	},
+	"progressExpression":
+	{
+		"expression": ""
+	},
+	"gameplayTagFilter":
+	{
+		"tokenStreamVersion": 0,
+		"tagDictionary": [
+			{
+				"tagName": "Quest.EventTarget.PE0003_BeyondCityLimits.Stage1"
+			},
+			{
+				"tagName": "affiliation.bandit"
+			}
+		],
+		"queryTokenStream": [ 0, 1, 2, 2, 0, 1 ],
+		"userDescription": "",
+		"autoDescription": " ALL( Quest.EventTarget.PE0003_BeyondCityLimits.Stage1, affiliation.bandit )"
+	},
+	"populationSetId":
+	{
+		"guid": "0",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"trackerId":
+	{
+		"guid": "0",
+		"typeId": "23095133",
+		"name": "None"
+	},
+	"interactablesIds": [],
+	"professionFilterIds": [],
+	"gatherableFilterIds": [],
+	"collectionFilterId":
+	{
+		"guid": "0",
+		"typeId": "1091110041",
+		"name": "None"
+	},
+	"collectionCount": 5,
+	"abilityRecordId":
+	{
+		"guid": "0",
+		"typeId": "30316001",
+		"name": "None"
+	},
+	"activityType": "NPCKill",
+	"activityQueryLocation":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"activityQueryExtent":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"bDisplayOnTracker": true,
+	"trackerText": "NSLOCTEXT(\"\", \"C313D7A64FFB2EBC365CF8948F5FFFF7\", \"Defeat the Deserters\")",
+	"displayType": 0,
+	"displayCompletionValue": 100,
+	"visibilityExpression":
+	{
+		"expression": ""
+	},
+	"visibilityOverridesTrackerFilter": false,
+	"trackersToDisplayToIds": [],
+	"relevantAlignmentsIds": [],
+	"guid": "109149269415544",
+	"name": "Event_PE_0003_BeyondCityLimits_Stage_1a_Transition_KillDeserters",
+	"typeId": "23095130"
+}

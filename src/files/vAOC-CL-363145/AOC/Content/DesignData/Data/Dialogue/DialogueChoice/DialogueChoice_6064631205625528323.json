@@ -1,0 +1,18 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"97726931424E6FC29027E08FBFCFE687\", \"OnQuest\")",
+	"nextNodeId":
+	{
+		"guid": "6064632184173953025",
+		"typeId": "1091110028",
+		"name": "CSQ_DD_0031_TBB_BatyardCaptain_FinnHogan_19"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "Player_HasCommission(GetPlayer(),\"CSQ_RVR_0031_TBB_TheBoneyardBrigade\")\r\n||\r\nPlayer_HasCommission(GetPlayer(),\"CSQ_RVR_0082_OGD_OperationGraveDigger\")\r\n||\r\nPlayer_HasCommission(GetPlayer(),\"CSQ_RVR_0031_ROR_RainOfRocks\")"
+	},
+	"choiceType": "Default",
+	"guid": "6064631205625528323",
+	"name": "CSQ_DD_0031_TBB_BatyardCaptain_FinnHogan_5",
+	"typeId": "1091110027"
+}

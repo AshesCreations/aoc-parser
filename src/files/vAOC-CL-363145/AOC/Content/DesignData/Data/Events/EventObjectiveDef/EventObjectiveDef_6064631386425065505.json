@@ -1,0 +1,183 @@
+{
+	"bAllowSatisfactionToRegress": false,
+	"parameterTypes": 2,
+	"objectiveType": "Kill",
+	"completionCriteria": [
+		{
+			"bOverrideCompletionValueWithExpression": true,
+			"completionValue": 0,
+			"operator": "GreaterThan",
+			"completionExpression":
+			{
+				"expression": "Event_GetActivity() >= 15"
+			},
+			"completionTriggersIds": [],
+			"bDisplayOnTracker": false,
+			"relevantTrackerIds": [],
+			"displayText": "",
+			"displayType": 0,
+			"displayCompletionValue": 0,
+			"bInvertProgressDisplay": false
+		}
+	],
+	"nPCObjectiveIconOverrideId":
+	{
+		"guid": "0",
+		"typeId": "949952112329",
+		"name": "None"
+	},
+	"progressExpression":
+	{
+		"expression": ""
+	},
+	"gameplayTagFilter":
+	{
+		"tokenStreamVersion": 0,
+		"tagDictionary": [],
+		"queryTokenStream": [],
+		"userDescription": "",
+		"autoDescription": ""
+	},
+	"populationSetId":
+	{
+		"guid": "0",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"trackerId":
+	{
+		"guid": "0",
+		"typeId": "23095133",
+		"name": "None"
+	},
+	"interactablesIds": [],
+	"professionFilterIds": [
+		{
+			"guid": "108752770061963",
+			"typeId": "8125613373123",
+			"name": "None"
+		}
+	],
+	"gatherableFilterIds": [
+		{
+			"guid": "6064631029846245378",
+			"typeId": "19846",
+			"name": "None"
+		},
+		{
+			"guid": "6064630921524806928",
+			"typeId": "19846",
+			"name": "None"
+		},
+		{
+			"guid": "6064629687960797184",
+			"typeId": "19846",
+			"name": "None"
+		},
+		{
+			"guid": "6064629585513349160",
+			"typeId": "19846",
+			"name": "None"
+		},
+		{
+			"guid": "6064629585512169511",
+			"typeId": "19846",
+			"name": "None"
+		},
+		{
+			"guid": "6064629879178133507",
+			"typeId": "19846",
+			"name": "None"
+		},
+		{
+			"guid": "6064630531912826881",
+			"typeId": "19846",
+			"name": "None"
+		},
+		{
+			"guid": "6064629585515839530",
+			"typeId": "19846",
+			"name": "None"
+		},
+		{
+			"guid": "6064629879170793472",
+			"typeId": "19846",
+			"name": "None"
+		},
+		{
+			"guid": "6064629879176626178",
+			"typeId": "19846",
+			"name": "None"
+		},
+		{
+			"guid": "6064630530455633926",
+			"typeId": "19846",
+			"name": "None"
+		},
+		{
+			"guid": "6064629585514528809",
+			"typeId": "19846",
+			"name": "None"
+		},
+		{
+			"guid": "6064629879173808129",
+			"typeId": "19846",
+			"name": "None"
+		},
+		{
+			"guid": "6064629879183376388",
+			"typeId": "19846",
+			"name": "None"
+		},
+		{
+			"guid": "6064629688860934144",
+			"typeId": "19846",
+			"name": "None"
+		},
+		{
+			"guid": "6064629585234755610",
+			"typeId": "19846",
+			"name": "None"
+		}
+	],
+	"collectionFilterId":
+	{
+		"guid": "0",
+		"typeId": "1091110041",
+		"name": "None"
+	},
+	"collectionCount": 5,
+	"abilityRecordId":
+	{
+		"guid": "0",
+		"typeId": "30316001",
+		"name": "None"
+	},
+	"activityType": "Gatherable",
+	"activityQueryLocation":
+	{
+		"x": -537558,
+		"y": 600038,
+		"z": 15382
+	},
+	"activityQueryExtent":
+	{
+		"x": 10000,
+		"y": 10000,
+		"z": 5000
+	},
+	"bDisplayOnTracker": false,
+	"trackerText": "",
+	"displayType": 0,
+	"displayCompletionValue": 0,
+	"visibilityExpression":
+	{
+		"expression": ""
+	},
+	"visibilityOverridesTrackerFilter": false,
+	"trackersToDisplayToIds": [],
+	"relevantAlignmentsIds": [],
+	"guid": "6064631386425065505",
+	"name": "ED_RVR_M901_ArgumentsSake_InstantiateEvent_Gather_Objective",
+	"typeId": "23095130"
+}

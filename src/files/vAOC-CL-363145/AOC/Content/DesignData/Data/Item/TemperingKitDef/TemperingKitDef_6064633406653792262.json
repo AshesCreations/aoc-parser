@@ -1,0 +1,65 @@
+{
+	"targetTag": [
+		{
+			"tagName": "Item.Gear.Armor"
+		}
+	],
+	"minimumTemperAmount":
+	{
+		"expression": "10"
+	},
+	"maximumTemperAmount":
+	{
+		"expression": "40"
+	},
+	"temperAmount":
+	{
+		"expression": "40 * RandDoubleRange(0.25, 1.0)"
+	},
+	"generalMaterialsRequiredByRarityIds":
+	{
+		"common":
+		{
+			"guid": "6064633406647173121",
+			"typeId": "9279173953",
+			"name": "None"
+		},
+		"uncommon":
+		{
+			"guid": "6064633406647304194",
+			"typeId": "9279173953",
+			"name": "None"
+		},
+		"rare":
+		{
+			"guid": "6064633406647369731",
+			"typeId": "9279173953",
+			"name": "None"
+		},
+		"heroic":
+		{
+			"guid": "6064633406647369731",
+			"typeId": "9279173953",
+			"name": "None"
+		},
+		"epic":
+		{
+			"guid": "6064633406652284933",
+			"typeId": "9279173953",
+			"name": "None"
+		},
+		"legendary":
+		{
+			"guid": "6064633406652284933",
+			"typeId": "9279173953",
+			"name": "None"
+		}
+	},
+	"copperCost":
+	{
+		"expression": "25"
+	},
+	"guid": "6064633406653792262",
+	"name": "DEBUG_TemperingKit",
+	"typeId": "939925647227"
+}

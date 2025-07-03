@@ -1,0 +1,33 @@
+{
+	"effectFragilityType": "FRAGILITY_Proc",
+	"eventBindings":
+	{
+		"hitEvents": 0,
+		"effectEvents": 0,
+		"abilityEvents": 4,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0,
+		"fishingEvents": 0
+	},
+	"evaluationTickFrequency": 0,
+	"shouldBreakEffectImmediately":
+	{
+		"expression": "const abil = GetConsumedAbility();\r\nabil == $#30316001:6064632785365307378$\r\n|| abil == $#30316001:6064632660685765390$\r\n|| abil == $#30316001:6064632756795284087$\r\n|| abil == $#30316001:6064632734895965171$\r\n|| abil == $#30316001:6064632699678436527$\r\n|| abil == $#30316001:6064632695086778048$\r\n|| abil == $#30316001:6064632756544145931$\r\n|| abil == $#30316001:6064632705945830213$\r\n|| abil == $#30316001:6064632699945038079$\r\n|| abil == $#30316001:6064632938413492774$"
+	},
+	"shouldEvaluateThresholdAccumulation":
+	{
+		"expression": ""
+	},
+	"effectBreakThreshold":
+	{
+		"expression": ""
+	},
+	"effectBreakThresholdAccumulationRate":
+	{
+		"expression": ""
+	},
+	"guid": "6064632910378244733",
+	"name": "Rogue_Thrash_Break",
+	"typeId": "30316112"
+}

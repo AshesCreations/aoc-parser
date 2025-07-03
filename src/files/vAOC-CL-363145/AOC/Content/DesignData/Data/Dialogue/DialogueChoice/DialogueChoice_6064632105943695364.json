@@ -1,0 +1,18 @@
+{
+	"choiceText": "NSLOCTEXT(\"[4BE4F0A16D08556ACD6685BF392E6719]\", \"08E57DB941C86150F33EE28C30D3B8B4\", \"On Quest\")",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "CSQ_0153_FTUE_EstablishingASettlement_NodeTraderGuy_3"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "Player_HasCommission(GetPlayer(), \"CSQ_0153_FTUE_EstablishingASettlement\") &&\r\n!Player_HasCompletedCommission(GetPlayer(), \"CSQ_0153_FTUE_EstablishingASettlement\")"
+	},
+	"choiceType": "Default",
+	"guid": "6064632105943695364",
+	"name": "CSQ_0153_FTUE_EstablishingASettlement_NodeTraderGuy_1_Choice_2",
+	"typeId": "1091110027"
+}

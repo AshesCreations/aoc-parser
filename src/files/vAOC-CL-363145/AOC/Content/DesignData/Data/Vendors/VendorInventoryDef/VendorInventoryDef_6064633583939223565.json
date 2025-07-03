@@ -1,0 +1,106 @@
+{
+	"listings": [
+		{
+			"itemId":
+			{
+				"guid": "6064632744542339072",
+				"typeId": "1091110003",
+				"name": "None"
+			},
+			"itemVariation":
+			{
+				"guid": "0",
+				"typeId": "1091111111",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": ""
+			},
+			"offers": []
+		},
+		{
+			"itemId":
+			{
+				"guid": "6064632744607809546",
+				"typeId": "1091110003",
+				"name": "None"
+			},
+			"itemVariation":
+			{
+				"guid": "0",
+				"typeId": "1091111111",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": ""
+			},
+			"offers": []
+		},
+		{
+			"itemId":
+			{
+				"guid": "6064632744576483332",
+				"typeId": "1091110003",
+				"name": "None"
+			},
+			"itemVariation":
+			{
+				"guid": "0",
+				"typeId": "1091111111",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": ""
+			},
+			"offers": []
+		},
+		{
+			"itemId":
+			{
+				"guid": "6064632744584937478",
+				"typeId": "1091110003",
+				"name": "None"
+			},
+			"itemVariation":
+			{
+				"guid": "0",
+				"typeId": "1091111111",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": ""
+			},
+			"offers": []
+		},
+		{
+			"itemId":
+			{
+				"guid": "6064632744593195016",
+				"typeId": "1091110003",
+				"name": "None"
+			},
+			"itemVariation":
+			{
+				"guid": "0",
+				"typeId": "1091111111",
+				"name": "None"
+			},
+			"availabilityPredicate":
+			{
+				"expression": ""
+			},
+			"offers": []
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "Node_HasServiceBuilding(Node_GetActorCityNode(GetInteractionTarget()),$#7823463:6064630605128147022$) == false\r\n&&\r\n(\r\nGetCurrentNode(GetPlayer()) == $#1323521343:6064633097318170624$\r\n|| \r\nGetCurrentNode(GetPlayer()) == $#1323521343:6064628934942261248$\r\n)"
+	},
+	"guid": "6064633583939223565",
+	"name": "Node_Vendor_PlayerCommodities_SAN_Djinna_Base",
+	"typeId": "3145314714"
+}

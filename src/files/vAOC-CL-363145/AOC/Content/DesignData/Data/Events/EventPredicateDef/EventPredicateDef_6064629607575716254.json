@@ -1,0 +1,30 @@
+{
+	"expression":
+	{
+		"expression": "(Event_GetActiveStageIndex() == 3 && Event_GetNumParticipants() == 0) && Event_GetStageTimer() > 600."
+	},
+	"maxActivationCount": 1,
+	"objectivesIds": [],
+	"triggersIds": [
+		{
+			"guid": "6064629607633322400",
+			"typeId": "23095135",
+			"name": "None"
+		},
+		{
+			"guid": "6064629614820065290",
+			"typeId": "23095135",
+			"name": "None"
+		}
+	],
+	"flowEditorNodeLocation":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"routePins": [],
+	"guid": "6064629607575716254",
+	"name": "ED_Oakenbane1_Bear_InProgress_EndFail",
+	"typeId": "23095129"
+}

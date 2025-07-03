@@ -1,0 +1,22 @@
+{
+	"choiceText": "",
+	"nextNodeId":
+	{
+		"guid": "6064632621290226581",
+		"typeId": "1091110028",
+		"name": "SQ_NPC_RVR_Batyard_Jackson_6"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "!Player_HasCompletedCommission(GetPlayer(),\"SQ_RVR_Batyard_GoblinCleanup\")&&Player_CanCompleteCommission(GetPlayer(), \"SQ_RVR_Batyard_GoblinCleanup\")"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064632621306872735",
+	"name": "SQ_NPC_RVR_Batyard_Jackson_7_Choice_1",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,61 @@
+{
+	"completionResponsesIds": [
+		{
+			"guid": "6064630174488461454",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064630174896292003",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"channelDuration": 0,
+	"activePredicate":
+	{
+		"expression": ""
+	},
+	"cuePredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MIA_0017_BOB_BalladOfTheBull\",\"MIP_0017_BOB_Phase02\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MIQ_0017_HOB_HornsOfTheBull\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MIQ_0017_HOB_HornsOfTheBull\",\"HaveSkullThunder\")"
+	},
+	"deleteOnCompletion": false,
+	"singleUse": false,
+	"alwaysShowUIPrompt": true,
+	"cancelChannelIfActivePredicateEverFails": true,
+	"channelModifierType": "NONE",
+	"rewardTableId":
+	{
+		"guid": "0",
+		"typeId": "1091110008",
+		"name": "None"
+	},
+	"startEffect": "None",
+	"endEffect": "None",
+	"failEffect": "None",
+	"successEffect": "/Game/Effects/FX_Environment/Corruption/Particles/FX_Corruption_newEvilFire.FX_Corruption_newEvilFire",
+	"cueEffect": "None",
+	"startSound": "None",
+	"endSound": "None",
+	"failSound": "None",
+	"successSound": "None",
+	"cueSound": "None",
+	"interactAnimTag": "None",
+	"deletionDelay": 0,
+	"activeCueEnabled": true,
+	"activeCueIgnoresActivePredicate": false,
+	"facePlayer": false,
+	"allowInCombat": true,
+	"spawnAtBottomCapsule": false,
+	"channelAnimation": "None",
+	"interactRadius": 200,
+	"interactTolerance": 30,
+	"busyTime": 0.89999997615814209,
+	"clientBusyTime": 1,
+	"channelStartResponseIds": [],
+	"failResponsesIds": [],
+	"guid": "6064630174872240290",
+	"name": "MIPI_0017_HOB_OBJ_SkullOfThunder",
+	"typeId": "1091110031"
+}

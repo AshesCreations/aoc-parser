@@ -1,0 +1,22 @@
+{
+	"statRefId":
+	{
+		"guid": "108986352686712",
+		"typeId": "10516612381411111",
+		"name": "Stat_Health"
+	},
+	"value":
+	{
+		"expression": "var Mult = 2.2;\r\n\r\nif(GetEffectCount(GetInstigator(),$#30316002:6064632242124300970$) > 0)\r\n{\r\n   set Mult = 4.5;\r\n}\r\n\r\nMult * EvalFormula($#10516612381411113:6064629862506364928$)"
+	},
+	"bUseShieldAbsorb": false,
+	"shieldAbsorbPercentage":
+	{
+		"expression": ""
+	},
+	"bShowFloatingText": true,
+	"valueInputTerms": [],
+	"guid": "6064632241368399874",
+	"name": "Tortoise_BodyRolling_Damage",
+	"typeId": "3031600201"
+}

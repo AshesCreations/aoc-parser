@@ -1,0 +1,22 @@
+{
+	"choiceText": "",
+	"nextNodeId":
+	{
+		"guid": "6064632745899265202",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "(!Player_HasCommission (GetPlayer(), \"SQ_RVR_Samias_Martin_BuiltOnBlood\") && !Player_HasCommission (GetPlayer(), \"SQ_RVR_Samias_Sabah_MonumentV\") && !Player_HasCompletedCommission(GetPlayer(), \"SQ_RVR_Samias_Martin_BuiltOnBlood\"))"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064632745899265206",
+	"name": "SQ_NOC_RVR_Samias_Miraleth_MartinSwift_2_Choice_2",
+	"typeId": "1091110027"
+}

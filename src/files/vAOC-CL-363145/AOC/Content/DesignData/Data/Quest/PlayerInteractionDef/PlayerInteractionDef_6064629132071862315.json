@@ -1,0 +1,56 @@
+{
+	"completionResponsesIds": [
+		{
+			"guid": "6064629132043026467",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"channelDuration": 0,
+	"activePredicate":
+	{
+		"expression": ""
+	},
+	"cuePredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MIA_0003_ROW_RelicOfWar\",\"MAP_0003_ROW_Phase02\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0003_RRR_RelicRaiderRivalry\",\"SpokeToSirKane\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0003_RRR_RelicRaiderRivalry\",\"SpokeToDaela\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0003_RRR_RelicRaiderRivalry\",\"GotMedalOfDefense\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0003_RRR_RelicRaiderRivalry\",\"GotMedalOfIntellect\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0003_RRR_RelicRaiderRivalry\",\"GotMedalOfEquitation\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MAQ_0003_RRR_RelicRaiderRivalry\",\"GotMedalOfFaith\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0003_RRR_RelicRaiderRivalry\",\"PlaceMedalOfFaith\")"
+	},
+	"deleteOnCompletion": false,
+	"singleUse": false,
+	"alwaysShowUIPrompt": true,
+	"cancelChannelIfActivePredicateEverFails": true,
+	"channelModifierType": "NONE",
+	"rewardTableId":
+	{
+		"guid": "0",
+		"typeId": "1091110008",
+		"name": "None"
+	},
+	"startEffect": "None",
+	"endEffect": "None",
+	"failEffect": "None",
+	"successEffect": "/Game/Effects/FX_PCs/Guardian/Particles/FX_Brace_ShieldSpark.FX_Brace_ShieldSpark",
+	"cueEffect": "None",
+	"startSound": "None",
+	"endSound": "None",
+	"failSound": "None",
+	"successSound": "None",
+	"cueSound": "None",
+	"interactAnimTag": "None",
+	"deletionDelay": 0,
+	"activeCueEnabled": true,
+	"activeCueIgnoresActivePredicate": false,
+	"facePlayer": false,
+	"allowInCombat": true,
+	"spawnAtBottomCapsule": false,
+	"channelAnimation": "None",
+	"interactRadius": 200,
+	"interactTolerance": 30,
+	"busyTime": 0.89999997615814209,
+	"clientBusyTime": 1,
+	"channelStartResponseIds": [],
+	"failResponsesIds": [],
+	"guid": "6064629132071862315",
+	"name": "MIPI_0003_RRR_OBJ_Statue_LordFrances",
+	"typeId": "1091110031"
+}

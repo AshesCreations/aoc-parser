@@ -1,0 +1,18 @@
+{
+	"choiceText": "NSLOCTEXT(\"[4BE4F0A16D08556ACD6685BF392E6719]\", \"C9AF15224C1ED1891F3070847E4EFEE1\", \"On Quest\")",
+	"nextNodeId":
+	{
+		"guid": "6064632099464609928",
+		"typeId": "1091110028",
+		"name": "CSQ_012X_FTUE_EstablishingASettlement_LionholdTrader_5"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "Player_HasCommission(GetPlayer(), \"CSQ_0153_FTUE_EstablishingASettlement\") &&\r\n!Player_HasCompletedCommission(GetPlayer(), \"CSQ_0153_FTUE_EstablishingASettlement\")"
+	},
+	"choiceType": "Default",
+	"guid": "6064632099466444938",
+	"name": "CSQ_0153_FTUE_EstablishingASettlement_LionholdTrader_1_Choice_2",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,18 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"78AE5A7240F4B3C409262BBA3A8EF203\", \"In Progress\")",
+	"nextNodeId":
+	{
+		"guid": "6064632077845921800",
+		"typeId": "1091110028",
+		"name": "SQ_BL_Daragal_Water_Dialog_26"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "Player_HasCommission (GetPlayer(), \"SQ_BL_Daragal_Denoument\") && !Player_HasCompletedCommission(GetPlayer(), \"SQ_BL_Daragal_Denoument\") && Player_HasItem(GetPlayer(), \"SQ_BL_Daragal_Water\")"
+	},
+	"choiceType": "Default",
+	"guid": "6064632077841203207",
+	"name": "SQ_BL_Daragal_Water_Dialog_2_Choice_5",
+	"typeId": "1091110027"
+}

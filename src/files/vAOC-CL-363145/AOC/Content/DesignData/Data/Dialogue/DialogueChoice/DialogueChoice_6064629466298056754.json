@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"2D9B18FE4AD2CCF1283DD8882FCE1621\", \"What bounty?\")",
+	"nextNodeId":
+	{
+		"guid": "6064629466300416051",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MIA_0020_KOC_KeepOnTheCrossroads\",\"MIP_0020_KOC_Phase03\")&&\r\n!IsOnStoryArcQuest(GetPlayer(),\"MIQ_0020_MOM_MasterOfMungle\")&&\r\nIsStoryArcQuestAvailable(GetPlayer(),\"MIQ_0020_MOM_MasterOfMungle\")"
+	},
+	"guid": "6064629466298056754",
+	"name": "MIDD_0020_MOM_BudgeMac_4",
+	"typeId": "1091110027"
+}

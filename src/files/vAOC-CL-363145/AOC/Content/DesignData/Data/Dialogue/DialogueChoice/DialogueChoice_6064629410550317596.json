@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"EE164C264C9E2BB243EB3A9D56D22899\", \"no quest\")",
+	"nextNodeId":
+	{
+		"guid": "6064629410550317604",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "!IsOnStoryArcQuest(GetPlayer(),\"SAQ_0008_BrotherhoodoftheMissingCloak\") && IsStoryArcQuestAvailable(GetPlayer(),\"SAQ_0008_BrotherhoodoftheMissingCloak\")"
+	},
+	"guid": "6064629410550317596",
+	"name": "MADD_0008_BrotherMindel_5",
+	"typeId": "1091110027"
+}

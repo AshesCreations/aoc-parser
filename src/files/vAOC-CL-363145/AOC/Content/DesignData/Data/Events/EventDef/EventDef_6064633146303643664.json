@@ -1,0 +1,116 @@
+{
+	"eventName": "NSLOCTEXT(\"[9596D562CCBE59D418AC165625780AA5]\", \"6641583647C68BE3A75AA2834F4A7378\", \"Communion\\'s Last Guard\")",
+	"gameplayTags":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"activationPredicatesIds": [
+		{
+			"guid": "6064633146303643665",
+			"typeId": "23095129",
+			"name": "None"
+		}
+	],
+	"minChallengeRating": 0,
+	"maxChallengeRating": 30,
+	"eventLevel": 1,
+	"eventType": 128,
+	"locationId":
+	{
+		"guid": "6064633146303643678",
+		"typeId": "5127371160",
+		"name": "None"
+	},
+	"desiredTimeSlot": "0001.01.01-00.00.00",
+	"frequency": 24,
+	"priority": 1,
+	"rewardTableId":
+	{
+		"guid": "0",
+		"typeId": "1091110040",
+		"name": "None"
+	},
+	"rewardPopulationSetId":
+	{
+		"guid": "0",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"startStageId":
+	{
+		"guid": "6064633146303643666",
+		"typeId": "23095131",
+		"name": "None"
+	},
+	"stagesIds": [
+		{
+			"guid": "6064633146303643666",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064633146303643667",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064633146303643668",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064633146303643669",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064633146303643671",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064633146303643673",
+			"typeId": "23095131",
+			"name": "None"
+		}
+	],
+	"interactVolumesIds": [],
+	"alignmentsIds": [],
+	"mapDisplayType": "Biome",
+	"mapEventIcon": "/Game/UI/Icons/Map/TUI_Icon_Map_Event_Active.TUI_Icon_Map_Event_Active",
+	"mapDisplayTrackerFiltersIds": [],
+	"bDisplayOnTracker": true,
+	"notificationRadius": 15000,
+	"mapRadiusMinumum": 1000,
+	"cooldownTimer": 3600,
+	"bDisabled": false,
+	"maxInstanceCount": 1,
+	"requiredMapName": "Verra_World_Master",
+	"comments": [],
+	"bIsTemplate": false,
+	"flowNodes": [
+		{
+			"flowType": "EventEntry",
+			"graphLocation":
+			{
+				"x": -800,
+				"y": 100
+			},
+			"id": 0
+		},
+		{
+			"flowType": "EventExit",
+			"graphLocation":
+			{
+				"x": 6000,
+				"y": 700
+			},
+			"id": 1
+		}
+	],
+	"bSkipCrashRecovery": false,
+	"guid": "6064633146303643664",
+	"name": "SAN_Pocket_Dungeon_Communion_EntranceWaveEvent",
+	"typeId": "23095125"
+}

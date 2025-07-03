@@ -1,0 +1,32 @@
+{
+	"effectFragilityType": "FRAGILITY_Proc",
+	"eventBindings":
+	{
+		"hitEvents": 2,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0
+	},
+	"evaluationTickFrequency": 0,
+	"shouldBreakEffectImmediately":
+	{
+		"expression": "false"
+	},
+	"shouldEvaluateThresholdAccumulation":
+	{
+		"expression": "GetStatModValue(GetHitEvent(), GetOwner(), $#10516612381411111:108986352686712$) < 0.0"
+	},
+	"effectBreakThreshold":
+	{
+		"expression": "GetStat(GetInstigator(),$#10516612381411111:108986356618873$) * 0.25"
+	},
+	"effectBreakThresholdAccumulationRate":
+	{
+		"expression": "-GetStatModValue(GetHitEvent(), GetOwner(), $#10516612381411111:108986352686712$)"
+	},
+	"guid": "6064629165877559296",
+	"name": "Fragile_MaxHealth_25%",
+	"typeId": "30316112"
+}

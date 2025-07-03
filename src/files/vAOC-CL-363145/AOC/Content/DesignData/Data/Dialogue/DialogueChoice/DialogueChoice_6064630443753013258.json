@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"DB5475A844008A012D8490BA49F40FCE\", \"I think Klin in the East Camp is the chieftain.\")",
+	"nextNodeId":
+	{
+		"guid": "6064630443765006355",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "!GetStoryArcQuestFlag(GetPlayer(), \"SAQ_0023_P01_Q02_GoblinHierarchy\", \"DecisionMade\")&&\r\nIsOnStoryArcQuest(GetPlayer(), \"SAQ_0023_P01_Q02_GoblinHierarchy\")"
+	},
+	"guid": "6064630443753013258",
+	"name": "DD_0023_RealGoblinCorrespondance_9",
+	"typeId": "1091110027"
+}

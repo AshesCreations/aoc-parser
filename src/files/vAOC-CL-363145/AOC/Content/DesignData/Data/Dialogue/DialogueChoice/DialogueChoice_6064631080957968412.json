@@ -1,0 +1,33 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"FF60631E4680120BD1A91DB3F85CD166\", \"Herne\\'s Hideworks\")",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064631081158312001",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064631085364412425",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "!Player_HasCommission(GetPlayer(),\"CSQ_RVR_TurnIn_Delivery_HuntersHill\")&&\r\n!Player_HasItem(GetPlayer(),\"CSQ_ITM_ArtisanCrates_HuntersHill\")"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064631080957968412",
+	"name": "CSQ_DD_0020_EOL_CaravanFreight_4",
+	"typeId": "1091110027"
+}

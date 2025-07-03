@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"FEF219A04F7A1ABD45CD34B9EDFBE72E\", \"I can help you.\")",
+	"nextNodeId":
+	{
+		"guid": "6064630361032097821",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0005A_FGG_ForGreaterGlory\",\"MAP_0005A_FGG_Phase02\")&&\r\n!IsOnStoryArcQuest(GetPlayer(),\"MAQ_0005A_FOF_TheFieldsOfFire\")&&\r\nIsStoryArcQuestAvailable(GetPlayer(),\"MAQ_0005A_FOF_TheFieldsOfFire\")\r\n"
+	},
+	"guid": "6064630361029017628",
+	"name": "MADD_0005A_FOF_Dial_FionaBriarmoor_4",
+	"typeId": "1091110027"
+}

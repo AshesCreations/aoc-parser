@@ -1,0 +1,22 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"A231EA6B4931005CC9557A818222F63A\", \"Complete CSQ_RVR_0110_EotGH_SwordEdgeToFlame\")",
+	"nextNodeId":
+	{
+		"guid": "6064632710930695977",
+		"typeId": "1091110028",
+		"name": "DD_0110_EotGH_Wiyakoni_3"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "Player_ObjectiveStateEquals(GetPlayer(), \"SQO_0110_EotGH_00_SpeakToWiyakoni\", EObjectiveState::Active) || Player_ObjectiveStateEquals(GetPlayer(), \"SQO_0110_EotGH_00_SpeakToWiyakoni\", EObjectiveState::Complete)"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064632710931154731",
+	"name": "DD_0110_EotGH_Wiyakoni_2_Choice_1",
+	"typeId": "1091110027"
+}

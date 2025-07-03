@@ -1,0 +1,24 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "False &&\r\nGetStatModValue(GetHitEvent(), $#10516612381411111:108986352686712$) < 0.0 &&\r\nRecordNameIs(GetHitRecord(GetHitEvent()), \"Buckys_Plague_DoT\") &&\r\nRandIntRange(0,1) == 0"
+	},
+	"bEvaluateApplyingHit": false,
+	"instigator": "Owner",
+	"targetsBitmask": 1,
+	"reactHitsIds": [],
+	"instigatorProcLimit": 0,
+	"globalProcLimit": 0,
+	"procReactOnApply": false,
+	"guid": "6064629327660846252",
+	"name": "Buckys_Plague_Reaction",
+	"typeId": "3031600202"
+}

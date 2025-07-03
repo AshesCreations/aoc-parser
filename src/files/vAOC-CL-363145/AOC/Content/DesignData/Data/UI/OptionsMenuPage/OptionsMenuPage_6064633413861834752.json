@@ -1,0 +1,331 @@
+{
+	"label": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"B94A4AD54B7DF834696C51A39D3BE742\", \"Graphics\")",
+	"categoryHeaderLabel": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"5CA6FB834DEF5C66059753AA81C812B9\", \"System  |  Graphics Settings\")",
+	"bUseScrollWindow": true,
+	"entryCategories": [
+		{
+			"label": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"7CFB1AF443374BB79E7B0FBE690BD204\", \"Recommended Settings\")",
+			"entryAlignment": "HAlign_Fill",
+			"entryWrapSize": 10,
+			"wrapBoxClass": "Standard",
+			"entries": [
+				{
+					"label": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"43612694454D65CA6A2B75B0FE0FDE8A\", \"Apply Recommended Settings\")",
+					"labelTextMinDesiredWidth": 1000,
+					"labelTextWrapWidth": 1000,
+					"type": "UserWidget",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"bApplyOnMouseRelease": false,
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"subheaderBorderStyle": "None",
+					"selectorWidth": 300,
+					"widgetClass": "/Game/UI/Widgets/Options/WBP_ApplyRecommendedSettings.WBP_ApplyRecommendedSettings_C",
+					"getterFunctionName": "GetApplyRecommendedSettings",
+					"setterFunctionName": "SetApplyRecommendedSettings",
+					"dependencyGetter": "None"
+				}
+			],
+			"subcategories": []
+		},
+		{
+			"label": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"3554FCBC4C8CD6C3015CDAB6D75FF29E\", \"Super Resolution Sampling\")",
+			"entryAlignment": "HAlign_Fill",
+			"entryWrapSize": 10,
+			"wrapBoxClass": "Standard",
+			"entries": [
+				{
+					"label": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"083FCB0041927EB58D1A69958127C076\", \"Super Resolution\")",
+					"labelTextMinDesiredWidth": 300,
+					"labelTextWrapWidth": 600,
+					"type": "Slider",
+					"sliderMinMax":
+					{
+						"x": 20,
+						"y": 100
+					},
+					"bApplyOnMouseRelease": false,
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"subheaderBorderStyle": "None",
+					"selectorWidth": 426,
+					"widgetClass": "None",
+					"getterFunctionName": "GetSuperResolutionSlider",
+					"setterFunctionName": "SetSuperResolutionSlider",
+					"dependencyGetter": "None"
+				},
+				{
+					"label": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"5FB52C2649C67A529FFB9C98E79F0A75\", \"Super Resolution Sampling\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 1000,
+					"type": "Dropdown",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"bApplyOnMouseRelease": false,
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"subheaderBorderStyle": "None",
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetSuperResolution",
+					"setterFunctionName": "SetSuperResolution",
+					"dependencyGetter": "None"
+				},
+				{
+					"label": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"1918F72F440D287E52A128A0B7D2EE7F\", \"DLSS Mode\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 640,
+					"type": "Dropdown",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"bApplyOnMouseRelease": false,
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"subheaderBorderStyle": "None",
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetDLSSModeDropdown",
+					"setterFunctionName": "SetDLSSModeDropdown",
+					"dependencyGetter": "None"
+				},
+				{
+					"label": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"1FFEEF33474B00CF86F505B38F35AC8D\", \"Frame Generation\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 640,
+					"type": "Dropdown",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"bApplyOnMouseRelease": false,
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"subheaderBorderStyle": "None",
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetSuperResolutionFrameGeneration",
+					"setterFunctionName": "SetSuperResolutionFrameGeneration",
+					"dependencyGetter": "None"
+				}
+			],
+			"subcategories": []
+		},
+		{
+			"label": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"0F7EF5E14C15C21ED59091BD66FF8AA1\", \"Quality & Performance\")",
+			"entryAlignment": "HAlign_Fill",
+			"entryWrapSize": 10,
+			"wrapBoxClass": "Standard",
+			"entries": [
+				{
+					"label": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"750ADC014A15AD8B97D4BD9F837578D8\", \"Graphics Quality\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 640,
+					"type": "Dropdown",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"bApplyOnMouseRelease": false,
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"subheaderBorderStyle": "None",
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetGraphicsQuality",
+					"setterFunctionName": "SetGraphicsQuality",
+					"dependencyGetter": "None"
+				},
+				{
+					"label": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"A857BF8E45A6F9D7694F78A4978D3FA2\", \"Global Illumination\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 640,
+					"type": "Dropdown",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"bApplyOnMouseRelease": false,
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"subheaderBorderStyle": "None",
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetGlobalIlluminationQuality",
+					"setterFunctionName": "SetGlobalIlluminationQuality",
+					"dependencyGetter": "None"
+				},
+				{
+					"label": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"B6AFBAD445A2E5967E4D05BA2B25D3E0\", \"View Distance\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 640,
+					"type": "Dropdown",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"bApplyOnMouseRelease": false,
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"subheaderBorderStyle": "None",
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetViewDistanceQuality",
+					"setterFunctionName": "SetViewDistanceQuality",
+					"dependencyGetter": "None"
+				},
+				{
+					"label": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"4B511DEE4FA5566C78715793B6584C86\", \"Anti-Aliasing\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 640,
+					"type": "Dropdown",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"bApplyOnMouseRelease": false,
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"subheaderBorderStyle": "None",
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetAntiAliasingQuality",
+					"setterFunctionName": "SetAntiAliasingQuality",
+					"dependencyGetter": "None"
+				},
+				{
+					"label": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"453B57DA4A50A2D99425558BB1C06325\", \"Post Processing\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 640,
+					"type": "Dropdown",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"bApplyOnMouseRelease": false,
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"subheaderBorderStyle": "None",
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetPostProcessQuality",
+					"setterFunctionName": "SetPostProcessQuality",
+					"dependencyGetter": "None"
+				},
+				{
+					"label": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"5A5D451D48BE346FD85BC4944374345F\", \"Shadows\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 640,
+					"type": "Dropdown",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"bApplyOnMouseRelease": false,
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"subheaderBorderStyle": "None",
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetShadowQuality",
+					"setterFunctionName": "SetShadowQuality",
+					"dependencyGetter": "None"
+				},
+				{
+					"label": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"FFF3A47847DE975AFEFE5ABCEA3D6C52\", \"Textures\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 640,
+					"type": "Dropdown",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"bApplyOnMouseRelease": false,
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"subheaderBorderStyle": "None",
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetTextureQuality",
+					"setterFunctionName": "SetTextureQuality",
+					"dependencyGetter": "None"
+				},
+				{
+					"label": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"171A3CB347BB4154B9DFD9A9A9F97DDE\", \"Effects\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 640,
+					"type": "Dropdown",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"bApplyOnMouseRelease": false,
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"subheaderBorderStyle": "None",
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetEffectsQuality",
+					"setterFunctionName": "SetEffectsQuality",
+					"dependencyGetter": "None"
+				},
+				{
+					"label": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"B31DCF95482E8CFBD38E5795D93F6B52\", \"Foliage\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 640,
+					"type": "Dropdown",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"bApplyOnMouseRelease": false,
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"subheaderBorderStyle": "None",
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetFoliageQuality",
+					"setterFunctionName": "SetFoliageQuality",
+					"dependencyGetter": "None"
+				}
+			],
+			"subcategories": []
+		}
+	],
+	"guid": "6064633413861834752",
+	"name": "Graphics",
+	"typeId": "3616673544"
+}

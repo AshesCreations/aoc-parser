@@ -1,0 +1,23 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"B390ECA9488BF2DE94A4DDB2228A1278\", \"I\\'ve visited your fisherman friend, and he wasn\\'t happy to see me.\")",
+	"nextNodeId":
+	{
+		"guid": "6064629382858408134",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064629370869842008",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "GetStoryArcQuestFlag(GetPlayer(),\"SAQ_0008_DescentToTheBackwaters\",\"KilledFisherman\")"
+	},
+	"guid": "6064629382858408145",
+	"name": "MADD_0008_WesleyEvvans_30",
+	"typeId": "1091110027"
+}

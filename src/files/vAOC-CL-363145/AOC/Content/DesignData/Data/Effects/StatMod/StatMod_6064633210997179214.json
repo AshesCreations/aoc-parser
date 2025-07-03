@@ -1,0 +1,22 @@
+{
+	"statRefId":
+	{
+		"guid": "109343399171796",
+		"typeId": "10516612381411111",
+		"name": "Stat_MoveSpeedMult"
+	},
+	"value":
+	{
+		"expression": "var ManaRegeneration = GetStat(GetTarget(), $#10516612381411111:109343399171796$);\r\nManaRegeneration * -1.0"
+	},
+	"bUseShieldAbsorb": false,
+	"shieldAbsorbPercentage":
+	{
+		"expression": ""
+	},
+	"bShowFloatingText": true,
+	"valueInputTerms": [],
+	"guid": "6064633210997179214",
+	"name": "Status_BirdmansCurse_ManaRegenerationReduction_StatMod",
+	"typeId": "3031600201"
+}

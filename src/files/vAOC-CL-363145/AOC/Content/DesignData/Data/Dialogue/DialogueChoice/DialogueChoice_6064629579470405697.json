@@ -1,0 +1,28 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"B9FCFF484BD4F4BFAAB80FB93693A73C\", \"I\\'ll take both.\")",
+	"nextNodeId":
+	{
+		"guid": "6064629579431673911",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064629579498913861",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064629579497537604",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "(GetStoryArcVariable(\"MA_0014_PutDownRoots\",\"HerbsCollected\") > 0.0)&&\r\n(GetStoryArcVariable(\"MA_0014_PutDownRoots\",\"MeatCollected\") > 0.0)"
+	},
+	"guid": "6064629579470405697",
+	"name": "DDR_0014_Lorne_89",
+	"typeId": "1091110027"
+}

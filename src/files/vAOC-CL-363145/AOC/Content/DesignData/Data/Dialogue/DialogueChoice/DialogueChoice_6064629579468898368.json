@@ -1,0 +1,23 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"3067B58042132C59A4443094CCBD17FB\", \"I\\'ll take the animal essence.\")",
+	"nextNodeId":
+	{
+		"guid": "6064629579431673911",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064629579498913861",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "GetStoryArcVariable(\"MA_0014_PutDownRoots\",\"MeatCollected\") > 0.0"
+	},
+	"guid": "6064629579468898368",
+	"name": "DDR_0014_Lorne_88",
+	"typeId": "1091110027"
+}

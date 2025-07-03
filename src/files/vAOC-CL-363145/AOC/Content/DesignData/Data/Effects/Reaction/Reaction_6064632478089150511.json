@@ -1,0 +1,32 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 4,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0,
+		"fishingEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "//AmpDebugBuff\r\n(GetRecordTypeId(GetHitSourceRecord(GetHitEvent())) == GetProjectileTypeId() ||\r\nGetRecordTypeId(GetHitSourceRecord(GetHitEvent())) == GetAbilityTypeId()) &&\r\nGetOwner() != GetTarget() &&\r\nGetOwner() != GetSource() &&\r\n!HitHasTag(GetHitEvent(), \"Element.Magical.Fire\") &&\r\n!HitHasTag(GetHitEvent(), \"ability.weaponcombo\")"
+	},
+	"bEvaluateApplyingHit": false,
+	"instigator": "Owner",
+	"targetsBitmask": 1,
+	"reactHitsIds": [
+		{
+			"guid": "6064632478081417261",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"instigatorProcLimit": 0,
+	"globalProcLimit": 0,
+	"procReactOnApply": false,
+	"guid": "6064632478089150511",
+	"name": "Mage_Amplification_Fire_DamageBuff_Clear",
+	"typeId": "3031600202"
+}

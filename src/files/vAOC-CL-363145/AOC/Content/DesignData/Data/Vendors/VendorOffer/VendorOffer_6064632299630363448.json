@@ -1,0 +1,12 @@
+{
+	"currencyValues":
+	{
+		"(Guid=6064629127873626112,TypeId=1011111289)":
+		{
+			"expression": "//This is to increase the price of consumables sold at Blackmarket vendor\r\nconst ItemLevel = GetItemLevel();\r\nconst ItemRarity = GetItemRarity();\r\nconst ItemBaseValue = EvalCurve($#10516612381411114:6064632294718898181$,Float(ItemLevel)) * EvalCurve($#10516612381411114:6064632293965955074$, Float(ItemRarity));\r\nconst SlotMod = \r\nSelectFloat(ItemTypeTagsContains(\"Item.Consumable\"), 1.0,\r\nSelectFloat(ItemTypeTagsContains(\"Item.Consumable.Potion\"), 1.0,\r\nSelectFloat(ItemTypeTagsContains(\"Item.Consumable.Food\"), 0.3,\r\nSelectFloat(ItemTypeTagsContains(\"Item.Consumable.Recipe\"), 2.0,\r\nSelectFloat(ItemTypeTagsContains(\"Item.Consumable.Enchanting\"), 5.0,\r\nSelectFloat(ItemTypeTagsContains(\"Item.Consumable.Drink\"), 0.2,\r\nSelectFloat(ItemTypeTagsContains(\"Item.Consumable.Scroll\"), 1.5,\r\nSelectFloat(ItemTypeTagsContains(\"Item.Consumable.Salve\"), 0.3,\r\nSelectFloat(ItemTypeTagsContains(\"Item.Consumable.Elixir\"), 2.0,\r\n9999999.0)))))))));\r\n\r\nItemBaseValue * SlotMod * 2"
+		}
+	},
+	"guid": "6064632299630363448",
+	"name": "BlackMarket_Upcharge",
+	"typeId": "3145314712"
+}

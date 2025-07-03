@@ -1,0 +1,109 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"314772BB417392F73C694A993AFA699C\", \"HASQUEST\")",
+	"nextNodeId":
+	{
+		"guid": "6064632388165828615",
+		"typeId": "1091110028",
+		"name": "SQ_0005_LionholdHiddenCacheBundle_4"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "Player_HasCommission(GetPlayer(), \"SQ_0008_LionholdHiddenCache_NestEgg\")&&!Player_HasCompletedCommission(GetPlayer(), \"SQ_0008_LionholdHiddenCache_NestEgg\")"
+	},
+	"requirements": [
+		{
+			"criteria": [
+				{
+					"elementType": "Objective",
+					"narrativeType": "StoryArc",
+					"commissionId":
+					{
+						"guid": "0",
+						"typeId": "280002",
+						"name": "None"
+					},
+					"storyArcQuestId":
+					{
+						"guid": "0",
+						"typeId": "1091110035",
+						"name": "None"
+					},
+					"objectiveId":
+					{
+						"guid": "6064632223293964288",
+						"typeId": "1091110420",
+						"name": "None"
+					},
+					"itemFilterId":
+					{
+						"guid": "0",
+						"typeId": "1091110041",
+						"name": "None"
+					},
+					"currencyDefId":
+					{
+						"guid": "0",
+						"typeId": "1011151289",
+						"name": "None"
+					},
+					"amountToQuery": 0,
+					"questState": "Unaccepted",
+					"objectiveState": "Complete",
+					"itemState": "InInventory",
+					"invert": false
+				}
+			]
+		},
+		{
+			"criteria": [
+				{
+					"elementType": "Objective",
+					"narrativeType": "StoryArc",
+					"commissionId":
+					{
+						"guid": "0",
+						"typeId": "280002",
+						"name": "None"
+					},
+					"storyArcQuestId":
+					{
+						"guid": "0",
+						"typeId": "1091110035",
+						"name": "None"
+					},
+					"objectiveId":
+					{
+						"guid": "6064632223293964288",
+						"typeId": "1091110420",
+						"name": "None"
+					},
+					"itemFilterId":
+					{
+						"guid": "0",
+						"typeId": "1091110041",
+						"name": "None"
+					},
+					"currencyDefId":
+					{
+						"guid": "0",
+						"typeId": "1011151289",
+						"name": "None"
+					},
+					"amountToQuery": 0,
+					"questState": "Unaccepted",
+					"objectiveState": "Complete",
+					"itemState": "InInventory",
+					"invert": false
+				}
+			]
+		}
+	],
+	"choiceType": "Default",
+	"guid": "6064632388165828613",
+	"name": "SQ_0008_Lionhold_HIddenCache_Cache_2_Choice_2",
+	"typeId": "1091110027"
+}

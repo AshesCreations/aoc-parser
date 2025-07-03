@@ -1,0 +1,12 @@
+{
+	"equation":
+	{
+		"expression": "const gatherQuantRating = GetTerm($#10516612381411115:6064630327859871745$);\r\nconst profQuantRating   = GetTerm($#10516612381411115:6064632378572341252$);\r\nconst toolQuantRating   = GetTerm($#10516612381411115:6064632378780221454$);\r\nconst allRating = gatherQuantRating + profQuantRating + toolQuantRating;\r\nconst chance = RandDoubleRange(0.0, 100.00);\r\nconst succeed = chance < Evalcurve($#10516612381411114:6064631630329741312$, allRating);\r\nconst rarity = GetRolledItemQuality();\r\n\r\nvar MaxQuant = 0;\r\nvar Result = 0;\r\n\r\nif (succeed){\r\n    if(rarity == 0){\r\n        set MaxQuant = int(Evalcurve($#10516612381411114:6064631664383426567$, allRating));         \r\n    }\r\n    if(rarity == 1){\r\n        set MaxQuant = int(Evalcurve($#10516612381411114:6064631664383492104$, allRating));         \r\n    }\r\n    if(rarity == 2){\r\n        set MaxQuant = int(Evalcurve($#10516612381411114:6064631664383623177$, allRating));        \r\n    }\r\n    if(rarity == 3){\r\n        set MaxQuant = int(Evalcurve($#10516612381411114:6064631664383754250$, allRating));         \r\n    }\r\n    if(rarity == 4){\r\n        set MaxQuant = int(Evalcurve($#10516612381411114:6064631664385982475$, allRating));          \r\n    }\r\n    if(rarity == 5){\r\n        set MaxQuant = int(Evalcurve($#10516612381411114:6064631664386048012$, allRating));          \r\n    }\r\n    if(rarity == 6){\r\n        set MaxQuant = 1;          \r\n    }\r\n    set Result = RandIntRange(1, MaxQuant);\r\n}\r\n\r\nResult"
+	},
+	"constraints":
+	{
+	},
+	"guid": "6064630356432257071",
+	"name": "Artisan_Gathering_Quantity",
+	"typeId": "10516612381411112"
+}

@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"CA46618845077D58B297158892F0FFD7\", \"Why were you out here in the first place?\")",
+	"nextNodeId":
+	{
+		"guid": "6064629348984226080",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsOnStoryArcQuest(GetPlayer(),\"SAQ_0019_Bearberry\")&&!GetStoryArcQuestFlag(GetPlayer(),\"SAQ_0019_Bearberry\",\"BearberryBoy\")"
+	},
+	"guid": "6064629348966007067",
+	"name": "0019_P1_Tomas_1_24",
+	"typeId": "1091110027"
+}

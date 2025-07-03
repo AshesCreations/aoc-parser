@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"8E8935F6466AC096972C8F9C8B7EAF53\", \"I\\'m ready for action!\")",
+	"nextNodeId":
+	{
+		"guid": "6064630338799861762",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0005A_FGG_ForGreaterGlory\",\"MAP_0005A_FGG_Phase01\")&&\r\n!IsOnStoryArcQuest(GetPlayer(),\"MAQ_0005A_MOK_TheMistsOfKorraLoch\")&&\r\n!IsStoryArcQuestAvailable(GetPlayer(),\"MAQ_0005A_TIG_TroubleInGrazeland\")&&\r\nIsStoryArcQuestAvailable(GetPlayer(),\"MAQ_0005A_MOK_TheMistsOfKorraLoch\")"
+	},
+	"guid": "6064630412666085679",
+	"name": "MADD_0005A_TIG_NPC_OrrikBlackwood_Phase01_40",
+	"typeId": "1091110027"
+}

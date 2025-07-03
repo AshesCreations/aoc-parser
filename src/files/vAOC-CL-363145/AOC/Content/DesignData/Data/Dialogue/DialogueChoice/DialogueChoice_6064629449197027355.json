@@ -1,0 +1,24 @@
+{
+	"choiceText": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"89898CD24F4EFC5EACACA086411BA7BB\", \"I will go to the commission board and complete a mayoral commission.\")",
+	"nextNodeId":
+	{
+		"guid": "6064629444710564425",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064632110916239371",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "!(Player_HasCommission(GetPlayer(), \"CSQ_0152_FTUE_HelpingOutAroundTown\") ||\r\nPlayer_HasCompletedCommission(GetPlayer(), \"CSQ_0152_FTUE_HelpingOutAroundTown\"))"
+	},
+	"choiceType": "Default",
+	"guid": "6064629449197027355",
+	"name": "DD_ServiceNPC_NodeAdministrator_75",
+	"typeId": "1091110027"
+}

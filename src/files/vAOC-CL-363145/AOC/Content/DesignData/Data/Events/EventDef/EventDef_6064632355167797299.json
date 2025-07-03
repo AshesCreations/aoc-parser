@@ -1,0 +1,131 @@
+{
+	"eventName": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"370B9B8F49FA3B3C3B256094B0F040B4\", \"Example Event\")",
+	"gameplayTags":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"activationPredicatesIds": [
+		{
+			"guid": "6064632355664953433",
+			"typeId": "23095129",
+			"name": "None"
+		}
+	],
+	"minChallengeRating": 0,
+	"maxChallengeRating": 30,
+	"eventType": 128,
+	"locationId":
+	{
+		"guid": "6064632355405758535",
+		"typeId": "5127371160",
+		"name": "None"
+	},
+	"desiredTimeSlot": "0001.01.01-00.00.00",
+	"frequency": 24,
+	"priority": 1,
+	"rewardTableId":
+	{
+		"guid": "0",
+		"typeId": "1091110040",
+		"name": "None"
+	},
+	"rewardPopulationSetId":
+	{
+		"guid": "0",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"startStageId":
+	{
+		"guid": "6064632355186737204",
+		"typeId": "23095131",
+		"name": "None"
+	},
+	"stagesIds": [
+		{
+			"guid": "6064632355186737204",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064632355207381046",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064632355217145918",
+			"typeId": "23095131",
+			"name": "None"
+		}
+	],
+	"interactVolumesIds": [],
+	"alignmentsIds": [],
+	"mapDisplayType": "Biome",
+	"mapEventIcon": "/Game/UI/Widgets/Narrative/Textures/TUI_Icon_Event_PvE.TUI_Icon_Event_PvE",
+	"bDisplayOnTracker": true,
+	"notificationRadius": 15000,
+	"mapRadiusMinumum": 1000,
+	"cooldownTimer": 300,
+	"bDisabled": true,
+	"maxInstanceCount": 1,
+	"requiredMapName": "",
+	"comments": [
+		{
+			"commentGuid": "6064632355722297442",
+			"comment": "The Wolf must be killed within 10s",
+			"location":
+			{
+				"x": -3447.3549899377936,
+				"y": -2205.4670871687513,
+				"z": 0
+			},
+			"size":
+			{
+				"x": 347.77777886390686,
+				"y": 422.22222661972046,
+				"z": 0
+			},
+			"color":
+			{
+				"r": 1,
+				"g": 1,
+				"b": 1,
+				"a": 1
+			}
+		}
+	],
+	"bIsTemplate": true,
+	"flowNodes": [
+		{
+			"flowType": "EventEntry",
+			"graphLocation":
+			{
+				"x": -3739.4444419250453,
+				"y": -1937.7778125195591
+			},
+			"id": 0
+		},
+		{
+			"flowType": "EventExit",
+			"graphLocation":
+			{
+				"x": -3.3999999521443642e+38,
+				"y": -3.3999999521443642e+38
+			},
+			"id": 1
+		},
+		{
+			"flowType": "EventExit",
+			"graphLocation":
+			{
+				"x": -1917.7777906479648,
+				"y": -1737.7778149865287
+			},
+			"id": 3
+		}
+	],
+	"guid": "6064632355167797299",
+	"name": "._EVENT_GUIDE_EXAMPLE_.",
+	"typeId": "23095125"
+}

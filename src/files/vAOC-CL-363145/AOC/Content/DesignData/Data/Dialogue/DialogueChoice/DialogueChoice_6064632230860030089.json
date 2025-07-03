@@ -1,0 +1,37 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"C6F97571404F6EF08C3A74A5EDB6B67E\", \"[Trace with the Oil]\")",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064632230249365587",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064632230912393359",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064632230226362443",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "Player_HasItem(GetPlayer(),\"CSQ_ITM_0081_OCC_OilOfSeventhSight\")&&\r\nPlayer_ObjectiveStateEquals(GetPlayer(),\"CSQ_NOB_0081_OCC_EOB_TraceSeal_Revenge_EastSkyHall\", EObjectiveState::Active)"
+	},
+	"narrativeRequirementsIds": [],
+	"choiceType": "Default",
+	"guid": "6064632230860030089",
+	"name": "CSQ_DD_0081_OCC_EOB_SealOfRevenge_EastSkyHall_2_Choice_1",
+	"typeId": "1091110027"
+}

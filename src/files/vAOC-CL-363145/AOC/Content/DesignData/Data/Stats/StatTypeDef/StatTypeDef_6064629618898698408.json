@@ -1,0 +1,61 @@
+{
+	"displayName": "NSLOCTEXT(\"\", \"A93021B246BBA1434EE242A588AE277B\", \"Magical Disable Duration\")",
+	"description": "NSLOCTEXT(\"[1909495A4C2095068D406C9D33F90055]\", \"E20EF4B44D13DE4E01FD778C9D8B7A05\", \"Increases duration of outgoing magical disabling effects by a multiplier of their base duration\")",
+	"bHidden": false,
+	"gameplayType": "Type_Combat",
+	"bHasWaterfallStatsUI": false,
+	"waterfallStatsUIIds": [],
+	"bDisplayAsPercentage": true,
+	"statType": "Type_Float",
+	"bClampStatFinalValue": false,
+	"bMultiplyStatMods": false,
+	"bMultiplyCompliment": false,
+	"base":
+	{
+		"expression": "const base = GetStat(GetOwner(), $#10516612381411111:6064629614175323427$);\r\nconst baseRating = GetStat(GetInstigator(), $#10516612381411111:6064629614179976484$);\r\nconst coeff = EvalFormula($#10516612381411113:6064633169562959878$);\r\nconst baseAdj = base - baseRating / (baseRating + coeff);\r\nconst rating = baseRating + GetStat(GetInstigator(), $#10516612381411111:6064629618899943593$);\r\nbaseAdj + rating / (rating + coeff)"
+	},
+	"waterfallStatsBaseIds": [
+		{
+			"guid": "6064629614175323427",
+			"typeId": "10516612381411111",
+			"name": "None"
+		},
+		{
+			"guid": "6064629618899943593",
+			"typeId": "10516612381411111",
+			"name": "None"
+		}
+	],
+	"valueMin":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMinIds": [],
+	"valueMax":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMaxIds": [],
+	"regenRate":
+	{
+		"expression": ""
+	},
+	"waterfallStatsRegenIds": [],
+	"bRegenWhileDead": false,
+	"bRecalculateOnCombatState": false,
+	"onSpawn": "Reset_None",
+	"onDeath": "Reset_None",
+	"onRevive": "Reset_None",
+	"bPersistValue": false,
+	"replication": 1,
+	"shieldStatId":
+	{
+		"guid": "0",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"grantedEffects": [],
+	"guid": "6064629618898698408",
+	"name": "MagicalDisableDuration",
+	"typeId": "10516612381411111"
+}

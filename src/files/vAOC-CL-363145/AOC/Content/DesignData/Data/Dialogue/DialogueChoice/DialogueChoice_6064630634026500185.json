@@ -1,0 +1,22 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"D47E884944B399921757EB8939596517\", \"I\\'d Like to create a guild!\")",
+	"nextNodeId":
+	{
+		"guid": "6064632705082916878",
+		"typeId": "1091110028",
+		"name": "DD_ServiceNPC_GuildAdministrator_84"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "Guild_IsMember(GetPlayer()) == false"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064630634026500185",
+	"name": "DD_ServiceNPC_GuildAdministrator_78",
+	"typeId": "1091110027"
+}

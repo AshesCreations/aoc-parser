@@ -1,0 +1,28 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"32338CD24280052311A464ADF21C315B\", \"[Insert Red Crystal]\")",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064629364347502634",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064629364251557913",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MIA_0015_TPT_ThePhantomTower\",\"MIP_0015_TPT_Phase01\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MIQ_0015_PTS_PartingTheSeas\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MIQ_0015_PTS_PartingTheSeas\",\"GotRedCrystal\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MIQ_0015_PTS_PartingTheSeas\",\"PlacedRedDisplacer\")"
+	},
+	"guid": "6064629365331722351",
+	"name": "MIDD_0015_PTS_IntraSphere_9",
+	"typeId": "1091110027"
+}

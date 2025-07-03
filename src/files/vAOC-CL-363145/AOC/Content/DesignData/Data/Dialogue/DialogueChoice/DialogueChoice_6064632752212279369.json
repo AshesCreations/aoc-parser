@@ -1,0 +1,28 @@
+{
+	"choiceText": "",
+	"nextNodeId":
+	{
+		"guid": "6064632768124289050",
+		"typeId": "1091110028",
+		"name": "SQ_RVR_NPC_Samias_Miraleth_Sabah_44"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064632752234954828",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "(!Player_HasCompletedCommission(GetPlayer(), \"SQ_RVR_Samias_Sabah_MonumentV\") && Player_HasCommission (GetPlayer(), \"SQ_RVR_Samias_Sabah_MonumentV\") && Player_ObjectiveStateEquals(GetPlayer(), \"NarrativeObjective_RVR_Samias_Miraleth_MonumentValley2\", EObjectiveState::Complete))"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064632752212279369",
+	"name": "SQ_RVR_NPC_Samias_Miraleth_Sabah_36_Choice_1",
+	"typeId": "1091110027"
+}

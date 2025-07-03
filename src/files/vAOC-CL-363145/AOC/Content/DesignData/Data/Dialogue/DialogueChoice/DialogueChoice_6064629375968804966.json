@@ -1,0 +1,28 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"643D38044085EDE36B34F5BC65837575\", \"(Take the lamp)\")",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064629375995019371",
+			"typeId": "1091110030",
+			"name": "None"
+		},
+		{
+			"guid": "6064629375492358151",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MIA_0015_TPT_ThePhantomTower\",\"MIP_0015_TPT_Phase02\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MIQ_0015_AAV_AnAncientVisitor\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MIQ_0015_AAV_AnAncientVisitor\",\"AskedCodex\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MIQ_0015_AAV_AnAncientVisitor\",\"GotLampMalgus\")"
+	},
+	"guid": "6064629375968804966",
+	"name": "MIDD_0015_AAV_LampOfMalgus_4",
+	"typeId": "1091110027"
+}

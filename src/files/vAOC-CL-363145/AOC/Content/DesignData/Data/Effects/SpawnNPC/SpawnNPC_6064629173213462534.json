@@ -1,0 +1,42 @@
+{
+	"populationSetId":
+	{
+		"guid": "6064630271532686710",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"actorToSpawn": "/Game/DesignAssets/Population/NPC/Monster/Plantoid/Mycellion/CyclopsShaman_TotemTreeMushroom.CyclopsShaman_TotemTreeMushroom_C",
+	"bPersistAfterInstigatorsDeath": false,
+	"spawnLocationType": "LOC_Absolute",
+	"location":
+	{
+		"x": 600,
+		"y": 0,
+		"z": 1000
+	},
+	"bSpawnFacingInstigatorsRotation": false,
+	"rotation":
+	{
+		"pitch": 0,
+		"yaw": 0,
+		"roll": 0
+	},
+	"triggerType": 0,
+	"spawnRadius": 0,
+	"spawnExtent": 1000,
+	"trackSpawnedNpcOnInstigator": true,
+	"targetSpawnLocationContext":
+	{
+		"expression": "GetLocation(GetInstigatorThatSpawnedNpc()) + GetActorForward(GetInstigatorThatSpawnedNpc()) * (RandIntRange(1200, 2300) * -1.0) + Vector(0.0,0.0,-400.0)"
+	},
+	"spawnExpressions": [],
+	"spawnedCharacterLevel": 0,
+	"addThreatsFromCreator": true,
+	"copyThreatValuesFromCreator": false,
+	"blackboardKeysToSet":
+	{
+	},
+	"guid": "6064629173213462534",
+	"name": "SpawnNPC_Cyclops_TotemTreeMushroom2",
+	"typeId": "3031600204"
+}

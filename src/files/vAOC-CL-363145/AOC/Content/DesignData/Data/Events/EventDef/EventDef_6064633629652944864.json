@@ -1,0 +1,183 @@
+{
+	"eventName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"FBFE0F1A4216AE0FD2990A88D7E36B6B\", \"Rotten Ripple\")",
+	"gameplayTags":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"activationPredicatesIds": [
+		{
+			"guid": "6064633629688137744",
+			"typeId": "23095129",
+			"name": "None"
+		}
+	],
+	"minChallengeRating": 10,
+	"maxChallengeRating": 15,
+	"eventLevel": 13,
+	"eventType": 1,
+	"locationId":
+	{
+		"guid": "6064633629652944865",
+		"typeId": "5127371160",
+		"name": "None"
+	},
+	"desiredTimeSlot": "0001.01.01-00.00.00",
+	"frequency": 24,
+	"priority": 1,
+	"rewardTableId":
+	{
+		"guid": "6064630474023174148",
+		"typeId": "1091110040",
+		"name": "None"
+	},
+	"rewardPopulationSetId":
+	{
+		"guid": "6064631470736670787",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"startStageId":
+	{
+		"guid": "6064633629652944866",
+		"typeId": "23095131",
+		"name": "None"
+	},
+	"stagesIds": [
+		{
+			"guid": "6064633629652944866",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064633629652944870",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064633629652944875",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064633629652944879",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064633629652944890",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064633629652944895",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064633629652944898",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064633629652944905",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064633629652944908",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064633629652944911",
+			"typeId": "23095131",
+			"name": "None"
+		}
+	],
+	"interactVolumesIds": [],
+	"alignmentsIds": [],
+	"mapDisplayType": "Biome",
+	"mapEventIcon": "/Game/UI/Icons/Map/TUI_Icon_Map_Event_Active.TUI_Icon_Map_Event_Active",
+	"mapDisplayTrackerFiltersIds": [],
+	"bDisplayOnTracker": true,
+	"notificationRadius": 10000,
+	"mapRadiusMinumum": 995,
+	"cooldownTimer": 14400,
+	"bDisabled": false,
+	"maxInstanceCount": 1,
+	"requiredMapName": "Verra_World_Master",
+	"comments": [
+		{
+			"commentGuid": "6064631194535133267",
+			"comment": "Interact with Crates",
+			"location":
+			{
+				"x": -1693.0301007358009,
+				"y": 442.7994528536081,
+				"z": 0
+			},
+			"size":
+			{
+				"x": 411.48147535324097,
+				"y": 192.59259283542633,
+				"z": 0
+			},
+			"color":
+			{
+				"r": 0.5,
+				"g": 0.5,
+				"b": 0.5,
+				"a": 0.5
+			}
+		},
+		{
+			"commentGuid": "6064631194555908180",
+			"comment": "Spawn Boss & Wait",
+			"location":
+			{
+				"x": 987.24188466130738,
+				"y": 1209.6512062961699,
+				"z": 0
+			},
+			"size":
+			{
+				"x": 412.96295547485352,
+				"y": 192.59259307384491,
+				"z": 0
+			},
+			"color":
+			{
+				"r": 0.5,
+				"g": 0.5,
+				"b": 0.5,
+				"a": 0.5
+			}
+		}
+	],
+	"bIsTemplate": false,
+	"flowNodes": [
+		{
+			"flowType": "EventEntry",
+			"graphLocation":
+			{
+				"x": -1402.8841937977641,
+				"y": 187.01572053732184
+			},
+			"id": 0
+		},
+		{
+			"flowType": "EventExit",
+			"graphLocation":
+			{
+				"x": -463.47535302484937,
+				"y": 3061.0977917598834
+			},
+			"id": 1
+		}
+	],
+	"bSkipCrashRecovery": false,
+	"guid": "6064633629652944864",
+	"name": "EVT_RVR_0002_RottenRipple",
+	"typeId": "23095125"
+}

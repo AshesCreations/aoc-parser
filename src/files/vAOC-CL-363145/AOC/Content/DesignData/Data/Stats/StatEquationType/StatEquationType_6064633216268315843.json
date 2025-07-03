@@ -1,0 +1,12 @@
+{
+	"equation":
+	{
+		"expression": "// this is a generic formula to reduce the power of something based on how many targets are hit\r\n// currently used by fighter blood fusion, rogue mana poison, bard mana saga statmods\r\n\r\n// weapon attacks dont need as much of a reduction because they already have an AoE scaling reduction\r\nconst weaponAttack = HitHasTag(GetHitRecord(GetHitEvent()), \"ability.weaponcombo\");\r\nconst reduxPerTarget = SelectFloat(weaponAttack, 0.15, 0.5);\r\nconst numTargets = Max(GetNumTargets(GetHitEvent()),1);\r\nconst div = 1.0 + reduxPerTarget * (numTargets-1); // reduced for targets beyond first\r\n1.0 / div // this way its a nice easy multiplier"
+	},
+	"constraints":
+	{
+	},
+	"guid": "6064633216268315843",
+	"name": "Ability_TargetCountScaling",
+	"typeId": "10516612381411112"
+}

@@ -1,0 +1,30 @@
+{
+	"expression":
+	{
+		"expression": "Event_GetBoolVar(\"IsStartTimer\") &&\r\n(Event_GetStageTimer() - Event_GetFloatVar(\"TimerStart\") <= 5.)"
+	},
+	"maxActivationCount": -1,
+	"objectivesIds": [],
+	"triggersIds": [
+		{
+			"guid": "6064631662986919939",
+			"typeId": "23095135",
+			"name": "None"
+		},
+		{
+			"guid": "6064631664560766983",
+			"typeId": "23095135",
+			"name": "None"
+		}
+	],
+	"flowEditorNodeLocation":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"routePins": [],
+	"guid": "6064631664522100740",
+	"name": "ED_RVR_M905_AstralCircle_Stage_DelayUnflag",
+	"typeId": "23095129"
+}

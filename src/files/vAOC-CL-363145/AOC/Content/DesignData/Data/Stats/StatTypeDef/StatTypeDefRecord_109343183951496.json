@@ -1,0 +1,61 @@
+{
+	"displayName": "Magical Critical Mitigation",
+	"description": "NSLOCTEXT(\"\", \"69E35BC147215B9933DD8890806A0EC1\", \"Reduces the amount of damage taken from magical critical hits\")",
+	"bHidden": false,
+	"gameplayType": "Type_Combat",
+	"bHasWaterfallStatsUI": false,
+	"waterfallStatsUIIds": [],
+	"bDisplayAsPercentage": true,
+	"statType": "Type_Float",
+	"bClampStatFinalValue": true,
+	"bMultiplyStatMods": true,
+	"bMultiplyCompliment": true,
+	"base":
+	{
+		"expression": "const base = GetStat(GetOwner(), $#10516612381411111:109343399171813$);\r\nconst rating = GetStat(GetInstigator(), $#10516612381411111:6064628595110117376$);\r\nbase * (1.0 - rating / (rating * EvalFormula($#10516612381411113:6064633140805109337$) + EvalFormula($#10516612381411113:6064630531622110190$)))"
+	},
+	"waterfallStatsBaseIds": [
+		{
+			"guid": "109343399171813",
+			"typeId": "10516612381411111",
+			"name": "None"
+		},
+		{
+			"guid": "6064628595110117376",
+			"typeId": "10516612381411111",
+			"name": "None"
+		}
+	],
+	"valueMin":
+	{
+		"expression": "0"
+	},
+	"waterfallStatsMinIds": [],
+	"valueMax":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMaxIds": [],
+	"regenRate":
+	{
+		"expression": ""
+	},
+	"waterfallStatsRegenIds": [],
+	"bRegenWhileDead": false,
+	"bRecalculateOnCombatState": false,
+	"onSpawn": "Reset_None",
+	"onDeath": "Reset_None",
+	"onRevive": "Reset_None",
+	"bPersistValue": false,
+	"replication": 5,
+	"shieldStatId":
+	{
+		"guid": "0",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"grantedEffects": [],
+	"guid": "109343183951496",
+	"name": "MagicalCriticalMitigation",
+	"typeId": "10516612381411111"
+}

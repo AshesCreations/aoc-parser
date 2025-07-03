@@ -1,0 +1,72 @@
+{
+	"populationInteractZone":
+	{
+		"zoneFGuid": "00000000000000000000000000000000",
+		"owningVolumeGuid": "0",
+		"location":
+		{
+			"x": 9430.3744740000002,
+			"y": 3833.7110849999999,
+			"z": -955.337671
+		},
+		"extents":
+		{
+			"x": 10000,
+			"y": 10000,
+			"z": 8000
+		},
+		"rotation":
+		{
+			"pitch": 0,
+			"yaw": 0,
+			"roll": 0
+		},
+		"bUseInternalLocRotExtData": true,
+		"actions": [
+			{
+				"actionType": "RemoveSpawns",
+				"actionResponses": [],
+				"filters":
+				{
+					"tagsIncludeFilter":
+					{
+						"tokenStreamVersion": 0,
+						"tagDictionary": [],
+						"queryTokenStream": [],
+						"userDescription": "",
+						"autoDescription": ""
+					},
+					"tagsExcludeFilter":
+					{
+						"tokenStreamVersion": 0,
+						"tagDictionary": [],
+						"queryTokenStream": [],
+						"userDescription": "",
+						"autoDescription": ""
+					},
+					"popSetsIncludeFilter": [],
+					"popSetsExcludeFilter": [
+						{
+							"guid": "6064630520375018972",
+							"typeId": "5111005",
+							"name": "None"
+						},
+						{
+							"guid": "6064632546477277519",
+							"typeId": "5111005",
+							"name": "None"
+						},
+						{
+							"guid": "6064630520851269410",
+							"typeId": "5111005",
+							"name": "None"
+						}
+					]
+				}
+			}
+		]
+	},
+	"guid": "6064632546540519425",
+	"name": "Event_RVR_M703_AngryHarvest_InteractVolume",
+	"typeId": "5111069"
+}

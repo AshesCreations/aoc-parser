@@ -1,0 +1,24 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"BECE092342A53596DB258DA13514B683\", \"Who\\'s in charge around here?\")",
+	"nextNodeId":
+	{
+		"guid": "6064632058542358622",
+		"typeId": "1091110028",
+		"name": "DD_Ambient_Lionhold_Guard_25"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064632058527285338",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "Player_ObjectiveStateEquals(GetPlayer(), \"NO_0100_18_LearnedAboutEudoxia\", EObjectiveState::Active)"
+	},
+	"choiceType": "Default",
+	"guid": "6064632058539606109",
+	"name": "DD_Ambient_Lionhold_Guard_10_Choice_2",
+	"typeId": "1091110027"
+}

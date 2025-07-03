@@ -1,0 +1,83 @@
+{
+	"completionResponsesIds": [
+		{
+			"guid": "6064633492158545926",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"objectivesToCompleteUponCompletionIds": [],
+	"objectivesToRevealUponCompletionIds": [],
+	"itemsToGrantUponCompletion": [],
+	"channelDuration": 0,
+	"activePredicate":
+	{
+		"expression": "HasAlignment(GetPlayer(), $#512160700:6064632733143662592$) &&\r\nPlayer_HasItem(GetPlayer(), \"Consumable_SiegePoison\") &&\r\nEvent_GetBoolVar(\"Event_Prototype\") == true &&\r\nEvent_GetBoolVar(\"Well_Poisoned\") == false"
+	},
+	"cuePredicate":
+	{
+		"expression": ""
+	},
+	"visiblePredicate":
+	{
+		"expression": "HasAlignment(GetPlayer(), $#512160700:6064632733143662592$) &&\r\nPlayer_HasItem(GetPlayer(), \"Consumable_SiegePoison\")"
+	},
+	"showErrorIfNotVisible": false,
+	"deleteOnCompletion": false,
+	"singleUse": false,
+	"alwaysShowUIPrompt": false,
+	"cancelChannelIfActivePredicateEverFails": true,
+	"interactTextFormat": "NSLOCTEXT(\"[8FAFA0DE3C4BEA55CCDF62DD7FEB167E]\", \"81A60423453A5930F9A2EC976315DB08\", \"Poison Well\")",
+	"channelModifierType": "NONE",
+	"rewardTableId":
+	{
+		"guid": "0",
+		"typeId": "1091110008",
+		"name": "None"
+	},
+	"startEffect": "None",
+	"endEffect": "None",
+	"failEffect": "None",
+	"successEffect": "None",
+	"cueEffect": "None",
+	"startSound": "None",
+	"endSound": "None",
+	"failSound": "None",
+	"successSound": "None",
+	"cueSound": "None",
+	"interactAnimTag": "None",
+	"deletionDelay": 0,
+	"activeCueEnabled": true,
+	"activeCueIgnoresActivePredicate": false,
+	"facePlayer": false,
+	"allowInCombat": true,
+	"spawnAtBottomCapsule": false,
+	"channelAnimation": "None",
+	"interactRadius": 250,
+	"discoveryDistance": 200,
+	"interactTolerance": 270,
+	"interactAngle": 0,
+	"bRequireLOS": false,
+	"busyTime": 0.89999997615814209,
+	"clientBusyTime": 1,
+	"channelStartResponseIds": [
+		{
+			"guid": "0",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"failResponsesIds": [],
+	"gatheringInteractionDataId":
+	{
+		"guid": "0",
+		"typeId": "19846",
+		"name": "None"
+	},
+	"interactCooldownMap":
+	{
+	},
+	"guid": "6064633492127219716",
+	"name": "Siege_Well_Poison_PID",
+	"typeId": "1091110031"
+}

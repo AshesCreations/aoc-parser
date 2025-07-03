@@ -1,0 +1,21 @@
+{
+	"choiceText": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"16E405714405898DD5866E83E711D3EE\", \"intro quest incomplete\")",
+	"nextNodeId":
+	{
+		"guid": "6064632220272951501",
+		"typeId": "1091110028",
+		"name": "Node_Vendor_BlackMarket_2"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "!(Player_HasCommission(GetPlayer(), \"CSQ_0160_FTUE_AttackCaravan\") ||\r\nPlayer_HasCompletedCommission(GetPlayer(), \"CSQ_0160_FTUE_AttackCaravan\"))"
+	},
+	"narrativeRequirementsIds": [],
+	"choiceType": "Default",
+	"guid": "6064632220156559446",
+	"name": "Node_Vendor_BlackMarket_1_Choice_1",
+	"typeId": "1091110027"
+}

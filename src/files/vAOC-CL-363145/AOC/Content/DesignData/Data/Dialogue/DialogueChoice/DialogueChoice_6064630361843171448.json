@@ -1,0 +1,23 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"4E618F154E0629258A9FE19B7EDD8CFA\", \"Sgt. Blackwood sent me.\")",
+	"nextNodeId":
+	{
+		"guid": "6064630361848152185",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064630361698533454",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MA_0005A_FGG_ForGreaterGlory\",\"MAP_0005A_FGG_Phase02\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0005A_FAS_FeedAnArmy\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MAQ_0005A_FAS_FeedAnArmy\",\"SpeakToHakon\")"
+	},
+	"guid": "6064630361843171448",
+	"name": "MADD_0005A_FAS_GuardHakon_4",
+	"typeId": "1091110027"
+}

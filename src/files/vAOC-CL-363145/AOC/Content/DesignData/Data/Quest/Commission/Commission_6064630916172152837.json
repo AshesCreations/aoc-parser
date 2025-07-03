@@ -1,0 +1,97 @@
+{
+	"commissionType": "Generic",
+	"commissionGameplayTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "Biome.Riverlands"
+			},
+			{
+				"tagName": "Quest.Commission.Adventure.Goto"
+			},
+			{
+				"tagName": "Quest.Commission.Tier.T1"
+			}
+		],
+		"parentTags": [
+			{
+				"tagName": "Biome"
+			},
+			{
+				"tagName": "Quest.Commission.Adventure"
+			},
+			{
+				"tagName": "Quest.Commission"
+			},
+			{
+				"tagName": "Quest"
+			},
+			{
+				"tagName": "Quest.Commission.Tier"
+			}
+		]
+	},
+	"preRequisiteQuestsIds": [],
+	"autoFailTimer": -1,
+	"bRepeatable": false,
+	"mainObjectiveType": "GoToArea",
+	"commissionSection": 1,
+	"biomeOrigin": "FloodPlains",
+	"bFromDynamicContent": false,
+	"availabilityExpression":
+	{
+		"expression": ""
+	},
+	"bDisabled": false,
+	"level": 3,
+	"commissionRarity": "Rare",
+	"objectivesIds": [
+		{
+			"guid": "6064631663612526712",
+			"typeId": "1091110420",
+			"name": "None"
+		}
+	],
+	"allowMultipleCompletion": false,
+	"commissionName": "NSLOCTEXT(\"\", \"912AAE704C5AF2D9BD4C149DD11A5E0E\", \"Explore: From Dusk till Dawn\")",
+	"flavorText": "NSLOCTEXT(\"\", \"E8F5F99345316A0597DBF39A74A401FC\", \"Scouts for Hire. Top coin for any stomper that can locate the site of the old Aelan black market bazaar. It was said to exist within a grotto or tunnel overlooking the coast. Only open from dusk till dawn, the bazaar was a major gathering place for black market goods, forbidden arts and linguists. No questions asked and the coin is yours. - The Court of Cloaks\")",
+	"mainObjectiveText": "NSLOCTEXT(\"\", \"0953159240F4CB03DC0534A7AE024267\", \"Locate Spyglass Tunnell near Baneswood.\")",
+	"rewardTablesIds": [
+		{
+			"guid": "6064631443187302402",
+			"typeId": "1091110040",
+			"name": "None"
+		}
+	],
+	"calloutName": "",
+	"calloutDescription": "",
+	"bCanProgressWhileInRaid": false,
+	"expiration":
+	{
+		"duration": "0"
+	},
+	"cooldown":
+	{
+		"duration": "0"
+	},
+	"moneyCost": "0",
+	"resourceCost": [],
+	"mayoralCompletionCount": 0,
+	"rewardId":
+	{
+		"guid": "0",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"bNodeTargeted": false,
+	"targetRewardId":
+	{
+		"guid": "0",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"questItemListIds": [],
+	"guid": "6064630916172152837",
+	"name": "COM_RVR_GoTo_SpyglassTunnel",
+	"typeId": "280002"
+}

@@ -1,0 +1,22 @@
+{
+	"choiceText": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"EB167CD3494536A5C7FD63951ADBC888\", \"I want to become the mayor!\")",
+	"nextNodeId":
+	{
+		"guid": "6064632150841825409",
+		"typeId": "1091110028",
+		"name": "Master_Dialog_Kaelar_Guard_44"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "const interactNode = Node_GetActorCityNode(GetInteractionTarget());\r\n!Node_IsPlayerMayorCandidate(GetPlayer(),interactNode) \r\n&& GetCharacterLevel(GetPlayer()) >= 10\r\n&& interactNode != $#1323521343:6064630651307950121$ "
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064632150838810752",
+	"name": "Master_Dialog_Kaelar_Guard_39_Choice_7",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,22 @@
+{
+	"choiceText": "",
+	"nextNodeId":
+	{
+		"guid": "6064632757159854111",
+		"typeId": "1091110028",
+		"name": "Freehold_Purchase_Dialog_5"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "EnumInt(Node_GetLevel(GetCurrentNode(GetPlayer()))) < EnumInt(ENodeLevel::Village)"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064632757157756958",
+	"name": "Freehold_Purchase_Dialog_1_Choice_4",
+	"typeId": "1091110027"
+}

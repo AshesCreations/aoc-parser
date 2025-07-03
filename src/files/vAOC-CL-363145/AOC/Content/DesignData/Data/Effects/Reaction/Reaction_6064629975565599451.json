@@ -1,0 +1,32 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 4,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0,
+		"fishingEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "const HitRecord = GetHitRecord(GetHitEvent());\r\nRecordNameIs(HitRecord, \"Ranger_ImbueAmmoBarbed_Bleed_Apply\")"
+	},
+	"bEvaluateApplyingHit": false,
+	"instigator": "Owner",
+	"targetsBitmask": 9,
+	"reactHitsIds": [
+		{
+			"guid": "6064629897163510069",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"instigatorProcLimit": 0,
+	"globalProcLimit": 0,
+	"procReactOnApply": false,
+	"guid": "6064629975565599451",
+	"name": "Ranger_EnhanceArmament_Barbed_DepleteTrigger",
+	"typeId": "3031600202"
+}

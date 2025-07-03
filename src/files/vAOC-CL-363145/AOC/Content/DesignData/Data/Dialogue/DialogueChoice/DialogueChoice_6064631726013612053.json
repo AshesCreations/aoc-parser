@@ -1,0 +1,28 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"BC8B9DC54DB9158C48739CA93917DE50\", \"[Search for the pages]\")",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064631725925859333",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "Player_ObjectiveStateEquals(GetPlayer(),\"CSQ_NOB_0069_KTT_Main_LocateStoneRose\", EObjectiveState::Active)\r\n&&\r\n!Player_HasCommission(GetPlayer(),\"CSQ_RVR_0069_KTT_Support_LastAccount\")"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064631726013612053",
+	"name": "CSQ_DD_0069_KTT_LastAccountScroll_13",
+	"typeId": "1091110027"
+}

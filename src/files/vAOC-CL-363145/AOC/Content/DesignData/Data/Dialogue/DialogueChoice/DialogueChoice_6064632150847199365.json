@@ -1,0 +1,18 @@
+{
+	"choiceText": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"C12667274F0660A699567F973A30EE77\", \"ElectionActive\")",
+	"nextNodeId":
+	{
+		"guid": "6064632150866663562",
+		"typeId": "1091110028",
+		"name": "Master_Dialog_Kaelar_Guard_47"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "const interactNode = Node_GetActorCityNode(GetInteractionTarget());\r\ninteractNode == Node_GetActorCityNode(GetPlayer())\r\n&&\r\nNode_IsNodeMayorPrevoteActive(interactNode) "
+	},
+	"choiceType": "Default",
+	"guid": "6064632150847199365",
+	"name": "Master_Dialog_Kaelar_Guard_45_Choice_1",
+	"typeId": "1091110027"
+}

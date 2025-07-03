@@ -1,0 +1,22 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"928D0AB34B8678531E5971A6233F6B46\", \"Captain Redblade told me to come assist you.\")",
+	"nextNodeId":
+	{
+		"guid": "6064632400217636879",
+		"typeId": "1091110028",
+		"name": "CSQ_DD_0010_SPH_ScoutOrithar_2"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "Player_HasCommission(GetPlayer(), \"SQ_0010_SliversOfThePastPart2\") &&\r\nPlayer_ObjectiveStateEquals(GetPlayer(),\"SQO_0010_SliversOfThePast_TalkToScoutOrithar\", EObjectiveState::Active)"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064632400158130190",
+	"name": "CSQ_DD_0010_SPH_ScoutOrithar_1_Choice_1",
+	"typeId": "1091110027"
+}

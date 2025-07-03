@@ -1,0 +1,27 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 2,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "GetStatModValue(GetHitEvent(), GetOwner(), $#10516612381411111:108986352686712$) < 0.0 &&\r\nGetRecordTypeId(GetHitSourceRecord(GetHitEvent())) != GetReactionTypeId()"
+	},
+	"bEvaluateApplyingHit": false,
+	"instigator": "HitInstigator",
+	"targetsBitmask": 2,
+	"reactHitsIds": [
+		{
+			"guid": "109245139605115",
+			"typeId": "30316005",
+			"name": "Test_DamageTransferReaction"
+		}
+	],
+	"guid": "109245130430072",
+	"name": "Test_DamageTransferReaction",
+	"typeId": "3031600202"
+}

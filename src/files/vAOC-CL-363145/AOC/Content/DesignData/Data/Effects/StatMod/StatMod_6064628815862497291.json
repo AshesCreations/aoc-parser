@@ -1,0 +1,26 @@
+{
+	"bWeaponCombo": false,
+	"statRefId":
+	{
+		"guid": "109183607068294",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"stat": "Health",
+	"value":
+	{
+		"expression": "GetStat(GetInstigator(), $#10516612381411111:109183607068294$) * 0.5"
+	},
+	"sourceFormula": "None",
+	"targetFormula": "None",
+	"bonusPenetration":
+	{
+		"expression": ""
+	},
+	"bShowFloatingText": true,
+	"valueInputs": [],
+	"statBuckets": "CombatRegister1",
+	"guid": "6064628815862497291",
+	"name": "Hoarder_Recovery_DamageMitigation_Physical",
+	"typeId": "3031600201"
+}

@@ -1,0 +1,21 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"17063AC344BC7A29CF57779BBC72A514\", \"What\\'s your opinion on the Forsaken Blade?\")",
+	"nextNodeId":
+	{
+		"guid": "6064632241500258467",
+		"typeId": "1091110028",
+		"name": "RVR_COMM_Central_Halcyon_Kaelar_Guard_2_DLG_7"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "Player_HasCommission(GetPlayer(),\"CSQ_RVR_0081_FB_ForsakenDefiance\") ||\r\nPlayer_HasCompletedCommission(GetPlayer(),\"CSQ_RVR_0081_FB_ForsakenDefiance\")"
+	},
+	"narrativeRequirementsIds": [],
+	"choiceType": "Default",
+	"guid": "6064632241499275426",
+	"name": "RVR_COMM_Central_Halcyon_Kaelar_Guard_2_DLG_2_Choice_2",
+	"typeId": "1091110027"
+}

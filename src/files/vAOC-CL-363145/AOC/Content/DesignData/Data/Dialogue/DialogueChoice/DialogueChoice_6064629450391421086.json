@@ -1,0 +1,23 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"114DD6CD49039EE4909D92A15638314C\", \"I\\'ve met their needs.\")",
+	"nextNodeId":
+	{
+		"guid": "6064629450391552159",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064629450139697276",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"availabilityPredicate":
+	{
+		"expression": "IsStoryArcInPhase(\"MIA_0020_KOC_KeepOnTheCrossroads\",\"MIP_0020_KOC_Phase02\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MIQ_0020_CAC_CloaksAndCaravans\",\"HydraCompleted\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MIQ_0020_CAC_CloaksAndCaravans\",\"PhoenixCompleted\")&&\r\nGetStoryArcQuestFlag(GetPlayer(),\"MIQ_0020_CAC_CloaksAndCaravans\",\"EntlerCompleted\")&&\r\n!GetStoryArcQuestFlag(GetPlayer(),\"MIQ_0020_CAC_CloaksAndCaravans\",\"ReturnedToBudge\")"
+	},
+	"guid": "6064629450391421086",
+	"name": "MIDD_0020_CAC_BudgeMac_11",
+	"typeId": "1091110027"
+}

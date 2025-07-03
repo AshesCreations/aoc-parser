@@ -1,0 +1,17 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"CE9308B743800185727928B5C5CFB941\", \"I would like to renounce my citizenship.\")",
+	"nextNodeId":
+	{
+		"guid": "6064629444807295570",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"availabilityPredicate":
+	{
+		"expression": "Node_GetActorCityNode(GetPlayer()) == \r\nNode_GetActorCityNode(GetInteractionTarget())"
+	},
+	"guid": "6064629444636836416",
+	"name": "DD_ServiceNPC_NodeAdministrator_23",
+	"typeId": "1091110027"
+}

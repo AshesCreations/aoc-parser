@@ -1,0 +1,112 @@
+{
+	"bAllowSatisfactionToRegress": false,
+	"parameterTypes": 2,
+	"objectiveType": "Kill",
+	"completionCriteria": [
+		{
+			"bOverrideCompletionValueWithExpression": true,
+			"completionValue": 5,
+			"operator": "GreaterThan",
+			"completionExpression":
+			{
+				"expression": "Event_GetActivity() >= 8"
+			},
+			"completionTriggersIds": [],
+			"bDisplayOnTracker": false,
+			"relevantTrackerIds": [],
+			"displayText": "NSLOCTEXT(\"\", \"D64767C7412F6E3036F4B2AE423634E7\", \"Defend yourself!\")",
+			"displayType": 5,
+			"displayCompletionValue": 5,
+			"bInvertProgressDisplay": false
+		}
+	],
+	"nPCObjectiveIconOverrideId":
+	{
+		"guid": "0",
+		"typeId": "949952112329",
+		"name": "None"
+	},
+	"progressExpression":
+	{
+		"expression": ""
+	},
+	"gameplayTagFilter":
+	{
+		"tokenStreamVersion": 0,
+		"tagDictionary": [],
+		"queryTokenStream": [],
+		"userDescription": "",
+		"autoDescription": ""
+	},
+	"populationSetId":
+	{
+		"guid": "0",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"trackerId":
+	{
+		"guid": "0",
+		"typeId": "23095133",
+		"name": "None"
+	},
+	"interactablesIds": [],
+	"professionFilterIds": [
+		{
+			"guid": "108752770061963",
+			"typeId": "8125613373123",
+			"name": "None"
+		}
+	],
+	"gatherableFilterIds": [
+		{
+			"guid": "6064629585514528809",
+			"typeId": "19846",
+			"name": "None"
+		},
+		{
+			"guid": "6064629879173808129",
+			"typeId": "19846",
+			"name": "None"
+		},
+		{
+			"guid": "6064629585515839530",
+			"typeId": "19846",
+			"name": "None"
+		}
+	],
+	"collectionFilterId":
+	{
+		"guid": "0",
+		"typeId": "1091110041",
+		"name": "None"
+	},
+	"collectionCount": 5,
+	"abilityRecordId":
+	{
+		"guid": "0",
+		"typeId": "30316001",
+		"name": "None"
+	},
+	"activityType": "Gatherable",
+	"activityQueryLocation":
+	{
+		"x": -669461.36189399997,
+		"y": 663478.24011300004,
+		"z": 11671.658484
+	},
+	"activityQueryExtent":
+	{
+		"x": 10000,
+		"y": 10000,
+		"z": 3000
+	},
+	"visibilityExpression":
+	{
+		"expression": ""
+	},
+	"visibilityOverridesTrackerFilter": false,
+	"guid": "6064632530723340348",
+	"name": "RVR_Event_Samias_FrontYard_Harvest_Gremulator",
+	"typeId": "23095130"
+}
