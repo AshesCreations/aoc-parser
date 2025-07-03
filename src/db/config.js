@@ -17,6 +17,17 @@ async function ensureLastModifiedColumn(conn, table) {
   }
 }
 
+async function ensureColumnExists(conn, table, columnName, columnType) {
+  const [rows] = await conn.query(
+    `SHOW COLUMNS FROM \`${table}\` LIKE '${columnName}'`
+  );
+  if (rows.length === 0) {
+    await conn.query(
+      `ALTER TABLE \`${table}\` ADD COLUMN \`${columnName}\` ${columnType}`
+    );
+  }
+}
+
 let pool = null;
 
 export async function setupConnection() {
@@ -205,10 +216,12 @@ export async function initDatabase() {
         enchantmentId TEXT,
         deconstructionRecipeId TEXT,
         itemRecipeId JSON,
+        craftingRecipes JSON,
       lastModified TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
       )
     `);
     await ensureLastModifiedColumn(conn, 'DatabaseGear');
+    await ensureColumnExists(conn, 'DatabaseGear', 'craftingRecipes', 'JSON');
 
     console.log("Database tables initialized");
   } finally {

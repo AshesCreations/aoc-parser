@@ -16,7 +16,9 @@ import {
   extractLastQuotedValue,
   extractTagParts,
   extractValues,
+  getJson,
 } from "../utils.js";
+import { rewardTableIdToItemRewardId } from "../config.js";
 
 /**
  * Process all JSON files in the item directory
@@ -105,6 +107,7 @@ async function processItemGearFiles(directoryData) {
         enchantmentId: jsonData.enchantmentDefId?.guid,
         deconstructionRecipeId: jsonData.deconstructionRecipeId?.guid,
         itemRecipeId: [],
+        craftingRecipes: [],
       };
 
       // Track items by slot type
@@ -123,11 +126,59 @@ async function processItemGearFiles(directoryData) {
     // Batch query for recipes for all items at once
     const allRecipes = await batchFindItemRecipes(itemIds);
 
-    // Apply recipes to items and save all at once
+    // Build itemId -> reward table ids map from reward-id.json
+    const itemToRewardTables = {};
+    for (const [rtId, items] of Object.entries(rewardTableIdToItemRewardId)) {
+      items.forEach((id) => {
+        if (!itemToRewardTables[id]) itemToRewardTables[id] = [];
+        itemToRewardTables[id].push(rtId);
+      });
+    }
+
+    // Build rewardId -> crafting recipe map once
+    const craftingDir = path.join(directoryData, "/Crafting/CraftingRecipeDef");
+    const craftingFiles = fs.readdirSync(craftingDir).filter((f) =>
+      f.toLowerCase().endsWith(".json")
+    );
+    const rewardIdToRecipe = {};
+    for (const file of craftingFiles) {
+      const data = fs.readFileSync(path.join(craftingDir, file), "utf8");
+      const json = JSON.parse(data);
+      const rId = json?.rewardId?.guid;
+      if (rId) {
+        rewardIdToRecipe[rId] = json;
+      }
+    }
+
+    const rewardTableCache = {};
+
+    // Apply recipes to items and gather crafting recipes
     for (let i = 0; i < allItems.length; i++) {
       const item = allItems[i];
       if (allRecipes[item.id] && allRecipes[item.id].length > 0) {
         item.itemRecipeId = allRecipes[item.id];
+      }
+
+      const tables = itemToRewardTables[item.id] || [];
+      const craftingRecipes = [];
+      for (const rtId of tables) {
+        if (!rewardTableCache[rtId]) {
+          rewardTableCache[rtId] = getJson(
+            directoryData,
+            "/Reward/RewardTable",
+            `RewardTable_${rtId}.json`
+          );
+        }
+        const rtData = rewardTableCache[rtId];
+        if (rtData && rtData.name && rtData.name.startsWith("Recipe")) {
+          const recipe = rewardIdToRecipe[rtId];
+          if (recipe) {
+            craftingRecipes.push(recipe);
+          }
+        }
+      }
+      if (craftingRecipes.length > 0) {
+        item.craftingRecipes = craftingRecipes;
       }
     }
 

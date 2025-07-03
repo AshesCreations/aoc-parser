@@ -467,9 +467,9 @@ async function batchSaveGearToDatabase(items) {
       INSERT INTO \`DatabaseGear\` (
         id, name, \`typeDescription\`, description, type, subtype, tag, icon, \`rarityMin\`, \`rarityMax\`,
         slots, \`statsId\`, \`setBonusIds\`, level, grade, \`enchantmentId\`, \`deconstructionRecipeId\`,
-        \`itemRecipeId\`, layout
+        \`itemRecipeId\`, \`craftingRecipes\`, layout
       ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,
-        ?, ?, ?, ?)
+        ?, ?, ?, ?, ?)
       ON DUPLICATE KEY UPDATE
         name = VALUES(name),
         \`typeDescription\` = VALUES(\`typeDescription\`),
@@ -488,8 +488,31 @@ async function batchSaveGearToDatabase(items) {
         \`enchantmentId\` = VALUES(\`enchantmentId\`),
         \`deconstructionRecipeId\` = VALUES(\`deconstructionRecipeId\`),
         \`itemRecipeId\` = VALUES(\`itemRecipeId\`),
+        \`craftingRecipes\` = VALUES(\`craftingRecipes\`),
         layout = VALUES(layout),
-        lastModified = CURRENT_TIMESTAMP
+        lastModified = IF(
+          name = VALUES(name) AND
+          \`typeDescription\` = VALUES(\`typeDescription\`) AND
+          description = VALUES(description) AND
+          type = VALUES(type) AND
+          subtype = VALUES(subtype) AND
+          tag = VALUES(tag) AND
+          icon = VALUES(icon) AND
+          \`rarityMin\` = VALUES(\`rarityMin\`) AND
+          \`rarityMax\` = VALUES(\`rarityMax\`) AND
+          slots = VALUES(slots) AND
+          \`statsId\` = VALUES(\`statsId\`) AND
+          \`setBonusIds\` = VALUES(\`setBonusIds\`) AND
+          level = VALUES(level) AND
+          grade = VALUES(grade) AND
+          \`enchantmentId\` = VALUES(\`enchantmentId\`) AND
+          \`deconstructionRecipeId\` = VALUES(\`deconstructionRecipeId\`) AND
+          \`itemRecipeId\` = VALUES(\`itemRecipeId\`) AND
+          \`craftingRecipes\` = VALUES(\`craftingRecipes\`) AND
+          layout = VALUES(layout),
+          lastModified,
+          CURRENT_TIMESTAMP
+        )
     `;
 
     // Create an array of promises for all insert operations
@@ -516,6 +539,7 @@ async function batchSaveGearToDatabase(items) {
           item.enchantmentId ?? null,
           item.deconstructionRecipeId ?? null,
           JSON.stringify(item.itemRecipeId || []),
+          JSON.stringify(item.craftingRecipes || []),
           item.layout || "gear",
         ];
         return client.execute(query, values);
