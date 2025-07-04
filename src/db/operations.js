@@ -467,9 +467,9 @@ async function batchSaveGearToDatabase(items) {
       INSERT INTO \`DatabaseGear\` (
         id, name, \`typeDescription\`, description, type, subtype, tag, icon, \`rarityMin\`, \`rarityMax\`,
         slots, \`statsId\`, \`setBonusIds\`, level, grade, \`enchantmentId\`, \`deconstructionRecipeId\`,
-        \`itemRecipeId\`, \`craftingRecipes\`, layout
+        \`itemRecipeId\`, \`craftingRecipes\`, \`recipeTree\`, layout
       ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,
-        ?, ?, ?, ?, ?)
+        ?, ?, ?, ?, ?, ?, ?)
       ON DUPLICATE KEY UPDATE
         name = VALUES(name),
         \`typeDescription\` = VALUES(\`typeDescription\`),
@@ -489,6 +489,7 @@ async function batchSaveGearToDatabase(items) {
         \`deconstructionRecipeId\` = VALUES(\`deconstructionRecipeId\`),
         \`itemRecipeId\` = VALUES(\`itemRecipeId\`),
         \`craftingRecipes\` = VALUES(\`craftingRecipes\`),
+        \`recipeTree\` = VALUES(\`recipeTree\`),
         layout = VALUES(layout),
         lastModified = IF(
           name = VALUES(name) AND
@@ -509,6 +510,7 @@ async function batchSaveGearToDatabase(items) {
           \`deconstructionRecipeId\` = VALUES(\`deconstructionRecipeId\`) AND
           \`itemRecipeId\` = VALUES(\`itemRecipeId\`) AND
           \`craftingRecipes\` = VALUES(\`craftingRecipes\`) AND
+          \`recipeTree\` = VALUES(\`recipeTree\`) AND
           layout = VALUES(layout),
           lastModified,
           CURRENT_TIMESTAMP
@@ -540,6 +542,7 @@ async function batchSaveGearToDatabase(items) {
           item.deconstructionRecipeId ?? null,
           JSON.stringify(item.itemRecipeId || []),
           JSON.stringify(item.craftingRecipes || []),
+          JSON.stringify(item.recipeTree || {}),
           item.layout || "gear",
         ];
         return client.execute(query, values);
