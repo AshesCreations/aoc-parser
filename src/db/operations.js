@@ -17,6 +17,19 @@ async function ensureLastModifiedColumn(client, table) {
   }
 }
 
+async function ensureColumn(client, table, columnName, columnType) {
+  try {
+    const checkQuery = `SHOW COLUMNS FROM \`${table}\` LIKE ?`;
+    const [rows] = await client.query(checkQuery, [columnName]);
+    if (rows.length === 0) {
+      const alterQuery = `ALTER TABLE \`${table}\` ADD COLUMN \`${columnName}\` ${columnType}`;
+      await client.query(alterQuery);
+    }
+  } catch (err) {
+    // Ignore errors such as insufficient permissions
+  }
+}
+
 /**
  * Function to save an item recipe to the MySQL database
  * @param {Object} item - Item object to save
@@ -459,6 +472,7 @@ async function batchSaveGearToDatabase(items) {
   const client = await pool.getConnection();
   try {
     await ensureLastModifiedColumn(client, 'DatabaseGear');
+    await ensureColumn(client, 'DatabaseGear', 'recipeTree', 'JSON');
     // Begin transaction
     await client.query("BEGIN");
 
