@@ -100,7 +100,8 @@ function filterByTypes(filePath, allowedTypes) {
  * @throws {Error} - Throws an error if the request fails.
  */
 function getJson(baseFilePath, subFolders, jsonName) {
-  const filePath = path.join(baseFilePath, subFolders, jsonName);
+  const cleaned = subFolders.replace(/^[/\\]+/, "");
+  const filePath = path.join(baseFilePath, cleaned, jsonName);
   try {
     const data = fs.readFileSync(filePath, "utf8");
     const jsonData = JSON.parse(data);
@@ -119,12 +120,18 @@ function getJson(baseFilePath, subFolders, jsonName) {
 function extractLastQuotedValue(text) {
   if (!text || typeof text !== "string") return "";
 
-  // Match content inside the last pair of double quotes
-  const matches = text.match(/"([^"]*)"(?=[^"]*$)/);
-  const extractedText = matches ? matches[1] : text;
+  // Try to parse NSLOCTEXT("pkg", "id", "value") format
+  const nsLoc = text.match(/NSLOCTEXT\([^,]*,[^,]*,\s*"((?:\\"|[^"])+)"\)/);
+  let extracted = nsLoc ? nsLoc[1] : null;
 
-  // Remove all forward slashes and backslashes
-  return extractedText.replace(/[\/\\]/g, "");
+  if (!extracted) {
+    // Fallback: grab the last quoted string, supporting escaped quotes
+    const matches = text.match(/"((?:\\"|[^"])+)"(?=[^"]*$)/);
+    extracted = matches ? matches[1] : text;
+  }
+
+  // Unescape any embedded quotes then strip slashes
+  return extracted.replace(/\\"/g, '"').replace(/[\/\\]/g, "");
 }
 
 /**

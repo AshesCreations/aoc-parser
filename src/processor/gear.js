@@ -20,6 +20,78 @@ import {
 } from "../utils.js";
 import { rewardTableIdToItemRewardId } from "../config.js";
 
+function buildRecipeTree(
+  itemId,
+  itemToRewardTables,
+  rewardIdToRecipe,
+  directoryData,
+  visited = new Set()
+) {
+  if (!itemId || visited.has(itemId)) return null;
+  visited.add(itemId);
+  const itemData = getJson(
+    directoryData,
+    "/Item/Item",
+    `Item_${itemId}.json`
+  );
+  if (!itemData || Object.keys(itemData).length === 0) {
+    return null;
+  }
+  const tree = {
+    item: { name: itemData.name, guid: itemId },
+    recipes: [],
+  };
+  const tables = itemToRewardTables[itemId] || [];
+  for (const rtId of tables) {
+    const recipe = rewardIdToRecipe[rtId];
+    if (!recipe) continue;
+    const recipeNode = { primaryResources: [], generalResources: [] };
+    if (Array.isArray(recipe.primaryResourceCosts)) {
+      for (const pr of recipe.primaryResourceCosts) {
+        const sub = buildRecipeTree(
+          pr.item?.guid,
+          itemToRewardTables,
+          rewardIdToRecipe,
+          directoryData,
+          visited
+        );
+        recipeNode.primaryResources.push({
+          item: getJson(
+            directoryData,
+            "/Item/Item",
+            `Item_${pr.item?.guid}.json`
+          ),
+          quantity: pr.quantity,
+          rarity: pr.rarity,
+          subMaterials: sub,
+        });
+      }
+    }
+    if (Array.isArray(recipe.generalResourceCost)) {
+      for (const gr of recipe.generalResourceCost) {
+        const sub = buildRecipeTree(
+          gr.item?.guid,
+          itemToRewardTables,
+          rewardIdToRecipe,
+          directoryData,
+          visited
+        );
+        recipeNode.generalResources.push({
+          item: getJson(
+            directoryData,
+            "/Item/Item",
+            `Item_${gr.item?.guid}.json`
+          ),
+          quantity: gr.quantity,
+          subMaterials: sub,
+        });
+      }
+    }
+    tree.recipes.push(recipeNode);
+  }
+  return tree;
+}
+
 /**
  * Process all JSON files in the item directory
  * @param {string} directoryPath - Path to the item directory
@@ -179,6 +251,12 @@ async function processItemGearFiles(directoryData) {
       }
       if (craftingRecipes.length > 0) {
         item.craftingRecipes = craftingRecipes;
+        item.recipeTree = buildRecipeTree(
+          item.id,
+          itemToRewardTables,
+          rewardIdToRecipe,
+          directoryData
+        );
       }
     }
 
