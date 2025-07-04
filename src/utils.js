@@ -100,7 +100,8 @@ function filterByTypes(filePath, allowedTypes) {
  * @throws {Error} - Throws an error if the request fails.
  */
 function getJson(baseFilePath, subFolders, jsonName) {
-  const filePath = path.join(baseFilePath, subFolders, jsonName);
+  const cleaned = subFolders.replace(/^[/\\]+/, "");
+  const filePath = path.join(baseFilePath, cleaned, jsonName);
   try {
     const data = fs.readFileSync(filePath, "utf8");
     const jsonData = JSON.parse(data);
@@ -112,6 +113,32 @@ function getJson(baseFilePath, subFolders, jsonName) {
 }
 
 /**
+ * Load an item JSON by GUID, trying both Item_<guid>.json and
+ * ItemRecord_<guid>.json filenames.
+ * @param {string} baseFilePath - Base directory path
+ * @param {string} subFolders - Subfolder path relative to base
+ * @param {string} guid - Item GUID
+ * @returns {object} Parsed JSON object or empty object on failure
+ */
+function getItemJson(baseFilePath, subFolders, guid) {
+  const cleaned = subFolders.replace(/^[/\\]+/, "");
+  const names = [`Item_${guid}.json`, `ItemRecord_${guid}.json`];
+  for (const name of names) {
+    const filePath = path.join(baseFilePath, cleaned, name);
+    try {
+      const data = fs.readFileSync(filePath, "utf8");
+      return JSON.parse(data);
+    } catch (err) {
+      // try next
+    }
+  }
+  console.error(
+    `Error processing Json file Item_${guid}.json or ItemRecord_${guid}.json in ${path.join(baseFilePath, cleaned)}`
+  );
+  return {};
+}
+
+/**
  * Extract the last quoted value from a string
  * @param {string} text - Text to extract from
  * @returns {string} - Extracted value or empty string
@@ -119,12 +146,18 @@ function getJson(baseFilePath, subFolders, jsonName) {
 function extractLastQuotedValue(text) {
   if (!text || typeof text !== "string") return "";
 
-  // Match content inside the last pair of double quotes
-  const matches = text.match(/"([^"]*)"(?=[^"]*$)/);
-  const extractedText = matches ? matches[1] : text;
+  // Try to parse NSLOCTEXT("pkg", "id", "value") format
+  const nsLoc = text.match(/NSLOCTEXT\([^,]*,[^,]*,\s*"((?:\\"|[^"])+)"\)/);
+  let extracted = nsLoc ? nsLoc[1] : null;
 
-  // Remove all forward slashes and backslashes
-  return extractedText.replace(/[\/\\]/g, "");
+  if (!extracted) {
+    // Fallback: grab the last quoted string, supporting escaped quotes
+    const matches = text.match(/"((?:\\"|[^"])+)"(?=[^"]*$)/);
+    extracted = matches ? matches[1] : text;
+  }
+
+  // Unescape any embedded quotes then strip slashes
+  return extracted.replace(/\\"/g, '"').replace(/[\/\\]/g, "");
 }
 
 /**
@@ -318,6 +351,7 @@ export {
   extractLastValue,
   extractDescription,
   extractValues,
+  getItemJson,
   checkForUndefinedValues,
   logMissingIcon,
   createEmptyStatsObject,

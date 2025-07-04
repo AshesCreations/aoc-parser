@@ -17,8 +17,69 @@ import {
   extractTagParts,
   extractValues,
   getJson,
+  getItemJson,
 } from "../utils.js";
 import { rewardTableIdToItemRewardId } from "../config.js";
+
+function buildRecipeTree(
+  itemId,
+  itemToRewardTables,
+  rewardIdToRecipe,
+  directoryData,
+  visited = new Set()
+) {
+  if (!itemId || visited.has(itemId)) return null;
+  visited.add(itemId);
+  const itemData = getItemJson(directoryData, "/Item/Item", itemId);
+  if (!itemData || Object.keys(itemData).length === 0) {
+    return null;
+  }
+  const tree = {
+    item: { name: itemData.name, guid: itemId },
+    recipes: [],
+  };
+  const tables = itemToRewardTables[itemId] || [];
+  for (const rtId of tables) {
+    const recipe = rewardIdToRecipe[rtId];
+    if (!recipe) continue;
+    const recipeNode = { primaryResources: [], generalResources: [] };
+    if (Array.isArray(recipe.primaryResourceCosts)) {
+      for (const pr of recipe.primaryResourceCosts) {
+        const sub = buildRecipeTree(
+          pr.item?.guid,
+          itemToRewardTables,
+          rewardIdToRecipe,
+          directoryData,
+          visited
+        );
+        recipeNode.primaryResources.push({
+          item: getItemJson(directoryData, "/Item/Item", pr.item?.guid),
+          quantity: pr.quantity,
+          rarity: pr.rarity,
+          subMaterials: sub,
+        });
+      }
+    }
+    if (Array.isArray(recipe.generalResourceCost)) {
+      for (const gr of recipe.generalResourceCost) {
+        const sub = buildRecipeTree(
+          gr.item?.guid,
+          itemToRewardTables,
+          rewardIdToRecipe,
+          directoryData,
+          visited
+        );
+        recipeNode.generalResources.push({
+          item: getItemJson(directoryData, "/Item/Item", gr.item?.guid),
+          quantity: gr.quantity,
+          subMaterials: sub,
+        });
+      }
+    }
+    tree.recipes.push(recipeNode);
+  }
+  return tree;
+}
 
 /**
  * Process all JSON files in the item directory
@@ -179,6 +240,12 @@ async function processItemGearFiles(directoryData) {
       }
       if (craftingRecipes.length > 0) {
         item.craftingRecipes = craftingRecipes;
+        item.recipeTree = buildRecipeTree(
+          item.id,
+          itemToRewardTables,
+          rewardIdToRecipe,
+          directoryData
+        );
       }
     }
 
