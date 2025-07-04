@@ -113,6 +113,32 @@ function getJson(baseFilePath, subFolders, jsonName) {
 }
 
 /**
+ * Load an item JSON by GUID, trying both Item_<guid>.json and
+ * ItemRecord_<guid>.json filenames.
+ * @param {string} baseFilePath - Base directory path
+ * @param {string} subFolders - Subfolder path relative to base
+ * @param {string} guid - Item GUID
+ * @returns {object} Parsed JSON object or empty object on failure
+ */
+function getItemJson(baseFilePath, subFolders, guid) {
+  const cleaned = subFolders.replace(/^[/\\]+/, "");
+  const names = [`Item_${guid}.json`, `ItemRecord_${guid}.json`];
+  for (const name of names) {
+    const filePath = path.join(baseFilePath, cleaned, name);
+    try {
+      const data = fs.readFileSync(filePath, "utf8");
+      return JSON.parse(data);
+    } catch (err) {
+      // try next
+    }
+  }
+  console.error(
+    `Error processing Json file Item_${guid}.json or ItemRecord_${guid}.json in ${path.join(baseFilePath, cleaned)}`
+  );
+  return {};
+}
+
+/**
  * Extract the last quoted value from a string
  * @param {string} text - Text to extract from
  * @returns {string} - Extracted value or empty string
@@ -325,6 +351,7 @@ export {
   extractLastValue,
   extractDescription,
   extractValues,
+  getItemJson,
   checkForUndefinedValues,
   logMissingIcon,
   createEmptyStatsObject,

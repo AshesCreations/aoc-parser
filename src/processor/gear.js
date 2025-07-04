@@ -17,6 +17,7 @@ import {
   extractTagParts,
   extractValues,
   getJson,
+  getItemJson,
 } from "../utils.js";
 import { rewardTableIdToItemRewardId } from "../config.js";
 
@@ -29,11 +30,7 @@ function buildRecipeTree(
 ) {
   if (!itemId || visited.has(itemId)) return null;
   visited.add(itemId);
-  const itemData = getJson(
-    directoryData,
-    "/Item/Item",
-    `Item_${itemId}.json`
-  );
+  const itemData = getItemJson(directoryData, "/Item/Item", itemId);
   if (!itemData || Object.keys(itemData).length === 0) {
     return null;
   }
@@ -56,11 +53,7 @@ function buildRecipeTree(
           visited
         );
         recipeNode.primaryResources.push({
-          item: getJson(
-            directoryData,
-            "/Item/Item",
-            `Item_${pr.item?.guid}.json`
-          ),
+          item: getItemJson(directoryData, "/Item/Item", pr.item?.guid),
           quantity: pr.quantity,
           rarity: pr.rarity,
           subMaterials: sub,
@@ -77,11 +70,7 @@ function buildRecipeTree(
           visited
         );
         recipeNode.generalResources.push({
-          item: getJson(
-            directoryData,
-            "/Item/Item",
-            `Item_${gr.item?.guid}.json`
-          ),
+          item: getItemJson(directoryData, "/Item/Item", gr.item?.guid),
           quantity: gr.quantity,
           subMaterials: sub,
         });
