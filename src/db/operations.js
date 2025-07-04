@@ -482,8 +482,10 @@ async function batchSaveGearToDatabase(items) {
         id, name, \`typeDescription\`, description, type, subtype, tag, icon, \`rarityMin\`, \`rarityMax\`,
         slots, \`statsId\`, \`setBonusIds\`, level, grade, \`enchantmentId\`, \`deconstructionRecipeId\`,
         \`itemRecipeId\`, \`craftingRecipes\`, \`recipeTree\`, layout
-      ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,
-        ?, ?, ?, ?, ?, ?, ?)
+      ) VALUES (
+        ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,
+        ?, ?, ?, ?, ?, ?
+      )
       ON DUPLICATE KEY UPDATE
         name = VALUES(name),
         \`typeDescription\` = VALUES(\`typeDescription\`),
