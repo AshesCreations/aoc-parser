@@ -1,0 +1,463 @@
+{
+	"statIds": [
+		{
+			"statId":
+			{
+				"guid": "109183598614140",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "// if this is changed make sure to update \"evenweight\" curves\r\nconst numWeights = 8;\r\nconst weight = GetNpcStatDistribution(GetOwner(), EStatDistributionStat::Constitution);\r\nconst totalStats = EvalCurve($#10516612381411114:6064631783354597376$, Float(GetCharacterLevel(GetOwner())));\r\nconst statBase = EvalCurve($#10516612381411114:6064630328355258373$, Float(GetCharacterLevel(GetOwner())));\r\nconst ratingPerAttrib = EvalE($#10516612381411112:6064631924704346208$);\r\nconst gearAttribRatio = EvalE($#10516612381411112:6064631901772120296$);\r\nGetStatInitRunningTotal()\r\n+ statBase * weight * numWeights\r\n+ totalStats * weight / ratingPerAttrib * gearAttribRatio"
+			}
+		},
+		{
+			"statId":
+			{
+				"guid": "108986356618873",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "// if this is changed make sure to update \"evenweight\" curves\r\nconst numWeights = 8;\r\nconst weight = GetNpcStatDistribution(GetOwner(),EStatDistributionStat::MaxHealth);\r\nconst statBase = EvalCurve($#10516612381411114:6064630531117024232$, Float(GetCharacterLevel(GetOwner())));\r\nconst waterfall = EvalFormula($#10516612381411113:6064633153419149321$);\r\nconst ratio = EvalE($#10516612381411112:6064631902647222308$) / EvalE($#10516612381411112:6064631924704346208$);\r\nconst hpPerRating = EvalE($#10516612381411112:6064630684189065220$);\r\nGetStatInitRunningTotal() \r\n+ statBase * weight * numWeights\r\n+ waterfall * ratio * hpPerRating"
+			}
+		},
+		{
+			"statId":
+			{
+				"guid": "109183607068294",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "const waterfall = EvalFormula($#10516612381411113:6064633153419149321$);\r\nconst ratio = EvalE($#10516612381411112:6064631902584045602$) / EvalE($#10516612381411112:6064631924704346208$);\r\nGetStatInitRunningTotal() + waterfall * ratio"
+			}
+		},
+		{
+			"statId":
+			{
+				"guid": "109343183951492",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "const waterfall = EvalFormula($#10516612381411113:6064633153419149321$);\r\nconst ratio = EvalE($#10516612381411112:6064633142160065793$) / EvalE($#10516612381411112:6064631924704346208$);\r\nGetStatInitRunningTotal() + waterfall * ratio"
+			}
+		},
+		{
+			"statId":
+			{
+				"guid": "109343183951493",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "const waterfall = EvalFormula($#10516612381411113:6064633153419149321$);\r\nconst ratio = EvalE($#10516612381411112:6064633153452245006$) / EvalE($#10516612381411112:6064631924704346208$);\r\nGetStatInitRunningTotal() + waterfall * ratio"
+			}
+		},
+		{
+			"statId":
+			{
+				"guid": "109183607068295",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "const waterfall = EvalFormula($#10516612381411113:6064633153419149321$);\r\nconst ratio = EvalE($#10516612381411112:6064633153363705860$) / EvalE($#10516612381411112:6064631924704346208$);\r\nGetStatInitRunningTotal() + waterfall * ratio"
+			}
+		},
+		{
+			"statId":
+			{
+				"guid": "6064629618894504103",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "const waterfall = EvalFormula($#10516612381411113:6064633153419149321$);\r\nconst ratio = EvalE($#10516612381411112:6064633153363705860$) / EvalE($#10516612381411112:6064631924704346208$);\r\nGetStatInitRunningTotal() + waterfall * ratio"
+			}
+		},
+		{
+			"statId":
+			{
+				"guid": "109183598614138",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "const numWeights = 8;\r\nconst weight = GetNpcStatDistribution(GetOwner(), EStatDistributionStat::Strength);\r\nconst totalStats = EvalCurve($#10516612381411114:6064631783354597376$, Float(GetCharacterLevel(GetOwner())));\r\nconst statBase = EvalCurve($#10516612381411114:6064630328357748745$, Float(GetCharacterLevel(GetOwner())));\r\nconst ratingPerAttrib = EvalE($#10516612381411112:6064631924704346208$);\r\nconst gearAttribRatio = EvalE($#10516612381411112:6064631901772120296$);\r\nGetStatInitRunningTotal()\r\n+ numWeights * statBase * weight\r\n+ totalStats * weight / ratingPerAttrib * gearAttribRatio"
+			}
+		},
+		{
+			"statId":
+			{
+				"guid": "109183603267200",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "const waterfallSTR = EvalFormula($#10516612381411113:6064633153418035208$);\r\nconst ratioSTR = EvalE($#10516612381411112:6064631902561828892$) / EvalE($#10516612381411112:6064631924704346208$);\r\nconst waterfallDEX = EvalFormula($#10516612381411113:6064633153387757573$);\r\nconst ratioDEX = EvalE($#10516612381411112:6064633883578662912$) / EvalE($#10516612381411112:6064631924704346208$);\r\nGetStatInitRunningTotal()\r\n+ waterfallSTR * ratioSTR\r\n+ waterfallDEX * ratioDEX"
+			}
+		},
+		{
+			"statId":
+			{
+				"guid": "109342862759546",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "const waterfall = EvalFormula($#10516612381411113:6064633153418035208$);\r\nconst ratio = EvalE($#10516612381411112:6064633140819396189$) / EvalE($#10516612381411112:6064631924704346208$);\r\nGetStatInitRunningTotal() + waterfall * ratio"
+			}
+		},
+		{
+			"statId":
+			{
+				"guid": "109183605036677",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "const waterfall = EvalFormula($#10516612381411113:6064633153418035208$);\r\nconst ratio = EvalE($#10516612381411112:6064633169566629897$) / EvalE($#10516612381411112:6064631924704346208$);\r\nGetStatInitRunningTotal() + waterfall * ratio"
+			}
+		},
+		{
+			"statId":
+			{
+				"guid": "6064629618890834085",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "const waterfall = EvalFormula($#10516612381411113:6064633153418035208$);\r\nconst ratio = EvalE($#10516612381411112:6064633153363705860$) / EvalE($#10516612381411112:6064631924704346208$);\r\nGetStatInitRunningTotal() + waterfall * ratio"
+			}
+		},
+		{
+			"statId":
+			{
+				"guid": "109183598614139",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "const numWeights = 8;\r\nconst weight = GetNpcStatDistribution(GetOwner(), EStatDistributionStat::Dexterity);\r\nconst totalStats = EvalCurve($#10516612381411114:6064631783354597376$, Float(GetCharacterLevel(GetOwner())));\r\nconst statBase = EvalCurve($#10516612381411114:6064630328357158918$, Float(GetCharacterLevel(GetOwner())));\r\nconst ratingPerAttrib = EvalE($#10516612381411112:6064631924704346208$);\r\nconst gearAttribRatio = EvalE($#10516612381411112:6064631901772120296$);\r\nGetStatInitRunningTotal()\r\n+ numWeights * statBase * weight\r\n+ totalStats * weight / ratingPerAttrib * gearAttribRatio"
+			}
+		},
+		{
+			"statId":
+			{
+				"guid": "109342866232955",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "const waterfall = EvalFormula($#10516612381411113:6064633153387757573$);\r\nconst ratio = EvalE($#10516612381411112:6064631902577295392$) / EvalE($#10516612381411112:6064631924704346208$);\r\nGetStatInitRunningTotal() + waterfall * ratio"
+			}
+		},
+		{
+			"statId":
+			{
+				"guid": "109183605036675",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "const waterfall = EvalFormula($#10516612381411113:6064633153387757573$);\r\nconst ratio = EvalE($#10516612381411112:6064633140818740828$) / EvalE($#10516612381411112:6064631924704346208$);\r\nGetStatInitRunningTotal() + waterfall * ratio"
+			}
+		},
+		{
+			"statId":
+			{
+				"guid": "109183605036676",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "const waterfall = EvalFormula($#10516612381411113:6064633153387757573$);\r\nconst ratio = EvalE($#10516612381411112:6064631902574411806$) / EvalE($#10516612381411112:6064631924704346208$);\r\nGetStatInitRunningTotal() + waterfall * ratio"
+			}
+		},
+		{
+			"statId":
+			{
+				"guid": "109183603267201",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "const waterfall = EvalFormula($#10516612381411113:6064633153387757573$);\r\nconst ratio = EvalE($#10516612381411112:6064633153363705860$) / EvalE($#10516612381411112:6064631924704346208$);\r\nGetStatInitRunningTotal() + waterfall * ratio"
+			}
+		},
+		{
+			"statId":
+			{
+				"guid": "109183598614143",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "const numWeights = 8;\r\nconst weight = GetNpcStatDistribution(GetOwner(),EStatDistributionStat::Mentality);\r\nconst totalStats = EvalCurve($#10516612381411114:6064631783354597376$, Float(GetCharacterLevel(GetOwner())));\r\nconst statBase = EvalCurve($#10516612381411114:6064630328357617672$, Float(GetCharacterLevel(GetOwner())));\r\nconst ratingPerAttrib = EvalE($#10516612381411112:6064631924704346208$);\r\nconst gearAttribRatio = EvalE($#10516612381411112:6064631901772120296$);\r\nGetStatInitRunningTotal()\r\n+ numWeights * statBase * weight\r\n+ totalStats * weight / ratingPerAttrib * gearAttribRatio"
+			}
+		},
+		{
+			"statId":
+			{
+				"guid": "109183578756729",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "const numWeights = 8;\r\nconst weight = GetNpcStatDistribution(GetOwner(),EStatDistributionStat::MaxMana);\r\nconst statBase = EvalCurve($#10516612381411114:6064630531116565479$, Float(GetCharacterLevel(GetOwner())));\r\nconst waterfall = EvalFormula($#10516612381411113:6064633153420066826$);\r\nconst ratio = EvalE($#10516612381411112:6064631902659543078$) / EvalE($#10516612381411112:6064631924704346208$);\r\nconst hpPerRating = EvalE($#10516612381411112:6064630684191227910$);\r\nGetStatInitRunningTotal() \r\n+ statBase * weight * numWeights\r\n+ waterfall * ratio * hpPerRating"
+			}
+		},
+		{
+			"statId":
+			{
+				"guid": "109183607133840",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "const waterfall = EvalFormula($#10516612381411113:6064633153420066826$);\r\nconst ratio = EvalE($#10516612381411112:6064631902584045602$) / EvalE($#10516612381411112:6064631924704346208$);\r\nGetStatInitRunningTotal() + waterfall * ratio"
+			}
+		},
+		{
+			"statId":
+			{
+				"guid": "6064628595115753473",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "const waterfall = EvalFormula($#10516612381411113:6064633153420066826$);\r\nconst ratio = EvalE($#10516612381411112:6064633142160065793$) / EvalE($#10516612381411112:6064631924704346208$);\r\nGetStatInitRunningTotal() + waterfall * ratio"
+			}
+		},
+		{
+			"statId":
+			{
+				"guid": "6064628595110117376",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "const waterfall = EvalFormula($#10516612381411113:6064633153420066826$);\r\nconst ratio = EvalE($#10516612381411112:6064633153452245006$) / EvalE($#10516612381411112:6064631924704346208$);\r\nGetStatInitRunningTotal() + waterfall * ratio"
+			}
+		},
+		{
+			"statId":
+			{
+				"guid": "109183607068302",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "const waterfall = EvalFormula($#10516612381411113:6064633153420066826$);\r\nconst ratio = EvalE($#10516612381411112:6064633153363705860$) / EvalE($#10516612381411112:6064631924704346208$);\r\nGetStatInitRunningTotal() + waterfall * ratio"
+			}
+		},
+		{
+			"statId":
+			{
+				"guid": "6064629618993135787",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "const waterfall = EvalFormula($#10516612381411113:6064633153420066826$);\r\nconst ratio = EvalE($#10516612381411112:6064633153363705860$) / EvalE($#10516612381411112:6064631924704346208$);\r\nGetStatInitRunningTotal() + waterfall * ratio"
+			}
+		},
+		{
+			"statId":
+			{
+				"guid": "109183598614141",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "const numWeights = 8;\r\nconst weight = GetNpcStatDistribution(GetOwner(),EStatDistributionStat::Intelligence);\r\nconst totalStats = EvalCurve($#10516612381411114:6064631783354597376$, Float(GetCharacterLevel(GetOwner())));\r\nconst statBase = EvalCurve($#10516612381411114:6064630328357421063$, Float(GetCharacterLevel(GetOwner())));\r\nconst ratingPerAttrib = EvalE($#10516612381411112:6064631924704346208$);\r\nconst gearAttribRatio = EvalE($#10516612381411112:6064631901772120296$);\r\nGetStatInitRunningTotal()\r\n+ numWeights * statBase * weight\r\n+ totalStats * weight / ratingPerAttrib * gearAttribRatio"
+			}
+		},
+		{
+			"statId":
+			{
+				"guid": "109183607068297",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "const waterfallINT = EvalFormula($#10516612381411113:6064633153420787723$);\r\nconst ratioINT = EvalE($#10516612381411112:6064631902561828892$) / EvalE($#10516612381411112:6064631924704346208$);\r\nconst waterfallWIS = EvalFormula($#10516612381411113:6064633153421574156$);\r\nconst ratioWIS = EvalE($#10516612381411112:6064633883578662912$) / EvalE($#10516612381411112:6064631924704346208$);\r\nGetStatInitRunningTotal()\r\n+ waterfallINT * ratioINT\r\n+ waterfallWIS * ratioWIS"
+			}
+		},
+		{
+			"statId":
+			{
+				"guid": "109342909421182",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "const waterfall = EvalFormula($#10516612381411113:6064633153420787723$);\r\nconst ratio = EvalE($#10516612381411112:6064633140819396189$) / EvalE($#10516612381411112:6064631924704346208$);\r\nGetStatInitRunningTotal() + waterfall * ratio"
+			}
+		},
+		{
+			"statId":
+			{
+				"guid": "109342895396476",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "const waterfall = EvalFormula($#10516612381411113:6064633153420787723$);\r\nconst ratio = EvalE($#10516612381411112:6064633169566629897$) / EvalE($#10516612381411112:6064631924704346208$);\r\nGetStatInitRunningTotal() + waterfall * ratio"
+			}
+		},
+		{
+			"statId":
+			{
+				"guid": "6064629618899943593",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "const waterfall = EvalFormula($#10516612381411113:6064633153420787723$);\r\nconst ratio = EvalE($#10516612381411112:6064633153363705860$) / EvalE($#10516612381411112:6064631924704346208$);\r\nGetStatInitRunningTotal() + waterfall * ratio"
+			}
+		},
+		{
+			"statId":
+			{
+				"guid": "109183598614142",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "const numWeights = 8;\r\nconst weight = GetNpcStatDistribution(GetOwner(),EStatDistributionStat::Wisdom);\r\nconst totalStats = EvalCurve($#10516612381411114:6064631783354597376$, Float(GetCharacterLevel(GetOwner())));\r\nconst statBase = EvalCurve($#10516612381411114:6064630328357879818$, Float(GetCharacterLevel(GetOwner())));\r\nconst ratingPerAttrib = EvalE($#10516612381411112:6064631924704346208$);\r\nconst gearAttribRatio = EvalE($#10516612381411112:6064631901772120296$);\r\nGetStatInitRunningTotal()\r\n+ numWeights * statBase * weight\r\n+ totalStats * weight / ratingPerAttrib * gearAttribRatio"
+			}
+		},
+		{
+			"statId":
+			{
+				"guid": "109183607068299",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "const waterfall = EvalFormula($#10516612381411113:6064633153421574156$);\r\nconst ratio = EvalE($#10516612381411112:6064631902577295392$) / EvalE($#10516612381411112:6064631924704346208$);\r\nGetStatInitRunningTotal() + waterfall * ratio"
+			}
+		},
+		{
+			"statId":
+			{
+				"guid": "109183607068301",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "const waterfall = EvalFormula($#10516612381411113:6064633153421574156$);\r\nconst ratio = EvalE($#10516612381411112:6064633140818740828$) / EvalE($#10516612381411112:6064631924704346208$);\r\nGetStatInitRunningTotal() + waterfall * ratio"
+			}
+		},
+		{
+			"statId":
+			{
+				"guid": "109342915057279",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "const waterfall = EvalFormula($#10516612381411113:6064633153421574156$);\r\nconst ratio = EvalE($#10516612381411112:6064631902574411806$) / EvalE($#10516612381411112:6064631924704346208$);\r\nGetStatInitRunningTotal() + waterfall * ratio"
+			}
+		},
+		{
+			"statId":
+			{
+				"guid": "109183607068298",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "const waterfall = EvalFormula($#10516612381411113:6064633153421574156$);\r\nconst ratio = EvalE($#10516612381411112:6064633153363705860$) / EvalE($#10516612381411112:6064631924704346208$);\r\nGetStatInitRunningTotal() + waterfall * ratio"
+			}
+		},
+		{
+			"statId":
+			{
+				"guid": "109343399171808",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "1"
+			}
+		},
+		{
+			"statId":
+			{
+				"guid": "109343399106257",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "1"
+			}
+		},
+		{
+			"statId":
+			{
+				"guid": "6064630639444426780",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "1.0"
+			}
+		},
+		{
+			"statId":
+			{
+				"guid": "6064630798183235705",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "-1"
+			}
+		}
+	],
+	"guid": "6064631845232640114",
+	"name": "NPC_Base",
+	"typeId": "409016"
+}

@@ -1,0 +1,12 @@
+{
+	"equation":
+	{
+		"expression": "// bow stats on player\r\nconst AccuracyRating = GetStat(GetInstigator(), $#10516612381411111:6064633191813152770$);\r\nconst Accuracy = AccuracyRating / (AccuracyRating + 100.0);\r\n\r\n// hunting npc stats\r\nconst PhysicalEvasion = GetStat(GetTarget(), $#10516612381411111:109343399171802$);\r\nconst MagicalEvasion = GetStat(GetTarget(), $#10516612381411111:109343399171812$);\r\n\r\nMax(PhysicalEvasion, MagicalEvasion) - Accuracy"
+	},
+	"constraints":
+	{
+	},
+	"guid": "6064633192150532121",
+	"name": "HuntingBowMissChance",
+	"typeId": "10516612381411112"
+}

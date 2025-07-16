@@ -1,0 +1,25 @@
+{
+	"equation":
+	{
+		"expression": "var corruptedDurabilityLoss    = 0.2;\r\nvar combatantDurabilityLoss    = 0.01;\r\nvar nonCombatantDurabilityLoss = 0.1;\r\nvar caravanDurabilityLoss      = 0.01;\r\nvar nodeSiegeDurabilityLoss    = 0.01;\r\nvar guildWarDurabilityLoss     = 0.01;\r\nvar nodeWarDurabilityLoss      = 0.01;\r\n\r\n\r\nconst isCorrupted = HasAlignment(GetOwner(), $#512160700:6064629443752951818$);\r\nconst isCombatant = HasAlignment(GetOwner(), $#512160700:6064629443707731976$);\r\nconst isInCaravanEvent = \r\n   HasAlignment(GetOwner(), $#512160700:6064629443694362626$)      // Caravan Defender\r\n|| HasAlignment(GetOwner(), $#512160700:6064629443693772801$);     // Caravan Attacker\r\nconst isInNodeSiegeEvent = \r\nHasAlignment(GetOwner(), $#512160700:6064632733143662592$)    // Siege Attacker\r\n|| HasAlignment(GetOwner(), $#512160700:6064632733144580097$); // Siege Defender\r\nconst isInGuildWarEvent = \r\nHasAlignment(GetOwner(), $#512160700:6064630610806636544$)     // Guild War Attacker\r\n|| HasAlignment(GetOwner(), $#512160700:6064631086261600301$);  // Guild War Defender\r\nconst isInNodeWarEvent = \r\nHasAlignment(GetOwner(), $#512160700:6064631086252163116$)      // Node War Attacker\r\n|| HasAlignment(GetOwner(), $#512160700:6064631051909070850$);   // Node War Defender\r\n\r\n// Starting durability loss mod is non-combatant\r\nvar flaggingDurabilityMod = nonCombatantDurabilityLoss;\r\n\r\n// combatant\r\nif(isCombatant)\r\n{\r\n   set flaggingDurabilityMod = combatantDurabilityLoss;\r\n}\r\n// caravan event\r\nif(isInCaravanEvent)\r\n{\r\n    set flaggingDurabilityMod = caravanDurabilityLoss;\r\n}\r\n// siege event\r\nif(isInNodeSiegeEvent)\r\n{\r\n    set flaggingDurabilityMod = nodeSiegeDurabilityLoss;\r\n}\r\n// guild war event\r\nif(isInGuildWarEvent)\r\n{\r\n    set flaggingDurabilityMod = guildWarDurabilityLoss;\r\n}\r\n// node war event\r\nif(isInNodeWarEvent)\r\n{\r\n    set flaggingDurabilityMod = nodeWarDurabilityLoss;\r\n}\r\n// corrupted\r\nif(isCorrupted)\r\n{\r\n   set flaggingDurabilityMod =  corruptedDurabilityLoss;\r\n}\r\n\r\n//const durabilityLoss = GetItemMaxDurability() * SelectFloat(isInPvPEvent, 0.0, SelectFloat(isCorrupted, 0.1, SelectFloat(isFlagged, 0.01, 0.1)));\r\nvar durabilityLoss = GetItemMaxDurability() * flaggingDurabilityMod;\r\n\r\n//SelectFloat(durabilityLoss < 1.0, 1.0, durabilityLoss)\r\nif(durabilityLoss < 1.0)\r\n{\r\n   set durabilityLoss = 1.0;\r\n}\r\ndurabilityLoss"
+	},
+	"constraints":
+	{
+		"none":
+		{
+			"bClampMin": true,
+			"min": 0,
+			"bClampMax": false,
+			"max": 0,
+			"roundingRule": "Rounding_None",
+			"combineOperation": "Op_Add",
+			"bucketEntryOperation":
+			{
+				"expression": ""
+			}
+		}
+	},
+	"guid": "6064629492249003005",
+	"name": "UniversalDurabilityLoss",
+	"typeId": "10516612381411112"
+}

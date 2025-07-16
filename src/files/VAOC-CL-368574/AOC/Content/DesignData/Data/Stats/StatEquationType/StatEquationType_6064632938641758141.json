@@ -1,0 +1,12 @@
+{
+	"equation":
+	{
+		"expression": "1.5\r\n// was trying something down here but had problems with poison stack application too\r\n/*\r\nconst weapon = GetCurrentWeaponSkilltree(GetInstigator());\r\nvar base = 4.5;\r\nvar hits = 4;\r\nif(weapon == $SkillTree:Weapon_1H_Sword_Pierce$ ||\r\n   weapon == $SkillTree:Weapon_1H_Sword_Slash$ ||\r\n   weapon == $SkillTree:Weapon_Ranged_Wand$){\r\n    set hits = 5;\r\n}\r\nelse if(weapon == $SkillTree:Weapon_1H_Mace$ ||\r\n        weapon == $SkillTree:Weapon_2H_Sword$){\r\n    set hits = 4;\r\n}else if(weapon == $SkillTree:Weapon_Ranged_Longbow$ ||\r\n         weapon == $SkillTree:Weapon_Ranged_Book$){\r\n    set hits = 3;\r\n}else if(weapon == $SkillTree:Weapon_DW_Daggers$){\r\n    set hits = 8;\r\n}else if(weapon == $SkillTree:Weapon_Ranged_Shortbow$){\r\n    set hits = 10;\r\n}\r\nbase / hits\r\n*/"
+	},
+	"constraints":
+	{
+	},
+	"guid": "6064632938641758141",
+	"name": "Rogue_Poison_Status_Dur",
+	"typeId": "10516612381411112"
+}

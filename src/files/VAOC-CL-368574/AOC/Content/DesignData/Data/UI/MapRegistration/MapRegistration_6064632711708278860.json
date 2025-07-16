@@ -1,0 +1,101 @@
+{
+	"mapIconVisualId":
+	{
+		"guid": "6064631051544559617",
+		"typeId": "949952112329",
+		"name": "None"
+	},
+	"calloutData": [
+		{
+			"requirements": [],
+			"bCalloutIsDialog": true,
+			"bShowQuestHeader": true,
+			"narrativeType": 2,
+			"mapIcon":
+			{
+				"guid": "6064630990207647746",
+				"typeId": "949952112329",
+				"name": "None"
+			},
+			"displayNameOverride": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"EB96437742D8FB54D456AE927DA56E3E\", \"Esh-Rumat Qeyara\")",
+			"descriptionTextOverride": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"D8B086EB4BF397152BFAAB998B768A44\", \"An alert Vaelune woman watches the comings and goings of the camp with cool vigilance.\")",
+			"calloutAudio": "None",
+			"bGroupBasedOnQuest": true,
+			"relatedCommission":
+			{
+				"guid": "6064632303971139602",
+				"typeId": "280002",
+				"name": "None"
+			},
+			"relatedStoryArcQuest":
+			{
+				"guid": "0",
+				"typeId": "1091110033",
+				"name": "None"
+			}
+		}
+	],
+	"calloutRange": 2500,
+	"narrativeType": 2,
+	"commissionsIds": [
+		{
+			"guid": "6064632303971139602",
+			"typeId": "280002",
+			"name": "None"
+		}
+	],
+	"storyArcQuestsIds": [],
+	"bIsControlPoint": false,
+	"bAlwaysShowOnMap": true,
+	"bUseMonsterTooltip": false,
+	"monsterTooltipText": "",
+	"filterSettingsIds": [],
+	"narrativeRequirements": [
+		{
+			"criteria": [
+				{
+					"elementType": "Quest",
+					"narrativeType": "Commission",
+					"commissionId":
+					{
+						"guid": "6064632710745096192",
+						"typeId": "280002",
+						"name": "None"
+					},
+					"storyArcQuestId":
+					{
+						"guid": "0",
+						"typeId": "1091110035",
+						"name": "None"
+					},
+					"objectiveId":
+					{
+						"guid": "0",
+						"typeId": "1091110420",
+						"name": "None"
+					},
+					"itemFilterId":
+					{
+						"guid": "0",
+						"typeId": "1091110041",
+						"name": "None"
+					},
+					"currencyDefId":
+					{
+						"guid": "0",
+						"typeId": "1011151289",
+						"name": "None"
+					},
+					"amountToQuery": 0,
+					"questState": "Unaccepted",
+					"objectiveState": "Active",
+					"itemState": "InInventory",
+					"invert": false
+				}
+			]
+		}
+	],
+	"guid": "6064632711708278860",
+	"name": "SQ_SamiasHope_QuestGiver_Amira",
+	"typeId": "402007"
+}

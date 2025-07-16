@@ -1,0 +1,12 @@
+{
+	"equation":
+	{
+		"expression": "const finisher = \r\nHitHasTag(GetHitEvent(), \"Ability.weaponcombo\") \r\n&& HitHasTag(GetHitEvent(), \"combostep.end\");\r\n\r\nGetInstigator() == GetOwner() && finisher"
+	},
+	"constraints":
+	{
+	},
+	"guid": "6064632265043417329",
+	"name": "Weapon_Combo_Finisher",
+	"typeId": "10516612381411112"
+}

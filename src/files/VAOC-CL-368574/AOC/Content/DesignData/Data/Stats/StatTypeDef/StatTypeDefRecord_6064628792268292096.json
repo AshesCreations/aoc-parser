@@ -1,0 +1,44 @@
+{
+	"displayName": "NSLOCTEXT(\"\", \"81B5C27740B84A56692F3B81EB709A6E\", \"Weaponsmithing Stamina\")",
+	"description": "",
+	"bHidden": true,
+	"gameplayType": "Type_Artisanship",
+	"bHasWaterfallStatsUI": false,
+	"waterfallStatsUIIds": [],
+	"statType": "Type_Float",
+	"base":
+	{
+		"expression": ""
+	},
+	"waterfallStatsBaseIds": [],
+	"valueMin":
+	{
+		"expression": "0"
+	},
+	"waterfallStatsMinIds": [],
+	"valueMax":
+	{
+		"expression": "100"
+	},
+	"waterfallStatsMaxIds": [],
+	"regenRate":
+	{
+		"expression": "5"
+	},
+	"waterfallStatsRegenIds": [],
+	"bRegenWhileDead": false,
+	"onSpawn": "Reset_SetMax",
+	"onDeath": "Reset_SetMax",
+	"onRevive": "Reset_SetMax",
+	"bPersistValue": false,
+	"replication": 1,
+	"shieldStatId":
+	{
+		"guid": "0",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"guid": "6064628792268292096",
+	"name": "ArtisanGL_Weaponsmithing_Stamina",
+	"typeId": "10516612381411111"
+}

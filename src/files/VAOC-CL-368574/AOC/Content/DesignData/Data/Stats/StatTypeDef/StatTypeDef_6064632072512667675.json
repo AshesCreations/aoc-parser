@@ -1,0 +1,76 @@
+{
+	"displayName": "NSLOCTEXT(\"[1909495A4C2095068D406C9D33F90055]\", \"B1C0CBC0444E651FAD29A8B09F1DF8F3\", \"Total Speed\")",
+	"description": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"E8D26F8D41D41A997B89EA812601C730\", \"The final movement speed of the caravan.\")",
+	"bHidden": false,
+	"gameplayType": "Type_Combat",
+	"bHasWaterfallStatsUI": false,
+	"waterfallStatsUIIds": [],
+	"bDisplayAsPercentage": false,
+	"statType": "Type_Float",
+	"bClampStatFinalValue": false,
+	"bMultiplyStatMods": false,
+	"bMultiplyCompliment": false,
+	"base":
+	{
+		"expression": "var BaseSpeed = 240;\r\nvar RoadSpeed = 160;\r\n\r\n//stats from components\r\nvar BaseSpeedMult = GetStat(GetOwner(), $#10516612381411111:109343269148318$);\r\nvar RoadSpeedMult = GetStat(GetOwner(), $#10516612381411111:6064630684883419211$);\r\n\r\n//buffs from roads and other\r\nvar BaseSpeedMod = GetStat(GetOwner(), $#10516612381411111:6064630175618760962$);\r\nvar RoadSpeedMod = GetStat(GetOwner(), $#10516612381411111:6064630684881977418$);\r\n\r\nvar combatMult = SelectFloat(IsInCombat(GetSource()), 0.5, 1.0);\r\n\r\n(BaseSpeed * BaseSpeedMult * BaseSpeedMod + RoadSpeed * RoadSpeedMult * RoadSpeedMod) * combatMult"
+	},
+	"waterfallStatsBaseIds": [
+		{
+			"guid": "109343269148318",
+			"typeId": "10516612381411111",
+			"name": "None"
+		},
+		{
+			"guid": "6064630684883419211",
+			"typeId": "10516612381411111",
+			"name": "None"
+		},
+		{
+			"guid": "6064630684881977418",
+			"typeId": "10516612381411111",
+			"name": "None"
+		},
+		{
+			"guid": "6064630175618760962",
+			"typeId": "10516612381411111",
+			"name": "None"
+		},
+		{
+			"guid": "108986352686712",
+			"typeId": "10516612381411111",
+			"name": "None"
+		}
+	],
+	"valueMin":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMinIds": [],
+	"valueMax":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMaxIds": [],
+	"regenRate":
+	{
+		"expression": ""
+	},
+	"waterfallStatsRegenIds": [],
+	"bRegenWhileDead": false,
+	"bRecalculateOnCombatState": true,
+	"onSpawn": "Reset_None",
+	"onDeath": "Reset_None",
+	"onRevive": "Reset_None",
+	"bPersistValue": false,
+	"replication": 7,
+	"shieldStatId":
+	{
+		"guid": "0",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"grantedEffects": [],
+	"guid": "6064632072512667675",
+	"name": "Caravan_MoveSpeed",
+	"typeId": "10516612381411111"
+}

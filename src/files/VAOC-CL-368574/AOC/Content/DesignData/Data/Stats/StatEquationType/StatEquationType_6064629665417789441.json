@@ -1,0 +1,25 @@
+{
+	"equation":
+	{
+		"expression": "GetStorageMaxStackSizeStat()"
+	},
+	"constraints":
+	{
+		"none":
+		{
+			"bClampMin": true,
+			"min": 0,
+			"bClampMax": false,
+			"max": 0,
+			"roundingRule": "Rounding_None",
+			"combineOperation": "Op_Add",
+			"bucketEntryOperation":
+			{
+				"expression": ""
+			}
+		}
+	},
+	"guid": "6064629665417789441",
+	"name": "ItemMaxStackSizeAddition",
+	"typeId": "10516612381411112"
+}

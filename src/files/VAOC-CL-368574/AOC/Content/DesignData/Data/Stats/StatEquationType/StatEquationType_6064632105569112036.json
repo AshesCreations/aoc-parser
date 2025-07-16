@@ -1,0 +1,12 @@
+{
+	"equation":
+	{
+		"expression": "// 1.0 against primary target, 0.5 scaling down to 0.25 against secondary targets (hitting 0.25 at >=5 total targets hit)\r\nconst hit = GetHitInProgress();\r\nconst targetScaled = Lerp(0.5, 0.25, Min(Float(GetNumTargets(hit)-1)/4.0, 1.0));\r\nconst activeTarg = GetActiveTarget(GetInstigator(), ETargetingIntention::Harm);\r\nvar primary = activetarg == GetTarget();\r\nif(!DoesHitContainActor(hit,activeTarg)){ // if active target isnt in the hit then use closest target\r\n    set primary = GetClosestTargetToActorInHit(hit, GetInstigator()) == GetTarget();\r\n}\r\nSelectFloat(primary, 1.0, targetScaled)"
+	},
+	"constraints":
+	{
+	},
+	"guid": "6064632105569112036",
+	"name": "WeaponCombo_TargetCountScaling",
+	"typeId": "10516612381411112"
+}

@@ -1,0 +1,56 @@
+{
+	"displayName": "NSLOCTEXT(\"\", \"B2DA576543A85E7C7A4B33AEA0830499\", \"Power Multiplier\")",
+	"description": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"C57EDCF944FBE0D54C1269A40A208604\", \"Increases the amount of all damage and healing done. Each source of this stat multiplies with others and is applied multiplicatively.\")",
+	"bHidden": false,
+	"gameplayType": "Type_Combat",
+	"bHasWaterfallStatsUI": false,
+	"waterfallStatsUIIds": [],
+	"bDisplayAsPercentage": true,
+	"statType": "Type_Float",
+	"bClampStatFinalValue": true,
+	"bMultiplyStatMods": true,
+	"bMultiplyCompliment": false,
+	"base":
+	{
+		"expression": "var v = 1.0;\r\nif(GetStat(GetInstigator(),$#10516612381411111:6064630798183235705$)<0.0){\r\n    set v = EvalFormula($#10516612381411113:6064633459564150784$);\r\n}\r\nv"
+	},
+	"waterfallStatsBaseIds": [
+		{
+			"guid": "6064630798183235705",
+			"typeId": "10516612381411111",
+			"name": "None"
+		}
+	],
+	"valueMin":
+	{
+		"expression": "0"
+	},
+	"waterfallStatsMinIds": [],
+	"valueMax":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMaxIds": [],
+	"regenRate":
+	{
+		"expression": ""
+	},
+	"waterfallStatsRegenIds": [],
+	"bRegenWhileDead": false,
+	"bRecalculateOnCombatState": false,
+	"onSpawn": "Reset_None",
+	"onDeath": "Reset_None",
+	"onRevive": "Reset_None",
+	"bPersistValue": false,
+	"replication": 5,
+	"shieldStatId":
+	{
+		"guid": "0",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"grantedEffects": [],
+	"guid": "6064630634097410063",
+	"name": "PowerMult",
+	"typeId": "10516612381411111"
+}

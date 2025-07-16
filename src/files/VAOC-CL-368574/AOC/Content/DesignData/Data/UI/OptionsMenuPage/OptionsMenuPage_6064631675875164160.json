@@ -1,0 +1,94 @@
+{
+	"label": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"6721CAF34104F40498DB9B9038093726\", \"Display\")",
+	"categoryHeaderLabel": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"B43C9C2D489F97A1FDFAC3B4F107C0AB\", \"System | Display Settings\")",
+	"entryCategories": [
+		{
+			"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Video_DisplaySubheader\")",
+			"entryAlignment": "HAlign_Fill",
+			"entryWrapSize": 10,
+			"wrapBoxClass": "Standard",
+			"entries": [
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Video_WindowModeLabel\")",
+					"labelTextMinDesiredWidth": 232,
+					"labelTextWrapWidth": 600,
+					"type": "Dropdown",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 584,
+					"widgetClass": "None",
+					"getterFunctionName": "GetWindowMode",
+					"setterFunctionName": "SetWindowMode",
+					"dependencyGetter": "None"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Video_ResolutionLabel\")",
+					"labelTextMinDesiredWidth": 232,
+					"labelTextWrapWidth": 600,
+					"type": "Dropdown",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 584,
+					"widgetClass": "None",
+					"getterFunctionName": "GetResolution",
+					"setterFunctionName": "SetResolution",
+					"dependencyGetter": "None"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Video_FrameRateLimitLabel\")",
+					"labelTextMinDesiredWidth": 232,
+					"labelTextWrapWidth": 600,
+					"type": "Dropdown",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 584,
+					"widgetClass": "None",
+					"getterFunctionName": "GetFrameRateLimit",
+					"setterFunctionName": "SetFrameRateLimit",
+					"dependencyGetter": "None"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Video_VSyncLabel\")",
+					"labelTextMinDesiredWidth": 232,
+					"labelTextWrapWidth": 1080,
+					"type": "CheckBox",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetVSync",
+					"setterFunctionName": "SetVSync",
+					"dependencyGetter": "None"
+				}
+			],
+			"subcategories": []
+		}
+	],
+	"guid": "6064631675875164160",
+	"name": "Display",
+	"typeId": "3616673544"
+}

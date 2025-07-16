@@ -1,0 +1,43 @@
+{
+	"modifierValueSource": "Expression",
+	"valueExpression":
+	{
+		"expression": "const ReagentGradeMod = \r\nSelectFloat(GetItemLevel() >= 1 && GetItemLevel() < 10, 2.0,\r\nSelectFloat(GetItemLevel() >= 10 && GetItemLevel() < 20, 1.6,\r\nSelectFloat(GetItemLevel() >= 20 && GetItemLevel() < 30, 1.5, 1.0)));\r\nconst ReagentTypeMod = \r\nSelectFloat(ItemTypeTagsContains(\"Item.Resource.Raw\"), 1.0,\r\nSelectFloat(ItemTypeTagsContains(\"Item.Resource.Processed\"), 1.6,\r\n1.0));\r\n\r\nSelectFloat(ItemTypeTagsContains(\"Item.Resource.Raw\") || ItemTypeTagsContains(\"Item.Resource.Processed\"), 0.1 * ReagentGradeMod * ReagentTypeMod, 1.0) "
+	},
+	"priceFactor": "Quality",
+	"valueCurve":
+	{
+		"externalCurve": "None",
+		"editorCurveData":
+		{
+			"keys": [],
+			"defaultValue": 3.4028234663852886e+38,
+			"preInfinityExtrap": "RCCE_Constant",
+			"postInfinityExtrap": "RCCE_Constant",
+			"keyHandlesToIndices":
+			{
+			}
+		}
+	},
+	"priceModifiersIds": [],
+	"arithmeticOperation": "Multiply",
+	"itemFilter":
+	{
+		"tokenStreamVersion": 0,
+		"tagDictionary": [],
+		"queryTokenStream": [],
+		"userDescription": "",
+		"autoDescription": ""
+	},
+	"affectedContexts": 225,
+	"affectedCurrenciesIds": [
+		{
+			"guid": "6064629127873626112",
+			"typeId": "1011111289",
+			"name": "None"
+		}
+	],
+	"guid": "6064632339995230604",
+	"name": "BuyReagentMod",
+	"typeId": "3145314715"
+}

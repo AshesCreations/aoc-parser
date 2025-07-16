@@ -1,0 +1,47 @@
+{
+	"modifierValueSource": "Expression",
+	"valueExpression":
+	{
+		"expression": "const distance = GetDistanceBetween();\r\nconst maxDistance = 939402;\r\nconst mult = 100000;\r\nvar step = 1.0;\r\n\r\nif (distance/maxdistance >= 0.75){\r\nset step = 1.0;\r\n} else\r\n\r\nif (distance/maxdistance < 0.75){\r\nset step = 0.5;\r\n}\r\n\r\nmult * (distance/maxDistance) *step"
+	},
+	"priceFactor": "Quality",
+	"valueCurve":
+	{
+		"externalCurve": "None",
+		"editorCurveData":
+		{
+			"keys": [],
+			"defaultValue": 3.4028234663852886e+38,
+			"preInfinityExtrap": "RCCE_Constant",
+			"postInfinityExtrap": "RCCE_Constant",
+			"keyHandlesToIndices":
+			{
+			}
+		}
+	},
+	"priceModifiersIds": [],
+	"arithmeticOperation": "Multiply",
+	"itemFilter":
+	{
+		"tokenStreamVersion": 0,
+		"tagDictionary": [
+			{
+				"tagName": "item.resource.cert.nodecert"
+			}
+		],
+		"queryTokenStream": [ 0, 1, 2, 1, 0 ],
+		"userDescription": "CommodityFilter",
+		"autoDescription": " ALL( item.resource.cert.nodecert )"
+	},
+	"affectedContexts": 226,
+	"affectedCurrenciesIds": [
+		{
+			"guid": "6064632983213375488",
+			"typeId": "1011111289",
+			"name": "None"
+		}
+	],
+	"guid": "6064632983146921991",
+	"name": "GuildCommodity_DistanceModifier",
+	"typeId": "3145314715"
+}

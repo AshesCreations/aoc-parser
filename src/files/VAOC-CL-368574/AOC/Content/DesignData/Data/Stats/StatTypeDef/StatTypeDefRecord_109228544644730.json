@@ -1,0 +1,49 @@
+{
+	"displayName": "Corruption",
+	"description": "NSLOCTEXT(\"[1909495A4C2095068D406C9D33F90055]\", \"DADC699C46B71B9EC191F3BCA75D885C\", \"You gain corruption when you kill unflagged players. You gain increased corruption for killing players lower level than you. Corruption influences your Corruption Tier. *1+ Corruption = Corruption Tier 1*3+ Corruption = Corruption Tier 2*6+ Corruption = Corruption Tier 3*12+ Corruption = Corruption Tier 4*24+ Corruption = Corruption Tier 5\")",
+	"bHidden": false,
+	"gameplayType": "Type_Combat",
+	"bHasWaterfallStatsUI": false,
+	"waterfallStatsUIIds": [],
+	"bDisplayAsPercentage": false,
+	"statType": "Type_Float",
+	"bClampStatFinalValue": false,
+	"bMultiplyStatMods": false,
+	"bMultiplyCompliment": false,
+	"base":
+	{
+		"expression": "0"
+	},
+	"waterfallStatsBaseIds": [],
+	"valueMin":
+	{
+		"expression": "0"
+	},
+	"waterfallStatsMinIds": [],
+	"valueMax":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMaxIds": [],
+	"regenRate":
+	{
+		"expression": "0"
+	},
+	"waterfallStatsRegenIds": [],
+	"bRegenWhileDead": false,
+	"onSpawn": "Reset_None",
+	"onDeath": "Reset_None",
+	"onRevive": "Reset_None",
+	"bPersistValue": true,
+	"replication": 7,
+	"shieldStatId":
+	{
+		"guid": "0",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"grantedEffects": [],
+	"guid": "109228544644730",
+	"name": "Corruption",
+	"typeId": "10516612381411111"
+}

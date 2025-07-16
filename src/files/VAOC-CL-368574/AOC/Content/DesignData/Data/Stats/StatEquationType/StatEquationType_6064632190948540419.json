@@ -1,0 +1,12 @@
+{
+	"equation":
+	{
+		"expression": "// unused currently where im calling this formula doesnt work mysteriously\r\n\r\nconst tier = GetStat(GetInstigator(),$#10516612381411111:6064630485796716545$);\r\nconst min = Round(EvalCurve($#10516612381411114:6064632190841389056$,tier));\r\nconst max = Round(EvalCurve($#10516612381411114:6064632190842306561$,tier));\r\nfloat(RandIntRange(min,max))"
+	},
+	"constraints":
+	{
+	},
+	"guid": "6064632190948540419",
+	"name": "CorruptionDeathItemDrop",
+	"typeId": "10516612381411112"
+}

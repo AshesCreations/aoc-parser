@@ -1,0 +1,192 @@
+{
+	"questsIds": [
+		{
+			"guid": "6064629824368803879",
+			"typeId": "1091110035",
+			"name": "None"
+		},
+		{
+			"guid": "6064629824411992106",
+			"typeId": "1091110035",
+			"name": "None"
+		}
+	],
+	"activePopulationSetsIds": [
+		{
+			"guid": "6064630270761781977",
+			"typeId": "5111005",
+			"name": "None"
+		},
+		{
+			"guid": "6064630270761782608",
+			"typeId": "5111005",
+			"name": "None"
+		},
+		{
+			"guid": "6064630270761783885",
+			"typeId": "5111005",
+			"name": "None"
+		},
+		{
+			"guid": "6064630270761780117",
+			"typeId": "5111005",
+			"name": "None"
+		},
+		{
+			"guid": "6064630270761781246",
+			"typeId": "5111005",
+			"name": "None"
+		},
+		{
+			"guid": "6064630270761781921",
+			"typeId": "5111005",
+			"name": "None"
+		}
+	],
+	"phaseSpawnLocationsIds": [
+		{
+			"guid": "6064630445775192322",
+			"typeId": "1091110237",
+			"name": "None"
+		},
+		{
+			"guid": "6064630445775192323",
+			"typeId": "1091110237",
+			"name": "None"
+		},
+		{
+			"guid": "6064630445775192324",
+			"typeId": "1091110237",
+			"name": "None"
+		},
+		{
+			"guid": "6064630445775192325",
+			"typeId": "1091110237",
+			"name": "None"
+		},
+		{
+			"guid": "6064630445775192326",
+			"typeId": "1091110237",
+			"name": "None"
+		},
+		{
+			"guid": "6064630445775192327",
+			"typeId": "1091110237",
+			"name": "None"
+		}
+	],
+	"spawnLocationsIds": [
+		{
+			"guid": "6064631091671794054",
+			"typeId": "5127371160",
+			"name": "None"
+		},
+		{
+			"guid": "6064631091671794055",
+			"typeId": "5127371160",
+			"name": "None"
+		},
+		{
+			"guid": "6064631091671794056",
+			"typeId": "5127371160",
+			"name": "None"
+		},
+		{
+			"guid": "6064631091671794057",
+			"typeId": "5127371160",
+			"name": "None"
+		},
+		{
+			"guid": "6064631091671794058",
+			"typeId": "5127371160",
+			"name": "None"
+		},
+		{
+			"guid": "6064631091671794059",
+			"typeId": "5127371160",
+			"name": "None"
+		}
+	],
+	"interactVolumesIds": [],
+	"cannonizeOnEarlyTermination": false,
+	"cannonizeOnNormalAdvancement": false,
+	"phaseName": "NSLOCTEXT(\"\", \"98F15EA543153E48C59FD489E2607C61\", \"Sporulation\")",
+	"transitionsIds": [
+		{
+			"guid": "6064629818133970949",
+			"typeId": "1091110034",
+			"name": "None"
+		}
+	],
+	"advancePhaseByTime": true,
+	"advancementTime": 259200,
+	"canAdvance":
+	{
+		"expression": "(GetStoryArcInstanceVariable(\"MA_0013_Oakenbane_AuntieMush\", \"MushFight\") > (GetStoryArcInstanceVariable(\"MA_0013_Oakenbane_AuntieMush\", \"MushTouched\")))"
+	},
+	"timeAdvancePhaseId":
+	{
+		"guid": "6064629818133970949",
+		"typeId": "1091110034",
+		"name": "None"
+	},
+	"leaveSequenceId":
+	{
+		"guid": "0",
+		"typeId": "1091110043",
+		"name": "None"
+	},
+	"leaveSequenceWorldTransform":
+	{
+		"rotation":
+		{
+			"x": 0,
+			"y": 0,
+			"z": 0,
+			"w": 1
+		},
+		"translation":
+		{
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"scale3D":
+		{
+			"x": 1,
+			"y": 1,
+			"z": 1
+		}
+	},
+	"enterSequenceId":
+	{
+		"guid": "0",
+		"typeId": "1091110043",
+		"name": "None"
+	},
+	"enterSequenceWorldTransform":
+	{
+		"rotation":
+		{
+			"x": 0,
+			"y": 0,
+			"z": 0,
+			"w": 1
+		},
+		"translation":
+		{
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"scale3D":
+		{
+			"x": 1,
+			"y": 1,
+			"z": 1
+		}
+	},
+	"guid": "6064629818133512196",
+	"name": "SAP_0013_OakenbaneFountain_AuntieMush2",
+	"typeId": "1091110034"
+}

@@ -1,0 +1,28 @@
+{
+	"buyingCurrencyTierId":
+	{
+		"guid": "6064629147812364289",
+		"typeId": "1011111289",
+		"name": "None"
+	},
+	"sellingCurrencyTierId":
+	{
+		"guid": "6064629127873626112",
+		"typeId": "1011111289",
+		"name": "None"
+	},
+	"currencyValues":
+	{
+		"(Guid=6064629147812364289,TypeId=1011111289)":
+		{
+			"expression": "const ItemLevel  = Float(GetItemLevel());\r\nconst ItemRarity = EvalCurve($#10516612381411114:6064632293965955074$,Float(GetItemRarity()));\r\nvar BaseCost = 500;\r\n\r\nif (ItemLevel <= 9.0){\r\n set BaseCost = 500;\r\n} else \r\nif(ItemLevel >= 10.0 && ItemLevel <= 19.0){\r\n set BaseCost = 1000;\r\n} else \r\nif(ItemLevel >= 20.0 && ItemLevel <= 29.0){\r\n set BaseCost = 2000;\r\n} else \r\nif(ItemLevel >= 30.0 && ItemLevel <= 39.0){\r\n set BaseCost = 3000;\r\n} else \r\nif(ItemLevel >= 40.0 && ItemLevel <= 49.0){\r\n set BaseCost = 4000;\r\n} else \r\nif(ItemLevel >= 50.0 && ItemLevel <= 60.0){\r\n set BaseCost = 1;\r\n}\r\n\r\nBaseCost * ItemRarity / 10 "
+		},
+		"(Guid=6064629127873626112,TypeId=1011111289)":
+		{
+			"expression": "const ItemLevel  = Float(GetItemLevel());\r\nconst ItemRarity = EvalCurve($#10516612381411114:6064632293965955074$,Float(GetItemRarity()));\r\nvar BaseCost = 500;\r\nvar distanceMod = 1.0;\r\nconst jank = 1.5;\r\n\r\n//Get Distance Between players current Node and the node the player\r\n//purchased an item from\r\nconst ItemLocation = Item_GetNodePurchasedFrom();\r\nconst PlayerLocation = GetCurrentNode(GetPlayer());\r\nconst distance = GetDistanceBetween(ItemLocation, PlayerLocation);\r\n\r\nvar lawlessbonus = 1.0;\r\n//check for if its the lawless tropics node\r\nif (ItemLocation == PlayerLocation){\r\n  set lawlessbonus = 1.0;\r\n} else\r\nif (PlayerLocation == $#1323521343:6064633254015205385$){\r\n  set lawlessbonus = 1.2;\r\n}\r\n  \r\n//Set The base value of the item based on ItemLevel\r\nif (ItemLevel <= 9.0){\r\n set BaseCost = 500;\r\n} else \r\nif(ItemLevel >= 10.0 && ItemLevel <= 19.0){\r\n set BaseCost = 1000;\r\n} else \r\nif(ItemLevel >= 20.0 && ItemLevel <= 29.0){\r\n set BaseCost = 2000;\r\n} else \r\nif(ItemLevel >= 30.0 && ItemLevel <= 39.0){\r\n set BaseCost = 3000;\r\n} else \r\nif(ItemLevel >= 40.0 && ItemLevel <= 49.0){\r\n set BaseCost = 4000;\r\n} else \r\nif(ItemLevel >= 50.0 && ItemLevel <= 60.0){\r\n set BaseCost = 1;\r\n}\r\n\r\nif(ItemTypeTagsContains(\"Item.Commodity.Lawless\")){\r\n set BaseCost = 4800;\r\n}\r\n//If the distance between the players current node and the items\r\n//location of origin is less than 100 apply the jank nerf to deal\r\n//with low tax rates\r\nif(distance <= 100.0){\r\n set distanceMod = 0.6;\r\n}\r\n\r\n//Caculate the Base vendor value\r\nBaseCost * ItemRarity * distanceMod * lawlessbonus"
+		}
+	},
+	"guid": "6064630198119694345",
+	"name": "PlayerCommodity",
+	"typeId": "3145314713"
+}

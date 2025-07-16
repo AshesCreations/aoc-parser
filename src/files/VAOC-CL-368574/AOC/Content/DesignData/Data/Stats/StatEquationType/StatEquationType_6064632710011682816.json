@@ -1,0 +1,12 @@
+{
+	"equation":
+	{
+		"expression": "//Declare a variable due to formulas unable to report bools on their own. Formula references will check against this binary.\r\nvar binary = 0.0;\r\n\r\n//Declares all possible Extended Finisher types across all weapons\r\nconst eligible = GetSkillPurchased(GetInstigator(), GetCurrentWeaponSkilltree(GetInstigator()), $#981011333:6064631720246444036$) || \r\nGetSkillPurchased(GetInstigator(), GetCurrentWeaponSkilltree(GetInstigator()), $#981011333:6064631720635073949$) || \r\nGetSkillPurchased(GetInstigator(), GetCurrentWeaponSkilltree(GetInstigator()), $#981011333:6064631726968800491$) ||\r\nGetSkillPurchased(GetInstigator(), GetCurrentWeaponSkilltree(GetInstigator()), $#981011333:6064631846219546889$) ||\r\nGetSkillPurchased(GetInstigator(), GetCurrentWeaponSkilltree(GetInstigator()), $#981011333:6064631846173475077$) ||\r\nGetSkillPurchased(GetInstigator(), GetCurrentWeaponSkilltree(GetInstigator()), $#981011333:6064631238789431563$) ||\r\nGetSkillPurchased(GetInstigator(), GetCurrentWeaponSkilltree(GetInstigator()), $#981011333:6064631238789300490$) ||\r\nGetSkillPurchased(GetInstigator(), GetCurrentWeaponSkilltree(GetInstigator()), $#981011333:6064631238789497100$);\r\n\r\n\r\n//If player has any of the above purchased skills for their active weapon, binary returns 1 (true)\r\nif(eligible)\r\n{\r\nset binary = 1.0;\r\n}\r\n\r\nbinary"
+	},
+	"constraints":
+	{
+	},
+	"guid": "6064632710011682816",
+	"name": "WeaponCombo_FinisherProcEligible",
+	"typeId": "10516612381411112"
+}

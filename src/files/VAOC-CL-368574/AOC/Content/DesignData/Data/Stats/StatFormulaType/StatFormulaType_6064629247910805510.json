@@ -1,0 +1,127 @@
+{
+	"equationId":
+	{
+		"guid": "6064629248579600393",
+		"typeId": "10516612381411112",
+		"name": "None"
+	},
+	"inputTerms": [
+		{
+			"termId":
+			{
+				"guid": "6064629248875298840",
+				"typeId": "10516612381411115",
+				"name": "None"
+			},
+			"value":
+			{
+				"expression": "const PhysicalOverride = CheckForDamageTag(GetHitInProgress(), \"ability.PhysicalScalingOverride\");\r\nvar Healing = 0.0;\r\nif(PhysicalOverride){\r\n    set Healing = GetStat(GetInstigator(), $#10516612381411111:109343399171797$);\r\n}else{\r\n    set Healing = GetStat(GetInstigator(), $#10516612381411111:109343399171822$);\r\n}\r\nHealing"
+			},
+			"bOptional": false,
+			"bKeepBeyondScope": false,
+			"filter":
+			{
+				"expression": ""
+			},
+			"mergeRuleOverride": "Merge_Default"
+		},
+		{
+			"termId":
+			{
+				"guid": "6064632416763315974",
+				"typeId": "10516612381411115",
+				"name": "None"
+			},
+			"value":
+			{
+				"expression": "const Instigator = GetInstigator();\r\n1.0 +\r\nGetStat(Instigator, $#10516612381411111:6064632382425989130$) +\r\nGetStat(Instigator, $#10516612381411111:6064632382423695366$) +\r\nGetStat(Instigator, $#10516612381411111:6064632382422056963$)"
+			},
+			"bOptional": false,
+			"bKeepBeyondScope": false,
+			"filter":
+			{
+				"expression": ""
+			},
+			"mergeRuleOverride": "Merge_Default"
+		},
+		{
+			"termId":
+			{
+				"guid": "6064630634153443371",
+				"typeId": "10516612381411115",
+				"name": "None"
+			},
+			"value":
+			{
+				"expression": "const Instigator = GetInstigator();\r\nGetStat(Instigator, $#10516612381411111:6064630634097410063$) *\r\nGetStat(Instigator, $#10516612381411111:6064630634058743817$) *\r\nGetStat(Instigator, $#10516612381411111:6064630634099769360$)"
+			},
+			"bOptional": false,
+			"bKeepBeyondScope": false,
+			"filter":
+			{
+				"expression": ""
+			},
+			"mergeRuleOverride": "Merge_Default"
+		},
+		{
+			"termId":
+			{
+				"guid": "6064629248910950429",
+				"typeId": "10516612381411115",
+				"name": "None"
+			},
+			"value":
+			{
+				"expression": "var CHeal = 1.0;\r\nconst IsCrit = HitFlagsContains(GetHitFlags(GetHitInProgress(), GetTarget()), EHitFlag::Crit);\r\nif (IsCrit) {\r\n    set CHeal = GetStat(GetInstigator(), $#10516612381411111:6064629246804164612$);\r\n}\r\nCHeal"
+			},
+			"bOptional": false,
+			"bKeepBeyondScope": false,
+			"filter":
+			{
+				"expression": ""
+			},
+			"mergeRuleOverride": "Merge_Default"
+		},
+		{
+			"termId":
+			{
+				"guid": "6064629879423172608",
+				"typeId": "10516612381411115",
+				"name": "None"
+			},
+			"value":
+			{
+				"expression": "1.0 + GetStat(GetTarget(), $#10516612381411111:109343236642458$)"
+			},
+			"bOptional": false,
+			"bKeepBeyondScope": false,
+			"filter":
+			{
+				"expression": ""
+			},
+			"mergeRuleOverride": "Merge_Default"
+		},
+		{
+			"termId":
+			{
+				"guid": "6064630704647897228",
+				"typeId": "10516612381411115",
+				"name": "None"
+			},
+			"value":
+			{
+				"expression": "const guid = GetActorGuid(GetInstigator());\r\nconst xpdamp = 1.0 - (GetXPDebtRatio(guid)*0.2);\r\nxpdamp"
+			},
+			"bOptional": false,
+			"bKeepBeyondScope": false,
+			"filter":
+			{
+				"expression": ""
+			},
+			"mergeRuleOverride": "Merge_Default"
+		}
+	],
+	"guid": "6064629247910805510",
+	"name": "HealingMod",
+	"typeId": "10516612381411113"
+}

@@ -1,0 +1,541 @@
+{
+	"label": "Graphics",
+	"categoryHeaderLabel": "System  |  Graphics Settings",
+	"bUseScrollWindow": true,
+	"entryCategories": [
+		{
+			"label": "Recommended Settings",
+			"entryAlignment": "HAlign_Fill",
+			"entryWrapSize": 10,
+			"wrapBoxClass": "Standard",
+			"entries": [
+				{
+					"label": "Apply Recommended Settings",
+					"labelTextMinDesiredWidth": 1000,
+					"labelTextWrapWidth": 1000,
+					"type": "UserWidget",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"bApplyOnMouseRelease": false,
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"leftNameplateRelationshipIds": [],
+					"leftNameplateAlignmentIds": [],
+					"leftLabel": "",
+					"rightNameplateRelationshipIds": [],
+					"rightNameplateAlignmentIds": [],
+					"rightLabel": "",
+					"linkedKeyBindingIds": [],
+					"subheaderBorderStyle": "None",
+					"selectorWidth": 300,
+					"widgetClass": "/Game/UI/Widgets/Options/WBP_ApplyRecommendedSettings.WBP_ApplyRecommendedSettings_C",
+					"getterFunctionName": "GetApplyRecommendedSettings",
+					"setterFunctionName": "SetApplyRecommendedSettings",
+					"dependencyGetter": "None"
+				}
+			],
+			"subcategories": []
+		},
+		{
+			"label": "Super Resolution Sampling",
+			"entryAlignment": "HAlign_Fill",
+			"entryWrapSize": 10,
+			"wrapBoxClass": "Standard",
+			"entries": [
+				{
+					"label": "Super Resolution",
+					"labelTextMinDesiredWidth": 300,
+					"labelTextWrapWidth": 600,
+					"type": "Slider",
+					"sliderMinMax":
+					{
+						"x": 20,
+						"y": 100
+					},
+					"bApplyOnMouseRelease": false,
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"leftNameplateRelationshipIds": [],
+					"leftNameplateAlignmentIds": [],
+					"leftLabel": "",
+					"rightNameplateRelationshipIds": [],
+					"rightNameplateAlignmentIds": [],
+					"rightLabel": "",
+					"linkedKeyBindingIds": [],
+					"subheaderBorderStyle": "None",
+					"selectorWidth": 426,
+					"widgetClass": "None",
+					"getterFunctionName": "GetSuperResolutionSlider",
+					"setterFunctionName": "SetSuperResolutionSlider",
+					"dependencyGetter": "None"
+				},
+				{
+					"label": "Super Resolution Sampling",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 1000,
+					"type": "Dropdown",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"bApplyOnMouseRelease": false,
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"leftNameplateRelationshipIds": [],
+					"leftNameplateAlignmentIds": [],
+					"leftLabel": "",
+					"rightNameplateRelationshipIds": [],
+					"rightNameplateAlignmentIds": [],
+					"rightLabel": "",
+					"linkedKeyBindingIds": [],
+					"subheaderBorderStyle": "None",
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetSuperResolution",
+					"setterFunctionName": "SetSuperResolution",
+					"dependencyGetter": "None"
+				},
+				{
+					"label": "DLSS Mode",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 640,
+					"type": "Dropdown",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"bApplyOnMouseRelease": false,
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"leftNameplateRelationshipIds": [],
+					"leftNameplateAlignmentIds": [],
+					"leftLabel": "",
+					"rightNameplateRelationshipIds": [],
+					"rightNameplateAlignmentIds": [],
+					"rightLabel": "",
+					"linkedKeyBindingIds": [],
+					"subheaderBorderStyle": "None",
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetDLSSModeDropdown",
+					"setterFunctionName": "SetDLSSModeDropdown",
+					"dependencyGetter": "None"
+				},
+				{
+					"label": "Frame Generation",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 640,
+					"type": "Dropdown",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"bApplyOnMouseRelease": false,
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"leftNameplateRelationshipIds": [],
+					"leftNameplateAlignmentIds": [],
+					"leftLabel": "",
+					"rightNameplateRelationshipIds": [],
+					"rightNameplateAlignmentIds": [],
+					"rightLabel": "",
+					"linkedKeyBindingIds": [],
+					"subheaderBorderStyle": "None",
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetSuperResolutionFrameGeneration",
+					"setterFunctionName": "SetSuperResolutionFrameGeneration",
+					"dependencyGetter": "None"
+				}
+			],
+			"subcategories": []
+		},
+		{
+			"label": "Raytracing",
+			"entryAlignment": "HAlign_Fill",
+			"entryWrapSize": 10,
+			"wrapBoxClass": "Standard",
+			"entries": [
+				{
+					"label": "Raytracing",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 320,
+					"type": "CheckBox",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"bApplyOnMouseRelease": false,
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"leftNameplateRelationshipIds": [],
+					"leftNameplateAlignmentIds": [],
+					"leftLabel": "",
+					"rightNameplateRelationshipIds": [],
+					"rightNameplateAlignmentIds": [],
+					"rightLabel": "",
+					"linkedKeyBindingIds": [],
+					"subheaderBorderStyle": "None",
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetRaytracing",
+					"setterFunctionName": "SetRaytracing",
+					"dependencyGetter": "None"
+				},
+				{
+					"label": "Lumen Hardware Raytracing",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 320,
+					"type": "CheckBox",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"bApplyOnMouseRelease": false,
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"leftNameplateRelationshipIds": [],
+					"leftNameplateAlignmentIds": [],
+					"leftLabel": "",
+					"rightNameplateRelationshipIds": [],
+					"rightNameplateAlignmentIds": [],
+					"rightLabel": "",
+					"linkedKeyBindingIds": [],
+					"subheaderBorderStyle": "None",
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetLumenHardwareRaytracing",
+					"setterFunctionName": "SetLumenHardwareRaytracing",
+					"dependencyGetter": "None"
+				}
+			],
+			"subcategories": []
+		},
+		{
+			"label": "Color Vision Mode",
+			"entryAlignment": "HAlign_Fill",
+			"entryWrapSize": 10,
+			"wrapBoxClass": "Standard",
+			"entries": [
+				{
+					"label": "Color Vision",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 320,
+					"type": "Dropdown",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"bApplyOnMouseRelease": false,
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"leftNameplateRelationshipIds": [],
+					"leftNameplateAlignmentIds": [],
+					"leftLabel": "",
+					"rightNameplateRelationshipIds": [],
+					"rightNameplateAlignmentIds": [],
+					"rightLabel": "",
+					"linkedKeyBindingIds": [],
+					"subheaderBorderStyle": "None",
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetColorVisionDeficiency",
+					"setterFunctionName": "SetColorVisionDeficiency",
+					"dependencyGetter": "None"
+				},
+				{
+					"label": "Color Vision Deficiency Strength",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 320,
+					"type": "Slider",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"bApplyOnMouseRelease": true,
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"leftNameplateRelationshipIds": [],
+					"leftNameplateAlignmentIds": [],
+					"leftLabel": "",
+					"rightNameplateRelationshipIds": [],
+					"rightNameplateAlignmentIds": [],
+					"rightLabel": "",
+					"linkedKeyBindingIds": [],
+					"subheaderBorderStyle": "None",
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetColorVisionDeficiencyStrength",
+					"setterFunctionName": "SetColorVisionDeficiencyStrength",
+					"dependencyGetter": "None"
+				}
+			],
+			"subcategories": []
+		},
+		{
+			"label": "Quality & Performance",
+			"entryAlignment": "HAlign_Fill",
+			"entryWrapSize": 10,
+			"wrapBoxClass": "Standard",
+			"entries": [
+				{
+					"label": "Graphics Quality",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 640,
+					"type": "Dropdown",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"bApplyOnMouseRelease": false,
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"leftNameplateRelationshipIds": [],
+					"leftNameplateAlignmentIds": [],
+					"leftLabel": "",
+					"rightNameplateRelationshipIds": [],
+					"rightNameplateAlignmentIds": [],
+					"rightLabel": "",
+					"linkedKeyBindingIds": [],
+					"subheaderBorderStyle": "None",
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetGraphicsQuality",
+					"setterFunctionName": "SetGraphicsQuality",
+					"dependencyGetter": "None"
+				},
+				{
+					"label": "Global Illumination",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 640,
+					"type": "Dropdown",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"bApplyOnMouseRelease": false,
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"leftNameplateRelationshipIds": [],
+					"leftNameplateAlignmentIds": [],
+					"leftLabel": "",
+					"rightNameplateRelationshipIds": [],
+					"rightNameplateAlignmentIds": [],
+					"rightLabel": "",
+					"linkedKeyBindingIds": [],
+					"subheaderBorderStyle": "None",
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetGlobalIlluminationQuality",
+					"setterFunctionName": "SetGlobalIlluminationQuality",
+					"dependencyGetter": "None"
+				},
+				{
+					"label": "View Distance",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 640,
+					"type": "Dropdown",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"bApplyOnMouseRelease": false,
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"leftNameplateRelationshipIds": [],
+					"leftNameplateAlignmentIds": [],
+					"leftLabel": "",
+					"rightNameplateRelationshipIds": [],
+					"rightNameplateAlignmentIds": [],
+					"rightLabel": "",
+					"linkedKeyBindingIds": [],
+					"subheaderBorderStyle": "None",
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetViewDistanceQuality",
+					"setterFunctionName": "SetViewDistanceQuality",
+					"dependencyGetter": "None"
+				},
+				{
+					"label": "Anti-Aliasing",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 640,
+					"type": "Dropdown",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"bApplyOnMouseRelease": false,
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"leftNameplateRelationshipIds": [],
+					"leftNameplateAlignmentIds": [],
+					"leftLabel": "",
+					"rightNameplateRelationshipIds": [],
+					"rightNameplateAlignmentIds": [],
+					"rightLabel": "",
+					"linkedKeyBindingIds": [],
+					"subheaderBorderStyle": "None",
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetAntiAliasingQuality",
+					"setterFunctionName": "SetAntiAliasingQuality",
+					"dependencyGetter": "None"
+				},
+				{
+					"label": "Post Processing",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 640,
+					"type": "Dropdown",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"bApplyOnMouseRelease": false,
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"leftNameplateRelationshipIds": [],
+					"leftNameplateAlignmentIds": [],
+					"leftLabel": "",
+					"rightNameplateRelationshipIds": [],
+					"rightNameplateAlignmentIds": [],
+					"rightLabel": "",
+					"linkedKeyBindingIds": [],
+					"subheaderBorderStyle": "None",
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetPostProcessQuality",
+					"setterFunctionName": "SetPostProcessQuality",
+					"dependencyGetter": "None"
+				},
+				{
+					"label": "Shadows",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 640,
+					"type": "Dropdown",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"bApplyOnMouseRelease": false,
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"leftNameplateRelationshipIds": [],
+					"leftNameplateAlignmentIds": [],
+					"leftLabel": "",
+					"rightNameplateRelationshipIds": [],
+					"rightNameplateAlignmentIds": [],
+					"rightLabel": "",
+					"linkedKeyBindingIds": [],
+					"subheaderBorderStyle": "None",
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetShadowQuality",
+					"setterFunctionName": "SetShadowQuality",
+					"dependencyGetter": "None"
+				},
+				{
+					"label": "Textures",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 640,
+					"type": "Dropdown",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"bApplyOnMouseRelease": false,
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"leftNameplateRelationshipIds": [],
+					"leftNameplateAlignmentIds": [],
+					"leftLabel": "",
+					"rightNameplateRelationshipIds": [],
+					"rightNameplateAlignmentIds": [],
+					"rightLabel": "",
+					"linkedKeyBindingIds": [],
+					"subheaderBorderStyle": "None",
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetTextureQuality",
+					"setterFunctionName": "SetTextureQuality",
+					"dependencyGetter": "None"
+				},
+				{
+					"label": "Effects",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 640,
+					"type": "Dropdown",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"bApplyOnMouseRelease": false,
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"leftNameplateRelationshipIds": [],
+					"leftNameplateAlignmentIds": [],
+					"leftLabel": "",
+					"rightNameplateRelationshipIds": [],
+					"rightNameplateAlignmentIds": [],
+					"rightLabel": "",
+					"linkedKeyBindingIds": [],
+					"subheaderBorderStyle": "None",
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetEffectsQuality",
+					"setterFunctionName": "SetEffectsQuality",
+					"dependencyGetter": "None"
+				},
+				{
+					"label": "Foliage",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 640,
+					"type": "Dropdown",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"bApplyOnMouseRelease": false,
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"leftNameplateRelationshipIds": [],
+					"leftNameplateAlignmentIds": [],
+					"leftLabel": "",
+					"rightNameplateRelationshipIds": [],
+					"rightNameplateAlignmentIds": [],
+					"rightLabel": "",
+					"linkedKeyBindingIds": [],
+					"subheaderBorderStyle": "None",
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetFoliageQuality",
+					"setterFunctionName": "SetFoliageQuality",
+					"dependencyGetter": "None"
+				}
+			],
+			"subcategories": []
+		}
+	],
+	"guid": "6064633413861834752",
+	"name": "Graphics",
+	"typeId": "3616673544"
+}

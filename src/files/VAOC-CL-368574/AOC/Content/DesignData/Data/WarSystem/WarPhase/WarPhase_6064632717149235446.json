@@ -1,0 +1,66 @@
+{
+	"displayName": "NSLOCTEXT(\"[C0A48779AC9FFDA4BAC80B2EE1C04C0D]\", \"30323F1B4A3330ADEE8867B3FED0F270\", \"Phase One\")",
+	"phaseToastId":
+	{
+		"guid": "0",
+		"typeId": "949952112328",
+		"name": "None"
+	},
+	"victoryConditionText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"933BF5004C4011C9A26F4481F3A36FCB\", \"Channel the banner to win the siege.\")",
+	"phaseDescriptionLong": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"779689E74E0DF7BD3AB808822A8A0884\", \"The attacking team must finish channeling the banner before time expires to win.\")",
+	"bStartEventOnPhaseBegin": false,
+	"bEventsOccurRandomly": false,
+	"bLoopWarEventsArray": true,
+	"warEventsIds": [
+		{
+			"guid": "6064632717155330295",
+			"typeId": "23095125",
+			"name": "None"
+		}
+	],
+	"schedulePlusMinusMinutes": 5,
+	"scheduleOfEvents": [ 20 ],
+	"bUseTimezoneOffset": true,
+	"bUseParentWarRecordVictoryPointTable": true,
+	"bUseGlobalConstantVictoryPointTable": false,
+	"victoryPointTableId":
+	{
+		"guid": "6064632717145237749",
+		"typeId": "98966982",
+		"name": "None"
+	},
+	"bUseDefaultPhaseRewards": false,
+	"bUseDefaultObjectiveRewards": false,
+	"bUseDefaultEventRewards": false,
+	"completionCondition":
+	{
+		"expression": "War_HasOrgScoredEnough(200)"
+	},
+	"bUseParentWarRecordLocaleSelectionOptions": true,
+	"phaseLocaleSelectionType": "WarRecordLocaleRequest",
+	"bTargetNodeLocaleRequestFirst": false,
+	"localeRequestId":
+	{
+		"guid": "0",
+		"typeId": "23095138",
+		"name": "None"
+	},
+	"customLocaleSelectionPerEvent": [],
+	"bFlaggedAgainstEachOther": true,
+	"bFlaggedInRelevantNodeZOIs": true,
+	"bAllowAlliance_UNSUPPORTED": false,
+	"bCanSurrender": true,
+	"surrenderAvailableSecondsAfterPhaseStart": 600,
+	"delayForEventStartTime":
+	{
+		"duration": "86400000"
+	},
+	"gameplayTagsToApply":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"guid": "6064632717149235446",
+	"name": "Siege_Phase_1",
+	"typeId": "98966980"
+}

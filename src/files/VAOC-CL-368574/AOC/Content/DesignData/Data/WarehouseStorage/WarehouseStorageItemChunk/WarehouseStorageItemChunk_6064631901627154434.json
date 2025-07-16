@@ -1,0 +1,32 @@
+{
+	"chunkSize": 8,
+	"shouldHideIfUnavailable": true,
+	"levelRequirement": 5,
+	"itemChunkLabel": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"78B2D64D43D751116A7D5FBA60BA5F8B\", \"Level 5 Citizen Storage\")",
+	"availabilityRequirementsDescription": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"2BA77DE3428E01D8159CC3AD9061C680\", \"Level 5 inventory increase for citizens\")",
+	"availabilityRequirements":
+	{
+		"expression": "Node_IsActorInNodeName(GetPlayer(), Node_GetActorCityNode(GetPlayer())) && EnumInt(Node_GetLevel(GetCurrentNode(GetPlayer()))) >= EnumInt(ENodeLevel::City)"
+	},
+	"chunkCosts": [
+		{
+			"currencyDefId":
+			{
+				"guid": "6064628901272551424",
+				"typeId": "1011151289",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "10"
+			},
+			"costMultiplier":
+			{
+				"expression": "1"
+			}
+		}
+	],
+	"guid": "6064631901627154434",
+	"name": "WarehouseStorageItemChunk_Level5_Citizen",
+	"typeId": "8675309006"
+}

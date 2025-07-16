@@ -1,0 +1,47 @@
+{
+	"modifierValueSource": "Expression",
+	"valueExpression":
+	{
+		"expression": "const distance = GetDistanceBetween();\r\n// This is placeholder way to deal with tax right now\r\nconst Jank = 1.5;\r\nconst caravanMovespeed = 2.0;\r\nconst ttk = 19;\r\nconst copperPerKill = 5 * EvalCurve($#10516612381411114:6064632237717717002$, Float(GetItemLevel()));\r\nvar baseValue = 1.0;\r\nconst ItemLevel = Float(GetItemLevel());\r\n\r\nif (ItemLevel <= 9.0){\r\n set baseValue = 480.0;\r\n} else \r\nif(ItemLevel >= 10.0 && ItemLevel <= 19.0){\r\n set baseValue = 2640.0;\r\n} else \r\nif(ItemLevel >= 20.0 && ItemLevel <= 29.0){\r\n set baseValue = 5040.0;\r\n} else \r\nif(ItemLevel >= 30.0 && ItemLevel <= 39.0){\r\n set baseValue = 7441.0;\r\n} else \r\nif(ItemLevel >= 40.0 && ItemLevel <= 49.0){\r\n set baseValue = 9841.0;\r\n} else \r\nif(ItemLevel >= 50.0 && ItemLevel <= 60.0){\r\n set baseValue = 1.0;\r\n}\r\nconst pvpMult = 1;\r\nconst distanceNerf = 1.5;\r\nconst distanceMult = (((distance / 100 / caravanMovespeed / 60 / distanceNerf) * (ttk * copperPerKill)) / (baseValue * Jank));\r\n\r\npvpMult * distanceMult * Jank"
+	},
+	"priceFactor": "Quality",
+	"valueCurve":
+	{
+		"externalCurve": "None",
+		"editorCurveData":
+		{
+			"keys": [],
+			"defaultValue": 3.4028234663852886e+38,
+			"preInfinityExtrap": "RCCE_Constant",
+			"postInfinityExtrap": "RCCE_Constant",
+			"keyHandlesToIndices":
+			{
+			}
+		}
+	},
+	"priceModifiersIds": [],
+	"arithmeticOperation": "Multiply",
+	"itemFilter":
+	{
+		"tokenStreamVersion": 0,
+		"tagDictionary": [
+			{
+				"tagName": "item.resource.cert.nodecert"
+			}
+		],
+		"queryTokenStream": [ 0, 1, 2, 1, 0 ],
+		"userDescription": "CommodityFilter",
+		"autoDescription": " ALL( item.resource.cert.nodecert )"
+	},
+	"affectedContexts": 226,
+	"affectedCurrenciesIds": [
+		{
+			"guid": "6064629127873626112",
+			"typeId": "1011111289",
+			"name": "None"
+		}
+	],
+	"guid": "6064630039519559681",
+	"name": "PlayerCommodity_DistanceModifier",
+	"typeId": "3145314715"
+}

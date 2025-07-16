@@ -1,0 +1,12 @@
+{
+	"equation":
+	{
+		"expression": "var mult = 0.0;\r\nconst skilled1 = GetSkillPurchased(GetInstigator(), GetCurrentWeaponSkilltree(GetInstigator()), $#981011333:6064631455864655838$);\r\nconst skilled2 = GetSkillPurchased(GetInstigator(), GetCurrentWeaponSkilltree(GetInstigator()), $#981011333:6064631455864918006$);\r\nconst skilled3 = GetSkillPurchased(GetInstigator(), GetCurrentWeaponSkilltree(GetInstigator()), $#981011333:6064631455865311462$);\r\nconst burning = GetEffectCount(GetTarget(),$#30316002:6064631359029385118$) > 0;\r\nconst volatile = GetEffectCount(GetTarget(),$#30316002:6064628906763288577$) > 0;\r\nconst chilled = GetEffectCount(GetTarget(),$#30316002:6064628906043703296$) > 0;\r\n\r\nif(burning){\r\n    if(skilled1){set mult=mult+0.01;}\r\n    if(skilled2){set mult=mult+0.01;}\r\n    if(skilled3){set mult=mult+0.01;}\r\n}\r\nif(volatile){\r\n    if(skilled1){set mult=mult+0.01;}\r\n    if(skilled2){set mult=mult+0.01;}\r\n    if(skilled3){set mult=mult+0.01;}\r\n}\r\nif(chilled){\r\n    if(skilled1){set mult=mult+0.01;}\r\n    if(skilled2){set mult=mult+0.01;}\r\n    if(skilled3){set mult=mult+0.01;}\r\n}\r\nmin(mult, 0.03)"
+	},
+	"constraints":
+	{
+	},
+	"guid": "6064632140371593019",
+	"name": "Weapon_SkillTree_ElementalDamage",
+	"typeId": "10516612381411112"
+}

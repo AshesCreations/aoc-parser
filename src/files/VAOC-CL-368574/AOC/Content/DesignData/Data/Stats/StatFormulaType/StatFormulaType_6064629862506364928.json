@@ -1,0 +1,165 @@
+{
+	"equationId":
+	{
+		"guid": "6064629862512721921",
+		"typeId": "10516612381411112",
+		"name": "None"
+	},
+	"inputTerms": [
+		{
+			"termId":
+			{
+				"guid": "6064629248874774551",
+				"typeId": "10516612381411115",
+				"name": "None"
+			},
+			"value":
+			{
+				"expression": "// located in GameSystemsPlugin\\Private\\Combat\\Formulas\\DamageFormula.cpp\r\n// named: calculate_damage\r\nCalculateDamage()"
+			},
+			"bOptional": false,
+			"bKeepBeyondScope": false,
+			"filter":
+			{
+				"expression": ""
+			},
+			"mergeRuleOverride": "Merge_Default"
+		},
+		{
+			"termId":
+			{
+				"guid": "6064630633715007489",
+				"typeId": "10516612381411115",
+				"name": "None"
+			},
+			"value":
+			{
+				"expression": "// located in GameSystemsPlugin\\Private\\Combat\\Formulas\\DamageFormula.cpp\r\n// named: calculate_damage_mult\r\nCalculateDamageMultiplier()"
+			},
+			"bOptional": false,
+			"bKeepBeyondScope": false,
+			"filter":
+			{
+				"expression": ""
+			},
+			"mergeRuleOverride": "Merge_Default"
+		},
+		{
+			"termId":
+			{
+				"guid": "6064632388410015744",
+				"typeId": "10516612381411115",
+				"name": "None"
+			},
+			"value":
+			{
+				"expression": "// located in GameSystemsPlugin\\Private\\Combat\\Formulas\\DamageFormula.cpp\r\n// named: calculate_damage_add_mult\r\nCalculateDamageAdditiveMultiplier()"
+			},
+			"bOptional": false,
+			"bKeepBeyondScope": false,
+			"filter":
+			{
+				"expression": ""
+			},
+			"mergeRuleOverride": "Merge_Default"
+		},
+		{
+			"termId":
+			{
+				"guid": "6064629248876085273",
+				"typeId": "10516612381411115",
+				"name": "None"
+			},
+			"value":
+			{
+				"expression": "// located in GameSystemsPlugin\\Private\\Combat\\Formulas\\DamageFormula.cpp\r\n// named: calculate_damage_mitigation\r\nvar Mit = CalculateDamageMitigation();\r\nif(HitHasTag(GetHitInProgress(), \"War.Siege\"))\r\n{\r\n    set Mit = 1.0 - (1.0 - Mit)*(GetStat(GetTarget(),$#10516612381411111:109343269148321$));\r\n}\r\nMit"
+			},
+			"bOptional": false,
+			"bKeepBeyondScope": false,
+			"filter":
+			{
+				"expression": ""
+			},
+			"mergeRuleOverride": "Merge_Default"
+		},
+		{
+			"termId":
+			{
+				"guid": "6064629248874250262",
+				"typeId": "10516612381411115",
+				"name": "None"
+			},
+			"value":
+			{
+				"expression": "// located in GameSystemsPlugin\\Private\\Combat\\Formulas\\DamageFormula.cpp\r\n// named: calculate_damage_critical\r\nCalculateDamageCritical()"
+			},
+			"bOptional": false,
+			"bKeepBeyondScope": false,
+			"filter":
+			{
+				"expression": ""
+			},
+			"mergeRuleOverride": "Merge_Default"
+		},
+		{
+			"termId":
+			{
+				"guid": "6064629248876412954",
+				"typeId": "10516612381411115",
+				"name": "None"
+			},
+			"value":
+			{
+				"expression": "// located in GameSystemsPlugin\\Private\\Combat\\Formulas\\DamageFormula.cpp\r\n// named: calculate_damage_penetration\r\nCalculateDamagePenetration()"
+			},
+			"bOptional": false,
+			"bKeepBeyondScope": false,
+			"filter":
+			{
+				"expression": ""
+			},
+			"mergeRuleOverride": "Merge_Default"
+		},
+		{
+			"termId":
+			{
+				"guid": "6064630704647897228",
+				"typeId": "10516612381411115",
+				"name": "None"
+			},
+			"value":
+			{
+				"expression": "// located in GameSystemsPlugin\\Private\\Combat\\Formulas\\DamageFormula.cpp\r\n// named: calculate_damage_dampening\r\nconst damp = CalculateDamageDampening();\r\nconst guid = GetActorGuid(GetInstigator());\r\nconst xpdamp = 1.0 - (GetXPDebtRatio(guid)*0.2);\r\ndamp * xpdamp"
+			},
+			"bOptional": false,
+			"bKeepBeyondScope": false,
+			"filter":
+			{
+				"expression": ""
+			},
+			"mergeRuleOverride": "Merge_Default"
+		},
+		{
+			"termId":
+			{
+				"guid": "6064630794789849875",
+				"typeId": "10516612381411115",
+				"name": "None"
+			},
+			"value":
+			{
+				"expression": "//const IsPlayer = GetStat(GetInstigator(), $Stat:IsPlayer$) > 0.0;\r\n//SelectFloat(IsPlayer, 1.0, 1.25)\r\n-1.0\r\n"
+			},
+			"bOptional": false,
+			"bKeepBeyondScope": false,
+			"filter":
+			{
+				"expression": ""
+			},
+			"mergeRuleOverride": "Merge_Default"
+		}
+	],
+	"guid": "6064629862506364928",
+	"name": "DamageMod",
+	"typeId": "10516612381411113"
+}

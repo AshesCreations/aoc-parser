@@ -1,0 +1,24 @@
+{
+	"toastWidgetClass": "/Game/UI/Widgets/HUD/Messaging/WBP_StoryArcToast.WBP_StoryArcToast_C",
+	"toastType": "Custom",
+	"toastAnchorParent": "Default",
+	"backgroundImage": "None",
+	"iconImage": "None",
+	"toastDisplaySoundCategory": "Custom",
+	"onDisplaySound": "/Game/WwiseAudio/Events/Main/UI/Quest/UI_Quest_QuestComplete.UI_Quest_QuestComplete",
+	"onDisplaySoundTag":
+	{
+		"tagName": "None"
+	},
+	"displayTime": 3,
+	"priorityCallout": false,
+	"headerText": "NSLOCTEXT(\"[BA0C61234A8A0A9207F086AF0530E1D5]\", \"B96A256841F98ACCFA2F72B346E1CAC5\", \"Quest Complete!\")",
+	"headerAsMessage": false,
+	"subheaderText": "NSLOCTEXT(\"[BA0C61234A8A0A9207F086AF0530E1D5]\", \"9DC7D15D4BC6D0A919E894860D612FAC\", \"{QuestName}\")",
+	"subheaderAsMessage": true,
+	"countdownDuration": 5,
+	"cooldownTime": 0,
+	"guid": "6064632269151404032",
+	"name": "Toast_QuestComplete",
+	"typeId": "949952112328"
+}

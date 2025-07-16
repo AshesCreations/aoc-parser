@@ -1,0 +1,289 @@
+{
+	"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Gameplay_PartyAndRaidSectionLabel\")",
+	"categoryHeaderLabel": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Gameplay_PartyAndRaidSectionHeader\")",
+	"bUseScrollWindow": true,
+	"entryCategories": [
+		{
+			"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Options_GeneralSubheader\")",
+			"entryAlignment": "HAlign_Fill",
+			"entryWrapSize": 10,
+			"wrapBoxClass": "Standard",
+			"entries": [
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"PartyAndRaid_EnableHoverCastingLabel\")",
+					"labelTextMinDesiredWidth": 300,
+					"labelTextWrapWidth": 1080,
+					"type": "CheckBox",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"bApplyOnMouseRelease": false,
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"leftNameplateRelationshipIds": [],
+					"leftNameplateAlignmentIds": [],
+					"leftLabel": "",
+					"rightNameplateRelationshipIds": [],
+					"rightNameplateAlignmentIds": [],
+					"rightLabel": "",
+					"linkedKeyBindingIds": [],
+					"subheaderBorderStyle": "None",
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetHoverCastingEnabled",
+					"setterFunctionName": "SetHoverCastingEnabled",
+					"dependencyGetter": "None"
+				},
+				{
+					"label": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"60ACAD43421B4C6D4A1BDA8A719B4D23\", \"Show Party as Raid Frames\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 1080,
+					"type": "CheckBox",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"bApplyOnMouseRelease": false,
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"leftNameplateRelationshipIds": [],
+					"leftNameplateAlignmentIds": [],
+					"leftLabel": "",
+					"rightNameplateRelationshipIds": [],
+					"rightNameplateAlignmentIds": [],
+					"rightLabel": "",
+					"linkedKeyBindingIds": [],
+					"subheaderBorderStyle": "None",
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetShowPartyAsRaidFrames",
+					"setterFunctionName": "SetShowPartyAsRaidFrames",
+					"dependencyGetter": "None"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"PartyAndRaid_ArchetypeColorsInRaidLabel\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 1080,
+					"type": "CheckBox",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"bApplyOnMouseRelease": false,
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"leftNameplateRelationshipIds": [],
+					"leftNameplateAlignmentIds": [],
+					"leftLabel": "",
+					"rightNameplateRelationshipIds": [],
+					"rightNameplateAlignmentIds": [],
+					"rightLabel": "",
+					"linkedKeyBindingIds": [],
+					"subheaderBorderStyle": "None",
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetUseArchetypeColorsInRaidFrame",
+					"setterFunctionName": "SetUseArchetypeColorsInRaidFrame",
+					"dependencyGetter": "None"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"PartyAndRaid_ClericFrameColorLabel\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 600,
+					"type": "RaidFrameColor",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"bApplyOnMouseRelease": false,
+					"keyBindingId": "None",
+					"associatedClass": "Cleric",
+					"leftNameplateRelationshipIds": [],
+					"leftNameplateAlignmentIds": [],
+					"leftLabel": "",
+					"rightNameplateRelationshipIds": [],
+					"rightNameplateAlignmentIds": [],
+					"rightLabel": "",
+					"linkedKeyBindingIds": [],
+					"subheaderBorderStyle": "None",
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetRaidFrameColor",
+					"setterFunctionName": "SetRaidFrameColor",
+					"dependencyGetter": "None"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"PartyAndRaid_MageFrameColorLabel\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 600,
+					"type": "RaidFrameColor",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"bApplyOnMouseRelease": false,
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"leftNameplateRelationshipIds": [],
+					"leftNameplateAlignmentIds": [],
+					"leftLabel": "",
+					"rightNameplateRelationshipIds": [],
+					"rightNameplateAlignmentIds": [],
+					"rightLabel": "",
+					"linkedKeyBindingIds": [],
+					"subheaderBorderStyle": "None",
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetRaidFrameColor",
+					"setterFunctionName": "SetRaidFrameColor",
+					"dependencyGetter": "None"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"PartyAndRaid_RangerFrameColorLabel\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 600,
+					"type": "RaidFrameColor",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"bApplyOnMouseRelease": false,
+					"keyBindingId": "None",
+					"associatedClass": "Ranger",
+					"leftNameplateRelationshipIds": [],
+					"leftNameplateAlignmentIds": [],
+					"leftLabel": "",
+					"rightNameplateRelationshipIds": [],
+					"rightNameplateAlignmentIds": [],
+					"rightLabel": "",
+					"linkedKeyBindingIds": [],
+					"subheaderBorderStyle": "None",
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetRaidFrameColor",
+					"setterFunctionName": "SetRaidFrameColor",
+					"dependencyGetter": "None"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"PartyAndRaid_RogueFrameColorLabel\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 600,
+					"type": "RaidFrameColor",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"bApplyOnMouseRelease": false,
+					"keyBindingId": "None",
+					"associatedClass": "Rogue",
+					"leftNameplateRelationshipIds": [],
+					"leftNameplateAlignmentIds": [],
+					"leftLabel": "",
+					"rightNameplateRelationshipIds": [],
+					"rightNameplateAlignmentIds": [],
+					"rightLabel": "",
+					"linkedKeyBindingIds": [],
+					"subheaderBorderStyle": "None",
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetRaidFrameColor",
+					"setterFunctionName": "SetRaidFrameColor",
+					"dependencyGetter": "None"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"PartyAndRaid_BardFrameColorLabel\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 600,
+					"type": "RaidFrameColor",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"bApplyOnMouseRelease": false,
+					"keyBindingId": "None",
+					"associatedClass": "Bard",
+					"leftNameplateRelationshipIds": [],
+					"leftNameplateAlignmentIds": [],
+					"leftLabel": "",
+					"rightNameplateRelationshipIds": [],
+					"rightNameplateAlignmentIds": [],
+					"rightLabel": "",
+					"linkedKeyBindingIds": [],
+					"subheaderBorderStyle": "None",
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetRaidFrameColor",
+					"setterFunctionName": "SetRaidFrameColor",
+					"dependencyGetter": "None"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"PartyAndRaid_FighterFrameColorLabel\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 600,
+					"type": "RaidFrameColor",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"bApplyOnMouseRelease": false,
+					"keyBindingId": "None",
+					"associatedClass": "Fighter",
+					"leftNameplateRelationshipIds": [],
+					"leftNameplateAlignmentIds": [],
+					"leftLabel": "",
+					"rightNameplateRelationshipIds": [],
+					"rightNameplateAlignmentIds": [],
+					"rightLabel": "",
+					"linkedKeyBindingIds": [],
+					"subheaderBorderStyle": "None",
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetRaidFrameColor",
+					"setterFunctionName": "SetRaidFrameColor",
+					"dependencyGetter": "None"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"PartyAndRaid_TankFrameColorLabel\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 600,
+					"type": "RaidFrameColor",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"bApplyOnMouseRelease": false,
+					"keyBindingId": "None",
+					"associatedClass": "Tank",
+					"leftNameplateRelationshipIds": [],
+					"leftNameplateAlignmentIds": [],
+					"leftLabel": "",
+					"rightNameplateRelationshipIds": [],
+					"rightNameplateAlignmentIds": [],
+					"rightLabel": "",
+					"linkedKeyBindingIds": [],
+					"subheaderBorderStyle": "None",
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetRaidFrameColor",
+					"setterFunctionName": "SetRaidFrameColor",
+					"dependencyGetter": "None"
+				}
+			],
+			"subcategories": []
+		}
+	],
+	"guid": "6064632591703736322",
+	"name": "PartyAndRaid",
+	"typeId": "3616673544"
+}

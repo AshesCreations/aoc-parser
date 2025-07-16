@@ -1,0 +1,12 @@
+{
+	"equation":
+	{
+		"expression": "const level = Float(GetCharacterLevel(GetSelf()));\r\nconst rank = Float(GetNpcEliteRank(GetSelf()));\r\nEvalCurve($#10516612381411114:6064632004621960042$, level) \r\n* EvalCurve($#10516612381411114:6064632020236500992$, level) \r\n* EvalCurve($#10516612381411114:6064632751380037971$, rank)"
+	},
+	"constraints":
+	{
+	},
+	"guid": "6064633459564871681",
+	"name": "NPC_PowerMultiplier",
+	"typeId": "10516612381411112"
+}

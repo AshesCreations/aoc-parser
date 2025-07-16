@@ -1,0 +1,86 @@
+{
+	"displayName": "NSLOCTEXT(\"[1909495A4C2095068D406C9D33F90055]\", \"C9C7367948C08A1F3BDD89ADF058418B\", \"Stamina Regeneration\")",
+	"description": "NSLOCTEXT(\"[1909495A4C2095068D406C9D33F90055]\", \"8669FF9C4B775C8C726B1DBB988301DC\", \"The amount of stamina passively regenerated per second\")",
+	"bHidden": false,
+	"gameplayType": "Type_Combat",
+	"bHasWaterfallStatsUI": false,
+	"waterfallStatsUIIds": [],
+	"bDisplayAsPercentage": true,
+	"statType": "Type_Float",
+	"bClampStatFinalValue": false,
+	"bMultiplyStatMods": false,
+	"bMultiplyCompliment": false,
+	"base":
+	{
+		"expression": "const disableRegen = (GetEffectCount(GetSource(), $#30316002:6064631641826394197$) > 0 && IsMoving(GetSource())) ||\r\nGetEffectCount(GetSource(), $#30316002:6064631667969556480$) > 0 ||\r\nGetEffectCount(GetSource(), $#30316002:106223481149050$) > 0 ||\r\nGetEffectCount(GetSource(), $#30316002:6064631799761208354$) > 0 ||\r\nGetEffectCount(GetSource(), $#30316002:6064631668308443138$) > 0;\r\n\r\nSelectFloat(disableRegen, 0.0, 5.0)"
+	},
+	"waterfallStatsBaseIds": [
+		{
+			"guid": "6064629575339934476",
+			"typeId": "10516612381411111",
+			"name": "None"
+		},
+		{
+			"guid": "6064631663405498419",
+			"typeId": "10516612381411111",
+			"name": "None"
+		},
+		{
+			"guid": "109228544644729",
+			"typeId": "10516612381411111",
+			"name": "None"
+		},
+		{
+			"guid": "6064628617716498442",
+			"typeId": "10516612381411111",
+			"name": "None"
+		},
+		{
+			"guid": "6064629495592452105",
+			"typeId": "10516612381411111",
+			"name": "None"
+		},
+		{
+			"guid": "6064629495592517642",
+			"typeId": "10516612381411111",
+			"name": "None"
+		},
+		{
+			"guid": "109343399171823",
+			"typeId": "10516612381411111",
+			"name": "None"
+		}
+	],
+	"valueMin":
+	{
+		"expression": "0"
+	},
+	"waterfallStatsMinIds": [],
+	"valueMax":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMaxIds": [],
+	"regenRate":
+	{
+		"expression": ""
+	},
+	"waterfallStatsRegenIds": [],
+	"bRegenWhileDead": false,
+	"bRecalculateOnCombatState": false,
+	"onSpawn": "Reset_None",
+	"onDeath": "Reset_None",
+	"onRevive": "Reset_None",
+	"bPersistValue": false,
+	"replication": 1,
+	"shieldStatId":
+	{
+		"guid": "0",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"grantedEffects": [],
+	"guid": "6064631663405498419",
+	"name": "StaminaRegeneration",
+	"typeId": "10516612381411111"
+}

@@ -1,0 +1,50 @@
+{
+	"displayName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"F6E4552745C29E877137A994F105742E\", \"PVP Guild War\")",
+	"phaseToastId":
+	{
+		"guid": "6064631164654583808",
+		"typeId": "949952112328",
+		"name": "None"
+	},
+	"victoryConditionText": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"C8C8043C43D42714A5FD3C802AC64FE1\", \"First Guild to 100 kills or the Guild with the most kills after 2 hours\")",
+	"phaseDescriptionLong": "",
+	"bStartEventOnPhaseBegin": false,
+	"bEventsOccurRandomly": false,
+	"bLoopWarEventsArray": true,
+	"warEventsIds": [],
+	"schedulePlusMinusMinutes": 2,
+	"scheduleOfEvents": [ 5 ],
+	"bUseParentWarRecordVictoryPointTable": true,
+	"bUseGlobalConstantVictoryPointTable": false,
+	"victoryPointTableId":
+	{
+		"guid": "0",
+		"typeId": "98966982",
+		"name": "None"
+	},
+	"bUseDefaultPhaseRewards": false,
+	"bUseDefaultObjectiveRewards": false,
+	"bUseDefaultEventRewards": false,
+	"completionCondition":
+	{
+		"expression": "War_HasTimeElapsedSeconds(60*120) ||\r\nWar_HasOrgScoredEnough(100) "
+	},
+	"bUseParentWarRecordLocaleSelectionOptions": true,
+	"phaseLocaleSelectionType": "WarRecordLocaleRequest",
+	"bTargetNodeLocaleRequestFirst": false,
+	"localeRequestId":
+	{
+		"guid": "0",
+		"typeId": "23095138",
+		"name": "None"
+	},
+	"customLocaleSelectionPerEvent": [],
+	"bFlaggedAgainstEachOther": true,
+	"bFlaggedInRelevantNodeZOIs": false,
+	"bAllowAlliance_UNSUPPORTED": false,
+	"bCanSurrender": true,
+	"surrenderAvailableSecondsAfterPhaseStart": 3600,
+	"guid": "6064632048369664002",
+	"name": "WarPhase_AugustPlaytest",
+	"typeId": "98966980"
+}

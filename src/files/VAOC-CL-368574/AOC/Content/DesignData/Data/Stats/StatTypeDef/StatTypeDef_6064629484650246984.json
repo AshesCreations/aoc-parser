@@ -1,0 +1,44 @@
+{
+	"displayName": "NSLOCTEXT(\"\", \"266526F5444EA8CD991F898AEDFCE750\", \"Delayed Damage\")",
+	"description": "NSLOCTEXT(\"\", \"62836B4F475FF0C467F1E7ABF71CF353\", \"This stat is used to delay damage and take it at a later time (Not player facing atm) used by Tank\")",
+	"bHidden": false,
+	"gameplayType": "Type_Combat",
+	"bHasWaterfallStatsUI": false,
+	"waterfallStatsUIIds": [],
+	"statType": "Type_Float",
+	"base":
+	{
+		"expression": ""
+	},
+	"waterfallStatsBaseIds": [],
+	"valueMin":
+	{
+		"expression": "0"
+	},
+	"waterfallStatsMinIds": [],
+	"valueMax":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMaxIds": [],
+	"regenRate":
+	{
+		"expression": ""
+	},
+	"waterfallStatsRegenIds": [],
+	"bRegenWhileDead": false,
+	"onSpawn": "Reset_None",
+	"onDeath": "Reset_None",
+	"onRevive": "Reset_None",
+	"bPersistValue": false,
+	"replication": 1,
+	"shieldStatId":
+	{
+		"guid": "0",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"guid": "6064629484650246984",
+	"name": "DelayedDamage",
+	"typeId": "10516612381411111"
+}

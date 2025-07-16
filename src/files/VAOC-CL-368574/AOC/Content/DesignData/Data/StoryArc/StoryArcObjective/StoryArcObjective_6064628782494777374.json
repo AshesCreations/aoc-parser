@@ -1,0 +1,60 @@
+{
+	"type": "Kill",
+	"taskId":
+	{
+		"guid": "6064630882082095401",
+		"typeId": "1095125186",
+		"name": "None"
+	},
+	"initiallyHidden": false,
+	"completionRewardsIds": [],
+	"completionQuantity": 5,
+	"minimumRequirement": true,
+	"completionFlags": [
+		"SallyGoblins"
+	],
+	"instanceCompletionResult": [],
+	"enabledPredicate":
+	{
+		"expression": "GetStoryArcQuestFlag(GetPlayer(),\"MA_0010_WhatTheVillageNeeds\",\"SallyCheckIn\")"
+	},
+	"completionActionsIds": [],
+	"allowMultipleCompletion": false,
+	"maximumAdditionalCompletions": 100,
+	"multipleCompletionExperienceMultiplier": 0.30000001192092896,
+	"multipleCompletionGoldMultiplier": 0.30000001192092896,
+	"multipleCompletionVariableMultiplier": 0.30000001192092896,
+	"objectiveName": "NSLOCTEXT(\"\", \"C8D7466B466B2052B5CC2E86315BA068\", \"Help Barkeep Sally with a goblin infestation\")",
+	"killObjectiveTagContainer":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "npc.type.humanoid.goblins"
+			}
+		],
+		"parentTags": [
+			{
+				"tagName": "npc.type.humanoid"
+			},
+			{
+				"tagName": "npc.type"
+			},
+			{
+				"tagName": "npc"
+			}
+		]
+	},
+	"collectionFilterId":
+	{
+		"guid": "0",
+		"typeId": "1091110041",
+		"name": "None"
+	},
+	"collectionCount": 5,
+	"bConsumeItems": true,
+	"displayLocation": [],
+	"location": [],
+	"guid": "6064628782494777374",
+	"name": "MAO_0010_WVN_BarkeepSally_KillGoblins",
+	"typeId": "1091110036"
+}

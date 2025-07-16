@@ -1,0 +1,12 @@
+{
+	"currencyValues":
+	{
+		"(Guid=6064629879355080706,TypeId=1011111289)":
+		{
+			"expression": "const ItemLevel = GetItemLevel();\r\nconst ItemRarity = GetItemRarity();\r\nconst ItemBaseValue = EvalCurve($#10516612381411114:6064632293879971840$,Float(ItemLevel)) * EvalCurve($#10516612381411114:6064632293965955074$, Float(ItemRarity));\r\nconst SlotMod = \r\nSelectFloat(ItemTypeTagsContains(\"Slot.2Hand\"), 2.0,\r\nSelectFloat(ItemTypeTagsContains(\"Slot.1Hand\"), 1.4,\r\nSelectFloat(ItemTypeTagsContains(\"Slot.OffHand\"), 0.6,\r\nSelectFloat(ItemTypeTagsContains(\"Slot.Head\"), 0.8,\r\nSelectFloat(ItemTypeTagsContains(\"Slot.Shoulder\"), 0.6,\r\nSelectFloat(ItemTypeTagsContains(\"Slot.Chest\"), 1.0,\r\nSelectFloat(ItemTypeTagsContains(\"Slot.Forearms\"), 0.3,\r\nSelectFloat(ItemTypeTagsContains(\"Slot.Hands\"), 0.5,\r\nSelectFloat(ItemTypeTagsContains(\"Slot.Waist\"), 0.3,\r\nSelectFloat(ItemTypeTagsContains(\"Slot.Legs\"), 1.0,\r\nSelectFloat(ItemTypeTagsContains(\"Slot.Feet\"), 0.5,\r\nSelectFloat(ItemTypeTagsContains(\"Slot.Necklace\"), 0.2,\r\nSelectFloat(ItemTypeTagsContains(\"Slot.Earring\"), 0.1,\r\nSelectFloat(ItemTypeTagsContains(\"Slot.Ring\"), 0.1,\r\nSelectFloat(ItemTypeTagsContains(\"Slot.Back\"), 0.2,\r\nSelectFloat(ItemTypeTagsContains(\"Slot.Shirt\"), 0.5,\r\nSelectFloat(ItemTypeTagsContains(\"Slot.Pants\"), 0.5,\r\nSelectFloat(ItemTypeTagsContains(\"Slot.Toolbelt\"), 0.5,\r\nSelectFloat(ItemTypeTagsContains(\"Item.Gear.Artisan.Tool\"), 1.0,\r\nSelectFloat(ItemTypeTagsContains(\"Item.Bag\"), 0.2,\r\n9999999.0))))))))))))))))))));\r\n\r\nItemBaseValue * SlotMod / 10"
+		}
+	},
+	"guid": "6064632299630428985",
+	"name": "NodeCurrency_Gear",
+	"typeId": "3145314712"
+}

@@ -1,0 +1,12 @@
+{
+	"equation":
+	{
+		"expression": "// cant be behind boats / walls\r\nconst targetChar = GetStat(GetTarget(), $#10516612381411111:6064630798183235705$);\r\nconst angle = GetAngleBetween(GetTarget(),GetInstigator());\r\nangle >= 90.0 && targetChar < 1.5"
+	},
+	"constraints":
+	{
+	},
+	"guid": "6064632744723941164",
+	"name": "Rogue_Behind",
+	"typeId": "10516612381411112"
+}
