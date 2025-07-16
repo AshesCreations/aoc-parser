@@ -116,11 +116,14 @@ export async function initDatabase() {
       CREATE TABLE IF NOT EXISTS DatabaseSetBonuses (
         id VARCHAR(255) PRIMARY KEY,
         name TEXT,
-        setEffects JSON,
+        statBonuses JSON,
+        effectBonuses JSON,
       lastModified TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
       )
     `);
     await ensureLastModifiedColumn(conn, 'DatabaseSetBonuses');
+    await ensureColumnExists(conn, 'DatabaseSetBonuses', 'statBonuses', 'JSON');
+    await ensureColumnExists(conn, 'DatabaseSetBonuses', 'effectBonuses', 'JSON');
 
     await conn.query(`
       CREATE TABLE IF NOT EXISTS DatabaseEnchantmentDef (

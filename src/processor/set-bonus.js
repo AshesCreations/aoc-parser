@@ -22,19 +22,46 @@ async function processSetBonusFile(filePath, statIdToName) {
     const processedObject = {
       id: jsonData.guid,
       name: extractLastQuotedValue(jsonData.setDisplayName) || "",
-      setEffects: [],
+      statBonuses: [],
+      effectBonuses: [],
     };
 
     // Process each bonus
     if (jsonData.setEffects) {
-      for (const setBonus in jsonData.setEffects) {
-        for (const stat in jsonData.setEffects[setBonus].statEffects) {
-          const id =
-            jsonData.setEffects[setBonus].statEffects[stat].effectedStat.guid;
+      for (const count in jsonData.setEffects) {
+        const effects = jsonData.setEffects[count]?.statEffects || [];
+        for (const bonus of effects) {
+          const id = bonus.effectedStat?.guid;
           const name = statIdToName[id] || "";
-          const stats =
-            jsonData.setEffects[setBonus].statEffects[stat].statEffects;
-          processedObject.setEffects.push({ count: setBonus, id, name, stats });
+          const stats = bonus.statEffects;
+          processedObject.statBonuses.push({ count, id, name, stats });
+        }
+      }
+    }
+
+    if (jsonData.setStatBonuses) {
+      for (const count in jsonData.setStatBonuses) {
+        const bonuses = jsonData.setStatBonuses[count]?.statBonuses || [];
+        for (const bonus of bonuses) {
+          const id = bonus.affectedStat?.guid;
+          const name = statIdToName[id] || "";
+          const stats = bonus.statBonuses;
+          processedObject.statBonuses.push({ count, id, name, stats });
+        }
+      }
+    }
+
+    if (jsonData.setEffectBonuses) {
+      for (const count in jsonData.setEffectBonuses) {
+        const effects = jsonData.setEffectBonuses[count]?.effectBonuses || [];
+        for (const eff of effects) {
+          processedObject.effectBonuses.push({
+            count,
+            effect: eff.effect,
+            minimumRarity: eff.minimumRarity,
+            maximumRarity: eff.maximumRarity,
+            stacks: eff.stacks,
+          });
         }
       }
     }
