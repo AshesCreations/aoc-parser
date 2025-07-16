@@ -1,0 +1,51 @@
+{
+	"spawnAreaId":
+	{
+		"guid": "6064631759582724118",
+		"typeId": "130316003",
+		"name": "DefaultSpawn"
+	},
+	"spawnTeleportPointId":
+	{
+		"guid": "0",
+		"typeId": "130316003",
+		"name": "None"
+	},
+	"botConfigId":
+	{
+		"guid": "109036179838585",
+		"typeId": "130316004",
+		"name": "MurderBotConfig"
+	},
+	"botBehaviorId":
+	{
+		"guid": "109036176103032",
+		"typeId": "130316002",
+		"name": "MurderBotBehavior"
+	},
+	"statCaptureId":
+	{
+		"guid": "0",
+		"typeId": "130316005",
+		"name": "None"
+	},
+	"isFullyAutonomous": true,
+	"description": "Instructs the bots to use an overpowered ability to kill npcs, then attempts to loot the corpses. This logs when a target does not die from the overkill ability. Starting at the location of BriarmoorFarms",
+	"botFollowPathId":
+	{
+		"guid": "0",
+		"typeId": "130316007",
+		"name": "None"
+	},
+	"bNeedsMinimumBotsToStart": false,
+	"numberOfClientsToStart": 0,
+	"prepTimeOutInSeconds": 0,
+	"prepTimeoutHandler": "CancelTestScenario",
+	"bBotsCanJoinWhileActive": true,
+	"bOnlyOneInstanceAllowed": false,
+	"bHasStaticSpawn": true,
+	"scenarioTimeInSeconds": -1,
+	"guid": "109036184819322",
+	"name": "TS_Winstead_NPCMurderLoot",
+	"typeId": "130316006"
+}

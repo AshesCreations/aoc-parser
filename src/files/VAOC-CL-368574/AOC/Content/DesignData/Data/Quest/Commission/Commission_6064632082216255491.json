@@ -1,0 +1,85 @@
+{
+	"commissionType": "Narrative",
+	"commissionGameplayTags":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"preRequisiteQuestsIds": [],
+	"autoFailTimer": -1,
+	"bRepeatable": false,
+	"mainObjectiveType": "Basic",
+	"commissionSection": 1,
+	"biomeOrigin": "FloodPlains",
+	"bFromDynamicContent": false,
+	"availabilityExpression":
+	{
+		"expression": "GetCurrentNode(GetPlayer()) != $#1323521343:6064630651307950121$ \r\n&& !Node_IsPlayerCitizen(GetPlayer()) \r\n&& GetCharacterLevel(GetPlayer()) >= 10"
+	},
+	"bDisabled": false,
+	"level": 10,
+	"commissionRarity": "Common",
+	"objectivesIds": [
+		{
+			"guid": "6064633935137865730",
+			"typeId": "1091110420",
+			"name": "None"
+		},
+		{
+			"guid": "6064632082236243975",
+			"typeId": "1091110420",
+			"name": "None"
+		}
+	],
+	"allowMultipleCompletion": false,
+	"commissionName": "So You Want to be a Citizen",
+	"flavorText": "The local town crier has suggested I join the settlement as a citizen, which would grant me access to many benefits. I can do so by talking with the local Administrator at the Town Hall.",
+	"mainObjectiveText": "Become a citizen of your local settlement",
+	"rewardTablesIds": [
+		{
+			"guid": "6064631828174143489",
+			"typeId": "1091110040",
+			"name": "None"
+		},
+		{
+			"guid": "6064633940311998472",
+			"typeId": "1091110040",
+			"name": "None"
+		}
+	],
+	"calloutName": "",
+	"calloutDescription": "",
+	"bCanProgressWhileInRaid": false,
+	"expiration":
+	{
+		"duration": "0"
+	},
+	"cooldown":
+	{
+		"duration": "0"
+	},
+	"moneyCost": "0",
+	"resourceCost": [],
+	"mayoralCompletionCount": 0,
+	"rewardId":
+	{
+		"guid": "0",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"bNodeTargeted": false,
+	"targetRewardId":
+	{
+		"guid": "0",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"questItemListIds": [],
+	"storedGraph":
+	{
+		"nodes": []
+	},
+	"guid": "6064632082216255491",
+	"name": "CSQ_0155_FTUE_SoYouWantToBeACitizen",
+	"typeId": "280002"
+}

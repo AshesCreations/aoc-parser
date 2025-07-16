@@ -1,0 +1,51 @@
+{
+	"spawnAreaId":
+	{
+		"guid": "108872815302266",
+		"typeId": "130316003",
+		"name": "DefaultSpawn"
+	},
+	"spawnTeleportPointId":
+	{
+		"guid": "0",
+		"typeId": "130316003",
+		"name": "None"
+	},
+	"botConfigId":
+	{
+		"guid": "6064632298817388546",
+		"typeId": "130316004",
+		"name": "MurderBotConfig"
+	},
+	"botBehaviorId":
+	{
+		"guid": "6064632298813652993",
+		"typeId": "130316002",
+		"name": "MurderBotBehavior"
+	},
+	"statCaptureId":
+	{
+		"guid": "0",
+		"typeId": "130316005",
+		"name": "None"
+	},
+	"isFullyAutonomous": true,
+	"description": "Instructs bots to wander around searching for npcs to kill. The bots either use auto attack or the abilties on the hotbar given from max class. Minimum requirement of 100 bots to begin.",
+	"botFollowPathId":
+	{
+		"guid": "0",
+		"typeId": "130316007",
+		"name": "None"
+	},
+	"bNeedsMinimumBotsToStart": true,
+	"numberOfClientsToStart": 100,
+	"prepTimeOutInSeconds": 1300,
+	"prepTimeoutHandler": "ContinueWithConnectedBots",
+	"bBotsCanJoinWhileActive": true,
+	"bOnlyOneInstanceAllowed": false,
+	"bHasStaticSpawn": false,
+	"scenarioTimeInSeconds": -1,
+	"guid": "6064633948172320772",
+	"name": "TS_NPCKill_AnyClass_MR100",
+	"typeId": "130316006"
+}

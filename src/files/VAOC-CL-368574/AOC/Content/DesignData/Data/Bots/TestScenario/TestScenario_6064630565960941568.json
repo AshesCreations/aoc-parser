@@ -1,0 +1,51 @@
+{
+	"spawnAreaId":
+	{
+		"guid": "108872815302266",
+		"typeId": "130316003",
+		"name": "DefaultSpawn"
+	},
+	"spawnTeleportPointId":
+	{
+		"guid": "0",
+		"typeId": "130316003",
+		"name": "None"
+	},
+	"botConfigId":
+	{
+		"guid": "6064631001641713664",
+		"typeId": "130316004",
+		"name": "MurderBotConfig"
+	},
+	"botBehaviorId":
+	{
+		"guid": "109188829304440",
+		"typeId": "130316002",
+		"name": "MurderBotBehavior"
+	},
+	"statCaptureId":
+	{
+		"guid": "0",
+		"typeId": "130316005",
+		"name": "None"
+	},
+	"isFullyAutonomous": true,
+	"description": "Instructs the bots to follow the target character that is the \"Pied Piper\" which can be set either by GM command, or in the debug menu",
+	"botFollowPathId":
+	{
+		"guid": "0",
+		"typeId": "130316007",
+		"name": "None"
+	},
+	"bNeedsMinimumBotsToStart": false,
+	"numberOfClientsToStart": 0,
+	"prepTimeOutInSeconds": 0,
+	"prepTimeoutHandler": "CancelTestScenario",
+	"bBotsCanJoinWhileActive": true,
+	"bOnlyOneInstanceAllowed": false,
+	"bHasStaticSpawn": false,
+	"scenarioTimeInSeconds": -1,
+	"guid": "6064630565960941568",
+	"name": "TS_FollowThePiedPiper",
+	"typeId": "130316006"
+}

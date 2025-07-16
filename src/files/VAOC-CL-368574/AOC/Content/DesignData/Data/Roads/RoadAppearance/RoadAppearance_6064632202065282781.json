@@ -1,0 +1,74 @@
+{
+	"roadWidth": 1000,
+	"materialArray":
+	{
+		"materials": [
+			{
+				"biome": "Riverlands",
+				"material": "/Game/ENV/Landscape/LandscapeBrushes/Roads/TopRoads/M_TopRoadCobbleStone.M_TopRoadCobbleStone"
+			},
+			{
+				"biome": "Desert",
+				"material": "/Game/ENV/Landscape/LandscapeBrushes/Roads/TopRoads/Desert/MI_DES_TopRoad.MI_DES_TopRoad"
+			},
+			{
+				"biome": "Jungle",
+				"material": "/Game/ENV/Landscape/LandscapeBrushes/Roads/TopRoads/Tropics/MI_TRO_TopRoad.MI_TRO_TopRoad"
+			},
+			{
+				"biome": "Tropics",
+				"material": "/Game/ENV/Landscape/LandscapeBrushes/Roads/TopRoads/Tropics/MI_TRO_TopRoad.MI_TRO_TopRoad"
+			}
+		]
+	},
+	"roadBuffs": [
+		{
+			"effectRecordId":
+			{
+				"guid": "6064632988600696925",
+				"typeId": "30316002",
+				"name": "None"
+			},
+			"effectClassifications": [
+				"Character"
+			],
+			"effectNodeType": "Default",
+			"effectAlignments": [],
+			"bRequireAllAlignments": true,
+			"bRequireOrgAffiliation": true
+		},
+		{
+			"effectRecordId":
+			{
+				"guid": "6064632988601155680",
+				"typeId": "30316002",
+				"name": "None"
+			},
+			"effectClassifications": [
+				"Mount"
+			],
+			"effectNodeType": "Default",
+			"effectAlignments": [],
+			"bRequireAllAlignments": true,
+			"bRequireOrgAffiliation": true
+		},
+		{
+			"effectRecordId":
+			{
+				"guid": "6064632988594602074",
+				"typeId": "30316002",
+				"name": "None"
+			},
+			"effectClassifications": [
+				"Caravan"
+			],
+			"effectNodeType": "Default",
+			"effectAlignments": [],
+			"bRequireAllAlignments": true,
+			"bRequireOrgAffiliation": true
+		}
+	],
+	"guid": "6064632202065282781",
+	"name": "RoadAppearance_Capillary_Level_6",
+	"typeId": "95978961"
+}

@@ -1,0 +1,22 @@
+{
+	"choiceText": "You mentioned a construction crate here in the settlement?",
+	"nextNodeId":
+	{
+		"guid": "6064633941709684817",
+		"typeId": "1091110028",
+		"name": "DD_ServiceNPC_ConstructionForeman_10"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "Node_NumOfServiceBuilding(GetCurrentNode(GetPlayer()),$#7823463:6064633912660918272$)>=1"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064633941709684802",
+	"name": "DD_ServiceNPC_ConstructionForemanNPC_3_Choice_1",
+	"typeId": "1091110027"
+}

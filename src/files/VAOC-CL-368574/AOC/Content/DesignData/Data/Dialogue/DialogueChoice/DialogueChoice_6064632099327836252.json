@@ -1,0 +1,121 @@
+{
+	"choiceText": "Not On/Completed Quest",
+	"nextNodeId":
+	{
+		"guid": "6064632099326132315",
+		"typeId": "1091110028",
+		"name": "CSQ_012X_FTUE_EstablishingASettlement_NodeTrader_2"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "(Node_ClientGetNumNodesAtLevel(ENodeLevel::Crossroads) >= 1 ||\r\nNode_ClientGetNumNodesAtLevel(ENodeLevel::Encampment) >= 1 ||\r\nNode_ClientGetNumNodesAtLevel(ENodeLevel::Village) >= 1 ||\r\nNode_ClientGetNumNodesAtLevel(ENodeLevel::Town) >= 1 ||\r\nNode_ClientGetNumNodesAtLevel(ENodeLevel::City) >= 1 ||\r\nNode_ClientGetNumNodesAtLevel(ENodeLevel::Metropolis) >= 1)"
+	},
+	"requirements": [
+		{
+			"criteria": [
+				{
+					"elementType": "Quest",
+					"narrativeType": "Commission",
+					"commissionId":
+					{
+						"guid": "6064632081917018112",
+						"typeId": "280002",
+						"name": "None"
+					},
+					"storyArcQuestId":
+					{
+						"guid": "0",
+						"typeId": "1091110035",
+						"name": "None"
+					},
+					"objectiveId":
+					{
+						"guid": "0",
+						"typeId": "1091110420",
+						"name": "None"
+					},
+					"itemFilterId":
+					{
+						"guid": "0",
+						"typeId": "1091110041",
+						"name": "None"
+					},
+					"currencyDefId":
+					{
+						"guid": "0",
+						"typeId": "1011151289",
+						"name": "None"
+					},
+					"amountToQuery": 0,
+					"questState": "InProgress",
+					"objectiveState": "Active",
+					"itemState": "InInventory",
+					"characterAlignmentId":
+					{
+						"guid": "0",
+						"typeId": "512160700",
+						"name": "None"
+					},
+					"invert": true
+				}
+			]
+		},
+		{
+			"criteria": [
+				{
+					"elementType": "Quest",
+					"narrativeType": "Commission",
+					"commissionId":
+					{
+						"guid": "6064632081917018112",
+						"typeId": "280002",
+						"name": "None"
+					},
+					"storyArcQuestId":
+					{
+						"guid": "0",
+						"typeId": "1091110035",
+						"name": "None"
+					},
+					"objectiveId":
+					{
+						"guid": "0",
+						"typeId": "1091110420",
+						"name": "None"
+					},
+					"itemFilterId":
+					{
+						"guid": "0",
+						"typeId": "1091110041",
+						"name": "None"
+					},
+					"currencyDefId":
+					{
+						"guid": "0",
+						"typeId": "1011151289",
+						"name": "None"
+					},
+					"amountToQuery": 0,
+					"questState": "Completed",
+					"objectiveState": "Active",
+					"itemState": "InInventory",
+					"characterAlignmentId":
+					{
+						"guid": "0",
+						"typeId": "512160700",
+						"name": "None"
+					},
+					"invert": true
+				}
+			]
+		}
+	],
+	"choiceType": "Default",
+	"guid": "6064632099327836252",
+	"name": "CSQ_0153_FTUE_EstablishingASettlement_LionholdTrader_1_Choice_1",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,72 @@
+{
+	"choiceText": "How can I help around here?",
+	"nextNodeId":
+	{
+		"guid": "6064633934819885087",
+		"typeId": "1091110028",
+		"name": "Node_Master_Dialog_TownCrier_DLG_4"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "GetCurrentNode(GetPlayer()) != $#1323521343:6064630651307950121$ \r\n&& !Node_IsPlayerCitizen(GetPlayer()) \r\n&& GetCharacterLevel(GetPlayer()) >= 10"
+	},
+	"requirements": [
+		{
+			"criteria": [
+				{
+					"elementType": "Quest",
+					"narrativeType": "Commission",
+					"commissionId":
+					{
+						"guid": "6064632082216255491",
+						"typeId": "280002",
+						"name": "None"
+					},
+					"storyArcQuestId":
+					{
+						"guid": "0",
+						"typeId": "1091110035",
+						"name": "None"
+					},
+					"objectiveId":
+					{
+						"guid": "0",
+						"typeId": "1091110420",
+						"name": "None"
+					},
+					"itemFilterId":
+					{
+						"guid": "0",
+						"typeId": "1091110041",
+						"name": "None"
+					},
+					"currencyDefId":
+					{
+						"guid": "0",
+						"typeId": "1011151289",
+						"name": "None"
+					},
+					"amountToQuery": 0,
+					"questState": "Unaccepted",
+					"objectiveState": "Active",
+					"itemState": "InInventory",
+					"characterAlignmentId":
+					{
+						"guid": "0",
+						"typeId": "512160700",
+						"name": "None"
+					},
+					"invert": false
+				}
+			]
+		}
+	],
+	"choiceType": "Default",
+	"guid": "6064633934790262811",
+	"name": "Node_Master_Dialog_TownCrier_DLG_3_Choice_1",
+	"typeId": "1091110027"
+}

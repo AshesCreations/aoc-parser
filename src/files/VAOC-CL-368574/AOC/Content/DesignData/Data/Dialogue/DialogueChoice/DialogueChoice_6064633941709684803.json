@@ -1,0 +1,22 @@
+{
+	"choiceText": "Where do I have to go to pack a construction crate?",
+	"nextNodeId":
+	{
+		"guid": "6064633941709684819",
+		"typeId": "1091110028",
+		"name": "DD_ServiceNPC_ConstructionForeman_11"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "Node_NumOfServiceBuilding(GetCurrentNode(GetPlayer()),$#7823463:6064633912660918272$)==0"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064633941709684803",
+	"name": "DD_ServiceNPC_ConstructionForemanNPC_3_Choice_2",
+	"typeId": "1091110027"
+}

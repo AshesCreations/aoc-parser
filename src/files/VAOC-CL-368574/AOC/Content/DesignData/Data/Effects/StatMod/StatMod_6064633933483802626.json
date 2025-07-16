@@ -1,0 +1,22 @@
+{
+	"statRefId":
+	{
+		"guid": "108986352686712",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"value":
+	{
+		"expression": "const stacks = GetEffectCount(GetTarget(), $#30316002:6064633940733461527$);\r\nconst maxHp = GetStat(GetTarget(), $#10516612381411111:108986356618873$);\r\n-(0.1 + stacks*0.01) * maxHp"
+	},
+	"bUseShieldAbsorb": false,
+	"shieldAbsorbPercentage":
+	{
+		"expression": ""
+	},
+	"bShowFloatingText": true,
+	"valueInputTerms": [],
+	"guid": "6064633933483802626",
+	"name": "General_Drowning_Damage",
+	"typeId": "3031600201"
+}

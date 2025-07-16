@@ -1,0 +1,22 @@
+{
+	"choiceText": "New To Buy Orders",
+	"nextNodeId":
+	{
+		"guid": "6064632106105962517",
+		"typeId": "1091110028",
+		"name": "DD_ServiceNPC_BuyOrderManager_99"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "!(Player_HasCommission(GetPlayer(), \"CSQ_0154_FTUE_WoodStoneBuildingHomes\") ||\r\nPlayer_HasCompletedCommission(GetPlayer(), \"CSQ_0154_FTUE__WoodStoneBuildingHomes\")) &&\r\nNode_IsBuyOrderActive\r\n(Node_GetActorCityNode(GetInteractionTarget()))"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064632106098622483",
+	"name": "DD_ServiceNPC_BuyOrderManager_98_Choice_1",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,293 @@
+{
+	"abilityTags": [],
+	"abilityIcon": "/Game/UI/Icons/Vehicles/TUI_AbilityIcon_Vehicle_Dismount.TUI_AbilityIcon_Vehicle_Dismount",
+	"abilityConditionalIcons": [],
+	"bOverrideRangeInTooltip": false,
+	"customTooltipRange":
+	{
+		"expression": ""
+	},
+	"bOverrideProgressBarClass": false,
+	"progressBarClass": "None",
+	"progressBarSortScore":
+	{
+		"expression": ""
+	},
+	"hasProc":
+	{
+		"expression": ""
+	},
+	"hasAbilitySynergy":
+	{
+		"expression": ""
+	},
+	"hasStatusEffectSynergy":
+	{
+		"expression": ""
+	},
+	"animMontages": [
+		{
+			"abilityDirection": "DIR_RIGHT",
+			"animExpression":
+			{
+				"expression": "IsComboButtonPressed(EComboButtons::BUTTON_Right)"
+			},
+			"startSectionName": "None",
+			"bOverrideSequenceResetTime": false,
+			"sequenceResetTime": 0,
+			"abilityAnimationSoftPaths": [
+				"/Game/Characters/Animations/00_BASE/CM_M_BASE_Dismount_Right_Montage.CM_M_BASE_Dismount_Right_Montage"
+			],
+			"targetingKey": 0,
+			"hitKeys": []
+		},
+		{
+			"abilityDirection": "DIR_LEFT",
+			"animExpression":
+			{
+				"expression": ""
+			},
+			"startSectionName": "None",
+			"bOverrideSequenceResetTime": false,
+			"sequenceResetTime": 0,
+			"abilityAnimationSoftPaths": [
+				"/Game/Characters/Animations/00_BASE/CM_M_BASE_Dismount_Left_Montage.CM_M_BASE_Dismount_Left_Montage"
+			],
+			"targetingKey": 0,
+			"hitKeys": []
+		}
+	],
+	"activationRequirements":
+	{
+		"expression": ""
+	},
+	"weaponRequirement": "NoRequirement",
+	"bRequiresStealthActivation": false,
+	"petCommandId":
+	{
+		"guid": "0",
+		"typeId": "3031601337",
+		"name": "None"
+	},
+	"bDisableDuringCooldown": true,
+	"cooldown":
+	{
+		"expression": "1.0"
+	},
+	"sharedCooldownTag": "None",
+	"cooldownCharges":
+	{
+		"expression": ""
+	},
+	"bOverrideInitialCooldownCharges": false,
+	"initialCooldownChargesOverride":
+	{
+		"expression": ""
+	},
+	"bPersistCooldown": false,
+	"suppressCooldownInUI":
+	{
+		"expression": ""
+	},
+	"bDeferAbilityTrigger": false,
+	"bMayNotBeUsedSimultaneously": false,
+	"bStopsAutoAttack": false,
+	"costs": [
+		{
+			"enabled":
+			{
+				"expression": ""
+			},
+			"statCosts": [],
+			"effectCosts": [],
+			"chargeCost":
+			{
+				"expression": "0"
+			},
+			"bTriggersCooldown": true
+		}
+	],
+	"hitsIds":
+	{
+	},
+	"effectsIds":
+	{
+	},
+	"projectilesIds":
+	{
+	},
+	"lingeringEffectsIds":
+	{
+	},
+	"abilityFXIds":
+	{
+	},
+	"animBranchesIds":
+	{
+	},
+	"conditionalBranchesIds":
+	{
+	},
+	"reactionsIds":
+	{
+	},
+	"targetingRecordsIds":
+	{
+	},
+	"progressDisruptionRecordsIds":
+	{
+	},
+	"teleportRecordsIds":
+	{
+	},
+	"comboInputs": [],
+	"bExactInput": false,
+	"bufferPriority": 0,
+	"bUsableFromHotbar": true,
+	"abilityActivationInput": "UserConfigurable",
+	"bMayEscCancel": true,
+	"bIsAOEClickedAbility": false,
+	"targetActivationRequirement": "Never",
+	"applicableTargets": 0,
+	"applicableTypes": 0,
+	"applicableLifeStates": 1,
+	"applicableCasterLifeStates": 1,
+	"bNeverCancelAbility": false,
+	"bUseTargetingRecord": false,
+	"targetingRecordId":
+	{
+		"guid": "0",
+		"typeId": "30316011",
+		"name": "None"
+	},
+	"bCheckTargetValidity": true,
+	"bPerformLoSCheck": true,
+	"bPerformConeCheck": true,
+	"angleCenter": 0,
+	"distanceCenter": 0,
+	"validAngle": 0,
+	"validDistance": 0,
+	"angleCenterExp":
+	{
+		"expression": "0.0"
+	},
+	"distanceCenterExp":
+	{
+		"expression": "0.0"
+	},
+	"validAngleExp":
+	{
+		"expression": "0.0"
+	},
+	"validDistanceExp":
+	{
+		"expression": "0.0"
+	},
+	"speedMultiplierSource": "NONE",
+	"bHoldAnimation": false,
+	"maximumHoldTime": 0,
+	"bMayCancelHoldAtAnyTime": true,
+	"cancelHoldSections": [],
+	"onCancelHoldBranchKey": 0,
+	"bOverrideHeldBehavior": false,
+	"heldAbilityBehavior": "Naive",
+	"bForceAnimCancel": true,
+	"bAllowRotation": true,
+	"pitchMode": "None",
+	"minPitch": 0,
+	"maxPitch": 0,
+	"bUsableInAir": true,
+	"bUsableWhileSwimming": true,
+	"bUsableWhileWalking": true,
+	"bUsableWhileMounted": true,
+	"bAutoDismount": true,
+	"bOmnidirectional": true,
+	"bOrientWithInterpOnStart": true,
+	"onStartInterpConstRate": 360,
+	"bOrientWithInterpOnEnd": true,
+	"onEndInterpConstRate": 360,
+	"bQuickCancelFromAllAbilities": false,
+	"quickCancelFromAbilitiesIds": [],
+	"cancelSectionName": "None",
+	"bRequiresAnimCancel": false,
+	"cancelFromAbilitiesIds": [],
+	"cancelFromTagQuery":
+	{
+		"tokenStreamVersion": 0,
+		"tagDictionary": [],
+		"queryTokenStream": [],
+		"userDescription": "",
+		"autoDescription": ""
+	},
+	"scriptOnActivate": "None",
+	"areaTemplateFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"areaTemplateMaterial": "None",
+	"areaTemplateRotationRate": 0,
+	"areaTargetRadius": 0,
+	"areaTargetRange": 0,
+	"bShouldFaceClickedTarget": false,
+	"bPerformIsWalkableCheck": true,
+	"bMayTargetWater": false,
+	"bResetSequenceAfterTime": false,
+	"sequenceResetTime": 0,
+	"bForceComboBreak": true,
+	"abilityName": "Dismount",
+	"abilityDescription": "Leap off of your mount",
+	"bAllowMovement": true,
+	"bPROTOTYPERotateRootMotion": false,
+	"rootMotionFreezeBehavior": "None",
+	"rootMotionFreezeDistance": 0,
+	"rootMotionFreezeRadiusScale": 1,
+	"rootMotionIgnoreNonTarget": false,
+	"bVisualizeSweepCollision": false,
+	"canBreakEffects":
+	{
+		"expression": ""
+	},
+	"effectsToBreak":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"actionModeAbilityId":
+	{
+		"guid": "0",
+		"typeId": "30316001",
+		"name": "None"
+	},
+	"aBTestingAbilitiesIds": [
+		{
+			"guid": "6064630045400965294",
+			"typeId": "30316001",
+			"name": "None"
+		}
+	],
+	"animCancelsIds":
+	{
+	},
+	"modifyCooldownsIds":
+	{
+	},
+	"aLSAbilityId":
+	{
+		"guid": "0",
+		"typeId": "30316001",
+		"name": "None"
+	},
+	"inputTerms": [],
+	"dynamicCastDuration":
+	{
+		"expression": ""
+	},
+	"bNeverCull": false,
+	"networkingMaxSpeed": 0,
+	"bInteruptChannelOnAbilityEnd": false,
+	"guid": "6064633882790723584",
+	"name": "General_Dismount_Elevated",
+	"typeId": "30316001"
+}

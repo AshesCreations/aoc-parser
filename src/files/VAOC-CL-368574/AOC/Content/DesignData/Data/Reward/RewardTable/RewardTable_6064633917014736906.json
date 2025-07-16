@@ -1,0 +1,57 @@
+{
+	"predicate":
+	{
+		"expression": "GetNPCLevel() >= 20 && GetNPCLevel() <= 29"
+	},
+	"callout": "None",
+	"rewardDefContainers": [],
+	"subTableSelectionAlgorithm": "PerElementWeightedExpressionRandom",
+	"numberOfSubtablesToSelect": 2,
+	"weightsPerSubTable": [],
+	"expressionWeightsPerSubTable": [
+		{
+			"expression": "EvalFormula($#10516612381411113:6064633900291719170$)"
+		},
+		{
+			"expression": "EvalFormula($#10516612381411113:6064633900294668292$)"
+		},
+		{
+			"expression": "EvalFormula($#10516612381411113:6064633900295913478$)"
+		}
+	],
+	"percentagePerSubTable": [],
+	"subTablesWeightCurve":
+	{
+		"externalCurve": "None",
+		"editorCurveData":
+		{
+			"keys": [],
+			"defaultValue": 3.4028234663852886e+38,
+			"preInfinityExtrap": "RCCE_Constant",
+			"postInfinityExtrap": "RCCE_Constant",
+			"keyHandlesToIndices":
+			{
+			}
+		}
+	},
+	"subTablesIds": [
+		{
+			"guid": "6064633916984655877",
+			"typeId": "1091110040",
+			"name": "None"
+		},
+		{
+			"guid": "6064633916992913414",
+			"typeId": "1091110040",
+			"name": "None"
+		},
+		{
+			"guid": "6064633917036036108",
+			"typeId": "1091110040",
+			"name": "None"
+		}
+	],
+	"guid": "6064633917014736906",
+	"name": "GearTier_ANV_Gear_Weapon_Radiant",
+	"typeId": "1091110040"
+}

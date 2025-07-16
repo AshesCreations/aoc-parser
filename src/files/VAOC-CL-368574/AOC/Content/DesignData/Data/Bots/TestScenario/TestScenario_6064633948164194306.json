@@ -1,0 +1,51 @@
+{
+	"spawnAreaId":
+	{
+		"guid": "108872815302266",
+		"typeId": "130316003",
+		"name": "DefaultSpawn"
+	},
+	"spawnTeleportPointId":
+	{
+		"guid": "0",
+		"typeId": "130316003",
+		"name": "None"
+	},
+	"botConfigId":
+	{
+		"guid": "6064631346926977025",
+		"typeId": "130316004",
+		"name": "MurderBotConfig"
+	},
+	"botBehaviorId":
+	{
+		"guid": "6064630893070450690",
+		"typeId": "130316002",
+		"name": "MurderBotBehavior"
+	},
+	"statCaptureId":
+	{
+		"guid": "0",
+		"typeId": "130316005",
+		"name": "None"
+	},
+	"isFullyAutonomous": true,
+	"description": "Bots will be instructed to PvP using any class/race/gender combos from the DDE, this requires a minimum of 100 bots to begin",
+	"botFollowPathId":
+	{
+		"guid": "0",
+		"typeId": "130316007",
+		"name": "None"
+	},
+	"bNeedsMinimumBotsToStart": true,
+	"numberOfClientsToStart": 100,
+	"prepTimeOutInSeconds": 1300,
+	"prepTimeoutHandler": "ContinueWithConnectedBots",
+	"bBotsCanJoinWhileActive": true,
+	"bOnlyOneInstanceAllowed": false,
+	"bHasStaticSpawn": false,
+	"scenarioTimeInSeconds": -1,
+	"guid": "6064633948164194306",
+	"name": "TS_PvP_AnyClass_MR100",
+	"typeId": "130316006"
+}

@@ -1,0 +1,81 @@
+{
+	"commissionType": "Narrative",
+	"commissionGameplayTags":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"preRequisiteQuestsIds": [],
+	"autoFailTimer": -1,
+	"bRepeatable": false,
+	"mainObjectiveType": "Basic",
+	"commissionSection": 1,
+	"biomeOrigin": "FloodPlains",
+	"bFromDynamicContent": false,
+	"availabilityExpression":
+	{
+		"expression": "(Node_ClientGetNumNodesAtLevel(ENodeLevel::Crossroads) >= 1 ||\r\nNode_ClientGetNumNodesAtLevel(ENodeLevel::Encampment) >= 1 ||\r\nNode_ClientGetNumNodesAtLevel(ENodeLevel::Village) >= 1 ||\r\nNode_ClientGetNumNodesAtLevel(ENodeLevel::Town) >= 1 ||\r\nNode_ClientGetNumNodesAtLevel(ENodeLevel::City) >= 1 ||\r\nNode_ClientGetNumNodesAtLevel(ENodeLevel::Metropolis) >= 1)"
+	},
+	"bDisabled": false,
+	"level": 10,
+	"commissionRarity": "Common",
+	"objectivesIds": [
+		{
+			"guid": "6064632082212651010",
+			"typeId": "1091110420",
+			"name": "None"
+		}
+	],
+	"allowMultipleCompletion": false,
+	"commissionName": "Establishing a Settlement ",
+	"flavorText": "Jaren Umber in Lionhold has asked for my assistance with the expansion of the Exalted across Verra by delivering supplies to any nearby settlement of my choice.",
+	"mainObjectiveText": "Assist the expansion of Verra by delivering supplies to a settlement",
+	"rewardTablesIds": [
+		{
+			"guid": "6064631828174143489",
+			"typeId": "1091110040",
+			"name": "None"
+		}
+	],
+	"calloutName": "Help Out",
+	"calloutDescription": "You there! Help us retake the wilds.",
+	"bCanProgressWhileInRaid": false,
+	"expiration":
+	{
+		"duration": "0"
+	},
+	"cooldown":
+	{
+		"duration": "0"
+	},
+	"moneyCost": "0",
+	"resourceCost": [],
+	"mayoralCompletionCount": 0,
+	"rewardId":
+	{
+		"guid": "0",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"bNodeTargeted": false,
+	"targetRewardId":
+	{
+		"guid": "0",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"questItemListIds": [
+		{
+			"guid": "6064632099522150543",
+			"typeId": "1091110003",
+			"name": "None"
+		}
+	],
+	"storedGraph":
+	{
+		"nodes": []
+	},
+	"guid": "6064632081917018112",
+	"name": "CSQ_0153_FTUE_EstablishingASettlement",
+	"typeId": "280002"
+}

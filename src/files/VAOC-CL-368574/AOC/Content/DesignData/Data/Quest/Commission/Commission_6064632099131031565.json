@@ -1,0 +1,80 @@
+{
+	"commissionType": "Narrative",
+	"commissionGameplayTags":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"preRequisiteQuestsIds": [],
+	"autoFailTimer": -1,
+	"bRepeatable": false,
+	"mainObjectiveType": "Basic",
+	"commissionSection": 1,
+	"biomeOrigin": "FloodPlains",
+	"bFromDynamicContent": false,
+	"availabilityExpression":
+	{
+		"expression": "const playerNode = Node_GetActorCityNode(GetPlayer());\r\nconst npcNode = Node_GetActorCityNode(GetInteractionTarget());\r\nplayerNode == npcNode\r\n&&\r\nNode_GetElectionState(npcNode) == EMayorElectionState::ActiveElection"
+	},
+	"bDisabled": false,
+	"level": 5,
+	"commissionRarity": "Common",
+	"objectivesIds": [
+		{
+			"guid": "6064632099138306062",
+			"typeId": "1091110420",
+			"name": "None"
+		},
+		{
+			"guid": "6064632100594909185",
+			"typeId": "1091110420",
+			"name": "None"
+		}
+	],
+	"allowMultipleCompletion": false,
+	"commissionName": "Make Your Voice Heard",
+	"flavorText": "The Administrator of our settlement has informed me that there is a mayoral election being held. I should open the Citizenship Menu and vote in the current election.",
+	"mainObjectiveText": "Vote in the current election via the Citizenship Menu",
+	"rewardTablesIds": [
+		{
+			"guid": "6064631828174143489",
+			"typeId": "1091110040",
+			"name": "None"
+		}
+	],
+	"calloutName": "",
+	"calloutDescription": "The administrator beckons you over excitedly.",
+	"bCanProgressWhileInRaid": false,
+	"expiration":
+	{
+		"duration": "0"
+	},
+	"cooldown":
+	{
+		"duration": "0"
+	},
+	"moneyCost": "0",
+	"resourceCost": [],
+	"mayoralCompletionCount": 0,
+	"rewardId":
+	{
+		"guid": "0",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"bNodeTargeted": false,
+	"targetRewardId":
+	{
+		"guid": "0",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"questItemListIds": [],
+	"storedGraph":
+	{
+		"nodes": []
+	},
+	"guid": "6064632099131031565",
+	"name": "CSQ_0150_FTUE_MakeYourVoiceHeard",
+	"typeId": "280002"
+}

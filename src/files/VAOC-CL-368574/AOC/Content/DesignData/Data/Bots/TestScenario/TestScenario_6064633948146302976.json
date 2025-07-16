@@ -1,0 +1,51 @@
+{
+	"spawnAreaId":
+	{
+		"guid": "108872815302266",
+		"typeId": "130316003",
+		"name": "None"
+	},
+	"spawnTeleportPointId":
+	{
+		"guid": "0",
+		"typeId": "130316003",
+		"name": "None"
+	},
+	"botConfigId":
+	{
+		"guid": "6064630719103238146",
+		"typeId": "130316004",
+		"name": "None"
+	},
+	"botBehaviorId":
+	{
+		"guid": "6064630719101730817",
+		"typeId": "130316002",
+		"name": "None"
+	},
+	"statCaptureId":
+	{
+		"guid": "0",
+		"typeId": "130316005",
+		"name": "None"
+	},
+	"isFullyAutonomous": true,
+	"description": "Gives the bots tools, sets max artisanship level, and instructs the bots to wander around looking for harvestables. Once found, the bot harvests the resource then continues to wander.  This scenario requires at least 100 bots to begin",
+	"botFollowPathId":
+	{
+		"guid": "0",
+		"typeId": "130316007",
+		"name": "None"
+	},
+	"bNeedsMinimumBotsToStart": true,
+	"numberOfClientsToStart": 100,
+	"prepTimeOutInSeconds": 1300,
+	"prepTimeoutHandler": "ContinueWithConnectedBots",
+	"bBotsCanJoinWhileActive": true,
+	"bOnlyOneInstanceAllowed": false,
+	"bHasStaticSpawn": false,
+	"scenarioTimeInSeconds": -1,
+	"guid": "6064633948146302976",
+	"name": "TS_Harvesting_MR100",
+	"typeId": "130316006"
+}

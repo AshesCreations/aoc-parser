@@ -1,0 +1,22 @@
+{
+	"choiceText": "My interest has been sparked.",
+	"nextNodeId":
+	{
+		"guid": "6064633941709684814",
+		"typeId": "1091110028",
+		"name": "DD_ServiceNPC_ConstructionForeman_8"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "Node_NumOfServiceBuilding(GetCurrentNode(GetPlayer()),$#7823463:6064633912660918272$)==0"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064633941709684799",
+	"name": "DD_ServiceNPC_ConstructionForemanNPC_2_Choice_2",
+	"typeId": "1091110027"
+}

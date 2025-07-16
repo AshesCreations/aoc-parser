@@ -1,0 +1,28 @@
+{
+	"choiceText": "Player In Guild",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "CSQ_0153_FTUE_EstablishingASettlement_NodeTraderGuy_4"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064633901141917716",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "Guild_IsMember(GetPlayer()) == true"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064633901140017171",
+	"name": "DD_ServiceNPC_GuildStorageClerk_1_Choice_3",
+	"typeId": "1091110027"
+}
