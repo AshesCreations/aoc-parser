@@ -5,7 +5,7 @@
 import fs from "fs";
 import path from "path";
 import { saveSetBonusToDatabase } from "../db/operations.js";
-import { extractLastQuotedValue } from "../utils.js";
+import { extractLastQuotedValue, getJson } from "../utils.js";
 
 /**
  * Processes a single JSON file containing set bonus data
@@ -13,7 +13,7 @@ import { extractLastQuotedValue } from "../utils.js";
  * @param {Object} statIdToName - Mapping of stat IDs to names
  * @returns {Object|null} Processed data object or null if processing failed
  */
-async function processSetBonusFile(filePath, statIdToName) {
+async function processSetBonusFile(filePath, statIdToName, dataDir) {
   try {
     const rawData = await fs.promises.readFile(filePath, "utf8");
     const jsonData = JSON.parse(rawData);
@@ -55,13 +55,55 @@ async function processSetBonusFile(filePath, statIdToName) {
       for (const count in jsonData.setEffectBonuses) {
         const effects = jsonData.setEffectBonuses[count]?.effectBonuses || [];
         for (const eff of effects) {
-          processedObject.effectBonuses.push({
-            count,
-            effect: eff.effect,
-            minimumRarity: eff.minimumRarity,
-            maximumRarity: eff.maximumRarity,
-            stacks: eff.stacks,
-          });
+          const effectId = eff.effect?.guid;
+          if (!effectId) continue;
+          let effectData = getJson(
+            dataDir,
+            "/Effects/Effect",
+            `Effect_${effectId}.json`
+          );
+          if (!effectData || Object.keys(effectData).length === 0) {
+            effectData = getJson(
+              dataDir,
+              "/Effects/Effect",
+              `EffectRecord_${effectId}.json`
+            );
+          }
+
+          const statMods = effectData.statModsIds || [];
+          for (const mod of statMods) {
+            const modId = mod.guid;
+            let modData = getJson(
+              dataDir,
+              "/Effects/StatMod",
+              `StatMod_${modId}.json`
+            );
+            if (!modData || Object.keys(modData).length === 0) {
+              modData = getJson(
+                dataDir,
+                "/Effects/StatMod",
+                `StatModRecord_${modId}.json`
+              );
+            }
+
+            const statId = modData.statRefId?.guid;
+            const statName = statIdToName[statId] || "";
+            const value = modData.value?.expression || "";
+
+            const effectObj = {
+              ...eff.effect,
+              name: statName,
+              value,
+            };
+
+            processedObject.effectBonuses.push({
+              count,
+              effect: effectObj,
+              minimumRarity: eff.minimumRarity,
+              maximumRarity: eff.maximumRarity,
+              stacks: eff.stacks,
+            });
+          }
         }
       }
     }
@@ -101,10 +143,16 @@ async function processSetBonusFiles(directoryPath, statIdToName) {
     console.log(`Found ${jsonFiles.length} set bonus files to process`);
     let successCount = 0;
 
+    const dataDir = path.resolve(directoryPath, "..", "..");
+
     // Process each JSON file
     for (const file of jsonFiles) {
       const filePath = path.join(directoryPath, file);
-      const processedData = await processSetBonusFile(filePath, statIdToName);
+      const processedData = await processSetBonusFile(
+        filePath,
+        statIdToName,
+        dataDir
+      );
 
       if (processedData !== null) {
         // Save to database
