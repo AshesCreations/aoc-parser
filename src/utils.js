@@ -325,6 +325,66 @@ function extractExpressionId(str) {
 }
 
 /**
+ * Parse a stat modifier expression, resolving GetTerm and GetStat calls.
+ * @param {string} expression - Raw expression string
+ * @param {Array} valueInputTerms - Optional term overrides
+ * @param {Object} statIdToName - Mapping of stat guids to names
+ * @param {string} dataDir - Base directory for JSON lookups
+ * @returns {string} Parsed expression
+ */
+function parseValueExpression(
+  expression,
+  valueInputTerms = [],
+  statIdToName = {},
+  dataDir = ""
+) {
+  if (!expression) return "";
+
+  // Resolve EvalE($#type:id$) references to the equation expression
+  expression = expression.replace(/EvalE\(\$#\d+:(\d+)\$\)/g, (m, id) => {
+    let eq = getJson(dataDir, "/Stats/StatEquationType", `StatEquationType_${id}.json`);
+    if (!eq || Object.keys(eq).length === 0) {
+      eq = getJson(dataDir, "/Stats/StatEquationType", `StatEquationTypeRecord_${id}.json`);
+    }
+    return eq.equation?.expression || "";
+  });
+
+  // Map term guid -> value from valueInputTerms
+  const termMap = {};
+  if (Array.isArray(valueInputTerms)) {
+    for (const term of valueInputTerms) {
+      const guid = term.termId?.guid;
+      if (!guid) continue;
+      let val = term.value?.expression || "";
+      // Recursively resolve nested EvalE calls
+      val = parseValueExpression(val, [], statIdToName, dataDir);
+      termMap[guid] = val;
+    }
+  }
+
+  // Replace GetTerm references
+  expression = expression.replace(/GetTerm\(\$#\d+:(\d+)\$\)/g, (m, id) => {
+    if (termMap[id] !== undefined) return termMap[id];
+    let term = getJson(dataDir, "/Stats/Term", `Term_${id}.json`);
+    if (!term || Object.keys(term).length === 0) {
+      term = getJson(dataDir, "/Stats/Term", `TermRecord_${id}.json`);
+    }
+    return term.defaultValue?.expression || "";
+  });
+
+  // Replace GetStat/ConsumedItemStat references with stat names
+  expression = expression.replace(
+    /(GetStat\([^,]*,\s*\$#\d+:(\d+)\$\))|(GetConsumedItemStat\(\$#\d+:(\d+)\$\))/g,
+    (m, s1, id1, s2, id2) => {
+      const guid = id1 || id2;
+      return statIdToName[guid] || guid;
+    }
+  );
+
+  return expression;
+}
+
+/**
  * Formats a given number of seconds into a human-readable time string
  * @param {string} seconds - Number of seconds
  * @returns {string} A string representing the time in seconds, minutes, or hours
@@ -356,5 +416,6 @@ export {
   logMissingIcon,
   createEmptyStatsObject,
   extractExpressionId,
+  parseValueExpression,
   formatTime,
 };

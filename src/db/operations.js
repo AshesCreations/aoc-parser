@@ -146,15 +146,18 @@ async function saveSetBonusToDatabase(setBonusData) {
   const client = await pool.getConnection();
   try {
     await ensureLastModifiedColumn(client, 'DatabaseSetBonuses');
+    await ensureColumn(client, 'DatabaseSetBonuses', 'statBonuses', 'JSON');
+    await ensureColumn(client, 'DatabaseSetBonuses', 'effectBonuses', 'JSON');
     // Insert into DatabaseSetBonuses table
     const query = `
       INSERT INTO \`DatabaseSetBonuses\` (
-        id, name, \`setEffects\`
+        id, name, \`statBonuses\`, \`effectBonuses\`
       ) VALUES (
-        ?, ?, ?
+        ?, ?, ?, ?
       ) ON DUPLICATE KEY UPDATE
         name = VALUES(name),
-        \`setEffects\` = VALUES(\`setEffects\`),
+        \`statBonuses\` = VALUES(\`statBonuses\`),
+        \`effectBonuses\` = VALUES(\`effectBonuses\`),
         lastModified = CURRENT_TIMESTAMP
     `;
 
@@ -162,7 +165,8 @@ async function saveSetBonusToDatabase(setBonusData) {
     const values = [
       setBonusData.id ?? null,
       setBonusData.name ?? null,
-      JSON.stringify(setBonusData.setEffects || []),
+      JSON.stringify(setBonusData.statBonuses || []),
+      JSON.stringify(setBonusData.effectBonuses || []),
     ];
 
     await client.execute(query, values);
