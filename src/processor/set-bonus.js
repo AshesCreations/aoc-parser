@@ -5,7 +5,7 @@
 import fs from "fs";
 import path from "path";
 import { saveSetBonusToDatabase } from "../db/operations.js";
-import { extractLastQuotedValue, getJson } from "../utils.js";
+import { extractLastQuotedValue, getJson, parseValueExpression } from "../utils.js";
 
 /**
  * Processes a single JSON file containing set bonus data
@@ -88,7 +88,12 @@ async function processSetBonusFile(filePath, statIdToName, dataDir) {
 
             const statId = modData.statRefId?.guid;
             const statName = statIdToName[statId] || "";
-            const value = modData.value?.expression || "";
+            const value = parseValueExpression(
+              modData.value?.expression || "",
+              modData.valueInputTerms || [],
+              statIdToName,
+              dataDir
+            );
 
             const effectObj = {
               ...eff.effect,
