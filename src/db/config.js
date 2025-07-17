@@ -226,6 +226,25 @@ export async function initDatabase() {
     await ensureLastModifiedColumn(conn, 'DatabaseGear');
     await ensureColumnExists(conn, 'DatabaseGear', 'craftingRecipes', 'JSON');
 
+    await conn.query(`
+      CREATE TABLE IF NOT EXISTS DatabaseLootInfo (
+        id VARCHAR(255) PRIMARY KEY,
+        itemId VARCHAR(255),
+        questName TEXT,
+        step TEXT,
+        npcName TEXT,
+        levelMin INT,
+        levelMax INT,
+        difficulty TEXT,
+        zone TEXT,
+        spawnRate INT,
+        dropChance DOUBLE,
+        coordinates JSON,
+      lastModified TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+      )
+    `);
+    await ensureLastModifiedColumn(conn, 'DatabaseLootInfo');
+
     console.log("Database tables initialized");
   } finally {
     conn.release();

@@ -712,6 +712,49 @@ async function batchSaveItemsToDatabase(items) {
   }
 }
 
+async function saveLootInfoToDatabase(loot) {
+  const client = await pool.getConnection();
+  try {
+    await ensureLastModifiedColumn(client, 'DatabaseLootInfo');
+    const query = `
+      INSERT INTO \`DatabaseLootInfo\` (
+        id, itemId, questName, step, npcName, levelMin, levelMax,
+        difficulty, zone, spawnRate, dropChance, coordinates
+      ) VALUES (
+        ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+      ) ON DUPLICATE KEY UPDATE
+        questName = VALUES(questName),
+        step = VALUES(step),
+        npcName = VALUES(npcName),
+        levelMin = VALUES(levelMin),
+        levelMax = VALUES(levelMax),
+        difficulty = VALUES(difficulty),
+        zone = VALUES(zone),
+        spawnRate = VALUES(spawnRate),
+        dropChance = VALUES(dropChance),
+        coordinates = VALUES(coordinates),
+        lastModified = CURRENT_TIMESTAMP
+    `;
+    const values = [
+      loot.id,
+      loot.itemId,
+      loot.questName,
+      loot.step,
+      loot.npcName,
+      loot.levelMin ?? null,
+      loot.levelMax ?? null,
+      loot.difficulty ?? null,
+      loot.zone ?? null,
+      loot.spawnRate ?? null,
+      loot.dropChance ?? null,
+      JSON.stringify(loot.coordinates || {})
+    ];
+    await client.execute(query, values);
+  } finally {
+    client.release();
+  }
+}
+
 export {
   saveItemRecipeToDatabase,
   saveStatToDatabase,
@@ -724,4 +767,5 @@ export {
   batchFindItemRecipes,
   batchFindRecipes,
   batchSaveItemsToDatabase,
+  saveLootInfoToDatabase,
 };
