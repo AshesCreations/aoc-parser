@@ -19,6 +19,7 @@ import { processSetBonusFiles } from "./processor/set-bonus.js";
 import { processEnchantmentDefFiles } from "./processor/enchantment-def.js";
 import { processEnchantmentLevelFiles } from "./processor/enchantment-level.js";
 import { processRecipeFiles } from "./processor/recipe.js";
+import { processLootFiles } from "./processor/loot.js";
 import {
   directoryStats,
   directorySetBonus,
@@ -152,6 +153,10 @@ async function main() {
     console.log(
       `Item:Equipment processing complete: ${equipmentProcessed} files processed`
     );
+
+    console.log("\nProcessing loot files...");
+    const lootProcessed = await processLootFiles(directoryData);
+    console.log(`Loot processing complete: ${lootProcessed} entries saved`);
 
     console.log("\nAll processing complete. Closing connections...");
   } catch (error) {
