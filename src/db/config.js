@@ -245,6 +245,15 @@ export async function initDatabase() {
     `);
     await ensureLastModifiedColumn(conn, 'DatabaseLootInfo');
 
+    await conn.query(`
+      CREATE TABLE IF NOT EXISTS DatabasePlayerStats (
+        class INT PRIMARY KEY,
+        className TEXT,
+      lastModified TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+      )
+    `);
+    await ensureLastModifiedColumn(conn, 'DatabasePlayerStats');
+
     console.log("Database tables initialized");
   } finally {
     conn.release();
