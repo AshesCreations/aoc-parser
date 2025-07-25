@@ -761,7 +761,7 @@ async function savePlayerStatsToDatabase(playerStats) {
     await ensureLastModifiedColumn(client, 'DatabasePlayerStats');
     const attributes = playerStats.attributes || {};
     for (const attr of Object.keys(attributes)) {
-      await ensureColumn(client, 'DatabasePlayerStats', `\`${attr}\``, 'JSON');
+      await ensureColumn(client, 'DatabasePlayerStats', attr, 'JSON');
     }
     const columns = ['class', 'className', ...Object.keys(attributes).map(a => `\`${a}\``)];
     const placeholders = columns.map(() => '?').join(', ');
