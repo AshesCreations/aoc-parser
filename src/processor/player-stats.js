@@ -15,7 +15,13 @@ const classFiles = [
 ];
 
 function sanitize(name) {
-  return name.replace(/[^a-zA-Z0-9_]/g, '_');
+  return name
+    .split(/[^a-zA-Z0-9]+/)
+    .filter(Boolean)
+    .map((w, i) =>
+      i === 0 ? w.toLowerCase() : w.charAt(0).toUpperCase() + w.slice(1)
+    )
+    .join('');
 }
 
 async function processClass(dataDir, cls, statIdToName) {
