@@ -28,6 +28,7 @@ async function ensureColumnExists(conn, table, columnName, columnType) {
   }
 }
 
+
 let pool = null;
 
 export async function setupConnection() {
@@ -228,7 +229,7 @@ export async function initDatabase() {
 
     await conn.query(`
       CREATE TABLE IF NOT EXISTS DatabaseLootInfo (
-        id VARCHAR(255) PRIMARY KEY,
+        id VARCHAR(512) PRIMARY KEY,
         itemId VARCHAR(255),
         questName TEXT,
         step TEXT,
@@ -244,6 +245,19 @@ export async function initDatabase() {
       )
     `);
     await ensureLastModifiedColumn(conn, 'DatabaseLootInfo');
+    // Ensure the id column is large enough if the table existed previously
+    await conn.query(
+      "ALTER TABLE `DatabaseLootInfo` MODIFY COLUMN `id` VARCHAR(512)"
+    );
+
+    await conn.query(`
+      CREATE TABLE IF NOT EXISTS DatabasePlayerStats (
+        className VARCHAR(255) PRIMARY KEY,
+        class INT DEFAULT 100,
+      lastModified TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+      )
+    `);
+    await ensureLastModifiedColumn(conn, 'DatabasePlayerStats');
 
     await conn.query(`
       CREATE TABLE IF NOT EXISTS DatabasePlayerStats (
