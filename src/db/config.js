@@ -28,7 +28,6 @@ async function ensureColumnExists(conn, table, columnName, columnType) {
   }
 }
 
-
 let pool = null;
 
 export async function setupConnection() {
