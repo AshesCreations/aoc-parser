@@ -766,9 +766,13 @@ async function savePlayerStatsToDatabase(playerStats) {
     const columns = ['className', 'class', ...Object.keys(attributes).map(a => `\`${a}\``)];
     const placeholders = columns.map(() => '?').join(', ');
     const updates = columns.slice(1).map(c => `${c} = VALUES(${c})`).join(', ');
+    const classValue =
+      playerStats.class !== undefined && playerStats.class !== null
+        ? playerStats.class
+        : 100;
     const values = [
       playerStats.className,
-      playerStats.class ?? null,
+      classValue,
       ...Object.values(attributes).map(v => JSON.stringify(v)),
     ];
     const query = `INSERT INTO \`DatabasePlayerStats\` (${columns.join(', ')}) VALUES (${placeholders}) ON DUPLICATE KEY UPDATE ${updates}, lastModified = CURRENT_TIMESTAMP`;

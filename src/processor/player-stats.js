@@ -11,7 +11,7 @@ const defaultGuids = new Set([
 ]);
 
 const classFiles = [
-  { value: null, name: 'Default', file: 'StatInitializerList_6064630101072872893.json', isDefault: true },
+  { value: 100, name: 'Default', file: 'StatInitializerList_6064630101072872893.json', isDefault: true },
   { value: 0, name: 'Bard', file: 'StatInitializerList_6064630736345890821.json' },
   { value: 1, name: 'Cleric', file: 'StatInitializerList_6064630372724375553.json' },
   { value: 2, name: 'Fighter', file: 'StatInitializerList_6064630372725096450.json' },
