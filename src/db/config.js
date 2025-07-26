@@ -28,6 +28,7 @@ async function ensureColumnExists(conn, table, columnName, columnType) {
   }
 }
 
+
 let pool = null;
 
 export async function setupConnection() {
@@ -244,6 +245,15 @@ export async function initDatabase() {
       )
     `);
     await ensureLastModifiedColumn(conn, 'DatabaseLootInfo');
+
+    await conn.query(`
+      CREATE TABLE IF NOT EXISTS DatabasePlayerStats (
+        className VARCHAR(255) PRIMARY KEY,
+        class INT DEFAULT 100,
+      lastModified TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+      )
+    `);
+    await ensureLastModifiedColumn(conn, 'DatabasePlayerStats');
 
     console.log("Database tables initialized");
   } finally {
