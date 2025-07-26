@@ -20,6 +20,7 @@ import { processEnchantmentDefFiles } from "./processor/enchantment-def.js";
 import { processEnchantmentLevelFiles } from "./processor/enchantment-level.js";
 import { processRecipeFiles } from "./processor/recipe.js";
 import { processLootFiles } from "./processor/loot.js";
+import { processPlayerStats } from "./processor/player-stats.js";
 import {
   directoryStats,
   directorySetBonus,
@@ -152,6 +153,12 @@ async function main() {
     const equipmentProcessed = await processItemEquipmentFiles(directoryData);
     console.log(
       `Item:Equipment processing complete: ${equipmentProcessed} files processed`
+    );
+
+    console.log("\nProcessing player stat files...");
+    const playerStatsProcessed = await processPlayerStats(directoryData, statIdToName);
+    console.log(
+      `Player stats processing complete: ${playerStatsProcessed} classes processed`
     );
 
     console.log("\nProcessing loot files...");
