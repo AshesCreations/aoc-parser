@@ -755,6 +755,29 @@ async function saveLootInfoToDatabase(loot) {
   }
 }
 
+async function savePlayerStatsToDatabase(playerStats) {
+  const client = await pool.getConnection();
+  try {
+    await ensureLastModifiedColumn(client, 'DatabasePlayerStats');
+    const attributes = playerStats.attributes || {};
+    for (const attr of Object.keys(attributes)) {
+      await ensureColumn(client, 'DatabasePlayerStats', attr, 'JSON');
+    }
+    const columns = ['className', 'class', ...Object.keys(attributes).map(a => `\`${a}\``)];
+    const placeholders = columns.map(() => '?').join(', ');
+    const updates = columns.slice(1).map(c => `${c} = VALUES(${c})`).join(', ');
+    const values = [
+      playerStats.className,
+      playerStats.class,
+      ...Object.values(attributes).map(v => JSON.stringify(v)),
+    ];
+    const query = `INSERT INTO \`DatabasePlayerStats\` (${columns.join(', ')}) VALUES (${placeholders}) ON DUPLICATE KEY UPDATE ${updates}, lastModified = CURRENT_TIMESTAMP`;
+    await client.execute(query, values);
+  } finally {
+    client.release();
+  }
+}
+
 export {
   saveItemRecipeToDatabase,
   saveStatToDatabase,
@@ -768,4 +791,5 @@ export {
   batchFindRecipes,
   batchSaveItemsToDatabase,
   saveLootInfoToDatabase,
+  savePlayerStatsToDatabase,
 };
