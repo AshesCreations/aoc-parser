@@ -28,6 +28,18 @@ async function ensureColumnExists(conn, table, columnName, columnType) {
   }
 }
 
+async function ensureColumnNullable(conn, table, columnName) {
+  const [rows] = await conn.query(
+    `SHOW FULL COLUMNS FROM \`${table}\` WHERE Field = ?`,
+    [columnName]
+  );
+  if (rows.length > 0 && rows[0].Null === 'NO') {
+    await conn.query(
+      `ALTER TABLE \`${table}\` MODIFY \`${columnName}\` ${rows[0].Type} NULL`
+    );
+  }
+}
+
 let pool = null;
 
 export async function setupConnection() {
@@ -244,6 +256,16 @@ export async function initDatabase() {
       )
     `);
     await ensureLastModifiedColumn(conn, 'DatabaseLootInfo');
+
+    await conn.query(`
+      CREATE TABLE IF NOT EXISTS DatabasePlayerStats (
+        className VARCHAR(255) PRIMARY KEY,
+        class INT NULL,
+      lastModified TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+      )
+    `);
+    await ensureLastModifiedColumn(conn, 'DatabasePlayerStats');
+    await ensureColumnNullable(conn, 'DatabasePlayerStats', 'class');
 
     console.log("Database tables initialized");
   } finally {
