@@ -57,19 +57,12 @@ async function processClass(dataDir, cls, statIdToName) {
     const multMatch = expr.match(/\*\s*(-?\d+(?:\.\d+)?)/);
     const multiplier = multMatch ? parseFloat(multMatch[1]) : 1;
     const useRound = expr.includes('Round(');
-    const useRunning = expr.includes('GetStatInitRunningTotal');
     const levels = {};
-    let total = 0;
     for (const k of keys) {
       const lvl = k.time;
       let val = k.value * multiplier;
       if (useRound) val = Math.round(val);
-      if (useRunning) {
-        total += val;
-        levels[lvl] = Math.round(total);
-      } else {
-        levels[lvl] = val;
-      }
+      levels[lvl] = val;
     }
     attrs[name] = levels;
   }
