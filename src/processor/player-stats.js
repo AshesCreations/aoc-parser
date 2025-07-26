@@ -10,6 +10,14 @@ const defaultGuids = new Set([
   '109343399106257',
 ]);
 
+const HEALTH_GUID = '108986356618873';
+
+const healthMultipliers = {
+  Rogue: 0.1,
+  Fighter: 0.3,
+  Tank: 0.3,
+};
+
 const classFiles = [
   { value: 100, name: 'Default', file: 'StatInitializerList_6064630101072872893.json', isDefault: true },
   { value: 0, name: 'Bard', file: 'StatInitializerList_6064630736345890821.json' },
@@ -78,19 +86,27 @@ async function processClass(dataDir, cls, statIdToName) {
     }
     const keys = curve.curve?.editorCurveData?.keys || [];
     const multMatch = expr.match(/\*\s*(-?\d+(?:\.\d+)?)/);
-    const multiplier = multMatch ? parseFloat(multMatch[1]) : 1;
+    const exprMultiplier = multMatch ? parseFloat(multMatch[1]) : 1;
     const useRound = expr.includes('Round(');
     const useRunning = expr.includes('GetStatInitRunningTotal');
+    const isHealth = guid === HEALTH_GUID;
     const levels = {};
     let total = 0;
     for (const k of keys) {
       const lvl = k.time;
-      let val = k.value * multiplier;
       if (cls.isDefault) {
         // Default class should use raw values without multipliers or running totals
         levels[lvl] = k.value;
         continue;
       }
+
+      if (isHealth) {
+        const mult = healthMultipliers[cls.name] || 0;
+        levels[lvl] = k.value * mult;
+        continue;
+      }
+
+      let val = k.value * exprMultiplier;
       if (useRound) val = Math.round(val);
       if (useRunning) {
         total += val;
