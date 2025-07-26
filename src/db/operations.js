@@ -763,12 +763,12 @@ async function savePlayerStatsToDatabase(playerStats) {
     for (const attr of Object.keys(attributes)) {
       await ensureColumn(client, 'DatabasePlayerStats', attr, 'JSON');
     }
-    const columns = ['class', 'className', ...Object.keys(attributes).map(a => `\`${a}\``)];
+    const columns = ['className', 'class', ...Object.keys(attributes).map(a => `\`${a}\``)];
     const placeholders = columns.map(() => '?').join(', ');
     const updates = columns.slice(1).map(c => `${c} = VALUES(${c})`).join(', ');
     const values = [
-      playerStats.class,
       playerStats.className,
+      playerStats.class,
       ...Object.values(attributes).map(v => JSON.stringify(v)),
     ];
     const query = `INSERT INTO \`DatabasePlayerStats\` (${columns.join(', ')}) VALUES (${placeholders}) ON DUPLICATE KEY UPDATE ${updates}, lastModified = CURRENT_TIMESTAMP`;

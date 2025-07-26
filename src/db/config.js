@@ -247,8 +247,8 @@ export async function initDatabase() {
 
     await conn.query(`
       CREATE TABLE IF NOT EXISTS DatabasePlayerStats (
-        class INT PRIMARY KEY,
-        className TEXT,
+        className VARCHAR(255) PRIMARY KEY,
+        class INT,
       lastModified TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
       )
     `);

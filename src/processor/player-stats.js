@@ -3,7 +3,15 @@ import path from 'path';
 import { savePlayerStatsToDatabase } from '../db/operations.js';
 import { extractExpressionId } from '../utils.js';
 
+const defaultGuids = new Set([
+  '108986356618873',
+  '109183578756729',
+  '109343399171808',
+  '109343399106257',
+]);
+
 const classFiles = [
+  { value: null, name: 'Default', file: 'StatInitializerList_6064630101072872893.json', isDefault: true },
   { value: 0, name: 'Bard', file: 'StatInitializerList_6064630736345890821.json' },
   { value: 1, name: 'Cleric', file: 'StatInitializerList_6064630372724375553.json' },
   { value: 2, name: 'Fighter', file: 'StatInitializerList_6064630372725096450.json' },
@@ -37,7 +45,22 @@ async function processClass(dataDir, cls, statIdToName) {
   for (const entry of json.statIds || []) {
     const guid = entry.statId?.guid;
     const expr = entry.valueExpression?.expression || '';
-    if (!guid || !expr.includes('EvalCurve')) continue;
+    if (!guid) continue;
+    if (cls.isDefault && !defaultGuids.has(guid)) continue;
+
+    if (expr.includes('GetStatInitRunningTotal() -')) {
+      const subMatch = expr.match(/-\s*(\d+(?:\.\d+)?)/);
+      const subVal = subMatch ? parseFloat(subMatch[1]) : 0;
+      const value = 1 - subVal;
+      const levels = {};
+      for (let lvl = 1; lvl <= 50; lvl++) {
+        levels[lvl] = value;
+      }
+      const name = sanitize(statIdToName[guid] || guid);
+      attrs[name] = levels;
+      continue;
+    }
+    if (!expr.includes('EvalCurve')) continue;
     const name = sanitize(statIdToName[guid] || guid);
     const curveId = extractExpressionId(expr);
     if (!curveId) continue;
@@ -57,12 +80,19 @@ async function processClass(dataDir, cls, statIdToName) {
     const multMatch = expr.match(/\*\s*(-?\d+(?:\.\d+)?)/);
     const multiplier = multMatch ? parseFloat(multMatch[1]) : 1;
     const useRound = expr.includes('Round(');
+    const useRunning = expr.includes('GetStatInitRunningTotal');
     const levels = {};
+    let total = 0;
     for (const k of keys) {
       const lvl = k.time;
       let val = k.value * multiplier;
       if (useRound) val = Math.round(val);
-      levels[lvl] = val;
+      if (useRunning) {
+        total += val;
+        levels[lvl] = Math.round(total);
+      } else {
+        levels[lvl] = val;
+      }
     }
     attrs[name] = levels;
   }
