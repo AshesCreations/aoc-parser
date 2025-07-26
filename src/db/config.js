@@ -259,15 +259,6 @@ export async function initDatabase() {
     `);
     await ensureLastModifiedColumn(conn, 'DatabasePlayerStats');
 
-    await conn.query(`
-      CREATE TABLE IF NOT EXISTS DatabasePlayerStats (
-        className VARCHAR(255) PRIMARY KEY,
-        class INT DEFAULT 100,
-      lastModified TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
-      )
-    `);
-    await ensureLastModifiedColumn(conn, 'DatabasePlayerStats');
-
     console.log("Database tables initialized");
   } finally {
     conn.release();

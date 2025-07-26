@@ -86,6 +86,11 @@ async function processClass(dataDir, cls, statIdToName) {
     for (const k of keys) {
       const lvl = k.time;
       let val = k.value * multiplier;
+      if (cls.isDefault) {
+        // Default class should use raw values without multipliers or running totals
+        levels[lvl] = k.value;
+        continue;
+      }
       if (useRound) val = Math.round(val);
       if (useRunning) {
         total += val;
