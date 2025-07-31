@@ -268,6 +268,7 @@ export async function initDatabase() {
         description TEXT,
         type TEXT,
         cooldown DOUBLE,
+        manaCost JSON,
         maxRank INT,
         imageUrl TEXT,
         position JSON,
@@ -276,6 +277,7 @@ export async function initDatabase() {
       )
     `);
     await ensureLastModifiedColumn(conn, 'DatabaseSkillTable');
+    await ensureColumnExists(conn, 'DatabaseSkillTable', 'manaCost', 'JSON');
 
     console.log("Database tables initialized");
   } finally {

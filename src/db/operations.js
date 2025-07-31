@@ -793,10 +793,10 @@ async function batchSaveSkillTableToDatabase(entries) {
     await client.query('BEGIN');
     const query = `
       INSERT INTO \`DatabaseSkillTable\` (
-        id, tableId, tableName, name, description, type, cooldown, maxRank,
+        id, tableId, tableName, name, description, type, cooldown, manaCost, maxRank,
         imageUrl, position, requirements
       ) VALUES (
-        ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+        ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
       ) ON DUPLICATE KEY UPDATE
         tableId = VALUES(tableId),
         tableName = VALUES(tableName),
@@ -804,6 +804,7 @@ async function batchSaveSkillTableToDatabase(entries) {
         description = VALUES(description),
         type = VALUES(type),
         cooldown = VALUES(cooldown),
+        manaCost = VALUES(manaCost),
         maxRank = VALUES(maxRank),
         imageUrl = VALUES(imageUrl),
         position = VALUES(position),
@@ -822,6 +823,7 @@ async function batchSaveSkillTableToDatabase(entries) {
           e.description ?? null,
           e.type ?? null,
           e.cooldown ?? null,
+          JSON.stringify(e.manaCost || {}),
           e.maxRank ?? null,
           e.imageUrl ?? null,
           JSON.stringify(e.position || {}),
