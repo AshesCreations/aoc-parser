@@ -60,7 +60,11 @@ function parseManaCost(ability, dataDir) {
       costsArray = first.statCosts;
     }
   }
-  const entry = (costsArray || []).find((c) => c.stat?.name === 'Stat_Mana');
+  const entry = (costsArray || []).find(
+    (c) =>
+      c.stat?.name === 'Stat_Mana' ||
+      c.stat?.guid === '109183576135288'
+  );
   if (!entry) return null;
   const expr = entry.value?.expression || '';
   const constant = parseFloat(expr);
@@ -138,6 +142,30 @@ function parseDamage(hitGuid, dataDir) {
   return { element, percent };
 }
 
+function loadAbilityHit(hitKey, dataDir) {
+  let hit = loadJson(dataDir, 'Abilities/AbilityHit', 'AbilityHit', hitKey);
+  if (!hit || Object.keys(hit).length === 0) {
+    const dir = path.join(dataDir, 'Abilities/AbilityHit');
+    const file = fs
+      .readdirSync(dir)
+      .find((f) => fs.readFileSync(path.join(dir, f), 'utf8').includes(`"name": "${hitKey}"`));
+    if (file) {
+      hit = JSON.parse(fs.readFileSync(path.join(dir, file), 'utf8'));
+    }
+  }
+  return hit;
+}
+
+function parseApplyEffectName(hitKey, index, dataDir) {
+  const hit = loadAbilityHit(hitKey, dataDir);
+  if (!hit || !Array.isArray(hit.applyEffects)) return null;
+  const effGuid = hit.applyEffects[index]?.effectId?.guid;
+  if (!effGuid || effGuid === '0') return null;
+  const eff = loadJson(dataDir, 'Effects/Effect', 'Effect', effGuid);
+  const effName = extractLastQuotedValue(eff.effectName);
+  return effName ? formatEffectName(effName) : null;
+}
+
 function formatDescription(desc, ability, dataDir) {
   let text = extractLastQuotedValue(desc);
   if (ability.hitsIds && ability.hitsIds['1']) {
@@ -155,15 +183,51 @@ function formatDescription(desc, ability, dataDir) {
     return dmg && dmg.percent ? `${dmg.percent}% ${dmg.element} Damage` : m;
   });
 
+  text = text.replace(/\$hit(\d+):apply(\d+)(?:\.[^$]+)?\$/g, (m, hitNum, idx) => {
+    const id = ability.hitsIds?.[hitNum]?.guid;
+    if (!id) return '';
+    const eff = parseApplyEffectName(id, parseInt(idx, 10), dataDir);
+    return eff ? `[${eff}]` : '';
+  });
+
+  text = text.replace(/\$hit(\d+)\.apply(\d+)(?:\.[^$]+)?\$/g, (m, hitNum, idx) => {
+    const id = ability.hitsIds?.[hitNum]?.guid;
+    if (!id) return '';
+    const eff = parseApplyEffectName(id, parseInt(idx, 10), dataDir);
+    return eff ? `[${eff}]` : '';
+  });
+
+  text = text.replace(/\{hit:([^\.\}]+)\.apply(\d+)\}/g, (m, name, idx) => {
+    const eff = parseApplyEffectName(name, parseInt(idx, 10), dataDir);
+    return eff ? `[${eff}]` : '';
+  });
+
   text = text.replace(/\{hit:([^\.\}]+)(?:\.[^\}]+)?\}/g, (m, name) => {
     const dmg = parseDamage(name, dataDir);
     return dmg && dmg.percent ? `${dmg.percent}% ${dmg.element} Damage` : '';
+  });
+
+  text = text.replace(/\$effect(\d+)(?:\.[^$]+)?\$/g, (m, idx) => {
+    const guid = ability.effectsIds?.[idx]?.guid;
+    if (!guid) return '';
+    const eff = loadJson(dataDir, 'Effects/Effect', 'Effect', guid);
+    const name = formatEffectName(extractLastQuotedValue(eff.effectName));
+    return name ? `[${name}]` : '';
+  });
+
+  text = text.replace(/\{effect(\d+)(?:\.[^\}]+)?\}/g, (m, idx) => {
+    const guid = ability.effectsIds?.[idx]?.guid;
+    if (!guid) return '';
+    const eff = loadJson(dataDir, 'Effects/Effect', 'Effect', guid);
+    const name = formatEffectName(extractLastQuotedValue(eff.effectName));
+    return name ? `[${name}]` : '';
   });
 
   const effRegex = /\$effect:([^\.\$]+)(?:\.[^\$]+)?\$|\{effect:([^\.\}]+)(?:\.[^\}]+)?\}/g;
   text = text.replace(effRegex, (_, e1, e2) => `[${formatEffectName(e1 || e2)}]`);
 
   text = text.replace(/\{skill:[^\}]*\}/g, '');
+  text = text.replace(/rnrn/g, ' ');
   text = text.replace(/\r\n|\n/g, ' ');
   text = text.replace(/\s+/g, ' ').trim();
   return text;
