@@ -1,5 +1,6 @@
 import fs from 'fs';
 import path from 'path';
+import { fileURLToPath, pathToFileURL } from 'url';
 import { extractLastQuotedValue } from '../utils.js';
 
 function findJsonFile(dir, prefix, id) {
@@ -123,7 +124,9 @@ function parseSkillTable(id, dataDir) {
   return result;
 }
 
-if (process.argv.length >= 4) {
+export { parseSkillTable };
+
+if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url) && process.argv.length >= 4) {
   const tableId = process.argv[2];
   const baseDir = process.argv[3];
   const data = parseSkillTable(tableId, baseDir);

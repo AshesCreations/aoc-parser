@@ -259,6 +259,24 @@ export async function initDatabase() {
     `);
     await ensureLastModifiedColumn(conn, 'DatabasePlayerStats');
 
+    await conn.query(`
+      CREATE TABLE IF NOT EXISTS DatabaseSkillTable (
+        id VARCHAR(255) PRIMARY KEY,
+        tableId VARCHAR(255),
+        tableName TEXT,
+        name TEXT,
+        description TEXT,
+        type TEXT,
+        cooldown DOUBLE,
+        maxRank INT,
+        imageUrl TEXT,
+        position JSON,
+        requirements JSON,
+      lastModified TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+      )
+    `);
+    await ensureLastModifiedColumn(conn, 'DatabaseSkillTable');
+
     console.log("Database tables initialized");
   } finally {
     conn.release();

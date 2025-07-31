@@ -782,6 +782,66 @@ async function savePlayerStatsToDatabase(playerStats) {
   }
 }
 
+async function batchSaveSkillTableToDatabase(entries) {
+  if (!entries || entries.length === 0) {
+    return;
+  }
+
+  const client = await pool.getConnection();
+  try {
+    await ensureLastModifiedColumn(client, 'DatabaseSkillTable');
+    await client.query('BEGIN');
+    const query = `
+      INSERT INTO \`DatabaseSkillTable\` (
+        id, tableId, tableName, name, description, type, cooldown, maxRank,
+        imageUrl, position, requirements
+      ) VALUES (
+        ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+      ) ON DUPLICATE KEY UPDATE
+        tableId = VALUES(tableId),
+        tableName = VALUES(tableName),
+        name = VALUES(name),
+        description = VALUES(description),
+        type = VALUES(type),
+        cooldown = VALUES(cooldown),
+        maxRank = VALUES(maxRank),
+        imageUrl = VALUES(imageUrl),
+        position = VALUES(position),
+        requirements = VALUES(requirements),
+        lastModified = CURRENT_TIMESTAMP
+    `;
+    const batchSize = 100;
+    for (let i = 0; i < entries.length; i += batchSize) {
+      const batch = entries.slice(i, i + batchSize);
+      const promises = batch.map((e) => {
+        const values = [
+          e.id ?? null,
+          e.tableId ?? null,
+          e.tableName ?? null,
+          e.name ?? null,
+          e.description ?? null,
+          e.type ?? null,
+          e.cooldown ?? null,
+          e.maxRank ?? null,
+          e.imageUrl ?? null,
+          JSON.stringify(e.position || {}),
+          JSON.stringify(e.requirements || {})
+        ];
+        return client.execute(query, values);
+      });
+      await Promise.all(promises);
+    }
+    await client.query('COMMIT');
+    console.log(`Successfully saved ${entries.length} skill entries in batch operation`);
+  } catch (error) {
+    await client.query('ROLLBACK');
+    console.error(`Error in batch save operation: ${error.message}`);
+    throw error;
+  } finally {
+    client.release();
+  }
+}
+
 export {
   saveItemRecipeToDatabase,
   saveStatToDatabase,
@@ -796,4 +856,5 @@ export {
   batchSaveItemsToDatabase,
   saveLootInfoToDatabase,
   savePlayerStatsToDatabase,
+  batchSaveSkillTableToDatabase,
 };
