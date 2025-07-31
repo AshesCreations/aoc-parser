@@ -41,15 +41,25 @@ function parseCurve(curveData) {
   return result;
 }
 
+const CLASS_PREFIXES = ['Fighter','Tank','Cleric','Bard','Mage','Ranger','Rogue','Summoner','Weapon'];
+
 function formatEffectName(name) {
   if (!name) return '';
-  return name
+  let out = name
     .replace(/^Status_/, '')
     .replace(/^Effect_/, '')
     .replace(/^Weapon_Description_/, '')
     .replace(/^Weapon_/, '')
     .replace(/_/g, ' ')
     .replace(/([a-z])([A-Z])/g, '$1 $2');
+  for (const p of CLASS_PREFIXES) {
+    if (out.startsWith(p + ' ')) {
+      out = out.slice(p.length + 1);
+      break;
+    }
+  }
+  out = out.replace(/\b[Ss]tat\b/, '').trim();
+  return out;
 }
 
 function parseManaCost(ability, dataDir) {
@@ -142,6 +152,36 @@ function parseDamage(hitGuid, dataDir) {
   return { element, percent };
 }
 
+function parseDamageRange(hitKey, part, dataDir) {
+  const hit = loadAbilityHit(hitKey, dataDir);
+  if (!hit) return null;
+  const elementTag = hit.eventTags?.[0]?.tagName || '';
+  const element = elementTag.split('.').pop();
+  const statGuid = hit.statModsIds?.[0]?.guid;
+  if (!statGuid) return null;
+  const mod = loadJson(dataDir, 'Effects/StatMod', 'StatMod', statGuid);
+  const modAlt = Object.keys(mod).length ? mod : loadJson(dataDir, 'Effects/StatMod', '', statGuid);
+  const terms = modAlt.valueInputTerms || [];
+  const idx = part === 'min' ? 0 : part === 'max' ? 1 : -1;
+  if (idx < 0 || !terms[idx]) return null;
+  const val = parseFloat(terms[idx].value?.expression);
+  if (Number.isNaN(val)) return null;
+  return `${val * 100}% ${element} Damage`;
+}
+
+function parseLingerTick(name, dataDir) {
+  const dir = path.join(dataDir, 'Abilities/LingeringEffect');
+  let file = findJsonFile(dir, 'LingeringEffect', name);
+  if (!file) {
+    const match = fs.readdirSync(dir).find(f => fs.readFileSync(path.join(dir, f), 'utf8').includes(`"name": "${name}"`));
+    if (match) file = path.join(dir, match);
+  }
+  if (!file) return null;
+  const data = JSON.parse(fs.readFileSync(file, 'utf8'));
+  const rate = data.tickRate || 0;
+  return rate ? `${rate} second${rate === 1 ? '' : 's'}` : null;
+}
+
 function loadAbilityHit(hitKey, dataDir) {
   let hit = loadJson(dataDir, 'Abilities/AbilityHit', 'AbilityHit', hitKey);
   if (!hit || Object.keys(hit).length === 0) {
@@ -183,6 +223,16 @@ function formatDescription(desc, ability, dataDir) {
     return dmg && dmg.percent ? `${dmg.percent}% ${dmg.element} Damage` : m;
   });
 
+  text = text.replace(/\$hit:([^\.]+)\.min\$/g, (m, name) => {
+    const val = parseDamageRange(name, 'min', dataDir);
+    return val || m;
+  });
+
+  text = text.replace(/\$hit:([^\.]+)\.max\$/g, (m, name) => {
+    const val = parseDamageRange(name, 'max', dataDir);
+    return val || m;
+  });
+
   text = text.replace(/\$hit(\d+):apply(\d+)(?:\.[^$]+)?\$/g, (m, hitNum, idx) => {
     const id = ability.hitsIds?.[hitNum]?.guid;
     if (!id) return '';
@@ -190,10 +240,15 @@ function formatDescription(desc, ability, dataDir) {
     return eff ? `[${eff}]` : '';
   });
 
-  text = text.replace(/\$hit(\d+)\.apply(\d+)(?:\.[^$]+)?\$/g, (m, hitNum, idx) => {
+  text = text.replace(/\$hit(\d+)\.apply(\d+)(?:fordur)?(?:\.[^$]+)?\$/g, (m, hitNum, idx) => {
     const id = ability.hitsIds?.[hitNum]?.guid;
     if (!id) return '';
     const eff = parseApplyEffectName(id, parseInt(idx, 10), dataDir);
+    return eff ? `[${eff}]` : '';
+  });
+
+  text = text.replace(/\$hit:([^\.]+)\.apply(\d+)(?:fordur)?\$/g, (m, name, idx) => {
+    const eff = parseApplyEffectName(name, parseInt(idx, 10), dataDir);
     return eff ? `[${eff}]` : '';
   });
 
@@ -205,6 +260,11 @@ function formatDescription(desc, ability, dataDir) {
   text = text.replace(/\{hit:([^\.\}]+)(?:\.[^\}]+)?\}/g, (m, name) => {
     const dmg = parseDamage(name, dataDir);
     return dmg && dmg.percent ? `${dmg.percent}% ${dmg.element} Damage` : '';
+  });
+
+  text = text.replace(/\$linger:([^\.]+)\.tick\$/g, (m, name) => {
+    const val = parseLingerTick(name, dataDir);
+    return val || m;
   });
 
   text = text.replace(/\$effect(\d+)(?:\.[^$]+)?\$/g, (m, idx) => {
@@ -227,8 +287,11 @@ function formatDescription(desc, ability, dataDir) {
   text = text.replace(effRegex, (_, e1, e2) => `[${formatEffectName(e1 || e2)}]`);
 
   text = text.replace(/\{skill:[^\}]*\}/g, '');
-  text = text.replace(/rnrn/g, ' ');
+  text = text.replace(/rnrn/g, '  ');
   text = text.replace(/\r\n|\n/g, ' ');
+  text = text.replace(/<img[^>]*id=\"([^\"]+)\"[^>]*>/g, (_, id) => `[${formatEffectName(id)}]`);
+  text = text.replace(/\((\s*\[[^\]]+\]\s*)+\)/g, (m) => m.slice(1, -1));
+  text = text.replace(/Healing Damage/gi, 'Healing');
   text = text.replace(/\s+/g, ' ').trim();
   return text;
 }
