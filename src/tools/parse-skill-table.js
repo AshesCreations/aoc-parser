@@ -79,8 +79,9 @@ function parseManaCost(ability, dataDir) {
   );
   if (!entry) return null;
   const expr = entry.value?.expression || '';
-  const constant = parseFloat(expr);
-  if (!Number.isNaN(constant)) {
+  const numericOnly = expr.trim().match(/^[-]?\d+(?:\.\d+)?$/);
+  if (numericOnly) {
+    const constant = parseFloat(expr.trim());
     const costs = {};
     for (let i = 1; i <= 50; i++) costs[i] = constant;
     return costs;
