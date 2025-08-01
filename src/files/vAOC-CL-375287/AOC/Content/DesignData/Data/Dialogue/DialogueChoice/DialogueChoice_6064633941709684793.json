@@ -1,0 +1,121 @@
+{
+	"choiceText": "New to Construction + building is WIP",
+	"nextNodeId":
+	{
+		"guid": "6064633941709684797",
+		"typeId": "1091110028",
+		"name": "DD_ServiceNPC_ConstructionForeman_2"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": ""
+	},
+	"requirements": [
+		{
+			"criteria": [
+				{
+					"elementType": "Quest",
+					"narrativeType": "Commission",
+					"commissionId":
+					{
+						"guid": "6064632105141600282",
+						"typeId": "280002",
+						"name": "None"
+					},
+					"storyArcQuestId":
+					{
+						"guid": "0",
+						"typeId": "1091110035",
+						"name": "None"
+					},
+					"objectiveId":
+					{
+						"guid": "0",
+						"typeId": "1091110420",
+						"name": "None"
+					},
+					"itemFilterId":
+					{
+						"guid": "0",
+						"typeId": "1091110041",
+						"name": "None"
+					},
+					"currencyDefId":
+					{
+						"guid": "0",
+						"typeId": "1011151289",
+						"name": "None"
+					},
+					"amountToQuery": 0,
+					"questState": "InProgress",
+					"objectiveState": "Active",
+					"itemState": "InInventory",
+					"characterAlignmentId":
+					{
+						"guid": "0",
+						"typeId": "512160700",
+						"name": "None"
+					},
+					"invert": true
+				}
+			]
+		},
+		{
+			"criteria": [
+				{
+					"elementType": "Quest",
+					"narrativeType": "Commission",
+					"commissionId":
+					{
+						"guid": "6064632105141600282",
+						"typeId": "280002",
+						"name": "None"
+					},
+					"storyArcQuestId":
+					{
+						"guid": "0",
+						"typeId": "1091110035",
+						"name": "None"
+					},
+					"objectiveId":
+					{
+						"guid": "0",
+						"typeId": "1091110420",
+						"name": "None"
+					},
+					"itemFilterId":
+					{
+						"guid": "0",
+						"typeId": "1091110041",
+						"name": "None"
+					},
+					"currencyDefId":
+					{
+						"guid": "0",
+						"typeId": "1011151289",
+						"name": "None"
+					},
+					"amountToQuery": 0,
+					"questState": "Completed",
+					"objectiveState": "Active",
+					"itemState": "InInventory",
+					"characterAlignmentId":
+					{
+						"guid": "0",
+						"typeId": "512160700",
+						"name": "None"
+					},
+					"invert": true
+				}
+			]
+		}
+	],
+	"choiceType": "Default",
+	"guid": "6064633941709684793",
+	"name": "DD_ServiceNPC_ConstructionForemanNPC_1_Choice_1",
+	"typeId": "1091110027"
+}

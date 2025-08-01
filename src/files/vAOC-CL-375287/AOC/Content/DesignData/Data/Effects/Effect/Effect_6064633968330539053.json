@@ -1,0 +1,140 @@
+{
+	"effectCategory": "EFFECT_Hidden",
+	"effectTags": [],
+	"tags":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"effectName": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"27EBC127406D96869F3A82B845996A33\", \"Might\")",
+	"effectDescription": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"8D0260524BD550827916588F5DD4EEF5\", \"Grants a 10% chance on dealing damage or healing allies to trigger $Effect:Proc_Might$. \\r\\n\\r\\nThis triggers a cooldown for 60 seconds upon activation.\")",
+	"effectIcon": "/Game/UI/Icons/Abilities/Weapons/WeaponCombo/TUI_WeaponComboIcon_RightArrowhit.TUI_WeaponComboIcon_RightArrowhit",
+	"effectFloatingText": "",
+	"bDispellable": false,
+	"bSignificant": false,
+	"scriptOnApply": "None",
+	"scriptOnExpire": "None",
+	"bSetUnkillable": false,
+	"bGrantsPVPOptInProtection": false,
+	"bForceDismount": false,
+	"effectFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"applicationRequirements":
+	{
+		"expression": ""
+	},
+	"bOverrideDefaultResistRate": false,
+	"resistRate":
+	{
+		"expression": ""
+	},
+	"immune":
+	{
+		"expression": ""
+	},
+	"bInfiniteDuration": true,
+	"effectDuration":
+	{
+		"expression": ""
+	},
+	"bNumStacksLostOnDurationElapse": false,
+	"numStacksLostOnDurationElapse":
+	{
+		"expression": ""
+	},
+	"bPersistsThroughDeath": false,
+	"bPersistsRelog": false,
+	"effectGroupId":
+	{
+		"guid": "0",
+		"typeId": "30316004",
+		"name": "None"
+	},
+	"effectStackType": "STACK_OverrideAlways",
+	"bCompareSourceWhenStacking": true,
+	"collateStacksInUI": false,
+	"globalStackLimit": 50,
+	"inPlaceStackLimit":
+	{
+		"expression": ""
+	},
+	"stackDurationRefresh": "STACK_AlwaysRefresh",
+	"extensionAmount":
+	{
+		"expression": ""
+	},
+	"extendedMaximum": 50,
+	"scriptOnMaxStacks": "None",
+	"bLimitStacksFromInstigator": false,
+	"instigatorStackLimit":
+	{
+		"expression": ""
+	},
+	"tickTimer": 0,
+	"bIgnoreInitialTick": false,
+	"scriptOnTick": "None",
+	"bRecalculateHitOnTick": false,
+	"preApplyHitsIds": [],
+	"applyHitsIds": [],
+	"tickHitsIds": [],
+	"consumeHitsIds": [],
+	"removeHitsIds": [],
+	"expireHitsIds": [],
+	"endHitsIds": [],
+	"statModsIds": [],
+	"spawnNPCsIds": [],
+	"spawnLingeringZonesIds": [],
+	"redirectsIds": [],
+	"reactionsIds": [
+		{
+			"guid": "6064633968330539054",
+			"typeId": "3031600202",
+			"name": "None"
+		}
+	],
+	"crowdControlId":
+	{
+		"guid": "0",
+		"typeId": "3031600206",
+		"name": "None"
+	},
+	"resistancesIds": [],
+	"fragilityDefinitionsIds": [],
+	"hitModsIds": [],
+	"addAlignmentsIds": [],
+	"removeAlignmentsIds": [],
+	"bApplyScale": false,
+	"scaleAmount":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"scaleTime": 0,
+	"statusVFX": "None",
+	"bAppliesStealth": false,
+	"supressClickTargeting":
+	{
+		"expression": ""
+	},
+	"supressTabAndSoftTargeting":
+	{
+		"expression": ""
+	},
+	"supressNameplate":
+	{
+		"expression": ""
+	},
+	"bSlowFall": false,
+	"bNeverCull": false,
+	"addedAkEvents": [],
+	"removedAkEvents": [],
+	"akSwitchValues": [],
+	"guid": "6064633968330539053",
+	"name": "Proc_Might_3P",
+	"typeId": "30316002"
+}

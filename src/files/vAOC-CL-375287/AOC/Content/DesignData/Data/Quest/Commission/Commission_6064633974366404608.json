@@ -1,0 +1,96 @@
+{
+	"commissionType": "Generic",
+	"commissionGameplayTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "Anvils"
+			},
+			{
+				"tagName": "Quest.Commission.Adventure"
+			},
+			{
+				"tagName": "Quest.Commission.Tier.T1"
+			}
+		],
+		"parentTags": [
+			{
+				"tagName": "Quest.Commission"
+			},
+			{
+				"tagName": "Quest"
+			},
+			{
+				"tagName": "Quest.Commission.Tier"
+			}
+		]
+	},
+	"preRequisiteQuestsIds": [],
+	"autoFailTimer": -1,
+	"bRepeatable": false,
+	"mainObjectiveType": "GoToArea",
+	"commissionSection": 1,
+	"biomeOrigin": "FloodPlains",
+	"bFromDynamicContent": false,
+	"availabilityExpression":
+	{
+		"expression": ""
+	},
+	"bDisabled": false,
+	"level": 5,
+	"commissionRarity": "Common",
+	"objectivesIds": [
+		{
+			"guid": "6064633974398386177",
+			"typeId": "1091110420",
+			"name": "None"
+		}
+	],
+	"allowMultipleCompletion": false,
+	"commissionName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"B7631EA34DBE6ABA49A052BEA94FF8C5\", \"Lovers Ledge\")",
+	"flavorText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"349F85D84C87EE157A8F21BEC63A67BB\", \"\\\"In days long gone, daring couples seeking an eternal bond would venture into the wilds. There, upon Lotharia Ledge, they would say their wedding vows when dawn broke.\\\" - Uleni Takar\")",
+	"mainObjectiveText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"FF620541460FA302995C6CA06671373E\", \"Locate the little known Lotharia Ledge within the Anvils\")",
+	"rewardTablesIds": [
+		{
+			"guid": "6064633967317680128",
+			"typeId": "1091110040",
+			"name": "None"
+		}
+	],
+	"additionalRewardTablesIds": [],
+	"calloutName": "",
+	"calloutDescription": "",
+	"bCanProgressWhileInRaid": false,
+	"expiration":
+	{
+		"duration": "0"
+	},
+	"cooldown":
+	{
+		"duration": "0"
+	},
+	"moneyCost": "0",
+	"resourceCost": [],
+	"mayoralCompletionCount": 0,
+	"rewardId":
+	{
+		"guid": "0",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"bNodeTargeted": false,
+	"targetRewardId":
+	{
+		"guid": "0",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"questItemListIds": [],
+	"storedGraph":
+	{
+		"nodes": []
+	},
+	"guid": "6064633974366404608",
+	"name": "COM_ANV_Goto_T1_LothariaLedge",
+	"typeId": "280002"
+}

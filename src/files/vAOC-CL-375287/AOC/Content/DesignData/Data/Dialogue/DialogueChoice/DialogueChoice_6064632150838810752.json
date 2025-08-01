@@ -1,0 +1,22 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"A704A7D84AEC961E56014B90594954D3\", \"I\\'m interested in running for mayor of this settlement.\")",
+	"nextNodeId":
+	{
+		"guid": "6064632150841825409",
+		"typeId": "1091110028",
+		"name": "Master_Dialog_Kaelar_Guard_44"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "const interactNode = Node_GetActorCityNode(GetInteractionTarget());\r\n!Node_IsPlayerMayorCandidate(GetPlayer(),interactNode) \r\n&& GetCharacterLevel(GetPlayer()) >= 10\r\n&& interactNode != $#1323521343:6064630651307950121$ "
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064632150838810752",
+	"name": "Master_Dialog_Kaelar_Guard_39_Choice_7",
+	"typeId": "1091110027"
+}

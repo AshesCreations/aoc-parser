@@ -1,0 +1,85 @@
+{
+	"narrativeType": "Commission",
+	"completionParameters":
+	{
+		"objectiveType": "Kill",
+		"nPCTaskIconOverrideId":
+		{
+			"guid": "0",
+			"typeId": "949952112329",
+			"name": "None"
+		},
+		"bAllowSatisfactionToRegress": false,
+		"completionQuantity": 10,
+		"tagQuery":
+		{
+			"tokenStreamVersion": 0,
+			"tagDictionary": [
+				{
+					"tagName": "character.avian.stoneHawk"
+				}
+			],
+			"queryTokenStream": [ 0, 1, 1, 1, 0 ],
+			"userDescription": "",
+			"autoDescription": " ANY( character.avian.stoneHawk )"
+		},
+		"professionFilterIds": [],
+		"gatherableFilterIds": [],
+		"collectionFilterId":
+		{
+			"guid": "0",
+			"typeId": "1091110041",
+			"name": "None"
+		},
+		"subObjectivesIds": [],
+		"bLimitToDisplayLocation": true,
+		"goToAreaLocation": [],
+		"populationSetIds": [],
+		"populationInstanceIds": [],
+		"notifyType": "None"
+	},
+	"objectiveText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"9452586945E538039A34F69D136249B0\", \"Defeat stonehawks along the cliffside.\")",
+	"objectiveCountText": "",
+	"initiallyHidden": false,
+	"advanceWhileHidden": true,
+	"revealOnComplete": true,
+	"completionRewardsIds": [],
+	"minimumRequirement": true,
+	"completionFlags": [],
+	"instanceCompletionResult": [],
+	"enabledPredicate":
+	{
+		"expression": ""
+	},
+	"completionActionsIds": [],
+	"objectivesToCompleteUponCompletionIds": [],
+	"objectivesToRevealUponCompletionIds": [],
+	"allowOverAchievement": false,
+	"overAchievementCountText": "",
+	"maximumAdditionalCompletions": 2,
+	"multipleCompletionExperienceMultiplier": 0.30000001192092896,
+	"multipleCompletionGoldMultiplier": 0.30000001192092896,
+	"multipleCompletionVariableMultiplier": 0.30000001192092896,
+	"displayLocation": [
+		{
+			"location":
+			{
+				"x": -1219072.911688,
+				"y": -633066.46642499999,
+				"z": 24232.015383999998
+			},
+			"radius": 14000,
+			"map_DisplayType": "ICON_AND_RADIUS",
+			"map_IconVisual":
+			{
+				"guid": "6064631051544559617",
+				"typeId": "949952112329",
+				"name": "None"
+			},
+			"map_DisplayName": ""
+		}
+	],
+	"guid": "6064633980459941895",
+	"name": "COM_ANV_Cull_Bonfire_StoneHawk_Uncommon_OBJ",
+	"typeId": "1091110420"
+}

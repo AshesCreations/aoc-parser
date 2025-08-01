@@ -1,0 +1,22 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"49EA1F7A4FD4736E66AA98AE91210E0B\", \"Election Active\")",
+	"nextNodeId":
+	{
+		"guid": "6064633934821130274",
+		"typeId": "1091110028",
+		"name": "Node_Master_Dialog_TownCrier_DLG_5"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "const interactNode = Node_GetActorCityNode(GetInteractionTarget());\r\ninteractNode == Node_GetActorCityNode(GetPlayer())\r\n&&\r\nNode_IsNodeMayorPrevoteActive(interactNode) "
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064633967636515146",
+	"name": "Node_Master_Dialog_TownCrier_DLG_16_Choice_1",
+	"typeId": "1091110027"
+}

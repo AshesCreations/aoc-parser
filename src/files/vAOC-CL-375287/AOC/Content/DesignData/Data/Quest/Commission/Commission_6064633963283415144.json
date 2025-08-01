@@ -1,0 +1,102 @@
+{
+	"commissionType": "Generic",
+	"commissionGameplayTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "Quest.Commission.Artisan.Gathering.Lumberjacking"
+			},
+			{
+				"tagName": "Quest.Commission.Tier.T1"
+			},
+			{
+				"tagName": "Anvils"
+			}
+		],
+		"parentTags": [
+			{
+				"tagName": "Quest.Commission.Artisan.Gathering"
+			},
+			{
+				"tagName": "Quest.Commission.Artisan"
+			},
+			{
+				"tagName": "Quest.Commission"
+			},
+			{
+				"tagName": "Quest"
+			},
+			{
+				"tagName": "Quest.Commission.Tier"
+			}
+		]
+	},
+	"preRequisiteQuestsIds": [],
+	"autoFailTimer": -1,
+	"bRepeatable": false,
+	"mainObjectiveType": "Collect",
+	"commissionSection": 2,
+	"biomeOrigin": "FloodPlains",
+	"bFromDynamicContent": false,
+	"availabilityExpression":
+	{
+		"expression": ""
+	},
+	"bDisabled": false,
+	"level": 4,
+	"commissionRarity": "Common",
+	"objectivesIds": [
+		{
+			"guid": "6064633963294621801",
+			"typeId": "1091110420",
+			"name": "None"
+		}
+	],
+	"allowMultipleCompletion": false,
+	"commissionName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"59D8BBA84AF6F403B94321806F5D8363\", \"Lurching Larches\")",
+	"flavorText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"EF4D3E5F4BEA6703D55FF38F1A3C153F\", \"\\\"When the east winds roar, the Western Larches do sway, felling the weak.\\\" - Elara Shaggybrows\")",
+	"mainObjectiveText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"A6DB174D455B6031C9D65FA9852DDDF5\", \"Fell Western Larch lumber in the Anvils\")",
+	"rewardTablesIds": [
+		{
+			"guid": "6064632139941281867",
+			"typeId": "1091110040",
+			"name": "None"
+		}
+	],
+	"additionalRewardTablesIds": [],
+	"calloutName": "",
+	"calloutDescription": "",
+	"bCanProgressWhileInRaid": false,
+	"expiration":
+	{
+		"duration": "0"
+	},
+	"cooldown":
+	{
+		"duration": "0"
+	},
+	"moneyCost": "0",
+	"resourceCost": [],
+	"mayoralCompletionCount": 0,
+	"rewardId":
+	{
+		"guid": "0",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"bNodeTargeted": false,
+	"targetRewardId":
+	{
+		"guid": "0",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"questItemListIds": [],
+	"storedGraph":
+	{
+		"nodes": []
+	},
+	"guid": "6064633963283415144",
+	"name": "COM_ANV_Gather_Wood_T1_WesternLarch",
+	"typeId": "280002"
+}
