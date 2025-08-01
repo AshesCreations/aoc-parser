@@ -49,6 +49,7 @@ function formatEffectName(name) {
     .replace(/^Status_/, '')
     .replace(/^Effect_/, '')
     .replace(/^Weapon_Description_/, '')
+    .replace(/^Weapon_description_/, '')
     .replace(/^Weapon_/, '')
     .replace(/_/g, ' ')
     .replace(/([a-z])([A-Z])/g, '$1 $2');
@@ -59,6 +60,7 @@ function formatEffectName(name) {
     }
   }
   out = out.replace(/\b[Ss]tat\b/, '').trim();
+  out = out.replace(/\b\w/g, (c) => c.toUpperCase());
   return out;
 }
 
@@ -206,6 +208,48 @@ function parseApplyEffectName(hitKey, index, dataDir) {
   return effName ? formatEffectName(effName) : null;
 }
 
+function resolveEffectToken(token, dataDir) {
+  let eff = loadJson(dataDir, 'Effects/Effect', 'Effect', token);
+  if (!eff || Object.keys(eff).length === 0)
+    eff = loadJson(dataDir, 'Effects/Effect', 'EffectRecord', token);
+  if (!eff || Object.keys(eff).length === 0) {
+    const dir = path.join(dataDir, 'Effects/Effect');
+    const file = fs
+      .readdirSync(dir)
+      .find((f) => f.includes(token));
+    if (file) eff = JSON.parse(fs.readFileSync(path.join(dir, file), 'utf8'));
+  }
+  const name = extractLastQuotedValue(eff.effectName);
+  return name ? formatEffectName(name) : formatEffectName(token);
+}
+
+function resolveSkillName(skillToken, dataDir) {
+  let ability = loadJson(
+    dataDir,
+    'Abilities/AoCAbility',
+    'AoCAbility',
+    skillToken
+  );
+  if (!ability || Object.keys(ability).length === 0)
+    ability = loadJson(
+      dataDir,
+      'Abilities/AoCAbility',
+      'AoCAbilityRecord',
+      skillToken
+    );
+  if (ability && Object.keys(ability).length) {
+    const n = extractLastQuotedValue(ability.abilityName);
+    if (n) return n;
+  }
+  // try effect
+  const eff = loadJson(dataDir, 'Effects/Effect', 'Effect', skillToken);
+  if (eff && Object.keys(eff).length) {
+    const n = extractLastQuotedValue(eff.effectName);
+    if (n) return n;
+  }
+  return formatEffectName(skillToken);
+}
+
 function formatDescription(desc, ability, dataDir) {
   let text = extractLastQuotedValue(desc);
   if (ability.hitsIds && ability.hitsIds['1']) {
@@ -284,9 +328,33 @@ function formatDescription(desc, ability, dataDir) {
   });
 
   const effRegex = /\$effect:([^\.\$]+)(?:\.[^\$]+)?\$|\{effect:([^\.\}]+)(?:\.[^\}]+)?\}/g;
-  text = text.replace(effRegex, (_, e1, e2) => `[${formatEffectName(e1 || e2)}]`);
+  text = text.replace(effRegex, (_, e1, e2) => `[${resolveEffectToken(e1 || e2, dataDir)}]`);
 
-  text = text.replace(/\{skill:[^\}]*\}/g, '');
+  text = text.replace(/\{hit(\d+)\}/g, (m, n) => {
+    const id = ability.hitsIds?.[n]?.guid;
+    if (!id) return '';
+    const dmg = parseDamage(id, dataDir);
+    return dmg && dmg.percent ? `${dmg.percent}% ${dmg.element} Damage` : '';
+  });
+
+  text = text.replace(/\{hit(\d+)\.apply(\d+)\}/g, (m, n, idx) => {
+    const id = ability.hitsIds?.[n]?.guid;
+    if (!id) return '';
+    const eff = parseApplyEffectName(id, parseInt(idx, 10), dataDir);
+    return eff ? `[${eff}]` : '';
+  });
+
+  text = text.replace(/\{skill:([^:}]+):([^:}]+):([^}]+)\}/g, (m, cls, sk, desc) => {
+    const name = resolveSkillName(sk, dataDir);
+    const clean = desc.replace(/<[^>]+>/g, '').trim();
+    return `${name}: ${clean}`;
+  });
+
+  text = text.replace(/\$charges\$/g, () => {
+    const val = parseFloat(ability.cooldownCharges?.expression);
+    return Number.isNaN(val) ? '0' : String(val);
+  });
+
   text = text.replace(/rnrn/g, '  ');
   text = text.replace(/\r\n|\n/g, ' ');
   text = text.replace(/<img[^>]*id=\"([^\"]+)\"[^>]*>/g, (_, id) => `[${formatEffectName(id)}]`);
@@ -334,7 +402,7 @@ function parseSkillTable(id, dataDir) {
       const effect = loadJson(dataDir, 'Effects/Effect', 'Effect', effectGuid);
       if (Object.keys(effect).length) {
         name = extractLastQuotedValue(effect.effectName) || name;
-        description = extractLastQuotedValue(effect.effectDescription);
+        description = formatDescription(effect.effectDescription, {}, dataDir);
         icon = effect.effectIcon ? effect.effectIcon.replace('/Game/UI', '/cdn').split('.')[0] + '.png' : icon;
       }
     }
