@@ -20,6 +20,7 @@ import { processEnchantmentDefFiles } from "./processor/enchantment-def.js";
 import { processEnchantmentLevelFiles } from "./processor/enchantment-level.js";
 import { processRecipeFiles } from "./processor/recipe.js";
 import { processLootFiles } from "./processor/loot.js";
+import { processSkillTables } from "./processor/skill-table.js";
 import { processPlayerStats } from "./processor/player-stats.js";
 import {
   directoryStats,
@@ -164,6 +165,10 @@ async function main() {
     console.log("\nProcessing loot files...");
     const lootProcessed = await processLootFiles(directoryData);
     console.log(`Loot processing complete: ${lootProcessed} entries saved`);
+
+    console.log("\nProcessing skill tables...");
+    const skillsProcessed = await processSkillTables(directoryData);
+    console.log(`Skill tables processing complete: ${skillsProcessed} entries saved`);
 
     console.log("\nAll processing complete. Closing connections...");
   } catch (error) {
