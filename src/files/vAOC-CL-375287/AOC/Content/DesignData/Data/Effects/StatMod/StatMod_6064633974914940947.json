@@ -1,0 +1,22 @@
+{
+	"statRefId":
+	{
+		"guid": "6064630854084526095",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"value":
+	{
+		"expression": "var Stat = 0.01;\r\nvar Min = 1;\r\nvar Total = 0;\r\n\r\nif (Guild_HasGuildSkillRank(GetOwnerGuid(), $#981011101:6064634008969674794$))\r\n{set Total = 10;}\r\nelse if (Guild_HasGuildSkillRank(GetOwnerGuid(), $#981011101:6064634008969216041$))\r\n{set Total = 9;}\r\nelse if (Guild_HasGuildSkillRank(GetOwnerGuid(), $#981011101:6064634008968495144$))\r\n{set Total = 8;}\r\nelse if (Guild_HasGuildSkillRank(GetOwnerGuid(), $#981011101:6064634008967970855$))\r\n{set Total = 7;}\r\nelse if (Guild_HasGuildSkillRank(GetOwnerGuid(), $#981011101:6064634008963842086$))\r\n{set Total = 6;}\r\nelse if (Guild_HasGuildSkillRank(GetOwnerGuid(), $#981011101:6064634008963383333$))\r\n{set Total = 5;}\r\nelse if (Guild_HasGuildSkillRank(GetOwnerGuid(), $#981011101:6064634008962924580$))\r\n{set Total = 4;}\r\nelse if (Guild_HasGuildSkillRank(GetOwnerGuid(), $#981011101:6064634008962465827$))\r\n{set Total = 3;}\r\nelse if (Guild_HasGuildSkillRank(GetOwnerGuid(), $#981011101:6064634008961155106$))\r\n{set Total = 2;}\r\nelse if (Guild_HasGuildSkillRank(GetOwnerGuid(), $#981011101:6064633974909501457$))\r\n{set Total = 1;}\r\nelse\r\n{set Total = 0;}\r\n\r\nset Stat = Stat * Total;\r\n\r\nMin + Stat"
+	},
+	"bUseShieldAbsorb": false,
+	"shieldAbsorbPercentage":
+	{
+		"expression": ""
+	},
+	"bShowFloatingText": false,
+	"valueInputTerms": [],
+	"guid": "6064633974914940947",
+	"name": "Guild_StatMod_Siege_Wars_Damage_Boost_1",
+	"typeId": "3031600201"
+}

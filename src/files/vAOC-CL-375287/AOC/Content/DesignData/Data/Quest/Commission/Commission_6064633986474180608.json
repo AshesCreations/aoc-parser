@@ -1,0 +1,76 @@
+{
+	"commissionType": "PlayerSponsored",
+	"commissionGameplayTags":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"preRequisiteQuestsIds": [],
+	"autoFailTimer": -1,
+	"bRepeatable": false,
+	"mainObjectiveType": "Basic",
+	"commissionSection": 1,
+	"biomeOrigin": "FloodPlains",
+	"bFromDynamicContent": false,
+	"availabilityExpression":
+	{
+		"expression": ""
+	},
+	"bDisabled": false,
+	"level": 27,
+	"commissionRarity": "Common",
+	"objectivesIds": [
+		{
+			"guid": "6064634053133336576",
+			"typeId": "1091110420",
+			"name": "None"
+		}
+	],
+	"allowMultipleCompletion": true,
+	"commissionName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"2E09A6AF44931BD840B4CF97B50800A2\", \"Test Case for Player Node Check Expression\")",
+	"flavorText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"CE10CEF84898E4E7B709BC868D95E33B\", \"This is a test case for seeing why the expression to check if a player is a citizen of a node isn\\'t working with reward grants.\")",
+	"mainObjectiveText": "",
+	"rewardTablesIds": [
+		{
+			"guid": "6064633986539520003",
+			"typeId": "1091110040",
+			"name": "None"
+		}
+	],
+	"additionalRewardTablesIds": [],
+	"calloutName": "",
+	"calloutDescription": "",
+	"bCanProgressWhileInRaid": false,
+	"expiration":
+	{
+		"duration": "172800000"
+	},
+	"cooldown":
+	{
+		"duration": "21600000"
+	},
+	"moneyCost": "50000",
+	"resourceCost": [],
+	"mayoralCompletionCount": 100,
+	"rewardId":
+	{
+		"guid": "6064632151125196832",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"bNodeTargeted": false,
+	"targetRewardId":
+	{
+		"guid": "0",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"questItemListIds": [],
+	"storedGraph":
+	{
+		"nodes": []
+	},
+	"guid": "6064633986474180608",
+	"name": "MCOM_ANY_PlayerExpressionRewardCheck",
+	"typeId": "280002"
+}

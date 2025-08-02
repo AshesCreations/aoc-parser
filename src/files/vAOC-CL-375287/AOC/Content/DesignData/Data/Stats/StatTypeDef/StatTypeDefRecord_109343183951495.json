@@ -1,0 +1,61 @@
+{
+	"displayName": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"0CB8FE964B673989D0708CA09C87A453\", \"Mag Crit Avoidance\")",
+	"description": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"8663AF8C4D8089A41DE4A08CFB4D774E\", \"Reduces the chance to take a magical critical hit\")",
+	"bHidden": false,
+	"gameplayType": "Type_Combat",
+	"bHasWaterfallStatsUI": false,
+	"waterfallStatsUIIds": [],
+	"bDisplayAsPercentage": true,
+	"statType": "Type_Float",
+	"bClampStatFinalValue": false,
+	"bMultiplyStatMods": false,
+	"bMultiplyCompliment": false,
+	"base":
+	{
+		"expression": "// extract out the base rating contribution to the base stat to get the true base (baseAdj)\r\nconst base = GetStat(GetOwner(), $#10516612381411111:109343399106255$);\r\nconst baseRating = GetStat(GetInstigator(), $#10516612381411111:6064628617694478341$);\r\nconst baseCoeff = EvalE($#10516612381411112:6064634020100112433$);\r\nconst mult = EvalE($#10516612381411112:6064632412936667141$);\r\nconst baseAdj = base - baseRating / (baseRating * mult + baseCoeff);\r\n\r\n// calculate total rating including the base rating but reduced by the coefficient quotient\r\nconst coeff = EvalE($#10516612381411112:6064632412892102657$);\r\nconst rating = baseRating * coeff/baseCoeff + GetStat(GetInstigator(), $#10516612381411111:6064628595115753473$);\r\n\r\n// calc final stat value\r\nbaseAdj + rating / (rating * mult + coeff)"
+	},
+	"waterfallStatsBaseIds": [
+		{
+			"guid": "109343399106255",
+			"typeId": "10516612381411111",
+			"name": "None"
+		},
+		{
+			"guid": "6064628595115753473",
+			"typeId": "10516612381411111",
+			"name": "None"
+		}
+	],
+	"valueMin":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMinIds": [],
+	"valueMax":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMaxIds": [],
+	"regenRate":
+	{
+		"expression": ""
+	},
+	"waterfallStatsRegenIds": [],
+	"bRegenWhileDead": false,
+	"bRecalculateOnCombatState": false,
+	"onSpawn": "Reset_None",
+	"onDeath": "Reset_None",
+	"onRevive": "Reset_None",
+	"bPersistValue": false,
+	"replication": 5,
+	"shieldStatId":
+	{
+		"guid": "0",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"grantedEffects": [],
+	"guid": "109343183951495",
+	"name": "MagicalCriticalAvoidance",
+	"typeId": "10516612381411111"
+}

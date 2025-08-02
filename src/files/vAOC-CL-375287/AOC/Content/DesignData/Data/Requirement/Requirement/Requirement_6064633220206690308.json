@@ -1,0 +1,32 @@
+{
+	"levelMinimum": 0,
+	"levelMaximum": 0,
+	"requiredQuestId":
+	{
+		"guid": "0",
+		"typeId": "1091110035",
+		"name": "None"
+	},
+	"requiredItemId":
+	{
+		"guid": "0",
+		"typeId": "1091110003",
+		"name": "None"
+	},
+	"location":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"distance": 0,
+	"optionalExpression":
+	{
+		"expression": "Guild_IsMember(GetPlayer())"
+	},
+	"optionalFailureReason": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"5D4B96A549C8B08A21699A9481CD1BE7\", \"You must be a member of a guild to earn guild experience.\")",
+	"disabledWhileMountSummoned": false,
+	"guid": "6064633220206690308",
+	"name": "IsGuildMember",
+	"typeId": "1091110006"
+}

@@ -1,0 +1,66 @@
+{
+	"displayName": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"0CFBF13E477660D98739A5AF7359137A\", \"Mag Evasion\")",
+	"description": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"AE5E1CF741ECFCDDCD8E5798CCE09CD7\", \"Reduces the chance to be hit by magical attacks\")",
+	"bHidden": false,
+	"gameplayType": "Type_Combat",
+	"bHasWaterfallStatsUI": false,
+	"waterfallStatsUIIds": [],
+	"bDisplayAsPercentage": true,
+	"statType": "Type_Float",
+	"bClampStatFinalValue": false,
+	"bMultiplyStatMods": false,
+	"bMultiplyCompliment": false,
+	"base":
+	{
+		"expression": "// extract out the base rating contribution to the base stat to get the true base (baseAdj)\r\nconst base = GetStat(GetOwner(), $#10516612381411111:6064628617716498442$);\r\nconst baseRating = GetStat(GetInstigator(), $#10516612381411111:6064628617716695054$);\r\nconst baseCoeff = EvalE($#10516612381411112:6064633883782021221$);\r\nconst baseAdj = base - baseRating / (baseRating + baseCoeff);\r\n\r\n// calculate total rating including the base rating but reduced by the coefficient quotient\r\nconst coeff = EvalE($#10516612381411112:6064630400882507797$);\r\nconst rating = baseRating * coeff/baseCoeff + GetStat(GetInstigator(), $#10516612381411111:109342915057279$);\r\n\r\n// calc final stat value\r\nconst stamEvaMult = EvalFormula($#10516612381411113:6064631902456119305$);\r\n(baseAdj + rating / (rating + coeff)) * stamEvaMult"
+	},
+	"waterfallStatsBaseIds": [
+		{
+			"guid": "6064628617716498442",
+			"typeId": "10516612381411111",
+			"name": "None"
+		},
+		{
+			"guid": "109342915057279",
+			"typeId": "10516612381411111",
+			"name": "None"
+		},
+		{
+			"guid": "6064629575339934476",
+			"typeId": "10516612381411111",
+			"name": "None"
+		}
+	],
+	"valueMin":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMinIds": [],
+	"valueMax":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMaxIds": [],
+	"regenRate":
+	{
+		"expression": ""
+	},
+	"waterfallStatsRegenIds": [],
+	"bRegenWhileDead": false,
+	"bRecalculateOnCombatState": false,
+	"onSpawn": "Reset_None",
+	"onDeath": "Reset_None",
+	"onRevive": "Reset_None",
+	"bPersistValue": false,
+	"replication": 5,
+	"shieldStatId":
+	{
+		"guid": "0",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"grantedEffects": [],
+	"guid": "109343399171812",
+	"name": "MagicalEvasion",
+	"typeId": "10516612381411111"
+}

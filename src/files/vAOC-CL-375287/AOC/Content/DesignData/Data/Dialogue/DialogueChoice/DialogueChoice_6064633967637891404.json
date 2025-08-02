@@ -1,0 +1,22 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"FB1DC3B64311AF8D7D41C4B6B339E3CC\", \"Election Not Active\")",
+	"nextNodeId":
+	{
+		"guid": "6064633967666465101",
+		"typeId": "1091110028",
+		"name": "Node_Master_Dialog_TownCrier_DLG_17"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "!Node_IsNodeMayorElectionActive\r\n(Node_GetActorCityNode(GetInteractionTarget()))"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064633967637891404",
+	"name": "Node_Master_Dialog_TownCrier_DLG_16_Choice_3",
+	"typeId": "1091110027"
+}
