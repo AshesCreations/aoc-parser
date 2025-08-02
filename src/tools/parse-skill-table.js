@@ -369,96 +369,158 @@ function parseSkillTable(id, dataDir) {
   const table = loadJson(dataDir, 'SkillTree/SkillTree', 'SkillTable', id);
   const result = [];
   for (const node of table.skills || []) {
-    const nodeData = loadJson(dataDir, 'SkillTree/SkillTreeNode', 'SkillTreeNode', node.treeNodeId.guid);
-    const skillId = nodeData.skillId?.guid;
-    const skill = loadJson(dataDir, 'SkillTree/Skill', 'SkillRecord', skillId);
-    const rankGuid = skill.skillRanksIds?.[0]?.guid;
-    let rank = loadJson(dataDir, 'SkillTree/SkillRank', 'SkillRank', rankGuid);
-    if (Object.keys(rank).length === 0) rank = loadJson(dataDir, 'SkillTree/SkillRank', 'SkillRankRecord', rankGuid);
-    const abilityGuid = rank.abilityIdId?.guid;
-    const effectGuid = rank.effectIdId?.guid;
-    let type = 'passive';
-    let name = rank.name;
-    let description = extractLastQuotedValue(rank.tooltipText);
-    let icon = rank.tooltipIcon?.replace('/Game/UI', '/cdn').split('.')[0] + '.png';
-    let cooldown = null;
-    let manaCost = null;
-    if (abilityGuid && abilityGuid !== '0') {
-      type = 'skill';
-      const ability = loadJson(dataDir, 'Abilities/AoCAbility', 'AoCAbility', abilityGuid);
-      if (Object.keys(ability).length === 0) {
-        // try Record prefix
-        ability = loadJson(dataDir, 'Abilities/AoCAbility', 'AoCAbilityRecord', abilityGuid);
-      }
-      if (ability && Object.keys(ability).length) {
-        name = extractLastQuotedValue(ability.abilityName) || name;
-        description = formatDescription(ability.abilityDescription, ability, dataDir);
-        icon = ability.abilityIcon ? ability.abilityIcon.replace('/Game/UI', '/cdn').split('.')[0] + '.png' : icon;
-        const cd = parseFloat(ability.cooldown?.expression);
-        if (!Number.isNaN(cd)) cooldown = cd;
-        manaCost = parseManaCost(ability, dataDir);
-      }
-    } else if (effectGuid && effectGuid !== '0') {
-      type = 'passive';
-      const effect = loadJson(dataDir, 'Effects/Effect', 'Effect', effectGuid);
-      if (Object.keys(effect).length) {
-        name = extractLastQuotedValue(effect.effectName) || name;
-        description = formatDescription(effect.effectDescription, {}, dataDir);
-        icon = effect.effectIcon ? effect.effectIcon.replace('/Game/UI', '/cdn').split('.')[0] + '.png' : icon;
+    const nodeData = loadJson(
+      dataDir,
+      'SkillTree/SkillTreeNode',
+      'SkillTreeNode',
+      node.treeNodeId.guid
+    );
+
+    const skillIds = [];
+    const directSkill = nodeData.skillId?.guid;
+    if (directSkill && directSkill !== '0') skillIds.push(directSkill);
+
+    const slotGuid = nodeData.skillSlotId?.guid;
+    if (slotGuid && slotGuid !== '0') {
+      const slot = loadJson(
+        dataDir,
+        'SkillTree/SkillTreeSlot',
+        'SkillTreeSlot',
+        slotGuid
+      );
+      for (const s of slot.skillsIds || []) {
+        if (s.guid && s.guid !== '0') skillIds.push(s.guid);
       }
     }
-    const maxRank = rank.skillCost?.skillPointCosts?.[0]?.quantity || 1;
-    result.push({
-      id: rank.name,
-      type,
-      cooldown,
-      manaCost,
-      imageUrl: icon,
-      name,
-      description,
-      maxRank,
-      position: { row: node.y, col: node.x },
-      requirements: {
-        pointsSpent: nodeData.pointRequirement,
-        level: nodeData.levelRequirement,
-        prerequisites: (nodeData.skillsRequired || []).map(r => {
-          const reqGuid = r.skillRequirementId?.guid;
-          if (!reqGuid || reqGuid === '0') return null;
-          const req = loadJson(
+
+    for (const skillId of skillIds) {
+      const skill = loadJson(dataDir, 'SkillTree/Skill', 'SkillRecord', skillId);
+      const rankGuid = skill.skillRanksIds?.[0]?.guid;
+      let rank = loadJson(
+        dataDir,
+        'SkillTree/SkillRank',
+        'SkillRank',
+        rankGuid
+      );
+      if (Object.keys(rank).length === 0)
+        rank = loadJson(
+          dataDir,
+          'SkillTree/SkillRank',
+          'SkillRankRecord',
+          rankGuid
+        );
+      const abilityGuid = rank.abilityIdId?.guid;
+      const effectGuid = rank.effectIdId?.guid;
+      let type = 'passive';
+      let name = rank.name;
+      let description = extractLastQuotedValue(rank.tooltipText);
+      let icon =
+        rank.tooltipIcon?.replace('/Game/UI', '/cdn').split('.')[0] + '.png';
+      let cooldown = null;
+      let manaCost = null;
+      if (abilityGuid && abilityGuid !== '0') {
+        type = 'skill';
+        const ability = loadJson(
+          dataDir,
+          'Abilities/AoCAbility',
+          'AoCAbility',
+          abilityGuid
+        );
+        if (Object.keys(ability).length === 0) {
+          // try Record prefix
+          ability = loadJson(
             dataDir,
-            'SkillTree/SkillRequirement',
-            'SkillRequirement',
-            reqGuid
+            'Abilities/AoCAbility',
+            'AoCAbilityRecord',
+            abilityGuid
           );
-          let skillId = req.name;
-          const targetGuid = req.skillRecordId?.guid;
-          if (targetGuid && targetGuid !== '0') {
-            const sk = loadJson(
-              dataDir,
-              'SkillTree/Skill',
-              'SkillRecord',
-              targetGuid
-            );
-            const rankGuidReq = sk.skillRanksIds?.[0]?.guid;
-            let rankReq = loadJson(
-              dataDir,
-              'SkillTree/SkillRank',
-              'SkillRank',
-              rankGuidReq
-            );
-            if (Object.keys(rankReq).length === 0)
-              rankReq = loadJson(
-                dataDir,
-                'SkillTree/SkillRank',
-                'SkillRankRecord',
-                rankGuidReq
-              );
-            if (rankReq && rankReq.name) skillId = rankReq.name;
-          }
-          return skillId || null;
-        }).filter(Boolean)
+        }
+        if (ability && Object.keys(ability).length) {
+          name = extractLastQuotedValue(ability.abilityName) || name;
+          description = formatDescription(
+            ability.abilityDescription,
+            ability,
+            dataDir
+          );
+          icon = ability.abilityIcon
+            ? ability.abilityIcon.replace('/Game/UI', '/cdn').split('.')[0] +
+              '.png'
+            : icon;
+          const cd = parseFloat(ability.cooldown?.expression);
+          if (!Number.isNaN(cd)) cooldown = cd;
+          manaCost = parseManaCost(ability, dataDir);
+        }
+      } else if (effectGuid && effectGuid !== '0') {
+        type = 'passive';
+        const effect = loadJson(dataDir, 'Effects/Effect', 'Effect', effectGuid);
+        if (Object.keys(effect).length) {
+          name = extractLastQuotedValue(effect.effectName) || name;
+          description = formatDescription(
+            effect.effectDescription,
+            {},
+            dataDir
+          );
+          icon = effect.effectIcon
+            ? effect.effectIcon.replace('/Game/UI', '/cdn').split('.')[0] +
+              '.png'
+            : icon;
+        }
       }
-    });
+      const maxRank = rank.skillCost?.skillPointCosts?.[0]?.quantity || 1;
+      result.push({
+        id: rank.name,
+        type,
+        cooldown,
+        manaCost,
+        imageUrl: icon,
+        name,
+        description,
+        maxRank,
+        position: { row: node.y, col: node.x },
+        requirements: {
+          pointsSpent: nodeData.pointRequirement,
+          level: nodeData.levelRequirement,
+          prerequisites: (nodeData.skillsRequired || [])
+            .map((r) => {
+              const reqGuid = r.skillRequirementId?.guid;
+              if (!reqGuid || reqGuid === '0') return null;
+              const req = loadJson(
+                dataDir,
+                'SkillTree/SkillRequirement',
+                'SkillRequirement',
+                reqGuid
+              );
+              let reqSkillId = req.name;
+              const targetGuid = req.skillRecordId?.guid;
+              if (targetGuid && targetGuid !== '0') {
+                const sk = loadJson(
+                  dataDir,
+                  'SkillTree/Skill',
+                  'SkillRecord',
+                  targetGuid
+                );
+                const rankGuidReq = sk.skillRanksIds?.[0]?.guid;
+                let rankReq = loadJson(
+                  dataDir,
+                  'SkillTree/SkillRank',
+                  'SkillRank',
+                  rankGuidReq
+                );
+                if (Object.keys(rankReq).length === 0)
+                  rankReq = loadJson(
+                    dataDir,
+                    'SkillTree/SkillRank',
+                    'SkillRankRecord',
+                    rankGuidReq
+                  );
+                if (rankReq && rankReq.name) reqSkillId = rankReq.name;
+              }
+              return reqSkillId || null;
+            })
+            .filter(Boolean),
+        },
+      });
+    }
   }
   return result;
 }
