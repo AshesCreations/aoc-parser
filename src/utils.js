@@ -385,6 +385,33 @@ function parseValueExpression(
 }
 
 /**
+ * Extracts a numeric coefficient from expressions like "Ceil(0.15*Strength)".
+ * Returns the original expression if no coefficient is found.
+ * @param {string} expression - Expression to parse
+ * @returns {string} Parsed numeric value or original expression
+ */
+function extractCoefficient(expression) {
+  if (!expression) return "";
+  let expr = expression.trim();
+  if (expr.startsWith("Ceil(") && expr.endsWith(")")) {
+    expr = expr.slice(5, -1);
+  } else if (expr.startsWith("Floor(") && expr.endsWith(")")) {
+    expr = expr.slice(6, -1);
+  }
+
+  const numOnly = /^-?\d*\.?\d+$/;
+  if (numOnly.test(expr)) return expr;
+
+  let match = expr.match(/([-+]?\d*\.?\d+)\s*[*x]\s*[A-Za-z_]+/);
+  if (match) return match[1];
+
+  match = expr.match(/[A-Za-z_]+\s*[*x]\s*([-+]?\d*\.?\d+)/);
+  if (match) return match[1];
+
+  return expression;
+}
+
+/**
  * Formats a given number of seconds into a human-readable time string
  * @param {string} seconds - Number of seconds
  * @returns {string} A string representing the time in seconds, minutes, or hours
@@ -418,4 +445,5 @@ export {
   extractExpressionId,
   parseValueExpression,
   formatTime,
+  extractCoefficient,
 };
