@@ -1,0 +1,50 @@
+{
+	"displayName": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"F355973544A2521518B87BA130D87980\", \"Mag Boost\")",
+	"description": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"9E7CACA24D30BB5C919BF5869DCA4613\", \"Increases magical damage and healing done\")",
+	"bHidden": false,
+	"gameplayType": "Type_Combat",
+	"bHasWaterfallStatsUI": false,
+	"waterfallStatsUIIds": [],
+	"bDisplayAsPercentage": true,
+	"statType": "Type_Float",
+	"bClampStatFinalValue": true,
+	"bMultiplyStatMods": true,
+	"bMultiplyCompliment": false,
+	"base":
+	{
+		"expression": "1.0"
+	},
+	"waterfallStatsBaseIds": [],
+	"valueMin":
+	{
+		"expression": "0"
+	},
+	"waterfallStatsMinIds": [],
+	"valueMax":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMaxIds": [],
+	"regenRate":
+	{
+		"expression": ""
+	},
+	"waterfallStatsRegenIds": [],
+	"bRegenWhileDead": false,
+	"bRecalculateOnCombatState": false,
+	"onSpawn": "Reset_None",
+	"onDeath": "Reset_None",
+	"onRevive": "Reset_None",
+	"bPersistValue": false,
+	"replication": 5,
+	"shieldStatId":
+	{
+		"guid": "0",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"grantedEffects": [],
+	"guid": "6064630634058743817",
+	"name": "MagicalPowerMult",
+	"typeId": "10516612381411111"
+}

@@ -1,0 +1,113 @@
+{
+	"narrativeType": "Commission",
+	"completionParameters":
+	{
+		"objectiveType": "GoToArea",
+		"nPCTaskIconOverrideId":
+		{
+			"guid": "0",
+			"typeId": "949952112329",
+			"name": "None"
+		},
+		"bAllowSatisfactionToRegress": false,
+		"completionQuantity": 1,
+		"tagQuery":
+		{
+			"tokenStreamVersion": 0,
+			"tagDictionary": [],
+			"queryTokenStream": [ 0, 1, 1, 0 ],
+			"userDescription": "",
+			"autoDescription": ""
+		},
+		"professionFilterIds": [],
+		"gatherableFilterIds": [],
+		"collectionFilterId":
+		{
+			"guid": "0",
+			"typeId": "1091110041",
+			"name": "None"
+		},
+		"subObjectivesIds": [],
+		"bLimitToDisplayLocation": false,
+		"goToAreaLocation": [
+			{
+				"location":
+				{
+					"x": -1213673.4237609999,
+					"y": -635326.20561199996,
+					"z": 17016.445324
+				},
+				"radius": 1000,
+				"map_DisplayType": "ICON_AND_RADIUS",
+				"map_IconVisual":
+				{
+					"guid": "6064630990211645445",
+					"typeId": "949952112329",
+					"name": "None"
+				},
+				"map_DisplayName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"B037ED4B4E96DB5AB361A39B2A0DBD0C\", \"Inner Bulwhark\")"
+			}
+		],
+		"populationSetIds": [],
+		"populationInstanceIds": [],
+		"notifyType": "None"
+	},
+	"objectiveText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"EE7B7FFA4E7741FB400A9CA43C979F7C\", \"(Optional) Bypass the Inner Bulwhark\")",
+	"objectiveCountText": "",
+	"initiallyHidden": true,
+	"advanceWhileHidden": true,
+	"revealOnComplete": true,
+	"completionRewardsIds": [],
+	"minimumRequirement": false,
+	"completionFlags": [
+		"BlameBear",
+		"InvestigationComplete"
+	],
+	"instanceCompletionResult": [
+		{
+			"variableName": "BlameBear",
+			"modification": 1
+		}
+	],
+	"enabledPredicate":
+	{
+		"expression": ""
+	},
+	"completionActionsIds": [],
+	"objectivesToCompleteUponCompletionIds": [],
+	"objectivesToRevealUponCompletionIds": [
+		{
+			"guid": "6064633770259972129",
+			"typeId": "1091110420",
+			"name": "None"
+		}
+	],
+	"allowOverAchievement": false,
+	"overAchievementCountText": "",
+	"maximumAdditionalCompletions": 2,
+	"multipleCompletionExperienceMultiplier": 0.30000001192092896,
+	"multipleCompletionGoldMultiplier": 0.30000001192092896,
+	"multipleCompletionVariableMultiplier": 0.30000001192092896,
+	"displayLocation": [
+		{
+			"location":
+			{
+				"x": -1213673.4237609999,
+				"y": -635326.20561199996,
+				"z": 17016.445324
+			},
+			"radius": 250,
+			"map_DisplayType": "ICON_AND_RADIUS",
+			"map_IconVisual":
+			{
+				"guid": "6064630990211645445",
+				"typeId": "949952112329",
+				"name": "None"
+			},
+			"map_DisplayName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"B5C097DE453AB0FB5A899AA4F3E5B834\", \"Inner Bulwhark\")"
+		}
+	],
+	"guid": "6064633770245554207",
+	"name": "ANV_FTUE_BF_0008_Bypass",
+	"typeId": "1091110420"
+}

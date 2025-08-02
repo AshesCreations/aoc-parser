@@ -1,0 +1,61 @@
+{
+	"displayName": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"2A943205408D397F6B321F9A536FB2CB\", \"Healing Received Bonus\")",
+	"description": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"76E08CDA41F218367E28A48CCC8E16C8\", \"Increases healing received\")",
+	"bHidden": false,
+	"gameplayType": "Type_Combat",
+	"bHasWaterfallStatsUI": false,
+	"waterfallStatsUIIds": [],
+	"bDisplayAsPercentage": true,
+	"statType": "Type_Float",
+	"bClampStatFinalValue": false,
+	"bMultiplyStatMods": false,
+	"bMultiplyCompliment": false,
+	"base":
+	{
+		"expression": "const rating = GetStat(GetInstigator(), $#10516612381411111:109343236642456$);\r\nconst percent = rating / (rating + EvalE($#10516612381411112:6064633368950603779$));\r\n\r\nconst wound = GetStat(GetInstigator(), $#10516612381411111:6064629999720283747$);\r\npercent - wound * 0.05"
+	},
+	"waterfallStatsBaseIds": [
+		{
+			"guid": "109343236642456",
+			"typeId": "10516612381411111",
+			"name": "None"
+		},
+		{
+			"guid": "6064629999720283747",
+			"typeId": "10516612381411111",
+			"name": "None"
+		}
+	],
+	"valueMin":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMinIds": [],
+	"valueMax":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMaxIds": [],
+	"regenRate":
+	{
+		"expression": ""
+	},
+	"waterfallStatsRegenIds": [],
+	"bRegenWhileDead": false,
+	"bRecalculateOnCombatState": false,
+	"onSpawn": "Reset_None",
+	"onDeath": "Reset_None",
+	"onRevive": "Reset_None",
+	"bPersistValue": false,
+	"replication": 5,
+	"shieldStatId":
+	{
+		"guid": "0",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"grantedEffects": [],
+	"guid": "109343236642458",
+	"name": "HealingReceivedAddMult",
+	"typeId": "10516612381411111"
+}

@@ -844,6 +844,49 @@ async function batchSaveSkillTableToDatabase(entries) {
   }
 }
 
+async function batchSaveStatusEffectsToDatabase(entries) {
+  if (!entries || entries.length === 0) {
+    return;
+  }
+  const client = await pool.getConnection();
+  try {
+    await client.query(`
+      CREATE TABLE IF NOT EXISTS \`DatabaseStatusEffects\` (
+        effectName VARCHAR(255) PRIMARY KEY,
+        effectDescription TEXT,
+        effectIcon TEXT,
+        lastModified TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+      )
+    `);
+    await ensureLastModifiedColumn(client, 'DatabaseStatusEffects');
+    await client.query('BEGIN');
+    const query = `
+      INSERT INTO \`DatabaseStatusEffects\` (effectName, effectDescription, effectIcon)
+      VALUES (?, ?, ?)
+      ON DUPLICATE KEY UPDATE
+        effectDescription = VALUES(effectDescription),
+        effectIcon = VALUES(effectIcon),
+        lastModified = CURRENT_TIMESTAMP
+    `;
+    const batchSize = 100;
+    for (let i = 0; i < entries.length; i += batchSize) {
+      const batch = entries.slice(i, i + batchSize);
+      const promises = batch.map((e) => {
+        const values = [e.effectName, e.effectDescription, e.effectIcon];
+        return client.execute(query, values);
+      });
+      await Promise.all(promises);
+    }
+    await client.query('COMMIT');
+    console.log(`Successfully saved ${entries.length} status effects in batch operation`);
+  } catch (error) {
+    await client.query('ROLLBACK');
+    console.error(`Error in batch save operation: ${error.message}`);
+    throw error;
+  } finally {
+    client.release();
+  }
+}
 export {
   saveItemRecipeToDatabase,
   saveStatToDatabase,
@@ -859,4 +902,5 @@ export {
   saveLootInfoToDatabase,
   savePlayerStatsToDatabase,
   batchSaveSkillTableToDatabase,
+  batchSaveStatusEffectsToDatabase,
 };

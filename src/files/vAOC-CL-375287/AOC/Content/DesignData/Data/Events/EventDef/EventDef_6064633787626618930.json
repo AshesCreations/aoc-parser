@@ -1,0 +1,101 @@
+{
+	"eventName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"F086B76C4323EBABE48F70AB2A00FC41\", \"Riverlands Lawless PvP\")",
+	"gameplayTags":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"activationPredicatesIds": [
+		{
+			"guid": "6064633803551738184",
+			"typeId": "23095129",
+			"name": "None"
+		}
+	],
+	"minChallengeRating": 0,
+	"maxChallengeRating": 30,
+	"eventLevel": 1,
+	"eventType": 2,
+	"locationId":
+	{
+		"guid": "6064633803429642245",
+		"typeId": "5127371160",
+		"name": "None"
+	},
+	"desiredTimeSlot": "0001.01.01-00.00.00",
+	"frequency": 8,
+	"priority": 1,
+	"rewardTableId":
+	{
+		"guid": "0",
+		"typeId": "1091110040",
+		"name": "None"
+	},
+	"rewardPopulationSetId":
+	{
+		"guid": "0",
+		"typeId": "5111005",
+		"name": "None"
+	},
+	"startStageId":
+	{
+		"guid": "6064633787679899699",
+		"typeId": "23095131",
+		"name": "None"
+	},
+	"stagesIds": [
+		{
+			"guid": "6064633787679899699",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064633788412330040",
+			"typeId": "23095131",
+			"name": "None"
+		},
+		{
+			"guid": "6064633805027181258",
+			"typeId": "23095131",
+			"name": "None"
+		}
+	],
+	"interactVolumesIds": [],
+	"alignmentsIds": [],
+	"mapDisplayType": "Biome",
+	"mapEventIcon": "/Game/UI/Icons/Player/TUI_Icon_CorruptionIndicator_Combatant.TUI_Icon_CorruptionIndicator_Combatant",
+	"mapDisplayTrackerFiltersIds": [],
+	"bDisplayOnTracker": true,
+	"notificationRadius": 30000,
+	"mapRadiusMinumum": 30000,
+	"cooldownTimer": 1800,
+	"bDisabled": false,
+	"maxInstanceCount": 1,
+	"requiredMapName": "",
+	"comments": [],
+	"bIsTemplate": false,
+	"flowNodes": [
+		{
+			"flowType": "EventEntry",
+			"graphLocation":
+			{
+				"x": 3.3999999521443642e+38,
+				"y": 3.3999999521443642e+38
+			},
+			"id": 0
+		},
+		{
+			"flowType": "EventExit",
+			"graphLocation":
+			{
+				"x": -3.3999999521443642e+38,
+				"y": -3.3999999521443642e+38
+			},
+			"id": 1
+		}
+	],
+	"bSkipCrashRecovery": false,
+	"guid": "6064633787626618930",
+	"name": "PvP_Lawless_Riverlands_EventDef",
+	"typeId": "23095125"
+}

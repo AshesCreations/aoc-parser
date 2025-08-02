@@ -1,0 +1,102 @@
+{
+	"commissionType": "Generic",
+	"commissionGameplayTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "Quest.Commission.StartingArea"
+			},
+			{
+				"tagName": "Quest.Commission.Tier.T1"
+			},
+			{
+				"tagName": "Biome.TabletopMountains.Dunir"
+			}
+		],
+		"parentTags": [
+			{
+				"tagName": "Quest.Commission"
+			},
+			{
+				"tagName": "Quest"
+			},
+			{
+				"tagName": "Quest.Commission.Tier"
+			},
+			{
+				"tagName": "Biome.TabletopMountains"
+			},
+			{
+				"tagName": "Biome"
+			}
+		]
+	},
+	"preRequisiteQuestsIds": [],
+	"autoFailTimer": -1,
+	"bRepeatable": false,
+	"mainObjectiveType": "Kill",
+	"commissionSection": 1,
+	"biomeOrigin": "FloodPlains",
+	"bFromDynamicContent": false,
+	"availabilityExpression":
+	{
+		"expression": ""
+	},
+	"bDisabled": false,
+	"level": 8,
+	"commissionRarity": "Uncommon",
+	"objectivesIds": [
+		{
+			"guid": "6064633985030160435",
+			"typeId": "1091110420",
+			"name": "None"
+		}
+	],
+	"allowMultipleCompletion": false,
+	"commissionName": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"1C41C9C94920ED992981B08322D34E9B\", \"Stolen Hearth\")",
+	"flavorText": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"56E29B4A4D3B8E3B321CCA81C1E059E4\", \"\\\"Mark my words, if this caravan makes it through these woods without an ambush? I\\'ll eat my foot.\\\"  - Till Baronbeard, Stablemaster\")",
+	"mainObjectiveText": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"66B5A589486E18602D2E27BB9CE3486D\", \"Defeat bandits in the Hollowhearth.\")",
+	"rewardTablesIds": [
+		{
+			"guid": "6064633967319187457",
+			"typeId": "1091110040",
+			"name": "None"
+		}
+	],
+	"additionalRewardTablesIds": [],
+	"calloutName": "",
+	"calloutDescription": "",
+	"bCanProgressWhileInRaid": false,
+	"expiration":
+	{
+		"duration": "0"
+	},
+	"cooldown":
+	{
+		"duration": "0"
+	},
+	"moneyCost": "0",
+	"resourceCost": [],
+	"mayoralCompletionCount": 0,
+	"rewardId":
+	{
+		"guid": "0",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"bNodeTargeted": false,
+	"targetRewardId":
+	{
+		"guid": "0",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"questItemListIds": [],
+	"storedGraph":
+	{
+		"nodes": []
+	},
+	"guid": "6064633985029177394",
+	"name": "COM_ANV_Slay_HammerRest_DunirBandits_Uncommon_OBJ",
+	"typeId": "280002"
+}

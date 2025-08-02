@@ -1,0 +1,42 @@
+{
+	"statRefId":
+	{
+		"guid": "108986352686712",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"value":
+	{
+		"expression": "GetTerm($#10516612381411115:6064631035951644675$)"
+	},
+	"bUseShieldAbsorb": false,
+	"shieldAbsorbPercentage":
+	{
+		"expression": ""
+	},
+	"bShowFloatingText": true,
+	"valueInputTerms": [
+		{
+			"termId":
+			{
+				"guid": "6064631035951644675",
+				"typeId": "10516612381411115",
+				"name": "None"
+			},
+			"value":
+			{
+				"expression": "var x = GetStat(GetInstigator(),$#10516612381411111:108986356618873$)*0.01;\r\nx"
+			},
+			"bOptional": false,
+			"bKeepBeyondScope": false,
+			"filter":
+			{
+				"expression": ""
+			},
+			"mergeRuleOverride": "Merge_Default"
+		}
+	],
+	"guid": "6064633985478300779",
+	"name": "Proc_Ethereal_Bulwark_Regen",
+	"typeId": "3031600201"
+}

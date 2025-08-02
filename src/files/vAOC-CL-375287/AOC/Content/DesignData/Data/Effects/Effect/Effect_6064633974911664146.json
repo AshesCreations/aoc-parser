@@ -1,0 +1,134 @@
+{
+	"effectCategory": "EFFECT_Hidden",
+	"effectTags": [],
+	"tags":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"effectName": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"3C6F45F74F67D75CEFB6C782B945017D\", \"Guild: War Damage\")",
+	"effectDescription": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"37C2B1404B5693276E1A999E96E677BC\", \"Increases Damage done in Guild Wars, Node Wars, and Sieges.\")",
+	"effectIcon": "/Game/UI/Icons/Abilities/Weapons/WeaponCombo/TUI_WeaponComboIcon_FourHit.TUI_WeaponComboIcon_FourHit",
+	"effectFloatingText": "",
+	"bDispellable": false,
+	"bSignificant": false,
+	"scriptOnApply": "None",
+	"scriptOnExpire": "None",
+	"bSetUnkillable": false,
+	"bGrantsPVPOptInProtection": false,
+	"bForceDismount": false,
+	"effectFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"applicationRequirements":
+	{
+		"expression": ""
+	},
+	"bOverrideDefaultResistRate": false,
+	"resistRate":
+	{
+		"expression": ""
+	},
+	"immune":
+	{
+		"expression": ""
+	},
+	"bInfiniteDuration": true,
+	"effectDuration":
+	{
+		"expression": ""
+	},
+	"bNumStacksLostOnDurationElapse": false,
+	"numStacksLostOnDurationElapse":
+	{
+		"expression": ""
+	},
+	"bPersistsThroughDeath": true,
+	"bPersistsRelog": false,
+	"effectGroupId":
+	{
+		"guid": "0",
+		"typeId": "30316004",
+		"name": "None"
+	},
+	"effectStackType": "STACK_StackInPlace",
+	"bCompareSourceWhenStacking": true,
+	"collateStacksInUI": false,
+	"globalStackLimit": 10,
+	"inPlaceStackLimit":
+	{
+		"expression": "10"
+	},
+	"stackDurationRefresh": "STACK_AlwaysRefresh",
+	"extensionAmount":
+	{
+		"expression": ""
+	},
+	"extendedMaximum": 50,
+	"scriptOnMaxStacks": "None",
+	"bLimitStacksFromInstigator": false,
+	"instigatorStackLimit":
+	{
+		"expression": ""
+	},
+	"tickTimer": 0,
+	"bIgnoreInitialTick": false,
+	"scriptOnTick": "None",
+	"bRecalculateHitOnTick": false,
+	"preApplyHitsIds": [],
+	"applyHitsIds": [],
+	"tickHitsIds": [],
+	"consumeHitsIds": [],
+	"removeHitsIds": [],
+	"expireHitsIds": [],
+	"endHitsIds": [],
+	"statModsIds": [],
+	"spawnNPCsIds": [],
+	"spawnLingeringZonesIds": [],
+	"redirectsIds": [],
+	"reactionsIds": [],
+	"crowdControlId":
+	{
+		"guid": "0",
+		"typeId": "3031600206",
+		"name": "None"
+	},
+	"resistancesIds": [],
+	"fragilityDefinitionsIds": [],
+	"hitModsIds": [],
+	"addAlignmentsIds": [],
+	"removeAlignmentsIds": [],
+	"bApplyScale": false,
+	"scaleAmount":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"scaleTime": 0,
+	"statusVFX": "None",
+	"bAppliesStealth": false,
+	"supressClickTargeting":
+	{
+		"expression": ""
+	},
+	"supressTabAndSoftTargeting":
+	{
+		"expression": ""
+	},
+	"supressNameplate":
+	{
+		"expression": ""
+	},
+	"bSlowFall": false,
+	"bNeverCull": false,
+	"addedAkEvents": [],
+	"removedAkEvents": [],
+	"akSwitchValues": [],
+	"guid": "6064633974911664146",
+	"name": "GUILD_Effect_Siege_Wars_Damage_Boost_1",
+	"typeId": "30316002"
+}

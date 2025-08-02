@@ -1,0 +1,50 @@
+{
+	"displayName": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"A2DA08354E2DC987D407F59EA275A160\", \"Healing Received Boost\")",
+	"description": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"76E08CDA41F218367E28A48CCC8E16C8\", \"Increases healing received\")",
+	"bHidden": false,
+	"gameplayType": "Type_Combat",
+	"bHasWaterfallStatsUI": false,
+	"waterfallStatsUIIds": [],
+	"bDisplayAsPercentage": false,
+	"statType": "Type_Float",
+	"bClampStatFinalValue": false,
+	"bMultiplyStatMods": false,
+	"bMultiplyCompliment": false,
+	"base":
+	{
+		"expression": "0"
+	},
+	"waterfallStatsBaseIds": [],
+	"valueMin":
+	{
+		"expression": "0"
+	},
+	"waterfallStatsMinIds": [],
+	"valueMax":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMaxIds": [],
+	"regenRate":
+	{
+		"expression": ""
+	},
+	"waterfallStatsRegenIds": [],
+	"bRegenWhileDead": false,
+	"bRecalculateOnCombatState": false,
+	"onSpawn": "Reset_None",
+	"onDeath": "Reset_None",
+	"onRevive": "Reset_None",
+	"bPersistValue": false,
+	"replication": 1,
+	"shieldStatId":
+	{
+		"guid": "0",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"grantedEffects": [],
+	"guid": "109343236642456",
+	"name": "HealingReceivedAddMultRating",
+	"typeId": "10516612381411111"
+}

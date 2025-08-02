@@ -1,0 +1,22 @@
+{
+	"choiceText": "",
+	"nextNodeId":
+	{
+		"guid": "6064632304311336960",
+		"typeId": "1091110028",
+		"name": "Master_Dialog_Kaelar_Guard_64"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "Node_IsExpansionInGivenState(Node_GetActorCityNode(GetInteractionTarget()), EAoCExpansionState::Vote)\r\n&& !(Player_HasCommission(GetPlayer(), \"CSQ_0157_FTUE_BuildingsAreGettingBetter\") ||\r\nPlayer_HasCompletedCommission(GetPlayer(), \"CSQ_0157_FTUE_BuildingsAreGettingBetter\"))"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064633963506106414",
+	"name": "Master_Dialog_Kaelar_Guard_39_Choice_10",
+	"typeId": "1091110027"
+}

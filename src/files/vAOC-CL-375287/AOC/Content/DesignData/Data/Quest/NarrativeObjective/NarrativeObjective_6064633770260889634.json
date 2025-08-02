@@ -1,0 +1,89 @@
+{
+	"narrativeType": "Commission",
+	"completionParameters":
+	{
+		"objectiveType": "Basic",
+		"nPCTaskIconOverrideId":
+		{
+			"guid": "0",
+			"typeId": "949952112329",
+			"name": "None"
+		},
+		"bAllowSatisfactionToRegress": false,
+		"completionQuantity": 1,
+		"tagQuery":
+		{
+			"tokenStreamVersion": 0,
+			"tagDictionary": [],
+			"queryTokenStream": [ 0, 1, 1, 0 ],
+			"userDescription": "",
+			"autoDescription": ""
+		},
+		"professionFilterIds": [],
+		"gatherableFilterIds": [],
+		"collectionFilterId":
+		{
+			"guid": "0",
+			"typeId": "1091110041",
+			"name": "None"
+		},
+		"subObjectivesIds": [],
+		"bLimitToDisplayLocation": false,
+		"goToAreaLocation": [],
+		"populationSetIds": [],
+		"populationInstanceIds": [],
+		"notifyType": "None"
+	},
+	"objectiveText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"B14817974CB0931456FA339E7A9FD05C\", \"(Optional) Awaken the Mountainhalls\")",
+	"objectiveCountText": "",
+	"initiallyHidden": true,
+	"advanceWhileHidden": true,
+	"revealOnComplete": true,
+	"completionRewardsIds": [],
+	"minimumRequirement": false,
+	"completionFlags": [
+		"BlameBear",
+		"InvestigationComplete"
+	],
+	"instanceCompletionResult": [
+		{
+			"variableName": "BlameBear",
+			"modification": 1
+		}
+	],
+	"enabledPredicate":
+	{
+		"expression": ""
+	},
+	"completionActionsIds": [],
+	"objectivesToCompleteUponCompletionIds": [],
+	"objectivesToRevealUponCompletionIds": [],
+	"allowOverAchievement": false,
+	"overAchievementCountText": "",
+	"maximumAdditionalCompletions": 2,
+	"multipleCompletionExperienceMultiplier": 0.30000001192092896,
+	"multipleCompletionGoldMultiplier": 0.30000001192092896,
+	"multipleCompletionVariableMultiplier": 0.30000001192092896,
+	"displayLocation": [
+		{
+			"location":
+			{
+				"x": -1194660,
+				"y": -651820,
+				"z": 12150
+			},
+			"radius": 250,
+			"map_DisplayType": "ICON_AND_RADIUS",
+			"map_IconVisual":
+			{
+				"guid": "6064630990211645445",
+				"typeId": "949952112329",
+				"name": "None"
+			},
+			"map_DisplayName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"41D8C87A4FC209959D239E8584D80A2B\", \"Awakening Console\")"
+		}
+	],
+	"guid": "6064633770260889634",
+	"name": "ANV_FTUE_BF_0008_AwakenVoice",
+	"typeId": "1091110420"
+}

@@ -1,0 +1,158 @@
+{
+	"dEPRECATED_ExpansionPrerequisiteIds": [],
+	"dEPRECATED_RequiredCapabilitiesIds": [],
+	"dEPRECATED_ExpansionSlotId":
+	{
+		"guid": "0",
+		"typeId": "7823460",
+		"name": "None"
+	},
+	"addedMaintenanceId":
+	{
+		"guid": "6064634009315311625",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"dEPRECATED_NodeConstructionCostId":
+	{
+		"guid": "0",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"postInitiationPlayerConstructionCostId":
+	{
+		"guid": "6064633929265512456",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"playerConstructionPhaseDurationMultiplier":
+	{
+		"expression": ""
+	},
+	"playerConstructionPhaseDuration":
+	{
+		"duration": "172800000"
+	},
+	"addedRepairCostId":
+	{
+		"guid": "6064632123327775065",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"addedDisarrayRepairCostId":
+	{
+		"guid": "6064632123289502019",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"expansionName": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"2A9761C341C4FC37CD3D7C80A2572005\", \"Master Weaving Shop I\")",
+	"expansionDescription": "Provides access to Master Weaving Stations for proccesing.",
+	"icon": "/Game/UI/Icons/Nodes/Buildings/Building_Management/TUI_Icon_Construction_Active_TextileMill_WeavingShop_Bonus1.TUI_Icon_Construction_Active_TextileMill_WeavingShop_Bonus1",
+	"buildingServices": [
+		{
+			"icon": "/Game/UI/Icons/Nodes/Buildings/BuildingServices/TUI_Icon_ServiceIcon_Weaving.TUI_Icon_ServiceIcon_Weaving",
+			"serviceName": "Master Weaving Station",
+			"serviceDescription": "Craft Master and below tool recipies",
+			"bCitizenExclusive": false,
+			"serviceGroupGameplayTag":
+			{
+				"tagName": "ServiceBuilding.ServiceGroup.Processing"
+			},
+			"expansionSkillId":
+			{
+				"guid": "6064631862947676163",
+				"typeId": "981011333",
+				"name": "None"
+			}
+		},
+		{
+			"icon": "/Game/UI/Icons/Nodes/Buildings/BuildingServices/TUI_Icon_ServiceIcon_Vendor.TUI_Icon_ServiceIcon_Vendor",
+			"serviceName": "Weaving Vendor",
+			"serviceDescription": "Sells Master and below items and recipies",
+			"bCitizenExclusive": false,
+			"serviceGroupGameplayTag":
+			{
+				"tagName": "ServiceBuilding.ServiceGroup.General"
+			},
+			"expansionSkillId":
+			{
+				"guid": "6064631862947676163",
+				"typeId": "981011333",
+				"name": "None"
+			}
+		}
+	],
+	"serviceGroupTag":
+	{
+		"tagName": "None"
+	},
+	"postInitiationEvent": 0,
+	"postInitiationVote": true,
+	"voteDuration":
+	{
+		"duration": "0"
+	},
+	"voteResultDuration":
+	{
+		"expression": "0"
+	},
+	"removalVoteDuration":
+	{
+		"duration": "172800000"
+	},
+	"removalVoteResultDuration":
+	{
+		"expression": ""
+	},
+	"requiredAchievements": [],
+	"expressionRequirements":
+	{
+		"expression": ""
+	},
+	"expansionSpawnsIds":
+	{
+		"3":
+		{
+			"guid": "6064631869400743950",
+			"typeId": "1091110044",
+			"name": "None"
+		}
+	},
+	"constructionDuration":
+	{
+		"duration": "0"
+	},
+	"dEPRECATED_CapabilitiesIds": [],
+	"dEPRECATED_NodeEffectId":
+	{
+		"guid": "0",
+		"typeId": "9127426",
+		"name": "None"
+	},
+	"nodeModificationsIds": [],
+	"expansionAssetSets": [
+		{
+			"bReplaceBuilding": true,
+			"buildingNodeAssetSetId":
+			{
+				"guid": "6064632519465566215",
+				"typeId": "1323521346",
+				"name": "None"
+			}
+		}
+	],
+	"expansionPopSpawns": [
+		{
+			"bReplacement": true,
+			"buildingSpawns":
+			{
+				"guid": "6064633956776280120",
+				"typeId": "1091110044",
+				"name": "None"
+			}
+		}
+	],
+	"guid": "6064631862950952965",
+	"name": "Construction_Active_TextileMill_EXP_0A_WeavingShop",
+	"typeId": "7823461"
+}

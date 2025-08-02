@@ -1,0 +1,105 @@
+{
+	"narrativeType": "Commission",
+	"completionParameters":
+	{
+		"objectiveType": "GoToArea",
+		"nPCTaskIconOverrideId":
+		{
+			"guid": "0",
+			"typeId": "949952112329",
+			"name": "None"
+		},
+		"bAllowSatisfactionToRegress": false,
+		"completionQuantity": 1,
+		"tagQuery":
+		{
+			"tokenStreamVersion": 0,
+			"tagDictionary": [],
+			"queryTokenStream": [],
+			"userDescription": "",
+			"autoDescription": ""
+		},
+		"professionFilterIds": [],
+		"gatherableFilterIds": [],
+		"collectionFilterId":
+		{
+			"guid": "0",
+			"typeId": "1091110041",
+			"name": "None"
+		},
+		"subObjectivesIds": [],
+		"bLimitToDisplayLocation": false,
+		"goToAreaLocation": [
+			{
+				"location":
+				{
+					"x": -1188577.5281380001,
+					"y": -645664.80328700005,
+					"z": 17863.511610000001
+				},
+				"radius": 500,
+				"map_DisplayType": "ICON",
+				"map_IconVisual":
+				{
+					"guid": "0",
+					"typeId": "949952112329",
+					"name": "None"
+				},
+				"map_DisplayName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"B1457F7A4347C56D6502EF91E7884621\", \"Anvils Grip\")"
+			}
+		],
+		"populationSetIds": [],
+		"populationInstanceIds": [],
+		"notifyType": "None"
+	},
+	"objectiveText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"600AD3BD42C2CD3D33F43E8C08FAB518\", \"Locate the little known Erud\\'s Niche within the Anvils\")",
+	"objectiveCountText": "",
+	"initiallyHidden": false,
+	"advanceWhileHidden": true,
+	"revealOnComplete": true,
+	"completionRewardsIds": [],
+	"minimumRequirement": true,
+	"completionFlags": [],
+	"instanceCompletionResult": [],
+	"enabledPredicate":
+	{
+		"expression": ""
+	},
+	"completionActionsIds": [
+		{
+			"guid": "6064633974173794306",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"objectivesToCompleteUponCompletionIds": [],
+	"objectivesToRevealUponCompletionIds": [],
+	"allowOverAchievement": false,
+	"overAchievementCountText": "",
+	"maximumAdditionalCompletions": 2,
+	"multipleCompletionExperienceMultiplier": 0.30000001192092896,
+	"multipleCompletionGoldMultiplier": 0.30000001192092896,
+	"multipleCompletionVariableMultiplier": 0.30000001192092896,
+	"displayLocation": [
+		{
+			"location":
+			{
+				"x": -1188577.5281380001,
+				"y": -645664.80328700005,
+				"z": 17863.511610000001
+			},
+			"radius": 10000,
+			"map_DisplayType": "RADIUS",
+			"map_IconVisual":
+			{
+				"guid": "0",
+				"typeId": "949952112329",
+				"name": "None"
+			},
+			"map_DisplayName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"BB1FA2AA4F8D3008CD7E34862B04CFD0\", \"Search for Anvils Grip\")"
+		}
+	],
+	"guid": "6064633974016901121",
+	"name": "COM_ANV_Goto_ErudsNiche",
+	"typeId": "1091110420"
+}

@@ -1,0 +1,105 @@
+{
+	"narrativeType": "Commission",
+	"completionParameters":
+	{
+		"objectiveType": "GoToArea",
+		"nPCTaskIconOverrideId":
+		{
+			"guid": "0",
+			"typeId": "949952112329",
+			"name": "None"
+		},
+		"bAllowSatisfactionToRegress": false,
+		"completionQuantity": 1,
+		"tagQuery":
+		{
+			"tokenStreamVersion": 0,
+			"tagDictionary": [],
+			"queryTokenStream": [],
+			"userDescription": "",
+			"autoDescription": ""
+		},
+		"professionFilterIds": [],
+		"gatherableFilterIds": [],
+		"collectionFilterId":
+		{
+			"guid": "0",
+			"typeId": "1091110041",
+			"name": "None"
+		},
+		"subObjectivesIds": [],
+		"bLimitToDisplayLocation": false,
+		"goToAreaLocation": [
+			{
+				"location":
+				{
+					"x": -1156205.651688,
+					"y": -589851.355935,
+					"z": 22373.369398999999
+				},
+				"radius": 500,
+				"map_DisplayType": "ICON",
+				"map_IconVisual":
+				{
+					"guid": "0",
+					"typeId": "949952112329",
+					"name": "None"
+				},
+				"map_DisplayName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"15371DDE4933A8141AD6E3B77A7DECA5\", \"Lotharia Ledge\")"
+			}
+		],
+		"populationSetIds": [],
+		"populationInstanceIds": [],
+		"notifyType": "None"
+	},
+	"objectiveText": "",
+	"objectiveCountText": "",
+	"initiallyHidden": false,
+	"advanceWhileHidden": true,
+	"revealOnComplete": true,
+	"completionRewardsIds": [],
+	"minimumRequirement": true,
+	"completionFlags": [],
+	"instanceCompletionResult": [],
+	"enabledPredicate":
+	{
+		"expression": ""
+	},
+	"completionActionsIds": [
+		{
+			"guid": "6064633974460448770",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"objectivesToCompleteUponCompletionIds": [],
+	"objectivesToRevealUponCompletionIds": [],
+	"allowOverAchievement": false,
+	"overAchievementCountText": "",
+	"maximumAdditionalCompletions": 2,
+	"multipleCompletionExperienceMultiplier": 0.30000001192092896,
+	"multipleCompletionGoldMultiplier": 0.30000001192092896,
+	"multipleCompletionVariableMultiplier": 0.30000001192092896,
+	"displayLocation": [
+		{
+			"location":
+			{
+				"x": -1156205.651688,
+				"y": -589851.355935,
+				"z": 22373.369398999999
+			},
+			"radius": 10000,
+			"map_DisplayType": "RADIUS",
+			"map_IconVisual":
+			{
+				"guid": "0",
+				"typeId": "949952112329",
+				"name": "None"
+			},
+			"map_DisplayName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"C966161B4F3D2C696F6FE9AE1EAA75D8\", \"Lotharia Ledge\")"
+		}
+	],
+	"guid": "6064633974398386177",
+	"name": "COM_ANV_Goto_LothariaLedge",
+	"typeId": "1091110420"
+}

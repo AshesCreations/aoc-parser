@@ -1,0 +1,145 @@
+{
+	"effectCategory": "EFFECT_Buff",
+	"effectTags": [],
+	"tags":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"effectName": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"CCDE25604E8DBD0D888BC0AB4495A7AF\", \"Ward\")",
+	"effectDescription": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"008CA2EE4B2899CC38CB8F8378BEA6C4\", \"Shielded for $hit:Proc_Ward_DummyHit$\")",
+	"effectIcon": "/Game/UI/Icons/Abilities/Weapons/WeaponCombo/TUI_WeaponComboIcon_Shield.TUI_WeaponComboIcon_Shield",
+	"effectFloatingText": "",
+	"bDispellable": false,
+	"bSignificant": false,
+	"scriptOnApply": "None",
+	"scriptOnExpire": "None",
+	"bSetUnkillable": false,
+	"bGrantsPVPOptInProtection": false,
+	"bForceDismount": false,
+	"effectFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"applicationRequirements":
+	{
+		"expression": ""
+	},
+	"bOverrideDefaultResistRate": false,
+	"resistRate":
+	{
+		"expression": ""
+	},
+	"immune":
+	{
+		"expression": ""
+	},
+	"bInfiniteDuration": false,
+	"effectDuration":
+	{
+		"expression": "8.0"
+	},
+	"bNumStacksLostOnDurationElapse": false,
+	"numStacksLostOnDurationElapse":
+	{
+		"expression": ""
+	},
+	"bPersistsThroughDeath": false,
+	"bPersistsRelog": false,
+	"effectGroupId":
+	{
+		"guid": "0",
+		"typeId": "30316004",
+		"name": "None"
+	},
+	"effectStackType": "STACK_OverrideAlways",
+	"bCompareSourceWhenStacking": true,
+	"collateStacksInUI": true,
+	"globalStackLimit": 50,
+	"inPlaceStackLimit":
+	{
+		"expression": ""
+	},
+	"stackDurationRefresh": "STACK_AlwaysRefresh",
+	"extensionAmount":
+	{
+		"expression": ""
+	},
+	"extendedMaximum": 50,
+	"scriptOnMaxStacks": "None",
+	"bLimitStacksFromInstigator": false,
+	"instigatorStackLimit":
+	{
+		"expression": ""
+	},
+	"tickTimer": 0,
+	"bIgnoreInitialTick": false,
+	"scriptOnTick": "None",
+	"bRecalculateHitOnTick": false,
+	"preApplyHitsIds": [],
+	"applyHitsIds": [],
+	"tickHitsIds": [],
+	"consumeHitsIds": [],
+	"removeHitsIds": [],
+	"expireHitsIds": [],
+	"endHitsIds": [],
+	"statModsIds": [
+		{
+			"guid": "6064633962210983942",
+			"typeId": "3031600201",
+			"name": "None"
+		},
+		{
+			"guid": "6064633975026748544",
+			"typeId": "3031600201",
+			"name": "None"
+		}
+	],
+	"spawnNPCsIds": [],
+	"spawnLingeringZonesIds": [],
+	"redirectsIds": [],
+	"reactionsIds": [],
+	"crowdControlId":
+	{
+		"guid": "0",
+		"typeId": "3031600206",
+		"name": "None"
+	},
+	"resistancesIds": [],
+	"fragilityDefinitionsIds": [],
+	"hitModsIds": [],
+	"addAlignmentsIds": [],
+	"removeAlignmentsIds": [],
+	"bApplyScale": false,
+	"scaleAmount":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"scaleTime": 0,
+	"statusVFX": "None",
+	"bAppliesStealth": false,
+	"supressClickTargeting":
+	{
+		"expression": ""
+	},
+	"supressTabAndSoftTargeting":
+	{
+		"expression": ""
+	},
+	"supressNameplate":
+	{
+		"expression": ""
+	},
+	"bSlowFall": false,
+	"bNeverCull": false,
+	"addedAkEvents": [],
+	"removedAkEvents": [],
+	"akSwitchValues": [],
+	"guid": "6064633962249715719",
+	"name": "Proc_Ward",
+	"typeId": "30316002"
+}

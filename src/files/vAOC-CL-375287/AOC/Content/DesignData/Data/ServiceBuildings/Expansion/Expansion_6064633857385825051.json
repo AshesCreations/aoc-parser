@@ -1,0 +1,164 @@
+{
+	"dEPRECATED_ExpansionPrerequisiteIds": [],
+	"dEPRECATED_RequiredCapabilitiesIds": [],
+	"dEPRECATED_ExpansionSlotId":
+	{
+		"guid": "0",
+		"typeId": "7823460",
+		"name": "None"
+	},
+	"addedMaintenanceId":
+	{
+		"guid": "6064634009403260990",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"dEPRECATED_NodeConstructionCostId":
+	{
+		"guid": "0",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"postInitiationPlayerConstructionCostId":
+	{
+		"guid": "6064633928087306318",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"playerConstructionPhaseDurationMultiplier":
+	{
+		"expression": ""
+	},
+	"playerConstructionPhaseDuration":
+	{
+		"duration": "172800000"
+	},
+	"addedRepairCostId":
+	{
+		"guid": "6064633928091828306",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"addedDisarrayRepairCostId":
+	{
+		"guid": "6064633928095694934",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"expansionName": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"3F115EA944E7EEA7B744E4A125673D47\", \"Grand Master Lumber Mill II - Lumbermilling XP\")",
+	"expansionDescription": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"B313BFDE4C4E32A546F8DE9186F92F72\", \"Provides a ZOI wide bonus to Lumbermilling XP, the bonus is increased for citizens of the node.\")",
+	"icon": "/Game/UI/Icons/Nodes/Buildings/Building_Management/TUI_Icon_Construction_Active_Woodshop_LumberMill_Tier2.TUI_Icon_Construction_Active_Woodshop_LumberMill_Tier2",
+	"buildingServices": [
+		{
+			"icon": "/Game/UI/Icons/Nodes/Buildings/BuildingServices/TUI_Icon_ServiceIcon_Lumbermill.TUI_Icon_ServiceIcon_Lumbermill",
+			"serviceName": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"F375294A47B347FF2FDFCCA0E0CA1C9C\", \"Grand Master Bonus to Lumbermilling XP\")",
+			"serviceDescription": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"D13E81AF46DF49AC5F468A913704D3DD\", \"Everyone in the node recievs a bonus buff to Lumbermilling XP\")",
+			"bCitizenExclusive": false,
+			"serviceGroupGameplayTag":
+			{
+				"tagName": "ServiceBuilding.ServiceGroup.Processing"
+			},
+			"expansionSkillId":
+			{
+				"guid": "6064633850966704472",
+				"typeId": "981011333",
+				"name": "None"
+			}
+		},
+		{
+			"icon": "/Game/UI/Icons/Nodes/Buildings/BuildingServices/TUI_Icon_ServiceIcon_Lumbermill.TUI_Icon_ServiceIcon_Lumbermill",
+			"serviceName": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"E4F96B1441DA22A936345BA6679FE198\", \"Citizens Grand Master Bonus to Lumbermilling XP\")",
+			"serviceDescription": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"A5337E314DEF3D7786737491F661486D\", \"Citizens of the node receives a bonus buff to Lumbermilling XP\")",
+			"bCitizenExclusive": true,
+			"serviceGroupGameplayTag":
+			{
+				"tagName": "ServiceBuilding.ServiceGroup.Processing"
+			},
+			"expansionSkillId":
+			{
+				"guid": "6064633850966704472",
+				"typeId": "981011333",
+				"name": "None"
+			}
+		}
+	],
+	"serviceGroupTag":
+	{
+		"tagName": "None"
+	},
+	"postInitiationEvent": 0,
+	"postInitiationVote": true,
+	"voteDuration":
+	{
+		"duration": "0"
+	},
+	"voteResultDuration":
+	{
+		"expression": "0"
+	},
+	"removalVoteDuration":
+	{
+		"duration": "172800000"
+	},
+	"removalVoteResultDuration":
+	{
+		"expression": ""
+	},
+	"requiredAchievements": [],
+	"expressionRequirements":
+	{
+		"expression": ""
+	},
+	"expansionSpawnsIds":
+	{
+		"3":
+		{
+			"guid": "6064632065161363462",
+			"typeId": "1091110044",
+			"name": "None"
+		}
+	},
+	"constructionDuration":
+	{
+		"duration": "0"
+	},
+	"dEPRECATED_CapabilitiesIds": [],
+	"dEPRECATED_NodeEffectId":
+	{
+		"guid": "0",
+		"typeId": "9127426",
+		"name": "None"
+	},
+	"nodeModificationsIds": [
+		{
+			"guid": "6064633896904687759",
+			"typeId": "1091110048",
+			"name": "None"
+		}
+	],
+	"expansionAssetSets": [
+		{
+			"bReplaceBuilding": true,
+			"buildingNodeAssetSetId":
+			{
+				"guid": "6064633888690798592",
+				"typeId": "1323521346",
+				"name": "None"
+			}
+		}
+	],
+	"expansionPopSpawns": [
+		{
+			"bReplacement": true,
+			"buildingSpawns":
+			{
+				"guid": "6064633956881465418",
+				"typeId": "1091110044",
+				"name": "None"
+			}
+		}
+	],
+	"guid": "6064633857385825051",
+	"name": "Construction_Active_Woodshop_EXP_3B3_LumberMill",
+	"typeId": "7823461"
+}

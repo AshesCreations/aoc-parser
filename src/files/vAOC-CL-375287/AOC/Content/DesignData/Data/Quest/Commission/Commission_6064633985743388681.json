@@ -1,0 +1,102 @@
+{
+	"commissionType": "Generic",
+	"commissionGameplayTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "Quest.Commission.StartingArea"
+			},
+			{
+				"tagName": "Quest.Commission.Tier.T1"
+			},
+			{
+				"tagName": "Biome.TabletopMountains.Nikua"
+			}
+		],
+		"parentTags": [
+			{
+				"tagName": "Quest.Commission"
+			},
+			{
+				"tagName": "Quest"
+			},
+			{
+				"tagName": "Quest.Commission.Tier"
+			},
+			{
+				"tagName": "Biome.TabletopMountains"
+			},
+			{
+				"tagName": "Biome"
+			}
+		]
+	},
+	"preRequisiteQuestsIds": [],
+	"autoFailTimer": -1,
+	"bRepeatable": false,
+	"mainObjectiveType": "Kill",
+	"commissionSection": 1,
+	"biomeOrigin": "FloodPlains",
+	"bFromDynamicContent": false,
+	"availabilityExpression":
+	{
+		"expression": ""
+	},
+	"bDisabled": false,
+	"level": 4,
+	"commissionRarity": "Common",
+	"objectivesIds": [
+		{
+			"guid": "6064633980490285069",
+			"typeId": "1091110420",
+			"name": "None"
+		}
+	],
+	"allowMultipleCompletion": false,
+	"commissionName": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"E33F30214C6900C44DD5818D40F1EEFF\", \"The Ramkin Threat\")",
+	"flavorText": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"D270D31D4488F18608DA4490DF3A3DDA\", \"\\\"The snowcapped mountains stand proud against the clear sky. We need not look any further for a picture of peace.\\\" - Ingrid Scorchweaver, Counsellor of Dawn\\'s Anchorage\")",
+	"mainObjectiveText": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"2B0446E243DA33470B153A8A6F4D066B\", \"Drive back the ramkin from the Northern Headlands.\")",
+	"rewardTablesIds": [
+		{
+			"guid": "6064633967319187457",
+			"typeId": "1091110040",
+			"name": "None"
+		}
+	],
+	"additionalRewardTablesIds": [],
+	"calloutName": "",
+	"calloutDescription": "",
+	"bCanProgressWhileInRaid": false,
+	"expiration":
+	{
+		"duration": "0"
+	},
+	"cooldown":
+	{
+		"duration": "0"
+	},
+	"moneyCost": "0",
+	"resourceCost": [],
+	"mayoralCompletionCount": 0,
+	"rewardId":
+	{
+		"guid": "0",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"bNodeTargeted": false,
+	"targetRewardId":
+	{
+		"guid": "0",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"questItemListIds": [],
+	"storedGraph":
+	{
+		"nodes": []
+	},
+	"guid": "6064633985743388681",
+	"name": "COM_ANV_Slay_Bonfire_Ramkin_Common",
+	"typeId": "280002"
+}

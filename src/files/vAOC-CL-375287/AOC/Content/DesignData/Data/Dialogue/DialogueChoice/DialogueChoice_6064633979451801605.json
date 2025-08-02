@@ -1,0 +1,121 @@
+{
+	"choiceText": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"FEFEDD814058CE83D26FC69F7CB3CD85\", \"Is there any construction work? How can I help?\")",
+	"nextNodeId":
+	{
+		"guid": "6064633979451342852",
+		"typeId": "1091110028",
+		"name": "Node_Master_Dialog_TownCrier_DLG_19"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "Node_NumOfServiceBuildingsInState(Node_GetActorCityNode(GetInteractionTarget()), EBuildingState::UnderConstruction) >= 1"
+	},
+	"requirements": [
+		{
+			"criteria": [
+				{
+					"elementType": "Quest",
+					"narrativeType": "Commission",
+					"commissionId":
+					{
+						"guid": "6064632105141600282",
+						"typeId": "280002",
+						"name": "None"
+					},
+					"storyArcQuestId":
+					{
+						"guid": "0",
+						"typeId": "1091110035",
+						"name": "None"
+					},
+					"objectiveId":
+					{
+						"guid": "0",
+						"typeId": "1091110420",
+						"name": "None"
+					},
+					"itemFilterId":
+					{
+						"guid": "0",
+						"typeId": "1091110041",
+						"name": "None"
+					},
+					"currencyDefId":
+					{
+						"guid": "0",
+						"typeId": "1011151289",
+						"name": "None"
+					},
+					"amountToQuery": 0,
+					"questState": "InProgress",
+					"objectiveState": "Active",
+					"itemState": "InInventory",
+					"characterAlignmentId":
+					{
+						"guid": "0",
+						"typeId": "512160700",
+						"name": "None"
+					},
+					"invert": true
+				}
+			]
+		},
+		{
+			"criteria": [
+				{
+					"elementType": "Quest",
+					"narrativeType": "Commission",
+					"commissionId":
+					{
+						"guid": "6064632105141600282",
+						"typeId": "280002",
+						"name": "None"
+					},
+					"storyArcQuestId":
+					{
+						"guid": "0",
+						"typeId": "1091110035",
+						"name": "None"
+					},
+					"objectiveId":
+					{
+						"guid": "0",
+						"typeId": "1091110420",
+						"name": "None"
+					},
+					"itemFilterId":
+					{
+						"guid": "0",
+						"typeId": "1091110041",
+						"name": "None"
+					},
+					"currencyDefId":
+					{
+						"guid": "0",
+						"typeId": "1011151289",
+						"name": "None"
+					},
+					"amountToQuery": 0,
+					"questState": "Completed",
+					"objectiveState": "Active",
+					"itemState": "InInventory",
+					"characterAlignmentId":
+					{
+						"guid": "0",
+						"typeId": "512160700",
+						"name": "None"
+					},
+					"invert": true
+				}
+			]
+		}
+	],
+	"choiceType": "Default",
+	"guid": "6064633979451801605",
+	"name": "Node_Master_Dialog_TownCrier_DLG_3_Choice_9",
+	"typeId": "1091110027"
+}

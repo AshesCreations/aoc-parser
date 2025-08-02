@@ -1,0 +1,164 @@
+{
+	"dEPRECATED_ExpansionPrerequisiteIds": [],
+	"dEPRECATED_RequiredCapabilitiesIds": [],
+	"dEPRECATED_ExpansionSlotId":
+	{
+		"guid": "0",
+		"typeId": "7823460",
+		"name": "None"
+	},
+	"addedMaintenanceId":
+	{
+		"guid": "6064634009395396661",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"dEPRECATED_NodeConstructionCostId":
+	{
+		"guid": "0",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"postInitiationPlayerConstructionCostId":
+	{
+		"guid": "6064633929334521889",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"playerConstructionPhaseDurationMultiplier":
+	{
+		"expression": ""
+	},
+	"playerConstructionPhaseDuration":
+	{
+		"duration": "172800000"
+	},
+	"addedRepairCostId":
+	{
+		"guid": "6064633929326133276",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"addedDisarrayRepairCostId":
+	{
+		"guid": "6064633929332031520",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"expansionName": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"1F35E77F4805EB7F7C63D689635C0713\", \"Grand Master Weaving Shop II - Weaving XP\")",
+	"expansionDescription": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"CF40076042CFB1A1FD43CC9CBA2D3C40\", \"Provides a ZOI wide bonus to Weaving XP, the bonus is increased for citizens of the node.\")",
+	"icon": "/Game/UI/Icons/Nodes/Buildings/Building_Management/TUI_Icon_Construction_Active_TextileMill_WeavingShop_Tier2.TUI_Icon_Construction_Active_TextileMill_WeavingShop_Tier2",
+	"buildingServices": [
+		{
+			"icon": "/Game/UI/Icons/Nodes/Buildings/BuildingServices/TUI_Icon_ServiceIcon_Weaving.TUI_Icon_ServiceIcon_Weaving",
+			"serviceName": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"E0DEF69C4ACB799FC1F1D4B877A98909\", \"Grand Master Bonus to Weaving XP\")",
+			"serviceDescription": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"AE417AE3451C5F607E3313B19DDABE13\", \"Everyone in the node recievs a bonus buff to Weaving XP\")",
+			"bCitizenExclusive": false,
+			"serviceGroupGameplayTag":
+			{
+				"tagName": "ServiceBuilding.ServiceGroup.Processing"
+			},
+			"expansionSkillId":
+			{
+				"guid": "6064633851999814054",
+				"typeId": "981011333",
+				"name": "None"
+			}
+		},
+		{
+			"icon": "/Game/UI/Icons/Nodes/Buildings/BuildingServices/TUI_Icon_ServiceIcon_Weaving.TUI_Icon_ServiceIcon_Weaving",
+			"serviceName": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"7DD264E14668AD85232ABC9F994A536C\", \"Citizens Grand Master Bonus to Weaving XP\")",
+			"serviceDescription": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"A41C30D9411B84BB35577DBB87F292DD\", \"Citizens of the node receives a bonus buff to Weaving XP\")",
+			"bCitizenExclusive": true,
+			"serviceGroupGameplayTag":
+			{
+				"tagName": "ServiceBuilding.ServiceGroup.Processing"
+			},
+			"expansionSkillId":
+			{
+				"guid": "6064633851999814054",
+				"typeId": "981011333",
+				"name": "None"
+			}
+		}
+	],
+	"serviceGroupTag":
+	{
+		"tagName": "None"
+	},
+	"postInitiationEvent": 0,
+	"postInitiationVote": true,
+	"voteDuration":
+	{
+		"duration": "0"
+	},
+	"voteResultDuration":
+	{
+		"expression": "0"
+	},
+	"removalVoteDuration":
+	{
+		"duration": "172800000"
+	},
+	"removalVoteResultDuration":
+	{
+		"expression": ""
+	},
+	"requiredAchievements": [],
+	"expressionRequirements":
+	{
+		"expression": ""
+	},
+	"expansionSpawnsIds":
+	{
+		"3":
+		{
+			"guid": "6064631869400743950",
+			"typeId": "1091110044",
+			"name": "None"
+		}
+	},
+	"constructionDuration":
+	{
+		"duration": "0"
+	},
+	"dEPRECATED_CapabilitiesIds": [],
+	"dEPRECATED_NodeEffectId":
+	{
+		"guid": "0",
+		"typeId": "9127426",
+		"name": "None"
+	},
+	"nodeModificationsIds": [
+		{
+			"guid": "6064633896896168070",
+			"typeId": "1091110048",
+			"name": "None"
+		}
+	],
+	"expansionAssetSets": [
+		{
+			"bReplaceBuilding": true,
+			"buildingNodeAssetSetId":
+			{
+				"guid": "6064633888694927363",
+				"typeId": "1323521346",
+				"name": "None"
+			}
+		}
+	],
+	"expansionPopSpawns": [
+		{
+			"bReplacement": true,
+			"buildingSpawns":
+			{
+				"guid": "6064633956782506043",
+				"typeId": "1091110044",
+				"name": "None"
+			}
+		}
+	],
+	"guid": "6064633857366688518",
+	"name": "Construction_Active_TextileMill_EXP_3A3_WeavingShop",
+	"typeId": "7823461"
+}

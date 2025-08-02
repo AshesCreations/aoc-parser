@@ -1,0 +1,85 @@
+{
+	"narrativeType": "Commission",
+	"completionParameters":
+	{
+		"objectiveType": "Kill",
+		"nPCTaskIconOverrideId":
+		{
+			"guid": "0",
+			"typeId": "949952112329",
+			"name": "None"
+		},
+		"bAllowSatisfactionToRegress": false,
+		"completionQuantity": 10,
+		"tagQuery":
+		{
+			"tokenStreamVersion": 0,
+			"tagDictionary": [
+				{
+					"tagName": "character.beast.ram"
+				}
+			],
+			"queryTokenStream": [ 0, 1, 1, 1, 0 ],
+			"userDescription": "",
+			"autoDescription": " ANY( character.beast.ram )"
+		},
+		"professionFilterIds": [],
+		"gatherableFilterIds": [],
+		"collectionFilterId":
+		{
+			"guid": "0",
+			"typeId": "1091110041",
+			"name": "None"
+		},
+		"subObjectivesIds": [],
+		"bLimitToDisplayLocation": true,
+		"goToAreaLocation": [],
+		"populationSetIds": [],
+		"populationInstanceIds": [],
+		"notifyType": "None"
+	},
+	"objectiveText": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"3F3B5A2E494799443B77BB8EBEB073F0\", \"Break wild rams near the hills beyond Vhalgadim\\'s reach\")",
+	"objectiveCountText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"51B29CBC444EDE293C14998CC12F1ECE\", \"Bears\")",
+	"initiallyHidden": false,
+	"advanceWhileHidden": true,
+	"revealOnComplete": true,
+	"completionRewardsIds": [],
+	"minimumRequirement": true,
+	"completionFlags": [],
+	"instanceCompletionResult": [],
+	"enabledPredicate":
+	{
+		"expression": ""
+	},
+	"completionActionsIds": [],
+	"objectivesToCompleteUponCompletionIds": [],
+	"objectivesToRevealUponCompletionIds": [],
+	"allowOverAchievement": false,
+	"overAchievementCountText": "",
+	"maximumAdditionalCompletions": 2,
+	"multipleCompletionExperienceMultiplier": 0.30000001192092896,
+	"multipleCompletionGoldMultiplier": 0.30000001192092896,
+	"multipleCompletionVariableMultiplier": 0.30000001192092896,
+	"displayLocation": [
+		{
+			"location":
+			{
+				"x": -762963.90211000002,
+				"y": -569658.93395600002,
+				"z": 18253.543041000001
+			},
+			"radius": 200000,
+			"map_DisplayType": "RADIUS",
+			"map_IconVisual":
+			{
+				"guid": "0",
+				"typeId": "949952112329",
+				"name": "None"
+			},
+			"map_DisplayName": ""
+		}
+	],
+	"guid": "6064633985744240742",
+	"name": "NOB_MCOM_ANV_Vhalgadim_Cull_Ram",
+	"typeId": "1091110420"
+}

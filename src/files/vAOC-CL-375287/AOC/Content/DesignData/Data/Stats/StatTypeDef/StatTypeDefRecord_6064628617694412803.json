@@ -1,0 +1,50 @@
+{
+	"displayName": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"66CC714E4A7FF9AD729A0599B0B313FA\", \"Crit Power\")",
+	"description": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"CBDB208046D1CA5CAE2C20856F1C1367\", \"Increases the damage dealt by critical hits\")",
+	"bHidden": false,
+	"gameplayType": "Type_Combat",
+	"bHasWaterfallStatsUI": false,
+	"waterfallStatsUIIds": [],
+	"bDisplayAsPercentage": false,
+	"statType": "Type_Float",
+	"bClampStatFinalValue": false,
+	"bMultiplyStatMods": false,
+	"bMultiplyCompliment": false,
+	"base":
+	{
+		"expression": "0"
+	},
+	"waterfallStatsBaseIds": [],
+	"valueMin":
+	{
+		"expression": "0"
+	},
+	"waterfallStatsMinIds": [],
+	"valueMax":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMaxIds": [],
+	"regenRate":
+	{
+		"expression": ""
+	},
+	"waterfallStatsRegenIds": [],
+	"bRegenWhileDead": false,
+	"bRecalculateOnCombatState": false,
+	"onSpawn": "Reset_None",
+	"onDeath": "Reset_None",
+	"onRevive": "Reset_None",
+	"bPersistValue": false,
+	"replication": 1,
+	"shieldStatId":
+	{
+		"guid": "0",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"grantedEffects": [],
+	"guid": "6064628617694412803",
+	"name": "CriticalPowerRating",
+	"typeId": "10516612381411111"
+}

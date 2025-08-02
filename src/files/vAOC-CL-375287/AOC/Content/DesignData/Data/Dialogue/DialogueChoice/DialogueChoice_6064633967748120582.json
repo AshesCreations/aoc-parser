@@ -1,0 +1,22 @@
+{
+	"choiceText": "NSLOCTEXT(\"[62289B23C7BAE2A6FB3A2552CA532BE6]\", \"F832EC584478CF27998DCDB816C7A77F\", \"Yes. I would like to become a citizen\")",
+	"nextNodeId":
+	{
+		"guid": "6064632428270977024",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "Node_GetActorCityNode(GetPlayer()) \r\n!= \r\nNode_GetActorCityNode(GetInteractionTarget())"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064633967748120582",
+	"name": "DD_ServiceNPC_NodeAdministrator_138_Choice_1",
+	"typeId": "1091110027"
+}

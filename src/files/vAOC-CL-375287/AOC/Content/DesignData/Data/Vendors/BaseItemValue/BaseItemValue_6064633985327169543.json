@@ -1,0 +1,24 @@
+{
+	"buyingCurrencyTierId":
+	{
+		"guid": "0",
+		"typeId": "1011111289",
+		"name": "None"
+	},
+	"sellingCurrencyTierId":
+	{
+		"guid": "6064633985355612170",
+		"typeId": "1011111289",
+		"name": "None"
+	},
+	"currencyValues":
+	{
+		"(Guid=6064633985355612170,TypeId=1011111289)":
+		{
+			"expression": "//Cost to craft the crate\r\nconst CopperCost = 670;\r\n//Amount of copper value equal to amount of resources required to craft the crate\r\nconst ResourceCost = 836;\r\n//Amount of copper value equal to amount reagents required to craft the crate\r\nconst ReagentCost = 900;\r\n//Amount of Copper per minute at level 10\r\nconst CopperPerMinute = 44.807;\r\n//Amount of Flux per minute at level 10\r\nconst FluxPerMinute = 0.03;\r\n//Rarity Multipler that gets applied to resource cost\r\nconst ResourceRarityMult = EvalCurve($#10516612381411114:6064634053840863233$,Float(GetItemRarity()));\r\n//Rarity multiplier that gets applied to reagent cost\r\nconst ReagentRarityMult = EvalCurve($#10516612381411114:6064632293965955074$,Float(GetItemRarity()));\r\n\r\n(CopperCost + (ResourceCost * ResourceRarityMult) + (ReagentCost * ReagentRarityMult)) / CopperPerMinute * FluxPerMinute"
+		}
+	},
+	"guid": "6064633985327169543",
+	"name": "Commodity_BaseValue_Harbor",
+	"typeId": "3145314713"
+}

@@ -1,0 +1,33 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 2,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0,
+		"fishingEvents": 0,
+		"statEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "GetStat(GetOwner(),$#10516612381411111:6064629069966082048$) <=0."
+	},
+	"bEvaluateApplyingHit": false,
+	"instigator": "Targets",
+	"targetsBitmask": 8,
+	"reactHitsIds": [
+		{
+			"guid": "6064634002546429636",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"instigatorProcLimit": 0,
+	"globalProcLimit": 0,
+	"procReactOnApply": false,
+	"guid": "6064634002539810499",
+	"name": "Minotaur_Streamweaver_WaterShell_CheckTempHealth",
+	"typeId": "3031600202"
+}

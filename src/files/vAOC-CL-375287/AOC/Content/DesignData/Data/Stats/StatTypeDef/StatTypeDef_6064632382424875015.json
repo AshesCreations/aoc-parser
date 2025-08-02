@@ -1,0 +1,50 @@
+{
+	"displayName": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"617B25CF443EFD36D7B3FC92F89FF1AF\", \"Necrotic Bonus\")",
+	"description": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"EE9C37F64C1FBEF76137D1A5BAF5F0EF\", \"Increases necrotic damage dealt\")",
+	"bHidden": false,
+	"gameplayType": "Type_Combat",
+	"bHasWaterfallStatsUI": false,
+	"waterfallStatsUIIds": [],
+	"bDisplayAsPercentage": true,
+	"statType": "Type_Float",
+	"bClampStatFinalValue": false,
+	"bMultiplyStatMods": false,
+	"bMultiplyCompliment": false,
+	"base":
+	{
+		"expression": "0"
+	},
+	"waterfallStatsBaseIds": [],
+	"valueMin":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMinIds": [],
+	"valueMax":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMaxIds": [],
+	"regenRate":
+	{
+		"expression": ""
+	},
+	"waterfallStatsRegenIds": [],
+	"bRegenWhileDead": false,
+	"bRecalculateOnCombatState": false,
+	"onSpawn": "Reset_None",
+	"onDeath": "Reset_None",
+	"onRevive": "Reset_None",
+	"bPersistValue": false,
+	"replication": 5,
+	"shieldStatId":
+	{
+		"guid": "0",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"grantedEffects": [],
+	"guid": "6064632382424875015",
+	"name": "NecroticDamageAddMult",
+	"typeId": "10516612381411111"
+}

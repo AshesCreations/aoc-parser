@@ -1,0 +1,110 @@
+{
+	"designNotes": "",
+	"levelDefinitionId":
+	{
+		"guid": "6064629126799097877",
+		"typeId": "9227326",
+		"name": "None"
+	},
+	"playerFacingName": "Duunhold",
+	"zoiType": "HasNode",
+	"startingAreaGameplayTag":
+	{
+		"tagName": "None"
+	},
+	"cityNodeId":
+	{
+		"guid": "6064633651985711129",
+		"typeId": "1323521343",
+		"name": "None"
+	},
+	"adjacentZonesOfInfluenceIds": [
+		{
+			"guid": "6064633253929615361",
+			"typeId": "9127326",
+			"name": "None"
+		},
+		{
+			"guid": "6064633651916963850",
+			"typeId": "9127326",
+			"name": "None"
+		},
+		{
+			"guid": "6064633651878100996",
+			"typeId": "9127326",
+			"name": "None"
+		},
+		{
+			"guid": "6064633690992410624",
+			"typeId": "9127326",
+			"name": "None"
+		},
+		{
+			"guid": "6064633651517784064",
+			"typeId": "9127326",
+			"name": "None"
+		},
+		{
+			"guid": "6064633651868794883",
+			"typeId": "9127326",
+			"name": "None"
+		},
+		{
+			"guid": "6064633651889766408",
+			"typeId": "9127326",
+			"name": "None"
+		}
+	],
+	"corruptionRulesEnabled": true,
+	"bAllowPVPOptInProtection": false,
+	"alignmentsAssignedUponEnteringIds": [],
+	"zoiEnvironmentType": "None",
+	"zOIRewardTables": [
+		{
+			"inclusionExpression":
+			{
+				"expression": "!DoesNPCContainTag(\"NoRewards\")"
+			},
+			"rewardTableId":
+			{
+				"guid": "6064633313653948416",
+				"typeId": "1091110040",
+				"name": "None"
+			}
+		},
+		{
+			"inclusionExpression":
+			{
+				"expression": "DoesNPCContainTag(\"character.humanoid\")"
+			},
+			"rewardTableId":
+			{
+				"guid": "6064634008967118858",
+				"typeId": "1091110040",
+				"name": "None"
+			}
+		}
+	],
+	"economicRegionTableId":
+	{
+		"guid": "6064633894854918144",
+		"typeId": "98738382",
+		"name": "None"
+	},
+	"bHideExperienceEvents": false,
+	"biome": "TabletopMountains",
+	"biomeGatherableTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "Anvils"
+			}
+		],
+		"parentTags": []
+	},
+	"freeholdEstatesIds": [],
+	"actorEffects": [],
+	"guid": "6064633651853983746",
+	"name": "Verra_ANV_Node_Duunhold",
+	"typeId": "9127326"
+}

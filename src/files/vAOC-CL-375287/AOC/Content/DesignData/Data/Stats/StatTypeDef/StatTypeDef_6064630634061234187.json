@@ -1,0 +1,50 @@
+{
+	"displayName": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"6C37BBF9448EEF0BA6C219B52D252461\", \"Pierce Boost\")",
+	"description": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"963368064D4CAA2328C6BCB18765885C\", \"Increases pierce damage dealt\")",
+	"bHidden": false,
+	"gameplayType": "Type_Combat",
+	"bHasWaterfallStatsUI": false,
+	"waterfallStatsUIIds": [],
+	"bDisplayAsPercentage": true,
+	"statType": "Type_Float",
+	"bClampStatFinalValue": true,
+	"bMultiplyStatMods": true,
+	"bMultiplyCompliment": false,
+	"base":
+	{
+		"expression": "1.0"
+	},
+	"waterfallStatsBaseIds": [],
+	"valueMin":
+	{
+		"expression": "0"
+	},
+	"waterfallStatsMinIds": [],
+	"valueMax":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMaxIds": [],
+	"regenRate":
+	{
+		"expression": ""
+	},
+	"waterfallStatsRegenIds": [],
+	"bRegenWhileDead": false,
+	"bRecalculateOnCombatState": false,
+	"onSpawn": "Reset_None",
+	"onDeath": "Reset_None",
+	"onRevive": "Reset_None",
+	"bPersistValue": false,
+	"replication": 5,
+	"shieldStatId":
+	{
+		"guid": "0",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"grantedEffects": [],
+	"guid": "6064630634061234187",
+	"name": "PierceDamageMult",
+	"typeId": "10516612381411111"
+}

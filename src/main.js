@@ -21,6 +21,7 @@ import { processEnchantmentLevelFiles } from "./processor/enchantment-level.js";
 import { processRecipeFiles } from "./processor/recipe.js";
 import { processLootFiles } from "./processor/loot.js";
 import { processSkillTables } from "./processor/skill-table.js";
+import { processStatusEffects } from "./processor/status-effects.js";
 import { processPlayerStats } from "./processor/player-stats.js";
 import {
   directoryStats,
@@ -170,6 +171,9 @@ async function main() {
     const skillsProcessed = await processSkillTables(directoryData);
     console.log(`Skill tables processing complete: ${skillsProcessed} entries saved`);
 
+    console.log("\nProcessing status effect files...");
+    const effectsProcessed = await processStatusEffects(directoryData, statIdToName);
+    console.log(`Status effects processing complete: ${effectsProcessed} entries saved`);
     console.log("\nAll processing complete. Closing connections...");
   } catch (error) {
     console.error(`An error occurred during processing: ${error.message}`);

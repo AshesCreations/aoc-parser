@@ -1,0 +1,22 @@
+{
+	"choiceText": "Is there new construction going on?",
+	"nextNodeId":
+	{
+		"guid": "6064633934845378597",
+		"typeId": "1091110028",
+		"name": "Node_Master_Dialog_TownCrier_DLG_6"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "Node_IsExpansionInGivenState(Node_GetActorCityNode(GetInteractionTarget()), EAoCExpansionState::Vote)"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064633934811299870",
+	"name": "Node_Master_Dialog_TownCrier_DLG_3_Choice_3",
+	"typeId": "1091110027"
+}

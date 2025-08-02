@@ -1,0 +1,148 @@
+{
+	"dEPRECATED_ExpansionPrerequisiteIds": [],
+	"dEPRECATED_RequiredCapabilitiesIds": [],
+	"dEPRECATED_ExpansionSlotId":
+	{
+		"guid": "0",
+		"typeId": "7823460",
+		"name": "None"
+	},
+	"addedMaintenanceId":
+	{
+		"guid": "6064633935459713036",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"dEPRECATED_NodeConstructionCostId":
+	{
+		"guid": "0",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"postInitiationPlayerConstructionCostId":
+	{
+		"guid": "6064633929539321868",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"playerConstructionPhaseDurationMultiplier":
+	{
+		"expression": ""
+	},
+	"playerConstructionPhaseDuration":
+	{
+		"duration": "172800000"
+	},
+	"addedRepairCostId":
+	{
+		"guid": "6064633929552756752",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"addedDisarrayRepairCostId":
+	{
+		"guid": "6064633929564553236",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"expansionName": "Herb Farm",
+	"expansionDescription": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"C9C62FF642DFFE7008A3B38487211E98\", \"Provides a bonus to Herbalism Speed for everyone in the node and a bonus to Herbalism Rarity for all citizens of the node\")",
+	"icon": "/Game/UI/Icons/Nodes/Buildings/Building_Management/TUI_Icon_Construction_Support_Farm_EXP_0C_Building_TreeFarm.TUI_Icon_Construction_Support_Farm_EXP_0C_Building_TreeFarm",
+	"buildingServices": [
+		{
+			"icon": "/Game/UI/Icons/Nodes/Buildings/BuildingServices/TUI_Icon_ServiceIcon_NodeBuff.TUI_Icon_ServiceIcon_NodeBuff",
+			"serviceName": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"2B56562D4E724A1320024B9D2AEACC37\", \"Bonus to Herbalism Speed\")",
+			"serviceDescription": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"9B1DF35944F7953A9EACEB89F4B48B17\", \"Everyone in the node recievs a bonus buff to Herbalism Speed\")",
+			"bCitizenExclusive": false,
+			"serviceGroupGameplayTag":
+			{
+				"tagName": "ServiceBuilding.ServiceGroup.Gathering"
+			},
+			"expansionSkillId":
+			{
+				"guid": "6064631755252760578",
+				"typeId": "981011333",
+				"name": "None"
+			}
+		},
+		{
+			"icon": "/Game/UI/Icons/Nodes/Buildings/BuildingServices/TUI_Icon_ServiceIcon_NodeBuff.TUI_Icon_ServiceIcon_NodeBuff",
+			"serviceName": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"7E0319724A9B3EF06040B2AB63A50A02\", \"Citizens Bonus to Herbalism Rarity\")",
+			"serviceDescription": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"AC1CBBEF4229B310B73D319F2ADA88CE\", \"Citizens of the node receives a bonus buff to Herbalism Rarity\")",
+			"bCitizenExclusive": true,
+			"serviceGroupGameplayTag":
+			{
+				"tagName": "ServiceBuilding.ServiceGroup.Gathering"
+			},
+			"expansionSkillId":
+			{
+				"guid": "6064631755252760578",
+				"typeId": "981011333",
+				"name": "None"
+			}
+		}
+	],
+	"serviceGroupTag":
+	{
+		"tagName": "None"
+	},
+	"postInitiationEvent": 0,
+	"postInitiationVote": true,
+	"voteDuration":
+	{
+		"duration": "172800000"
+	},
+	"voteResultDuration":
+	{
+		"expression": ""
+	},
+	"removalVoteDuration":
+	{
+		"duration": "172800000"
+	},
+	"removalVoteResultDuration":
+	{
+		"expression": ""
+	},
+	"requiredAchievements": [],
+	"expressionRequirements":
+	{
+		"expression": ""
+	},
+	"expansionSpawnsIds":
+	{
+	},
+	"constructionDuration":
+	{
+		"duration": "0"
+	},
+	"dEPRECATED_CapabilitiesIds": [],
+	"dEPRECATED_NodeEffectId":
+	{
+		"guid": "0",
+		"typeId": "9127426",
+		"name": "None"
+	},
+	"nodeModificationsIds": [
+		{
+			"guid": "6064633967765749761",
+			"typeId": "1091110048",
+			"name": "None"
+		}
+	],
+	"expansionAssetSets": [
+		{
+			"bReplaceBuilding": true,
+			"buildingNodeAssetSetId":
+			{
+				"guid": "6064633935064662016",
+				"typeId": "1323521346",
+				"name": "None"
+			}
+		}
+	],
+	"expansionPopSpawns": [],
+	"guid": "6064629069577912391",
+	"name": "Construction_Support_Farm_EXP_0A_HerbFarm",
+	"typeId": "7823461"
+}

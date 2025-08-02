@@ -1,0 +1,28 @@
+{
+	"choiceText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"044F25EA493FC86E9C07C1ACAFB067C7\", \"Sure, I\\'ll cast my vote.\")",
+	"nextNodeId":
+	{
+		"guid": "0",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [
+		{
+			"guid": "6064632439635574786",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "Node_IsPlayerCitizenOfNode(GetPlayer(), GetCurrentNode(GetPlayer()))"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064633967381121349",
+	"name": "Node_Master_Dialog_TownCrier_DLG_15_Choice_1",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,74 @@
+{
+	"predicate":
+	{
+		"expression": "Node_IsPlayerCitizenOfNode(GetPlayerGuid(), GetNodeRecord())"
+	},
+	"callout": "None",
+	"rewardDefContainers": [
+		{
+			"grantPredicate":
+			{
+				"expression": ""
+			},
+			"selectionAlgorithm": "All",
+			"numberToSelect": 0,
+			"grantMethod": "Always",
+			"rewardsWeightCurve":
+			{
+				"externalCurve": "None",
+				"editorCurveData":
+				{
+					"keys": [],
+					"defaultValue": 3.4028234663852886e+38,
+					"preInfinityExtrap": "RCCE_Constant",
+					"postInfinityExtrap": "RCCE_Constant",
+					"keyHandlesToIndices":
+					{
+					}
+				}
+			},
+			"weightsPerReward": [],
+			"expressionWeightsPerReward": [],
+			"percentageDropRatePerReward": [],
+			"maxSelectorChoices": 0,
+			"rewards": [
+				{
+					"displayName": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"9989F63C4AACDC1B3860A0B891342F18\", \"Node Reputation\")",
+					"currency":
+					{
+						"(Guid=6064629801116499968,TypeId=1011151289)":
+						{
+							"expression": "1000"
+						}
+					},
+					"itemRewards": [],
+					"experienceRewards": []
+				}
+			],
+			"rewardContainerIcon": "None"
+		}
+	],
+	"subTableSelectionAlgorithm": "None",
+	"numberOfSubtablesToSelect": 2,
+	"weightsPerSubTable": [],
+	"expressionWeightsPerSubTable": [],
+	"percentagePerSubTable": [],
+	"subTablesWeightCurve":
+	{
+		"externalCurve": "None",
+		"editorCurveData":
+		{
+			"keys": [],
+			"defaultValue": 3.4028234663852886e+38,
+			"preInfinityExtrap": "RCCE_Constant",
+			"postInfinityExtrap": "RCCE_Constant",
+			"keyHandlesToIndices":
+			{
+			}
+		}
+	},
+	"subTablesIds": [],
+	"guid": "6064634001282760704",
+	"name": "Mayoral_Commission_Citizen_Rep_Large",
+	"typeId": "1091110040"
+}

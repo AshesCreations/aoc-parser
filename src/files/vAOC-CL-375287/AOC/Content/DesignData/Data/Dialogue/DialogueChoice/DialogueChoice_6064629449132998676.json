@@ -1,0 +1,22 @@
+{
+	"choiceText": "Can become citizen",
+	"nextNodeId":
+	{
+		"guid": "6064633963937726464",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "Node_CanPlayerBecomeCitizen\r\n(GetPlayer(), \r\nNode_GetActorCityNode(GetInteractionTarget())) \r\n== \r\ntrue"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064629449132998676",
+	"name": "DD_ServiceNPC_NodeAdministrator_68",
+	"typeId": "1091110027"
+}

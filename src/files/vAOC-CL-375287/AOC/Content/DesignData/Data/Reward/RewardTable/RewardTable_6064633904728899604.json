@@ -1,0 +1,57 @@
+{
+	"predicate":
+	{
+		"expression": "GetNPCLevel() >= 11 && GetNPCLevel() <= 19"
+	},
+	"callout": "None",
+	"rewardDefContainers": [],
+	"subTableSelectionAlgorithm": "PerElementWeightedExpressionRandom",
+	"numberOfSubtablesToSelect": 2,
+	"weightsPerSubTable": [],
+	"expressionWeightsPerSubTable": [
+		{
+			"expression": "EvalFormula($#10516612381411113:6064633968371367936$)"
+		},
+		{
+			"expression": "EvalFormula($#10516612381411113:6064633900294668292$)"
+		},
+		{
+			"expression": "EvalFormula($#10516612381411113:6064633900295913478$)"
+		}
+	],
+	"percentagePerSubTable": [],
+	"subTablesWeightCurve":
+	{
+		"externalCurve": "None",
+		"editorCurveData":
+		{
+			"keys": [],
+			"defaultValue": 3.4028234663852886e+38,
+			"preInfinityExtrap": "RCCE_Constant",
+			"postInfinityExtrap": "RCCE_Constant",
+			"keyHandlesToIndices":
+			{
+			}
+		}
+	},
+	"subTablesIds": [
+		{
+			"guid": "6064633904728178707",
+			"typeId": "1091110040",
+			"name": "None"
+		},
+		{
+			"guid": "6064633904727523346",
+			"typeId": "1091110040",
+			"name": "None"
+		},
+		{
+			"guid": "6064633904726736913",
+			"typeId": "1091110040",
+			"name": "None"
+		}
+	],
+	"guid": "6064633904728899604",
+	"name": "GearTier_RVR_Gear_Armor_Heavy_Adept",
+	"typeId": "1091110040"
+}

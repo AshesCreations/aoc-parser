@@ -1,0 +1,164 @@
+{
+	"dEPRECATED_ExpansionPrerequisiteIds": [],
+	"dEPRECATED_RequiredCapabilitiesIds": [],
+	"dEPRECATED_ExpansionSlotId":
+	{
+		"guid": "0",
+		"typeId": "7823460",
+		"name": "None"
+	},
+	"addedMaintenanceId":
+	{
+		"guid": "6064634009333923851",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"dEPRECATED_NodeConstructionCostId":
+	{
+		"guid": "0",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"postInitiationPlayerConstructionCostId":
+	{
+		"guid": "6064633888897368257",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"playerConstructionPhaseDurationMultiplier":
+	{
+		"expression": ""
+	},
+	"playerConstructionPhaseDuration":
+	{
+		"duration": "172800000"
+	},
+	"addedRepairCostId":
+	{
+		"guid": "6064633888901234884",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"addedDisarrayRepairCostId":
+	{
+		"guid": "6064633888905494727",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"expansionName": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"6CD5B24F416C00CE5B191FB1F43D7A89\", \"Grand Master Chef\\'s Workshop II - Cooking Rarity\")",
+	"expansionDescription": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"DC215D65450DECEEFF0AEAAF7FAE145A\", \"Provides a ZOI wide bonus to Cooking Rarity, the bonus is increased for citizens of the node.\")",
+	"icon": "/Game/UI/Icons/Nodes/Buildings/Building_Management/TUI_Icon_Construction_Active_Cookhouse_ChefsWorkshop_Tier2.TUI_Icon_Construction_Active_Cookhouse_ChefsWorkshop_Tier2",
+	"buildingServices": [
+		{
+			"icon": "/Game/UI/Icons/Nodes/Buildings/BuildingServices/TUI_Icon_ServiceIcon_Cooking.TUI_Icon_ServiceIcon_Cooking",
+			"serviceName": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"8DCAA35F4C0A71A9266F49BB2BE5F89F\", \"Grand Master Bonus to Cooking Rarity\")",
+			"serviceDescription": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"693DF2004B40EC1BB791C289199E3E56\", \"Everyone in the node recievs a bonus buff to Cooking Rarity\")",
+			"bCitizenExclusive": false,
+			"serviceGroupGameplayTag":
+			{
+				"tagName": "ServiceBuilding.ServiceGroup.Processing"
+			},
+			"expansionSkillId":
+			{
+				"guid": "6064633849537626137",
+				"typeId": "981011333",
+				"name": "None"
+			}
+		},
+		{
+			"icon": "/Game/UI/Icons/Nodes/Buildings/BuildingServices/TUI_Icon_ServiceIcon_Cooking.TUI_Icon_ServiceIcon_Cooking",
+			"serviceName": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"A98D2B9A4D98B34CBB90E48781408C0E\", \"Citizens Grand Master Bonus to Cooking Rarity\")",
+			"serviceDescription": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"742533A44E2D563F28FF89B264FB87A6\", \"Citizens of the node receives a bonus buff to Cooking Rarity\")",
+			"bCitizenExclusive": true,
+			"serviceGroupGameplayTag":
+			{
+				"tagName": "ServiceBuilding.ServiceGroup.Processing"
+			},
+			"expansionSkillId":
+			{
+				"guid": "6064633849537626137",
+				"typeId": "981011333",
+				"name": "None"
+			}
+		}
+	],
+	"serviceGroupTag":
+	{
+		"tagName": "None"
+	},
+	"postInitiationEvent": 0,
+	"postInitiationVote": true,
+	"voteDuration":
+	{
+		"duration": "0"
+	},
+	"voteResultDuration":
+	{
+		"expression": "0"
+	},
+	"removalVoteDuration":
+	{
+		"duration": "172800000"
+	},
+	"removalVoteResultDuration":
+	{
+		"expression": ""
+	},
+	"requiredAchievements": [],
+	"expressionRequirements":
+	{
+		"expression": ""
+	},
+	"expansionSpawnsIds":
+	{
+		"3":
+		{
+			"guid": "6064631879628488731",
+			"typeId": "1091110044",
+			"name": "None"
+		}
+	},
+	"constructionDuration":
+	{
+		"duration": "0"
+	},
+	"dEPRECATED_CapabilitiesIds": [],
+	"dEPRECATED_NodeEffectId":
+	{
+		"guid": "0",
+		"typeId": "9127426",
+		"name": "None"
+	},
+	"nodeModificationsIds": [
+		{
+			"guid": "6064633896857174126",
+			"typeId": "1091110048",
+			"name": "None"
+		}
+	],
+	"expansionAssetSets": [
+		{
+			"bReplaceBuilding": true,
+			"buildingNodeAssetSetId":
+			{
+				"guid": "6064633888696631301",
+				"typeId": "1323521346",
+				"name": "None"
+			}
+		}
+	],
+	"expansionPopSpawns": [
+		{
+			"bReplacement": true,
+			"buildingSpawns":
+			{
+				"guid": "6064633946284818438",
+				"typeId": "1091110044",
+				"name": "None"
+			}
+		}
+	],
+	"guid": "6064633857197671059",
+	"name": "Construction_Active_Cookhouse_EXP_3A1_ChefsWorkshop",
+	"typeId": "7823461"
+}

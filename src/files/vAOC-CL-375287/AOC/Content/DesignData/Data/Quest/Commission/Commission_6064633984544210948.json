@@ -1,0 +1,102 @@
+{
+	"commissionType": "Generic",
+	"commissionGameplayTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "Quest.Commission.StartingArea"
+			},
+			{
+				"tagName": "Quest.Commission.Tier.T1"
+			},
+			{
+				"tagName": "Biome.TabletopMountains.Nikua"
+			}
+		],
+		"parentTags": [
+			{
+				"tagName": "Quest.Commission"
+			},
+			{
+				"tagName": "Quest"
+			},
+			{
+				"tagName": "Quest.Commission.Tier"
+			},
+			{
+				"tagName": "Biome.TabletopMountains"
+			},
+			{
+				"tagName": "Biome"
+			}
+		]
+	},
+	"preRequisiteQuestsIds": [],
+	"autoFailTimer": -1,
+	"bRepeatable": false,
+	"mainObjectiveType": "Kill",
+	"commissionSection": 1,
+	"biomeOrigin": "FloodPlains",
+	"bFromDynamicContent": false,
+	"availabilityExpression":
+	{
+		"expression": ""
+	},
+	"bDisabled": false,
+	"level": 5,
+	"commissionRarity": "Common",
+	"objectivesIds": [
+		{
+			"guid": "6064633984545259525",
+			"typeId": "1091110420",
+			"name": "None"
+		}
+	],
+	"allowMultipleCompletion": false,
+	"commissionName": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"624C4286453EEFEFA22E61A99FA774EB\", \"The Ground Moves Beneath Us\")",
+	"flavorText": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"98DD35D241182F0B6C19198AD318BA8A\", \"\\\"These rocks move to a different beat. Perhaps they no longer hear the heart of Dun.\\\" - Runesinger Maile Lua\")",
+	"mainObjectiveText": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"0FA2F20F45FB7DAA5CB3B7AF1097338D\", \"Slay Rocklings blocking the aqueduct.\")",
+	"rewardTablesIds": [
+		{
+			"guid": "6064634013886646846",
+			"typeId": "1091110040",
+			"name": "None"
+		}
+	],
+	"additionalRewardTablesIds": [],
+	"calloutName": "",
+	"calloutDescription": "",
+	"bCanProgressWhileInRaid": false,
+	"expiration":
+	{
+		"duration": "0"
+	},
+	"cooldown":
+	{
+		"duration": "0"
+	},
+	"moneyCost": "0",
+	"resourceCost": [],
+	"mayoralCompletionCount": 0,
+	"rewardId":
+	{
+		"guid": "0",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"bNodeTargeted": false,
+	"targetRewardId":
+	{
+		"guid": "0",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"questItemListIds": [],
+	"storedGraph":
+	{
+		"nodes": []
+	},
+	"guid": "6064633984544210948",
+	"name": "COM_ANV_Cull_Bonfire_Rockling_Common",
+	"typeId": "280002"
+}

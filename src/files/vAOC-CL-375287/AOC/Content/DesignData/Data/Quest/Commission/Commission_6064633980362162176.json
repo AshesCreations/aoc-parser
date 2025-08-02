@@ -1,0 +1,102 @@
+{
+	"commissionType": "Generic",
+	"commissionGameplayTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "Quest.Commission.StartingArea"
+			},
+			{
+				"tagName": "Quest.Commission.Tier.T1"
+			},
+			{
+				"tagName": "Biome.TabletopMountains.Dunir"
+			}
+		],
+		"parentTags": [
+			{
+				"tagName": "Quest.Commission"
+			},
+			{
+				"tagName": "Quest"
+			},
+			{
+				"tagName": "Quest.Commission.Tier"
+			},
+			{
+				"tagName": "Biome.TabletopMountains"
+			},
+			{
+				"tagName": "Biome"
+			}
+		]
+	},
+	"preRequisiteQuestsIds": [],
+	"autoFailTimer": -1,
+	"bRepeatable": false,
+	"mainObjectiveType": "Kill",
+	"commissionSection": 1,
+	"biomeOrigin": "FloodPlains",
+	"bFromDynamicContent": false,
+	"availabilityExpression":
+	{
+		"expression": ""
+	},
+	"bDisabled": false,
+	"level": 4,
+	"commissionRarity": "Common",
+	"objectivesIds": [
+		{
+			"guid": "6064633980447621123",
+			"typeId": "1091110420",
+			"name": "None"
+		}
+	],
+	"allowMultipleCompletion": false,
+	"commissionName": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"FDBF45A844699DF6501C39BB13254C6A\", \"Claws of the Mountain\")",
+	"flavorText": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"58B5F6D04D984E5B4653DD9B7A5423E9\", \"\\\"His instincts were as sharp as the mountain lions who raised him.\\\" - Attendant to Elder Stonebrill, Former Helmbearer of Terrawolgen\")",
+	"mainObjectiveText": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"B8C0E51C456A2075251BC891535EE1D0\", \"Slay juvenile mountain lions in the eastern slopes.\")",
+	"rewardTablesIds": [
+		{
+			"guid": "6064634013886646846",
+			"typeId": "1091110040",
+			"name": "None"
+		}
+	],
+	"additionalRewardTablesIds": [],
+	"calloutName": "",
+	"calloutDescription": "",
+	"bCanProgressWhileInRaid": false,
+	"expiration":
+	{
+		"duration": "0"
+	},
+	"cooldown":
+	{
+		"duration": "0"
+	},
+	"moneyCost": "0",
+	"resourceCost": [],
+	"mayoralCompletionCount": 0,
+	"rewardId":
+	{
+		"guid": "0",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"bNodeTargeted": false,
+	"targetRewardId":
+	{
+		"guid": "0",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"questItemListIds": [],
+	"storedGraph":
+	{
+		"nodes": []
+	},
+	"guid": "6064633980362162176",
+	"name": "COM_ANV_Cull_HammerRest_MountainLion_Common",
+	"typeId": "280002"
+}

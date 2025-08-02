@@ -1,0 +1,61 @@
+{
+	"displayName": "Healing Power",
+	"description": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"F04FB88F4E54F36807F246A6458C99A5\", \"The base potency of healing abilities and effects. Inherits from a portion of your magical power.\")",
+	"bHidden": false,
+	"gameplayType": "Type_Combat",
+	"bHasWaterfallStatsUI": false,
+	"waterfallStatsUIIds": [],
+	"bDisplayAsPercentage": false,
+	"statType": "Type_Float",
+	"bClampStatFinalValue": false,
+	"bMultiplyStatMods": false,
+	"bMultiplyCompliment": false,
+	"base":
+	{
+		"expression": "const base = GetStat(GetOwner(), $#10516612381411111:109343399106254$); \r\nconst coeffType = EvalE($#10516612381411112:6064630531423601645$);\r\nconst scalar = EvalE($#10516612381411112:6064633419410636809$);\r\nconst rating = GetStat(GetInstigator(), $#10516612381411111:109343269148323$);\r\nconst inheritance = 0.75;\r\nbase * inheritance + rating / (rating + coeffType) * scalar"
+	},
+	"waterfallStatsBaseIds": [
+		{
+			"guid": "109343399106254",
+			"typeId": "10516612381411111",
+			"name": "None"
+		},
+		{
+			"guid": "109343269148323",
+			"typeId": "10516612381411111",
+			"name": "None"
+		}
+	],
+	"valueMin":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMinIds": [],
+	"valueMax":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMaxIds": [],
+	"regenRate":
+	{
+		"expression": ""
+	},
+	"waterfallStatsRegenIds": [],
+	"bRegenWhileDead": false,
+	"bRecalculateOnCombatState": false,
+	"onSpawn": "Reset_None",
+	"onDeath": "Reset_None",
+	"onRevive": "Reset_None",
+	"bPersistValue": false,
+	"replication": 5,
+	"shieldStatId":
+	{
+		"guid": "0",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"grantedEffects": [],
+	"guid": "109343399171822",
+	"name": "HealingPower",
+	"typeId": "10516612381411111"
+}
