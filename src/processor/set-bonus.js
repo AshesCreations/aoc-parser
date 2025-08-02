@@ -76,7 +76,32 @@ async function processSetBonusFile(filePath, statIdToName, dataDir) {
             );
           }
 
+          const description = extractDescription(
+            effectData.effectDescription || ""
+          ).join(" \n");
+
           const statMods = effectData.statModsIds || [];
+
+          if (statMods.length === 0) {
+            const effectObj = {
+              ...eff.effect,
+              name:
+                extractLastQuotedValue(effectData.effectName) ||
+                eff.effect.name ||
+                "",
+              description,
+            };
+
+            processedObject.effectBonuses.push({
+              count,
+              effect: effectObj,
+              minimumRarity: eff.minimumRarity,
+              maximumRarity: eff.maximumRarity,
+              stacks: eff.stacks,
+            });
+            continue;
+          }
+
           for (const mod of statMods) {
             const modId = mod.guid;
             let modData = getJson(
@@ -101,10 +126,6 @@ async function processSetBonusFile(filePath, statIdToName, dataDir) {
               dataDir
             );
             const numericValue = extractCoefficient(parsed);
-            const description = extractDescription(
-              effectData.effectDescription || ""
-            ).join(" \n");
-
             const effectObj = {
               ...eff.effect,
               name: statName,
