@@ -126,7 +126,6 @@ async function processSetBonusFile(filePath, statIdToName, dataDir) {
               dataDir
             );
             const numericValue = extractCoefficient(parsed);
-
             const effectObj = {
               ...eff.effect,
               name: statName,
