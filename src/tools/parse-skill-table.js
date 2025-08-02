@@ -430,7 +430,7 @@ function parseSkillTable(id, dataDir) {
             'SkillRequirement',
             reqGuid
           );
-          let skName = req.name;
+          let skillId = req.name;
           const targetGuid = req.skillRecordId?.guid;
           if (targetGuid && targetGuid !== '0') {
             const sk = loadJson(
@@ -453,36 +453,9 @@ function parseSkillTable(id, dataDir) {
                 'SkillRankRecord',
                 rankGuidReq
               );
-            const abilGuidReq = rankReq.abilityIdId?.guid;
-            const effGuidReq = rankReq.effectIdId?.guid;
-            if (abilGuidReq && abilGuidReq !== '0') {
-              let abilReq = loadJson(
-                dataDir,
-                'Abilities/AoCAbility',
-                'AoCAbility',
-                abilGuidReq
-              );
-              if (Object.keys(abilReq).length === 0)
-                abilReq = loadJson(
-                  dataDir,
-                  'Abilities/AoCAbility',
-                  'AoCAbilityRecord',
-                  abilGuidReq
-                );
-              const n = extractLastQuotedValue(abilReq.abilityName);
-              if (n) skName = n;
-            } else if (effGuidReq && effGuidReq !== '0') {
-              const effReq = loadJson(
-                dataDir,
-                'Effects/Effect',
-                'Effect',
-                effGuidReq
-              );
-              const n = extractLastQuotedValue(effReq.effectName);
-              if (n) skName = n;
-            }
+            if (rankReq && rankReq.name) skillId = rankReq.name;
           }
-          return skName ? formatEffectName(skName) : null;
+          return skillId || null;
         }).filter(Boolean)
       }
     });

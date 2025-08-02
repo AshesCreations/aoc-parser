@@ -174,7 +174,6 @@ async function main() {
     console.log("\nProcessing status effect files...");
     const effectsProcessed = await processStatusEffects(directoryData, statIdToName);
     console.log(`Status effects processing complete: ${effectsProcessed} entries saved`);
-
     console.log("\nAll processing complete. Closing connections...");
   } catch (error) {
     console.error(`An error occurred during processing: ${error.message}`);
