@@ -35,7 +35,7 @@ function resolvePlaceholders(text, effectData, dataDir, statIdToName) {
 
   // Statmod placeholders
   const statMods = effectData.statModsIds || [];
-  result = result.replace(/\$statmod(\d+)\.(by%|nostat)\$/gi, (m, idx, type) => {
+  result = result.replace(/\$statmod(\d+)\.(by%|nostat|onlystat)\$/gi, (m, idx, type) => {
     const index = parseInt(idx, 10);
     const ref = statMods[index];
     if (!ref) return m;
@@ -44,6 +44,10 @@ function resolvePlaceholders(text, effectData, dataDir, statIdToName) {
       mod = getJson(dataDir, '/Effects/StatMod', `StatModRecord_${ref.guid}.json`);
     }
     if (!mod || Object.keys(mod).length === 0) return m;
+    const statName = statIdToName[mod.statRefId?.guid] || '';
+    if (type.toLowerCase() === 'onlystat') {
+      return statName || m;
+    }
     let expr = parseValueExpression(
       mod.value?.expression || '',
       mod.valueInputTerms,
@@ -51,7 +55,6 @@ function resolvePlaceholders(text, effectData, dataDir, statIdToName) {
       dataDir
     );
     const val = evaluateExpression(expr);
-    const statName = statIdToName[mod.statRefId?.guid] || '';
     if (type.toLowerCase() === 'by%') {
       if (!isNaN(val)) {
         const num = (val * 100).toFixed(0);
@@ -62,6 +65,58 @@ function resolvePlaceholders(text, effectData, dataDir, statIdToName) {
     if (!isNaN(val)) return String(val);
     return expr;
   });
+
+  // Tick statmod placeholders (e.g., $tick0:statmod0.onlystat$)
+  result = result.replace(
+    /\$tick(\d+):statmod(\d+)\.(by%|nostat|onlystat)\$/gi,
+    (m, tickIdx, modIdx, type) => {
+      const tIdx = parseInt(tickIdx, 10);
+      const mIdx = parseInt(modIdx, 10);
+      const hitRef = (effectData.tickHitsIds || [])[tIdx];
+      if (!hitRef) return m;
+      const hit = getJson(
+        dataDir,
+        '/Abilities/AbilityHit',
+        `AbilityHit_${hitRef.guid}.json`
+      );
+      const mods = hit.statModsIds || [];
+      const ref = mods[mIdx];
+      if (!ref) return m;
+      let mod = getJson(dataDir, '/Effects/StatMod', `StatMod_${ref.guid}.json`);
+      if (!mod || Object.keys(mod).length === 0) {
+        mod = getJson(dataDir, '/Effects/StatMod', `StatModRecord_${ref.guid}.json`);
+      }
+      if (!mod || Object.keys(mod).length === 0) return m;
+      const statName = statIdToName[mod.statRefId?.guid] || '';
+      if (type.toLowerCase() === 'onlystat') {
+        return statName || m;
+      }
+      let expr = parseValueExpression(
+        mod.value?.expression || '',
+        mod.valueInputTerms,
+        statIdToName,
+        dataDir
+      );
+      const val = evaluateExpression(expr);
+      if (type.toLowerCase() === 'by%') {
+        if (!isNaN(val)) {
+          const num = (val * 100).toFixed(0);
+          return `${num}%${statName ? ' ' + statName : ''}`.trim();
+        }
+        return `${expr}${statName ? ' ' + statName : ''}`.trim();
+      }
+      if (!isNaN(val)) return String(val);
+      return expr;
+    }
+  );
+
+  // Tick timer placeholder
+  if (result.includes('$tick$')) {
+    const tickTime = effectData.tickTimer;
+    if (typeof tickTime === 'number' && tickTime > 0) {
+      result = result.replace(/\$tick\$/g, `${tickTime} seconds`);
+    }
+  }
 
   return result;
 }
@@ -93,6 +148,7 @@ async function processStatusEffects(directoryData, statIdToName) {
       effectName: name,
       effectDescription: description,
       effectIcon: data.effectIcon,
+      effectCategory: data.effectCategory,
     });
   }
 
