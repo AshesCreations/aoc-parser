@@ -1,0 +1,86 @@
+{
+	"predicate":
+	{
+		"expression": ""
+	},
+	"rewardDefContainers": [
+		{
+			"grantPredicate":
+			{
+				"expression": ""
+			},
+			"selectionAlgorithm": "All",
+			"numberToSelect": 0,
+			"grantMethod": "Always",
+			"rewardsWeightCurve":
+			{
+				"externalCurve": "None",
+				"editorCurveData":
+				{
+					"keys": [],
+					"defaultValue": 3.4028234663852886e+38,
+					"preInfinityExtrap": "RCCE_Constant",
+					"postInfinityExtrap": "RCCE_Constant",
+					"keyHandlesToIndices":
+					{
+					}
+				}
+			},
+			"weightsPerReward": [],
+			"maxSelectorChoices": 0,
+			"rewards": [
+				{
+					"displayName": "NSLOCTEXT(\"\", \"3447CE5C47A17088FECE24BC7BF9B65F\", \"Terrorgore Banner\")",
+					"currency":
+					{
+					},
+					"itemRewards": [
+						{
+							"item":
+							{
+								"itemId":
+								{
+									"guid": "6064629575238287676",
+									"typeId": "1091110003",
+									"name": "None"
+								},
+								"variationId":
+								{
+									"guid": "6064629086625660928",
+									"typeId": "1091111111",
+									"name": "None"
+								}
+							},
+							"quantity":
+							{
+								"expression": "1"
+							}
+						}
+					],
+					"experienceRewards": []
+				}
+			]
+		}
+	],
+	"subTableSelectionAlgorithm": "None",
+	"numberOfSubtablesToSelect": 2,
+	"weightsPerSubTable": [],
+	"subTablesWeightCurve":
+	{
+		"externalCurve": "None",
+		"editorCurveData":
+		{
+			"keys": [],
+			"defaultValue": 3.4028234663852886e+38,
+			"preInfinityExtrap": "RCCE_Constant",
+			"postInfinityExtrap": "RCCE_Constant",
+			"keyHandlesToIndices":
+			{
+			}
+		}
+	},
+	"subTablesIds": [],
+	"guid": "6064629455985180784",
+	"name": "Reward_AR_SA_00019_Q1_GiveItem_banner",
+	"typeId": "1091110040"
+}

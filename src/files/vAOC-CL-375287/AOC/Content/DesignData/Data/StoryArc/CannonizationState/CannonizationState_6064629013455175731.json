@@ -1,0 +1,51 @@
+{
+	"localized": false,
+	"spawnsIds": [
+		{
+			"guid": "6064629013474902069",
+			"typeId": "420006",
+			"name": "None"
+		},
+		{
+			"guid": "6064629252434690052",
+			"typeId": "420006",
+			"name": "None"
+		}
+	],
+	"populationSetsIds": [
+		{
+			"guid": "6064630270761773547",
+			"typeId": "5111005",
+			"name": "None"
+		},
+		{
+			"guid": "6064630270761776006",
+			"typeId": "5111005",
+			"name": "None"
+		}
+	],
+	"spawnLocations": [
+		{
+			"x": -811119.18433399999,
+			"y": 612039.69635800004,
+			"z": 12165.857722999999
+		},
+		{
+			"x": -811119.18433399999,
+			"y": 612039.69635800004,
+			"z": 12165.857722999999
+		}
+	],
+	"localDefault": false,
+	"globalEnablement":
+	{
+		"expression": "true && IsStoryArcInPhase(\"MA_0010_TheGreenBattle\", \"MA_0010_TheGreenBattle_P4\") && (GetStoryArcVariable(\"MA_0010_TheGreenBattle\", \"NobleArc\") >= GetStoryArcVariable(\"MA_0010_TheGreenBattle\", \"MagesArc\"))"
+	},
+	"localizedEnablement":
+	{
+		"expression": ""
+	},
+	"guid": "6064629013455175731",
+	"name": "MA_0010_TheGreenBattle_NobleArc",
+	"typeId": "1091110042"
+}

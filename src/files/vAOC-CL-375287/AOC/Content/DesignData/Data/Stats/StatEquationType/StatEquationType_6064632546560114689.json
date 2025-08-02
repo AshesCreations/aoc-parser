@@ -1,0 +1,12 @@
+{
+	"equation":
+	{
+		"expression": "const count = GetEffectCount(GetInstigator(), $#30316002:6064629093014044673$)\r\n+GetEffectCount(GetInstigator(), $#30316002:6064629105628020751$)\r\n+GetEffectCount(GetInstigator(), $#30316002:6064629105627627534$);\r\n\r\nconst appliedCount = GetEffectCount(GetOwner(), $#30316002:6064632264379138879$)\r\n+GetEffectCount(GetOwner(), $#30316002:6064632264985876290$)\r\n+GetEffectCount(GetOwner(), $#30316002:6064632266251960328$)\r\n+GetEffectCount(GetOwner(), $#30316002:6064632266264608780$)\r\n+GetEffectCount(GetOwner(), $#30316002:6064632266198941696$)\r\n+GetEffectCount(GetOwner(), $#30316002:6064632266234724356$);\r\n\r\nSelectFloat(count <= 1 && appliedCount == 0, 3600.0, 30.0)"
+	},
+	"constraints":
+	{
+	},
+	"guid": "6064632546560114689",
+	"name": "Mage_EnchantWeapon_Duration",
+	"typeId": "10516612381411112"
+}

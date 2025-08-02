@@ -1,0 +1,137 @@
+{
+	"predicate":
+	{
+		"expression": "false"
+	},
+	"rewardDefContainers": [
+		{
+			"grantPredicate":
+			{
+				"expression": "EvalFormula($#10516612381411113:6064633373282205706$)"
+			},
+			"selectionAlgorithm": "PerElementWeightedRandom",
+			"numberToSelect": 0,
+			"grantMethod": "Always",
+			"rewardsWeightCurve":
+			{
+				"externalCurve": "None",
+				"editorCurveData":
+				{
+					"keys": [],
+					"defaultValue": 3.4028234663852886e+38,
+					"preInfinityExtrap": "RCCE_Constant",
+					"postInfinityExtrap": "RCCE_Constant",
+					"keyHandlesToIndices":
+					{
+					}
+				}
+			},
+			"weightsPerReward": [ 1, 50 ],
+			"percentageDropRatePerReward": [],
+			"maxSelectorChoices": 0,
+			"rewards": [
+				{
+					"displayName": "",
+					"currency":
+					{
+					},
+					"itemRewards": [
+						{
+							"item":
+							{
+								"itemId":
+								{
+									"guid": "6064633174719136182",
+									"typeId": "1091110003",
+									"name": "None"
+								},
+								"variationId":
+								{
+									"guid": "6064633340694825536",
+									"typeId": "1091111111",
+									"name": "None"
+								}
+							},
+							"quantity":
+							{
+								"expression": "1"
+							},
+							"bPrioritizeQuality": false
+						}
+					],
+					"experienceRewards": []
+				},
+				{
+					"displayName": "",
+					"currency":
+					{
+					},
+					"itemRewards": [
+						{
+							"item":
+							{
+								"itemId":
+								{
+									"guid": "6064630406144655379",
+									"typeId": "1091110003",
+									"name": "None"
+								},
+								"variationId":
+								{
+									"guid": "6064633340694825536",
+									"typeId": "1091111111",
+									"name": "None"
+								}
+							},
+							"quantity":
+							{
+								"expression": "1"
+							},
+							"bPrioritizeQuality": false
+						}
+					],
+					"experienceRewards": []
+				}
+			],
+			"rewardContainerIcon": "None"
+		}
+	],
+	"subTableSelectionAlgorithm": "All",
+	"numberOfSubtablesToSelect": 2,
+	"weightsPerSubTable": [],
+	"percentagePerSubTable": [],
+	"subTablesWeightCurve":
+	{
+		"externalCurve": "None",
+		"editorCurveData":
+		{
+			"keys": [],
+			"defaultValue": 3.4028234663852886e+38,
+			"preInfinityExtrap": "RCCE_Constant",
+			"postInfinityExtrap": "RCCE_Constant",
+			"keyHandlesToIndices":
+			{
+			}
+		}
+	},
+	"subTablesIds": [
+		{
+			"guid": "6064630445581008940",
+			"typeId": "1091110040",
+			"name": "None"
+		},
+		{
+			"guid": "6064630445592608814",
+			"typeId": "1091110040",
+			"name": "None"
+		},
+		{
+			"guid": "6064629603162324997",
+			"typeId": "1091110040",
+			"name": "None"
+		}
+	],
+	"guid": "6064633373325590542",
+	"name": "Hunting_Grem_Prototype_CanTame_Mangled",
+	"typeId": "1091110040"
+}

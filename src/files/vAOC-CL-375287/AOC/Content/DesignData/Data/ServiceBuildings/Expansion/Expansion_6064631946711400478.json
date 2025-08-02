@@ -1,0 +1,132 @@
+{
+	"dEPRECATED_ExpansionPrerequisiteIds": [],
+	"dEPRECATED_RequiredCapabilitiesIds": [],
+	"dEPRECATED_ExpansionSlotId":
+	{
+		"guid": "0",
+		"typeId": "7823460",
+		"name": "None"
+	},
+	"addedMaintenanceId":
+	{
+		"guid": "6064633935489138706",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"dEPRECATED_NodeConstructionCostId":
+	{
+		"guid": "0",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"postInitiationPlayerConstructionCostId":
+	{
+		"guid": "6064633930268737636",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"playerConstructionPhaseDurationMultiplier":
+	{
+		"expression": ""
+	},
+	"playerConstructionPhaseDuration":
+	{
+		"duration": "172800000"
+	},
+	"addedRepairCostId":
+	{
+		"guid": "6064633930268868709",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"addedDisarrayRepairCostId":
+	{
+		"guid": "6064633930268999782",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"expansionName": "Market Manipulation",
+	"expansionDescription": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"F823A492400881191EDD0CABB662AFF7\", \"Provides a bonus to Caravan Speed for everyone in the node, the bonus is increased for citizens of the node.\")",
+	"icon": "/Game/UI/Icons/Nodes/Buildings/Building_Management/TUI_Icon_Construction_Support_TradeBureau_EXP_0C_Building_MarketManipulation.TUI_Icon_Construction_Support_TradeBureau_EXP_0C_Building_MarketManipulation",
+	"buildingServices": [
+		{
+			"icon": "/Game/UI/Icons/Nodes/Buildings/BuildingServices/TUI_Icon_ServiceIcon_NodeBuff.TUI_Icon_ServiceIcon_NodeBuff",
+			"serviceName": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"AD88C80F4CC7A91594F0A398A808B939\", \"Bonus to  Caravan Speed\")",
+			"serviceDescription": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"800A559140FF1154062DD98EEF06680A\", \"Bonus to  Caravan Speed for everyone in the node. The bonus is increased further for citizens of the node \")",
+			"bCitizenExclusive": true,
+			"serviceGroupGameplayTag":
+			{
+				"tagName": "ServiceBuilding.ServiceGroup.Commerce"
+			},
+			"expansionSkillId":
+			{
+				"guid": "6064631946603135004",
+				"typeId": "981011333",
+				"name": "None"
+			}
+		}
+	],
+	"serviceGroupTag":
+	{
+		"tagName": "None"
+	},
+	"postInitiationEvent": 0,
+	"postInitiationVote": true,
+	"voteDuration":
+	{
+		"duration": "172800000"
+	},
+	"voteResultDuration":
+	{
+		"expression": ""
+	},
+	"removalVoteDuration":
+	{
+		"duration": "172800000"
+	},
+	"removalVoteResultDuration":
+	{
+		"expression": ""
+	},
+	"requiredAchievements": [],
+	"expressionRequirements":
+	{
+		"expression": ""
+	},
+	"expansionSpawnsIds":
+	{
+	},
+	"constructionDuration":
+	{
+		"duration": "0"
+	},
+	"dEPRECATED_CapabilitiesIds": [],
+	"dEPRECATED_NodeEffectId":
+	{
+		"guid": "0",
+		"typeId": "9127426",
+		"name": "None"
+	},
+	"nodeModificationsIds": [
+		{
+			"guid": "6064633967966879762",
+			"typeId": "1091110048",
+			"name": "None"
+		}
+	],
+	"expansionAssetSets": [
+		{
+			"bReplaceBuilding": true,
+			"buildingNodeAssetSetId":
+			{
+				"guid": "6064633935084847108",
+				"typeId": "1323521346",
+				"name": "None"
+			}
+		}
+	],
+	"expansionPopSpawns": [],
+	"guid": "6064631946711400478",
+	"name": "Construction_Support_Trade_Bureau_EXP_0C_MarketManipulation",
+	"typeId": "7823461"
+}

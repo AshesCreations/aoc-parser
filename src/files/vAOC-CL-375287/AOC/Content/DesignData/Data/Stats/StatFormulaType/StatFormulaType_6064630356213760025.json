@@ -1,0 +1,70 @@
+{
+	"equationId":
+	{
+		"guid": "6064630356432257071",
+		"typeId": "10516612381411112",
+		"name": "None"
+	},
+	"inputTerms": [
+		{
+			"termId":
+			{
+				"guid": "6064630327859871745",
+				"typeId": "10516612381411115",
+				"name": "None"
+			},
+			"value":
+			{
+				"expression": "GetArtisanshipModifiedStat(GetInstigator(), $#10516612381411111:6064629302956261784$)"
+			},
+			"bOptional": false,
+			"bKeepBeyondScope": false,
+			"filter":
+			{
+				"expression": ""
+			},
+			"mergeRuleOverride": "Merge_Default"
+		},
+		{
+			"termId":
+			{
+				"guid": "6064632378572341252",
+				"typeId": "10516612381411115",
+				"name": "None"
+			},
+			"value":
+			{
+				"expression": "GetArtisanshipModifiedStat(GetInstigator(), $#10516612381411111:6064629302956458430$)"
+			},
+			"bOptional": false,
+			"bKeepBeyondScope": false,
+			"filter":
+			{
+				"expression": ""
+			},
+			"mergeRuleOverride": "Merge_Default"
+		},
+		{
+			"termId":
+			{
+				"guid": "6064632378780221454",
+				"typeId": "10516612381411115",
+				"name": "None"
+			},
+			"value":
+			{
+				"expression": "GetArtisanshipModifiedStat(GetInstigator(), $#10516612381411111:6064629302956458442$)"
+			},
+			"bOptional": false,
+			"bKeepBeyondScope": false,
+			"filter":
+			{
+				"expression": ""
+			},
+			"mergeRuleOverride": "Merge_Default"
+		}
+	],
+	"guid": "6064630356213760025",
+	"name": "Artisan_Gathering_Mining_Pan_Quantity",
+	"typeId": "10516612381411113"
+}

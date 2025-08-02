@@ -1,0 +1,162 @@
+{
+	"predicate":
+	{
+		"expression": ""
+	},
+	"rewardDefContainers": [
+		{
+			"grantPredicate":
+			{
+				"expression": ""
+			},
+			"selectionAlgorithm": "RollEachByPercent",
+			"numberToSelect": 0,
+			"grantMethod": "Always",
+			"rewardsWeightCurve":
+			{
+				"externalCurve": "None",
+				"editorCurveData":
+				{
+					"keys": [],
+					"defaultValue": 3.4028234663852886e+38,
+					"preInfinityExtrap": "RCCE_Constant",
+					"postInfinityExtrap": "RCCE_Constant",
+					"keyHandlesToIndices":
+					{
+					}
+				}
+			},
+			"weightsPerReward": [],
+			"percentageDropRatePerReward": [
+				{
+					"expression": "0.2"
+				},
+				{
+					"expression": "0.2"
+				},
+				{
+					"expression": "0.2"
+				}
+			],
+			"maxSelectorChoices": 0,
+			"rewards": [
+				{
+					"displayName": "",
+					"currency":
+					{
+					},
+					"itemRewards": [
+						{
+							"item":
+							{
+								"itemId":
+								{
+									"guid": "6064633861003425052",
+									"typeId": "1091110003",
+									"name": "None"
+								},
+								"variationId":
+								{
+									"guid": "0",
+									"typeId": "1091111111",
+									"name": "None"
+								}
+							},
+							"quantity":
+							{
+								"expression": "1"
+							},
+							"bPrioritizeQuality": false
+						}
+					],
+					"experienceRewards": []
+				},
+				{
+					"displayName": "",
+					"currency":
+					{
+					},
+					"itemRewards": [
+						{
+							"item":
+							{
+								"itemId":
+								{
+									"guid": "6064633860984747291",
+									"typeId": "1091110003",
+									"name": "None"
+								},
+								"variationId":
+								{
+									"guid": "0",
+									"typeId": "1091111111",
+									"name": "None"
+								}
+							},
+							"quantity":
+							{
+								"expression": "1"
+							},
+							"bPrioritizeQuality": false
+						}
+					],
+					"experienceRewards": []
+				},
+				{
+					"displayName": "",
+					"currency":
+					{
+					},
+					"itemRewards": [
+						{
+							"item":
+							{
+								"itemId":
+								{
+									"guid": "6064633861005587741",
+									"typeId": "1091110003",
+									"name": "None"
+								},
+								"variationId":
+								{
+									"guid": "0",
+									"typeId": "1091111111",
+									"name": "None"
+								}
+							},
+							"quantity":
+							{
+								"expression": "1"
+							},
+							"bPrioritizeQuality": false
+						}
+					],
+					"experienceRewards": []
+				}
+			],
+			"rewardContainerIcon": "None"
+		}
+	],
+	"subTableSelectionAlgorithm": "None",
+	"numberOfSubtablesToSelect": 2,
+	"weightsPerSubTable": [],
+	"percentagePerSubTable": [],
+	"subTablesWeightCurve":
+	{
+		"externalCurve": "None",
+		"editorCurveData":
+		{
+			"keys": [],
+			"defaultValue": 3.4028234663852886e+38,
+			"preInfinityExtrap": "RCCE_Constant",
+			"postInfinityExtrap": "RCCE_Constant",
+			"keyHandlesToIndices":
+			{
+			}
+		}
+	},
+	"subTablesIds": [],
+	"guid": "6064633861183845727",
+	"name": "ANV_FTUE_HR_0009_ThoseThatRemained_Runes_RewardTable",
+	"typeId": "1091110040"
+}

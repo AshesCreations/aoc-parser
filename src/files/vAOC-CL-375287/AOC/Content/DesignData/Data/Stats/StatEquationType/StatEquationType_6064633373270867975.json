@@ -1,0 +1,12 @@
+{
+	"equation":
+	{
+		"expression": "// Amount of times the creature has been hit\r\nconst hitAmount = GetStat(GetInteractionTarget(), $#10516612381411111:6064633304797806592$);\r\n\r\n// The thresholds for Injured & Wounded state of the hunting creature. Set via stat initializer on the NPC\r\nconst woundedThreshold = GetStat(GetInteractionTarget(), $#10516612381411111:6064633339986053691$);\r\nconst injuredThreshold = GetStat(GetInteractionTarget(), $#10516612381411111:6064633339983432250$);\r\n\r\nconst isInjured = hitAmount < woundedThreshold && hitAmount >= injuredThreshold;\r\n\r\nisInjured"
+	},
+	"constraints":
+	{
+	},
+	"guid": "6064633373270867975",
+	"name": "Artisan_Gathering_Hunting_Prototype_HitThreshold_Injured",
+	"typeId": "10516612381411112"
+}

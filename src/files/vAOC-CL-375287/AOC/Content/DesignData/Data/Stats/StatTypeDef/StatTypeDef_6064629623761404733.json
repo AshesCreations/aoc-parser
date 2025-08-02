@@ -1,0 +1,55 @@
+{
+	"displayName": "NSLOCTEXT(\"\", \"C6A911B9482AC9B9447B60A7A742B6BF\", \"Divine Power Regen\")",
+	"description": "",
+	"bHidden": false,
+	"gameplayType": "Type_Combat",
+	"bHasWaterfallStatsUI": false,
+	"waterfallStatsUIIds": [],
+	"bDisplayAsPercentage": false,
+	"statType": "Type_Float",
+	"bClampStatFinalValue": false,
+	"bMultiplyStatMods": false,
+	"bMultiplyCompliment": false,
+	"base":
+	{
+		"expression": "0"
+	},
+	"waterfallStatsBaseIds": [],
+	"valueMin":
+	{
+		"expression": "0"
+	},
+	"waterfallStatsMinIds": [],
+	"valueMax":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMaxIds": [],
+	"regenRate":
+	{
+		"expression": "const gen = GetStat(GetInstigator(), $#10516612381411111:6064629623761404733$);\r\n-gen*0.15"
+	},
+	"waterfallStatsRegenIds": [
+		{
+			"guid": "6064629623761404733",
+			"typeId": "10516612381411111",
+			"name": "None"
+		}
+	],
+	"bRegenWhileDead": true,
+	"onSpawn": "Reset_None",
+	"onDeath": "Reset_SetMin",
+	"onRevive": "Reset_None",
+	"bPersistValue": false,
+	"replication": 1,
+	"shieldStatId":
+	{
+		"guid": "0",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"grantedEffects": [],
+	"guid": "6064629623761404733",
+	"name": "Cleric_DivinePower_Gen",
+	"typeId": "10516612381411111"
+}

@@ -1,0 +1,55 @@
+{
+	"displayName": "NSLOCTEXT(\"\", \"CE5D2B8E45D2B4762759A986CA04EEB2\", \"Divine Power\")",
+	"description": "",
+	"bHidden": false,
+	"gameplayType": "Type_Combat",
+	"bHasWaterfallStatsUI": false,
+	"waterfallStatsUIIds": [],
+	"bDisplayAsPercentage": false,
+	"statType": "Type_Float",
+	"bClampStatFinalValue": false,
+	"bMultiplyStatMods": false,
+	"bMultiplyCompliment": false,
+	"base":
+	{
+		"expression": "0"
+	},
+	"waterfallStatsBaseIds": [],
+	"valueMin":
+	{
+		"expression": "0"
+	},
+	"waterfallStatsMinIds": [],
+	"valueMax":
+	{
+		"expression": "100"
+	},
+	"waterfallStatsMaxIds": [],
+	"regenRate":
+	{
+		"expression": "const gen = GetStat(GetInstigator(), $#10516612381411111:6064629623761404733$);\r\nSelectFloat(gen < 1.0, -2.0, gen*0.15)"
+	},
+	"waterfallStatsRegenIds": [
+		{
+			"guid": "6064629623761404733",
+			"typeId": "10516612381411111",
+			"name": "None"
+		}
+	],
+	"bRegenWhileDead": true,
+	"onSpawn": "Reset_None",
+	"onDeath": "Reset_SetMin",
+	"onRevive": "Reset_None",
+	"bPersistValue": false,
+	"replication": 1,
+	"shieldStatId":
+	{
+		"guid": "0",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"grantedEffects": [],
+	"guid": "6064629623747772676",
+	"name": "Cleric_DivinePower",
+	"typeId": "10516612381411111"
+}

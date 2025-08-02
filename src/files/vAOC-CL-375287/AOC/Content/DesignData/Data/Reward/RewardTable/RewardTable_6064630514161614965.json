@@ -1,0 +1,86 @@
+{
+	"predicate":
+	{
+		"expression": ""
+	},
+	"rewardDefContainers": [
+		{
+			"grantPredicate":
+			{
+				"expression": "IsStoryArcInPhase(\"MA_0005B_TEW_EnemyWithin\",\"MAP_0005B_TEW_Phase01\")&&\r\nIsOnStoryArcQuest(GetPlayer(),\"MAQ_0005B_OSG_OnSacredGround\")\r\n"
+			},
+			"selectionAlgorithm": "All",
+			"numberToSelect": 0,
+			"grantMethod": "Always",
+			"rewardsWeightCurve":
+			{
+				"externalCurve": "None",
+				"editorCurveData":
+				{
+					"keys": [],
+					"defaultValue": 3.4028234663852886e+38,
+					"preInfinityExtrap": "RCCE_Constant",
+					"postInfinityExtrap": "RCCE_Constant",
+					"keyHandlesToIndices":
+					{
+					}
+				}
+			},
+			"weightsPerReward": [],
+			"maxSelectorChoices": 0,
+			"rewards": [
+				{
+					"displayName": "",
+					"currency":
+					{
+					},
+					"itemRewards": [
+						{
+							"item":
+							{
+								"itemId":
+								{
+									"guid": "6064630514122817647",
+									"typeId": "1091110003",
+									"name": "None"
+								},
+								"variationId":
+								{
+									"guid": "0",
+									"typeId": "1091111111",
+									"name": "None"
+								}
+							},
+							"quantity":
+							{
+								"expression": "1"
+							}
+						}
+					],
+					"experienceRewards": []
+				}
+			]
+		}
+	],
+	"subTableSelectionAlgorithm": "None",
+	"numberOfSubtablesToSelect": 2,
+	"weightsPerSubTable": [],
+	"subTablesWeightCurve":
+	{
+		"externalCurve": "None",
+		"editorCurveData":
+		{
+			"keys": [],
+			"defaultValue": 3.4028234663852886e+38,
+			"preInfinityExtrap": "RCCE_Constant",
+			"postInfinityExtrap": "RCCE_Constant",
+			"keyHandlesToIndices":
+			{
+			}
+		}
+	},
+	"subTablesIds": [],
+	"guid": "6064630514161614965",
+	"name": "MARW_0005B_OSG_MinoShield_Doombringer",
+	"typeId": "1091110040"
+}

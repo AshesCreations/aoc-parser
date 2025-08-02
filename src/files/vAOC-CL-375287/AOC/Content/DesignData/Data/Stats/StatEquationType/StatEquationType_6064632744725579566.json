@@ -1,0 +1,12 @@
+{
+	"equation":
+	{
+		"expression": "// cant be in front of boats / walls\r\nconst targetChar = GetStat(GetTarget(), $#10516612381411111:6064630798183235705$);\r\nconst angle = GetAngleBetween(GetTarget(),GetInstigator());\r\nangle < 90.0 && targetChar < 1.5\r\n//const targ = GetTarget();\r\n//const inst = GetInstigator();\r\n//const tfor = GetActorForward(targ);\r\n//const dir = Normalize(GetLocation(targ)-GetLocation(inst));\r\n//dotproduct(tfor,dir) > 0.5"
+	},
+	"constraints":
+	{
+	},
+	"guid": "6064632744725579566",
+	"name": "Rogue_Facing",
+	"typeId": "10516612381411112"
+}

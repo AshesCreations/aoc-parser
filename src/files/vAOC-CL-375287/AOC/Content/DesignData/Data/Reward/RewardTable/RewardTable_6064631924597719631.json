@@ -1,0 +1,88 @@
+{
+	"predicate":
+	{
+		"expression": ""
+	},
+	"rewardDefContainers": [
+		{
+			"grantPredicate":
+			{
+				"expression": ""
+			},
+			"selectionAlgorithm": "All",
+			"numberToSelect": 0,
+			"grantMethod": "Always",
+			"rewardsWeightCurve":
+			{
+				"externalCurve": "None",
+				"editorCurveData":
+				{
+					"keys": [],
+					"defaultValue": 3.4028234663852886e+38,
+					"preInfinityExtrap": "RCCE_Constant",
+					"postInfinityExtrap": "RCCE_Constant",
+					"keyHandlesToIndices":
+					{
+					}
+				}
+			},
+			"weightsPerReward": [],
+			"maxSelectorChoices": 0,
+			"rewards": [
+				{
+					"displayName": "",
+					"currency":
+					{
+					},
+					"itemRewards": [
+						{
+							"item":
+							{
+								"itemId":
+								{
+									"guid": "6064631924572750404",
+									"typeId": "1091110003",
+									"name": "None"
+								},
+								"variationId":
+								{
+									"guid": "0",
+									"typeId": "1091111111",
+									"name": "None"
+								}
+							},
+							"quantity":
+							{
+								"expression": "1"
+							},
+							"bPrioritizeQuality": false
+						}
+					],
+					"experienceRewards": []
+				}
+			],
+			"rewardContainerIcon": "None"
+		}
+	],
+	"subTableSelectionAlgorithm": "None",
+	"numberOfSubtablesToSelect": 2,
+	"weightsPerSubTable": [],
+	"subTablesWeightCurve":
+	{
+		"externalCurve": "None",
+		"editorCurveData":
+		{
+			"keys": [],
+			"defaultValue": 3.4028234663852886e+38,
+			"preInfinityExtrap": "RCCE_Constant",
+			"postInfinityExtrap": "RCCE_Constant",
+			"keyHandlesToIndices":
+			{
+			}
+		}
+	},
+	"subTablesIds": [],
+	"guid": "6064631924597719631",
+	"name": "CSQ_0083_FB_Petal_E_RewardTable",
+	"typeId": "1091110040"
+}

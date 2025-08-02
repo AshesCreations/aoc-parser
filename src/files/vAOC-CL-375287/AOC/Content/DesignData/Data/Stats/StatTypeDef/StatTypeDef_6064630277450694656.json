@@ -1,0 +1,55 @@
+{
+	"displayName": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"CDD2B33F4EBD62BE08E3949502A1F5B1\", \"Herbalism Scythe Expertise XP\")",
+	"description": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"DA2D7F5A493BC45372123A8880759EC0\", \"Increases Resource Expertise XP gain for Herbalism gatherable while gathering with a Scythe\")",
+	"bHidden": false,
+	"gameplayType": "Type_Artisanship",
+	"bHasWaterfallStatsUI": false,
+	"waterfallStatsUIIds": [],
+	"bDisplayAsPercentage": false,
+	"statType": "Type_Float",
+	"bClampStatFinalValue": false,
+	"bMultiplyStatMods": false,
+	"bMultiplyCompliment": false,
+	"base":
+	{
+		"expression": ""
+	},
+	"waterfallStatsBaseIds": [
+		{
+			"guid": "6064630277450956803",
+			"typeId": "10516612381411111",
+			"name": "None"
+		}
+	],
+	"valueMin":
+	{
+		"expression": "0"
+	},
+	"waterfallStatsMinIds": [],
+	"valueMax":
+	{
+		"expression": "99999"
+	},
+	"waterfallStatsMaxIds": [],
+	"regenRate":
+	{
+		"expression": ""
+	},
+	"waterfallStatsRegenIds": [],
+	"bRegenWhileDead": false,
+	"onSpawn": "Reset_None",
+	"onDeath": "Reset_None",
+	"onRevive": "Reset_None",
+	"bPersistValue": false,
+	"replication": 0,
+	"shieldStatId":
+	{
+		"guid": "0",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"grantedEffects": [],
+	"guid": "6064630277450694656",
+	"name": "Artisan_Gathering_Herbalism_Scythe_ExpertiseXP",
+	"typeId": "10516612381411111"
+}

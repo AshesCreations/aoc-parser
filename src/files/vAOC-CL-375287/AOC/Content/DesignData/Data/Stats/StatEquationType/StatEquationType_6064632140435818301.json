@@ -1,0 +1,12 @@
+{
+	"equation":
+	{
+		"expression": "var mult = 0.0;\r\nconst projDmg1 = GetSkillPurchased(GetInstigator(), $#30316003:6064630408247771149$, $#981011333:6064631455520587784$);\r\nconst projDmg2 = GetSkillPurchased(GetInstigator(), $#30316003:6064630408247771149$, $#981011333:6064631455520260103$);\r\nconst projDmg3 = GetSkillPurchased(GetInstigator(), $#30316003:6064630408247771149$, $#981011333:6064631455519932422$);\r\nconst dmgFocus1 = GetSkillPurchased(GetInstigator(), $#30316003:6064630408247771149$, $#981011333:6064631439080883568$);\r\nconst dmgFocus2 = GetSkillPurchased(GetInstigator(), $#30316003:6064630408247771149$, $#981011333:6064631439081342343$);\r\nconst dmgFocus3 = GetSkillPurchased(GetInstigator(), $#30316003:6064630408247771149$, $#981011333:6064631439081866662$);\r\n\r\nif(projDmg1){set mult = mult + 0.02;}\r\nif(projDmg2){set mult = mult + 0.02;}\r\nif(projDmg3){set mult = mult + 0.02;}\r\nif(dmgFocus1){set mult = mult + 0.01;}\r\nif(dmgFocus2){set mult = mult + 0.01;}\r\nif(dmgFocus3){set mult = mult + 0.01;}\r\n\r\nmult"
+	},
+	"constraints":
+	{
+	},
+	"guid": "6064632140435818301",
+	"name": "Weapon_Ranged_Wand_Passive_Direct_Damage",
+	"typeId": "10516612381411112"
+}

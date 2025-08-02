@@ -1,0 +1,12 @@
+{
+	"equation":
+	{
+		"expression": "// Amount of times the creature has been hit. Used as the input for the normalized curves to determine hitRarityMod\r\nconst hitAmount = GetStat(GetOwner(), $#10516612381411111:6064633304797806592$);\r\n\r\n// The thresholds for Injured, Wounded & Mangled states. Set via stat initializer on the NPC\r\nconst injuredThreshold = GetStat(GetOwner(), $#10516612381411111:6064633339983432250$);\r\nconst woundedThreshold = GetStat(GetOwner(), $#10516612381411111:6064633339986053691$);\r\nconst mangledThreshold = GetStat(GetOwner(), $#10516612381411111:6064633339987167804$);\r\n\r\n// TUNING VALUES\r\n// Curve min/max values. Will multiple the player's rarity stat by this mod in Artisan_Gathering_Hunting_Rarity formula. \r\nconst perfectMod = 1.25;\r\nconst injuredMod = 1.0;\r\nconst woundedMod = 0.75;\r\nconst mangledMod = 0.5;\r\n\r\n// Mod that gets returned to the Artisan_Gathering_Hunting_Rarity formula\r\nvar hitRarityMod = 1.0;\r\n\r\nif(hitAmount < injuredThreshold)\r\n{\r\n   set hitRarityMod = perfectMod;\r\n}\r\nelse if(hitAmount >= injuredThreshold && hitAmount < woundedThreshold)\r\n{\r\n   set hitRarityMod = injuredMod;\r\n}\r\nelse if(hitAmount >= woundedThreshold && hitAmount < mangledThreshold)\r\n{\r\n   set hitRarityMod = woundedMod;\r\n}\r\nelse if(hitAmount >= mangledThreshold)\r\n{\r\n   set hitRarityMod = mangledMod;\r\n}\r\n\r\nhitRarityMod"
+	},
+	"constraints":
+	{
+	},
+	"guid": "6064633340272511549",
+	"name": "Artisan_Gathering_Hunting_HitRarityMod",
+	"typeId": "10516612381411112"
+}

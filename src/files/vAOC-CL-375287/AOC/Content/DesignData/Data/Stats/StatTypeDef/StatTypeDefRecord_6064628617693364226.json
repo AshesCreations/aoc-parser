@@ -1,0 +1,56 @@
+{
+	"displayName": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"32A8B67B44527F9C7C07AF8DF2D3CFCF\", \"Crit Chance\")",
+	"description": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"6519E3D34987204D2AAE4EAC1CA591B6\", \"Increases the chance to deal a critical hit\")",
+	"bHidden": false,
+	"gameplayType": "Type_Combat",
+	"bHasWaterfallStatsUI": false,
+	"waterfallStatsUIIds": [],
+	"bDisplayAsPercentage": true,
+	"statType": "Type_Float",
+	"bClampStatFinalValue": false,
+	"bMultiplyStatMods": false,
+	"bMultiplyCompliment": false,
+	"base":
+	{
+		"expression": "const rating = GetStat(GetInstigator(), $#10516612381411111:6064628617694412804$);\r\nconst coeff = EvalE($#10516612381411112:6064630400898760733$);\r\nconst mult = EvalE($#10516612381411112:6064632412935618563$);\r\n0.03 + \r\nrating / (rating * mult + coeff)"
+	},
+	"waterfallStatsBaseIds": [
+		{
+			"guid": "6064628617694412804",
+			"typeId": "10516612381411111",
+			"name": "None"
+		}
+	],
+	"valueMin":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMinIds": [],
+	"valueMax":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMaxIds": [],
+	"regenRate":
+	{
+		"expression": ""
+	},
+	"waterfallStatsRegenIds": [],
+	"bRegenWhileDead": false,
+	"bRecalculateOnCombatState": false,
+	"onSpawn": "Reset_None",
+	"onDeath": "Reset_None",
+	"onRevive": "Reset_None",
+	"bPersistValue": false,
+	"replication": 1,
+	"shieldStatId":
+	{
+		"guid": "0",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"grantedEffects": [],
+	"guid": "6064628617693364226",
+	"name": "CriticalChance",
+	"typeId": "10516612381411111"
+}

@@ -1,0 +1,100 @@
+{
+	"predicate":
+	{
+		"expression": ""
+	},
+	"rewardDefContainers": [
+		{
+			"grantPredicate":
+			{
+				"expression": ""
+			},
+			"selectionAlgorithm": "RollEachByPercent",
+			"numberToSelect": 0,
+			"grantMethod": "Always",
+			"rewardsWeightCurve":
+			{
+				"externalCurve": "None",
+				"editorCurveData":
+				{
+					"keys": [],
+					"defaultValue": 3.4028234663852886e+38,
+					"preInfinityExtrap": "RCCE_Constant",
+					"postInfinityExtrap": "RCCE_Constant",
+					"keyHandlesToIndices":
+					{
+					}
+				}
+			},
+			"weightsPerReward": [],
+			"percentageDropRatePerReward": [
+				{
+					"expression": "0.2"
+				}
+			],
+			"maxSelectorChoices": 0,
+			"rewards": [
+				{
+					"displayName": "",
+					"currency":
+					{
+					},
+					"itemRewards": [
+						{
+							"item":
+							{
+								"itemId":
+								{
+									"guid": "6064633254046007300",
+									"typeId": "1091110003",
+									"name": "None"
+								},
+								"variationId":
+								{
+									"guid": "6064630656775618586",
+									"typeId": "1091111111",
+									"name": "None"
+								}
+							},
+							"quantity":
+							{
+								"expression": "RandIntRange(1,5) + Evalformula($#10516612381411113:6064630356244103197$)"
+							},
+							"bPrioritizeQuality": true
+						}
+					],
+					"experienceRewards": []
+				}
+			],
+			"rewardContainerIcon": "None"
+		}
+	],
+	"subTableSelectionAlgorithm": "All",
+	"numberOfSubtablesToSelect": 2,
+	"weightsPerSubTable": [],
+	"percentagePerSubTable": [],
+	"subTablesWeightCurve":
+	{
+		"externalCurve": "None",
+		"editorCurveData":
+		{
+			"keys": [],
+			"defaultValue": 3.4028234663852886e+38,
+			"preInfinityExtrap": "RCCE_Constant",
+			"postInfinityExtrap": "RCCE_Constant",
+			"keyHandlesToIndices":
+			{
+			}
+		}
+	},
+	"subTablesIds": [
+		{
+			"guid": "6064630445578649642",
+			"typeId": "1091110040",
+			"name": "None"
+		}
+	],
+	"guid": "6064633627798732800",
+	"name": "Coconut_Seed",
+	"typeId": "1091110040"
+}

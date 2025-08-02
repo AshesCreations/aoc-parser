@@ -1,0 +1,103 @@
+{
+	"statIds": [
+		{
+			"statId":
+			{
+				"guid": "108986356618873",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "const v = EvalCurve($#10516612381411114:6064633152701988864$, Float(GetCharacterLevel(GetOwner())));\r\nGetStatInitRunningTotal() + v * 0.2"
+			}
+		},
+		{
+			"statId":
+			{
+				"guid": "109183598614140",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "const v = EvalCurve($#10516612381411114:6064630328054775808$, Float(GetCharacterLevel(GetOwner())));\r\nRound(v * 1.2)"
+			}
+		},
+		{
+			"statId":
+			{
+				"guid": "109183598614138",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "const v = EvalCurve($#10516612381411114:6064630328334811136$, Float(GetCharacterLevel(GetOwner())));\r\nRound(v * 1.3)"
+			}
+		},
+		{
+			"statId":
+			{
+				"guid": "109183598614139",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "const v = EvalCurve($#10516612381411114:6064630328334811137$, Float(GetCharacterLevel(GetOwner())));\r\nRound(v * 1.0)"
+			}
+		},
+		{
+			"statId":
+			{
+				"guid": "109183598614143",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "const v = EvalCurve($#10516612381411114:6064630328334811138$, Float(GetCharacterLevel(GetOwner())));\r\nRound(v * 1.0)"
+			}
+		},
+		{
+			"statId":
+			{
+				"guid": "109183598614141",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "const v = EvalCurve($#10516612381411114:6064630328334811139$, Float(GetCharacterLevel(GetOwner())));\r\nRound(v * 0.8)"
+			}
+		},
+		{
+			"statId":
+			{
+				"guid": "109183598614142",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "const v = EvalCurve($#10516612381411114:6064630328334811140$, Float(GetCharacterLevel(GetOwner())));\r\nRound(v * 0.8)"
+			}
+		},
+		{
+			"statId":
+			{
+				"guid": "6064629959589298751",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": ""
+			}
+		}
+	],
+	"guid": "6064630372725096450",
+	"name": "Player_Base_Fighter",
+	"typeId": "409016"
+}

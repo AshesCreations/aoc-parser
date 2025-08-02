@@ -1,0 +1,115 @@
+{
+	"predicate":
+	{
+		"expression": ""
+	},
+	"rewardDefContainers": [
+		{
+			"grantPredicate":
+			{
+				"expression": "true"
+			},
+			"selectionAlgorithm": "All",
+			"grantMethod": "Always",
+			"rewardsWeightCurve":
+			{
+				"externalCurve": "None",
+				"editorCurveData":
+				{
+					"keys": [],
+					"defaultValue": 3.4028234663852886e+38,
+					"preInfinityExtrap": "RCCE_Constant",
+					"postInfinityExtrap": "RCCE_Constant",
+					"keyHandlesToIndices":
+					{
+					}
+				}
+			},
+			"weightsPerReward": [],
+			"maxSelectorChoices": 0,
+			"rewards": [
+				{
+					"displayName": "NSLOCTEXT(\"\", \"3931D83C4569B8DDDED27B8C07BA90C3\", \"100g\")",
+					"currency":
+					{
+						"(Guid=6064628901272551424,TypeId=1011151289)":
+						{
+							"expression": "100"
+						}
+					},
+					"itemRewards": [],
+					"experienceRewards": []
+				}
+			]
+		},
+		{
+			"grantPredicate":
+			{
+				"expression": "false"
+			},
+			"selectionAlgorithm": "All",
+			"grantMethod": "Always",
+			"rewardsWeightCurve":
+			{
+				"externalCurve": "None",
+				"editorCurveData":
+				{
+					"keys": [],
+					"defaultValue": 3.4028234663852886e+38,
+					"preInfinityExtrap": "RCCE_Constant",
+					"postInfinityExtrap": "RCCE_Constant",
+					"keyHandlesToIndices":
+					{
+					}
+				}
+			},
+			"weightsPerReward": [],
+			"maxSelectorChoices": 0,
+			"rewards": [
+				{
+					"displayName": "NSLOCTEXT(\"\", \"60D71AA74A92705C9216E9A37E84544D\", \"150g\")",
+					"currency":
+					{
+						"(Guid=6064628901272551424,TypeId=1011151289)":
+						{
+							"expression": "150"
+						}
+					},
+					"itemRewards": [],
+					"experienceRewards": []
+				}
+			]
+		}
+	],
+	"subTableSelectionAlgorithm": "PureRandom",
+	"weightsPerSubTable": [],
+	"subTablesWeightCurve":
+	{
+		"externalCurve": "None",
+		"editorCurveData":
+		{
+			"keys": [],
+			"defaultValue": 3.4028234663852886e+38,
+			"preInfinityExtrap": "RCCE_Constant",
+			"postInfinityExtrap": "RCCE_Constant",
+			"keyHandlesToIndices":
+			{
+			}
+		}
+	},
+	"subTablesIds": [
+		{
+			"guid": "6064628933851217921",
+			"typeId": "1091110040",
+			"name": "None"
+		},
+		{
+			"guid": "6064628933851217922",
+			"typeId": "1091110040",
+			"name": "None"
+		}
+	],
+	"guid": "6064628933850234880",
+	"name": "TestTable_0_Root",
+	"typeId": "1091110040"
+}

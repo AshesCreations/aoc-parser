@@ -1,0 +1,56 @@
+{
+	"displayName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"F6E4552745C29E877137A994F105742E\", \"PVP Guild War\")",
+	"phaseToastId":
+	{
+		"guid": "6064631164654583808",
+		"typeId": "949952112328",
+		"name": "None"
+	},
+	"victoryConditionText": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"C8C8043C43D42714A5FD3C802AC64FE1\", \"First Guild to 100 kills or the Guild with the most kills after 2 hours\")",
+	"phaseDescriptionLong": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"3034B609428E8B24573E5EA984872E31\", \"The war will end after two hours, or after one of the participating guilds have racked up 100 kills, whichever comes first.\")",
+	"bStartEventOnPhaseBegin": true,
+	"bEventsOccurRandomly": false,
+	"bLoopWarEventsArray": true,
+	"warEventsIds": [
+		{
+			"guid": "6064632342411149312",
+			"typeId": "23095125",
+			"name": "None"
+		}
+	],
+	"schedulePlusMinusMinutes": 60,
+	"scheduleOfEvents": [ 0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22 ],
+	"bUseParentWarRecordVictoryPointTable": true,
+	"bUseGlobalConstantVictoryPointTable": false,
+	"victoryPointTableId":
+	{
+		"guid": "0",
+		"typeId": "98966982",
+		"name": "None"
+	},
+	"bUseDefaultPhaseRewards": false,
+	"bUseDefaultObjectiveRewards": false,
+	"bUseDefaultEventRewards": false,
+	"completionCondition":
+	{
+		"expression": "War_HasTimeElapsedSeconds(60*120) ||\r\nWar_HasOrgScoredEnough(100) "
+	},
+	"bUseParentWarRecordLocaleSelectionOptions": true,
+	"phaseLocaleSelectionType": "WarRecordLocaleRequest",
+	"bTargetNodeLocaleRequestFirst": false,
+	"localeRequestId":
+	{
+		"guid": "0",
+		"typeId": "23095138",
+		"name": "None"
+	},
+	"customLocaleSelectionPerEvent": [],
+	"bFlaggedAgainstEachOther": true,
+	"bFlaggedInRelevantNodeZOIs": false,
+	"bAllowAlliance_UNSUPPORTED": false,
+	"bCanSurrender": true,
+	"surrenderAvailableSecondsAfterPhaseStart": 3600,
+	"guid": "6064632338179031041",
+	"name": "GuildWar_Variant0_PVP_Phase",
+	"typeId": "98966980"
+}

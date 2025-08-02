@@ -1,0 +1,12 @@
+{
+	"equation":
+	{
+		"expression": "var chance = 0.25 +\r\nSelectFloat(GetSkillPurchased(GetInstigator(),GetCurrentWeaponSkilltree(GetInstigator()),$#981011333:6064631404088786946$),0.1,0.0) +\r\nSelectFloat(GetSkillPurchased(GetInstigator(),GetCurrentWeaponSkilltree(GetInstigator()),$#981011333:6064631438737343969$),0.1,0.0) +\r\nSelectFloat(GetSkillPurchased(GetInstigator(),GetCurrentWeaponSkilltree(GetInstigator()),$#981011333:6064631438737212896$),0.1,0.0);\r\n\r\n//Check for Prism passive and proc eligibility\r\nif(GetEffectCount(GetOwner(),$#30316002:6064632704731185314$) > 0 && GetSkillPurchased(GetInstigator(), GetCurrentWeaponSkilltree(GetInstigator()), $#981011333:6064631439673277683$))\r\n{\r\nset chance = chance + 0.1;\r\n}\r\n\r\nchance"
+	},
+	"constraints":
+	{
+	},
+	"guid": "6064632693435662338",
+	"name": "Weapon_SkillTree_DeadlyExtendedFinisherProcChance",
+	"typeId": "10516612381411112"
+}

@@ -1,0 +1,51 @@
+{
+	"equationId":
+	{
+		"guid": "6064630339774709806",
+		"typeId": "10516612381411112",
+		"name": "None"
+	},
+	"inputTerms": [
+		{
+			"termId":
+			{
+				"guid": "6064630327866163210",
+				"typeId": "10516612381411115",
+				"name": "None"
+			},
+			"value":
+			{
+				"expression": "GetArtisanshipModifiedStat(GetInstigator(), $#10516612381411111:6064629302956655088$)"
+			},
+			"bOptional": false,
+			"bKeepBeyondScope": false,
+			"filter":
+			{
+				"expression": ""
+			},
+			"mergeRuleOverride": "Merge_Default"
+		},
+		{
+			"termId":
+			{
+				"guid": "6064632378573586444",
+				"typeId": "10516612381411115",
+				"name": "None"
+			},
+			"value":
+			{
+				"expression": "GetArtisanshipModifiedStat(GetInstigator(), $#10516612381411111:6064629302956720636$)"
+			},
+			"bOptional": false,
+			"bKeepBeyondScope": false,
+			"filter":
+			{
+				"expression": ""
+			},
+			"mergeRuleOverride": "Merge_Default"
+		}
+	],
+	"guid": "6064630339606020114",
+	"name": "Artisan_Processing_Metalworking_XP",
+	"typeId": "10516612381411113"
+}

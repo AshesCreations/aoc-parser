@@ -1,0 +1,54 @@
+{
+	"displayName": "NSLOCTEXT(\"\", \"4EFAE3D34B964F83448691B054AFF5E0\", \"Crafting XP\")",
+	"description": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"D6C075844AF6E5D880D072983FE6AD4C\", \"Increases XP gain of all crafting discipline profession craft\")",
+	"bHidden": false,
+	"gameplayType": "Type_Artisanship",
+	"bHasWaterfallStatsUI": false,
+	"waterfallStatsUIIds": [],
+	"bDisplayAsPercentage": false,
+	"statType": "Type_Float",
+	"bClampStatFinalValue": false,
+	"bMultiplyStatMods": false,
+	"bMultiplyCompliment": false,
+	"base":
+	{
+		"expression": ""
+	},
+	"waterfallStatsBaseIds": [
+		{
+			"guid": "6064630316224086021",
+			"typeId": "10516612381411111",
+			"name": "None"
+		}
+	],
+	"valueMin":
+	{
+		"expression": "0"
+	},
+	"waterfallStatsMinIds": [],
+	"valueMax":
+	{
+		"expression": "99999"
+	},
+	"waterfallStatsMaxIds": [],
+	"regenRate":
+	{
+		"expression": ""
+	},
+	"waterfallStatsRegenIds": [],
+	"bRegenWhileDead": false,
+	"onSpawn": "Reset_None",
+	"onDeath": "Reset_None",
+	"onRevive": "Reset_None",
+	"bPersistValue": false,
+	"replication": 1,
+	"shieldStatId":
+	{
+		"guid": "0",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"guid": "6064630316224020484",
+	"name": "Artisan_Crafting_XP",
+	"typeId": "10516612381411111"
+}

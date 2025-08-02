@@ -1,0 +1,45 @@
+{
+	"predicate":
+	{
+		"expression": "(GetPlayerProfessionCertificationLevel(GetPlayerGUID(),\"Fishing\") >= 1)\r\n&& (GetEquipmentCertificationTier(GetInstigator(),EEquipSlot::FishingRod) == 1)"
+	},
+	"rewardDefContainers": [],
+	"subTableSelectionAlgorithm": "PerElementWeightedRandom",
+	"numberOfSubtablesToSelect": 2,
+	"weightsPerSubTable": [ 25, 25, 50 ],
+	"percentagePerSubTable": [],
+	"subTablesWeightCurve":
+	{
+		"externalCurve": "None",
+		"editorCurveData":
+		{
+			"keys": [],
+			"defaultValue": 3.4028234663852886e+38,
+			"preInfinityExtrap": "RCCE_Constant",
+			"postInfinityExtrap": "RCCE_Constant",
+			"keyHandlesToIndices":
+			{
+			}
+		}
+	},
+	"subTablesIds": [
+		{
+			"guid": "6064633453097320463",
+			"typeId": "1091110040",
+			"name": "None"
+		},
+		{
+			"guid": "6064633453098893328",
+			"typeId": "1091110040",
+			"name": "None"
+		},
+		{
+			"guid": "0",
+			"typeId": "1091110040",
+			"name": "None"
+		}
+	],
+	"guid": "6064633453130612756",
+	"name": "Fish_TurquoiseSea_T2",
+	"typeId": "1091110040"
+}

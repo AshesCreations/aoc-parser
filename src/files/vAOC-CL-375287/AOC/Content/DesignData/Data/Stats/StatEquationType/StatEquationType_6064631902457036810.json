@@ -1,0 +1,12 @@
+{
+	"equation":
+	{
+		"expression": "const isPlayer = GetStat(GetOwner(), $#10516612381411111:6064630798183235705$) == 1.0;\r\nvar ret = 1.0;\r\nif(isPlayer){\r\n    const stam = GetStat(GetOwner(), $#10516612381411111:6064629575339934476$);\r\n    const maxStam = GetStat(GetOwner(), $#10516612381411111:6064631747701440948$);\r\n    var maxMult = 0.5; // starting mult of 50% redux\r\n    // reduce max reduction by 10% per skill unlock\r\n    if(GetSkillPurchased(GetInstigator(), $#30316003:6064631673604472832$, $#981011333:6064631719323631645$)){\r\n        set maxMult = maxMult - 0.1;\r\n    }\r\n    if(GetSkillPurchased(GetInstigator(), $#30316003:6064631673604472832$, $#981011333:6064631748479681038$)){\r\n        set maxMult = maxMult - 0.1;\r\n    }\r\n    // lose up to maxMult% of your evasion if at zero stam\r\n    set ret = 1.0 - Lerp(0.0, maxMult, 1.0 - stam / maxStam);\r\n}\r\nret"
+	},
+	"constraints":
+	{
+	},
+	"guid": "6064631902457036810",
+	"name": "Stamina_EvasionReductionMult",
+	"typeId": "10516612381411112"
+}

@@ -1,0 +1,24 @@
+{
+	"toastWidgetClass": "/Game/UI/Widgets/HUD/Messaging/WBP_CountdownToast.WBP_CountdownToast_C",
+	"toastType": "Custom",
+	"toastAnchorParent": "Default",
+	"backgroundImage": "None",
+	"iconImage": "None",
+	"toastDisplaySoundCategory": "Custom",
+	"onDisplaySound": "/Game/WwiseAudio/Events/Main/UI/Quest/UI_CountdownTick.UI_CountdownTick",
+	"onDisplaySoundTag":
+	{
+		"tagName": "None"
+	},
+	"displayTime": 30,
+	"priorityCallout": false,
+	"headerText": "",
+	"headerAsMessage": false,
+	"subheaderText": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"C824C0194D61009D8B09C194E8D0DCE2\", \"A Siege on {NodeName} is in progress and you are not a participant.  If you do not join a siege team or leave the area you will be slain.\")",
+	"subheaderAsMessage": false,
+	"countdownDuration": 30,
+	"cooldownTime": 0,
+	"guid": "6064632779230085120",
+	"name": "Toast_Siege_Leave_Area_Countdown",
+	"typeId": "949952112328"
+}

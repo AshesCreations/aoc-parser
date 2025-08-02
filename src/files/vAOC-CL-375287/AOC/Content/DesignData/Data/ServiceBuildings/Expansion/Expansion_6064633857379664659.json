@@ -1,0 +1,164 @@
+{
+	"dEPRECATED_ExpansionPrerequisiteIds": [],
+	"dEPRECATED_RequiredCapabilitiesIds": [],
+	"dEPRECATED_ExpansionSlotId":
+	{
+		"guid": "0",
+		"typeId": "7823460",
+		"name": "None"
+	},
+	"addedMaintenanceId":
+	{
+		"guid": "6064634009401098299",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"dEPRECATED_NodeConstructionCostId":
+	{
+		"guid": "0",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"postInitiationPlayerConstructionCostId":
+	{
+		"guid": "6064633927993786404",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"playerConstructionPhaseDurationMultiplier":
+	{
+		"expression": ""
+	},
+	"playerConstructionPhaseDuration":
+	{
+		"duration": "172800000"
+	},
+	"addedRepairCostId":
+	{
+		"guid": "6064633928000602152",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"addedDisarrayRepairCostId":
+	{
+		"guid": "6064633928004993068",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"expansionName": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"E71BFBFE46724684337EF785D4AD1339\", \"Grand Master Lumber Jacking Supply II - Lumberjacking Rarity\")",
+	"expansionDescription": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"E8EEF85142DEA297AF118BBE82ADA5C2\", \"Provides a ZOI wide bonus to Lumberjacking Rarity, the bonus is increased for citizens of the node.\")",
+	"icon": "/Game/UI/Icons/Nodes/Buildings/Building_Management/TUI_Icon_Construction_Active_Woodshop_LumberJackingSupply_Tier2.TUI_Icon_Construction_Active_Woodshop_LumberJackingSupply_Tier2",
+	"buildingServices": [
+		{
+			"icon": "/Game/UI/Icons/Nodes/Buildings/BuildingServices/TUI_Icon_ServiceIcon_Lumberjack.TUI_Icon_ServiceIcon_Lumberjack",
+			"serviceName": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"5BB0DB0C437E9AFDE6AED2806D25B4A3\", \"Grand Master Bonus to Lumberjacking Rarity\")",
+			"serviceDescription": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"880095DA4243427DA1125094B9A193AD\", \"Everyone in the node recievs a bonus buff to Lumberjacking Rarity\")",
+			"bCitizenExclusive": false,
+			"serviceGroupGameplayTag":
+			{
+				"tagName": "ServiceBuilding.ServiceGroup.Gathering"
+			},
+			"expansionSkillId":
+			{
+				"guid": "6064633850961264976",
+				"typeId": "981011333",
+				"name": "None"
+			}
+		},
+		{
+			"icon": "/Game/UI/Icons/Nodes/Buildings/BuildingServices/TUI_Icon_ServiceIcon_Lumberjack.TUI_Icon_ServiceIcon_Lumberjack",
+			"serviceName": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"BC45AC3C47EB2795929A16989CD06C95\", \"Citizens Grand Master Bonus to Lumberjacking Rarity\")",
+			"serviceDescription": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"40E2CADD4CAC14DB8539189B8A9F09E0\", \"Citizens of the node receives a bonus buff to Lumberjacking Rarity\")",
+			"bCitizenExclusive": true,
+			"serviceGroupGameplayTag":
+			{
+				"tagName": "ServiceBuilding.ServiceGroup.Gathering"
+			},
+			"expansionSkillId":
+			{
+				"guid": "6064633850961264976",
+				"typeId": "981011333",
+				"name": "None"
+			}
+		}
+	],
+	"serviceGroupTag":
+	{
+		"tagName": "None"
+	},
+	"postInitiationEvent": 0,
+	"postInitiationVote": true,
+	"voteDuration":
+	{
+		"duration": "0"
+	},
+	"voteResultDuration":
+	{
+		"expression": "0"
+	},
+	"removalVoteDuration":
+	{
+		"duration": "172800000"
+	},
+	"removalVoteResultDuration":
+	{
+		"expression": ""
+	},
+	"requiredAchievements": [],
+	"expressionRequirements":
+	{
+		"expression": ""
+	},
+	"expansionSpawnsIds":
+	{
+		"3":
+		{
+			"guid": "6064632065158217733",
+			"typeId": "1091110044",
+			"name": "None"
+		}
+	},
+	"constructionDuration":
+	{
+		"duration": "0"
+	},
+	"dEPRECATED_CapabilitiesIds": [],
+	"dEPRECATED_NodeEffectId":
+	{
+		"guid": "0",
+		"typeId": "9127426",
+		"name": "None"
+	},
+	"nodeModificationsIds": [
+		{
+			"guid": "6064633896901673099",
+			"typeId": "1091110048",
+			"name": "None"
+		}
+	],
+	"expansionAssetSets": [
+		{
+			"bReplaceBuilding": true,
+			"buildingNodeAssetSetId":
+			{
+				"guid": "6064633888690798592",
+				"typeId": "1323521346",
+				"name": "None"
+			}
+		}
+	],
+	"expansionPopSpawns": [
+		{
+			"bReplacement": false,
+			"buildingSpawns":
+			{
+				"guid": "6064633956885659726",
+				"typeId": "1091110044",
+				"name": "None"
+			}
+		}
+	],
+	"guid": "6064633857379664659",
+	"name": "Construction_Active_Woodshop_EXP_3A2_LumberJackingSupply",
+	"typeId": "7823461"
+}

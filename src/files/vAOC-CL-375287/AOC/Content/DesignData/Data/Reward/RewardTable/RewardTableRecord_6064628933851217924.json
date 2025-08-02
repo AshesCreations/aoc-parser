@@ -1,0 +1,78 @@
+{
+	"predicate":
+	{
+		"expression": ""
+	},
+	"rewardDefContainers": [
+		{
+			"grantPredicate":
+			{
+				"expression": "true"
+			},
+			"selectionAlgorithm": "PerElementWeightedRandom",
+			"grantMethod": "Always",
+			"rewardsWeightCurve":
+			{
+				"externalCurve": "None",
+				"editorCurveData":
+				{
+					"keys": [],
+					"defaultValue": 3.4028234663852886e+38,
+					"preInfinityExtrap": "RCCE_Constant",
+					"postInfinityExtrap": "RCCE_Constant",
+					"keyHandlesToIndices":
+					{
+					}
+				}
+			},
+			"weightsPerReward": [ 1, 2 ],
+			"maxSelectorChoices": 0,
+			"rewards": [
+				{
+					"displayName": "NSLOCTEXT(\"\", \"9C223DC54A5348449A88C18EFD326399\", \"1000g\")",
+					"currency":
+					{
+						"(Guid=6064628901272551424,TypeId=1011151289)":
+						{
+							"expression": "1000"
+						}
+					},
+					"itemRewards": [],
+					"experienceRewards": []
+				},
+				{
+					"displayName": "NSLOCTEXT(\"\", \"92260DCA4E584BFA68076FA4EA52F4B0\", \"2000g\")",
+					"currency":
+					{
+						"(Guid=6064628901272551424,TypeId=1011151289)":
+						{
+							"expression": "2000"
+						}
+					},
+					"itemRewards": [],
+					"experienceRewards": []
+				}
+			]
+		}
+	],
+	"subTableSelectionAlgorithm": "None",
+	"weightsPerSubTable": [],
+	"subTablesWeightCurve":
+	{
+		"externalCurve": "None",
+		"editorCurveData":
+		{
+			"keys": [],
+			"defaultValue": 3.4028234663852886e+38,
+			"preInfinityExtrap": "RCCE_Constant",
+			"postInfinityExtrap": "RCCE_Constant",
+			"keyHandlesToIndices":
+			{
+			}
+		}
+	},
+	"subTablesIds": [],
+	"guid": "6064628933851217924",
+	"name": "TestTable_4_RandGold",
+	"typeId": "1091110040"
+}

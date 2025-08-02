@@ -1,0 +1,12 @@
+{
+	"equation":
+	{
+		"expression": "// old function which used to check if you were 3 meters above target\r\n// only way to access specific components of a vector\r\n// is to dot it with the axis you want lol\r\n//const mp = GetLocation(GetOwner());\r\n//const tp = GetLocation(GetTarget());\r\n//const z = Vector(0.,0.,1.);\r\n//dotproduct(mp,z) - 300.0 > dotproduct(tp,z) &&\r\n\r\nGetDistanceBetween(GetTarget(), GetInstigator()) > 1500.0\r\n&& IsApplicableTarget(GetTarget(), EAffectedTarget::TARGET_Enemy)"
+	},
+	"constraints":
+	{
+	},
+	"guid": "6064632893514188683",
+	"name": "Rogue_ShadowStep_AdvantagePredicate",
+	"typeId": "10516612381411112"
+}

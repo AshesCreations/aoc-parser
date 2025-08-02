@@ -1,0 +1,51 @@
+{
+	"equationId":
+	{
+		"guid": "6064630356676182102",
+		"typeId": "10516612381411112",
+		"name": "None"
+	},
+	"inputTerms": [
+		{
+			"termId":
+			{
+				"guid": "6064630327860002821",
+				"typeId": "10516612381411115",
+				"name": "None"
+			},
+			"value":
+			{
+				"expression": "GetArtisanshipModifiedStat(GetInstigator(), $#10516612381411111:6064630316223889411$)"
+			},
+			"bOptional": false,
+			"bKeepBeyondScope": false,
+			"filter":
+			{
+				"expression": ""
+			},
+			"mergeRuleOverride": "Merge_Default"
+		},
+		{
+			"termId":
+			{
+				"guid": "6064632378570178561",
+				"typeId": "10516612381411115",
+				"name": "None"
+			},
+			"value":
+			{
+				"expression": "GetArtisanshipModifiedStat(GetInstigator(), $#10516612381411111:6064629302957179472$)"
+			},
+			"bOptional": false,
+			"bKeepBeyondScope": false,
+			"filter":
+			{
+				"expression": ""
+			},
+			"mergeRuleOverride": "Merge_Default"
+		}
+	],
+	"guid": "6064630356607500367",
+	"name": "Artisan_Crafting_ArcaneEngineering_Quality",
+	"typeId": "10516612381411113"
+}

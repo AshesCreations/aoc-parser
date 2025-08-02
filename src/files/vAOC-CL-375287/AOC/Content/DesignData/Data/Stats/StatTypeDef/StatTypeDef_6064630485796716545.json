@@ -1,0 +1,122 @@
+{
+	"displayName": "NSLOCTEXT(\"\", \"90F2E08242855FCA17B69EA0152CEF64\", \"Corruption Tier\")",
+	"description": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"E68CB10C493C1061BC50E9B069B2E900\", \"Affects the severity of the Corruption debuff and its penalties\")",
+	"bHidden": false,
+	"gameplayType": "Type_Combat",
+	"bHasWaterfallStatsUI": false,
+	"waterfallStatsUIIds": [],
+	"bDisplayAsPercentage": false,
+	"statType": "Type_Float",
+	"bClampStatFinalValue": false,
+	"bMultiplyStatMods": false,
+	"bMultiplyCompliment": false,
+	"base":
+	{
+		"expression": "const x = GetStat(GetInstigator(), $#10516612381411111:109228544644730$);\r\nFloor(EvalCurve($#10516612381411114:6064630485811068930$, x))"
+	},
+	"waterfallStatsBaseIds": [
+		{
+			"guid": "109228544644730",
+			"typeId": "10516612381411111",
+			"name": "None"
+		}
+	],
+	"valueMin":
+	{
+		"expression": "0"
+	},
+	"waterfallStatsMinIds": [],
+	"valueMax":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMaxIds": [],
+	"regenRate":
+	{
+		"expression": "0"
+	},
+	"waterfallStatsRegenIds": [],
+	"bRegenWhileDead": false,
+	"bRecalculateOnCombatState": false,
+	"onSpawn": "Reset_None",
+	"onDeath": "Reset_None",
+	"onRevive": "Reset_None",
+	"bPersistValue": false,
+	"replication": 0,
+	"shieldStatId":
+	{
+		"guid": "0",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"grantedEffects": [
+		{
+			"shouldGrant":
+			{
+				"expression": "Round(GetStat(GetOwner(), $#10516612381411111:6064630485796716545$))==1"
+			},
+			"effectId":
+			{
+				"guid": "6064630485691858944",
+				"typeId": "30316002",
+				"name": "None"
+			},
+			"numStacks": 1
+		},
+		{
+			"shouldGrant":
+			{
+				"expression": "Round(GetStat(GetOwner(), $#10516612381411111:6064630485796716545$))==2"
+			},
+			"effectId":
+			{
+				"guid": "6064630697904963785",
+				"typeId": "30316002",
+				"name": "None"
+			},
+			"numStacks": 1
+		},
+		{
+			"shouldGrant":
+			{
+				"expression": "Round(GetStat(GetOwner(), $#10516612381411111:6064630485796716545$))==3"
+			},
+			"effectId":
+			{
+				"guid": "6064630697907060938",
+				"typeId": "30316002",
+				"name": "None"
+			},
+			"numStacks": 1
+		},
+		{
+			"shouldGrant":
+			{
+				"expression": "Round(GetStat(GetOwner(), $#10516612381411111:6064630485796716545$))==4"
+			},
+			"effectId":
+			{
+				"guid": "6064630697907323083",
+				"typeId": "30316002",
+				"name": "None"
+			},
+			"numStacks": 1
+		},
+		{
+			"shouldGrant":
+			{
+				"expression": "Round(GetStat(GetOwner(), $#10516612381411111:6064630485796716545$))==5"
+			},
+			"effectId":
+			{
+				"guid": "6064630697907585228",
+				"typeId": "30316002",
+				"name": "None"
+			},
+			"numStacks": 1
+		}
+	],
+	"guid": "6064630485796716545",
+	"name": "Corruption_Tier",
+	"typeId": "10516612381411111"
+}

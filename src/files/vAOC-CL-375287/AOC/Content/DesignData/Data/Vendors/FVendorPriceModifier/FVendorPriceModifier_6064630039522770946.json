@@ -1,0 +1,41 @@
+{
+	"modifierValueSource": "Curve",
+	"valueExpression":
+	{
+		"expression": ""
+	},
+	"priceFactor": "Quality",
+	"valueCurve":
+	{
+		"externalCurve": "None",
+		"editorCurveData":
+		{
+			"keys": [],
+			"defaultValue": 3.4028234663852886e+38,
+			"preInfinityExtrap": "RCCE_Constant",
+			"postInfinityExtrap": "RCCE_Constant",
+			"keyHandlesToIndices":
+			{
+			}
+		}
+	},
+	"priceModifiersIds": [],
+	"arithmeticOperation": "Multiply",
+	"itemFilter":
+	{
+		"tokenStreamVersion": 0,
+		"tagDictionary": [
+			{
+				"tagName": "item.resource.cert.nodecert"
+			}
+		],
+		"queryTokenStream": [ 0, 1, 1, 1, 0 ],
+		"userDescription": "",
+		"autoDescription": " ANY( item.resource.cert.nodecert )"
+	},
+	"affectedContexts": 226,
+	"affectedCurrenciesIds": [],
+	"guid": "6064630039522770946",
+	"name": "PlayerCommodity_XDayTurnIn",
+	"typeId": "3145314715"
+}

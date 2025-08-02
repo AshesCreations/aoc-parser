@@ -1,0 +1,50 @@
+{
+	"predicate":
+	{
+		"expression": "(GetPlayerProfessionCertificationLevel(GetPlayerGUID(),\"Fishing\") >= 2)\r\n&& (GetEquipmentCertificationTier(GetInstigator(),EEquipSlot::FishingRod) == 2)"
+	},
+	"rewardDefContainers": [],
+	"subTableSelectionAlgorithm": "PerElementWeightedRandom",
+	"numberOfSubtablesToSelect": 2,
+	"weightsPerSubTable": [ 20, 20, 10, 50 ],
+	"percentagePerSubTable": [],
+	"subTablesWeightCurve":
+	{
+		"externalCurve": "None",
+		"editorCurveData":
+		{
+			"keys": [],
+			"defaultValue": 3.4028234663852886e+38,
+			"preInfinityExtrap": "RCCE_Constant",
+			"postInfinityExtrap": "RCCE_Constant",
+			"keyHandlesToIndices":
+			{
+			}
+		}
+	},
+	"subTablesIds": [
+		{
+			"guid": "6064632989932584965",
+			"typeId": "1091110040",
+			"name": "None"
+		},
+		{
+			"guid": "6064632989938941958",
+			"typeId": "1091110040",
+			"name": "None"
+		},
+		{
+			"guid": "6064632989943201799",
+			"typeId": "1091110040",
+			"name": "None"
+		},
+		{
+			"guid": "0",
+			"typeId": "1091110040",
+			"name": "None"
+		}
+	],
+	"guid": "6064632989917904898",
+	"name": "Fish_Sandsquall_T3",
+	"typeId": "1091110040"
+}

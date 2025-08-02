@@ -1,0 +1,70 @@
+{
+	"equationId":
+	{
+		"guid": "6064630356728217692",
+		"typeId": "10516612381411112",
+		"name": "None"
+	},
+	"inputTerms": [
+		{
+			"termId":
+			{
+				"guid": "6064630327859806208",
+				"typeId": "10516612381411115",
+				"name": "None"
+			},
+			"value":
+			{
+				"expression": "GetArtisanshipModifiedStat(GetInstigator(), $#10516612381411111:6064629302956261786$)"
+			},
+			"bOptional": false,
+			"bKeepBeyondScope": false,
+			"filter":
+			{
+				"expression": ""
+			},
+			"mergeRuleOverride": "Merge_Default"
+		},
+		{
+			"termId":
+			{
+				"guid": "6064632378572537861",
+				"typeId": "10516612381411115",
+				"name": "None"
+			},
+			"value":
+			{
+				"expression": "GetArtisanshipModifiedStat(GetInstigator(), $#10516612381411111:6064629302956327332$)"
+			},
+			"bOptional": false,
+			"bKeepBeyondScope": false,
+			"filter":
+			{
+				"expression": ""
+			},
+			"mergeRuleOverride": "Merge_Default"
+		},
+		{
+			"termId":
+			{
+				"guid": "6064632378780352527",
+				"typeId": "10516612381411115",
+				"name": "None"
+			},
+			"value":
+			{
+				"expression": ""
+			},
+			"bOptional": false,
+			"bKeepBeyondScope": false,
+			"filter":
+			{
+				"expression": ""
+			},
+			"mergeRuleOverride": "Merge_Default"
+		}
+	],
+	"guid": "6064630356734181473",
+	"name": "Artisan_Gathering_Lumberjacking_Rarity",
+	"typeId": "10516612381411113"
+}

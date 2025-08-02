@@ -1,0 +1,95 @@
+{
+	"predicate":
+	{
+		"expression": "GetActivatedItemRarity() == 1"
+	},
+	"rewardDefContainers": [
+		{
+			"grantPredicate":
+			{
+				"expression": ""
+			},
+			"selectionAlgorithm": "PerElementWeightedRandom",
+			"numberToSelect": 0,
+			"grantMethod": "Always",
+			"rewardsWeightCurve":
+			{
+				"externalCurve": "None",
+				"editorCurveData":
+				{
+					"keys": [],
+					"defaultValue": 3.4028234663852886e+38,
+					"preInfinityExtrap": "RCCE_Constant",
+					"postInfinityExtrap": "RCCE_Constant",
+					"keyHandlesToIndices":
+					{
+					}
+				}
+			},
+			"weightsPerReward": [ 80, 19, 1 ],
+			"percentageDropRatePerReward": [],
+			"maxSelectorChoices": 0,
+			"rewards": [
+				{
+					"displayName": "",
+					"currency":
+					{
+						"(Guid=6064629132706054144,TypeId=1011151289)":
+						{
+							"expression": "const ttk = 19;\r\nconst GlintPerKill = 0.5 * EvalCurve($#10516612381411114:6064632237717717002$, 10.0);\r\nconst defaultQuant = Round(GlintPerKill / ttk * 60 * 30) * 10;\r\n\r\nRandIntRange(defaultQuant, Int(defaultQuant * 1.2))"
+						}
+					},
+					"itemRewards": [],
+					"experienceRewards": []
+				},
+				{
+					"displayName": "",
+					"currency":
+					{
+						"(Guid=6064629132706054144,TypeId=1011151289)":
+						{
+							"expression": "const ttk = 19;\r\nconst GlintPerKill = 0.5 * EvalCurve($#10516612381411114:6064632237717717002$, 10.0);\r\nconst defaultQuant = Round(GlintPerKill / ttk * 60 * 30) * 10;\r\n\r\nRandIntRange(Int(defaultQuant * 1.3), Int(defaultQuant * 1.5))"
+						}
+					},
+					"itemRewards": [],
+					"experienceRewards": []
+				},
+				{
+					"displayName": "",
+					"currency":
+					{
+						"(Guid=6064629132706054144,TypeId=1011151289)":
+						{
+							"expression": "const ttk = 19;\r\nconst GlintPerKill = 0.5 * EvalCurve($#10516612381411114:6064632237717717002$, 10.0);\r\nconst defaultQuant = Round(GlintPerKill / ttk * 60 * 30) * 10;\r\n\r\nRandIntRange(Int(defaultQuant * 2.5), Int(defaultQuant * 5.0))"
+						}
+					},
+					"itemRewards": [],
+					"experienceRewards": []
+				}
+			],
+			"rewardContainerIcon": "None"
+		}
+	],
+	"subTableSelectionAlgorithm": "None",
+	"numberOfSubtablesToSelect": 2,
+	"weightsPerSubTable": [],
+	"percentagePerSubTable": [],
+	"subTablesWeightCurve":
+	{
+		"externalCurve": "None",
+		"editorCurveData":
+		{
+			"keys": [],
+			"defaultValue": 3.4028234663852886e+38,
+			"preInfinityExtrap": "RCCE_Constant",
+			"postInfinityExtrap": "RCCE_Constant",
+			"keyHandlesToIndices":
+			{
+			}
+		}
+	},
+	"subTablesIds": [],
+	"guid": "6064632660478918658",
+	"name": "TreasureMap_RVR_Bandit_Gold_Temp_UC",
+	"typeId": "1091110040"
+}

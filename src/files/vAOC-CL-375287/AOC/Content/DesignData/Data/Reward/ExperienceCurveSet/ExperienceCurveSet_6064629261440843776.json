@@ -1,0 +1,40 @@
+{
+	"curveSetIds": [
+		{
+			"guid": "6064629262051246080",
+			"typeId": "1091110055",
+			"name": "None"
+		},
+		{
+			"guid": "6064629603099148288",
+			"typeId": "1091110055",
+			"name": "None"
+		},
+		{
+			"guid": "6064629603100131329",
+			"typeId": "1091110055",
+			"name": "None"
+		},
+		{
+			"guid": "6064629603100917762",
+			"typeId": "1091110055",
+			"name": "None"
+		},
+		{
+			"guid": "6064630644204175885",
+			"typeId": "1091110055",
+			"name": "None"
+		}
+	],
+	"modifiers": [
+		{
+			"expression":
+			{
+				"expression": "var CCUMOD = 1;\r\n\r\n//GetAverageCCU()\r\n\r\n3.75 * \r\nGetNodeGrowthPlayerLevelMod() * \r\nGetNodeGrowthThrottle() * CCUMOD"
+			}
+		}
+	],
+	"guid": "6064629261440843776",
+	"name": "NodeActivityCurves",
+	"typeId": "912047128"
+}

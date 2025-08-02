@@ -1,0 +1,50 @@
+{
+	"displayName": "NSLOCTEXT(\"\", \"5DAFE19E48C0857F04D5EB872F2B8137\", \"Wounded\")",
+	"description": "NSLOCTEXT(\"\", \"88EAE1B24EBD18CE676D509FCACBB2F0\", \"Status applied by fighter abilities that reduce healing received\")",
+	"bHidden": false,
+	"gameplayType": "Type_Combat",
+	"bHasWaterfallStatsUI": false,
+	"waterfallStatsUIIds": [],
+	"statType": "Type_Float",
+	"base":
+	{
+		"expression": "0"
+	},
+	"waterfallStatsBaseIds": [],
+	"valueMin":
+	{
+		"expression": "0"
+	},
+	"waterfallStatsMinIds": [],
+	"valueMax":
+	{
+		"expression": "100"
+	},
+	"waterfallStatsMaxIds": [],
+	"regenRate":
+	{
+		"expression": "0"
+	},
+	"waterfallStatsRegenIds": [
+		{
+			"guid": "0",
+			"typeId": "10516612381411111",
+			"name": "None"
+		}
+	],
+	"bRegenWhileDead": false,
+	"onSpawn": "Reset_SetMin",
+	"onDeath": "Reset_SetMin",
+	"onRevive": "Reset_SetMin",
+	"bPersistValue": false,
+	"replication": 1,
+	"shieldStatId":
+	{
+		"guid": "0",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"guid": "6064629999720283747",
+	"name": "Status_Wounded",
+	"typeId": "10516612381411111"
+}

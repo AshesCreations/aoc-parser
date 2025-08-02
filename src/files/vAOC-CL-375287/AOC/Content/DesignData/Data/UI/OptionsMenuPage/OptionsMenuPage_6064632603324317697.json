@@ -1,0 +1,118 @@
+{
+	"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Interface_HUDSectionLabel\")",
+	"categoryHeaderLabel": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Interface_HUDSectionHeader\")",
+	"entryCategories": [
+		{
+			"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Options_GeneralSubheader\")",
+			"entryAlignment": "HAlign_Fill",
+			"entryWrapSize": 10,
+			"wrapBoxClass": "Standard",
+			"entries": [
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"HUD_GlobalUIScalingLabel\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 600,
+					"type": "Slider",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"bApplyOnMouseRelease": true,
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 425,
+					"widgetClass": "None",
+					"getterFunctionName": "GetGlobalUIScaling",
+					"setterFunctionName": "SetGlobalUIScaling",
+					"dependencyGetter": "None"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"HUD_MinimapBGOpacityLabel\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 600,
+					"type": "Slider",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"bApplyOnMouseRelease": false,
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 425,
+					"widgetClass": "None",
+					"getterFunctionName": "GetMinimapBGOpacity",
+					"setterFunctionName": "SetMinimapBGOpacity",
+					"dependencyGetter": "None"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"HUD_MinimapIconOpacityLabel\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 600,
+					"type": "Slider",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"bApplyOnMouseRelease": false,
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 425,
+					"widgetClass": "None",
+					"getterFunctionName": "GetMinimapIconsOpacity",
+					"setterFunctionName": "SetMinimapIconsOpacity",
+					"dependencyGetter": "None"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"HUD_ResetWindowPostionsLabel\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 600,
+					"type": "UserWidget",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"bApplyOnMouseRelease": false,
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 425,
+					"widgetClass": "/Game/UI/Widgets/Options/WBP_HUDEditorResetWindowPositions.WBP_HUDEditorResetWindowPositions_C",
+					"getterFunctionName": "GetResetHUDWindows",
+					"setterFunctionName": "SetResetHUDWindows",
+					"dependencyGetter": "None"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"HUD_HUDEDitorSectionSubheader\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 600,
+					"type": "UserWidget",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"bApplyOnMouseRelease": false,
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 425,
+					"widgetClass": "/Game/UI/Widgets/Options/WBP_HUDEditorOptionsMenu.WBP_HUDEditorOptionsMenu_C",
+					"getterFunctionName": "GetHUDEditorOptionsMenu",
+					"setterFunctionName": "SetHUDEditorOptionsMenu",
+					"dependencyGetter": "None"
+				}
+			],
+			"subcategories": []
+		}
+	],
+	"guid": "6064632603324317697",
+	"name": "HUD",
+	"typeId": "3616673544"
+}

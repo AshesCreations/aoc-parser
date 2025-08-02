@@ -1,0 +1,51 @@
+{
+	"equationId":
+	{
+		"guid": "6064631861865283585",
+		"typeId": "10516612381411112",
+		"name": "None"
+	},
+	"inputTerms": [
+		{
+			"termId":
+			{
+				"guid": "6064631862535520259",
+				"typeId": "10516612381411115",
+				"name": "None"
+			},
+			"value":
+			{
+				"expression": "const EffectInProgress = GetEffectInProgressRecord();\r\nconst IsDisable = EffectHasTag(EffectInProgress, \"CrowdControlConstraint\");\r\n\r\nconst Target = GetTarget();\r\nconst Char = GetStat(Target, $#10516612381411111:6064630798183235705$);\r\n\r\nvar Eva = 0.0;\r\n\r\n// destructibles and caravels can't be hit with any debuffs by direction\r\n// can override this on a specific applying hit if needed\r\nif(Char > 1.5){\r\n    const IsDebuff = IsDebuff(EffectInProgress) || EffectHasTag(EffectInProgress, \"Debuff\");\r\n    if(IsDebuff){\r\n        set Eva = 1000000.0;\r\n    }\r\n}\r\n\r\nif (IsDisable) { // only apply evasion to disabling (crowd control) effects\r\n    const IsPhysical = EffectHasTag(EffectInProgress, \"Element.Physical\");\r\n    const IsMagical  = EffectHasTag(EffectInProgress, \"Element.Magical\");\r\n    const IsMoveCC = EffectHasTag(EffectInProgress, \"CrowdControlConstraint.Movement\");\r\n    const IsActCC = EffectHasTag(EffectInProgress, \"CrowdControlConstraint.AbilityActivation\");\r\n    const IsHardCC = EffectHasTag(EffectInProgress, \"CrowdControlConstraint.Hard\");\r\n    if(IsPhysical){\r\n        set Eva = Eva + GetStat(Target, $#10516612381411111:109343399106252$);\r\n    }\r\n    if(IsMagical && !IsPhysical){\r\n        set Eva = Eva + GetStat(Target, $#10516612381411111:109343399171804$);\r\n    }\r\n    if(IsMoveCC){\r\n        if(EffectHasTag(EffectInProgress, \"CrowdControlTier.T1\")){\r\n            set Eva = Eva + GetStat(Target, $#10516612381411111:6064631863198679042$);\r\n        }\r\n        if(EffectHasTag(EffectInProgress, \"CrowdControlTier.T2\")){\r\n            set Eva = Eva + GetStat(Target, $#10516612381411111:6064631863198875651$);\r\n        }\r\n    }\r\n    if(IsActCC){\r\n        set Eva = Eva + GetStat(Target, $#10516612381411111:6064631863200448516$);\r\n    }\r\n    if(IsHardCC){\r\n        if(EffectHasTag(EffectInProgress, \"CrowdControlTier.T1\")){\r\n            set Eva = Eva + GetStat(Target, $#10516612381411111:6064631862756376581$);\r\n        }\r\n        if(EffectHasTag(EffectInProgress, \"CrowdControlTier.T2\")){\r\n            set Eva = Eva + GetStat(Target, $#10516612381411111:6064631863198482433$);\r\n        }\r\n    }\r\n}\r\n\r\nEva"
+			},
+			"bOptional": false,
+			"bKeepBeyondScope": false,
+			"filter":
+			{
+				"expression": ""
+			},
+			"mergeRuleOverride": "Merge_Default"
+		},
+		{
+			"termId":
+			{
+				"guid": "6064631862398943234",
+				"typeId": "10516612381411115",
+				"name": "None"
+			},
+			"value":
+			{
+				"expression": "const HitInProgress = GetHitInProgress();\r\nconst EffectInProgress = GetEffectInProgressRecord();\r\nconst IsDisable = EffectHasTag(EffectInProgress, \"CrowdControlConstraint\");\r\nconst Instigator = GetInstigator();\r\n\r\nvar Acc = 0.0;\r\n\r\nif (IsDisable) { // only apply accuracy to disabling (crowd control) effects\r\n    const PhysicalTag = EffectHasTag(EffectInProgress, \"Element.Physical\");\r\n    const MagicalTag = EffectHasTag(EffectInProgress, \"Element.Magical\");\r\n    // if the applying hit has a scaling override then use that accuracy type instead\r\n    const PhysicalOverride = HitHasTag(HitInProgress, \"ability.PhysicalScalingOverride\");\r\n    const MagicalOverride = HitHasTag(HitInProgress, \"ability.MagicalScalingOverride\");\r\n\r\n    const IsPhysical = (PhysicalTag || PhysicalOverride) && !MagicalOverride;\r\n    const IsMagical = (MagicalTag || MagicalOverride) && !PhysicalOverride;\r\n\r\n    if (IsPhysical) {\r\n        set Acc = Acc + GetStat(Instigator, $#10516612381411111:109343399106251$); }\r\n    if (IsMagical && !IsPhysical) {\r\n        set Acc = Acc + GetStat(Instigator, $#10516612381411111:109343399171800$); }\r\n}\r\n\r\nAcc"
+			},
+			"bOptional": false,
+			"bKeepBeyondScope": false,
+			"filter":
+			{
+				"expression": ""
+			},
+			"mergeRuleOverride": "Merge_Default"
+		}
+	],
+	"guid": "6064631862539321348",
+	"name": "UniversalResistChance",
+	"typeId": "10516612381411113"
+}

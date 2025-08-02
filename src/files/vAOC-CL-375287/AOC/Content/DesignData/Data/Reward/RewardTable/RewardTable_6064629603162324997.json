@@ -1,0 +1,96 @@
+{
+	"predicate":
+	{
+		"expression": ""
+	},
+	"rewardDefContainers": [
+		{
+			"grantPredicate":
+			{
+				"expression": ""
+			},
+			"selectionAlgorithm": "All",
+			"numberToSelect": 0,
+			"grantMethod": "Always",
+			"rewardsWeightCurve":
+			{
+				"externalCurve": "None",
+				"editorCurveData":
+				{
+					"keys": [],
+					"defaultValue": 3.4028234663852886e+38,
+					"preInfinityExtrap": "RCCE_Constant",
+					"postInfinityExtrap": "RCCE_Constant",
+					"keyHandlesToIndices":
+					{
+					}
+				}
+			},
+			"weightsPerReward": [],
+			"maxSelectorChoices": 0,
+			"rewards": [
+				{
+					"displayName": "",
+					"currency":
+					{
+					},
+					"itemRewards": [],
+					"experienceRewards": [
+						{
+							"experienceType": "NodeActivity",
+							"experienceValue":
+							{
+								"expression": "0"
+							},
+							"experienceContextId":
+							{
+								"guid": "6064629603100917762",
+								"typeId": "1091110055",
+								"name": "None"
+							},
+							"professionsId":
+							{
+								"guid": "0",
+								"typeId": "8125613373123",
+								"name": "None"
+							},
+							"gatheringResourceTypeId":
+							{
+								"guid": "0",
+								"typeId": "1983422155363",
+								"name": "None"
+							},
+							"craftingRecipeDefId":
+							{
+								"guid": "0",
+								"typeId": "163697",
+								"name": "None"
+							}
+						}
+					]
+				}
+			]
+		}
+	],
+	"subTableSelectionAlgorithm": "None",
+	"numberOfSubtablesToSelect": 2,
+	"weightsPerSubTable": [],
+	"subTablesWeightCurve":
+	{
+		"externalCurve": "None",
+		"editorCurveData":
+		{
+			"keys": [],
+			"defaultValue": 3.4028234663852886e+38,
+			"preInfinityExtrap": "RCCE_Constant",
+			"postInfinityExtrap": "RCCE_Constant",
+			"keyHandlesToIndices":
+			{
+			}
+		}
+	},
+	"subTablesIds": [],
+	"guid": "6064629603162324997",
+	"name": "Reward_NodeGrowth_Activity_Harvest",
+	"typeId": "1091110040"
+}

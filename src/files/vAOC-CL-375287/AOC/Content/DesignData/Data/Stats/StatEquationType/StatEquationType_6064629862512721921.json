@@ -1,0 +1,25 @@
+{
+	"equation":
+	{
+		"expression": "const GlobalMod       = GetTerm($#10516612381411115:6064630794789849875$);\r\nconst Base            = GetTerm($#10516612381411115:6064631035951644675$);\r\nconst BaseAdd         = GetTerm($#10516612381411115:6064631210309517324$);\r\nconst Damage          = GetTerm($#10516612381411115:6064629248874774551$);\r\nconst DamageMult      = GetTerm($#10516612381411115:6064630633715007489$);\r\nconst DamageAddMult   = GetTerm($#10516612381411115:6064632388410015744$);\r\nconst CritDamage      = GetTerm($#10516612381411115:6064629248874250262$);\r\nconst ContestedMit    = EvalFormula($#10516612381411113:6064632413553295380$);\r\nconst Dampening       = GetTerm($#10516612381411115:6064630704647897228$);\r\nconst NPCLvPenaltyMit = 1/EvalE($#10516612381411112:6064633861589121202$);\r\nconst NPCLvPenaltyDmg = EvalE($#10516612381411112:6064633861252462767$);\r\n\r\nGlobalMod * (Base * Damage + BaseAdd) * DamageMult * DamageAddMult * CritDamage * ContestedMit * Dampening * NPCLvPenaltyDmg * NPCLvPenaltyMit"
+	},
+	"constraints":
+	{
+		"none":
+		{
+			"bClampMin": false,
+			"min": 0,
+			"bClampMax": true,
+			"max": 0,
+			"roundingRule": "Rounding_None",
+			"combineOperation": "Op_Add",
+			"bucketEntryOperation":
+			{
+				"expression": ""
+			}
+		}
+	},
+	"guid": "6064629862512721921",
+	"name": "DamageMod",
+	"typeId": "10516612381411112"
+}

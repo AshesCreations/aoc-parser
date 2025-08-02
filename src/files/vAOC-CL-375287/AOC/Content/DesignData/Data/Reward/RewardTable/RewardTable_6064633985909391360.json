@@ -1,0 +1,110 @@
+{
+	"predicate":
+	{
+		"expression": ""
+	},
+	"callout": "None",
+	"rewardDefContainers": [
+		{
+			"grantPredicate":
+			{
+				"expression": ""
+			},
+			"selectionAlgorithm": "All",
+			"numberToSelect": 0,
+			"grantMethod": "Always",
+			"rewardsWeightCurve":
+			{
+				"externalCurve": "None",
+				"editorCurveData":
+				{
+					"keys": [],
+					"defaultValue": 3.4028234663852886e+38,
+					"preInfinityExtrap": "RCCE_Constant",
+					"postInfinityExtrap": "RCCE_Constant",
+					"keyHandlesToIndices":
+					{
+					}
+				}
+			},
+			"weightsPerReward": [],
+			"expressionWeightsPerReward": [],
+			"percentageDropRatePerReward": [],
+			"maxSelectorChoices": 0,
+			"rewards": [
+				{
+					"displayName": "",
+					"currency":
+					{
+						"(Guid=6064629879350493185,TypeId=1011151289)":
+						{
+							"expression": "const time   = 1500; // added an extra 5 mins of node currency based on some random slack convo with da boyz\r\nconst rate   = 0.45 / 60; // currency gain rate at level 10 is 0.45 per min\r\ntime * rate"
+						},
+						"(Guid=6064629801116499968,TypeId=1011151289)":
+						{
+							"expression": "const IsCitizen = Node_IsPlayerCitizenOfNode(GetPlayerGuid(), GetNodeRecord());\r\nvar reward = 0.0;\r\nif(IsCitizen){\r\n    const time   = 1200;\r\n    const rate   = 2000.0 / 3600; // 2000 rep per hour rough value\r\n    set reward = time * rate;\r\n}\r\nreward"
+						}
+					},
+					"itemRewards": [],
+					"experienceRewards": [
+						{
+							"experienceType": "Adventuring",
+							"experienceValue":
+							{
+								"expression": "const time   = 1200;\r\n// how many equal level mob kills could one get in that time\r\nconst level  = float(GetCharacterLevel(GetOwner()));\r\nconst ttk    = 30 + level; // reduce over time with level to not make them so OP to focusing on one guy\r\nconst xp     = EvalCurve($#10516612381411114:6064630639394422811$, level);\r\nxp * time / ttk"
+							},
+							"experienceContextId":
+							{
+								"guid": "0",
+								"typeId": "1091110055",
+								"name": "None"
+							},
+							"professionsId":
+							{
+								"guid": "0",
+								"typeId": "8125613373123",
+								"name": "None"
+							},
+							"gatheringResourceTypeId":
+							{
+								"guid": "0",
+								"typeId": "1983422155363",
+								"name": "None"
+							},
+							"craftingRecipeDefId":
+							{
+								"guid": "0",
+								"typeId": "163697",
+								"name": "None"
+							}
+						}
+					]
+				}
+			],
+			"rewardContainerIcon": "None"
+		}
+	],
+	"subTableSelectionAlgorithm": "None",
+	"numberOfSubtablesToSelect": 2,
+	"weightsPerSubTable": [],
+	"expressionWeightsPerSubTable": [],
+	"percentagePerSubTable": [],
+	"subTablesWeightCurve":
+	{
+		"externalCurve": "None",
+		"editorCurveData":
+		{
+			"keys": [],
+			"defaultValue": 3.4028234663852886e+38,
+			"preInfinityExtrap": "RCCE_Constant",
+			"postInfinityExtrap": "RCCE_Constant",
+			"keyHandlesToIndices":
+			{
+			}
+		}
+	},
+	"subTablesIds": [],
+	"guid": "6064633985909391360",
+	"name": "Player_Construction_Contribution_Reward",
+	"typeId": "1091110040"
+}

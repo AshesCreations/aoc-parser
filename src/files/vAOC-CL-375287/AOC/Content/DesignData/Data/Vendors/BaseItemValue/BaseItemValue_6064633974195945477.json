@@ -1,0 +1,24 @@
+{
+	"buyingCurrencyTierId":
+	{
+		"guid": "6064629879355080706",
+		"typeId": "1011111289",
+		"name": "None"
+	},
+	"sellingCurrencyTierId":
+	{
+		"guid": "6064629879355080706",
+		"typeId": "1011111289",
+		"name": "None"
+	},
+	"currencyValues":
+	{
+		"(Guid=6064629879355080706,TypeId=1011111289)":
+		{
+			"expression": "const ItemRarity = EvalCurve($#10516612381411114:6064632293965955074$,Float(GetItemRarity()));\r\n8 * ItemRarity"
+		}
+	},
+	"guid": "6064633974195945477",
+	"name": "Resource_Reagent_CommodityCertificate_NodeCurrency",
+	"typeId": "3145314713"
+}

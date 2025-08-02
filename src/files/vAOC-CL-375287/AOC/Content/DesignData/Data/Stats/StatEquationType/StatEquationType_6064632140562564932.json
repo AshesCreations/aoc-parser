@@ -1,0 +1,12 @@
+{
+	"equation":
+	{
+		"expression": "var mult = 0.05;\r\nconst burning = GetEffectCount(GetTarget(),$#30316002:6064631359029385118$) > 0;\r\nconst shocked = GetEffectCount(GetTarget(),$#30316002:6064628906755227648$) > 0;\r\nconst conflag = GetEffectCount(GetTarget(),$#30316002:6064629030686294029$) > 0;\r\n\r\nif(burning||shocked||conflag)\r\n{\r\nset mult = mult * 2;\r\n}\r\n\r\nmult"
+	},
+	"constraints":
+	{
+	},
+	"guid": "6064632140562564932",
+	"name": "Weapon_Passive_CatalyticProjectiles",
+	"typeId": "10516612381411112"
+}

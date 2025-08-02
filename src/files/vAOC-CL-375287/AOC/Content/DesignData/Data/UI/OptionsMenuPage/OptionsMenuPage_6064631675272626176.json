@@ -1,0 +1,90 @@
+{
+	"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"System_AudioSectionLabel\")",
+	"categoryHeaderLabel": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"System_AudioSectionHeader\")",
+	"entryCategories": [
+		{
+			"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Options_GeneralSubheader\")",
+			"entryAlignment": "HAlign_Fill",
+			"entryWrapSize": 10,
+			"wrapBoxClass": "Standard",
+			"entries": [
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Audio_MasterVolumeLabel\")",
+					"labelTextMinDesiredWidth": 224,
+					"labelTextWrapWidth": 600,
+					"type": "Slider",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 425,
+					"widgetClass": "None",
+					"getterFunctionName": "GetMasterVolume",
+					"setterFunctionName": "SetMasterVolume"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Audio_MusicVolumeLabel\")",
+					"labelTextMinDesiredWidth": 224,
+					"labelTextWrapWidth": 600,
+					"type": "Slider",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 425,
+					"widgetClass": "None",
+					"getterFunctionName": "GetMusicVolume",
+					"setterFunctionName": "SetMusicVolume"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Audio_EffectsVolumeLabel\")",
+					"labelTextMinDesiredWidth": 224,
+					"labelTextWrapWidth": 600,
+					"type": "Slider",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 425,
+					"widgetClass": "None",
+					"getterFunctionName": "GetSFXVolume",
+					"setterFunctionName": "SetSFXVolume"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Audio_VoiceOverVolumeLabel\")",
+					"labelTextMinDesiredWidth": 224,
+					"labelTextWrapWidth": 600,
+					"type": "Slider",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"linkedKeyBindingIds": [],
+					"selectorWidth": 425,
+					"widgetClass": "None",
+					"getterFunctionName": "GetVOVolume",
+					"setterFunctionName": "SetVOVolume"
+				}
+			],
+			"subcategories": []
+		}
+	],
+	"guid": "6064631675272626176",
+	"name": "Audio",
+	"typeId": "3616673544"
+}

@@ -1,0 +1,12 @@
+{
+	"equation":
+	{
+		"expression": "const ItemLevel = GetItemLevel();\r\nconst ttk = 19;\r\nconst copperPerKill = 5 * EvalCurve($#10516612381411114:6064632237717717002$, Float(ItemLevel));\r\nconst time = 30 * 60;\r\nconst Jank = 0.6666;\r\nconst returnPercent = 0.7;\r\nconst blackMarketMod = 3;\r\n\r\nRound(((time / ttk) * copperPerKill) * Jank / blackMarketMod * returnPercent / 10)"
+	},
+	"constraints":
+	{
+	},
+	"guid": "6064632463645212960",
+	"name": "Stolen_Commodity_Count",
+	"typeId": "10516612381411112"
+}

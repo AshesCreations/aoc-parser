@@ -1,0 +1,130 @@
+{
+	"predicate":
+	{
+		"expression": "GetPlayerLevel() < 20"
+	},
+	"rewardDefContainers": [
+		{
+			"grantPredicate":
+			{
+				"expression": ""
+			},
+			"selectionAlgorithm": "All",
+			"numberToSelect": 0,
+			"grantMethod": "Always",
+			"rewardsWeightCurve":
+			{
+				"externalCurve": "None",
+				"editorCurveData":
+				{
+					"keys": [],
+					"defaultValue": 3.4028234663852886e+38,
+					"preInfinityExtrap": "RCCE_Constant",
+					"postInfinityExtrap": "RCCE_Constant",
+					"keyHandlesToIndices":
+					{
+					}
+				}
+			},
+			"weightsPerReward": [],
+			"percentageDropRatePerReward": [],
+			"maxSelectorChoices": 0,
+			"rewards": [
+				{
+					"displayName": "",
+					"currency":
+					{
+					},
+					"itemRewards": [],
+					"experienceRewards": [
+						{
+							"experienceType": "Adventuring",
+							"experienceValue":
+							{
+								"expression": "const guid = GetActorGuid(GetInstigator());\r\nconst curLevelXP = GetPlayerXPForCurrentLevel(guid);\r\nconst xpDebt = GetXPDebtRatio(guid) * curLevelXP;\r\nconst xp   = EvalCurve($#10516612381411114:6064630643828785675$, 20.0) + xpDebt;\r\nconst cur  = EvalCurve($#10516612381411114:6064630643828785675$, float(GetPlayerLevel()));\r\nconst mult = Max(0.001, 1.0 + GetStat(GetPlayer(), $#10516612381411111:6064630809541214212$));\r\n(xp - cur)/mult + 10"
+							},
+							"experienceContextId":
+							{
+								"guid": "0",
+								"typeId": "1091110055",
+								"name": "None"
+							},
+							"professionsId":
+							{
+								"guid": "0",
+								"typeId": "8125613373123",
+								"name": "None"
+							},
+							"gatheringResourceTypeId":
+							{
+								"guid": "0",
+								"typeId": "1983422155363",
+								"name": "None"
+							},
+							"craftingRecipeDefId":
+							{
+								"guid": "0",
+								"typeId": "163697",
+								"name": "None"
+							}
+						},
+						{
+							"experienceType": "Weapon",
+							"experienceValue":
+							{
+								"expression": "const xp = EvalCurve($#10516612381411114:6064633413997300497$, 20.0);\r\nconst cur= EvalCurve($#10516612381411114:6064633413997300497$, float(GetPlayerLevel()));\r\n//const cur = GetPlayerXPForCurrentLevel(GetPlayer());\r\nxp - cur + 10"
+							},
+							"experienceContextId":
+							{
+								"guid": "0",
+								"typeId": "1091110055",
+								"name": "None"
+							},
+							"professionsId":
+							{
+								"guid": "0",
+								"typeId": "8125613373123",
+								"name": "None"
+							},
+							"gatheringResourceTypeId":
+							{
+								"guid": "0",
+								"typeId": "1983422155363",
+								"name": "None"
+							},
+							"craftingRecipeDefId":
+							{
+								"guid": "0",
+								"typeId": "163697",
+								"name": "None"
+							}
+						}
+					]
+				}
+			],
+			"rewardContainerIcon": "None"
+		}
+	],
+	"subTableSelectionAlgorithm": "None",
+	"numberOfSubtablesToSelect": 2,
+	"weightsPerSubTable": [],
+	"percentagePerSubTable": [],
+	"subTablesWeightCurve":
+	{
+		"externalCurve": "None",
+		"editorCurveData":
+		{
+			"keys": [],
+			"defaultValue": 3.4028234663852886e+38,
+			"preInfinityExtrap": "RCCE_Constant",
+			"postInfinityExtrap": "RCCE_Constant",
+			"keyHandlesToIndices":
+			{
+			}
+		}
+	},
+	"subTablesIds": [],
+	"guid": "6064632139788779521",
+	"name": "GM_Scroll_Level20Reward",
+	"typeId": "1091110040"
+}

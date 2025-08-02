@@ -1,0 +1,25 @@
+{
+	"equation":
+	{
+		"expression": "const IsMulti = GetEffectCount(GetInstigator(), $#30316002:6064630814014898286$) == 0;\r\nvar canActivate = true;\r\nif (!IsMulti) {\r\n    const IsAlly = IsApplicableTarget(GetTarget(), EAffectedTarget::TARGET_Ally);\r\n    const IsSelf = IsApplicableTarget(GetTarget(), EAffectedTarget::TARGET_Self);\r\n    const Inspired = true || GetEffectCount(GetTarget(), $#30316002:6064630838219901617$) == 1;\r\n\r\n    set canActivate = (IsAlly || IsSelf) && Inspired;\r\n}\r\ncanActivate"
+	},
+	"constraints":
+	{
+		"none":
+		{
+			"bClampMin": false,
+			"min": 0,
+			"bClampMax": false,
+			"max": 0,
+			"roundingRule": "Rounding_None",
+			"combineOperation": "Op_Add",
+			"bucketEntryOperation":
+			{
+				"expression": ""
+			}
+		}
+	},
+	"guid": "6064630855168236568",
+	"name": "Bard_Story_Targeting_Requirements",
+	"typeId": "10516612381411112"
+}

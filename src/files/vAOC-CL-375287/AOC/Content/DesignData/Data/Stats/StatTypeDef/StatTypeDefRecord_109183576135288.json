@@ -1,0 +1,62 @@
+{
+	"displayName": "Mana",
+	"description": "NSLOCTEXT(\"\", \"424D0C5D4AB7929342848082C501E400\", \"The primary resource for all archetypes used to activate abilities\")",
+	"bHidden": false,
+	"gameplayType": "Type_Combat",
+	"bHasWaterfallStatsUI": false,
+	"waterfallStatsUIIds": [],
+	"bDisplayAsPercentage": false,
+	"statType": "Type_Float",
+	"bClampStatFinalValue": false,
+	"bMultiplyStatMods": false,
+	"bMultiplyCompliment": false,
+	"base":
+	{
+		"expression": ""
+	},
+	"waterfallStatsBaseIds": [],
+	"valueMin":
+	{
+		"expression": "0"
+	},
+	"waterfallStatsMinIds": [],
+	"valueMax":
+	{
+		"expression": "GetStat(GetInstigator(), $#10516612381411111:109183578756729$)"
+	},
+	"waterfallStatsMaxIds": [
+		{
+			"guid": "109183578756729",
+			"typeId": "10516612381411111",
+			"name": "None"
+		}
+	],
+	"regenRate":
+	{
+		"expression": "GetStat(GetInstigator(), $#10516612381411111:109343399171796$)"
+	},
+	"waterfallStatsRegenIds": [
+		{
+			"guid": "109343399171796",
+			"typeId": "10516612381411111",
+			"name": "None"
+		}
+	],
+	"bRegenWhileDead": false,
+	"bRecalculateOnCombatState": false,
+	"onSpawn": "Reset_SetMax",
+	"onDeath": "Reset_SetMax",
+	"onRevive": "Reset_SetMax",
+	"bPersistValue": true,
+	"replication": 7,
+	"shieldStatId":
+	{
+		"guid": "0",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"grantedEffects": [],
+	"guid": "109183576135288",
+	"name": "Mana",
+	"typeId": "10516612381411111"
+}

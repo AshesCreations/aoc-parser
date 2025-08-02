@@ -1,0 +1,55 @@
+{
+	"displayName": "NSLOCTEXT(\"[8D315A4A491F36F9E732788665761C1B]\", \"3037F20D461989A8BAEF4BA776E3BC2E\", \"Momentum\")",
+	"description": "NSLOCTEXT(\"\", \"0A3A28004ABD0E1EC98DC99511625C36\", \"Fighter class resource that builds through wounding targets\")",
+	"bHidden": false,
+	"gameplayType": "Type_Combat",
+	"bHasWaterfallStatsUI": false,
+	"waterfallStatsUIIds": [],
+	"bDisplayAsPercentage": false,
+	"statType": "Type_Float",
+	"bClampStatFinalValue": false,
+	"bMultiplyStatMods": false,
+	"bMultiplyCompliment": false,
+	"base":
+	{
+		"expression": "0"
+	},
+	"waterfallStatsBaseIds": [],
+	"valueMin":
+	{
+		"expression": "0"
+	},
+	"waterfallStatsMinIds": [],
+	"valueMax":
+	{
+		"expression": "100"
+	},
+	"waterfallStatsMaxIds": [],
+	"regenRate":
+	{
+		"expression": "const Momentum = GetStat(GetInstigator(), $#10516612381411111:6064629959589298751$);\r\nconst OutOfCombatDegen = 3 + (Momentum/20.0);\r\n\r\nSelectFloat(GetEffectCount(GetSource(), $#30316002:6064629977152554345$) > 0, 0.0, -OutOfCombatDegen)"
+	},
+	"waterfallStatsRegenIds": [
+		{
+			"guid": "6064629959589298751",
+			"typeId": "10516612381411111",
+			"name": "None"
+		}
+	],
+	"bRegenWhileDead": true,
+	"onSpawn": "Reset_SetMin",
+	"onDeath": "Reset_SetMin",
+	"onRevive": "Reset_SetMin",
+	"bPersistValue": false,
+	"replication": 1,
+	"shieldStatId":
+	{
+		"guid": "0",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"grantedEffects": [],
+	"guid": "6064629959589298751",
+	"name": "Fighter_Momentum",
+	"typeId": "10516612381411111"
+}

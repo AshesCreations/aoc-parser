@@ -1,0 +1,32 @@
+{
+	"chunkSize": 8,
+	"shouldHideIfUnavailable": true,
+	"levelRequirement": 4,
+	"itemChunkLabel": "NSLOCTEXT(\"[FEA8EFE747B6BFEF48AD2AB3CBEF2B13]\", \"D4FF84DD4A31BA29E86AE69F45E12F8D\", \"Level 4 General Storage\")",
+	"availabilityRequirementsDescription": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"F834E52549147E2ACA1F78A40BCC8F34\", \"Level 4 inventory increase available for purchase\")",
+	"availabilityRequirements":
+	{
+		"expression": "EnumInt(Node_GetLevel(GetCurrentNode(GetPlayer()))) >= EnumInt(ENodeLevel::Town)"
+	},
+	"chunkCosts": [
+		{
+			"currencyDefId":
+			{
+				"guid": "6064628901272551424",
+				"typeId": "1011151289",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "10"
+			},
+			"costMultiplier":
+			{
+				"expression": "1"
+			}
+		}
+	],
+	"guid": "6064631901632004101",
+	"name": "WarehouseStorageItemChunk_Level4_General",
+	"typeId": "8675309006"
+}

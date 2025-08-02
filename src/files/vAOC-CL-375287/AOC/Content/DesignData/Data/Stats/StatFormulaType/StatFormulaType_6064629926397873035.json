@@ -1,0 +1,32 @@
+{
+	"equationId":
+	{
+		"guid": "6064629926398659468",
+		"typeId": "10516612381411112",
+		"name": "None"
+	},
+	"inputTerms": [
+		{
+			"termId":
+			{
+				"guid": "6064629926402001805",
+				"typeId": "10516612381411115",
+				"name": "None"
+			},
+			"value":
+			{
+				"expression": "const HitInProgress = GetHitInProgress();\r\nconst Target = GetTarget();\r\n\r\nconst IsPhysical = HitHasTag(HitInProgress, \"Element.Physical\");\r\nconst IsMagical  = HitHasTag(HitInProgress, \"Element.Magical\");\r\n\r\nvar Block = 0.0;\r\n\r\nif (IsPhysical) {\r\n    set Block = Block + GetStat(Target, $#10516612381411111:109343399171799$); }\r\nif (IsMagical && !IsPhysical) {\r\n    set Block = Block + GetStat(Target, $#10516612381411111:109343399171805$); }\r\n\r\nBlock"
+			},
+			"bOptional": false,
+			"bKeepBeyondScope": false,
+			"filter":
+			{
+				"expression": ""
+			},
+			"mergeRuleOverride": "Merge_Default"
+		}
+	],
+	"guid": "6064629926397873035",
+	"name": "UniversalBlockChance",
+	"typeId": "10516612381411113"
+}

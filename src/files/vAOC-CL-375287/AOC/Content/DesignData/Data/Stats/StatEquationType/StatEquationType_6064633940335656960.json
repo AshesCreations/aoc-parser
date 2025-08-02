@@ -1,0 +1,12 @@
+{
+	"equation":
+	{
+		"expression": "const NPCLevel = GetNPCLevel();\r\nconst PlayerLevel = GetPlayerLevel();\r\nconst diff = NPCLevel - PlayerLevel;\r\nvar multiplier = 1.0;\r\nif( diff < 0 || diff > 9 ){\r\n\tset multiplier = EvalCurve($#10516612381411114:6064632543980093492$, float(diff));\r\n}\r\nelse if( diff > 0 ){\r\n\tset multiplier = max(1.0,EvalCurve($#10516612381411114:6064633974257025042$, float(PlayerLevel))*EvalCurve($#10516612381411114:6064633974310436883$, float(diff)));\r\n}\r\nmultiplier"
+	},
+	"constraints":
+	{
+	},
+	"guid": "6064633940335656960",
+	"name": "ExperienceDecay",
+	"typeId": "10516612381411112"
+}

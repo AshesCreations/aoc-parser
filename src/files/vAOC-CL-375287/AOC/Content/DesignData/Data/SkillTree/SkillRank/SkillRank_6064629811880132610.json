@@ -1,0 +1,48 @@
+{
+	"abilityIdId":
+	{
+		"guid": "6064629772846569282",
+		"typeId": "30316001",
+		"name": "None"
+	},
+	"effectIdId":
+	{
+		"guid": "0",
+		"typeId": "30316002",
+		"name": "None"
+	},
+	"guildEffectIdId":
+	{
+		"guid": "0",
+		"typeId": "30311337",
+		"name": "None"
+	},
+	"cost": 1,
+	"expansionId":
+	{
+		"guid": "0",
+		"typeId": "7823461",
+		"name": "None"
+	},
+	"skillCost":
+	{
+		"skillPointCosts": [
+			{
+				"skillPointTypeId":
+				{
+					"guid": "6064631448935923712",
+					"typeId": "981011400",
+					"name": "None"
+				},
+				"quantity": 1
+			}
+		],
+		"commodityCosts": [],
+		"currencyCosts": []
+	},
+	"tooltipText": "Spawn a trap at the target location, which arms after 1 second.  \r\n\r\nWhen an enemy triggers the trap, they take $hit3$ and become $effect:Status_Root$ for 3 seconds. Consumes all stacks of $effect:Status_Snared.hide$ on the target, increasing the root duration by 1 second per stack consumed.",
+	"tooltipIcon": "/Game/UI/Icons/Archetypes/Ranger/Abilities/TUI_AbilityIcon_BearTrap.TUI_AbilityIcon_BearTrap",
+	"guid": "6064629811880132610",
+	"name": "Ranger_TripTrap",
+	"typeId": "981011101"
+}
