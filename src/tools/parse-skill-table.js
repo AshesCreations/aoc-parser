@@ -421,7 +421,69 @@ function parseSkillTable(id, dataDir) {
       requirements: {
         pointsSpent: nodeData.pointRequirement,
         level: nodeData.levelRequirement,
-        prerequisites: (nodeData.skillsRequired || []).map(r => r.skillRequirementId?.name).filter(Boolean)
+        prerequisites: (nodeData.skillsRequired || []).map(r => {
+          const reqGuid = r.skillRequirementId?.guid;
+          if (!reqGuid || reqGuid === '0') return null;
+          const req = loadJson(
+            dataDir,
+            'SkillTree/SkillRequirement',
+            'SkillRequirement',
+            reqGuid
+          );
+          let skName = req.name;
+          const targetGuid = req.skillRecordId?.guid;
+          if (targetGuid && targetGuid !== '0') {
+            const sk = loadJson(
+              dataDir,
+              'SkillTree/Skill',
+              'SkillRecord',
+              targetGuid
+            );
+            const rankGuidReq = sk.skillRanksIds?.[0]?.guid;
+            let rankReq = loadJson(
+              dataDir,
+              'SkillTree/SkillRank',
+              'SkillRank',
+              rankGuidReq
+            );
+            if (Object.keys(rankReq).length === 0)
+              rankReq = loadJson(
+                dataDir,
+                'SkillTree/SkillRank',
+                'SkillRankRecord',
+                rankGuidReq
+              );
+            const abilGuidReq = rankReq.abilityIdId?.guid;
+            const effGuidReq = rankReq.effectIdId?.guid;
+            if (abilGuidReq && abilGuidReq !== '0') {
+              let abilReq = loadJson(
+                dataDir,
+                'Abilities/AoCAbility',
+                'AoCAbility',
+                abilGuidReq
+              );
+              if (Object.keys(abilReq).length === 0)
+                abilReq = loadJson(
+                  dataDir,
+                  'Abilities/AoCAbility',
+                  'AoCAbilityRecord',
+                  abilGuidReq
+                );
+              const n = extractLastQuotedValue(abilReq.abilityName);
+              if (n) skName = n;
+            } else if (effGuidReq && effGuidReq !== '0') {
+              const effReq = loadJson(
+                dataDir,
+                'Effects/Effect',
+                'Effect',
+                effGuidReq
+              );
+              const n = extractLastQuotedValue(effReq.effectName);
+              if (n) skName = n;
+            }
+          }
+          return skName ? formatEffectName(skName) : null;
+        }).filter(Boolean)
       }
     });
   }
