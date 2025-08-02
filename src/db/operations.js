@@ -850,6 +850,14 @@ async function batchSaveStatusEffectsToDatabase(entries) {
   }
   const client = await pool.getConnection();
   try {
+    await client.query(`
+      CREATE TABLE IF NOT EXISTS \`DatabaseStatusEffects\` (
+        effectName VARCHAR(255) PRIMARY KEY,
+        effectDescription TEXT,
+        effectIcon TEXT,
+        lastModified TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+      )
+    `);
     await ensureLastModifiedColumn(client, 'DatabaseStatusEffects');
     await client.query('BEGIN');
     const query = `
