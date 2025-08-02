@@ -279,6 +279,16 @@ export async function initDatabase() {
     await ensureLastModifiedColumn(conn, 'DatabaseSkillTable');
     await ensureColumnExists(conn, 'DatabaseSkillTable', 'manaCost', 'JSON');
 
+    await conn.query(`
+      CREATE TABLE IF NOT EXISTS DatabaseStatusEffects (
+        effectName VARCHAR(255) PRIMARY KEY,
+        effectDescription TEXT,
+        effectIcon TEXT,
+        lastModified TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+      )
+    `);
+    await ensureLastModifiedColumn(conn, 'DatabaseStatusEffects');
+
     console.log("Database tables initialized");
   } finally {
     conn.release();
