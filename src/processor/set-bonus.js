@@ -5,7 +5,13 @@
 import fs from "fs";
 import path from "path";
 import { saveSetBonusToDatabase } from "../db/operations.js";
-import { extractLastQuotedValue, getJson, parseValueExpression } from "../utils.js";
+import {
+  extractLastQuotedValue,
+  getJson,
+  parseValueExpression,
+  extractDescription,
+  extractCoefficient,
+} from "../utils.js";
 
 /**
  * Processes a single JSON file containing set bonus data
@@ -70,7 +76,32 @@ async function processSetBonusFile(filePath, statIdToName, dataDir) {
             );
           }
 
+          const description = extractDescription(
+            effectData.effectDescription || ""
+          ).join(" \n");
+
           const statMods = effectData.statModsIds || [];
+
+          if (statMods.length === 0) {
+            const effectObj = {
+              ...eff.effect,
+              name:
+                extractLastQuotedValue(effectData.effectName) ||
+                eff.effect.name ||
+                "",
+              description,
+            };
+
+            processedObject.effectBonuses.push({
+              count,
+              effect: effectObj,
+              minimumRarity: eff.minimumRarity,
+              maximumRarity: eff.maximumRarity,
+              stacks: eff.stacks,
+            });
+            continue;
+          }
+
           for (const mod of statMods) {
             const modId = mod.guid;
             let modData = getJson(
@@ -88,17 +119,19 @@ async function processSetBonusFile(filePath, statIdToName, dataDir) {
 
             const statId = modData.statRefId?.guid;
             const statName = statIdToName[statId] || "";
-            const value = parseValueExpression(
+            const parsed = parseValueExpression(
               modData.value?.expression || "",
               modData.valueInputTerms || [],
               statIdToName,
               dataDir
             );
+            const numericValue = extractCoefficient(parsed);
 
             const effectObj = {
               ...eff.effect,
               name: statName,
-              value,
+              value: numericValue,
+              description,
             };
 
             processedObject.effectBonuses.push({
