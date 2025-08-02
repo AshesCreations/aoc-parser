@@ -855,24 +855,27 @@ async function batchSaveStatusEffectsToDatabase(entries) {
         effectName VARCHAR(255) PRIMARY KEY,
         effectDescription TEXT,
         effectIcon TEXT,
+        effectCategory VARCHAR(255),
         lastModified TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
       )
     `);
     await ensureLastModifiedColumn(client, 'DatabaseStatusEffects');
+    await ensureColumn(client, 'DatabaseStatusEffects', 'effectCategory', 'VARCHAR(255)');
     await client.query('BEGIN');
     const query = `
-      INSERT INTO \`DatabaseStatusEffects\` (effectName, effectDescription, effectIcon)
-      VALUES (?, ?, ?)
+      INSERT INTO \`DatabaseStatusEffects\` (effectName, effectDescription, effectIcon, effectCategory)
+      VALUES (?, ?, ?, ?)
       ON DUPLICATE KEY UPDATE
         effectDescription = VALUES(effectDescription),
         effectIcon = VALUES(effectIcon),
+        effectCategory = VALUES(effectCategory),
         lastModified = CURRENT_TIMESTAMP
     `;
     const batchSize = 100;
     for (let i = 0; i < entries.length; i += batchSize) {
       const batch = entries.slice(i, i + batchSize);
       const promises = batch.map((e) => {
-        const values = [e.effectName, e.effectDescription, e.effectIcon];
+        const values = [e.effectName, e.effectDescription, e.effectIcon, e.effectCategory];
         return client.execute(query, values);
       });
       await Promise.all(promises);
