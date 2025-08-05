@@ -790,13 +790,15 @@ async function batchSaveSkillTableToDatabase(entries) {
   const client = await pool.getConnection();
   try {
     await ensureLastModifiedColumn(client, 'DatabaseSkillTable');
+    await ensureColumn(client, 'DatabaseSkillTable', 'range', 'FLOAT');
+    await ensureColumn(client, 'DatabaseSkillTable', 'angle', 'FLOAT');
     await client.query('BEGIN');
     const query = `
       INSERT INTO \`DatabaseSkillTable\` (
         id, tableId, tableName, name, description, type, cooldown, manaCost, maxRank,
-        imageUrl, position, requirements
+        imageUrl, position, requirements, \`range\`, angle
       ) VALUES (
-        ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+        ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
       ) ON DUPLICATE KEY UPDATE
         tableId = VALUES(tableId),
         tableName = VALUES(tableName),
@@ -809,6 +811,8 @@ async function batchSaveSkillTableToDatabase(entries) {
         imageUrl = VALUES(imageUrl),
         position = VALUES(position),
         requirements = VALUES(requirements),
+        \`range\` = VALUES(\`range\`),
+        angle = VALUES(angle),
         lastModified = CURRENT_TIMESTAMP
     `;
     const batchSize = 100;
@@ -827,7 +831,9 @@ async function batchSaveSkillTableToDatabase(entries) {
           e.maxRank ?? null,
           e.imageUrl ?? null,
           JSON.stringify(e.position || {}),
-          JSON.stringify(e.requirements || {})
+          JSON.stringify(e.requirements || {}),
+          e.range ?? null,
+          e.angle ?? null
         ];
         return client.execute(query, values);
       });
