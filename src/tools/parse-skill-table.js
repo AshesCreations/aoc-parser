@@ -497,7 +497,7 @@ function parseSkillTable(id, dataDir) {
         rank.tooltipIcon?.replace('/Game/UI', '/cdn').split('.')[0] + '.png';
       let cooldown = null;
       let manaCost = null;
-      let range = null;
+      let maxRange = null;
       let angle = null;
       if (abilityGuid && abilityGuid !== '0') {
         type = 'skill';
@@ -531,7 +531,7 @@ function parseSkillTable(id, dataDir) {
           if (!Number.isNaN(cd)) cooldown = cd;
           manaCost = parseManaCost(ability, dataDir);
           if (typeof ability.validDistance === 'number') {
-            range = ability.validDistance / 100;
+            maxRange = ability.validDistance / 100;
           }
           if (typeof ability.validAngle === 'number') {
             angle = ability.validAngle;
@@ -559,7 +559,7 @@ function parseSkillTable(id, dataDir) {
         type,
         cooldown,
         manaCost,
-        range,
+        maxRange,
         angle,
         imageUrl: icon,
         name,
