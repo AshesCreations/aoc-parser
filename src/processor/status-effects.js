@@ -41,7 +41,7 @@ function resolvePlaceholders(text, effectData, dataDir, statIdToName) {
 
   // Statmod placeholders
   const statMods = effectData.statModsIds || [];
-  result = result.replace(/\$statmod(\d+)\.(by%|nostat|onlystat)\$/gi, (m, idx, type) => {
+  result = result.replace(/\$statmod(\d+)\.(by%|%by|nostat|onlystat)\$/gi, (m, idx, type) => {
     const index = parseInt(idx, 10);
     const ref = statMods[index];
     if (!ref) return m;
@@ -51,7 +51,8 @@ function resolvePlaceholders(text, effectData, dataDir, statIdToName) {
     }
     if (!mod || Object.keys(mod).length === 0) return m;
     const statName = statIdToName[mod.statRefId?.guid] || '';
-    if (type.toLowerCase() === 'onlystat') {
+    const typeLower = type.toLowerCase();
+    if (typeLower === 'onlystat') {
       return statName || m;
     }
     let expr = parseValueExpression(
@@ -61,7 +62,7 @@ function resolvePlaceholders(text, effectData, dataDir, statIdToName) {
       dataDir
     );
     const val = evaluateExpression(expr);
-    if (type.toLowerCase() === 'by%') {
+    if (typeLower === 'by%' || typeLower === '%by') {
       if (!isNaN(val)) {
         const num = (val * 100).toFixed(0);
         return `${num}%${statName ? ' ' + statName : ''}`.trim();
@@ -74,7 +75,7 @@ function resolvePlaceholders(text, effectData, dataDir, statIdToName) {
 
   // Tick statmod placeholders (e.g., $tick0:statmod0.onlystat$)
   result = result.replace(
-    /\$tick(\d+):statmod(\d+)\.(by%|nostat|onlystat)\$/gi,
+    /\$tick(\d+):statmod(\d+)\.(by%|%by|nostat|onlystat)\$/gi,
     (m, tickIdx, modIdx, type) => {
       const tIdx = parseInt(tickIdx, 10);
       const mIdx = parseInt(modIdx, 10);
@@ -94,7 +95,8 @@ function resolvePlaceholders(text, effectData, dataDir, statIdToName) {
       }
       if (!mod || Object.keys(mod).length === 0) return m;
       const statName = statIdToName[mod.statRefId?.guid] || '';
-      if (type.toLowerCase() === 'onlystat') {
+      const typeLower = type.toLowerCase();
+      if (typeLower === 'onlystat') {
         return statName || m;
       }
       let expr = parseValueExpression(
@@ -104,7 +106,7 @@ function resolvePlaceholders(text, effectData, dataDir, statIdToName) {
         dataDir
       );
       const val = evaluateExpression(expr);
-      if (type.toLowerCase() === 'by%') {
+      if (typeLower === 'by%' || typeLower === '%by') {
         if (!isNaN(val)) {
           const num = (val * 100).toFixed(0);
           return `${num}%${statName ? ' ' + statName : ''}`.trim();
