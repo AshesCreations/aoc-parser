@@ -856,26 +856,46 @@ async function batchSaveStatusEffectsToDatabase(entries) {
         effectDescription TEXT,
         effectIcon TEXT,
         effectCategory VARCHAR(255),
+        effectElement VARCHAR(255),
+        effectDuration FLOAT,
+        effectDispellable TINYINT(1),
         lastModified TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
       )
     `);
     await ensureLastModifiedColumn(client, 'DatabaseStatusEffects');
     await ensureColumn(client, 'DatabaseStatusEffects', 'effectCategory', 'VARCHAR(255)');
+    await ensureColumn(client, 'DatabaseStatusEffects', 'effectElement', 'VARCHAR(255)');
+    await ensureColumn(client, 'DatabaseStatusEffects', 'effectDuration', 'FLOAT');
+    await ensureColumn(client, 'DatabaseStatusEffects', 'effectDispellable', 'TINYINT(1)');
     await client.query('BEGIN');
     const query = `
-      INSERT INTO \`DatabaseStatusEffects\` (effectName, effectDescription, effectIcon, effectCategory)
-      VALUES (?, ?, ?, ?)
+      INSERT INTO \`DatabaseStatusEffects\` (
+        effectName, effectDescription, effectIcon,
+        effectCategory, effectElement, effectDuration, effectDispellable
+      )
+      VALUES (?, ?, ?, ?, ?, ?, ?)
       ON DUPLICATE KEY UPDATE
         effectDescription = VALUES(effectDescription),
         effectIcon = VALUES(effectIcon),
         effectCategory = VALUES(effectCategory),
+        effectElement = VALUES(effectElement),
+        effectDuration = VALUES(effectDuration),
+        effectDispellable = VALUES(effectDispellable),
         lastModified = CURRENT_TIMESTAMP
     `;
     const batchSize = 100;
     for (let i = 0; i < entries.length; i += batchSize) {
       const batch = entries.slice(i, i + batchSize);
       const promises = batch.map((e) => {
-        const values = [e.effectName, e.effectDescription, e.effectIcon, e.effectCategory];
+        const values = [
+          e.effectName,
+          e.effectDescription,
+          e.effectIcon,
+          e.effectCategory,
+          e.effectElement,
+          e.effectDuration,
+          e.effectDispellable,
+        ];
         return client.execute(query, values);
       });
       await Promise.all(promises);
