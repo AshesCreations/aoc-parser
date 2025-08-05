@@ -497,6 +497,8 @@ function parseSkillTable(id, dataDir) {
         rank.tooltipIcon?.replace('/Game/UI', '/cdn').split('.')[0] + '.png';
       let cooldown = null;
       let manaCost = null;
+      let maxRange = null;
+      let angle = null;
       if (abilityGuid && abilityGuid !== '0') {
         type = 'skill';
         const ability = loadJson(
@@ -528,6 +530,12 @@ function parseSkillTable(id, dataDir) {
           const cd = parseFloat(ability.cooldown?.expression);
           if (!Number.isNaN(cd)) cooldown = cd;
           manaCost = parseManaCost(ability, dataDir);
+          if (typeof ability.validDistance === 'number') {
+            maxRange = ability.validDistance / 100;
+          }
+          if (typeof ability.validAngle === 'number') {
+            angle = ability.validAngle;
+          }
         }
       } else if (effectGuid && effectGuid !== '0') {
         type = 'passive';
@@ -551,6 +559,8 @@ function parseSkillTable(id, dataDir) {
         type,
         cooldown,
         manaCost,
+        maxRange,
+        angle,
         imageUrl: icon,
         name,
         description,
