@@ -1,7 +1,23 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import { extractLastQuotedValue } from '../utils.js';
+import {
+  extractLastQuotedValue,
+  parseValueExpression,
+} from '../utils.js';
+import { statIdToName } from '../config.js';
+
+function evaluateExpression(expr) {
+  if (!expr) return NaN;
+  const sanitized = expr.replace(/[^0-9+\-*/().\s]/g, '');
+  if (!sanitized) return NaN;
+  try {
+    // eslint-disable-next-line no-new-func
+    return Function(`return (${sanitized});`)();
+  } catch {
+    return NaN;
+  }
+}
 
 function findJsonFile(dir, prefix, id) {
   const direct = path.join(dir, `${prefix}_${id}.json`);
@@ -251,8 +267,67 @@ function resolveSkillName(skillToken, dataDir) {
   return formatEffectName(skillToken);
 }
 
+function resolveStatModPlaceholders(text, ability, dataDir) {
+  if (!text) return text;
+
+  const replaceMod = (mod, type) => {
+    if (!mod) return '';
+    const statName = statIdToName[mod.statRefId?.guid] || '';
+    let expr = parseValueExpression(
+      mod.value?.expression || '',
+      mod.valueInputTerms,
+      statIdToName,
+      dataDir
+    );
+    const val = evaluateExpression(expr);
+    const t = type.toLowerCase();
+    if (t.includes('onlystat')) return statName || '';
+    if (t.includes('by%') || t.startsWith('f%')) {
+      if (!isNaN(val)) {
+        return `${(val * 100).toFixed(0)}%${statName ? ' ' + statName : ''}`.trim();
+      }
+      return `${expr}${statName ? ' ' + statName : ''}`.trim();
+    }
+    if (!isNaN(val)) {
+      return `${val}${statName ? ' ' + statName : ''}`.trim();
+    }
+    return `${expr}${statName ? ' ' + statName : ''}`.trim();
+  };
+
+  const statMods = ability.statModsIds || [];
+  text = text.replace(/\$statmod(\d+)\.([^$]+)\$/gi, (m, idx, type) => {
+    const ref = statMods[parseInt(idx, 10)];
+    if (!ref) return m;
+    let mod = loadJson(dataDir, 'Effects/StatMod', 'StatMod', ref.guid);
+    if (!mod || Object.keys(mod).length === 0) {
+      mod = loadJson(dataDir, 'Effects/StatMod', 'StatModRecord', ref.guid);
+    }
+    if (!mod || Object.keys(mod).length === 0) return m;
+    return replaceMod(mod, type);
+  });
+
+  text = text.replace(/\$hit(\d+):statmod(\d+)\.([^$]+)\$/gi, (m, hitIdx, modIdx, type) => {
+    const hitRef = ability.hitsIds?.[hitIdx];
+    if (!hitRef) return m;
+    const hit = loadAbilityHit(hitRef.guid, dataDir);
+    if (!hit) return m;
+    const ref = (hit.statModsIds || [])[parseInt(modIdx, 10)];
+    if (!ref) return m;
+    let mod = loadJson(dataDir, 'Effects/StatMod', 'StatMod', ref.guid);
+    if (!mod || Object.keys(mod).length === 0) {
+      mod = loadJson(dataDir, 'Effects/StatMod', 'StatModRecord', ref.guid);
+    }
+    if (!mod || Object.keys(mod).length === 0) return m;
+    return replaceMod(mod, type);
+  });
+
+  return text;
+}
+
 function formatDescription(desc, ability, dataDir) {
   let text = extractLastQuotedValue(desc);
+  text = resolveStatModPlaceholders(text, ability, dataDir);
+
   if (ability.hitsIds && ability.hitsIds['1']) {
     const dmg = parseDamage(ability.hitsIds['1'].guid, dataDir);
     if (dmg && dmg.percent) {
@@ -351,13 +426,17 @@ function formatDescription(desc, ability, dataDir) {
     return `${name}: ${clean}`;
   });
 
+  text = text.replace(/: ([^:<>]+:[^:<>]+):<>/g, (_, name) => `: [${name}]<br>`);
+  text = text.replace(/([A-Za-z][A-Za-z' ]+?)<>/g, (_, name) => `[${name.trim()}]`);
+  text = text.replace(/<>/g, '');
+  text = text.replace(/\r\n|\n/g, '<br>');
+
   text = text.replace(/\$charges\$/g, () => {
     const val = parseFloat(ability.cooldownCharges?.expression);
     return Number.isNaN(val) ? '0' : String(val);
   });
 
   text = text.replace(/rnrn/g, '  ');
-  text = text.replace(/\r\n|\n/g, ' ');
   text = text.replace(/<img[^>]*id=\"([^\"]+)\"[^>]*>/g, (_, id) => `[${formatEffectName(id)}]`);
   text = text.replace(/\((\s*\[[^\]]+\]\s*)+\)/g, (m) => m.slice(1, -1));
   text = text.replace(/Healing Damage/gi, 'Healing');

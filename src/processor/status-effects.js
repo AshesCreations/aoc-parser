@@ -1,7 +1,13 @@
 import fs from 'fs';
 import path from 'path';
 import { batchSaveStatusEffectsToDatabase } from '../db/operations.js';
-import { getJson, extractDescription, extractLastQuotedValue, parseValueExpression, formatTime } from '../utils.js';
+import {
+  getJson,
+  extractDescription,
+  extractLastQuotedValue,
+  parseValueExpression,
+  formatTime,
+} from '../utils.js';
 
 function evaluateExpression(expr) {
   if (!expr) return NaN;
@@ -141,14 +147,39 @@ async function processStatusEffects(directoryData, statIdToName) {
     const descArray = extractDescription(data.effectDescription);
     let description = descArray.join(' ').trim();
     if (description) {
-      description = resolvePlaceholders(description, data, directoryData, statIdToName);
+      description = resolvePlaceholders(
+        description,
+        data,
+        directoryData,
+        statIdToName
+      );
     }
+
+    let effectDuration = null;
+    if (data.effectDuration?.expression) {
+      const durExpr = parseValueExpression(
+        data.effectDuration.expression,
+        [],
+        statIdToName,
+        directoryData
+      );
+      const durVal = evaluateExpression(durExpr);
+      effectDuration = !isNaN(durVal) ? durVal : null;
+    }
+
+    const effectElement = (data.effectTags || [])
+      .map((t) => t.tagName)
+      .find((t) => t.startsWith('Element.'))
+      ?.split('.').pop();
 
     entries.push({
       effectName: name,
       effectDescription: description,
       effectIcon: data.effectIcon,
       effectCategory: data.effectCategory,
+      effectElement: effectElement || null,
+      effectDuration,
+      effectDispellable: data.bDispellable ?? null,
     });
   }
 
