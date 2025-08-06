@@ -77,6 +77,7 @@ function formatEffectName(name) {
   }
   out = out.replace(/\b[Ss]tat\b/, '').trim();
   out = out.replace(/\b\w/g, (c) => c.toUpperCase());
+  if (out.toLowerCase() === 'hemorraging') out = 'Hemorrhaging';
   return out;
 }
 
@@ -226,16 +227,33 @@ function parseApplyEffectName(hitKey, index, dataDir) {
 }
 
 function resolveEffectToken(token, dataDir) {
-  let eff = loadJson(dataDir, 'Effects/Effect', 'Effect', token);
-  if (!eff || Object.keys(eff).length === 0)
-    eff = loadJson(dataDir, 'Effects/Effect', 'EffectRecord', token);
-  if (!eff || Object.keys(eff).length === 0) {
-    const dir = path.join(dataDir, 'Effects/Effect');
-    const file = fs
-      .readdirSync(dir)
-      .find((f) => f.includes(token));
-    if (file) eff = JSON.parse(fs.readFileSync(path.join(dir, file), 'utf8'));
+  let eff = {};
+  const isGuid = /^\d+$/.test(token);
+  if (isGuid) {
+    eff = loadJson(dataDir, 'Effects/Effect', 'Effect', token);
+    if (!eff || Object.keys(eff).length === 0)
+      eff = loadJson(dataDir, 'Effects/Effect', 'EffectRecord', token);
   }
+
+  // For non-guid tokens, search by internal name to ensure we fetch the
+  // correct status effect rather than any effect that merely references the
+  // token in its text.
+  if (!isGuid || !eff || Object.keys(eff).length === 0) {
+    const dir = path.join(dataDir, 'Effects/Effect');
+    const files = fs.readdirSync(dir);
+    for (const f of files) {
+      const content = fs.readFileSync(path.join(dir, f), 'utf8');
+      if (content.includes(`"name": "${token}"`)) {
+        eff = JSON.parse(content);
+        break;
+      }
+    }
+    if (!eff || Object.keys(eff).length === 0) {
+      const file = files.find((f) => f.includes(token));
+      if (file) eff = JSON.parse(fs.readFileSync(path.join(dir, file), 'utf8'));
+    }
+  }
+
   const name = extractLastQuotedValue(eff.effectName);
   return name ? formatEffectName(name) : formatEffectName(token);
 }
