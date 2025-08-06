@@ -152,8 +152,13 @@ function resolvePlaceholders(text, effectData, dataDir, statIdToName) {
     const val = evaluateExpression(expr);
     if (typeLower === 'by%' || typeLower === '%by') {
       if (!isNaN(val)) {
-        const num = (val * 100).toFixed(0);
-        return `${num}%${statName ? ' ' + statName : ''}`.trim();
+        const num = Math.abs(val * 100).toFixed(0);
+        if (statName) {
+          const adj = val < 0 ? 'reduced' : 'increased';
+          return `${statName} ${adj} by ${num}%`;
+        }
+        const sign = val < 0 ? '-' : '';
+        return `${sign}${num}%`;
       }
       return `${expr}${statName ? ' ' + statName : ''}`.trim();
     }
