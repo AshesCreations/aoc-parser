@@ -9,9 +9,90 @@ import {
   formatTime,
 } from '../utils.js';
 
+const CLASS_PREFIXES = ['Fighter', 'Tank', 'Cleric', 'Bard', 'Mage', 'Ranger', 'Rogue', 'Summoner', 'Weapon'];
+
+function formatEffectName(name) {
+  if (!name) return '';
+  let out = name
+    .replace(/^Status_/, '')
+    .replace(/^Effect_/, '')
+    .replace(/^Weapon_Description_/, '')
+    .replace(/^Weapon_description_/, '')
+    .replace(/^Weapon_/, '')
+    .replace(/_/g, ' ')
+    .replace(/([a-z])([A-Z])/g, '$1 $2');
+  for (const p of CLASS_PREFIXES) {
+    if (out.startsWith(p + ' ')) {
+      out = out.slice(p.length + 1);
+      break;
+    }
+  }
+  out = out.replace(/\b[Ss]tat\b/, '').trim();
+  out = out.replace(/\b\w/g, (c) => c.toUpperCase());
+  if (out.toLowerCase() === 'hemorraging') out = 'Hemorrhaging';
+  return out;
+}
+
+function resolveEffectToken(token, dataDir) {
+  let eff = {};
+  const isGuid = /^\d+$/.test(token);
+  if (isGuid) {
+    eff = getJson(dataDir, '/Effects/Effect', `Effect_${token}.json`);
+    if (!eff || Object.keys(eff).length === 0)
+      eff = getJson(dataDir, '/Effects/Effect', `EffectRecord_${token}.json`);
+  }
+  if (!isGuid || !eff || Object.keys(eff).length === 0) {
+    const dir = path.join(dataDir, 'Effects/Effect');
+    const files = fs.readdirSync(dir);
+    for (const f of files) {
+      const content = fs.readFileSync(path.join(dir, f), 'utf8');
+      if (content.includes(`"name": "${token}"`)) {
+        eff = JSON.parse(content);
+        break;
+      }
+    }
+    if (!eff || Object.keys(eff).length === 0) {
+      const file = files.find((f) => f.includes(token));
+      if (file) eff = JSON.parse(fs.readFileSync(path.join(dir, file), 'utf8'));
+    }
+  }
+  const name = extractLastQuotedValue(eff.effectName);
+  return name ? formatEffectName(name) : formatEffectName(token);
+}
+
+function parseDamage(hitName, dataDir) {
+  const dir = path.join(dataDir, 'Abilities/AbilityHit');
+  let file = path.join(dir, `AbilityHit_${hitName}.json`);
+  if (!fs.existsSync(file)) {
+    const match = fs
+      .readdirSync(dir)
+      .find((f) => fs.readFileSync(path.join(dir, f), 'utf8').includes(`"name": "${hitName}"`));
+    if (match) file = path.join(dir, match);
+  }
+  if (!fs.existsSync(file)) return null;
+  const hit = JSON.parse(fs.readFileSync(file, 'utf8'));
+  const elementTag = hit.eventTags?.[0]?.tagName || '';
+  const element = elementTag.split('.').pop();
+  const statGuid = hit.statModsIds?.[0]?.guid;
+  let percent = null;
+  if (statGuid) {
+    let mod = getJson(dataDir, '/Effects/StatMod', `StatMod_${statGuid}.json`);
+    if (!mod || Object.keys(mod).length === 0)
+      mod = getJson(dataDir, '/Effects/StatMod', `StatModRecord_${statGuid}.json`);
+    const expr = mod.valueInputTerms?.[0]?.value?.expression || mod.value?.expression;
+    if (expr) {
+      const v = parseFloat(expr);
+      if (!Number.isNaN(v)) percent = v * 100;
+    }
+  }
+  return { element, percent };
+}
+
 function evaluateExpression(expr) {
   if (!expr) return NaN;
-  const sanitized = expr.replace(/[^0-9+\-*/().\s]/g, '');
+  const sanitized = expr
+    .replace(/EvalFormula\([^)]*\)/g, '1')
+    .replace(/[^0-9+\-*/().\s]/g, '');
   if (!sanitized) return NaN;
   try {
     // eslint-disable-next-line no-new-func
@@ -39,6 +120,13 @@ function resolvePlaceholders(text, effectData, dataDir, statIdToName) {
     result = result.replace(/\$duration\$/g, durationStr);
   }
 
+  if (result.includes('$maxduration$')) {
+    const maxDur = effectData.extendedMaximum;
+    if (typeof maxDur === 'number' && maxDur > 0) {
+      result = result.replace(/\$maxduration\$/g, formatTime(maxDur));
+    }
+  }
+
   // Statmod placeholders
   const statMods = effectData.statModsIds || [];
   result = result.replace(/\$statmod(\d+)\.(by%|%by|nostat|onlystat)\$/gi, (m, idx, type) => {
@@ -64,8 +152,13 @@ function resolvePlaceholders(text, effectData, dataDir, statIdToName) {
     const val = evaluateExpression(expr);
     if (typeLower === 'by%' || typeLower === '%by') {
       if (!isNaN(val)) {
-        const num = (val * 100).toFixed(0);
-        return `${num}%${statName ? ' ' + statName : ''}`.trim();
+        const num = Math.abs(val * 100).toFixed(0);
+        if (statName) {
+          const adj = val < 0 ? 'reduced' : 'increased';
+          return `${statName} ${adj} by ${num}%`;
+        }
+        const sign = val < 0 ? '-' : '';
+        return `${sign}${num}%`;
       }
       return `${expr}${statName ? ' ' + statName : ''}`.trim();
     }
@@ -126,6 +219,16 @@ function resolvePlaceholders(text, effectData, dataDir, statIdToName) {
     }
   }
 
+  result = result.replace(/\$hit:([^\.]+)(?:\.[^$]+)?\$/g, (m, name) => {
+    const dmg = parseDamage(name, dataDir);
+    return dmg && dmg.percent ? `${dmg.percent}% ${dmg.element} Damage` : m;
+  });
+
+  result = result.replace(/\$effect:([^\.\$]+)(?:\.[^\$]+)?\$/g, (m, name) => {
+    const resolved = resolveEffectToken(name, dataDir);
+    return `[${resolved}]`;
+  });
+
   return result;
 }
 
@@ -145,7 +248,8 @@ async function processStatusEffects(directoryData, statIdToName) {
       continue;
     }
 
-    const name = extractLastQuotedValue(data.effectName) || data.effectName || '';
+    const rawName = extractLastQuotedValue(data.effectName) || data.effectName || '';
+    const name = formatEffectName(rawName);
     const descArray = extractDescription(data.effectDescription);
     let description = descArray.join(' ').trim();
     if (description) {
