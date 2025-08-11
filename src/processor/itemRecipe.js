@@ -76,8 +76,8 @@ async function processItemRecipeFiles(
           type: jsonData.inventoryFilterType,
           tag: [...extractTagParts(jsonData, tagsToExclude)],
           icon: jsonData.displayIcon
-            ? jsonData.displayIcon.replace("/Game/UI/", "/cdn/").split(".")[0] +
-              ".png"
+            ? jsonData.displayIcon.split(".")[0] +
+              ".webp"
             : undefined,
           rarityMin: jsonData.rarityMin,
           rarityMax: jsonData.rarityMax,

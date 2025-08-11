@@ -850,7 +850,7 @@ function parseSkillTable(id, dataDir) {
       let name = rank.name;
       let description = extractLastQuotedValue(rank.tooltipText);
       let icon =
-        rank.tooltipIcon?.replace('/Game/UI', '/cdn').split('.')[0] + '.png';
+        rank.tooltipIcon?.split('.')[0] + '.webp';
       let cooldown = null;
       let manaCost = null;
       let maxRange = null;
@@ -893,8 +893,8 @@ function parseSkillTable(id, dataDir) {
             dataDir
           );
           icon = ability.abilityIcon
-            ? ability.abilityIcon.replace('/Game/UI', '/cdn').split('.')[0] +
-              '.png'
+            ? ability.abilityIcon.split('.')[0] +
+              '.webp'
             : icon;
           const cd = parseFloat(ability.cooldown?.expression);
           if (!Number.isNaN(cd)) cooldown = cd;
@@ -917,8 +917,8 @@ function parseSkillTable(id, dataDir) {
             dataDir
           );
           icon = effect.effectIcon
-            ? effect.effectIcon.replace('/Game/UI', '/cdn').split('.')[0] +
-              '.png'
+            ? effect.effectIcon.split('.')[0] +
+              '.webp'
             : icon;
         }
       }
