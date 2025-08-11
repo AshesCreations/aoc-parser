@@ -60,17 +60,22 @@ function resolveEffectToken(token, dataDir) {
   return name ? formatEffectName(name) : formatEffectName(token);
 }
 
-function parseDamage(hitName, dataDir) {
+function loadAbilityHit(hitKey, dataDir) {
   const dir = path.join(dataDir, 'Abilities/AbilityHit');
-  let file = path.join(dir, `AbilityHit_${hitName}.json`);
+  let file = path.join(dir, `AbilityHit_${hitKey}.json`);
   if (!fs.existsSync(file)) {
     const match = fs
       .readdirSync(dir)
-      .find((f) => fs.readFileSync(path.join(dir, f), 'utf8').includes(`"name": "${hitName}"`));
+      .find((f) => fs.readFileSync(path.join(dir, f), 'utf8').includes(hitKey));
     if (match) file = path.join(dir, match);
   }
   if (!fs.existsSync(file)) return null;
-  const hit = JSON.parse(fs.readFileSync(file, 'utf8'));
+  return JSON.parse(fs.readFileSync(file, 'utf8'));
+}
+
+function parseDamage(hitKey, dataDir) {
+  const hit = loadAbilityHit(hitKey, dataDir);
+  if (!hit) return null;
   const elementTag = hit.eventTags?.[0]?.tagName || '';
   const element = elementTag.split('.').pop();
   const statGuid = hit.statModsIds?.[0]?.guid;
@@ -86,6 +91,18 @@ function parseDamage(hitName, dataDir) {
     }
   }
   return { element, percent };
+}
+
+function parseApplyEffectName(hitKey, index, dataDir) {
+  const hit = loadAbilityHit(hitKey, dataDir);
+  if (!hit || !Array.isArray(hit.applyEffects)) return null;
+  const effGuid = hit.applyEffects[index]?.effectId?.guid;
+  if (!effGuid || effGuid === '0') return null;
+  let eff = getJson(dataDir, '/Effects/Effect', `Effect_${effGuid}.json`);
+  if (!eff || Object.keys(eff).length === 0)
+    eff = getJson(dataDir, '/Effects/Effect', `EffectRecord_${effGuid}.json`);
+  const name = extractLastQuotedValue(eff.effectName);
+  return name ? formatEffectName(name) : null;
 }
 
 function evaluateExpression(expr) {
@@ -129,20 +146,9 @@ function resolvePlaceholders(text, effectData, dataDir, statIdToName) {
 
   // Statmod placeholders
   const statMods = effectData.statModsIds || [];
-  result = result.replace(/\$statmod(\d+)\.(by%|%by|nostat|onlystat)\$/gi, (m, idx, type) => {
-    const index = parseInt(idx, 10);
-    const ref = statMods[index];
-    if (!ref) return m;
-    let mod = getJson(dataDir, '/Effects/StatMod', `StatMod_${ref.guid}.json`);
-    if (!mod || Object.keys(mod).length === 0) {
-      mod = getJson(dataDir, '/Effects/StatMod', `StatModRecord_${ref.guid}.json`);
-    }
-    if (!mod || Object.keys(mod).length === 0) return m;
+  const replaceMod = (mod, type) => {
+    if (!mod) return '';
     const statName = statIdToName[mod.statRefId?.guid] || '';
-    const typeLower = type.toLowerCase();
-    if (typeLower === 'onlystat') {
-      return statName || m;
-    }
     let expr = parseValueExpression(
       mod.value?.expression || '',
       mod.valueInputTerms,
@@ -150,64 +156,45 @@ function resolvePlaceholders(text, effectData, dataDir, statIdToName) {
       dataDir
     );
     const val = evaluateExpression(expr);
-    if (typeLower === 'by%' || typeLower === '%by') {
+    const t = (type || '').toLowerCase();
+    if (t.includes('onlystat')) return statName || '';
+    if (t.includes('by%') || t.startsWith('f%') || t.includes('%by')) {
       if (!isNaN(val)) {
-        const num = Math.abs(val * 100).toFixed(0);
-        if (statName) {
-          const adj = val < 0 ? 'reduced' : 'increased';
-          return `${statName} ${adj} by ${num}%`;
-        }
-        const sign = val < 0 ? '-' : '';
-        return `${sign}${num}%`;
+        return `${(val * 100).toFixed(0)}%${statName ? ' ' + statName : ''}`.trim();
       }
       return `${expr}${statName ? ' ' + statName : ''}`.trim();
     }
-    if (!isNaN(val)) return String(val);
-    return expr;
+    if (!isNaN(val)) {
+      return `${val}${statName ? ' ' + statName : ''}`.trim();
+    }
+    return `${expr}${statName ? ' ' + statName : ''}`.trim();
+  };
+
+  result = result.replace(/\$statmod(\d+)(?:\.([^$]+))?\$/gi, (m, idx, type) => {
+    const ref = statMods[parseInt(idx, 10)];
+    if (!ref) return m;
+    let mod = getJson(dataDir, '/Effects/StatMod', `StatMod_${ref.guid}.json`);
+    if (!mod || Object.keys(mod).length === 0)
+      mod = getJson(dataDir, '/Effects/StatMod', `StatModRecord_${ref.guid}.json`);
+    if (!mod || Object.keys(mod).length === 0) return m;
+    return replaceMod(mod, type);
   });
 
   // Tick statmod placeholders (e.g., $tick0:statmod0.onlystat$)
   result = result.replace(
-    /\$tick(\d+):statmod(\d+)\.(by%|%by|nostat|onlystat)\$/gi,
-    (m, tickIdx, modIdx, type) => {
-      const tIdx = parseInt(tickIdx, 10);
-      const mIdx = parseInt(modIdx, 10);
-      const hitRef = (effectData.tickHitsIds || [])[tIdx];
+    /\$tick(\d+):statmod(\d+)(?:\.([^$]+))?\$/gi,
+    (m, tIdx, mIdx, type) => {
+      const hitRef = (effectData.tickHitsIds || [])[parseInt(tIdx, 10)];
       if (!hitRef) return m;
-      const hit = getJson(
-        dataDir,
-        '/Abilities/AbilityHit',
-        `AbilityHit_${hitRef.guid}.json`
-      );
-      const mods = hit.statModsIds || [];
-      const ref = mods[mIdx];
+      const hit = loadAbilityHit(hitRef.guid, dataDir);
+      const mods = hit?.statModsIds || [];
+      const ref = mods[parseInt(mIdx, 10)];
       if (!ref) return m;
       let mod = getJson(dataDir, '/Effects/StatMod', `StatMod_${ref.guid}.json`);
-      if (!mod || Object.keys(mod).length === 0) {
+      if (!mod || Object.keys(mod).length === 0)
         mod = getJson(dataDir, '/Effects/StatMod', `StatModRecord_${ref.guid}.json`);
-      }
       if (!mod || Object.keys(mod).length === 0) return m;
-      const statName = statIdToName[mod.statRefId?.guid] || '';
-      const typeLower = type.toLowerCase();
-      if (typeLower === 'onlystat') {
-        return statName || m;
-      }
-      let expr = parseValueExpression(
-        mod.value?.expression || '',
-        mod.valueInputTerms,
-        statIdToName,
-        dataDir
-      );
-      const val = evaluateExpression(expr);
-      if (typeLower === 'by%' || typeLower === '%by') {
-        if (!isNaN(val)) {
-          const num = (val * 100).toFixed(0);
-          return `${num}%${statName ? ' ' + statName : ''}`.trim();
-        }
-        return `${expr}${statName ? ' ' + statName : ''}`.trim();
-      }
-      if (!isNaN(val)) return String(val);
-      return expr;
+      return replaceMod(mod, type);
     }
   );
 
@@ -219,9 +206,35 @@ function resolvePlaceholders(text, effectData, dataDir, statIdToName) {
     }
   }
 
+  result = result.replace(/\$tick(\d+)\$/g, (m, idx) => {
+    const hitRef = (effectData.tickHitsIds || [])[parseInt(idx, 10)];
+    if (!hitRef) return m;
+    const dmg = parseDamage(hitRef.guid, dataDir);
+    return dmg && dmg.percent ? `${dmg.percent}% ${dmg.element} Damage` : m;
+  });
+
   result = result.replace(/\$hit:([^\.]+)(?:\.[^$]+)?\$/g, (m, name) => {
     const dmg = parseDamage(name, dataDir);
     return dmg && dmg.percent ? `${dmg.percent}% ${dmg.element} Damage` : m;
+  });
+
+  result = result.replace(/\$hit:([^\.]+)\.apply(\d+)(?:fordur)?\$/g, (m, name, idx) => {
+    const eff = parseApplyEffectName(name, parseInt(idx, 10), dataDir);
+    return eff ? `[${eff}]` : m;
+  });
+
+  result = result.replace(/\$hit(\d+):apply(\d+)(?:fordur)?\$/g, (m, hIdx, aIdx) => {
+    const hitRef = (effectData.applyHitsIds || [])[parseInt(hIdx, 10)];
+    if (!hitRef) return m;
+    const eff = parseApplyEffectName(hitRef.guid, parseInt(aIdx, 10), dataDir);
+    return eff ? `[${eff}]` : m;
+  });
+
+  result = result.replace(/\$hit(\d+)\.apply(\d+)(?:fordur)?\$/g, (m, hIdx, aIdx) => {
+    const hitRef = (effectData.applyHitsIds || [])[parseInt(hIdx, 10)];
+    if (!hitRef) return m;
+    const eff = parseApplyEffectName(hitRef.guid, parseInt(aIdx, 10), dataDir);
+    return eff ? `[${eff}]` : m;
   });
 
   result = result.replace(/\$effect:([^\.\$]+)(?:\.[^\$]+)?\$/g, (m, name) => {
@@ -229,6 +242,8 @@ function resolvePlaceholders(text, effectData, dataDir, statIdToName) {
     return `[${resolved}]`;
   });
 
+  result = result.replace(/<[^>]+>/g, '');
+  result = result.replace(/\s+/g, ' ').trim();
   return result;
 }
 
