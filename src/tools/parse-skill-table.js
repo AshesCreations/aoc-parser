@@ -892,6 +892,13 @@ function parseSkillTable(id, dataDir) {
             ability,
             dataDir
           );
+          if (!description) {
+            description = formatDescription(
+              ability.abilityDescription,
+              ability,
+              dataDir
+            );
+          }
           icon = ability.abilityIcon
             ? ability.abilityIcon.split('.')[0] +
               '.webp'
