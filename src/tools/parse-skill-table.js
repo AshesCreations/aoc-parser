@@ -82,6 +82,49 @@ function formatEffectName(name) {
   return out;
 }
 
+const statusEffectCache = new Map();
+
+function getStatusEffectNames(dataDir) {
+  if (statusEffectCache.has(dataDir)) return statusEffectCache.get(dataDir);
+  const dir = path.join(dataDir, 'Effects/Effect');
+  let names = [];
+  if (fs.existsSync(dir)) {
+    names = fs
+      .readdirSync(dir)
+      .filter((f) => f.endsWith('.json'))
+      .map((f) => {
+        try {
+          const data = JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8'));
+          const raw = extractLastQuotedValue(data.effectName) || data.effectName;
+          return formatEffectName(raw);
+        } catch {
+          return null;
+        }
+      })
+      .filter(Boolean);
+  }
+  statusEffectCache.set(dataDir, names);
+  return names;
+}
+
+function escapeRegExp(str) {
+  return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+function wrapStatusEffects(text, dataDir) {
+  const names = getStatusEffectNames(dataDir);
+  for (const n of names) {
+    const regex = new RegExp(`\\b${escapeRegExp(n)}\\b`, 'g');
+    text = text.replace(regex, (match, offset, str) => {
+      const before = str[offset - 1];
+      const after = str[offset + match.length];
+      if (before === '[' && after === ']') return match;
+      return `[${match}]`;
+    });
+  }
+  return text;
+}
+
 function parseManaCost(ability, dataDir) {
   let costsArray = ability.statCosts || [];
   if ((!costsArray || costsArray.length === 0) && Array.isArray(ability.costs)) {
@@ -796,6 +839,7 @@ function formatDescription(desc, ability, dataDir) {
   text = text.replace(/\$flavor:([^$]+)\$/gi, (_, w) => `<i>${w.replace(/^"|"$/g, '')}</i>`);
   text = text.replace(/\\'/g, "'");
   text = text.replace(/Healing Damage/gi, 'Healing');
+  text = wrapStatusEffects(text, dataDir);
   text = text.replace(/\s+/g, ' ').trim();
   return text;
 }
