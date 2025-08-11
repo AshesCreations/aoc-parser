@@ -349,6 +349,53 @@ function parseValueExpression(
     return eq.equation?.expression || "";
   });
 
+  // Resolve EvalFormula($#type:id$) to the referenced equation result
+  expression = expression.replace(/EvalFormula\(\$#\d+:(\d+)\$\)/g, (m, id) => {
+    let formula = getJson(
+      dataDir,
+      "/Stats/StatFormulaType",
+      `StatFormulaType_${id}.json`
+    );
+    if (!formula || Object.keys(formula).length === 0) {
+      formula = getJson(
+        dataDir,
+        "/Stats/StatFormulaType",
+        `StatFormulaTypeRecord_${id}.json`
+      );
+    }
+    const eqGuid = formula.equationId?.guid;
+    if (!eqGuid) return "";
+    let eq = getJson(
+      dataDir,
+      "/Stats/StatEquationType",
+      `StatEquationType_${eqGuid}.json`
+    );
+    if (!eq || Object.keys(eq).length === 0) {
+      eq = getJson(
+        dataDir,
+        "/Stats/StatEquationType",
+        `StatEquationTypeRecord_${eqGuid}.json`
+      );
+    }
+    let expr = parseValueExpression(
+      eq.equation?.expression || "",
+      formula.inputTerms,
+      statIdToName,
+      dataDir
+    );
+    const sanitized = expr.replace(/[^0-9+\-*/().\s]/g, "");
+    if (sanitized.trim()) {
+      try {
+        // eslint-disable-next-line no-new-func
+        const val = Function(`return (${sanitized});`)();
+        if (!Number.isNaN(val)) return String(val);
+      } catch {
+        /* ignore */
+      }
+    }
+    return expr;
+  });
+
   // Map term guid -> value from valueInputTerms
   const termMap = {};
   if (Array.isArray(valueInputTerms)) {
