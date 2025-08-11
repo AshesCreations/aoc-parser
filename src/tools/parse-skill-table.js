@@ -4,6 +4,7 @@ import { fileURLToPath } from 'url';
 import {
   extractLastQuotedValue,
   parseValueExpression,
+  extractCoefficient,
 } from '../utils.js';
 import { statIdToName } from '../config.js';
 
@@ -142,31 +143,37 @@ function parseManaCost(ability, dataDir) {
   return costs;
 }
 
-function parseDamage(hitGuid, dataDir) {
-  let hit = loadJson(dataDir, 'Abilities/AbilityHit', 'AbilityHit', hitGuid);
-  if (!hit || Object.keys(hit).length === 0) {
-    // attempt lookup by name
-    const dir = path.join(dataDir, 'Abilities/AbilityHit');
-    const file = fs
-      .readdirSync(dir)
-      .find((f) => fs.readFileSync(path.join(dir, f), 'utf8').includes(`"name": "${hitGuid}"`));
-    if (file) {
-      hit = JSON.parse(fs.readFileSync(path.join(dir, file), 'utf8'));
-    } else {
-      return null;
-    }
-  }
+function parseDamage(hitKey, dataDir) {
+  const hit = loadAbilityHit(hitKey, dataDir);
+  if (!hit) return null;
   const elementTag = hit.eventTags?.[0]?.tagName || '';
   const element = elementTag.split('.').pop();
   const statGuid = hit.statModsIds?.[0]?.guid;
   let percent = null;
   if (statGuid) {
     const mod = loadJson(dataDir, 'Effects/StatMod', 'StatMod', statGuid);
-    const modAlt = Object.keys(mod).length ? mod : loadJson(dataDir, 'Effects/StatMod', '', statGuid);
-    const expr = modAlt.valueInputTerms?.[0]?.value?.expression || modAlt.value?.expression;
+    const modAlt = Object.keys(mod).length
+      ? mod
+      : loadJson(dataDir, 'Effects/StatMod', '', statGuid);
+    let expr =
+      modAlt.valueInputTerms?.[0]?.value?.expression || modAlt.value?.expression;
     if (expr) {
-      const v = parseFloat(expr);
-      if (!Number.isNaN(v)) percent = v * 100;
+      expr = parseValueExpression(
+        expr,
+        modAlt.valueInputTerms,
+        statIdToName,
+        dataDir
+      );
+      let v = evaluateExpression(expr);
+      if (Number.isNaN(v)) {
+        const coeff = parseFloat(extractCoefficient(expr));
+        if (!Number.isNaN(coeff)) v = coeff;
+        else {
+          const m = expr.match(/-?\d*\.\d+|-?\d+/);
+          if (m) v = parseFloat(m[0]);
+        }
+      }
+      if (!Number.isNaN(v)) percent = Math.max(0, v) * 100;
     }
   }
   return { element, percent };
@@ -180,26 +187,115 @@ function parseDamageRange(hitKey, part, dataDir) {
   const statGuid = hit.statModsIds?.[0]?.guid;
   if (!statGuid) return null;
   const mod = loadJson(dataDir, 'Effects/StatMod', 'StatMod', statGuid);
-  const modAlt = Object.keys(mod).length ? mod : loadJson(dataDir, 'Effects/StatMod', '', statGuid);
+  const modAlt = Object.keys(mod).length
+    ? mod
+    : loadJson(dataDir, 'Effects/StatMod', '', statGuid);
   const terms = modAlt.valueInputTerms || [];
   const idx = part === 'min' ? 0 : part === 'max' ? 1 : -1;
   if (idx < 0 || !terms[idx]) return null;
-  const val = parseFloat(terms[idx].value?.expression);
+  let expr = terms[idx].value?.expression;
+  if (!expr) return null;
+  expr = parseValueExpression(
+    expr,
+    terms[idx].valueInputTerms || [],
+    statIdToName,
+    dataDir
+  );
+  let val = evaluateExpression(expr);
+  if (Number.isNaN(val)) {
+    const coeff = parseFloat(extractCoefficient(expr));
+    if (!Number.isNaN(coeff)) val = coeff;
+    else {
+      const m = expr.match(/-?\d*\.\d+|-?\d+/);
+      if (m) val = parseFloat(m[0]);
+    }
+  }
   if (Number.isNaN(val)) return null;
-  return `${val * 100}% ${element} Damage`;
+  return `${Math.max(0, val) * 100}% ${element} Damage`;
 }
 
-function parseLingerTick(name, dataDir) {
+function parseDamageMinMax(hitKey, dataDir) {
+  const hit = loadAbilityHit(hitKey, dataDir);
+  if (!hit) return null;
+  const elementTag = hit.eventTags?.[0]?.tagName || '';
+  const element = elementTag.split('.').pop();
+  const statGuid = hit.statModsIds?.[0]?.guid;
+  if (!statGuid) return null;
+  const mod = loadJson(dataDir, 'Effects/StatMod', 'StatMod', statGuid);
+  const modAlt = Object.keys(mod).length
+    ? mod
+    : loadJson(dataDir, 'Effects/StatMod', '', statGuid);
+  const terms = modAlt.valueInputTerms || [];
+  if (terms.length < 2) return null;
+  let exprMin = terms[0]?.value?.expression;
+  let exprMax = terms[1]?.value?.expression;
+  if (!exprMin || !exprMax) return null;
+  exprMin = parseValueExpression(
+    exprMin,
+    terms[0].valueInputTerms || [],
+    statIdToName,
+    dataDir
+  );
+  exprMax = parseValueExpression(
+    exprMax,
+    terms[1].valueInputTerms || [],
+    statIdToName,
+    dataDir
+  );
+  let min = evaluateExpression(exprMin);
+  if (Number.isNaN(min)) {
+    const coeff = parseFloat(extractCoefficient(exprMin));
+    if (!Number.isNaN(coeff)) min = coeff;
+    else {
+      const m = exprMin.match(/-?\d*\.\d+|-?\d+/);
+      if (m) min = parseFloat(m[0]);
+    }
+  }
+  let max = evaluateExpression(exprMax);
+  if (Number.isNaN(max)) {
+    const coeff = parseFloat(extractCoefficient(exprMax));
+    if (!Number.isNaN(coeff)) max = coeff;
+    else {
+      const m = exprMax.match(/-?\d*\.\d+|-?\d+/);
+      if (m) max = parseFloat(m[0]);
+    }
+  }
+  if (Number.isNaN(min) || Number.isNaN(max)) return null;
+  return {
+    min: Math.max(0, min) * 100,
+    max: Math.max(0, max) * 100,
+    element,
+  };
+}
+
+function loadLingeringEffectByName(name, dataDir) {
   const dir = path.join(dataDir, 'Abilities/LingeringEffect');
   let file = findJsonFile(dir, 'LingeringEffect', name);
   if (!file) {
-    const match = fs.readdirSync(dir).find(f => fs.readFileSync(path.join(dir, f), 'utf8').includes(`"name": "${name}"`));
+    const match = fs
+      .readdirSync(dir)
+      .find((f) =>
+        fs.readFileSync(path.join(dir, f), 'utf8').includes(`"name": "${name}"`)
+      );
     if (match) file = path.join(dir, match);
   }
   if (!file) return null;
-  const data = JSON.parse(fs.readFileSync(file, 'utf8'));
-  const rate = data.tickRate || 0;
-  return rate ? `${rate} second${rate === 1 ? '' : 's'}` : null;
+  return JSON.parse(fs.readFileSync(file, 'utf8'));
+}
+
+function loadProjectile(projKey, dataDir) {
+  let proj = loadJson(dataDir, 'Abilities/Projectile', 'Projectile', projKey);
+  if (!proj || Object.keys(proj).length === 0) {
+    proj = loadJson(dataDir, 'Abilities/Projectile', 'ProjectileRecord', projKey);
+  }
+  if (!proj || Object.keys(proj).length === 0) {
+    const dir = path.join(dataDir, 'Abilities/Projectile');
+    const file = fs
+      .readdirSync(dir)
+      .find((f) => fs.readFileSync(path.join(dir, f), 'utf8').includes(projKey));
+    if (file) proj = JSON.parse(fs.readFileSync(path.join(dir, file), 'utf8'));
+  }
+  return proj;
 }
 
 function loadAbilityHit(hitKey, dataDir) {
@@ -208,9 +304,54 @@ function loadAbilityHit(hitKey, dataDir) {
     const dir = path.join(dataDir, 'Abilities/AbilityHit');
     const file = fs
       .readdirSync(dir)
-      .find((f) => fs.readFileSync(path.join(dir, f), 'utf8').includes(`"name": "${hitKey}"`));
+      .find((f) =>
+        fs.readFileSync(path.join(dir, f), 'utf8').includes(`"name": "${hitKey}"`)
+      );
     if (file) {
       hit = JSON.parse(fs.readFileSync(path.join(dir, file), 'utf8'));
+    }
+  }
+
+  if (!hit || Object.keys(hit).length === 0) {
+    let ability = loadJson(
+      dataDir,
+      'Abilities/AoCAbility',
+      'AoCAbility',
+      hitKey
+    );
+    if (!ability || Object.keys(ability).length === 0)
+      ability = loadJson(
+        dataDir,
+        'Abilities/AoCAbility',
+        'AoCAbilityRecord',
+        hitKey
+      );
+    if (!ability || Object.keys(ability).length === 0) {
+      const dir = path.join(dataDir, 'Abilities/AoCAbility');
+      const file = fs
+        .readdirSync(dir)
+        .find((f) => {
+          const content = fs.readFileSync(path.join(dir, f), 'utf8');
+          return (
+            content.includes(`"abilityName": "${hitKey}"`) ||
+            content.includes(`"name": "${hitKey}"`)
+          );
+        });
+      if (file) ability = JSON.parse(fs.readFileSync(path.join(dir, file), 'utf8'));
+    }
+    const firstHit =
+      ability?.hitsIds?.['1']?.guid ||
+      ability?.hitsIds?.['0']?.guid ||
+      ability?.hitsIds?.[0]?.guid;
+    if (firstHit) {
+      hit = loadJson(dataDir, 'Abilities/AbilityHit', 'AbilityHit', firstHit);
+      if (!hit || Object.keys(hit).length === 0) {
+        const dir = path.join(dataDir, 'Abilities/AbilityHit');
+        const file = fs
+          .readdirSync(dir)
+          .find((f) => fs.readFileSync(path.join(dir, f), 'utf8').includes(firstHit));
+        if (file) hit = JSON.parse(fs.readFileSync(path.join(dir, file), 'utf8'));
+      }
     }
   }
   return hit;
@@ -224,6 +365,32 @@ function parseApplyEffectName(hitKey, index, dataDir) {
   const eff = loadJson(dataDir, 'Effects/Effect', 'Effect', effGuid);
   const effName = extractLastQuotedValue(eff.effectName);
   return effName ? formatEffectName(effName) : null;
+}
+
+function parseApplyEffectDuration(hitKey, index, dataDir) {
+  const hit = loadAbilityHit(hitKey, dataDir);
+  const durExpr = hit?.applyEffects?.[index]?.effectDuration?.expression || '';
+  if (!durExpr) return null;
+  let expr = parseValueExpression(durExpr, [], statIdToName, dataDir);
+  let val = evaluateExpression(expr);
+  if (!Number.isNaN(val) && val > 0) {
+    return `${val} second${val === 1 ? '' : 's'}`;
+  }
+  const lerp = durExpr.match(/Lerp\((\d+(?:\.\d+)?),\s*(\d+(?:\.\d+)?)/);
+  if (lerp) {
+    const min = parseFloat(lerp[1]);
+    const max = parseFloat(lerp[2]);
+    return `${min}-${max} seconds`;
+  }
+  return null;
+}
+
+function getProjectileHitGuid(ability, projIdx, hitIdx, dataDir) {
+  const projRef = ability.projectilesIds?.[projIdx];
+  if (!projRef) return null;
+  const proj = loadProjectile(projRef.guid, dataDir);
+  const hitRef = proj.hitsIds?.[hitIdx] || proj.hitsIds?.[String(hitIdx)];
+  return hitRef?.guid || null;
 }
 
 function resolveEffectToken(token, dataDir) {
@@ -298,7 +465,7 @@ function resolveStatModPlaceholders(text, ability, dataDir) {
       dataDir
     );
     const val = evaluateExpression(expr);
-    const t = type.toLowerCase();
+    const t = (type || '').toLowerCase();
     if (t.includes('onlystat')) return statName || '';
     if (t.includes('by%') || t.startsWith('f%')) {
       if (!isNaN(val)) {
@@ -313,7 +480,7 @@ function resolveStatModPlaceholders(text, ability, dataDir) {
   };
 
   const statMods = ability.statModsIds || [];
-  text = text.replace(/\$statmod(\d+)\.([^$]+)\$/gi, (m, idx, type) => {
+  text = text.replace(/\$statmod(\d+)(?:\.([^$]+))?\$/gi, (m, idx, type) => {
     const ref = statMods[parseInt(idx, 10)];
     if (!ref) return m;
     let mod = loadJson(dataDir, 'Effects/StatMod', 'StatMod', ref.guid);
@@ -324,7 +491,7 @@ function resolveStatModPlaceholders(text, ability, dataDir) {
     return replaceMod(mod, type);
   });
 
-  text = text.replace(/\$hit(\d+):statmod(\d+)\.([^$]+)\$/gi, (m, hitIdx, modIdx, type) => {
+  text = text.replace(/\$hit(\d+):statmod(\d+)(?:\.([^$]+))?\$/gi, (m, hitIdx, modIdx, type) => {
     const hitRef = ability.hitsIds?.[hitIdx];
     if (!hitRef) return m;
     const hit = loadAbilityHit(hitRef.guid, dataDir);
@@ -358,7 +525,16 @@ function formatDescription(desc, ability, dataDir) {
     const id = ability.hitsIds?.[n]?.guid;
     if (!id) return m;
     const dmg = parseDamage(id, dataDir);
-    return dmg && dmg.percent ? `${dmg.percent}% ${dmg.element} Damage` : m;
+    return dmg && dmg.percent !== null
+      ? `${dmg.percent}% ${dmg.element} Damage`
+      : '';
+  });
+
+  text = text.replace(/\$hit:([^.$]+)\$/g, (m, name) => {
+    const dmg = parseDamage(name, dataDir);
+    return dmg && dmg.percent !== null
+      ? `${dmg.percent}% ${dmg.element} Damage`
+      : '';
   });
 
   text = text.replace(/\$hit:([^\.]+)\.min\$/g, (m, name) => {
@@ -400,9 +576,165 @@ function formatDescription(desc, ability, dataDir) {
     return dmg && dmg.percent ? `${dmg.percent}% ${dmg.element} Damage` : '';
   });
 
+  text = text.replace(/\$proj(\d+):hit(\d+)\$/g, (m, pIdx, hIdx) => {
+    const hitGuid = getProjectileHitGuid(ability, pIdx, hIdx, dataDir);
+    if (!hitGuid) return m;
+    const dmg = parseDamage(hitGuid, dataDir);
+    return dmg && dmg.percent !== null
+      ? `${dmg.percent}% ${dmg.element} Damage`
+      : '';
+  });
+
+  text = text.replace(
+    /\$proj(\d+):hit(\d+)\.apply(\d+)(fordur)?\$/g,
+    (m, pIdx, hIdx, aIdx, fordur) => {
+      const hitGuid = getProjectileHitGuid(ability, pIdx, hIdx, dataDir);
+      if (!hitGuid) return '';
+      const eff = parseApplyEffectName(hitGuid, parseInt(aIdx, 10), dataDir);
+      if (!eff) return '';
+      if (fordur) {
+        const dur = parseApplyEffectDuration(hitGuid, parseInt(aIdx, 10), dataDir);
+        return dur ? `[${eff}] for ${dur}` : `[${eff}]`;
+      }
+      return `[${eff}]`;
+    }
+  );
+
   text = text.replace(/\$linger:([^\.]+)\.tick\$/g, (m, name) => {
-    const val = parseLingerTick(name, dataDir);
-    return val || m;
+    const eff = loadLingeringEffectByName(name, dataDir);
+    const rate = eff?.tickRate;
+    if (!rate) return m;
+    return `${rate} second${rate === 1 ? '' : 's'}`;
+  });
+
+  text = text.replace(/\$linger:([^\.]+)\.duration\$/g, (m, name) => {
+    const eff = loadLingeringEffectByName(name, dataDir);
+    const dur = eff?.lifeTime;
+    if (dur === undefined) return m;
+    return `${dur} second${dur === 1 ? '' : 's'}`;
+  });
+
+  text = text.replace(/\$linger(\d+)\.duration\$/g, (m, idx) => {
+    const guid = ability.lingeringEffectsIds?.[idx]?.guid;
+    if (!guid) return m;
+    const eff = loadJson(
+      dataDir,
+      'Abilities/LingeringEffect',
+      'LingeringEffect',
+      guid
+    );
+    const dur = eff.lifeTime;
+    if (dur === undefined) return m;
+    return `${dur} second${dur === 1 ? '' : 's'}`;
+  });
+
+  text = text.replace(/\$linger(\d+):linger(\d+)\.minmax\$/g, (m, lIdx, hIdx) => {
+    const lGuid = ability.lingeringEffectsIds?.[lIdx]?.guid;
+    if (!lGuid) return m;
+    const ling = loadJson(
+      dataDir,
+      'Abilities/LingeringEffect',
+      'LingeringEffect',
+      lGuid
+    );
+    const hitGuid = ling.lingeringHitsIds?.[hIdx]?.guid;
+    if (!hitGuid) return m;
+    const dmg = parseDamageMinMax(hitGuid, dataDir);
+    if (!dmg) return m;
+    return `${Math.round(dmg.min)}-${Math.round(dmg.max)}% ${dmg.element} Damage`;
+  });
+
+  text = text.replace(/\$linger(\d+):linger(\d+)\.apply(\d+)(?:fordur)?\$/g, (m, lIdx, hIdx, aIdx) => {
+    const lGuid = ability.lingeringEffectsIds?.[lIdx]?.guid;
+    if (!lGuid) return '';
+    const ling = loadJson(
+      dataDir,
+      'Abilities/LingeringEffect',
+      'LingeringEffect',
+      lGuid
+    );
+    const hitGuid = ling.lingeringHitsIds?.[hIdx]?.guid;
+    if (!hitGuid) return '';
+    const eff = parseApplyEffectName(hitGuid, parseInt(aIdx, 10), dataDir);
+    return eff ? `[${eff}]` : '';
+  });
+
+  text = text.replace(/\$linger(\d+):linger(\d+)\$/g, (m, lIdx, hIdx) => {
+    const lGuid = ability.lingeringEffectsIds?.[lIdx]?.guid;
+    if (!lGuid) return m;
+    const ling = loadJson(
+      dataDir,
+      'Abilities/LingeringEffect',
+      'LingeringEffect',
+      lGuid
+    );
+    const hitGuid = ling.lingeringHitsIds?.[hIdx]?.guid;
+    if (!hitGuid) return m;
+    const dmg = parseDamage(hitGuid, dataDir);
+    return dmg && dmg.percent ? `${dmg.percent}% ${dmg.element} Damage` : m;
+  });
+
+  text = text.replace(/\$linger(\d+):beginOverlap(\d+)\.apply(\d+)(?:fordur)?\$/g, (m, lIdx, hIdx, aIdx, fordur) => {
+    const lGuid = ability.lingeringEffectsIds?.[lIdx]?.guid;
+    if (!lGuid) return '';
+    const ling = loadJson(
+      dataDir,
+      'Abilities/LingeringEffect',
+      'LingeringEffect',
+      lGuid
+    );
+    const hitGuid = ling.onBeginOverlapHitsIds?.[hIdx]?.guid;
+    if (!hitGuid) return '';
+    const eff = parseApplyEffectName(hitGuid, parseInt(aIdx, 10), dataDir);
+    if (!eff) return '';
+    if (fordur) {
+      const dur = parseApplyEffectDuration(hitGuid, parseInt(aIdx, 10), dataDir);
+      return dur ? `[${eff}] for ${dur}` : `[${eff}]`;
+    }
+    return `[${eff}]`;
+  });
+
+  text = text.replace(/\$linger(\d+):beginOverlap(\d+)\$/g, (m, lIdx, hIdx) => {
+    const lGuid = ability.lingeringEffectsIds?.[lIdx]?.guid;
+    if (!lGuid) return m;
+    const ling = loadJson(
+      dataDir,
+      'Abilities/LingeringEffect',
+      'LingeringEffect',
+      lGuid
+    );
+    const hitGuid = ling.onBeginOverlapHitsIds?.[hIdx]?.guid;
+    if (!hitGuid) return m;
+    const dmg = parseDamage(hitGuid, dataDir);
+    return dmg && dmg.percent ? `${dmg.percent}% ${dmg.element} Damage` : m;
+  });
+
+  text = text.replace(/\$linger(\d+)\.tick\$/g, (m, idx) => {
+    const guid = ability.lingeringEffectsIds?.[idx]?.guid;
+    if (!guid) return m;
+    const ling = loadJson(
+      dataDir,
+      'Abilities/LingeringEffect',
+      'LingeringEffect',
+      guid
+    );
+    const rate = ling.tickRate;
+    if (!rate) return m;
+    return `${rate} second${rate === 1 ? '' : 's'}`;
+  });
+
+  text = text.replace(/\$target(\d+)\.radius\$/g, (m, idx) => {
+    const guid = ability.targetsIds?.[idx]?.guid;
+    if (!guid) return m;
+    const target = loadJson(
+      dataDir,
+      'Abilities/AbilityTarget',
+      'AbilityTarget',
+      guid
+    );
+    const radius = target.areaRadius || target.radius;
+    if (radius === undefined) return m;
+    return `${radius} meter${radius === 1 ? '' : 's'}`;
   });
 
   text = text.replace(/\$effect(\d+)(?:\.[^$]+)?\$/g, (m, idx) => {
@@ -448,15 +780,21 @@ function formatDescription(desc, ability, dataDir) {
   text = text.replace(/([A-Za-z][A-Za-z' ]+?)<>/g, (_, name) => `[${name.trim()}]`);
   text = text.replace(/<>/g, '');
   text = text.replace(/\r\n|\n/g, '<br>');
+  text = text.replace(/rnrn/g, '<br><br>');
+  text = text.replace(/(^|\W)rn/g, '$1<br>');
 
-  text = text.replace(/\$charges\$/g, () => {
+  text = text.replace(/(?:<br>)?\s*\$charges\$(?:\.)?/g, () => {
     const val = parseFloat(ability.cooldownCharges?.expression);
-    return Number.isNaN(val) ? '0' : String(val);
+    if (Number.isNaN(val) || val <= 1) return '';
+    return `<br>${val} Charges`;
   });
 
-  text = text.replace(/rnrn/g, '  ');
   text = text.replace(/<img[^>]*id=\"([^\"]+)\"[^>]*>/g, (_, id) => `[${formatEffectName(id)}]`);
   text = text.replace(/\((\s*\[[^\]]+\]\s*)+\)/g, (m) => m.slice(1, -1));
+  text = text.replace(/<\/?highlight>/gi, '');
+  text = text.replace(/<\/>/g, '');
+  text = text.replace(/\$flavor:([^$]+)\$/gi, (_, w) => `<i>${w.replace(/^"|"$/g, '')}</i>`);
+  text = text.replace(/\\'/g, "'");
   text = text.replace(/Healing Damage/gi, 'Healing');
   text = text.replace(/\s+/g, ' ').trim();
   return text;
@@ -519,7 +857,7 @@ function parseSkillTable(id, dataDir) {
       let angle = null;
       if (abilityGuid && abilityGuid !== '0') {
         type = 'skill';
-        const ability = loadJson(
+        let ability = loadJson(
           dataDir,
           'Abilities/AoCAbility',
           'AoCAbility',
@@ -534,10 +872,23 @@ function parseSkillTable(id, dataDir) {
             abilityGuid
           );
         }
+        if (Object.keys(ability).length === 0) {
+          const dir = path.join(dataDir, 'Abilities/AoCAbility');
+          const file = fs
+            .readdirSync(dir)
+            .find((f) => {
+              const content = fs.readFileSync(path.join(dir, f), 'utf8');
+              return (
+                content.includes(`"abilityName": "${rank.name}"`) ||
+                content.includes(`"name": "${rank.name}"`)
+              );
+            });
+          if (file) ability = JSON.parse(fs.readFileSync(path.join(dir, file), 'utf8'));
+        }
         if (ability && Object.keys(ability).length) {
           name = extractLastQuotedValue(ability.abilityName) || name;
           description = formatDescription(
-            ability.abilityDescription,
+            rank.tooltipText,
             ability,
             dataDir
           );
@@ -561,7 +912,7 @@ function parseSkillTable(id, dataDir) {
         if (Object.keys(effect).length) {
           name = extractLastQuotedValue(effect.effectName) || name;
           description = formatDescription(
-            effect.effectDescription,
+            rank.tooltipText || effect.effectDescription,
             {},
             dataDir
           );
@@ -632,7 +983,7 @@ function parseSkillTable(id, dataDir) {
   return result;
 }
 
-export { parseSkillTable };
+export { parseSkillTable, formatDescription, loadJson };
 
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url) && process.argv.length >= 4) {
   const tableId = process.argv[2];
