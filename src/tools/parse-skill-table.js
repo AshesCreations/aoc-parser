@@ -112,13 +112,16 @@ function escapeRegExp(str) {
 }
 
 function wrapStatusEffects(text, dataDir) {
-  const names = getStatusEffectNames(dataDir);
+  const names = getStatusEffectNames(dataDir).sort((a, b) => b.length - a.length);
+  const isWrapped = (str, start, end) => {
+    const open = str.lastIndexOf('[', start);
+    const close = str.indexOf(']', end);
+    return open !== -1 && close !== -1 && open < start && close >= end;
+  };
   for (const n of names) {
     const regex = new RegExp(`\\b${escapeRegExp(n)}\\b`, 'g');
     text = text.replace(regex, (match, offset, str) => {
-      const before = str[offset - 1];
-      const after = str[offset + match.length];
-      if (before === '[' && after === ']') return match;
+      if (isWrapped(str, offset, offset + match.length)) return match;
       return `[${match}]`;
     });
   }
@@ -671,6 +674,41 @@ function formatDescription(desc, ability, dataDir) {
     return `${dur} second${dur === 1 ? '' : 's'}`;
   });
 
+  text = text.replace(/\$linger(\d+):init(\d+)\$/g, (m, lIdx, hIdx) => {
+    const lGuid = ability.lingeringEffectsIds?.[lIdx]?.guid;
+    if (!lGuid) return m;
+    const ling = loadJson(
+      dataDir,
+      'Abilities/LingeringEffect',
+      'LingeringEffect',
+      lGuid
+    );
+    const hitGuid = ling.initialHitsIds?.[hIdx]?.guid;
+    if (!hitGuid) return m;
+    const dmg = parseDamage(hitGuid, dataDir);
+    return dmg && dmg.percent ? `${dmg.percent}% ${dmg.element} Damage` : m;
+  });
+
+  text = text.replace(/\$linger(\d+):init(\d+)\.apply(\d+)(fordur)?\$/g, (m, lIdx, hIdx, aIdx, fordur) => {
+    const lGuid = ability.lingeringEffectsIds?.[lIdx]?.guid;
+    if (!lGuid) return '';
+    const ling = loadJson(
+      dataDir,
+      'Abilities/LingeringEffect',
+      'LingeringEffect',
+      lGuid
+    );
+    const hitGuid = ling.initialHitsIds?.[hIdx]?.guid;
+    if (!hitGuid) return '';
+    const eff = parseApplyEffectName(hitGuid, parseInt(aIdx, 10), dataDir);
+    if (!eff) return '';
+    if (fordur) {
+      const dur = parseApplyEffectDuration(hitGuid, parseInt(aIdx, 10), dataDir);
+      return dur ? `[${eff}] for ${dur}` : `[${eff}]`;
+    }
+    return `[${eff}]`;
+  });
+
   text = text.replace(/\$linger(\d+):linger(\d+)\.minmax\$/g, (m, lIdx, hIdx) => {
     const lGuid = ability.lingeringEffectsIds?.[lIdx]?.guid;
     if (!lGuid) return m;
@@ -819,9 +857,16 @@ function formatDescription(desc, ability, dataDir) {
     return `${name}: ${clean}`;
   });
 
-  text = text.replace(/: ([^:<>]+:[^:<>]+):<>/g, (_, name) => `: [${name}]<br>`);
-  text = text.replace(/([A-Za-z][A-Za-z' ]+?)<>/g, (_, name) => `[${name.trim()}]`);
-  text = text.replace(/<>/g, '');
+  const abilityName = (extractLastQuotedValue(ability.abilityName) || '').toLowerCase();
+  if (abilityName === 'doublestrike') {
+    text = text.replace(/: ([^:<>]+):<>/g, ':<br>$1<br>');
+    text = text.replace(/([^:<>]+):<>/g, '$1<br>');
+    text = text.replace(/([^:<>]+)<>/g, '$1');
+  } else {
+    text = text.replace(/: ([^:<>]+:[^:<>]+):<>/g, (_, name) => `: [${name}]<br>`);
+    text = text.replace(/([A-Za-z][A-Za-z' ]+?)<>/g, (_, name) => `[${name.trim()}]`);
+    text = text.replace(/<>/g, '');
+  }
   text = text.replace(/\r\n|\n/g, '<br>');
   text = text.replace(/rnrn/g, '<br><br>');
   text = text.replace(/(^|\W)rn/g, '$1<br>');
@@ -835,12 +880,30 @@ function formatDescription(desc, ability, dataDir) {
   text = text.replace(/<img[^>]*id=\"([^\"]+)\"[^>]*>/g, (_, id) => `[${formatEffectName(id)}]`);
   text = text.replace(/\((\s*\[[^\]]+\]\s*)+\)/g, (m) => m.slice(1, -1));
   text = text.replace(/<\/?highlight>/gi, '');
-  text = text.replace(/<\/>/g, '');
+  const tagStack = [];
+  text = text.replace(/<Bold>|<bold>|<Flavor>|<flavor>|<\/>/g, (tag) => {
+    const lower = tag.toLowerCase();
+    if (lower === '<bold>') {
+      tagStack.push('bold');
+      return '<bold>';
+    }
+    if (lower === '<flavor>') {
+      tagStack.push('i');
+      return '<i>';
+    }
+    if (tag === '</>') {
+      const last = tagStack.pop();
+      return last ? `</${last}>` : '';
+    }
+    return tag;
+  });
   text = text.replace(/\$flavor:([^$]+)\$/gi, (_, w) => `<i>${w.replace(/^"|"$/g, '')}</i>`);
   text = text.replace(/\\'/g, "'");
   text = text.replace(/Healing Damage/gi, 'Healing');
   text = wrapStatusEffects(text, dataDir);
   text = text.replace(/\s+/g, ' ').trim();
+  text = text.replace(/(<br>)+$/g, '').trim();
+  if (text && !/[.!?]$/.test(text)) text += '.';
   return text;
 }
 
