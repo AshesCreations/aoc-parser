@@ -716,12 +716,15 @@ async function saveLootInfoToDatabase(loot) {
   const client = await pool.getConnection();
   try {
     await ensureLastModifiedColumn(client, 'DatabaseLootInfo');
+    await ensureColumn(client, 'DatabaseLootInfo', 'worldSpawnLocation', 'TEXT');
+    await ensureColumn(client, 'DatabaseLootInfo', 'zoneCoordinates', 'JSON');
+    await ensureColumn(client, 'DatabaseLootInfo', 'worldCoordinates', 'JSON');
     const query = `
       INSERT INTO \`DatabaseLootInfo\` (
         id, itemId, questName, step, npcName, levelMin, levelMax,
-        difficulty, zone, spawnRate, dropChance, coordinates
+        difficulty, zone, worldSpawnLocation, spawnRate, dropChance, zoneCoordinates, worldCoordinates
       ) VALUES (
-        ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+        ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
       ) ON DUPLICATE KEY UPDATE
         questName = VALUES(questName),
         step = VALUES(step),
@@ -730,9 +733,11 @@ async function saveLootInfoToDatabase(loot) {
         levelMax = VALUES(levelMax),
         difficulty = VALUES(difficulty),
         zone = VALUES(zone),
+        worldSpawnLocation = VALUES(worldSpawnLocation),
         spawnRate = VALUES(spawnRate),
         dropChance = VALUES(dropChance),
-        coordinates = VALUES(coordinates),
+        zoneCoordinates = VALUES(zoneCoordinates),
+        worldCoordinates = VALUES(worldCoordinates),
         lastModified = CURRENT_TIMESTAMP
     `;
     const values = [
@@ -745,9 +750,11 @@ async function saveLootInfoToDatabase(loot) {
       loot.levelMax ?? null,
       loot.difficulty ?? null,
       loot.zone ?? null,
+      loot.worldSpawnLocation ?? null,
       loot.spawnRate ?? null,
       loot.dropChance ?? null,
-      JSON.stringify(loot.coordinates || {})
+      JSON.stringify(loot.zoneCoordinates || {}),
+      JSON.stringify(loot.worldCoordinates || {})
     ];
     await client.execute(query, values);
   } finally {

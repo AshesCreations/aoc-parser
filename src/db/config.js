@@ -238,9 +238,11 @@ export async function initDatabase() {
         levelMax INT,
         difficulty TEXT,
         zone TEXT,
+        worldSpawnLocation TEXT,
         spawnRate INT,
         dropChance DOUBLE,
-        coordinates JSON,
+        zoneCoordinates JSON,
+        worldCoordinates JSON,
       lastModified TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
       )
     `);
@@ -249,6 +251,9 @@ export async function initDatabase() {
     await conn.query(
       "ALTER TABLE `DatabaseLootInfo` MODIFY COLUMN `id` VARCHAR(512)"
     );
+    await ensureColumnExists(conn, 'DatabaseLootInfo', 'worldSpawnLocation', 'TEXT');
+    await ensureColumnExists(conn, 'DatabaseLootInfo', 'zoneCoordinates', 'JSON');
+    await ensureColumnExists(conn, 'DatabaseLootInfo', 'worldCoordinates', 'JSON');
 
     await conn.query(`
       CREATE TABLE IF NOT EXISTS DatabasePlayerStats (
