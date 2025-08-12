@@ -82,6 +82,15 @@ function formatEffectName(name) {
   return out;
 }
 
+const HIDDEN_EFFECTS = new Set([
+  'Physical',
+  'Attack',
+  'Speed',
+  'Combat Momentum',
+]);
+
+const PLACEHOLDER_TEXTS = new Set(['helo?', 'testing']);
+
 const statusEffectCache = new Map();
 
 function getStatusEffectNames(dataDir) {
@@ -103,8 +112,9 @@ function getStatusEffectNames(dataDir) {
       })
       .filter(Boolean);
   }
-  statusEffectCache.set(dataDir, names);
-  return names;
+  const filtered = names.filter((n) => !HIDDEN_EFFECTS.has(n));
+  statusEffectCache.set(dataDir, filtered);
+  return filtered;
 }
 
 function escapeRegExp(str) {
@@ -112,9 +122,7 @@ function escapeRegExp(str) {
 }
 
 function wrapStatusEffects(text, dataDir) {
-  const names = getStatusEffectNames(dataDir)
-    .filter((n) => n.toLowerCase() !== 'combat momentum')
-    .sort((a, b) => b.length - a.length);
+  const names = getStatusEffectNames(dataDir).sort((a, b) => b.length - a.length);
   const isWrapped = (str, start, end) => {
     const open = str.lastIndexOf('[', start);
     const close = str.indexOf(']', end);
@@ -441,36 +449,17 @@ function getProjectileHitGuid(ability, projIdx, hitIdx, dataDir) {
   return hitRef?.guid || null;
 }
 
-function resolveEffectToken(token, dataDir) {
-  let eff = {};
+function resolveEffectToken(token, ability, dataDir) {
   const isGuid = /^\d+$/.test(token);
+  let eff;
   if (isGuid) {
     eff = loadJson(dataDir, 'Effects/Effect', 'Effect', token);
-    if (!eff || Object.keys(eff).length === 0)
-      eff = loadJson(dataDir, 'Effects/Effect', 'EffectRecord', token);
+  } else {
+    eff = loadJson(dataDir, 'Effects/Effect', 'Effect', token);
   }
-
-  // For non-guid tokens, search by internal name to ensure we fetch the
-  // correct status effect rather than any effect that merely references the
-  // token in its text.
-  if (!isGuid || !eff || Object.keys(eff).length === 0) {
-    const dir = path.join(dataDir, 'Effects/Effect');
-    const files = fs.readdirSync(dir);
-    for (const f of files) {
-      const content = fs.readFileSync(path.join(dir, f), 'utf8');
-      if (content.includes(`"name": "${token}"`)) {
-        eff = JSON.parse(content);
-        break;
-      }
-    }
-    if (!eff || Object.keys(eff).length === 0) {
-      const file = files.find((f) => f.includes(token));
-      if (file) eff = JSON.parse(fs.readFileSync(path.join(dir, file), 'utf8'));
-    }
-  }
-
-  const name = extractLastQuotedValue(eff.effectName);
-  return name ? formatEffectName(name) : formatEffectName(token);
+  const name = extractLastQuotedValue(eff.effectName) || eff.effectName || token;
+  const formatted = formatEffectName(name);
+  return HIDDEN_EFFECTS.has(formatted) ? null : formatted;
 }
 
 function resolveSkillName(skillToken, dataDir) {
@@ -856,7 +845,10 @@ function formatDescription(desc, ability, dataDir) {
   });
 
   const effRegex = /\$effect:([^\.\$]+)(?:\.[^\$]+)?\$|\{effect:([^\.\}]+)(?:\.[^\}]+)?\}/g;
-  text = text.replace(effRegex, (_, e1, e2) => `[${resolveEffectToken(e1 || e2, dataDir)}]`);
+  text = text.replace(effRegex, (_, e1, e2) => {
+    const name = resolveEffectToken(e1 || e2, ability, dataDir);
+    return name ? `[${name}]` : '';
+  });
 
   text = text.replace(/\{hit(\d+)\}/g, (m, n) => {
     const id = ability.hitsIds?.[n]?.guid;
@@ -872,9 +864,23 @@ function formatDescription(desc, ability, dataDir) {
     return eff ? `[${eff}]` : '';
   });
 
-  text = text.replace(/\{!skill:[^}]+\}/g, '');
-  text = text.replace(/\{skill:([^:}]+):([^:}]+):([^}]+)\}/g, (m, cls, sk, desc) => {
-    const clean = desc.replace(/<[^>]+>/g, '').trim();
+  text = text.replace(/\{hit(\d+):apply(\d+)(fordur)?\}/g, (m, n, idx, fordur) => {
+    const id = ability.hitsIds?.[n]?.guid;
+    if (!id) return '';
+    const eff = parseApplyEffectName(id, parseInt(idx, 10), dataDir);
+    if (!eff) return '';
+    if (fordur) {
+      const dur = parseApplyEffectDuration(id, parseInt(idx, 10), dataDir);
+      return dur ? `[${eff}] for ${dur}` : `[${eff}]`;
+    }
+    return `[${eff}]`;
+  });
+
+  text = text.replace(/\{skill:([^:}]+):([^:}]+):(.*)\}/g, (m, cls, sk, desc) => {
+    const clean = desc.replace(/<[^>]+>/g, '').replace(/\}$/g, '').trim();
+    if (!clean) return '';
+    if (clean.startsWith('{effect')) return '';
+    if (/^\[[^\]]+\]$/.test(clean)) return '';
     if (/^\d+$/.test(clean)) return clean;
     const name = resolveSkillName(sk, dataDir);
     return `${name}: ${clean}`;
@@ -1007,7 +1013,10 @@ function parseSkillTable(id, dataDir) {
             ability,
             dataDir
           );
-          if (!description) {
+          const cleanedDesc = description
+            ? description.replace(/[.!?]+$/, '').trim().toLowerCase()
+            : '';
+          if (!cleanedDesc || PLACEHOLDER_TEXTS.has(cleanedDesc)) {
             description = formatDescription(
               ability.abilityDescription,
               ability,
@@ -1035,9 +1044,19 @@ function parseSkillTable(id, dataDir) {
           name = extractLastQuotedValue(effect.effectName) || name;
           description = formatDescription(
             rank.tooltipText || effect.effectDescription,
-            {},
+            effect,
             dataDir
           );
+          const cleanedEff = description
+            ? description.replace(/[.!?]+$/, '').trim().toLowerCase()
+            : '';
+          if (!cleanedEff || PLACEHOLDER_TEXTS.has(cleanedEff)) {
+            description = formatDescription(
+              effect.effectDescription,
+              effect,
+              dataDir
+            );
+          }
           icon = effect.effectIcon
             ? effect.effectIcon.split('.')[0] +
               '.webp'
