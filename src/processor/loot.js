@@ -404,8 +404,10 @@ async function processLootFiles(directoryData) {
 
   // Combine reward sources with items
   for (const [rt, items] of Object.entries(rewardMap)) {
-    const sources = rewardSources[rt];
-    if (!sources || !sources.length) continue;
+    const sources =
+      rewardSources[rt] && rewardSources[rt].length
+        ? rewardSources[rt]
+        : [{ type: "unknown" }];
     const tableInfo = getRewardTableInfo(directoryData, rt);
     for (const item of items) {
       const chanceInfo = computeItemChance(directoryData, rt, item);
@@ -414,9 +416,11 @@ async function processLootFiles(directoryData) {
         let id;
         if (src.type === "quest") {
           id = `${item}_${src.questName}_${src.step}`;
-        } else {
+        } else if (src.type === "npc") {
           const coord = src.zoneCoordinates || { x: 0, y: 0, z: 0 };
           id = `${item}_${src.npcName}_${coord.x}_${coord.y}_${coord.z}`;
+        } else {
+          id = `${item}_${rt}`;
         }
         lootInfo.push({
           id,
@@ -425,10 +429,10 @@ async function processLootFiles(directoryData) {
           questName: src.type === "quest" ? src.questName : null,
           step: src.type === "quest" ? src.step : null,
           npcName: src.type === "npc" ? src.npcName : null,
-          levelMin: tableInfo.levelMin ?? src.levelMin,
-          levelMax: tableInfo.levelMax ?? src.levelMax,
+          levelMin: tableInfo.levelMin ?? src.levelMin ?? null,
+          levelMax: tableInfo.levelMax ?? src.levelMax ?? null,
           difficulty: src.type === "npc" ? src.difficulty : null,
-          zone: src.zone || tableInfo.biome,
+          zone: src.zone || tableInfo.biome || null,
           spawnRate: src.spawnRate ?? null,
           dropChance: chanceInfo.chance,
           dropChancePerRoll: chanceInfo.perRollChance,

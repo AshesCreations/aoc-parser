@@ -914,7 +914,7 @@ function formatDescription(desc, ability, dataDir) {
   text = text.replace(/\$flavor:([^$]+)\$/gi, (_, w) => `<i>${w.replace(/^"|"$/g, '')}</i>`);
   text = text.replace(/\\'/g, "'");
   text = text.replace(/Healing Damage/gi, 'Healing');
-  text = wrapStatusEffects(text, dataDir);
+  // Status effect names are already resolved from ability data; avoid auto-wrapping
   text = text.replace(/\s+/g, ' ').trim();
   text = text.replace(/(<br>)+$/g, '').trim();
   if (text && !/[.!?]$/.test(text)) text += '.';
