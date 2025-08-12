@@ -82,6 +82,15 @@ function formatEffectName(name) {
   return out;
 }
 
+const HIDDEN_EFFECTS = new Set([
+  'Physical',
+  'Attack',
+  'Speed',
+  'Combat Momentum',
+]);
+
+const PLACEHOLDER_TEXTS = new Set(['helo?', 'testing']);
+
 const statusEffectCache = new Map();
 
 function getStatusEffectNames(dataDir) {
@@ -103,8 +112,9 @@ function getStatusEffectNames(dataDir) {
       })
       .filter(Boolean);
   }
-  statusEffectCache.set(dataDir, names);
-  return names;
+  const filtered = names.filter((n) => !HIDDEN_EFFECTS.has(n));
+  statusEffectCache.set(dataDir, filtered);
+  return filtered;
 }
 
 function escapeRegExp(str) {
@@ -440,30 +450,16 @@ function getProjectileHitGuid(ability, projIdx, hitIdx, dataDir) {
 }
 
 function resolveEffectToken(token, ability, dataDir) {
-  const rawEffects = ability?.effects || ability?.effectsIds || [];
-  const effects = Array.isArray(rawEffects) ? rawEffects : Object.values(rawEffects);
   const isGuid = /^\d+$/.test(token);
-  for (const ref of effects) {
-    const guid = ref?.guid;
-    if (!guid) continue;
-    if (isGuid && guid === token) {
-      const eff = loadJson(dataDir, 'Effects/Effect', 'Effect', guid);
-      const name = extractLastQuotedValue(eff.effectName);
-      return name ? formatEffectName(name) : null;
-    }
-    if (!isGuid) {
-      const eff = loadJson(dataDir, 'Effects/Effect', 'Effect', guid);
-      const name = extractLastQuotedValue(eff.effectName);
-      const internal = eff.name;
-      if (
-        (name && name.toLowerCase() === token.toLowerCase()) ||
-        (internal && internal.toLowerCase() === token.toLowerCase())
-      ) {
-        return name ? formatEffectName(name) : null;
-      }
-    }
+  let eff;
+  if (isGuid) {
+    eff = loadJson(dataDir, 'Effects/Effect', 'Effect', token);
+  } else {
+    eff = loadJson(dataDir, 'Effects/Effect', 'Effect', token);
   }
-  return null;
+  const name = extractLastQuotedValue(eff.effectName) || eff.effectName || token;
+  const formatted = formatEffectName(name);
+  return HIDDEN_EFFECTS.has(formatted) ? null : formatted;
 }
 
 function resolveSkillName(skillToken, dataDir) {
@@ -868,8 +864,23 @@ function formatDescription(desc, ability, dataDir) {
     return eff ? `[${eff}]` : '';
   });
 
-  text = text.replace(/\{skill:([^:}]+):([^:}]+):([^}]+)\}/g, (m, cls, sk, desc) => {
-    const clean = desc.replace(/<[^>]+>/g, '').trim();
+  text = text.replace(/\{hit(\d+):apply(\d+)(fordur)?\}/g, (m, n, idx, fordur) => {
+    const id = ability.hitsIds?.[n]?.guid;
+    if (!id) return '';
+    const eff = parseApplyEffectName(id, parseInt(idx, 10), dataDir);
+    if (!eff) return '';
+    if (fordur) {
+      const dur = parseApplyEffectDuration(id, parseInt(idx, 10), dataDir);
+      return dur ? `[${eff}] for ${dur}` : `[${eff}]`;
+    }
+    return `[${eff}]`;
+  });
+
+  text = text.replace(/\{skill:([^:}]+):([^:}]+):(.*)\}/g, (m, cls, sk, desc) => {
+    const clean = desc.replace(/<[^>]+>/g, '').replace(/\}$/g, '').trim();
+    if (!clean) return '';
+    if (clean.startsWith('{effect')) return '';
+    if (/^\[[^\]]+\]$/.test(clean)) return '';
     if (/^\d+$/.test(clean)) return clean;
     const name = resolveSkillName(sk, dataDir);
     return `${name}: ${clean}`;
@@ -1002,7 +1013,10 @@ function parseSkillTable(id, dataDir) {
             ability,
             dataDir
           );
-          if (!description) {
+          const cleanedDesc = description
+            ? description.replace(/[.!?]+$/, '').trim().toLowerCase()
+            : '';
+          if (!cleanedDesc || PLACEHOLDER_TEXTS.has(cleanedDesc)) {
             description = formatDescription(
               ability.abilityDescription,
               ability,
@@ -1033,6 +1047,16 @@ function parseSkillTable(id, dataDir) {
             effect,
             dataDir
           );
+          const cleanedEff = description
+            ? description.replace(/[.!?]+$/, '').trim().toLowerCase()
+            : '';
+          if (!cleanedEff || PLACEHOLDER_TEXTS.has(cleanedEff)) {
+            description = formatDescription(
+              effect.effectDescription,
+              effect,
+              dataDir
+            );
+          }
           icon = effect.effectIcon
             ? effect.effectIcon.split('.')[0] +
               '.webp'
