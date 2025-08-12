@@ -440,7 +440,8 @@ function getProjectileHitGuid(ability, projIdx, hitIdx, dataDir) {
 }
 
 function resolveEffectToken(token, ability, dataDir) {
-  const effects = ability.effectsIds || [];
+  const rawEffects = ability?.effects || ability?.effectsIds || [];
+  const effects = Array.isArray(rawEffects) ? rawEffects : Object.values(rawEffects);
   const isGuid = /^\d+$/.test(token);
   for (const ref of effects) {
     const guid = ref?.guid;
