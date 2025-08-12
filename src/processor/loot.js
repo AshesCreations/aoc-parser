@@ -32,6 +32,7 @@ const rewardTableCache = {};
 const itemNameCache = {};
 const chanceCache = {};
 const poolSizeCache = {};
+const rewardSources = {};
 
 /**
  * Parse predicate expressions from reward tables to extract
@@ -128,6 +129,12 @@ function getPoolSize(baseDir, rtId) {
   }
   poolSizeCache[rtId] = total;
   return total;
+}
+
+function addRewardSource(rtId, source) {
+  if (!rtId || rtId === "0") return;
+  if (!rewardSources[rtId]) rewardSources[rtId] = [];
+  rewardSources[rtId].push(source);
 }
 
 /**
@@ -341,39 +348,12 @@ async function processLootFiles(directoryData) {
         rewardTables = [data.rewardTableId.guid];
       }
       for (const rt of rewardTables) {
-        const tableInfo = getRewardTableInfo(directoryData, rt);
-        const items = rewardMap[rt] || [];
-        for (const item of items) {
-          const chanceInfo = computeItemChance(directoryData, rt, item);
-          const itemName = getItemName(directoryData, item);
-          const id = `${item}_${questName}_${step}`;
-          lootInfo.push({
-            id,
-            itemId: item,
-            itemName,
-            questName,
-            step,
-            npcName: null,
-            levelMin: tableInfo.levelMin,
-            levelMax: tableInfo.levelMax,
-            difficulty: null,
-            zone: tableInfo.biome,
-            spawnRate: null,
-            dropChance: chanceInfo.chance,
-            dropChancePerRoll: chanceInfo.perRollChance,
-            rolls: chanceInfo.rolls,
-            poolSize: chanceInfo.poolSize,
-            zoneCoordinates: null,
-            worldCoordinates: null,
-            rewardTableId: rt,
-            worldSpawnLocation: null,
-          });
-        }
+        addRewardSource(rt, { type: "quest", questName, step });
       }
     }
   }
 
-  // Build NPC loot
+  // Build NPC loot sources
   for (const [assetId, asset] of Object.entries(assets)) {
     const lootTables = (asset.lootTablesIds || []).map((l) => l.guid);
     if (!lootTables.length) continue;
@@ -401,39 +381,68 @@ async function processLootFiles(directoryData) {
     }
 
     for (const rt of lootTables) {
-      const tableInfo = getRewardTableInfo(directoryData, rt);
-      const items = rewardMap[rt] || [];
-      for (const item of items) {
-        const chanceInfo = computeItemChance(directoryData, rt, item);
-        const itemName = getItemName(directoryData, item);
-        for (const info of spawnInfos) {
-          const coord = info.zoneCoordinates || { x: 0, y: 0, z: 0 };
-          const id = `${item}_${asset.name}_${coord.x}_${coord.y}_${coord.z}`;
-          lootInfo.push({
-            id,
-            itemId: item,
-            itemName,
-            questName: null,
-            step: null,
-            npcName: asset.name,
-            levelMin: tableInfo.levelMin ?? info.levelMin,
-            levelMax: tableInfo.levelMax ?? info.levelMax,
-            difficulty:
-              asset.gameplayTags && asset.gameplayTags.gameplayTags
-                ? asset.gameplayTags.gameplayTags.map((t) => t.tagName).join(" ")
-                : null,
-            zone: info.zone || tableInfo.biome,
-            spawnRate: info.spawnRate,
-            dropChance: chanceInfo.chance,
-            dropChancePerRoll: chanceInfo.perRollChance,
-            rolls: chanceInfo.rolls,
-            poolSize: chanceInfo.poolSize,
-            zoneCoordinates: info.zoneCoordinates,
-            worldCoordinates: info.worldCoordinates,
-            rewardTableId: rt,
-            worldSpawnLocation: info.worldSpawnLocation,
-          });
+      const difficulty =
+        asset.gameplayTags && asset.gameplayTags.gameplayTags
+          ? asset.gameplayTags.gameplayTags.map((t) => t.tagName).join(" ")
+          : null;
+      for (const info of spawnInfos) {
+        addRewardSource(rt, {
+          type: "npc",
+          npcName: asset.name,
+          levelMin: info.levelMin,
+          levelMax: info.levelMax,
+          spawnRate: info.spawnRate,
+          zone: info.zone,
+          worldSpawnLocation: info.worldSpawnLocation,
+          zoneCoordinates: info.zoneCoordinates,
+          worldCoordinates: info.worldCoordinates,
+          difficulty,
+        });
+      }
+    }
+  }
+
+  // Combine reward sources with items
+  for (const [rt, items] of Object.entries(rewardMap)) {
+    const sources =
+      rewardSources[rt] && rewardSources[rt].length
+        ? rewardSources[rt]
+        : [{ type: "unknown" }];
+    const tableInfo = getRewardTableInfo(directoryData, rt);
+    for (const item of items) {
+      const chanceInfo = computeItemChance(directoryData, rt, item);
+      const itemName = getItemName(directoryData, item);
+      for (const src of sources) {
+        let id;
+        if (src.type === "quest") {
+          id = `${item}_${src.questName}_${src.step}`;
+        } else if (src.type === "npc") {
+          const coord = src.zoneCoordinates || { x: 0, y: 0, z: 0 };
+          id = `${item}_${src.npcName}_${coord.x}_${coord.y}_${coord.z}`;
+        } else {
+          id = `${item}_${rt}`;
         }
+        lootInfo.push({
+          id,
+          itemId: item,
+          itemName,
+          questName: src.type === "quest" ? src.questName : null,
+          step: src.type === "quest" ? src.step : null,
+          npcName: src.type === "npc" ? src.npcName : null,
+          levelMin: tableInfo.levelMin ?? src.levelMin ?? null,
+          levelMax: tableInfo.levelMax ?? src.levelMax ?? null,
+          difficulty: src.type === "npc" ? src.difficulty : null,
+          zone: src.zone || tableInfo.biome || null,
+          spawnRate: src.spawnRate ?? null,
+          dropChance: chanceInfo.chance,
+          dropChancePerRoll: chanceInfo.perRollChance,
+          rolls: chanceInfo.rolls,
+          poolSize: chanceInfo.poolSize,
+          zoneCoordinates: src.zoneCoordinates ?? null,
+          worldCoordinates: src.worldCoordinates ?? null,
+          rewardTableId: rt,
+          worldSpawnLocation: src.worldSpawnLocation ?? null,
+        });
       }
     }
   }

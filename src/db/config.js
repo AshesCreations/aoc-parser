@@ -231,6 +231,7 @@ export async function initDatabase() {
       CREATE TABLE IF NOT EXISTS DatabaseLootInfo (
         id VARCHAR(512) PRIMARY KEY,
         itemId VARCHAR(255),
+        itemName TEXT,
         questName TEXT,
         step TEXT,
         npcName TEXT,
@@ -251,6 +252,7 @@ export async function initDatabase() {
     await conn.query(
       "ALTER TABLE `DatabaseLootInfo` MODIFY COLUMN `id` VARCHAR(512)"
     );
+    await ensureColumnExists(conn, 'DatabaseLootInfo', 'itemName', 'TEXT');
     await ensureColumnExists(conn, 'DatabaseLootInfo', 'worldSpawnLocation', 'TEXT');
     await ensureColumnExists(conn, 'DatabaseLootInfo', 'zoneCoordinates', 'JSON');
     await ensureColumnExists(conn, 'DatabaseLootInfo', 'worldCoordinates', 'JSON');
