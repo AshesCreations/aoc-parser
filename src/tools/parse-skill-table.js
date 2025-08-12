@@ -559,6 +559,25 @@ function formatDescription(desc, ability, dataDir) {
   let text = extractLastQuotedValue(desc);
   text = resolveStatModPlaceholders(text, ability, dataDir);
 
+  // Handle custom markup tags before other placeholder processing
+  const tagStack = [];
+  text = text.replace(/<Bold>|<bold>|<Flavor>|<flavor>|<>/g, (tag) => {
+    const lower = tag.toLowerCase();
+    if (lower === '<bold>') {
+      tagStack.push('b');
+      return '<b>';
+    }
+    if (lower === '<flavor>') {
+      tagStack.push('i');
+      return '<i>';
+    }
+    if (tag === '<>') {
+      const last = tagStack.pop();
+      return last ? `</${last}>` : '';
+    }
+    return tag;
+  });
+
   if (ability.hitsIds && ability.hitsIds['1']) {
     const dmg = parseDamage(ability.hitsIds['1'].guid, dataDir);
     if (dmg && dmg.percent) {
@@ -566,6 +585,35 @@ function formatDescription(desc, ability, dataDir) {
       text = text.replace('$hit1$', dmgStr);
     }
   }
+  text = text.replace(/\$hit(\d+):(?:hide)?apply(\d+)(?:hide)?(?:\.[^$]+)?\$/g, (m, hitNum, idx) => {
+    const id = ability.hitsIds?.[hitNum]?.guid;
+    if (!id) return '';
+    const eff = parseApplyEffectName(id, parseInt(idx, 10), dataDir);
+    return eff ? `[${eff}]` : '';
+  });
+
+  text = text.replace(/\$hit(\d+)\.(?:hide)?apply(\d+)(?:hide)?(?:fordur)?(?:\.[^$]+)?\$/g, (m, hitNum, idx) => {
+    const id = ability.hitsIds?.[hitNum]?.guid;
+    if (!id) return '';
+    const eff = parseApplyEffectName(id, parseInt(idx, 10), dataDir);
+    return eff ? `[${eff}]` : '';
+  });
+
+  text = text.replace(/\$hit:([^\.]+)\.(?:hide)?apply(\d+)(?:hide)?(?:fordur)?\$/g, (m, name, idx) => {
+    const eff = parseApplyEffectName(name, parseInt(idx, 10), dataDir);
+    return eff ? `[${eff}]` : '';
+  });
+
+  text = text.replace(/\{hit:([^\.\}]+)\.(?:hide)?apply(\d+)(?:hide)?\}/g, (m, name, idx) => {
+    const eff = parseApplyEffectName(name, parseInt(idx, 10), dataDir);
+    return eff ? `[${eff}]` : '';
+  });
+
+  text = text.replace(/\{hit:([^\.\}]+)(?:\.[^\}]+)?\}/g, (m, name) => {
+    const dmg = parseDamage(name, dataDir);
+    return dmg && dmg.percent ? `${dmg.percent}% ${dmg.element} Damage` : '';
+  });
+
   // replace hit tokens with computed damage when possible
   text = text.replace(/\$hit(\d+)(?:\.[^$]+)?\$/g, (m, n) => {
     const id = ability.hitsIds?.[n]?.guid;
@@ -591,35 +639,6 @@ function formatDescription(desc, ability, dataDir) {
   text = text.replace(/\$hit:([^\.]+)\.max\$/g, (m, name) => {
     const val = parseDamageRange(name, 'max', dataDir);
     return val || m;
-  });
-
-  text = text.replace(/\$hit(\d+):apply(\d+)(?:\.[^$]+)?\$/g, (m, hitNum, idx) => {
-    const id = ability.hitsIds?.[hitNum]?.guid;
-    if (!id) return '';
-    const eff = parseApplyEffectName(id, parseInt(idx, 10), dataDir);
-    return eff ? `[${eff}]` : '';
-  });
-
-  text = text.replace(/\$hit(\d+)\.apply(\d+)(?:fordur)?(?:\.[^$]+)?\$/g, (m, hitNum, idx) => {
-    const id = ability.hitsIds?.[hitNum]?.guid;
-    if (!id) return '';
-    const eff = parseApplyEffectName(id, parseInt(idx, 10), dataDir);
-    return eff ? `[${eff}]` : '';
-  });
-
-  text = text.replace(/\$hit:([^\.]+)\.apply(\d+)(?:fordur)?\$/g, (m, name, idx) => {
-    const eff = parseApplyEffectName(name, parseInt(idx, 10), dataDir);
-    return eff ? `[${eff}]` : '';
-  });
-
-  text = text.replace(/\{hit:([^\.\}]+)\.apply(\d+)\}/g, (m, name, idx) => {
-    const eff = parseApplyEffectName(name, parseInt(idx, 10), dataDir);
-    return eff ? `[${eff}]` : '';
-  });
-
-  text = text.replace(/\{hit:([^\.\}]+)(?:\.[^\}]+)?\}/g, (m, name) => {
-    const dmg = parseDamage(name, dataDir);
-    return dmg && dmg.percent ? `${dmg.percent}% ${dmg.element} Damage` : '';
   });
 
   text = text.replace(/\$proj(\d+):hit(\d+)\$/g, (m, pIdx, hIdx) => {
@@ -867,9 +886,11 @@ function formatDescription(desc, ability, dataDir) {
     text = text.replace(/([A-Za-z][A-Za-z' ]+?)<>/g, (_, name) => `[${name.trim()}]`);
     text = text.replace(/<>/g, '');
   }
-  text = text.replace(/\r\n|\n/g, '<br>');
-  text = text.replace(/rnrn/g, '<br><br>');
+  // Replace escaped newline sequences with a single line break
+  text = text.replace(/rnrn/g, '<br>');
   text = text.replace(/(^|\W)rn/g, '$1<br>');
+  text = text.replace(/\r\n|\n|\r/g, '<br>');
+  text = text.replace(/(<br>)+/g, '<br>');
 
   text = text.replace(/(?:<br>)?\s*\$charges\$(?:\.)?/g, () => {
     const val = parseFloat(ability.cooldownCharges?.expression);
@@ -880,27 +901,10 @@ function formatDescription(desc, ability, dataDir) {
   text = text.replace(/<img[^>]*id=\"([^\"]+)\"[^>]*>/g, (_, id) => `[${formatEffectName(id)}]`);
   text = text.replace(/\((\s*\[[^\]]+\]\s*)+\)/g, (m) => m.slice(1, -1));
   text = text.replace(/<\/?highlight>/gi, '');
-  const tagStack = [];
-  text = text.replace(/<Bold>|<bold>|<Flavor>|<flavor>|<\/>/g, (tag) => {
-    const lower = tag.toLowerCase();
-    if (lower === '<bold>') {
-      tagStack.push('bold');
-      return '<bold>';
-    }
-    if (lower === '<flavor>') {
-      tagStack.push('i');
-      return '<i>';
-    }
-    if (tag === '</>') {
-      const last = tagStack.pop();
-      return last ? `</${last}>` : '';
-    }
-    return tag;
-  });
   text = text.replace(/\$flavor:([^$]+)\$/gi, (_, w) => `<i>${w.replace(/^"|"$/g, '')}</i>`);
   text = text.replace(/\\'/g, "'");
   text = text.replace(/Healing Damage/gi, 'Healing');
-  text = wrapStatusEffects(text, dataDir);
+  // Status effect names are now provided explicitly; avoid auto-wrapping
   text = text.replace(/\s+/g, ' ').trim();
   text = text.replace(/(<br>)+$/g, '').trim();
   if (text && !/[.!?]$/.test(text)) text += '.';
