@@ -724,7 +724,7 @@ async function saveLootInfoToDatabase(loot) {
         id, itemId, questName, step, npcName, levelMin, levelMax,
         difficulty, zone, worldSpawnLocation, spawnRate, dropChance, zoneCoordinates, worldCoordinates
       ) VALUES (
-        ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+        ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
       ) ON DUPLICATE KEY UPDATE
         questName = VALUES(questName),
         step = VALUES(step),
