@@ -61,6 +61,9 @@ function parsePredicate(expression) {
  * @returns {{levelMin: number|null, levelMax: number|null, biome: string|null}}
  */
 function getRewardTableInfo(baseDir, rtId) {
+  if (!rtId || rtId === "0") {
+    return { levelMin: null, levelMax: null, biome: null };
+  }
   if (rewardTableCache[rtId]) return rewardTableCache[rtId];
 
   const data = getJson(baseDir, "/Reward/RewardTable", `RewardTable_${rtId}.json`);
@@ -98,6 +101,10 @@ function getItemName(baseDir, itemId) {
  * @returns {number}
  */
 function getPoolSize(baseDir, rtId) {
+  if (!rtId || rtId === "0") {
+    poolSizeCache[rtId] = 0;
+    return 0;
+  }
   if (poolSizeCache[rtId] !== undefined) return poolSizeCache[rtId];
 
   const data = getJson(baseDir, "/Reward/RewardTable", `RewardTable_${rtId}.json`);
@@ -113,7 +120,8 @@ function getPoolSize(baseDir, rtId) {
     return rewards.length;
   }
 
-  const subIds = data.subTablesIds?.map((s) => s.guid) || [];
+  const subIds =
+    data.subTablesIds?.map((s) => s.guid).filter((id) => id && id !== "0") || [];
   let total = 0;
   for (const subId of subIds) {
     total += getPoolSize(baseDir, subId);
@@ -132,6 +140,15 @@ function getPoolSize(baseDir, rtId) {
  */
 function computeItemChance(baseDir, rtId, itemId) {
   const key = `${rtId}_${itemId}`;
+  if (!rtId || rtId === "0") {
+    chanceCache[key] = {
+      chance: 0,
+      perRollChance: 0,
+      rolls: 0,
+      poolSize: 0,
+    };
+    return chanceCache[key];
+  }
   if (chanceCache[key]) return chanceCache[key];
 
   const data = getJson(baseDir, "/Reward/RewardTable", `RewardTable_${rtId}.json`);
@@ -176,7 +193,8 @@ function computeItemChance(baseDir, rtId, itemId) {
   }
 
   // Table with subtables
-  const subIds = data.subTablesIds?.map((s) => s.guid) || [];
+  const subIds =
+    data.subTablesIds?.map((s) => s.guid).filter((id) => id && id !== "0") || [];
   if (subIds.length) {
     const rolls = data.numberOfSubtablesToSelect || 1;
     let weights = data.weightsPerSubTable || [];

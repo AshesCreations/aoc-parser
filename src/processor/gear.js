@@ -223,6 +223,7 @@ async function processItemGearFiles(directoryData) {
       const tables = itemToRewardTables[item.id] || [];
       const craftingRecipes = [];
       for (const rtId of tables) {
+        if (!rtId || rtId === "0") continue;
         if (!rewardTableCache[rtId]) {
           rewardTableCache[rtId] = getJson(
             directoryData,
