@@ -112,7 +112,9 @@ function escapeRegExp(str) {
 }
 
 function wrapStatusEffects(text, dataDir) {
-  const names = getStatusEffectNames(dataDir).sort((a, b) => b.length - a.length);
+  const names = getStatusEffectNames(dataDir)
+    .filter((n) => n.toLowerCase() !== 'combat momentum')
+    .sort((a, b) => b.length - a.length);
   const isWrapped = (str, start, end) => {
     const open = str.lastIndexOf('[', start);
     const close = str.indexOf(']', end);
@@ -870,9 +872,11 @@ function formatDescription(desc, ability, dataDir) {
     return eff ? `[${eff}]` : '';
   });
 
+  text = text.replace(/\{!skill:[^}]+\}/g, '');
   text = text.replace(/\{skill:([^:}]+):([^:}]+):([^}]+)\}/g, (m, cls, sk, desc) => {
-    const name = resolveSkillName(sk, dataDir);
     const clean = desc.replace(/<[^>]+>/g, '').trim();
+    if (/^\d+$/.test(clean)) return clean;
+    const name = resolveSkillName(sk, dataDir);
     return `${name}: ${clean}`;
   });
 
@@ -904,7 +908,7 @@ function formatDescription(desc, ability, dataDir) {
   text = text.replace(/\$flavor:([^$]+)\$/gi, (_, w) => `<i>${w.replace(/^"|"$/g, '')}</i>`);
   text = text.replace(/\\'/g, "'");
   text = text.replace(/Healing Damage/gi, 'Healing');
-  // Status effect names are now provided explicitly; avoid auto-wrapping
+  text = wrapStatusEffects(text, dataDir);
   text = text.replace(/\s+/g, ' ').trim();
   text = text.replace(/(<br>)+$/g, '').trim();
   if (text && !/[.!?]$/.test(text)) text += '.';
