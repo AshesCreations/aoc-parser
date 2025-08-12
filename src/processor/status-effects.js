@@ -276,6 +276,14 @@ async function processStatusEffects(directoryData, statIdToName) {
       );
     }
 
+    if (name === 'Bleeding') {
+      const tick = data.tickHitsIds?.[0];
+      const dmg = tick ? parseDamage(tick.guid, directoryData) : null;
+      if (dmg && dmg.percent) {
+        description = `Deals ${dmg.percent}% ${dmg.element} Damage over time`;
+      }
+    }
+
     let effectDuration = null;
     if (data.effectDuration?.expression) {
       const durExpr = parseValueExpression(
