@@ -716,16 +716,18 @@ async function saveLootInfoToDatabase(loot) {
   const client = await pool.getConnection();
   try {
     await ensureLastModifiedColumn(client, 'DatabaseLootInfo');
+    await ensureColumn(client, 'DatabaseLootInfo', 'itemName', 'TEXT');
     await ensureColumn(client, 'DatabaseLootInfo', 'worldSpawnLocation', 'TEXT');
     await ensureColumn(client, 'DatabaseLootInfo', 'zoneCoordinates', 'JSON');
     await ensureColumn(client, 'DatabaseLootInfo', 'worldCoordinates', 'JSON');
     const query = `
       INSERT INTO \`DatabaseLootInfo\` (
-        id, itemId, questName, step, npcName, levelMin, levelMax,
+        id, itemId, itemName, questName, step, npcName, levelMin, levelMax,
         difficulty, zone, worldSpawnLocation, spawnRate, dropChance, zoneCoordinates, worldCoordinates
       ) VALUES (
-        ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+        ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
       ) ON DUPLICATE KEY UPDATE
+        itemName = VALUES(itemName),
         questName = VALUES(questName),
         step = VALUES(step),
         npcName = VALUES(npcName),
@@ -743,6 +745,7 @@ async function saveLootInfoToDatabase(loot) {
     const values = [
       loot.id,
       loot.itemId,
+      loot.itemName,
       loot.questName,
       loot.step,
       loot.npcName,
