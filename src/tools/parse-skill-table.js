@@ -112,9 +112,7 @@ function escapeRegExp(str) {
 }
 
 function wrapStatusEffects(text, dataDir) {
-  const names = getStatusEffectNames(dataDir)
-    .filter((n) => n.toLowerCase() !== 'combat momentum')
-    .sort((a, b) => b.length - a.length);
+  const names = getStatusEffectNames(dataDir).sort((a, b) => b.length - a.length);
   const isWrapped = (str, start, end) => {
     const open = str.lastIndexOf('[', start);
     const close = str.indexOf(']', end);
@@ -441,36 +439,30 @@ function getProjectileHitGuid(ability, projIdx, hitIdx, dataDir) {
   return hitRef?.guid || null;
 }
 
-function resolveEffectToken(token, dataDir) {
-  let eff = {};
+function resolveEffectToken(token, ability, dataDir) {
+  const effects = ability.effectsIds || [];
   const isGuid = /^\d+$/.test(token);
-  if (isGuid) {
-    eff = loadJson(dataDir, 'Effects/Effect', 'Effect', token);
-    if (!eff || Object.keys(eff).length === 0)
-      eff = loadJson(dataDir, 'Effects/Effect', 'EffectRecord', token);
-  }
-
-  // For non-guid tokens, search by internal name to ensure we fetch the
-  // correct status effect rather than any effect that merely references the
-  // token in its text.
-  if (!isGuid || !eff || Object.keys(eff).length === 0) {
-    const dir = path.join(dataDir, 'Effects/Effect');
-    const files = fs.readdirSync(dir);
-    for (const f of files) {
-      const content = fs.readFileSync(path.join(dir, f), 'utf8');
-      if (content.includes(`"name": "${token}"`)) {
-        eff = JSON.parse(content);
-        break;
+  for (const ref of effects) {
+    const guid = ref?.guid;
+    if (!guid) continue;
+    if (isGuid && guid === token) {
+      const eff = loadJson(dataDir, 'Effects/Effect', 'Effect', guid);
+      const name = extractLastQuotedValue(eff.effectName);
+      return name ? formatEffectName(name) : null;
+    }
+    if (!isGuid) {
+      const eff = loadJson(dataDir, 'Effects/Effect', 'Effect', guid);
+      const name = extractLastQuotedValue(eff.effectName);
+      const internal = eff.name;
+      if (
+        (name && name.toLowerCase() === token.toLowerCase()) ||
+        (internal && internal.toLowerCase() === token.toLowerCase())
+      ) {
+        return name ? formatEffectName(name) : null;
       }
     }
-    if (!eff || Object.keys(eff).length === 0) {
-      const file = files.find((f) => f.includes(token));
-      if (file) eff = JSON.parse(fs.readFileSync(path.join(dir, file), 'utf8'));
-    }
   }
-
-  const name = extractLastQuotedValue(eff.effectName);
-  return name ? formatEffectName(name) : formatEffectName(token);
+  return null;
 }
 
 function resolveSkillName(skillToken, dataDir) {
@@ -856,7 +848,10 @@ function formatDescription(desc, ability, dataDir) {
   });
 
   const effRegex = /\$effect:([^\.\$]+)(?:\.[^\$]+)?\$|\{effect:([^\.\}]+)(?:\.[^\}]+)?\}/g;
-  text = text.replace(effRegex, (_, e1, e2) => `[${resolveEffectToken(e1 || e2, dataDir)}]`);
+  text = text.replace(effRegex, (_, e1, e2) => {
+    const name = resolveEffectToken(e1 || e2, ability, dataDir);
+    return name ? `[${name}]` : '';
+  });
 
   text = text.replace(/\{hit(\d+)\}/g, (m, n) => {
     const id = ability.hitsIds?.[n]?.guid;
@@ -872,7 +867,6 @@ function formatDescription(desc, ability, dataDir) {
     return eff ? `[${eff}]` : '';
   });
 
-  text = text.replace(/\{!skill:[^}]+\}/g, '');
   text = text.replace(/\{skill:([^:}]+):([^:}]+):([^}]+)\}/g, (m, cls, sk, desc) => {
     const clean = desc.replace(/<[^>]+>/g, '').trim();
     if (/^\d+$/.test(clean)) return clean;
@@ -908,7 +902,7 @@ function formatDescription(desc, ability, dataDir) {
   text = text.replace(/\$flavor:([^$]+)\$/gi, (_, w) => `<i>${w.replace(/^"|"$/g, '')}</i>`);
   text = text.replace(/\\'/g, "'");
   text = text.replace(/Healing Damage/gi, 'Healing');
-  text = wrapStatusEffects(text, dataDir);
+  // Status effect names are already resolved from ability data; avoid auto-wrapping
   text = text.replace(/\s+/g, ' ').trim();
   text = text.replace(/(<br>)+$/g, '').trim();
   if (text && !/[.!?]$/.test(text)) text += '.';
@@ -1035,7 +1029,7 @@ function parseSkillTable(id, dataDir) {
           name = extractLastQuotedValue(effect.effectName) || name;
           description = formatDescription(
             rank.tooltipText || effect.effectDescription,
-            {},
+            effect,
             dataDir
           );
           icon = effect.effectIcon
