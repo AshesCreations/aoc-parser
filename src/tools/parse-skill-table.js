@@ -905,6 +905,8 @@ function formatDescription(desc, ability, dataDir) {
   text = text.replace(/(^|\W)rn/g, '$1<br>');
   text = text.replace(/\r\n|\n|\r/g, '<br>');
   text = text.replace(/(<br>)+/g, '<br>');
+  // Ensure each line break is preceded by a period
+  text = text.replace(/([^.!?\s])\s*<br>/g, '$1.<br>');
 
   text = text.replace(/(?:<br>)?\s*\$charges\$(?:\.)?/g, () => {
     const val = parseFloat(ability.cooldownCharges?.expression);

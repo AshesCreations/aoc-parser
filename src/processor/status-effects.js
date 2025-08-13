@@ -291,7 +291,12 @@ async function processStatusEffects(directoryData, statIdToName) {
       const healVal = tick && tick.percent ? `${tick.percent}% ${elem}Healing` : '';
       const tickTime = data.tickTimer || 0;
       const interval = tickTime ? `${tickTime} seconds` : '';
-      description = `Grants 15% bonus healing. Also heals for ${healVal} every ${interval}.`.trim();
+      if (healVal && interval) {
+        description = `Grants 15% bonus healing. Also heals for ${healVal} every ${interval}.`;
+      } else {
+        description = `Grants 15% bonus healing.`;
+      }
+      description = description.trim();
     }
 
     if (name === 'Disarmed') {
