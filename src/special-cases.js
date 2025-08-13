@@ -50,7 +50,17 @@ const handlers = {
   Shield: (name, desc) => ({ description: convertMultiplier(desc) }),
   'Maddening Dance': (name, desc) => ({
     description: desc
-      ? desc.replace(/([0-9]+(?:\.\d+)?)%/g, (_, n) => `${Math.round(parseFloat(n))}%`)
+      ? desc
+          .replace(/([0-9]+(?:\.\d+)?)%/g, (_, n) => `${Math.round(parseFloat(n))}%`)
+          .replace(
+            /\{skill:Bard:Bard_Passive_Dance_Maddening_Avert:[^}]*?\{effect:Bard_Passive_Dance_Maddening_Avert.inline\}[^}]*?\}/s,
+            '[Maddening Dance]'
+          )
+      : desc,
+  }),
+  'Arcane Circle': (name, desc) => ({
+    description: desc
+      ? desc.replace(/\$linger1\.duration\$/g, '10 seconds')
       : desc,
   }),
   Disarmed: () => ({ description: 'Cannot use weapons for 4 seconds.' }),
@@ -58,14 +68,45 @@ const handlers = {
   'Cathartic Melody': (name, desc) => ({ description: replaceRangeWithMin(desc) }),
   'Cheerful Melody': (name, desc) => ({ description: replaceRangeWithMin(desc) }),
   'Pensive Melody': () => ({
-    description: "Restores mana based on caster's magical power every 2 seconds",
+    description:
+      'Nearby party members gain [Pensive Melody]\n\nMelodies can be played concurrently with other abilities. Multiple instances of the same melody do not stack.',
   }),
-  'Epic Melody': () => ({ description: '10% Movement Speed and 100% Stamina Regeneration' }),
-  'Hymn of the Mind': () => ({ description: "Target ally gains mana based on caster's attributes" }),
+  'Epic Melody': () => ({
+    description:
+      'Nearby party members gain [Epic Melody]\n\nMelodies can be played concurrently with other abilities. Multiple instances of the same melody do not stack.',
+  }),
+  'Hymn of the Mind': () => ({
+    description:
+      'Target ally gains mana equal to 7% Magical Power every second. Mana gained increases up to 200% based on the amount of mana the target is missing.',
+  }),
   'Hymn of the Mind (AoE)': () => ({
-    description: 'Up to 4 allies in front of you gain mana based on caster\'s attributes',
+    description:
+      'Up to 4 allies in front of you gain mana equal to 4.8% Magical Power every second. Mana gained increases up to 200% based on the amount of mana the target is missing. This ability will favor low mana party members and yourself.',
   }),
-  'Lovely Serenade': (name, desc) => ({ description: formatLovely(desc) }),
+  'Chilling Lament': () => ({
+    description:
+      'Target enemy is dealt 130% Ice Damage and afflicted with [Chilled] and [Weakened] every second.',
+  }),
+  'Chilling Lament (AoE)': () => ({
+    description:
+      'Enemies in front of you are dealt 130% Ice Damage and afflicted with [Chilled] and [Weakened] every second.',
+  }),
+  'Lovely Serenade': () => ({
+    description:
+      'Target ally is healed for 130% Healing every second. The initial hit also applies [Emboldened]',
+  }),
+  'Lovely Serenade (AoE)': () => ({
+    description:
+      'Up to 5 allies in front of you are healed for 50% Healing every second. This ability will favor injured party members and yourself. Each hit will also apply [Glee] to targets below 50% health.',
+  }),
+  'Dark Lullaby': () => ({
+    description:
+      'Target enemy takes 50% Spirit Damage + an additional 30% Spirit Damage for each debuff they have (up to 5).\nThis damage will not wake an [Incapacitated] target and the final hit applies [Stunned] if the target is [Incapacitated].',
+  }),
+  'Dark Lullaby (AoE)': () => ({
+    description:
+      'Enemies in front of you take 35% Spirit Damage + an additional 30% Spirit Damage for each debuff they have (up to 5).\nThis damage will not wake an [Incapacitated] target and the final hit applies [Stunned] if the target is [Incapacitated].',
+  }),
   Chilled: () => ({
     description:
       'Movement speed reduced by 50% per stack. Lasts 6 seconds. Duration can be extended up to 15 seconds by subsequent applications.',
