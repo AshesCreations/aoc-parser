@@ -151,18 +151,18 @@ const handlers = {
     description:
       'Deals 4% Necrotic Damage per stack, every 2 seconds. Lasts 20 seconds. Stacks up to 10 times. Damage does not waken [Incapacitated] targets.',
   }),
-  'Shadow Cascade': () => ({
+  'Shadow Cascade': (name, desc) => ({
     description: desc
       ? desc.replace('deals $effect1:end0.minmax$ to each target hit', 'deals 150%-200% Necrotic Damage to each target hit')
       : 'Dash 20 meters forward through your enemies.<br>After a short delay, deals 150%-200% Necrotic Damage to each target hit, increasing based on the amount of missing health on the target.<br>All targets hit suffer [Bleeding]. Targets that are [Poisoned] become [Exposed]. Targets below 50% health suffer [Hemorrhaging].<br>Requires and consumes [Advantage].',
   }),
-  'Withering Poison': () => ({
+  'Withering Poison': (name, desc) => ({
     description: desc.replace('will apply [Withering Poison] and $hit:Rogue_Poison_Withering.apply1$', 'will apply [Weakened] and [Dazed]'),
   }),
-  'Draining Poison': () => ({
+  'Draining Poison': (name, desc) => ({
     description: desc.replace('$formula:Rogue_Poison_Mana_Drain.%$', '20%'),
   }),
-  'Chilling Poison': () => ({
+  'Chilling Poison': (name, desc) => ({
     description: desc.replace('$formula:Rogue_Poison_Status_Dur.F$', '1.5'),
   }),
   'Fireball': () => ({
