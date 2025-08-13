@@ -284,6 +284,20 @@ async function processStatusEffects(directoryData, statIdToName) {
       }
     }
 
+    if (name === 'Cheerful Melody') {
+      const tickGuid = data.tickHitsIds?.[0]?.guid;
+      const tick = tickGuid ? parseDamage(tickGuid, directoryData) : null;
+      const elem = tick && tick.element ? `${tick.element} ` : '';
+      const healVal = tick && tick.percent ? `${tick.percent}% ${elem}Healing` : '';
+      const tickTime = data.tickTimer || 0;
+      const interval = tickTime ? `${tickTime} seconds` : '';
+      description = `Grants 15% bonus healing. Also heals for ${healVal} every ${interval}.`.trim();
+    }
+
+    if (name === 'Disarmed') {
+      description = description.replace(/\d+\s*\*[^=]+=\s*/g, '');
+    }
+
     let effectDuration = null;
     if (data.effectDuration?.expression) {
       const durExpr = parseValueExpression(
