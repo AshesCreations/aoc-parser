@@ -877,13 +877,17 @@ function formatDescription(desc, ability, dataDir) {
   });
 
   text = text.replace(/\{skill:([^:}]+):([^:}]+):(.*)\}/g, (m, cls, sk, desc) => {
-    const clean = desc.replace(/<[^>]+>/g, '').replace(/\}$/g, '').trim();
+    let clean = desc.replace(/<[^>]+>/g, '').replace(/\}$/g, '').trim();
     if (!clean) return '';
     if (clean.startsWith('{effect')) return '';
     if (/^\[[^\]]+\]$/.test(clean)) return '';
     if (/^\d+$/.test(clean)) return clean;
     const name = resolveSkillName(sk, dataDir);
-    return `${name}: ${clean}`;
+    const lowered = clean.toLowerCase();
+    if (lowered.startsWith(name.toLowerCase() + ':')) {
+      clean = clean.slice(name.length + 1).trim();
+    }
+    return ` [${name}]: ${clean}`;
   });
 
   const abilityName = (extractLastQuotedValue(ability.abilityName) || '').toLowerCase();
@@ -901,6 +905,8 @@ function formatDescription(desc, ability, dataDir) {
   text = text.replace(/(^|\W)rn/g, '$1<br>');
   text = text.replace(/\r\n|\n|\r/g, '<br>');
   text = text.replace(/(<br>)+/g, '<br>');
+  // Ensure each line break is preceded by a period
+  text = text.replace(/([^.!?\s])\s*<br>/g, '$1.<br>');
 
   text = text.replace(/(?:<br>)?\s*\$charges\$(?:\.)?/g, () => {
     const val = parseFloat(ability.cooldownCharges?.expression);
