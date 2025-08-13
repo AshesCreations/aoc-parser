@@ -43,7 +43,7 @@ const handlers = {
   Pep: (name, desc) => ({ description: replaceRangeWithMin(desc) }),
   Resonance: (name, desc) => ({ description: convertMultiplier(desc) }),
   Solace: (name, desc) => ({ description: replaceRangeWithMax(desc) }),
-  'Staggered Effect': () => ({
+  'Staggered': () => ({
     description:
       '-25% Disable Evasion for 6 seconds. Duration can be extended up to 15 seconds by subsequent applications.',
   }),
@@ -60,7 +60,12 @@ const handlers = {
   }),
   'Arcane Circle': (name, desc) => ({
     description: desc
-      ? desc.replace(/\$linger1\.duration\$/g, '10 seconds')
+      ? desc.replace('$linger1.duration$', '10 seconds')
+      : desc,
+  }),
+  'Arcane Might': (name, desc) => ({
+    description: desc
+      ? desc.replace('$statmod:Mage_ArcaneCircle_Power.%-1nostat$', '20%')
       : desc,
   }),
   Disarmed: () => ({ description: 'Cannot use weapons for 4 seconds.' }),
@@ -125,11 +130,11 @@ const handlers = {
   "Death's Mark": (name, desc) => ({ name: "Death's Mark", description: desc }),
   Doublestrike: () => ({
     description:
-      'Strike again with the last used melee ability from this list.\nStab\nLacerate\nThump',
+      'Strike again with the last used melee ability from this list.\nStab - Lacerate - Thump',
   }),
   Throw: (name, desc) => ({
     description: desc
-      ? desc.replace(/bounces? up to \d+/i, 'bounces up to 5')
+      ? desc.replace('bounces up to {!skill:Rogue:Rogue_Passive_Throw_Ricochet:2}', 'bounces up to 5')
       : 'Throw bounces up to 5 times to other nearby enemies dealing lesser damage with each bounce.',
   }),
   'Soothing Shadows': () => ({
@@ -141,6 +146,36 @@ const handlers = {
     description: desc
       ? desc.replace(/Each hit drains.*$/i, 'Each hit drains from the target to the caster.')
       : 'Each hit drains from the target to the caster.',
+  }),
+  'Poisoned': () => ({
+    description:
+      'Deals 4% Necrotic Damage per stack, every 2 seconds. Lasts 20 seconds. Stacks up to 10 times. Damage does not waken [Incapacitated] targets.',
+  }),
+  'Shadow Cascade': () => ({
+    description: desc
+      ? desc.replace('deals $effect1:end0.minmax$ to each target hit', 'deals 150%-200% Necrotic Damage to each target hit')
+      : 'Dash 20 meters forward through your enemies.<br>After a short delay, deals 150%-200% Necrotic Damage to each target hit, increasing based on the amount of missing health on the target.<br>All targets hit suffer [Bleeding]. Targets that are [Poisoned] become [Exposed]. Targets below 50% health suffer [Hemorrhaging].<br>Requires and consumes [Advantage].',
+  }),
+  'Withering Poison': () => ({
+    description: desc.replace('will apply [Withering Poison] and $hit:Rogue_Poison_Withering.apply1$', 'will apply [Weakened] and [Dazed]'),
+  }),
+  'Draining Poison': () => ({
+    description: desc.replace('$formula:Rogue_Poison_Mana_Drain.%$', '20%'),
+  }),
+  'Chilling Poison': () => ({
+    description: desc.replace('$formula:Rogue_Poison_Status_Dur.F$', '1.5'),
+  }),
+  'Fireball': () => ({
+    description: "Hurl a ball of fire towards your target, dealing 350% Fire Damage and applying [Burning] for 75% Fire Damage.",
+  }),
+  'Wings Of Salvation': () => ({
+    description: "Gaining temporary health equal to 100% [Temporary Health]. Lasts 5 seconds.",
+  }),
+  'Resonance': () => ({
+    description: "Your next weapon combo finisher triggers an additional effect based on your active melody. This effect will consume up to 3 resonance stacks to increase in power.<br>Menacing: Deal 50% Arcane Damage and apply 1 stacks of [Shocked] to each target hit.<br>Cathartic: Deal 50% Bleed Damage and apply 1 stacks of [Wounded] to each target hit.<br>Cheerful: Heal a nearby injured ally for 80% Healing. Favors yourself and party members. Applies [Glee] at 3 or more resonance stacks.<br>Pensive: Restore mana to a nearby ally in need by up to 5%. Favors yourself and party members.<br>Epic: Dispel up to 3 crowd control effects from up to nearby allies and apply 1 stacks of [Pep].",
+  }),
+  'Pep': () => ({
+    description: "20% increased movement speed. Lasts 4 seconds.",
   }),
 };
 
