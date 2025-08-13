@@ -125,16 +125,21 @@ function getItemJson(baseFilePath, subFolders, guid) {
   const names = [`Item_${guid}.json`, `ItemRecord_${guid}.json`];
   for (const name of names) {
     const filePath = path.join(baseFilePath, cleaned, name);
+
+    if (!fs.existsSync(filePath)) {
+      continue; // try next filename
+    }
+
     try {
       const data = fs.readFileSync(filePath, "utf8");
       return JSON.parse(data);
     } catch (err) {
-      // try next
+      console.warn(`Failed to parse ${filePath}: ${err.message}`);
+      return {};
     }
   }
-  console.error(
-    `Error processing Json file Item_${guid}.json or ItemRecord_${guid}.json in ${path.join(baseFilePath, cleaned)}`
-  );
+
+  // No matching file found; return empty object without logging an error
   return {};
 }
 

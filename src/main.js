@@ -164,8 +164,10 @@ async function main() {
     );
 
     console.log("\nProcessing loot files...");
-    const lootProcessed = await processLootFiles(directoryData);
-    console.log(`Loot processing complete: ${lootProcessed} entries saved`);
+    const lootEntries = await processLootFiles(directoryData);
+    console.log(
+      `Loot processing complete: ${lootEntries.length} entries saved`
+    );
 
     console.log("\nProcessing skill tables...");
     const skillsProcessed = await processSkillTables(directoryData);
