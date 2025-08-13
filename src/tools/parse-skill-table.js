@@ -88,9 +88,13 @@ const HIDDEN_EFFECTS = new Set([
   'Attack',
   'Speed',
   'Combat Momentum',
+  // Spell abilities that should not be wrapped in descriptions
+  'Celerity',
+  'Fireball',
+  'Consecrating Wave',
 ]);
-
-const PLACEHOLDER_TEXTS = new Set(['helo?', 'testing']);
+// Placeholder texts used in data files that should trigger a fallback
+const PLACEHOLDER_TEXTS = new Set(['helo', 'helo?', 'testing']);
 
 const statusEffectCache = new Map();
 
@@ -935,6 +939,8 @@ function formatDescription(desc, ability, dataDir) {
   text = text.replace(/Healing Damage/gi, 'Healing');
   // Wrap any remaining status-effect names
   text = wrapStatusEffects(text, dataDir);
+  // Collapse any accidental double brackets
+  text = text.replace(/\[\[([^\[\]]+)\]\]/g, '[$1]');
   text = text.replace(/\s+/g, ' ').trim();
   text = text.replace(/(<br>)+$/g, '').trim();
   if (text && !/[.!?]$/.test(text)) text += '.';
@@ -1030,17 +1036,20 @@ function parseSkillTable(id, dataDir) {
         }
         if (ability && Object.keys(ability).length) {
           name = extractLastQuotedValue(ability.abilityName) || name;
-          description = formatDescription(
-            rank.tooltipText,
-            ability,
-            dataDir
-          );
-          const cleanedDesc = description
-            ? description.replace(/[.!?]+$/, '').trim().toLowerCase()
-            : '';
-          if (!cleanedDesc || PLACEHOLDER_TEXTS.has(cleanedDesc)) {
+          const rawTooltip = extractLastQuotedValue(rank.tooltipText) || '';
+          const cleanedTooltip = rawTooltip
+            .replace(/[.!?]+$/, '')
+            .trim()
+            .toLowerCase();
+          if (!cleanedTooltip || PLACEHOLDER_TEXTS.has(cleanedTooltip)) {
             description = formatDescription(
               ability.abilityDescription,
+              ability,
+              dataDir
+            );
+          } else {
+            description = formatDescription(
+              rank.tooltipText,
               ability,
               dataDir
             );
@@ -1064,17 +1073,20 @@ function parseSkillTable(id, dataDir) {
         effect = loadJson(dataDir, 'Effects/Effect', 'Effect', effectGuid);
         if (Object.keys(effect).length) {
           name = extractLastQuotedValue(effect.effectName) || name;
-          description = formatDescription(
-            rank.tooltipText || effect.effectDescription,
-            effect,
-            dataDir
-          );
-          const cleanedEff = description
-            ? description.replace(/[.!?]+$/, '').trim().toLowerCase()
-            : '';
-          if (!cleanedEff || PLACEHOLDER_TEXTS.has(cleanedEff)) {
+          const rawTooltip = extractLastQuotedValue(rank.tooltipText) || '';
+          const cleanedTooltip = rawTooltip
+            .replace(/[.!?]+$/, '')
+            .trim()
+            .toLowerCase();
+          if (!cleanedTooltip || PLACEHOLDER_TEXTS.has(cleanedTooltip)) {
             description = formatDescription(
               effect.effectDescription,
+              effect,
+              dataDir
+            );
+          } else {
+            description = formatDescription(
+              rank.tooltipText,
               effect,
               dataDir
             );
