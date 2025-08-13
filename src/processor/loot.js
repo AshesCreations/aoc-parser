@@ -1,7 +1,6 @@
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
-import rewardMap from "../json/reward-id.json" with { type: "json" };
 import { saveLootInfoToDatabase } from "../db/operations.js";
 import { getJson, getItemJson, extractLastQuotedValue } from "../utils.js";
 
@@ -33,6 +32,7 @@ const itemNameCache = {};
 const chanceCache = {};
 const poolSizeCache = {};
 const rewardSources = {};
+const rewardItemsCache = {};
 
 /**
  * Parse predicate expressions from reward tables to extract
@@ -135,6 +135,45 @@ function addRewardSource(rtId, source) {
   if (!rtId || rtId === "0") return;
   if (!rewardSources[rtId]) rewardSources[rtId] = [];
   rewardSources[rtId].push(source);
+}
+
+/**
+ * Recursively collect all item IDs reachable from a reward table.
+ * @param {string} baseDir - Root data directory
+ * @param {string} rtId - Reward table GUID
+ * @returns {string[]} Array of item GUIDs
+ */
+function getItemsFromRewardTable(baseDir, rtId) {
+  if (!rtId || rtId === "0") return [];
+  if (rewardItemsCache[rtId]) return rewardItemsCache[rtId];
+
+  const data = getJson(baseDir, "/Reward/RewardTable", `RewardTable_${rtId}.json`);
+  if (!data || Object.keys(data).length === 0) {
+    rewardItemsCache[rtId] = [];
+    return [];
+  }
+
+  const items = new Set();
+  const container = data?.rewardDefContainers?.[0];
+  const rewards = container?.rewards || [];
+  for (const reward of rewards) {
+    const itemRewards = reward.itemRewards || [];
+    for (const ir of itemRewards) {
+      const id = ir.item?.itemId?.guid;
+      if (id) items.add(id);
+    }
+  }
+
+  const subIds =
+    data.subTablesIds?.map((s) => s.guid).filter((id) => id && id !== "0") || [];
+  for (const subId of subIds) {
+    for (const it of getItemsFromRewardTable(baseDir, subId)) {
+      items.add(it);
+    }
+  }
+
+  rewardItemsCache[rtId] = Array.from(items);
+  return rewardItemsCache[rtId];
 }
 
 /**
@@ -302,6 +341,7 @@ async function processLootFiles(directoryData) {
         levelMin: data.nPCLevelMin,
         levelMax: data.nPCLevelMax,
         respawnTime: data.respawnTime,
+        lootTables: (data.lootTablesIds || []).map((l) => l.guid),
       };
     }
   }
@@ -355,8 +395,7 @@ async function processLootFiles(directoryData) {
 
   // Build NPC loot sources
   for (const [assetId, asset] of Object.entries(assets)) {
-    const lootTables = (asset.lootTablesIds || []).map((l) => l.guid);
-    if (!lootTables.length) continue;
+    const assetLootTables = (asset.lootTablesIds || []).map((l) => l.guid);
     const spawnInfos = [];
     for (const [instId, inst] of Object.entries(instanceMap)) {
       if (!inst.assetSetIds) continue;
@@ -375,17 +414,21 @@ async function processLootFiles(directoryData) {
             worldSpawnLocation: w ? w.name : null,
             zoneCoordinates: s ? s.location : null,
             worldCoordinates: w ? w.location : null,
+            lootTables: inst.lootTables || [],
           });
         }
       }
     }
-
-    for (const rt of lootTables) {
-      const difficulty =
-        asset.gameplayTags && asset.gameplayTags.gameplayTags
-          ? asset.gameplayTags.gameplayTags.map((t) => t.tagName).join(" ")
-          : null;
-      for (const info of spawnInfos) {
+    const hasTables =
+      assetLootTables.length || spawnInfos.some((s) => (s.lootTables || []).length);
+    if (!hasTables) continue;
+    const difficulty =
+      asset.gameplayTags && asset.gameplayTags.gameplayTags
+        ? asset.gameplayTags.gameplayTags.map((t) => t.tagName).join(" ")
+        : null;
+    for (const info of spawnInfos) {
+      const tables = [...assetLootTables, ...(info.lootTables || [])];
+      for (const rt of tables) {
         addRewardSource(rt, {
           type: "npc",
           npcName: asset.name,
@@ -403,24 +446,35 @@ async function processLootFiles(directoryData) {
   }
 
   // Combine reward sources with items
-  for (const [rt, items] of Object.entries(rewardMap)) {
-    const sources =
-      rewardSources[rt] && rewardSources[rt].length
-        ? rewardSources[rt]
-        : [{ type: "unknown" }];
+  for (const [rt, sources] of Object.entries(rewardSources)) {
+    if (!sources.length) continue;
+    const items = getItemsFromRewardTable(directoryData, rt);
+    if (!items.length) continue;
     const tableInfo = getRewardTableInfo(directoryData, rt);
     for (const item of items) {
       const chanceInfo = computeItemChance(directoryData, rt, item);
       const itemName = getItemName(directoryData, item);
+      if (!itemName) {
+        continue; // skip entries without a valid item definition
+      }
       for (const src of sources) {
+        if (
+          src.type === "npc" &&
+          !src.zone &&
+          !src.worldSpawnLocation &&
+          !src.zoneCoordinates
+        ) {
+          continue; // skip NPC drops without any location data
+        }
+        if (src.type !== "quest" && src.type !== "npc") {
+          continue; // only quest or NPC sources are kept
+        }
         let id;
         if (src.type === "quest") {
           id = `${item}_${src.questName}_${src.step}`;
-        } else if (src.type === "npc") {
+        } else {
           const coord = src.zoneCoordinates || { x: 0, y: 0, z: 0 };
           id = `${item}_${src.npcName}_${coord.x}_${coord.y}_${coord.z}`;
-        } else {
-          id = `${item}_${rt}`;
         }
         lootInfo.push({
           id,
@@ -447,15 +501,19 @@ async function processLootFiles(directoryData) {
     }
   }
 
-  // Save results
-  for (const entry of lootInfo) {
-    await saveLootInfoToDatabase(entry);
+  // Save results unless DB writes are disabled
+  if (!process.env.SKIP_DB) {
+    for (const entry of lootInfo) {
+      await saveLootInfoToDatabase(entry);
+    }
   }
 
-  const outPath = path.join(__dirname, "../json/loot-info.json");
-  fs.writeFileSync(outPath, JSON.stringify(lootInfo, null, 2));
+  if (process.env.WRITE_LOOT_JSON) {
+    const outPath = path.join(__dirname, "../json/loot-info.json");
+    fs.writeFileSync(outPath, JSON.stringify(lootInfo, null, 2));
+  }
 
-  return lootInfo.length;
+  return lootInfo;
 }
 
 export { processLootFiles };
