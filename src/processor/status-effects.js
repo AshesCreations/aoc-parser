@@ -8,6 +8,7 @@ import {
   parseValueExpression,
   formatTime,
 } from '../utils.js';
+import { applySpecialCase } from '../special-cases.js';
 
 const CLASS_PREFIXES = ['Fighter', 'Tank', 'Cleric', 'Bard', 'Mage', 'Ranger', 'Rogue', 'Summoner', 'Weapon'];
 
@@ -310,6 +311,8 @@ async function processStatusEffects(directoryData, statIdToName) {
     if (name === 'Disarmed') {
       description = description.replace(/\d+\s*\*[^=]+=\s*/g, '');
     }
+
+    ({ name, description } = applySpecialCase(name, description));
 
     let effectDuration = null;
     if (data.effectDuration?.expression) {

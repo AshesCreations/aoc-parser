@@ -7,6 +7,7 @@ import {
   extractCoefficient,
 } from '../utils.js';
 import { statIdToName } from '../config.js';
+import { applySpecialCase } from '../special-cases.js';
 
 function evaluateExpression(expr) {
   if (!expr) return NaN;
@@ -457,7 +458,10 @@ function resolveEffectToken(token, ability, dataDir) {
   } else {
     eff = loadJson(dataDir, 'Effects/Effect', 'Effect', token);
   }
-  const name = extractLastQuotedValue(eff.effectName) || eff.effectName || token;
+  let name = extractLastQuotedValue(eff.effectName) || eff.effectName;
+  if (!name || !name.toLowerCase().includes(token.toLowerCase())) {
+    name = token;
+  }
   const formatted = formatEffectName(name);
   return HIDDEN_EFFECTS.has(formatted) ? null : formatted;
 }
@@ -911,6 +915,7 @@ function formatDescription(desc, ability, dataDir) {
   // Replace escaped newline sequences with a single line break
   text = text.replace(/rnrn/g, '<br>');
   text = text.replace(/(^|\W)rn/g, '$1<br>');
+  text = text.replace(/rn(?=-|[A-Z]|\[)/g, '<br>');
   text = text.replace(/\r\n|\n|\r/g, '<br>');
   text = text.replace(/(<br>)+/g, '<br>');
   // Ensure each line break is preceded by a period
@@ -991,9 +996,11 @@ function parseSkillTable(id, dataDir) {
       let manaCost = null;
       let maxRange = null;
       let angle = null;
+      let ability;
+      let effect;
       if (abilityGuid && abilityGuid !== '0') {
         type = 'skill';
-        let ability = loadJson(
+        ability = loadJson(
           dataDir,
           'Abilities/AoCAbility',
           'AoCAbility',
@@ -1054,7 +1061,7 @@ function parseSkillTable(id, dataDir) {
         }
       } else if (effectGuid && effectGuid !== '0') {
         type = 'passive';
-        const effect = loadJson(dataDir, 'Effects/Effect', 'Effect', effectGuid);
+        effect = loadJson(dataDir, 'Effects/Effect', 'Effect', effectGuid);
         if (Object.keys(effect).length) {
           name = extractLastQuotedValue(effect.effectName) || name;
           description = formatDescription(
@@ -1078,6 +1085,8 @@ function parseSkillTable(id, dataDir) {
             : icon;
         }
       }
+      ({ name, description } = applySpecialCase(name, description));
+      description = formatDescription(description, ability || effect || {}, dataDir);
       const maxRank = rank.skillCost?.skillPointCosts?.[0]?.quantity || 1;
       result.push({
         id: rank.name,
