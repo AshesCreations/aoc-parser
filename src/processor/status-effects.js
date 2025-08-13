@@ -265,7 +265,7 @@ async function processStatusEffects(directoryData, statIdToName) {
     }
 
     const rawName = extractLastQuotedValue(data.effectName) || data.effectName || '';
-    const name = formatEffectName(rawName);
+    let name = formatEffectName(rawName);
     const descArray = extractDescription(data.effectDescription);
     let description = descArray.join(' ').trim();
     if (description) {
