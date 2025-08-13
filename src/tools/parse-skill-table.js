@@ -506,12 +506,20 @@ function resolveStatModPlaceholders(text, ability, dataDir) {
     if (t.includes('onlystat')) return statName || '';
     if (t.includes('by%') || t.startsWith('f%')) {
       if (!isNaN(val)) {
-        return `${(val * 100).toFixed(0)}%${statName ? ' ' + statName : ''}`.trim();
+        let outVal = val;
+        if (/multiplier/i.test(statName) && outVal > 1) {
+          outVal = outVal - 1;
+        }
+        return `${(outVal * 100).toFixed(0)}%${statName ? ' ' + statName : ''}`.trim();
       }
       return `${expr}${statName ? ' ' + statName : ''}`.trim();
     }
     if (!isNaN(val)) {
-      return `${val}${statName ? ' ' + statName : ''}`.trim();
+      let outVal = val;
+      if (/multiplier/i.test(statName) && outVal > 1) {
+        outVal = outVal - 1;
+      }
+      return `${outVal}${statName ? ' ' + statName : ''}`.trim();
     }
     return `${expr}${statName ? ' ' + statName : ''}`.trim();
   };
@@ -920,7 +928,8 @@ function formatDescription(desc, ability, dataDir) {
   text = text.replace(/\$flavor:([^$]+)\$/gi, (_, w) => `<i>${w.replace(/^"|"$/g, '')}</i>`);
   text = text.replace(/\\'/g, "'");
   text = text.replace(/Healing Damage/gi, 'Healing');
-  // Status effect names are already resolved from ability data; avoid auto-wrapping
+  // Wrap any remaining status-effect names
+  text = wrapStatusEffects(text, dataDir);
   text = text.replace(/\s+/g, ' ').trim();
   text = text.replace(/(<br>)+$/g, '').trim();
   if (text && !/[.!?]$/.test(text)) text += '.';
