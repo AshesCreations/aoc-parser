@@ -160,12 +160,20 @@ function resolvePlaceholders(text, effectData, dataDir, statIdToName) {
     if (t.includes('onlystat')) return statName || '';
     if (t.includes('by%') || t.startsWith('f%') || t.includes('%by')) {
       if (!isNaN(val)) {
-        return `${(val * 100).toFixed(0)}%${statName ? ' ' + statName : ''}`.trim();
+        let outVal = val;
+        if (/multiplier/i.test(statName) && outVal > 1) {
+          outVal = outVal - 1;
+        }
+        return `${(outVal * 100).toFixed(0)}%${statName ? ' ' + statName : ''}`.trim();
       }
       return `${expr}${statName ? ' ' + statName : ''}`.trim();
     }
     if (!isNaN(val)) {
-      return `${val}${statName ? ' ' + statName : ''}`.trim();
+      let outVal = val;
+      if (/multiplier/i.test(statName) && outVal > 1) {
+        outVal = outVal - 1;
+      }
+      return `${outVal}${statName ? ' ' + statName : ''}`.trim();
     }
     return `${expr}${statName ? ' ' + statName : ''}`.trim();
   };
