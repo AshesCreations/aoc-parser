@@ -7,6 +7,7 @@ import {
   extractCoefficient,
 } from '../utils.js';
 import { statIdToName } from '../config.js';
+import { applySpecialCase } from '../special-cases.js';
 
 function evaluateExpression(expr) {
   if (!expr) return NaN;
@@ -457,7 +458,10 @@ function resolveEffectToken(token, ability, dataDir) {
   } else {
     eff = loadJson(dataDir, 'Effects/Effect', 'Effect', token);
   }
-  const name = extractLastQuotedValue(eff.effectName) || eff.effectName || token;
+  let name = extractLastQuotedValue(eff.effectName) || eff.effectName;
+  if (!name || !name.toLowerCase().includes(token.toLowerCase())) {
+    name = token;
+  }
   const formatted = formatEffectName(name);
   return HIDDEN_EFFECTS.has(formatted) ? null : formatted;
 }
@@ -506,12 +510,20 @@ function resolveStatModPlaceholders(text, ability, dataDir) {
     if (t.includes('onlystat')) return statName || '';
     if (t.includes('by%') || t.startsWith('f%')) {
       if (!isNaN(val)) {
-        return `${(val * 100).toFixed(0)}%${statName ? ' ' + statName : ''}`.trim();
+        let outVal = val;
+        if (/multiplier/i.test(statName) && outVal > 1) {
+          outVal = outVal - 1;
+        }
+        return `${(outVal * 100).toFixed(0)}%${statName ? ' ' + statName : ''}`.trim();
       }
       return `${expr}${statName ? ' ' + statName : ''}`.trim();
     }
     if (!isNaN(val)) {
-      return `${val}${statName ? ' ' + statName : ''}`.trim();
+      let outVal = val;
+      if (/multiplier/i.test(statName) && outVal > 1) {
+        outVal = outVal - 1;
+      }
+      return `${outVal}${statName ? ' ' + statName : ''}`.trim();
     }
     return `${expr}${statName ? ' ' + statName : ''}`.trim();
   };
@@ -903,6 +915,7 @@ function formatDescription(desc, ability, dataDir) {
   // Replace escaped newline sequences with a single line break
   text = text.replace(/rnrn/g, '<br>');
   text = text.replace(/(^|\W)rn/g, '$1<br>');
+  text = text.replace(/rn(?=-|[A-Z]|\[)/g, '<br>');
   text = text.replace(/\r\n|\n|\r/g, '<br>');
   text = text.replace(/(<br>)+/g, '<br>');
   // Ensure each line break is preceded by a period
@@ -920,7 +933,8 @@ function formatDescription(desc, ability, dataDir) {
   text = text.replace(/\$flavor:([^$]+)\$/gi, (_, w) => `<i>${w.replace(/^"|"$/g, '')}</i>`);
   text = text.replace(/\\'/g, "'");
   text = text.replace(/Healing Damage/gi, 'Healing');
-  // Status effect names are already resolved from ability data; avoid auto-wrapping
+  // Wrap any remaining status-effect names
+  text = wrapStatusEffects(text, dataDir);
   text = text.replace(/\s+/g, ' ').trim();
   text = text.replace(/(<br>)+$/g, '').trim();
   if (text && !/[.!?]$/.test(text)) text += '.';
@@ -982,9 +996,11 @@ function parseSkillTable(id, dataDir) {
       let manaCost = null;
       let maxRange = null;
       let angle = null;
+      let ability;
+      let effect;
       if (abilityGuid && abilityGuid !== '0') {
         type = 'skill';
-        let ability = loadJson(
+        ability = loadJson(
           dataDir,
           'Abilities/AoCAbility',
           'AoCAbility',
@@ -1045,7 +1061,7 @@ function parseSkillTable(id, dataDir) {
         }
       } else if (effectGuid && effectGuid !== '0') {
         type = 'passive';
-        const effect = loadJson(dataDir, 'Effects/Effect', 'Effect', effectGuid);
+        effect = loadJson(dataDir, 'Effects/Effect', 'Effect', effectGuid);
         if (Object.keys(effect).length) {
           name = extractLastQuotedValue(effect.effectName) || name;
           description = formatDescription(
@@ -1069,6 +1085,8 @@ function parseSkillTable(id, dataDir) {
             : icon;
         }
       }
+      ({ name, description } = applySpecialCase(name, description));
+      description = formatDescription(description, ability || effect || {}, dataDir);
       const maxRank = rank.skillCost?.skillPointCosts?.[0]?.quantity || 1;
       result.push({
         id: rank.name,

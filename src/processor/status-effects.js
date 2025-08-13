@@ -8,6 +8,7 @@ import {
   parseValueExpression,
   formatTime,
 } from '../utils.js';
+import { applySpecialCase } from '../special-cases.js';
 
 const CLASS_PREFIXES = ['Fighter', 'Tank', 'Cleric', 'Bard', 'Mage', 'Ranger', 'Rogue', 'Summoner', 'Weapon'];
 
@@ -160,12 +161,20 @@ function resolvePlaceholders(text, effectData, dataDir, statIdToName) {
     if (t.includes('onlystat')) return statName || '';
     if (t.includes('by%') || t.startsWith('f%') || t.includes('%by')) {
       if (!isNaN(val)) {
-        return `${(val * 100).toFixed(0)}%${statName ? ' ' + statName : ''}`.trim();
+        let outVal = val;
+        if (/multiplier/i.test(statName) && outVal > 1) {
+          outVal = outVal - 1;
+        }
+        return `${(outVal * 100).toFixed(0)}%${statName ? ' ' + statName : ''}`.trim();
       }
       return `${expr}${statName ? ' ' + statName : ''}`.trim();
     }
     if (!isNaN(val)) {
-      return `${val}${statName ? ' ' + statName : ''}`.trim();
+      let outVal = val;
+      if (/multiplier/i.test(statName) && outVal > 1) {
+        outVal = outVal - 1;
+      }
+      return `${outVal}${statName ? ' ' + statName : ''}`.trim();
     }
     return `${expr}${statName ? ' ' + statName : ''}`.trim();
   };
@@ -302,6 +311,8 @@ async function processStatusEffects(directoryData, statIdToName) {
     if (name === 'Disarmed') {
       description = description.replace(/\d+\s*\*[^=]+=\s*/g, '');
     }
+
+    ({ name, description } = applySpecialCase(name, description));
 
     let effectDuration = null;
     if (data.effectDuration?.expression) {
