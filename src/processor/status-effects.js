@@ -8,6 +8,7 @@ import {
   parseValueExpression,
   formatTime,
 } from '../utils.js';
+import { applySpecialCase } from '../special-cases.js';
 
 const CLASS_PREFIXES = ['Fighter', 'Tank', 'Cleric', 'Bard', 'Mage', 'Ranger', 'Rogue', 'Summoner', 'Weapon'];
 
@@ -264,7 +265,7 @@ async function processStatusEffects(directoryData, statIdToName) {
     }
 
     const rawName = extractLastQuotedValue(data.effectName) || data.effectName || '';
-    const name = formatEffectName(rawName);
+    let name = formatEffectName(rawName);
     const descArray = extractDescription(data.effectDescription);
     let description = descArray.join(' ').trim();
     if (description) {
@@ -283,6 +284,7 @@ async function processStatusEffects(directoryData, statIdToName) {
         description = `Deals ${dmg.percent}% ${dmg.element} Damage over time`;
       }
     }
+    ({ name, description } = applySpecialCase(name, description));
 
     let effectDuration = null;
     if (data.effectDuration?.expression) {

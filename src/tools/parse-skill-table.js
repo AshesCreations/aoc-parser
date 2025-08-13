@@ -7,6 +7,7 @@ import {
   extractCoefficient,
 } from '../utils.js';
 import { statIdToName } from '../config.js';
+import { applySpecialCase } from '../special-cases.js';
 
 function evaluateExpression(expr) {
   if (!expr) return NaN;
@@ -1064,6 +1065,7 @@ function parseSkillTable(id, dataDir) {
         }
       }
       const maxRank = rank.skillCost?.skillPointCosts?.[0]?.quantity || 1;
+      ({ name, description } = applySpecialCase(name, description));
       result.push({
         id: rank.name,
         type,
