@@ -42,7 +42,10 @@ const handlers = {
   Glee: (name, desc) => ({ description: replaceRangeWithMin(desc) }),
   Pep: (name, desc) => ({ description: replaceRangeWithMin(desc) }),
   Resonance: (name, desc) => ({ description: convertMultiplier(desc) }),
-  Solace: (name, desc) => ({ description: replaceRangeWithMax(desc) }),
+  Solace: () => ({
+    description:
+      'Gain up to 75% of your Max Health. Healing Received increases healing received for 5 seconds based on how much health was lost from a bard\'s gabit.',
+  }),
   'Staggered': () => ({
     description:
       '-25% Disable Evasion for 6 seconds. Duration can be extended up to 15 seconds by subsequent applications.',
@@ -78,15 +81,21 @@ const handlers = {
     description:
       'Target ally gains mana equal to 7% Magical Power every second. Mana gained increases up to 200% based on the amount of mana the target is missing.',
   }),
-  'Hymn of the Mind (AoE)': () => ({
+  'Hymn of the Mind (AOE)': () => ({
     description:
       'Up to 4 allies in front of you gain mana equal to 4.8% Magical Power every second. Mana gained increases up to 200% based on the amount of mana the target is missing. This ability will favor low mana party members and yourself.',
+  }),
+  'Anthem of Alacrity': () => ({
+    description: 'Target ally gains [Anthem Of Alacrity].',
+  }),
+  'Anthem of Alacrity (AOE)': () => ({
+    description: 'You and the closest allies in front of you gain [Anthem Of Minor Alacrity].',
   }),
   'Chilling Lament': () => ({
     description:
       'Target enemy is dealt 130% Ice Damage and afflicted with [Chilled] and [Weakened] every second.',
   }),
-  'Chilling Lament (AoE)': () => ({
+  'Chilling Lament (AOE)': () => ({
     description:
       'Enemies in front of you are dealt 130% Ice Damage and afflicted with [Chilled] and [Weakened] every second.',
   }),
@@ -94,7 +103,7 @@ const handlers = {
     description:
       'Target ally is healed for 130% Healing every second. The initial hit also applies [Emboldened]',
   }),
-  'Lovely Serenade (AoE)': () => ({
+  'Lovely Serenade (AOE)': () => ({
     description:
       'Up to 5 allies in front of you are healed for 50% Healing every second. This ability will favor injured party members and yourself. Each hit will also apply [Glee] to targets below 50% health.',
   }),
@@ -102,7 +111,7 @@ const handlers = {
     description:
       'Target enemy takes 50% Spirit Damage + an additional 30% Spirit Damage for each debuff they have (up to 5).\nThis damage will not wake an [Incapacitated] target and the final hit applies [Stunned] if the target is [Incapacitated].',
   }),
-  'Dark Lullaby (AoE)': () => ({
+  'Dark Lullaby (AOE)': () => ({
     description:
       'Enemies in front of you take 35% Spirit Damage + an additional 30% Spirit Damage for each debuff they have (up to 5).\nThis damage will not wake an [Incapacitated] target and the final hit applies [Stunned] if the target is [Incapacitated].',
   }),
@@ -125,6 +134,12 @@ const handlers = {
   Doublestrike: () => ({
     description:
       'Strike again with the last used melee ability from this list.\nStab - Lacerate - Thump',
+  }),
+  Firebolt: (name, desc) => ({
+    description: desc ? desc.replace(/\[Fireball\]/g, 'Fireball') : desc,
+  }),
+  'Flash Cure': (name, desc) => ({
+    description: desc ? desc.replace(/^<br>/, '') : desc,
   }),
   Throw: (name, desc) => ({
     description: desc
