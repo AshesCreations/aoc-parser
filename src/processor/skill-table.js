@@ -12,18 +12,26 @@ async function processSkillTables(directoryData) {
     .readdirSync(dir)
     .filter(
       (f) =>
-        (f.startsWith('SkillTable_') || f.startsWith('SkillTableRecord_')) &&
+        (f.startsWith('SkillTable_') ||
+          f.startsWith('SkillTableRecord_') ||
+          f.startsWith('SkillTree_')) &&
         f.endsWith('.json')
     );
   const allSkills = [];
   for (const file of files) {
     const filePath = path.join(dir, file);
     const tableData = JSON.parse(fs.readFileSync(filePath, 'utf8'));
-    const tableName = extractLastQuotedValue(tableData.displayName || tableData.name);
+    const tableName =
+      tableData.name || extractLastQuotedValue(tableData.displayName || tableData.name);
     if (!tableName) continue;
-    if (!CLASS_NAMES.includes(tableName) && !tableName.startsWith('Weapon_')) continue;
+    const lower = tableName.toLowerCase();
+    const isAllowed =
+      CLASS_NAMES.includes(tableName) ||
+      (lower.includes('weapon') && lower !== 'weaponsmithing') ||
+      lower === 'universal';
+    if (!isAllowed) continue;
     if (tableName.includes('_Stage')) continue;
-    const match = file.match(/SkillTable(?:Record)?_(\d+)/);
+    const match = file.match(/Skill(?:Table(?:Record)?|Tree)_(\d+)/);
     if (!match) continue;
     const tableId = match[1];
     const skills = parseSkillTable(tableId, directoryData);
