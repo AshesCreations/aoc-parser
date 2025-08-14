@@ -555,6 +555,15 @@ function resolveStatModPlaceholders(text, ability, dataDir) {
       return `${formatNumber(outVal * 100)}%${statName ? ' ' + statName : ''}`.trim();
     }
     if (!Number.isNaN(val)) {
+      const shouldPercent =
+        val > 0 &&
+        val < 1 &&
+        statName &&
+        !t.includes('flat') &&
+        !/(second|meter|stack|charge|point|stage)/i.test(statName);
+      if (shouldPercent) {
+        return `${formatNumber(val * 100)}%${statName ? ' ' + statName : ''}`.trim();
+      }
       return `${formatNumber(val)}${statName ? ' ' + statName : ''}`.trim();
     }
     return `${expr}${statName ? ' ' + statName : ''}`.trim();
