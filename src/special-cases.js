@@ -72,14 +72,8 @@ const handlers = {
   'Menacing Melody': (name, desc) => ({ description: replaceRangeWithMin(desc) }),
   'Cathartic Melody': (name, desc) => ({ description: replaceRangeWithMin(desc) }),
   'Cheerful Melody': (name, desc) => ({ description: replaceRangeWithMin(desc) }),
-  'Pensive Melody': () => ({
-    description:
-      'Nearby party members gain [Pensive Melody]\n\nMelodies can be played concurrently with other abilities. Multiple instances of the same melody do not stack.',
-  }),
-  'Epic Melody': () => ({
-    description:
-      'Nearby party members gain [Epic Melody]\n\nMelodies can be played concurrently with other abilities. Multiple instances of the same melody do not stack.',
-  }),
+  'Pensive Melody': (name, desc) => ({ description: replaceRangeWithMin(desc) }),
+  'Epic Melody': (name, desc) => ({ description: replaceRangeWithMin(desc) }),
   'Hymn of the Mind': () => ({
     description:
       'Target ally gains mana equal to 7% Magical Power every second. Mana gained increases up to 200% based on the amount of mana the target is missing.',
