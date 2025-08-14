@@ -8,6 +8,7 @@ import {
   parseValueExpression,
   formatTime,
   formatNumber,
+  extractCoefficient,
 } from '../utils.js';
 import { applySpecialCase } from '../special-cases.js';
 
@@ -75,7 +76,7 @@ function loadAbilityHit(hitKey, dataDir) {
   return JSON.parse(fs.readFileSync(file, 'utf8'));
 }
 
-function parseDamage(hitKey, dataDir) {
+function parseDamage(hitKey, dataDir, statIdToName = {}) {
   const hit = loadAbilityHit(hitKey, dataDir);
   if (!hit) return null;
   const elementTag = hit.eventTags?.[0]?.tagName || '';
@@ -86,10 +87,31 @@ function parseDamage(hitKey, dataDir) {
     let mod = getJson(dataDir, '/Effects/StatMod', `StatMod_${statGuid}.json`);
     if (!mod || Object.keys(mod).length === 0)
       mod = getJson(dataDir, '/Effects/StatMod', `StatModRecord_${statGuid}.json`);
-    const expr = mod.valueInputTerms?.[0]?.value?.expression || mod.value?.expression;
+    let expr =
+      mod.valueInputTerms?.[0]?.value?.expression || mod.value?.expression || '';
     if (expr) {
-      const v = parseFloat(expr);
-      if (!Number.isNaN(v)) percent = v * 100;
+      expr = parseValueExpression(
+        expr,
+        mod.valueInputTerms,
+        statIdToName,
+        dataDir
+      );
+      let v = evaluateExpression(expr);
+      if (Number.isNaN(v)) {
+        const sel = expr.match(
+          /SelectFloat\([^,]+,\s*([-+]?\d*\.\d+|[-+]?\d+),\s*([-+]?\d*\.\d+|[-+]?\d+)\)/i
+        );
+        if (sel) v = Math.min(parseFloat(sel[1]), parseFloat(sel[2]));
+      }
+      if (Number.isNaN(v)) {
+        const coeff = parseFloat(extractCoefficient(expr));
+        if (!Number.isNaN(coeff)) v = coeff;
+        else {
+          const m = expr.match(/-?\d*\.\d+|-?\d+/);
+          if (m) v = parseFloat(m[0]);
+        }
+      }
+      if (!Number.isNaN(v)) percent = Math.max(0, v) * 100;
     }
   }
   return { element, percent };
@@ -150,7 +172,7 @@ function resolvePlaceholders(text, effectData, dataDir, statIdToName) {
   const statMods = effectData.statModsIds || [];
   const replaceMod = (mod, type) => {
     if (!mod) return '';
-    const statName = statIdToName[mod.statRefId?.guid] || '';
+    let statName = statIdToName[mod.statRefId?.guid] || '';
     let expr = parseValueExpression(
       mod.value?.expression || '',
       mod.valueInputTerms,
@@ -158,14 +180,29 @@ function resolvePlaceholders(text, effectData, dataDir, statIdToName) {
       dataDir
     );
     let val = evaluateExpression(expr);
-    if (isNaN(val)) {
+    if (Number.isNaN(val)) {
+      const sel = expr.match(
+        /SelectFloat\([^,]+,\s*([-+]?\d*\.\d+|[-+]?\d+),\s*([-+]?\d*\.\d+|[-+]?\d+)\)/i
+      );
+      if (sel) val = Math.min(parseFloat(sel[1]), parseFloat(sel[2]));
+    }
+    if (Number.isNaN(val)) {
       const match = expr.match(/var\s+mod\s*=\s*([-+]?\d*\.?\d+)/i);
       if (match) val = parseFloat(match[1]);
     }
-    const t = (type || '').toLowerCase();
+    if (Number.isNaN(val)) {
+      const coeff = parseFloat(extractCoefficient(expr));
+      if (!Number.isNaN(coeff)) val = coeff;
+    }
+    if (Number.isNaN(val)) {
+      const m = expr.match(/-?\d*\.\d+|-?\d+/);
+      if (m) val = parseFloat(m[0]);
+    }
+    let t = (type || '').toLowerCase();
+    if (t.includes('nostat')) statName = '';
     if (t.includes('onlystat')) return statName || '';
-    if (t.includes('by%') || t.startsWith('f%') || t.includes('%by')) {
-      if (!isNaN(val)) {
+    if (t.includes('by%') || t.startsWith('f%') || t.includes('%by') || t === '%') {
+      if (!Number.isNaN(val)) {
         let outVal = val;
         if (/multiplier/i.test(statName) && outVal > 1) {
           outVal = outVal - 1;
@@ -174,14 +211,12 @@ function resolvePlaceholders(text, effectData, dataDir, statIdToName) {
       }
       return `${expr}${statName ? ' ' + statName : ''}`.trim();
     }
-    if (/multiplier/i.test(statName) && !isNaN(val)) {
+    if (/multiplier/i.test(statName) && !Number.isNaN(val)) {
       let outVal = val;
-      if (outVal > 1) {
-        outVal = outVal - 1;
-      }
+      if (outVal > 1) outVal = outVal - 1;
       return `${formatNumber(outVal * 100)}%${statName ? ' ' + statName : ''}`.trim();
     }
-    if (!isNaN(val)) {
+    if (!Number.isNaN(val)) {
       return `${formatNumber(val)}${statName ? ' ' + statName : ''}`.trim();
     }
     return `${expr}${statName ? ' ' + statName : ''}`.trim();
@@ -226,12 +261,12 @@ function resolvePlaceholders(text, effectData, dataDir, statIdToName) {
   result = result.replace(/\$tick(\d+)\$/g, (m, idx) => {
     const hitRef = (effectData.tickHitsIds || [])[parseInt(idx, 10)];
     if (!hitRef) return m;
-    const dmg = parseDamage(hitRef.guid, dataDir);
+    const dmg = parseDamage(hitRef.guid, dataDir, statIdToName);
     return dmg && dmg.percent ? `${dmg.percent}% ${dmg.element} Damage` : m;
   });
 
   result = result.replace(/\$hit:([^\.]+)(?:\.[^$]+)?\$/g, (m, name) => {
-    const dmg = parseDamage(name, dataDir);
+    const dmg = parseDamage(name, dataDir, statIdToName);
     return dmg && dmg.percent ? `${dmg.percent}% ${dmg.element} Damage` : m;
   });
 
@@ -295,7 +330,7 @@ async function processStatusEffects(directoryData, statIdToName) {
 
     if (name === 'Bleeding') {
       const tick = data.tickHitsIds?.[0];
-      const dmg = tick ? parseDamage(tick.guid, directoryData) : null;
+      const dmg = tick ? parseDamage(tick.guid, directoryData, statIdToName) : null;
       if (dmg && dmg.percent) {
         description = `Deals ${dmg.percent}% ${dmg.element} Damage over time`;
       }
@@ -303,7 +338,7 @@ async function processStatusEffects(directoryData, statIdToName) {
 
     if (name === 'Cheerful Melody') {
       const tickGuid = data.tickHitsIds?.[0]?.guid;
-      const tick = tickGuid ? parseDamage(tickGuid, directoryData) : null;
+      const tick = tickGuid ? parseDamage(tickGuid, directoryData, statIdToName) : null;
       const elem = tick && tick.element ? `${tick.element} ` : '';
       const healVal = tick && tick.percent ? `${tick.percent}% ${elem}Healing` : '';
       const tickTime = data.tickTimer || 0;

@@ -127,8 +127,11 @@ function escapeRegExp(str) {
   return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }
 
-function wrapStatusEffects(text, dataDir) {
-  const names = getStatusEffectNames(dataDir).sort((a, b) => b.length - a.length);
+function wrapStatusEffects(text, dataDir, skip = []) {
+  const skipSet = new Set(skip.map((s) => s.toLowerCase()));
+  const names = getStatusEffectNames(dataDir)
+    .filter((n) => !skipSet.has(n.toLowerCase()))
+    .sort((a, b) => b.length - a.length);
   const isWrapped = (str, start, end) => {
     const open = str.lastIndexOf('[', start);
     const close = str.indexOf(']', end);
@@ -227,6 +230,12 @@ function parseDamage(hitKey, dataDir) {
         dataDir
       );
       let v = evaluateExpression(expr);
+      if (Number.isNaN(v)) {
+        const sel = expr.match(
+          /SelectFloat\([^,]+,\s*([-+]?\d*\.\d+|[-+]?\d+),\s*([-+]?\d*\.\d+|[-+]?\d+)\)/i
+        );
+        if (sel) v = Math.min(parseFloat(sel[1]), parseFloat(sel[2]));
+      }
       if (Number.isNaN(v)) {
         const coeff = parseFloat(extractCoefficient(expr));
         if (!Number.isNaN(coeff)) v = coeff;
@@ -503,7 +512,7 @@ function resolveStatModPlaceholders(text, ability, dataDir) {
 
   const replaceMod = (mod, type) => {
     if (!mod) return '';
-    const statName = statIdToName[mod.statRefId?.guid] || '';
+    let statName = statIdToName[mod.statRefId?.guid] || '';
     let expr = parseValueExpression(
       mod.value?.expression || '',
       mod.valueInputTerms,
@@ -511,30 +520,41 @@ function resolveStatModPlaceholders(text, ability, dataDir) {
       dataDir
     );
     let val = evaluateExpression(expr);
-    if (isNaN(val)) {
+    if (Number.isNaN(val)) {
+      const sel = expr.match(
+        /SelectFloat\([^,]+,\s*([-+]?\d*\.\d+|[-+]?\d+),\s*([-+]?\d*\.\d+|[-+]?\d+)\)/i
+      );
+      if (sel) val = Math.min(parseFloat(sel[1]), parseFloat(sel[2]));
+    }
+    if (Number.isNaN(val)) {
       const match = expr.match(/var\s+mod\s*=\s*([-+]?\d*\.?\d+)/i);
       if (match) val = parseFloat(match[1]);
     }
-    const t = (type || '').toLowerCase();
+    if (Number.isNaN(val)) {
+      const coeff = parseFloat(extractCoefficient(expr));
+      if (!Number.isNaN(coeff)) val = coeff;
+    }
+    if (Number.isNaN(val)) {
+      const m = expr.match(/-?\d*\.\d+|-?\d+/);
+      if (m) val = parseFloat(m[0]);
+    }
+    let t = (type || '').toLowerCase();
+    if (t.includes('nostat')) statName = '';
     if (t.includes('onlystat')) return statName || '';
-    if (t.includes('by%') || t.startsWith('f%') || t.includes('%by')) {
-      if (!isNaN(val)) {
+    if (t.includes('by%') || t.startsWith('f%') || t.includes('%by') || t === '%') {
+      if (!Number.isNaN(val)) {
         let outVal = val;
-        if (/multiplier/i.test(statName) && outVal > 1) {
-          outVal = outVal - 1;
-        }
+        if (/multiplier/i.test(statName) && outVal > 1) outVal = outVal - 1;
         return `${formatNumber(outVal * 100)}%${statName ? ' ' + statName : ''}`.trim();
       }
       return `${expr}${statName ? ' ' + statName : ''}`.trim();
     }
-    if (/multiplier/i.test(statName) && !isNaN(val)) {
+    if (/multiplier/i.test(statName) && !Number.isNaN(val)) {
       let outVal = val;
-      if (outVal > 1) {
-        outVal = outVal - 1;
-      }
+      if (outVal > 1) outVal = outVal - 1;
       return `${formatNumber(outVal * 100)}%${statName ? ' ' + statName : ''}`.trim();
     }
-    if (!isNaN(val)) {
+    if (!Number.isNaN(val)) {
       return `${formatNumber(val)}${statName ? ' ' + statName : ''}`.trim();
     }
     return `${expr}${statName ? ' ' + statName : ''}`.trim();
@@ -945,8 +965,11 @@ function formatDescription(desc, ability, dataDir) {
   text = text.replace(/\$flavor:([^$]+)\$/gi, (_, w) => `<i>${w.replace(/^"|"$/g, '')}</i>`);
   text = text.replace(/\\'/g, "'");
   text = text.replace(/Healing Damage/gi, 'Healing');
-  // Wrap any remaining status-effect names
-  text = wrapStatusEffects(text, dataDir);
+  let skipWrap = [];
+  if (abilityName === 'doublestrike') skipWrap = ['Lacerate'];
+  if (abilityName === 'firebolt') skipWrap.push('Fireball');
+  text = wrapStatusEffects(text, dataDir, skipWrap);
+  text = text.replace(/^<br>/, '');
   // Collapse any accidental double brackets
   text = text.replace(/\[\[([^\[\]]+)\]\]/g, '[$1]');
   text = text.replace(/\s+/g, ' ').trim();
