@@ -956,7 +956,10 @@ function formatDescription(desc, ability, dataDir) {
 }
 
 function parseSkillTable(id, dataDir) {
-  const table = loadJson(dataDir, 'SkillTree/SkillTree', 'SkillTable', id);
+  let table = loadJson(dataDir, 'SkillTree/SkillTree', 'SkillTable', id);
+  if (!table || Object.keys(table).length === 0) {
+    table = loadJson(dataDir, 'SkillTree/SkillTree', 'SkillTree', id);
+  }
   const result = [];
   for (const node of table.skills || []) {
     const nodeData = loadJson(
