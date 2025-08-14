@@ -26,7 +26,7 @@ function convertMultiplier(text) {
     const num = parseFloat(n);
     if (Number.isNaN(num)) return `${n}% ${type} Multiplier`;
     const val = num > 1 ? (num - 1) * 100 : num;
-    const formatted = Number.isInteger(val) ? val : val.toFixed(2);
+    const formatted = Number.isInteger(val) ? val : parseFloat(val.toFixed(2));
     return `${formatted}% ${type} Multiplier`;
   });
 }

@@ -464,6 +464,19 @@ function extractCoefficient(expression) {
 }
 
 /**
+ * Format numeric values to avoid floating point artifacts.
+ * Whole numbers have no decimal places, fractional values keep up to 2 decimals.
+ * @param {number} value - The numeric value to format
+ * @returns {string} Formatted number as a string
+ */
+function formatNumber(value) {
+  const num = Number(value);
+  if (Number.isNaN(num)) return '';
+  const rounded = Number(num.toFixed(2));
+  return rounded.toString();
+}
+
+/**
  * Formats a given number of seconds into a human-readable time string
  * @param {string} seconds - Number of seconds
  * @returns {string} A string representing the time in seconds, minutes, or hours
@@ -497,5 +510,6 @@ export {
   extractExpressionId,
   parseValueExpression,
   formatTime,
+  formatNumber,
   extractCoefficient,
 };
