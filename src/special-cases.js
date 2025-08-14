@@ -42,7 +42,10 @@ const handlers = {
   Glee: (name, desc) => ({ description: replaceRangeWithMin(desc) }),
   Pep: (name, desc) => ({ description: replaceRangeWithMin(desc) }),
   Resonance: (name, desc) => ({ description: convertMultiplier(desc) }),
-  Solace: (name, desc) => ({ description: replaceRangeWithMax(desc) }),
+  Solace: () => ({
+    description:
+      'Gain up to 75% of your Max Health. Healing Received increases healing received for 5 seconds based on how much health was lost from a bard\'s gabit.',
+  }),
   'Staggered': () => ({
     description:
       '-25% Disable Evasion for 6 seconds. Duration can be extended up to 15 seconds by subsequent applications.',
@@ -81,6 +84,12 @@ const handlers = {
   'Hymn of the Mind (AoE)': () => ({
     description:
       'Up to 4 allies in front of you gain mana equal to 4.8% Magical Power every second. Mana gained increases up to 200% based on the amount of mana the target is missing. This ability will favor low mana party members and yourself.',
+  }),
+  'Anthem of Alacrity': () => ({
+    description: 'Target ally gains [Anthem Of Alacrity].',
+  }),
+  'Anthem of Alacrity (AoE)': () => ({
+    description: 'You and the closest allies in front of you gain [Anthem Of Minor Alacrity].',
   }),
   'Chilling Lament': () => ({
     description:
@@ -125,6 +134,12 @@ const handlers = {
   Doublestrike: () => ({
     description:
       'Strike again with the last used melee ability from this list.\nStab - Lacerate - Thump',
+  }),
+  Firebolt: (name, desc) => ({
+    description: desc ? desc.replace(/\[Fireball\]/g, 'Fireball') : desc,
+  }),
+  'Flash Cure': (name, desc) => ({
+    description: desc ? desc.replace(/^<br>/, '') : desc,
   }),
   Throw: (name, desc) => ({
     description: desc
