@@ -5,6 +5,7 @@ import {
   extractLastQuotedValue,
   parseValueExpression,
   extractCoefficient,
+  formatNumber,
 } from '../utils.js';
 import { statIdToName } from '../config.js';
 import { applySpecialCase } from '../special-cases.js';
@@ -509,25 +510,32 @@ function resolveStatModPlaceholders(text, ability, dataDir) {
       statIdToName,
       dataDir
     );
-    const val = evaluateExpression(expr);
+    let val = evaluateExpression(expr);
+    if (isNaN(val)) {
+      const match = expr.match(/var\s+mod\s*=\s*([-+]?\d*\.?\d+)/i);
+      if (match) val = parseFloat(match[1]);
+    }
     const t = (type || '').toLowerCase();
     if (t.includes('onlystat')) return statName || '';
-    if (t.includes('by%') || t.startsWith('f%')) {
+    if (t.includes('by%') || t.startsWith('f%') || t.includes('%by')) {
       if (!isNaN(val)) {
         let outVal = val;
         if (/multiplier/i.test(statName) && outVal > 1) {
           outVal = outVal - 1;
         }
-        return `${(outVal * 100).toFixed(0)}%${statName ? ' ' + statName : ''}`.trim();
+        return `${formatNumber(outVal * 100)}%${statName ? ' ' + statName : ''}`.trim();
       }
       return `${expr}${statName ? ' ' + statName : ''}`.trim();
     }
-    if (!isNaN(val)) {
+    if (/multiplier/i.test(statName) && !isNaN(val)) {
       let outVal = val;
-      if (/multiplier/i.test(statName) && outVal > 1) {
+      if (outVal > 1) {
         outVal = outVal - 1;
       }
-      return `${outVal}${statName ? ' ' + statName : ''}`.trim();
+      return `${formatNumber(outVal * 100)}%${statName ? ' ' + statName : ''}`.trim();
+    }
+    if (!isNaN(val)) {
+      return `${formatNumber(val)}${statName ? ' ' + statName : ''}`.trim();
     }
     return `${expr}${statName ? ' ' + statName : ''}`.trim();
   };
