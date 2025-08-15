@@ -143,7 +143,7 @@ const handlers = {
   }),
   Throw: (name, desc) => ({
     description: desc
-      ? desc.replace('bounces up to {!skill:Rogue:Rogue_Passive_Throw_Ricochet:2}', 'bounces up to 5')
+      ? desc.replace(/bounces up to \d+/, 'bounces up to 5')
       : 'Throw bounces up to 5 times to other nearby enemies dealing lesser damage with each bounce.',
   }),
   'Soothing Shadows': () => ({

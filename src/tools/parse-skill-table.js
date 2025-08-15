@@ -240,8 +240,13 @@ function parseDamage(hitKey, dataDir) {
         const coeff = parseFloat(extractCoefficient(expr));
         if (!Number.isNaN(coeff)) v = coeff;
         else {
-          const m = expr.match(/-?\d*\.\d+|-?\d+/);
-          if (m) v = parseFloat(m[0]);
+          const matches = expr.match(/-?\d*\.\d+|-?\d+/g);
+          if (matches) {
+            const nums = matches
+              .map(Number)
+              .filter((n) => !Number.isNaN(n) && Math.abs(n) < 1000);
+            if (nums.length) v = nums[0];
+          }
         }
       }
       if (!Number.isNaN(v)) percent = Math.max(0, v) * 100;
@@ -535,16 +540,24 @@ function resolveStatModPlaceholders(text, ability, dataDir) {
       if (!Number.isNaN(coeff)) val = coeff;
     }
     if (Number.isNaN(val)) {
-      const m = expr.match(/-?\d*\.\d+|-?\d+/);
-      if (m) val = parseFloat(m[0]);
+      const matches = expr.match(/-?\d*\.\d+|-?\d+/g);
+      if (matches) {
+        const nums = matches
+          .map(Number)
+          .filter((n) => !Number.isNaN(n) && Math.abs(n) < 1000);
+        if (nums.length) val = nums[0];
+      }
     }
     let t = (type || '').toLowerCase();
+    const subtractOne = t.includes('%-1') || t.includes('-1%');
+    if (subtractOne) t = t.replace('%-1', '%').replace('-1%', '%');
     if (t.includes('nostat')) statName = '';
     if (t.includes('onlystat')) return statName || '';
-    if (t.includes('by%') || t.startsWith('f%') || t.includes('%by') || t === '%') {
+    if (t.includes('by%') || t.startsWith('f%') || t.includes('%by') || t === '%' || t.includes('%')) {
       if (!Number.isNaN(val)) {
         let outVal = val;
-        if (/multiplier/i.test(statName) && outVal > 1) outVal = outVal - 1;
+        if (subtractOne) outVal = outVal - 1;
+        else if (/multiplier/i.test(statName) && outVal > 1) outVal = outVal - 1;
         return `${formatNumber(outVal * 100)}%${statName ? ' ' + statName : ''}`.trim();
       }
       return `${expr}${statName ? ' ' + statName : ''}`.trim();
