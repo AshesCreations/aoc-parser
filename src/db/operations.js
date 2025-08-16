@@ -477,18 +477,34 @@ async function batchSaveGearToDatabase(items) {
   try {
     await ensureLastModifiedColumn(client, 'DatabaseGear');
     await ensureColumn(client, 'DatabaseGear', 'recipeTree', 'JSON');
+    await ensureColumn(client, 'DatabaseGear', 'hasDiff', 'BOOLEAN DEFAULT 0');
+    await ensureColumn(client, 'DatabaseGear', 'changedDescription', 'TEXT');
+
+    // Fetch existing gear data for diff calculation
+    const ids = items.map((i) => i.id);
+    const [existingRows] = await client.query(
+      `SELECT id, name, typeDescription, description, type, subtype, tag, icon, \
+              rarityMin, rarityMax, slots, statsId, setBonusIds, level, grade, \
+              enchantmentId, deconstructionRecipeId, itemRecipeId, craftingRecipes, recipeTree, layout \
+       FROM \`DatabaseGear\` WHERE id IN (?)`,
+      [ids]
+    );
+    const existingMap = {};
+    existingRows.forEach((row) => {
+      existingMap[row.id] = row;
+    });
+
     // Begin transaction
     await client.query("BEGIN");
 
-    // Prepare the query
+    // Prepare the query with diff columns
     const query = `
       INSERT INTO \`DatabaseGear\` (
         id, name, \`typeDescription\`, description, type, subtype, tag, icon, \`rarityMin\`, \`rarityMax\`,
         slots, \`statsId\`, \`setBonusIds\`, level, grade, \`enchantmentId\`, \`deconstructionRecipeId\`,
-        \`itemRecipeId\`, \`craftingRecipes\`, \`recipeTree\`, layout
+        \`itemRecipeId\`, \`craftingRecipes\`, \`recipeTree\`, layout, hasDiff, changedDescription
       ) VALUES (
-        ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,
-        ?, ?, ?, ?, ?, ?
+        ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
       )
       ON DUPLICATE KEY UPDATE
         name = VALUES(name),
@@ -511,59 +527,88 @@ async function batchSaveGearToDatabase(items) {
         \`craftingRecipes\` = VALUES(\`craftingRecipes\`),
         \`recipeTree\` = VALUES(\`recipeTree\`),
         layout = VALUES(layout),
-        lastModified = IF(
-          name = VALUES(name) AND
-          \`typeDescription\` = VALUES(\`typeDescription\`) AND
-          description = VALUES(description) AND
-          type = VALUES(type) AND
-          subtype = VALUES(subtype) AND
-          tag = VALUES(tag) AND
-          icon = VALUES(icon) AND
-          \`rarityMin\` = VALUES(\`rarityMin\`) AND
-          \`rarityMax\` = VALUES(\`rarityMax\`) AND
-          slots = VALUES(slots) AND
-          \`statsId\` = VALUES(\`statsId\`) AND
-          \`setBonusIds\` = VALUES(\`setBonusIds\`) AND
-          level = VALUES(level) AND
-          grade = VALUES(grade) AND
-          \`enchantmentId\` = VALUES(\`enchantmentId\`) AND
-          \`deconstructionRecipeId\` = VALUES(\`deconstructionRecipeId\`) AND
-          \`itemRecipeId\` = VALUES(\`itemRecipeId\`) AND
-          \`craftingRecipes\` = VALUES(\`craftingRecipes\`) AND
-          \`recipeTree\` = VALUES(\`recipeTree\`) AND
-          layout = VALUES(layout),
-          lastModified,
-          CURRENT_TIMESTAMP
-        )
+        hasDiff = VALUES(hasDiff),
+        changedDescription = VALUES(changedDescription),
+        lastModified = IF(VALUES(hasDiff) = 0, lastModified, CURRENT_TIMESTAMP)
     `;
+
+    const normalize = (val) =>
+      val === null || val === undefined
+        ? null
+        : typeof val === "string"
+        ? val
+        : JSON.stringify(val);
 
     // Create an array of promises for all insert operations
     const batchSize = 100; // Adjust based on your DB performance
     for (let i = 0; i < items.length; i += batchSize) {
       const batch = items.slice(i, i + batchSize);
       const promises = batch.map((item) => {
+        const fields = {
+          name: item.name ?? null,
+          typeDescription: item.typeDescription ?? null,
+          description: JSON.stringify(item.description || []),
+          type: item.type ?? null,
+          subtype: item.subType ?? null,
+          tag: JSON.stringify(item.tag || []),
+          icon: item.icon ?? null,
+          rarityMin: item.rarityMin ?? null,
+          rarityMax: item.rarityMax ?? null,
+          slots: JSON.stringify(item.slots || []),
+          statsId: item.statsId ?? null,
+          setBonusIds: JSON.stringify(item.setBonusIds || []),
+          level: item.level ?? null,
+          grade: item.grade ?? null,
+          enchantmentId: item.enchantmentId ?? null,
+          deconstructionRecipeId: item.deconstructionRecipeId ?? null,
+          itemRecipeId: JSON.stringify(item.itemRecipeId || []),
+          craftingRecipes: JSON.stringify(item.craftingRecipes || []),
+          recipeTree: JSON.stringify(item.recipeTree || {}),
+          layout: item.layout || "gear",
+        };
+
+        const existing = existingMap[item.id];
+        let hasDiff = true;
+        let changedDescription = "New gear item";
+        if (existing) {
+          const changed = [];
+          hasDiff = false;
+          for (const [key, newVal] of Object.entries(fields)) {
+            const oldVal = normalize(existing[key]);
+            if (oldVal !== newVal) {
+              hasDiff = true;
+              changed.push(key);
+            }
+          }
+          changedDescription = hasDiff
+            ? `Updated fields: ${changed.join(', ')}`
+            : null;
+        }
+
         const values = [
           item.id ?? null,
-          item.name ?? null,
-          item.typeDescription ?? null,
-          JSON.stringify(item.description || []),
-          item.type ?? null,
-          item.subType ?? null,
-          JSON.stringify(item.tag || []),
-          item.icon ?? null,
-          item.rarityMin ?? null,
-          item.rarityMax ?? null,
-          JSON.stringify(item.slots || []),
-          item.statsId ?? null,
-          JSON.stringify(item.setBonusIds || []),
-          item.level ?? null,
-          item.grade ?? null,
-          item.enchantmentId ?? null,
-          item.deconstructionRecipeId ?? null,
-          JSON.stringify(item.itemRecipeId || []),
-          JSON.stringify(item.craftingRecipes || []),
-          JSON.stringify(item.recipeTree || {}),
-          item.layout || "gear",
+          fields.name,
+          fields.typeDescription,
+          fields.description,
+          fields.type,
+          fields.subtype,
+          fields.tag,
+          fields.icon,
+          fields.rarityMin,
+          fields.rarityMax,
+          fields.slots,
+          fields.statsId,
+          fields.setBonusIds,
+          fields.level,
+          fields.grade,
+          fields.enchantmentId,
+          fields.deconstructionRecipeId,
+          fields.itemRecipeId,
+          fields.craftingRecipes,
+          fields.recipeTree,
+          fields.layout,
+          hasDiff ? 1 : 0,
+          changedDescription,
         ];
         return client.execute(query, values);
       });

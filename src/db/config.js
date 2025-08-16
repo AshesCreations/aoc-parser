@@ -221,11 +221,15 @@ export async function initDatabase() {
         deconstructionRecipeId TEXT,
         itemRecipeId JSON,
         craftingRecipes JSON,
+        hasDiff BOOLEAN DEFAULT 0,
+        changedDescription TEXT,
       lastModified TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
       )
     `);
     await ensureLastModifiedColumn(conn, 'DatabaseGear');
     await ensureColumnExists(conn, 'DatabaseGear', 'craftingRecipes', 'JSON');
+    await ensureColumnExists(conn, 'DatabaseGear', 'hasDiff', 'BOOLEAN DEFAULT 0');
+    await ensureColumnExists(conn, 'DatabaseGear', 'changedDescription', 'TEXT');
 
     await conn.query(`
       CREATE TABLE IF NOT EXISTS DatabaseLootInfo (
