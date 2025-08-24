@@ -21,11 +21,36 @@ import {
 } from "../utils.js";
 import { rewardTableIdToItemRewardId } from "../config.js";
 
+function getOutputQuantity(rtId, itemId, directoryData, rewardTableCache) {
+  if (!rtId) return 1;
+  if (!rewardTableCache[rtId]) {
+    rewardTableCache[rtId] = getJson(
+      directoryData,
+      "/Reward/RewardTable",
+      `RewardTable_${rtId}.json`
+    );
+  }
+  const rtData = rewardTableCache[rtId];
+  if (!rtData || !Array.isArray(rtData.rewardDefContainers)) return 1;
+  for (const container of rtData.rewardDefContainers) {
+    for (const reward of container.rewards || []) {
+      for (const itemReward of reward.itemRewards || []) {
+        if (itemReward.item?.itemId?.guid === itemId) {
+          const qty = Number(itemReward.quantity?.expression);
+          return Number.isNaN(qty) ? 1 : qty;
+        }
+      }
+    }
+  }
+  return 1;
+}
+
 function buildRecipeTree(
   itemId,
   itemToRewardTables,
   rewardIdToRecipe,
   directoryData,
+  rewardTableCache,
   visited = new Set()
 ) {
   if (!itemId || visited.has(itemId)) return null;
@@ -42,7 +67,11 @@ function buildRecipeTree(
   for (const rtId of tables) {
     const recipe = rewardIdToRecipe[rtId];
     if (!recipe) continue;
-    const recipeNode = { primaryResources: [], generalResources: [] };
+    const recipeNode = {
+      outputQuantity: getOutputQuantity(rtId, itemId, directoryData, rewardTableCache),
+      primaryResources: [],
+      generalResources: [],
+    };
     if (Array.isArray(recipe.primaryResourceCosts)) {
       for (const pr of recipe.primaryResourceCosts) {
         const sub = buildRecipeTree(
@@ -50,6 +79,7 @@ function buildRecipeTree(
           itemToRewardTables,
           rewardIdToRecipe,
           directoryData,
+          rewardTableCache,
           visited
         );
         recipeNode.primaryResources.push({
@@ -67,6 +97,7 @@ function buildRecipeTree(
           itemToRewardTables,
           rewardIdToRecipe,
           directoryData,
+          rewardTableCache,
           visited
         );
         recipeNode.generalResources.push({
@@ -245,7 +276,8 @@ async function processItemGearFiles(directoryData) {
           item.id,
           itemToRewardTables,
           rewardIdToRecipe,
-          directoryData
+          directoryData,
+          rewardTableCache
         );
       }
     }
