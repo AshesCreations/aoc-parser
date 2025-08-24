@@ -1,0 +1,79 @@
+{
+	"completionResponsesIds": [
+		{
+			"guid": "6064633961934684160",
+			"typeId": "1091110030",
+			"name": "AR_NPC_OpenDialog"
+		}
+	],
+	"objectivesToCompleteUponCompletionIds": [],
+	"objectivesToRevealUponCompletionIds": [],
+	"itemsToGrantUponCompletion": [],
+	"channelDuration": 1,
+	"activePredicate":
+	{
+		"expression": "HasValidEquipment(GetPlayerGuid(), EEquipSlot::CargoHold) && EquippedItemInSlotHasTag(EEquipSlot::CargoHold, \"Item.Crate.Commodity.Node\")"
+	},
+	"cuePredicate":
+	{
+		"expression": "HasValidEquipment(GetPlayerGuid(), EEquipSlot::CargoHold) && EquippedItemInSlotHasTag(EEquipSlot::CargoHold, \"Item.Crate.Commodity.Node\")"
+	},
+	"visiblePredicate":
+	{
+		"expression": "HasValidEquipment(GetPlayerGuid(), EEquipSlot::CargoHold) && EquippedItemInSlotHasTag(EEquipSlot::CargoHold, \"Item.Crate.Commodity.Node\")"
+	},
+	"showErrorIfNotVisible": true,
+	"deleteOnCompletion": false,
+	"singleUse": false,
+	"alwaysShowUIPrompt": true,
+	"cancelChannelIfActivePredicateEverFails": true,
+	"interactTextFormat": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"903A52C44FBC19B5BA2AFAA006D16DFB\", \"Sell Crate\")",
+	"channelModifierType": "NONE",
+	"rewardTableId":
+	{
+		"guid": "0",
+		"typeId": "1091110008",
+		"name": "None"
+	},
+	"startEffect": "None",
+	"endEffect": "None",
+	"failEffect": "None",
+	"successEffect": "None",
+	"cueEffect": "None",
+	"startSound": "None",
+	"endSound": "None",
+	"failSound": "None",
+	"successSound": "None",
+	"cueSound": "None",
+	"interactAnimTag": "None",
+	"deletionDelay": 0,
+	"activeCueEnabled": true,
+	"activeCueIgnoresActivePredicate": false,
+	"facePlayer": true,
+	"allowInCombat": true,
+	"spawnAtBottomCapsule": false,
+	"channelAnimation": "None",
+	"interactRadius": 400,
+	"discoveryDistance": 200,
+	"interactTolerance": 100,
+	"interactViewAngle": 0,
+	"interactAngle": 0,
+	"bUseInteractRotation": false,
+	"bRequireLOS": false,
+	"busyTime": 0.89999997615814209,
+	"clientBusyTime": 1,
+	"channelStartResponseIds": [],
+	"failResponsesIds": [],
+	"gatheringInteractionDataId":
+	{
+		"guid": "0",
+		"typeId": "19846",
+		"name": "None"
+	},
+	"interactCooldownMap":
+	{
+	},
+	"guid": "6064634103422255226",
+	"name": "Node_Vendor_SellNodeCommodityCrate_InteractionResponse",
+	"typeId": "1091110031"
+}

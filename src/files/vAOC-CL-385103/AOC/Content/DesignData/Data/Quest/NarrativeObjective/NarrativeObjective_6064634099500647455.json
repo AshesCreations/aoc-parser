@@ -1,0 +1,111 @@
+{
+	"narrativeType": "Commission",
+	"completionParameters":
+	{
+		"objectiveType": "GoToArea",
+		"nPCTaskIconOverrideId":
+		{
+			"guid": "0",
+			"typeId": "949952112329",
+			"name": "None"
+		},
+		"bAllowSatisfactionToRegress": false,
+		"completionQuantity": 1,
+		"tagQuery":
+		{
+			"tokenStreamVersion": 0,
+			"tagDictionary": [],
+			"queryTokenStream": [],
+			"userDescription": "",
+			"autoDescription": ""
+		},
+		"professionFilterIds": [],
+		"gatherableFilterIds": [],
+		"collectionFilterId":
+		{
+			"guid": "0",
+			"typeId": "1091110041",
+			"name": "None"
+		},
+		"subObjectivesIds": [],
+		"bLimitToDisplayLocation": false,
+		"goToAreaLocation": [
+			{
+				"location":
+				{
+					"x": -1130468.8833049999,
+					"y": -669386.84456799994,
+					"z": 4267.0533880000003
+				},
+				"radius": 5000,
+				"map_DisplayType": "ICON_AND_RADIUS",
+				"map_IconVisual":
+				{
+					"guid": "0",
+					"typeId": "949952112329",
+					"name": "None"
+				},
+				"map_DisplayName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"4889BD2641D763DC5A6249A68E89F1DF\", \"The Bat Cave\")"
+			}
+		],
+		"populationSetIds": [],
+		"populationInstanceIds": [],
+		"notifyType": "None"
+	},
+	"objectiveText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"0422366D427730167D83F0922920433C\", \"Find the Bat Cave\")",
+	"objectiveCountText": "",
+	"initiallyHidden": false,
+	"advanceWhileHidden": true,
+	"revealOnComplete": true,
+	"completionRewardsIds": [],
+	"minimumRequirement": true,
+	"completionFlags": [],
+	"instanceCompletionResult": [],
+	"enabledPredicate":
+	{
+		"expression": ""
+	},
+	"completionActionsIds": [
+		{
+			"guid": "6064634099503203360",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"objectivesToCompleteUponCompletionIds": [],
+	"objectivesToRevealUponCompletionIds": [
+		{
+			"guid": "6064634099507201057",
+			"typeId": "1091110420",
+			"name": "None"
+		}
+	],
+	"allowOverAchievement": false,
+	"overAchievementCountText": "",
+	"maximumAdditionalCompletions": 2,
+	"multipleCompletionExperienceMultiplier": 0.30000001192092896,
+	"multipleCompletionGoldMultiplier": 0.30000001192092896,
+	"multipleCompletionVariableMultiplier": 0.30000001192092896,
+	"displayLocation": [
+		{
+			"location":
+			{
+				"x": -1130468.8833049999,
+				"y": -669386.84456799994,
+				"z": 4267.0533880000003
+			},
+			"radius": 5000,
+			"map_DisplayType": "ICON_AND_RADIUS",
+			"map_IconVisual":
+			{
+				"guid": "0",
+				"typeId": "949952112329",
+				"name": "None"
+			},
+			"map_DisplayName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"DB83264645F2FAD26DE770A18AC7E647\", \"The Bat Cave\")"
+		}
+	],
+	"guid": "6064634099500647455",
+	"name": "ANV_FTUE_BF_0001B_ThePrismaticPool_Goto_BatCave",
+	"typeId": "1091110420"
+}

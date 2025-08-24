@@ -1,0 +1,47 @@
+{
+	"predicate":
+	{
+		"expression": "GetNodeBiome() !=EBiomeType::TabletopMountains"
+	},
+	"callout": "None",
+	"rewardDefContainers": [],
+	"subTableSelectionAlgorithm": "PerElementWeightedRandom",
+	"numberOfSubtablesToSelect": 2,
+	"weightsPerSubTable": [ 25, 25, 50 ],
+	"expressionWeightsPerSubTable": [],
+	"percentagePerSubTable": [],
+	"subTablesWeightCurve":
+	{
+		"externalCurve": "None",
+		"editorCurveData":
+		{
+			"keys": [],
+			"defaultValue": 3.4028234663852886e+38,
+			"preInfinityExtrap": "RCCE_Constant",
+			"postInfinityExtrap": "RCCE_Constant",
+			"keyHandlesToIndices":
+			{
+			}
+		}
+	},
+	"subTablesIds": [
+		{
+			"guid": "6064634069523890179",
+			"typeId": "1091110040",
+			"name": "None"
+		},
+		{
+			"guid": "6064634069527560197",
+			"typeId": "1091110040",
+			"name": "None"
+		},
+		{
+			"guid": "0",
+			"typeId": "1091110040",
+			"name": "None"
+		}
+	],
+	"guid": "6064633029120884741",
+	"name": "Random_Mining_Granite_Medium",
+	"typeId": "1091110040"
+}

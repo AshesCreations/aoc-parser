@@ -1,0 +1,145 @@
+{
+	"effectCategory": "EFFECT_Buff",
+	"effectTags": [],
+	"tags":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"effectName": "NSLOCTEXT(\"[86188BBA40C99EEF674D3196569C7880]\", \"675033794C8CED331E5E4FA88FA2750C\", \"Essence Bound\")",
+	"effectDescription": "NSLOCTEXT(\"[1909495A4C2095068D406C9D33F90055]\", \"08D1CBB44F9C2558D9DB9C9B0F0EA0D0\", \"You share an unbreakable bond with your summoned vessel. \\r\\n\\r\\nYour weapon finishers generate 10 Essence, and your vessel\\'s attacks generate 3 Essence.\\r\\n\\r\\nYour Spirit Shred and Umbral Blast spells restore 10% of their damage dealt as health and mana to your vessel.\")",
+	"effectIcon": "/Game/UI/Icons/Archetypes/Summoner/TUI_PassiveIcon_EssenceBound.TUI_PassiveIcon_EssenceBound",
+	"effectFloatingText": "",
+	"bDispellable": false,
+	"bSignificant": true,
+	"scriptOnApply": "None",
+	"scriptOnExpire": "None",
+	"bSetUnkillable": false,
+	"bGrantsPVPOptInProtection": false,
+	"bForceDismount": false,
+	"effectFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"applicationRequirements":
+	{
+		"expression": ""
+	},
+	"bOverrideDefaultResistRate": false,
+	"resistRate":
+	{
+		"expression": ""
+	},
+	"immune":
+	{
+		"expression": ""
+	},
+	"bInfiniteDuration": true,
+	"effectDuration":
+	{
+		"expression": ""
+	},
+	"bNumStacksLostOnDurationElapse": false,
+	"numStacksLostOnDurationElapse":
+	{
+		"expression": ""
+	},
+	"bPersistsThroughDeath": true,
+	"bPersistsRelog": false,
+	"effectGroupId":
+	{
+		"guid": "0",
+		"typeId": "30316004",
+		"name": "None"
+	},
+	"effectStackType": "STACK_OverrideAlways",
+	"bCompareSourceWhenStacking": true,
+	"collateStacksInUI": false,
+	"globalStackLimit": 50,
+	"inPlaceStackLimit":
+	{
+		"expression": ""
+	},
+	"stackDurationRefresh": "STACK_AlwaysRefresh",
+	"extensionAmount":
+	{
+		"expression": ""
+	},
+	"extendedMaximum": 50,
+	"scriptOnMaxStacks": "None",
+	"bLimitStacksFromInstigator": false,
+	"instigatorStackLimit":
+	{
+		"expression": ""
+	},
+	"tickTimer": 0,
+	"bIgnoreInitialTick": false,
+	"scriptOnTick": "None",
+	"bRecalculateHitOnTick": false,
+	"preApplyHitsIds": [],
+	"applyHitsIds": [],
+	"tickHitsIds": [],
+	"consumeHitsIds": [],
+	"removeHitsIds": [],
+	"expireHitsIds": [],
+	"endHitsIds": [],
+	"statModsIds": [],
+	"spawnNPCsIds": [],
+	"spawnLingeringZonesIds": [],
+	"redirectsIds": [],
+	"reactionsIds": [
+		{
+			"guid": "6064633272554558482",
+			"typeId": "3031600202",
+			"name": "None"
+		},
+		{
+			"guid": "6064634092470539243",
+			"typeId": "3031600202",
+			"name": "None"
+		}
+	],
+	"crowdControlId":
+	{
+		"guid": "0",
+		"typeId": "3031600206",
+		"name": "None"
+	},
+	"resistancesIds": [],
+	"fragilityDefinitionsIds": [],
+	"hitModsIds": [],
+	"addAlignmentsIds": [],
+	"removeAlignmentsIds": [],
+	"bApplyScale": false,
+	"scaleAmount":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"scaleTime": 0,
+	"statusVFX": "None",
+	"bAppliesStealth": false,
+	"supressClickTargeting":
+	{
+		"expression": ""
+	},
+	"supressTabAndSoftTargeting":
+	{
+		"expression": ""
+	},
+	"supressNameplate":
+	{
+		"expression": ""
+	},
+	"bSlowFall": false,
+	"bNeverCull": false,
+	"addedAkEvents": [],
+	"removedAkEvents": [],
+	"akSwitchValues": [],
+	"guid": "6064633272102170165",
+	"name": "Summoner_Passive_EssenceBound",
+	"typeId": "30316002"
+}

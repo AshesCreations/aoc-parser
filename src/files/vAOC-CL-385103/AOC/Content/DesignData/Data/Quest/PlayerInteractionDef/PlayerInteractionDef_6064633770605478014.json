@@ -1,0 +1,79 @@
+{
+	"completionResponsesIds": [
+		{
+			"guid": "6064633815646208000",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"objectivesToCompleteUponCompletionIds": [],
+	"objectivesToRevealUponCompletionIds": [],
+	"itemsToGrantUponCompletion": [],
+	"channelDuration": 1,
+	"activePredicate":
+	{
+		"expression": "!HasValidEquipment(GetPlayerGuid(), EEquipSlot::CargoHold) && !CrateIsCracked()"
+	},
+	"cuePredicate":
+	{
+		"expression": "!HasValidEquipment(GetPlayerGuid(), EEquipSlot::CargoHold) && !CrateIsCracked()"
+	},
+	"visiblePredicate":
+	{
+		"expression": "!HasValidEquipment(GetPlayerGuid(), EEquipSlot::CargoHold) && !CrateIsCracked()"
+	},
+	"showErrorIfNotVisible": true,
+	"deleteOnCompletion": true,
+	"singleUse": true,
+	"alwaysShowUIPrompt": true,
+	"cancelChannelIfActivePredicateEverFails": true,
+	"interactTextFormat": "Pick Up",
+	"channelModifierType": "NONE",
+	"rewardTableId":
+	{
+		"guid": "0",
+		"typeId": "1091110008",
+		"name": "None"
+	},
+	"startEffect": "None",
+	"endEffect": "None",
+	"failEffect": "None",
+	"successEffect": "None",
+	"cueEffect": "None",
+	"startSound": "None",
+	"endSound": "None",
+	"failSound": "None",
+	"successSound": "None",
+	"cueSound": "None",
+	"interactAnimTag": "None",
+	"deletionDelay": 0,
+	"activeCueEnabled": true,
+	"activeCueIgnoresActivePredicate": false,
+	"facePlayer": false,
+	"allowInCombat": true,
+	"spawnAtBottomCapsule": false,
+	"channelAnimation": "/Game/Characters/Animations/00_BASE/All_PickUpCrate_M_Montage.All_PickUpCrate_M_Montage",
+	"interactRadius": 200,
+	"discoveryDistance": 200,
+	"interactTolerance": 30,
+	"interactViewAngle": 0,
+	"interactAngle": 0,
+	"bUseInteractRotation": false,
+	"bRequireLOS": false,
+	"busyTime": 0.89999997615814209,
+	"clientBusyTime": 1,
+	"channelStartResponseIds": [],
+	"failResponsesIds": [],
+	"gatheringInteractionDataId":
+	{
+		"guid": "0",
+		"typeId": "19846",
+		"name": "None"
+	},
+	"interactCooldownMap":
+	{
+	},
+	"guid": "6064633770605478014",
+	"name": "PlayerCommodity_PickupCrate_Interaction",
+	"typeId": "1091110031"
+}

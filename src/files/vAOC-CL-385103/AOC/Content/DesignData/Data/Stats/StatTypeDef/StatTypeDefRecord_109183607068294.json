@@ -1,0 +1,56 @@
+{
+	"displayName": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"2D1F40C346BE0A1653668082C69E7D23\", \"Phys Defense\")",
+	"description": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"E7CD55C645E5D61F66FD5AA0AB6C432A\", \"Reduces the damage taken from physical hits\")",
+	"bHidden": false,
+	"gameplayType": "Type_Combat",
+	"bHasWaterfallStatsUI": false,
+	"waterfallStatsUIIds": [],
+	"bDisplayAsPercentage": false,
+	"statType": "Type_Float",
+	"bClampStatFinalValue": false,
+	"bMultiplyStatMods": false,
+	"bMultiplyCompliment": false,
+	"base":
+	{
+		"expression": "GetStat(GetOwner(), $#10516612381411111:109183598614140$)\r\n* EvalE($#10516612381411112:6064631902584045602$)"
+	},
+	"waterfallStatsBaseIds": [
+		{
+			"guid": "109183598614140",
+			"typeId": "10516612381411111",
+			"name": "None"
+		}
+	],
+	"valueMin":
+	{
+		"expression": "0"
+	},
+	"waterfallStatsMinIds": [],
+	"valueMax":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMaxIds": [],
+	"regenRate":
+	{
+		"expression": ""
+	},
+	"waterfallStatsRegenIds": [],
+	"bRegenWhileDead": false,
+	"bRecalculateOnCombatState": false,
+	"onSpawn": "Reset_None",
+	"onDeath": "Reset_None",
+	"onRevive": "Reset_None",
+	"bPersistValue": false,
+	"replication": 1,
+	"shieldStatId":
+	{
+		"guid": "0",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"grantedEffects": [],
+	"guid": "109183607068294",
+	"name": "PhysicalMitigationRating",
+	"typeId": "10516612381411111"
+}

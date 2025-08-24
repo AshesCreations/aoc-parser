@@ -1,0 +1,22 @@
+{
+	"choiceText": "NSLOCTEXT(\"\", \"96A5246C4473770D0CCF36A612F483C5\", \"Is Not Citizen?\")",
+	"nextNodeId":
+	{
+		"guid": "6064633963937726464",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "Node_IsPlayerCitizen(GetPlayer()) == false"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064629449099509765",
+	"name": "DD_ServiceNPC_NodeAdministrator_53",
+	"typeId": "1091110027"
+}

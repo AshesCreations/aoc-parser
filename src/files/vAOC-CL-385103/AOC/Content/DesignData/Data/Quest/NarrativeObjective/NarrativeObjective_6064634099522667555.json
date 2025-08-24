@@ -1,0 +1,111 @@
+{
+	"narrativeType": "Commission",
+	"completionParameters":
+	{
+		"objectiveType": "GoToArea",
+		"nPCTaskIconOverrideId":
+		{
+			"guid": "0",
+			"typeId": "949952112329",
+			"name": "None"
+		},
+		"bAllowSatisfactionToRegress": false,
+		"completionQuantity": 1,
+		"tagQuery":
+		{
+			"tokenStreamVersion": 0,
+			"tagDictionary": [],
+			"queryTokenStream": [],
+			"userDescription": "",
+			"autoDescription": ""
+		},
+		"professionFilterIds": [],
+		"gatherableFilterIds": [],
+		"collectionFilterId":
+		{
+			"guid": "0",
+			"typeId": "1091110041",
+			"name": "None"
+		},
+		"subObjectivesIds": [],
+		"bLimitToDisplayLocation": false,
+		"goToAreaLocation": [
+			{
+				"location":
+				{
+					"x": -1152589.3288499999,
+					"y": -699443.11376800004,
+					"z": 4130.5462820000002
+				},
+				"radius": 5000,
+				"map_DisplayType": "ICON_AND_RADIUS",
+				"map_IconVisual":
+				{
+					"guid": "6064630990211645445",
+					"typeId": "949952112329",
+					"name": "None"
+				},
+				"map_DisplayName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"FA285EA140C338853BD6CC81EA369A36\", \"Dunbreak\\'s End\")"
+			}
+		],
+		"populationSetIds": [],
+		"populationInstanceIds": [],
+		"notifyType": "None"
+	},
+	"objectiveText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"3E1A58204E2A8E22D94D4B8737386BA6\", \"Find Dunbreak\\'s End\")",
+	"objectiveCountText": "",
+	"initiallyHidden": true,
+	"advanceWhileHidden": false,
+	"revealOnComplete": false,
+	"completionRewardsIds": [],
+	"minimumRequirement": true,
+	"completionFlags": [],
+	"instanceCompletionResult": [],
+	"enabledPredicate":
+	{
+		"expression": ""
+	},
+	"completionActionsIds": [
+		{
+			"guid": "6064634099529614372",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"objectivesToCompleteUponCompletionIds": [],
+	"objectivesToRevealUponCompletionIds": [
+		{
+			"guid": "6064634002423351781",
+			"typeId": "1091110420",
+			"name": "None"
+		}
+	],
+	"allowOverAchievement": false,
+	"overAchievementCountText": "",
+	"maximumAdditionalCompletions": 2,
+	"multipleCompletionExperienceMultiplier": 0.30000001192092896,
+	"multipleCompletionGoldMultiplier": 0.30000001192092896,
+	"multipleCompletionVariableMultiplier": 0.30000001192092896,
+	"displayLocation": [
+		{
+			"location":
+			{
+				"x": -1152589.3288499999,
+				"y": -699443.11376800004,
+				"z": 4130.5462820000002
+			},
+			"radius": 10000,
+			"map_DisplayType": "ICON_AND_RADIUS",
+			"map_IconVisual":
+			{
+				"guid": "0",
+				"typeId": "949952112329",
+				"name": "None"
+			},
+			"map_DisplayName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"8C198CD74BE62AE3FA4328964E2588D4\", \"Dunbreak\\'s End\")"
+		}
+	],
+	"guid": "6064634099522667555",
+	"name": "ANV_FTUE_BF_0001B_ThePrismaticPool_Goto_DunbreaksEnd",
+	"typeId": "1091110420"
+}

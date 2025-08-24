@@ -1,0 +1,56 @@
+{
+	"displayName": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"DDDBB8544915883E4D3B949FBCDAA279\", \"Slash Defense\")",
+	"description": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"138991A54653ED7ECF031AA11B334D89\", \"Reduces slash damage taken\")",
+	"bHidden": false,
+	"gameplayType": "Type_Combat",
+	"bHasWaterfallStatsUI": false,
+	"waterfallStatsUIIds": [],
+	"bDisplayAsPercentage": true,
+	"statType": "Type_Float",
+	"bClampStatFinalValue": true,
+	"bMultiplyStatMods": true,
+	"bMultiplyCompliment": true,
+	"base":
+	{
+		"expression": "const rating = GetStat(GetInstigator(), $#10516612381411111:109343503832850$);\r\n(1.0 - rating / (rating + EvalE($#10516612381411112:6064630531624797167$)))"
+	},
+	"waterfallStatsBaseIds": [
+		{
+			"guid": "109343503832850",
+			"typeId": "10516612381411111",
+			"name": "None"
+		}
+	],
+	"valueMin":
+	{
+		"expression": "0"
+	},
+	"waterfallStatsMinIds": [],
+	"valueMax":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMaxIds": [],
+	"regenRate":
+	{
+		"expression": ""
+	},
+	"waterfallStatsRegenIds": [],
+	"bRegenWhileDead": false,
+	"bRecalculateOnCombatState": false,
+	"onSpawn": "Reset_None",
+	"onDeath": "Reset_None",
+	"onRevive": "Reset_None",
+	"bPersistValue": false,
+	"replication": 5,
+	"shieldStatId":
+	{
+		"guid": "0",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"grantedEffects": [],
+	"guid": "109343503832851",
+	"name": "SlashMitigation",
+	"typeId": "10516612381411111"
+}

@@ -1,0 +1,189 @@
+{
+	"availabilityPredicates": [],
+	"professionId":
+	{
+		"guid": "108752746927737",
+		"typeId": "8125613373123",
+		"name": "None"
+	},
+	"certificationLevelId":
+	{
+		"guid": "108906339653240",
+		"typeId": "455189666431",
+		"name": "None"
+	},
+	"learnable": true,
+	"overrideName": "",
+	"overrideIcon": "None",
+	"categoryTag":
+	{
+		"tagName": "Item.Gear.Weapon.Shortbow"
+	},
+	"difficulty": 0,
+	"defaultQuality": 0,
+	"fuel": 0,
+	"fuelTags":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"bUseOverrides": false,
+	"overrides": [],
+	"nodeLevel": "Wilderness",
+	"levelingTemplateId":
+	{
+		"guid": "0",
+		"typeId": "4565416516154",
+		"name": "None"
+	},
+	"baseDuration": 2,
+	"durationFormula":
+	{
+		"expression": ""
+	},
+	"qualityFormula":
+	{
+		"expression": "GetCraftingRecipeQuality() + EvalFormula($Formula:Artisan_Crafting_Carpentry_Quality$)"
+	},
+	"quantityFormula":
+	{
+		"expression": ""
+	},
+	"minimumQuantityFormula":
+	{
+		"expression": ""
+	},
+	"maximumQuantityFormula":
+	{
+		"expression": ""
+	},
+	"rewardId":
+	{
+		"guid": "6064634092895470372",
+		"typeId": "1091110040",
+		"name": "None"
+	},
+	"distributionRewardId":
+	{
+		"guid": "0",
+		"typeId": "1091111337",
+		"name": "None"
+	},
+	"itemDestination": "Inventory",
+	"primaryResourceCosts": [
+		{
+			"rarity": "Common",
+			"item":
+			{
+				"guid": "6064634088224719260",
+				"typeId": "1091110003",
+				"name": "None"
+			},
+			"quantity": 3,
+			"bConsumeInCrafting": true
+		},
+		{
+			"rarity": "Common",
+			"item":
+			{
+				"guid": "6064634087382581429",
+				"typeId": "1091110003",
+				"name": "None"
+			},
+			"quantity": 2,
+			"bConsumeInCrafting": true
+		}
+	],
+	"generalResourceCost": [
+		{
+			"minRarity": "Common",
+			"costGatherItemFilter":
+			{
+				"guid": "0",
+				"typeId": "1091110041",
+				"name": "None"
+			},
+			"materialTags":
+			{
+				"gameplayTags": [],
+				"parentTags": []
+			},
+			"item":
+			{
+				"guid": "6064629252205903893",
+				"typeId": "1091110003",
+				"name": "None"
+			},
+			"quantity": 22,
+			"bConsumeInCrafting": true
+		},
+		{
+			"minRarity": "Common",
+			"costGatherItemFilter":
+			{
+				"guid": "0",
+				"typeId": "1091110041",
+				"name": "None"
+			},
+			"materialTags":
+			{
+				"gameplayTags": [],
+				"parentTags": []
+			},
+			"item":
+			{
+				"guid": "6064629252207411222",
+				"typeId": "1091110003",
+				"name": "None"
+			},
+			"quantity": 14,
+			"bConsumeInCrafting": true
+		},
+		{
+			"minRarity": "Common",
+			"costGatherItemFilter":
+			{
+				"guid": "0",
+				"typeId": "1091110041",
+				"name": "None"
+			},
+			"materialTags":
+			{
+				"gameplayTags": [],
+				"parentTags": []
+			},
+			"item":
+			{
+				"guid": "6064631879480508420",
+				"typeId": "1091110003",
+				"name": "None"
+			},
+			"quantity": 12,
+			"bConsumeInCrafting": true
+		}
+	],
+	"craftingCurrencyCostId":
+	{
+		"guid": "6064631154666045441",
+		"typeId": "9565237358",
+		"name": "None"
+	},
+	"subRecipesIds": [],
+	"skillTreeSpecializationId":
+	{
+		"guid": "0",
+		"typeId": "30316003",
+		"name": "None"
+	},
+	"bCanFastCraft": true,
+	"bCanGameplayLayer": true,
+	"weaponsmithingInfoId":
+	{
+		"guid": "0",
+		"typeId": "1636976253",
+		"name": "None"
+	},
+	"guid": "6064634092895470371",
+	"name": "Carpentry_T1_Weapon_Shortbow_2H_StoneforgeMag",
+	"typeId": "163697"
+}

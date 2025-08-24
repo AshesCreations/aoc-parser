@@ -1,0 +1,98 @@
+{
+	"narrativeType": "Commission",
+	"completionParameters":
+	{
+		"objectiveType": "SubObjectives",
+		"nPCTaskIconOverrideId":
+		{
+			"guid": "0",
+			"typeId": "949952112329",
+			"name": "None"
+		},
+		"bAllowSatisfactionToRegress": false,
+		"completionQuantity": 1,
+		"tagQuery":
+		{
+			"tokenStreamVersion": 0,
+			"tagDictionary": [],
+			"queryTokenStream": [],
+			"userDescription": "",
+			"autoDescription": ""
+		},
+		"professionFilterIds": [],
+		"gatherableFilterIds": [],
+		"collectionFilterId":
+		{
+			"guid": "0",
+			"typeId": "1091110041",
+			"name": "None"
+		},
+		"subObjectivesIds": [
+			{
+				"guid": "6064633769152413815",
+				"typeId": "1091110420",
+				"name": "None"
+			},
+			{
+				"guid": "6064633769157853304",
+				"typeId": "1091110420",
+				"name": "None"
+			}
+		],
+		"bLimitToDisplayLocation": false,
+		"goToAreaLocation": [],
+		"populationSetIds": [],
+		"populationInstanceIds": [],
+		"notifyType": "None"
+	},
+	"objectiveText": "Complete the tasks assigned by Commander Ironhand",
+	"objectiveCountText": "",
+	"initiallyHidden": false,
+	"advanceWhileHidden": true,
+	"revealOnComplete": true,
+	"completionRewardsIds": [],
+	"minimumRequirement": true,
+	"completionFlags": [],
+	"instanceCompletionResult": [],
+	"enabledPredicate":
+	{
+		"expression": ""
+	},
+	"completionActionsIds": [],
+	"objectivesToCompleteUponCompletionIds": [],
+	"objectivesToRevealUponCompletionIds": [
+		{
+			"guid": "6064633769160540281",
+			"typeId": "1091110420",
+			"name": "None"
+		}
+	],
+	"allowOverAchievement": false,
+	"overAchievementCountText": "",
+	"maximumAdditionalCompletions": 2,
+	"multipleCompletionExperienceMultiplier": 0.30000001192092896,
+	"multipleCompletionGoldMultiplier": 0.30000001192092896,
+	"multipleCompletionVariableMultiplier": 0.30000001192092896,
+	"displayLocation": [
+		{
+			"location":
+			{
+				"x": -989510,
+				"y": -661220,
+				"z": 11620
+			},
+			"radius": 20000,
+			"map_DisplayType": "RADIUS",
+			"map_IconVisual":
+			{
+				"guid": "0",
+				"typeId": "949952112329",
+				"name": "None"
+			},
+			"map_DisplayName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"7AA6F71E4F752BA9625582AE7980314F\", \"Chamber of Gold\")"
+		}
+	],
+	"guid": "6064633769260744834",
+	"name": "ANV_FTUE_0008_TheGildedEnigma_OBJ_CompleteEnigmaTasks",
+	"typeId": "1091110420"
+}

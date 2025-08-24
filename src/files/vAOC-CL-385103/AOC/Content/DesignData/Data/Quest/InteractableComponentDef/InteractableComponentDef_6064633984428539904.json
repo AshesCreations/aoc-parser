@@ -1,0 +1,111 @@
+{
+	"interactDisplayName": "",
+	"interactRadius": 400,
+	"interactionLocation":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"interactionRotation":
+	{
+		"pitch": 0,
+		"yaw": 0,
+		"roll": 0
+	},
+	"spawnAtBottomCapsule": false,
+	"discoveryDistance": 400,
+	"interactTolerance": 50,
+	"interactAngle": 0,
+	"bRequireLOS": false,
+	"busyTime": 0.89999997615814209,
+	"clientBusyTime": 1,
+	"bCanCharacterAttach": false,
+	"attachmentSocketName": "None",
+	"interactInputPoints":
+	{
+		"interactInput1":
+		{
+			"displayIcon": "/Game/UI/Icons/InteractPrompt/TUI_Icon_Interaction_UseConstructionCrate.TUI_Icon_Interaction_UseConstructionCrate",
+			"defaultState": "PublicInteraction",
+			"playerInteractDefinition":
+			{
+				"guid": "6064633860520148994",
+				"typeId": "1091110031",
+				"name": "None"
+			},
+			"pointSpecificChannelAnimation": "/Game/Characters/Animations/00_BASE/AMB/Work/CM_M_AMB_Work_Hammer_Male_C_Montage_Wood.CM_M_AMB_Work_Hammer_Male_C_Montage_Wood",
+			"bCanCharacterAttach": false,
+			"attachmentSocketName": "None",
+			"bShouldCharacterBeHidden": false,
+			"bShouldHeldItemsBeHidden": false,
+			"attachmentAnimation": "None",
+			"detachmentSocketName": "None",
+			"bDoesAttachmentRealignCamera": true,
+			"bHasCustomAttachmentUI": true,
+			"bCannotBeActivated": false,
+			"location":
+			{
+				"x": 0,
+				"y": 0,
+				"z": 0
+			},
+			"rotation":
+			{
+				"pitch": 0,
+				"yaw": 0,
+				"roll": 0
+			},
+			"interactionRotation":
+			{
+				"pitch": 0,
+				"yaw": 0,
+				"roll": 0
+			},
+			"failMessage": "NSLOCTEXT(\"[D3043389473ACD001FB88CAAC4F694CC]\", \"11938BC14A8701CFE9FD5687C45FCEF6\", \"You do not have a construction crate required to contribute to this construction project\")"
+		},
+		"interactInput2":
+		{
+			"displayIcon": "/Game/UI/Icons/InteractPrompt/TUI_Icon_Interaction_ViewDetailsInspect.TUI_Icon_Interaction_ViewDetailsInspect",
+			"defaultState": "PublicInteraction",
+			"playerInteractDefinition":
+			{
+				"guid": "6064629376352976899",
+				"typeId": "1091110031",
+				"name": "None"
+			},
+			"pointSpecificChannelAnimation": "None",
+			"bCanCharacterAttach": false,
+			"attachmentSocketName": "None",
+			"bShouldCharacterBeHidden": false,
+			"bShouldHeldItemsBeHidden": false,
+			"attachmentAnimation": "None",
+			"detachmentSocketName": "None",
+			"bDoesAttachmentRealignCamera": true,
+			"bHasCustomAttachmentUI": true,
+			"bCannotBeActivated": false,
+			"location":
+			{
+				"x": 0,
+				"y": 0,
+				"z": 0
+			},
+			"rotation":
+			{
+				"pitch": 0,
+				"yaw": 0,
+				"roll": 0
+			},
+			"interactionRotation":
+			{
+				"pitch": 0,
+				"yaw": 0,
+				"roll": 0
+			},
+			"failMessage": ""
+		}
+	},
+	"guid": "6064633984428539904",
+	"name": "ICD_Crate_Construction_Contribution",
+	"typeId": "65484634315"
+}

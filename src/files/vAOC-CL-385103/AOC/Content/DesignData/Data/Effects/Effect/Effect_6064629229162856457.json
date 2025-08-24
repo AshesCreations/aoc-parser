@@ -1,0 +1,145 @@
+{
+	"effectCategory": "EFFECT_Buff",
+	"effectTags": [],
+	"tags":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"effectName": "Divine Protection",
+	"effectDescription": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"C477B25F452CBDDAA24BE6862C3998B5\", \"Reduce damage reception by 70%\")",
+	"effectIcon": "/Game/UI/Icons/NPC/NPCEffects/TUI_Icon_Effect_DivineProtection.TUI_Icon_Effect_DivineProtection",
+	"effectFloatingText": "",
+	"bDispellable": true,
+	"bSignificant": false,
+	"scriptOnApply": "None",
+	"scriptOnExpire": "None",
+	"bSetUnkillable": false,
+	"bGrantsPVPOptInProtection": false,
+	"bForceDismount": false,
+	"effectFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"applicationRequirements":
+	{
+		"expression": ""
+	},
+	"bOverrideDefaultResistRate": false,
+	"resistRate":
+	{
+		"expression": ""
+	},
+	"immune":
+	{
+		"expression": ""
+	},
+	"bInfiniteDuration": false,
+	"effectDuration":
+	{
+		"expression": "6."
+	},
+	"bNumStacksLostOnDurationElapse": false,
+	"numStacksLostOnDurationElapse":
+	{
+		"expression": ""
+	},
+	"bPersistsThroughDeath": false,
+	"bPersistsRelog": false,
+	"effectGroupId":
+	{
+		"guid": "0",
+		"typeId": "30316004",
+		"name": "None"
+	},
+	"effectStackType": "STACK_OverrideAlways",
+	"bCompareSourceWhenStacking": true,
+	"collateStacksInUI": false,
+	"globalStackLimit": 50,
+	"inPlaceStackLimit":
+	{
+		"expression": ""
+	},
+	"stackDurationRefresh": "STACK_AlwaysRefresh",
+	"extensionAmount":
+	{
+		"expression": ""
+	},
+	"extendedMaximum": 50,
+	"scriptOnMaxStacks": "None",
+	"bLimitStacksFromInstigator": false,
+	"instigatorStackLimit":
+	{
+		"expression": ""
+	},
+	"tickTimer": 1,
+	"bIgnoreInitialTick": true,
+	"scriptOnTick": "None",
+	"bRecalculateHitOnTick": false,
+	"preApplyHitsIds": [],
+	"applyHitsIds": [],
+	"tickHitsIds": [],
+	"consumeHitsIds": [],
+	"removeHitsIds": [],
+	"expireHitsIds": [],
+	"endHitsIds": [],
+	"statModsIds": [
+		{
+			"guid": "6064629229160562696",
+			"typeId": "3031600201",
+			"name": "None"
+		},
+		{
+			"guid": "6064629229144506375",
+			"typeId": "3031600201",
+			"name": "None"
+		}
+	],
+	"spawnNPCsIds": [],
+	"spawnLingeringZonesIds": [],
+	"redirectsIds": [],
+	"reactionsIds": [],
+	"crowdControlId":
+	{
+		"guid": "0",
+		"typeId": "3031600206",
+		"name": "None"
+	},
+	"resistancesIds": [],
+	"fragilityDefinitionsIds": [],
+	"hitModsIds": [],
+	"addAlignmentsIds": [],
+	"removeAlignmentsIds": [],
+	"bApplyScale": false,
+	"scaleAmount":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"scaleTime": 0,
+	"statusVFX": "None",
+	"bAppliesStealth": false,
+	"supressClickTargeting":
+	{
+		"expression": ""
+	},
+	"supressTabAndSoftTargeting":
+	{
+		"expression": ""
+	},
+	"supressNameplate":
+	{
+		"expression": ""
+	},
+	"bSlowFall": false,
+	"bNeverCull": false,
+	"addedAkEvents": [],
+	"removedAkEvents": [],
+	"akSwitchValues": [],
+	"guid": "6064629229162856457",
+	"name": "Bandit_Healer_DivineProtection",
+	"typeId": "30316002"
+}

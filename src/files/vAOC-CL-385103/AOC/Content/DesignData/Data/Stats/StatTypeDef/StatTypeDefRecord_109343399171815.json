@@ -1,0 +1,61 @@
+{
+	"displayName": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"714C8DC44734F826B8DEB9A05B0CE04A\", \"Phys Crit Defense\")",
+	"description": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"566118D4401716AD5381DAB32B3B27AA\", \"Reduces the damage taken from physical critical hits\")",
+	"bHidden": false,
+	"gameplayType": "Type_Combat",
+	"bHasWaterfallStatsUI": false,
+	"waterfallStatsUIIds": [],
+	"bDisplayAsPercentage": true,
+	"statType": "Type_Float",
+	"bClampStatFinalValue": true,
+	"bMultiplyStatMods": true,
+	"bMultiplyCompliment": true,
+	"base":
+	{
+		"expression": "// extract out the base rating contribution to the base stat to get the true base (baseAdj)\r\nconst base = GetStat(GetOwner(), $#10516612381411111:109343399171813$);\r\nconst baseRating = GetStat(GetInstigator(), $#10516612381411111:109343183951489$);\r\nconst baseCoeff = EvalE($#10516612381411112:6064634020099129392$);\r\nconst mult = EvalE($#10516612381411112:6064633140807796314$);\r\nconst baseAdj = base / (1.0 - baseRating / (baseRating * mult + baseCoeff));\r\n\r\n// calculate total rating including the base rating but reduced by the coefficient quotient\r\nconst coeff = EvalE($#10516612381411112:6064634082164342792$);\r\nconst rating = baseRating * coeff/baseCoeff + GetStat(GetInstigator(), $#10516612381411111:109343183951493$);\r\n\r\n// calc final stat value\r\nbaseAdj * (1.0 - rating / (rating * mult + coeff))"
+	},
+	"waterfallStatsBaseIds": [
+		{
+			"guid": "109343399171813",
+			"typeId": "10516612381411111",
+			"name": "None"
+		},
+		{
+			"guid": "109343183951493",
+			"typeId": "10516612381411111",
+			"name": "None"
+		}
+	],
+	"valueMin":
+	{
+		"expression": "0"
+	},
+	"waterfallStatsMinIds": [],
+	"valueMax":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMaxIds": [],
+	"regenRate":
+	{
+		"expression": ""
+	},
+	"waterfallStatsRegenIds": [],
+	"bRegenWhileDead": false,
+	"bRecalculateOnCombatState": false,
+	"onSpawn": "Reset_None",
+	"onDeath": "Reset_None",
+	"onRevive": "Reset_None",
+	"bPersistValue": false,
+	"replication": 5,
+	"shieldStatId":
+	{
+		"guid": "0",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"grantedEffects": [],
+	"guid": "109343399171815",
+	"name": "PhysicalCriticalMitigation",
+	"typeId": "10516612381411111"
+}

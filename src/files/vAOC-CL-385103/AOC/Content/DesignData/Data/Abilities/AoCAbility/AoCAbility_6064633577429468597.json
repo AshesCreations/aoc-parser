@@ -1,0 +1,358 @@
+{
+	"abilityTags": [
+		{
+			"tagName": "gameplay.abilities"
+		}
+	],
+	"abilityIcon": "/Game/UI/Icons/Archetypes/Summoner/TUI_AbilityIcon_HunterInvis.TUI_AbilityIcon_HunterInvis",
+	"abilityConditionalIcons": [],
+	"bOverrideRangeInTooltip": false,
+	"customTooltipRange":
+	{
+		"expression": ""
+	},
+	"bOverrideProgressBarClass": false,
+	"progressBarClass": "None",
+	"progressBarSortScore":
+	{
+		"expression": ""
+	},
+	"hasProc":
+	{
+		"expression": ""
+	},
+	"hasAbilitySynergy":
+	{
+		"expression": ""
+	},
+	"hasStatusEffectSynergy":
+	{
+		"expression": ""
+	},
+	"animMontages": [
+		{
+			"abilityDirection": "NONE",
+			"animExpression":
+			{
+				"expression": "GetEffectCount(GetOwner(), $#30316002:6064634094316027906$) >= 1\r\n|| GetEffectCount(GetOwner(), $#30316002:6064634058610246081$) >= 1"
+			},
+			"startSectionName": "None",
+			"bOverrideSequenceResetTime": false,
+			"sequenceResetTime": 0,
+			"abilityAnimationSoftPaths": [
+				"/Game/DesignAssets/Population/NPC/TestNPCs/Pets/Hunter/AbilityMontages/ABLT_SpiritHunter_Incap_Melee.ABLT_SpiritHunter_Incap_Melee"
+			],
+			"targetingKey": 0,
+			"hitKeys": []
+		},
+		{
+			"abilityDirection": "NONE",
+			"animExpression":
+			{
+				"expression": "GetEffectCount(GetOwner(), $#30316002:6064634094322712579$) >= 1\r\n|| GetEffectCount(GetOwner(), $#30316002:6064634058616144322$) >= 1"
+			},
+			"startSectionName": "None",
+			"bOverrideSequenceResetTime": false,
+			"sequenceResetTime": 0,
+			"abilityAnimationSoftPaths": [
+				"/Game/DesignAssets/Population/NPC/TestNPCs/Pets/Hunter/AbilityMontages/ABLT_SpiritHunter_Incap_Range.ABLT_SpiritHunter_Incap_Range"
+			],
+			"targetingKey": 0,
+			"hitKeys": []
+		}
+	],
+	"activationRequirements":
+	{
+		"expression": "GetEffectCount(GetOwner(), $#30316002:6064633826102476801$) >= 1 ||\r\nGetEffectCount(GetOwner(), $#30316002:6064634094291517441$) >= 1"
+	},
+	"weaponRequirement": "NoRequirement",
+	"bRequiresStealthActivation": false,
+	"petCommandId":
+	{
+		"guid": "6064633804669583415",
+		"typeId": "3031601337",
+		"name": "None"
+	},
+	"bDisableDuringCooldown": false,
+	"cooldown":
+	{
+		"expression": "0.5"
+	},
+	"sharedCooldownTag": "None",
+	"cooldownCharges":
+	{
+		"expression": ""
+	},
+	"bOverrideInitialCooldownCharges": false,
+	"initialCooldownChargesOverride":
+	{
+		"expression": ""
+	},
+	"bPersistCooldown": false,
+	"suppressCooldownInUI":
+	{
+		"expression": ""
+	},
+	"bDeferAbilityTrigger": false,
+	"bMayNotBeUsedSimultaneously": false,
+	"bStopsAutoAttack": false,
+	"costs": [
+		{
+			"enabled":
+			{
+				"expression": "true"
+			},
+			"statCosts": [
+				{
+					"stat":
+					{
+						"guid": "0",
+						"typeId": "10516612381411111",
+						"name": "None"
+					},
+					"value":
+					{
+						"expression": "0"
+					}
+				}
+			],
+			"effectCosts": [],
+			"chargeCost":
+			{
+				"expression": "1"
+			},
+			"bTriggersCooldown": true
+		}
+	],
+	"hitsIds":
+	{
+		"1":
+		{
+			"guid": "6064634064216195089",
+			"typeId": "30316005",
+			"name": "None"
+		},
+		"2":
+		{
+			"guid": "6064634064218685458",
+			"typeId": "30316005",
+			"name": "None"
+		},
+		"3":
+		{
+			"guid": "6064634080772819310",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	},
+	"effectsIds":
+	{
+	},
+	"projectilesIds":
+	{
+	},
+	"lingeringEffectsIds":
+	{
+	},
+	"abilityFXIds":
+	{
+		"1":
+		{
+			"guid": "6064634064098623500",
+			"typeId": "30316008",
+			"name": "None"
+		},
+		"2":
+		{
+			"guid": "6064634064023846919",
+			"typeId": "30316008",
+			"name": "None"
+		},
+		"3":
+		{
+			"guid": "6064634064024961032",
+			"typeId": "30316008",
+			"name": "None"
+		}
+	},
+	"animBranchesIds":
+	{
+		"1":
+		{
+			"guid": "6064634080610287626",
+			"typeId": "30316010",
+			"name": "None"
+		}
+	},
+	"conditionalBranchesIds":
+	{
+		"1":
+		{
+			"guid": "6064634080607141897",
+			"typeId": "30316009",
+			"name": "None"
+		}
+	},
+	"reactionsIds":
+	{
+	},
+	"targetingRecordsIds":
+	{
+		"1":
+		{
+			"guid": "6064630876683370512",
+			"typeId": "30316011",
+			"name": "None"
+		}
+	},
+	"progressDisruptionRecordsIds":
+	{
+	},
+	"teleportRecordsIds":
+	{
+	},
+	"comboInputs": [],
+	"bExactInput": false,
+	"bufferPriority": 0,
+	"bUsableFromHotbar": true,
+	"abilityActivationInput": "UserConfigurable",
+	"bMayEscCancel": true,
+	"bIsAOEClickedAbility": false,
+	"targetActivationRequirement": "Always",
+	"applicableTargets": 2,
+	"applicableTypes": 0,
+	"applicableLifeStates": 1,
+	"applicableCasterLifeStates": 1,
+	"bNeverCancelAbility": false,
+	"bUseTargetingRecord": false,
+	"targetingRecordId":
+	{
+		"guid": "0",
+		"typeId": "30316011",
+		"name": "None"
+	},
+	"bCheckTargetValidity": true,
+	"bPerformLoSCheck": false,
+	"bPerformConeCheck": true,
+	"angleCenter": 0,
+	"distanceCenter": 0,
+	"validAngle": 0,
+	"validDistance": 0,
+	"angleCenterExp":
+	{
+		"expression": "0.0"
+	},
+	"distanceCenterExp":
+	{
+		"expression": "0.0"
+	},
+	"validAngleExp":
+	{
+		"expression": "360.0"
+	},
+	"validDistanceExp":
+	{
+		"expression": "3000.0"
+	},
+	"speedMultiplierSource": "SPEED_AttackSpeed",
+	"bHoldAnimation": true,
+	"maximumHoldTime": 20,
+	"bMayCancelHoldAtAnyTime": true,
+	"cancelHoldSections": [],
+	"onCancelHoldBranchKey": 0,
+	"bOverrideHeldBehavior": false,
+	"heldAbilityBehavior": "Naive",
+	"bForceAnimCancel": false,
+	"bAllowRotation": true,
+	"pitchMode": "None",
+	"minPitch": 0,
+	"maxPitch": 0,
+	"bUsableInAir": true,
+	"bUsableWhileSwimming": true,
+	"bUsableWhileWalking": true,
+	"bUsableWhileMounted": false,
+	"bAutoDismount": false,
+	"bOmnidirectional": true,
+	"bOrientWithInterpOnStart": false,
+	"onStartInterpConstRate": 0,
+	"bOrientWithInterpOnEnd": false,
+	"onEndInterpConstRate": 0,
+	"bQuickCancelFromAllAbilities": false,
+	"quickCancelFromAbilitiesIds": [],
+	"cancelSectionName": "None",
+	"bRequiresAnimCancel": false,
+	"cancelFromAbilitiesIds": [],
+	"cancelFromTagQuery":
+	{
+		"tokenStreamVersion": 0,
+		"tagDictionary": [],
+		"queryTokenStream": [],
+		"userDescription": "",
+		"autoDescription": ""
+	},
+	"scriptOnActivate": "None",
+	"areaTemplateFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"areaTemplateMaterial": "None",
+	"areaTemplateRotationRate": 0,
+	"areaTargetRadius": 0,
+	"areaTargetRange": 0,
+	"bShouldFaceClickedTarget": false,
+	"bPerformIsWalkableCheck": true,
+	"bMayTargetWater": false,
+	"bResetSequenceAfterTime": false,
+	"sequenceResetTime": 0,
+	"bForceComboBreak": false,
+	"abilityName": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"D2F4F4D947C30D0CD5B805BE29203037\", \"Incapacitate\")",
+	"abilityDescription": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"EB78243E45961BD21A4ADC9B7C02FCE1\", \"**Temporary Tooltip**\\r\\n\\r\\nCommand your Spirit Hunter to Incapacitate its target, preventing it from taking any action. This effect ends on damage.\\r\\n\\r\\nMelee Stance: Incapacitates in a cone in front of the Spirit Hunter.\\r\\n\\r\\nRanged Stance: Channels an Incapacitate over 20s. Damage to either the target or Spirit Hunter will end the effect.\")",
+	"bAllowMovement": true,
+	"bPROTOTYPERotateRootMotion": false,
+	"rootMotionFreezeBehavior": "StopOnContact",
+	"rootMotionFreezeDistance": 0,
+	"rootMotionFreezeRadiusScale": 1,
+	"rootMotionIgnoreNonTarget": false,
+	"bVisualizeSweepCollision": false,
+	"canBreakEffects":
+	{
+		"expression": ""
+	},
+	"effectsToBreak":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"actionModeAbilityId":
+	{
+		"guid": "0",
+		"typeId": "30316001",
+		"name": "None"
+	},
+	"aBTestingAbilitiesIds": [],
+	"animCancelsIds":
+	{
+	},
+	"modifyCooldownsIds":
+	{
+	},
+	"aLSAbilityId":
+	{
+		"guid": "0",
+		"typeId": "30316001",
+		"name": "None"
+	},
+	"inputTerms": [],
+	"dynamicCastDuration":
+	{
+		"expression": ""
+	},
+	"bNeverCull": false,
+	"networkingMaxSpeed": 0,
+	"bInteruptChannelOnAbilityEnd": false,
+	"guid": "6064633577429468597",
+	"name": "Summoner_Pet_Hunter_Incapacitate",
+	"typeId": "30316001"
+}

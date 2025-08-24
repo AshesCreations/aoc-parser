@@ -1,0 +1,22 @@
+{
+	"choiceText": "NSLOCTEXT(\"[4BE4F0A16D08556ACD6685BF392E6719]\", \"AA2862D9451251261DEB86A83A8F2602\", \"FTUE Quest Completion\")",
+	"nextNodeId":
+	{
+		"guid": "6064633668513103885",
+		"typeId": "1091110028",
+		"name": "None"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": "Player_HasCommission (GetPlayer(), \"CSQ_0159_FTUE_RunningCrates\") && !Player_HasCompletedCommission(GetPlayer(), \"CSQ_0159_FTUE_RunningCrates\")"
+	},
+	"requirements": [],
+	"choiceType": "Default",
+	"guid": "6064633668513103881",
+	"name": "Node_Caravansary_Helper_2_Choice_1",
+	"typeId": "1091110027"
+}

@@ -1,0 +1,121 @@
+{
+	"choiceText": "NSLOCTEXT(\"[4BE4F0A16D08556ACD6685BF392E6719]\", \"4633862640E0A04AA0375AB60BCDCD2B\", \"I don\\'t have a practice crate.\")",
+	"nextNodeId":
+	{
+		"guid": "6064634097963368449",
+		"typeId": "1091110028",
+		"name": "Node_Caravansary_Helper_16"
+	},
+	"selectionResponsesIds": [],
+	"objectivesToCompleteUponSelectionIds": [],
+	"objectivesToRevealUponSelectionIds": [],
+	"itemsToGrantUponSelection": [],
+	"availabilityPredicate":
+	{
+		"expression": ""
+	},
+	"requirements": [
+		{
+			"criteria": [
+				{
+					"elementType": "Item",
+					"narrativeType": "Commission",
+					"commissionId":
+					{
+						"guid": "0",
+						"typeId": "280002",
+						"name": "None"
+					},
+					"storyArcQuestId":
+					{
+						"guid": "0",
+						"typeId": "1091110035",
+						"name": "None"
+					},
+					"objectiveId":
+					{
+						"guid": "0",
+						"typeId": "1091110420",
+						"name": "None"
+					},
+					"itemFilterId":
+					{
+						"guid": "6064633724897001474",
+						"typeId": "1091110041",
+						"name": "None"
+					},
+					"currencyDefId":
+					{
+						"guid": "0",
+						"typeId": "1011151289",
+						"name": "None"
+					},
+					"amountToQuery": 1,
+					"questState": "InProgress",
+					"objectiveState": "Active",
+					"itemState": "InInventory",
+					"characterAlignmentId":
+					{
+						"guid": "0",
+						"typeId": "512160700",
+						"name": "None"
+					},
+					"invert": true
+				}
+			]
+		},
+		{
+			"criteria": [
+				{
+					"elementType": "Quest",
+					"narrativeType": "Commission",
+					"commissionId":
+					{
+						"guid": "6064634098001510410",
+						"typeId": "280002",
+						"name": "None"
+					},
+					"storyArcQuestId":
+					{
+						"guid": "0",
+						"typeId": "1091110035",
+						"name": "None"
+					},
+					"objectiveId":
+					{
+						"guid": "0",
+						"typeId": "1091110420",
+						"name": "None"
+					},
+					"itemFilterId":
+					{
+						"guid": "0",
+						"typeId": "1091110041",
+						"name": "None"
+					},
+					"currencyDefId":
+					{
+						"guid": "0",
+						"typeId": "1011151289",
+						"name": "None"
+					},
+					"amountToQuery": 0,
+					"questState": "Completed",
+					"objectiveState": "Active",
+					"itemState": "InInventory",
+					"characterAlignmentId":
+					{
+						"guid": "0",
+						"typeId": "512160700",
+						"name": "None"
+					},
+					"invert": false
+				}
+			]
+		}
+	],
+	"choiceType": "Default",
+	"guid": "6064634097959763968",
+	"name": "Node_Caravansary_Helper_9_Choice_3",
+	"typeId": "1091110027"
+}

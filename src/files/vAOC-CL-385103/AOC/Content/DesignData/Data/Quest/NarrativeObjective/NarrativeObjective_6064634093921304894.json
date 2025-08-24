@@ -1,0 +1,111 @@
+{
+	"narrativeType": "Commission",
+	"completionParameters":
+	{
+		"objectiveType": "GoToArea",
+		"nPCTaskIconOverrideId":
+		{
+			"guid": "0",
+			"typeId": "949952112329",
+			"name": "None"
+		},
+		"bAllowSatisfactionToRegress": false,
+		"completionQuantity": 1,
+		"tagQuery":
+		{
+			"tokenStreamVersion": 0,
+			"tagDictionary": [],
+			"queryTokenStream": [],
+			"userDescription": "",
+			"autoDescription": ""
+		},
+		"professionFilterIds": [],
+		"gatherableFilterIds": [],
+		"collectionFilterId":
+		{
+			"guid": "0",
+			"typeId": "1091110041",
+			"name": "None"
+		},
+		"subObjectivesIds": [],
+		"bLimitToDisplayLocation": false,
+		"goToAreaLocation": [
+			{
+				"location":
+				{
+					"x": -932607.36222100002,
+					"y": -634634.84672000003,
+					"z": 25620.711415999998
+				},
+				"radius": 2000,
+				"map_DisplayType": "ICON_AND_RADIUS",
+				"map_IconVisual":
+				{
+					"guid": "6064630990211645445",
+					"typeId": "949952112329",
+					"name": "None"
+				},
+				"map_DisplayName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"4A2EDE7A449F3EE45A329A86A3D7ACC7\", \"Rally Point\")"
+			}
+		],
+		"populationSetIds": [],
+		"populationInstanceIds": [],
+		"notifyType": "None"
+	},
+	"objectiveText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"D989A7CF42DCD8D9F8BC98B637D66E6B\", \"Meet the workers at the rally point\")",
+	"objectiveCountText": "",
+	"initiallyHidden": false,
+	"advanceWhileHidden": true,
+	"revealOnComplete": true,
+	"completionRewardsIds": [],
+	"minimumRequirement": true,
+	"completionFlags": [],
+	"instanceCompletionResult": [],
+	"enabledPredicate":
+	{
+		"expression": ""
+	},
+	"completionActionsIds": [
+		{
+			"guid": "6064634093924319551",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"objectivesToCompleteUponCompletionIds": [],
+	"objectivesToRevealUponCompletionIds": [
+		{
+			"guid": "6064634093931004224",
+			"typeId": "1091110420",
+			"name": "None"
+		}
+	],
+	"allowOverAchievement": false,
+	"overAchievementCountText": "",
+	"maximumAdditionalCompletions": 2,
+	"multipleCompletionExperienceMultiplier": 0.30000001192092896,
+	"multipleCompletionGoldMultiplier": 0.30000001192092896,
+	"multipleCompletionVariableMultiplier": 0.30000001192092896,
+	"displayLocation": [
+		{
+			"location":
+			{
+				"x": -932607.36222100002,
+				"y": -634634.84672000003,
+				"z": 25620.711415999998
+			},
+			"radius": 10000,
+			"map_DisplayType": "ICON_AND_RADIUS",
+			"map_IconVisual":
+			{
+				"guid": "6064630990211645445",
+				"typeId": "949952112329",
+				"name": "None"
+			},
+			"map_DisplayName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"4A2EDE7A449F3EE45A329A86A3D7ACC7\", \"Rally Point\")"
+		}
+	],
+	"guid": "6064634093921304894",
+	"name": "ANV_FTUE_0003_TheOldStones_Objective_GotoRallyPoint",
+	"typeId": "1091110420"
+}

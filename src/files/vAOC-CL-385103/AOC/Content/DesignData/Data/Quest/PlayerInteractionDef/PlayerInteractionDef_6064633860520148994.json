@@ -1,0 +1,77 @@
+{
+	"completionResponsesIds": [
+		{
+			"guid": "6064633859881041921",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"objectivesToCompleteUponCompletionIds": [],
+	"objectivesToRevealUponCompletionIds": [],
+	"itemsToGrantUponCompletion": [],
+	"channelDuration": 4.5,
+	"activePredicate":
+	{
+		"expression": "Node_CanContributeServiceBuilding()"
+	},
+	"cuePredicate":
+	{
+		"expression": ""
+	},
+	"visiblePredicate":
+	{
+		"expression": "Node_CanContributeServiceBuilding()"
+	},
+	"showErrorIfNotVisible": true,
+	"deleteOnCompletion": false,
+	"singleUse": false,
+	"alwaysShowUIPrompt": true,
+	"cancelChannelIfActivePredicateEverFails": true,
+	"interactTextFormat": "Contribute to Construction",
+	"channelModifierType": "NONE",
+	"rewardTableId":
+	{
+		"guid": "0",
+		"typeId": "1091110008",
+		"name": "None"
+	},
+	"startEffect": "None",
+	"endEffect": "None",
+	"failEffect": "None",
+	"successEffect": "None",
+	"cueEffect": "None",
+	"startSound": "None",
+	"endSound": "None",
+	"failSound": "None",
+	"successSound": "None",
+	"cueSound": "None",
+	"interactAnimTag": "None",
+	"deletionDelay": 0,
+	"activeCueEnabled": true,
+	"activeCueIgnoresActivePredicate": false,
+	"facePlayer": false,
+	"allowInCombat": false,
+	"spawnAtBottomCapsule": false,
+	"channelAnimation": "/Game/Characters/Animations/00_BASE/AMB/Work/CM_M_AMB_Work_Hammer_Male_C_Montage_Wood.CM_M_AMB_Work_Hammer_Male_C_Montage_Wood",
+	"interactRadius": 400,
+	"discoveryDistance": 450,
+	"interactTolerance": 30,
+	"interactAngle": 0,
+	"bRequireLOS": false,
+	"busyTime": 0.89999997615814209,
+	"clientBusyTime": 1,
+	"channelStartResponseIds": [],
+	"failResponsesIds": [],
+	"gatheringInteractionDataId":
+	{
+		"guid": "0",
+		"typeId": "19846",
+		"name": "None"
+	},
+	"interactCooldownMap":
+	{
+	},
+	"guid": "6064633860520148994",
+	"name": "PID_CrateConstruction",
+	"typeId": "1091110031"
+}

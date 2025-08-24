@@ -1,0 +1,79 @@
+{
+	"completionResponsesIds": [
+		{
+			"guid": "6064634013898309637",
+			"typeId": "1091110030",
+			"name": "None"
+		}
+	],
+	"objectivesToCompleteUponCompletionIds": [],
+	"objectivesToRevealUponCompletionIds": [],
+	"itemsToGrantUponCompletion": [],
+	"channelDuration": 0,
+	"activePredicate":
+	{
+		"expression": "Player_HasCommission(GetPlayer(),\"ANV_FTUE_0002_Vignette_DeceasedDunzenkell\")&&\r\nPlayer_ObjectiveStateEquals(GetPlayer(),\"ANV_FTUE_Interact_DeceasedDunzenkell_Bury_OBJ\",EObjectiveState::Active)"
+	},
+	"cuePredicate":
+	{
+		"expression": "Player_HasCommission(GetPlayer(),\"ANV_FTUE_0002_Vignette_DeceasedDunzenkell\")&&\r\nPlayer_ObjectiveStateEquals(GetPlayer(),\"ANV_FTUE_Interact_DeceasedDunzenkell_Bury_OBJ\",EObjectiveState::Active)"
+	},
+	"visiblePredicate":
+	{
+		"expression": "Player_HasCommission(GetPlayer(),\"ANV_FTUE_0002_Vignette_DeceasedDunzenkell\")&&\r\nPlayer_ObjectiveStateEquals(GetPlayer(),\"ANV_FTUE_Interact_DeceasedDunzenkell_Bury_OBJ\",EObjectiveState::Active)"
+	},
+	"showErrorIfNotVisible": false,
+	"deleteOnCompletion": false,
+	"singleUse": false,
+	"alwaysShowUIPrompt": true,
+	"cancelChannelIfActivePredicateEverFails": true,
+	"interactTextFormat": "",
+	"channelModifierType": "NONE",
+	"rewardTableId":
+	{
+		"guid": "0",
+		"typeId": "1091110008",
+		"name": "None"
+	},
+	"startEffect": "None",
+	"endEffect": "None",
+	"failEffect": "None",
+	"successEffect": "None",
+	"cueEffect": "/Game/Effects/FX_Shared/Particles/FX_LootBeam_01.FX_LootBeam_01",
+	"startSound": "None",
+	"endSound": "None",
+	"failSound": "None",
+	"successSound": "None",
+	"cueSound": "None",
+	"interactAnimTag": "Pay Respects",
+	"deletionDelay": 0,
+	"activeCueEnabled": true,
+	"activeCueIgnoresActivePredicate": false,
+	"facePlayer": false,
+	"allowInCombat": true,
+	"spawnAtBottomCapsule": false,
+	"channelAnimation": "/Game/Characters/Animations/00_EMO/All_EMO_M_Kneel01_Montage.All_EMO_M_Kneel01_Montage",
+	"interactRadius": 200,
+	"discoveryDistance": 200,
+	"interactTolerance": 30,
+	"interactViewAngle": 0,
+	"interactAngle": 0,
+	"bUseInteractRotation": false,
+	"bRequireLOS": false,
+	"busyTime": 0.89999997615814209,
+	"clientBusyTime": 1,
+	"channelStartResponseIds": [],
+	"failResponsesIds": [],
+	"gatheringInteractionDataId":
+	{
+		"guid": "0",
+		"typeId": "19846",
+		"name": "None"
+	},
+	"interactCooldownMap":
+	{
+	},
+	"guid": "6064634013754982403",
+	"name": "ANV_FTUE_0002_Vignette_DeceasedDunzenkell_PID",
+	"typeId": "1091110031"
+}

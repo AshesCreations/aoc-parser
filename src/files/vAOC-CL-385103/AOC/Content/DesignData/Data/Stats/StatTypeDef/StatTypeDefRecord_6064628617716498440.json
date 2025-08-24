@@ -1,0 +1,56 @@
+{
+	"displayName": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"A0A97C3D414B15C0A92D6CB064197125\", \"Defense\")",
+	"description": "Reduces all damage taken",
+	"bHidden": false,
+	"gameplayType": "Type_Combat",
+	"bHasWaterfallStatsUI": false,
+	"waterfallStatsUIIds": [],
+	"bDisplayAsPercentage": true,
+	"statType": "Type_Float",
+	"bClampStatFinalValue": true,
+	"bMultiplyStatMods": true,
+	"bMultiplyCompliment": true,
+	"base":
+	{
+		"expression": "const rating = GetStat(GetInstigator(), $#10516612381411111:6064628617716695052$);\r\n1.0 - rating / (rating + EvalE($#10516612381411112:6064633702542016513$))"
+	},
+	"waterfallStatsBaseIds": [
+		{
+			"guid": "6064628617716695052",
+			"typeId": "10516612381411111",
+			"name": "None"
+		}
+	],
+	"valueMin":
+	{
+		"expression": "0"
+	},
+	"waterfallStatsMinIds": [],
+	"valueMax":
+	{
+		"expression": ""
+	},
+	"waterfallStatsMaxIds": [],
+	"regenRate":
+	{
+		"expression": ""
+	},
+	"waterfallStatsRegenIds": [],
+	"bRegenWhileDead": false,
+	"bRecalculateOnCombatState": false,
+	"onSpawn": "Reset_None",
+	"onDeath": "Reset_None",
+	"onRevive": "Reset_None",
+	"bPersistValue": false,
+	"replication": 5,
+	"shieldStatId":
+	{
+		"guid": "0",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"grantedEffects": [],
+	"guid": "6064628617716498440",
+	"name": "Mitigation",
+	"typeId": "10516612381411111"
+}
