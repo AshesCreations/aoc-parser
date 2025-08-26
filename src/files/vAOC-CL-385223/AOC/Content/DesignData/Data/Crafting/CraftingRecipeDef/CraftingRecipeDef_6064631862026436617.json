@@ -1,0 +1,186 @@
+{
+	"availabilityPredicates": [
+		{
+			"type": "BuildingModification",
+			"nodes": [],
+			"nodeLevel": "Wilderness",
+			"biomes": [],
+			"modifications": [
+				{
+					"guid": "6064634161292968013",
+					"typeId": "1091110048",
+					"name": "None"
+				}
+			],
+			"bHidden": true
+		}
+	],
+	"professionId":
+	{
+		"guid": "108752746927738",
+		"typeId": "8125613373123",
+		"name": "None"
+	},
+	"certificationLevelId":
+	{
+		"guid": "108906342012538",
+		"typeId": "455189666431",
+		"name": "None"
+	},
+	"learnable": true,
+	"overrideName": "",
+	"overrideIcon": "None",
+	"categoryTag":
+	{
+		"tagName": "Item.Gear.Weapon.Focus"
+	},
+	"difficulty": 0,
+	"defaultQuality": 0,
+	"fuel": 0,
+	"fuelTags":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"bUseOverrides": false,
+	"overrides": [],
+	"nodeLevel": "Wilderness",
+	"levelingTemplateId":
+	{
+		"guid": "0",
+		"typeId": "4565416516154",
+		"name": "None"
+	},
+	"baseDuration": 2,
+	"durationFormula":
+	{
+		"expression": ""
+	},
+	"qualityFormula":
+	{
+		"expression": "GetCraftingRecipeQuality() + EvalFormula($Formula:Artisan_Crafting_ArcaneEngineering_Quality$)"
+	},
+	"quantityFormula":
+	{
+		"expression": ""
+	},
+	"minimumQuantityFormula":
+	{
+		"expression": ""
+	},
+	"maximumQuantityFormula":
+	{
+		"expression": ""
+	},
+	"rewardId":
+	{
+		"guid": "6064631862002450436",
+		"typeId": "1091110040",
+		"name": "None"
+	},
+	"distributionRewardId":
+	{
+		"guid": "0",
+		"typeId": "1091111337",
+		"name": "None"
+	},
+	"itemDestination": "Inventory",
+	"primaryResourceCosts": [
+		{
+			"rarity": "Common",
+			"item":
+			{
+				"guid": "6064634088226226590",
+				"typeId": "1091110003",
+				"name": "None"
+			},
+			"quantity": 3,
+			"bConsumeInCrafting": true
+		},
+		{
+			"rarity": "Rare",
+			"item":
+			{
+				"guid": "6064631861862989825",
+				"typeId": "1091110003",
+				"name": "None"
+			},
+			"quantity": 1,
+			"bConsumeInCrafting": true
+		}
+	],
+	"generalResourceCost": [
+		{
+			"minRarity": "Common",
+			"costGatherItemFilter":
+			{
+				"guid": "0",
+				"typeId": "1091110041",
+				"name": "None"
+			},
+			"materialTags":
+			{
+				"gameplayTags": [],
+				"parentTags": []
+			},
+			"item":
+			{
+				"guid": "6064631793833672764",
+				"typeId": "1091110003",
+				"name": "None"
+			},
+			"quantity": 19,
+			"bConsumeInCrafting": true
+		},
+		{
+			"minRarity": "Common",
+			"costGatherItemFilter":
+			{
+				"guid": "0",
+				"typeId": "1091110041",
+				"name": "None"
+			},
+			"materialTags":
+			{
+				"gameplayTags": [],
+				"parentTags": []
+			},
+			"item":
+			{
+				"guid": "6064630417660968993",
+				"typeId": "1091110003",
+				"name": "None"
+			},
+			"quantity": 10,
+			"bConsumeInCrafting": true
+		}
+	],
+	"standardCurrencyCost":
+	{
+		"expression": ""
+	},
+	"craftingCurrencyCostId":
+	{
+		"guid": "6064634104070209730",
+		"typeId": "9565237358",
+		"name": "None"
+	},
+	"subRecipesIds": [],
+	"skillTreeSpecializationId":
+	{
+		"guid": "0",
+		"typeId": "30316003",
+		"name": "None"
+	},
+	"bCanFastCraft": true,
+	"bCanGameplayLayer": false,
+	"weaponsmithingInfoId":
+	{
+		"guid": "0",
+		"typeId": "1636976253",
+		"name": "None"
+	},
+	"guid": "6064631862026436617",
+	"name": "ArcaneEngineering_T3_Weapon_Focus_OH_LittleBro",
+	"typeId": "163697"
+}

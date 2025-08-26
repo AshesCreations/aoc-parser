@@ -1,0 +1,241 @@
+{
+	"availabilityPredicates": [
+		{
+			"type": "BuildingModification",
+			"nodes": [],
+			"nodeLevel": "Wilderness",
+			"biomes": [],
+			"modifications": [
+				{
+					"guid": "6064634161496391802",
+					"typeId": "1091110048",
+					"name": "None"
+				}
+			],
+			"bHidden": true
+		}
+	],
+	"professionId":
+	{
+		"guid": "108752746927737",
+		"typeId": "8125613373123",
+		"name": "None"
+	},
+	"certificationLevelId":
+	{
+		"guid": "108906340767353",
+		"typeId": "455189666431",
+		"name": "None"
+	},
+	"learnable": true,
+	"overrideName": "",
+	"overrideIcon": "None",
+	"categoryTag":
+	{
+		"tagName": "Item.Gear.Weapon.Longbow"
+	},
+	"difficulty": 0,
+	"defaultQuality": 0,
+	"fuel": 0,
+	"fuelTags":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"bUseOverrides": false,
+	"overrides": [],
+	"nodeLevel": "Wilderness",
+	"levelingTemplateId":
+	{
+		"guid": "0",
+		"typeId": "4565416516154",
+		"name": "None"
+	},
+	"baseDuration": 2,
+	"durationFormula":
+	{
+		"expression": ""
+	},
+	"qualityFormula":
+	{
+		"expression": "GetCraftingRecipeQuality() + EvalFormula($Formula:Artisan_Crafting_Carpentry_Quality$)"
+	},
+	"quantityFormula":
+	{
+		"expression": ""
+	},
+	"minimumQuantityFormula":
+	{
+		"expression": ""
+	},
+	"maximumQuantityFormula":
+	{
+		"expression": ""
+	},
+	"rewardId":
+	{
+		"guid": "6064630656242221075",
+		"typeId": "1091110040",
+		"name": "None"
+	},
+	"distributionRewardId":
+	{
+		"guid": "0",
+		"typeId": "1091111337",
+		"name": "None"
+	},
+	"itemDestination": "Inventory",
+	"primaryResourceCosts": [
+		{
+			"rarity": "Common",
+			"item":
+			{
+				"guid": "6064634088225309085",
+				"typeId": "1091110003",
+				"name": "None"
+			},
+			"quantity": 25,
+			"bConsumeInCrafting": true
+		},
+		{
+			"rarity": "Common",
+			"item":
+			{
+				"guid": "6064634087507361975",
+				"typeId": "1091110003",
+				"name": "None"
+			},
+			"quantity": 10,
+			"bConsumeInCrafting": true
+		},
+		{
+			"rarity": "Common",
+			"item":
+			{
+				"guid": "6064634088197456266",
+				"typeId": "1091110003",
+				"name": "None"
+			},
+			"quantity": 20,
+			"bConsumeInCrafting": true
+		}
+	],
+	"generalResourceCost": [
+		{
+			"minRarity": "Common",
+			"costGatherItemFilter":
+			{
+				"guid": "0",
+				"typeId": "1091110041",
+				"name": "None"
+			},
+			"materialTags":
+			{
+				"gameplayTags": [],
+				"parentTags": []
+			},
+			"item":
+			{
+				"guid": "6064630417661624409",
+				"typeId": "1091110003",
+				"name": "None"
+			},
+			"quantity": 105,
+			"bConsumeInCrafting": true
+		},
+		{
+			"minRarity": "Common",
+			"costGatherItemFilter":
+			{
+				"guid": "0",
+				"typeId": "1091110041",
+				"name": "None"
+			},
+			"materialTags":
+			{
+				"gameplayTags": [],
+				"parentTags": []
+			},
+			"item":
+			{
+				"guid": "6064631782263554056",
+				"typeId": "1091110003",
+				"name": "None"
+			},
+			"quantity": 18,
+			"bConsumeInCrafting": true
+		},
+		{
+			"minRarity": "Common",
+			"costGatherItemFilter":
+			{
+				"guid": "0",
+				"typeId": "1091110041",
+				"name": "None"
+			},
+			"materialTags":
+			{
+				"gameplayTags": [],
+				"parentTags": []
+			},
+			"item":
+			{
+				"guid": "6064632632722456581",
+				"typeId": "1091110003",
+				"name": "None"
+			},
+			"quantity": 60,
+			"bConsumeInCrafting": true
+		},
+		{
+			"minRarity": "Common",
+			"costGatherItemFilter":
+			{
+				"guid": "0",
+				"typeId": "1091110041",
+				"name": "None"
+			},
+			"materialTags":
+			{
+				"gameplayTags": [],
+				"parentTags": []
+			},
+			"item":
+			{
+				"guid": "6064634087260094608",
+				"typeId": "1091110003",
+				"name": "None"
+			},
+			"quantity": 35,
+			"bConsumeInCrafting": true
+		}
+	],
+	"standardCurrencyCost":
+	{
+		"expression": ""
+	},
+	"craftingCurrencyCostId":
+	{
+		"guid": "6064631154675417090",
+		"typeId": "9565237358",
+		"name": "None"
+	},
+	"subRecipesIds": [],
+	"skillTreeSpecializationId":
+	{
+		"guid": "0",
+		"typeId": "30316003",
+		"name": "None"
+	},
+	"bCanFastCraft": true,
+	"bCanGameplayLayer": true,
+	"weaponsmithingInfoId":
+	{
+		"guid": "0",
+		"typeId": "1636976253",
+		"name": "None"
+	},
+	"guid": "6064630656233898001",
+	"name": "Carpentry_T2_Weapon_Longbow_2H_SonsOfFortune",
+	"typeId": "163697"
+}

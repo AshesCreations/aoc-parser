@@ -1,0 +1,325 @@
+{
+	"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Gameplay_TargetingSectionLabel\")",
+	"categoryHeaderLabel": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Gameplay_TargetingSectionHeader\")",
+	"bUseScrollWindow": true,
+	"entryCategories": [
+		{
+			"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Options_GeneralSubheader\")",
+			"entryAlignment": "HAlign_Fill",
+			"entryWrapSize": 10,
+			"wrapBoxClass": "Standard",
+			"entries": [
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Targeting_RightClickSelfTargetLabel\")",
+					"labelTextMinDesiredWidth": 300,
+					"labelTextWrapWidth": 1080,
+					"type": "CheckBox",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"bApplyOnMouseRelease": false,
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"leftNameplateRelationshipIds": [],
+					"leftNameplateAlignmentIds": [],
+					"leftLabel": "",
+					"rightNameplateRelationshipIds": [],
+					"rightNameplateAlignmentIds": [],
+					"rightLabel": "",
+					"linkedKeyBindingIds": [],
+					"subheaderBorderStyle": "None",
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetRightClickTargetSelf",
+					"setterFunctionName": "SetRightClickTargetSelf",
+					"dependencyGetter": "None"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Targeting_ClickToClearTargetLabel\")",
+					"labelTextMinDesiredWidth": 300,
+					"labelTextWrapWidth": 1080,
+					"type": "CheckBox",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"bApplyOnMouseRelease": false,
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"leftNameplateRelationshipIds": [],
+					"leftNameplateAlignmentIds": [],
+					"leftLabel": "",
+					"rightNameplateRelationshipIds": [],
+					"rightNameplateAlignmentIds": [],
+					"rightLabel": "",
+					"linkedKeyBindingIds": [],
+					"subheaderBorderStyle": "None",
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetClearTargetByClickingOnNothing",
+					"setterFunctionName": "SetClearTargetByClickingOnNothing",
+					"dependencyGetter": "None"
+				},
+				{
+					"label": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"9723B39B48764B4B956683B0AC1F8E65\", \"Open RMB Menu on targets when\")",
+					"labelTextMinDesiredWidth": 300,
+					"labelTextWrapWidth": 600,
+					"type": "Dropdown",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"bApplyOnMouseRelease": false,
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"leftNameplateRelationshipIds": [],
+					"leftNameplateAlignmentIds": [],
+					"leftLabel": "",
+					"rightNameplateRelationshipIds": [],
+					"rightNameplateAlignmentIds": [],
+					"rightLabel": "",
+					"linkedKeyBindingIds": [],
+					"subheaderBorderStyle": "None",
+					"selectorWidth": 584,
+					"widgetClass": "None",
+					"getterFunctionName": "GetRMBMenuOnTarget",
+					"setterFunctionName": "SetRMBMenuOnTarget",
+					"dependencyGetter": "None"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Targeting_GroundTargetSelectionLabel\")",
+					"labelTextMinDesiredWidth": 300,
+					"labelTextWrapWidth": 600,
+					"type": "Dropdown",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"bApplyOnMouseRelease": false,
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"leftNameplateRelationshipIds": [],
+					"leftNameplateAlignmentIds": [],
+					"leftLabel": "",
+					"rightNameplateRelationshipIds": [],
+					"rightNameplateAlignmentIds": [],
+					"rightLabel": "",
+					"linkedKeyBindingIds": [],
+					"subheaderBorderStyle": "None",
+					"selectorWidth": 584,
+					"widgetClass": "None",
+					"getterFunctionName": "GetAOETargetSetting",
+					"setterFunctionName": "SetAOETargetSetting",
+					"dependencyGetter": "None"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Targeting_ShowTargetOfTargetLabel\")",
+					"labelTextMinDesiredWidth": 300,
+					"labelTextWrapWidth": 1080,
+					"type": "CheckBox",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"bApplyOnMouseRelease": false,
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"leftNameplateRelationshipIds": [],
+					"leftNameplateAlignmentIds": [],
+					"leftLabel": "",
+					"rightNameplateRelationshipIds": [],
+					"rightNameplateAlignmentIds": [],
+					"rightLabel": "",
+					"linkedKeyBindingIds": [],
+					"subheaderBorderStyle": "None",
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetShowTargetOfTarget",
+					"setterFunctionName": "SetShowTargetOfTarget",
+					"dependencyGetter": "None"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Targeting_ShowTargetCastBarLabel\")",
+					"labelTextMinDesiredWidth": 300,
+					"labelTextWrapWidth": 1080,
+					"type": "CheckBox",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"bApplyOnMouseRelease": false,
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"leftNameplateRelationshipIds": [],
+					"leftNameplateAlignmentIds": [],
+					"leftLabel": "",
+					"rightNameplateRelationshipIds": [],
+					"rightNameplateAlignmentIds": [],
+					"rightLabel": "",
+					"linkedKeyBindingIds": [],
+					"subheaderBorderStyle": "None",
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetShowTargetCastBar",
+					"setterFunctionName": "SetShowTargetCastBar",
+					"dependencyGetter": "None"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Targeting_EnableDefensiveTargetLabel\")",
+					"labelTextMinDesiredWidth": 300,
+					"labelTextWrapWidth": 1080,
+					"type": "CheckBox",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"bApplyOnMouseRelease": false,
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"leftNameplateRelationshipIds": [],
+					"leftNameplateAlignmentIds": [],
+					"leftLabel": "",
+					"rightNameplateRelationshipIds": [],
+					"rightNameplateAlignmentIds": [],
+					"rightLabel": "",
+					"linkedKeyBindingIds": [],
+					"subheaderBorderStyle": "None",
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetDefensiveTargetingEnabled",
+					"setterFunctionName": "SetDefensiveTargetingEnabled",
+					"dependencyGetter": "None"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Targeting_ClickAbilitiesInCameraModeLabel\")",
+					"labelTextMinDesiredWidth": 320,
+					"labelTextWrapWidth": 600,
+					"type": "CheckBox",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"bApplyOnMouseRelease": false,
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"leftNameplateRelationshipIds": [],
+					"leftNameplateAlignmentIds": [],
+					"leftLabel": "",
+					"rightNameplateRelationshipIds": [],
+					"rightNameplateAlignmentIds": [],
+					"rightLabel": "",
+					"linkedKeyBindingIds": [],
+					"subheaderBorderStyle": "None",
+					"selectorWidth": 584,
+					"widgetClass": "None",
+					"getterFunctionName": "GetClickAbilitiesInCameraMode",
+					"setterFunctionName": "SetClickAbilitiesInCameraMode",
+					"dependencyGetter": "None"
+				}
+			],
+			"subcategories": []
+		},
+		{
+			"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Targeting_SoftLockSubheader\")",
+			"entryAlignment": "HAlign_Fill",
+			"entryWrapSize": 10,
+			"wrapBoxClass": "Standard",
+			"entries": [
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Targeting_SoftLockEnabledLabel\")",
+					"labelTextMinDesiredWidth": 300,
+					"labelTextWrapWidth": 1080,
+					"type": "CheckBox",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"bApplyOnMouseRelease": false,
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"leftNameplateRelationshipIds": [],
+					"leftNameplateAlignmentIds": [],
+					"leftLabel": "",
+					"rightNameplateRelationshipIds": [],
+					"rightNameplateAlignmentIds": [],
+					"rightLabel": "",
+					"linkedKeyBindingIds": [],
+					"subheaderBorderStyle": "None",
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetSoftLockTargetingEnabledInTabMode",
+					"setterFunctionName": "SetSoftLockTargetingEnabledInTabMode",
+					"dependencyGetter": "None"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Targeting_SoftLockShowNameplatesLabel\")",
+					"labelTextMinDesiredWidth": 300,
+					"labelTextWrapWidth": 1080,
+					"type": "CheckBox",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"bApplyOnMouseRelease": false,
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"leftNameplateRelationshipIds": [],
+					"leftNameplateAlignmentIds": [],
+					"leftLabel": "",
+					"rightNameplateRelationshipIds": [],
+					"rightNameplateAlignmentIds": [],
+					"rightLabel": "",
+					"linkedKeyBindingIds": [],
+					"subheaderBorderStyle": "None",
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetShowNameplateIndicatorOnSoftLockTargets",
+					"setterFunctionName": "SetShowNameplateIndicatorOnSoftLockTargets",
+					"dependencyGetter": "None"
+				},
+				{
+					"label": "LOCTABLE(\"/Game/UI/StringTables/UIOptionsStringTable.UIOptionsStringTable\", \"Targeting_SoftLockShowReticleLabel\")",
+					"labelTextMinDesiredWidth": 300,
+					"labelTextWrapWidth": 1080,
+					"type": "CheckBox",
+					"sliderMinMax":
+					{
+						"x": 0,
+						"y": 1
+					},
+					"bApplyOnMouseRelease": false,
+					"keyBindingId": "None",
+					"associatedClass": "Mage",
+					"leftNameplateRelationshipIds": [],
+					"leftNameplateAlignmentIds": [],
+					"leftLabel": "",
+					"rightNameplateRelationshipIds": [],
+					"rightNameplateAlignmentIds": [],
+					"rightLabel": "",
+					"linkedKeyBindingIds": [],
+					"subheaderBorderStyle": "None",
+					"selectorWidth": 300,
+					"widgetClass": "None",
+					"getterFunctionName": "GetShowTargetReticleOnSoftLockTargets",
+					"setterFunctionName": "SetShowTargetReticleOnSoftLockTargets",
+					"dependencyGetter": "None"
+				}
+			],
+			"subcategories": []
+		}
+	],
+	"guid": "6064632591615852544",
+	"name": "Targeting",
+	"typeId": "3616673544"
+}

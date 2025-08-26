@@ -1,0 +1,93 @@
+{
+	"roadWidth": 750,
+	"materialArray":
+	{
+		"materials": [
+			{
+				"biome": "Riverlands",
+				"material": "/Game/ENV/Landscape/LandscapeBrushes/Roads/TopRoads/Riverlands/MI_RIV_TopRoadDirt.MI_RIV_TopRoadDirt"
+			},
+			{
+				"biome": "Desert",
+				"material": "/Game/ENV/Landscape/LandscapeBrushes/Roads/TopRoads/Desert/MI_DES_TopRoad.MI_DES_TopRoad"
+			},
+			{
+				"biome": "Jungle",
+				"material": "/Game/ENV/Landscape/LandscapeBrushes/Roads/TopRoads/Tropics/MI_TRO_TopRoad.MI_TRO_TopRoad"
+			},
+			{
+				"biome": "Tropics",
+				"material": "/Game/ENV/Landscape/LandscapeBrushes/Roads/TopRoads/Tropics/MI_TRO_TopRoad.MI_TRO_TopRoad"
+			},
+			{
+				"biome": "TabletopMountains",
+				"material": "/Game/ENV/Landscape/LandscapeBrushes/Roads/TopRoads/Riverlands/MI_RIV_TopRoadDirt.MI_RIV_TopRoadDirt"
+			}
+		]
+	},
+	"roadBuffs": [
+		{
+			"effectRecordId":
+			{
+				"guid": "6064632988600500315",
+				"typeId": "30316002",
+				"name": "None"
+			},
+			"bOverrideEffectDuration": false,
+			"overrideEffectDuration": "0",
+			"effectClassifications": [
+				"Character"
+			],
+			"effectNodeType": "Default",
+			"effectAlignments": [],
+			"bRequireAllAlignments": true,
+			"bRequireOrgAffiliation": true,
+			"minimumReputationRank": "Peasant",
+			"canBeAppliedGlobally": false,
+			"minimumReputationRankForGlobalApplication": "Peasant"
+		},
+		{
+			"effectRecordId":
+			{
+				"guid": "6064632988600959070",
+				"typeId": "30316002",
+				"name": "None"
+			},
+			"bOverrideEffectDuration": false,
+			"overrideEffectDuration": "0",
+			"effectClassifications": [
+				"Mount"
+			],
+			"effectNodeType": "Default",
+			"effectAlignments": [],
+			"bRequireAllAlignments": true,
+			"bRequireOrgAffiliation": true,
+			"minimumReputationRank": "Peasant",
+			"canBeAppliedGlobally": false,
+			"minimumReputationRankForGlobalApplication": "Peasant"
+		},
+		{
+			"effectRecordId":
+			{
+				"guid": "6064632988594339928",
+				"typeId": "30316002",
+				"name": "None"
+			},
+			"bOverrideEffectDuration": false,
+			"overrideEffectDuration": "0",
+			"effectClassifications": [
+				"Caravan"
+			],
+			"effectNodeType": "Default",
+			"effectAlignments": [],
+			"bRequireAllAlignments": true,
+			"bRequireOrgAffiliation": true,
+			"minimumReputationRank": "Peasant",
+			"canBeAppliedGlobally": false,
+			"minimumReputationRankForGlobalApplication": "Peasant"
+		}
+	],
+	"guid": "6064632202038871761",
+	"name": "RoadAppearance_Vein_Level_1",
+	"typeId": "95978961"
+}

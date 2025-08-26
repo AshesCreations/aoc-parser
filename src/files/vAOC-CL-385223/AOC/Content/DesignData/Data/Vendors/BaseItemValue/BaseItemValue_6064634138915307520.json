@@ -1,0 +1,24 @@
+{
+	"buyingCurrencyTierId":
+	{
+		"guid": "6064629127873626112",
+		"typeId": "1011111289",
+		"name": "None"
+	},
+	"sellingCurrencyTierId":
+	{
+		"guid": "6064629127873626112",
+		"typeId": "1011111289",
+		"name": "None"
+	},
+	"currencyValues":
+	{
+		"(Guid=6064629127873626112,TypeId=1011111289)":
+		{
+			"expression": "const ItemRarity = GetItemRarity();\r\nvar ItemBaseValue = 1;\r\n\r\nif(ItemRarity == 0){\r\n    set ItemBaseValue = 45;\r\n} else\r\nif(ItemRarity == 1){\r\n    set ItemBaseValue = 1153;\r\n} else\r\nif(ItemRarity == 2){\r\n    set ItemBaseValue = 6530;\r\n} else\r\nif(ItemRarity == 3){\r\n    set ItemBaseValue = 50697;\r\n} else\r\nif(ItemRarity == 4){\r\n    set ItemBaseValue = 248872;\r\n} else\r\nif(ItemRarity == 5){\r\n    set ItemBaseValue = 746616;\r\n}\r\n\r\nItemBaseValue"
+		}
+	},
+	"guid": "6064634138915307520",
+	"name": "Vendor_Reagent",
+	"typeId": "3145314713"
+}

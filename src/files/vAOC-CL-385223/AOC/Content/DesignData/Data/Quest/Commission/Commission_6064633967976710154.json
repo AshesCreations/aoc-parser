@@ -1,0 +1,110 @@
+{
+	"commissionType": "Generic",
+	"commissionGameplayTags":
+	{
+		"gameplayTags": [
+			{
+				"tagName": "Quest.Commission.Tier.T5"
+			},
+			{
+				"tagName": "Quest.Commission.Artisan.Gathering.Fishing"
+			},
+			{
+				"tagName": "Biome.TabletopMountains"
+			}
+		],
+		"parentTags": [
+			{
+				"tagName": "Quest.Commission.Tier"
+			},
+			{
+				"tagName": "Quest.Commission"
+			},
+			{
+				"tagName": "Quest"
+			},
+			{
+				"tagName": "Quest.Commission.Artisan.Gathering"
+			},
+			{
+				"tagName": "Quest.Commission.Artisan"
+			},
+			{
+				"tagName": "Biome"
+			}
+		]
+	},
+	"preRequisiteQuestsIds": [],
+	"autoFailTimer": -1,
+	"bRepeatable": false,
+	"mainObjectiveType": "Collect",
+	"commissionSection": 2,
+	"biomeOrigin": "FloodPlains",
+	"bFromDynamicContent": false,
+	"availabilityExpression":
+	{
+		"expression": ""
+	},
+	"bDisabled": false,
+	"level": 44,
+	"commissionRarity": "Rare",
+	"objectivesIds": [
+		{
+			"guid": "6064633968062038034",
+			"typeId": "1091110420",
+			"name": "None"
+		},
+		{
+			"guid": "6064633968068853781",
+			"typeId": "1091110420",
+			"name": "None"
+		}
+	],
+	"allowMultipleCompletion": false,
+	"commissionName": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"7E74D25243EC183B2C0EEDB063BA01E4\", \"Latchlip Luster\")",
+	"flavorText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"757FAF8740B18736796978A79861741D\", \"\\\"The Latchlip is a dangeorus fish, but the luster of its metallic hide is enough to draw ones hook into the coldest waters.\\\" - Thollik Underhook\")",
+	"mainObjectiveText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"719EB07E42715F8D1CF693B88B407039\", \"Fish Latchlip from the waters in the Anvils\")",
+	"rewardTablesIds": [
+		{
+			"guid": "6064632139973328976",
+			"typeId": "1091110040",
+			"name": "None"
+		}
+	],
+	"additionalRewardTablesIds": [],
+	"calloutName": "",
+	"calloutDescription": "",
+	"bCanProgressWhileInRaid": false,
+	"expiration":
+	{
+		"duration": "0"
+	},
+	"cooldown":
+	{
+		"duration": "0"
+	},
+	"moneyCost": "0",
+	"resourceCost": [],
+	"mayoralCompletionCount": 0,
+	"rewardId":
+	{
+		"guid": "0",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"bNodeTargeted": false,
+	"targetRewardId":
+	{
+		"guid": "0",
+		"typeId": "1091110050",
+		"name": "None"
+	},
+	"questItemListIds": [],
+	"storedGraph":
+	{
+		"nodes": []
+	},
+	"guid": "6064633967976710154",
+	"name": "COM_ANV_Gather_Fish_T5_Latchlip",
+	"typeId": "280002"
+}

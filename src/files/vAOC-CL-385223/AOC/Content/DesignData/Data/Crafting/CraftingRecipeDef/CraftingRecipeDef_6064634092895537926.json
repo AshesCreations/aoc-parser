@@ -1,0 +1,185 @@
+{
+	"availabilityPredicates": [
+		{
+			"type": "BuildingModification",
+			"nodes": [],
+			"nodeLevel": "Wilderness",
+			"biomes": [],
+			"modifications": [
+				{
+					"guid": "6064634161294409806",
+					"typeId": "1091110048",
+					"name": "None"
+				}
+			],
+			"bHidden": true
+		},
+		{
+			"type": "Biome",
+			"nodes": [],
+			"nodeLevel": "Wilderness",
+			"biomes": [
+				"Tropics"
+			],
+			"modifications": [],
+			"bHidden": true
+		}
+	],
+	"professionId":
+	{
+		"guid": "108752746862200",
+		"typeId": "8125613373123",
+		"name": "None"
+	},
+	"certificationLevelId":
+	{
+		"guid": "108906342012538",
+		"typeId": "455189666431",
+		"name": "None"
+	},
+	"learnable": true,
+	"overrideName": "",
+	"overrideIcon": "None",
+	"categoryTag":
+	{
+		"tagName": "Item.Gear.Weapon.Spear"
+	},
+	"difficulty": 0,
+	"defaultQuality": 0,
+	"fuel": 0,
+	"fuelTags":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"bUseOverrides": false,
+	"overrides": [],
+	"nodeLevel": "Wilderness",
+	"levelingTemplateId":
+	{
+		"guid": "0",
+		"typeId": "4565416516154",
+		"name": "None"
+	},
+	"baseDuration": 2,
+	"durationFormula":
+	{
+		"expression": ""
+	},
+	"qualityFormula":
+	{
+		"expression": "GetCraftingRecipeQuality() + EvalFormula($Formula:Artisan_Crafting_Weaponsmithing_Quality$)"
+	},
+	"quantityFormula":
+	{
+		"expression": ""
+	},
+	"minimumQuantityFormula":
+	{
+		"expression": ""
+	},
+	"maximumQuantityFormula":
+	{
+		"expression": ""
+	},
+	"rewardId":
+	{
+		"guid": "6064634092895537927",
+		"typeId": "1091110040",
+		"name": "None"
+	},
+	"distributionRewardId":
+	{
+		"guid": "0",
+		"typeId": "1091111337",
+		"name": "None"
+	},
+	"itemDestination": "Inventory",
+	"primaryResourceCosts": [
+		{
+			"rarity": "Common",
+			"item":
+			{
+				"guid": "6064634088228913570",
+				"typeId": "1091110003",
+				"name": "None"
+			},
+			"quantity": 60,
+			"bConsumeInCrafting": true
+		}
+	],
+	"generalResourceCost": [
+		{
+			"minRarity": "Common",
+			"costGatherItemFilter":
+			{
+				"guid": "0",
+				"typeId": "1091110041",
+				"name": "None"
+			},
+			"materialTags":
+			{
+				"gameplayTags": [],
+				"parentTags": []
+			},
+			"item":
+			{
+				"guid": "6064630417661755491",
+				"typeId": "1091110003",
+				"name": "None"
+			},
+			"quantity": 74,
+			"bConsumeInCrafting": true
+		},
+		{
+			"minRarity": "Common",
+			"costGatherItemFilter":
+			{
+				"guid": "0",
+				"typeId": "1091110041",
+				"name": "None"
+			},
+			"materialTags":
+			{
+				"gameplayTags": [],
+				"parentTags": []
+			},
+			"item":
+			{
+				"guid": "6064633328376610857",
+				"typeId": "1091110003",
+				"name": "None"
+			},
+			"quantity": 25,
+			"bConsumeInCrafting": true
+		}
+	],
+	"standardCurrencyCost":
+	{
+		"expression": ""
+	},
+	"craftingCurrencyCostId":
+	{
+		"guid": "6064631154783551495",
+		"typeId": "9565237358",
+		"name": "None"
+	},
+	"subRecipesIds": [],
+	"skillTreeSpecializationId":
+	{
+		"guid": "0",
+		"typeId": "30316003",
+		"name": "None"
+	},
+	"bCanFastCraft": true,
+	"bCanGameplayLayer": true,
+	"weaponsmithingInfoId":
+	{
+		"guid": "0",
+		"typeId": "1636976253",
+		"name": "None"
+	},
+	"guid": "6064634092895537926",
+	"name": "Weaponsmithing_T3_Weapon_Spear_2H_SeabrightMag",
+	"typeId": "163697"
+}

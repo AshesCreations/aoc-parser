@@ -1,0 +1,41 @@
+{
+	"spawnTag":
+	{
+		"tagName": "None"
+	},
+	"actorToSpawn": "/Game/DesignAssets/Population/NPC/Beast/Scorpion/Scorpion_Small_SklarishaNymph.Scorpion_Small_SklarishaNymph_C",
+	"bPersistAfterInstigatorsDeath": true,
+	"spawnLocationType": "LOC_RelativeOffset",
+	"location":
+	{
+		"x": -200,
+		"y": 0,
+		"z": 0
+	},
+	"bSpawnFacingInstigatorsRotation": false,
+	"rotation":
+	{
+		"pitch": 0,
+		"yaw": 0,
+		"roll": 0
+	},
+	"triggerType": 0,
+	"spawnRadius": 0,
+	"spawnExtent": 1000,
+	"trackSpawnedNpcOnInstigator": true,
+	"targetSpawnLocationContext":
+	{
+		"expression": "GetLocation(GetTarget()) - (GetActorRight(GetTarget()) * (RandIntRange(300, 500) * 1.0))"
+	},
+	"spawnExpressions": [],
+	"spawnedCharacterLevelOffset": 0,
+	"bSpecifyAbsoluteLevel": false,
+	"addThreatsFromCreator": true,
+	"copyThreatValuesFromCreator": false,
+	"blackboardKeysToSet":
+	{
+	},
+	"guid": "6064633134988591106",
+	"name": "SpawnNPC_Sklarisha_ScorpionNymph1",
+	"typeId": "3031600204"
+}

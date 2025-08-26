@@ -1,0 +1,165 @@
+{
+	"listings": [
+		{
+			"itemId":
+			{
+				"guid": "6064633974243131410",
+				"typeId": "1091110003",
+				"name": "None"
+			},
+			"itemVariation":
+			{
+				"guid": "6064629086629396481",
+				"typeId": "1091111111",
+				"name": "None"
+			},
+			"availabilityPredicates": [],
+			"bHiddenIfUnavailable": false,
+			"offers": []
+		},
+		{
+			"itemId":
+			{
+				"guid": "6064633974243131410",
+				"typeId": "1091110003",
+				"name": "None"
+			},
+			"itemVariation":
+			{
+				"guid": "6064629086625660928",
+				"typeId": "1091111111",
+				"name": "None"
+			},
+			"availabilityPredicates": [
+				{
+					"availabilityPredicate":
+					{
+						"expression": "GetNodeToPlayerReputationRank() == ENodeReputationRank::Peasant\r\n|| GetNodeToPlayerReputationRank() == ENodeReputationRank::Commoner\r\n|| GetNodeToPlayerReputationRank() == ENodeReputationRank::Liege\r\n|| GetNodeToPlayerReputationRank() == ENodeReputationRank::Noble\r\n|| GetNodeToPlayerReputationRank() == ENodeReputationRank::Aristocrat"
+					},
+					"failureReason": "LOCTABLE(\"/Game/UI/StringTables/UINodesStringTable.UINodesStringTable\", \"InsufficientNodeRep\")",
+					"bHiddenIfUnavailable": false
+				}
+			],
+			"bHiddenIfUnavailable": false,
+			"offers": []
+		},
+		{
+			"itemId":
+			{
+				"guid": "6064633974243131410",
+				"typeId": "1091110003",
+				"name": "None"
+			},
+			"itemVariation":
+			{
+				"guid": "6064629086637654018",
+				"typeId": "1091111111",
+				"name": "None"
+			},
+			"availabilityPredicates": [
+				{
+					"availabilityPredicate":
+					{
+						"expression": "GetNodeToPlayerReputationRank() == ENodeReputationRank::Commoner\r\n|| GetNodeToPlayerReputationRank() == ENodeReputationRank::Liege\r\n|| GetNodeToPlayerReputationRank() == ENodeReputationRank::Noble\r\n|| GetNodeToPlayerReputationRank() == ENodeReputationRank::Aristocrat"
+					},
+					"failureReason": "LOCTABLE(\"/Game/UI/StringTables/UINodesStringTable.UINodesStringTable\", \"InsufficientNodeRep\")",
+					"bHiddenIfUnavailable": false
+				}
+			],
+			"bHiddenIfUnavailable": false,
+			"offers": []
+		},
+		{
+			"itemId":
+			{
+				"guid": "6064633974243131410",
+				"typeId": "1091110003",
+				"name": "None"
+			},
+			"itemVariation":
+			{
+				"guid": "6064629086638571523",
+				"typeId": "1091111111",
+				"name": "None"
+			},
+			"availabilityPredicates": [
+				{
+					"availabilityPredicate":
+					{
+						"expression": "GetNodeToPlayerReputationRank() == ENodeReputationRank::Liege\r\n|| GetNodeToPlayerReputationRank() == ENodeReputationRank::Noble\r\n|| GetNodeToPlayerReputationRank() == ENodeReputationRank::Aristocrat"
+					},
+					"failureReason": "LOCTABLE(\"/Game/UI/StringTables/UINodesStringTable.UINodesStringTable\", \"InsufficientNodeRep\")",
+					"bHiddenIfUnavailable": false
+				}
+			],
+			"bHiddenIfUnavailable": false,
+			"offers": []
+		},
+		{
+			"itemId":
+			{
+				"guid": "6064633974243131410",
+				"typeId": "1091110003",
+				"name": "None"
+			},
+			"itemVariation":
+			{
+				"guid": "6064630656024512047",
+				"typeId": "1091111111",
+				"name": "None"
+			},
+			"availabilityPredicates": [
+				{
+					"availabilityPredicate":
+					{
+						"expression": "GetNodeToPlayerReputationRank() == ENodeReputationRank::Noble\r\n|| GetNodeToPlayerReputationRank() == ENodeReputationRank::Aristocrat"
+					},
+					"failureReason": "LOCTABLE(\"/Game/UI/StringTables/UINodesStringTable.UINodesStringTable\", \"InsufficientNodeRep\")",
+					"bHiddenIfUnavailable": false
+				}
+			],
+			"bHiddenIfUnavailable": false,
+			"offers": []
+		},
+		{
+			"itemId":
+			{
+				"guid": "6064633974243131410",
+				"typeId": "1091110003",
+				"name": "None"
+			},
+			"itemVariation":
+			{
+				"guid": "6064630656031131184",
+				"typeId": "1091111111",
+				"name": "None"
+			},
+			"availabilityPredicates": [
+				{
+					"availabilityPredicate":
+					{
+						"expression": "GetNodeToPlayerReputationRank() == ENodeReputationRank::Aristocrat"
+					},
+					"failureReason": "LOCTABLE(\"/Game/UI/StringTables/UINodesStringTable.UINodesStringTable\", \"InsufficientNodeRep\")",
+					"bHiddenIfUnavailable": false
+				}
+			],
+			"bHiddenIfUnavailable": false,
+			"offers": []
+		}
+	],
+	"availabilityPredicates": [
+		{
+			"availabilityPredicate":
+			{
+				"expression": "Node_GetActorCityNode(GetInteractionTarget()) == $#1323521343:6064633447998161890$"
+			},
+			"failureReason": "",
+			"bHiddenIfUnavailable": false
+		}
+	],
+	"bHiddenIfUnavailable": true,
+	"guid": "6064633980235808779",
+	"name": "Node_Vendor_CommodityCerts_JUN_JundarkWest",
+	"typeId": "3145314714"
+}

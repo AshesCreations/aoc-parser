@@ -1,0 +1,71 @@
+{
+	"interactDisplayName": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"5F4089AA41AEF54016ABC7880C8409CB\", \"Relic Crate\")",
+	"interactRadius": 200,
+	"interactionLocation":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"interactionRotation":
+	{
+		"pitch": 0,
+		"yaw": 0,
+		"roll": 0
+	},
+	"spawnAtBottomCapsule": false,
+	"discoveryDistance": 200,
+	"interactTolerance": 10,
+	"interactAngle": 0,
+	"bRequireLOS": false,
+	"busyTime": 0.89999997615814209,
+	"clientBusyTime": 1,
+	"bCanCharacterAttach": false,
+	"attachmentSocketName": "None",
+	"interactInputPoints":
+	{
+		"interactInput1":
+		{
+			"displayIcon": "/Game/UI/Icons/InteractPrompt/TUI_Icon_Interaction_PickUpCrate.TUI_Icon_Interaction_PickUpCrate",
+			"defaultState": "PublicInteraction",
+			"playerInteractDefinition":
+			{
+				"guid": "6064633770605478014",
+				"typeId": "1091110031",
+				"name": "None"
+			},
+			"pointSpecificChannelAnimation": "/Game/Characters/Animations/00_BASE/All_PickUpCrate_M_Montage.All_PickUpCrate_M_Montage",
+			"bCanCharacterAttach": false,
+			"attachmentSocketName": "None",
+			"bShouldCharacterBeHidden": false,
+			"bShouldHeldItemsBeHidden": false,
+			"attachmentAnimation": "None",
+			"detachmentSocketName": "None",
+			"bDoesAttachmentRealignCamera": true,
+			"bHasCustomAttachmentUI": true,
+			"bCannotBeActivated": false,
+			"location":
+			{
+				"x": 0,
+				"y": 0,
+				"z": 0
+			},
+			"rotation":
+			{
+				"pitch": 0,
+				"yaw": 0,
+				"roll": 0
+			},
+			"interactionRotation":
+			{
+				"pitch": 0,
+				"yaw": 0,
+				"roll": 0
+			},
+			"failMessage": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"0B21665D451291BDB69CC29949095049\", \"Cannot pickup crate.  Only one crate may be carried.\")"
+		}
+	},
+	"guid": "6064634121857794048",
+	"name": "ICD_RelicCargoActor",
+	"typeId": "65484634315"
+}

@@ -1,0 +1,35 @@
+{
+	"listings": [
+		{
+			"itemId":
+			{
+				"guid": "6064630417660903450",
+				"typeId": "1091110003",
+				"name": "None"
+			},
+			"itemVariation":
+			{
+				"guid": "0",
+				"typeId": "1091111111",
+				"name": "None"
+			},
+			"availabilityPredicates": [],
+			"bHiddenIfUnavailable": false,
+			"offers": []
+		}
+	],
+	"availabilityPredicates": [
+		{
+			"availabilityPredicate":
+			{
+				"expression": "Node_IsPlotExpansionEnabled(Node_GetActorCityNode(GetInteractionTarget()),Node_GetActorPlotRecord(GetInteractionTarget()),$#7823461:6064631873800634382$)"
+			},
+			"failureReason": "",
+			"bHiddenIfUnavailable": false
+		}
+	],
+	"bHiddenIfUnavailable": false,
+	"guid": "6064630564130848845",
+	"name": "Cooking_Vendor_T3",
+	"typeId": "3145314714"
+}

@@ -1,0 +1,79 @@
+{
+	"populationInteractZone":
+	{
+		"zoneFGuid": "00000000000000000000000000000000",
+		"owningVolumeGuid": "0",
+		"location":
+		{
+			"x": -551200,
+			"y": 577840,
+			"z": 13420
+		},
+		"extents":
+		{
+			"x": 10000,
+			"y": 10000,
+			"z": 3000
+		},
+		"rotation":
+		{
+			"pitch": 0,
+			"yaw": 0,
+			"roll": 0
+		},
+		"bUseInternalLocation": true,
+		"bUseInternalRotation": true,
+		"bUseInternalExtents": true,
+		"actions": [
+			{
+				"actionType": "RemoveSpawns",
+				"actionResponses": [],
+				"filters":
+				{
+					"tagsIncludeFilter":
+					{
+						"tokenStreamVersion": 0,
+						"tagDictionary": [],
+						"queryTokenStream": [],
+						"userDescription": "",
+						"autoDescription": ""
+					},
+					"tagsExcludeFilter":
+					{
+						"tokenStreamVersion": 0,
+						"tagDictionary": [],
+						"queryTokenStream": [],
+						"userDescription": "",
+						"autoDescription": ""
+					},
+					"popSetsIncludeFilter": [],
+					"popSetsExcludeFilter": [
+						{
+							"guid": "6064631544313217024",
+							"typeId": "5111005",
+							"name": "None"
+						},
+						{
+							"guid": "6064631002109183361",
+							"typeId": "5111005",
+							"name": "None"
+						},
+						{
+							"guid": "6064631266811314414",
+							"typeId": "5111005",
+							"name": "None"
+						},
+						{
+							"guid": "6064631034402308098",
+							"typeId": "5111005",
+							"name": "None"
+						}
+					]
+				}
+			}
+		]
+	},
+	"guid": "6064634166894331098",
+	"name": "ProgE_RVR_0002_TitansRing_RisenRanks_InteractVolume",
+	"typeId": "5111069"
+}

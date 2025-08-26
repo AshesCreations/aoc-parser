@@ -1,0 +1,33 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 4,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0,
+		"fishingEvents": 0,
+		"statEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "GetSkillPurchased(GetInstigator(),$#30316003:6064630422842835238$,$#981011333:6064632739262235524$) &&\r\nGetEffectCountByRecordAndInstigator(GetSource(), $#30316002:6064634177300817504$, GetInstigator()) == 0 &&\r\nGetNumTargets(GetHitEvent()) == 0"
+	},
+	"bEvaluateApplyingHit": false,
+	"instigator": "Owner",
+	"targetsBitmask": 4,
+	"reactHitsIds": [
+		{
+			"guid": "6064634177225838055",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"instigatorProcLimit": 0,
+	"globalProcLimit": 0,
+	"procReactOnApply": false,
+	"guid": "6064634177200081135",
+	"name": "Rogue_Unstable_Affliction",
+	"typeId": "3031600202"
+}

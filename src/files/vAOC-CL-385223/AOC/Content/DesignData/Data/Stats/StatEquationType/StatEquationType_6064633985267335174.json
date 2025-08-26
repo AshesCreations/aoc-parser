@@ -1,0 +1,12 @@
+{
+	"equation":
+	{
+		"expression": "//Get the vector distance between crate's origin point and vendor that's being interacted with\r\nconst Distance = GetDistanceBetween(Item_GetNodePurchasedFrom(),GetCurrentNode(GetPlayer()));\r\n// Minimum movement speed on Caravans\r\nconst CaravanMovespeed = 2.0;\r\n//Multipler for PvP Event\r\nconst PvPMult = 1;\r\n//Copper earned per minute at level 10\r\nconst CopperPerMinute = 44.80716915;\r\n//Minium amount of copper expected to earn per crate per trip\r\nconst MinAmountCopperEarned = 805.1997224;\r\n//Distance Multiplier calculation\r\nconst DistanceMult = (Distance / 100 / CaravanMoveSpeed / 60) * CopperPerMinute / MinAmountCopperEarned;\r\n//Getting the origin node and destination node by checking the crate's origin and player's location to get the economic region multiplier\r\nconst EconomicRegionMult = GetEconomicRegionMultiplierFromNodeToNode(Item_GetNodePurchasedFrom(),GetCurrentNode(GetPlayer()));\r\n//Getting the turn in multiplier from a curve that checks how many turn in has happened at destination node\r\nconst TurnInMult = EvalCurve($#10516612381411114:6064634053976784898$, Float(GetTurnInOverPreviousDays()));\r\n//The final multiplier that gets multiplied to \r\nvar FinalMult = 1.0;\r\n\r\n//Set the final mult to be 0.1 when it's from the same node\r\nif((ItemTypeTagsContains(\"Item.Crate.Commodity.Market\") || \r\nItemTypeTagsContains(\"Item.Crate.Commodity.Node\") || \r\nItemTypeTagsContains(\"Item.Crate.Commodity.Citizen\") || \r\nItemTypeTagsContains(\"Item.Crate.Commodity.Construction\") || \r\nItemTypeTagsContains(\"Item.Crate.Commodity.Guild\") || \r\nItemTypeTagsContains(\"Item.Crate.Commodity.Harbor\")) == true){\r\n    if(Item_GetNodePurchasedFrom() == GetCurrentNode(GetPlayer())){\r\n        if(GetBaseItemValue()<10.0){\r\n            set FinalMult = 1.0;\r\n        }else{\r\n            set FinalMult = 0.1;\r\n        }\r\n    }else{\r\n        set FinalMult = DistanceMult * EconomicRegionMult * TurnInMult;\r\n    }\r\n}\r\n\r\nFinalMult"
+	},
+	"constraints":
+	{
+	},
+	"guid": "6064633985267335174",
+	"name": "Commodity_Sell_PriceMult",
+	"typeId": "10516612381411112"
+}
