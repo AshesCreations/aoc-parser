@@ -39,7 +39,7 @@ function processJsonFiles(folderPath, outputFile) {
       return;
     }
 
-    // Object to store guid -> displayName mappings
+    // Object to store guid -> itemId mappings
     const rewardTableIdToItemIdMap = {};
 
     // Process each JSON file
@@ -49,18 +49,26 @@ function processJsonFiles(folderPath, outputFile) {
         const fileContent = fs.readFileSync(filePath, "utf8");
         const jsonData = JSON.parse(fileContent);
 
-        // Check if the required fields exist
-        const rewardList =
-          jsonData?.rewardDefContainers?.[0]?.rewards?.[0]?.itemRewards;
-        if (jsonData.guid && rewardList) {
-          // Extract each item reward id
-          let rewardData = [];
-          for (const item of rewardList) {
-            rewardData.push(item.item?.itemId?.guid);
-          }
+        const containers = jsonData?.rewardDefContainers || [];
+        if (jsonData.guid && containers.length > 0) {
+          const rewardData = new Set();
 
-          // Add to mapping
-          rewardTableIdToItemIdMap[jsonData.guid] = rewardData;
+          containers.forEach((container) => {
+            const rewards = container?.rewards || [];
+            rewards.forEach((reward) => {
+              const items = reward?.itemRewards || [];
+              items.forEach((item) => {
+                const id = item?.item?.itemId?.guid;
+                if (id && id !== "0") {
+                  rewardData.add(id);
+                }
+              });
+            });
+          });
+
+          if (rewardData.size > 0) {
+            rewardTableIdToItemIdMap[jsonData.guid] = Array.from(rewardData);
+          }
         }
       } catch (fileError) {
         console.error(`Error processing file ${file}: ${fileError.message}`);
