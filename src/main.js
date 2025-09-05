@@ -19,7 +19,7 @@ import { processSetBonusFiles } from "./processor/set-bonus.js";
 import { processEnchantmentDefFiles } from "./processor/enchantment-def.js";
 import { processEnchantmentLevelFiles } from "./processor/enchantment-level.js";
 import { processRecipeFiles } from "./processor/recipe.js";
-import { processLootFiles } from "./processor/loot.js";
+import { processLootFiles } from "./processor/loot-fast.js";
 import { processSkillTables } from "./processor/skill-table.js";
 import { processStatusEffects } from "./processor/status-effects.js";
 import { processPlayerStats } from "./processor/player-stats.js";

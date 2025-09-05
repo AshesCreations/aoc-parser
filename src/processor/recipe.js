@@ -31,6 +31,7 @@ async function processRecipeFiles(
 
     console.log(`Found ${jsonFiles.length} JSON files to process`);
     let totalItemsProcessed = 0;
+    let errorCount = 0;
     let itemsByProfession = {};
     let itemsByCertification = {};
 
@@ -96,14 +97,12 @@ async function processRecipeFiles(
           if (recipe.rewardId) {
             let id = rewardId[recipe.rewardId];
             if (!id) {
-              console.log(
-                `Warning: [${recipe.name}][${recipe.id}] Recipe reward id is undefined.`
-              );
+              // Silently skip undefined reward IDs - track in error counter instead
+              errorCount++;
               id = [];
             } else if (id.length === 0) {
-              console.log(
-                `Warning: [${recipe.name}][${recipe.id}] Recipe reward id is empty.`
-              );
+              // Silently skip empty reward IDs
+              errorCount++;
             }
             if (id?.[0] === "0") {
               console.log(
@@ -131,9 +130,11 @@ async function processRecipeFiles(
           totalItemsProcessed++;
         }
       } catch (error) {
-        console.log(error);
+        errorCount++;
       }
     }
+
+    console.log(`Recipe processing complete: ${totalItemsProcessed} successful, ${errorCount} failed`);
 
     // Create summary of recipes by profession
     let professionSummary = "";

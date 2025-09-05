@@ -765,12 +765,27 @@ async function saveLootInfoToDatabase(loot) {
     await ensureColumn(client, 'DatabaseLootInfo', 'worldSpawnLocation', 'TEXT');
     await ensureColumn(client, 'DatabaseLootInfo', 'zoneCoordinates', 'JSON');
     await ensureColumn(client, 'DatabaseLootInfo', 'worldCoordinates', 'JSON');
+    await ensureColumn(client, 'DatabaseLootInfo', 'sourceType', 'VARCHAR(50)');
+    await ensureColumn(client, 'DatabaseLootInfo', 'recipeName', 'TEXT');
+    await ensureColumn(client, 'DatabaseLootInfo', 'tokenName', 'TEXT');
+    await ensureColumn(client, 'DatabaseLootInfo', 'tokenLevel', 'INT');
+    await ensureColumn(client, 'DatabaseLootInfo', 'profession', 'TEXT');
+    await ensureColumn(client, 'DatabaseLootInfo', 'certification', 'TEXT');
+    await ensureColumn(client, 'DatabaseLootInfo', 'materials', 'JSON');
+    await ensureColumn(client, 'DatabaseLootInfo', 'levelBasedChances', 'JSON');
+    await ensureColumn(client, 'DatabaseLootInfo', 'dropChancePerRoll', 'DECIMAL(10,8)');
+    await ensureColumn(client, 'DatabaseLootInfo', 'rolls', 'INT');
+    await ensureColumn(client, 'DatabaseLootInfo', 'poolSize', 'INT');
+    await ensureColumn(client, 'DatabaseLootInfo', 'rewardTableId', 'VARCHAR(50)');
+
     const query = `
       INSERT INTO \`DatabaseLootInfo\` (
         id, itemId, itemName, questName, step, npcName, levelMin, levelMax,
-        difficulty, zone, worldSpawnLocation, spawnRate, dropChance, zoneCoordinates, worldCoordinates
+        difficulty, zone, worldSpawnLocation, spawnRate, dropChance, zoneCoordinates, worldCoordinates,
+        sourceType, recipeName, tokenName, tokenLevel, profession, certification, materials,
+        levelBasedChances, dropChancePerRoll, rolls, poolSize, rewardTableId
       ) VALUES (
-        ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+        ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
       ) ON DUPLICATE KEY UPDATE
         itemName = VALUES(itemName),
         questName = VALUES(questName),
@@ -785,6 +800,18 @@ async function saveLootInfoToDatabase(loot) {
         dropChance = VALUES(dropChance),
         zoneCoordinates = VALUES(zoneCoordinates),
         worldCoordinates = VALUES(worldCoordinates),
+        sourceType = VALUES(sourceType),
+        recipeName = VALUES(recipeName),
+        tokenName = VALUES(tokenName),
+        tokenLevel = VALUES(tokenLevel),
+        profession = VALUES(profession),
+        certification = VALUES(certification),
+        materials = VALUES(materials),
+        levelBasedChances = VALUES(levelBasedChances),
+        dropChancePerRoll = VALUES(dropChancePerRoll),
+        rolls = VALUES(rolls),
+        poolSize = VALUES(poolSize),
+        rewardTableId = VALUES(rewardTableId),
         lastModified = CURRENT_TIMESTAMP
     `;
     const values = [
@@ -802,9 +829,235 @@ async function saveLootInfoToDatabase(loot) {
       loot.spawnRate ?? null,
       loot.dropChance ?? null,
       JSON.stringify(loot.zoneCoordinates || {}),
-      JSON.stringify(loot.worldCoordinates || {})
+      JSON.stringify(loot.worldCoordinates || {}),
+      loot.sourceType ?? null,
+      loot.recipeName ?? null,
+      loot.tokenName ?? null,
+      loot.tokenLevel ?? null,
+      loot.profession ?? null,
+      loot.certification ?? null,
+      JSON.stringify(loot.materials || []),
+      JSON.stringify(loot.levelBasedChances || []),
+      loot.dropChancePerRoll ?? null,
+      loot.rolls ?? null,
+      loot.poolSize ?? null,
+      loot.rewardTableId ?? null
     ];
     await client.execute(query, values);
+  } finally {
+    client.release();
+  }
+}
+
+/**
+ * Batch version of saveLootInfoToDatabase to save multiple loot entries at once
+ * @param {Array} lootEntries - Array of loot entry objects to save
+ */
+async function batchSaveLootInfoToDatabase(lootEntries) {
+  if (!lootEntries || lootEntries.length === 0) {
+    return;
+  }
+
+  const client = await pool.getConnection();
+  try {
+    await ensureLastModifiedColumn(client, 'DatabaseLootInfo');
+    await ensureColumn(client, 'DatabaseLootInfo', 'itemName', 'TEXT');
+    await ensureColumn(client, 'DatabaseLootInfo', 'worldSpawnLocation', 'TEXT');
+    await ensureColumn(client, 'DatabaseLootInfo', 'zoneCoordinates', 'JSON');
+    await ensureColumn(client, 'DatabaseLootInfo', 'worldCoordinates', 'JSON');
+    await ensureColumn(client, 'DatabaseLootInfo', 'sourceType', 'VARCHAR(50)');
+    await ensureColumn(client, 'DatabaseLootInfo', 'recipeName', 'TEXT');
+    await ensureColumn(client, 'DatabaseLootInfo', 'tokenName', 'TEXT');
+    await ensureColumn(client, 'DatabaseLootInfo', 'tokenLevel', 'INT');
+    await ensureColumn(client, 'DatabaseLootInfo', 'profession', 'TEXT');
+    await ensureColumn(client, 'DatabaseLootInfo', 'certification', 'TEXT');
+    await ensureColumn(client, 'DatabaseLootInfo', 'materials', 'JSON');
+    await ensureColumn(client, 'DatabaseLootInfo', 'levelBasedChances', 'JSON');
+    await ensureColumn(client, 'DatabaseLootInfo', 'dropChancePerRoll', 'DECIMAL(10,8)');
+    await ensureColumn(client, 'DatabaseLootInfo', 'rolls', 'INT');
+    await ensureColumn(client, 'DatabaseLootInfo', 'poolSize', 'INT');
+    await ensureColumn(client, 'DatabaseLootInfo', 'rewardTableId', 'VARCHAR(50)');
+
+    // Begin transaction
+    await client.query("BEGIN");
+
+    const query = `
+      INSERT INTO \`DatabaseLootInfo\` (
+        id, itemId, itemName, questName, step, npcName, levelMin, levelMax,
+        difficulty, zone, worldSpawnLocation, spawnRate, dropChance, zoneCoordinates, worldCoordinates,
+        sourceType, recipeName, tokenName, tokenLevel, profession, certification, materials,
+        levelBasedChances, dropChancePerRoll, rolls, poolSize, rewardTableId
+      ) VALUES (
+        ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+      ) ON DUPLICATE KEY UPDATE
+        itemName = VALUES(itemName),
+        questName = VALUES(questName),
+        step = VALUES(step),
+        npcName = VALUES(npcName),
+        levelMin = VALUES(levelMin),
+        levelMax = VALUES(levelMax),
+        difficulty = VALUES(difficulty),
+        zone = VALUES(zone),
+        worldSpawnLocation = VALUES(worldSpawnLocation),
+        spawnRate = VALUES(spawnRate),
+        dropChance = VALUES(dropChance),
+        zoneCoordinates = VALUES(zoneCoordinates),
+        worldCoordinates = VALUES(worldCoordinates),
+        sourceType = VALUES(sourceType),
+        recipeName = VALUES(recipeName),
+        tokenName = VALUES(tokenName),
+        tokenLevel = VALUES(tokenLevel),
+        profession = VALUES(profession),
+        certification = VALUES(certification),
+        materials = VALUES(materials),
+        levelBasedChances = VALUES(levelBasedChances),
+        dropChancePerRoll = VALUES(dropChancePerRoll),
+        rolls = VALUES(rolls),
+        poolSize = VALUES(poolSize),
+        rewardTableId = VALUES(rewardTableId),
+        lastModified = CURRENT_TIMESTAMP
+    `;
+
+    // Process in batches of 100 entries
+    const batchSize = 100;
+    for (let i = 0; i < lootEntries.length; i += batchSize) {
+      const batch = lootEntries.slice(i, i + batchSize);
+      const promises = batch.map((loot) => {
+        const values = [
+          loot.id,
+          loot.itemId,
+          loot.itemName,
+          loot.questName,
+          loot.step,
+          loot.npcName,
+          loot.levelMin ?? null,
+          loot.levelMax ?? null,
+          loot.difficulty ?? null,
+          loot.zone ?? null,
+          loot.worldSpawnLocation ?? null,
+          loot.spawnRate ?? null,
+          loot.dropChance ?? null,
+          JSON.stringify(loot.zoneCoordinates || {}),
+          JSON.stringify(loot.worldCoordinates || {}),
+          loot.sourceType ?? null,
+          loot.recipeName ?? null,
+          loot.tokenName ?? null,
+          loot.tokenLevel ?? null,
+          loot.profession ?? null,
+          loot.certification ?? null,
+          JSON.stringify(loot.materials || []),
+          JSON.stringify(loot.levelBasedChances || []),
+          loot.dropChancePerRoll ?? null,
+          loot.rolls ?? null,
+          loot.poolSize ?? null,
+          loot.rewardTableId ?? null
+        ];
+        return client.execute(query, values);
+      });
+
+      // Execute all queries in this batch
+      await Promise.all(promises);
+    }
+
+    // Commit the transaction
+    await client.query("COMMIT");
+
+    console.log(`Successfully saved ${lootEntries.length} loot entries in batch operation`);
+  } catch (error) {
+    // Rollback in case of error
+    await client.query("ROLLBACK");
+    console.error(`Error in batch save operation: ${error.message}`);
+    throw error;
+  } finally {
+    client.release();
+  }
+}
+
+/**
+ * Batch version of saveMobLootInfoToDatabase to save monster loot entries only
+ * @param {Array} mobLootEntries - Array of monster loot entry objects to save
+ */
+async function batchSaveMobLootInfoToDatabase(mobLootEntries) {
+  if (!mobLootEntries || mobLootEntries.length === 0) {
+    return;
+  }
+
+  const client = await pool.getConnection();
+  try {
+    // Ensure table exists with proper schema for monster loot only
+    await ensureLastModifiedColumn(client, 'DatabaseMobLootInfo');
+
+    // Begin transaction
+    await client.query("BEGIN");
+
+    const query = `
+      INSERT INTO \`DatabaseMobLootInfo\` (
+        id, itemId, itemName, npcName, levelMin, levelMax, difficulty, zone,
+        worldSpawnLocation, spawnRate, dropChance, zoneCoordinates, worldCoordinates,
+        levelBasedChances, dropChancePerRoll, rolls, poolSize, rewardTableId
+      ) VALUES (
+        ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+      ) ON DUPLICATE KEY UPDATE
+        itemName = VALUES(itemName),
+        npcName = VALUES(npcName),
+        levelMin = VALUES(levelMin),
+        levelMax = VALUES(levelMax),
+        difficulty = VALUES(difficulty),
+        zone = VALUES(zone),
+        worldSpawnLocation = VALUES(worldSpawnLocation),
+        spawnRate = VALUES(spawnRate),
+        dropChance = VALUES(dropChance),
+        zoneCoordinates = VALUES(zoneCoordinates),
+        worldCoordinates = VALUES(worldCoordinates),
+        levelBasedChances = VALUES(levelBasedChances),
+        dropChancePerRoll = VALUES(dropChancePerRoll),
+        rolls = VALUES(rolls),
+        poolSize = VALUES(poolSize),
+        rewardTableId = VALUES(rewardTableId),
+        lastModified = CURRENT_TIMESTAMP
+    `;
+
+    // Process in batches of 100 entries
+    const batchSize = 100;
+    for (let i = 0; i < mobLootEntries.length; i += batchSize) {
+      const batch = mobLootEntries.slice(i, i + batchSize);
+      const promises = batch.map((loot) => {
+        const values = [
+          loot.id,
+          loot.itemId,
+          loot.itemName,
+          loot.npcName,
+          loot.levelMin ?? null,
+          loot.levelMax ?? null,
+          loot.difficulty ?? null,
+          loot.zone ?? null,
+          loot.worldSpawnLocation ?? null,
+          loot.spawnRate ?? null,
+          loot.dropChance ?? null,
+          JSON.stringify(loot.zoneCoordinates || {}),
+          JSON.stringify(loot.worldCoordinates || {}),
+          JSON.stringify(loot.levelBasedChances || []),
+          loot.dropChancePerRoll ?? null,
+          loot.rolls ?? null,
+          loot.poolSize ?? null,
+          loot.rewardTableId ?? null
+        ];
+        return client.execute(query, values);
+      });
+
+      // Execute all queries in this batch
+      await Promise.all(promises);
+    }
+
+    // Commit the transaction
+    await client.query("COMMIT");
+
+    console.log(`Successfully saved ${mobLootEntries.length} monster loot entries in batch operation`);
+  } catch (error) {
+    // Rollback in case of error
+    await client.query("ROLLBACK");
+    console.error(`Error in batch save operation: ${error.message}`);
+    throw error;
   } finally {
     client.release();
   }
@@ -984,6 +1237,8 @@ export {
   batchFindRecipes,
   batchSaveItemsToDatabase,
   saveLootInfoToDatabase,
+  batchSaveLootInfoToDatabase,
+  batchSaveMobLootInfoToDatabase,
   savePlayerStatsToDatabase,
   batchSaveSkillTableToDatabase,
   batchSaveStatusEffectsToDatabase,

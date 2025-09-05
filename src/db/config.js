@@ -262,6 +262,31 @@ export async function initDatabase() {
     await ensureColumnExists(conn, 'DatabaseLootInfo', 'worldCoordinates', 'JSON');
 
     await conn.query(`
+      CREATE TABLE IF NOT EXISTS DatabaseMobLootInfo (
+        id VARCHAR(512) PRIMARY KEY,
+        itemId VARCHAR(255),
+        itemName TEXT,
+        npcName TEXT,
+        levelMin INT,
+        levelMax INT,
+        difficulty TEXT,
+        zone TEXT,
+        worldSpawnLocation TEXT,
+        spawnRate INT,
+        dropChance DOUBLE,
+        zoneCoordinates JSON,
+        worldCoordinates JSON,
+        levelBasedChances JSON,
+        dropChancePerRoll DECIMAL(10,8),
+        rolls INT,
+        poolSize INT,
+        rewardTableId VARCHAR(50),
+        lastModified TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+      )
+    `);
+    await ensureLastModifiedColumn(conn, 'DatabaseMobLootInfo');
+
+    await conn.query(`
       CREATE TABLE IF NOT EXISTS DatabasePlayerStats (
         className VARCHAR(255) PRIMARY KEY,
         class INT DEFAULT 100,

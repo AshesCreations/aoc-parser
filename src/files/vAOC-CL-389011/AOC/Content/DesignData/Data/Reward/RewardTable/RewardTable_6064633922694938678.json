@@ -1,0 +1,57 @@
+{
+	"predicate":
+	{
+		"expression": ""
+	},
+	"callout": "None",
+	"rewardDefContainers": [],
+	"subTableSelectionAlgorithm": "PerElementWeightedExpressionRandom",
+	"numberOfSubtablesToSelect": 2,
+	"weightsPerSubTable": [],
+	"expressionWeightsPerSubTable": [
+		{
+			"expression": "EvalFormula($#10516612381411113:6064633923657269283$)"
+		},
+		{
+			"expression": "EvalFormula($#10516612381411113:6064633923659366437$)"
+		},
+		{
+			"expression": "EvalFormula($#10516612381411113:6064633923660677159$)"
+		}
+	],
+	"percentagePerSubTable": [],
+	"subTablesWeightCurve":
+	{
+		"externalCurve": "None",
+		"editorCurveData":
+		{
+			"keys": [],
+			"defaultValue": 3.4028234663852886e+38,
+			"preInfinityExtrap": "RCCE_Constant",
+			"postInfinityExtrap": "RCCE_Constant",
+			"keyHandlesToIndices":
+			{
+			}
+		}
+	},
+	"subTablesIds": [
+		{
+			"guid": "0",
+			"typeId": "1091110040",
+			"name": "None"
+		},
+		{
+			"guid": "6064633922694086708",
+			"typeId": "1091110040",
+			"name": "None"
+		},
+		{
+			"guid": "6064633922693496883",
+			"typeId": "1091110040",
+			"name": "None"
+		}
+	],
+	"guid": "6064633922694938678",
+	"name": "RecipeTier_ANV_Gear_Weapon_Radiant",
+	"typeId": "1091110040"
+}

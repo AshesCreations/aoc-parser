@@ -54,6 +54,7 @@ async function processItemRecipeFiles(
     let itemsWithUndefined = 0;
     let itemsWithMissingIcons = 0;
     let itemsByType = {};
+    let errorCount = 0;
 
     for (const file of jsonFiles) {
       const filePath = path.join(directoryItem, file);
@@ -108,14 +109,10 @@ async function processItemRecipeFiles(
           // Check reward for errors
           // TODO: Log error to file
           if (!id) {
-            console.log(
-              `Warning: [${item.name}][${item.id}] Recipe reward id is undefined.`
-            );
+            errorCount++;
             id = [];
           } else if (id.length === 0) {
-            console.log(
-              `Warning: [${item.name}][${item.id}] Recipe reward id is empty.`
-            );
+            errorCount++;
           }
           if (id?.[0] === "0") {
             console.log(
@@ -169,6 +166,7 @@ async function processItemRecipeFiles(
     console.log(
       `- Items with missing icons: ${itemsWithMissingIcons} (logged to ${missingIconLogPath})`
     );
+    console.log(`- Recipe reward errors: ${errorCount}`);
 
     console.log(`- Item by type:`);
     console.log(`${typesSummary}`);

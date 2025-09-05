@@ -1,0 +1,13 @@
+{
+	"quality":
+	{
+		"expression": "const Rand = RandIntRange(1,100);\r\n\r\nconst IsCommon = Rand <= 90;\r\nconst IsUncommon = Rand >= 91 && Rand <= 100;\r\n\r\nSelectInt(IsCommon, 1, SelectInt(IsUncommon, 6, 1))"
+	},
+	"durability":
+	{
+		"expression": ""
+	},
+	"guid": "6064634217082388480",
+	"name": "Loot_Resource_C90_UC10",
+	"typeId": "1091111111"
+}
