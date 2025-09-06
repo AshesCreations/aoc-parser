@@ -80,3 +80,7 @@ Rename templateENV to .env and file all empty variables.
   - recipe
   - set-bonus // can skip
   - stat-blocks
+
+## Resource cost examples
+
+Sample vendor pricing for 20 crafting resources is available in `resource-cost-examples.json`.
