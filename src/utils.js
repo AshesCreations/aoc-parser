@@ -144,6 +144,26 @@ function getItemJson(baseFilePath, subFolders, guid) {
 }
 
 /**
+ * Look up the vendor cost for an item if available.
+ * @param {string} baseFilePath - Base directory for data files
+ * @param {string} guid - Item GUID
+ * @returns {number|null} Vendor purchase cost or null if not sold by vendors
+ */
+function getVendorCost(baseFilePath, guid) {
+  const itemData = getItemJson(baseFilePath, "/Item/Item", guid);
+  const vendorId = itemData?.vendorValueId?.guid;
+  if (!vendorId) return null;
+
+  const vendorData = getJson(
+    baseFilePath,
+    "/Item/ItemVendorValue",
+    `ItemVendorValue_${vendorId}.json`
+  );
+  const baseValue = vendorData?.baseValue;
+  return typeof baseValue === "number" ? baseValue : null;
+}
+
+/**
  * Extract the last quoted value from a string
  * @param {string} text - Text to extract from
  * @returns {string} - Extracted value or empty string
@@ -504,6 +524,7 @@ export {
   extractDescription,
   extractValues,
   getItemJson,
+  getVendorCost,
   checkForUndefinedValues,
   logMissingIcon,
   createEmptyStatsObject,

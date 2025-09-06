@@ -18,6 +18,7 @@ import {
   extractValues,
   getJson,
   getItemJson,
+  getVendorCost,
 } from "../utils.js";
 import { rewardTableIdToItemRewardId } from "../config.js";
 
@@ -62,7 +63,11 @@ function buildRecipeTree(
   const tree = {
     item: { name: itemData.name, guid: itemId },
     recipes: [],
+    craftCost: null,
   };
+  const vendorCost = getVendorCost(directoryData, itemId);
+  const costOptions = [];
+  if (vendorCost != null) costOptions.push(vendorCost);
   const tables = itemToRewardTables[itemId] || [];
   for (const rtId of tables) {
     const recipe = rewardIdToRecipe[rtId];
@@ -71,6 +76,7 @@ function buildRecipeTree(
       outputQuantity: getOutputQuantity(rtId, itemId, directoryData, rewardTableCache),
       primaryResources: [],
       generalResources: [],
+      craftCost: 0,
     };
     if (Array.isArray(recipe.primaryResourceCosts)) {
       for (const pr of recipe.primaryResourceCosts) {
@@ -82,10 +88,17 @@ function buildRecipeTree(
           rewardTableCache,
           visited
         );
+        const vendor = getVendorCost(directoryData, pr.item?.guid);
+        const effective =
+          sub?.craftCost != null
+            ? Math.min(sub.craftCost, vendor ?? Infinity)
+            : vendor;
+        recipeNode.craftCost += (effective || 0) * pr.quantity;
         recipeNode.primaryResources.push({
           item: getItemJson(directoryData, "/Item/Item", pr.item?.guid),
           quantity: pr.quantity,
           rarity: pr.rarity,
+          resourceCost: vendor ?? null,
           subMaterials: sub,
         });
       }
@@ -100,14 +113,25 @@ function buildRecipeTree(
           rewardTableCache,
           visited
         );
+        const vendor = getVendorCost(directoryData, gr.item?.guid);
+        const effective =
+          sub?.craftCost != null
+            ? Math.min(sub.craftCost, vendor ?? Infinity)
+            : vendor;
+        recipeNode.craftCost += (effective || 0) * gr.quantity;
         recipeNode.generalResources.push({
           item: getItemJson(directoryData, "/Item/Item", gr.item?.guid),
           quantity: gr.quantity,
+          resourceCost: vendor ?? null,
           subMaterials: sub,
         });
       }
     }
     tree.recipes.push(recipeNode);
+    costOptions.push(recipeNode.craftCost);
+  }
+  if (costOptions.length > 0) {
+    tree.craftCost = Math.min(...costOptions);
   }
   return tree;
 }
