@@ -5,6 +5,8 @@
 import fs from "fs";
 import path from "path";
 
+let buyableGuids = null;
+
 /**
  * @param {Object} jsonData - The JSON data containing gameplay tags
  * @param {Array<String>} tagsToExclude - Array of tags to exclude
@@ -147,20 +149,139 @@ function getItemJson(baseFilePath, subFolders, guid) {
  * Look up the vendor cost for an item if available.
  * @param {string} baseFilePath - Base directory for data files
  * @param {string} guid - Item GUID
- * @returns {number|null} Vendor purchase cost or null if not sold by vendors
+ * @returns {object} { buyPrice, sellPrice } or { buyPrice: null, sellPrice: null } if not sold by vendors
  */
 function getVendorCost(baseFilePath, guid) {
   const itemData = getItemJson(baseFilePath, "/Item/Item", guid);
   const vendorId = itemData?.vendorValueId?.guid;
-  if (!vendorId) return null;
+  if (!vendorId) return { buyPrice: null, sellPrice: null };
 
   const vendorData = getJson(
     baseFilePath,
     "/Item/ItemVendorValue",
     `ItemVendorValue_${vendorId}.json`
   );
-  const baseValue = vendorData?.baseValue;
-  return typeof baseValue === "number" ? baseValue : null;
+  const buyPrice = vendorData?.baseValue;
+  if (typeof buyPrice === "number") {
+    return { buyPrice, sellPrice: buyPrice / 0.6666 };
+  }
+  return { buyPrice: null, sellPrice: null };
+}
+
+/**
+ * Load all buyable item GUIDs from VendorInventoryDef files
+ * @param {string} baseFilePath - Base file path for data files
+ * @returns {Set<string>} Set of buyable item GUIDs
+ */
+function loadBuyableItemGuids(baseFilePath) {
+  const buyableGuids = new Set();
+  const vendorInventoryPath = path.join(baseFilePath, "Vendors", "VendorInventoryDef");
+  if (!fs.existsSync(vendorInventoryPath)) return buyableGuids;
+  const files = fs.readdirSync(vendorInventoryPath);
+  for (const file of files) {
+    if (!file.endsWith('.json')) continue;
+    const filePath = path.join(vendorInventoryPath, file);
+    try {
+      const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+      if (data.listings) {
+        for (const listing of data.listings) {
+          if (listing.itemId && listing.itemId.guid) {
+            buyableGuids.add(listing.itemId.guid);
+          }
+        }
+      }
+    } catch (e) {
+      // ignore errors
+    }
+  }
+  return buyableGuids;
+}
+
+/**
+ * Calculate the correct vendor cost for reagent items based on rarity and game pricing modifiers
+ * @param {string} baseFilePath - Base file path for data files
+ * @param {string} guid - Item GUID
+ * @returns {object} { buyPrice, sellPrice } or { buyPrice: null, sellPrice: null } if not applicable
+ */
+function getReagentVendorCost(baseFilePath, guid) {
+  const itemData = getItemJson(baseFilePath, "/Item/Item", guid);
+
+  const vendorId = itemData?.vendorValueId?.guid;
+  const baseVendorValueId = itemData?.baseVendorValueId?.guid;
+
+  // Load buyable GUIDs if not already loaded
+  if (!buyableGuids) buyableGuids = loadBuyableItemGuids(baseFilePath);
+
+  // If the item has neither an item-specific vendor entry nor a base group, it's not listed
+  if (!vendorId && !baseVendorValueId) return { buyPrice: null, sellPrice: null };
+
+  // If the item has an explicit ItemVendorValue entry, prefer that value
+  if (vendorId) {
+    const vendorData = getJson(
+      baseFilePath,
+      "/Item/ItemVendorValue",
+      `ItemVendorValue_${vendorId}.json`
+    );
+    const buyPrice = vendorData?.baseValue;
+    if (typeof buyPrice === "number") {
+      return { buyPrice, sellPrice: buyPrice / 0.6666 };
+    }
+    // If vendor exists but has no baseValue, fall through to group logic (if present)
+  }
+
+  // If this item uses the reagent vendor value ID, use rarity mapping
+  if (baseVendorValueId === "6064634138915307520") {
+    if (!buyableGuids.has(guid)) return { buyPrice: null, sellPrice: null };
+    const rarityToSell = {
+      "Common": 45,
+      "Uncommon": 1153,
+      "Rare": 6530,
+      "Epic": 50697,
+      "Legendary": 248872,
+      "Artifact": 746616,
+    };
+    const rarityMin = itemData?.rarityMin;
+    if (!rarityMin || !rarityToSell[rarityMin]) {
+      return { buyPrice: null, sellPrice: null };
+    }
+    const sellPrice = rarityToSell[rarityMin];
+    const buyPrice = Math.round(sellPrice * 0.6666);
+    return { buyPrice, sellPrice };
+  }
+
+  // Otherwise if there's a BaseItemValue group, evaluate its expression
+  if (baseVendorValueId === "6064632294712541188") {
+    if (!buyableGuids.has(guid)) return { buyPrice: null, sellPrice: null };
+    // Hardcode evaluation for Resource group (sell price)
+    const level = itemData.level;
+    const rarity = itemData.rarityMin;
+    const rarityMultipliers = {
+      "Common": 0.9,
+      "Uncommon": 23.06,
+      "Rare": 130.6,
+      "Heroic": 4,
+      "Epic": 1013.94,
+      "Legendary": 4977.44,
+      "Artifact": 14932.32
+    };
+    const multiplier = rarityMultipliers[rarity] || 1;
+    let baseValue = 0;
+    if (level >= 1 && level < 10) baseValue = 50;
+    else if (level >= 10 && level < 20) baseValue = 200;
+    else if (level >= 20 && level < 30) baseValue = 500;
+    const tags = itemData.gameplayTags?.gameplayTags || [];
+    const isProcessed = tags.some(t => t.tagName === "Item.Resource.Processed");
+    let slotMod = 1.0;
+    if (isProcessed) slotMod = 1.3;
+    const itemBaseValue = baseValue * multiplier;
+    const sellPrice = itemBaseValue * slotMod;
+    const buyPrice = Math.round(sellPrice * 0.6666);
+    // Resource group items are buyable
+    return { buyPrice, sellPrice: Math.round(sellPrice) };
+  }
+
+  // For other groups, not buyable
+  return { buyPrice: null, sellPrice: null };
 }
 
 /**
@@ -525,6 +646,7 @@ export {
   extractValues,
   getItemJson,
   getVendorCost,
+  getReagentVendorCost,
   checkForUndefinedValues,
   logMissingIcon,
   createEmptyStatsObject,
