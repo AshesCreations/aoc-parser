@@ -24,6 +24,14 @@ async function ensureColumn(client, table, columnName, columnType) {
     if (rows.length === 0) {
       const alterQuery = `ALTER TABLE \`${table}\` ADD COLUMN \`${columnName}\` ${columnType}`;
       await client.query(alterQuery);
+    } else {
+      // Check if the column type matches
+      const currentType = rows[0].Type.toUpperCase();
+      const targetType = columnType.toUpperCase();
+      if (currentType !== targetType) {
+        const alterQuery = `ALTER TABLE \`${table}\` MODIFY COLUMN \`${columnName}\` ${columnType}`;
+        await client.query(alterQuery);
+      }
     }
   } catch (err) {
     // Ignore errors such as insufficient permissions
@@ -678,6 +686,7 @@ async function batchFindRecipes(itemIds) {
 
 /**
  * Batch version of saveItemToDatabase to save multiple items at once
+ * Enhanced to support comprehensive items with recipe trees and gear fields
  * @param {Array} items - Array of item objects to save
  */
 async function batchSaveItemsToDatabase(items) {
@@ -688,30 +697,55 @@ async function batchSaveItemsToDatabase(items) {
   const client = await pool.getConnection();
   try {
     await ensureLastModifiedColumn(client, 'DatabaseItems');
+
+    // Ensure additional columns exist for comprehensive items
+    await ensureColumn(client, 'DatabaseItems', 'subType', 'TEXT');
+    await ensureColumn(client, 'DatabaseItems', 'grade', 'TEXT');
+    await ensureColumn(client, 'DatabaseItems', 'setBonusIds', 'JSON');
+    await ensureColumn(client, 'DatabaseItems', 'enchantmentId', 'TEXT');
+    await ensureColumn(client, 'DatabaseItems', 'deconstructionRecipeId', 'TEXT');
+    await ensureColumn(client, 'DatabaseItems', 'slots', 'JSON');
+    await ensureColumn(client, 'DatabaseItems', 'itemRecipeId', 'JSON');
+    await ensureColumn(client, 'DatabaseItems', 'recipeId', 'JSON');
+    await ensureColumn(client, 'DatabaseItems', 'craftingRecipes', 'JSON');
+    await ensureColumn(client, 'DatabaseItems', 'recipeTree', 'JSON');
+    await ensureColumn(client, 'DatabaseItems', 'hasDiff', 'TINYINT(1)');
+    await ensureColumn(client, 'DatabaseItems', 'changedDescription', 'TEXT');
+
     // Begin transaction
     await client.query("BEGIN");
 
-    // Prepare the query
+    // Prepare the query with all fields
     const query = `
       INSERT INTO \`DatabaseItems\` (
-        id, name, description, type, tag, icon, \`rarityMin\`, \`rarityMax\`, level, \`statsId\`,
-        \`itemRecipeId\`, \`recipeId\`, layout, \`typeDescription\`
+        id, name, layout, \`typeDescription\`, description, type, subtype, tag, icon, \`rarityMin\`, \`rarityMax\`,
+        slots, \`statsId\`, \`setBonusIds\`, level, grade, \`enchantmentId\`, \`deconstructionRecipeId\`,
+        \`itemRecipeId\`, lastModified, \`craftingRecipes\`, \`recipeTree\`, hasDiff, changedDescription
       ) VALUES (
-        ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+        ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
       ) ON DUPLICATE KEY UPDATE
         name = VALUES(name),
+        layout = VALUES(layout),
+        \`typeDescription\` = VALUES(\`typeDescription\`),
         description = VALUES(description),
         type = VALUES(type),
+        subtype = VALUES(subtype),
         tag = VALUES(tag),
         icon = VALUES(icon),
         \`rarityMin\` = VALUES(\`rarityMin\`),
         \`rarityMax\` = VALUES(\`rarityMax\`),
-        level = VALUES(level),
+        slots = VALUES(slots),
         \`statsId\` = VALUES(\`statsId\`),
+        \`setBonusIds\` = VALUES(\`setBonusIds\`),
+        level = VALUES(level),
+        grade = VALUES(grade),
+        \`enchantmentId\` = VALUES(\`enchantmentId\`),
+        \`deconstructionRecipeId\` = VALUES(\`deconstructionRecipeId\`),
         \`itemRecipeId\` = VALUES(\`itemRecipeId\`),
-        \`recipeId\` = VALUES(\`recipeId\`),
-        layout = VALUES(layout),
-        \`typeDescription\` = VALUES(\`typeDescription\`),
+        \`craftingRecipes\` = VALUES(\`craftingRecipes\`),
+        \`recipeTree\` = VALUES(\`recipeTree\`),
+        hasDiff = VALUES(hasDiff),
+        changedDescription = VALUES(changedDescription),
         lastModified = CURRENT_TIMESTAMP
     `;
 
@@ -723,18 +757,28 @@ async function batchSaveItemsToDatabase(items) {
         const values = [
           item.id ?? null,
           item.name ?? null,
+          item.layout || "comprehensive-item",
+          item.typeDescription || "",
           JSON.stringify(item.description || []),
           item.type ?? null,
+          item.subType ?? null,
           JSON.stringify(item.tag || []),
           item.icon ?? null,
           item.rarityMin ?? null,
           item.rarityMax ?? null,
-          item.level ?? null,
+          JSON.stringify(item.slots || []),
           item.statsId ?? null,
+          JSON.stringify(item.setBonusIds || []),
+          item.level ?? null,
+          item.grade ?? null,
+          item.enchantmentId ?? null,
+          item.deconstructionRecipeId ?? null,
           JSON.stringify(item.itemRecipeId || []),
-          JSON.stringify(item.recipeId || []),
-          item.layout || "item",
-          item.typeDescription || "",
+          new Date().toISOString().slice(0, 19).replace('T', ' '), // lastModified as current timestamp
+          JSON.stringify(item.craftingRecipes || []),
+          JSON.stringify(item.recipeTree || {}),
+          0, // hasDiff - default to false for new items
+          "New comprehensive item", // changedDescription
         ];
         return client.execute(query, values);
       });
@@ -746,7 +790,7 @@ async function batchSaveItemsToDatabase(items) {
     // Commit the transaction
     await client.query("COMMIT");
 
-    console.log(`Successfully saved ${items.length} items in batch operation`);
+    console.log(`Successfully saved ${items.length} comprehensive items in batch operation`);
   } catch (error) {
     // Rollback in case of error
     await client.query("ROLLBACK");

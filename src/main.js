@@ -14,6 +14,7 @@ import { processItemGearFiles } from "./processor/gear.js";
 import { processItemRecipeFiles } from "./processor/itemRecipe.js";
 import { processItemEquipmentFiles } from "./processor/equipment.js";
 import { processItemFiles } from "./processor/item.js";
+import { processComprehensiveItemFiles } from "./processor/comprehensive-items.js";
 import { processStatBlockFiles } from "./processor/stat-block.js";
 import { processSetBonusFiles } from "./processor/set-bonus.js";
 import { processEnchantmentDefFiles } from "./processor/enchantment-def.js";
@@ -102,6 +103,20 @@ async function main() {
       statIdToName
     );
     console.log(`Items processing complete: ${itemsProcessed} files processed`);
+
+    // Processing Comprehensive Items
+    // REQUIRED: itemRecipes and recipes must be populated in DB before running.
+    // This replaces the basic items processing with enhanced functionality including recipe trees
+    console.log("\nProcessing comprehensive item files...");
+    const comprehensiveItemsProcessed = await processComprehensiveItemFiles(
+      directoryData,
+      itemTypes,
+      tagsToExclude,
+      logFilePath,
+      undefinedLogPath,
+      statIdToName
+    );
+    console.log(`Comprehensive items processing complete: ${comprehensiveItemsProcessed} files processed`);
 
     // Processing Stats
     console.log("\nProcessing stat block files...");
