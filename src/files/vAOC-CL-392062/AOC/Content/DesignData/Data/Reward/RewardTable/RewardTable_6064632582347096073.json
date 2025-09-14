@@ -1,0 +1,57 @@
+{
+	"predicate":
+	{
+		"expression": ""
+	},
+	"callout": "None",
+	"rewardDefContainers": [],
+	"subTableSelectionAlgorithm": "RollEachByPercent",
+	"numberOfSubtablesToSelect": 2,
+	"weightsPerSubTable": [],
+	"expressionWeightsPerSubTable": [],
+	"percentagePerSubTable": [
+		{
+			"expression": "EvalFormula($#10516612381411113:6064633968375889926$)/100"
+		},
+		{
+			"expression": "EvalFormula($#10516612381411113:6064633968375889926$)/100"
+		},
+		{
+			"expression": "EvalFormula($#10516612381411113:6064633968375889926$)/100"
+		}
+	],
+	"subTablesWeightCurve":
+	{
+		"externalCurve": "None",
+		"editorCurveData":
+		{
+			"keys": [],
+			"defaultValue": 3.4028234663852886e+38,
+			"preInfinityExtrap": "RCCE_Constant",
+			"postInfinityExtrap": "RCCE_Constant",
+			"keyHandlesToIndices":
+			{
+			}
+		}
+	},
+	"subTablesIds": [
+		{
+			"guid": "6064632277092991070",
+			"typeId": "1091110040",
+			"name": "None"
+		},
+		{
+			"guid": "6064632277061402710",
+			"typeId": "1091110040",
+			"name": "None"
+		},
+		{
+			"guid": "6064632277052096595",
+			"typeId": "1091110040",
+			"name": "None"
+		}
+	],
+	"guid": "6064632582347096073",
+	"name": "POI_RVR_Carphin_AnimatedArmorBlaster_RVR",
+	"typeId": "1091110040"
+}

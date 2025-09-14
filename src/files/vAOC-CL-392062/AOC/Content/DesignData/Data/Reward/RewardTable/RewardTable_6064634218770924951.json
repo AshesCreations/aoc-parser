@@ -1,0 +1,41 @@
+{
+	"predicate":
+	{
+		"expression": "GetNPCLevel() >= 19 && GetNPCLevel() <= 27"
+	},
+	"callout": "None",
+	"rewardDefContainers": [],
+	"subTableSelectionAlgorithm": "RollEachByPercent",
+	"numberOfSubtablesToSelect": 2,
+	"weightsPerSubTable": [],
+	"expressionWeightsPerSubTable": [],
+	"percentagePerSubTable": [
+		{
+			"expression": "EvalFormula($#10516612381411113:6064633968375889926$)/100"
+		}
+	],
+	"subTablesWeightCurve":
+	{
+		"externalCurve": "None",
+		"editorCurveData":
+		{
+			"keys": [],
+			"defaultValue": 3.4028234663852886e+38,
+			"preInfinityExtrap": "RCCE_Constant",
+			"postInfinityExtrap": "RCCE_Constant",
+			"keyHandlesToIndices":
+			{
+			}
+		}
+	},
+	"subTablesIds": [
+		{
+			"guid": "6064632277052096595",
+			"typeId": "1091110040",
+			"name": "None"
+		}
+	],
+	"guid": "6064634218770924951",
+	"name": "AccSet_Gear_Carphin_Tier3",
+	"typeId": "1091110040"
+}
