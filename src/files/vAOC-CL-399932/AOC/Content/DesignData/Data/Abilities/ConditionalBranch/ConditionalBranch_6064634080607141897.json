@@ -1,0 +1,29 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 2,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0,
+		"fishingEvents": 0,
+		"statEvents": 0
+	},
+	"bEvaluateOnTick": true,
+	"branchTrigger":
+	{
+		"expression": "(GetStatModValue(GetHitEvent(), $#10516612381411111:108986352686712$) < 0.0 \r\n&& GetRecordTypeId(GetHitSourceRecord(GetHitEvent())) != GetReactionTypeId()\r\n&& GetRecordTypeId(GetHitSourceRecord(GetHitEvent())) != GetEffectTypeId()) ||\r\n//(GetEffectCount(GetActiveTarget(GetOwner(), ETargetingIntention::Harm), $Effect:Summoner_Pet_Hunter_Incap$) == 0 ||\r\nGetEffectCount(GetActiveTarget(GetOwner(), ETargetingIntention::Harm), $#30316002:6064631874531953604$) == 1"
+	},
+	"bPredictedOnAutonomousClient": false,
+	"animBranchId":
+	{
+		"guid": "6064634080610287626",
+		"typeId": "30316010",
+		"name": "None"
+	},
+	"bOnlyBranchWithValidTarget": false,
+	"guid": "6064634080607141897",
+	"name": "Summoner_Pet_Hunter_RangedIncap_CancelOnDamage",
+	"typeId": "30316009"
+}

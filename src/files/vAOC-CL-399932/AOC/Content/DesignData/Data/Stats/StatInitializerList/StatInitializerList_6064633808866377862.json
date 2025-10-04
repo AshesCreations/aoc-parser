@@ -1,0 +1,427 @@
+{
+	"statIds": [
+		{
+			"statId":
+			{
+				"guid": "109183598614140",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "const owner = GetCreatureOwner(GetOwner());\r\nSelectFloat(GetEffectCount(owner,$#30316002:6064634178324135954$) == 0,\r\nGetStat(owner, $#10516612381411111:109183598614140$),\r\nGetStat(owner, $#10516612381411111:109183598614143$))"
+			}
+		},
+		{
+			"statId":
+			{
+				"guid": "108986356618873",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "const owner = GetCreatureOwner(GetOwner());\r\nGetStat(owner, $#10516612381411111:108986356618873$)"
+			}
+		},
+		{
+			"statId":
+			{
+				"guid": "109183607068294",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "const owner = GetCreatureOwner(GetOwner());\r\nSelectFloat(GetEffectCount(owner,$#30316002:6064634178324135954$) == 0,\r\nGetStat(owner, $#10516612381411111:109183607068294$),\r\nGetStat(owner, $#10516612381411111:109183607133840$))"
+			}
+		},
+		{
+			"statId":
+			{
+				"guid": "109343183951492",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "const owner = GetCreatureOwner(GetOwner());\r\nSelectFloat(GetEffectCount(owner,$#30316002:6064634178324135954$) == 0,\r\nGetStat(owner, $#10516612381411111:109343183951492$),\r\nGetStat(owner, $#10516612381411111:6064628595115753473$))"
+			}
+		},
+		{
+			"statId":
+			{
+				"guid": "109183607068295",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "const owner = GetCreatureOwner(GetOwner());\r\nSelectFloat(GetEffectCount(owner,$#30316002:6064634178324135954$) == 0,\r\nGetStat(owner, $#10516612381411111:109183607068295$),\r\nGetStat(owner, $#10516612381411111:109183607068302$))"
+			}
+		},
+		{
+			"statId":
+			{
+				"guid": "6064629618894504103",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "const owner = GetCreatureOwner(GetOwner());\r\nSelectFloat(GetEffectCount(owner,$#30316002:6064634178324135954$) == 0,\r\nGetStat(owner, $#10516612381411111:6064629618894504103$),\r\nGetStat(owner, $#10516612381411111:6064629618993135787$))"
+			}
+		},
+		{
+			"statId":
+			{
+				"guid": "109183598614143",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "const owner = GetCreatureOwner(GetOwner());\r\nSelectFloat(GetEffectCount(owner,$#30316002:6064634178324135954$) > 0,\r\nGetStat(owner, $#10516612381411111:109183598614140$),\r\nGetStat(owner, $#10516612381411111:109183598614143$))"
+			}
+		},
+		{
+			"statId":
+			{
+				"guid": "109183578756729",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "const owner = GetCreatureOwner(GetOwner());\r\nGetStat(owner, $#10516612381411111:109183578756729$)"
+			}
+		},
+		{
+			"statId":
+			{
+				"guid": "109183607133840",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "const owner = GetCreatureOwner(GetOwner());\r\nSelectFloat(GetEffectCount(owner,$#30316002:6064634178324135954$) > 0,\r\nGetStat(owner, $#10516612381411111:109183607068294$),\r\nGetStat(owner, $#10516612381411111:109183607133840$))"
+			}
+		},
+		{
+			"statId":
+			{
+				"guid": "6064628595115753473",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "const owner = GetCreatureOwner(GetOwner());\r\nSelectFloat(GetEffectCount(owner,$#30316002:6064634178324135954$) > 0,\r\nGetStat(owner, $#10516612381411111:109343183951492$),\r\nGetStat(owner, $#10516612381411111:6064628595115753473$))"
+			}
+		},
+		{
+			"statId":
+			{
+				"guid": "109183607068302",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "const owner = GetCreatureOwner(GetOwner());\r\nSelectFloat(GetEffectCount(owner,$#30316002:6064634178324135954$) > 0,\r\nGetStat(owner, $#10516612381411111:109183607068295$),\r\nGetStat(owner, $#10516612381411111:109183607068302$))"
+			}
+		},
+		{
+			"statId":
+			{
+				"guid": "6064629618993135787",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "const owner = GetCreatureOwner(GetOwner());\r\nSelectFloat(GetEffectCount(owner,$#30316002:6064634178324135954$) > 0,\r\nGetStat(owner, $#10516612381411111:6064629618894504103$),\r\nGetStat(owner, $#10516612381411111:6064629618993135787$))"
+			}
+		},
+		{
+			"statId":
+			{
+				"guid": "109183598614138",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "const owner = GetCreatureOwner(GetOwner());\r\nGetStat(owner, $#10516612381411111:109183598614141$)"
+			}
+		},
+		{
+			"statId":
+			{
+				"guid": "109183603267200",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "const owner = GetCreatureOwner(GetOwner());\r\nGetStat(owner, $#10516612381411111:109183607068297$)"
+			}
+		},
+		{
+			"statId":
+			{
+				"guid": "109342862759546",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "const owner = GetCreatureOwner(GetOwner());\r\nGetStat(owner, $#10516612381411111:109342909421182$)"
+			}
+		},
+		{
+			"statId":
+			{
+				"guid": "109183605036677",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "const owner = GetCreatureOwner(GetOwner());\r\nGetStat(owner, $#10516612381411111:109342895396476$)"
+			}
+		},
+		{
+			"statId":
+			{
+				"guid": "6064629618890834085",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "const owner = GetCreatureOwner(GetOwner());\r\nGetStat(owner, $#10516612381411111:6064629618899943593$)"
+			}
+		},
+		{
+			"statId":
+			{
+				"guid": "109183598614141",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "const owner = GetCreatureOwner(GetOwner());\r\nGetStat(owner, $#10516612381411111:109183598614141$)"
+			}
+		},
+		{
+			"statId":
+			{
+				"guid": "109183607068297",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "const owner = GetCreatureOwner(GetOwner());\r\nGetStat(owner, $#10516612381411111:109183607068297$)"
+			}
+		},
+		{
+			"statId":
+			{
+				"guid": "109342909421182",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "const owner = GetCreatureOwner(GetOwner());\r\nGetStat(owner, $#10516612381411111:109342909421182$)"
+			}
+		},
+		{
+			"statId":
+			{
+				"guid": "109342895396476",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "const owner = GetCreatureOwner(GetOwner());\r\nGetStat(owner, $#10516612381411111:109342895396476$)"
+			}
+		},
+		{
+			"statId":
+			{
+				"guid": "6064629618899943593",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "const owner = GetCreatureOwner(GetOwner());\r\nGetStat(owner, $#10516612381411111:6064629618899943593$)"
+			}
+		},
+		{
+			"statId":
+			{
+				"guid": "109183598614139",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "const owner = GetCreatureOwner(GetOwner());\r\nGetStat(owner, $#10516612381411111:109183598614142$)"
+			}
+		},
+		{
+			"statId":
+			{
+				"guid": "109342866232955",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "const owner = GetCreatureOwner(GetOwner());\r\nGetStat(owner, $#10516612381411111:109183607068299$)"
+			}
+		},
+		{
+			"statId":
+			{
+				"guid": "109183605036675",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "const owner = GetCreatureOwner(GetOwner());\r\nGetStat(owner, $#10516612381411111:109183607068301$)"
+			}
+		},
+		{
+			"statId":
+			{
+				"guid": "109183605036676",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "const owner = GetCreatureOwner(GetOwner());\r\nGetStat(owner, $#10516612381411111:109342915057279$)"
+			}
+		},
+		{
+			"statId":
+			{
+				"guid": "109183603267201",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "const owner = GetCreatureOwner(GetOwner());\r\nGetStat(owner, $#10516612381411111:109183607068298$)"
+			}
+		},
+		{
+			"statId":
+			{
+				"guid": "109183598614142",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "const owner = GetCreatureOwner(GetOwner());\r\nGetStat(owner, $#10516612381411111:109183598614142$)"
+			}
+		},
+		{
+			"statId":
+			{
+				"guid": "109183607068299",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "const owner = GetCreatureOwner(GetOwner());\r\nGetStat(owner, $#10516612381411111:109183607068299$)"
+			}
+		},
+		{
+			"statId":
+			{
+				"guid": "109183607068301",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "const owner = GetCreatureOwner(GetOwner());\r\nGetStat(owner, $#10516612381411111:109183607068301$)"
+			}
+		},
+		{
+			"statId":
+			{
+				"guid": "109342915057279",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "const owner = GetCreatureOwner(GetOwner());\r\nGetStat(owner, $#10516612381411111:109342915057279$)"
+			}
+		},
+		{
+			"statId":
+			{
+				"guid": "109183607068298",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "const owner = GetCreatureOwner(GetOwner());\r\nGetStat(owner, $#10516612381411111:109183607068298$)"
+			}
+		},
+		{
+			"statId":
+			{
+				"guid": "109343399171808",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "GetStatInitRunningTotal()+EvalE($#10516612381411112:6064634178656927909$)"
+			}
+		},
+		{
+			"statId":
+			{
+				"guid": "109343399106257",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "GetStatInitRunningTotal()+EvalE($#10516612381411112:6064634178656927909$)"
+			}
+		},
+		{
+			"statId":
+			{
+				"guid": "6064630798183235705",
+				"typeId": "10516612381411111",
+				"name": "None"
+			},
+			"valueExpression":
+			{
+				"expression": "1.0"
+			}
+		}
+	],
+	"guid": "6064633808866377862",
+	"name": "SummonerPet_Base",
+	"typeId": "409016"
+}

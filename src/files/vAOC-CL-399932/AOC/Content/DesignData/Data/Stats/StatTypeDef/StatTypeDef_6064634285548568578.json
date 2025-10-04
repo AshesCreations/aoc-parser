@@ -1,0 +1,55 @@
+{
+	"displayName": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"A0939310444FA4A1FFA986824CFA7D7D\", \"Sport Fishing Lure Retrieval\")",
+	"description": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"EA34693A49D1000CB23E32A8BF8BC090\", \"Increases the chance of salvaging a Lure when successfully catching a Fish via Sport Fishing\")",
+	"bHidden": false,
+	"gameplayType": "Type_Artisanship",
+	"bHasWaterfallStatsUI": false,
+	"waterfallStatsUIIds": [],
+	"bDisplayAsPercentage": true,
+	"statType": "Type_Float",
+	"bClampStatFinalValue": false,
+	"bMultiplyStatMods": false,
+	"bMultiplyCompliment": false,
+	"base":
+	{
+		"expression": "//As the player levels Fishing they get a little better at chance not to lose Lure\r\n0.05 * GetPlayerProfessionLevel(GetActorGuid(GetInstigator()),\"Fishing\")"
+	},
+	"waterfallStatsBaseIds": [],
+	"dependentPetStatsBaseIds": [],
+	"valueMin":
+	{
+		"expression": "0"
+	},
+	"waterfallStatsMinIds": [],
+	"dependentPetStatsMinIds": [],
+	"valueMax":
+	{
+		"expression": "100"
+	},
+	"waterfallStatsMaxIds": [],
+	"dependentPetStatsMaxIds": [],
+	"regenRate":
+	{
+		"expression": ""
+	},
+	"waterfallStatsRegenIds": [],
+	"dependentPetStatsRegenIds": [],
+	"bRegenWhileDead": false,
+	"bRecalculateOnCombatState": false,
+	"onSpawn": "Reset_None",
+	"onDeath": "Reset_None",
+	"onRevive": "Reset_None",
+	"bPersistValue": false,
+	"replication": 1,
+	"bReplicatesBaseAndEquipmentBuckets": true,
+	"shieldStatId":
+	{
+		"guid": "0",
+		"typeId": "10516612381411111",
+		"name": "None"
+	},
+	"grantedEffects": [],
+	"guid": "6064634285548568578",
+	"name": "Artisan_Gathering_Fishing_Sports_Keep_Lure",
+	"typeId": "10516612381411111"
+}

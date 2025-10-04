@@ -1,0 +1,33 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 2,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 0,
+		"fishingEvents": 0,
+		"statEvents": 0
+	},
+	"reactTrigger":
+	{
+		"expression": "const proliferation = GetSkillPurchased(GetEffectInstigator(), $#30316003:6064630327539796772$, $#981011333:6064634217384515100$);\r\n\r\nGetStatModValue(GetHitEvent(), $#10516612381411111:108986352686712$) < 0.0 \r\n&& HitFlagsContains(GetHitFlags(GetHitEvent()), EHitFlag::Lethal)\r\n&& proliferation"
+	},
+	"bEvaluateApplyingHit": false,
+	"instigator": "Instigator",
+	"targetsBitmask": 1,
+	"reactHitsIds": [
+		{
+			"guid": "6064633565689742125",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	],
+	"instigatorProcLimit": 0,
+	"globalProcLimit": 0,
+	"procReactOnApply": false,
+	"guid": "6064633565635805335",
+	"name": "Summoner_Passive_SpiritShred_Proliferation",
+	"typeId": "3031600202"
+}

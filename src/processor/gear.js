@@ -23,6 +23,13 @@ import {
 } from "../utils.js";
 import { rewardTableIdToItemRewardId } from "../config.js";
 
+function deepClone(value) {
+  if (value === null || typeof value !== "object") {
+    return value;
+  }
+  return JSON.parse(JSON.stringify(value));
+}
+
 function getOutputQuantity(rtId, itemId, directoryData, rewardTableCache) {
   if (!rtId) return 1;
   if (!rewardTableCache[rtId]) {
@@ -52,32 +59,42 @@ function getOutputQuantity(rtId, itemId, directoryData, rewardTableCache) {
  * Recipe -> craftingCurrencyCostId -> CraftingCurrencyCost file -> currencyCostValue
  */
 function getCraftingCurrencyCost(recipe, directoryData, currencyCostCache = {}) {
-  if (!recipe?.craftingCurrencyCostId?.guid) return 0;
-  
-  const costId = recipe.craftingCurrencyCostId.guid;
-  
-  // Use cache to avoid re-reading the same files
-  if (currencyCostCache[costId] !== undefined) {
-    return currencyCostCache[costId];
-  }
-  
-  try {
-    const costData = getJson(
-      directoryData,
-      "/Crafting/CraftingCurrencyCost",
-      `CraftingCurrencyCost_${costId}.json`
-    );
-    
-    if (costData?.currencyCostValue?.expression) {
-      const cost = Number(costData.currencyCostValue.expression);
-      currencyCostCache[costId] = Number.isNaN(cost) ? 0 : cost;
+  // First try craftingCurrencyCostId approach
+  if (recipe?.craftingCurrencyCostId?.guid && recipe.craftingCurrencyCostId.guid !== "0") {
+    const costId = recipe.craftingCurrencyCostId.guid;
+
+    // Use cache to avoid re-reading the same files
+    if (currencyCostCache[costId] !== undefined) {
       return currencyCostCache[costId];
     }
-  } catch (error) {
-    console.warn(`Could not load CraftingCurrencyCost_${costId}.json:`, error.message);
+
+    try {
+      const costData = getJson(
+        directoryData,
+        "/Crafting/CraftingCurrencyCost",
+        `CraftingCurrencyCost_${costId}.json`
+      );
+
+      if (costData?.currencyCostValue?.expression) {
+        const cost = Number(costData.currencyCostValue.expression);
+        currencyCostCache[costId] = Number.isNaN(cost) ? 0 : cost;
+        return currencyCostCache[costId];
+      }
+    } catch (error) {
+      console.warn(`Could not load CraftingCurrencyCost_${costId}.json:`, error.message);
+    }
+
+    // Cache the result as 0 to avoid repeated attempts
+    currencyCostCache[costId] = 0;
+    return 0;
   }
-  
-  currencyCostCache[costId] = 0;
+
+  // Fallback to standardCurrencyCost if craftingCurrencyCostId didn't work
+  if (recipe?.standardCurrencyCost?.expression) {
+    const cost = Number(recipe.standardCurrencyCost.expression);
+    return Number.isNaN(cost) ? 0 : cost;
+  }
+
   return 0;
 }
 
@@ -88,12 +105,24 @@ function buildRecipeTree(
   directoryData,
   rewardTableCache,
   currencyCostCache = {},
-  visited = new Set()
+  memo = new Map(),
+  visiting = new Set()
 ) {
-  if (!itemId || visited.has(itemId)) return null;
-  visited.add(itemId);
+  if (!itemId) return null;
+
+  if (memo.has(itemId)) {
+    return deepClone(memo.get(itemId));
+  }
+
+  if (visiting.has(itemId)) {
+    return null;
+  }
+
+  visiting.add(itemId);
+
   const itemData = getItemJson(directoryData, "/Item/Item", itemId);
   if (!itemData || Object.keys(itemData).length === 0) {
+    visiting.delete(itemId);
     return null;
   }
   const vendorCostInfo = getVendorCost(directoryData, itemId);
@@ -101,93 +130,138 @@ function buildRecipeTree(
     item: { name: itemData.name, guid: itemId },
     recipes: [],
     craftCost: null,
+    craftFee: null,
     sellPrice: vendorCostInfo.sellPrice,
   };
   const costOptions = [];
+  const craftFeeOptions = [];
   if (vendorCostInfo.buyPrice != null) costOptions.push(vendorCostInfo.buyPrice);
   const tables = itemToRewardTables[itemId] || [];
   for (const rtId of tables) {
     const recipe = rewardIdToRecipe[rtId];
     if (!recipe) continue;
-    
-    // Get the crafting currency cost for this recipe
+
     const baseCraftCost = getCraftingCurrencyCost(recipe, directoryData, currencyCostCache);
-    
+
     const recipeNode = {
       outputQuantity: getOutputQuantity(rtId, itemId, directoryData, rewardTableCache),
       primaryResources: [],
       generalResources: [],
-      craftCost: baseCraftCost, // Start with the base crafting currency cost
-      baseCraftingCost: baseCraftCost, // Track the base cost separately
+      craftCost: baseCraftCost,
+      craftFee: baseCraftCost,
+      baseCraftingCost: baseCraftCost,
     };
     if (Array.isArray(recipe.primaryResourceCosts)) {
       for (const pr of recipe.primaryResourceCosts) {
-        const sub = buildRecipeTree(
-          pr.item?.guid,
-          itemToRewardTables,
-          rewardIdToRecipe,
-          directoryData,
-          rewardTableCache,
-          currencyCostCache,
-          visited
-        );
+        let sub = null;
+        // Get the resource item data to check its tags
+        const resourceItemData = getItemJson(directoryData, "/Item/Item", pr.item?.guid);
+        const resourceTags = resourceItemData ? [...extractTagParts(resourceItemData, [])] : [];
+        const resourceName = resourceItemData?.name || "";
+        
+        // Only build sub-recipe tree and calculate costs if the resource is not a raw material
+        // Check for "Raw" tag part which indicates raw materials, or "Raw" in the name
+        const isRawMaterial = resourceTags.includes("Raw") || resourceName.includes("Resource_Raw");
+        if (!isRawMaterial) {
+          sub = buildRecipeTree(
+            pr.item?.guid,
+            itemToRewardTables,
+            rewardIdToRecipe,
+            directoryData,
+            rewardTableCache,
+            currencyCostCache,
+            memo,
+            visiting
+          );
+        }
         const costInfo = getReagentVendorCost(directoryData, pr.item?.guid);
         const vendor = costInfo.buyPrice;
-        const effective =
-          sub?.craftCost != null
-            ? Math.min(sub.craftCost, vendor ?? Infinity)
-            : vendor;
-        // recipeNode.craftCost += (effective || 0) * pr.quantity;
-        const itemData = getItemJson(directoryData, "/Item/Item", pr.item?.guid);
+        const subCraftCost = sub?.craftCost;
+        const resolvedVendorCost = typeof vendor === "number" ? vendor : 0;
+        const componentCost = subCraftCost ?? resolvedVendorCost;
+        const quantity = Number(pr.quantity) || 0;
+
+        recipeNode.craftCost += (componentCost ?? 0) * quantity;
+        if (sub?.craftFee != null) {
+          recipeNode.craftFee += sub.craftFee * quantity;
+        }
+        const resourceData = getItemJson(directoryData, "/Item/Item", pr.item?.guid);
         recipeNode.primaryResources.push({
-          item: itemData,
+          item: resourceData,
           quantity: pr.quantity,
           rarity: pr.rarity,
-          resourceCost: vendor ?? null,
+          resourceCost: typeof vendor === "number" && !resourceData.name.includes("Resource_Raw") ? vendor : null,
           sellPrice: costInfo.sellPrice ?? null,
-          details: extractLastQuotedValue(itemData?.details || ""),
+          details: extractLastQuotedValue(resourceData?.details || ""),
+          craftCost: subCraftCost ?? null,
+          craftFee: sub?.craftFee ?? null,
           subMaterials: sub,
         });
       }
     }
     if (Array.isArray(recipe.generalResourceCost)) {
       for (const gr of recipe.generalResourceCost) {
-        const sub = buildRecipeTree(
-          gr.item?.guid,
-          itemToRewardTables,
-          rewardIdToRecipe,
-          directoryData,
-          rewardTableCache,
-          currencyCostCache,
-          visited
-        );
+        let sub = null;
+        // Get the resource item data to check its tags
+        const resourceItemData = getItemJson(directoryData, "/Item/Item", gr.item?.guid);
+        const resourceTags = resourceItemData ? [...extractTagParts(resourceItemData, [])] : [];
+        const resourceName = resourceItemData?.name || "";
+        
+        // Only build sub-recipe tree and calculate costs if the resource is not a raw material
+        // Check for "Raw" tag part which indicates raw materials, or "Raw" in the name
+        const isRawMaterial = resourceTags.includes("Raw") || resourceName.includes("Resource_Raw");
+        if (!isRawMaterial) {
+          sub = buildRecipeTree(
+            gr.item?.guid,
+            itemToRewardTables,
+            rewardIdToRecipe,
+            directoryData,
+            rewardTableCache,
+            currencyCostCache,
+            memo,
+            visiting
+          );
+        }
         const costInfo = getReagentVendorCost(directoryData, gr.item?.guid);
         const vendor = costInfo.buyPrice;
-        const effective =
-          sub?.craftCost != null
-            ? Math.min(sub.craftCost, vendor ?? Infinity)
-            : vendor;
-        // recipeNode.craftCost += (effective || 0) * gr.quantity;
-        const itemData = getItemJson(directoryData, "/Item/Item", gr.item?.guid);
+        const subCraftCost = sub?.craftCost;
+        const resolvedVendorCost = typeof vendor === "number" ? vendor : 0;
+        const componentCost = subCraftCost ?? resolvedVendorCost;
+        const quantity = Number(gr.quantity) || 0;
+
+        recipeNode.craftCost += (componentCost ?? 0) * quantity;
+        if (sub?.craftFee != null) {
+          recipeNode.craftFee += sub.craftFee * quantity;
+        }
+        const resourceData = getItemJson(directoryData, "/Item/Item", gr.item?.guid);
         recipeNode.generalResources.push({
-          item: itemData,
+          item: resourceData,
           quantity: gr.quantity,
-          resourceCost: vendor ?? null,
+          resourceCost: typeof vendor === "number" && !resourceData.name.includes("Resource_Raw") ? vendor : null,
           sellPrice: costInfo.sellPrice ?? null,
-          details: extractLastQuotedValue(itemData?.details || ""),
+          details: extractLastQuotedValue(resourceData?.details || ""),
+          craftCost: subCraftCost ?? null,
+          craftFee: sub?.craftFee ?? null,
           subMaterials: sub,
         });
       }
     }
     tree.recipes.push(recipeNode);
     costOptions.push(recipeNode.craftCost);
+    craftFeeOptions.push(recipeNode.craftFee);
   }
   if (costOptions.length > 0) {
     tree.craftCost = Math.min(...costOptions);
   }
-  return tree;
-}
+  if (craftFeeOptions.length > 0) {
+    tree.craftFee = Math.min(...craftFeeOptions);
+  }
+  visiting.delete(itemId);
 
+  const cachedTree = deepClone(tree);
+  memo.set(itemId, cachedTree);
+  return deepClone(tree);
+}
 /**
  * Process all JSON files in the item directory
  * @param {string} directoryPath - Path to the item directory
@@ -320,6 +394,7 @@ async function processItemGearFiles(directoryData) {
 
     const rewardTableCache = {};
     const currencyCostCache = {}; // Cache for crafting currency costs
+    const recipeMemo = new Map(); // Cache for previously computed recipe trees
 
     // Apply recipes to items and gather crafting recipes
     for (let i = 0; i < allItems.length; i++) {
@@ -355,7 +430,8 @@ async function processItemGearFiles(directoryData) {
           rewardIdToRecipe,
           directoryData,
           rewardTableCache,
-          currencyCostCache
+          currencyCostCache,
+          recipeMemo
         );
       }
     }
@@ -383,3 +459,4 @@ async function processItemGearFiles(directoryData) {
 }
 
 export { processItemGearFiles };
+

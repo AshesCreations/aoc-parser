@@ -3,6 +3,10 @@ import path from 'path';
 import { savePlayerStatsToDatabase } from '../db/operations.js';
 import { extractExpressionId } from '../utils.js';
 
+function roundToTwoDecimals(value) {
+  return Math.round(value * 100) / 100;
+}
+
 const defaultGuids = new Set([
   '108986356618873',
   '109183578756729',
@@ -62,7 +66,7 @@ async function processClass(dataDir, cls, statIdToName) {
       const value = 1 - subVal;
       const levels = {};
       for (let lvl = 1; lvl <= 50; lvl++) {
-        levels[lvl] = value;
+        levels[lvl] = roundToTwoDecimals(value);
       }
       const name = sanitize(statIdToName[guid] || guid);
       attrs[name] = levels;
@@ -96,13 +100,13 @@ async function processClass(dataDir, cls, statIdToName) {
       const lvl = k.time;
       if (cls.isDefault) {
         // Default class should use raw values without multipliers or running totals
-        levels[lvl] = k.value;
+        levels[lvl] = roundToTwoDecimals(k.value);
         continue;
       }
 
       if (isHealth) {
         const mult = healthMultipliers[cls.name] || 0;
-        levels[lvl] = k.value * mult;
+        levels[lvl] = roundToTwoDecimals(k.value * mult);
         continue;
       }
 
@@ -112,7 +116,7 @@ async function processClass(dataDir, cls, statIdToName) {
         total += val;
         levels[lvl] = Math.round(total);
       } else {
-        levels[lvl] = val;
+        levels[lvl] = roundToTwoDecimals(val);
       }
     }
     attrs[name] = levels;

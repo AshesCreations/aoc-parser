@@ -1,0 +1,179 @@
+{
+	"prerequisitesIds": [],
+	"levelsIds":
+	{
+		"3":
+		{
+			"guid": "6064629020201582628",
+			"typeId": "7823458",
+			"name": "None"
+		},
+		"4":
+		{
+			"guid": "6064629020203286565",
+			"typeId": "7823458",
+			"name": "None"
+		},
+		"5":
+		{
+			"guid": "6064629020203941926",
+			"typeId": "7823458",
+			"name": "None"
+		},
+		"6":
+		{
+			"guid": "6064629020204531751",
+			"typeId": "7823458",
+			"name": "None"
+		},
+		"0":
+		{
+			"guid": "6064633923834544142",
+			"typeId": "7823458",
+			"name": "None"
+		}
+	},
+	"buildingAssetSetId":
+	{
+		"guid": "6064631346957386510",
+		"typeId": "1323521346",
+		"name": "None"
+	},
+	"nodeConstructionCostId":
+	{
+		"guid": "0",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"maintenanceCostId":
+	{
+		"guid": "0",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"playerConstructionCostId":
+	{
+		"guid": "0",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"damagedRepairCostId":
+	{
+		"guid": "0",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"disarrayRepairCostId":
+	{
+		"guid": "0",
+		"typeId": "7823457",
+		"name": "None"
+	},
+	"disarrayDebuffId":
+	{
+		"guid": "0",
+		"typeId": "30316002",
+		"name": "None"
+	},
+	"dEPRECATED_ExpansionsIds": [],
+	"serviceBuildingType": "Business",
+	"icon": "/Game/UI/Icons/Nodes/Buildings/HuntingLodge/TUI_Icon_HuntingLodge.TUI_Icon_HuntingLodge",
+	"mapIconVisualId":
+	{
+		"guid": "6064632399381659663",
+		"typeId": "949952112329",
+		"name": "None"
+	},
+	"buildingName": "Hunting Lodge",
+	"buildingDescription": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"101C14174B9292AC8035A5A94DEA89CF\", \"This is where players can trade their monster certificates for other items.\")",
+	"buildingServices": [
+		{
+			"icon": "/Game/UI/Icons/Nodes/Buildings/BuildingServices/TUI_Icon_ServiceIcon_Vendor.TUI_Icon_ServiceIcon_Vendor",
+			"serviceName": "Player Commodity Vendor",
+			"serviceDescription": "Buys and Sells player commodities",
+			"bCitizenExclusive": false,
+			"serviceGroupGameplayTag":
+			{
+				"tagName": "None"
+			},
+			"surpassingExpansionSkillId":
+			{
+				"guid": "0",
+				"typeId": "981011333",
+				"name": "None"
+			}
+		},
+		{
+			"icon": "/Game/UI/Icons/Nodes/Buildings/BuildingServices/TUI_Icon_ServiceIcon_HuntingBoard.TUI_Icon_ServiceIcon_HuntingBoard",
+			"serviceName": "Hunting Commission Board",
+			"serviceDescription": "Offers special hunting commissions",
+			"bCitizenExclusive": false,
+			"serviceGroupGameplayTag":
+			{
+				"tagName": "None"
+			},
+			"surpassingExpansionSkillId":
+			{
+				"guid": "0",
+				"typeId": "981011333",
+				"name": "None"
+			}
+		}
+	],
+	"buildingServiceDescriptions": [],
+	"bDisplayInBuildingManager": true,
+	"constructionPhaseDuration":
+	{
+		"duration": "86400000"
+	},
+	"buildingContributionPhasesId":
+	{
+		"guid": "0",
+		"typeId": "1091110047",
+		"name": "None"
+	},
+	"dEPRECATED_CapabilitiesIds": [],
+	"dEPRECATED_NodeEffectId":
+	{
+		"guid": "0",
+		"typeId": "9127426",
+		"name": "None"
+	},
+	"localeOriginId":
+	{
+		"guid": "0",
+		"typeId": "421003",
+		"name": "None"
+	},
+	"nodeModificationsIds": [],
+	"expansionSkillTreeId":
+	{
+		"guid": "0",
+		"typeId": "30316003",
+		"name": "None"
+	},
+	"repairStateDurationModifier":
+	{
+		"expression": ""
+	},
+	"demolitionStateDurationModifier":
+	{
+		"expression": ""
+	},
+	"voteResultDuration":
+	{
+		"expression": ""
+	},
+	"contributionRewardTablesIds": [],
+	"completionNodeExperience": 0,
+	"canConstructionTimeOut": true,
+	"houseDeedItemRecordId":
+	{
+		"guid": "0",
+		"typeId": "1091110003",
+		"name": "None"
+	},
+	"guid": "6064633923832315917",
+	"name": "Default_LawlessHarbor_HuntingLodge_Building",
+	"typeId": "7823463"
+}

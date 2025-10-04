@@ -1,0 +1,18 @@
+{
+	"targetEffect": [
+		{
+			"expression": "$#30316002:6064633498678330350$"
+		}
+	],
+	"deltaSeconds":
+	{
+		"expression": "const occultism = SelectFloat(GetSkillPurchased(GetInstigator(), $#30316003:6064630327539796772$, $#981011333:6064634217384187415$), 1.0, 0.0);\r\n\r\n-2 * occultism * SelectInt(GetEffectInstigator() == GetInstigator(), 1, 0)"
+	},
+	"deltaStacks":
+	{
+		"expression": ""
+	},
+	"guid": "6064634218302079773",
+	"name": "Summoner_Passive_MortalBlast_Occultism",
+	"typeId": "3031600218"
+}

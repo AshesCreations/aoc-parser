@@ -1029,6 +1029,34 @@ async function batchSaveMobLootInfoToDatabase(mobLootEntries) {
   const client = await pool.getConnection();
   try {
     // Ensure table exists with proper schema for monster loot only
+    await client.query(`
+      CREATE TABLE IF NOT EXISTS \`DatabaseMobLootInfo\` (
+        id VARCHAR(255) PRIMARY KEY,
+        itemId VARCHAR(50),
+        itemName TEXT,
+        npcName VARCHAR(255),
+        levelMin INT,
+        levelMax INT,
+        difficulty VARCHAR(50),
+        zone VARCHAR(255),
+        worldSpawnLocation TEXT,
+        spawnRate DECIMAL(10,4),
+        dropChance DECIMAL(10,4),
+        zoneCoordinates JSON,
+        worldCoordinates JSON,
+        levelBasedChances JSON,
+        dropChancePerRoll DECIMAL(10,8),
+        rolls INT,
+        poolSize INT,
+        rewardTableId VARCHAR(50),
+        lastModified TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+        INDEX idx_itemId (itemId),
+        INDEX idx_npcName (npcName),
+        INDEX idx_zone (zone),
+        INDEX idx_levelMin (levelMin),
+        INDEX idx_levelMax (levelMax)
+      )
+    `);
     await ensureLastModifiedColumn(client, 'DatabaseMobLootInfo');
 
     // Begin transaction

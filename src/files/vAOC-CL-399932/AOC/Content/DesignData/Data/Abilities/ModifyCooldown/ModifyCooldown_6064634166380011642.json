@@ -1,0 +1,23 @@
+{
+	"targetCooldownAbility": [
+		{
+			"expression": "$#30316001:6064633414164984451$"
+		}
+	],
+	"bUseAbilityCost": false,
+	"deltaSeconds":
+	{
+		"expression": "const ReenergizingDisintegrate = SelectInt(GetSkillPurchased(GetInstigator(), $#30316003:6064630327539796772$, $#981011333:6064634217385301541$), 1, 0);\r\n-5 * ReenergizingDisintegrate"
+	},
+	"deltaCharges":
+	{
+		"expression": ""
+	},
+	"shouldTriggerCooldown":
+	{
+		"expression": ""
+	},
+	"guid": "6064634166380011642",
+	"name": "Summoner_Passive_Disintegrate_Recharge",
+	"typeId": "3031600207"
+}

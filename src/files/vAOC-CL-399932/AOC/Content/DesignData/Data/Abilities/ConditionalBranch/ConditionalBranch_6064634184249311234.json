@@ -1,0 +1,29 @@
+{
+	"eventBindings":
+	{
+		"hitEvents": 2,
+		"effectEvents": 0,
+		"abilityEvents": 0,
+		"projectileEvents": 0,
+		"lingeringZoneEvents": 0,
+		"movementEvents": 2,
+		"fishingEvents": 0,
+		"statEvents": 0
+	},
+	"bEvaluateOnTick": false,
+	"branchTrigger":
+	{
+		"expression": "IsMoving(GetOwner()) ||\r\n(GetStatModValue(GetHitEvent(), $#10516612381411111:108986352686712$) < 0.0 \r\n&& GetRecordTypeId(GetHitSourceRecord(GetHitEvent())) != GetReactionTypeId()\r\n&& GetRecordTypeId(GetHitSourceRecord(GetHitEvent())) != GetEffectTypeId())"
+	},
+	"bPredictedOnAutonomousClient": false,
+	"animBranchId":
+	{
+		"guid": "6064634184249180161",
+		"typeId": "30316010",
+		"name": "None"
+	},
+	"bOnlyBranchWithValidTarget": false,
+	"guid": "6064634184249311234",
+	"name": "Consumable_TreasureMap_ExcavationKit_CancelOnMoveOrDamage",
+	"typeId": "30316009"
+}

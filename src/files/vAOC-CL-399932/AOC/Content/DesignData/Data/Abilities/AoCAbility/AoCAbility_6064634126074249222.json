@@ -1,0 +1,295 @@
+{
+	"abilityTags": [],
+	"abilityIcon": "/Game/UI/Icons/Abilities/Weapons/WeaponCombo/TUI_WeaponComboIcon_Rewind.TUI_WeaponComboIcon_Rewind",
+	"abilityConditionalIcons": [],
+	"bOverrideRangeInTooltip": false,
+	"customTooltipRange":
+	{
+		"expression": ""
+	},
+	"bOverrideProgressBarClass": false,
+	"progressBarClass": "None",
+	"progressBarSortScore":
+	{
+		"expression": ""
+	},
+	"hasProc":
+	{
+		"expression": ""
+	},
+	"hasAbilitySynergy":
+	{
+		"expression": ""
+	},
+	"hasStatusEffectSynergy":
+	{
+		"expression": ""
+	},
+	"animMontages": [
+		{
+			"abilityDirection": "NONE",
+			"animExpression":
+			{
+				"expression": ""
+			},
+			"startSectionName": "None",
+			"bOverrideSequenceResetTime": false,
+			"sequenceResetTime": 0,
+			"abilityAnimationSoftPaths": [],
+			"targetingKey": 1,
+			"hitKeys": [ 1 ]
+		}
+	],
+	"activationRequirements":
+	{
+		"expression": ""
+	},
+	"weaponRequirement": "NoRequirement",
+	"bRequiresStealthActivation": false,
+	"petCommandId":
+	{
+		"guid": "0",
+		"typeId": "3031601337",
+		"name": "None"
+	},
+	"bDisableDuringCooldown": false,
+	"cooldown":
+	{
+		"expression": "0.5"
+	},
+	"sharedCooldownTag": "PetCommand",
+	"cooldownCharges":
+	{
+		"expression": ""
+	},
+	"bOverrideInitialCooldownCharges": false,
+	"initialCooldownChargesOverride":
+	{
+		"expression": ""
+	},
+	"bPersistCooldown": false,
+	"suppressCooldownInUI":
+	{
+		"expression": ""
+	},
+	"bDeferAbilityTrigger": false,
+	"bMayNotBeUsedSimultaneously": false,
+	"bStopsAutoAttack": false,
+	"costs": [
+		{
+			"enabled":
+			{
+				"expression": "true"
+			},
+			"statCosts": [
+				{
+					"stat":
+					{
+						"guid": "0",
+						"typeId": "10516612381411111",
+						"name": "None"
+					},
+					"value":
+					{
+						"expression": "0"
+					}
+				}
+			],
+			"effectCosts": [],
+			"chargeCost":
+			{
+				"expression": "1"
+			},
+			"bTriggersCooldown": true
+		}
+	],
+	"hitsIds":
+	{
+		"1":
+		{
+			"guid": "6064634126097448968",
+			"typeId": "30316005",
+			"name": "None"
+		}
+	},
+	"effectsIds":
+	{
+	},
+	"projectilesIds":
+	{
+	},
+	"lingeringEffectsIds":
+	{
+	},
+	"abilityFXIds":
+	{
+	},
+	"animBranchesIds":
+	{
+	},
+	"conditionalBranchesIds":
+	{
+	},
+	"reactionsIds":
+	{
+	},
+	"targetingRecordsIds":
+	{
+		"1":
+		{
+			"guid": "6064628968549646338",
+			"typeId": "30316011",
+			"name": "None"
+		}
+	},
+	"progressDisruptionRecordsIds":
+	{
+	},
+	"teleportRecordsIds":
+	{
+	},
+	"comboInputs": [],
+	"bExactInput": false,
+	"bufferPriority": 0,
+	"bUsableFromHotbar": true,
+	"abilityActivationInput": "UserConfigurable",
+	"bMayEscCancel": true,
+	"bIsAOEClickedAbility": false,
+	"targetActivationRequirement": "Never",
+	"applicableTargets": 1,
+	"applicableTypes": 0,
+	"applicableLifeStates": 1,
+	"applicableCasterLifeStates": 1,
+	"bNeverCancelAbility": false,
+	"bUseTargetingRecord": false,
+	"targetingRecordId":
+	{
+		"guid": "0",
+		"typeId": "30316011",
+		"name": "None"
+	},
+	"bCheckTargetValidity": false,
+	"bPerformLoSCheck": true,
+	"bPerformConeCheck": true,
+	"angleCenter": 0,
+	"distanceCenter": 0,
+	"validAngle": 0,
+	"validDistance": 0,
+	"angleCenterExp":
+	{
+		"expression": ""
+	},
+	"distanceCenterExp":
+	{
+		"expression": ""
+	},
+	"validAngleExp":
+	{
+		"expression": ""
+	},
+	"validDistanceExp":
+	{
+		"expression": ""
+	},
+	"speedMultiplierSource": "NONE",
+	"bHoldAnimation": false,
+	"maximumHoldTime": 0,
+	"bMayCancelHoldAtAnyTime": true,
+	"cancelHoldSections": [],
+	"onCancelHoldBranchKey": 0,
+	"bOverrideHeldBehavior": false,
+	"heldAbilityBehavior": "Naive",
+	"bForceAnimCancel": false,
+	"bAllowRotation": true,
+	"pitchMode": "None",
+	"minPitch": 0,
+	"maxPitch": 0,
+	"bUsableInAir": true,
+	"bUsableWhileSwimming": true,
+	"bUsableWhileWalking": true,
+	"bUsableWhileMounted": true,
+	"bAutoDismount": false,
+	"bOmnidirectional": true,
+	"bOrientWithInterpOnStart": false,
+	"onStartInterpConstRate": 0,
+	"bOrientWithInterpOnEnd": false,
+	"onEndInterpConstRate": 0,
+	"bQuickCancelFromAllAbilities": false,
+	"quickCancelFromAbilitiesIds": [],
+	"cancelSectionName": "None",
+	"bRequiresAnimCancel": false,
+	"cancelFromAbilitiesIds": [],
+	"cancelFromTagQuery":
+	{
+		"tokenStreamVersion": 0,
+		"tagDictionary": [],
+		"queryTokenStream": [],
+		"userDescription": "",
+		"autoDescription": ""
+	},
+	"scriptOnActivate": "None",
+	"areaTemplateFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"areaTemplateMaterial": "None",
+	"areaTemplateRotationRate": 0,
+	"areaTargetRadius": 0,
+	"areaTargetRange": 0,
+	"bShouldFaceClickedTarget": false,
+	"bPerformIsWalkableCheck": true,
+	"bMayTargetWater": false,
+	"bResetSequenceAfterTime": false,
+	"sequenceResetTime": 0,
+	"bForceComboBreak": false,
+	"abilityName": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"392E2AFB4E2498B0C1B2DEB7E3F72F4A\", \"Automate Pet Abilities\")",
+	"abilityDescription": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"61F5C28D44B5D626F67363928E6359C9\", \"**Temporary Ability**\\r\\n\\r\\nToggle between automated and non-automated pet ability casting.\\r\\n\\r\\n**NOTE: Due to a current limitation, using auto-mode will prevent manual ability activation unless the listed criteria are met. This will require an additional engineering solution to resolve.\\r\\n\\r\\nThe following abilities will be auto-cast under the below conditions:\\r\\n\\r\\nGuardian:\\r\\nGuard when Guardian is below 65% health, on an internal 20 second cooldown.\\r\\nTaunt when the Guardian is at 110% threat or less relative to the summoner\\r\\nStomp when the Summoner has at least 30 Essence.\\r\\n\\r\\nHunter:\\r\\nEviscerate on an internal 10 second cooldown.\\r\\nEngage when in melee stance and when target is further than 5m away, on an internal 10 second cooldown.\\r\\nDisengage when in ranged stance and when target is within 3m, on an internal 10 second cooldown.\\r\\n\\r\\nMystic:\\r\\nSpirit Blast on an internal 10 second cooldown.\\r\\nEssence Restoration when the current healing target, the pet, or the summoner is below 90% health, on an internal 10 second cooldown.\\r\\n\\r\\nAdditional automation logic will be added with engineering support.\")",
+	"bAllowMovement": true,
+	"bPROTOTYPERotateRootMotion": false,
+	"rootMotionFreezeBehavior": "StopOnContact",
+	"rootMotionFreezeDistance": 0,
+	"rootMotionFreezeRadiusScale": 1,
+	"rootMotionIgnoreNonTarget": false,
+	"bVisualizeSweepCollision": false,
+	"canBreakEffects":
+	{
+		"expression": ""
+	},
+	"effectsToBreak":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"actionModeAbilityId":
+	{
+		"guid": "0",
+		"typeId": "30316001",
+		"name": "None"
+	},
+	"aBTestingAbilitiesIds": [],
+	"animCancelsIds":
+	{
+	},
+	"modifyCooldownsIds":
+	{
+	},
+	"aLSAbilityId":
+	{
+		"guid": "0",
+		"typeId": "30316001",
+		"name": "None"
+	},
+	"inputTerms": [],
+	"dynamicCastDuration":
+	{
+		"expression": ""
+	},
+	"bNeverCull": false,
+	"networkingMaxSpeed": 0,
+	"bInteruptChannelOnAbilityEnd": false,
+	"guid": "6064634126074249222",
+	"name": "TEMP_Pet_Automation",
+	"typeId": "30316001"
+}

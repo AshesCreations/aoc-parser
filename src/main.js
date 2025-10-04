@@ -20,7 +20,7 @@ import { processSetBonusFiles } from "./processor/set-bonus.js";
 import { processEnchantmentDefFiles } from "./processor/enchantment-def.js";
 import { processEnchantmentLevelFiles } from "./processor/enchantment-level.js";
 import { processRecipeFiles } from "./processor/recipe.js";
-// import { processLootFiles } from "./processor/loot-fast.js";
+import { processLootFiles } from "./processor/loot-fast.js";
 import { processSkillTables } from "./processor/skill-table.js";
 import { processStatusEffects } from "./processor/status-effects.js";
 import { processPlayerStats } from "./processor/player-stats.js";
@@ -178,11 +178,11 @@ async function main() {
       `Player stats processing complete: ${playerStatsProcessed} classes processed`
     );
 
-    // console.log("\nProcessing loot files...");
-    // const lootEntries = await processLootFiles(directoryData);
-    // console.log(
-    //   `Loot processing complete: ${lootEntries.length} entries saved`
-    // );
+    console.log("\nProcessing loot files...");
+    const lootEntries = await processLootFiles(directoryData);
+    console.log(
+      `Loot processing complete: ${lootEntries.length} entries saved`
+    );
 
     console.log("\nProcessing skill tables...");
     const skillsProcessed = await processSkillTables(directoryData);

@@ -1,0 +1,303 @@
+{
+	"abilityTags": [
+		{
+			"tagName": "Artisanship.Gathering.Fishing"
+		}
+	],
+	"abilityIcon": "/Game/UI/Icons/Artisanship/ArtisanAbilities/TUI_Icon_ArtisanAbility_Fishing_Fishing.TUI_Icon_ArtisanAbility_Fishing_Fishing",
+	"abilityConditionalIcons": [],
+	"bOverrideRangeInTooltip": false,
+	"customTooltipRange":
+	{
+		"expression": ""
+	},
+	"bOverrideProgressBarClass": false,
+	"progressBarClass": "None",
+	"progressBarSortScore":
+	{
+		"expression": ""
+	},
+	"hasProc":
+	{
+		"expression": ""
+	},
+	"hasAbilitySynergy":
+	{
+		"expression": ""
+	},
+	"hasStatusEffectSynergy":
+	{
+		"expression": ""
+	},
+	"animMontages": [
+		{
+			"abilityDirection": "NONE",
+			"animExpression":
+			{
+				"expression": "GetEffectCount(GetOwner(),$#30316002:6064632082445762560$) == 0"
+			},
+			"startSectionName": "None",
+			"bOverrideSequenceResetTime": false,
+			"sequenceResetTime": 0,
+			"abilityAnimationSoftPaths": [
+				"/Game/Characters/Animations/00_ABLT/ABLT_Chum_Notify_Montage.ABLT_Chum_Notify_Montage"
+			],
+			"targetingKey": 0,
+			"hitKeys": []
+		},
+		{
+			"abilityDirection": "NONE",
+			"animExpression":
+			{
+				"expression": "GetEffectCount(GetOwner(),$#30316002:6064632082445762560$) > 0"
+			},
+			"startSectionName": "AbilityEnd",
+			"bOverrideSequenceResetTime": false,
+			"sequenceResetTime": 0,
+			"abilityAnimationSoftPaths": [
+				"/Game/Characters/Animations/00_ABLT/CM_M_ABLT_Fishing_Montage_New.CM_M_ABLT_Fishing_Montage_New"
+			],
+			"targetingKey": 0,
+			"hitKeys": []
+		}
+	],
+	"activationRequirements":
+	{
+		"expression": "HasValidEquipment(GetInstigator(), EEquipSlot::FishingRod) && IsWithinFishingGround(GetInstigator())"
+	},
+	"weaponRequirement": "NoRequirement",
+	"bRequiresStealthActivation": false,
+	"petCommandId":
+	{
+		"guid": "0",
+		"typeId": "3031601337",
+		"name": "None"
+	},
+	"bDisableDuringCooldown": true,
+	"cooldown":
+	{
+		"expression": "1"
+	},
+	"sharedCooldownTag": "None",
+	"cooldownCharges":
+	{
+		"expression": ""
+	},
+	"bOverrideInitialCooldownCharges": false,
+	"initialCooldownChargesOverride":
+	{
+		"expression": ""
+	},
+	"bPersistCooldown": false,
+	"suppressCooldownInUI":
+	{
+		"expression": ""
+	},
+	"bDeferAbilityTrigger": false,
+	"bMayNotBeUsedSimultaneously": false,
+	"bStopsAutoAttack": false,
+	"costs": [
+		{
+			"enabled":
+			{
+				"expression": "True"
+			},
+			"statCosts": [],
+			"effectCosts": [],
+			"chargeCost":
+			{
+				"expression": "1"
+			},
+			"bTriggersCooldown": true
+		}
+	],
+	"hitsIds":
+	{
+	},
+	"effectsIds":
+	{
+		"1":
+		{
+			"guid": "6064632082445762560",
+			"typeId": "30316002",
+			"name": "None"
+		}
+	},
+	"projectilesIds":
+	{
+	},
+	"lingeringEffectsIds":
+	{
+	},
+	"abilityFXIds":
+	{
+	},
+	"animBranchesIds":
+	{
+	},
+	"conditionalBranchesIds":
+	{
+	},
+	"reactionsIds":
+	{
+	},
+	"targetingRecordsIds":
+	{
+		"1":
+		{
+			"guid": "6064632071489388545",
+			"typeId": "30316011",
+			"name": "None"
+		}
+	},
+	"progressDisruptionRecordsIds":
+	{
+	},
+	"teleportRecordsIds":
+	{
+	},
+	"comboInputs": [],
+	"bExactInput": false,
+	"bufferPriority": 0,
+	"bUsableFromHotbar": true,
+	"abilityActivationInput": "UserConfigurable",
+	"bMayEscCancel": true,
+	"bIsAOEClickedAbility": false,
+	"targetActivationRequirement": "Never",
+	"applicableTargets": 0,
+	"applicableTypes": 0,
+	"applicableLifeStates": 1,
+	"applicableCasterLifeStates": 1,
+	"bNeverCancelAbility": false,
+	"bUseTargetingRecord": false,
+	"targetingRecordId":
+	{
+		"guid": "0",
+		"typeId": "30316011",
+		"name": "None"
+	},
+	"bCheckTargetValidity": true,
+	"bPerformLoSCheck": true,
+	"bPerformConeCheck": true,
+	"angleCenter": 0,
+	"distanceCenter": 0,
+	"validAngle": 0,
+	"validDistance": 0,
+	"angleCenterExp":
+	{
+		"expression": "0.0"
+	},
+	"distanceCenterExp":
+	{
+		"expression": "0.0"
+	},
+	"validAngleExp":
+	{
+		"expression": "0.0"
+	},
+	"validDistanceExp":
+	{
+		"expression": "0.0"
+	},
+	"speedMultiplierSource": "NONE",
+	"bHoldAnimation": false,
+	"maximumHoldTime": 0,
+	"bMayCancelHoldAtAnyTime": true,
+	"cancelHoldSections": [],
+	"onCancelHoldBranchKey": 0,
+	"bOverrideHeldBehavior": false,
+	"heldAbilityBehavior": "Naive",
+	"bForceAnimCancel": true,
+	"bAllowRotation": false,
+	"pitchMode": "None",
+	"minPitch": 0,
+	"maxPitch": 0,
+	"bUsableInAir": false,
+	"bUsableWhileSwimming": false,
+	"bUsableWhileWalking": true,
+	"bUsableWhileMounted": false,
+	"bAutoDismount": false,
+	"bOmnidirectional": false,
+	"bOrientWithInterpOnStart": false,
+	"onStartInterpConstRate": 0,
+	"bOrientWithInterpOnEnd": false,
+	"onEndInterpConstRate": 0,
+	"bQuickCancelFromAllAbilities": false,
+	"quickCancelFromAbilitiesIds": [],
+	"cancelSectionName": "CastComplete",
+	"bRequiresAnimCancel": false,
+	"cancelFromAbilitiesIds": [],
+	"cancelFromTagQuery":
+	{
+		"tokenStreamVersion": 0,
+		"tagDictionary": [],
+		"queryTokenStream": [],
+		"userDescription": "",
+		"autoDescription": ""
+	},
+	"scriptOnActivate": "None",
+	"areaTemplateFXId":
+	{
+		"guid": "0",
+		"typeId": "30316008",
+		"name": "None"
+	},
+	"areaTemplateMaterial": "None",
+	"areaTemplateRotationRate": 0,
+	"areaTargetRadius": 0,
+	"areaTargetRange": 0,
+	"bShouldFaceClickedTarget": false,
+	"bPerformIsWalkableCheck": true,
+	"bMayTargetWater": false,
+	"bResetSequenceAfterTime": false,
+	"sequenceResetTime": 0,
+	"bForceComboBreak": true,
+	"abilityName": "NSLOCTEXT(\"[E4D20BA648F08F07691FD6BAA26EEB4A]\", \"40893F3D495609BEC4460CAEE3265B54\", \"Fishing\")",
+	"abilityDescription": "Attempt to cast your fishing line, fails if the casts would not land in valid water.",
+	"bAllowMovement": true,
+	"bPROTOTYPERotateRootMotion": false,
+	"rootMotionFreezeBehavior": "StopOnContact",
+	"rootMotionFreezeDistance": 0,
+	"rootMotionFreezeRadiusScale": 1,
+	"rootMotionIgnoreNonTarget": false,
+	"bVisualizeSweepCollision": false,
+	"canBreakEffects":
+	{
+		"expression": ""
+	},
+	"effectsToBreak":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"actionModeAbilityId":
+	{
+		"guid": "0",
+		"typeId": "30316001",
+		"name": "None"
+	},
+	"aBTestingAbilitiesIds": [],
+	"animCancelsIds":
+	{
+	},
+	"modifyCooldownsIds":
+	{
+	},
+	"aLSAbilityId":
+	{
+		"guid": "0",
+		"typeId": "30316001",
+		"name": "None"
+	},
+	"inputTerms": [],
+	"dynamicCastDuration":
+	{
+		"expression": ""
+	},
+	"bNeverCull": false,
+	"networkingMaxSpeed": 0,
+	"bInteruptChannelOnAbilityEnd": false,
+	"guid": "6064634244385472513",
+	"name": "Economy_SportFishingChum",
+	"typeId": "30316001"
+}

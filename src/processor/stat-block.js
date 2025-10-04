@@ -8,6 +8,15 @@ import { saveStatToDatabase } from "../db/operations.js";
 import { createEmptyStatsObject } from "../utils.js";
 
 /**
+ * Rounds a number to at most 2 decimal places
+ * @param {number} value - The value to round
+ * @returns {number} The rounded value
+ */
+function roundToTwoDecimals(value) {
+  return Math.round(value * 100) / 100;
+}
+
+/**
  * Processes stat data for a specific rarity
  * @param {Object} stats - The stats object to add to
  * @param {string} rarity - The rarity level (e.g., 'common', 'rare')
@@ -31,8 +40,8 @@ function processStatForRarity(
     stats[rarity][statType].push({
       id: statId,
       name: statName,
-      min: statData[minKey],
-      max: statData[maxKey],
+      min: roundToTwoDecimals(statData[minKey]),
+      max: roundToTwoDecimals(statData[maxKey]),
     });
   }
 }
@@ -85,7 +94,7 @@ async function processStatFile(filePath, statIdToName) {
         });
       }
       if (jsonData.stats["6064629444242636800"]) {
-        processedObject.durability = jsonData.stats["6064629444242636800"];
+        processedObject.durability = roundToTwoDecimals(jsonData.stats["6064629444242636800"]);
       }
     }
 

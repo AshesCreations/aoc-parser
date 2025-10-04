@@ -1,0 +1,67 @@
+{
+	"displayName": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"9954F2D343EB58F98F8F53ABC43D9B47\", \"Prelude to War\")",
+	"phaseToastId":
+	{
+		"guid": "0",
+		"typeId": "949952112328",
+		"name": "None"
+	},
+	"victoryConditionText": "NSLOCTEXT(\"[70199B914E7E03A9706A1499CF20B1FD]\", \"4CEE02004B5F83905301D4A949437E9A\", \"War Will Begin Shortly!\")",
+	"phaseDescriptionLong": "NSLOCTEXT(\"[D20C99C24B2FABB4DC05E3BF1EE067C5]\", \"21D919AC4A0138FB3B89A581B084769E\", \"War will commence when the countdown completes\")",
+	"phaseColor":
+	{
+		"r": 0.18447500467300415,
+		"g": 0.14126299321651459,
+		"b": 0.043735001236200333,
+		"a": 1
+	},
+	"bStartEventOnPhaseBegin": false,
+	"bEventsOccurRandomly": false,
+	"bLoopWarEventsArray": false,
+	"warEventsIds": [],
+	"schedulePlusMinusMinutes": 60,
+	"scheduleOfEvents": [],
+	"bUseTimezoneOffset": false,
+	"bUseParentWarRecordVictoryPointTable": false,
+	"bUseGlobalConstantVictoryPointTable": false,
+	"victoryPointTableId":
+	{
+		"guid": "6064632622027833344",
+		"typeId": "98966982",
+		"name": "None"
+	},
+	"bUseDefaultPhaseRewards": false,
+	"bUseDefaultObjectiveRewards": false,
+	"bUseDefaultEventRewards": false,
+	"completionCondition":
+	{
+		"expression": "War_HasTimeElapsedSeconds(3600)"
+	},
+	"bUseParentWarRecordLocaleSelectionOptions": false,
+	"phaseLocaleSelectionType": "Custom",
+	"bTargetNodeLocaleRequestFirst": false,
+	"localeRequestId":
+	{
+		"guid": "0",
+		"typeId": "23095138",
+		"name": "None"
+	},
+	"customLocaleSelectionPerEvent": [],
+	"bFlaggedAgainstEachOther": false,
+	"bFlaggedInRelevantNodeZOIs": false,
+	"bAllowAlliance_UNSUPPORTED": false,
+	"bCanSurrender": false,
+	"surrenderAvailableSecondsAfterPhaseStart": 0,
+	"delayForEventStartTime":
+	{
+		"duration": "0"
+	},
+	"gameplayTagsToApply":
+	{
+		"gameplayTags": [],
+		"parentTags": []
+	},
+	"guid": "6064632620059525132",
+	"name": "War_All_SpinUpPhase",
+	"typeId": "98966980"
+}

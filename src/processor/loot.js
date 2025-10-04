@@ -318,17 +318,22 @@ async function processLootFiles(directoryData) {
             const populationInstances = await findPopulationInstancesWithLootTable(directoryData, rtId);
             
             for (const instance of populationInstances) {
-              // Calculate drop chance for this item from this reward table
-              const dropChance = computeItemChance(directoryData, rtId, itemId).chance;
-              
-              // Generate level-based chances
-              const mobLevel = (instance.levelMin + instance.levelMax) / 2;
+              // Calculate drop chance and supporting roll data from this reward table
+              const chanceDetails = computeItemChance(directoryData, rtId, itemId);
+              const dropChance = chanceDetails.chance;
+
+              // Generate level-based chances using available level data
+              const levelMin = instance.levelMin ?? itemData.level ?? 1;
+              const levelMax = instance.levelMax ?? levelMin;
+              const mobLevel = (levelMin + levelMax) / 2;
               const levelChances = generateLevelBasedChances(dropChance, mobLevel);
 
               const mobLootEntry = {
+                id: `${itemId}_${instance.guid || 'unknown'}_${rtId}`,
                 itemId,
                 itemName: itemData.name,
                 monsterName: instance.name,
+                npcName: instance.name || "Unknown Monster",
                 levelMin: instance.levelMin,
                 levelMax: instance.levelMax,
                 zone: instance.zone,
@@ -336,13 +341,17 @@ async function processLootFiles(directoryData) {
                 zoneCoordinates: instance.zoneCoordinates,
                 worldCoordinates: instance.worldCoordinates,
                 dropChance: dropChance,
+                dropChancePerRoll: chanceDetails.perRollChance,
                 levelChances: levelChances,
+                levelBasedChances: levelChances,
                 difficulty: null, // Could be enhanced from Population asset data
                 spawnRate: instance.respawnTime,
                 rewardTableId: rtId,
                 inventoryFilterType: itemData.inventoryFilterType,
                 type: itemData.type,
                 subType: itemData.subType,
+                rolls: chanceDetails.rolls,
+                poolSize: chanceDetails.poolSize,
               };
 
               itemLootEntries.push(mobLootEntry);
